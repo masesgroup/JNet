@@ -44,35 +44,35 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#ABORTED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState ABORTED { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalClazz, "ABORTED"); } }
+        public static Javax.Print.Attribute.Standard.JobState ABORTED { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalBridgeClazz, "ABORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#CANCELED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState CANCELED { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalClazz, "CANCELED"); } }
+        public static Javax.Print.Attribute.Standard.JobState CANCELED { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalBridgeClazz, "CANCELED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#COMPLETED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState COMPLETED { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalClazz, "COMPLETED"); } }
+        public static Javax.Print.Attribute.Standard.JobState COMPLETED { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalBridgeClazz, "COMPLETED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PENDING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState PENDING { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalClazz, "PENDING"); } }
+        public static Javax.Print.Attribute.Standard.JobState PENDING { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalBridgeClazz, "PENDING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PENDING_HELD"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState PENDING_HELD { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalClazz, "PENDING_HELD"); } }
+        public static Javax.Print.Attribute.Standard.JobState PENDING_HELD { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalBridgeClazz, "PENDING_HELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PROCESSING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState PROCESSING { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalClazz, "PROCESSING"); } }
+        public static Javax.Print.Attribute.Standard.JobState PROCESSING { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalBridgeClazz, "PROCESSING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PROCESSING_STOPPED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState PROCESSING_STOPPED { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalClazz, "PROCESSING_STOPPED"); } }
+        public static Javax.Print.Attribute.Standard.JobState PROCESSING_STOPPED { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalBridgeClazz, "PROCESSING_STOPPED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#UNKNOWN"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState UNKNOWN { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalClazz, "UNKNOWN"); } }
+        public static Javax.Print.Attribute.Standard.JobState UNKNOWN { get { return SGetField<Javax.Print.Attribute.Standard.JobState>(LocalBridgeClazz, "UNKNOWN"); } }
 
         #endregion
 

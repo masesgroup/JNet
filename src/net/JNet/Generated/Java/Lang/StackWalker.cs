@@ -42,13 +42,11 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance()"/> 
         /// </summary>
-
-        /// <returns><see cref="Java.Lang.StackWalker"/></returns>
-        public static Java.Lang.StackWalker GetInstance()
+        public static Java.Lang.StackWalker Instance
         {
-            return SExecute<Java.Lang.StackWalker>(LocalClazz, "getInstance");
+            get { return SExecute<Java.Lang.StackWalker>(LocalBridgeClazz, "getInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance(java.lang.StackWalker.Option)"/>
@@ -57,7 +55,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.StackWalker"/></returns>
         public static Java.Lang.StackWalker GetInstance(Java.Lang.StackWalker.Option arg0)
         {
-            return SExecute<Java.Lang.StackWalker>(LocalClazz, "getInstance", arg0);
+            return SExecute<Java.Lang.StackWalker>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance(java.util.Set,int)"/>
@@ -67,7 +65,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.StackWalker"/></returns>
         public static Java.Lang.StackWalker GetInstance(Java.Util.Set<Java.Lang.StackWalker.Option> arg0, int arg1)
         {
-            return SExecute<Java.Lang.StackWalker>(LocalClazz, "getInstance", arg0, arg1);
+            return SExecute<Java.Lang.StackWalker>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.html#getInstance(java.util.Set)"/>
@@ -76,7 +74,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.StackWalker"/></returns>
         public static Java.Lang.StackWalker GetInstance(Java.Util.Set<Java.Lang.StackWalker.Option> arg0)
         {
-            return SExecute<Java.Lang.StackWalker>(LocalClazz, "getInstance", arg0);
+            return SExecute<Java.Lang.StackWalker>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion
@@ -129,15 +127,15 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#RETAIN_CLASS_REFERENCE"/>
             /// </summary>
-            public static Java.Lang.StackWalker.Option RETAIN_CLASS_REFERENCE { get { return SGetField<Java.Lang.StackWalker.Option>(LocalClazz, "RETAIN_CLASS_REFERENCE"); } }
+            public static Java.Lang.StackWalker.Option RETAIN_CLASS_REFERENCE { get { return SGetField<Java.Lang.StackWalker.Option>(LocalBridgeClazz, "RETAIN_CLASS_REFERENCE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_HIDDEN_FRAMES"/>
             /// </summary>
-            public static Java.Lang.StackWalker.Option SHOW_HIDDEN_FRAMES { get { return SGetField<Java.Lang.StackWalker.Option>(LocalClazz, "SHOW_HIDDEN_FRAMES"); } }
+            public static Java.Lang.StackWalker.Option SHOW_HIDDEN_FRAMES { get { return SGetField<Java.Lang.StackWalker.Option>(LocalBridgeClazz, "SHOW_HIDDEN_FRAMES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_REFLECT_FRAMES"/>
             /// </summary>
-            public static Java.Lang.StackWalker.Option SHOW_REFLECT_FRAMES { get { return SGetField<Java.Lang.StackWalker.Option>(LocalClazz, "SHOW_REFLECT_FRAMES"); } }
+            public static Java.Lang.StackWalker.Option SHOW_REFLECT_FRAMES { get { return SGetField<Java.Lang.StackWalker.Option>(LocalBridgeClazz, "SHOW_REFLECT_FRAMES"); } }
 
             #endregion
 
@@ -147,7 +145,7 @@ namespace Java.Lang
             /// </summary>
             public static Java.Lang.StackWalker.Option[] Values
             {
-                get { return SExecuteArray<Java.Lang.StackWalker.Option>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Lang.StackWalker.Option>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#valueOf(java.lang.String)"/>
@@ -156,7 +154,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.StackWalker.Option"/></returns>
             public static Java.Lang.StackWalker.Option ValueOf(string arg0)
             {
-                return SExecute<Java.Lang.StackWalker.Option>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Lang.StackWalker.Option>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion
@@ -201,6 +199,13 @@ namespace Java.Lang
                 get { return IExecute<int>("getByteCodeIndex"); }
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getClassName()"/> 
+            /// </summary>
+            public string ClassName
+            {
+                get { return IExecute<string>("getClassName"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getDeclaringClass()"/> 
             /// </summary>
             public Java.Lang.Class DeclaringClass
@@ -220,13 +225,6 @@ namespace Java.Lang
             public string FileName
             {
                 get { return IExecute<string>("getFileName"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#getClassName()"/> 
-            /// </summary>
-            public string GetClassName
-            {
-                get { return IExecute<string>("getClassName"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.StackFrame.html#isNativeMethod()"/> 

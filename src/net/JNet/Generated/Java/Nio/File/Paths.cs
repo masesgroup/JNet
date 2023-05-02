@@ -49,7 +49,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public static Java.Nio.File.Path Get(string arg0, params string[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "get", arg0); else return SExecute<Java.Nio.File.Path>(LocalClazz, "get", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "get", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "get", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Paths.html#get(java.net.URI)"/>
@@ -58,7 +58,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public static Java.Nio.File.Path Get(Java.Net.URI arg0)
         {
-            return SExecute<Java.Nio.File.Path>(LocalClazz, "get", arg0);
+            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "get", arg0);
         }
 
         #endregion

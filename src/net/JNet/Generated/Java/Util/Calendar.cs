@@ -52,203 +52,203 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ALL_STYLES"/>
         /// </summary>
-        public static int ALL_STYLES { get { return SGetField<int>(LocalClazz, "ALL_STYLES"); } }
+        public static int ALL_STYLES { get { return SGetField<int>(LocalBridgeClazz, "ALL_STYLES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AM"/>
         /// </summary>
-        public static int AM { get { return SGetField<int>(LocalClazz, "AM"); } }
+        public static int AM { get { return SGetField<int>(LocalBridgeClazz, "AM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AM_PM"/>
         /// </summary>
-        public static int AM_PM { get { return SGetField<int>(LocalClazz, "AM_PM"); } }
+        public static int AM_PM { get { return SGetField<int>(LocalBridgeClazz, "AM_PM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#APRIL"/>
         /// </summary>
-        public static int APRIL { get { return SGetField<int>(LocalClazz, "APRIL"); } }
+        public static int APRIL { get { return SGetField<int>(LocalBridgeClazz, "APRIL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#AUGUST"/>
         /// </summary>
-        public static int AUGUST { get { return SGetField<int>(LocalClazz, "AUGUST"); } }
+        public static int AUGUST { get { return SGetField<int>(LocalBridgeClazz, "AUGUST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DATE"/>
         /// </summary>
-        public static int DATE { get { return SGetField<int>(LocalClazz, "DATE"); } }
+        public static int DATE { get { return SGetField<int>(LocalBridgeClazz, "DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_MONTH"/>
         /// </summary>
-        public static int DAY_OF_MONTH { get { return SGetField<int>(LocalClazz, "DAY_OF_MONTH"); } }
+        public static int DAY_OF_MONTH { get { return SGetField<int>(LocalBridgeClazz, "DAY_OF_MONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_WEEK"/>
         /// </summary>
-        public static int DAY_OF_WEEK { get { return SGetField<int>(LocalClazz, "DAY_OF_WEEK"); } }
+        public static int DAY_OF_WEEK { get { return SGetField<int>(LocalBridgeClazz, "DAY_OF_WEEK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_WEEK_IN_MONTH"/>
         /// </summary>
-        public static int DAY_OF_WEEK_IN_MONTH { get { return SGetField<int>(LocalClazz, "DAY_OF_WEEK_IN_MONTH"); } }
+        public static int DAY_OF_WEEK_IN_MONTH { get { return SGetField<int>(LocalBridgeClazz, "DAY_OF_WEEK_IN_MONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DAY_OF_YEAR"/>
         /// </summary>
-        public static int DAY_OF_YEAR { get { return SGetField<int>(LocalClazz, "DAY_OF_YEAR"); } }
+        public static int DAY_OF_YEAR { get { return SGetField<int>(LocalBridgeClazz, "DAY_OF_YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DECEMBER"/>
         /// </summary>
-        public static int DECEMBER { get { return SGetField<int>(LocalClazz, "DECEMBER"); } }
+        public static int DECEMBER { get { return SGetField<int>(LocalBridgeClazz, "DECEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#DST_OFFSET"/>
         /// </summary>
-        public static int DST_OFFSET { get { return SGetField<int>(LocalClazz, "DST_OFFSET"); } }
+        public static int DST_OFFSET { get { return SGetField<int>(LocalBridgeClazz, "DST_OFFSET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ERA"/>
         /// </summary>
-        public static int ERA { get { return SGetField<int>(LocalClazz, "ERA"); } }
+        public static int ERA { get { return SGetField<int>(LocalBridgeClazz, "ERA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FEBRUARY"/>
         /// </summary>
-        public static int FEBRUARY { get { return SGetField<int>(LocalClazz, "FEBRUARY"); } }
+        public static int FEBRUARY { get { return SGetField<int>(LocalBridgeClazz, "FEBRUARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FIELD_COUNT"/>
         /// </summary>
-        public static int FIELD_COUNT { get { return SGetField<int>(LocalClazz, "FIELD_COUNT"); } }
+        public static int FIELD_COUNT { get { return SGetField<int>(LocalBridgeClazz, "FIELD_COUNT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#FRIDAY"/>
         /// </summary>
-        public static int FRIDAY { get { return SGetField<int>(LocalClazz, "FRIDAY"); } }
+        public static int FRIDAY { get { return SGetField<int>(LocalBridgeClazz, "FRIDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#HOUR"/>
         /// </summary>
-        public static int HOUR { get { return SGetField<int>(LocalClazz, "HOUR"); } }
+        public static int HOUR { get { return SGetField<int>(LocalBridgeClazz, "HOUR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#HOUR_OF_DAY"/>
         /// </summary>
-        public static int HOUR_OF_DAY { get { return SGetField<int>(LocalClazz, "HOUR_OF_DAY"); } }
+        public static int HOUR_OF_DAY { get { return SGetField<int>(LocalBridgeClazz, "HOUR_OF_DAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JANUARY"/>
         /// </summary>
-        public static int JANUARY { get { return SGetField<int>(LocalClazz, "JANUARY"); } }
+        public static int JANUARY { get { return SGetField<int>(LocalBridgeClazz, "JANUARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JULY"/>
         /// </summary>
-        public static int JULY { get { return SGetField<int>(LocalClazz, "JULY"); } }
+        public static int JULY { get { return SGetField<int>(LocalBridgeClazz, "JULY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#JUNE"/>
         /// </summary>
-        public static int JUNE { get { return SGetField<int>(LocalClazz, "JUNE"); } }
+        public static int JUNE { get { return SGetField<int>(LocalBridgeClazz, "JUNE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG"/>
         /// </summary>
-        public static int LONG { get { return SGetField<int>(LocalClazz, "LONG"); } }
+        public static int LONG { get { return SGetField<int>(LocalBridgeClazz, "LONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG_FORMAT"/>
         /// </summary>
-        public static int LONG_FORMAT { get { return SGetField<int>(LocalClazz, "LONG_FORMAT"); } }
+        public static int LONG_FORMAT { get { return SGetField<int>(LocalBridgeClazz, "LONG_FORMAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#LONG_STANDALONE"/>
         /// </summary>
-        public static int LONG_STANDALONE { get { return SGetField<int>(LocalClazz, "LONG_STANDALONE"); } }
+        public static int LONG_STANDALONE { get { return SGetField<int>(LocalBridgeClazz, "LONG_STANDALONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MARCH"/>
         /// </summary>
-        public static int MARCH { get { return SGetField<int>(LocalClazz, "MARCH"); } }
+        public static int MARCH { get { return SGetField<int>(LocalBridgeClazz, "MARCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MAY"/>
         /// </summary>
-        public static int MAY { get { return SGetField<int>(LocalClazz, "MAY"); } }
+        public static int MAY { get { return SGetField<int>(LocalBridgeClazz, "MAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MILLISECOND"/>
         /// </summary>
-        public static int MILLISECOND { get { return SGetField<int>(LocalClazz, "MILLISECOND"); } }
+        public static int MILLISECOND { get { return SGetField<int>(LocalBridgeClazz, "MILLISECOND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MINUTE"/>
         /// </summary>
-        public static int MINUTE { get { return SGetField<int>(LocalClazz, "MINUTE"); } }
+        public static int MINUTE { get { return SGetField<int>(LocalBridgeClazz, "MINUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MONDAY"/>
         /// </summary>
-        public static int MONDAY { get { return SGetField<int>(LocalClazz, "MONDAY"); } }
+        public static int MONDAY { get { return SGetField<int>(LocalBridgeClazz, "MONDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#MONTH"/>
         /// </summary>
-        public static int MONTH { get { return SGetField<int>(LocalClazz, "MONTH"); } }
+        public static int MONTH { get { return SGetField<int>(LocalBridgeClazz, "MONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NARROW_FORMAT"/>
         /// </summary>
-        public static int NARROW_FORMAT { get { return SGetField<int>(LocalClazz, "NARROW_FORMAT"); } }
+        public static int NARROW_FORMAT { get { return SGetField<int>(LocalBridgeClazz, "NARROW_FORMAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NARROW_STANDALONE"/>
         /// </summary>
-        public static int NARROW_STANDALONE { get { return SGetField<int>(LocalClazz, "NARROW_STANDALONE"); } }
+        public static int NARROW_STANDALONE { get { return SGetField<int>(LocalBridgeClazz, "NARROW_STANDALONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#NOVEMBER"/>
         /// </summary>
-        public static int NOVEMBER { get { return SGetField<int>(LocalClazz, "NOVEMBER"); } }
+        public static int NOVEMBER { get { return SGetField<int>(LocalBridgeClazz, "NOVEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#OCTOBER"/>
         /// </summary>
-        public static int OCTOBER { get { return SGetField<int>(LocalClazz, "OCTOBER"); } }
+        public static int OCTOBER { get { return SGetField<int>(LocalBridgeClazz, "OCTOBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#PM"/>
         /// </summary>
-        public static int PM { get { return SGetField<int>(LocalClazz, "PM"); } }
+        public static int PM { get { return SGetField<int>(LocalBridgeClazz, "PM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SATURDAY"/>
         /// </summary>
-        public static int SATURDAY { get { return SGetField<int>(LocalClazz, "SATURDAY"); } }
+        public static int SATURDAY { get { return SGetField<int>(LocalBridgeClazz, "SATURDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SECOND"/>
         /// </summary>
-        public static int SECOND { get { return SGetField<int>(LocalClazz, "SECOND"); } }
+        public static int SECOND { get { return SGetField<int>(LocalBridgeClazz, "SECOND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SEPTEMBER"/>
         /// </summary>
-        public static int SEPTEMBER { get { return SGetField<int>(LocalClazz, "SEPTEMBER"); } }
+        public static int SEPTEMBER { get { return SGetField<int>(LocalBridgeClazz, "SEPTEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT"/>
         /// </summary>
-        public static int SHORT { get { return SGetField<int>(LocalClazz, "SHORT"); } }
+        public static int SHORT { get { return SGetField<int>(LocalBridgeClazz, "SHORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT_FORMAT"/>
         /// </summary>
-        public static int SHORT_FORMAT { get { return SGetField<int>(LocalClazz, "SHORT_FORMAT"); } }
+        public static int SHORT_FORMAT { get { return SGetField<int>(LocalBridgeClazz, "SHORT_FORMAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SHORT_STANDALONE"/>
         /// </summary>
-        public static int SHORT_STANDALONE { get { return SGetField<int>(LocalClazz, "SHORT_STANDALONE"); } }
+        public static int SHORT_STANDALONE { get { return SGetField<int>(LocalBridgeClazz, "SHORT_STANDALONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#SUNDAY"/>
         /// </summary>
-        public static int SUNDAY { get { return SGetField<int>(LocalClazz, "SUNDAY"); } }
+        public static int SUNDAY { get { return SGetField<int>(LocalBridgeClazz, "SUNDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#THURSDAY"/>
         /// </summary>
-        public static int THURSDAY { get { return SGetField<int>(LocalClazz, "THURSDAY"); } }
+        public static int THURSDAY { get { return SGetField<int>(LocalBridgeClazz, "THURSDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#TUESDAY"/>
         /// </summary>
-        public static int TUESDAY { get { return SGetField<int>(LocalClazz, "TUESDAY"); } }
+        public static int TUESDAY { get { return SGetField<int>(LocalBridgeClazz, "TUESDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#UNDECIMBER"/>
         /// </summary>
-        public static int UNDECIMBER { get { return SGetField<int>(LocalClazz, "UNDECIMBER"); } }
+        public static int UNDECIMBER { get { return SGetField<int>(LocalBridgeClazz, "UNDECIMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEDNESDAY"/>
         /// </summary>
-        public static int WEDNESDAY { get { return SGetField<int>(LocalClazz, "WEDNESDAY"); } }
+        public static int WEDNESDAY { get { return SGetField<int>(LocalBridgeClazz, "WEDNESDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEEK_OF_MONTH"/>
         /// </summary>
-        public static int WEEK_OF_MONTH { get { return SGetField<int>(LocalClazz, "WEEK_OF_MONTH"); } }
+        public static int WEEK_OF_MONTH { get { return SGetField<int>(LocalBridgeClazz, "WEEK_OF_MONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#WEEK_OF_YEAR"/>
         /// </summary>
-        public static int WEEK_OF_YEAR { get { return SGetField<int>(LocalClazz, "WEEK_OF_YEAR"); } }
+        public static int WEEK_OF_YEAR { get { return SGetField<int>(LocalBridgeClazz, "WEEK_OF_YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#YEAR"/>
         /// </summary>
-        public static int YEAR { get { return SGetField<int>(LocalClazz, "YEAR"); } }
+        public static int YEAR { get { return SGetField<int>(LocalBridgeClazz, "YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#ZONE_OFFSET"/>
         /// </summary>
-        public static int ZONE_OFFSET { get { return SGetField<int>(LocalClazz, "ZONE_OFFSET"); } }
+        public static int ZONE_OFFSET { get { return SGetField<int>(LocalBridgeClazz, "ZONE_OFFSET"); } }
 
         #endregion
 
@@ -258,23 +258,21 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteArray<Java.Util.Locale>(LocalClazz, "getAvailableLocales"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getAvailableCalendarTypes()"/> 
         /// </summary>
         public static Java.Util.Set<string> GetAvailableCalendarTypes
         {
-            get { return SExecute<Java.Util.Set<string>>(LocalClazz, "getAvailableCalendarTypes"); }
+            get { return SExecute<Java.Util.Set<string>>(LocalBridgeClazz, "getAvailableCalendarTypes"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance()"/> 
         /// </summary>
-
-        /// <returns><see cref="Java.Util.Calendar"/></returns>
-        public static Java.Util.Calendar GetInstance()
+        public static Java.Util.Calendar Instance
         {
-            return SExecute<Java.Util.Calendar>(LocalClazz, "getInstance");
+            get { return SExecute<Java.Util.Calendar>(LocalBridgeClazz, "getInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.Locale)"/>
@@ -283,7 +281,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Util.Calendar>(LocalClazz, "getInstance", arg0);
+            return SExecute<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone,java.util.Locale)"/>
@@ -293,7 +291,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.TimeZone arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Util.Calendar>(LocalClazz, "getInstance", arg0, arg1);
+            return SExecute<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#getInstance(java.util.TimeZone)"/>
@@ -302,7 +300,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Calendar"/></returns>
         public static Java.Util.Calendar GetInstance(Java.Util.TimeZone arg0)
         {
-            return SExecute<Java.Util.Calendar>(LocalClazz, "getInstance", arg0);
+            return SExecute<Java.Util.Calendar>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion

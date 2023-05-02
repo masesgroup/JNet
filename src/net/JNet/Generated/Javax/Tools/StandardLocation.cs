@@ -40,55 +40,55 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#ANNOTATION_PROCESSOR_MODULE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation ANNOTATION_PROCESSOR_MODULE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "ANNOTATION_PROCESSOR_MODULE_PATH"); } }
+        public static Javax.Tools.StandardLocation ANNOTATION_PROCESSOR_MODULE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "ANNOTATION_PROCESSOR_MODULE_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#ANNOTATION_PROCESSOR_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation ANNOTATION_PROCESSOR_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "ANNOTATION_PROCESSOR_PATH"); } }
+        public static Javax.Tools.StandardLocation ANNOTATION_PROCESSOR_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "ANNOTATION_PROCESSOR_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#CLASS_OUTPUT"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation CLASS_OUTPUT { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "CLASS_OUTPUT"); } }
+        public static Javax.Tools.StandardLocation CLASS_OUTPUT { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "CLASS_OUTPUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#CLASS_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation CLASS_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "CLASS_PATH"); } }
+        public static Javax.Tools.StandardLocation CLASS_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "CLASS_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#MODULE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation MODULE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "MODULE_PATH"); } }
+        public static Javax.Tools.StandardLocation MODULE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "MODULE_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#MODULE_SOURCE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation MODULE_SOURCE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "MODULE_SOURCE_PATH"); } }
+        public static Javax.Tools.StandardLocation MODULE_SOURCE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "MODULE_SOURCE_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#NATIVE_HEADER_OUTPUT"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation NATIVE_HEADER_OUTPUT { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "NATIVE_HEADER_OUTPUT"); } }
+        public static Javax.Tools.StandardLocation NATIVE_HEADER_OUTPUT { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "NATIVE_HEADER_OUTPUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#PATCH_MODULE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation PATCH_MODULE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "PATCH_MODULE_PATH"); } }
+        public static Javax.Tools.StandardLocation PATCH_MODULE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "PATCH_MODULE_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#PLATFORM_CLASS_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation PLATFORM_CLASS_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "PLATFORM_CLASS_PATH"); } }
+        public static Javax.Tools.StandardLocation PLATFORM_CLASS_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "PLATFORM_CLASS_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SOURCE_OUTPUT"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation SOURCE_OUTPUT { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "SOURCE_OUTPUT"); } }
+        public static Javax.Tools.StandardLocation SOURCE_OUTPUT { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "SOURCE_OUTPUT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SOURCE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation SOURCE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "SOURCE_PATH"); } }
+        public static Javax.Tools.StandardLocation SOURCE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "SOURCE_PATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#SYSTEM_MODULES"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation SYSTEM_MODULES { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "SYSTEM_MODULES"); } }
+        public static Javax.Tools.StandardLocation SYSTEM_MODULES { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "SYSTEM_MODULES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#UPGRADE_MODULE_PATH"/>
         /// </summary>
-        public static Javax.Tools.StandardLocation UPGRADE_MODULE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalClazz, "UPGRADE_MODULE_PATH"); } }
+        public static Javax.Tools.StandardLocation UPGRADE_MODULE_PATH { get { return SGetField<Javax.Tools.StandardLocation>(LocalBridgeClazz, "UPGRADE_MODULE_PATH"); } }
 
         #endregion
 
@@ -98,7 +98,7 @@ namespace Javax.Tools
         /// </summary>
         public static Javax.Tools.StandardLocation[] Values
         {
-            get { return SExecuteArray<Javax.Tools.StandardLocation>(LocalClazz, "values"); }
+            get { return SExecuteArray<Javax.Tools.StandardLocation>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#locationFor(java.lang.String)"/>
@@ -107,7 +107,7 @@ namespace Javax.Tools
         /// <returns><see cref="Javax.Tools.JavaFileManager.Location"/></returns>
         public static Javax.Tools.JavaFileManager.Location LocationFor(string arg0)
         {
-            return SExecute<Javax.Tools.JavaFileManager.Location>(LocalClazz, "locationFor", arg0);
+            return SExecute<Javax.Tools.JavaFileManager.Location>(LocalBridgeClazz, "locationFor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#valueOf(java.lang.String)"/>
@@ -116,7 +116,7 @@ namespace Javax.Tools
         /// <returns><see cref="Javax.Tools.StandardLocation"/></returns>
         public static Javax.Tools.StandardLocation ValueOf(string arg0)
         {
-            return SExecute<Javax.Tools.StandardLocation>(LocalClazz, "valueOf", arg0);
+            return SExecute<Javax.Tools.StandardLocation>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

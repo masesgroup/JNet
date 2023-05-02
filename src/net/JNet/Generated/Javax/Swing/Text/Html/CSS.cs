@@ -50,7 +50,7 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         public static Javax.Swing.Text.Html.CSS.Attribute[] AllAttributeKeys
         {
-            get { return SExecuteArray<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "getAllAttributeKeys"); }
+            get { return SExecuteArray<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "getAllAttributeKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.html#getAttribute(java.lang.String)"/>
@@ -59,7 +59,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="Javax.Swing.Text.Html.CSS.Attribute"/></returns>
         public static Javax.Swing.Text.Html.CSS.Attribute GetAttribute(string arg0)
         {
-            return SExecute<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "getAttribute", arg0);
+            return SExecute<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "getAttribute", arg0);
         }
 
         #endregion
@@ -84,247 +84,247 @@ namespace Javax.Swing.Text.Html
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BACKGROUND"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BACKGROUND"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_ATTACHMENT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_ATTACHMENT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BACKGROUND_ATTACHMENT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_ATTACHMENT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BACKGROUND_ATTACHMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_COLOR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BACKGROUND_COLOR"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BACKGROUND_COLOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_IMAGE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_IMAGE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BACKGROUND_IMAGE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_IMAGE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BACKGROUND_IMAGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_POSITION"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_POSITION { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BACKGROUND_POSITION"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_POSITION { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BACKGROUND_POSITION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BACKGROUND_REPEAT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_REPEAT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BACKGROUND_REPEAT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BACKGROUND_REPEAT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BACKGROUND_REPEAT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_BOTTOM"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_BOTTOM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM_COLOR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_BOTTOM_COLOR"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_BOTTOM_COLOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM_STYLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_BOTTOM_STYLE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_BOTTOM_STYLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_BOTTOM_WIDTH"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM_WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_BOTTOM_WIDTH"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_BOTTOM_WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_BOTTOM_WIDTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_COLOR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_COLOR"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_COLOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_LEFT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_LEFT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT_COLOR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_LEFT_COLOR"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_LEFT_COLOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT_STYLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_LEFT_STYLE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_LEFT_STYLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_LEFT_WIDTH"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT_WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_LEFT_WIDTH"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_LEFT_WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_LEFT_WIDTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_RIGHT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_RIGHT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT_COLOR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_RIGHT_COLOR"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_RIGHT_COLOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT_STYLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_RIGHT_STYLE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_RIGHT_STYLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_RIGHT_WIDTH"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT_WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_RIGHT_WIDTH"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_RIGHT_WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_RIGHT_WIDTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_STYLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_STYLE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_STYLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_TOP"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_TOP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP_COLOR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_TOP_COLOR"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP_COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_TOP_COLOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP_STYLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_TOP_STYLE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_TOP_STYLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_TOP_WIDTH"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP_WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_TOP_WIDTH"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_TOP_WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_TOP_WIDTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#BORDER_WIDTH"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "BORDER_WIDTH"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute BORDER_WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "BORDER_WIDTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#CLEAR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute CLEAR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "CLEAR"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute CLEAR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "CLEAR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#COLOR"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "COLOR"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute COLOR { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "COLOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#DISPLAY"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute DISPLAY { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "DISPLAY"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute DISPLAY { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "DISPLAY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FLOAT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute FLOAT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "FLOAT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute FLOAT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "FLOAT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute FONT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "FONT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute FONT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "FONT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_FAMILY"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute FONT_FAMILY { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "FONT_FAMILY"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute FONT_FAMILY { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "FONT_FAMILY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_SIZE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute FONT_SIZE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "FONT_SIZE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute FONT_SIZE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "FONT_SIZE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_STYLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute FONT_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "FONT_STYLE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute FONT_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "FONT_STYLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_VARIANT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute FONT_VARIANT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "FONT_VARIANT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute FONT_VARIANT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "FONT_VARIANT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#FONT_WEIGHT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute FONT_WEIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "FONT_WEIGHT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute FONT_WEIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "FONT_WEIGHT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#HEIGHT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute HEIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "HEIGHT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute HEIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "HEIGHT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LETTER_SPACING"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute LETTER_SPACING { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "LETTER_SPACING"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute LETTER_SPACING { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "LETTER_SPACING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LINE_HEIGHT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute LINE_HEIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "LINE_HEIGHT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute LINE_HEIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "LINE_HEIGHT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "LIST_STYLE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "LIST_STYLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE_IMAGE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE_IMAGE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "LIST_STYLE_IMAGE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE_IMAGE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "LIST_STYLE_IMAGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE_POSITION"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE_POSITION { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "LIST_STYLE_POSITION"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE_POSITION { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "LIST_STYLE_POSITION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#LIST_STYLE_TYPE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE_TYPE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "LIST_STYLE_TYPE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute LIST_STYLE_TYPE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "LIST_STYLE_TYPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute MARGIN { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "MARGIN"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute MARGIN { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "MARGIN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_BOTTOM"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_BOTTOM { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "MARGIN_BOTTOM"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_BOTTOM { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "MARGIN_BOTTOM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_LEFT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_LEFT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "MARGIN_LEFT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_LEFT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "MARGIN_LEFT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_RIGHT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_RIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "MARGIN_RIGHT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_RIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "MARGIN_RIGHT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#MARGIN_TOP"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_TOP { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "MARGIN_TOP"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute MARGIN_TOP { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "MARGIN_TOP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute PADDING { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "PADDING"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute PADDING { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "PADDING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_BOTTOM"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute PADDING_BOTTOM { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "PADDING_BOTTOM"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute PADDING_BOTTOM { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "PADDING_BOTTOM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_LEFT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute PADDING_LEFT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "PADDING_LEFT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute PADDING_LEFT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "PADDING_LEFT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_RIGHT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute PADDING_RIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "PADDING_RIGHT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute PADDING_RIGHT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "PADDING_RIGHT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#PADDING_TOP"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute PADDING_TOP { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "PADDING_TOP"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute PADDING_TOP { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "PADDING_TOP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_ALIGN"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute TEXT_ALIGN { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "TEXT_ALIGN"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute TEXT_ALIGN { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "TEXT_ALIGN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_DECORATION"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute TEXT_DECORATION { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "TEXT_DECORATION"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute TEXT_DECORATION { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "TEXT_DECORATION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_INDENT"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute TEXT_INDENT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "TEXT_INDENT"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute TEXT_INDENT { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "TEXT_INDENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#TEXT_TRANSFORM"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute TEXT_TRANSFORM { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "TEXT_TRANSFORM"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute TEXT_TRANSFORM { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "TEXT_TRANSFORM"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#VERTICAL_ALIGN"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute VERTICAL_ALIGN { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "VERTICAL_ALIGN"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute VERTICAL_ALIGN { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "VERTICAL_ALIGN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WHITE_SPACE"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute WHITE_SPACE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "WHITE_SPACE"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute WHITE_SPACE { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "WHITE_SPACE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WIDTH"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "WIDTH"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute WIDTH { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "WIDTH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WORD_SPACING"/>
             /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute WORD_SPACING { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalClazz, "WORD_SPACING"); } }
+            public static Javax.Swing.Text.Html.CSS.Attribute WORD_SPACING { get { return SGetField<Javax.Swing.Text.Html.CSS.Attribute>(LocalBridgeClazz, "WORD_SPACING"); } }
 
             #endregion
 

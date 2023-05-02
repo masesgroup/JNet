@@ -40,7 +40,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultHighlighter.html#DefaultPainter"/>
         /// </summary>
-        public static Javax.Swing.Text.LayeredHighlighter.LayerPainter DefaultPainter { get { return SGetField<Javax.Swing.Text.LayeredHighlighter.LayerPainter>(LocalClazz, "DefaultPainter"); } }
+        public static Javax.Swing.Text.LayeredHighlighter.LayerPainter DefaultPainter { get { return SGetField<Javax.Swing.Text.LayeredHighlighter.LayerPainter>(LocalBridgeClazz, "DefaultPainter"); } }
 
         #endregion
 

@@ -40,11 +40,11 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#FEATURE"/>
         /// </summary>
-        public static string FEATURE { get { return SGetField<string>(LocalClazz, "FEATURE"); } }
+        public static string FEATURE { get { return SGetField<string>(LocalBridgeClazz, "FEATURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#FEATURE_XMLFILTER"/>
         /// </summary>
-        public static string FEATURE_XMLFILTER { get { return SGetField<string>(LocalClazz, "FEATURE_XMLFILTER"); } }
+        public static string FEATURE_XMLFILTER { get { return SGetField<string>(LocalBridgeClazz, "FEATURE_XMLFILTER"); } }
 
         #endregion
 

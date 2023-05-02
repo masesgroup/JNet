@@ -40,15 +40,15 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URIInaccessible"/>
         /// </summary>
-        public static int URIInaccessible { get { return SGetField<int>(LocalClazz, "URIInaccessible"); } }
+        public static int URIInaccessible { get { return SGetField<int>(LocalBridgeClazz, "URIInaccessible"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URIOtherProblem"/>
         /// </summary>
-        public static int URIOtherProblem { get { return SGetField<int>(LocalClazz, "URIOtherProblem"); } }
+        public static int URIOtherProblem { get { return SGetField<int>(LocalBridgeClazz, "URIOtherProblem"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#URISchemeNotSupported"/>
         /// </summary>
-        public static int URISchemeNotSupported { get { return SGetField<int>(LocalClazz, "URISchemeNotSupported"); } }
+        public static int URISchemeNotSupported { get { return SGetField<int>(LocalBridgeClazz, "URISchemeNotSupported"); } }
 
         #endregion
 

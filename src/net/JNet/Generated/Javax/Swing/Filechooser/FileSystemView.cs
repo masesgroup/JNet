@@ -46,7 +46,7 @@ namespace Javax.Swing.Filechooser
         /// </summary>
         public static Javax.Swing.Filechooser.FileSystemView GetFileSystemView
         {
-            get { return SExecute<Javax.Swing.Filechooser.FileSystemView>(LocalClazz, "getFileSystemView"); }
+            get { return SExecute<Javax.Swing.Filechooser.FileSystemView>(LocalBridgeClazz, "getFileSystemView"); }
         }
 
         #endregion

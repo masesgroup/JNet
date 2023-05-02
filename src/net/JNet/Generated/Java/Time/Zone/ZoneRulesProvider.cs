@@ -46,14 +46,14 @@ namespace Java.Time.Zone
         /// </summary>
         public static Java.Util.Set<string> AvailableZoneIds
         {
-            get { return SExecute<Java.Util.Set<string>>(LocalClazz, "getAvailableZoneIds"); }
+            get { return SExecute<Java.Util.Set<string>>(LocalBridgeClazz, "getAvailableZoneIds"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#refresh()"/> 
         /// </summary>
         public static bool Refresh
         {
-            get { return SExecute<bool>(LocalClazz, "refresh"); }
+            get { return SExecute<bool>(LocalBridgeClazz, "refresh"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getRules(java.lang.String,boolean)"/>
@@ -63,7 +63,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
         public static Java.Time.Zone.ZoneRules GetRules(string arg0, bool arg1)
         {
-            return SExecute<Java.Time.Zone.ZoneRules>(LocalClazz, "getRules", arg0, arg1);
+            return SExecute<Java.Time.Zone.ZoneRules>(LocalBridgeClazz, "getRules", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getVersions(java.lang.String)"/>
@@ -72,7 +72,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public static Java.Util.NavigableMap<string, Java.Time.Zone.ZoneRules> GetVersions(string arg0)
         {
-            return SExecute<Java.Util.NavigableMap<string, Java.Time.Zone.ZoneRules>>(LocalClazz, "getVersions", arg0);
+            return SExecute<Java.Util.NavigableMap<string, Java.Time.Zone.ZoneRules>>(LocalBridgeClazz, "getVersions", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#registerProvider(java.time.zone.ZoneRulesProvider)"/>
@@ -80,7 +80,7 @@ namespace Java.Time.Zone
         /// <param name="arg0"><see cref="Java.Time.Zone.ZoneRulesProvider"/></param>
         public static void RegisterProvider(Java.Time.Zone.ZoneRulesProvider arg0)
         {
-            SExecute(LocalClazz, "registerProvider", arg0);
+            SExecute(LocalBridgeClazz, "registerProvider", arg0);
         }
 
         #endregion

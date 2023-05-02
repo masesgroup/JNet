@@ -40,7 +40,7 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#LOOP_CONTINUOUSLY"/>
         /// </summary>
-        public static int LOOP_CONTINUOUSLY { get { return SGetField<int>(LocalClazz, "LOOP_CONTINUOUSLY"); } }
+        public static int LOOP_CONTINUOUSLY { get { return SGetField<int>(LocalBridgeClazz, "LOOP_CONTINUOUSLY"); } }
 
         #endregion
 

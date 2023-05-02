@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
 namespace Java.Lang
@@ -27,9 +28,9 @@ namespace Java.Lang
     public class Thread : JVMBridgeBase<Thread>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.Thread";
+        public override string BridgeClassName => "java.lang.Thread";
         /// <summary>
         /// Allocates a new Thread object.
         /// </summary>
@@ -199,39 +200,41 @@ namespace Java.Lang
         public class State : Java.Lang.Enum
         {
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.lang.Thread$State";
+            public override string BridgeClassName => "java.lang.Thread$State";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
+
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.lang.Thread$State");
 
             #region Fields
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#BLOCKED"/>
             /// </summary>
-            public static Java.Lang.Thread.State BLOCKED => Clazz.GetField<Java.Lang.Thread.State>("BLOCKED");
+            public static Java.Lang.Thread.State BLOCKED => LocalBridgeClazz.GetField<Java.Lang.Thread.State>("BLOCKED");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#NEW"/>
             /// </summary>
-            public static Java.Lang.Thread.State NEW => Clazz.GetField<Java.Lang.Thread.State>("NEW");
+            public static Java.Lang.Thread.State NEW => LocalBridgeClazz.GetField<Java.Lang.Thread.State>("NEW");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#RUNNABLE"/>
             /// </summary>
-            public static Java.Lang.Thread.State RUNNABLE => Clazz.GetField<Java.Lang.Thread.State>("RUNNABLE");
+            public static Java.Lang.Thread.State RUNNABLE => LocalBridgeClazz.GetField<Java.Lang.Thread.State>("RUNNABLE");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TERMINATED"/>
             /// </summary>
-            public static Java.Lang.Thread.State TERMINATED => Clazz.GetField<Java.Lang.Thread.State>("TERMINATED");
+            public static Java.Lang.Thread.State TERMINATED => LocalBridgeClazz.GetField<Java.Lang.Thread.State>("TERMINATED");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TIMED_WAITING"/>
             /// </summary>
-            public static Java.Lang.Thread.State TIMED_WAITING => Clazz.GetField<Java.Lang.Thread.State>("TIMED_WAITING");
+            public static Java.Lang.Thread.State TIMED_WAITING => LocalBridgeClazz.GetField<Java.Lang.Thread.State>("TIMED_WAITING");
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#WAITING"/>
             /// </summary>
-            public static Java.Lang.Thread.State WAITING => Clazz.GetField<Java.Lang.Thread.State>("WAITING");
+            public static Java.Lang.Thread.State WAITING => LocalBridgeClazz.GetField<Java.Lang.Thread.State>("WAITING");
 
             #endregion
 
@@ -261,15 +264,15 @@ namespace Java.Lang
 
         #region Thread.UncaughtExceptionHandler
         /// <summary>
-        /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html"/>. Extends <see cref="JVMBridgeListener"/>
+        /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
         /// </summary>
         /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
         public class UncaughtExceptionHandler : JVMBridgeListener
         {
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "org.mases.jnet.lang.JNetUncaughtExceptionHandler";
+            public override string BridgeClassName => "org.mases.jnet.lang.JNetUncaughtExceptionHandler";
 
             readonly Action<Thread, JVMBridgeException> executionFunction = null;
             /// <summary>

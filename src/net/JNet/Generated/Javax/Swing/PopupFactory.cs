@@ -46,7 +46,7 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.PopupFactory SharedInstance
         {
-            get { return SExecute<Javax.Swing.PopupFactory>(LocalClazz, "getSharedInstance"); } set { SExecute(LocalClazz, "setSharedInstance", value); }
+            get { return SExecute<Javax.Swing.PopupFactory>(LocalBridgeClazz, "getSharedInstance"); } set { SExecute(LocalBridgeClazz, "setSharedInstance", value); }
         }
 
         #endregion

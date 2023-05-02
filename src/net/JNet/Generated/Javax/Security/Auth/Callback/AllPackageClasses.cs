@@ -40,28 +40,28 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public Callback(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.callback.Callback");
+        private static IJavaType LocalBridgeClazz = ClazzOf("javax.security.auth.callback.Callback");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "javax.security.auth.callback.Callback";
+        public override string BridgeClassName => "javax.security.auth.callback.Callback";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => true;
+        public override bool IsBridgeAbstract => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => true;
+        public override bool IsBridgeInterface => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
 
@@ -83,28 +83,28 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public CallbackHandler(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.callback.CallbackHandler");
+        private static IJavaType LocalBridgeClazz = ClazzOf("javax.security.auth.callback.CallbackHandler");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "javax.security.auth.callback.CallbackHandler";
+        public override string BridgeClassName => "javax.security.auth.callback.CallbackHandler";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => true;
+        public override bool IsBridgeAbstract => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => true;
+        public override bool IsBridgeInterface => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
 
@@ -126,28 +126,28 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public ChoiceCallback(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.callback.ChoiceCallback");
+        private static IJavaType LocalBridgeClazz = ClazzOf("javax.security.auth.callback.ChoiceCallback");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "javax.security.auth.callback.ChoiceCallback";
+        public override string BridgeClassName => "javax.security.auth.callback.ChoiceCallback";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => false;
+        public override bool IsBridgeAbstract => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => false;
+        public override bool IsBridgeInterface => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
 
@@ -169,28 +169,28 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public ConfirmationCallback(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.callback.ConfirmationCallback");
+        private static IJavaType LocalBridgeClazz = ClazzOf("javax.security.auth.callback.ConfirmationCallback");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "javax.security.auth.callback.ConfirmationCallback";
+        public override string BridgeClassName => "javax.security.auth.callback.ConfirmationCallback";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => false;
+        public override bool IsBridgeAbstract => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => false;
+        public override bool IsBridgeInterface => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
 
@@ -212,28 +212,28 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public LanguageCallback(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.callback.LanguageCallback");
+        private static IJavaType LocalBridgeClazz = ClazzOf("javax.security.auth.callback.LanguageCallback");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "javax.security.auth.callback.LanguageCallback";
+        public override string BridgeClassName => "javax.security.auth.callback.LanguageCallback";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => false;
+        public override bool IsBridgeAbstract => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => false;
+        public override bool IsBridgeInterface => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
 
@@ -255,28 +255,28 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public NameCallback(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.callback.NameCallback");
+        private static IJavaType LocalBridgeClazz = ClazzOf("javax.security.auth.callback.NameCallback");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "javax.security.auth.callback.NameCallback";
+        public override string BridgeClassName => "javax.security.auth.callback.NameCallback";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => false;
+        public override bool IsBridgeAbstract => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => false;
+        public override bool IsBridgeInterface => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
 
@@ -298,28 +298,28 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public PasswordCallback(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.callback.PasswordCallback");
+        private static IJavaType LocalBridgeClazz = ClazzOf("javax.security.auth.callback.PasswordCallback");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "javax.security.auth.callback.PasswordCallback";
+        public override string BridgeClassName => "javax.security.auth.callback.PasswordCallback";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => false;
+        public override bool IsBridgeAbstract => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => false;
+        public override bool IsBridgeInterface => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
 
@@ -341,28 +341,28 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public TextInputCallback(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.callback.TextInputCallback");
+        private static IJavaType LocalBridgeClazz = ClazzOf("javax.security.auth.callback.TextInputCallback");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "javax.security.auth.callback.TextInputCallback";
+        public override string BridgeClassName => "javax.security.auth.callback.TextInputCallback";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => false;
+        public override bool IsBridgeAbstract => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => false;
+        public override bool IsBridgeInterface => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
 
@@ -384,28 +384,28 @@ namespace Javax.Security.Auth.Callback
         /// </summary>
         public TextOutputCallback(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("javax.security.auth.callback.TextOutputCallback");
+        private static IJavaType LocalBridgeClazz = ClazzOf("javax.security.auth.callback.TextOutputCallback");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "javax.security.auth.callback.TextOutputCallback";
+        public override string BridgeClassName => "javax.security.auth.callback.TextOutputCallback";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => false;
+        public override bool IsBridgeAbstract => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => false;
+        public override bool IsBridgeInterface => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
 
@@ -419,9 +419,9 @@ namespace Javax.Security.Auth.Callback
     public partial class UnsupportedCallbackException : Java.Lang.Exception
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "javax.security.auth.callback.UnsupportedCallbackException";
+        public override string BridgeClassName => "javax.security.auth.callback.UnsupportedCallbackException";
 
         // TODO: complete the class
 

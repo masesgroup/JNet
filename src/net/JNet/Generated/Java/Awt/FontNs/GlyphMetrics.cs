@@ -62,23 +62,23 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#COMBINING"/>
         /// </summary>
-        public static byte COMBINING { get { return SGetField<byte>(LocalClazz, "COMBINING"); } }
+        public static byte COMBINING { get { return SGetField<byte>(LocalBridgeClazz, "COMBINING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#COMPONENT"/>
         /// </summary>
-        public static byte COMPONENT { get { return SGetField<byte>(LocalClazz, "COMPONENT"); } }
+        public static byte COMPONENT { get { return SGetField<byte>(LocalBridgeClazz, "COMPONENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#LIGATURE"/>
         /// </summary>
-        public static byte LIGATURE { get { return SGetField<byte>(LocalClazz, "LIGATURE"); } }
+        public static byte LIGATURE { get { return SGetField<byte>(LocalBridgeClazz, "LIGATURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#STANDARD"/>
         /// </summary>
-        public static byte STANDARD { get { return SGetField<byte>(LocalClazz, "STANDARD"); } }
+        public static byte STANDARD { get { return SGetField<byte>(LocalBridgeClazz, "STANDARD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#WHITESPACE"/>
         /// </summary>
-        public static byte WHITESPACE { get { return SGetField<byte>(LocalClazz, "WHITESPACE"); } }
+        public static byte WHITESPACE { get { return SGetField<byte>(LocalBridgeClazz, "WHITESPACE"); } }
 
         #endregion
 

@@ -40,15 +40,15 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#LENIENT"/>
         /// </summary>
-        public static Java.Time.Format.ResolverStyle LENIENT { get { return SGetField<Java.Time.Format.ResolverStyle>(LocalClazz, "LENIENT"); } }
+        public static Java.Time.Format.ResolverStyle LENIENT { get { return SGetField<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "LENIENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#SMART"/>
         /// </summary>
-        public static Java.Time.Format.ResolverStyle SMART { get { return SGetField<Java.Time.Format.ResolverStyle>(LocalClazz, "SMART"); } }
+        public static Java.Time.Format.ResolverStyle SMART { get { return SGetField<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "SMART"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#STRICT"/>
         /// </summary>
-        public static Java.Time.Format.ResolverStyle STRICT { get { return SGetField<Java.Time.Format.ResolverStyle>(LocalClazz, "STRICT"); } }
+        public static Java.Time.Format.ResolverStyle STRICT { get { return SGetField<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "STRICT"); } }
 
         #endregion
 
@@ -58,7 +58,7 @@ namespace Java.Time.Format
         /// </summary>
         public static Java.Time.Format.ResolverStyle[] Values
         {
-            get { return SExecuteArray<Java.Time.Format.ResolverStyle>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html#valueOf(java.lang.String)"/>
@@ -67,7 +67,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.ResolverStyle"/></returns>
         public static Java.Time.Format.ResolverStyle ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Format.ResolverStyle>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

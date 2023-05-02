@@ -105,7 +105,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public static void SetSocketImplFactory(Java.Net.SocketImplFactory arg0)
         {
-            SExecute(LocalClazz, "setSocketImplFactory", arg0);
+            SExecute(LocalBridgeClazz, "setSocketImplFactory", arg0);
         }
 
         #endregion

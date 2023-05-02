@@ -50,7 +50,7 @@ namespace Java.Nio.Channels
         /// </summary>
         public static Java.Nio.Channels.Selector Open
         {
-            get { return SExecute<Java.Nio.Channels.Selector>(LocalClazz, "open"); }
+            get { return SExecute<Java.Nio.Channels.Selector>(LocalBridgeClazz, "open"); }
         }
 
         #endregion

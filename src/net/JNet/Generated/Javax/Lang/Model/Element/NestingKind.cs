@@ -40,19 +40,19 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#ANONYMOUS"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind ANONYMOUS { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "ANONYMOUS"); } }
+        public static Javax.Lang.Model.Element.NestingKind ANONYMOUS { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "ANONYMOUS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#LOCAL"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind LOCAL { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "LOCAL"); } }
+        public static Javax.Lang.Model.Element.NestingKind LOCAL { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "LOCAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#MEMBER"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind MEMBER { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "MEMBER"); } }
+        public static Javax.Lang.Model.Element.NestingKind MEMBER { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "MEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#TOP_LEVEL"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind TOP_LEVEL { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "TOP_LEVEL"); } }
+        public static Javax.Lang.Model.Element.NestingKind TOP_LEVEL { get { return SGetField<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "TOP_LEVEL"); } }
 
         #endregion
 
@@ -62,7 +62,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public static Javax.Lang.Model.Element.NestingKind[] Values
         {
-            get { return SExecuteArray<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "values"); }
+            get { return SExecuteArray<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#valueOf(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="Javax.Lang.Model.Element.NestingKind"/></returns>
         public static Javax.Lang.Model.Element.NestingKind ValueOf(string arg0)
         {
-            return SExecute<Javax.Lang.Model.Element.NestingKind>(LocalClazz, "valueOf", arg0);
+            return SExecute<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

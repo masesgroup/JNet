@@ -143,15 +143,15 @@ namespace Java.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#INPUT_METHOD_SEGMENT"/>
             /// </summary>
-            public static Java.Text.AttributedCharacterIterator.Attribute INPUT_METHOD_SEGMENT { get { return SGetField<Java.Text.AttributedCharacterIterator.Attribute>(LocalClazz, "INPUT_METHOD_SEGMENT"); } }
+            public static Java.Text.AttributedCharacterIterator.Attribute INPUT_METHOD_SEGMENT { get { return SGetField<Java.Text.AttributedCharacterIterator.Attribute>(LocalBridgeClazz, "INPUT_METHOD_SEGMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#LANGUAGE"/>
             /// </summary>
-            public static Java.Text.AttributedCharacterIterator.Attribute LANGUAGE { get { return SGetField<Java.Text.AttributedCharacterIterator.Attribute>(LocalClazz, "LANGUAGE"); } }
+            public static Java.Text.AttributedCharacterIterator.Attribute LANGUAGE { get { return SGetField<Java.Text.AttributedCharacterIterator.Attribute>(LocalBridgeClazz, "LANGUAGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#READING"/>
             /// </summary>
-            public static Java.Text.AttributedCharacterIterator.Attribute READING { get { return SGetField<Java.Text.AttributedCharacterIterator.Attribute>(LocalClazz, "READING"); } }
+            public static Java.Text.AttributedCharacterIterator.Attribute READING { get { return SGetField<Java.Text.AttributedCharacterIterator.Attribute>(LocalBridgeClazz, "READING"); } }
 
             #endregion
 

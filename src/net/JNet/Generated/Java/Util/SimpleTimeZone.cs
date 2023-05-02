@@ -104,15 +104,15 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#STANDARD_TIME"/>
         /// </summary>
-        public static int STANDARD_TIME { get { return SGetField<int>(LocalClazz, "STANDARD_TIME"); } }
+        public static int STANDARD_TIME { get { return SGetField<int>(LocalBridgeClazz, "STANDARD_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#UTC_TIME"/>
         /// </summary>
-        public static int UTC_TIME { get { return SGetField<int>(LocalClazz, "UTC_TIME"); } }
+        public static int UTC_TIME { get { return SGetField<int>(LocalBridgeClazz, "UTC_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#WALL_TIME"/>
         /// </summary>
-        public static int WALL_TIME { get { return SGetField<int>(LocalClazz, "WALL_TIME"); } }
+        public static int WALL_TIME { get { return SGetField<int>(LocalBridgeClazz, "WALL_TIME"); } }
 
         #endregion
 

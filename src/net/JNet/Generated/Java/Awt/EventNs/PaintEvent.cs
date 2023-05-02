@@ -50,19 +50,19 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT"/>
         /// </summary>
-        public static int PAINT { get { return SGetField<int>(LocalClazz, "PAINT"); } }
+        public static int PAINT { get { return SGetField<int>(LocalBridgeClazz, "PAINT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT_FIRST"/>
         /// </summary>
-        public static int PAINT_FIRST { get { return SGetField<int>(LocalClazz, "PAINT_FIRST"); } }
+        public static int PAINT_FIRST { get { return SGetField<int>(LocalBridgeClazz, "PAINT_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT_LAST"/>
         /// </summary>
-        public static int PAINT_LAST { get { return SGetField<int>(LocalClazz, "PAINT_LAST"); } }
+        public static int PAINT_LAST { get { return SGetField<int>(LocalBridgeClazz, "PAINT_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#UPDATE"/>
         /// </summary>
-        public static int UPDATE { get { return SGetField<int>(LocalClazz, "UPDATE"); } }
+        public static int UPDATE { get { return SGetField<int>(LocalBridgeClazz, "UPDATE"); } }
 
         #endregion
 

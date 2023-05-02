@@ -44,9 +44,9 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html#getInstance()"/> 
         /// </summary>
-        public static Org.Ietf.Jgss.GSSManager GetInstance
+        public static Org.Ietf.Jgss.GSSManager Instance
         {
-            get { return SExecute<Org.Ietf.Jgss.GSSManager>(LocalClazz, "getInstance"); }
+            get { return SExecute<Org.Ietf.Jgss.GSSManager>(LocalBridgeClazz, "getInstance"); }
         }
 
         #endregion

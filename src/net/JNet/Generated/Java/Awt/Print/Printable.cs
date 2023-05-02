@@ -40,11 +40,11 @@ namespace Java.Awt.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#NO_SUCH_PAGE"/>
         /// </summary>
-        public static int NO_SUCH_PAGE { get { return SGetField<int>(LocalClazz, "NO_SUCH_PAGE"); } }
+        public static int NO_SUCH_PAGE { get { return SGetField<int>(LocalBridgeClazz, "NO_SUCH_PAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#PAGE_EXISTS"/>
         /// </summary>
-        public static int PAGE_EXISTS { get { return SGetField<int>(LocalClazz, "PAGE_EXISTS"); } }
+        public static int PAGE_EXISTS { get { return SGetField<int>(LocalBridgeClazz, "PAGE_EXISTS"); } }
 
         #endregion
 

@@ -70,19 +70,19 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_LEFT_TO_RIGHT"/>
         /// </summary>
-        public static int DIRECTION_DEFAULT_LEFT_TO_RIGHT { get { return SGetField<int>(LocalClazz, "DIRECTION_DEFAULT_LEFT_TO_RIGHT"); } }
+        public static int DIRECTION_DEFAULT_LEFT_TO_RIGHT { get { return SGetField<int>(LocalBridgeClazz, "DIRECTION_DEFAULT_LEFT_TO_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_RIGHT_TO_LEFT"/>
         /// </summary>
-        public static int DIRECTION_DEFAULT_RIGHT_TO_LEFT { get { return SGetField<int>(LocalClazz, "DIRECTION_DEFAULT_RIGHT_TO_LEFT"); } }
+        public static int DIRECTION_DEFAULT_RIGHT_TO_LEFT { get { return SGetField<int>(LocalBridgeClazz, "DIRECTION_DEFAULT_RIGHT_TO_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_LEFT_TO_RIGHT"/>
         /// </summary>
-        public static int DIRECTION_LEFT_TO_RIGHT { get { return SGetField<int>(LocalClazz, "DIRECTION_LEFT_TO_RIGHT"); } }
+        public static int DIRECTION_LEFT_TO_RIGHT { get { return SGetField<int>(LocalBridgeClazz, "DIRECTION_LEFT_TO_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_RIGHT_TO_LEFT"/>
         /// </summary>
-        public static int DIRECTION_RIGHT_TO_LEFT { get { return SGetField<int>(LocalClazz, "DIRECTION_RIGHT_TO_LEFT"); } }
+        public static int DIRECTION_RIGHT_TO_LEFT { get { return SGetField<int>(LocalBridgeClazz, "DIRECTION_RIGHT_TO_LEFT"); } }
 
         #endregion
 
@@ -96,7 +96,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public static bool RequiresBidi(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<bool>(LocalClazz, "requiresBidi", arg0, arg1, arg2);
+            return SExecute<bool>(LocalBridgeClazz, "requiresBidi", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#reorderVisually(byte[],int,java.lang.Object[],int,int)"/>
@@ -108,7 +108,7 @@ namespace Java.Text
         /// <param name="arg4"><see cref="int"/></param>
         public static void ReorderVisually(byte[] arg0, int arg1, object[] arg2, int arg3, int arg4)
         {
-            SExecute(LocalClazz, "reorderVisually", arg0, arg1, arg2, arg3, arg4);
+            SExecute(LocalBridgeClazz, "reorderVisually", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

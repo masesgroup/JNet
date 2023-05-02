@@ -46,7 +46,7 @@ namespace Java.Util.Stream
         /// </summary>
         public static Java.Util.Stream.LongStream Empty
         {
-            get { return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "empty"); }
+            get { return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#concat(java.util.stream.LongStream,java.util.stream.LongStream)"/>
@@ -56,7 +56,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Concat(Java.Util.Stream.LongStream arg0, Java.Util.Stream.LongStream arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "concat", arg0, arg1);
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "concat", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#generate(java.util.function.LongSupplier)"/>
@@ -65,7 +65,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Generate(Java.Util.Function.LongSupplier arg0)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "generate", arg0);
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "generate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#iterate(long,java.util.function.LongPredicate,java.util.function.LongUnaryOperator)"/>
@@ -76,7 +76,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Iterate(long arg0, Java.Util.Function.LongPredicate arg1, Java.Util.Function.LongUnaryOperator arg2)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "iterate", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#iterate(long,java.util.function.LongUnaryOperator)"/>
@@ -86,7 +86,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Iterate(long arg0, Java.Util.Function.LongUnaryOperator arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "iterate", arg0, arg1);
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#of(long[])"/>
@@ -95,7 +95,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Of(params long[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "of"); else return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "of", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of"); else return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#of(long)"/>
@@ -104,7 +104,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Of(long arg0)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "of", arg0);
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#range(long,long)"/>
@@ -114,7 +114,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Range(long arg0, long arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "range", arg0, arg1);
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "range", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#rangeClosed(long,long)"/>
@@ -124,7 +124,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream RangeClosed(long arg0, long arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "rangeClosed", arg0, arg1);
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "rangeClosed", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#builder()"/>
@@ -133,7 +133,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream.Builder"/></returns>
         public static Java.Util.Stream.LongStream.Builder BuilderMethod()
         {
-            return SExecute<Java.Util.Stream.LongStream.Builder>(LocalClazz, "builder");
+            return SExecute<Java.Util.Stream.LongStream.Builder>(LocalBridgeClazz, "builder");
         }
 
         #endregion

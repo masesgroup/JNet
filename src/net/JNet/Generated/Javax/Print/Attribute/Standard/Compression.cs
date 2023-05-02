@@ -44,19 +44,19 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#COMPRESS"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Compression COMPRESS { get { return SGetField<Javax.Print.Attribute.Standard.Compression>(LocalClazz, "COMPRESS"); } }
+        public static Javax.Print.Attribute.Standard.Compression COMPRESS { get { return SGetField<Javax.Print.Attribute.Standard.Compression>(LocalBridgeClazz, "COMPRESS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#DEFLATE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Compression DEFLATE { get { return SGetField<Javax.Print.Attribute.Standard.Compression>(LocalClazz, "DEFLATE"); } }
+        public static Javax.Print.Attribute.Standard.Compression DEFLATE { get { return SGetField<Javax.Print.Attribute.Standard.Compression>(LocalBridgeClazz, "DEFLATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#GZIP"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Compression GZIP { get { return SGetField<Javax.Print.Attribute.Standard.Compression>(LocalClazz, "GZIP"); } }
+        public static Javax.Print.Attribute.Standard.Compression GZIP { get { return SGetField<Javax.Print.Attribute.Standard.Compression>(LocalBridgeClazz, "GZIP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#NONE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Compression NONE { get { return SGetField<Javax.Print.Attribute.Standard.Compression>(LocalClazz, "NONE"); } }
+        public static Javax.Print.Attribute.Standard.Compression NONE { get { return SGetField<Javax.Print.Attribute.Standard.Compression>(LocalBridgeClazz, "NONE"); } }
 
         #endregion
 

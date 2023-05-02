@@ -48,7 +48,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public static Java.Lang.Management.ThreadInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return SExecute<Java.Lang.Management.ThreadInfo>(LocalClazz, "from", arg0);
+            return SExecute<Java.Lang.Management.ThreadInfo>(LocalBridgeClazz, "from", arg0);
         }
 
         #endregion

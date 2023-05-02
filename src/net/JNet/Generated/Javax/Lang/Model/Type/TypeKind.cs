@@ -40,91 +40,91 @@ namespace Javax.Lang.Model.Type
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#ARRAY"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind ARRAY { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "ARRAY"); } }
+        public static Javax.Lang.Model.Type.TypeKind ARRAY { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "ARRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#BOOLEAN"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind BOOLEAN { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "BOOLEAN"); } }
+        public static Javax.Lang.Model.Type.TypeKind BOOLEAN { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "BOOLEAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#BYTE"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind BYTE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "BYTE"); } }
+        public static Javax.Lang.Model.Type.TypeKind BYTE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "BYTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#CHAR"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind CHAR { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "CHAR"); } }
+        public static Javax.Lang.Model.Type.TypeKind CHAR { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "CHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#DECLARED"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind DECLARED { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "DECLARED"); } }
+        public static Javax.Lang.Model.Type.TypeKind DECLARED { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "DECLARED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#DOUBLE"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind DOUBLE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "DOUBLE"); } }
+        public static Javax.Lang.Model.Type.TypeKind DOUBLE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "DOUBLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#ERROR"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind ERROR { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "ERROR"); } }
+        public static Javax.Lang.Model.Type.TypeKind ERROR { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#EXECUTABLE"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind EXECUTABLE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "EXECUTABLE"); } }
+        public static Javax.Lang.Model.Type.TypeKind EXECUTABLE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "EXECUTABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#FLOAT"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind FLOAT { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "FLOAT"); } }
+        public static Javax.Lang.Model.Type.TypeKind FLOAT { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "FLOAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#INT"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind INT { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "INT"); } }
+        public static Javax.Lang.Model.Type.TypeKind INT { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "INT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#INTERSECTION"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind INTERSECTION { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "INTERSECTION"); } }
+        public static Javax.Lang.Model.Type.TypeKind INTERSECTION { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "INTERSECTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#LONG"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind LONG { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "LONG"); } }
+        public static Javax.Lang.Model.Type.TypeKind LONG { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "LONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#MODULE"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind MODULE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "MODULE"); } }
+        public static Javax.Lang.Model.Type.TypeKind MODULE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "MODULE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#NONE"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind NONE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "NONE"); } }
+        public static Javax.Lang.Model.Type.TypeKind NONE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#NULL"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind NULL { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "NULL"); } }
+        public static Javax.Lang.Model.Type.TypeKind NULL { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "NULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#OTHER"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind OTHER { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "OTHER"); } }
+        public static Javax.Lang.Model.Type.TypeKind OTHER { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "OTHER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#PACKAGE"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind PACKAGE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "PACKAGE"); } }
+        public static Javax.Lang.Model.Type.TypeKind PACKAGE { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "PACKAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#SHORT"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind SHORT { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "SHORT"); } }
+        public static Javax.Lang.Model.Type.TypeKind SHORT { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "SHORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#TYPEVAR"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind TYPEVAR { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "TYPEVAR"); } }
+        public static Javax.Lang.Model.Type.TypeKind TYPEVAR { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "TYPEVAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#UNION"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind UNION { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "UNION"); } }
+        public static Javax.Lang.Model.Type.TypeKind UNION { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "UNION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#VOID"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind VOID { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "VOID"); } }
+        public static Javax.Lang.Model.Type.TypeKind VOID { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "VOID"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#WILDCARD"/>
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind WILDCARD { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "WILDCARD"); } }
+        public static Javax.Lang.Model.Type.TypeKind WILDCARD { get { return SGetField<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "WILDCARD"); } }
 
         #endregion
 
@@ -134,7 +134,7 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public static Javax.Lang.Model.Type.TypeKind[] Values
         {
-            get { return SExecuteArray<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "values"); }
+            get { return SExecuteArray<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#valueOf(java.lang.String)"/>
@@ -143,7 +143,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="Javax.Lang.Model.Type.TypeKind"/></returns>
         public static Javax.Lang.Model.Type.TypeKind ValueOf(string arg0)
         {
-            return SExecute<Javax.Lang.Model.Type.TypeKind>(LocalClazz, "valueOf", arg0);
+            return SExecute<Javax.Lang.Model.Type.TypeKind>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

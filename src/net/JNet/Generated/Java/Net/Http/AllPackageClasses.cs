@@ -40,28 +40,28 @@ namespace Java.Net.Http
         /// </summary>
         public HttpClient(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpClient");
+        private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpClient");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.net.http.HttpClient";
+        public override string BridgeClassName => "java.net.http.HttpClient";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => true;
+        public override bool IsBridgeAbstract => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => false;
+        public override bool IsBridgeInterface => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
         #region Builder
@@ -79,28 +79,28 @@ namespace Java.Net.Http
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpClient$Builder");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpClient$Builder");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpClient$Builder";
+            public override string BridgeClassName => "java.net.http.HttpClient$Builder";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -122,28 +122,28 @@ namespace Java.Net.Http
             /// </summary>
             public Redirect(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpClient$Redirect");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpClient$Redirect");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpClient$Redirect";
+            public override string BridgeClassName => "java.net.http.HttpClient$Redirect";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;
+            public override bool IsBridgeAbstract => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => false;
+            public override bool IsBridgeInterface => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -165,28 +165,28 @@ namespace Java.Net.Http
             /// </summary>
             public Version(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpClient$Version");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpClient$Version");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpClient$Version";
+            public override string BridgeClassName => "java.net.http.HttpClient$Version";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;
+            public override bool IsBridgeAbstract => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => false;
+            public override bool IsBridgeInterface => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -204,9 +204,9 @@ namespace Java.Net.Http
     public partial class HttpConnectTimeoutException : Java.Net.Http.HttpTimeoutException
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.net.http.HttpConnectTimeoutException";
+        public override string BridgeClassName => "java.net.http.HttpConnectTimeoutException";
 
         // TODO: complete the class
 
@@ -228,28 +228,28 @@ namespace Java.Net.Http
         /// </summary>
         public HttpHeaders(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpHeaders");
+        private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpHeaders");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.net.http.HttpHeaders";
+        public override string BridgeClassName => "java.net.http.HttpHeaders";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => false;
+        public override bool IsBridgeAbstract => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => false;
+        public override bool IsBridgeInterface => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
 
@@ -271,28 +271,28 @@ namespace Java.Net.Http
         /// </summary>
         public HttpRequest(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpRequest");
+        private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpRequest");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.net.http.HttpRequest";
+        public override string BridgeClassName => "java.net.http.HttpRequest";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => true;
+        public override bool IsBridgeAbstract => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => false;
+        public override bool IsBridgeInterface => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
         #region BodyPublisher
@@ -310,28 +310,28 @@ namespace Java.Net.Http
             /// </summary>
             public BodyPublisher(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpRequest$BodyPublisher");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpRequest$BodyPublisher");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpRequest$BodyPublisher";
+            public override string BridgeClassName => "java.net.http.HttpRequest$BodyPublisher";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -353,28 +353,28 @@ namespace Java.Net.Http
             /// </summary>
             public BodyPublishers(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpRequest$BodyPublishers");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpRequest$BodyPublishers");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpRequest$BodyPublishers";
+            public override string BridgeClassName => "java.net.http.HttpRequest$BodyPublishers";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;
+            public override bool IsBridgeAbstract => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => false;
+            public override bool IsBridgeInterface => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -396,28 +396,28 @@ namespace Java.Net.Http
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpRequest$Builder");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpRequest$Builder");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpRequest$Builder";
+            public override string BridgeClassName => "java.net.http.HttpRequest$Builder";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -443,28 +443,28 @@ namespace Java.Net.Http
         /// </summary>
         public HttpResponse(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse");
+        private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.net.http.HttpResponse";
+        public override string BridgeClassName => "java.net.http.HttpResponse";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => true;
+        public override bool IsBridgeAbstract => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => true;
+        public override bool IsBridgeInterface => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
         #region BodyHandler
@@ -482,28 +482,28 @@ namespace Java.Net.Http
             /// </summary>
             public BodyHandler(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodyHandler");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse$BodyHandler");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpResponse$BodyHandler";
+            public override string BridgeClassName => "java.net.http.HttpResponse$BodyHandler";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -526,28 +526,28 @@ namespace Java.Net.Http
             /// </summary>
             public BodyHandler(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodyHandler");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse$BodyHandler");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpResponse$BodyHandler";
+            public override string BridgeClassName => "java.net.http.HttpResponse$BodyHandler";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -569,28 +569,28 @@ namespace Java.Net.Http
             /// </summary>
             public BodyHandlers(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodyHandlers");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse$BodyHandlers");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpResponse$BodyHandlers";
+            public override string BridgeClassName => "java.net.http.HttpResponse$BodyHandlers";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;
+            public override bool IsBridgeAbstract => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => false;
+            public override bool IsBridgeInterface => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -612,28 +612,28 @@ namespace Java.Net.Http
             /// </summary>
             public BodySubscriber(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodySubscriber");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse$BodySubscriber");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpResponse$BodySubscriber";
+            public override string BridgeClassName => "java.net.http.HttpResponse$BodySubscriber";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -656,28 +656,28 @@ namespace Java.Net.Http
             /// </summary>
             public BodySubscriber(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodySubscriber");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse$BodySubscriber");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpResponse$BodySubscriber";
+            public override string BridgeClassName => "java.net.http.HttpResponse$BodySubscriber";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -699,28 +699,28 @@ namespace Java.Net.Http
             /// </summary>
             public BodySubscribers(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$BodySubscribers");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse$BodySubscribers");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpResponse$BodySubscribers";
+            public override string BridgeClassName => "java.net.http.HttpResponse$BodySubscribers";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => false;
+            public override bool IsBridgeAbstract => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => false;
+            public override bool IsBridgeInterface => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -742,28 +742,28 @@ namespace Java.Net.Http
             /// </summary>
             public PushPromiseHandler(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$PushPromiseHandler");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse$PushPromiseHandler");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpResponse$PushPromiseHandler";
+            public override string BridgeClassName => "java.net.http.HttpResponse$PushPromiseHandler";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -786,28 +786,28 @@ namespace Java.Net.Http
             /// </summary>
             public PushPromiseHandler(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$PushPromiseHandler");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse$PushPromiseHandler");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpResponse$PushPromiseHandler";
+            public override string BridgeClassName => "java.net.http.HttpResponse$PushPromiseHandler";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -829,28 +829,28 @@ namespace Java.Net.Http
             /// </summary>
             public ResponseInfo(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse$ResponseInfo");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse$ResponseInfo");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.HttpResponse$ResponseInfo";
+            public override string BridgeClassName => "java.net.http.HttpResponse$ResponseInfo";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -877,28 +877,28 @@ namespace Java.Net.Http
         /// </summary>
         public HttpResponse(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("java.net.http.HttpResponse");
+        private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.HttpResponse");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.net.http.HttpResponse";
+        public override string BridgeClassName => "java.net.http.HttpResponse";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => true;
+        public override bool IsBridgeAbstract => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => true;
+        public override bool IsBridgeInterface => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
     
@@ -912,9 +912,9 @@ namespace Java.Net.Http
     public partial class HttpTimeoutException : Java.Io.IOException
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.net.http.HttpTimeoutException";
+        public override string BridgeClassName => "java.net.http.HttpTimeoutException";
 
         // TODO: complete the class
 
@@ -936,28 +936,28 @@ namespace Java.Net.Http
         /// </summary>
         public WebSocket(params object[] args) : base(args) { }
 
-        private static IJavaType LocalClazz = ClazzOf("java.net.http.WebSocket");
+        private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.WebSocket");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.net.http.WebSocket";
+        public override string BridgeClassName => "java.net.http.WebSocket";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
-        public override bool IsAbstract => true;
+        public override bool IsBridgeAbstract => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
         /// </summary>
-        public override bool IsCloseable => false;
+        public override bool IsBridgeCloseable => false;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => true;
+        public override bool IsBridgeInterface => true;
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => false;
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
         #region Builder
@@ -975,28 +975,28 @@ namespace Java.Net.Http
             /// </summary>
             public Builder(params object[] args) : base(args) { }
 
-            private static IJavaType LocalClazz = ClazzOf("java.net.http.WebSocket$Builder");
+            private static IJavaType LocalBridgeClazz = ClazzOf("java.net.http.WebSocket$Builder");
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.net.http.WebSocket$Builder";
+            public override string BridgeClassName => "java.net.http.WebSocket$Builder";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsAbstract.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
-            public override bool IsAbstract => true;
+            public override bool IsBridgeAbstract => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsCloseable.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
             /// </summary>
-            public override bool IsCloseable => false;
+            public override bool IsBridgeCloseable => false;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
+            public override bool IsBridgeInterface => true;
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
 
@@ -1027,9 +1027,9 @@ namespace Java.Net.Http
     public partial class WebSocketHandshakeException : Java.Io.IOException
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.net.http.WebSocketHandshakeException";
+        public override string BridgeClassName => "java.net.http.WebSocketHandshakeException";
 
         // TODO: complete the class
 

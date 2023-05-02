@@ -36,14 +36,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public abstract class ToIntFunction : JVMBridgeListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetToIntFunction";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetToIntFunction";
     }
 
     /// <summary>

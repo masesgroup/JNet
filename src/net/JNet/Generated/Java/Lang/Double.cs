@@ -44,47 +44,47 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MAX_VALUE"/>
         /// </summary>
-        public static double MAX_VALUE { get { return SGetField<double>(LocalClazz, "MAX_VALUE"); } }
+        public static double MAX_VALUE { get { return SGetField<double>(LocalBridgeClazz, "MAX_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MIN_NORMAL"/>
         /// </summary>
-        public static double MIN_NORMAL { get { return SGetField<double>(LocalClazz, "MIN_NORMAL"); } }
+        public static double MIN_NORMAL { get { return SGetField<double>(LocalBridgeClazz, "MIN_NORMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MIN_VALUE"/>
         /// </summary>
-        public static double MIN_VALUE { get { return SGetField<double>(LocalClazz, "MIN_VALUE"); } }
+        public static double MIN_VALUE { get { return SGetField<double>(LocalBridgeClazz, "MIN_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#NaN"/>
         /// </summary>
-        public static double NaN { get { return SGetField<double>(LocalClazz, "NaN"); } }
+        public static double NaN { get { return SGetField<double>(LocalBridgeClazz, "NaN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#NEGATIVE_INFINITY"/>
         /// </summary>
-        public static double NEGATIVE_INFINITY { get { return SGetField<double>(LocalClazz, "NEGATIVE_INFINITY"); } }
+        public static double NEGATIVE_INFINITY { get { return SGetField<double>(LocalBridgeClazz, "NEGATIVE_INFINITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#POSITIVE_INFINITY"/>
         /// </summary>
-        public static double POSITIVE_INFINITY { get { return SGetField<double>(LocalClazz, "POSITIVE_INFINITY"); } }
+        public static double POSITIVE_INFINITY { get { return SGetField<double>(LocalBridgeClazz, "POSITIVE_INFINITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#BYTES"/>
         /// </summary>
-        public static int BYTES { get { return SGetField<int>(LocalClazz, "BYTES"); } }
+        public static int BYTES { get { return SGetField<int>(LocalBridgeClazz, "BYTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MAX_EXPONENT"/>
         /// </summary>
-        public static int MAX_EXPONENT { get { return SGetField<int>(LocalClazz, "MAX_EXPONENT"); } }
+        public static int MAX_EXPONENT { get { return SGetField<int>(LocalBridgeClazz, "MAX_EXPONENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MIN_EXPONENT"/>
         /// </summary>
-        public static int MIN_EXPONENT { get { return SGetField<int>(LocalClazz, "MIN_EXPONENT"); } }
+        public static int MIN_EXPONENT { get { return SGetField<int>(LocalBridgeClazz, "MIN_EXPONENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#SIZE"/>
         /// </summary>
-        public static int SIZE { get { return SGetField<int>(LocalClazz, "SIZE"); } }
+        public static int SIZE { get { return SGetField<int>(LocalBridgeClazz, "SIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#TYPE"/>
         /// </summary>
-        public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalClazz, "TYPE"); } }
+        public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); } }
 
         #endregion
 
@@ -96,7 +96,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsFinite(double arg0)
         {
-            return SExecute<bool>(LocalClazz, "isFinite", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isFinite", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#isInfinite(double)"/>
@@ -105,7 +105,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsInfinite(double arg0)
         {
-            return SExecute<bool>(LocalClazz, "isInfinite", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isInfinite", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#isNaN(double)"/>
@@ -114,7 +114,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsNaN(double arg0)
         {
-            return SExecute<bool>(LocalClazz, "isNaN", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isNaN", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#max(double,double)"/>
@@ -124,7 +124,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Max(double arg0, double arg1)
         {
-            return SExecute<double>(LocalClazz, "max", arg0, arg1);
+            return SExecute<double>(LocalBridgeClazz, "max", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#min(double,double)"/>
@@ -134,7 +134,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Min(double arg0, double arg1)
         {
-            return SExecute<double>(LocalClazz, "min", arg0, arg1);
+            return SExecute<double>(LocalBridgeClazz, "min", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#parseDouble(java.lang.String)"/>
@@ -144,7 +144,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static double ParseDouble(string arg0)
         {
-            return SExecute<double>(LocalClazz, "parseDouble", arg0);
+            return SExecute<double>(LocalBridgeClazz, "parseDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#sum(double,double)"/>
@@ -154,7 +154,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Sum(double arg0, double arg1)
         {
-            return SExecute<double>(LocalClazz, "sum", arg0, arg1);
+            return SExecute<double>(LocalBridgeClazz, "sum", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#compare(double,double)"/>
@@ -164,7 +164,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(double arg0, double arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#hashCode(double)"/>
@@ -173,7 +173,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HashCode(double arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", arg0);
+            return SExecute<int>(LocalBridgeClazz, "hashCode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#valueOf(double)"/>
@@ -182,7 +182,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double? ValueOf(double arg0)
         {
-            return SExecute<double?>(LocalClazz, "valueOf", arg0);
+            return SExecute<double?>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#valueOf(java.lang.String)"/>
@@ -192,7 +192,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static double? ValueOf(string arg0)
         {
-            return SExecute<double?>(LocalClazz, "valueOf", arg0);
+            return SExecute<double?>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#toHexString(double)"/>
@@ -201,7 +201,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToHexString(double arg0)
         {
-            return SExecute<string>(LocalClazz, "toHexString", arg0);
+            return SExecute<string>(LocalBridgeClazz, "toHexString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#toString(double)"/>
@@ -210,7 +210,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToString(double arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", arg0);
+            return SExecute<string>(LocalBridgeClazz, "toString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#doubleToLongBits(double)"/>
@@ -219,7 +219,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long DoubleToLongBits(double arg0)
         {
-            return SExecute<long>(LocalClazz, "doubleToLongBits", arg0);
+            return SExecute<long>(LocalBridgeClazz, "doubleToLongBits", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#longBitsToDouble(long)"/>
@@ -228,7 +228,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double LongBitsToDouble(long arg0)
         {
-            return SExecute<double>(LocalClazz, "longBitsToDouble", arg0);
+            return SExecute<double>(LocalBridgeClazz, "longBitsToDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#doubleToRawLongBits(double)"/>
@@ -237,7 +237,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long DoubleToRawLongBits(double arg0)
         {
-            return SExecute<long>(LocalClazz, "doubleToRawLongBits", arg0);
+            return SExecute<long>(LocalBridgeClazz, "doubleToRawLongBits", arg0);
         }
 
         #endregion

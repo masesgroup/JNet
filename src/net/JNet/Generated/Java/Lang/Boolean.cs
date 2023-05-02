@@ -48,15 +48,15 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#FALSE"/>
         /// </summary>
-        public static bool? FALSE { get { return SGetField<bool?>(LocalClazz, "FALSE"); } }
+        public static bool? FALSE { get { return SGetField<bool?>(LocalBridgeClazz, "FALSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#TRUE"/>
         /// </summary>
-        public static bool? TRUE { get { return SGetField<bool?>(LocalClazz, "TRUE"); } }
+        public static bool? TRUE { get { return SGetField<bool?>(LocalBridgeClazz, "TRUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#TYPE"/>
         /// </summary>
-        public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalClazz, "TYPE"); } }
+        public static Java.Lang.Class TYPE { get { return SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); } }
 
         #endregion
 
@@ -68,7 +68,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool GetBoolean(string arg0)
         {
-            return SExecute<bool>(LocalClazz, "getBoolean", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "getBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#logicalAnd(boolean,boolean)"/>
@@ -78,7 +78,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool LogicalAnd(bool arg0, bool arg1)
         {
-            return SExecute<bool>(LocalClazz, "logicalAnd", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "logicalAnd", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#logicalOr(boolean,boolean)"/>
@@ -88,7 +88,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool LogicalOr(bool arg0, bool arg1)
         {
-            return SExecute<bool>(LocalClazz, "logicalOr", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "logicalOr", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#logicalXor(boolean,boolean)"/>
@@ -98,7 +98,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool LogicalXor(bool arg0, bool arg1)
         {
-            return SExecute<bool>(LocalClazz, "logicalXor", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "logicalXor", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#parseBoolean(java.lang.String)"/>
@@ -107,7 +107,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool ParseBoolean(string arg0)
         {
-            return SExecute<bool>(LocalClazz, "parseBoolean", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "parseBoolean", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#compare(boolean,boolean)"/>
@@ -117,7 +117,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(bool arg0, bool arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#hashCode(boolean)"/>
@@ -126,7 +126,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int HashCode(bool arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", arg0);
+            return SExecute<int>(LocalBridgeClazz, "hashCode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#valueOf(boolean)"/>
@@ -135,7 +135,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool? ValueOf(bool arg0)
         {
-            return SExecute<bool?>(LocalClazz, "valueOf", arg0);
+            return SExecute<bool?>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#valueOf(java.lang.String)"/>
@@ -144,7 +144,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool? ValueOf(string arg0)
         {
-            return SExecute<bool?>(LocalClazz, "valueOf", arg0);
+            return SExecute<bool?>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#toString(boolean)"/>
@@ -153,7 +153,7 @@ namespace Java.Lang
         /// <returns><see cref="string"/></returns>
         public static string ToString(bool arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", arg0);
+            return SExecute<string>(LocalBridgeClazz, "toString", arg0);
         }
 
         #endregion

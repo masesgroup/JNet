@@ -40,23 +40,23 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_UNSUPPORTED"/>
         /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_UNSUPPORTED { get { return SGetField<Java.Sql.RowIdLifetime>(LocalClazz, "ROWID_UNSUPPORTED"); } }
+        public static Java.Sql.RowIdLifetime ROWID_UNSUPPORTED { get { return SGetField<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "ROWID_UNSUPPORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_FOREVER"/>
         /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_VALID_FOREVER { get { return SGetField<Java.Sql.RowIdLifetime>(LocalClazz, "ROWID_VALID_FOREVER"); } }
+        public static Java.Sql.RowIdLifetime ROWID_VALID_FOREVER { get { return SGetField<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "ROWID_VALID_FOREVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_OTHER"/>
         /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_VALID_OTHER { get { return SGetField<Java.Sql.RowIdLifetime>(LocalClazz, "ROWID_VALID_OTHER"); } }
+        public static Java.Sql.RowIdLifetime ROWID_VALID_OTHER { get { return SGetField<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "ROWID_VALID_OTHER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_SESSION"/>
         /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_VALID_SESSION { get { return SGetField<Java.Sql.RowIdLifetime>(LocalClazz, "ROWID_VALID_SESSION"); } }
+        public static Java.Sql.RowIdLifetime ROWID_VALID_SESSION { get { return SGetField<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "ROWID_VALID_SESSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_TRANSACTION"/>
         /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_VALID_TRANSACTION { get { return SGetField<Java.Sql.RowIdLifetime>(LocalClazz, "ROWID_VALID_TRANSACTION"); } }
+        public static Java.Sql.RowIdLifetime ROWID_VALID_TRANSACTION { get { return SGetField<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "ROWID_VALID_TRANSACTION"); } }
 
         #endregion
 
@@ -66,7 +66,7 @@ namespace Java.Sql
         /// </summary>
         public static Java.Sql.RowIdLifetime[] Values
         {
-            get { return SExecuteArray<Java.Sql.RowIdLifetime>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#valueOf(java.lang.String)"/>
@@ -75,7 +75,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.RowIdLifetime"/></returns>
         public static Java.Sql.RowIdLifetime ValueOf(string arg0)
         {
-            return SExecute<Java.Sql.RowIdLifetime>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Sql.RowIdLifetime>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

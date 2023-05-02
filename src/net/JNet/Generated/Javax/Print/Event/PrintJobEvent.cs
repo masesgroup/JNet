@@ -49,27 +49,27 @@ namespace Javax.Print.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#DATA_TRANSFER_COMPLETE"/>
         /// </summary>
-        public static int DATA_TRANSFER_COMPLETE { get { return SGetField<int>(LocalClazz, "DATA_TRANSFER_COMPLETE"); } }
+        public static int DATA_TRANSFER_COMPLETE { get { return SGetField<int>(LocalBridgeClazz, "DATA_TRANSFER_COMPLETE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#JOB_CANCELED"/>
         /// </summary>
-        public static int JOB_CANCELED { get { return SGetField<int>(LocalClazz, "JOB_CANCELED"); } }
+        public static int JOB_CANCELED { get { return SGetField<int>(LocalBridgeClazz, "JOB_CANCELED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#JOB_COMPLETE"/>
         /// </summary>
-        public static int JOB_COMPLETE { get { return SGetField<int>(LocalClazz, "JOB_COMPLETE"); } }
+        public static int JOB_COMPLETE { get { return SGetField<int>(LocalBridgeClazz, "JOB_COMPLETE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#JOB_FAILED"/>
         /// </summary>
-        public static int JOB_FAILED { get { return SGetField<int>(LocalClazz, "JOB_FAILED"); } }
+        public static int JOB_FAILED { get { return SGetField<int>(LocalBridgeClazz, "JOB_FAILED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#NO_MORE_EVENTS"/>
         /// </summary>
-        public static int NO_MORE_EVENTS { get { return SGetField<int>(LocalClazz, "NO_MORE_EVENTS"); } }
+        public static int NO_MORE_EVENTS { get { return SGetField<int>(LocalBridgeClazz, "NO_MORE_EVENTS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobEvent.html#REQUIRES_ATTENTION"/>
         /// </summary>
-        public static int REQUIRES_ATTENTION { get { return SGetField<int>(LocalClazz, "REQUIRES_ATTENTION"); } }
+        public static int REQUIRES_ATTENTION { get { return SGetField<int>(LocalBridgeClazz, "REQUIRES_ATTENTION"); } }
 
         #endregion
 

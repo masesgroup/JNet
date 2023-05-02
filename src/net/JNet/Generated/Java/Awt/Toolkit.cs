@@ -46,7 +46,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Toolkit DefaultToolkit
         {
-            get { return SExecute<Java.Awt.Toolkit>(LocalClazz, "getDefaultToolkit"); }
+            get { return SExecute<Java.Awt.Toolkit>(LocalBridgeClazz, "getDefaultToolkit"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getProperty(java.lang.String,java.lang.String)"/>
@@ -56,7 +56,7 @@ namespace Java.Awt
         /// <returns><see cref="string"/></returns>
         public static string GetProperty(string arg0, string arg1)
         {
-            return SExecute<string>(LocalClazz, "getProperty", arg0, arg1);
+            return SExecute<string>(LocalBridgeClazz, "getProperty", arg0, arg1);
         }
 
         #endregion

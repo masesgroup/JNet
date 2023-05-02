@@ -50,7 +50,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousChannelGroup WithCachedThreadPool(Java.Util.Concurrent.ExecutorService arg0, int arg1)
         {
-            return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalClazz, "withCachedThreadPool", arg0, arg1);
+            return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withCachedThreadPool", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withFixedThreadPool(int,java.util.concurrent.ThreadFactory)"/>
@@ -61,7 +61,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousChannelGroup WithFixedThreadPool(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
-            return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalClazz, "withFixedThreadPool", arg0, arg1);
+            return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withFixedThreadPool", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withThreadPool(java.util.concurrent.ExecutorService)"/>
@@ -71,7 +71,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousChannelGroup WithThreadPool(Java.Util.Concurrent.ExecutorService arg0)
         {
-            return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalClazz, "withThreadPool", arg0);
+            return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withThreadPool", arg0);
         }
 
         #endregion

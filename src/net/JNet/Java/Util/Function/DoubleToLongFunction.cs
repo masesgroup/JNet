@@ -35,14 +35,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java DoubleToLongFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToLongFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java DoubleToLongFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToLongFunction.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class DoubleToLongFunction : JVMBridgeListener, IDoubleToLongFunction
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetDoubleToLongFunction";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoubleToLongFunction";
 
         Func<double, long> executionFunction = null;
         /// <summary>

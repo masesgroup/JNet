@@ -40,11 +40,11 @@ namespace Javax.Accessibility
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#ATTRIBUTE_RUN"/>
         /// </summary>
-        public static int ATTRIBUTE_RUN { get { return SGetField<int>(LocalClazz, "ATTRIBUTE_RUN"); } }
+        public static int ATTRIBUTE_RUN { get { return SGetField<int>(LocalBridgeClazz, "ATTRIBUTE_RUN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#LINE"/>
         /// </summary>
-        public static int LINE { get { return SGetField<int>(LocalClazz, "LINE"); } }
+        public static int LINE { get { return SGetField<int>(LocalBridgeClazz, "LINE"); } }
 
         #endregion
 

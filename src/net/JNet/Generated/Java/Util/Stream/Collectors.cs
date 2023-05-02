@@ -46,35 +46,35 @@ namespace Java.Util.Stream
         /// </summary>
         public static Java.Util.Stream.Collector Counting
         {
-            get { return SExecute<Java.Util.Stream.Collector>(LocalClazz, "counting"); }
+            get { return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "counting"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toList()"/> 
         /// </summary>
         public static Java.Util.Stream.Collector ToList
         {
-            get { return SExecute<Java.Util.Stream.Collector>(LocalClazz, "toList"); }
+            get { return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "toList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toSet()"/> 
         /// </summary>
         public static Java.Util.Stream.Collector ToSet
         {
-            get { return SExecute<Java.Util.Stream.Collector>(LocalClazz, "toSet"); }
+            get { return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "toSet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableList()"/> 
         /// </summary>
         public static Java.Util.Stream.Collector ToUnmodifiableList
         {
-            get { return SExecute<Java.Util.Stream.Collector>(LocalClazz, "toUnmodifiableList"); }
+            get { return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "toUnmodifiableList"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableSet()"/> 
         /// </summary>
         public static Java.Util.Stream.Collector ToUnmodifiableSet
         {
-            get { return SExecute<Java.Util.Stream.Collector>(LocalClazz, "toUnmodifiableSet"); }
+            get { return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "toUnmodifiableSet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#collectingAndThen(java.util.stream.Collector,java.util.function.Function)"/>
@@ -88,7 +88,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, A, RR> CollectingAndThen<T, A, RR, R>(Java.Util.Stream.Collector<T, A, R> arg0, Java.Util.Function.Function<R, RR> arg1)
         {
-            return SExecute<Java.Util.Stream.Collector<T, A, RR>>(LocalClazz, "collectingAndThen", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, A, RR>>(LocalBridgeClazz, "collectingAndThen", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#filtering(java.util.function.Predicate,java.util.stream.Collector)"/>
@@ -104,7 +104,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, R> Filtering<T, ReturnExtendsobject, R, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, R> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, R>>(LocalClazz, "filtering", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, R>>(LocalBridgeClazz, "filtering", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toCollection(java.util.function.Supplier)"/>
@@ -116,7 +116,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, C> ToCollection<T, ReturnExtendsobject, C>(Java.Util.Function.Supplier<C> arg0) where C: Java.Util.Collection<T>
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, C>>(LocalClazz, "toCollection", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, C>>(LocalBridgeClazz, "toCollection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#partitioningBy(java.util.function.Predicate,java.util.stream.Collector)"/>
@@ -132,7 +132,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, D>> PartitioningBy<T, ReturnExtendsobject, D, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, D>>>(LocalClazz, "partitioningBy", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, D>>>(LocalBridgeClazz, "partitioningBy", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingByConcurrent(java.util.function.Function,java.util.function.Supplier,java.util.stream.Collector)"/>
@@ -152,7 +152,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> GroupingByConcurrent<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M: Java.Util.Concurrent.ConcurrentMap<K, D> where Arg0objectSuperT: T where Arg2objectSuperT: Java.Util.Concurrent.ConcurrentMap<K, D>
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>(LocalClazz, "groupingByConcurrent", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>(LocalBridgeClazz, "groupingByConcurrent", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingByConcurrent(java.util.function.Function,java.util.stream.Collector)"/>
@@ -170,7 +170,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, D>> GroupingByConcurrent<T, ReturnExtendsobject, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, D>>>(LocalClazz, "groupingByConcurrent", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, D>>>(LocalBridgeClazz, "groupingByConcurrent", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingBy(java.util.function.Function,java.util.stream.Collector)"/>
@@ -188,7 +188,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, D>> GroupingBy<T, ReturnExtendsobject, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, D>>>(LocalClazz, "groupingBy", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, D>>>(LocalBridgeClazz, "groupingBy", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingBy(java.util.function.Function,java.util.function.Supplier,java.util.stream.Collector)"/>
@@ -208,7 +208,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> GroupingBy<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M: Java.Util.Map<K, D> where Arg0objectSuperT: T where Arg2objectSuperT: Java.Util.Map<K, D>
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>(LocalClazz, "groupingBy", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>(LocalBridgeClazz, "groupingBy", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toConcurrentMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator,java.util.function.Supplier)"/>
@@ -229,7 +229,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> ToConcurrentMap<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M: Java.Util.Concurrent.ConcurrentMap<K, U> where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>(LocalClazz, "toConcurrentMap", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>(LocalBridgeClazz, "toConcurrentMap", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator,java.util.function.Supplier)"/>
@@ -250,7 +250,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, M> ToMap<T, ReturnExtendsobject, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M: Java.Util.Map<K, U> where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>(LocalClazz, "toMap", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, M>>(LocalBridgeClazz, "toMap", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toConcurrentMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -269,7 +269,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>>>(LocalClazz, "toConcurrentMap", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>>>(LocalBridgeClazz, "toConcurrentMap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toConcurrentMap(java.util.function.Function,java.util.function.Function)"/>
@@ -287,7 +287,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>>>(LocalClazz, "toConcurrentMap", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, U>>>(LocalBridgeClazz, "toConcurrentMap", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -306,7 +306,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>(LocalClazz, "toMap", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toMap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toMap(java.util.function.Function,java.util.function.Function)"/>
@@ -324,7 +324,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>(LocalClazz, "toMap", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toMap", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableMap(java.util.function.Function,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -343,7 +343,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToUnmodifiableMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>(LocalClazz, "toUnmodifiableMap", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toUnmodifiableMap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableMap(java.util.function.Function,java.util.function.Function)"/>
@@ -361,7 +361,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>> ToUnmodifiableMap<T, ReturnExtendsobject, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>(LocalClazz, "toUnmodifiableMap", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toUnmodifiableMap", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingByConcurrent(java.util.function.Function)"/>
@@ -375,7 +375,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>> GroupingByConcurrent<T, ReturnExtendsobject, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>>>(LocalClazz, "groupingByConcurrent", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>>>(LocalBridgeClazz, "groupingByConcurrent", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#groupingBy(java.util.function.Function)"/>
@@ -389,7 +389,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, Java.Util.List<T>>> GroupingBy<T, ReturnExtendsobject, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, Java.Util.List<T>>>>(LocalClazz, "groupingBy", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<K, Java.Util.List<T>>>>(LocalBridgeClazz, "groupingBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#flatMapping(java.util.function.Function,java.util.stream.Collector)"/>
@@ -408,7 +408,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, R> FlatMapping<T, ReturnExtendsobject, R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT: T where Arg0ExtendsU: Java.Util.Stream.Stream<Arg0ExtendsU>
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, R>>(LocalClazz, "flatMapping", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, R>>(LocalBridgeClazz, "flatMapping", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#mapping(java.util.function.Function,java.util.stream.Collector)"/>
@@ -426,7 +426,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, R> Mapping<T, ReturnExtendsobject, R, Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, R>>(LocalClazz, "mapping", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, R>>(LocalBridgeClazz, "mapping", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.Function,java.util.function.BinaryOperator)"/>
@@ -442,7 +442,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, U> Reducing<T, ReturnExtendsobject, U, Arg1objectSuperT, Arg1ExtendsU>(U arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, U>>(LocalClazz, "reducing", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, U>>(LocalBridgeClazz, "reducing", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingDouble(java.util.function.ToDoubleFunction)"/>
@@ -454,7 +454,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> AveragingDouble<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>(LocalClazz, "averagingDouble", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>(LocalBridgeClazz, "averagingDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingInt(java.util.function.ToIntFunction)"/>
@@ -466,7 +466,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> AveragingInt<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>(LocalClazz, "averagingInt", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>(LocalBridgeClazz, "averagingInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#averagingLong(java.util.function.ToLongFunction)"/>
@@ -478,7 +478,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> AveragingLong<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>(LocalClazz, "averagingLong", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>(LocalBridgeClazz, "averagingLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingDouble(java.util.function.ToDoubleFunction)"/>
@@ -490,7 +490,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, double?> SummingDouble<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>(LocalClazz, "summingDouble", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, double?>>(LocalBridgeClazz, "summingDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingInt(java.util.function.ToIntFunction)"/>
@@ -502,7 +502,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, int?> SummingInt<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, int?>>(LocalClazz, "summingInt", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, int?>>(LocalBridgeClazz, "summingInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingLong(java.util.function.ToLongFunction)"/>
@@ -514,7 +514,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, long?> SummingLong<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, long?>>(LocalClazz, "summingLong", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, long?>>(LocalBridgeClazz, "summingLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingDouble(java.util.function.ToDoubleFunction)"/>
@@ -526,7 +526,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.DoubleSummaryStatistics> SummarizingDouble<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.DoubleSummaryStatistics>>(LocalClazz, "summarizingDouble", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.DoubleSummaryStatistics>>(LocalBridgeClazz, "summarizingDouble", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingInt(java.util.function.ToIntFunction)"/>
@@ -538,7 +538,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.IntSummaryStatistics> SummarizingInt<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.IntSummaryStatistics>>(LocalClazz, "summarizingInt", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.IntSummaryStatistics>>(LocalBridgeClazz, "summarizingInt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingLong(java.util.function.ToLongFunction)"/>
@@ -550,7 +550,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.LongSummaryStatistics> SummarizingLong<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.LongSummaryStatistics>>(LocalClazz, "summarizingLong", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.LongSummaryStatistics>>(LocalBridgeClazz, "summarizingLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#partitioningBy(java.util.function.Predicate)"/>
@@ -562,7 +562,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, Java.Util.List<T>>> PartitioningBy<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, Java.Util.List<T>>>>(LocalClazz, "partitioningBy", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Map<bool?, Java.Util.List<T>>>>(LocalBridgeClazz, "partitioningBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#maxBy(java.util.Comparator)"/>
@@ -574,7 +574,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>> MaxBy<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>>>(LocalClazz, "maxBy", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>>>(LocalBridgeClazz, "maxBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#minBy(java.util.Comparator)"/>
@@ -586,7 +586,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>> MinBy<T, ReturnExtendsobject, Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>>>(LocalClazz, "minBy", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>>>(LocalBridgeClazz, "minBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.util.function.BinaryOperator)"/>
@@ -597,7 +597,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>> Reducing<T, ReturnExtendsobject>(Java.Util.Function.BinaryOperator<T> arg0)
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>>>(LocalClazz, "reducing", arg0);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, Java.Util.Optional<T>>>(LocalBridgeClazz, "reducing", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -609,7 +609,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, ReturnExtendsobject, T> Reducing<T, ReturnExtendsobject>(T arg0, Java.Util.Function.BinaryOperator<T> arg1)
         {
-            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, T>>(LocalClazz, "reducing", arg0, arg1);
+            return SExecute<Java.Util.Stream.Collector<T, ReturnExtendsobject, T>>(LocalBridgeClazz, "reducing", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining()"/>
@@ -619,7 +619,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string> Joining<ReturnExtendsobject>()
         {
-            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string>>(LocalClazz, "joining");
+            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string>>(LocalBridgeClazz, "joining");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)"/>
@@ -631,7 +631,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string> Joining<ReturnExtendsobject>(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
         {
-            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string>>(LocalClazz, "joining", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string>>(LocalBridgeClazz, "joining", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#joining(java.lang.CharSequence)"/>
@@ -641,7 +641,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string> Joining<ReturnExtendsobject>(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string>>(LocalClazz, "joining", arg0);
+            return SExecute<Java.Util.Stream.Collector<Java.Lang.CharSequence, ReturnExtendsobject, string>>(LocalBridgeClazz, "joining", arg0);
         }
 
         #endregion

@@ -120,15 +120,15 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MAX_PRIORITY"/>
         /// </summary>
-        public static int MAX_PRIORITY { get { return SGetField<int>(LocalClazz, "MAX_PRIORITY"); } }
+        public static int MAX_PRIORITY { get { return SGetField<int>(LocalBridgeClazz, "MAX_PRIORITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MIN_PRIORITY"/>
         /// </summary>
-        public static int MIN_PRIORITY { get { return SGetField<int>(LocalClazz, "MIN_PRIORITY"); } }
+        public static int MIN_PRIORITY { get { return SGetField<int>(LocalBridgeClazz, "MIN_PRIORITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#NORM_PRIORITY"/>
         /// </summary>
-        public static int NORM_PRIORITY { get { return SGetField<int>(LocalClazz, "NORM_PRIORITY"); } }
+        public static int NORM_PRIORITY { get { return SGetField<int>(LocalBridgeClazz, "NORM_PRIORITY"); } }
 
         #endregion
 
@@ -138,35 +138,35 @@ namespace Java.Lang
         /// </summary>
         public static int ActiveCount
         {
-            get { return SExecute<int>(LocalClazz, "activeCount"); }
+            get { return SExecute<int>(LocalBridgeClazz, "activeCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getAllStackTraces()"/> 
         /// </summary>
         public static Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]> AllStackTraces
         {
-            get { return SExecute<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>(LocalClazz, "getAllStackTraces"); }
+            get { return SExecute<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>(LocalBridgeClazz, "getAllStackTraces"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#currentThread()"/> 
         /// </summary>
         public static Java.Lang.Thread CurrentThread
         {
-            get { return SExecute<Java.Lang.Thread>(LocalClazz, "currentThread"); }
+            get { return SExecute<Java.Lang.Thread>(LocalBridgeClazz, "currentThread"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getDefaultUncaughtExceptionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDefaultUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler)"/>
         /// </summary>
         public static Java.Lang.Thread.UncaughtExceptionHandler DefaultUncaughtExceptionHandler
         {
-            get { return SExecute<Java.Lang.Thread.UncaughtExceptionHandler>(LocalClazz, "getDefaultUncaughtExceptionHandler"); } set { SExecute(LocalClazz, "setDefaultUncaughtExceptionHandler", value); }
+            get { return SExecute<Java.Lang.Thread.UncaughtExceptionHandler>(LocalBridgeClazz, "getDefaultUncaughtExceptionHandler"); } set { SExecute(LocalBridgeClazz, "setDefaultUncaughtExceptionHandler", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupted()"/> 
         /// </summary>
         public static bool Interrupted
         {
-            get { return SExecute<bool>(LocalClazz, "interrupted"); }
+            get { return SExecute<bool>(LocalBridgeClazz, "interrupted"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#enumerate(java.lang.Thread[])"/>
@@ -175,7 +175,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Enumerate(Java.Lang.Thread[] arg0)
         {
-            return SExecute<int>(LocalClazz, "enumerate", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "enumerate", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#holdsLock(java.lang.Object)"/>
@@ -184,7 +184,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool HoldsLock(object arg0)
         {
-            return SExecute<bool>(LocalClazz, "holdsLock", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "holdsLock", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long)"/>
@@ -193,28 +193,28 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0)
         {
-            SExecute(LocalClazz, "sleep", arg0);
+            SExecute(LocalBridgeClazz, "sleep", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#yield()"/>
         /// </summary>
         public static void Yield()
         {
-            SExecute(LocalClazz, "yield");
+            SExecute(LocalBridgeClazz, "yield");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#dumpStack()"/>
         /// </summary>
         public static void DumpStack()
         {
-            SExecute(LocalClazz, "dumpStack");
+            SExecute(LocalBridgeClazz, "dumpStack");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#onSpinWait()"/>
         /// </summary>
         public static void OnSpinWait()
         {
-            SExecute(LocalClazz, "onSpinWait");
+            SExecute(LocalBridgeClazz, "onSpinWait");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long,int)"/>
@@ -224,7 +224,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0, int arg1)
         {
-            SExecute(LocalClazz, "sleep", arg0, arg1);
+            SExecute(LocalBridgeClazz, "sleep", arg0, arg1);
         }
 
         #endregion
@@ -398,27 +398,27 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#BLOCKED"/>
             /// </summary>
-            public static Java.Lang.Thread.State BLOCKED { get { return SGetField<Java.Lang.Thread.State>(LocalClazz, "BLOCKED"); } }
+            public static Java.Lang.Thread.State BLOCKED { get { return SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "BLOCKED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#NEW"/>
             /// </summary>
-            public static Java.Lang.Thread.State NEW { get { return SGetField<Java.Lang.Thread.State>(LocalClazz, "NEW"); } }
+            public static Java.Lang.Thread.State NEW { get { return SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "NEW"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#RUNNABLE"/>
             /// </summary>
-            public static Java.Lang.Thread.State RUNNABLE { get { return SGetField<Java.Lang.Thread.State>(LocalClazz, "RUNNABLE"); } }
+            public static Java.Lang.Thread.State RUNNABLE { get { return SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "RUNNABLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TERMINATED"/>
             /// </summary>
-            public static Java.Lang.Thread.State TERMINATED { get { return SGetField<Java.Lang.Thread.State>(LocalClazz, "TERMINATED"); } }
+            public static Java.Lang.Thread.State TERMINATED { get { return SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "TERMINATED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TIMED_WAITING"/>
             /// </summary>
-            public static Java.Lang.Thread.State TIMED_WAITING { get { return SGetField<Java.Lang.Thread.State>(LocalClazz, "TIMED_WAITING"); } }
+            public static Java.Lang.Thread.State TIMED_WAITING { get { return SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "TIMED_WAITING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#WAITING"/>
             /// </summary>
-            public static Java.Lang.Thread.State WAITING { get { return SGetField<Java.Lang.Thread.State>(LocalClazz, "WAITING"); } }
+            public static Java.Lang.Thread.State WAITING { get { return SGetField<Java.Lang.Thread.State>(LocalBridgeClazz, "WAITING"); } }
 
             #endregion
 
@@ -428,7 +428,7 @@ namespace Java.Lang
             /// </summary>
             public static Java.Lang.Thread.State[] Values
             {
-                get { return SExecuteArray<Java.Lang.Thread.State>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Lang.Thread.State>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#valueOf(java.lang.String)"/>
@@ -437,7 +437,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.Thread.State"/></returns>
             public static Java.Lang.Thread.State ValueOf(string arg0)
             {
-                return SExecute<Java.Lang.Thread.State>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Lang.Thread.State>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

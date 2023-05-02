@@ -63,15 +63,15 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#CENTER"/>
         /// </summary>
-        public static int CENTER { get { return SGetField<int>(LocalClazz, "CENTER"); } }
+        public static int CENTER { get { return SGetField<int>(LocalBridgeClazz, "CENTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#LEFT"/>
         /// </summary>
-        public static int LEFT { get { return SGetField<int>(LocalClazz, "LEFT"); } }
+        public static int LEFT { get { return SGetField<int>(LocalBridgeClazz, "LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#RIGHT"/>
         /// </summary>
-        public static int RIGHT { get { return SGetField<int>(LocalClazz, "RIGHT"); } }
+        public static int RIGHT { get { return SGetField<int>(LocalBridgeClazz, "RIGHT"); } }
 
         #endregion
 

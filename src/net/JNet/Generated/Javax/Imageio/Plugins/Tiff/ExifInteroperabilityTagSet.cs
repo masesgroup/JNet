@@ -40,15 +40,15 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#TAG_INTEROPERABILITY_INDEX"/>
         /// </summary>
-        public static int TAG_INTEROPERABILITY_INDEX { get { return SGetField<int>(LocalClazz, "TAG_INTEROPERABILITY_INDEX"); } }
+        public static int TAG_INTEROPERABILITY_INDEX { get { return SGetField<int>(LocalBridgeClazz, "TAG_INTEROPERABILITY_INDEX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#INTEROPERABILITY_INDEX_R98"/>
         /// </summary>
-        public static string INTEROPERABILITY_INDEX_R98 { get { return SGetField<string>(LocalClazz, "INTEROPERABILITY_INDEX_R98"); } }
+        public static string INTEROPERABILITY_INDEX_R98 { get { return SGetField<string>(LocalBridgeClazz, "INTEROPERABILITY_INDEX_R98"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#INTEROPERABILITY_INDEX_THM"/>
         /// </summary>
-        public static string INTEROPERABILITY_INDEX_THM { get { return SGetField<string>(LocalClazz, "INTEROPERABILITY_INDEX_THM"); } }
+        public static string INTEROPERABILITY_INDEX_THM { get { return SGetField<string>(LocalBridgeClazz, "INTEROPERABILITY_INDEX_THM"); } }
 
         #endregion
 
@@ -56,9 +56,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html#getInstance()"/> 
         /// </summary>
-        public static Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet GetInstance
+        public static Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet Instance
         {
-            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet>(LocalClazz, "getInstance"); }
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifInteroperabilityTagSet>(LocalBridgeClazz, "getInstance"); }
         }
 
         #endregion

@@ -44,9 +44,9 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html#getInstance()"/> 
         /// </summary>
-        public static Java.Awt.Im.InputContext GetInstance
+        public static Java.Awt.Im.InputContext Instance
         {
-            get { return SExecute<Java.Awt.Im.InputContext>(LocalClazz, "getInstance"); }
+            get { return SExecute<Java.Awt.Im.InputContext>(LocalBridgeClazz, "getInstance"); }
         }
 
         #endregion

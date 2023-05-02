@@ -187,23 +187,23 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ALAW"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding ALAW { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalClazz, "ALAW"); } }
+            public static Javax.Sound.Sampled.AudioFormat.Encoding ALAW { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalBridgeClazz, "ALAW"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_FLOAT"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_FLOAT { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalClazz, "PCM_FLOAT"); } }
+            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_FLOAT { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalBridgeClazz, "PCM_FLOAT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_SIGNED"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_SIGNED { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalClazz, "PCM_SIGNED"); } }
+            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_SIGNED { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalBridgeClazz, "PCM_SIGNED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_UNSIGNED"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_UNSIGNED { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalClazz, "PCM_UNSIGNED"); } }
+            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_UNSIGNED { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalBridgeClazz, "PCM_UNSIGNED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ULAW"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding ULAW { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalClazz, "ULAW"); } }
+            public static Javax.Sound.Sampled.AudioFormat.Encoding ULAW { get { return SGetField<Javax.Sound.Sampled.AudioFormat.Encoding>(LocalBridgeClazz, "ULAW"); } }
 
             #endregion
 

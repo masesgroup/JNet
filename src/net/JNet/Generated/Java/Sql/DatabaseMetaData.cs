@@ -40,247 +40,247 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowNotPseudo"/>
         /// </summary>
-        public static int bestRowNotPseudo { get { return SGetField<int>(LocalClazz, "bestRowNotPseudo"); } }
+        public static int bestRowNotPseudo { get { return SGetField<int>(LocalBridgeClazz, "bestRowNotPseudo"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowPseudo"/>
         /// </summary>
-        public static int bestRowPseudo { get { return SGetField<int>(LocalClazz, "bestRowPseudo"); } }
+        public static int bestRowPseudo { get { return SGetField<int>(LocalBridgeClazz, "bestRowPseudo"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowSession"/>
         /// </summary>
-        public static int bestRowSession { get { return SGetField<int>(LocalClazz, "bestRowSession"); } }
+        public static int bestRowSession { get { return SGetField<int>(LocalBridgeClazz, "bestRowSession"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowTemporary"/>
         /// </summary>
-        public static int bestRowTemporary { get { return SGetField<int>(LocalClazz, "bestRowTemporary"); } }
+        public static int bestRowTemporary { get { return SGetField<int>(LocalBridgeClazz, "bestRowTemporary"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowTransaction"/>
         /// </summary>
-        public static int bestRowTransaction { get { return SGetField<int>(LocalClazz, "bestRowTransaction"); } }
+        public static int bestRowTransaction { get { return SGetField<int>(LocalBridgeClazz, "bestRowTransaction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowUnknown"/>
         /// </summary>
-        public static int bestRowUnknown { get { return SGetField<int>(LocalClazz, "bestRowUnknown"); } }
+        public static int bestRowUnknown { get { return SGetField<int>(LocalBridgeClazz, "bestRowUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#columnNoNulls"/>
         /// </summary>
-        public static int columnNoNulls { get { return SGetField<int>(LocalClazz, "columnNoNulls"); } }
+        public static int columnNoNulls { get { return SGetField<int>(LocalBridgeClazz, "columnNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#columnNullable"/>
         /// </summary>
-        public static int columnNullable { get { return SGetField<int>(LocalClazz, "columnNullable"); } }
+        public static int columnNullable { get { return SGetField<int>(LocalBridgeClazz, "columnNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#columnNullableUnknown"/>
         /// </summary>
-        public static int columnNullableUnknown { get { return SGetField<int>(LocalClazz, "columnNullableUnknown"); } }
+        public static int columnNullableUnknown { get { return SGetField<int>(LocalBridgeClazz, "columnNullableUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnIn"/>
         /// </summary>
-        public static int functionColumnIn { get { return SGetField<int>(LocalClazz, "functionColumnIn"); } }
+        public static int functionColumnIn { get { return SGetField<int>(LocalBridgeClazz, "functionColumnIn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnInOut"/>
         /// </summary>
-        public static int functionColumnInOut { get { return SGetField<int>(LocalClazz, "functionColumnInOut"); } }
+        public static int functionColumnInOut { get { return SGetField<int>(LocalBridgeClazz, "functionColumnInOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnOut"/>
         /// </summary>
-        public static int functionColumnOut { get { return SGetField<int>(LocalClazz, "functionColumnOut"); } }
+        public static int functionColumnOut { get { return SGetField<int>(LocalBridgeClazz, "functionColumnOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnResult"/>
         /// </summary>
-        public static int functionColumnResult { get { return SGetField<int>(LocalClazz, "functionColumnResult"); } }
+        public static int functionColumnResult { get { return SGetField<int>(LocalBridgeClazz, "functionColumnResult"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnUnknown"/>
         /// </summary>
-        public static int functionColumnUnknown { get { return SGetField<int>(LocalClazz, "functionColumnUnknown"); } }
+        public static int functionColumnUnknown { get { return SGetField<int>(LocalBridgeClazz, "functionColumnUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNoNulls"/>
         /// </summary>
-        public static int functionNoNulls { get { return SGetField<int>(LocalClazz, "functionNoNulls"); } }
+        public static int functionNoNulls { get { return SGetField<int>(LocalBridgeClazz, "functionNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNoTable"/>
         /// </summary>
-        public static int functionNoTable { get { return SGetField<int>(LocalClazz, "functionNoTable"); } }
+        public static int functionNoTable { get { return SGetField<int>(LocalBridgeClazz, "functionNoTable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNullable"/>
         /// </summary>
-        public static int functionNullable { get { return SGetField<int>(LocalClazz, "functionNullable"); } }
+        public static int functionNullable { get { return SGetField<int>(LocalBridgeClazz, "functionNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNullableUnknown"/>
         /// </summary>
-        public static int functionNullableUnknown { get { return SGetField<int>(LocalClazz, "functionNullableUnknown"); } }
+        public static int functionNullableUnknown { get { return SGetField<int>(LocalBridgeClazz, "functionNullableUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionResultUnknown"/>
         /// </summary>
-        public static int functionResultUnknown { get { return SGetField<int>(LocalClazz, "functionResultUnknown"); } }
+        public static int functionResultUnknown { get { return SGetField<int>(LocalBridgeClazz, "functionResultUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionReturn"/>
         /// </summary>
-        public static int functionReturn { get { return SGetField<int>(LocalClazz, "functionReturn"); } }
+        public static int functionReturn { get { return SGetField<int>(LocalBridgeClazz, "functionReturn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionReturnsTable"/>
         /// </summary>
-        public static int functionReturnsTable { get { return SGetField<int>(LocalClazz, "functionReturnsTable"); } }
+        public static int functionReturnsTable { get { return SGetField<int>(LocalBridgeClazz, "functionReturnsTable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyCascade"/>
         /// </summary>
-        public static int importedKeyCascade { get { return SGetField<int>(LocalClazz, "importedKeyCascade"); } }
+        public static int importedKeyCascade { get { return SGetField<int>(LocalBridgeClazz, "importedKeyCascade"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyInitiallyDeferred"/>
         /// </summary>
-        public static int importedKeyInitiallyDeferred { get { return SGetField<int>(LocalClazz, "importedKeyInitiallyDeferred"); } }
+        public static int importedKeyInitiallyDeferred { get { return SGetField<int>(LocalBridgeClazz, "importedKeyInitiallyDeferred"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyInitiallyImmediate"/>
         /// </summary>
-        public static int importedKeyInitiallyImmediate { get { return SGetField<int>(LocalClazz, "importedKeyInitiallyImmediate"); } }
+        public static int importedKeyInitiallyImmediate { get { return SGetField<int>(LocalBridgeClazz, "importedKeyInitiallyImmediate"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyNoAction"/>
         /// </summary>
-        public static int importedKeyNoAction { get { return SGetField<int>(LocalClazz, "importedKeyNoAction"); } }
+        public static int importedKeyNoAction { get { return SGetField<int>(LocalBridgeClazz, "importedKeyNoAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyNotDeferrable"/>
         /// </summary>
-        public static int importedKeyNotDeferrable { get { return SGetField<int>(LocalClazz, "importedKeyNotDeferrable"); } }
+        public static int importedKeyNotDeferrable { get { return SGetField<int>(LocalBridgeClazz, "importedKeyNotDeferrable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyRestrict"/>
         /// </summary>
-        public static int importedKeyRestrict { get { return SGetField<int>(LocalClazz, "importedKeyRestrict"); } }
+        public static int importedKeyRestrict { get { return SGetField<int>(LocalBridgeClazz, "importedKeyRestrict"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeySetDefault"/>
         /// </summary>
-        public static int importedKeySetDefault { get { return SGetField<int>(LocalClazz, "importedKeySetDefault"); } }
+        public static int importedKeySetDefault { get { return SGetField<int>(LocalBridgeClazz, "importedKeySetDefault"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeySetNull"/>
         /// </summary>
-        public static int importedKeySetNull { get { return SGetField<int>(LocalClazz, "importedKeySetNull"); } }
+        public static int importedKeySetNull { get { return SGetField<int>(LocalBridgeClazz, "importedKeySetNull"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnIn"/>
         /// </summary>
-        public static int procedureColumnIn { get { return SGetField<int>(LocalClazz, "procedureColumnIn"); } }
+        public static int procedureColumnIn { get { return SGetField<int>(LocalBridgeClazz, "procedureColumnIn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnInOut"/>
         /// </summary>
-        public static int procedureColumnInOut { get { return SGetField<int>(LocalClazz, "procedureColumnInOut"); } }
+        public static int procedureColumnInOut { get { return SGetField<int>(LocalBridgeClazz, "procedureColumnInOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnOut"/>
         /// </summary>
-        public static int procedureColumnOut { get { return SGetField<int>(LocalClazz, "procedureColumnOut"); } }
+        public static int procedureColumnOut { get { return SGetField<int>(LocalBridgeClazz, "procedureColumnOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnResult"/>
         /// </summary>
-        public static int procedureColumnResult { get { return SGetField<int>(LocalClazz, "procedureColumnResult"); } }
+        public static int procedureColumnResult { get { return SGetField<int>(LocalBridgeClazz, "procedureColumnResult"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnReturn"/>
         /// </summary>
-        public static int procedureColumnReturn { get { return SGetField<int>(LocalClazz, "procedureColumnReturn"); } }
+        public static int procedureColumnReturn { get { return SGetField<int>(LocalBridgeClazz, "procedureColumnReturn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnUnknown"/>
         /// </summary>
-        public static int procedureColumnUnknown { get { return SGetField<int>(LocalClazz, "procedureColumnUnknown"); } }
+        public static int procedureColumnUnknown { get { return SGetField<int>(LocalBridgeClazz, "procedureColumnUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNoNulls"/>
         /// </summary>
-        public static int procedureNoNulls { get { return SGetField<int>(LocalClazz, "procedureNoNulls"); } }
+        public static int procedureNoNulls { get { return SGetField<int>(LocalBridgeClazz, "procedureNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNoResult"/>
         /// </summary>
-        public static int procedureNoResult { get { return SGetField<int>(LocalClazz, "procedureNoResult"); } }
+        public static int procedureNoResult { get { return SGetField<int>(LocalBridgeClazz, "procedureNoResult"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNullable"/>
         /// </summary>
-        public static int procedureNullable { get { return SGetField<int>(LocalClazz, "procedureNullable"); } }
+        public static int procedureNullable { get { return SGetField<int>(LocalBridgeClazz, "procedureNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNullableUnknown"/>
         /// </summary>
-        public static int procedureNullableUnknown { get { return SGetField<int>(LocalClazz, "procedureNullableUnknown"); } }
+        public static int procedureNullableUnknown { get { return SGetField<int>(LocalBridgeClazz, "procedureNullableUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureResultUnknown"/>
         /// </summary>
-        public static int procedureResultUnknown { get { return SGetField<int>(LocalClazz, "procedureResultUnknown"); } }
+        public static int procedureResultUnknown { get { return SGetField<int>(LocalBridgeClazz, "procedureResultUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureReturnsResult"/>
         /// </summary>
-        public static int procedureReturnsResult { get { return SGetField<int>(LocalClazz, "procedureReturnsResult"); } }
+        public static int procedureReturnsResult { get { return SGetField<int>(LocalBridgeClazz, "procedureReturnsResult"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateSQL"/>
         /// </summary>
-        public static int sqlStateSQL { get { return SGetField<int>(LocalClazz, "sqlStateSQL"); } }
+        public static int sqlStateSQL { get { return SGetField<int>(LocalBridgeClazz, "sqlStateSQL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateSQL99"/>
         /// </summary>
-        public static int sqlStateSQL99 { get { return SGetField<int>(LocalClazz, "sqlStateSQL99"); } }
+        public static int sqlStateSQL99 { get { return SGetField<int>(LocalBridgeClazz, "sqlStateSQL99"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateXOpen"/>
         /// </summary>
-        public static int sqlStateXOpen { get { return SGetField<int>(LocalClazz, "sqlStateXOpen"); } }
+        public static int sqlStateXOpen { get { return SGetField<int>(LocalBridgeClazz, "sqlStateXOpen"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNoNulls"/>
         /// </summary>
-        public static int typeNoNulls { get { return SGetField<int>(LocalClazz, "typeNoNulls"); } }
+        public static int typeNoNulls { get { return SGetField<int>(LocalBridgeClazz, "typeNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNullable"/>
         /// </summary>
-        public static int typeNullable { get { return SGetField<int>(LocalClazz, "typeNullable"); } }
+        public static int typeNullable { get { return SGetField<int>(LocalBridgeClazz, "typeNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNullableUnknown"/>
         /// </summary>
-        public static int typeNullableUnknown { get { return SGetField<int>(LocalClazz, "typeNullableUnknown"); } }
+        public static int typeNullableUnknown { get { return SGetField<int>(LocalBridgeClazz, "typeNullableUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredBasic"/>
         /// </summary>
-        public static int typePredBasic { get { return SGetField<int>(LocalClazz, "typePredBasic"); } }
+        public static int typePredBasic { get { return SGetField<int>(LocalBridgeClazz, "typePredBasic"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredChar"/>
         /// </summary>
-        public static int typePredChar { get { return SGetField<int>(LocalClazz, "typePredChar"); } }
+        public static int typePredChar { get { return SGetField<int>(LocalBridgeClazz, "typePredChar"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredNone"/>
         /// </summary>
-        public static int typePredNone { get { return SGetField<int>(LocalClazz, "typePredNone"); } }
+        public static int typePredNone { get { return SGetField<int>(LocalBridgeClazz, "typePredNone"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeSearchable"/>
         /// </summary>
-        public static int typeSearchable { get { return SGetField<int>(LocalClazz, "typeSearchable"); } }
+        public static int typeSearchable { get { return SGetField<int>(LocalBridgeClazz, "typeSearchable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnNotPseudo"/>
         /// </summary>
-        public static int versionColumnNotPseudo { get { return SGetField<int>(LocalClazz, "versionColumnNotPseudo"); } }
+        public static int versionColumnNotPseudo { get { return SGetField<int>(LocalBridgeClazz, "versionColumnNotPseudo"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnPseudo"/>
         /// </summary>
-        public static int versionColumnPseudo { get { return SGetField<int>(LocalClazz, "versionColumnPseudo"); } }
+        public static int versionColumnPseudo { get { return SGetField<int>(LocalBridgeClazz, "versionColumnPseudo"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnUnknown"/>
         /// </summary>
-        public static int versionColumnUnknown { get { return SGetField<int>(LocalClazz, "versionColumnUnknown"); } }
+        public static int versionColumnUnknown { get { return SGetField<int>(LocalBridgeClazz, "versionColumnUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNoNulls"/>
         /// </summary>
-        public static short attributeNoNulls { get { return SGetField<short>(LocalClazz, "attributeNoNulls"); } }
+        public static short attributeNoNulls { get { return SGetField<short>(LocalBridgeClazz, "attributeNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNullable"/>
         /// </summary>
-        public static short attributeNullable { get { return SGetField<short>(LocalClazz, "attributeNullable"); } }
+        public static short attributeNullable { get { return SGetField<short>(LocalBridgeClazz, "attributeNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNullableUnknown"/>
         /// </summary>
-        public static short attributeNullableUnknown { get { return SGetField<short>(LocalClazz, "attributeNullableUnknown"); } }
+        public static short attributeNullableUnknown { get { return SGetField<short>(LocalBridgeClazz, "attributeNullableUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexClustered"/>
         /// </summary>
-        public static short tableIndexClustered { get { return SGetField<short>(LocalClazz, "tableIndexClustered"); } }
+        public static short tableIndexClustered { get { return SGetField<short>(LocalBridgeClazz, "tableIndexClustered"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexHashed"/>
         /// </summary>
-        public static short tableIndexHashed { get { return SGetField<short>(LocalClazz, "tableIndexHashed"); } }
+        public static short tableIndexHashed { get { return SGetField<short>(LocalBridgeClazz, "tableIndexHashed"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexOther"/>
         /// </summary>
-        public static short tableIndexOther { get { return SGetField<short>(LocalClazz, "tableIndexOther"); } }
+        public static short tableIndexOther { get { return SGetField<short>(LocalBridgeClazz, "tableIndexOther"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexStatistic"/>
         /// </summary>
-        public static short tableIndexStatistic { get { return SGetField<short>(LocalClazz, "tableIndexStatistic"); } }
+        public static short tableIndexStatistic { get { return SGetField<short>(LocalBridgeClazz, "tableIndexStatistic"); } }
 
         #endregion
 

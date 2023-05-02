@@ -99,6 +99,13 @@ namespace Javax.Naming
             get { return IExecute<Java.Util.Enumeration<Javax.Naming.RefAddr>>("getAll"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getClassName()"/> 
+        /// </summary>
+        public string ClassName
+        {
+            get { return IExecute<string>("getClassName"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getFactoryClassLocation()"/> 
         /// </summary>
         public string FactoryClassLocation
@@ -111,13 +118,6 @@ namespace Javax.Naming
         public string FactoryClassName
         {
             get { return IExecute<string>("getFactoryClassName"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#getClassName()"/> 
-        /// </summary>
-        public string GetClassName
-        {
-            get { return IExecute<string>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#size()"/> 

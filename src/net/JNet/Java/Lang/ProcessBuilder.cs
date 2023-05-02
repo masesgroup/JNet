@@ -26,9 +26,9 @@ namespace Java.Lang
     public sealed class ProcessBuilder : JVMBridgeBase<ProcessBuilder>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.ProcessBuilder";
+        public override string BridgeClassName => "java.lang.ProcessBuilder";
 
         /// <summary>
         /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ProcessBuilder.Redirect.html"/>
@@ -36,13 +36,13 @@ namespace Java.Lang
         public sealed class Redirect : JVMBridgeBase<Redirect>
         {
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string ClassName => "java.lang.ProcessBuilder.Redirect";
+            public override string BridgeClassName => "java.lang.ProcessBuilder.Redirect";
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
-            public override bool IsStatic => true;
+            public override bool IsBridgeStatic => true;
         }
     }
 }

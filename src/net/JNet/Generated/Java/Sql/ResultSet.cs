@@ -48,43 +48,43 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CLOSE_CURSORS_AT_COMMIT"/>
         /// </summary>
-        public static int CLOSE_CURSORS_AT_COMMIT { get { return SGetField<int>(LocalClazz, "CLOSE_CURSORS_AT_COMMIT"); } }
+        public static int CLOSE_CURSORS_AT_COMMIT { get { return SGetField<int>(LocalBridgeClazz, "CLOSE_CURSORS_AT_COMMIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CONCUR_READ_ONLY"/>
         /// </summary>
-        public static int CONCUR_READ_ONLY { get { return SGetField<int>(LocalClazz, "CONCUR_READ_ONLY"); } }
+        public static int CONCUR_READ_ONLY { get { return SGetField<int>(LocalBridgeClazz, "CONCUR_READ_ONLY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CONCUR_UPDATABLE"/>
         /// </summary>
-        public static int CONCUR_UPDATABLE { get { return SGetField<int>(LocalClazz, "CONCUR_UPDATABLE"); } }
+        public static int CONCUR_UPDATABLE { get { return SGetField<int>(LocalBridgeClazz, "CONCUR_UPDATABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#FETCH_FORWARD"/>
         /// </summary>
-        public static int FETCH_FORWARD { get { return SGetField<int>(LocalClazz, "FETCH_FORWARD"); } }
+        public static int FETCH_FORWARD { get { return SGetField<int>(LocalBridgeClazz, "FETCH_FORWARD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#FETCH_REVERSE"/>
         /// </summary>
-        public static int FETCH_REVERSE { get { return SGetField<int>(LocalClazz, "FETCH_REVERSE"); } }
+        public static int FETCH_REVERSE { get { return SGetField<int>(LocalBridgeClazz, "FETCH_REVERSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#FETCH_UNKNOWN"/>
         /// </summary>
-        public static int FETCH_UNKNOWN { get { return SGetField<int>(LocalClazz, "FETCH_UNKNOWN"); } }
+        public static int FETCH_UNKNOWN { get { return SGetField<int>(LocalBridgeClazz, "FETCH_UNKNOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#HOLD_CURSORS_OVER_COMMIT"/>
         /// </summary>
-        public static int HOLD_CURSORS_OVER_COMMIT { get { return SGetField<int>(LocalClazz, "HOLD_CURSORS_OVER_COMMIT"); } }
+        public static int HOLD_CURSORS_OVER_COMMIT { get { return SGetField<int>(LocalBridgeClazz, "HOLD_CURSORS_OVER_COMMIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_FORWARD_ONLY"/>
         /// </summary>
-        public static int TYPE_FORWARD_ONLY { get { return SGetField<int>(LocalClazz, "TYPE_FORWARD_ONLY"); } }
+        public static int TYPE_FORWARD_ONLY { get { return SGetField<int>(LocalBridgeClazz, "TYPE_FORWARD_ONLY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_SCROLL_INSENSITIVE"/>
         /// </summary>
-        public static int TYPE_SCROLL_INSENSITIVE { get { return SGetField<int>(LocalClazz, "TYPE_SCROLL_INSENSITIVE"); } }
+        public static int TYPE_SCROLL_INSENSITIVE { get { return SGetField<int>(LocalBridgeClazz, "TYPE_SCROLL_INSENSITIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_SCROLL_SENSITIVE"/>
         /// </summary>
-        public static int TYPE_SCROLL_SENSITIVE { get { return SGetField<int>(LocalClazz, "TYPE_SCROLL_SENSITIVE"); } }
+        public static int TYPE_SCROLL_SENSITIVE { get { return SGetField<int>(LocalBridgeClazz, "TYPE_SCROLL_SENSITIVE"); } }
 
         #endregion
 

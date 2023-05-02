@@ -40,659 +40,659 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#COLOR_SPACE_SRGB"/>
         /// </summary>
-        public static int COLOR_SPACE_SRGB { get { return SGetField<int>(LocalClazz, "COLOR_SPACE_SRGB"); } }
+        public static int COLOR_SPACE_SRGB { get { return SGetField<int>(LocalBridgeClazz, "COLOR_SPACE_SRGB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#COLOR_SPACE_UNCALIBRATED"/>
         /// </summary>
-        public static int COLOR_SPACE_UNCALIBRATED { get { return SGetField<int>(LocalClazz, "COLOR_SPACE_UNCALIBRATED"); } }
+        public static int COLOR_SPACE_UNCALIBRATED { get { return SGetField<int>(LocalBridgeClazz, "COLOR_SPACE_UNCALIBRATED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#COMPONENTS_CONFIGURATION_B"/>
         /// </summary>
-        public static int COMPONENTS_CONFIGURATION_B { get { return SGetField<int>(LocalClazz, "COMPONENTS_CONFIGURATION_B"); } }
+        public static int COMPONENTS_CONFIGURATION_B { get { return SGetField<int>(LocalBridgeClazz, "COMPONENTS_CONFIGURATION_B"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#COMPONENTS_CONFIGURATION_CB"/>
         /// </summary>
-        public static int COMPONENTS_CONFIGURATION_CB { get { return SGetField<int>(LocalClazz, "COMPONENTS_CONFIGURATION_CB"); } }
+        public static int COMPONENTS_CONFIGURATION_CB { get { return SGetField<int>(LocalBridgeClazz, "COMPONENTS_CONFIGURATION_CB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#COMPONENTS_CONFIGURATION_CR"/>
         /// </summary>
-        public static int COMPONENTS_CONFIGURATION_CR { get { return SGetField<int>(LocalClazz, "COMPONENTS_CONFIGURATION_CR"); } }
+        public static int COMPONENTS_CONFIGURATION_CR { get { return SGetField<int>(LocalBridgeClazz, "COMPONENTS_CONFIGURATION_CR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#COMPONENTS_CONFIGURATION_DOES_NOT_EXIST"/>
         /// </summary>
-        public static int COMPONENTS_CONFIGURATION_DOES_NOT_EXIST { get { return SGetField<int>(LocalClazz, "COMPONENTS_CONFIGURATION_DOES_NOT_EXIST"); } }
+        public static int COMPONENTS_CONFIGURATION_DOES_NOT_EXIST { get { return SGetField<int>(LocalBridgeClazz, "COMPONENTS_CONFIGURATION_DOES_NOT_EXIST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#COMPONENTS_CONFIGURATION_G"/>
         /// </summary>
-        public static int COMPONENTS_CONFIGURATION_G { get { return SGetField<int>(LocalClazz, "COMPONENTS_CONFIGURATION_G"); } }
+        public static int COMPONENTS_CONFIGURATION_G { get { return SGetField<int>(LocalBridgeClazz, "COMPONENTS_CONFIGURATION_G"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#COMPONENTS_CONFIGURATION_R"/>
         /// </summary>
-        public static int COMPONENTS_CONFIGURATION_R { get { return SGetField<int>(LocalClazz, "COMPONENTS_CONFIGURATION_R"); } }
+        public static int COMPONENTS_CONFIGURATION_R { get { return SGetField<int>(LocalBridgeClazz, "COMPONENTS_CONFIGURATION_R"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#COMPONENTS_CONFIGURATION_Y"/>
         /// </summary>
-        public static int COMPONENTS_CONFIGURATION_Y { get { return SGetField<int>(LocalClazz, "COMPONENTS_CONFIGURATION_Y"); } }
+        public static int COMPONENTS_CONFIGURATION_Y { get { return SGetField<int>(LocalBridgeClazz, "COMPONENTS_CONFIGURATION_Y"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#CONTRAST_HARD"/>
         /// </summary>
-        public static int CONTRAST_HARD { get { return SGetField<int>(LocalClazz, "CONTRAST_HARD"); } }
+        public static int CONTRAST_HARD { get { return SGetField<int>(LocalBridgeClazz, "CONTRAST_HARD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#CONTRAST_NORMAL"/>
         /// </summary>
-        public static int CONTRAST_NORMAL { get { return SGetField<int>(LocalClazz, "CONTRAST_NORMAL"); } }
+        public static int CONTRAST_NORMAL { get { return SGetField<int>(LocalBridgeClazz, "CONTRAST_NORMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#CONTRAST_SOFT"/>
         /// </summary>
-        public static int CONTRAST_SOFT { get { return SGetField<int>(LocalClazz, "CONTRAST_SOFT"); } }
+        public static int CONTRAST_SOFT { get { return SGetField<int>(LocalBridgeClazz, "CONTRAST_SOFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#CUSTOM_RENDERED_CUSTOM"/>
         /// </summary>
-        public static int CUSTOM_RENDERED_CUSTOM { get { return SGetField<int>(LocalClazz, "CUSTOM_RENDERED_CUSTOM"); } }
+        public static int CUSTOM_RENDERED_CUSTOM { get { return SGetField<int>(LocalBridgeClazz, "CUSTOM_RENDERED_CUSTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#CUSTOM_RENDERED_NORMAL"/>
         /// </summary>
-        public static int CUSTOM_RENDERED_NORMAL { get { return SGetField<int>(LocalClazz, "CUSTOM_RENDERED_NORMAL"); } }
+        public static int CUSTOM_RENDERED_NORMAL { get { return SGetField<int>(LocalBridgeClazz, "CUSTOM_RENDERED_NORMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_MODE_AUTO_BRACKET"/>
         /// </summary>
-        public static int EXPOSURE_MODE_AUTO_BRACKET { get { return SGetField<int>(LocalClazz, "EXPOSURE_MODE_AUTO_BRACKET"); } }
+        public static int EXPOSURE_MODE_AUTO_BRACKET { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_MODE_AUTO_BRACKET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_MODE_AUTO_EXPOSURE"/>
         /// </summary>
-        public static int EXPOSURE_MODE_AUTO_EXPOSURE { get { return SGetField<int>(LocalClazz, "EXPOSURE_MODE_AUTO_EXPOSURE"); } }
+        public static int EXPOSURE_MODE_AUTO_EXPOSURE { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_MODE_AUTO_EXPOSURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_MODE_MANUAL_EXPOSURE"/>
         /// </summary>
-        public static int EXPOSURE_MODE_MANUAL_EXPOSURE { get { return SGetField<int>(LocalClazz, "EXPOSURE_MODE_MANUAL_EXPOSURE"); } }
+        public static int EXPOSURE_MODE_MANUAL_EXPOSURE { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_MODE_MANUAL_EXPOSURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_PROGRAM_ACTION_PROGRAM"/>
         /// </summary>
-        public static int EXPOSURE_PROGRAM_ACTION_PROGRAM { get { return SGetField<int>(LocalClazz, "EXPOSURE_PROGRAM_ACTION_PROGRAM"); } }
+        public static int EXPOSURE_PROGRAM_ACTION_PROGRAM { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_PROGRAM_ACTION_PROGRAM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_PROGRAM_APERTURE_PRIORITY"/>
         /// </summary>
-        public static int EXPOSURE_PROGRAM_APERTURE_PRIORITY { get { return SGetField<int>(LocalClazz, "EXPOSURE_PROGRAM_APERTURE_PRIORITY"); } }
+        public static int EXPOSURE_PROGRAM_APERTURE_PRIORITY { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_PROGRAM_APERTURE_PRIORITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_PROGRAM_CREATIVE_PROGRAM"/>
         /// </summary>
-        public static int EXPOSURE_PROGRAM_CREATIVE_PROGRAM { get { return SGetField<int>(LocalClazz, "EXPOSURE_PROGRAM_CREATIVE_PROGRAM"); } }
+        public static int EXPOSURE_PROGRAM_CREATIVE_PROGRAM { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_PROGRAM_CREATIVE_PROGRAM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_PROGRAM_LANDSCAPE_MODE"/>
         /// </summary>
-        public static int EXPOSURE_PROGRAM_LANDSCAPE_MODE { get { return SGetField<int>(LocalClazz, "EXPOSURE_PROGRAM_LANDSCAPE_MODE"); } }
+        public static int EXPOSURE_PROGRAM_LANDSCAPE_MODE { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_PROGRAM_LANDSCAPE_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_PROGRAM_MANUAL"/>
         /// </summary>
-        public static int EXPOSURE_PROGRAM_MANUAL { get { return SGetField<int>(LocalClazz, "EXPOSURE_PROGRAM_MANUAL"); } }
+        public static int EXPOSURE_PROGRAM_MANUAL { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_PROGRAM_MANUAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_PROGRAM_MAX_RESERVED"/>
         /// </summary>
-        public static int EXPOSURE_PROGRAM_MAX_RESERVED { get { return SGetField<int>(LocalClazz, "EXPOSURE_PROGRAM_MAX_RESERVED"); } }
+        public static int EXPOSURE_PROGRAM_MAX_RESERVED { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_PROGRAM_MAX_RESERVED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_PROGRAM_NORMAL_PROGRAM"/>
         /// </summary>
-        public static int EXPOSURE_PROGRAM_NORMAL_PROGRAM { get { return SGetField<int>(LocalClazz, "EXPOSURE_PROGRAM_NORMAL_PROGRAM"); } }
+        public static int EXPOSURE_PROGRAM_NORMAL_PROGRAM { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_PROGRAM_NORMAL_PROGRAM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_PROGRAM_NOT_DEFINED"/>
         /// </summary>
-        public static int EXPOSURE_PROGRAM_NOT_DEFINED { get { return SGetField<int>(LocalClazz, "EXPOSURE_PROGRAM_NOT_DEFINED"); } }
+        public static int EXPOSURE_PROGRAM_NOT_DEFINED { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_PROGRAM_NOT_DEFINED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_PROGRAM_PORTRAIT_MODE"/>
         /// </summary>
-        public static int EXPOSURE_PROGRAM_PORTRAIT_MODE { get { return SGetField<int>(LocalClazz, "EXPOSURE_PROGRAM_PORTRAIT_MODE"); } }
+        public static int EXPOSURE_PROGRAM_PORTRAIT_MODE { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_PROGRAM_PORTRAIT_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXPOSURE_PROGRAM_SHUTTER_PRIORITY"/>
         /// </summary>
-        public static int EXPOSURE_PROGRAM_SHUTTER_PRIORITY { get { return SGetField<int>(LocalClazz, "EXPOSURE_PROGRAM_SHUTTER_PRIORITY"); } }
+        public static int EXPOSURE_PROGRAM_SHUTTER_PRIORITY { get { return SGetField<int>(LocalBridgeClazz, "EXPOSURE_PROGRAM_SHUTTER_PRIORITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FILE_SOURCE_DSC"/>
         /// </summary>
-        public static int FILE_SOURCE_DSC { get { return SGetField<int>(LocalClazz, "FILE_SOURCE_DSC"); } }
+        public static int FILE_SOURCE_DSC { get { return SGetField<int>(LocalBridgeClazz, "FILE_SOURCE_DSC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_DID_NOT_FIRE"/>
         /// </summary>
-        public static int FLASH_DID_NOT_FIRE { get { return SGetField<int>(LocalClazz, "FLASH_DID_NOT_FIRE"); } }
+        public static int FLASH_DID_NOT_FIRE { get { return SGetField<int>(LocalBridgeClazz, "FLASH_DID_NOT_FIRE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_FIRED"/>
         /// </summary>
-        public static int FLASH_FIRED { get { return SGetField<int>(LocalClazz, "FLASH_FIRED"); } }
+        public static int FLASH_FIRED { get { return SGetField<int>(LocalBridgeClazz, "FLASH_FIRED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_MASK_FIRED"/>
         /// </summary>
-        public static int FLASH_MASK_FIRED { get { return SGetField<int>(LocalClazz, "FLASH_MASK_FIRED"); } }
+        public static int FLASH_MASK_FIRED { get { return SGetField<int>(LocalBridgeClazz, "FLASH_MASK_FIRED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_MASK_FUNCTION_NOT_PRESENT"/>
         /// </summary>
-        public static int FLASH_MASK_FUNCTION_NOT_PRESENT { get { return SGetField<int>(LocalClazz, "FLASH_MASK_FUNCTION_NOT_PRESENT"); } }
+        public static int FLASH_MASK_FUNCTION_NOT_PRESENT { get { return SGetField<int>(LocalBridgeClazz, "FLASH_MASK_FUNCTION_NOT_PRESENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_MASK_MODE_AUTO"/>
         /// </summary>
-        public static int FLASH_MASK_MODE_AUTO { get { return SGetField<int>(LocalClazz, "FLASH_MASK_MODE_AUTO"); } }
+        public static int FLASH_MASK_MODE_AUTO { get { return SGetField<int>(LocalBridgeClazz, "FLASH_MASK_MODE_AUTO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_MASK_MODE_FLASH_FIRING"/>
         /// </summary>
-        public static int FLASH_MASK_MODE_FLASH_FIRING { get { return SGetField<int>(LocalClazz, "FLASH_MASK_MODE_FLASH_FIRING"); } }
+        public static int FLASH_MASK_MODE_FLASH_FIRING { get { return SGetField<int>(LocalBridgeClazz, "FLASH_MASK_MODE_FLASH_FIRING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_MASK_MODE_FLASH_SUPPRESSION"/>
         /// </summary>
-        public static int FLASH_MASK_MODE_FLASH_SUPPRESSION { get { return SGetField<int>(LocalClazz, "FLASH_MASK_MODE_FLASH_SUPPRESSION"); } }
+        public static int FLASH_MASK_MODE_FLASH_SUPPRESSION { get { return SGetField<int>(LocalBridgeClazz, "FLASH_MASK_MODE_FLASH_SUPPRESSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_MASK_RED_EYE_REDUCTION"/>
         /// </summary>
-        public static int FLASH_MASK_RED_EYE_REDUCTION { get { return SGetField<int>(LocalClazz, "FLASH_MASK_RED_EYE_REDUCTION"); } }
+        public static int FLASH_MASK_RED_EYE_REDUCTION { get { return SGetField<int>(LocalBridgeClazz, "FLASH_MASK_RED_EYE_REDUCTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_MASK_RETURN_DETECTED"/>
         /// </summary>
-        public static int FLASH_MASK_RETURN_DETECTED { get { return SGetField<int>(LocalClazz, "FLASH_MASK_RETURN_DETECTED"); } }
+        public static int FLASH_MASK_RETURN_DETECTED { get { return SGetField<int>(LocalBridgeClazz, "FLASH_MASK_RETURN_DETECTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_MASK_RETURN_NOT_DETECTED"/>
         /// </summary>
-        public static int FLASH_MASK_RETURN_NOT_DETECTED { get { return SGetField<int>(LocalClazz, "FLASH_MASK_RETURN_NOT_DETECTED"); } }
+        public static int FLASH_MASK_RETURN_NOT_DETECTED { get { return SGetField<int>(LocalBridgeClazz, "FLASH_MASK_RETURN_NOT_DETECTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_STROBE_RETURN_LIGHT_DETECTED"/>
         /// </summary>
-        public static int FLASH_STROBE_RETURN_LIGHT_DETECTED { get { return SGetField<int>(LocalClazz, "FLASH_STROBE_RETURN_LIGHT_DETECTED"); } }
+        public static int FLASH_STROBE_RETURN_LIGHT_DETECTED { get { return SGetField<int>(LocalBridgeClazz, "FLASH_STROBE_RETURN_LIGHT_DETECTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FLASH_STROBE_RETURN_LIGHT_NOT_DETECTED"/>
         /// </summary>
-        public static int FLASH_STROBE_RETURN_LIGHT_NOT_DETECTED { get { return SGetField<int>(LocalClazz, "FLASH_STROBE_RETURN_LIGHT_NOT_DETECTED"); } }
+        public static int FLASH_STROBE_RETURN_LIGHT_NOT_DETECTED { get { return SGetField<int>(LocalBridgeClazz, "FLASH_STROBE_RETURN_LIGHT_NOT_DETECTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FOCAL_PLANE_RESOLUTION_UNIT_CENTIMETER"/>
         /// </summary>
-        public static int FOCAL_PLANE_RESOLUTION_UNIT_CENTIMETER { get { return SGetField<int>(LocalClazz, "FOCAL_PLANE_RESOLUTION_UNIT_CENTIMETER"); } }
+        public static int FOCAL_PLANE_RESOLUTION_UNIT_CENTIMETER { get { return SGetField<int>(LocalBridgeClazz, "FOCAL_PLANE_RESOLUTION_UNIT_CENTIMETER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FOCAL_PLANE_RESOLUTION_UNIT_INCH"/>
         /// </summary>
-        public static int FOCAL_PLANE_RESOLUTION_UNIT_INCH { get { return SGetField<int>(LocalClazz, "FOCAL_PLANE_RESOLUTION_UNIT_INCH"); } }
+        public static int FOCAL_PLANE_RESOLUTION_UNIT_INCH { get { return SGetField<int>(LocalBridgeClazz, "FOCAL_PLANE_RESOLUTION_UNIT_INCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#FOCAL_PLANE_RESOLUTION_UNIT_NONE"/>
         /// </summary>
-        public static int FOCAL_PLANE_RESOLUTION_UNIT_NONE { get { return SGetField<int>(LocalClazz, "FOCAL_PLANE_RESOLUTION_UNIT_NONE"); } }
+        public static int FOCAL_PLANE_RESOLUTION_UNIT_NONE { get { return SGetField<int>(LocalBridgeClazz, "FOCAL_PLANE_RESOLUTION_UNIT_NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#GAIN_CONTROL_HIGH_GAIN_DOWN"/>
         /// </summary>
-        public static int GAIN_CONTROL_HIGH_GAIN_DOWN { get { return SGetField<int>(LocalClazz, "GAIN_CONTROL_HIGH_GAIN_DOWN"); } }
+        public static int GAIN_CONTROL_HIGH_GAIN_DOWN { get { return SGetField<int>(LocalBridgeClazz, "GAIN_CONTROL_HIGH_GAIN_DOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#GAIN_CONTROL_HIGH_GAIN_UP"/>
         /// </summary>
-        public static int GAIN_CONTROL_HIGH_GAIN_UP { get { return SGetField<int>(LocalClazz, "GAIN_CONTROL_HIGH_GAIN_UP"); } }
+        public static int GAIN_CONTROL_HIGH_GAIN_UP { get { return SGetField<int>(LocalBridgeClazz, "GAIN_CONTROL_HIGH_GAIN_UP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#GAIN_CONTROL_LOW_GAIN_DOWN"/>
         /// </summary>
-        public static int GAIN_CONTROL_LOW_GAIN_DOWN { get { return SGetField<int>(LocalClazz, "GAIN_CONTROL_LOW_GAIN_DOWN"); } }
+        public static int GAIN_CONTROL_LOW_GAIN_DOWN { get { return SGetField<int>(LocalBridgeClazz, "GAIN_CONTROL_LOW_GAIN_DOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#GAIN_CONTROL_LOW_GAIN_UP"/>
         /// </summary>
-        public static int GAIN_CONTROL_LOW_GAIN_UP { get { return SGetField<int>(LocalClazz, "GAIN_CONTROL_LOW_GAIN_UP"); } }
+        public static int GAIN_CONTROL_LOW_GAIN_UP { get { return SGetField<int>(LocalBridgeClazz, "GAIN_CONTROL_LOW_GAIN_UP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#GAIN_CONTROL_NONE"/>
         /// </summary>
-        public static int GAIN_CONTROL_NONE { get { return SGetField<int>(LocalClazz, "GAIN_CONTROL_NONE"); } }
+        public static int GAIN_CONTROL_NONE { get { return SGetField<int>(LocalBridgeClazz, "GAIN_CONTROL_NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_CLOUDY_WEATHER"/>
         /// </summary>
-        public static int LIGHT_SOURCE_CLOUDY_WEATHER { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_CLOUDY_WEATHER"); } }
+        public static int LIGHT_SOURCE_CLOUDY_WEATHER { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_CLOUDY_WEATHER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_COOL_WHITE_FLUORESCENT"/>
         /// </summary>
-        public static int LIGHT_SOURCE_COOL_WHITE_FLUORESCENT { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_COOL_WHITE_FLUORESCENT"); } }
+        public static int LIGHT_SOURCE_COOL_WHITE_FLUORESCENT { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_COOL_WHITE_FLUORESCENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_D50"/>
         /// </summary>
-        public static int LIGHT_SOURCE_D50 { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_D50"); } }
+        public static int LIGHT_SOURCE_D50 { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_D50"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_D55"/>
         /// </summary>
-        public static int LIGHT_SOURCE_D55 { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_D55"); } }
+        public static int LIGHT_SOURCE_D55 { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_D55"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_D65"/>
         /// </summary>
-        public static int LIGHT_SOURCE_D65 { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_D65"); } }
+        public static int LIGHT_SOURCE_D65 { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_D65"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_D75"/>
         /// </summary>
-        public static int LIGHT_SOURCE_D75 { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_D75"); } }
+        public static int LIGHT_SOURCE_D75 { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_D75"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_DAY_WHITE_FLUORESCENT"/>
         /// </summary>
-        public static int LIGHT_SOURCE_DAY_WHITE_FLUORESCENT { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_DAY_WHITE_FLUORESCENT"); } }
+        public static int LIGHT_SOURCE_DAY_WHITE_FLUORESCENT { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_DAY_WHITE_FLUORESCENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_DAYLIGHT"/>
         /// </summary>
-        public static int LIGHT_SOURCE_DAYLIGHT { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_DAYLIGHT"); } }
+        public static int LIGHT_SOURCE_DAYLIGHT { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_DAYLIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_DAYLIGHT_FLUORESCENT"/>
         /// </summary>
-        public static int LIGHT_SOURCE_DAYLIGHT_FLUORESCENT { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_DAYLIGHT_FLUORESCENT"); } }
+        public static int LIGHT_SOURCE_DAYLIGHT_FLUORESCENT { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_DAYLIGHT_FLUORESCENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_FINE_WEATHER"/>
         /// </summary>
-        public static int LIGHT_SOURCE_FINE_WEATHER { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_FINE_WEATHER"); } }
+        public static int LIGHT_SOURCE_FINE_WEATHER { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_FINE_WEATHER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_FLASH"/>
         /// </summary>
-        public static int LIGHT_SOURCE_FLASH { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_FLASH"); } }
+        public static int LIGHT_SOURCE_FLASH { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_FLASH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_FLUORESCENT"/>
         /// </summary>
-        public static int LIGHT_SOURCE_FLUORESCENT { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_FLUORESCENT"); } }
+        public static int LIGHT_SOURCE_FLUORESCENT { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_FLUORESCENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_ISO_STUDIO_TUNGSTEN"/>
         /// </summary>
-        public static int LIGHT_SOURCE_ISO_STUDIO_TUNGSTEN { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_ISO_STUDIO_TUNGSTEN"); } }
+        public static int LIGHT_SOURCE_ISO_STUDIO_TUNGSTEN { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_ISO_STUDIO_TUNGSTEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_OTHER"/>
         /// </summary>
-        public static int LIGHT_SOURCE_OTHER { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_OTHER"); } }
+        public static int LIGHT_SOURCE_OTHER { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_OTHER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_SHADE"/>
         /// </summary>
-        public static int LIGHT_SOURCE_SHADE { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_SHADE"); } }
+        public static int LIGHT_SOURCE_SHADE { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_SHADE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_STANDARD_LIGHT_A"/>
         /// </summary>
-        public static int LIGHT_SOURCE_STANDARD_LIGHT_A { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_STANDARD_LIGHT_A"); } }
+        public static int LIGHT_SOURCE_STANDARD_LIGHT_A { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_STANDARD_LIGHT_A"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_STANDARD_LIGHT_B"/>
         /// </summary>
-        public static int LIGHT_SOURCE_STANDARD_LIGHT_B { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_STANDARD_LIGHT_B"); } }
+        public static int LIGHT_SOURCE_STANDARD_LIGHT_B { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_STANDARD_LIGHT_B"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_STANDARD_LIGHT_C"/>
         /// </summary>
-        public static int LIGHT_SOURCE_STANDARD_LIGHT_C { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_STANDARD_LIGHT_C"); } }
+        public static int LIGHT_SOURCE_STANDARD_LIGHT_C { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_STANDARD_LIGHT_C"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_TUNGSTEN"/>
         /// </summary>
-        public static int LIGHT_SOURCE_TUNGSTEN { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_TUNGSTEN"); } }
+        public static int LIGHT_SOURCE_TUNGSTEN { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_TUNGSTEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_UNKNOWN"/>
         /// </summary>
-        public static int LIGHT_SOURCE_UNKNOWN { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_UNKNOWN"); } }
+        public static int LIGHT_SOURCE_UNKNOWN { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_UNKNOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#LIGHT_SOURCE_WHITE_FLUORESCENT"/>
         /// </summary>
-        public static int LIGHT_SOURCE_WHITE_FLUORESCENT { get { return SGetField<int>(LocalClazz, "LIGHT_SOURCE_WHITE_FLUORESCENT"); } }
+        public static int LIGHT_SOURCE_WHITE_FLUORESCENT { get { return SGetField<int>(LocalBridgeClazz, "LIGHT_SOURCE_WHITE_FLUORESCENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#METERING_MODE_AVERAGE"/>
         /// </summary>
-        public static int METERING_MODE_AVERAGE { get { return SGetField<int>(LocalClazz, "METERING_MODE_AVERAGE"); } }
+        public static int METERING_MODE_AVERAGE { get { return SGetField<int>(LocalBridgeClazz, "METERING_MODE_AVERAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#METERING_MODE_CENTER_WEIGHTED_AVERAGE"/>
         /// </summary>
-        public static int METERING_MODE_CENTER_WEIGHTED_AVERAGE { get { return SGetField<int>(LocalClazz, "METERING_MODE_CENTER_WEIGHTED_AVERAGE"); } }
+        public static int METERING_MODE_CENTER_WEIGHTED_AVERAGE { get { return SGetField<int>(LocalBridgeClazz, "METERING_MODE_CENTER_WEIGHTED_AVERAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#METERING_MODE_MAX_RESERVED"/>
         /// </summary>
-        public static int METERING_MODE_MAX_RESERVED { get { return SGetField<int>(LocalClazz, "METERING_MODE_MAX_RESERVED"); } }
+        public static int METERING_MODE_MAX_RESERVED { get { return SGetField<int>(LocalBridgeClazz, "METERING_MODE_MAX_RESERVED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#METERING_MODE_MIN_RESERVED"/>
         /// </summary>
-        public static int METERING_MODE_MIN_RESERVED { get { return SGetField<int>(LocalClazz, "METERING_MODE_MIN_RESERVED"); } }
+        public static int METERING_MODE_MIN_RESERVED { get { return SGetField<int>(LocalBridgeClazz, "METERING_MODE_MIN_RESERVED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#METERING_MODE_MULTI_SPOT"/>
         /// </summary>
-        public static int METERING_MODE_MULTI_SPOT { get { return SGetField<int>(LocalClazz, "METERING_MODE_MULTI_SPOT"); } }
+        public static int METERING_MODE_MULTI_SPOT { get { return SGetField<int>(LocalBridgeClazz, "METERING_MODE_MULTI_SPOT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#METERING_MODE_OTHER"/>
         /// </summary>
-        public static int METERING_MODE_OTHER { get { return SGetField<int>(LocalClazz, "METERING_MODE_OTHER"); } }
+        public static int METERING_MODE_OTHER { get { return SGetField<int>(LocalBridgeClazz, "METERING_MODE_OTHER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#METERING_MODE_PARTIAL"/>
         /// </summary>
-        public static int METERING_MODE_PARTIAL { get { return SGetField<int>(LocalClazz, "METERING_MODE_PARTIAL"); } }
+        public static int METERING_MODE_PARTIAL { get { return SGetField<int>(LocalBridgeClazz, "METERING_MODE_PARTIAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#METERING_MODE_PATTERN"/>
         /// </summary>
-        public static int METERING_MODE_PATTERN { get { return SGetField<int>(LocalClazz, "METERING_MODE_PATTERN"); } }
+        public static int METERING_MODE_PATTERN { get { return SGetField<int>(LocalBridgeClazz, "METERING_MODE_PATTERN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#METERING_MODE_SPOT"/>
         /// </summary>
-        public static int METERING_MODE_SPOT { get { return SGetField<int>(LocalClazz, "METERING_MODE_SPOT"); } }
+        public static int METERING_MODE_SPOT { get { return SGetField<int>(LocalBridgeClazz, "METERING_MODE_SPOT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#METERING_MODE_UNKNOWN"/>
         /// </summary>
-        public static int METERING_MODE_UNKNOWN { get { return SGetField<int>(LocalClazz, "METERING_MODE_UNKNOWN"); } }
+        public static int METERING_MODE_UNKNOWN { get { return SGetField<int>(LocalBridgeClazz, "METERING_MODE_UNKNOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SATURATION_HIGH"/>
         /// </summary>
-        public static int SATURATION_HIGH { get { return SGetField<int>(LocalClazz, "SATURATION_HIGH"); } }
+        public static int SATURATION_HIGH { get { return SGetField<int>(LocalBridgeClazz, "SATURATION_HIGH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SATURATION_LOW"/>
         /// </summary>
-        public static int SATURATION_LOW { get { return SGetField<int>(LocalClazz, "SATURATION_LOW"); } }
+        public static int SATURATION_LOW { get { return SGetField<int>(LocalBridgeClazz, "SATURATION_LOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SATURATION_NORMAL"/>
         /// </summary>
-        public static int SATURATION_NORMAL { get { return SGetField<int>(LocalClazz, "SATURATION_NORMAL"); } }
+        public static int SATURATION_NORMAL { get { return SGetField<int>(LocalBridgeClazz, "SATURATION_NORMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SCENE_CAPTURE_TYPE_LANDSCAPE"/>
         /// </summary>
-        public static int SCENE_CAPTURE_TYPE_LANDSCAPE { get { return SGetField<int>(LocalClazz, "SCENE_CAPTURE_TYPE_LANDSCAPE"); } }
+        public static int SCENE_CAPTURE_TYPE_LANDSCAPE { get { return SGetField<int>(LocalBridgeClazz, "SCENE_CAPTURE_TYPE_LANDSCAPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SCENE_CAPTURE_TYPE_NIGHT_SCENE"/>
         /// </summary>
-        public static int SCENE_CAPTURE_TYPE_NIGHT_SCENE { get { return SGetField<int>(LocalClazz, "SCENE_CAPTURE_TYPE_NIGHT_SCENE"); } }
+        public static int SCENE_CAPTURE_TYPE_NIGHT_SCENE { get { return SGetField<int>(LocalBridgeClazz, "SCENE_CAPTURE_TYPE_NIGHT_SCENE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SCENE_CAPTURE_TYPE_PORTRAIT"/>
         /// </summary>
-        public static int SCENE_CAPTURE_TYPE_PORTRAIT { get { return SGetField<int>(LocalClazz, "SCENE_CAPTURE_TYPE_PORTRAIT"); } }
+        public static int SCENE_CAPTURE_TYPE_PORTRAIT { get { return SGetField<int>(LocalBridgeClazz, "SCENE_CAPTURE_TYPE_PORTRAIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SCENE_CAPTURE_TYPE_STANDARD"/>
         /// </summary>
-        public static int SCENE_CAPTURE_TYPE_STANDARD { get { return SGetField<int>(LocalClazz, "SCENE_CAPTURE_TYPE_STANDARD"); } }
+        public static int SCENE_CAPTURE_TYPE_STANDARD { get { return SGetField<int>(LocalBridgeClazz, "SCENE_CAPTURE_TYPE_STANDARD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SCENE_TYPE_DSC"/>
         /// </summary>
-        public static int SCENE_TYPE_DSC { get { return SGetField<int>(LocalClazz, "SCENE_TYPE_DSC"); } }
+        public static int SCENE_TYPE_DSC { get { return SGetField<int>(LocalBridgeClazz, "SCENE_TYPE_DSC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SENSING_METHOD_COLOR_SEQUENTIAL_AREA_SENSOR"/>
         /// </summary>
-        public static int SENSING_METHOD_COLOR_SEQUENTIAL_AREA_SENSOR { get { return SGetField<int>(LocalClazz, "SENSING_METHOD_COLOR_SEQUENTIAL_AREA_SENSOR"); } }
+        public static int SENSING_METHOD_COLOR_SEQUENTIAL_AREA_SENSOR { get { return SGetField<int>(LocalBridgeClazz, "SENSING_METHOD_COLOR_SEQUENTIAL_AREA_SENSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SENSING_METHOD_COLOR_SEQUENTIAL_LINEAR_SENSOR"/>
         /// </summary>
-        public static int SENSING_METHOD_COLOR_SEQUENTIAL_LINEAR_SENSOR { get { return SGetField<int>(LocalClazz, "SENSING_METHOD_COLOR_SEQUENTIAL_LINEAR_SENSOR"); } }
+        public static int SENSING_METHOD_COLOR_SEQUENTIAL_LINEAR_SENSOR { get { return SGetField<int>(LocalBridgeClazz, "SENSING_METHOD_COLOR_SEQUENTIAL_LINEAR_SENSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SENSING_METHOD_NOT_DEFINED"/>
         /// </summary>
-        public static int SENSING_METHOD_NOT_DEFINED { get { return SGetField<int>(LocalClazz, "SENSING_METHOD_NOT_DEFINED"); } }
+        public static int SENSING_METHOD_NOT_DEFINED { get { return SGetField<int>(LocalBridgeClazz, "SENSING_METHOD_NOT_DEFINED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SENSING_METHOD_ONE_CHIP_COLOR_AREA_SENSOR"/>
         /// </summary>
-        public static int SENSING_METHOD_ONE_CHIP_COLOR_AREA_SENSOR { get { return SGetField<int>(LocalClazz, "SENSING_METHOD_ONE_CHIP_COLOR_AREA_SENSOR"); } }
+        public static int SENSING_METHOD_ONE_CHIP_COLOR_AREA_SENSOR { get { return SGetField<int>(LocalBridgeClazz, "SENSING_METHOD_ONE_CHIP_COLOR_AREA_SENSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SENSING_METHOD_THREE_CHIP_COLOR_AREA_SENSOR"/>
         /// </summary>
-        public static int SENSING_METHOD_THREE_CHIP_COLOR_AREA_SENSOR { get { return SGetField<int>(LocalClazz, "SENSING_METHOD_THREE_CHIP_COLOR_AREA_SENSOR"); } }
+        public static int SENSING_METHOD_THREE_CHIP_COLOR_AREA_SENSOR { get { return SGetField<int>(LocalBridgeClazz, "SENSING_METHOD_THREE_CHIP_COLOR_AREA_SENSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SENSING_METHOD_TRILINEAR_SENSOR"/>
         /// </summary>
-        public static int SENSING_METHOD_TRILINEAR_SENSOR { get { return SGetField<int>(LocalClazz, "SENSING_METHOD_TRILINEAR_SENSOR"); } }
+        public static int SENSING_METHOD_TRILINEAR_SENSOR { get { return SGetField<int>(LocalBridgeClazz, "SENSING_METHOD_TRILINEAR_SENSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SENSING_METHOD_TWO_CHIP_COLOR_AREA_SENSOR"/>
         /// </summary>
-        public static int SENSING_METHOD_TWO_CHIP_COLOR_AREA_SENSOR { get { return SGetField<int>(LocalClazz, "SENSING_METHOD_TWO_CHIP_COLOR_AREA_SENSOR"); } }
+        public static int SENSING_METHOD_TWO_CHIP_COLOR_AREA_SENSOR { get { return SGetField<int>(LocalBridgeClazz, "SENSING_METHOD_TWO_CHIP_COLOR_AREA_SENSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SHARPNESS_HARD"/>
         /// </summary>
-        public static int SHARPNESS_HARD { get { return SGetField<int>(LocalClazz, "SHARPNESS_HARD"); } }
+        public static int SHARPNESS_HARD { get { return SGetField<int>(LocalBridgeClazz, "SHARPNESS_HARD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SHARPNESS_NORMAL"/>
         /// </summary>
-        public static int SHARPNESS_NORMAL { get { return SGetField<int>(LocalClazz, "SHARPNESS_NORMAL"); } }
+        public static int SHARPNESS_NORMAL { get { return SGetField<int>(LocalBridgeClazz, "SHARPNESS_NORMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SHARPNESS_SOFT"/>
         /// </summary>
-        public static int SHARPNESS_SOFT { get { return SGetField<int>(LocalClazz, "SHARPNESS_SOFT"); } }
+        public static int SHARPNESS_SOFT { get { return SGetField<int>(LocalBridgeClazz, "SHARPNESS_SOFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SUBJECT_DISTANCE_RANGE_CLOSE_VIEW"/>
         /// </summary>
-        public static int SUBJECT_DISTANCE_RANGE_CLOSE_VIEW { get { return SGetField<int>(LocalClazz, "SUBJECT_DISTANCE_RANGE_CLOSE_VIEW"); } }
+        public static int SUBJECT_DISTANCE_RANGE_CLOSE_VIEW { get { return SGetField<int>(LocalBridgeClazz, "SUBJECT_DISTANCE_RANGE_CLOSE_VIEW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SUBJECT_DISTANCE_RANGE_DISTANT_VIEW"/>
         /// </summary>
-        public static int SUBJECT_DISTANCE_RANGE_DISTANT_VIEW { get { return SGetField<int>(LocalClazz, "SUBJECT_DISTANCE_RANGE_DISTANT_VIEW"); } }
+        public static int SUBJECT_DISTANCE_RANGE_DISTANT_VIEW { get { return SGetField<int>(LocalBridgeClazz, "SUBJECT_DISTANCE_RANGE_DISTANT_VIEW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SUBJECT_DISTANCE_RANGE_MACRO"/>
         /// </summary>
-        public static int SUBJECT_DISTANCE_RANGE_MACRO { get { return SGetField<int>(LocalClazz, "SUBJECT_DISTANCE_RANGE_MACRO"); } }
+        public static int SUBJECT_DISTANCE_RANGE_MACRO { get { return SGetField<int>(LocalBridgeClazz, "SUBJECT_DISTANCE_RANGE_MACRO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#SUBJECT_DISTANCE_RANGE_UNKNOWN"/>
         /// </summary>
-        public static int SUBJECT_DISTANCE_RANGE_UNKNOWN { get { return SGetField<int>(LocalClazz, "SUBJECT_DISTANCE_RANGE_UNKNOWN"); } }
+        public static int SUBJECT_DISTANCE_RANGE_UNKNOWN { get { return SGetField<int>(LocalBridgeClazz, "SUBJECT_DISTANCE_RANGE_UNKNOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_APERTURE_VALUE"/>
         /// </summary>
-        public static int TAG_APERTURE_VALUE { get { return SGetField<int>(LocalClazz, "TAG_APERTURE_VALUE"); } }
+        public static int TAG_APERTURE_VALUE { get { return SGetField<int>(LocalBridgeClazz, "TAG_APERTURE_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_BRIGHTNESS_VALUE"/>
         /// </summary>
-        public static int TAG_BRIGHTNESS_VALUE { get { return SGetField<int>(LocalClazz, "TAG_BRIGHTNESS_VALUE"); } }
+        public static int TAG_BRIGHTNESS_VALUE { get { return SGetField<int>(LocalBridgeClazz, "TAG_BRIGHTNESS_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_CFA_PATTERN"/>
         /// </summary>
-        public static int TAG_CFA_PATTERN { get { return SGetField<int>(LocalClazz, "TAG_CFA_PATTERN"); } }
+        public static int TAG_CFA_PATTERN { get { return SGetField<int>(LocalBridgeClazz, "TAG_CFA_PATTERN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_COLOR_SPACE"/>
         /// </summary>
-        public static int TAG_COLOR_SPACE { get { return SGetField<int>(LocalClazz, "TAG_COLOR_SPACE"); } }
+        public static int TAG_COLOR_SPACE { get { return SGetField<int>(LocalBridgeClazz, "TAG_COLOR_SPACE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_COMPONENTS_CONFIGURATION"/>
         /// </summary>
-        public static int TAG_COMPONENTS_CONFIGURATION { get { return SGetField<int>(LocalClazz, "TAG_COMPONENTS_CONFIGURATION"); } }
+        public static int TAG_COMPONENTS_CONFIGURATION { get { return SGetField<int>(LocalBridgeClazz, "TAG_COMPONENTS_CONFIGURATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_COMPRESSED_BITS_PER_PIXEL"/>
         /// </summary>
-        public static int TAG_COMPRESSED_BITS_PER_PIXEL { get { return SGetField<int>(LocalClazz, "TAG_COMPRESSED_BITS_PER_PIXEL"); } }
+        public static int TAG_COMPRESSED_BITS_PER_PIXEL { get { return SGetField<int>(LocalBridgeClazz, "TAG_COMPRESSED_BITS_PER_PIXEL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_CONTRAST"/>
         /// </summary>
-        public static int TAG_CONTRAST { get { return SGetField<int>(LocalClazz, "TAG_CONTRAST"); } }
+        public static int TAG_CONTRAST { get { return SGetField<int>(LocalBridgeClazz, "TAG_CONTRAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_CUSTOM_RENDERED"/>
         /// </summary>
-        public static int TAG_CUSTOM_RENDERED { get { return SGetField<int>(LocalClazz, "TAG_CUSTOM_RENDERED"); } }
+        public static int TAG_CUSTOM_RENDERED { get { return SGetField<int>(LocalBridgeClazz, "TAG_CUSTOM_RENDERED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_DATE_TIME_DIGITIZED"/>
         /// </summary>
-        public static int TAG_DATE_TIME_DIGITIZED { get { return SGetField<int>(LocalClazz, "TAG_DATE_TIME_DIGITIZED"); } }
+        public static int TAG_DATE_TIME_DIGITIZED { get { return SGetField<int>(LocalBridgeClazz, "TAG_DATE_TIME_DIGITIZED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_DATE_TIME_ORIGINAL"/>
         /// </summary>
-        public static int TAG_DATE_TIME_ORIGINAL { get { return SGetField<int>(LocalClazz, "TAG_DATE_TIME_ORIGINAL"); } }
+        public static int TAG_DATE_TIME_ORIGINAL { get { return SGetField<int>(LocalBridgeClazz, "TAG_DATE_TIME_ORIGINAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_DEVICE_SETTING_DESCRIPTION"/>
         /// </summary>
-        public static int TAG_DEVICE_SETTING_DESCRIPTION { get { return SGetField<int>(LocalClazz, "TAG_DEVICE_SETTING_DESCRIPTION"); } }
+        public static int TAG_DEVICE_SETTING_DESCRIPTION { get { return SGetField<int>(LocalBridgeClazz, "TAG_DEVICE_SETTING_DESCRIPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_DIGITAL_ZOOM_RATIO"/>
         /// </summary>
-        public static int TAG_DIGITAL_ZOOM_RATIO { get { return SGetField<int>(LocalClazz, "TAG_DIGITAL_ZOOM_RATIO"); } }
+        public static int TAG_DIGITAL_ZOOM_RATIO { get { return SGetField<int>(LocalBridgeClazz, "TAG_DIGITAL_ZOOM_RATIO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_EXIF_VERSION"/>
         /// </summary>
-        public static int TAG_EXIF_VERSION { get { return SGetField<int>(LocalClazz, "TAG_EXIF_VERSION"); } }
+        public static int TAG_EXIF_VERSION { get { return SGetField<int>(LocalBridgeClazz, "TAG_EXIF_VERSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_EXPOSURE_BIAS_VALUE"/>
         /// </summary>
-        public static int TAG_EXPOSURE_BIAS_VALUE { get { return SGetField<int>(LocalClazz, "TAG_EXPOSURE_BIAS_VALUE"); } }
+        public static int TAG_EXPOSURE_BIAS_VALUE { get { return SGetField<int>(LocalBridgeClazz, "TAG_EXPOSURE_BIAS_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_EXPOSURE_INDEX"/>
         /// </summary>
-        public static int TAG_EXPOSURE_INDEX { get { return SGetField<int>(LocalClazz, "TAG_EXPOSURE_INDEX"); } }
+        public static int TAG_EXPOSURE_INDEX { get { return SGetField<int>(LocalBridgeClazz, "TAG_EXPOSURE_INDEX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_EXPOSURE_MODE"/>
         /// </summary>
-        public static int TAG_EXPOSURE_MODE { get { return SGetField<int>(LocalClazz, "TAG_EXPOSURE_MODE"); } }
+        public static int TAG_EXPOSURE_MODE { get { return SGetField<int>(LocalBridgeClazz, "TAG_EXPOSURE_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_EXPOSURE_PROGRAM"/>
         /// </summary>
-        public static int TAG_EXPOSURE_PROGRAM { get { return SGetField<int>(LocalClazz, "TAG_EXPOSURE_PROGRAM"); } }
+        public static int TAG_EXPOSURE_PROGRAM { get { return SGetField<int>(LocalBridgeClazz, "TAG_EXPOSURE_PROGRAM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_EXPOSURE_TIME"/>
         /// </summary>
-        public static int TAG_EXPOSURE_TIME { get { return SGetField<int>(LocalClazz, "TAG_EXPOSURE_TIME"); } }
+        public static int TAG_EXPOSURE_TIME { get { return SGetField<int>(LocalBridgeClazz, "TAG_EXPOSURE_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_F_NUMBER"/>
         /// </summary>
-        public static int TAG_F_NUMBER { get { return SGetField<int>(LocalClazz, "TAG_F_NUMBER"); } }
+        public static int TAG_F_NUMBER { get { return SGetField<int>(LocalBridgeClazz, "TAG_F_NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_FILE_SOURCE"/>
         /// </summary>
-        public static int TAG_FILE_SOURCE { get { return SGetField<int>(LocalClazz, "TAG_FILE_SOURCE"); } }
+        public static int TAG_FILE_SOURCE { get { return SGetField<int>(LocalBridgeClazz, "TAG_FILE_SOURCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_FLASH"/>
         /// </summary>
-        public static int TAG_FLASH { get { return SGetField<int>(LocalClazz, "TAG_FLASH"); } }
+        public static int TAG_FLASH { get { return SGetField<int>(LocalBridgeClazz, "TAG_FLASH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_FLASH_ENERGY"/>
         /// </summary>
-        public static int TAG_FLASH_ENERGY { get { return SGetField<int>(LocalClazz, "TAG_FLASH_ENERGY"); } }
+        public static int TAG_FLASH_ENERGY { get { return SGetField<int>(LocalBridgeClazz, "TAG_FLASH_ENERGY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_FLASHPIX_VERSION"/>
         /// </summary>
-        public static int TAG_FLASHPIX_VERSION { get { return SGetField<int>(LocalClazz, "TAG_FLASHPIX_VERSION"); } }
+        public static int TAG_FLASHPIX_VERSION { get { return SGetField<int>(LocalBridgeClazz, "TAG_FLASHPIX_VERSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_FOCAL_LENGTH"/>
         /// </summary>
-        public static int TAG_FOCAL_LENGTH { get { return SGetField<int>(LocalClazz, "TAG_FOCAL_LENGTH"); } }
+        public static int TAG_FOCAL_LENGTH { get { return SGetField<int>(LocalBridgeClazz, "TAG_FOCAL_LENGTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_FOCAL_LENGTH_IN_35MM_FILM"/>
         /// </summary>
-        public static int TAG_FOCAL_LENGTH_IN_35MM_FILM { get { return SGetField<int>(LocalClazz, "TAG_FOCAL_LENGTH_IN_35MM_FILM"); } }
+        public static int TAG_FOCAL_LENGTH_IN_35MM_FILM { get { return SGetField<int>(LocalBridgeClazz, "TAG_FOCAL_LENGTH_IN_35MM_FILM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_FOCAL_PLANE_RESOLUTION_UNIT"/>
         /// </summary>
-        public static int TAG_FOCAL_PLANE_RESOLUTION_UNIT { get { return SGetField<int>(LocalClazz, "TAG_FOCAL_PLANE_RESOLUTION_UNIT"); } }
+        public static int TAG_FOCAL_PLANE_RESOLUTION_UNIT { get { return SGetField<int>(LocalBridgeClazz, "TAG_FOCAL_PLANE_RESOLUTION_UNIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_FOCAL_PLANE_X_RESOLUTION"/>
         /// </summary>
-        public static int TAG_FOCAL_PLANE_X_RESOLUTION { get { return SGetField<int>(LocalClazz, "TAG_FOCAL_PLANE_X_RESOLUTION"); } }
+        public static int TAG_FOCAL_PLANE_X_RESOLUTION { get { return SGetField<int>(LocalBridgeClazz, "TAG_FOCAL_PLANE_X_RESOLUTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_FOCAL_PLANE_Y_RESOLUTION"/>
         /// </summary>
-        public static int TAG_FOCAL_PLANE_Y_RESOLUTION { get { return SGetField<int>(LocalClazz, "TAG_FOCAL_PLANE_Y_RESOLUTION"); } }
+        public static int TAG_FOCAL_PLANE_Y_RESOLUTION { get { return SGetField<int>(LocalBridgeClazz, "TAG_FOCAL_PLANE_Y_RESOLUTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_GAIN_CONTROL"/>
         /// </summary>
-        public static int TAG_GAIN_CONTROL { get { return SGetField<int>(LocalClazz, "TAG_GAIN_CONTROL"); } }
+        public static int TAG_GAIN_CONTROL { get { return SGetField<int>(LocalBridgeClazz, "TAG_GAIN_CONTROL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_GPS_INFO_IFD_POINTER"/>
         /// </summary>
-        public static int TAG_GPS_INFO_IFD_POINTER { get { return SGetField<int>(LocalClazz, "TAG_GPS_INFO_IFD_POINTER"); } }
+        public static int TAG_GPS_INFO_IFD_POINTER { get { return SGetField<int>(LocalBridgeClazz, "TAG_GPS_INFO_IFD_POINTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_IMAGE_UNIQUE_ID"/>
         /// </summary>
-        public static int TAG_IMAGE_UNIQUE_ID { get { return SGetField<int>(LocalClazz, "TAG_IMAGE_UNIQUE_ID"); } }
+        public static int TAG_IMAGE_UNIQUE_ID { get { return SGetField<int>(LocalBridgeClazz, "TAG_IMAGE_UNIQUE_ID"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_INTEROPERABILITY_IFD_POINTER"/>
         /// </summary>
-        public static int TAG_INTEROPERABILITY_IFD_POINTER { get { return SGetField<int>(LocalClazz, "TAG_INTEROPERABILITY_IFD_POINTER"); } }
+        public static int TAG_INTEROPERABILITY_IFD_POINTER { get { return SGetField<int>(LocalBridgeClazz, "TAG_INTEROPERABILITY_IFD_POINTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_ISO_SPEED_RATINGS"/>
         /// </summary>
-        public static int TAG_ISO_SPEED_RATINGS { get { return SGetField<int>(LocalClazz, "TAG_ISO_SPEED_RATINGS"); } }
+        public static int TAG_ISO_SPEED_RATINGS { get { return SGetField<int>(LocalBridgeClazz, "TAG_ISO_SPEED_RATINGS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_LIGHT_SOURCE"/>
         /// </summary>
-        public static int TAG_LIGHT_SOURCE { get { return SGetField<int>(LocalClazz, "TAG_LIGHT_SOURCE"); } }
+        public static int TAG_LIGHT_SOURCE { get { return SGetField<int>(LocalBridgeClazz, "TAG_LIGHT_SOURCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_MAKER_NOTE"/>
         /// </summary>
-        public static int TAG_MAKER_NOTE { get { return SGetField<int>(LocalClazz, "TAG_MAKER_NOTE"); } }
+        public static int TAG_MAKER_NOTE { get { return SGetField<int>(LocalBridgeClazz, "TAG_MAKER_NOTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_MARKER_NOTE"/>
         /// </summary>
-        public static int TAG_MARKER_NOTE { get { return SGetField<int>(LocalClazz, "TAG_MARKER_NOTE"); } }
+        public static int TAG_MARKER_NOTE { get { return SGetField<int>(LocalBridgeClazz, "TAG_MARKER_NOTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_MAX_APERTURE_VALUE"/>
         /// </summary>
-        public static int TAG_MAX_APERTURE_VALUE { get { return SGetField<int>(LocalClazz, "TAG_MAX_APERTURE_VALUE"); } }
+        public static int TAG_MAX_APERTURE_VALUE { get { return SGetField<int>(LocalBridgeClazz, "TAG_MAX_APERTURE_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_METERING_MODE"/>
         /// </summary>
-        public static int TAG_METERING_MODE { get { return SGetField<int>(LocalClazz, "TAG_METERING_MODE"); } }
+        public static int TAG_METERING_MODE { get { return SGetField<int>(LocalBridgeClazz, "TAG_METERING_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_OECF"/>
         /// </summary>
-        public static int TAG_OECF { get { return SGetField<int>(LocalClazz, "TAG_OECF"); } }
+        public static int TAG_OECF { get { return SGetField<int>(LocalBridgeClazz, "TAG_OECF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_PIXEL_X_DIMENSION"/>
         /// </summary>
-        public static int TAG_PIXEL_X_DIMENSION { get { return SGetField<int>(LocalClazz, "TAG_PIXEL_X_DIMENSION"); } }
+        public static int TAG_PIXEL_X_DIMENSION { get { return SGetField<int>(LocalBridgeClazz, "TAG_PIXEL_X_DIMENSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_PIXEL_Y_DIMENSION"/>
         /// </summary>
-        public static int TAG_PIXEL_Y_DIMENSION { get { return SGetField<int>(LocalClazz, "TAG_PIXEL_Y_DIMENSION"); } }
+        public static int TAG_PIXEL_Y_DIMENSION { get { return SGetField<int>(LocalBridgeClazz, "TAG_PIXEL_Y_DIMENSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_RELATED_SOUND_FILE"/>
         /// </summary>
-        public static int TAG_RELATED_SOUND_FILE { get { return SGetField<int>(LocalClazz, "TAG_RELATED_SOUND_FILE"); } }
+        public static int TAG_RELATED_SOUND_FILE { get { return SGetField<int>(LocalBridgeClazz, "TAG_RELATED_SOUND_FILE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SATURATION"/>
         /// </summary>
-        public static int TAG_SATURATION { get { return SGetField<int>(LocalClazz, "TAG_SATURATION"); } }
+        public static int TAG_SATURATION { get { return SGetField<int>(LocalBridgeClazz, "TAG_SATURATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SCENE_CAPTURE_TYPE"/>
         /// </summary>
-        public static int TAG_SCENE_CAPTURE_TYPE { get { return SGetField<int>(LocalClazz, "TAG_SCENE_CAPTURE_TYPE"); } }
+        public static int TAG_SCENE_CAPTURE_TYPE { get { return SGetField<int>(LocalBridgeClazz, "TAG_SCENE_CAPTURE_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SCENE_TYPE"/>
         /// </summary>
-        public static int TAG_SCENE_TYPE { get { return SGetField<int>(LocalClazz, "TAG_SCENE_TYPE"); } }
+        public static int TAG_SCENE_TYPE { get { return SGetField<int>(LocalBridgeClazz, "TAG_SCENE_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SENSING_METHOD"/>
         /// </summary>
-        public static int TAG_SENSING_METHOD { get { return SGetField<int>(LocalClazz, "TAG_SENSING_METHOD"); } }
+        public static int TAG_SENSING_METHOD { get { return SGetField<int>(LocalBridgeClazz, "TAG_SENSING_METHOD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SHARPNESS"/>
         /// </summary>
-        public static int TAG_SHARPNESS { get { return SGetField<int>(LocalClazz, "TAG_SHARPNESS"); } }
+        public static int TAG_SHARPNESS { get { return SGetField<int>(LocalBridgeClazz, "TAG_SHARPNESS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SHUTTER_SPEED_VALUE"/>
         /// </summary>
-        public static int TAG_SHUTTER_SPEED_VALUE { get { return SGetField<int>(LocalClazz, "TAG_SHUTTER_SPEED_VALUE"); } }
+        public static int TAG_SHUTTER_SPEED_VALUE { get { return SGetField<int>(LocalBridgeClazz, "TAG_SHUTTER_SPEED_VALUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SPATIAL_FREQUENCY_RESPONSE"/>
         /// </summary>
-        public static int TAG_SPATIAL_FREQUENCY_RESPONSE { get { return SGetField<int>(LocalClazz, "TAG_SPATIAL_FREQUENCY_RESPONSE"); } }
+        public static int TAG_SPATIAL_FREQUENCY_RESPONSE { get { return SGetField<int>(LocalBridgeClazz, "TAG_SPATIAL_FREQUENCY_RESPONSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SPECTRAL_SENSITIVITY"/>
         /// </summary>
-        public static int TAG_SPECTRAL_SENSITIVITY { get { return SGetField<int>(LocalClazz, "TAG_SPECTRAL_SENSITIVITY"); } }
+        public static int TAG_SPECTRAL_SENSITIVITY { get { return SGetField<int>(LocalBridgeClazz, "TAG_SPECTRAL_SENSITIVITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SUB_SEC_TIME"/>
         /// </summary>
-        public static int TAG_SUB_SEC_TIME { get { return SGetField<int>(LocalClazz, "TAG_SUB_SEC_TIME"); } }
+        public static int TAG_SUB_SEC_TIME { get { return SGetField<int>(LocalBridgeClazz, "TAG_SUB_SEC_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SUB_SEC_TIME_DIGITIZED"/>
         /// </summary>
-        public static int TAG_SUB_SEC_TIME_DIGITIZED { get { return SGetField<int>(LocalClazz, "TAG_SUB_SEC_TIME_DIGITIZED"); } }
+        public static int TAG_SUB_SEC_TIME_DIGITIZED { get { return SGetField<int>(LocalBridgeClazz, "TAG_SUB_SEC_TIME_DIGITIZED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SUB_SEC_TIME_ORIGINAL"/>
         /// </summary>
-        public static int TAG_SUB_SEC_TIME_ORIGINAL { get { return SGetField<int>(LocalClazz, "TAG_SUB_SEC_TIME_ORIGINAL"); } }
+        public static int TAG_SUB_SEC_TIME_ORIGINAL { get { return SGetField<int>(LocalBridgeClazz, "TAG_SUB_SEC_TIME_ORIGINAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SUBJECT_AREA"/>
         /// </summary>
-        public static int TAG_SUBJECT_AREA { get { return SGetField<int>(LocalClazz, "TAG_SUBJECT_AREA"); } }
+        public static int TAG_SUBJECT_AREA { get { return SGetField<int>(LocalBridgeClazz, "TAG_SUBJECT_AREA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SUBJECT_DISTANCE"/>
         /// </summary>
-        public static int TAG_SUBJECT_DISTANCE { get { return SGetField<int>(LocalClazz, "TAG_SUBJECT_DISTANCE"); } }
+        public static int TAG_SUBJECT_DISTANCE { get { return SGetField<int>(LocalBridgeClazz, "TAG_SUBJECT_DISTANCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SUBJECT_DISTANCE_RANGE"/>
         /// </summary>
-        public static int TAG_SUBJECT_DISTANCE_RANGE { get { return SGetField<int>(LocalClazz, "TAG_SUBJECT_DISTANCE_RANGE"); } }
+        public static int TAG_SUBJECT_DISTANCE_RANGE { get { return SGetField<int>(LocalBridgeClazz, "TAG_SUBJECT_DISTANCE_RANGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_SUBJECT_LOCATION"/>
         /// </summary>
-        public static int TAG_SUBJECT_LOCATION { get { return SGetField<int>(LocalClazz, "TAG_SUBJECT_LOCATION"); } }
+        public static int TAG_SUBJECT_LOCATION { get { return SGetField<int>(LocalBridgeClazz, "TAG_SUBJECT_LOCATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_USER_COMMENT"/>
         /// </summary>
-        public static int TAG_USER_COMMENT { get { return SGetField<int>(LocalClazz, "TAG_USER_COMMENT"); } }
+        public static int TAG_USER_COMMENT { get { return SGetField<int>(LocalBridgeClazz, "TAG_USER_COMMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#TAG_WHITE_BALANCE"/>
         /// </summary>
-        public static int TAG_WHITE_BALANCE { get { return SGetField<int>(LocalClazz, "TAG_WHITE_BALANCE"); } }
+        public static int TAG_WHITE_BALANCE { get { return SGetField<int>(LocalBridgeClazz, "TAG_WHITE_BALANCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#WHITE_BALANCE_AUTO"/>
         /// </summary>
-        public static int WHITE_BALANCE_AUTO { get { return SGetField<int>(LocalClazz, "WHITE_BALANCE_AUTO"); } }
+        public static int WHITE_BALANCE_AUTO { get { return SGetField<int>(LocalBridgeClazz, "WHITE_BALANCE_AUTO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#WHITE_BALANCE_MANUAL"/>
         /// </summary>
-        public static int WHITE_BALANCE_MANUAL { get { return SGetField<int>(LocalClazz, "WHITE_BALANCE_MANUAL"); } }
+        public static int WHITE_BALANCE_MANUAL { get { return SGetField<int>(LocalBridgeClazz, "WHITE_BALANCE_MANUAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXIF_VERSION_2_1"/>
         /// </summary>
-        public static string EXIF_VERSION_2_1 { get { return SGetField<string>(LocalClazz, "EXIF_VERSION_2_1"); } }
+        public static string EXIF_VERSION_2_1 { get { return SGetField<string>(LocalBridgeClazz, "EXIF_VERSION_2_1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#EXIF_VERSION_2_2"/>
         /// </summary>
-        public static string EXIF_VERSION_2_2 { get { return SGetField<string>(LocalClazz, "EXIF_VERSION_2_2"); } }
+        public static string EXIF_VERSION_2_2 { get { return SGetField<string>(LocalBridgeClazz, "EXIF_VERSION_2_2"); } }
 
         #endregion
 
@@ -700,9 +700,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html#getInstance()"/> 
         /// </summary>
-        public static Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet GetInstance
+        public static Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet Instance
         {
-            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet>(LocalClazz, "getInstance"); }
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifTIFFTagSet>(LocalBridgeClazz, "getInstance"); }
         }
 
         #endregion

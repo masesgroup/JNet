@@ -102,47 +102,47 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#CONTENT_PANE_PROPERTY"/>
         /// </summary>
-        public static string CONTENT_PANE_PROPERTY { get { return SGetField<string>(LocalClazz, "CONTENT_PANE_PROPERTY"); } }
+        public static string CONTENT_PANE_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "CONTENT_PANE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#FRAME_ICON_PROPERTY"/>
         /// </summary>
-        public static string FRAME_ICON_PROPERTY { get { return SGetField<string>(LocalClazz, "FRAME_ICON_PROPERTY"); } }
+        public static string FRAME_ICON_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "FRAME_ICON_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#GLASS_PANE_PROPERTY"/>
         /// </summary>
-        public static string GLASS_PANE_PROPERTY { get { return SGetField<string>(LocalClazz, "GLASS_PANE_PROPERTY"); } }
+        public static string GLASS_PANE_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "GLASS_PANE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_CLOSED_PROPERTY"/>
         /// </summary>
-        public static string IS_CLOSED_PROPERTY { get { return SGetField<string>(LocalClazz, "IS_CLOSED_PROPERTY"); } }
+        public static string IS_CLOSED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "IS_CLOSED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_ICON_PROPERTY"/>
         /// </summary>
-        public static string IS_ICON_PROPERTY { get { return SGetField<string>(LocalClazz, "IS_ICON_PROPERTY"); } }
+        public static string IS_ICON_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "IS_ICON_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_MAXIMUM_PROPERTY"/>
         /// </summary>
-        public static string IS_MAXIMUM_PROPERTY { get { return SGetField<string>(LocalClazz, "IS_MAXIMUM_PROPERTY"); } }
+        public static string IS_MAXIMUM_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "IS_MAXIMUM_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_SELECTED_PROPERTY"/>
         /// </summary>
-        public static string IS_SELECTED_PROPERTY { get { return SGetField<string>(LocalClazz, "IS_SELECTED_PROPERTY"); } }
+        public static string IS_SELECTED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "IS_SELECTED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#LAYERED_PANE_PROPERTY"/>
         /// </summary>
-        public static string LAYERED_PANE_PROPERTY { get { return SGetField<string>(LocalClazz, "LAYERED_PANE_PROPERTY"); } }
+        public static string LAYERED_PANE_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "LAYERED_PANE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#MENU_BAR_PROPERTY"/>
         /// </summary>
-        public static string MENU_BAR_PROPERTY { get { return SGetField<string>(LocalClazz, "MENU_BAR_PROPERTY"); } }
+        public static string MENU_BAR_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "MENU_BAR_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#ROOT_PANE_PROPERTY"/>
         /// </summary>
-        public static string ROOT_PANE_PROPERTY { get { return SGetField<string>(LocalClazz, "ROOT_PANE_PROPERTY"); } }
+        public static string ROOT_PANE_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "ROOT_PANE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#TITLE_PROPERTY"/>
         /// </summary>
-        public static string TITLE_PROPERTY { get { return SGetField<string>(LocalClazz, "TITLE_PROPERTY"); } }
+        public static string TITLE_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "TITLE_PROPERTY"); } }
 
         #endregion
 

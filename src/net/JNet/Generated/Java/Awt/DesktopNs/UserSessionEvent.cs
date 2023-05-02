@@ -79,19 +79,19 @@ namespace Java.Awt.DesktopNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#CONSOLE"/>
             /// </summary>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason CONSOLE { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "CONSOLE"); } }
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason CONSOLE { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalBridgeClazz, "CONSOLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#LOCK"/>
             /// </summary>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason LOCK { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "LOCK"); } }
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason LOCK { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalBridgeClazz, "LOCK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#REMOTE"/>
             /// </summary>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason REMOTE { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "REMOTE"); } }
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason REMOTE { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalBridgeClazz, "REMOTE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#UNSPECIFIED"/>
             /// </summary>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason UNSPECIFIED { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "UNSPECIFIED"); } }
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason UNSPECIFIED { get { return SGetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalBridgeClazz, "UNSPECIFIED"); } }
 
             #endregion
 
@@ -101,7 +101,7 @@ namespace Java.Awt.DesktopNs
             /// </summary>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason[] Values
             {
-                get { return SExecuteArray<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#valueOf(java.lang.String)"/>
@@ -110,7 +110,7 @@ namespace Java.Awt.DesktopNs
             /// <returns><see cref="Java.Awt.DesktopNs.UserSessionEvent.Reason"/></returns>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Awt.DesktopNs.UserSessionEvent.Reason>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

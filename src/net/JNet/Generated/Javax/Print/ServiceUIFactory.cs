@@ -40,35 +40,35 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#ABOUT_UIROLE"/>
         /// </summary>
-        public static int ABOUT_UIROLE { get { return SGetField<int>(LocalClazz, "ABOUT_UIROLE"); } }
+        public static int ABOUT_UIROLE { get { return SGetField<int>(LocalBridgeClazz, "ABOUT_UIROLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#ADMIN_UIROLE"/>
         /// </summary>
-        public static int ADMIN_UIROLE { get { return SGetField<int>(LocalClazz, "ADMIN_UIROLE"); } }
+        public static int ADMIN_UIROLE { get { return SGetField<int>(LocalBridgeClazz, "ADMIN_UIROLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#MAIN_UIROLE"/>
         /// </summary>
-        public static int MAIN_UIROLE { get { return SGetField<int>(LocalClazz, "MAIN_UIROLE"); } }
+        public static int MAIN_UIROLE { get { return SGetField<int>(LocalBridgeClazz, "MAIN_UIROLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#RESERVED_UIROLE"/>
         /// </summary>
-        public static int RESERVED_UIROLE { get { return SGetField<int>(LocalClazz, "RESERVED_UIROLE"); } }
+        public static int RESERVED_UIROLE { get { return SGetField<int>(LocalBridgeClazz, "RESERVED_UIROLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#DIALOG_UI"/>
         /// </summary>
-        public static string DIALOG_UI { get { return SGetField<string>(LocalClazz, "DIALOG_UI"); } }
+        public static string DIALOG_UI { get { return SGetField<string>(LocalBridgeClazz, "DIALOG_UI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#JCOMPONENT_UI"/>
         /// </summary>
-        public static string JCOMPONENT_UI { get { return SGetField<string>(LocalClazz, "JCOMPONENT_UI"); } }
+        public static string JCOMPONENT_UI { get { return SGetField<string>(LocalBridgeClazz, "JCOMPONENT_UI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#JDIALOG_UI"/>
         /// </summary>
-        public static string JDIALOG_UI { get { return SGetField<string>(LocalClazz, "JDIALOG_UI"); } }
+        public static string JDIALOG_UI { get { return SGetField<string>(LocalBridgeClazz, "JDIALOG_UI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#PANEL_UI"/>
         /// </summary>
-        public static string PANEL_UI { get { return SGetField<string>(LocalClazz, "PANEL_UI"); } }
+        public static string PANEL_UI { get { return SGetField<string>(LocalBridgeClazz, "PANEL_UI"); } }
 
         #endregion
 

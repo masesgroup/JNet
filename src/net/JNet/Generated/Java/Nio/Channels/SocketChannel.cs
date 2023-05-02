@@ -65,7 +65,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.SocketChannel Open()
         {
-            return SExecute<Java.Nio.Channels.SocketChannel>(LocalClazz, "open");
+            return SExecute<Java.Nio.Channels.SocketChannel>(LocalBridgeClazz, "open");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html#open(java.net.SocketAddress)"/>
@@ -75,7 +75,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.SocketChannel Open(Java.Net.SocketAddress arg0)
         {
-            return SExecute<Java.Nio.Channels.SocketChannel>(LocalClazz, "open", arg0);
+            return SExecute<Java.Nio.Channels.SocketChannel>(LocalBridgeClazz, "open", arg0);
         }
 
         #endregion

@@ -40,39 +40,39 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#FULLWIDTH_DIGITS"/>
         /// </summary>
-        public static Java.Awt.Im.InputSubset FULLWIDTH_DIGITS { get { return SGetField<Java.Awt.Im.InputSubset>(LocalClazz, "FULLWIDTH_DIGITS"); } }
+        public static Java.Awt.Im.InputSubset FULLWIDTH_DIGITS { get { return SGetField<Java.Awt.Im.InputSubset>(LocalBridgeClazz, "FULLWIDTH_DIGITS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#FULLWIDTH_LATIN"/>
         /// </summary>
-        public static Java.Awt.Im.InputSubset FULLWIDTH_LATIN { get { return SGetField<Java.Awt.Im.InputSubset>(LocalClazz, "FULLWIDTH_LATIN"); } }
+        public static Java.Awt.Im.InputSubset FULLWIDTH_LATIN { get { return SGetField<Java.Awt.Im.InputSubset>(LocalBridgeClazz, "FULLWIDTH_LATIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#HALFWIDTH_KATAKANA"/>
         /// </summary>
-        public static Java.Awt.Im.InputSubset HALFWIDTH_KATAKANA { get { return SGetField<Java.Awt.Im.InputSubset>(LocalClazz, "HALFWIDTH_KATAKANA"); } }
+        public static Java.Awt.Im.InputSubset HALFWIDTH_KATAKANA { get { return SGetField<Java.Awt.Im.InputSubset>(LocalBridgeClazz, "HALFWIDTH_KATAKANA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#HANJA"/>
         /// </summary>
-        public static Java.Awt.Im.InputSubset HANJA { get { return SGetField<Java.Awt.Im.InputSubset>(LocalClazz, "HANJA"); } }
+        public static Java.Awt.Im.InputSubset HANJA { get { return SGetField<Java.Awt.Im.InputSubset>(LocalBridgeClazz, "HANJA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#KANJI"/>
         /// </summary>
-        public static Java.Awt.Im.InputSubset KANJI { get { return SGetField<Java.Awt.Im.InputSubset>(LocalClazz, "KANJI"); } }
+        public static Java.Awt.Im.InputSubset KANJI { get { return SGetField<Java.Awt.Im.InputSubset>(LocalBridgeClazz, "KANJI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#LATIN"/>
         /// </summary>
-        public static Java.Awt.Im.InputSubset LATIN { get { return SGetField<Java.Awt.Im.InputSubset>(LocalClazz, "LATIN"); } }
+        public static Java.Awt.Im.InputSubset LATIN { get { return SGetField<Java.Awt.Im.InputSubset>(LocalBridgeClazz, "LATIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#LATIN_DIGITS"/>
         /// </summary>
-        public static Java.Awt.Im.InputSubset LATIN_DIGITS { get { return SGetField<Java.Awt.Im.InputSubset>(LocalClazz, "LATIN_DIGITS"); } }
+        public static Java.Awt.Im.InputSubset LATIN_DIGITS { get { return SGetField<Java.Awt.Im.InputSubset>(LocalBridgeClazz, "LATIN_DIGITS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#SIMPLIFIED_HANZI"/>
         /// </summary>
-        public static Java.Awt.Im.InputSubset SIMPLIFIED_HANZI { get { return SGetField<Java.Awt.Im.InputSubset>(LocalClazz, "SIMPLIFIED_HANZI"); } }
+        public static Java.Awt.Im.InputSubset SIMPLIFIED_HANZI { get { return SGetField<Java.Awt.Im.InputSubset>(LocalBridgeClazz, "SIMPLIFIED_HANZI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#TRADITIONAL_HANZI"/>
         /// </summary>
-        public static Java.Awt.Im.InputSubset TRADITIONAL_HANZI { get { return SGetField<Java.Awt.Im.InputSubset>(LocalClazz, "TRADITIONAL_HANZI"); } }
+        public static Java.Awt.Im.InputSubset TRADITIONAL_HANZI { get { return SGetField<Java.Awt.Im.InputSubset>(LocalBridgeClazz, "TRADITIONAL_HANZI"); } }
 
         #endregion
 

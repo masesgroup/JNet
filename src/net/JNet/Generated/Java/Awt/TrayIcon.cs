@@ -220,19 +220,19 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#ERROR"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType ERROR { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalClazz, "ERROR"); } }
+            public static Java.Awt.TrayIcon.MessageType ERROR { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "ERROR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#INFO"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType INFO { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalClazz, "INFO"); } }
+            public static Java.Awt.TrayIcon.MessageType INFO { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "INFO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#NONE"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType NONE { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalClazz, "NONE"); } }
+            public static Java.Awt.TrayIcon.MessageType NONE { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "NONE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#WARNING"/>
             /// </summary>
-            public static Java.Awt.TrayIcon.MessageType WARNING { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalClazz, "WARNING"); } }
+            public static Java.Awt.TrayIcon.MessageType WARNING { get { return SGetField<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "WARNING"); } }
 
             #endregion
 
@@ -242,7 +242,7 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.TrayIcon.MessageType[] Values
             {
-                get { return SExecuteArray<Java.Awt.TrayIcon.MessageType>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#valueOf(java.lang.String)"/>
@@ -251,7 +251,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.TrayIcon.MessageType"/></returns>
             public static Java.Awt.TrayIcon.MessageType ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.TrayIcon.MessageType>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Awt.TrayIcon.MessageType>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

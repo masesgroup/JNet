@@ -64,31 +64,31 @@ namespace Java.Security.Cert
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#ALGORITHM_CONSTRAINED"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason ALGORITHM_CONSTRAINED { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalClazz, "ALGORITHM_CONSTRAINED"); } }
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason ALGORITHM_CONSTRAINED { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "ALGORITHM_CONSTRAINED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#EXPIRED"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason EXPIRED { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalClazz, "EXPIRED"); } }
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason EXPIRED { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "EXPIRED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#INVALID_SIGNATURE"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason INVALID_SIGNATURE { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalClazz, "INVALID_SIGNATURE"); } }
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason INVALID_SIGNATURE { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "INVALID_SIGNATURE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#NOT_YET_VALID"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason NOT_YET_VALID { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalClazz, "NOT_YET_VALID"); } }
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason NOT_YET_VALID { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "NOT_YET_VALID"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#REVOKED"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason REVOKED { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalClazz, "REVOKED"); } }
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason REVOKED { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "REVOKED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#UNDETERMINED_REVOCATION_STATUS"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason UNDETERMINED_REVOCATION_STATUS { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalClazz, "UNDETERMINED_REVOCATION_STATUS"); } }
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason UNDETERMINED_REVOCATION_STATUS { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "UNDETERMINED_REVOCATION_STATUS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#UNSPECIFIED"/>
             /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason UNSPECIFIED { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalClazz, "UNSPECIFIED"); } }
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason UNSPECIFIED { get { return SGetField<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "UNSPECIFIED"); } }
 
             #endregion
 
@@ -98,7 +98,7 @@ namespace Java.Security.Cert
             /// </summary>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason[] Values
             {
-                get { return SExecuteArray<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#valueOf(java.lang.String)"/>
@@ -107,7 +107,7 @@ namespace Java.Security.Cert
             /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
             public static Java.Security.Cert.CertPathValidatorException.BasicReason ValueOf(string arg0)
             {
-                return SExecute<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

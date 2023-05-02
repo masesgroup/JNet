@@ -86,39 +86,39 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#imageFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor imageFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "imageFlavor"); } }
+        public static Java.Awt.Datatransfer.DataFlavor imageFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "imageFlavor"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaFileListFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor javaFileListFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "javaFileListFlavor"); } }
+        public static Java.Awt.Datatransfer.DataFlavor javaFileListFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "javaFileListFlavor"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#stringFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor stringFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "stringFlavor"); } }
+        public static Java.Awt.Datatransfer.DataFlavor stringFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "stringFlavor"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaJVMLocalObjectMimeType"/>
         /// </summary>
-        public static string javaJVMLocalObjectMimeType { get { return SGetField<string>(LocalClazz, "javaJVMLocalObjectMimeType"); } }
+        public static string javaJVMLocalObjectMimeType { get { return SGetField<string>(LocalBridgeClazz, "javaJVMLocalObjectMimeType"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaRemoteObjectMimeType"/>
         /// </summary>
-        public static string javaRemoteObjectMimeType { get { return SGetField<string>(LocalClazz, "javaRemoteObjectMimeType"); } }
+        public static string javaRemoteObjectMimeType { get { return SGetField<string>(LocalBridgeClazz, "javaRemoteObjectMimeType"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaSerializedObjectMimeType"/>
         /// </summary>
-        public static string javaSerializedObjectMimeType { get { return SGetField<string>(LocalClazz, "javaSerializedObjectMimeType"); } }
+        public static string javaSerializedObjectMimeType { get { return SGetField<string>(LocalBridgeClazz, "javaSerializedObjectMimeType"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#allHtmlFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor allHtmlFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "allHtmlFlavor"); } set { SSetField(LocalClazz, "allHtmlFlavor", value); } }
+        public static Java.Awt.Datatransfer.DataFlavor allHtmlFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "allHtmlFlavor"); } set { SSetField(LocalBridgeClazz, "allHtmlFlavor", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#fragmentHtmlFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor fragmentHtmlFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "fragmentHtmlFlavor"); } set { SSetField(LocalClazz, "fragmentHtmlFlavor", value); } }
+        public static Java.Awt.Datatransfer.DataFlavor fragmentHtmlFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "fragmentHtmlFlavor"); } set { SSetField(LocalBridgeClazz, "fragmentHtmlFlavor", value); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectionHtmlFlavor"/>
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor selectionHtmlFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "selectionHtmlFlavor"); } set { SSetField(LocalClazz, "selectionHtmlFlavor", value); } }
+        public static Java.Awt.Datatransfer.DataFlavor selectionHtmlFlavor { get { return SGetField<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "selectionHtmlFlavor"); } set { SSetField(LocalBridgeClazz, "selectionHtmlFlavor", value); } }
 
         #endregion
 
@@ -128,7 +128,7 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public static Java.Awt.Datatransfer.DataFlavor TextPlainUnicodeFlavor
         {
-            get { return SExecute<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "getTextPlainUnicodeFlavor"); }
+            get { return SExecute<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "getTextPlainUnicodeFlavor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectBestTextFlavor(java.awt.datatransfer.DataFlavor[])"/>
@@ -137,7 +137,7 @@ namespace Java.Awt.Datatransfer
         /// <returns><see cref="Java.Awt.Datatransfer.DataFlavor"/></returns>
         public static Java.Awt.Datatransfer.DataFlavor SelectBestTextFlavor(Java.Awt.Datatransfer.DataFlavor[] arg0)
         {
-            return SExecute<Java.Awt.Datatransfer.DataFlavor>(LocalClazz, "selectBestTextFlavor", new object[] { arg0 });
+            return SExecute<Java.Awt.Datatransfer.DataFlavor>(LocalBridgeClazz, "selectBestTextFlavor", new object[] { arg0 });
         }
 
         #endregion

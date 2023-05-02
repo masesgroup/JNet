@@ -40,23 +40,23 @@ namespace Org.W3c.Dom.Ls
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_APPEND_AS_CHILDREN"/>
         /// </summary>
-        public static short ACTION_APPEND_AS_CHILDREN { get { return SGetField<short>(LocalClazz, "ACTION_APPEND_AS_CHILDREN"); } }
+        public static short ACTION_APPEND_AS_CHILDREN { get { return SGetField<short>(LocalBridgeClazz, "ACTION_APPEND_AS_CHILDREN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_AFTER"/>
         /// </summary>
-        public static short ACTION_INSERT_AFTER { get { return SGetField<short>(LocalClazz, "ACTION_INSERT_AFTER"); } }
+        public static short ACTION_INSERT_AFTER { get { return SGetField<short>(LocalBridgeClazz, "ACTION_INSERT_AFTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_INSERT_BEFORE"/>
         /// </summary>
-        public static short ACTION_INSERT_BEFORE { get { return SGetField<short>(LocalClazz, "ACTION_INSERT_BEFORE"); } }
+        public static short ACTION_INSERT_BEFORE { get { return SGetField<short>(LocalBridgeClazz, "ACTION_INSERT_BEFORE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE"/>
         /// </summary>
-        public static short ACTION_REPLACE { get { return SGetField<short>(LocalClazz, "ACTION_REPLACE"); } }
+        public static short ACTION_REPLACE { get { return SGetField<short>(LocalBridgeClazz, "ACTION_REPLACE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#ACTION_REPLACE_CHILDREN"/>
         /// </summary>
-        public static short ACTION_REPLACE_CHILDREN { get { return SGetField<short>(LocalClazz, "ACTION_REPLACE_CHILDREN"); } }
+        public static short ACTION_REPLACE_CHILDREN { get { return SGetField<short>(LocalBridgeClazz, "ACTION_REPLACE_CHILDREN"); } }
 
         #endregion
 

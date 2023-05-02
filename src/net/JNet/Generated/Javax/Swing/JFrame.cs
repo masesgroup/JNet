@@ -84,7 +84,7 @@ namespace Javax.Swing
         /// </summary>
         public static bool IsDefaultLookAndFeelDecorated
         {
-            get { return SExecute<bool>(LocalClazz, "isDefaultLookAndFeelDecorated"); }
+            get { return SExecute<bool>(LocalBridgeClazz, "isDefaultLookAndFeelDecorated"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setDefaultLookAndFeelDecorated(boolean)"/>
@@ -92,7 +92,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="bool"/></param>
         public static void SetDefaultLookAndFeelDecorated(bool arg0)
         {
-            SExecute(LocalClazz, "setDefaultLookAndFeelDecorated", arg0);
+            SExecute(LocalBridgeClazz, "setDefaultLookAndFeelDecorated", arg0);
         }
 
         #endregion

@@ -48,11 +48,11 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#lineLimitAttribute"/>
         /// </summary>
-        public static string lineLimitAttribute { get { return SGetField<string>(LocalClazz, "lineLimitAttribute"); } }
+        public static string lineLimitAttribute { get { return SGetField<string>(LocalBridgeClazz, "lineLimitAttribute"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#tabSizeAttribute"/>
         /// </summary>
-        public static string tabSizeAttribute { get { return SGetField<string>(LocalClazz, "tabSizeAttribute"); } }
+        public static string tabSizeAttribute { get { return SGetField<string>(LocalBridgeClazz, "tabSizeAttribute"); } }
 
         #endregion
 

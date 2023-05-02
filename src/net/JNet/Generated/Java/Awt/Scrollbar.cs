@@ -70,11 +70,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#HORIZONTAL"/>
         /// </summary>
-        public static int HORIZONTAL { get { return SGetField<int>(LocalClazz, "HORIZONTAL"); } }
+        public static int HORIZONTAL { get { return SGetField<int>(LocalBridgeClazz, "HORIZONTAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#VERTICAL"/>
         /// </summary>
-        public static int VERTICAL { get { return SGetField<int>(LocalClazz, "VERTICAL"); } }
+        public static int VERTICAL { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL"); } }
 
         #endregion
 

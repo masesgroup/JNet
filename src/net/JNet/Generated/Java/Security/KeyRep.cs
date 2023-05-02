@@ -79,15 +79,15 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PRIVATE"/>
             /// </summary>
-            public static Java.Security.KeyRep.Type PRIVATE { get { return SGetField<Java.Security.KeyRep.Type>(LocalClazz, "PRIVATE"); } }
+            public static Java.Security.KeyRep.Type PRIVATE { get { return SGetField<Java.Security.KeyRep.Type>(LocalBridgeClazz, "PRIVATE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PUBLIC"/>
             /// </summary>
-            public static Java.Security.KeyRep.Type PUBLIC { get { return SGetField<Java.Security.KeyRep.Type>(LocalClazz, "PUBLIC"); } }
+            public static Java.Security.KeyRep.Type PUBLIC { get { return SGetField<Java.Security.KeyRep.Type>(LocalBridgeClazz, "PUBLIC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#SECRET"/>
             /// </summary>
-            public static Java.Security.KeyRep.Type SECRET { get { return SGetField<Java.Security.KeyRep.Type>(LocalClazz, "SECRET"); } }
+            public static Java.Security.KeyRep.Type SECRET { get { return SGetField<Java.Security.KeyRep.Type>(LocalBridgeClazz, "SECRET"); } }
 
             #endregion
 
@@ -97,7 +97,7 @@ namespace Java.Security
             /// </summary>
             public static Java.Security.KeyRep.Type[] Values
             {
-                get { return SExecuteArray<Java.Security.KeyRep.Type>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Security.KeyRep.Type>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#valueOf(java.lang.String)"/>
@@ -106,7 +106,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.KeyRep.Type"/></returns>
             public static Java.Security.KeyRep.Type ValueOf(string arg0)
             {
-                return SExecute<Java.Security.KeyRep.Type>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Security.KeyRep.Type>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

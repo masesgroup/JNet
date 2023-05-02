@@ -29,14 +29,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java IntConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java IntConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class IntConsumer : Consumer<int>, IIntConsumer
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetIntConsumer";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetIntConsumer";
 
         /// <inheritdoc cref="Consumer{Int32}"/>
         /// <param name="action">The <see cref="Action{Int32}"/> to be executed</param>

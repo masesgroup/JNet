@@ -98,43 +98,43 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_FLIP"/>
         /// </summary>
-        public static int TYPE_FLIP { get { return SGetField<int>(LocalClazz, "TYPE_FLIP"); } }
+        public static int TYPE_FLIP { get { return SGetField<int>(LocalBridgeClazz, "TYPE_FLIP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_GENERAL_ROTATION"/>
         /// </summary>
-        public static int TYPE_GENERAL_ROTATION { get { return SGetField<int>(LocalClazz, "TYPE_GENERAL_ROTATION"); } }
+        public static int TYPE_GENERAL_ROTATION { get { return SGetField<int>(LocalBridgeClazz, "TYPE_GENERAL_ROTATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_GENERAL_SCALE"/>
         /// </summary>
-        public static int TYPE_GENERAL_SCALE { get { return SGetField<int>(LocalClazz, "TYPE_GENERAL_SCALE"); } }
+        public static int TYPE_GENERAL_SCALE { get { return SGetField<int>(LocalBridgeClazz, "TYPE_GENERAL_SCALE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_GENERAL_TRANSFORM"/>
         /// </summary>
-        public static int TYPE_GENERAL_TRANSFORM { get { return SGetField<int>(LocalClazz, "TYPE_GENERAL_TRANSFORM"); } }
+        public static int TYPE_GENERAL_TRANSFORM { get { return SGetField<int>(LocalBridgeClazz, "TYPE_GENERAL_TRANSFORM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_IDENTITY"/>
         /// </summary>
-        public static int TYPE_IDENTITY { get { return SGetField<int>(LocalClazz, "TYPE_IDENTITY"); } }
+        public static int TYPE_IDENTITY { get { return SGetField<int>(LocalBridgeClazz, "TYPE_IDENTITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_MASK_ROTATION"/>
         /// </summary>
-        public static int TYPE_MASK_ROTATION { get { return SGetField<int>(LocalClazz, "TYPE_MASK_ROTATION"); } }
+        public static int TYPE_MASK_ROTATION { get { return SGetField<int>(LocalBridgeClazz, "TYPE_MASK_ROTATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_MASK_SCALE"/>
         /// </summary>
-        public static int TYPE_MASK_SCALE { get { return SGetField<int>(LocalClazz, "TYPE_MASK_SCALE"); } }
+        public static int TYPE_MASK_SCALE { get { return SGetField<int>(LocalBridgeClazz, "TYPE_MASK_SCALE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_QUADRANT_ROTATION"/>
         /// </summary>
-        public static int TYPE_QUADRANT_ROTATION { get { return SGetField<int>(LocalClazz, "TYPE_QUADRANT_ROTATION"); } }
+        public static int TYPE_QUADRANT_ROTATION { get { return SGetField<int>(LocalBridgeClazz, "TYPE_QUADRANT_ROTATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_TRANSLATION"/>
         /// </summary>
-        public static int TYPE_TRANSLATION { get { return SGetField<int>(LocalClazz, "TYPE_TRANSLATION"); } }
+        public static int TYPE_TRANSLATION { get { return SGetField<int>(LocalBridgeClazz, "TYPE_TRANSLATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#TYPE_UNIFORM_SCALE"/>
         /// </summary>
-        public static int TYPE_UNIFORM_SCALE { get { return SGetField<int>(LocalClazz, "TYPE_UNIFORM_SCALE"); } }
+        public static int TYPE_UNIFORM_SCALE { get { return SGetField<int>(LocalBridgeClazz, "TYPE_UNIFORM_SCALE"); } }
 
         #endregion
 
@@ -148,7 +148,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetQuadrantRotateInstance(int arg0, double arg1, double arg2)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getQuadrantRotateInstance", arg0, arg1, arg2);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getQuadrantRotateInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getQuadrantRotateInstance(int)"/>
@@ -157,7 +157,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetQuadrantRotateInstance(int arg0)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getQuadrantRotateInstance", arg0);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getQuadrantRotateInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double,double,double,double)"/>
@@ -169,7 +169,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0, double arg1, double arg2, double arg3)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getRotateInstance", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getRotateInstance", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double,double,double)"/>
@@ -180,7 +180,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0, double arg1, double arg2)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getRotateInstance", arg0, arg1, arg2);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getRotateInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double,double)"/>
@@ -190,7 +190,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0, double arg1)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getRotateInstance", arg0, arg1);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getRotateInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getRotateInstance(double)"/>
@@ -199,7 +199,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetRotateInstance(double arg0)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getRotateInstance", arg0);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getRotateInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getScaleInstance(double,double)"/>
@@ -209,7 +209,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetScaleInstance(double arg0, double arg1)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getScaleInstance", arg0, arg1);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getScaleInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getShearInstance(double,double)"/>
@@ -219,7 +219,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetShearInstance(double arg0, double arg1)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getShearInstance", arg0, arg1);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getShearInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/AffineTransform.html#getTranslateInstance(double,double)"/>
@@ -229,7 +229,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.AffineTransform"/></returns>
         public static Java.Awt.Geom.AffineTransform GetTranslateInstance(double arg0, double arg1)
         {
-            return SExecute<Java.Awt.Geom.AffineTransform>(LocalClazz, "getTranslateInstance", arg0, arg1);
+            return SExecute<Java.Awt.Geom.AffineTransform>(LocalBridgeClazz, "getTranslateInstance", arg0, arg1);
         }
 
         #endregion

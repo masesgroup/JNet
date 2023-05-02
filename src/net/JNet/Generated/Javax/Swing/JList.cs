@@ -64,15 +64,15 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#HORIZONTAL_WRAP"/>
         /// </summary>
-        public static int HORIZONTAL_WRAP { get { return SGetField<int>(LocalClazz, "HORIZONTAL_WRAP"); } }
+        public static int HORIZONTAL_WRAP { get { return SGetField<int>(LocalBridgeClazz, "HORIZONTAL_WRAP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#VERTICAL"/>
         /// </summary>
-        public static int VERTICAL { get { return SGetField<int>(LocalClazz, "VERTICAL"); } }
+        public static int VERTICAL { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#VERTICAL_WRAP"/>
         /// </summary>
-        public static int VERTICAL_WRAP { get { return SGetField<int>(LocalClazz, "VERTICAL_WRAP"); } }
+        public static int VERTICAL_WRAP { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL_WRAP"); } }
 
         #endregion
 
@@ -559,15 +559,15 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#HORIZONTAL_WRAP"/>
         /// </summary>
-        public static int HORIZONTAL_WRAP { get { return SGetField<int>(LocalClazz, "HORIZONTAL_WRAP"); } }
+        public static int HORIZONTAL_WRAP { get { return SGetField<int>(LocalBridgeClazz, "HORIZONTAL_WRAP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#VERTICAL"/>
         /// </summary>
-        public static int VERTICAL { get { return SGetField<int>(LocalClazz, "VERTICAL"); } }
+        public static int VERTICAL { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#VERTICAL_WRAP"/>
         /// </summary>
-        public static int VERTICAL_WRAP { get { return SGetField<int>(LocalClazz, "VERTICAL_WRAP"); } }
+        public static int VERTICAL_WRAP { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL_WRAP"); } }
 
         #endregion
 

@@ -49,19 +49,19 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdACChrominance"/>
         /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdACChrominance { get { return SGetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>(LocalClazz, "StdACChrominance"); } }
+        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdACChrominance { get { return SGetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>(LocalBridgeClazz, "StdACChrominance"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdACLuminance"/>
         /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdACLuminance { get { return SGetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>(LocalClazz, "StdACLuminance"); } }
+        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdACLuminance { get { return SGetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>(LocalBridgeClazz, "StdACLuminance"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCChrominance"/>
         /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCChrominance { get { return SGetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>(LocalClazz, "StdDCChrominance"); } }
+        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCChrominance { get { return SGetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>(LocalBridgeClazz, "StdDCChrominance"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCLuminance"/>
         /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCLuminance { get { return SGetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>(LocalClazz, "StdDCLuminance"); } }
+        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCLuminance { get { return SGetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>(LocalBridgeClazz, "StdDCLuminance"); } }
 
         #endregion
 

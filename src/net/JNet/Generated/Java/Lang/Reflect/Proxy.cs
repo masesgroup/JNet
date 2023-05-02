@@ -52,7 +52,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="bool"/></returns>
         public static bool IsProxyClass(Java.Lang.Class arg0)
         {
-            return SExecute<bool>(LocalClazz, "isProxyClass", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isProxyClass", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#newProxyInstance(java.lang.ClassLoader,java.lang.Class[],java.lang.reflect.InvocationHandler)"/>
@@ -63,7 +63,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="object"/></returns>
         public static object NewProxyInstance(Java.Lang.ClassLoader arg0, Java.Lang.Class[] arg1, Java.Lang.Reflect.InvocationHandler arg2)
         {
-            return SExecute(LocalClazz, "newProxyInstance", arg0, arg1, arg2);
+            return SExecute(LocalBridgeClazz, "newProxyInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#getInvocationHandler(java.lang.Object)"/>
@@ -73,7 +73,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Lang.Reflect.InvocationHandler GetInvocationHandler(object arg0)
         {
-            return SExecute<Java.Lang.Reflect.InvocationHandler>(LocalClazz, "getInvocationHandler", arg0);
+            return SExecute<Java.Lang.Reflect.InvocationHandler>(LocalBridgeClazz, "getInvocationHandler", arg0);
         }
 
         #endregion

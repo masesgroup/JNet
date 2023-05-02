@@ -40,7 +40,7 @@ namespace Java.Rmi.Registry
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#REGISTRY_PORT"/>
         /// </summary>
-        public static int REGISTRY_PORT { get { return SGetField<int>(LocalClazz, "REGISTRY_PORT"); } }
+        public static int REGISTRY_PORT { get { return SGetField<int>(LocalBridgeClazz, "REGISTRY_PORT"); } }
 
         #endregion
 

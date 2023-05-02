@@ -26,8 +26,8 @@ namespace Java.Lang
     public class UnsupportedClassVersionError : ClassFormatError
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.UnsupportedClassVersionError";
+        public override string BridgeClassName => "java.lang.UnsupportedClassVersionError";
     }
 }

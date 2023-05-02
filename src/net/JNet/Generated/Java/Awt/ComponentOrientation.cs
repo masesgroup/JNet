@@ -44,15 +44,15 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#LEFT_TO_RIGHT"/>
         /// </summary>
-        public static Java.Awt.ComponentOrientation LEFT_TO_RIGHT { get { return SGetField<Java.Awt.ComponentOrientation>(LocalClazz, "LEFT_TO_RIGHT"); } }
+        public static Java.Awt.ComponentOrientation LEFT_TO_RIGHT { get { return SGetField<Java.Awt.ComponentOrientation>(LocalBridgeClazz, "LEFT_TO_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#RIGHT_TO_LEFT"/>
         /// </summary>
-        public static Java.Awt.ComponentOrientation RIGHT_TO_LEFT { get { return SGetField<Java.Awt.ComponentOrientation>(LocalClazz, "RIGHT_TO_LEFT"); } }
+        public static Java.Awt.ComponentOrientation RIGHT_TO_LEFT { get { return SGetField<Java.Awt.ComponentOrientation>(LocalBridgeClazz, "RIGHT_TO_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#UNKNOWN"/>
         /// </summary>
-        public static Java.Awt.ComponentOrientation UNKNOWN { get { return SGetField<Java.Awt.ComponentOrientation>(LocalClazz, "UNKNOWN"); } }
+        public static Java.Awt.ComponentOrientation UNKNOWN { get { return SGetField<Java.Awt.ComponentOrientation>(LocalBridgeClazz, "UNKNOWN"); } }
 
         #endregion
 
@@ -64,7 +64,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ComponentOrientation"/></returns>
         public static Java.Awt.ComponentOrientation GetOrientation(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Awt.ComponentOrientation>(LocalClazz, "getOrientation", arg0);
+            return SExecute<Java.Awt.ComponentOrientation>(LocalBridgeClazz, "getOrientation", arg0);
         }
 
         #endregion

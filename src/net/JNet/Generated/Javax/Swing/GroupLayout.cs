@@ -52,11 +52,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#DEFAULT_SIZE"/>
         /// </summary>
-        public static int DEFAULT_SIZE { get { return SGetField<int>(LocalClazz, "DEFAULT_SIZE"); } }
+        public static int DEFAULT_SIZE { get { return SGetField<int>(LocalBridgeClazz, "DEFAULT_SIZE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#PREFERRED_SIZE"/>
         /// </summary>
-        public static int PREFERRED_SIZE { get { return SGetField<int>(LocalClazz, "PREFERRED_SIZE"); } }
+        public static int PREFERRED_SIZE { get { return SGetField<int>(LocalBridgeClazz, "PREFERRED_SIZE"); } }
 
         #endregion
 
@@ -295,19 +295,19 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#BASELINE"/>
             /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment BASELINE { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "BASELINE"); } }
+            public static Javax.Swing.GroupLayout.Alignment BASELINE { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalBridgeClazz, "BASELINE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#CENTER"/>
             /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment CENTER { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "CENTER"); } }
+            public static Javax.Swing.GroupLayout.Alignment CENTER { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalBridgeClazz, "CENTER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#LEADING"/>
             /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment LEADING { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "LEADING"); } }
+            public static Javax.Swing.GroupLayout.Alignment LEADING { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalBridgeClazz, "LEADING"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#TRAILING"/>
             /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment TRAILING { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "TRAILING"); } }
+            public static Javax.Swing.GroupLayout.Alignment TRAILING { get { return SGetField<Javax.Swing.GroupLayout.Alignment>(LocalBridgeClazz, "TRAILING"); } }
 
             #endregion
 
@@ -317,7 +317,7 @@ namespace Javax.Swing
             /// </summary>
             public static Javax.Swing.GroupLayout.Alignment[] Values
             {
-                get { return SExecuteArray<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "values"); }
+                get { return SExecuteArray<Javax.Swing.GroupLayout.Alignment>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#valueOf(java.lang.String)"/>
@@ -326,7 +326,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.GroupLayout.Alignment"/></returns>
             public static Javax.Swing.GroupLayout.Alignment ValueOf(string arg0)
             {
-                return SExecute<Javax.Swing.GroupLayout.Alignment>(LocalClazz, "valueOf", arg0);
+                return SExecute<Javax.Swing.GroupLayout.Alignment>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

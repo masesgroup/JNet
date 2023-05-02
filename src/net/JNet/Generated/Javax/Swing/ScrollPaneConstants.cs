@@ -40,87 +40,87 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#HORIZONTAL_SCROLLBAR_ALWAYS"/>
         /// </summary>
-        public static int HORIZONTAL_SCROLLBAR_ALWAYS { get { return SGetField<int>(LocalClazz, "HORIZONTAL_SCROLLBAR_ALWAYS"); } }
+        public static int HORIZONTAL_SCROLLBAR_ALWAYS { get { return SGetField<int>(LocalBridgeClazz, "HORIZONTAL_SCROLLBAR_ALWAYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#HORIZONTAL_SCROLLBAR_AS_NEEDED"/>
         /// </summary>
-        public static int HORIZONTAL_SCROLLBAR_AS_NEEDED { get { return SGetField<int>(LocalClazz, "HORIZONTAL_SCROLLBAR_AS_NEEDED"); } }
+        public static int HORIZONTAL_SCROLLBAR_AS_NEEDED { get { return SGetField<int>(LocalBridgeClazz, "HORIZONTAL_SCROLLBAR_AS_NEEDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#HORIZONTAL_SCROLLBAR_NEVER"/>
         /// </summary>
-        public static int HORIZONTAL_SCROLLBAR_NEVER { get { return SGetField<int>(LocalClazz, "HORIZONTAL_SCROLLBAR_NEVER"); } }
+        public static int HORIZONTAL_SCROLLBAR_NEVER { get { return SGetField<int>(LocalBridgeClazz, "HORIZONTAL_SCROLLBAR_NEVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VERTICAL_SCROLLBAR_ALWAYS"/>
         /// </summary>
-        public static int VERTICAL_SCROLLBAR_ALWAYS { get { return SGetField<int>(LocalClazz, "VERTICAL_SCROLLBAR_ALWAYS"); } }
+        public static int VERTICAL_SCROLLBAR_ALWAYS { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL_SCROLLBAR_ALWAYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VERTICAL_SCROLLBAR_AS_NEEDED"/>
         /// </summary>
-        public static int VERTICAL_SCROLLBAR_AS_NEEDED { get { return SGetField<int>(LocalClazz, "VERTICAL_SCROLLBAR_AS_NEEDED"); } }
+        public static int VERTICAL_SCROLLBAR_AS_NEEDED { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL_SCROLLBAR_AS_NEEDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VERTICAL_SCROLLBAR_NEVER"/>
         /// </summary>
-        public static int VERTICAL_SCROLLBAR_NEVER { get { return SGetField<int>(LocalClazz, "VERTICAL_SCROLLBAR_NEVER"); } }
+        public static int VERTICAL_SCROLLBAR_NEVER { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL_SCROLLBAR_NEVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#COLUMN_HEADER"/>
         /// </summary>
-        public static string COLUMN_HEADER { get { return SGetField<string>(LocalClazz, "COLUMN_HEADER"); } }
+        public static string COLUMN_HEADER { get { return SGetField<string>(LocalBridgeClazz, "COLUMN_HEADER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#HORIZONTAL_SCROLLBAR"/>
         /// </summary>
-        public static string HORIZONTAL_SCROLLBAR { get { return SGetField<string>(LocalClazz, "HORIZONTAL_SCROLLBAR"); } }
+        public static string HORIZONTAL_SCROLLBAR { get { return SGetField<string>(LocalBridgeClazz, "HORIZONTAL_SCROLLBAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#HORIZONTAL_SCROLLBAR_POLICY"/>
         /// </summary>
-        public static string HORIZONTAL_SCROLLBAR_POLICY { get { return SGetField<string>(LocalClazz, "HORIZONTAL_SCROLLBAR_POLICY"); } }
+        public static string HORIZONTAL_SCROLLBAR_POLICY { get { return SGetField<string>(LocalBridgeClazz, "HORIZONTAL_SCROLLBAR_POLICY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#LOWER_LEADING_CORNER"/>
         /// </summary>
-        public static string LOWER_LEADING_CORNER { get { return SGetField<string>(LocalClazz, "LOWER_LEADING_CORNER"); } }
+        public static string LOWER_LEADING_CORNER { get { return SGetField<string>(LocalBridgeClazz, "LOWER_LEADING_CORNER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#LOWER_LEFT_CORNER"/>
         /// </summary>
-        public static string LOWER_LEFT_CORNER { get { return SGetField<string>(LocalClazz, "LOWER_LEFT_CORNER"); } }
+        public static string LOWER_LEFT_CORNER { get { return SGetField<string>(LocalBridgeClazz, "LOWER_LEFT_CORNER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#LOWER_RIGHT_CORNER"/>
         /// </summary>
-        public static string LOWER_RIGHT_CORNER { get { return SGetField<string>(LocalClazz, "LOWER_RIGHT_CORNER"); } }
+        public static string LOWER_RIGHT_CORNER { get { return SGetField<string>(LocalBridgeClazz, "LOWER_RIGHT_CORNER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#LOWER_TRAILING_CORNER"/>
         /// </summary>
-        public static string LOWER_TRAILING_CORNER { get { return SGetField<string>(LocalClazz, "LOWER_TRAILING_CORNER"); } }
+        public static string LOWER_TRAILING_CORNER { get { return SGetField<string>(LocalBridgeClazz, "LOWER_TRAILING_CORNER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#ROW_HEADER"/>
         /// </summary>
-        public static string ROW_HEADER { get { return SGetField<string>(LocalClazz, "ROW_HEADER"); } }
+        public static string ROW_HEADER { get { return SGetField<string>(LocalBridgeClazz, "ROW_HEADER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#UPPER_LEADING_CORNER"/>
         /// </summary>
-        public static string UPPER_LEADING_CORNER { get { return SGetField<string>(LocalClazz, "UPPER_LEADING_CORNER"); } }
+        public static string UPPER_LEADING_CORNER { get { return SGetField<string>(LocalBridgeClazz, "UPPER_LEADING_CORNER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#UPPER_LEFT_CORNER"/>
         /// </summary>
-        public static string UPPER_LEFT_CORNER { get { return SGetField<string>(LocalClazz, "UPPER_LEFT_CORNER"); } }
+        public static string UPPER_LEFT_CORNER { get { return SGetField<string>(LocalBridgeClazz, "UPPER_LEFT_CORNER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#UPPER_RIGHT_CORNER"/>
         /// </summary>
-        public static string UPPER_RIGHT_CORNER { get { return SGetField<string>(LocalClazz, "UPPER_RIGHT_CORNER"); } }
+        public static string UPPER_RIGHT_CORNER { get { return SGetField<string>(LocalBridgeClazz, "UPPER_RIGHT_CORNER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#UPPER_TRAILING_CORNER"/>
         /// </summary>
-        public static string UPPER_TRAILING_CORNER { get { return SGetField<string>(LocalClazz, "UPPER_TRAILING_CORNER"); } }
+        public static string UPPER_TRAILING_CORNER { get { return SGetField<string>(LocalBridgeClazz, "UPPER_TRAILING_CORNER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VERTICAL_SCROLLBAR"/>
         /// </summary>
-        public static string VERTICAL_SCROLLBAR { get { return SGetField<string>(LocalClazz, "VERTICAL_SCROLLBAR"); } }
+        public static string VERTICAL_SCROLLBAR { get { return SGetField<string>(LocalBridgeClazz, "VERTICAL_SCROLLBAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VERTICAL_SCROLLBAR_POLICY"/>
         /// </summary>
-        public static string VERTICAL_SCROLLBAR_POLICY { get { return SGetField<string>(LocalClazz, "VERTICAL_SCROLLBAR_POLICY"); } }
+        public static string VERTICAL_SCROLLBAR_POLICY { get { return SGetField<string>(LocalBridgeClazz, "VERTICAL_SCROLLBAR_POLICY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html#VIEWPORT"/>
         /// </summary>
-        public static string VIEWPORT { get { return SGetField<string>(LocalClazz, "VIEWPORT"); } }
+        public static string VIEWPORT { get { return SGetField<string>(LocalBridgeClazz, "VIEWPORT"); } }
 
         #endregion
 

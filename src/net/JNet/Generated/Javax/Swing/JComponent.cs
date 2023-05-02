@@ -44,23 +44,23 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#UNDEFINED_CONDITION"/>
         /// </summary>
-        public static int UNDEFINED_CONDITION { get { return SGetField<int>(LocalClazz, "UNDEFINED_CONDITION"); } }
+        public static int UNDEFINED_CONDITION { get { return SGetField<int>(LocalBridgeClazz, "UNDEFINED_CONDITION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#WHEN_ANCESTOR_OF_FOCUSED_COMPONENT"/>
         /// </summary>
-        public static int WHEN_ANCESTOR_OF_FOCUSED_COMPONENT { get { return SGetField<int>(LocalClazz, "WHEN_ANCESTOR_OF_FOCUSED_COMPONENT"); } }
+        public static int WHEN_ANCESTOR_OF_FOCUSED_COMPONENT { get { return SGetField<int>(LocalBridgeClazz, "WHEN_ANCESTOR_OF_FOCUSED_COMPONENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#WHEN_FOCUSED"/>
         /// </summary>
-        public static int WHEN_FOCUSED { get { return SGetField<int>(LocalClazz, "WHEN_FOCUSED"); } }
+        public static int WHEN_FOCUSED { get { return SGetField<int>(LocalBridgeClazz, "WHEN_FOCUSED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#WHEN_IN_FOCUSED_WINDOW"/>
         /// </summary>
-        public static int WHEN_IN_FOCUSED_WINDOW { get { return SGetField<int>(LocalClazz, "WHEN_IN_FOCUSED_WINDOW"); } }
+        public static int WHEN_IN_FOCUSED_WINDOW { get { return SGetField<int>(LocalBridgeClazz, "WHEN_IN_FOCUSED_WINDOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#TOOL_TIP_TEXT_KEY"/>
         /// </summary>
-        public static string TOOL_TIP_TEXT_KEY { get { return SGetField<string>(LocalClazz, "TOOL_TIP_TEXT_KEY"); } }
+        public static string TOOL_TIP_TEXT_KEY { get { return SGetField<string>(LocalBridgeClazz, "TOOL_TIP_TEXT_KEY"); } }
 
         #endregion
 
@@ -70,7 +70,7 @@ namespace Javax.Swing
         /// </summary>
         public static Java.Util.Locale DefaultLocale
         {
-            get { return SExecute<Java.Util.Locale>(LocalClazz, "getDefaultLocale"); } set { SExecute(LocalClazz, "setDefaultLocale", value); }
+            get { return SExecute<Java.Util.Locale>(LocalBridgeClazz, "getDefaultLocale"); } set { SExecute(LocalBridgeClazz, "setDefaultLocale", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#isLightweightComponent(java.awt.Component)"/>
@@ -79,7 +79,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public static bool IsLightweightComponent(Java.Awt.Component arg0)
         {
-            return SExecute<bool>(LocalClazz, "isLightweightComponent", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isLightweightComponent", arg0);
         }
 
         #endregion

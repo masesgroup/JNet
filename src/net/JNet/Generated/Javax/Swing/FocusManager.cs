@@ -40,7 +40,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/FocusManager.html#FOCUS_MANAGER_CLASS_PROPERTY"/>
         /// </summary>
-        public static string FOCUS_MANAGER_CLASS_PROPERTY { get { return SGetField<string>(LocalClazz, "FOCUS_MANAGER_CLASS_PROPERTY"); } }
+        public static string FOCUS_MANAGER_CLASS_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "FOCUS_MANAGER_CLASS_PROPERTY"); } }
 
         #endregion
 
@@ -50,7 +50,7 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.FocusManager CurrentManager
         {
-            get { return SExecute<Javax.Swing.FocusManager>(LocalClazz, "getCurrentManager"); } set { SExecute(LocalClazz, "setCurrentManager", value); }
+            get { return SExecute<Javax.Swing.FocusManager>(LocalBridgeClazz, "getCurrentManager"); } set { SExecute(LocalBridgeClazz, "setCurrentManager", value); }
         }
 
         #endregion

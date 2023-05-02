@@ -52,7 +52,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public static Java.Nio.LongBuffer Allocate(int arg0)
         {
-            return SExecute<Java.Nio.LongBuffer>(LocalClazz, "allocate", arg0);
+            return SExecute<Java.Nio.LongBuffer>(LocalBridgeClazz, "allocate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#wrap(long[],int,int)"/>
@@ -63,7 +63,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public static Java.Nio.LongBuffer Wrap(long[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.LongBuffer>(LocalClazz, "wrap", arg0, arg1, arg2);
+            return SExecute<Java.Nio.LongBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#wrap(long[])"/>
@@ -72,7 +72,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
         public static Java.Nio.LongBuffer Wrap(long[] arg0)
         {
-            return SExecute<Java.Nio.LongBuffer>(LocalClazz, "wrap", new object[] { arg0 });
+            return SExecute<Java.Nio.LongBuffer>(LocalBridgeClazz, "wrap", new object[] { arg0 });
         }
 
         #endregion

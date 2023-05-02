@@ -100,11 +100,11 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#AD"/>
         /// </summary>
-        public static int AD { get { return SGetField<int>(LocalClazz, "AD"); } }
+        public static int AD { get { return SGetField<int>(LocalBridgeClazz, "AD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#BC"/>
         /// </summary>
-        public static int BC { get { return SGetField<int>(LocalClazz, "BC"); } }
+        public static int BC { get { return SGetField<int>(LocalBridgeClazz, "BC"); } }
 
         #endregion
 
@@ -116,7 +116,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.GregorianCalendar"/></returns>
         public static Java.Util.GregorianCalendar From(Java.Time.ZonedDateTime arg0)
         {
-            return SExecute<Java.Util.GregorianCalendar>(LocalClazz, "from", arg0);
+            return SExecute<Java.Util.GregorianCalendar>(LocalBridgeClazz, "from", arg0);
         }
 
         #endregion

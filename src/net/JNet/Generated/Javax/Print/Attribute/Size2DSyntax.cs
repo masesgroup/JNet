@@ -48,11 +48,11 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Size2DSyntax.html#INCH"/>
         /// </summary>
-        public static int INCH { get { return SGetField<int>(LocalClazz, "INCH"); } }
+        public static int INCH { get { return SGetField<int>(LocalBridgeClazz, "INCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Size2DSyntax.html#MM"/>
         /// </summary>
-        public static int MM { get { return SGetField<int>(LocalClazz, "MM"); } }
+        public static int MM { get { return SGetField<int>(LocalBridgeClazz, "MM"); } }
 
         #endregion
 

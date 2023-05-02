@@ -44,39 +44,39 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#BASELINE"/>
         /// </summary>
-        public static string BASELINE { get { return SGetField<string>(LocalClazz, "BASELINE"); } }
+        public static string BASELINE { get { return SGetField<string>(LocalBridgeClazz, "BASELINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#EAST"/>
         /// </summary>
-        public static string EAST { get { return SGetField<string>(LocalClazz, "EAST"); } }
+        public static string EAST { get { return SGetField<string>(LocalBridgeClazz, "EAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HEIGHT"/>
         /// </summary>
-        public static string HEIGHT { get { return SGetField<string>(LocalClazz, "HEIGHT"); } }
+        public static string HEIGHT { get { return SGetField<string>(LocalBridgeClazz, "HEIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HORIZONTAL_CENTER"/>
         /// </summary>
-        public static string HORIZONTAL_CENTER { get { return SGetField<string>(LocalClazz, "HORIZONTAL_CENTER"); } }
+        public static string HORIZONTAL_CENTER { get { return SGetField<string>(LocalBridgeClazz, "HORIZONTAL_CENTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#NORTH"/>
         /// </summary>
-        public static string NORTH { get { return SGetField<string>(LocalClazz, "NORTH"); } }
+        public static string NORTH { get { return SGetField<string>(LocalBridgeClazz, "NORTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#SOUTH"/>
         /// </summary>
-        public static string SOUTH { get { return SGetField<string>(LocalClazz, "SOUTH"); } }
+        public static string SOUTH { get { return SGetField<string>(LocalBridgeClazz, "SOUTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#VERTICAL_CENTER"/>
         /// </summary>
-        public static string VERTICAL_CENTER { get { return SGetField<string>(LocalClazz, "VERTICAL_CENTER"); } }
+        public static string VERTICAL_CENTER { get { return SGetField<string>(LocalBridgeClazz, "VERTICAL_CENTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WEST"/>
         /// </summary>
-        public static string WEST { get { return SGetField<string>(LocalClazz, "WEST"); } }
+        public static string WEST { get { return SGetField<string>(LocalBridgeClazz, "WEST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WIDTH"/>
         /// </summary>
-        public static string WIDTH { get { return SGetField<string>(LocalClazz, "WIDTH"); } }
+        public static string WIDTH { get { return SGetField<string>(LocalBridgeClazz, "WIDTH"); } }
 
         #endregion
 

@@ -40,11 +40,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#DECLARED"/>
         /// </summary>
-        public static int DECLARED { get { return SGetField<int>(LocalClazz, "DECLARED"); } }
+        public static int DECLARED { get { return SGetField<int>(LocalBridgeClazz, "DECLARED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#PUBLIC"/>
         /// </summary>
-        public static int PUBLIC { get { return SGetField<int>(LocalClazz, "PUBLIC"); } }
+        public static int PUBLIC { get { return SGetField<int>(LocalBridgeClazz, "PUBLIC"); } }
 
         #endregion
 

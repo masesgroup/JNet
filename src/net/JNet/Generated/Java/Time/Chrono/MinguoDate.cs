@@ -56,7 +56,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
         public static Java.Time.Chrono.MinguoDate Now()
         {
-            return SExecute<Java.Time.Chrono.MinguoDate>(LocalClazz, "now");
+            return SExecute<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoDate.html#now(java.time.Clock)"/>
@@ -65,7 +65,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
         public static Java.Time.Chrono.MinguoDate Now(Java.Time.Clock arg0)
         {
-            return SExecute<Java.Time.Chrono.MinguoDate>(LocalClazz, "now", arg0);
+            return SExecute<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoDate.html#now(java.time.ZoneId)"/>
@@ -74,7 +74,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
         public static Java.Time.Chrono.MinguoDate Now(Java.Time.ZoneId arg0)
         {
-            return SExecute<Java.Time.Chrono.MinguoDate>(LocalClazz, "now", arg0);
+            return SExecute<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoDate.html#of(int,int,int)"/>
@@ -85,7 +85,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
         public static Java.Time.Chrono.MinguoDate Of(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.Chrono.MinguoDate>(LocalClazz, "of", arg0, arg1, arg2);
+            return SExecute<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
 
         #endregion

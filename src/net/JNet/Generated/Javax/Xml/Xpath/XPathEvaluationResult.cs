@@ -78,27 +78,27 @@ namespace Javax.Xml.Xpath
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#ANY"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ANY { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "ANY"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ANY { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "ANY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#BOOLEAN"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType BOOLEAN { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "BOOLEAN"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType BOOLEAN { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "BOOLEAN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODE"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODE { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "NODE"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODE { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "NODE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODESET"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODESET { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "NODESET"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODESET { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "NODESET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NUMBER"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NUMBER { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "NUMBER"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NUMBER { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "NUMBER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#STRING"/>
             /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType STRING { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "STRING"); } }
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType STRING { get { return SGetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "STRING"); } }
 
             #endregion
 
@@ -108,7 +108,7 @@ namespace Javax.Xml.Xpath
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType[] Values
             {
-                get { return SExecuteArray<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "values"); }
+                get { return SExecuteArray<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#getQNameType(java.lang.Class)"/>
@@ -117,7 +117,7 @@ namespace Javax.Xml.Xpath
             /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
             public static Javax.Xml.Namespace.QName GetQNameType(Java.Lang.Class arg0)
             {
-                return SExecute<Javax.Xml.Namespace.QName>(LocalClazz, "getQNameType", arg0);
+                return SExecute<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "getQNameType", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#valueOf(java.lang.String)"/>
@@ -126,7 +126,7 @@ namespace Javax.Xml.Xpath
             /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ValueOf(string arg0)
             {
-                return SExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalClazz, "valueOf", arg0);
+                return SExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

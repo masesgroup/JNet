@@ -57,7 +57,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public static Java.Nio.File.Path Of(string arg0, params string[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "of", arg0); else return SExecute<Java.Nio.File.Path>(LocalClazz, "of", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "of", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#of(java.net.URI)"/>
@@ -66,7 +66,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public static Java.Nio.File.Path Of(Java.Net.URI arg0)
         {
-            return SExecute<Java.Nio.File.Path>(LocalClazz, "of", arg0);
+            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "of", arg0);
         }
 
         #endregion

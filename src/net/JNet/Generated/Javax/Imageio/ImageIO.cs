@@ -46,56 +46,56 @@ namespace Javax.Imageio
         /// </summary>
         public static Java.Io.File CacheDirectory
         {
-            get { return SExecute<Java.Io.File>(LocalClazz, "getCacheDirectory"); } set { SExecute(LocalClazz, "setCacheDirectory", value); }
+            get { return SExecute<Java.Io.File>(LocalBridgeClazz, "getCacheDirectory"); } set { SExecute(LocalBridgeClazz, "setCacheDirectory", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getReaderFileSuffixes()"/> 
         /// </summary>
         public static string[] ReaderFileSuffixes
         {
-            get { return SExecuteArray<string>(LocalClazz, "getReaderFileSuffixes"); }
+            get { return SExecuteArray<string>(LocalBridgeClazz, "getReaderFileSuffixes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getReaderFormatNames()"/> 
         /// </summary>
         public static string[] ReaderFormatNames
         {
-            get { return SExecuteArray<string>(LocalClazz, "getReaderFormatNames"); }
+            get { return SExecuteArray<string>(LocalBridgeClazz, "getReaderFormatNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getReaderMIMETypes()"/> 
         /// </summary>
         public static string[] ReaderMIMETypes
         {
-            get { return SExecuteArray<string>(LocalClazz, "getReaderMIMETypes"); }
+            get { return SExecuteArray<string>(LocalBridgeClazz, "getReaderMIMETypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getUseCache()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#setUseCache(boolean)"/>
         /// </summary>
         public static bool UseCache
         {
-            get { return SExecute<bool>(LocalClazz, "getUseCache"); } set { SExecute(LocalClazz, "setUseCache", value); }
+            get { return SExecute<bool>(LocalBridgeClazz, "getUseCache"); } set { SExecute(LocalBridgeClazz, "setUseCache", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getWriterFileSuffixes()"/> 
         /// </summary>
         public static string[] WriterFileSuffixes
         {
-            get { return SExecuteArray<string>(LocalClazz, "getWriterFileSuffixes"); }
+            get { return SExecuteArray<string>(LocalBridgeClazz, "getWriterFileSuffixes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getWriterFormatNames()"/> 
         /// </summary>
         public static string[] WriterFormatNames
         {
-            get { return SExecuteArray<string>(LocalClazz, "getWriterFormatNames"); }
+            get { return SExecuteArray<string>(LocalBridgeClazz, "getWriterFormatNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getWriterMIMETypes()"/> 
         /// </summary>
         public static string[] WriterMIMETypes
         {
-            get { return SExecuteArray<string>(LocalClazz, "getWriterMIMETypes"); }
+            get { return SExecuteArray<string>(LocalBridgeClazz, "getWriterMIMETypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,java.io.File)"/>
@@ -107,7 +107,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public static bool Write(Java.Awt.ImageNs.RenderedImage arg0, string arg1, Java.Io.File arg2)
         {
-            return SExecute<bool>(LocalClazz, "write", arg0, arg1, arg2);
+            return SExecute<bool>(LocalBridgeClazz, "write", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,java.io.OutputStream)"/>
@@ -119,7 +119,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public static bool Write(Java.Awt.ImageNs.RenderedImage arg0, string arg1, Java.Io.OutputStream arg2)
         {
-            return SExecute<bool>(LocalClazz, "write", arg0, arg1, arg2);
+            return SExecute<bool>(LocalBridgeClazz, "write", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#write(java.awt.image.RenderedImage,java.lang.String,javax.imageio.stream.ImageOutputStream)"/>
@@ -131,7 +131,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public static bool Write(Java.Awt.ImageNs.RenderedImage arg0, string arg1, Javax.Imageio.Stream.ImageOutputStream arg2)
         {
-            return SExecute<bool>(LocalClazz, "write", arg0, arg1, arg2);
+            return SExecute<bool>(LocalBridgeClazz, "write", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(java.io.File)"/>
@@ -141,7 +141,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ImageNs.BufferedImage Read(Java.Io.File arg0)
         {
-            return SExecute<Java.Awt.ImageNs.BufferedImage>(LocalClazz, "read", arg0);
+            return SExecute<Java.Awt.ImageNs.BufferedImage>(LocalBridgeClazz, "read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(java.io.InputStream)"/>
@@ -151,7 +151,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ImageNs.BufferedImage Read(Java.Io.InputStream arg0)
         {
-            return SExecute<Java.Awt.ImageNs.BufferedImage>(LocalClazz, "read", arg0);
+            return SExecute<Java.Awt.ImageNs.BufferedImage>(LocalBridgeClazz, "read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(java.net.URL)"/>
@@ -161,7 +161,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ImageNs.BufferedImage Read(Java.Net.URL arg0)
         {
-            return SExecute<Java.Awt.ImageNs.BufferedImage>(LocalClazz, "read", arg0);
+            return SExecute<Java.Awt.ImageNs.BufferedImage>(LocalBridgeClazz, "read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#read(javax.imageio.stream.ImageInputStream)"/>
@@ -171,7 +171,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.ImageNs.BufferedImage Read(Javax.Imageio.Stream.ImageInputStream arg0)
         {
-            return SExecute<Java.Awt.ImageNs.BufferedImage>(LocalClazz, "read", arg0);
+            return SExecute<Java.Awt.ImageNs.BufferedImage>(LocalBridgeClazz, "read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReaders(java.lang.Object)"/>
@@ -180,7 +180,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<Javax.Imageio.ImageReader> GetImageReaders(object arg0)
         {
-            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>(LocalClazz, "getImageReaders", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>(LocalBridgeClazz, "getImageReaders", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReadersByFormatName(java.lang.String)"/>
@@ -189,7 +189,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<Javax.Imageio.ImageReader> GetImageReadersByFormatName(string arg0)
         {
-            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>(LocalClazz, "getImageReadersByFormatName", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>(LocalBridgeClazz, "getImageReadersByFormatName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReadersByMIMEType(java.lang.String)"/>
@@ -198,7 +198,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<Javax.Imageio.ImageReader> GetImageReadersByMIMEType(string arg0)
         {
-            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>(LocalClazz, "getImageReadersByMIMEType", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>(LocalBridgeClazz, "getImageReadersByMIMEType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReadersBySuffix(java.lang.String)"/>
@@ -207,7 +207,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<Javax.Imageio.ImageReader> GetImageReadersBySuffix(string arg0)
         {
-            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>(LocalClazz, "getImageReadersBySuffix", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageReader>>(LocalBridgeClazz, "getImageReadersBySuffix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageTranscoders(javax.imageio.ImageReader,javax.imageio.ImageWriter)"/>
@@ -217,7 +217,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<Javax.Imageio.ImageTranscoder> GetImageTranscoders(Javax.Imageio.ImageReader arg0, Javax.Imageio.ImageWriter arg1)
         {
-            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageTranscoder>>(LocalClazz, "getImageTranscoders", arg0, arg1);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageTranscoder>>(LocalBridgeClazz, "getImageTranscoders", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWriters(javax.imageio.ImageTypeSpecifier,java.lang.String)"/>
@@ -227,7 +227,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<Javax.Imageio.ImageWriter> GetImageWriters(Javax.Imageio.ImageTypeSpecifier arg0, string arg1)
         {
-            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>(LocalClazz, "getImageWriters", arg0, arg1);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>(LocalBridgeClazz, "getImageWriters", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWritersByFormatName(java.lang.String)"/>
@@ -236,7 +236,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<Javax.Imageio.ImageWriter> GetImageWritersByFormatName(string arg0)
         {
-            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>(LocalClazz, "getImageWritersByFormatName", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>(LocalBridgeClazz, "getImageWritersByFormatName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWritersByMIMEType(java.lang.String)"/>
@@ -245,7 +245,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<Javax.Imageio.ImageWriter> GetImageWritersByMIMEType(string arg0)
         {
-            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>(LocalClazz, "getImageWritersByMIMEType", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>(LocalBridgeClazz, "getImageWritersByMIMEType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWritersBySuffix(java.lang.String)"/>
@@ -254,7 +254,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<Javax.Imageio.ImageWriter> GetImageWritersBySuffix(string arg0)
         {
-            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>(LocalClazz, "getImageWritersBySuffix", arg0);
+            return SExecute<Java.Util.Iterator<Javax.Imageio.ImageWriter>>(LocalBridgeClazz, "getImageWritersBySuffix", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageReader(javax.imageio.ImageWriter)"/>
@@ -263,7 +263,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.ImageReader"/></returns>
         public static Javax.Imageio.ImageReader GetImageReader(Javax.Imageio.ImageWriter arg0)
         {
-            return SExecute<Javax.Imageio.ImageReader>(LocalClazz, "getImageReader", arg0);
+            return SExecute<Javax.Imageio.ImageReader>(LocalBridgeClazz, "getImageReader", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#getImageWriter(javax.imageio.ImageReader)"/>
@@ -272,7 +272,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.ImageWriter"/></returns>
         public static Javax.Imageio.ImageWriter GetImageWriter(Javax.Imageio.ImageReader arg0)
         {
-            return SExecute<Javax.Imageio.ImageWriter>(LocalClazz, "getImageWriter", arg0);
+            return SExecute<Javax.Imageio.ImageWriter>(LocalBridgeClazz, "getImageWriter", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#createImageInputStream(java.lang.Object)"/>
@@ -282,7 +282,7 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Imageio.Stream.ImageInputStream CreateImageInputStream(object arg0)
         {
-            return SExecute<Javax.Imageio.Stream.ImageInputStream>(LocalClazz, "createImageInputStream", arg0);
+            return SExecute<Javax.Imageio.Stream.ImageInputStream>(LocalBridgeClazz, "createImageInputStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#createImageOutputStream(java.lang.Object)"/>
@@ -292,14 +292,14 @@ namespace Javax.Imageio
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Imageio.Stream.ImageOutputStream CreateImageOutputStream(object arg0)
         {
-            return SExecute<Javax.Imageio.Stream.ImageOutputStream>(LocalClazz, "createImageOutputStream", arg0);
+            return SExecute<Javax.Imageio.Stream.ImageOutputStream>(LocalBridgeClazz, "createImageOutputStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageIO.html#scanForPlugins()"/>
         /// </summary>
         public static void ScanForPlugins()
         {
-            SExecute(LocalClazz, "scanForPlugins");
+            SExecute(LocalBridgeClazz, "scanForPlugins");
         }
 
         #endregion

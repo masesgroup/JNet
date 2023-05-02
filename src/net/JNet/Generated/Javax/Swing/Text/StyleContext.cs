@@ -44,7 +44,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#DEFAULT_STYLE"/>
         /// </summary>
-        public static string DEFAULT_STYLE { get { return SGetField<string>(LocalClazz, "DEFAULT_STYLE"); } }
+        public static string DEFAULT_STYLE { get { return SGetField<string>(LocalBridgeClazz, "DEFAULT_STYLE"); } }
 
         #endregion
 
@@ -54,7 +54,7 @@ namespace Javax.Swing.Text
         /// </summary>
         public static Javax.Swing.Text.StyleContext DefaultStyleContext
         {
-            get { return SExecute<Javax.Swing.Text.StyleContext>(LocalClazz, "getDefaultStyleContext"); }
+            get { return SExecute<Javax.Swing.Text.StyleContext>(LocalBridgeClazz, "getDefaultStyleContext"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStaticAttribute(java.lang.Object)"/>
@@ -63,7 +63,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="object"/></returns>
         public static object GetStaticAttribute(object arg0)
         {
-            return SExecute(LocalClazz, "getStaticAttribute", arg0);
+            return SExecute(LocalBridgeClazz, "getStaticAttribute", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStaticAttributeKey(java.lang.Object)"/>
@@ -72,7 +72,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="object"/></returns>
         public static object GetStaticAttributeKey(object arg0)
         {
-            return SExecute(LocalClazz, "getStaticAttributeKey", arg0);
+            return SExecute(LocalBridgeClazz, "getStaticAttributeKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#readAttributeSet(java.io.ObjectInputStream,javax.swing.text.MutableAttributeSet)"/>
@@ -83,7 +83,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Java.Io.IOException"/>
         public static void ReadAttributeSet(Java.Io.ObjectInputStream arg0, Javax.Swing.Text.MutableAttributeSet arg1)
         {
-            SExecute(LocalClazz, "readAttributeSet", arg0, arg1);
+            SExecute(LocalBridgeClazz, "readAttributeSet", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#registerStaticAttributeKey(java.lang.Object)"/>
@@ -91,7 +91,7 @@ namespace Javax.Swing.Text
         /// <param name="arg0"><see cref="object"/></param>
         public static void RegisterStaticAttributeKey(object arg0)
         {
-            SExecute(LocalClazz, "registerStaticAttributeKey", arg0);
+            SExecute(LocalBridgeClazz, "registerStaticAttributeKey", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#writeAttributeSet(java.io.ObjectOutputStream,javax.swing.text.AttributeSet)"/>
@@ -101,7 +101,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Java.Io.IOException"/>
         public static void WriteAttributeSet(Java.Io.ObjectOutputStream arg0, Javax.Swing.Text.AttributeSet arg1)
         {
-            SExecute(LocalClazz, "writeAttributeSet", arg0, arg1);
+            SExecute(LocalBridgeClazz, "writeAttributeSet", arg0, arg1);
         }
 
         #endregion

@@ -46,21 +46,21 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.Spliterator.OfDouble EmptyDoubleSpliterator
         {
-            get { return SExecute<Java.Util.Spliterator.OfDouble>(LocalClazz, "emptyDoubleSpliterator"); }
+            get { return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "emptyDoubleSpliterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#emptyIntSpliterator()"/> 
         /// </summary>
         public static Java.Util.Spliterator.OfInt EmptyIntSpliterator
         {
-            get { return SExecute<Java.Util.Spliterator.OfInt>(LocalClazz, "emptyIntSpliterator"); }
+            get { return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "emptyIntSpliterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#emptyLongSpliterator()"/> 
         /// </summary>
         public static Java.Util.Spliterator.OfLong EmptyLongSpliterator
         {
-            get { return SExecute<Java.Util.Spliterator.OfLong>(LocalClazz, "emptyLongSpliterator"); }
+            get { return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "emptyLongSpliterator"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#iterator(java.util.Spliterator)"/>
@@ -71,7 +71,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<T> Iterator<T, Arg0ExtendsT>(Java.Util.Spliterator<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
         {
-            return SExecute<Java.Util.Iterator<T>>(LocalClazz, "iterator", arg0);
+            return SExecute<Java.Util.Iterator<T>>(LocalBridgeClazz, "iterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#emptySpliterator()"/>
@@ -81,7 +81,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> EmptySpliteratorMethod<T>()
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "emptySpliterator");
+            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "emptySpliterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.lang.Object[],int,int,int)"/>
@@ -94,7 +94,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T>(object[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "spliterator", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.lang.Object[],int)"/>
@@ -105,7 +105,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T>(object[] arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "spliterator", arg0, arg1);
+            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.util.Collection,int)"/>
@@ -117,7 +117,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Collection<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT: T
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "spliterator", arg0, arg1);
+            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.util.Iterator,long,int)"/>
@@ -130,7 +130,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, long arg1, int arg2) where Arg0ExtendsT: T
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "spliterator", arg0, arg1, arg2);
+            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliteratorUnknownSize(java.util.Iterator,int)"/>
@@ -142,7 +142,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> SpliteratorUnknownSize<T, Arg0ExtendsT>(Java.Util.Iterator<Arg0ExtendsT> arg0, int arg1) where Arg0ExtendsT: T
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "spliteratorUnknownSize", arg0, arg1);
+            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliteratorUnknownSize", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#iterator(java.util.Spliterator.OfDouble)"/>
@@ -151,7 +151,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.PrimitiveIterator.OfDouble"/></returns>
         public static Java.Util.PrimitiveIterator.OfDouble Iterator(Java.Util.Spliterator.OfDouble arg0)
         {
-            return SExecute<Java.Util.PrimitiveIterator.OfDouble>(LocalClazz, "iterator", arg0);
+            return SExecute<Java.Util.PrimitiveIterator.OfDouble>(LocalBridgeClazz, "iterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#iterator(java.util.Spliterator.OfInt)"/>
@@ -160,7 +160,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.PrimitiveIterator.OfInt"/></returns>
         public static Java.Util.PrimitiveIterator.OfInt Iterator(Java.Util.Spliterator.OfInt arg0)
         {
-            return SExecute<Java.Util.PrimitiveIterator.OfInt>(LocalClazz, "iterator", arg0);
+            return SExecute<Java.Util.PrimitiveIterator.OfInt>(LocalBridgeClazz, "iterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#iterator(java.util.Spliterator.OfLong)"/>
@@ -169,7 +169,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.PrimitiveIterator.OfLong"/></returns>
         public static Java.Util.PrimitiveIterator.OfLong Iterator(Java.Util.Spliterator.OfLong arg0)
         {
-            return SExecute<Java.Util.PrimitiveIterator.OfLong>(LocalClazz, "iterator", arg0);
+            return SExecute<Java.Util.PrimitiveIterator.OfLong>(LocalBridgeClazz, "iterator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(double[],int,int,int)"/>
@@ -181,7 +181,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble Spliterator(double[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>(LocalClazz, "spliterator", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(double[],int)"/>
@@ -191,7 +191,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble Spliterator(double[] arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>(LocalClazz, "spliterator", arg0, arg1);
+            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.util.PrimitiveIterator.OfDouble,long,int)"/>
@@ -202,7 +202,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble Spliterator(Java.Util.PrimitiveIterator.OfDouble arg0, long arg1, int arg2)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>(LocalClazz, "spliterator", arg0, arg1, arg2);
+            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliteratorUnknownSize(java.util.PrimitiveIterator.OfDouble,int)"/>
@@ -212,7 +212,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble SpliteratorUnknownSize(Java.Util.PrimitiveIterator.OfDouble arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>(LocalClazz, "spliteratorUnknownSize", arg0, arg1);
+            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliteratorUnknownSize", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(int[],int,int,int)"/>
@@ -224,7 +224,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt Spliterator(int[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>(LocalClazz, "spliterator", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(int[],int)"/>
@@ -234,7 +234,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt Spliterator(int[] arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>(LocalClazz, "spliterator", arg0, arg1);
+            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.util.PrimitiveIterator.OfInt,long,int)"/>
@@ -245,7 +245,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt Spliterator(Java.Util.PrimitiveIterator.OfInt arg0, long arg1, int arg2)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>(LocalClazz, "spliterator", arg0, arg1, arg2);
+            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliteratorUnknownSize(java.util.PrimitiveIterator.OfInt,int)"/>
@@ -255,7 +255,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt SpliteratorUnknownSize(Java.Util.PrimitiveIterator.OfInt arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>(LocalClazz, "spliteratorUnknownSize", arg0, arg1);
+            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliteratorUnknownSize", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(java.util.PrimitiveIterator.OfLong,long,int)"/>
@@ -266,7 +266,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong Spliterator(Java.Util.PrimitiveIterator.OfLong arg0, long arg1, int arg2)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>(LocalClazz, "spliterator", arg0, arg1, arg2);
+            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(long[],int,int,int)"/>
@@ -278,7 +278,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong Spliterator(long[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>(LocalClazz, "spliterator", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliterator(long[],int)"/>
@@ -288,7 +288,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong Spliterator(long[] arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>(LocalClazz, "spliterator", arg0, arg1);
+            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.html#spliteratorUnknownSize(java.util.PrimitiveIterator.OfLong,int)"/>
@@ -298,7 +298,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong SpliteratorUnknownSize(Java.Util.PrimitiveIterator.OfLong arg0, int arg1)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>(LocalClazz, "spliteratorUnknownSize", arg0, arg1);
+            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliteratorUnknownSize", arg0, arg1);
         }
 
         #endregion

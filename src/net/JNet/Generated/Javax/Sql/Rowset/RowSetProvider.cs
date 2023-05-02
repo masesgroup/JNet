@@ -49,7 +49,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public static Javax.Sql.Rowset.RowSetFactory NewFactory()
         {
-            return SExecute<Javax.Sql.Rowset.RowSetFactory>(LocalClazz, "newFactory");
+            return SExecute<Javax.Sql.Rowset.RowSetFactory>(LocalBridgeClazz, "newFactory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetProvider.html#newFactory(java.lang.String,java.lang.ClassLoader)"/>
@@ -60,7 +60,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public static Javax.Sql.Rowset.RowSetFactory NewFactory(string arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Sql.Rowset.RowSetFactory>(LocalClazz, "newFactory", arg0, arg1);
+            return SExecute<Javax.Sql.Rowset.RowSetFactory>(LocalBridgeClazz, "newFactory", arg0, arg1);
         }
 
         #endregion

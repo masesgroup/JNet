@@ -154,15 +154,15 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#DOCLET_PATH"/>
             /// </summary>
-            public static Javax.Tools.DocumentationTool.Location DOCLET_PATH { get { return SGetField<Javax.Tools.DocumentationTool.Location>(LocalClazz, "DOCLET_PATH"); } }
+            public static Javax.Tools.DocumentationTool.Location DOCLET_PATH { get { return SGetField<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "DOCLET_PATH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#DOCUMENTATION_OUTPUT"/>
             /// </summary>
-            public static Javax.Tools.DocumentationTool.Location DOCUMENTATION_OUTPUT { get { return SGetField<Javax.Tools.DocumentationTool.Location>(LocalClazz, "DOCUMENTATION_OUTPUT"); } }
+            public static Javax.Tools.DocumentationTool.Location DOCUMENTATION_OUTPUT { get { return SGetField<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "DOCUMENTATION_OUTPUT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#TAGLET_PATH"/>
             /// </summary>
-            public static Javax.Tools.DocumentationTool.Location TAGLET_PATH { get { return SGetField<Javax.Tools.DocumentationTool.Location>(LocalClazz, "TAGLET_PATH"); } }
+            public static Javax.Tools.DocumentationTool.Location TAGLET_PATH { get { return SGetField<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "TAGLET_PATH"); } }
 
             #endregion
 
@@ -172,7 +172,7 @@ namespace Javax.Tools
             /// </summary>
             public static Javax.Tools.DocumentationTool.Location[] Values
             {
-                get { return SExecuteArray<Javax.Tools.DocumentationTool.Location>(LocalClazz, "values"); }
+                get { return SExecuteArray<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#valueOf(java.lang.String)"/>
@@ -181,7 +181,7 @@ namespace Javax.Tools
             /// <returns><see cref="Javax.Tools.DocumentationTool.Location"/></returns>
             public static Javax.Tools.DocumentationTool.Location ValueOf(string arg0)
             {
-                return SExecute<Javax.Tools.DocumentationTool.Location>(LocalClazz, "valueOf", arg0);
+                return SExecute<Javax.Tools.DocumentationTool.Location>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

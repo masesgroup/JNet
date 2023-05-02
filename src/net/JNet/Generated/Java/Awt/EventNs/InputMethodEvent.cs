@@ -78,19 +78,19 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#CARET_POSITION_CHANGED"/>
         /// </summary>
-        public static int CARET_POSITION_CHANGED { get { return SGetField<int>(LocalClazz, "CARET_POSITION_CHANGED"); } }
+        public static int CARET_POSITION_CHANGED { get { return SGetField<int>(LocalBridgeClazz, "CARET_POSITION_CHANGED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_FIRST"/>
         /// </summary>
-        public static int INPUT_METHOD_FIRST { get { return SGetField<int>(LocalClazz, "INPUT_METHOD_FIRST"); } }
+        public static int INPUT_METHOD_FIRST { get { return SGetField<int>(LocalBridgeClazz, "INPUT_METHOD_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_LAST"/>
         /// </summary>
-        public static int INPUT_METHOD_LAST { get { return SGetField<int>(LocalClazz, "INPUT_METHOD_LAST"); } }
+        public static int INPUT_METHOD_LAST { get { return SGetField<int>(LocalBridgeClazz, "INPUT_METHOD_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_TEXT_CHANGED"/>
         /// </summary>
-        public static int INPUT_METHOD_TEXT_CHANGED { get { return SGetField<int>(LocalClazz, "INPUT_METHOD_TEXT_CHANGED"); } }
+        public static int INPUT_METHOD_TEXT_CHANGED { get { return SGetField<int>(LocalBridgeClazz, "INPUT_METHOD_TEXT_CHANGED"); } }
 
         #endregion
 

@@ -40,31 +40,31 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeIn"/>
         /// </summary>
-        public static int parameterModeIn { get { return SGetField<int>(LocalClazz, "parameterModeIn"); } }
+        public static int parameterModeIn { get { return SGetField<int>(LocalBridgeClazz, "parameterModeIn"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeInOut"/>
         /// </summary>
-        public static int parameterModeInOut { get { return SGetField<int>(LocalClazz, "parameterModeInOut"); } }
+        public static int parameterModeInOut { get { return SGetField<int>(LocalBridgeClazz, "parameterModeInOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeOut"/>
         /// </summary>
-        public static int parameterModeOut { get { return SGetField<int>(LocalClazz, "parameterModeOut"); } }
+        public static int parameterModeOut { get { return SGetField<int>(LocalBridgeClazz, "parameterModeOut"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeUnknown"/>
         /// </summary>
-        public static int parameterModeUnknown { get { return SGetField<int>(LocalClazz, "parameterModeUnknown"); } }
+        public static int parameterModeUnknown { get { return SGetField<int>(LocalBridgeClazz, "parameterModeUnknown"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNoNulls"/>
         /// </summary>
-        public static int parameterNoNulls { get { return SGetField<int>(LocalClazz, "parameterNoNulls"); } }
+        public static int parameterNoNulls { get { return SGetField<int>(LocalBridgeClazz, "parameterNoNulls"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullable"/>
         /// </summary>
-        public static int parameterNullable { get { return SGetField<int>(LocalClazz, "parameterNullable"); } }
+        public static int parameterNullable { get { return SGetField<int>(LocalBridgeClazz, "parameterNullable"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullableUnknown"/>
         /// </summary>
-        public static int parameterNullableUnknown { get { return SGetField<int>(LocalClazz, "parameterNullableUnknown"); } }
+        public static int parameterNullableUnknown { get { return SGetField<int>(LocalBridgeClazz, "parameterNullableUnknown"); } }
 
         #endregion
 

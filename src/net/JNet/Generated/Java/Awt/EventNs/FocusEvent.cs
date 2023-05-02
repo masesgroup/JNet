@@ -82,19 +82,19 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_FIRST"/>
         /// </summary>
-        public static int FOCUS_FIRST { get { return SGetField<int>(LocalClazz, "FOCUS_FIRST"); } }
+        public static int FOCUS_FIRST { get { return SGetField<int>(LocalBridgeClazz, "FOCUS_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_GAINED"/>
         /// </summary>
-        public static int FOCUS_GAINED { get { return SGetField<int>(LocalClazz, "FOCUS_GAINED"); } }
+        public static int FOCUS_GAINED { get { return SGetField<int>(LocalBridgeClazz, "FOCUS_GAINED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_LAST"/>
         /// </summary>
-        public static int FOCUS_LAST { get { return SGetField<int>(LocalClazz, "FOCUS_LAST"); } }
+        public static int FOCUS_LAST { get { return SGetField<int>(LocalBridgeClazz, "FOCUS_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#FOCUS_LOST"/>
         /// </summary>
-        public static int FOCUS_LOST { get { return SGetField<int>(LocalClazz, "FOCUS_LOST"); } }
+        public static int FOCUS_LOST { get { return SGetField<int>(LocalBridgeClazz, "FOCUS_LOST"); } }
 
         #endregion
 
@@ -143,47 +143,47 @@ namespace Java.Awt.EventNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#ACTIVATION"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause ACTIVATION { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "ACTIVATION"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause ACTIVATION { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "ACTIVATION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#CLEAR_GLOBAL_FOCUS_OWNER"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause CLEAR_GLOBAL_FOCUS_OWNER { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "CLEAR_GLOBAL_FOCUS_OWNER"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause CLEAR_GLOBAL_FOCUS_OWNER { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "CLEAR_GLOBAL_FOCUS_OWNER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#MOUSE_EVENT"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause MOUSE_EVENT { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "MOUSE_EVENT"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause MOUSE_EVENT { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "MOUSE_EVENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#ROLLBACK"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause ROLLBACK { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "ROLLBACK"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause ROLLBACK { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "ROLLBACK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "TRAVERSAL"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "TRAVERSAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_BACKWARD"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_BACKWARD { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "TRAVERSAL_BACKWARD"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_BACKWARD { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "TRAVERSAL_BACKWARD"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_DOWN"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_DOWN { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "TRAVERSAL_DOWN"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_DOWN { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "TRAVERSAL_DOWN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_FORWARD"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_FORWARD { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "TRAVERSAL_FORWARD"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_FORWARD { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "TRAVERSAL_FORWARD"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#TRAVERSAL_UP"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_UP { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "TRAVERSAL_UP"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause TRAVERSAL_UP { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "TRAVERSAL_UP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#UNEXPECTED"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause UNEXPECTED { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "UNEXPECTED"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause UNEXPECTED { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "UNEXPECTED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#UNKNOWN"/>
             /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause UNKNOWN { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "UNKNOWN"); } }
+            public static Java.Awt.EventNs.FocusEvent.Cause UNKNOWN { get { return SGetField<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "UNKNOWN"); } }
 
             #endregion
 
@@ -193,7 +193,7 @@ namespace Java.Awt.EventNs
             /// </summary>
             public static Java.Awt.EventNs.FocusEvent.Cause[] Values
             {
-                get { return SExecuteArray<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#valueOf(java.lang.String)"/>
@@ -202,7 +202,7 @@ namespace Java.Awt.EventNs
             /// <returns><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></returns>
             public static Java.Awt.EventNs.FocusEvent.Cause ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.EventNs.FocusEvent.Cause>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

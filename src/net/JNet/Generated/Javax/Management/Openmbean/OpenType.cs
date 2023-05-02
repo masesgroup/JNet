@@ -44,7 +44,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES_LIST"/>
         /// </summary>
-        public static Java.Util.List ALLOWED_CLASSNAMES_LIST { get { return SGetField<Java.Util.List>(LocalClazz, "ALLOWED_CLASSNAMES_LIST"); } }
+        public static Java.Util.List ALLOWED_CLASSNAMES_LIST { get { return SGetField<Java.Util.List>(LocalBridgeClazz, "ALLOWED_CLASSNAMES_LIST"); } }
 
         #endregion
 
@@ -54,18 +54,18 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getClassName()"/> 
+        /// </summary>
+        public string ClassName
+        {
+            get { return IExecute<string>("getClassName"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getDescription()"/> 
         /// </summary>
         public string Description
         {
             get { return IExecute<string>("getDescription"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getClassName()"/> 
-        /// </summary>
-        public string GetClassName
-        {
-            get { return IExecute<string>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isArray()"/> 
@@ -124,7 +124,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#ALLOWED_CLASSNAMES_LIST"/>
         /// </summary>
-        public static Java.Util.List<string> ALLOWED_CLASSNAMES_LIST { get { return SGetField<Java.Util.List<string>>(LocalClazz, "ALLOWED_CLASSNAMES_LIST"); } }
+        public static Java.Util.List<string> ALLOWED_CLASSNAMES_LIST { get { return SGetField<Java.Util.List<string>>(LocalBridgeClazz, "ALLOWED_CLASSNAMES_LIST"); } }
 
         #endregion
 
@@ -134,18 +134,18 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getClassName()"/> 
+        /// </summary>
+        public string ClassName
+        {
+            get { return IExecute<string>("getClassName"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getDescription()"/> 
         /// </summary>
         public string Description
         {
             get { return IExecute<string>("getDescription"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getClassName()"/> 
-        /// </summary>
-        public string GetClassName
-        {
-            get { return IExecute<string>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isArray()"/> 

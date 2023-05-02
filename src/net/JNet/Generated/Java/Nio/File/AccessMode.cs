@@ -40,15 +40,15 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#EXECUTE"/>
         /// </summary>
-        public static Java.Nio.File.AccessMode EXECUTE { get { return SGetField<Java.Nio.File.AccessMode>(LocalClazz, "EXECUTE"); } }
+        public static Java.Nio.File.AccessMode EXECUTE { get { return SGetField<Java.Nio.File.AccessMode>(LocalBridgeClazz, "EXECUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#READ"/>
         /// </summary>
-        public static Java.Nio.File.AccessMode READ { get { return SGetField<Java.Nio.File.AccessMode>(LocalClazz, "READ"); } }
+        public static Java.Nio.File.AccessMode READ { get { return SGetField<Java.Nio.File.AccessMode>(LocalBridgeClazz, "READ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#WRITE"/>
         /// </summary>
-        public static Java.Nio.File.AccessMode WRITE { get { return SGetField<Java.Nio.File.AccessMode>(LocalClazz, "WRITE"); } }
+        public static Java.Nio.File.AccessMode WRITE { get { return SGetField<Java.Nio.File.AccessMode>(LocalBridgeClazz, "WRITE"); } }
 
         #endregion
 
@@ -58,7 +58,7 @@ namespace Java.Nio.File
         /// </summary>
         public static Java.Nio.File.AccessMode[] Values
         {
-            get { return SExecuteArray<Java.Nio.File.AccessMode>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Nio.File.AccessMode>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html#valueOf(java.lang.String)"/>
@@ -67,7 +67,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.AccessMode"/></returns>
         public static Java.Nio.File.AccessMode ValueOf(string arg0)
         {
-            return SExecute<Java.Nio.File.AccessMode>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Nio.File.AccessMode>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

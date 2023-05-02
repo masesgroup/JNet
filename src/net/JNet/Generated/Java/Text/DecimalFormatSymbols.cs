@@ -62,16 +62,14 @@ namespace Java.Text
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteArray<Java.Util.Locale>(LocalClazz, "getAvailableLocales"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInstance()"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInstance()"/> 
         /// </summary>
-
-        /// <returns><see cref="Java.Text.DecimalFormatSymbols"/></returns>
-        public static Java.Text.DecimalFormatSymbols GetInstance()
+        public static Java.Text.DecimalFormatSymbols Instance
         {
-            return SExecute<Java.Text.DecimalFormatSymbols>(LocalClazz, "getInstance");
+            get { return SExecute<Java.Text.DecimalFormatSymbols>(LocalBridgeClazz, "getInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DecimalFormatSymbols.html#getInstance(java.util.Locale)"/>
@@ -80,7 +78,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.DecimalFormatSymbols"/></returns>
         public static Java.Text.DecimalFormatSymbols GetInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.DecimalFormatSymbols>(LocalClazz, "getInstance", arg0);
+            return SExecute<Java.Text.DecimalFormatSymbols>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion

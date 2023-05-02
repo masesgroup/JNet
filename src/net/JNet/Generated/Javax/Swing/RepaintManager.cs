@@ -48,7 +48,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.RepaintManager"/></returns>
         public static Javax.Swing.RepaintManager CurrentManager(Java.Awt.Component arg0)
         {
-            return SExecute<Javax.Swing.RepaintManager>(LocalClazz, "currentManager", arg0);
+            return SExecute<Javax.Swing.RepaintManager>(LocalBridgeClazz, "currentManager", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#currentManager(javax.swing.JComponent)"/>
@@ -57,7 +57,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.RepaintManager"/></returns>
         public static Javax.Swing.RepaintManager CurrentManager(Javax.Swing.JComponent arg0)
         {
-            return SExecute<Javax.Swing.RepaintManager>(LocalClazz, "currentManager", arg0);
+            return SExecute<Javax.Swing.RepaintManager>(LocalBridgeClazz, "currentManager", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#setCurrentManager(javax.swing.RepaintManager)"/>
@@ -65,7 +65,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Javax.Swing.RepaintManager"/></param>
         public static void SetCurrentManager(Javax.Swing.RepaintManager arg0)
         {
-            SExecute(LocalClazz, "setCurrentManager", arg0);
+            SExecute(LocalBridgeClazz, "setCurrentManager", arg0);
         }
 
         #endregion

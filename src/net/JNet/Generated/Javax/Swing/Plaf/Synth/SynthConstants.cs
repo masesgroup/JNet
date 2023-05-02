@@ -40,31 +40,31 @@ namespace Javax.Swing.Plaf.Synth
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#DEFAULT"/>
         /// </summary>
-        public static int DEFAULT { get { return SGetField<int>(LocalClazz, "DEFAULT"); } }
+        public static int DEFAULT { get { return SGetField<int>(LocalBridgeClazz, "DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#DISABLED"/>
         /// </summary>
-        public static int DISABLED { get { return SGetField<int>(LocalClazz, "DISABLED"); } }
+        public static int DISABLED { get { return SGetField<int>(LocalBridgeClazz, "DISABLED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#ENABLED"/>
         /// </summary>
-        public static int ENABLED { get { return SGetField<int>(LocalClazz, "ENABLED"); } }
+        public static int ENABLED { get { return SGetField<int>(LocalBridgeClazz, "ENABLED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#FOCUSED"/>
         /// </summary>
-        public static int FOCUSED { get { return SGetField<int>(LocalClazz, "FOCUSED"); } }
+        public static int FOCUSED { get { return SGetField<int>(LocalBridgeClazz, "FOCUSED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#MOUSE_OVER"/>
         /// </summary>
-        public static int MOUSE_OVER { get { return SGetField<int>(LocalClazz, "MOUSE_OVER"); } }
+        public static int MOUSE_OVER { get { return SGetField<int>(LocalBridgeClazz, "MOUSE_OVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#PRESSED"/>
         /// </summary>
-        public static int PRESSED { get { return SGetField<int>(LocalClazz, "PRESSED"); } }
+        public static int PRESSED { get { return SGetField<int>(LocalBridgeClazz, "PRESSED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#SELECTED"/>
         /// </summary>
-        public static int SELECTED { get { return SGetField<int>(LocalClazz, "SELECTED"); } }
+        public static int SELECTED { get { return SGetField<int>(LocalBridgeClazz, "SELECTED"); } }
 
         #endregion
 

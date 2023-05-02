@@ -40,15 +40,15 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_BRIDGES"/>
         /// </summary>
-        public static int FLAG_BRIDGES { get { return SGetField<int>(LocalClazz, "FLAG_BRIDGES"); } }
+        public static int FLAG_BRIDGES { get { return SGetField<int>(LocalBridgeClazz, "FLAG_BRIDGES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_MARKERS"/>
         /// </summary>
-        public static int FLAG_MARKERS { get { return SGetField<int>(LocalClazz, "FLAG_MARKERS"); } }
+        public static int FLAG_MARKERS { get { return SGetField<int>(LocalBridgeClazz, "FLAG_MARKERS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_SERIALIZABLE"/>
         /// </summary>
-        public static int FLAG_SERIALIZABLE { get { return SGetField<int>(LocalClazz, "FLAG_SERIALIZABLE"); } }
+        public static int FLAG_SERIALIZABLE { get { return SGetField<int>(LocalBridgeClazz, "FLAG_SERIALIZABLE"); } }
 
         #endregion
 
@@ -64,7 +64,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Invoke.LambdaConversionException"/>
         public static Java.Lang.Invoke.CallSite AltMetafactory(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Invoke.MethodType arg2, params object[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Java.Lang.Invoke.CallSite>(LocalClazz, "altMetafactory", arg0, arg1, arg2); else return SExecute<Java.Lang.Invoke.CallSite>(LocalClazz, "altMetafactory", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecute<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "altMetafactory", arg0, arg1, arg2); else return SExecute<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "altMetafactory", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#metafactory(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.invoke.MethodType,java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)"/>
@@ -79,7 +79,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Invoke.LambdaConversionException"/>
         public static Java.Lang.Invoke.CallSite Metafactory(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Invoke.MethodType arg2, Java.Lang.Invoke.MethodType arg3, Java.Lang.Invoke.MethodHandle arg4, Java.Lang.Invoke.MethodType arg5)
         {
-            return SExecute<Java.Lang.Invoke.CallSite>(LocalClazz, "metafactory", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "metafactory", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

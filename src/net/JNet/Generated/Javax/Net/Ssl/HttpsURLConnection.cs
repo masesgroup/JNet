@@ -46,14 +46,14 @@ namespace Javax.Net.Ssl
         /// </summary>
         public static Javax.Net.Ssl.SSLSocketFactory DefaultSSLSocketFactory
         {
-            get { return SExecute<Javax.Net.Ssl.SSLSocketFactory>(LocalClazz, "getDefaultSSLSocketFactory"); } set { SExecute(LocalClazz, "setDefaultSSLSocketFactory", value); }
+            get { return SExecute<Javax.Net.Ssl.SSLSocketFactory>(LocalBridgeClazz, "getDefaultSSLSocketFactory"); } set { SExecute(LocalBridgeClazz, "setDefaultSSLSocketFactory", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier()"/> 
         /// </summary>
         public static Javax.Net.Ssl.HostnameVerifier GetDefaultHostnameVerifier
         {
-            get { return SExecute<Javax.Net.Ssl.HostnameVerifier>(LocalClazz, "getDefaultHostnameVerifier"); }
+            get { return SExecute<Javax.Net.Ssl.HostnameVerifier>(LocalBridgeClazz, "getDefaultHostnameVerifier"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)"/>
@@ -61,7 +61,7 @@ namespace Javax.Net.Ssl
         /// <param name="arg0"><see cref="Javax.Net.Ssl.HostnameVerifier"/></param>
         public static void SetDefaultHostnameVerifier(Javax.Net.Ssl.HostnameVerifier arg0)
         {
-            SExecute(LocalClazz, "setDefaultHostnameVerifier", arg0);
+            SExecute(LocalBridgeClazz, "setDefaultHostnameVerifier", arg0);
         }
 
         #endregion

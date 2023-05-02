@@ -75,15 +75,15 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_DEFAULT"/>
         /// </summary>
-        public static int INVOCATION_DEFAULT { get { return SGetField<int>(LocalClazz, "INVOCATION_DEFAULT"); } }
+        public static int INVOCATION_DEFAULT { get { return SGetField<int>(LocalBridgeClazz, "INVOCATION_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_FIRST"/>
         /// </summary>
-        public static int INVOCATION_FIRST { get { return SGetField<int>(LocalClazz, "INVOCATION_FIRST"); } }
+        public static int INVOCATION_FIRST { get { return SGetField<int>(LocalBridgeClazz, "INVOCATION_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_LAST"/>
         /// </summary>
-        public static int INVOCATION_LAST { get { return SGetField<int>(LocalClazz, "INVOCATION_LAST"); } }
+        public static int INVOCATION_LAST { get { return SGetField<int>(LocalBridgeClazz, "INVOCATION_LAST"); } }
 
         #endregion
 

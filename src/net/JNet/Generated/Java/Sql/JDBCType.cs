@@ -44,159 +44,159 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#ARRAY"/>
         /// </summary>
-        public static Java.Sql.JDBCType ARRAY { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "ARRAY"); } }
+        public static Java.Sql.JDBCType ARRAY { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "ARRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#BIGINT"/>
         /// </summary>
-        public static Java.Sql.JDBCType BIGINT { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "BIGINT"); } }
+        public static Java.Sql.JDBCType BIGINT { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "BIGINT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#BINARY"/>
         /// </summary>
-        public static Java.Sql.JDBCType BINARY { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "BINARY"); } }
+        public static Java.Sql.JDBCType BINARY { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "BINARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#BIT"/>
         /// </summary>
-        public static Java.Sql.JDBCType BIT { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "BIT"); } }
+        public static Java.Sql.JDBCType BIT { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "BIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#BLOB"/>
         /// </summary>
-        public static Java.Sql.JDBCType BLOB { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "BLOB"); } }
+        public static Java.Sql.JDBCType BLOB { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "BLOB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#BOOLEAN"/>
         /// </summary>
-        public static Java.Sql.JDBCType BOOLEAN { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "BOOLEAN"); } }
+        public static Java.Sql.JDBCType BOOLEAN { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "BOOLEAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#CHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType CHAR { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "CHAR"); } }
+        public static Java.Sql.JDBCType CHAR { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "CHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#CLOB"/>
         /// </summary>
-        public static Java.Sql.JDBCType CLOB { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "CLOB"); } }
+        public static Java.Sql.JDBCType CLOB { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "CLOB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#DATALINK"/>
         /// </summary>
-        public static Java.Sql.JDBCType DATALINK { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "DATALINK"); } }
+        public static Java.Sql.JDBCType DATALINK { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "DATALINK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#DATE"/>
         /// </summary>
-        public static Java.Sql.JDBCType DATE { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "DATE"); } }
+        public static Java.Sql.JDBCType DATE { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#DECIMAL"/>
         /// </summary>
-        public static Java.Sql.JDBCType DECIMAL { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "DECIMAL"); } }
+        public static Java.Sql.JDBCType DECIMAL { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "DECIMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#DISTINCT"/>
         /// </summary>
-        public static Java.Sql.JDBCType DISTINCT { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "DISTINCT"); } }
+        public static Java.Sql.JDBCType DISTINCT { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "DISTINCT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#DOUBLE"/>
         /// </summary>
-        public static Java.Sql.JDBCType DOUBLE { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "DOUBLE"); } }
+        public static Java.Sql.JDBCType DOUBLE { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "DOUBLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#FLOAT"/>
         /// </summary>
-        public static Java.Sql.JDBCType FLOAT { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "FLOAT"); } }
+        public static Java.Sql.JDBCType FLOAT { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "FLOAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#INTEGER"/>
         /// </summary>
-        public static Java.Sql.JDBCType INTEGER { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "INTEGER"); } }
+        public static Java.Sql.JDBCType INTEGER { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "INTEGER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#JAVA_OBJECT"/>
         /// </summary>
-        public static Java.Sql.JDBCType JAVA_OBJECT { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "JAVA_OBJECT"); } }
+        public static Java.Sql.JDBCType JAVA_OBJECT { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "JAVA_OBJECT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#LONGNVARCHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType LONGNVARCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "LONGNVARCHAR"); } }
+        public static Java.Sql.JDBCType LONGNVARCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "LONGNVARCHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#LONGVARBINARY"/>
         /// </summary>
-        public static Java.Sql.JDBCType LONGVARBINARY { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "LONGVARBINARY"); } }
+        public static Java.Sql.JDBCType LONGVARBINARY { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "LONGVARBINARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#LONGVARCHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType LONGVARCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "LONGVARCHAR"); } }
+        public static Java.Sql.JDBCType LONGVARCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "LONGVARCHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#NCHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType NCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "NCHAR"); } }
+        public static Java.Sql.JDBCType NCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "NCHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#NCLOB"/>
         /// </summary>
-        public static Java.Sql.JDBCType NCLOB { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "NCLOB"); } }
+        public static Java.Sql.JDBCType NCLOB { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "NCLOB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#NULL"/>
         /// </summary>
-        public static Java.Sql.JDBCType NULL { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "NULL"); } }
+        public static Java.Sql.JDBCType NULL { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "NULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#NUMERIC"/>
         /// </summary>
-        public static Java.Sql.JDBCType NUMERIC { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "NUMERIC"); } }
+        public static Java.Sql.JDBCType NUMERIC { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "NUMERIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#NVARCHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType NVARCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "NVARCHAR"); } }
+        public static Java.Sql.JDBCType NVARCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "NVARCHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#OTHER"/>
         /// </summary>
-        public static Java.Sql.JDBCType OTHER { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "OTHER"); } }
+        public static Java.Sql.JDBCType OTHER { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "OTHER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#REAL"/>
         /// </summary>
-        public static Java.Sql.JDBCType REAL { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "REAL"); } }
+        public static Java.Sql.JDBCType REAL { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "REAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#REF"/>
         /// </summary>
-        public static Java.Sql.JDBCType REF { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "REF"); } }
+        public static Java.Sql.JDBCType REF { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "REF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#REF_CURSOR"/>
         /// </summary>
-        public static Java.Sql.JDBCType REF_CURSOR { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "REF_CURSOR"); } }
+        public static Java.Sql.JDBCType REF_CURSOR { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "REF_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#ROWID"/>
         /// </summary>
-        public static Java.Sql.JDBCType ROWID { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "ROWID"); } }
+        public static Java.Sql.JDBCType ROWID { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "ROWID"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#SMALLINT"/>
         /// </summary>
-        public static Java.Sql.JDBCType SMALLINT { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "SMALLINT"); } }
+        public static Java.Sql.JDBCType SMALLINT { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "SMALLINT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#SQLXML"/>
         /// </summary>
-        public static Java.Sql.JDBCType SQLXML { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "SQLXML"); } }
+        public static Java.Sql.JDBCType SQLXML { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "SQLXML"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#STRUCT"/>
         /// </summary>
-        public static Java.Sql.JDBCType STRUCT { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "STRUCT"); } }
+        public static Java.Sql.JDBCType STRUCT { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "STRUCT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#TIME"/>
         /// </summary>
-        public static Java.Sql.JDBCType TIME { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "TIME"); } }
+        public static Java.Sql.JDBCType TIME { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#TIME_WITH_TIMEZONE"/>
         /// </summary>
-        public static Java.Sql.JDBCType TIME_WITH_TIMEZONE { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "TIME_WITH_TIMEZONE"); } }
+        public static Java.Sql.JDBCType TIME_WITH_TIMEZONE { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "TIME_WITH_TIMEZONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#TIMESTAMP"/>
         /// </summary>
-        public static Java.Sql.JDBCType TIMESTAMP { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "TIMESTAMP"); } }
+        public static Java.Sql.JDBCType TIMESTAMP { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "TIMESTAMP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#TIMESTAMP_WITH_TIMEZONE"/>
         /// </summary>
-        public static Java.Sql.JDBCType TIMESTAMP_WITH_TIMEZONE { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "TIMESTAMP_WITH_TIMEZONE"); } }
+        public static Java.Sql.JDBCType TIMESTAMP_WITH_TIMEZONE { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "TIMESTAMP_WITH_TIMEZONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#TINYINT"/>
         /// </summary>
-        public static Java.Sql.JDBCType TINYINT { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "TINYINT"); } }
+        public static Java.Sql.JDBCType TINYINT { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "TINYINT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#VARBINARY"/>
         /// </summary>
-        public static Java.Sql.JDBCType VARBINARY { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "VARBINARY"); } }
+        public static Java.Sql.JDBCType VARBINARY { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "VARBINARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#VARCHAR"/>
         /// </summary>
-        public static Java.Sql.JDBCType VARCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalClazz, "VARCHAR"); } }
+        public static Java.Sql.JDBCType VARCHAR { get { return SGetField<Java.Sql.JDBCType>(LocalBridgeClazz, "VARCHAR"); } }
 
         #endregion
 
@@ -206,7 +206,7 @@ namespace Java.Sql
         /// </summary>
         public static Java.Sql.JDBCType[] Values
         {
-            get { return SExecuteArray<Java.Sql.JDBCType>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Sql.JDBCType>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#valueOf(int)"/>
@@ -215,7 +215,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.JDBCType"/></returns>
         public static Java.Sql.JDBCType ValueOf(int arg0)
         {
-            return SExecute<Java.Sql.JDBCType>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Sql.JDBCType>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#valueOf(java.lang.String)"/>
@@ -224,7 +224,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.JDBCType"/></returns>
         public static Java.Sql.JDBCType ValueOf(string arg0)
         {
-            return SExecute<Java.Sql.JDBCType>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Sql.JDBCType>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

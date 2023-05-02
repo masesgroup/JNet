@@ -99,19 +99,19 @@ namespace Javax.Tools
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#CLASS"/>
             /// </summary>
-            public static Javax.Tools.JavaFileObject.Kind CLASS { get { return SGetField<Javax.Tools.JavaFileObject.Kind>(LocalClazz, "CLASS"); } }
+            public static Javax.Tools.JavaFileObject.Kind CLASS { get { return SGetField<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "CLASS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#HTML"/>
             /// </summary>
-            public static Javax.Tools.JavaFileObject.Kind HTML { get { return SGetField<Javax.Tools.JavaFileObject.Kind>(LocalClazz, "HTML"); } }
+            public static Javax.Tools.JavaFileObject.Kind HTML { get { return SGetField<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "HTML"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#OTHER"/>
             /// </summary>
-            public static Javax.Tools.JavaFileObject.Kind OTHER { get { return SGetField<Javax.Tools.JavaFileObject.Kind>(LocalClazz, "OTHER"); } }
+            public static Javax.Tools.JavaFileObject.Kind OTHER { get { return SGetField<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "OTHER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#SOURCE"/>
             /// </summary>
-            public static Javax.Tools.JavaFileObject.Kind SOURCE { get { return SGetField<Javax.Tools.JavaFileObject.Kind>(LocalClazz, "SOURCE"); } }
+            public static Javax.Tools.JavaFileObject.Kind SOURCE { get { return SGetField<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "SOURCE"); } }
 
             #endregion
 
@@ -121,7 +121,7 @@ namespace Javax.Tools
             /// </summary>
             public static Javax.Tools.JavaFileObject.Kind[] Values
             {
-                get { return SExecuteArray<Javax.Tools.JavaFileObject.Kind>(LocalClazz, "values"); }
+                get { return SExecuteArray<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#valueOf(java.lang.String)"/>
@@ -130,7 +130,7 @@ namespace Javax.Tools
             /// <returns><see cref="Javax.Tools.JavaFileObject.Kind"/></returns>
             public static Javax.Tools.JavaFileObject.Kind ValueOf(string arg0)
             {
-                return SExecute<Javax.Tools.JavaFileObject.Kind>(LocalClazz, "valueOf", arg0);
+                return SExecute<Javax.Tools.JavaFileObject.Kind>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

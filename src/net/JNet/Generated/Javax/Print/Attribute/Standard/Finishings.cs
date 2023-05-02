@@ -52,75 +52,75 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#BIND"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings BIND { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "BIND"); } }
+        public static Javax.Print.Attribute.Standard.Finishings BIND { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "BIND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#COVER"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings COVER { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "COVER"); } }
+        public static Javax.Print.Attribute.Standard.Finishings COVER { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "COVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "EDGE_STITCH"); } }
+        public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "EDGE_STITCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_BOTTOM"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_BOTTOM { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "EDGE_STITCH_BOTTOM"); } }
+        public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_BOTTOM { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "EDGE_STITCH_BOTTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_LEFT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_LEFT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "EDGE_STITCH_LEFT"); } }
+        public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_LEFT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "EDGE_STITCH_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_RIGHT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_RIGHT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "EDGE_STITCH_RIGHT"); } }
+        public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_RIGHT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "EDGE_STITCH_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#EDGE_STITCH_TOP"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_TOP { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "EDGE_STITCH_TOP"); } }
+        public static Javax.Print.Attribute.Standard.Finishings EDGE_STITCH_TOP { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "EDGE_STITCH_TOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#NONE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings NONE { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "NONE"); } }
+        public static Javax.Print.Attribute.Standard.Finishings NONE { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#SADDLE_STITCH"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings SADDLE_STITCH { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "SADDLE_STITCH"); } }
+        public static Javax.Print.Attribute.Standard.Finishings SADDLE_STITCH { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "SADDLE_STITCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings STAPLE { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "STAPLE"); } }
+        public static Javax.Print.Attribute.Standard.Finishings STAPLE { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "STAPLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_BOTTOM_LEFT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings STAPLE_BOTTOM_LEFT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "STAPLE_BOTTOM_LEFT"); } }
+        public static Javax.Print.Attribute.Standard.Finishings STAPLE_BOTTOM_LEFT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "STAPLE_BOTTOM_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_BOTTOM_RIGHT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings STAPLE_BOTTOM_RIGHT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "STAPLE_BOTTOM_RIGHT"); } }
+        public static Javax.Print.Attribute.Standard.Finishings STAPLE_BOTTOM_RIGHT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "STAPLE_BOTTOM_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_BOTTOM"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_BOTTOM { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "STAPLE_DUAL_BOTTOM"); } }
+        public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_BOTTOM { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "STAPLE_DUAL_BOTTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_LEFT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_LEFT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "STAPLE_DUAL_LEFT"); } }
+        public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_LEFT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "STAPLE_DUAL_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_RIGHT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_RIGHT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "STAPLE_DUAL_RIGHT"); } }
+        public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_RIGHT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "STAPLE_DUAL_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_DUAL_TOP"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_TOP { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "STAPLE_DUAL_TOP"); } }
+        public static Javax.Print.Attribute.Standard.Finishings STAPLE_DUAL_TOP { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "STAPLE_DUAL_TOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_TOP_LEFT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings STAPLE_TOP_LEFT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "STAPLE_TOP_LEFT"); } }
+        public static Javax.Print.Attribute.Standard.Finishings STAPLE_TOP_LEFT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "STAPLE_TOP_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Finishings.html#STAPLE_TOP_RIGHT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Finishings STAPLE_TOP_RIGHT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalClazz, "STAPLE_TOP_RIGHT"); } }
+        public static Javax.Print.Attribute.Standard.Finishings STAPLE_TOP_RIGHT { get { return SGetField<Javax.Print.Attribute.Standard.Finishings>(LocalBridgeClazz, "STAPLE_TOP_RIGHT"); } }
 
         #endregion
 

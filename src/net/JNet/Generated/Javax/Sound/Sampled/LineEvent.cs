@@ -95,19 +95,19 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#CLOSE"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type CLOSE { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalClazz, "CLOSE"); } }
+            public static Javax.Sound.Sampled.LineEvent.Type CLOSE { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalBridgeClazz, "CLOSE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#OPEN"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type OPEN { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalClazz, "OPEN"); } }
+            public static Javax.Sound.Sampled.LineEvent.Type OPEN { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalBridgeClazz, "OPEN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#START"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type START { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalClazz, "START"); } }
+            public static Javax.Sound.Sampled.LineEvent.Type START { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalBridgeClazz, "START"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#STOP"/>
             /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type STOP { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalClazz, "STOP"); } }
+            public static Javax.Sound.Sampled.LineEvent.Type STOP { get { return SGetField<Javax.Sound.Sampled.LineEvent.Type>(LocalBridgeClazz, "STOP"); } }
 
             #endregion
 

@@ -44,15 +44,15 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#ATOMIC_MOVE"/>
         /// </summary>
-        public static Java.Nio.File.StandardCopyOption ATOMIC_MOVE { get { return SGetField<Java.Nio.File.StandardCopyOption>(LocalClazz, "ATOMIC_MOVE"); } }
+        public static Java.Nio.File.StandardCopyOption ATOMIC_MOVE { get { return SGetField<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "ATOMIC_MOVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#COPY_ATTRIBUTES"/>
         /// </summary>
-        public static Java.Nio.File.StandardCopyOption COPY_ATTRIBUTES { get { return SGetField<Java.Nio.File.StandardCopyOption>(LocalClazz, "COPY_ATTRIBUTES"); } }
+        public static Java.Nio.File.StandardCopyOption COPY_ATTRIBUTES { get { return SGetField<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "COPY_ATTRIBUTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#REPLACE_EXISTING"/>
         /// </summary>
-        public static Java.Nio.File.StandardCopyOption REPLACE_EXISTING { get { return SGetField<Java.Nio.File.StandardCopyOption>(LocalClazz, "REPLACE_EXISTING"); } }
+        public static Java.Nio.File.StandardCopyOption REPLACE_EXISTING { get { return SGetField<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "REPLACE_EXISTING"); } }
 
         #endregion
 
@@ -62,7 +62,7 @@ namespace Java.Nio.File
         /// </summary>
         public static Java.Nio.File.StandardCopyOption[] Values
         {
-            get { return SExecuteArray<Java.Nio.File.StandardCopyOption>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html#valueOf(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.StandardCopyOption"/></returns>
         public static Java.Nio.File.StandardCopyOption ValueOf(string arg0)
         {
-            return SExecute<Java.Nio.File.StandardCopyOption>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Nio.File.StandardCopyOption>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

@@ -46,7 +46,7 @@ namespace Javax.Xml.Catalog
         /// </summary>
         public static Javax.Xml.Catalog.CatalogFeatures Defaults
         {
-            get { return SExecute<Javax.Xml.Catalog.CatalogFeatures>(LocalClazz, "defaults"); }
+            get { return SExecute<Javax.Xml.Catalog.CatalogFeatures>(LocalBridgeClazz, "defaults"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#builder()"/>
@@ -55,7 +55,7 @@ namespace Javax.Xml.Catalog
         /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Builder"/></returns>
         public static Javax.Xml.Catalog.CatalogFeatures.Builder BuilderMethod()
         {
-            return SExecute<Javax.Xml.Catalog.CatalogFeatures.Builder>(LocalClazz, "builder");
+            return SExecute<Javax.Xml.Catalog.CatalogFeatures.Builder>(LocalBridgeClazz, "builder");
         }
 
         #endregion
@@ -137,19 +137,19 @@ namespace Javax.Xml.Catalog
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#DEFER"/>
             /// </summary>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature DEFER { get { return SGetField<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalClazz, "DEFER"); } }
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature DEFER { get { return SGetField<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "DEFER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#FILES"/>
             /// </summary>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature FILES { get { return SGetField<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalClazz, "FILES"); } }
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature FILES { get { return SGetField<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "FILES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#PREFER"/>
             /// </summary>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature PREFER { get { return SGetField<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalClazz, "PREFER"); } }
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature PREFER { get { return SGetField<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "PREFER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#RESOLVE"/>
             /// </summary>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature RESOLVE { get { return SGetField<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalClazz, "RESOLVE"); } }
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature RESOLVE { get { return SGetField<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "RESOLVE"); } }
 
             #endregion
 
@@ -159,7 +159,7 @@ namespace Javax.Xml.Catalog
             /// </summary>
             public static Javax.Xml.Catalog.CatalogFeatures.Feature[] Values
             {
-                get { return SExecuteArray<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalClazz, "values"); }
+                get { return SExecuteArray<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#valueOf(java.lang.String)"/>
@@ -168,7 +168,7 @@ namespace Javax.Xml.Catalog
             /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></returns>
             public static Javax.Xml.Catalog.CatalogFeatures.Feature ValueOf(string arg0)
             {
-                return SExecute<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalClazz, "valueOf", arg0);
+                return SExecute<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

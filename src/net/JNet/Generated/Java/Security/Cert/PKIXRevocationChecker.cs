@@ -106,19 +106,19 @@ namespace Java.Security.Cert
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#NO_FALLBACK"/>
             /// </summary>
-            public static Java.Security.Cert.PKIXRevocationChecker.Option NO_FALLBACK { get { return SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalClazz, "NO_FALLBACK"); } }
+            public static Java.Security.Cert.PKIXRevocationChecker.Option NO_FALLBACK { get { return SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "NO_FALLBACK"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#ONLY_END_ENTITY"/>
             /// </summary>
-            public static Java.Security.Cert.PKIXRevocationChecker.Option ONLY_END_ENTITY { get { return SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalClazz, "ONLY_END_ENTITY"); } }
+            public static Java.Security.Cert.PKIXRevocationChecker.Option ONLY_END_ENTITY { get { return SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "ONLY_END_ENTITY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#PREFER_CRLS"/>
             /// </summary>
-            public static Java.Security.Cert.PKIXRevocationChecker.Option PREFER_CRLS { get { return SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalClazz, "PREFER_CRLS"); } }
+            public static Java.Security.Cert.PKIXRevocationChecker.Option PREFER_CRLS { get { return SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "PREFER_CRLS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#SOFT_FAIL"/>
             /// </summary>
-            public static Java.Security.Cert.PKIXRevocationChecker.Option SOFT_FAIL { get { return SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalClazz, "SOFT_FAIL"); } }
+            public static Java.Security.Cert.PKIXRevocationChecker.Option SOFT_FAIL { get { return SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "SOFT_FAIL"); } }
 
             #endregion
 
@@ -128,7 +128,7 @@ namespace Java.Security.Cert
             /// </summary>
             public static Java.Security.Cert.PKIXRevocationChecker.Option[] Values
             {
-                get { return SExecuteArray<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#valueOf(java.lang.String)"/>
@@ -137,7 +137,7 @@ namespace Java.Security.Cert
             /// <returns><see cref="Java.Security.Cert.PKIXRevocationChecker.Option"/></returns>
             public static Java.Security.Cert.PKIXRevocationChecker.Option ValueOf(string arg0)
             {
-                return SExecute<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

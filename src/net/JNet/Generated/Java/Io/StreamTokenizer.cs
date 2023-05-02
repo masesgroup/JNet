@@ -60,19 +60,19 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOF"/>
         /// </summary>
-        public static int TT_EOF { get { return SGetField<int>(LocalClazz, "TT_EOF"); } }
+        public static int TT_EOF { get { return SGetField<int>(LocalBridgeClazz, "TT_EOF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOL"/>
         /// </summary>
-        public static int TT_EOL { get { return SGetField<int>(LocalClazz, "TT_EOL"); } }
+        public static int TT_EOL { get { return SGetField<int>(LocalBridgeClazz, "TT_EOL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_NUMBER"/>
         /// </summary>
-        public static int TT_NUMBER { get { return SGetField<int>(LocalClazz, "TT_NUMBER"); } }
+        public static int TT_NUMBER { get { return SGetField<int>(LocalBridgeClazz, "TT_NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_WORD"/>
         /// </summary>
-        public static int TT_WORD { get { return SGetField<int>(LocalClazz, "TT_WORD"); } }
+        public static int TT_WORD { get { return SGetField<int>(LocalBridgeClazz, "TT_WORD"); } }
 
         #endregion
 

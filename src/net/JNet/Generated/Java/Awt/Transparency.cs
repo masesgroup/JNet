@@ -40,15 +40,15 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#BITMASK"/>
         /// </summary>
-        public static int BITMASK { get { return SGetField<int>(LocalClazz, "BITMASK"); } }
+        public static int BITMASK { get { return SGetField<int>(LocalBridgeClazz, "BITMASK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#OPAQUE"/>
         /// </summary>
-        public static int OPAQUE { get { return SGetField<int>(LocalClazz, "OPAQUE"); } }
+        public static int OPAQUE { get { return SGetField<int>(LocalBridgeClazz, "OPAQUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#TRANSLUCENT"/>
         /// </summary>
-        public static int TRANSLUCENT { get { return SGetField<int>(LocalClazz, "TRANSLUCENT"); } }
+        public static int TRANSLUCENT { get { return SGetField<int>(LocalBridgeClazz, "TRANSLUCENT"); } }
 
         #endregion
 

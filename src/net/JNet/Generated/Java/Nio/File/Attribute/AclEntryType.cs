@@ -40,19 +40,19 @@ namespace Java.Nio.File.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#ALARM"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryType ALARM { get { return SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalClazz, "ALARM"); } }
+        public static Java.Nio.File.Attribute.AclEntryType ALARM { get { return SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "ALARM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#ALLOW"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryType ALLOW { get { return SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalClazz, "ALLOW"); } }
+        public static Java.Nio.File.Attribute.AclEntryType ALLOW { get { return SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "ALLOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#AUDIT"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryType AUDIT { get { return SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalClazz, "AUDIT"); } }
+        public static Java.Nio.File.Attribute.AclEntryType AUDIT { get { return SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "AUDIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#DENY"/>
         /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryType DENY { get { return SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalClazz, "DENY"); } }
+        public static Java.Nio.File.Attribute.AclEntryType DENY { get { return SGetField<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "DENY"); } }
 
         #endregion
 
@@ -62,7 +62,7 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryType[] Values
         {
-            get { return SExecuteArray<Java.Nio.File.Attribute.AclEntryType>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html#valueOf(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Java.Nio.File.Attribute
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntryType"/></returns>
         public static Java.Nio.File.Attribute.AclEntryType ValueOf(string arg0)
         {
-            return SExecute<Java.Nio.File.Attribute.AclEntryType>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Nio.File.Attribute.AclEntryType>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

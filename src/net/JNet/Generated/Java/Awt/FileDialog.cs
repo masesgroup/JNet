@@ -94,11 +94,11 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#LOAD"/>
         /// </summary>
-        public static int LOAD { get { return SGetField<int>(LocalClazz, "LOAD"); } }
+        public static int LOAD { get { return SGetField<int>(LocalBridgeClazz, "LOAD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#SAVE"/>
         /// </summary>
-        public static int SAVE { get { return SGetField<int>(LocalClazz, "SAVE"); } }
+        public static int SAVE { get { return SGetField<int>(LocalBridgeClazz, "SAVE"); } }
 
         #endregion
 

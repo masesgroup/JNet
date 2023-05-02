@@ -81,19 +81,19 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#COMMIT"/>
         /// </summary>
-        public static int COMMIT { get { return SGetField<int>(LocalClazz, "COMMIT"); } }
+        public static int COMMIT { get { return SGetField<int>(LocalBridgeClazz, "COMMIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#COMMIT_OR_REVERT"/>
         /// </summary>
-        public static int COMMIT_OR_REVERT { get { return SGetField<int>(LocalClazz, "COMMIT_OR_REVERT"); } }
+        public static int COMMIT_OR_REVERT { get { return SGetField<int>(LocalBridgeClazz, "COMMIT_OR_REVERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#PERSIST"/>
         /// </summary>
-        public static int PERSIST { get { return SGetField<int>(LocalClazz, "PERSIST"); } }
+        public static int PERSIST { get { return SGetField<int>(LocalBridgeClazz, "PERSIST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#REVERT"/>
         /// </summary>
-        public static int REVERT { get { return SGetField<int>(LocalClazz, "REVERT"); } }
+        public static int REVERT { get { return SGetField<int>(LocalBridgeClazz, "REVERT"); } }
 
         #endregion
 

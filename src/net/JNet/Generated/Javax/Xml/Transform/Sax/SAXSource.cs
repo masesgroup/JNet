@@ -61,7 +61,7 @@ namespace Javax.Xml.Transform.Sax
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#FEATURE"/>
         /// </summary>
-        public static string FEATURE { get { return SGetField<string>(LocalClazz, "FEATURE"); } }
+        public static string FEATURE { get { return SGetField<string>(LocalBridgeClazz, "FEATURE"); } }
 
         #endregion
 
@@ -73,7 +73,7 @@ namespace Javax.Xml.Transform.Sax
         /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
         public static Org.Xml.Sax.InputSource SourceToInputSource(Javax.Xml.Transform.Source arg0)
         {
-            return SExecute<Org.Xml.Sax.InputSource>(LocalClazz, "sourceToInputSource", arg0);
+            return SExecute<Org.Xml.Sax.InputSource>(LocalBridgeClazz, "sourceToInputSource", arg0);
         }
 
         #endregion

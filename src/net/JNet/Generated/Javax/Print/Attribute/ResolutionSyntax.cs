@@ -58,11 +58,11 @@ namespace Javax.Print.Attribute
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html#DPCM"/>
         /// </summary>
-        public static int DPCM { get { return SGetField<int>(LocalClazz, "DPCM"); } }
+        public static int DPCM { get { return SGetField<int>(LocalBridgeClazz, "DPCM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/ResolutionSyntax.html#DPI"/>
         /// </summary>
-        public static int DPI { get { return SGetField<int>(LocalClazz, "DPI"); } }
+        public static int DPI { get { return SGetField<int>(LocalBridgeClazz, "DPI"); } }
 
         #endregion
 

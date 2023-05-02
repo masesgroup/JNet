@@ -40,31 +40,31 @@ namespace Javax.Crypto
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#DECRYPT_MODE"/>
         /// </summary>
-        public static int DECRYPT_MODE { get { return SGetField<int>(LocalClazz, "DECRYPT_MODE"); } }
+        public static int DECRYPT_MODE { get { return SGetField<int>(LocalBridgeClazz, "DECRYPT_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#ENCRYPT_MODE"/>
         /// </summary>
-        public static int ENCRYPT_MODE { get { return SGetField<int>(LocalClazz, "ENCRYPT_MODE"); } }
+        public static int ENCRYPT_MODE { get { return SGetField<int>(LocalBridgeClazz, "ENCRYPT_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#PRIVATE_KEY"/>
         /// </summary>
-        public static int PRIVATE_KEY { get { return SGetField<int>(LocalClazz, "PRIVATE_KEY"); } }
+        public static int PRIVATE_KEY { get { return SGetField<int>(LocalBridgeClazz, "PRIVATE_KEY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#PUBLIC_KEY"/>
         /// </summary>
-        public static int PUBLIC_KEY { get { return SGetField<int>(LocalClazz, "PUBLIC_KEY"); } }
+        public static int PUBLIC_KEY { get { return SGetField<int>(LocalBridgeClazz, "PUBLIC_KEY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#SECRET_KEY"/>
         /// </summary>
-        public static int SECRET_KEY { get { return SGetField<int>(LocalClazz, "SECRET_KEY"); } }
+        public static int SECRET_KEY { get { return SGetField<int>(LocalBridgeClazz, "SECRET_KEY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#UNWRAP_MODE"/>
         /// </summary>
-        public static int UNWRAP_MODE { get { return SGetField<int>(LocalClazz, "UNWRAP_MODE"); } }
+        public static int UNWRAP_MODE { get { return SGetField<int>(LocalBridgeClazz, "UNWRAP_MODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#WRAP_MODE"/>
         /// </summary>
-        public static int WRAP_MODE { get { return SGetField<int>(LocalClazz, "WRAP_MODE"); } }
+        public static int WRAP_MODE { get { return SGetField<int>(LocalBridgeClazz, "WRAP_MODE"); } }
 
         #endregion
 
@@ -77,7 +77,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static int GetMaxAllowedKeyLength(string arg0)
         {
-            return SExecute<int>(LocalClazz, "getMaxAllowedKeyLength", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getMaxAllowedKeyLength", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getMaxAllowedParameterSpec(java.lang.String)"/>
@@ -87,7 +87,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Spec.AlgorithmParameterSpec GetMaxAllowedParameterSpec(string arg0)
         {
-            return SExecute<Java.Security.Spec.AlgorithmParameterSpec>(LocalClazz, "getMaxAllowedParameterSpec", arg0);
+            return SExecute<Java.Security.Spec.AlgorithmParameterSpec>(LocalBridgeClazz, "getMaxAllowedParameterSpec", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -100,7 +100,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
         public static Javax.Crypto.Cipher GetInstance(string arg0, string arg1)
         {
-            return SExecute<Javax.Crypto.Cipher>(LocalClazz, "getInstance", arg0, arg1);
+            return SExecute<Javax.Crypto.Cipher>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -112,7 +112,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
         public static Javax.Crypto.Cipher GetInstance(string arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Crypto.Cipher>(LocalClazz, "getInstance", arg0, arg1);
+            return SExecute<Javax.Crypto.Cipher>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html#getInstance(java.lang.String)"/>
@@ -123,7 +123,7 @@ namespace Javax.Crypto
         /// <exception cref="Javax.Crypto.NoSuchPaddingException"/>
         public static Javax.Crypto.Cipher GetInstance(string arg0)
         {
-            return SExecute<Javax.Crypto.Cipher>(LocalClazz, "getInstance", arg0);
+            return SExecute<Javax.Crypto.Cipher>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion

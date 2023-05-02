@@ -50,7 +50,7 @@ namespace Java.Lang.Invoke
         /// <returns><typeparamref name="T"/></returns>
         public static T AsInterfaceInstance<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1)
         {
-            return SExecute<T>(LocalClazz, "asInterfaceInstance", arg0, arg1);
+            return SExecute<T>(LocalBridgeClazz, "asInterfaceInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#isWrapperInstance(java.lang.Object)"/>
@@ -59,7 +59,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="bool"/></returns>
         public static bool IsWrapperInstance(object arg0)
         {
-            return SExecute<bool>(LocalClazz, "isWrapperInstance", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isWrapperInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#wrapperInstanceType(java.lang.Object)"/>
@@ -69,7 +69,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public static Java.Lang.Class WrapperInstanceType<ReturnExtendsobject>(object arg0)
         {
-            return SExecute<Java.Lang.Class>(LocalClazz, "wrapperInstanceType", arg0);
+            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "wrapperInstanceType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#wrapperInstanceTarget(java.lang.Object)"/>
@@ -78,7 +78,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public static Java.Lang.Invoke.MethodHandle WrapperInstanceTarget(object arg0)
         {
-            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalClazz, "wrapperInstanceTarget", arg0);
+            return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "wrapperInstanceTarget", arg0);
         }
 
         #endregion

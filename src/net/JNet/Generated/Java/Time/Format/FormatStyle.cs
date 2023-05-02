@@ -40,19 +40,19 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#FULL"/>
         /// </summary>
-        public static Java.Time.Format.FormatStyle FULL { get { return SGetField<Java.Time.Format.FormatStyle>(LocalClazz, "FULL"); } }
+        public static Java.Time.Format.FormatStyle FULL { get { return SGetField<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "FULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#LONG"/>
         /// </summary>
-        public static Java.Time.Format.FormatStyle LONG { get { return SGetField<Java.Time.Format.FormatStyle>(LocalClazz, "LONG"); } }
+        public static Java.Time.Format.FormatStyle LONG { get { return SGetField<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "LONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#MEDIUM"/>
         /// </summary>
-        public static Java.Time.Format.FormatStyle MEDIUM { get { return SGetField<Java.Time.Format.FormatStyle>(LocalClazz, "MEDIUM"); } }
+        public static Java.Time.Format.FormatStyle MEDIUM { get { return SGetField<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "MEDIUM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#SHORT"/>
         /// </summary>
-        public static Java.Time.Format.FormatStyle SHORT { get { return SGetField<Java.Time.Format.FormatStyle>(LocalClazz, "SHORT"); } }
+        public static Java.Time.Format.FormatStyle SHORT { get { return SGetField<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "SHORT"); } }
 
         #endregion
 
@@ -62,7 +62,7 @@ namespace Java.Time.Format
         /// </summary>
         public static Java.Time.Format.FormatStyle[] Values
         {
-            get { return SExecuteArray<Java.Time.Format.FormatStyle>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html#valueOf(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.FormatStyle"/></returns>
         public static Java.Time.Format.FormatStyle ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Format.FormatStyle>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Time.Format.FormatStyle>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

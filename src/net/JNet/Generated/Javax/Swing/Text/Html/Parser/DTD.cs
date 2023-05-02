@@ -104,7 +104,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#FILE_VERSION"/>
         /// </summary>
-        public static int FILE_VERSION { get { return SGetField<int>(LocalClazz, "FILE_VERSION"); } }
+        public static int FILE_VERSION { get { return SGetField<int>(LocalBridgeClazz, "FILE_VERSION"); } }
 
         #endregion
 
@@ -117,7 +117,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <exception cref="Java.Io.IOException"/>
         public static Javax.Swing.Text.Html.Parser.DTD GetDTD(string arg0)
         {
-            return SExecute<Javax.Swing.Text.Html.Parser.DTD>(LocalClazz, "getDTD", arg0);
+            return SExecute<Javax.Swing.Text.Html.Parser.DTD>(LocalBridgeClazz, "getDTD", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#putDTDHash(java.lang.String,javax.swing.text.html.parser.DTD)"/>
@@ -126,7 +126,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.Parser.DTD"/></param>
         public static void PutDTDHash(string arg0, Javax.Swing.Text.Html.Parser.DTD arg1)
         {
-            SExecute(LocalClazz, "putDTDHash", arg0, arg1);
+            SExecute(LocalBridgeClazz, "putDTDHash", arg0, arg1);
         }
 
         #endregion

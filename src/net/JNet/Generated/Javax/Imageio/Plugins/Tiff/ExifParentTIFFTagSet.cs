@@ -40,11 +40,11 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#TAG_EXIF_IFD_POINTER"/>
         /// </summary>
-        public static int TAG_EXIF_IFD_POINTER { get { return SGetField<int>(LocalClazz, "TAG_EXIF_IFD_POINTER"); } }
+        public static int TAG_EXIF_IFD_POINTER { get { return SGetField<int>(LocalBridgeClazz, "TAG_EXIF_IFD_POINTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#TAG_GPS_INFO_IFD_POINTER"/>
         /// </summary>
-        public static int TAG_GPS_INFO_IFD_POINTER { get { return SGetField<int>(LocalClazz, "TAG_GPS_INFO_IFD_POINTER"); } }
+        public static int TAG_GPS_INFO_IFD_POINTER { get { return SGetField<int>(LocalBridgeClazz, "TAG_GPS_INFO_IFD_POINTER"); } }
 
         #endregion
 
@@ -52,9 +52,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifParentTIFFTagSet.html#getInstance()"/> 
         /// </summary>
-        public static Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet GetInstance
+        public static Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet Instance
         {
-            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet>(LocalClazz, "getInstance"); }
+            get { return SExecute<Javax.Imageio.Plugins.Tiff.ExifParentTIFFTagSet>(LocalBridgeClazz, "getInstance"); }
         }
 
         #endregion

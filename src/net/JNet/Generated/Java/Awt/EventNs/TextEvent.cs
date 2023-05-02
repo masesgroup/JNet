@@ -49,15 +49,15 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#TEXT_FIRST"/>
         /// </summary>
-        public static int TEXT_FIRST { get { return SGetField<int>(LocalClazz, "TEXT_FIRST"); } }
+        public static int TEXT_FIRST { get { return SGetField<int>(LocalBridgeClazz, "TEXT_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#TEXT_LAST"/>
         /// </summary>
-        public static int TEXT_LAST { get { return SGetField<int>(LocalClazz, "TEXT_LAST"); } }
+        public static int TEXT_LAST { get { return SGetField<int>(LocalBridgeClazz, "TEXT_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextEvent.html#TEXT_VALUE_CHANGED"/>
         /// </summary>
-        public static int TEXT_VALUE_CHANGED { get { return SGetField<int>(LocalClazz, "TEXT_VALUE_CHANGED"); } }
+        public static int TEXT_VALUE_CHANGED { get { return SGetField<int>(LocalBridgeClazz, "TEXT_VALUE_CHANGED"); } }
 
         #endregion
 

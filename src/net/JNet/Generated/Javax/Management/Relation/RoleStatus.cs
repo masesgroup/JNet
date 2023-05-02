@@ -40,31 +40,31 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#LESS_THAN_MIN_ROLE_DEGREE"/>
         /// </summary>
-        public static int LESS_THAN_MIN_ROLE_DEGREE { get { return SGetField<int>(LocalClazz, "LESS_THAN_MIN_ROLE_DEGREE"); } }
+        public static int LESS_THAN_MIN_ROLE_DEGREE { get { return SGetField<int>(LocalBridgeClazz, "LESS_THAN_MIN_ROLE_DEGREE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#MORE_THAN_MAX_ROLE_DEGREE"/>
         /// </summary>
-        public static int MORE_THAN_MAX_ROLE_DEGREE { get { return SGetField<int>(LocalClazz, "MORE_THAN_MAX_ROLE_DEGREE"); } }
+        public static int MORE_THAN_MAX_ROLE_DEGREE { get { return SGetField<int>(LocalBridgeClazz, "MORE_THAN_MAX_ROLE_DEGREE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#NO_ROLE_WITH_NAME"/>
         /// </summary>
-        public static int NO_ROLE_WITH_NAME { get { return SGetField<int>(LocalClazz, "NO_ROLE_WITH_NAME"); } }
+        public static int NO_ROLE_WITH_NAME { get { return SGetField<int>(LocalBridgeClazz, "NO_ROLE_WITH_NAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#REF_MBEAN_NOT_REGISTERED"/>
         /// </summary>
-        public static int REF_MBEAN_NOT_REGISTERED { get { return SGetField<int>(LocalClazz, "REF_MBEAN_NOT_REGISTERED"); } }
+        public static int REF_MBEAN_NOT_REGISTERED { get { return SGetField<int>(LocalBridgeClazz, "REF_MBEAN_NOT_REGISTERED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#REF_MBEAN_OF_INCORRECT_CLASS"/>
         /// </summary>
-        public static int REF_MBEAN_OF_INCORRECT_CLASS { get { return SGetField<int>(LocalClazz, "REF_MBEAN_OF_INCORRECT_CLASS"); } }
+        public static int REF_MBEAN_OF_INCORRECT_CLASS { get { return SGetField<int>(LocalBridgeClazz, "REF_MBEAN_OF_INCORRECT_CLASS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#ROLE_NOT_READABLE"/>
         /// </summary>
-        public static int ROLE_NOT_READABLE { get { return SGetField<int>(LocalClazz, "ROLE_NOT_READABLE"); } }
+        public static int ROLE_NOT_READABLE { get { return SGetField<int>(LocalBridgeClazz, "ROLE_NOT_READABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#ROLE_NOT_WRITABLE"/>
         /// </summary>
-        public static int ROLE_NOT_WRITABLE { get { return SGetField<int>(LocalClazz, "ROLE_NOT_WRITABLE"); } }
+        public static int ROLE_NOT_WRITABLE { get { return SGetField<int>(LocalBridgeClazz, "ROLE_NOT_WRITABLE"); } }
 
         #endregion
 
@@ -76,7 +76,7 @@ namespace Javax.Management.Relation
         /// <returns><see cref="bool"/></returns>
         public static bool IsRoleStatus(int arg0)
         {
-            return SExecute<bool>(LocalClazz, "isRoleStatus", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isRoleStatus", arg0);
         }
 
         #endregion

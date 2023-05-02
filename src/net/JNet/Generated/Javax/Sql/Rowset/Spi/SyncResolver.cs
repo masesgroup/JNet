@@ -40,19 +40,19 @@ namespace Javax.Sql.Rowset.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#DELETE_ROW_CONFLICT"/>
         /// </summary>
-        public static int DELETE_ROW_CONFLICT { get { return SGetField<int>(LocalClazz, "DELETE_ROW_CONFLICT"); } }
+        public static int DELETE_ROW_CONFLICT { get { return SGetField<int>(LocalBridgeClazz, "DELETE_ROW_CONFLICT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#INSERT_ROW_CONFLICT"/>
         /// </summary>
-        public static int INSERT_ROW_CONFLICT { get { return SGetField<int>(LocalClazz, "INSERT_ROW_CONFLICT"); } }
+        public static int INSERT_ROW_CONFLICT { get { return SGetField<int>(LocalBridgeClazz, "INSERT_ROW_CONFLICT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#NO_ROW_CONFLICT"/>
         /// </summary>
-        public static int NO_ROW_CONFLICT { get { return SGetField<int>(LocalClazz, "NO_ROW_CONFLICT"); } }
+        public static int NO_ROW_CONFLICT { get { return SGetField<int>(LocalBridgeClazz, "NO_ROW_CONFLICT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#UPDATE_ROW_CONFLICT"/>
         /// </summary>
-        public static int UPDATE_ROW_CONFLICT { get { return SGetField<int>(LocalClazz, "UPDATE_ROW_CONFLICT"); } }
+        public static int UPDATE_ROW_CONFLICT { get { return SGetField<int>(LocalBridgeClazz, "UPDATE_ROW_CONFLICT"); } }
 
         #endregion
 

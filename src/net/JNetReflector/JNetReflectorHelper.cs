@@ -32,7 +32,7 @@ namespace Org.Mases.Jnet
     /// </summary>
     public class JNetReflectorHelper : JVMBridgeBase<JNetReflectorHelper>
     {
-        public override string ClassName => "org.mases.jnet.JNetReflectorHelper";
+        public override string BridgeClassName => "org.mases.jnet.JNetReflectorHelper";
 
         /// <summary>
         /// Enable or disable logging

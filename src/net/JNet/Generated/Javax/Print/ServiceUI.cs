@@ -55,7 +55,7 @@ namespace Javax.Print
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Javax.Print.PrintService PrintDialog(Java.Awt.GraphicsConfiguration arg0, int arg1, int arg2, Javax.Print.PrintService[] arg3, Javax.Print.PrintService arg4, Javax.Print.DocFlavor arg5, Javax.Print.Attribute.PrintRequestAttributeSet arg6)
         {
-            return SExecute<Javax.Print.PrintService>(LocalClazz, "printDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecute<Javax.Print.PrintService>(LocalBridgeClazz, "printDialog", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
 
         #endregion

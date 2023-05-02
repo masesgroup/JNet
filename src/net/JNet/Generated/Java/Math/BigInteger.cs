@@ -118,19 +118,19 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ONE"/>
         /// </summary>
-        public static Java.Math.BigInteger ONE { get { return SGetField<Java.Math.BigInteger>(LocalClazz, "ONE"); } }
+        public static Java.Math.BigInteger ONE { get { return SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "ONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TEN"/>
         /// </summary>
-        public static Java.Math.BigInteger TEN { get { return SGetField<Java.Math.BigInteger>(LocalClazz, "TEN"); } }
+        public static Java.Math.BigInteger TEN { get { return SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "TEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TWO"/>
         /// </summary>
-        public static Java.Math.BigInteger TWO { get { return SGetField<Java.Math.BigInteger>(LocalClazz, "TWO"); } }
+        public static Java.Math.BigInteger TWO { get { return SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "TWO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ZERO"/>
         /// </summary>
-        public static Java.Math.BigInteger ZERO { get { return SGetField<Java.Math.BigInteger>(LocalClazz, "ZERO"); } }
+        public static Java.Math.BigInteger ZERO { get { return SGetField<Java.Math.BigInteger>(LocalBridgeClazz, "ZERO"); } }
 
         #endregion
 
@@ -143,7 +143,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public static Java.Math.BigInteger ProbablePrime(int arg0, Java.Util.Random arg1)
         {
-            return SExecute<Java.Math.BigInteger>(LocalClazz, "probablePrime", arg0, arg1);
+            return SExecute<Java.Math.BigInteger>(LocalBridgeClazz, "probablePrime", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#valueOf(long)"/>
@@ -152,7 +152,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public static Java.Math.BigInteger ValueOf(long arg0)
         {
-            return SExecute<Java.Math.BigInteger>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Math.BigInteger>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

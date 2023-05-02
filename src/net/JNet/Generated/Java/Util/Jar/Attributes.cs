@@ -221,63 +221,63 @@ namespace Java.Util.Jar
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CLASS_PATH"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name CLASS_PATH { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "CLASS_PATH"); } }
+            public static Java.Util.Jar.Attributes.Name CLASS_PATH { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "CLASS_PATH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CONTENT_TYPE"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name CONTENT_TYPE { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "CONTENT_TYPE"); } }
+            public static Java.Util.Jar.Attributes.Name CONTENT_TYPE { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "CONTENT_TYPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#EXTENSION_LIST"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name EXTENSION_LIST { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "EXTENSION_LIST"); } }
+            public static Java.Util.Jar.Attributes.Name EXTENSION_LIST { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "EXTENSION_LIST"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#EXTENSION_NAME"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name EXTENSION_NAME { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "EXTENSION_NAME"); } }
+            public static Java.Util.Jar.Attributes.Name EXTENSION_NAME { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "EXTENSION_NAME"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_TITLE"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_TITLE { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "IMPLEMENTATION_TITLE"); } }
+            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_TITLE { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_TITLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "IMPLEMENTATION_VENDOR"); } }
+            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_VENDOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VERSION"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VERSION { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "IMPLEMENTATION_VERSION"); } }
+            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VERSION { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "IMPLEMENTATION_VERSION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MAIN_CLASS"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name MAIN_CLASS { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "MAIN_CLASS"); } }
+            public static Java.Util.Jar.Attributes.Name MAIN_CLASS { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "MAIN_CLASS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MANIFEST_VERSION"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name MANIFEST_VERSION { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "MANIFEST_VERSION"); } }
+            public static Java.Util.Jar.Attributes.Name MANIFEST_VERSION { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "MANIFEST_VERSION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MULTI_RELEASE"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name MULTI_RELEASE { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "MULTI_RELEASE"); } }
+            public static Java.Util.Jar.Attributes.Name MULTI_RELEASE { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "MULTI_RELEASE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SEALED"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name SEALED { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "SEALED"); } }
+            public static Java.Util.Jar.Attributes.Name SEALED { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "SEALED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SIGNATURE_VERSION"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name SIGNATURE_VERSION { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "SIGNATURE_VERSION"); } }
+            public static Java.Util.Jar.Attributes.Name SIGNATURE_VERSION { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "SIGNATURE_VERSION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_TITLE"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name SPECIFICATION_TITLE { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "SPECIFICATION_TITLE"); } }
+            public static Java.Util.Jar.Attributes.Name SPECIFICATION_TITLE { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "SPECIFICATION_TITLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VENDOR"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name SPECIFICATION_VENDOR { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "SPECIFICATION_VENDOR"); } }
+            public static Java.Util.Jar.Attributes.Name SPECIFICATION_VENDOR { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "SPECIFICATION_VENDOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VERSION"/>
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name SPECIFICATION_VERSION { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalClazz, "SPECIFICATION_VERSION"); } }
+            public static Java.Util.Jar.Attributes.Name SPECIFICATION_VERSION { get { return SGetField<Java.Util.Jar.Attributes.Name>(LocalBridgeClazz, "SPECIFICATION_VERSION"); } }
 
             #endregion
 

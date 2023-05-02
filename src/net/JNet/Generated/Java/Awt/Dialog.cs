@@ -172,7 +172,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#DEFAULT_MODALITY_TYPE"/>
         /// </summary>
-        public static Java.Awt.Dialog.ModalityType DEFAULT_MODALITY_TYPE { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalClazz, "DEFAULT_MODALITY_TYPE"); } }
+        public static Java.Awt.Dialog.ModalityType DEFAULT_MODALITY_TYPE { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "DEFAULT_MODALITY_TYPE"); } }
 
         #endregion
 
@@ -267,15 +267,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#APPLICATION_EXCLUDE"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalExclusionType APPLICATION_EXCLUDE { get { return SGetField<Java.Awt.Dialog.ModalExclusionType>(LocalClazz, "APPLICATION_EXCLUDE"); } }
+            public static Java.Awt.Dialog.ModalExclusionType APPLICATION_EXCLUDE { get { return SGetField<Java.Awt.Dialog.ModalExclusionType>(LocalBridgeClazz, "APPLICATION_EXCLUDE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#NO_EXCLUDE"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalExclusionType NO_EXCLUDE { get { return SGetField<Java.Awt.Dialog.ModalExclusionType>(LocalClazz, "NO_EXCLUDE"); } }
+            public static Java.Awt.Dialog.ModalExclusionType NO_EXCLUDE { get { return SGetField<Java.Awt.Dialog.ModalExclusionType>(LocalBridgeClazz, "NO_EXCLUDE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#TOOLKIT_EXCLUDE"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalExclusionType TOOLKIT_EXCLUDE { get { return SGetField<Java.Awt.Dialog.ModalExclusionType>(LocalClazz, "TOOLKIT_EXCLUDE"); } }
+            public static Java.Awt.Dialog.ModalExclusionType TOOLKIT_EXCLUDE { get { return SGetField<Java.Awt.Dialog.ModalExclusionType>(LocalBridgeClazz, "TOOLKIT_EXCLUDE"); } }
 
             #endregion
 
@@ -285,7 +285,7 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.Dialog.ModalExclusionType[] Values
             {
-                get { return SExecuteArray<Java.Awt.Dialog.ModalExclusionType>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Awt.Dialog.ModalExclusionType>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#valueOf(java.lang.String)"/>
@@ -294,7 +294,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Dialog.ModalExclusionType"/></returns>
             public static Java.Awt.Dialog.ModalExclusionType ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.Dialog.ModalExclusionType>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Awt.Dialog.ModalExclusionType>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion
@@ -326,19 +326,19 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#APPLICATION_MODAL"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalityType APPLICATION_MODAL { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalClazz, "APPLICATION_MODAL"); } }
+            public static Java.Awt.Dialog.ModalityType APPLICATION_MODAL { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "APPLICATION_MODAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#DOCUMENT_MODAL"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalityType DOCUMENT_MODAL { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalClazz, "DOCUMENT_MODAL"); } }
+            public static Java.Awt.Dialog.ModalityType DOCUMENT_MODAL { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "DOCUMENT_MODAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#MODELESS"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalityType MODELESS { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalClazz, "MODELESS"); } }
+            public static Java.Awt.Dialog.ModalityType MODELESS { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "MODELESS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#TOOLKIT_MODAL"/>
             /// </summary>
-            public static Java.Awt.Dialog.ModalityType TOOLKIT_MODAL { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalClazz, "TOOLKIT_MODAL"); } }
+            public static Java.Awt.Dialog.ModalityType TOOLKIT_MODAL { get { return SGetField<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "TOOLKIT_MODAL"); } }
 
             #endregion
 
@@ -348,7 +348,7 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.Dialog.ModalityType[] Values
             {
-                get { return SExecuteArray<Java.Awt.Dialog.ModalityType>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#valueOf(java.lang.String)"/>
@@ -357,7 +357,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Dialog.ModalityType"/></returns>
             public static Java.Awt.Dialog.ModalityType ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.Dialog.ModalityType>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

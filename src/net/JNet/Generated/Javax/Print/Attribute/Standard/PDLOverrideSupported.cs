@@ -44,11 +44,11 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PDLOverrideSupported.html#ATTEMPTED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PDLOverrideSupported ATTEMPTED { get { return SGetField<Javax.Print.Attribute.Standard.PDLOverrideSupported>(LocalClazz, "ATTEMPTED"); } }
+        public static Javax.Print.Attribute.Standard.PDLOverrideSupported ATTEMPTED { get { return SGetField<Javax.Print.Attribute.Standard.PDLOverrideSupported>(LocalBridgeClazz, "ATTEMPTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PDLOverrideSupported.html#NOT_ATTEMPTED"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PDLOverrideSupported NOT_ATTEMPTED { get { return SGetField<Javax.Print.Attribute.Standard.PDLOverrideSupported>(LocalClazz, "NOT_ATTEMPTED"); } }
+        public static Javax.Print.Attribute.Standard.PDLOverrideSupported NOT_ATTEMPTED { get { return SGetField<Javax.Print.Attribute.Standard.PDLOverrideSupported>(LocalBridgeClazz, "NOT_ATTEMPTED"); } }
 
         #endregion
 

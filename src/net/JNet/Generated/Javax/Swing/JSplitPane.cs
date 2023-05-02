@@ -82,59 +82,59 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#HORIZONTAL_SPLIT"/>
         /// </summary>
-        public static int HORIZONTAL_SPLIT { get { return SGetField<int>(LocalClazz, "HORIZONTAL_SPLIT"); } }
+        public static int HORIZONTAL_SPLIT { get { return SGetField<int>(LocalBridgeClazz, "HORIZONTAL_SPLIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#VERTICAL_SPLIT"/>
         /// </summary>
-        public static int VERTICAL_SPLIT { get { return SGetField<int>(LocalClazz, "VERTICAL_SPLIT"); } }
+        public static int VERTICAL_SPLIT { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL_SPLIT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#BOTTOM"/>
         /// </summary>
-        public static string BOTTOM { get { return SGetField<string>(LocalClazz, "BOTTOM"); } }
+        public static string BOTTOM { get { return SGetField<string>(LocalBridgeClazz, "BOTTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#CONTINUOUS_LAYOUT_PROPERTY"/>
         /// </summary>
-        public static string CONTINUOUS_LAYOUT_PROPERTY { get { return SGetField<string>(LocalClazz, "CONTINUOUS_LAYOUT_PROPERTY"); } }
+        public static string CONTINUOUS_LAYOUT_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "CONTINUOUS_LAYOUT_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#DIVIDER"/>
         /// </summary>
-        public static string DIVIDER { get { return SGetField<string>(LocalClazz, "DIVIDER"); } }
+        public static string DIVIDER { get { return SGetField<string>(LocalBridgeClazz, "DIVIDER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#DIVIDER_LOCATION_PROPERTY"/>
         /// </summary>
-        public static string DIVIDER_LOCATION_PROPERTY { get { return SGetField<string>(LocalClazz, "DIVIDER_LOCATION_PROPERTY"); } }
+        public static string DIVIDER_LOCATION_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "DIVIDER_LOCATION_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#DIVIDER_SIZE_PROPERTY"/>
         /// </summary>
-        public static string DIVIDER_SIZE_PROPERTY { get { return SGetField<string>(LocalClazz, "DIVIDER_SIZE_PROPERTY"); } }
+        public static string DIVIDER_SIZE_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "DIVIDER_SIZE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#LAST_DIVIDER_LOCATION_PROPERTY"/>
         /// </summary>
-        public static string LAST_DIVIDER_LOCATION_PROPERTY { get { return SGetField<string>(LocalClazz, "LAST_DIVIDER_LOCATION_PROPERTY"); } }
+        public static string LAST_DIVIDER_LOCATION_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "LAST_DIVIDER_LOCATION_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#LEFT"/>
         /// </summary>
-        public static string LEFT { get { return SGetField<string>(LocalClazz, "LEFT"); } }
+        public static string LEFT { get { return SGetField<string>(LocalBridgeClazz, "LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#ONE_TOUCH_EXPANDABLE_PROPERTY"/>
         /// </summary>
-        public static string ONE_TOUCH_EXPANDABLE_PROPERTY { get { return SGetField<string>(LocalClazz, "ONE_TOUCH_EXPANDABLE_PROPERTY"); } }
+        public static string ONE_TOUCH_EXPANDABLE_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "ONE_TOUCH_EXPANDABLE_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#ORIENTATION_PROPERTY"/>
         /// </summary>
-        public static string ORIENTATION_PROPERTY { get { return SGetField<string>(LocalClazz, "ORIENTATION_PROPERTY"); } }
+        public static string ORIENTATION_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "ORIENTATION_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#RESIZE_WEIGHT_PROPERTY"/>
         /// </summary>
-        public static string RESIZE_WEIGHT_PROPERTY { get { return SGetField<string>(LocalClazz, "RESIZE_WEIGHT_PROPERTY"); } }
+        public static string RESIZE_WEIGHT_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "RESIZE_WEIGHT_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#RIGHT"/>
         /// </summary>
-        public static string RIGHT { get { return SGetField<string>(LocalClazz, "RIGHT"); } }
+        public static string RIGHT { get { return SGetField<string>(LocalBridgeClazz, "RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#TOP"/>
         /// </summary>
-        public static string TOP { get { return SGetField<string>(LocalClazz, "TOP"); } }
+        public static string TOP { get { return SGetField<string>(LocalBridgeClazz, "TOP"); } }
 
         #endregion
 

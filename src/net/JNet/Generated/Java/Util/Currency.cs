@@ -50,7 +50,7 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.Set<Java.Util.Currency> AvailableCurrencies
         {
-            get { return SExecute<Java.Util.Set<Java.Util.Currency>>(LocalClazz, "getAvailableCurrencies"); }
+            get { return SExecute<Java.Util.Set<Java.Util.Currency>>(LocalBridgeClazz, "getAvailableCurrencies"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getInstance(java.lang.String)"/>
@@ -59,7 +59,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Currency"/></returns>
         public static Java.Util.Currency GetInstance(string arg0)
         {
-            return SExecute<Java.Util.Currency>(LocalClazz, "getInstance", arg0);
+            return SExecute<Java.Util.Currency>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html#getInstance(java.util.Locale)"/>
@@ -68,7 +68,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Currency"/></returns>
         public static Java.Util.Currency GetInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Util.Currency>(LocalClazz, "getInstance", arg0);
+            return SExecute<Java.Util.Currency>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion

@@ -57,7 +57,7 @@ namespace Javax.Print
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.html#hostEncoding"/>
         /// </summary>
-        public static string hostEncoding { get { return SGetField<string>(LocalClazz, "hostEncoding"); } }
+        public static string hostEncoding { get { return SGetField<string>(LocalBridgeClazz, "hostEncoding"); } }
 
         #endregion
 
@@ -130,79 +130,79 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#AUTOSENSE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY AUTOSENSE { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "AUTOSENSE"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY AUTOSENSE { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "AUTOSENSE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#GIF"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY GIF { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "GIF"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY GIF { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "GIF"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#JPEG"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY JPEG { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "JPEG"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY JPEG { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "JPEG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#PCL"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY PCL { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "PCL"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY PCL { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "PCL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#PDF"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY PDF { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "PDF"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY PDF { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "PDF"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#PNG"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY PNG { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "PNG"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY PNG { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "PNG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#POSTSCRIPT"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY POSTSCRIPT { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "POSTSCRIPT"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY POSTSCRIPT { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "POSTSCRIPT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_HOST"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_HOST { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_HTML_HOST"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_HOST { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_HTML_HOST"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_US_ASCII"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_HTML_US_ASCII"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_HTML_US_ASCII"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_16"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_HTML_UTF_16"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_HTML_UTF_16"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_16BE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_HTML_UTF_16BE"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_HTML_UTF_16BE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_16LE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_HTML_UTF_16LE"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_HTML_UTF_16LE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_8"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_HTML_UTF_8"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_HTML_UTF_8"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_HOST"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_HOST { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_PLAIN_HOST"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_HOST { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_PLAIN_HOST"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_US_ASCII"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_PLAIN_US_ASCII"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_PLAIN_US_ASCII"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_16"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_PLAIN_UTF_16"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_PLAIN_UTF_16"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_16BE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_PLAIN_UTF_16BE"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_PLAIN_UTF_16BE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_16LE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_PLAIN_UTF_16LE"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_PLAIN_UTF_16LE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_8"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalClazz, "TEXT_PLAIN_UTF_8"); } }
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.BYTE_ARRAY>(LocalBridgeClazz, "TEXT_PLAIN_UTF_8"); } }
 
             #endregion
 
@@ -245,11 +245,11 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.CHAR_ARRAY.html#TEXT_HTML"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.CHAR_ARRAY TEXT_HTML { get { return SGetField<Javax.Print.DocFlavor.CHAR_ARRAY>(LocalClazz, "TEXT_HTML"); } }
+            public static Javax.Print.DocFlavor.CHAR_ARRAY TEXT_HTML { get { return SGetField<Javax.Print.DocFlavor.CHAR_ARRAY>(LocalBridgeClazz, "TEXT_HTML"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.CHAR_ARRAY.html#TEXT_PLAIN"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.CHAR_ARRAY TEXT_PLAIN { get { return SGetField<Javax.Print.DocFlavor.CHAR_ARRAY>(LocalClazz, "TEXT_PLAIN"); } }
+            public static Javax.Print.DocFlavor.CHAR_ARRAY TEXT_PLAIN { get { return SGetField<Javax.Print.DocFlavor.CHAR_ARRAY>(LocalBridgeClazz, "TEXT_PLAIN"); } }
 
             #endregion
 
@@ -292,79 +292,79 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#AUTOSENSE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM AUTOSENSE { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "AUTOSENSE"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM AUTOSENSE { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "AUTOSENSE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#GIF"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM GIF { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "GIF"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM GIF { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "GIF"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#JPEG"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM JPEG { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "JPEG"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM JPEG { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "JPEG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#PCL"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM PCL { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "PCL"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM PCL { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "PCL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#PDF"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM PDF { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "PDF"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM PDF { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "PDF"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#PNG"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM PNG { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "PNG"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM PNG { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "PNG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#POSTSCRIPT"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM POSTSCRIPT { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "POSTSCRIPT"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM POSTSCRIPT { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "POSTSCRIPT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_HOST"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_HOST { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_HTML_HOST"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_HOST { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_HTML_HOST"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_US_ASCII"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_HTML_US_ASCII"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_HTML_US_ASCII"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_16"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_HTML_UTF_16"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_HTML_UTF_16"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_16BE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_HTML_UTF_16BE"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_HTML_UTF_16BE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_16LE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_HTML_UTF_16LE"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_HTML_UTF_16LE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_8"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_HTML_UTF_8"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_HTML_UTF_8"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_HOST"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_HOST { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_PLAIN_HOST"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_HOST { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_PLAIN_HOST"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_US_ASCII"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_PLAIN_US_ASCII"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_PLAIN_US_ASCII"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_16"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_PLAIN_UTF_16"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_PLAIN_UTF_16"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_16BE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_PLAIN_UTF_16BE"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_PLAIN_UTF_16BE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_16LE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_PLAIN_UTF_16LE"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_PLAIN_UTF_16LE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_8"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalClazz, "TEXT_PLAIN_UTF_8"); } }
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.INPUT_STREAM>(LocalBridgeClazz, "TEXT_PLAIN_UTF_8"); } }
 
             #endregion
 
@@ -407,11 +407,11 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#TEXT_HTML"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.READER TEXT_HTML { get { return SGetField<Javax.Print.DocFlavor.READER>(LocalClazz, "TEXT_HTML"); } }
+            public static Javax.Print.DocFlavor.READER TEXT_HTML { get { return SGetField<Javax.Print.DocFlavor.READER>(LocalBridgeClazz, "TEXT_HTML"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#TEXT_PLAIN"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.READER TEXT_PLAIN { get { return SGetField<Javax.Print.DocFlavor.READER>(LocalClazz, "TEXT_PLAIN"); } }
+            public static Javax.Print.DocFlavor.READER TEXT_PLAIN { get { return SGetField<Javax.Print.DocFlavor.READER>(LocalBridgeClazz, "TEXT_PLAIN"); } }
 
             #endregion
 
@@ -454,15 +454,15 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.SERVICE_FORMATTED.html#PAGEABLE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.SERVICE_FORMATTED PAGEABLE { get { return SGetField<Javax.Print.DocFlavor.SERVICE_FORMATTED>(LocalClazz, "PAGEABLE"); } }
+            public static Javax.Print.DocFlavor.SERVICE_FORMATTED PAGEABLE { get { return SGetField<Javax.Print.DocFlavor.SERVICE_FORMATTED>(LocalBridgeClazz, "PAGEABLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.SERVICE_FORMATTED.html#PRINTABLE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.SERVICE_FORMATTED PRINTABLE { get { return SGetField<Javax.Print.DocFlavor.SERVICE_FORMATTED>(LocalClazz, "PRINTABLE"); } }
+            public static Javax.Print.DocFlavor.SERVICE_FORMATTED PRINTABLE { get { return SGetField<Javax.Print.DocFlavor.SERVICE_FORMATTED>(LocalBridgeClazz, "PRINTABLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.SERVICE_FORMATTED.html#RENDERABLE_IMAGE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.SERVICE_FORMATTED RENDERABLE_IMAGE { get { return SGetField<Javax.Print.DocFlavor.SERVICE_FORMATTED>(LocalClazz, "RENDERABLE_IMAGE"); } }
+            public static Javax.Print.DocFlavor.SERVICE_FORMATTED RENDERABLE_IMAGE { get { return SGetField<Javax.Print.DocFlavor.SERVICE_FORMATTED>(LocalBridgeClazz, "RENDERABLE_IMAGE"); } }
 
             #endregion
 
@@ -505,11 +505,11 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.STRING.html#TEXT_HTML"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.STRING TEXT_HTML { get { return SGetField<Javax.Print.DocFlavor.STRING>(LocalClazz, "TEXT_HTML"); } }
+            public static Javax.Print.DocFlavor.STRING TEXT_HTML { get { return SGetField<Javax.Print.DocFlavor.STRING>(LocalBridgeClazz, "TEXT_HTML"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.STRING.html#TEXT_PLAIN"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.STRING TEXT_PLAIN { get { return SGetField<Javax.Print.DocFlavor.STRING>(LocalClazz, "TEXT_PLAIN"); } }
+            public static Javax.Print.DocFlavor.STRING TEXT_PLAIN { get { return SGetField<Javax.Print.DocFlavor.STRING>(LocalBridgeClazz, "TEXT_PLAIN"); } }
 
             #endregion
 
@@ -552,79 +552,79 @@ namespace Javax.Print
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#AUTOSENSE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL AUTOSENSE { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "AUTOSENSE"); } }
+            public static Javax.Print.DocFlavor.URL AUTOSENSE { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "AUTOSENSE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#GIF"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL GIF { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "GIF"); } }
+            public static Javax.Print.DocFlavor.URL GIF { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "GIF"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#JPEG"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL JPEG { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "JPEG"); } }
+            public static Javax.Print.DocFlavor.URL JPEG { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "JPEG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#PCL"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL PCL { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "PCL"); } }
+            public static Javax.Print.DocFlavor.URL PCL { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "PCL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#PDF"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL PDF { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "PDF"); } }
+            public static Javax.Print.DocFlavor.URL PDF { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "PDF"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#PNG"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL PNG { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "PNG"); } }
+            public static Javax.Print.DocFlavor.URL PNG { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "PNG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#POSTSCRIPT"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL POSTSCRIPT { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "POSTSCRIPT"); } }
+            public static Javax.Print.DocFlavor.URL POSTSCRIPT { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "POSTSCRIPT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_HTML_HOST"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_HTML_HOST { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_HTML_HOST"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_HTML_HOST { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_HTML_HOST"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_HTML_US_ASCII"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_HTML_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_HTML_US_ASCII"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_HTML_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_HTML_US_ASCII"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_HTML_UTF_16"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_HTML_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_HTML_UTF_16"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_HTML_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_HTML_UTF_16"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_HTML_UTF_16BE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_HTML_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_HTML_UTF_16BE"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_HTML_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_HTML_UTF_16BE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_HTML_UTF_16LE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_HTML_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_HTML_UTF_16LE"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_HTML_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_HTML_UTF_16LE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_HTML_UTF_8"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_HTML_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_HTML_UTF_8"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_HTML_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_HTML_UTF_8"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_PLAIN_HOST"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_HOST { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_PLAIN_HOST"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_HOST { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_PLAIN_HOST"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_PLAIN_US_ASCII"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_PLAIN_US_ASCII"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_US_ASCII { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_PLAIN_US_ASCII"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_PLAIN_UTF_16"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_PLAIN_UTF_16"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_UTF_16 { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_PLAIN_UTF_16"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_PLAIN_UTF_16BE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_PLAIN_UTF_16BE"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_UTF_16BE { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_PLAIN_UTF_16BE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_PLAIN_UTF_16LE"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_PLAIN_UTF_16LE"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_UTF_16LE { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_PLAIN_UTF_16LE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.URL.html#TEXT_PLAIN_UTF_8"/>
             /// </summary>
-            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalClazz, "TEXT_PLAIN_UTF_8"); } }
+            public static Javax.Print.DocFlavor.URL TEXT_PLAIN_UTF_8 { get { return SGetField<Javax.Print.DocFlavor.URL>(LocalBridgeClazz, "TEXT_PLAIN_UTF_8"); } }
 
             #endregion
 

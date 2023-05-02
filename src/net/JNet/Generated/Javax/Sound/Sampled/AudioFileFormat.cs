@@ -138,23 +138,23 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#AIFC"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFileFormat.Type AIFC { get { return SGetField<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalClazz, "AIFC"); } }
+            public static Javax.Sound.Sampled.AudioFileFormat.Type AIFC { get { return SGetField<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalBridgeClazz, "AIFC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#AIFF"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFileFormat.Type AIFF { get { return SGetField<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalClazz, "AIFF"); } }
+            public static Javax.Sound.Sampled.AudioFileFormat.Type AIFF { get { return SGetField<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalBridgeClazz, "AIFF"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#AU"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFileFormat.Type AU { get { return SGetField<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalClazz, "AU"); } }
+            public static Javax.Sound.Sampled.AudioFileFormat.Type AU { get { return SGetField<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalBridgeClazz, "AU"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#SND"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFileFormat.Type SND { get { return SGetField<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalClazz, "SND"); } }
+            public static Javax.Sound.Sampled.AudioFileFormat.Type SND { get { return SGetField<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalBridgeClazz, "SND"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#WAVE"/>
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFileFormat.Type WAVE { get { return SGetField<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalClazz, "WAVE"); } }
+            public static Javax.Sound.Sampled.AudioFileFormat.Type WAVE { get { return SGetField<Javax.Sound.Sampled.AudioFileFormat.Type>(LocalBridgeClazz, "WAVE"); } }
 
             #endregion
 

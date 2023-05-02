@@ -48,7 +48,7 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ManageReferralControl.html#OID"/>
         /// </summary>
-        public static string OID { get { return SGetField<string>(LocalClazz, "OID"); } }
+        public static string OID { get { return SGetField<string>(LocalBridgeClazz, "OID"); } }
 
         #endregion
 

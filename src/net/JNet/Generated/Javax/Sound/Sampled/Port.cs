@@ -74,27 +74,27 @@ namespace Javax.Sound.Sampled
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#COMPACT_DISC"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info COMPACT_DISC { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalClazz, "COMPACT_DISC"); } }
+            public static Javax.Sound.Sampled.Port.Info COMPACT_DISC { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalBridgeClazz, "COMPACT_DISC"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#HEADPHONE"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info HEADPHONE { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalClazz, "HEADPHONE"); } }
+            public static Javax.Sound.Sampled.Port.Info HEADPHONE { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalBridgeClazz, "HEADPHONE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#LINE_IN"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info LINE_IN { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalClazz, "LINE_IN"); } }
+            public static Javax.Sound.Sampled.Port.Info LINE_IN { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalBridgeClazz, "LINE_IN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#LINE_OUT"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info LINE_OUT { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalClazz, "LINE_OUT"); } }
+            public static Javax.Sound.Sampled.Port.Info LINE_OUT { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalBridgeClazz, "LINE_OUT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#MICROPHONE"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info MICROPHONE { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalClazz, "MICROPHONE"); } }
+            public static Javax.Sound.Sampled.Port.Info MICROPHONE { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalBridgeClazz, "MICROPHONE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.Info.html#SPEAKER"/>
             /// </summary>
-            public static Javax.Sound.Sampled.Port.Info SPEAKER { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalClazz, "SPEAKER"); } }
+            public static Javax.Sound.Sampled.Port.Info SPEAKER { get { return SGetField<Javax.Sound.Sampled.Port.Info>(LocalBridgeClazz, "SPEAKER"); } }
 
             #endregion
 

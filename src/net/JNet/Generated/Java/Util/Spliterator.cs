@@ -40,35 +40,35 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#CONCURRENT"/>
         /// </summary>
-        public static int CONCURRENT { get { return SGetField<int>(LocalClazz, "CONCURRENT"); } }
+        public static int CONCURRENT { get { return SGetField<int>(LocalBridgeClazz, "CONCURRENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#DISTINCT"/>
         /// </summary>
-        public static int DISTINCT { get { return SGetField<int>(LocalClazz, "DISTINCT"); } }
+        public static int DISTINCT { get { return SGetField<int>(LocalBridgeClazz, "DISTINCT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#IMMUTABLE"/>
         /// </summary>
-        public static int IMMUTABLE { get { return SGetField<int>(LocalClazz, "IMMUTABLE"); } }
+        public static int IMMUTABLE { get { return SGetField<int>(LocalBridgeClazz, "IMMUTABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#NONNULL"/>
         /// </summary>
-        public static int NONNULL { get { return SGetField<int>(LocalClazz, "NONNULL"); } }
+        public static int NONNULL { get { return SGetField<int>(LocalBridgeClazz, "NONNULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#ORDERED"/>
         /// </summary>
-        public static int ORDERED { get { return SGetField<int>(LocalClazz, "ORDERED"); } }
+        public static int ORDERED { get { return SGetField<int>(LocalBridgeClazz, "ORDERED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SIZED"/>
         /// </summary>
-        public static int SIZED { get { return SGetField<int>(LocalClazz, "SIZED"); } }
+        public static int SIZED { get { return SGetField<int>(LocalBridgeClazz, "SIZED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SORTED"/>
         /// </summary>
-        public static int SORTED { get { return SGetField<int>(LocalClazz, "SORTED"); } }
+        public static int SORTED { get { return SGetField<int>(LocalBridgeClazz, "SORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED"/>
         /// </summary>
-        public static int SUBSIZED { get { return SGetField<int>(LocalClazz, "SUBSIZED"); } }
+        public static int SUBSIZED { get { return SGetField<int>(LocalBridgeClazz, "SUBSIZED"); } }
 
         #endregion
 
@@ -555,35 +555,35 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#CONCURRENT"/>
         /// </summary>
-        public static int CONCURRENT { get { return SGetField<int>(LocalClazz, "CONCURRENT"); } }
+        public static int CONCURRENT { get { return SGetField<int>(LocalBridgeClazz, "CONCURRENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#DISTINCT"/>
         /// </summary>
-        public static int DISTINCT { get { return SGetField<int>(LocalClazz, "DISTINCT"); } }
+        public static int DISTINCT { get { return SGetField<int>(LocalBridgeClazz, "DISTINCT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#IMMUTABLE"/>
         /// </summary>
-        public static int IMMUTABLE { get { return SGetField<int>(LocalClazz, "IMMUTABLE"); } }
+        public static int IMMUTABLE { get { return SGetField<int>(LocalBridgeClazz, "IMMUTABLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#NONNULL"/>
         /// </summary>
-        public static int NONNULL { get { return SGetField<int>(LocalClazz, "NONNULL"); } }
+        public static int NONNULL { get { return SGetField<int>(LocalBridgeClazz, "NONNULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#ORDERED"/>
         /// </summary>
-        public static int ORDERED { get { return SGetField<int>(LocalClazz, "ORDERED"); } }
+        public static int ORDERED { get { return SGetField<int>(LocalBridgeClazz, "ORDERED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SIZED"/>
         /// </summary>
-        public static int SIZED { get { return SGetField<int>(LocalClazz, "SIZED"); } }
+        public static int SIZED { get { return SGetField<int>(LocalBridgeClazz, "SIZED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SORTED"/>
         /// </summary>
-        public static int SORTED { get { return SGetField<int>(LocalClazz, "SORTED"); } }
+        public static int SORTED { get { return SGetField<int>(LocalBridgeClazz, "SORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED"/>
         /// </summary>
-        public static int SUBSIZED { get { return SGetField<int>(LocalClazz, "SUBSIZED"); } }
+        public static int SUBSIZED { get { return SGetField<int>(LocalBridgeClazz, "SUBSIZED"); } }
 
         #endregion
 

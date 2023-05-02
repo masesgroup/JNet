@@ -40,67 +40,67 @@ namespace Javax.Xml
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#ACCESS_EXTERNAL_DTD"/>
         /// </summary>
-        public static string ACCESS_EXTERNAL_DTD { get { return SGetField<string>(LocalClazz, "ACCESS_EXTERNAL_DTD"); } }
+        public static string ACCESS_EXTERNAL_DTD { get { return SGetField<string>(LocalBridgeClazz, "ACCESS_EXTERNAL_DTD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#ACCESS_EXTERNAL_SCHEMA"/>
         /// </summary>
-        public static string ACCESS_EXTERNAL_SCHEMA { get { return SGetField<string>(LocalClazz, "ACCESS_EXTERNAL_SCHEMA"); } }
+        public static string ACCESS_EXTERNAL_SCHEMA { get { return SGetField<string>(LocalBridgeClazz, "ACCESS_EXTERNAL_SCHEMA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#ACCESS_EXTERNAL_STYLESHEET"/>
         /// </summary>
-        public static string ACCESS_EXTERNAL_STYLESHEET { get { return SGetField<string>(LocalClazz, "ACCESS_EXTERNAL_STYLESHEET"); } }
+        public static string ACCESS_EXTERNAL_STYLESHEET { get { return SGetField<string>(LocalBridgeClazz, "ACCESS_EXTERNAL_STYLESHEET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#DEFAULT_NS_PREFIX"/>
         /// </summary>
-        public static string DEFAULT_NS_PREFIX { get { return SGetField<string>(LocalClazz, "DEFAULT_NS_PREFIX"); } }
+        public static string DEFAULT_NS_PREFIX { get { return SGetField<string>(LocalBridgeClazz, "DEFAULT_NS_PREFIX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#FEATURE_SECURE_PROCESSING"/>
         /// </summary>
-        public static string FEATURE_SECURE_PROCESSING { get { return SGetField<string>(LocalClazz, "FEATURE_SECURE_PROCESSING"); } }
+        public static string FEATURE_SECURE_PROCESSING { get { return SGetField<string>(LocalBridgeClazz, "FEATURE_SECURE_PROCESSING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#NULL_NS_URI"/>
         /// </summary>
-        public static string NULL_NS_URI { get { return SGetField<string>(LocalClazz, "NULL_NS_URI"); } }
+        public static string NULL_NS_URI { get { return SGetField<string>(LocalBridgeClazz, "NULL_NS_URI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#RELAXNG_NS_URI"/>
         /// </summary>
-        public static string RELAXNG_NS_URI { get { return SGetField<string>(LocalClazz, "RELAXNG_NS_URI"); } }
+        public static string RELAXNG_NS_URI { get { return SGetField<string>(LocalBridgeClazz, "RELAXNG_NS_URI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#USE_CATALOG"/>
         /// </summary>
-        public static string USE_CATALOG { get { return SGetField<string>(LocalClazz, "USE_CATALOG"); } }
+        public static string USE_CATALOG { get { return SGetField<string>(LocalBridgeClazz, "USE_CATALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#W3C_XML_SCHEMA_INSTANCE_NS_URI"/>
         /// </summary>
-        public static string W3C_XML_SCHEMA_INSTANCE_NS_URI { get { return SGetField<string>(LocalClazz, "W3C_XML_SCHEMA_INSTANCE_NS_URI"); } }
+        public static string W3C_XML_SCHEMA_INSTANCE_NS_URI { get { return SGetField<string>(LocalBridgeClazz, "W3C_XML_SCHEMA_INSTANCE_NS_URI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#W3C_XML_SCHEMA_NS_URI"/>
         /// </summary>
-        public static string W3C_XML_SCHEMA_NS_URI { get { return SGetField<string>(LocalClazz, "W3C_XML_SCHEMA_NS_URI"); } }
+        public static string W3C_XML_SCHEMA_NS_URI { get { return SGetField<string>(LocalBridgeClazz, "W3C_XML_SCHEMA_NS_URI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#W3C_XPATH_DATATYPE_NS_URI"/>
         /// </summary>
-        public static string W3C_XPATH_DATATYPE_NS_URI { get { return SGetField<string>(LocalClazz, "W3C_XPATH_DATATYPE_NS_URI"); } }
+        public static string W3C_XPATH_DATATYPE_NS_URI { get { return SGetField<string>(LocalBridgeClazz, "W3C_XPATH_DATATYPE_NS_URI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#XML_DTD_NS_URI"/>
         /// </summary>
-        public static string XML_DTD_NS_URI { get { return SGetField<string>(LocalClazz, "XML_DTD_NS_URI"); } }
+        public static string XML_DTD_NS_URI { get { return SGetField<string>(LocalBridgeClazz, "XML_DTD_NS_URI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#XML_NS_PREFIX"/>
         /// </summary>
-        public static string XML_NS_PREFIX { get { return SGetField<string>(LocalClazz, "XML_NS_PREFIX"); } }
+        public static string XML_NS_PREFIX { get { return SGetField<string>(LocalBridgeClazz, "XML_NS_PREFIX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#XML_NS_URI"/>
         /// </summary>
-        public static string XML_NS_URI { get { return SGetField<string>(LocalClazz, "XML_NS_URI"); } }
+        public static string XML_NS_URI { get { return SGetField<string>(LocalBridgeClazz, "XML_NS_URI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#XMLNS_ATTRIBUTE"/>
         /// </summary>
-        public static string XMLNS_ATTRIBUTE { get { return SGetField<string>(LocalClazz, "XMLNS_ATTRIBUTE"); } }
+        public static string XMLNS_ATTRIBUTE { get { return SGetField<string>(LocalBridgeClazz, "XMLNS_ATTRIBUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/XMLConstants.html#XMLNS_ATTRIBUTE_NS_URI"/>
         /// </summary>
-        public static string XMLNS_ATTRIBUTE_NS_URI { get { return SGetField<string>(LocalClazz, "XMLNS_ATTRIBUTE_NS_URI"); } }
+        public static string XMLNS_ATTRIBUTE_NS_URI { get { return SGetField<string>(LocalBridgeClazz, "XMLNS_ATTRIBUTE_NS_URI"); } }
 
         #endregion
 

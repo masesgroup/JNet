@@ -86,119 +86,119 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_OPTION"/>
         /// </summary>
-        public static int APPROVE_OPTION { get { return SGetField<int>(LocalClazz, "APPROVE_OPTION"); } }
+        public static int APPROVE_OPTION { get { return SGetField<int>(LocalBridgeClazz, "APPROVE_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CANCEL_OPTION"/>
         /// </summary>
-        public static int CANCEL_OPTION { get { return SGetField<int>(LocalClazz, "CANCEL_OPTION"); } }
+        public static int CANCEL_OPTION { get { return SGetField<int>(LocalBridgeClazz, "CANCEL_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CUSTOM_DIALOG"/>
         /// </summary>
-        public static int CUSTOM_DIALOG { get { return SGetField<int>(LocalClazz, "CUSTOM_DIALOG"); } }
+        public static int CUSTOM_DIALOG { get { return SGetField<int>(LocalBridgeClazz, "CUSTOM_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIRECTORIES_ONLY"/>
         /// </summary>
-        public static int DIRECTORIES_ONLY { get { return SGetField<int>(LocalClazz, "DIRECTORIES_ONLY"); } }
+        public static int DIRECTORIES_ONLY { get { return SGetField<int>(LocalBridgeClazz, "DIRECTORIES_ONLY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ERROR_OPTION"/>
         /// </summary>
-        public static int ERROR_OPTION { get { return SGetField<int>(LocalClazz, "ERROR_OPTION"); } }
+        public static int ERROR_OPTION { get { return SGetField<int>(LocalBridgeClazz, "ERROR_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILES_AND_DIRECTORIES"/>
         /// </summary>
-        public static int FILES_AND_DIRECTORIES { get { return SGetField<int>(LocalClazz, "FILES_AND_DIRECTORIES"); } }
+        public static int FILES_AND_DIRECTORIES { get { return SGetField<int>(LocalBridgeClazz, "FILES_AND_DIRECTORIES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILES_ONLY"/>
         /// </summary>
-        public static int FILES_ONLY { get { return SGetField<int>(LocalClazz, "FILES_ONLY"); } }
+        public static int FILES_ONLY { get { return SGetField<int>(LocalBridgeClazz, "FILES_ONLY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#OPEN_DIALOG"/>
         /// </summary>
-        public static int OPEN_DIALOG { get { return SGetField<int>(LocalClazz, "OPEN_DIALOG"); } }
+        public static int OPEN_DIALOG { get { return SGetField<int>(LocalBridgeClazz, "OPEN_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SAVE_DIALOG"/>
         /// </summary>
-        public static int SAVE_DIALOG { get { return SGetField<int>(LocalClazz, "SAVE_DIALOG"); } }
+        public static int SAVE_DIALOG { get { return SGetField<int>(LocalBridgeClazz, "SAVE_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY"); } }
+        public static string ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ACCESSORY_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string ACCESSORY_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "ACCESSORY_CHANGED_PROPERTY"); } }
+        public static string ACCESSORY_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "ACCESSORY_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY"); } }
+        public static string APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_BUTTON_TEXT_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string APPROVE_BUTTON_TEXT_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "APPROVE_BUTTON_TEXT_CHANGED_PROPERTY"); } }
+        public static string APPROVE_BUTTON_TEXT_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "APPROVE_BUTTON_TEXT_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY"); } }
+        public static string APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_SELECTION"/>
         /// </summary>
-        public static string APPROVE_SELECTION { get { return SGetField<string>(LocalClazz, "APPROVE_SELECTION"); } }
+        public static string APPROVE_SELECTION { get { return SGetField<string>(LocalBridgeClazz, "APPROVE_SELECTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CANCEL_SELECTION"/>
         /// </summary>
-        public static string CANCEL_SELECTION { get { return SGetField<string>(LocalClazz, "CANCEL_SELECTION"); } }
+        public static string CANCEL_SELECTION { get { return SGetField<string>(LocalBridgeClazz, "CANCEL_SELECTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY"); } }
+        public static string CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY"); } }
+        public static string CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIALOG_TITLE_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string DIALOG_TITLE_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "DIALOG_TITLE_CHANGED_PROPERTY"); } }
+        public static string DIALOG_TITLE_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "DIALOG_TITLE_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIALOG_TYPE_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string DIALOG_TYPE_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "DIALOG_TYPE_CHANGED_PROPERTY"); } }
+        public static string DIALOG_TYPE_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "DIALOG_TYPE_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIRECTORY_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string DIRECTORY_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "DIRECTORY_CHANGED_PROPERTY"); } }
+        public static string DIRECTORY_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "DIRECTORY_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_FILTER_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FILE_FILTER_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "FILE_FILTER_CHANGED_PROPERTY"); } }
+        public static string FILE_FILTER_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "FILE_FILTER_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_HIDING_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FILE_HIDING_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "FILE_HIDING_CHANGED_PROPERTY"); } }
+        public static string FILE_HIDING_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "FILE_HIDING_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_SELECTION_MODE_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FILE_SELECTION_MODE_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "FILE_SELECTION_MODE_CHANGED_PROPERTY"); } }
+        public static string FILE_SELECTION_MODE_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "FILE_SELECTION_MODE_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_SYSTEM_VIEW_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FILE_SYSTEM_VIEW_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "FILE_SYSTEM_VIEW_CHANGED_PROPERTY"); } }
+        public static string FILE_SYSTEM_VIEW_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "FILE_SYSTEM_VIEW_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_VIEW_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string FILE_VIEW_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "FILE_VIEW_CHANGED_PROPERTY"); } }
+        public static string FILE_VIEW_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "FILE_VIEW_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#MULTI_SELECTION_ENABLED_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string MULTI_SELECTION_ENABLED_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "MULTI_SELECTION_ENABLED_CHANGED_PROPERTY"); } }
+        public static string MULTI_SELECTION_ENABLED_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "MULTI_SELECTION_ENABLED_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SELECTED_FILE_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string SELECTED_FILE_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "SELECTED_FILE_CHANGED_PROPERTY"); } }
+        public static string SELECTED_FILE_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "SELECTED_FILE_CHANGED_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SELECTED_FILES_CHANGED_PROPERTY"/>
         /// </summary>
-        public static string SELECTED_FILES_CHANGED_PROPERTY { get { return SGetField<string>(LocalClazz, "SELECTED_FILES_CHANGED_PROPERTY"); } }
+        public static string SELECTED_FILES_CHANGED_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "SELECTED_FILES_CHANGED_PROPERTY"); } }
 
         #endregion
 

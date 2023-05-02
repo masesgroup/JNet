@@ -40,19 +40,19 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#NO_USAGE_RESTRICTIONS"/>
         /// </summary>
-        public static Java.Sql.PseudoColumnUsage NO_USAGE_RESTRICTIONS { get { return SGetField<Java.Sql.PseudoColumnUsage>(LocalClazz, "NO_USAGE_RESTRICTIONS"); } }
+        public static Java.Sql.PseudoColumnUsage NO_USAGE_RESTRICTIONS { get { return SGetField<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "NO_USAGE_RESTRICTIONS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#SELECT_LIST_ONLY"/>
         /// </summary>
-        public static Java.Sql.PseudoColumnUsage SELECT_LIST_ONLY { get { return SGetField<Java.Sql.PseudoColumnUsage>(LocalClazz, "SELECT_LIST_ONLY"); } }
+        public static Java.Sql.PseudoColumnUsage SELECT_LIST_ONLY { get { return SGetField<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "SELECT_LIST_ONLY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#USAGE_UNKNOWN"/>
         /// </summary>
-        public static Java.Sql.PseudoColumnUsage USAGE_UNKNOWN { get { return SGetField<Java.Sql.PseudoColumnUsage>(LocalClazz, "USAGE_UNKNOWN"); } }
+        public static Java.Sql.PseudoColumnUsage USAGE_UNKNOWN { get { return SGetField<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "USAGE_UNKNOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#WHERE_CLAUSE_ONLY"/>
         /// </summary>
-        public static Java.Sql.PseudoColumnUsage WHERE_CLAUSE_ONLY { get { return SGetField<Java.Sql.PseudoColumnUsage>(LocalClazz, "WHERE_CLAUSE_ONLY"); } }
+        public static Java.Sql.PseudoColumnUsage WHERE_CLAUSE_ONLY { get { return SGetField<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "WHERE_CLAUSE_ONLY"); } }
 
         #endregion
 
@@ -62,7 +62,7 @@ namespace Java.Sql
         /// </summary>
         public static Java.Sql.PseudoColumnUsage[] Values
         {
-            get { return SExecuteArray<Java.Sql.PseudoColumnUsage>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#valueOf(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.PseudoColumnUsage"/></returns>
         public static Java.Sql.PseudoColumnUsage ValueOf(string arg0)
         {
-            return SExecute<Java.Sql.PseudoColumnUsage>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

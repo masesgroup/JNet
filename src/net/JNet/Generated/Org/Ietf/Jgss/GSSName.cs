@@ -40,27 +40,27 @@ namespace Org.Ietf.Jgss
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_ANONYMOUS"/>
         /// </summary>
-        public static Org.Ietf.Jgss.Oid NT_ANONYMOUS { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalClazz, "NT_ANONYMOUS"); } }
+        public static Org.Ietf.Jgss.Oid NT_ANONYMOUS { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalBridgeClazz, "NT_ANONYMOUS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_EXPORT_NAME"/>
         /// </summary>
-        public static Org.Ietf.Jgss.Oid NT_EXPORT_NAME { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalClazz, "NT_EXPORT_NAME"); } }
+        public static Org.Ietf.Jgss.Oid NT_EXPORT_NAME { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalBridgeClazz, "NT_EXPORT_NAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_HOSTBASED_SERVICE"/>
         /// </summary>
-        public static Org.Ietf.Jgss.Oid NT_HOSTBASED_SERVICE { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalClazz, "NT_HOSTBASED_SERVICE"); } }
+        public static Org.Ietf.Jgss.Oid NT_HOSTBASED_SERVICE { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalBridgeClazz, "NT_HOSTBASED_SERVICE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_MACHINE_UID_NAME"/>
         /// </summary>
-        public static Org.Ietf.Jgss.Oid NT_MACHINE_UID_NAME { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalClazz, "NT_MACHINE_UID_NAME"); } }
+        public static Org.Ietf.Jgss.Oid NT_MACHINE_UID_NAME { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalBridgeClazz, "NT_MACHINE_UID_NAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_STRING_UID_NAME"/>
         /// </summary>
-        public static Org.Ietf.Jgss.Oid NT_STRING_UID_NAME { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalClazz, "NT_STRING_UID_NAME"); } }
+        public static Org.Ietf.Jgss.Oid NT_STRING_UID_NAME { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalBridgeClazz, "NT_STRING_UID_NAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_USER_NAME"/>
         /// </summary>
-        public static Org.Ietf.Jgss.Oid NT_USER_NAME { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalClazz, "NT_USER_NAME"); } }
+        public static Org.Ietf.Jgss.Oid NT_USER_NAME { get { return SGetField<Org.Ietf.Jgss.Oid>(LocalBridgeClazz, "NT_USER_NAME"); } }
 
         #endregion
 

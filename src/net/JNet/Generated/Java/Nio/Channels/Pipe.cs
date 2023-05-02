@@ -46,7 +46,7 @@ namespace Java.Nio.Channels
         /// </summary>
         public static Java.Nio.Channels.Pipe Open
         {
-            get { return SExecute<Java.Nio.Channels.Pipe>(LocalClazz, "open"); }
+            get { return SExecute<Java.Nio.Channels.Pipe>(LocalBridgeClazz, "open"); }
         }
 
         #endregion

@@ -40,31 +40,31 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ARGV"/>
         /// </summary>
-        public static string ARGV { get { return SGetField<string>(LocalClazz, "ARGV"); } }
+        public static string ARGV { get { return SGetField<string>(LocalBridgeClazz, "ARGV"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ENGINE"/>
         /// </summary>
-        public static string ENGINE { get { return SGetField<string>(LocalClazz, "ENGINE"); } }
+        public static string ENGINE { get { return SGetField<string>(LocalBridgeClazz, "ENGINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ENGINE_VERSION"/>
         /// </summary>
-        public static string ENGINE_VERSION { get { return SGetField<string>(LocalClazz, "ENGINE_VERSION"); } }
+        public static string ENGINE_VERSION { get { return SGetField<string>(LocalBridgeClazz, "ENGINE_VERSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#FILENAME"/>
         /// </summary>
-        public static string FILENAME { get { return SGetField<string>(LocalClazz, "FILENAME"); } }
+        public static string FILENAME { get { return SGetField<string>(LocalBridgeClazz, "FILENAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#LANGUAGE"/>
         /// </summary>
-        public static string LANGUAGE { get { return SGetField<string>(LocalClazz, "LANGUAGE"); } }
+        public static string LANGUAGE { get { return SGetField<string>(LocalBridgeClazz, "LANGUAGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#LANGUAGE_VERSION"/>
         /// </summary>
-        public static string LANGUAGE_VERSION { get { return SGetField<string>(LocalClazz, "LANGUAGE_VERSION"); } }
+        public static string LANGUAGE_VERSION { get { return SGetField<string>(LocalBridgeClazz, "LANGUAGE_VERSION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#NAME"/>
         /// </summary>
-        public static string NAME { get { return SGetField<string>(LocalClazz, "NAME"); } }
+        public static string NAME { get { return SGetField<string>(LocalBridgeClazz, "NAME"); } }
 
         #endregion
 

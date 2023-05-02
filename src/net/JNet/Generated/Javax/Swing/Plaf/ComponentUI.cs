@@ -48,7 +48,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Javax.Swing.Plaf.ComponentUI"/></returns>
         public static Javax.Swing.Plaf.ComponentUI CreateUI(Javax.Swing.JComponent arg0)
         {
-            return SExecute<Javax.Swing.Plaf.ComponentUI>(LocalClazz, "createUI", arg0);
+            return SExecute<Javax.Swing.Plaf.ComponentUI>(LocalBridgeClazz, "createUI", arg0);
         }
 
         #endregion

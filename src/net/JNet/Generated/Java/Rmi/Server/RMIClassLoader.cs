@@ -46,7 +46,7 @@ namespace Java.Rmi.Server
         /// </summary>
         public static Java.Rmi.Server.RMIClassLoaderSpi DefaultProviderInstance
         {
-            get { return SExecute<Java.Rmi.Server.RMIClassLoaderSpi>(LocalClazz, "getDefaultProviderInstance"); }
+            get { return SExecute<Java.Rmi.Server.RMIClassLoaderSpi>(LocalBridgeClazz, "getDefaultProviderInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#loadClass(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
@@ -60,7 +60,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0, string arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Lang.Class>(LocalClazz, "loadClass", arg0, arg1, arg2);
+            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "loadClass", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#loadClass(java.lang.String,java.lang.String)"/>
@@ -73,7 +73,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0, string arg1)
         {
-            return SExecute<Java.Lang.Class>(LocalClazz, "loadClass", arg0, arg1);
+            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "loadClass", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#loadClass(java.net.URL,java.lang.String)"/>
@@ -86,7 +86,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class LoadClass<ReturnExtendsobject>(Java.Net.URL arg0, string arg1)
         {
-            return SExecute<Java.Lang.Class>(LocalClazz, "loadClass", arg0, arg1);
+            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "loadClass", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#loadProxyClass(java.lang.String,java.lang.String[],java.lang.ClassLoader)"/>
@@ -100,7 +100,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Net.MalformedURLException"/>
         public static Java.Lang.Class LoadProxyClass<ReturnExtendsobject>(string arg0, string[] arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Lang.Class>(LocalClazz, "loadProxyClass", arg0, arg1, arg2);
+            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "loadProxyClass", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#getClassLoader(java.lang.String)"/>
@@ -111,7 +111,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Lang.SecurityException"/>
         public static Java.Lang.ClassLoader GetClassLoader(string arg0)
         {
-            return SExecute<Java.Lang.ClassLoader>(LocalClazz, "getClassLoader", arg0);
+            return SExecute<Java.Lang.ClassLoader>(LocalBridgeClazz, "getClassLoader", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoader.html#getClassAnnotation(java.lang.Class)"/>
@@ -120,7 +120,7 @@ namespace Java.Rmi.Server
         /// <returns><see cref="string"/></returns>
         public static string GetClassAnnotation(Java.Lang.Class arg0)
         {
-            return SExecute<string>(LocalClazz, "getClassAnnotation", arg0);
+            return SExecute<string>(LocalBridgeClazz, "getClassAnnotation", arg0);
         }
 
         #endregion

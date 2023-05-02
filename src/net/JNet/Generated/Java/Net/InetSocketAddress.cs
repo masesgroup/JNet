@@ -75,7 +75,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.InetSocketAddress"/></returns>
         public static Java.Net.InetSocketAddress CreateUnresolved(string arg0, int arg1)
         {
-            return SExecute<Java.Net.InetSocketAddress>(LocalClazz, "createUnresolved", arg0, arg1);
+            return SExecute<Java.Net.InetSocketAddress>(LocalBridgeClazz, "createUnresolved", arg0, arg1);
         }
 
         #endregion

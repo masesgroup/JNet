@@ -40,27 +40,27 @@ namespace Java.Time.Temporal
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#DAY_OF_QUARTER"/>
         /// </summary>
-        public static Java.Time.Temporal.TemporalField DAY_OF_QUARTER { get { return SGetField<Java.Time.Temporal.TemporalField>(LocalClazz, "DAY_OF_QUARTER"); } }
+        public static Java.Time.Temporal.TemporalField DAY_OF_QUARTER { get { return SGetField<Java.Time.Temporal.TemporalField>(LocalBridgeClazz, "DAY_OF_QUARTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#QUARTER_OF_YEAR"/>
         /// </summary>
-        public static Java.Time.Temporal.TemporalField QUARTER_OF_YEAR { get { return SGetField<Java.Time.Temporal.TemporalField>(LocalClazz, "QUARTER_OF_YEAR"); } }
+        public static Java.Time.Temporal.TemporalField QUARTER_OF_YEAR { get { return SGetField<Java.Time.Temporal.TemporalField>(LocalBridgeClazz, "QUARTER_OF_YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#WEEK_BASED_YEAR"/>
         /// </summary>
-        public static Java.Time.Temporal.TemporalField WEEK_BASED_YEAR { get { return SGetField<Java.Time.Temporal.TemporalField>(LocalClazz, "WEEK_BASED_YEAR"); } }
+        public static Java.Time.Temporal.TemporalField WEEK_BASED_YEAR { get { return SGetField<Java.Time.Temporal.TemporalField>(LocalBridgeClazz, "WEEK_BASED_YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#WEEK_OF_WEEK_BASED_YEAR"/>
         /// </summary>
-        public static Java.Time.Temporal.TemporalField WEEK_OF_WEEK_BASED_YEAR { get { return SGetField<Java.Time.Temporal.TemporalField>(LocalClazz, "WEEK_OF_WEEK_BASED_YEAR"); } }
+        public static Java.Time.Temporal.TemporalField WEEK_OF_WEEK_BASED_YEAR { get { return SGetField<Java.Time.Temporal.TemporalField>(LocalBridgeClazz, "WEEK_OF_WEEK_BASED_YEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#QUARTER_YEARS"/>
         /// </summary>
-        public static Java.Time.Temporal.TemporalUnit QUARTER_YEARS { get { return SGetField<Java.Time.Temporal.TemporalUnit>(LocalClazz, "QUARTER_YEARS"); } }
+        public static Java.Time.Temporal.TemporalUnit QUARTER_YEARS { get { return SGetField<Java.Time.Temporal.TemporalUnit>(LocalBridgeClazz, "QUARTER_YEARS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html#WEEK_BASED_YEARS"/>
         /// </summary>
-        public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS { get { return SGetField<Java.Time.Temporal.TemporalUnit>(LocalClazz, "WEEK_BASED_YEARS"); } }
+        public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS { get { return SGetField<Java.Time.Temporal.TemporalUnit>(LocalBridgeClazz, "WEEK_BASED_YEARS"); } }
 
         #endregion
 

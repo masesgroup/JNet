@@ -49,7 +49,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.html#NO_PROXY"/>
         /// </summary>
-        public static Java.Net.Proxy NO_PROXY { get { return SGetField<Java.Net.Proxy>(LocalClazz, "NO_PROXY"); } }
+        public static Java.Net.Proxy NO_PROXY { get { return SGetField<Java.Net.Proxy>(LocalBridgeClazz, "NO_PROXY"); } }
 
         #endregion
 
@@ -93,15 +93,15 @@ namespace Java.Net
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#DIRECT"/>
             /// </summary>
-            public static Java.Net.Proxy.Type DIRECT { get { return SGetField<Java.Net.Proxy.Type>(LocalClazz, "DIRECT"); } }
+            public static Java.Net.Proxy.Type DIRECT { get { return SGetField<Java.Net.Proxy.Type>(LocalBridgeClazz, "DIRECT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#HTTP"/>
             /// </summary>
-            public static Java.Net.Proxy.Type HTTP { get { return SGetField<Java.Net.Proxy.Type>(LocalClazz, "HTTP"); } }
+            public static Java.Net.Proxy.Type HTTP { get { return SGetField<Java.Net.Proxy.Type>(LocalBridgeClazz, "HTTP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#SOCKS"/>
             /// </summary>
-            public static Java.Net.Proxy.Type SOCKS { get { return SGetField<Java.Net.Proxy.Type>(LocalClazz, "SOCKS"); } }
+            public static Java.Net.Proxy.Type SOCKS { get { return SGetField<Java.Net.Proxy.Type>(LocalBridgeClazz, "SOCKS"); } }
 
             #endregion
 
@@ -111,7 +111,7 @@ namespace Java.Net
             /// </summary>
             public static Java.Net.Proxy.Type[] Values
             {
-                get { return SExecuteArray<Java.Net.Proxy.Type>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Net.Proxy.Type>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html#valueOf(java.lang.String)"/>
@@ -120,7 +120,7 @@ namespace Java.Net
             /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
             public static Java.Net.Proxy.Type ValueOf(string arg0)
             {
-                return SExecute<Java.Net.Proxy.Type>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Net.Proxy.Type>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

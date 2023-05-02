@@ -44,7 +44,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#AH"/>
         /// </summary>
-        public static Java.Time.Chrono.HijrahEra AH { get { return SGetField<Java.Time.Chrono.HijrahEra>(LocalClazz, "AH"); } }
+        public static Java.Time.Chrono.HijrahEra AH { get { return SGetField<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "AH"); } }
 
         #endregion
 
@@ -54,7 +54,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public static Java.Time.Chrono.HijrahEra[] Values
         {
-            get { return SExecuteArray<Java.Time.Chrono.HijrahEra>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#of(int)"/>
@@ -63,7 +63,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
         public static Java.Time.Chrono.HijrahEra Of(int arg0)
         {
-            return SExecute<Java.Time.Chrono.HijrahEra>(LocalClazz, "of", arg0);
+            return SExecute<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html#valueOf(java.lang.String)"/>
@@ -72,7 +72,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
         public static Java.Time.Chrono.HijrahEra ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Chrono.HijrahEra>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

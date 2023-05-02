@@ -40,147 +40,147 @@ namespace Javax.Xml.Datatype
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#APRIL"/>
         /// </summary>
-        public static int APRIL { get { return SGetField<int>(LocalClazz, "APRIL"); } }
+        public static int APRIL { get { return SGetField<int>(LocalBridgeClazz, "APRIL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#AUGUST"/>
         /// </summary>
-        public static int AUGUST { get { return SGetField<int>(LocalClazz, "AUGUST"); } }
+        public static int AUGUST { get { return SGetField<int>(LocalBridgeClazz, "AUGUST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DECEMBER"/>
         /// </summary>
-        public static int DECEMBER { get { return SGetField<int>(LocalClazz, "DECEMBER"); } }
+        public static int DECEMBER { get { return SGetField<int>(LocalBridgeClazz, "DECEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#EQUAL"/>
         /// </summary>
-        public static int EQUAL { get { return SGetField<int>(LocalClazz, "EQUAL"); } }
+        public static int EQUAL { get { return SGetField<int>(LocalBridgeClazz, "EQUAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#FEBRUARY"/>
         /// </summary>
-        public static int FEBRUARY { get { return SGetField<int>(LocalClazz, "FEBRUARY"); } }
+        public static int FEBRUARY { get { return SGetField<int>(LocalBridgeClazz, "FEBRUARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#FIELD_UNDEFINED"/>
         /// </summary>
-        public static int FIELD_UNDEFINED { get { return SGetField<int>(LocalClazz, "FIELD_UNDEFINED"); } }
+        public static int FIELD_UNDEFINED { get { return SGetField<int>(LocalBridgeClazz, "FIELD_UNDEFINED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GREATER"/>
         /// </summary>
-        public static int GREATER { get { return SGetField<int>(LocalClazz, "GREATER"); } }
+        public static int GREATER { get { return SGetField<int>(LocalBridgeClazz, "GREATER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#INDETERMINATE"/>
         /// </summary>
-        public static int INDETERMINATE { get { return SGetField<int>(LocalClazz, "INDETERMINATE"); } }
+        public static int INDETERMINATE { get { return SGetField<int>(LocalBridgeClazz, "INDETERMINATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#JANUARY"/>
         /// </summary>
-        public static int JANUARY { get { return SGetField<int>(LocalClazz, "JANUARY"); } }
+        public static int JANUARY { get { return SGetField<int>(LocalBridgeClazz, "JANUARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#JULY"/>
         /// </summary>
-        public static int JULY { get { return SGetField<int>(LocalClazz, "JULY"); } }
+        public static int JULY { get { return SGetField<int>(LocalBridgeClazz, "JULY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#JUNE"/>
         /// </summary>
-        public static int JUNE { get { return SGetField<int>(LocalClazz, "JUNE"); } }
+        public static int JUNE { get { return SGetField<int>(LocalBridgeClazz, "JUNE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#LESSER"/>
         /// </summary>
-        public static int LESSER { get { return SGetField<int>(LocalClazz, "LESSER"); } }
+        public static int LESSER { get { return SGetField<int>(LocalBridgeClazz, "LESSER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MARCH"/>
         /// </summary>
-        public static int MARCH { get { return SGetField<int>(LocalClazz, "MARCH"); } }
+        public static int MARCH { get { return SGetField<int>(LocalBridgeClazz, "MARCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MAX_TIMEZONE_OFFSET"/>
         /// </summary>
-        public static int MAX_TIMEZONE_OFFSET { get { return SGetField<int>(LocalClazz, "MAX_TIMEZONE_OFFSET"); } }
+        public static int MAX_TIMEZONE_OFFSET { get { return SGetField<int>(LocalBridgeClazz, "MAX_TIMEZONE_OFFSET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MAY"/>
         /// </summary>
-        public static int MAY { get { return SGetField<int>(LocalClazz, "MAY"); } }
+        public static int MAY { get { return SGetField<int>(LocalBridgeClazz, "MAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MIN_TIMEZONE_OFFSET"/>
         /// </summary>
-        public static int MIN_TIMEZONE_OFFSET { get { return SGetField<int>(LocalClazz, "MIN_TIMEZONE_OFFSET"); } }
+        public static int MIN_TIMEZONE_OFFSET { get { return SGetField<int>(LocalBridgeClazz, "MIN_TIMEZONE_OFFSET"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#NOVEMBER"/>
         /// </summary>
-        public static int NOVEMBER { get { return SGetField<int>(LocalClazz, "NOVEMBER"); } }
+        public static int NOVEMBER { get { return SGetField<int>(LocalBridgeClazz, "NOVEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#OCTOBER"/>
         /// </summary>
-        public static int OCTOBER { get { return SGetField<int>(LocalClazz, "OCTOBER"); } }
+        public static int OCTOBER { get { return SGetField<int>(LocalBridgeClazz, "OCTOBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#SEPTEMBER"/>
         /// </summary>
-        public static int SEPTEMBER { get { return SGetField<int>(LocalClazz, "SEPTEMBER"); } }
+        public static int SEPTEMBER { get { return SGetField<int>(LocalBridgeClazz, "SEPTEMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DAYS"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field DAYS { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalClazz, "DAYS"); } }
+        public static Javax.Xml.Datatype.DatatypeConstants.Field DAYS { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalBridgeClazz, "DAYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#HOURS"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field HOURS { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalClazz, "HOURS"); } }
+        public static Javax.Xml.Datatype.DatatypeConstants.Field HOURS { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalBridgeClazz, "HOURS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MINUTES"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field MINUTES { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalClazz, "MINUTES"); } }
+        public static Javax.Xml.Datatype.DatatypeConstants.Field MINUTES { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalBridgeClazz, "MINUTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#MONTHS"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field MONTHS { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalClazz, "MONTHS"); } }
+        public static Javax.Xml.Datatype.DatatypeConstants.Field MONTHS { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalBridgeClazz, "MONTHS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#SECONDS"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field SECONDS { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalClazz, "SECONDS"); } }
+        public static Javax.Xml.Datatype.DatatypeConstants.Field SECONDS { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalBridgeClazz, "SECONDS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#YEARS"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeConstants.Field YEARS { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalClazz, "YEARS"); } }
+        public static Javax.Xml.Datatype.DatatypeConstants.Field YEARS { get { return SGetField<Javax.Xml.Datatype.DatatypeConstants.Field>(LocalBridgeClazz, "YEARS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DATE"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName DATE { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "DATE"); } }
+        public static Javax.Xml.Namespace.QName DATE { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DATETIME"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName DATETIME { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "DATETIME"); } }
+        public static Javax.Xml.Namespace.QName DATETIME { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "DATETIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DURATION"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName DURATION { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "DURATION"); } }
+        public static Javax.Xml.Namespace.QName DURATION { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "DURATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DURATION_DAYTIME"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName DURATION_DAYTIME { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "DURATION_DAYTIME"); } }
+        public static Javax.Xml.Namespace.QName DURATION_DAYTIME { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "DURATION_DAYTIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#DURATION_YEARMONTH"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName DURATION_YEARMONTH { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "DURATION_YEARMONTH"); } }
+        public static Javax.Xml.Namespace.QName DURATION_YEARMONTH { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "DURATION_YEARMONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GDAY"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName GDAY { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "GDAY"); } }
+        public static Javax.Xml.Namespace.QName GDAY { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "GDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GMONTH"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName GMONTH { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "GMONTH"); } }
+        public static Javax.Xml.Namespace.QName GMONTH { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "GMONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GMONTHDAY"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName GMONTHDAY { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "GMONTHDAY"); } }
+        public static Javax.Xml.Namespace.QName GMONTHDAY { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "GMONTHDAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GYEAR"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName GYEAR { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "GYEAR"); } }
+        public static Javax.Xml.Namespace.QName GYEAR { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "GYEAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#GYEARMONTH"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName GYEARMONTH { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "GYEARMONTH"); } }
+        public static Javax.Xml.Namespace.QName GYEARMONTH { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "GYEARMONTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConstants.html#TIME"/>
         /// </summary>
-        public static Javax.Xml.Namespace.QName TIME { get { return SGetField<Javax.Xml.Namespace.QName>(LocalClazz, "TIME"); } }
+        public static Javax.Xml.Namespace.QName TIME { get { return SGetField<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "TIME"); } }
 
         #endregion
 

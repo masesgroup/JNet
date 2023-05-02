@@ -49,7 +49,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Net.Http.HttpHeaders"/></returns>
         public static Java.Net.Http.HttpHeaders Of(Java.Util.Map<string, Java.Util.List<string>> arg0, Java.Util.Function.BiPredicate<string, string> arg1)
         {
-            return SExecute<Java.Net.Http.HttpHeaders>(LocalClazz, "of", arg0, arg1);
+            return SExecute<Java.Net.Http.HttpHeaders>(LocalBridgeClazz, "of", arg0, arg1);
         }
 
         #endregion

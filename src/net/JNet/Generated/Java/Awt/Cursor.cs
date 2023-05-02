@@ -52,63 +52,63 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#CROSSHAIR_CURSOR"/>
         /// </summary>
-        public static int CROSSHAIR_CURSOR { get { return SGetField<int>(LocalClazz, "CROSSHAIR_CURSOR"); } }
+        public static int CROSSHAIR_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "CROSSHAIR_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#CUSTOM_CURSOR"/>
         /// </summary>
-        public static int CUSTOM_CURSOR { get { return SGetField<int>(LocalClazz, "CUSTOM_CURSOR"); } }
+        public static int CUSTOM_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "CUSTOM_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#DEFAULT_CURSOR"/>
         /// </summary>
-        public static int DEFAULT_CURSOR { get { return SGetField<int>(LocalClazz, "DEFAULT_CURSOR"); } }
+        public static int DEFAULT_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "DEFAULT_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#E_RESIZE_CURSOR"/>
         /// </summary>
-        public static int E_RESIZE_CURSOR { get { return SGetField<int>(LocalClazz, "E_RESIZE_CURSOR"); } }
+        public static int E_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "E_RESIZE_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#HAND_CURSOR"/>
         /// </summary>
-        public static int HAND_CURSOR { get { return SGetField<int>(LocalClazz, "HAND_CURSOR"); } }
+        public static int HAND_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "HAND_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#MOVE_CURSOR"/>
         /// </summary>
-        public static int MOVE_CURSOR { get { return SGetField<int>(LocalClazz, "MOVE_CURSOR"); } }
+        public static int MOVE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "MOVE_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#N_RESIZE_CURSOR"/>
         /// </summary>
-        public static int N_RESIZE_CURSOR { get { return SGetField<int>(LocalClazz, "N_RESIZE_CURSOR"); } }
+        public static int N_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "N_RESIZE_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#NE_RESIZE_CURSOR"/>
         /// </summary>
-        public static int NE_RESIZE_CURSOR { get { return SGetField<int>(LocalClazz, "NE_RESIZE_CURSOR"); } }
+        public static int NE_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "NE_RESIZE_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#NW_RESIZE_CURSOR"/>
         /// </summary>
-        public static int NW_RESIZE_CURSOR { get { return SGetField<int>(LocalClazz, "NW_RESIZE_CURSOR"); } }
+        public static int NW_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "NW_RESIZE_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#S_RESIZE_CURSOR"/>
         /// </summary>
-        public static int S_RESIZE_CURSOR { get { return SGetField<int>(LocalClazz, "S_RESIZE_CURSOR"); } }
+        public static int S_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "S_RESIZE_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#SE_RESIZE_CURSOR"/>
         /// </summary>
-        public static int SE_RESIZE_CURSOR { get { return SGetField<int>(LocalClazz, "SE_RESIZE_CURSOR"); } }
+        public static int SE_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "SE_RESIZE_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#SW_RESIZE_CURSOR"/>
         /// </summary>
-        public static int SW_RESIZE_CURSOR { get { return SGetField<int>(LocalClazz, "SW_RESIZE_CURSOR"); } }
+        public static int SW_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "SW_RESIZE_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#TEXT_CURSOR"/>
         /// </summary>
-        public static int TEXT_CURSOR { get { return SGetField<int>(LocalClazz, "TEXT_CURSOR"); } }
+        public static int TEXT_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "TEXT_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#W_RESIZE_CURSOR"/>
         /// </summary>
-        public static int W_RESIZE_CURSOR { get { return SGetField<int>(LocalClazz, "W_RESIZE_CURSOR"); } }
+        public static int W_RESIZE_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "W_RESIZE_CURSOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#WAIT_CURSOR"/>
         /// </summary>
-        public static int WAIT_CURSOR { get { return SGetField<int>(LocalClazz, "WAIT_CURSOR"); } }
+        public static int WAIT_CURSOR { get { return SGetField<int>(LocalBridgeClazz, "WAIT_CURSOR"); } }
 
         #endregion
 
@@ -118,7 +118,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Cursor DefaultCursor
         {
-            get { return SExecute<Java.Awt.Cursor>(LocalClazz, "getDefaultCursor"); }
+            get { return SExecute<Java.Awt.Cursor>(LocalBridgeClazz, "getDefaultCursor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getPredefinedCursor(int)"/>
@@ -127,7 +127,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Cursor"/></returns>
         public static Java.Awt.Cursor GetPredefinedCursor(int arg0)
         {
-            return SExecute<Java.Awt.Cursor>(LocalClazz, "getPredefinedCursor", arg0);
+            return SExecute<Java.Awt.Cursor>(LocalBridgeClazz, "getPredefinedCursor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#getSystemCustomCursor(java.lang.String)"/>
@@ -138,7 +138,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Cursor GetSystemCustomCursor(string arg0)
         {
-            return SExecute<Java.Awt.Cursor>(LocalClazz, "getSystemCustomCursor", arg0);
+            return SExecute<Java.Awt.Cursor>(LocalBridgeClazz, "getSystemCustomCursor", arg0);
         }
 
         #endregion

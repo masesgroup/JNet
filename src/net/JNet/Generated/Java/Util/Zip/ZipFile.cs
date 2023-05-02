@@ -104,11 +104,11 @@ namespace Java.Util.Zip
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_DELETE"/>
         /// </summary>
-        public static int OPEN_DELETE { get { return SGetField<int>(LocalClazz, "OPEN_DELETE"); } }
+        public static int OPEN_DELETE { get { return SGetField<int>(LocalBridgeClazz, "OPEN_DELETE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_READ"/>
         /// </summary>
-        public static int OPEN_READ { get { return SGetField<int>(LocalClazz, "OPEN_READ"); } }
+        public static int OPEN_READ { get { return SGetField<int>(LocalBridgeClazz, "OPEN_READ"); } }
 
         #endregion
 

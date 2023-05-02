@@ -40,27 +40,27 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#CLOSE_FAILURE"/>
         /// </summary>
-        public static int CLOSE_FAILURE { get { return SGetField<int>(LocalClazz, "CLOSE_FAILURE"); } }
+        public static int CLOSE_FAILURE { get { return SGetField<int>(LocalBridgeClazz, "CLOSE_FAILURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#FLUSH_FAILURE"/>
         /// </summary>
-        public static int FLUSH_FAILURE { get { return SGetField<int>(LocalClazz, "FLUSH_FAILURE"); } }
+        public static int FLUSH_FAILURE { get { return SGetField<int>(LocalBridgeClazz, "FLUSH_FAILURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#FORMAT_FAILURE"/>
         /// </summary>
-        public static int FORMAT_FAILURE { get { return SGetField<int>(LocalClazz, "FORMAT_FAILURE"); } }
+        public static int FORMAT_FAILURE { get { return SGetField<int>(LocalBridgeClazz, "FORMAT_FAILURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#GENERIC_FAILURE"/>
         /// </summary>
-        public static int GENERIC_FAILURE { get { return SGetField<int>(LocalClazz, "GENERIC_FAILURE"); } }
+        public static int GENERIC_FAILURE { get { return SGetField<int>(LocalBridgeClazz, "GENERIC_FAILURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#OPEN_FAILURE"/>
         /// </summary>
-        public static int OPEN_FAILURE { get { return SGetField<int>(LocalClazz, "OPEN_FAILURE"); } }
+        public static int OPEN_FAILURE { get { return SGetField<int>(LocalBridgeClazz, "OPEN_FAILURE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#WRITE_FAILURE"/>
         /// </summary>
-        public static int WRITE_FAILURE { get { return SGetField<int>(LocalClazz, "WRITE_FAILURE"); } }
+        public static int WRITE_FAILURE { get { return SGetField<int>(LocalBridgeClazz, "WRITE_FAILURE"); } }
 
         #endregion
 

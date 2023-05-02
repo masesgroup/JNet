@@ -63,7 +63,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static string RoleValueToString(Java.Util.List<Javax.Management.ObjectName> arg0)
         {
-            return SExecute<string>(LocalClazz, "roleValueToString", arg0);
+            return SExecute<string>(LocalBridgeClazz, "roleValueToString", arg0);
         }
 
         #endregion

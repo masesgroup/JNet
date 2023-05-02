@@ -46,7 +46,7 @@ namespace Java.Util.Function
         /// </summary>
         public static Java.Util.Function.IntUnaryOperator Identity
         {
-            get { return SExecute<Java.Util.Function.IntUnaryOperator>(LocalClazz, "identity"); }
+            get { return SExecute<Java.Util.Function.IntUnaryOperator>(LocalBridgeClazz, "identity"); }
         }
 
         #endregion

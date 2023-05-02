@@ -214,15 +214,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#ALL"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType ALL { get { return SGetField<Java.Awt.JobAttributes.DefaultSelectionType>(LocalClazz, "ALL"); } }
+            public static Java.Awt.JobAttributes.DefaultSelectionType ALL { get { return SGetField<Java.Awt.JobAttributes.DefaultSelectionType>(LocalBridgeClazz, "ALL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#RANGE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType RANGE { get { return SGetField<Java.Awt.JobAttributes.DefaultSelectionType>(LocalClazz, "RANGE"); } }
+            public static Java.Awt.JobAttributes.DefaultSelectionType RANGE { get { return SGetField<Java.Awt.JobAttributes.DefaultSelectionType>(LocalBridgeClazz, "RANGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#SELECTION"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType SELECTION { get { return SGetField<Java.Awt.JobAttributes.DefaultSelectionType>(LocalClazz, "SELECTION"); } }
+            public static Java.Awt.JobAttributes.DefaultSelectionType SELECTION { get { return SGetField<Java.Awt.JobAttributes.DefaultSelectionType>(LocalBridgeClazz, "SELECTION"); } }
 
             #endregion
 
@@ -257,11 +257,11 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DestinationType.html#FILE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DestinationType FILE { get { return SGetField<Java.Awt.JobAttributes.DestinationType>(LocalClazz, "FILE"); } }
+            public static Java.Awt.JobAttributes.DestinationType FILE { get { return SGetField<Java.Awt.JobAttributes.DestinationType>(LocalBridgeClazz, "FILE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DestinationType.html#PRINTER"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DestinationType PRINTER { get { return SGetField<Java.Awt.JobAttributes.DestinationType>(LocalClazz, "PRINTER"); } }
+            public static Java.Awt.JobAttributes.DestinationType PRINTER { get { return SGetField<Java.Awt.JobAttributes.DestinationType>(LocalBridgeClazz, "PRINTER"); } }
 
             #endregion
 
@@ -296,15 +296,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DialogType.html#COMMON"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DialogType COMMON { get { return SGetField<Java.Awt.JobAttributes.DialogType>(LocalClazz, "COMMON"); } }
+            public static Java.Awt.JobAttributes.DialogType COMMON { get { return SGetField<Java.Awt.JobAttributes.DialogType>(LocalBridgeClazz, "COMMON"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DialogType.html#NATIVE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DialogType NATIVE { get { return SGetField<Java.Awt.JobAttributes.DialogType>(LocalClazz, "NATIVE"); } }
+            public static Java.Awt.JobAttributes.DialogType NATIVE { get { return SGetField<Java.Awt.JobAttributes.DialogType>(LocalBridgeClazz, "NATIVE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DialogType.html#NONE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.DialogType NONE { get { return SGetField<Java.Awt.JobAttributes.DialogType>(LocalClazz, "NONE"); } }
+            public static Java.Awt.JobAttributes.DialogType NONE { get { return SGetField<Java.Awt.JobAttributes.DialogType>(LocalBridgeClazz, "NONE"); } }
 
             #endregion
 
@@ -339,11 +339,11 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_COLLATED_COPIES"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_COLLATED_COPIES { get { return SGetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>(LocalClazz, "SEPARATE_DOCUMENTS_COLLATED_COPIES"); } }
+            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_COLLATED_COPIES { get { return SGetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>(LocalBridgeClazz, "SEPARATE_DOCUMENTS_COLLATED_COPIES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_UNCOLLATED_COPIES"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_UNCOLLATED_COPIES { get { return SGetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>(LocalClazz, "SEPARATE_DOCUMENTS_UNCOLLATED_COPIES"); } }
+            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_UNCOLLATED_COPIES { get { return SGetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>(LocalBridgeClazz, "SEPARATE_DOCUMENTS_UNCOLLATED_COPIES"); } }
 
             #endregion
 
@@ -378,15 +378,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#ONE_SIDED"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.SidesType ONE_SIDED { get { return SGetField<Java.Awt.JobAttributes.SidesType>(LocalClazz, "ONE_SIDED"); } }
+            public static Java.Awt.JobAttributes.SidesType ONE_SIDED { get { return SGetField<Java.Awt.JobAttributes.SidesType>(LocalBridgeClazz, "ONE_SIDED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#TWO_SIDED_LONG_EDGE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_LONG_EDGE { get { return SGetField<Java.Awt.JobAttributes.SidesType>(LocalClazz, "TWO_SIDED_LONG_EDGE"); } }
+            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_LONG_EDGE { get { return SGetField<Java.Awt.JobAttributes.SidesType>(LocalBridgeClazz, "TWO_SIDED_LONG_EDGE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#TWO_SIDED_SHORT_EDGE"/>
             /// </summary>
-            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_SHORT_EDGE { get { return SGetField<Java.Awt.JobAttributes.SidesType>(LocalClazz, "TWO_SIDED_SHORT_EDGE"); } }
+            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_SHORT_EDGE { get { return SGetField<Java.Awt.JobAttributes.SidesType>(LocalBridgeClazz, "TWO_SIDED_SHORT_EDGE"); } }
 
             #endregion
 

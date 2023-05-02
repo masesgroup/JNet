@@ -90,23 +90,23 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#ALL_COLUMNS"/>
         /// </summary>
-        public static int ALL_COLUMNS { get { return SGetField<int>(LocalClazz, "ALL_COLUMNS"); } }
+        public static int ALL_COLUMNS { get { return SGetField<int>(LocalBridgeClazz, "ALL_COLUMNS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#DELETE"/>
         /// </summary>
-        public static int DELETE { get { return SGetField<int>(LocalClazz, "DELETE"); } }
+        public static int DELETE { get { return SGetField<int>(LocalBridgeClazz, "DELETE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#HEADER_ROW"/>
         /// </summary>
-        public static int HEADER_ROW { get { return SGetField<int>(LocalClazz, "HEADER_ROW"); } }
+        public static int HEADER_ROW { get { return SGetField<int>(LocalBridgeClazz, "HEADER_ROW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#INSERT"/>
         /// </summary>
-        public static int INSERT { get { return SGetField<int>(LocalClazz, "INSERT"); } }
+        public static int INSERT { get { return SGetField<int>(LocalBridgeClazz, "INSERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#UPDATE"/>
         /// </summary>
-        public static int UPDATE { get { return SGetField<int>(LocalClazz, "UPDATE"); } }
+        public static int UPDATE { get { return SGetField<int>(LocalBridgeClazz, "UPDATE"); } }
 
         #endregion
 

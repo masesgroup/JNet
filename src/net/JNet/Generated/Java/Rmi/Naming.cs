@@ -50,7 +50,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Net.MalformedURLException"/>
         public static string[] List(string arg0)
         {
-            return SExecuteArray<string>(LocalClazz, "list", arg0);
+            return SExecuteArray<string>(LocalBridgeClazz, "list", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#lookup(java.lang.String)"/>
@@ -62,7 +62,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote Lookup(string arg0)
         {
-            return SExecute<Java.Rmi.Remote>(LocalClazz, "lookup", arg0);
+            return SExecute<Java.Rmi.Remote>(LocalBridgeClazz, "lookup", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#bind(java.lang.String,java.rmi.Remote)"/>
@@ -74,7 +74,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static void Bind(string arg0, Java.Rmi.Remote arg1)
         {
-            SExecute(LocalClazz, "bind", arg0, arg1);
+            SExecute(LocalBridgeClazz, "bind", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#rebind(java.lang.String,java.rmi.Remote)"/>
@@ -85,7 +85,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Net.MalformedURLException"/>
         public static void Rebind(string arg0, Java.Rmi.Remote arg1)
         {
-            SExecute(LocalClazz, "rebind", arg0, arg1);
+            SExecute(LocalBridgeClazz, "rebind", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/Naming.html#unbind(java.lang.String)"/>
@@ -96,7 +96,7 @@ namespace Java.Rmi
         /// <exception cref="Java.Net.MalformedURLException"/>
         public static void Unbind(string arg0)
         {
-            SExecute(LocalClazz, "unbind", arg0);
+            SExecute(LocalBridgeClazz, "unbind", arg0);
         }
 
         #endregion

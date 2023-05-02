@@ -40,11 +40,11 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#documentBaseKey"/>
         /// </summary>
-        public static string documentBaseKey { get { return SGetField<string>(LocalClazz, "documentBaseKey"); } }
+        public static string documentBaseKey { get { return SGetField<string>(LocalBridgeClazz, "documentBaseKey"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#propertyKey"/>
         /// </summary>
-        public static string propertyKey { get { return SGetField<string>(LocalClazz, "propertyKey"); } }
+        public static string propertyKey { get { return SGetField<string>(LocalBridgeClazz, "propertyKey"); } }
 
         #endregion
 
@@ -56,7 +56,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="bool"/></returns>
         public static bool IsHTMLString(string arg0)
         {
-            return SExecute<bool>(LocalClazz, "isHTMLString", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isHTMLString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#getHTMLBaseline(javax.swing.text.View,int,int)"/>
@@ -67,7 +67,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="int"/></returns>
         public static int GetHTMLBaseline(Javax.Swing.Text.View arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalClazz, "getHTMLBaseline", arg0, arg1, arg2);
+            return SExecute<int>(LocalBridgeClazz, "getHTMLBaseline", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#createHTMLView(javax.swing.JComponent,java.lang.String)"/>
@@ -77,7 +77,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public static Javax.Swing.Text.View CreateHTMLView(Javax.Swing.JComponent arg0, string arg1)
         {
-            return SExecute<Javax.Swing.Text.View>(LocalClazz, "createHTMLView", arg0, arg1);
+            return SExecute<Javax.Swing.Text.View>(LocalBridgeClazz, "createHTMLView", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#updateRenderer(javax.swing.JComponent,java.lang.String)"/>
@@ -86,7 +86,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg1"><see cref="string"/></param>
         public static void UpdateRenderer(Javax.Swing.JComponent arg0, string arg1)
         {
-            SExecute(LocalClazz, "updateRenderer", arg0, arg1);
+            SExecute(LocalBridgeClazz, "updateRenderer", arg0, arg1);
         }
 
         #endregion

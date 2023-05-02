@@ -48,35 +48,35 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOBOTTOM_TOLEFT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PresentationDirection TOBOTTOM_TOLEFT { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalClazz, "TOBOTTOM_TOLEFT"); } }
+        public static Javax.Print.Attribute.Standard.PresentationDirection TOBOTTOM_TOLEFT { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalBridgeClazz, "TOBOTTOM_TOLEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOBOTTOM_TORIGHT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PresentationDirection TOBOTTOM_TORIGHT { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalClazz, "TOBOTTOM_TORIGHT"); } }
+        public static Javax.Print.Attribute.Standard.PresentationDirection TOBOTTOM_TORIGHT { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalBridgeClazz, "TOBOTTOM_TORIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOLEFT_TOBOTTOM"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PresentationDirection TOLEFT_TOBOTTOM { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalClazz, "TOLEFT_TOBOTTOM"); } }
+        public static Javax.Print.Attribute.Standard.PresentationDirection TOLEFT_TOBOTTOM { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalBridgeClazz, "TOLEFT_TOBOTTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOLEFT_TOTOP"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PresentationDirection TOLEFT_TOTOP { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalClazz, "TOLEFT_TOTOP"); } }
+        public static Javax.Print.Attribute.Standard.PresentationDirection TOLEFT_TOTOP { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalBridgeClazz, "TOLEFT_TOTOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TORIGHT_TOBOTTOM"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PresentationDirection TORIGHT_TOBOTTOM { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalClazz, "TORIGHT_TOBOTTOM"); } }
+        public static Javax.Print.Attribute.Standard.PresentationDirection TORIGHT_TOBOTTOM { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalBridgeClazz, "TORIGHT_TOBOTTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TORIGHT_TOTOP"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PresentationDirection TORIGHT_TOTOP { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalClazz, "TORIGHT_TOTOP"); } }
+        public static Javax.Print.Attribute.Standard.PresentationDirection TORIGHT_TOTOP { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalBridgeClazz, "TORIGHT_TOTOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOTOP_TOLEFT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PresentationDirection TOTOP_TOLEFT { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalClazz, "TOTOP_TOLEFT"); } }
+        public static Javax.Print.Attribute.Standard.PresentationDirection TOTOP_TOLEFT { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalBridgeClazz, "TOTOP_TOLEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PresentationDirection.html#TOTOP_TORIGHT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PresentationDirection TOTOP_TORIGHT { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalClazz, "TOTOP_TORIGHT"); } }
+        public static Javax.Print.Attribute.Standard.PresentationDirection TOTOP_TORIGHT { get { return SGetField<Javax.Print.Attribute.Standard.PresentationDirection>(LocalBridgeClazz, "TOTOP_TORIGHT"); } }
 
         #endregion
 

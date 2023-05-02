@@ -95,19 +95,19 @@ namespace Javax.Security.Auth.Login
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html#OPTIONAL"/>
             /// </summary>
-            public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag OPTIONAL { get { return SGetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>(LocalClazz, "OPTIONAL"); } }
+            public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag OPTIONAL { get { return SGetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>(LocalBridgeClazz, "OPTIONAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html#REQUIRED"/>
             /// </summary>
-            public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag REQUIRED { get { return SGetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>(LocalClazz, "REQUIRED"); } }
+            public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag REQUIRED { get { return SGetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>(LocalBridgeClazz, "REQUIRED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html#REQUISITE"/>
             /// </summary>
-            public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag REQUISITE { get { return SGetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>(LocalClazz, "REQUISITE"); } }
+            public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag REQUISITE { get { return SGetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>(LocalBridgeClazz, "REQUISITE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html#SUFFICIENT"/>
             /// </summary>
-            public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag SUFFICIENT { get { return SGetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>(LocalClazz, "SUFFICIENT"); } }
+            public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag SUFFICIENT { get { return SGetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>(LocalBridgeClazz, "SUFFICIENT"); } }
 
             #endregion
 

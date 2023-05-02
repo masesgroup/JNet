@@ -67,11 +67,11 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#HONOR_DISPLAY_PROPERTIES"/>
         /// </summary>
-        public static string HONOR_DISPLAY_PROPERTIES { get { return SGetField<string>(LocalClazz, "HONOR_DISPLAY_PROPERTIES"); } }
+        public static string HONOR_DISPLAY_PROPERTIES { get { return SGetField<string>(LocalBridgeClazz, "HONOR_DISPLAY_PROPERTIES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#W3C_LENGTH_UNITS"/>
         /// </summary>
-        public static string W3C_LENGTH_UNITS { get { return SGetField<string>(LocalClazz, "W3C_LENGTH_UNITS"); } }
+        public static string W3C_LENGTH_UNITS { get { return SGetField<string>(LocalBridgeClazz, "W3C_LENGTH_UNITS"); } }
 
         #endregion
 
@@ -83,7 +83,7 @@ namespace Javax.Swing
         /// <returns><see cref="string"/></returns>
         public static string GetEditorKitClassNameForContentType(string arg0)
         {
-            return SExecute<string>(LocalClazz, "getEditorKitClassNameForContentType", arg0);
+            return SExecute<string>(LocalBridgeClazz, "getEditorKitClassNameForContentType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#createEditorKitForContentType(java.lang.String)"/>
@@ -92,7 +92,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Text.EditorKit"/></returns>
         public static Javax.Swing.Text.EditorKit CreateEditorKitForContentType(string arg0)
         {
-            return SExecute<Javax.Swing.Text.EditorKit>(LocalClazz, "createEditorKitForContentType", arg0);
+            return SExecute<Javax.Swing.Text.EditorKit>(LocalBridgeClazz, "createEditorKitForContentType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String,java.lang.ClassLoader)"/>
@@ -102,7 +102,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         public static void RegisterEditorKitForContentType(string arg0, string arg1, Java.Lang.ClassLoader arg2)
         {
-            SExecute(LocalClazz, "registerEditorKitForContentType", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "registerEditorKitForContentType", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String)"/>
@@ -111,7 +111,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="string"/></param>
         public static void RegisterEditorKitForContentType(string arg0, string arg1)
         {
-            SExecute(LocalClazz, "registerEditorKitForContentType", arg0, arg1);
+            SExecute(LocalBridgeClazz, "registerEditorKitForContentType", arg0, arg1);
         }
 
         #endregion

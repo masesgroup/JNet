@@ -59,7 +59,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.MemoryUsage"/></returns>
         public static Java.Lang.Management.MemoryUsage From(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return SExecute<Java.Lang.Management.MemoryUsage>(LocalClazz, "from", arg0);
+            return SExecute<Java.Lang.Management.MemoryUsage>(LocalBridgeClazz, "from", arg0);
         }
 
         #endregion

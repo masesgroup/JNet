@@ -64,7 +64,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.MonthDay>(LocalClazz, "from", arg0);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#now()"/>
@@ -73,7 +73,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Now()
         {
-            return SExecute<Java.Time.MonthDay>(LocalClazz, "now");
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#now(java.time.Clock)"/>
@@ -82,7 +82,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Now(Java.Time.Clock arg0)
         {
-            return SExecute<Java.Time.MonthDay>(LocalClazz, "now", arg0);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#now(java.time.ZoneId)"/>
@@ -91,7 +91,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Now(Java.Time.ZoneId arg0)
         {
-            return SExecute<Java.Time.MonthDay>(LocalClazz, "now", arg0);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#of(int,int)"/>
@@ -101,7 +101,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Of(int arg0, int arg1)
         {
-            return SExecute<Java.Time.MonthDay>(LocalClazz, "of", arg0, arg1);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#of(java.time.Month,int)"/>
@@ -111,7 +111,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Of(Java.Time.Month arg0, int arg1)
         {
-            return SExecute<Java.Time.MonthDay>(LocalClazz, "of", arg0, arg1);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
@@ -121,7 +121,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Parse(Java.Lang.CharSequence arg0, Java.Time.Format.DateTimeFormatter arg1)
         {
-            return SExecute<Java.Time.MonthDay>(LocalClazz, "parse", arg0, arg1);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "parse", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/MonthDay.html#parse(java.lang.CharSequence)"/>
@@ -130,7 +130,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.MonthDay"/></returns>
         public static Java.Time.MonthDay Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Time.MonthDay>(LocalClazz, "parse", arg0);
+            return SExecute<Java.Time.MonthDay>(LocalBridgeClazz, "parse", arg0);
         }
 
         #endregion

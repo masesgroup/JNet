@@ -186,15 +186,15 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ONE"/>
         /// </summary>
-        public static Java.Math.BigDecimal ONE { get { return SGetField<Java.Math.BigDecimal>(LocalClazz, "ONE"); } }
+        public static Java.Math.BigDecimal ONE { get { return SGetField<Java.Math.BigDecimal>(LocalBridgeClazz, "ONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#TEN"/>
         /// </summary>
-        public static Java.Math.BigDecimal TEN { get { return SGetField<Java.Math.BigDecimal>(LocalClazz, "TEN"); } }
+        public static Java.Math.BigDecimal TEN { get { return SGetField<Java.Math.BigDecimal>(LocalBridgeClazz, "TEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ZERO"/>
         /// </summary>
-        public static Java.Math.BigDecimal ZERO { get { return SGetField<Java.Math.BigDecimal>(LocalClazz, "ZERO"); } }
+        public static Java.Math.BigDecimal ZERO { get { return SGetField<Java.Math.BigDecimal>(LocalBridgeClazz, "ZERO"); } }
 
         #endregion
 
@@ -206,7 +206,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public static Java.Math.BigDecimal ValueOf(double arg0)
         {
-            return SExecute<Java.Math.BigDecimal>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Math.BigDecimal>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#valueOf(long,int)"/>
@@ -216,7 +216,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public static Java.Math.BigDecimal ValueOf(long arg0, int arg1)
         {
-            return SExecute<Java.Math.BigDecimal>(LocalClazz, "valueOf", arg0, arg1);
+            return SExecute<Java.Math.BigDecimal>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#valueOf(long)"/>
@@ -225,7 +225,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public static Java.Math.BigDecimal ValueOf(long arg0)
         {
-            return SExecute<Java.Math.BigDecimal>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Math.BigDecimal>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

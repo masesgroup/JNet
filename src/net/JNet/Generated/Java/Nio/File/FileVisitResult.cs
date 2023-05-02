@@ -40,19 +40,19 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#CONTINUE"/>
         /// </summary>
-        public static Java.Nio.File.FileVisitResult CONTINUE { get { return SGetField<Java.Nio.File.FileVisitResult>(LocalClazz, "CONTINUE"); } }
+        public static Java.Nio.File.FileVisitResult CONTINUE { get { return SGetField<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "CONTINUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SIBLINGS"/>
         /// </summary>
-        public static Java.Nio.File.FileVisitResult SKIP_SIBLINGS { get { return SGetField<Java.Nio.File.FileVisitResult>(LocalClazz, "SKIP_SIBLINGS"); } }
+        public static Java.Nio.File.FileVisitResult SKIP_SIBLINGS { get { return SGetField<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "SKIP_SIBLINGS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SUBTREE"/>
         /// </summary>
-        public static Java.Nio.File.FileVisitResult SKIP_SUBTREE { get { return SGetField<Java.Nio.File.FileVisitResult>(LocalClazz, "SKIP_SUBTREE"); } }
+        public static Java.Nio.File.FileVisitResult SKIP_SUBTREE { get { return SGetField<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "SKIP_SUBTREE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#TERMINATE"/>
         /// </summary>
-        public static Java.Nio.File.FileVisitResult TERMINATE { get { return SGetField<Java.Nio.File.FileVisitResult>(LocalClazz, "TERMINATE"); } }
+        public static Java.Nio.File.FileVisitResult TERMINATE { get { return SGetField<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "TERMINATE"); } }
 
         #endregion
 
@@ -62,7 +62,7 @@ namespace Java.Nio.File
         /// </summary>
         public static Java.Nio.File.FileVisitResult[] Values
         {
-            get { return SExecuteArray<Java.Nio.File.FileVisitResult>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#valueOf(java.lang.String)"/>
@@ -71,7 +71,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         public static Java.Nio.File.FileVisitResult ValueOf(string arg0)
         {
-            return SExecute<Java.Nio.File.FileVisitResult>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Nio.File.FileVisitResult>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

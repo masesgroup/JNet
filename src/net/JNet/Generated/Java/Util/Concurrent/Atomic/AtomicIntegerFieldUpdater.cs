@@ -49,7 +49,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater"/></returns>
         public static Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater NewUpdater(Java.Lang.Class arg0, string arg1)
         {
-            return SExecute<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater>(LocalClazz, "newUpdater", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater>(LocalBridgeClazz, "newUpdater", arg0, arg1);
         }
 
         #endregion
@@ -252,7 +252,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater"/></returns>
         public static Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<U> NewUpdater<U>(Java.Lang.Class arg0, string arg1)
         {
-            return SExecute<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<U>>(LocalClazz, "newUpdater", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.Atomic.AtomicIntegerFieldUpdater<U>>(LocalBridgeClazz, "newUpdater", arg0, arg1);
         }
 
         #endregion

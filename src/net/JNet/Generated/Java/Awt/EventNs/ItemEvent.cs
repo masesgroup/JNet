@@ -51,23 +51,23 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#DESELECTED"/>
         /// </summary>
-        public static int DESELECTED { get { return SGetField<int>(LocalClazz, "DESELECTED"); } }
+        public static int DESELECTED { get { return SGetField<int>(LocalBridgeClazz, "DESELECTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_FIRST"/>
         /// </summary>
-        public static int ITEM_FIRST { get { return SGetField<int>(LocalClazz, "ITEM_FIRST"); } }
+        public static int ITEM_FIRST { get { return SGetField<int>(LocalBridgeClazz, "ITEM_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_LAST"/>
         /// </summary>
-        public static int ITEM_LAST { get { return SGetField<int>(LocalClazz, "ITEM_LAST"); } }
+        public static int ITEM_LAST { get { return SGetField<int>(LocalBridgeClazz, "ITEM_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_STATE_CHANGED"/>
         /// </summary>
-        public static int ITEM_STATE_CHANGED { get { return SGetField<int>(LocalClazz, "ITEM_STATE_CHANGED"); } }
+        public static int ITEM_STATE_CHANGED { get { return SGetField<int>(LocalBridgeClazz, "ITEM_STATE_CHANGED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#SELECTED"/>
         /// </summary>
-        public static int SELECTED { get { return SGetField<int>(LocalClazz, "SELECTED"); } }
+        public static int SELECTED { get { return SGetField<int>(LocalBridgeClazz, "SELECTED"); } }
 
         #endregion
 

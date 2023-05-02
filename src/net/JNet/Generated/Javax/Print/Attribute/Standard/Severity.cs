@@ -44,15 +44,15 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#ERROR"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Severity ERROR { get { return SGetField<Javax.Print.Attribute.Standard.Severity>(LocalClazz, "ERROR"); } }
+        public static Javax.Print.Attribute.Standard.Severity ERROR { get { return SGetField<Javax.Print.Attribute.Standard.Severity>(LocalBridgeClazz, "ERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#REPORT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Severity REPORT { get { return SGetField<Javax.Print.Attribute.Standard.Severity>(LocalClazz, "REPORT"); } }
+        public static Javax.Print.Attribute.Standard.Severity REPORT { get { return SGetField<Javax.Print.Attribute.Standard.Severity>(LocalBridgeClazz, "REPORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#WARNING"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Severity WARNING { get { return SGetField<Javax.Print.Attribute.Standard.Severity>(LocalClazz, "WARNING"); } }
+        public static Javax.Print.Attribute.Standard.Severity WARNING { get { return SGetField<Javax.Print.Attribute.Standard.Severity>(LocalBridgeClazz, "WARNING"); } }
 
         #endregion
 

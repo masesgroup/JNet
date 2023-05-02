@@ -40,63 +40,63 @@ namespace Javax.Xml.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#ATTRIBUTE"/>
         /// </summary>
-        public static int ATTRIBUTE { get { return SGetField<int>(LocalClazz, "ATTRIBUTE"); } }
+        public static int ATTRIBUTE { get { return SGetField<int>(LocalBridgeClazz, "ATTRIBUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#CDATA"/>
         /// </summary>
-        public static int CDATA { get { return SGetField<int>(LocalClazz, "CDATA"); } }
+        public static int CDATA { get { return SGetField<int>(LocalBridgeClazz, "CDATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#CHARACTERS"/>
         /// </summary>
-        public static int CHARACTERS { get { return SGetField<int>(LocalClazz, "CHARACTERS"); } }
+        public static int CHARACTERS { get { return SGetField<int>(LocalBridgeClazz, "CHARACTERS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#COMMENT"/>
         /// </summary>
-        public static int COMMENT { get { return SGetField<int>(LocalClazz, "COMMENT"); } }
+        public static int COMMENT { get { return SGetField<int>(LocalBridgeClazz, "COMMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#DTD"/>
         /// </summary>
-        public static int DTD { get { return SGetField<int>(LocalClazz, "DTD"); } }
+        public static int DTD { get { return SGetField<int>(LocalBridgeClazz, "DTD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#END_DOCUMENT"/>
         /// </summary>
-        public static int END_DOCUMENT { get { return SGetField<int>(LocalClazz, "END_DOCUMENT"); } }
+        public static int END_DOCUMENT { get { return SGetField<int>(LocalBridgeClazz, "END_DOCUMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#END_ELEMENT"/>
         /// </summary>
-        public static int END_ELEMENT { get { return SGetField<int>(LocalClazz, "END_ELEMENT"); } }
+        public static int END_ELEMENT { get { return SGetField<int>(LocalBridgeClazz, "END_ELEMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#ENTITY_DECLARATION"/>
         /// </summary>
-        public static int ENTITY_DECLARATION { get { return SGetField<int>(LocalClazz, "ENTITY_DECLARATION"); } }
+        public static int ENTITY_DECLARATION { get { return SGetField<int>(LocalBridgeClazz, "ENTITY_DECLARATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#ENTITY_REFERENCE"/>
         /// </summary>
-        public static int ENTITY_REFERENCE { get { return SGetField<int>(LocalClazz, "ENTITY_REFERENCE"); } }
+        public static int ENTITY_REFERENCE { get { return SGetField<int>(LocalBridgeClazz, "ENTITY_REFERENCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#NAMESPACE"/>
         /// </summary>
-        public static int NAMESPACE { get { return SGetField<int>(LocalClazz, "NAMESPACE"); } }
+        public static int NAMESPACE { get { return SGetField<int>(LocalBridgeClazz, "NAMESPACE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#NOTATION_DECLARATION"/>
         /// </summary>
-        public static int NOTATION_DECLARATION { get { return SGetField<int>(LocalClazz, "NOTATION_DECLARATION"); } }
+        public static int NOTATION_DECLARATION { get { return SGetField<int>(LocalBridgeClazz, "NOTATION_DECLARATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#PROCESSING_INSTRUCTION"/>
         /// </summary>
-        public static int PROCESSING_INSTRUCTION { get { return SGetField<int>(LocalClazz, "PROCESSING_INSTRUCTION"); } }
+        public static int PROCESSING_INSTRUCTION { get { return SGetField<int>(LocalBridgeClazz, "PROCESSING_INSTRUCTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#SPACE"/>
         /// </summary>
-        public static int SPACE { get { return SGetField<int>(LocalClazz, "SPACE"); } }
+        public static int SPACE { get { return SGetField<int>(LocalBridgeClazz, "SPACE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#START_DOCUMENT"/>
         /// </summary>
-        public static int START_DOCUMENT { get { return SGetField<int>(LocalClazz, "START_DOCUMENT"); } }
+        public static int START_DOCUMENT { get { return SGetField<int>(LocalBridgeClazz, "START_DOCUMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#START_ELEMENT"/>
         /// </summary>
-        public static int START_ELEMENT { get { return SGetField<int>(LocalClazz, "START_ELEMENT"); } }
+        public static int START_ELEMENT { get { return SGetField<int>(LocalBridgeClazz, "START_ELEMENT"); } }
 
         #endregion
 

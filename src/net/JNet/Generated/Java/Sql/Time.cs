@@ -56,7 +56,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.Time"/></returns>
         public static Java.Sql.Time ValueOf(string arg0)
         {
-            return SExecute<Java.Sql.Time>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Sql.Time>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Time.html#valueOf(java.time.LocalTime)"/>
@@ -65,7 +65,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.Time"/></returns>
         public static Java.Sql.Time ValueOf(Java.Time.LocalTime arg0)
         {
-            return SExecute<Java.Sql.Time>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Sql.Time>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

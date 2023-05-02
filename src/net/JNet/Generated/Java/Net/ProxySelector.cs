@@ -46,7 +46,7 @@ namespace Java.Net
         /// </summary>
         public static Java.Net.ProxySelector Default
         {
-            get { return SExecute<Java.Net.ProxySelector>(LocalClazz, "getDefault"); } set { SExecute(LocalClazz, "setDefault", value); }
+            get { return SExecute<Java.Net.ProxySelector>(LocalBridgeClazz, "getDefault"); } set { SExecute(LocalBridgeClazz, "setDefault", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProxySelector.html#of(java.net.InetSocketAddress)"/>
@@ -55,7 +55,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.ProxySelector"/></returns>
         public static Java.Net.ProxySelector Of(Java.Net.InetSocketAddress arg0)
         {
-            return SExecute<Java.Net.ProxySelector>(LocalClazz, "of", arg0);
+            return SExecute<Java.Net.ProxySelector>(LocalBridgeClazz, "of", arg0);
         }
 
         #endregion

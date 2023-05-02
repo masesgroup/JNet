@@ -101,7 +101,7 @@ namespace Java.Util.Jar
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#MANIFEST_NAME"/>
         /// </summary>
-        public static string MANIFEST_NAME { get { return SGetField<string>(LocalClazz, "MANIFEST_NAME"); } }
+        public static string MANIFEST_NAME { get { return SGetField<string>(LocalBridgeClazz, "MANIFEST_NAME"); } }
 
         #endregion
 
@@ -111,14 +111,14 @@ namespace Java.Util.Jar
         /// </summary>
         public static Java.Lang.Runtime.Version BaseVersion
         {
-            get { return SExecute<Java.Lang.Runtime.Version>(LocalClazz, "baseVersion"); }
+            get { return SExecute<Java.Lang.Runtime.Version>(LocalBridgeClazz, "baseVersion"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#runtimeVersion()"/> 
         /// </summary>
         public static Java.Lang.Runtime.Version RuntimeVersion
         {
-            get { return SExecute<Java.Lang.Runtime.Version>(LocalClazz, "runtimeVersion"); }
+            get { return SExecute<Java.Lang.Runtime.Version>(LocalBridgeClazz, "runtimeVersion"); }
         }
 
         #endregion

@@ -58,7 +58,7 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public static Java.Awt.ImageNs.ColorModel RGBdefault
         {
-            get { return SExecute<Java.Awt.ImageNs.ColorModel>(LocalClazz, "getRGBdefault"); }
+            get { return SExecute<Java.Awt.ImageNs.ColorModel>(LocalBridgeClazz, "getRGBdefault"); }
         }
 
         #endregion

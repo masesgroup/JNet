@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public static int DefaultBufferSize
         {
-            get { return SExecute<int>(LocalClazz, "defaultBufferSize"); }
+            get { return SExecute<int>(LocalBridgeClazz, "defaultBufferSize"); }
         }
 
         #endregion

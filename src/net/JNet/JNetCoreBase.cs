@@ -243,10 +243,10 @@ namespace MASES.JNet
         public static string HelpInfo(int? width = null) => Parser.HelpInfo(width);
 
         /// <summary>
-        /// Retrieve the <see cref="IJVMBridgeDefinition.ClassName"/> of <typeparamref name="TClass"></typeparamref>
+        /// Retrieve the <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName.htm"/> of <typeparamref name="TClass"></typeparamref>
         /// </summary>
-        /// <typeparam name="TClass">A type implementing <see cref="IJVMBridgeBase"/></typeparam>
-        /// <returns>The <see cref="IJVMBridgeDefinition.ClassName"/></returns>
+        /// <typeparam name="TClass">A type implementing <see href="https://www.jcobridge.com/api-clr/html/T_MASES_JCOBridge_C2JBridge_IJVMBridgeBase.htm"/></typeparam>
+        /// <returns>The <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName.htm"/></returns>
         public static Java.Lang.Class<TClass> Class<TClass>() where TClass : IJVMBridgeBase, new()
         {
             var className = JVMBridgeBase.ClassNameOf<TClass>();

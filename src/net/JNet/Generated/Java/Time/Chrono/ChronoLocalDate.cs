@@ -58,7 +58,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public static Java.Util.Comparator<Java.Time.Chrono.ChronoLocalDate> TimeLineOrder
         {
-            get { return SExecute<Java.Util.Comparator<Java.Time.Chrono.ChronoLocalDate>>(LocalClazz, "timeLineOrder"); }
+            get { return SExecute<Java.Util.Comparator<Java.Time.Chrono.ChronoLocalDate>>(LocalBridgeClazz, "timeLineOrder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -67,7 +67,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public static Java.Time.Chrono.ChronoLocalDate From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.Chrono.ChronoLocalDate>(LocalClazz, "from", arg0);
+            return SExecute<Java.Time.Chrono.ChronoLocalDate>(LocalBridgeClazz, "from", arg0);
         }
 
         #endregion

@@ -63,7 +63,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool LinesIntersect(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
-            return SExecute<bool>(LocalClazz, "linesIntersect", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecute<bool>(LocalBridgeClazz, "linesIntersect", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDist(double,double,double,double,double,double)"/>
@@ -77,7 +77,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double PtLineDist(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<double>(LocalClazz, "ptLineDist", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<double>(LocalBridgeClazz, "ptLineDist", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDistSq(double,double,double,double,double,double)"/>
@@ -91,7 +91,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double PtLineDistSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<double>(LocalClazz, "ptLineDistSq", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<double>(LocalBridgeClazz, "ptLineDistSq", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDist(double,double,double,double,double,double)"/>
@@ -105,7 +105,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double PtSegDist(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<double>(LocalClazz, "ptSegDist", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<double>(LocalBridgeClazz, "ptSegDist", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDistSq(double,double,double,double,double,double)"/>
@@ -119,7 +119,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double PtSegDistSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<double>(LocalClazz, "ptSegDistSq", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<double>(LocalBridgeClazz, "ptSegDistSq", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#relativeCCW(double,double,double,double,double,double)"/>
@@ -133,7 +133,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public static int RelativeCCW(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<int>(LocalClazz, "relativeCCW", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "relativeCCW", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

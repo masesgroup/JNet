@@ -44,11 +44,11 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#BCE"/>
         /// </summary>
-        public static Java.Time.Chrono.IsoEra BCE { get { return SGetField<Java.Time.Chrono.IsoEra>(LocalClazz, "BCE"); } }
+        public static Java.Time.Chrono.IsoEra BCE { get { return SGetField<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "BCE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#CE"/>
         /// </summary>
-        public static Java.Time.Chrono.IsoEra CE { get { return SGetField<Java.Time.Chrono.IsoEra>(LocalClazz, "CE"); } }
+        public static Java.Time.Chrono.IsoEra CE { get { return SGetField<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "CE"); } }
 
         #endregion
 
@@ -58,7 +58,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public static Java.Time.Chrono.IsoEra[] Values
         {
-            get { return SExecuteArray<Java.Time.Chrono.IsoEra>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#of(int)"/>
@@ -67,7 +67,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
         public static Java.Time.Chrono.IsoEra Of(int arg0)
         {
-            return SExecute<Java.Time.Chrono.IsoEra>(LocalClazz, "of", arg0);
+            return SExecute<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html#valueOf(java.lang.String)"/>
@@ -76,7 +76,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.IsoEra"/></returns>
         public static Java.Time.Chrono.IsoEra ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Chrono.IsoEra>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Time.Chrono.IsoEra>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

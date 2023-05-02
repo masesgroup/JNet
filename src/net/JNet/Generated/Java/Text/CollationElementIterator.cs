@@ -40,7 +40,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#NULLORDER"/>
         /// </summary>
-        public static int NULLORDER { get { return SGetField<int>(LocalClazz, "NULLORDER"); } }
+        public static int NULLORDER { get { return SGetField<int>(LocalBridgeClazz, "NULLORDER"); } }
 
         #endregion
 
@@ -52,7 +52,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public static int PrimaryOrder(int arg0)
         {
-            return SExecute<int>(LocalClazz, "primaryOrder", arg0);
+            return SExecute<int>(LocalBridgeClazz, "primaryOrder", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#secondaryOrder(int)"/>
@@ -61,7 +61,7 @@ namespace Java.Text
         /// <returns><see cref="short"/></returns>
         public static short SecondaryOrder(int arg0)
         {
-            return SExecute<short>(LocalClazz, "secondaryOrder", arg0);
+            return SExecute<short>(LocalBridgeClazz, "secondaryOrder", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html#tertiaryOrder(int)"/>
@@ -70,7 +70,7 @@ namespace Java.Text
         /// <returns><see cref="short"/></returns>
         public static short TertiaryOrder(int arg0)
         {
-            return SExecute<short>(LocalClazz, "tertiaryOrder", arg0);
+            return SExecute<short>(LocalBridgeClazz, "tertiaryOrder", arg0);
         }
 
         #endregion

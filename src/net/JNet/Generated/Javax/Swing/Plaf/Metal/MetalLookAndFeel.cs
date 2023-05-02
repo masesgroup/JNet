@@ -46,301 +46,301 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource AcceleratorForeground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getAcceleratorForeground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getAcceleratorForeground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getAcceleratorSelectedForeground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource AcceleratorSelectedForeground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getAcceleratorSelectedForeground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getAcceleratorSelectedForeground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getBlack()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource Black
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getBlack"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getBlack"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getControl()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource Control
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getControl"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getControl"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlDarkShadow()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource ControlDarkShadow
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getControlDarkShadow"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getControlDarkShadow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlDisabled()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource ControlDisabled
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getControlDisabled"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getControlDisabled"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlHighlight()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource ControlHighlight
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getControlHighlight"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getControlHighlight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlInfo()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource ControlInfo
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getControlInfo"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getControlInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlShadow()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource ControlShadow
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getControlShadow"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getControlShadow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlTextColor()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource ControlTextColor
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getControlTextColor"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getControlTextColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getControlTextFont()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.FontUIResource ControlTextFont
         {
-            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalClazz, "getControlTextFont"); }
+            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalBridgeClazz, "getControlTextFont"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getCurrentTheme()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#setCurrentTheme(javax.swing.plaf.metal.MetalTheme)"/>
         /// </summary>
         public static Javax.Swing.Plaf.Metal.MetalTheme CurrentTheme
         {
-            get { return SExecute<Javax.Swing.Plaf.Metal.MetalTheme>(LocalClazz, "getCurrentTheme"); } set { SExecute(LocalClazz, "setCurrentTheme", value); }
+            get { return SExecute<Javax.Swing.Plaf.Metal.MetalTheme>(LocalBridgeClazz, "getCurrentTheme"); } set { SExecute(LocalBridgeClazz, "setCurrentTheme", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getDesktopColor()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource DesktopColor
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getDesktopColor"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getDesktopColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getFocusColor()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource FocusColor
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getFocusColor"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getFocusColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getHighlightedTextColor()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource HighlightedTextColor
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getHighlightedTextColor"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getHighlightedTextColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getInactiveControlTextColor()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource InactiveControlTextColor
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getInactiveControlTextColor"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getInactiveControlTextColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getInactiveSystemTextColor()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource InactiveSystemTextColor
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getInactiveSystemTextColor"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getInactiveSystemTextColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuBackground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource MenuBackground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getMenuBackground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getMenuBackground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuDisabledForeground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource MenuDisabledForeground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getMenuDisabledForeground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getMenuDisabledForeground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuForeground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource MenuForeground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getMenuForeground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getMenuForeground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuSelectedBackground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource MenuSelectedBackground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getMenuSelectedBackground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getMenuSelectedBackground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuSelectedForeground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource MenuSelectedForeground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getMenuSelectedForeground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getMenuSelectedForeground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getMenuTextFont()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.FontUIResource MenuTextFont
         {
-            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalClazz, "getMenuTextFont"); }
+            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalBridgeClazz, "getMenuTextFont"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControl()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource PrimaryControl
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getPrimaryControl"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getPrimaryControl"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlDarkShadow()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource PrimaryControlDarkShadow
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getPrimaryControlDarkShadow"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getPrimaryControlDarkShadow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlHighlight()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource PrimaryControlHighlight
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getPrimaryControlHighlight"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getPrimaryControlHighlight"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlInfo()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource PrimaryControlInfo
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getPrimaryControlInfo"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getPrimaryControlInfo"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getPrimaryControlShadow()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource PrimaryControlShadow
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getPrimaryControlShadow"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getPrimaryControlShadow"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getSeparatorBackground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource SeparatorBackground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getSeparatorBackground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getSeparatorBackground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getSeparatorForeground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource SeparatorForeground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getSeparatorForeground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getSeparatorForeground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getSubTextFont()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.FontUIResource SubTextFont
         {
-            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalClazz, "getSubTextFont"); }
+            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalBridgeClazz, "getSubTextFont"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getSystemTextColor()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource SystemTextColor
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getSystemTextColor"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getSystemTextColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getSystemTextFont()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.FontUIResource SystemTextFont
         {
-            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalClazz, "getSystemTextFont"); }
+            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalBridgeClazz, "getSystemTextFont"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getTextHighlightColor()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource TextHighlightColor
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getTextHighlightColor"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getTextHighlightColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getUserTextColor()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource UserTextColor
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getUserTextColor"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getUserTextColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getUserTextFont()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.FontUIResource UserTextFont
         {
-            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalClazz, "getUserTextFont"); }
+            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalBridgeClazz, "getUserTextFont"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getWhite()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource White
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getWhite"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getWhite"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowBackground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource WindowBackground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getWindowBackground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getWindowBackground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleBackground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource WindowTitleBackground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getWindowTitleBackground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getWindowTitleBackground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleFont()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.FontUIResource WindowTitleFont
         {
-            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalClazz, "getWindowTitleFont"); }
+            get { return SExecute<Javax.Swing.Plaf.FontUIResource>(LocalBridgeClazz, "getWindowTitleFont"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleForeground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource WindowTitleForeground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getWindowTitleForeground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getWindowTitleForeground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleInactiveBackground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource WindowTitleInactiveBackground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getWindowTitleInactiveBackground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getWindowTitleInactiveBackground"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalLookAndFeel.html#getWindowTitleInactiveForeground()"/> 
         /// </summary>
         public static Javax.Swing.Plaf.ColorUIResource WindowTitleInactiveForeground
         {
-            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalClazz, "getWindowTitleInactiveForeground"); }
+            get { return SExecute<Javax.Swing.Plaf.ColorUIResource>(LocalBridgeClazz, "getWindowTitleInactiveForeground"); }
         }
 
         #endregion

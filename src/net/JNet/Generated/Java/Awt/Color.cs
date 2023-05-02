@@ -117,107 +117,107 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#black"/>
         /// </summary>
-        public static Java.Awt.Color black { get { return SGetField<Java.Awt.Color>(LocalClazz, "black"); } }
+        public static Java.Awt.Color black { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "black"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#BLACK"/>
         /// </summary>
-        public static Java.Awt.Color BLACK { get { return SGetField<Java.Awt.Color>(LocalClazz, "BLACK"); } }
+        public static Java.Awt.Color BLACK { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "BLACK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#blue"/>
         /// </summary>
-        public static Java.Awt.Color blue { get { return SGetField<Java.Awt.Color>(LocalClazz, "blue"); } }
+        public static Java.Awt.Color blue { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "blue"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#BLUE"/>
         /// </summary>
-        public static Java.Awt.Color BLUE { get { return SGetField<Java.Awt.Color>(LocalClazz, "BLUE"); } }
+        public static Java.Awt.Color BLUE { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "BLUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#cyan"/>
         /// </summary>
-        public static Java.Awt.Color cyan { get { return SGetField<Java.Awt.Color>(LocalClazz, "cyan"); } }
+        public static Java.Awt.Color cyan { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "cyan"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#CYAN"/>
         /// </summary>
-        public static Java.Awt.Color CYAN { get { return SGetField<Java.Awt.Color>(LocalClazz, "CYAN"); } }
+        public static Java.Awt.Color CYAN { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "CYAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#DARK_GRAY"/>
         /// </summary>
-        public static Java.Awt.Color DARK_GRAY { get { return SGetField<Java.Awt.Color>(LocalClazz, "DARK_GRAY"); } }
+        public static Java.Awt.Color DARK_GRAY { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "DARK_GRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#darkGray"/>
         /// </summary>
-        public static Java.Awt.Color darkGray { get { return SGetField<Java.Awt.Color>(LocalClazz, "darkGray"); } }
+        public static Java.Awt.Color darkGray { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "darkGray"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#gray"/>
         /// </summary>
-        public static Java.Awt.Color gray { get { return SGetField<Java.Awt.Color>(LocalClazz, "gray"); } }
+        public static Java.Awt.Color gray { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "gray"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#GRAY"/>
         /// </summary>
-        public static Java.Awt.Color GRAY { get { return SGetField<Java.Awt.Color>(LocalClazz, "GRAY"); } }
+        public static Java.Awt.Color GRAY { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "GRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#green"/>
         /// </summary>
-        public static Java.Awt.Color green { get { return SGetField<Java.Awt.Color>(LocalClazz, "green"); } }
+        public static Java.Awt.Color green { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "green"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#GREEN"/>
         /// </summary>
-        public static Java.Awt.Color GREEN { get { return SGetField<Java.Awt.Color>(LocalClazz, "GREEN"); } }
+        public static Java.Awt.Color GREEN { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "GREEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#LIGHT_GRAY"/>
         /// </summary>
-        public static Java.Awt.Color LIGHT_GRAY { get { return SGetField<Java.Awt.Color>(LocalClazz, "LIGHT_GRAY"); } }
+        public static Java.Awt.Color LIGHT_GRAY { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "LIGHT_GRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#lightGray"/>
         /// </summary>
-        public static Java.Awt.Color lightGray { get { return SGetField<Java.Awt.Color>(LocalClazz, "lightGray"); } }
+        public static Java.Awt.Color lightGray { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "lightGray"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#magenta"/>
         /// </summary>
-        public static Java.Awt.Color magenta { get { return SGetField<Java.Awt.Color>(LocalClazz, "magenta"); } }
+        public static Java.Awt.Color magenta { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "magenta"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#MAGENTA"/>
         /// </summary>
-        public static Java.Awt.Color MAGENTA { get { return SGetField<Java.Awt.Color>(LocalClazz, "MAGENTA"); } }
+        public static Java.Awt.Color MAGENTA { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "MAGENTA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#orange"/>
         /// </summary>
-        public static Java.Awt.Color orange { get { return SGetField<Java.Awt.Color>(LocalClazz, "orange"); } }
+        public static Java.Awt.Color orange { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "orange"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#ORANGE"/>
         /// </summary>
-        public static Java.Awt.Color ORANGE { get { return SGetField<Java.Awt.Color>(LocalClazz, "ORANGE"); } }
+        public static Java.Awt.Color ORANGE { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "ORANGE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#pink"/>
         /// </summary>
-        public static Java.Awt.Color pink { get { return SGetField<Java.Awt.Color>(LocalClazz, "pink"); } }
+        public static Java.Awt.Color pink { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "pink"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#PINK"/>
         /// </summary>
-        public static Java.Awt.Color PINK { get { return SGetField<Java.Awt.Color>(LocalClazz, "PINK"); } }
+        public static Java.Awt.Color PINK { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "PINK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#red"/>
         /// </summary>
-        public static Java.Awt.Color red { get { return SGetField<Java.Awt.Color>(LocalClazz, "red"); } }
+        public static Java.Awt.Color red { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "red"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#RED"/>
         /// </summary>
-        public static Java.Awt.Color RED { get { return SGetField<Java.Awt.Color>(LocalClazz, "RED"); } }
+        public static Java.Awt.Color RED { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "RED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#white"/>
         /// </summary>
-        public static Java.Awt.Color white { get { return SGetField<Java.Awt.Color>(LocalClazz, "white"); } }
+        public static Java.Awt.Color white { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "white"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#WHITE"/>
         /// </summary>
-        public static Java.Awt.Color WHITE { get { return SGetField<Java.Awt.Color>(LocalClazz, "WHITE"); } }
+        public static Java.Awt.Color WHITE { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "WHITE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#yellow"/>
         /// </summary>
-        public static Java.Awt.Color yellow { get { return SGetField<Java.Awt.Color>(LocalClazz, "yellow"); } }
+        public static Java.Awt.Color yellow { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "yellow"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#YELLOW"/>
         /// </summary>
-        public static Java.Awt.Color YELLOW { get { return SGetField<Java.Awt.Color>(LocalClazz, "YELLOW"); } }
+        public static Java.Awt.Color YELLOW { get { return SGetField<Java.Awt.Color>(LocalBridgeClazz, "YELLOW"); } }
 
         #endregion
 
@@ -232,7 +232,7 @@ namespace Java.Awt
         /// <returns><see cref="float"/></returns>
         public static float[] RGBtoHSB(int arg0, int arg1, int arg2, float[] arg3)
         {
-            return SExecuteArray<float>(LocalClazz, "RGBtoHSB", arg0, arg1, arg2, arg3);
+            return SExecuteArray<float>(LocalBridgeClazz, "RGBtoHSB", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#HSBtoRGB(float,float,float)"/>
@@ -243,7 +243,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public static int HSBtoRGB(float arg0, float arg1, float arg2)
         {
-            return SExecute<int>(LocalClazz, "HSBtoRGB", arg0, arg1, arg2);
+            return SExecute<int>(LocalBridgeClazz, "HSBtoRGB", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#decode(java.lang.String)"/>
@@ -253,7 +253,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Awt.Color Decode(string arg0)
         {
-            return SExecute<Java.Awt.Color>(LocalClazz, "decode", arg0);
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String,int)"/>
@@ -263,7 +263,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(string arg0, int arg1)
         {
-            return SExecute<Java.Awt.Color>(LocalClazz, "getColor", arg0, arg1);
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "getColor", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String,java.awt.Color)"/>
@@ -273,7 +273,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(string arg0, Java.Awt.Color arg1)
         {
-            return SExecute<Java.Awt.Color>(LocalClazz, "getColor", arg0, arg1);
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "getColor", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getColor(java.lang.String)"/>
@@ -282,7 +282,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetColor(string arg0)
         {
-            return SExecute<Java.Awt.Color>(LocalClazz, "getColor", arg0);
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "getColor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Color.html#getHSBColor(float,float,float)"/>
@@ -293,7 +293,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public static Java.Awt.Color GetHSBColor(float arg0, float arg1, float arg2)
         {
-            return SExecute<Java.Awt.Color>(LocalClazz, "getHSBColor", arg0, arg1, arg2);
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "getHSBColor", arg0, arg1, arg2);
         }
 
         #endregion

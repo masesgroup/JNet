@@ -46,7 +46,7 @@ namespace Javax.Imageio.Spi
         /// </summary>
         public static Javax.Imageio.Spi.IIORegistry DefaultInstance
         {
-            get { return SExecute<Javax.Imageio.Spi.IIORegistry>(LocalClazz, "getDefaultInstance"); }
+            get { return SExecute<Javax.Imageio.Spi.IIORegistry>(LocalBridgeClazz, "getDefaultInstance"); }
         }
 
         #endregion

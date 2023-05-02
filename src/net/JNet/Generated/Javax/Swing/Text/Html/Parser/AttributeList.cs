@@ -101,7 +101,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="int"/></returns>
         public static int Name2type(string arg0)
         {
-            return SExecute<int>(LocalClazz, "name2type", arg0);
+            return SExecute<int>(LocalBridgeClazz, "name2type", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#type2name(int)"/>
@@ -110,7 +110,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="string"/></returns>
         public static string Type2name(int arg0)
         {
-            return SExecute<string>(LocalClazz, "type2name", arg0);
+            return SExecute<string>(LocalBridgeClazz, "type2name", arg0);
         }
 
         #endregion

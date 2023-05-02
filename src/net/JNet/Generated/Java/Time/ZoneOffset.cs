@@ -52,15 +52,15 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MAX"/>
         /// </summary>
-        public static Java.Time.ZoneOffset MAX { get { return SGetField<Java.Time.ZoneOffset>(LocalClazz, "MAX"); } }
+        public static Java.Time.ZoneOffset MAX { get { return SGetField<Java.Time.ZoneOffset>(LocalBridgeClazz, "MAX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MIN"/>
         /// </summary>
-        public static Java.Time.ZoneOffset MIN { get { return SGetField<Java.Time.ZoneOffset>(LocalClazz, "MIN"); } }
+        public static Java.Time.ZoneOffset MIN { get { return SGetField<Java.Time.ZoneOffset>(LocalBridgeClazz, "MIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#UTC"/>
         /// </summary>
-        public static Java.Time.ZoneOffset UTC { get { return SGetField<Java.Time.ZoneOffset>(LocalClazz, "UTC"); } }
+        public static Java.Time.ZoneOffset UTC { get { return SGetField<Java.Time.ZoneOffset>(LocalBridgeClazz, "UTC"); } }
 
         #endregion
 
@@ -72,7 +72,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHours(int arg0)
         {
-            return SExecute<Java.Time.ZoneOffset>(LocalClazz, "ofHours", arg0);
+            return SExecute<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHours", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHoursMinutes(int,int)"/>
@@ -82,7 +82,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHoursMinutes(int arg0, int arg1)
         {
-            return SExecute<Java.Time.ZoneOffset>(LocalClazz, "ofHoursMinutes", arg0, arg1);
+            return SExecute<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutes", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHoursMinutesSeconds(int,int,int)"/>
@@ -93,7 +93,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHoursMinutesSeconds(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.ZoneOffset>(LocalClazz, "ofHoursMinutesSeconds", arg0, arg1, arg2);
+            return SExecute<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutesSeconds", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofTotalSeconds(int)"/>
@@ -102,7 +102,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfTotalSeconds(int arg0)
         {
-            return SExecute<Java.Time.ZoneOffset>(LocalClazz, "ofTotalSeconds", arg0);
+            return SExecute<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofTotalSeconds", arg0);
         }
 
         #endregion

@@ -40,43 +40,43 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#CDATA_SECTION_ELEMENTS"/>
         /// </summary>
-        public static string CDATA_SECTION_ELEMENTS { get { return SGetField<string>(LocalClazz, "CDATA_SECTION_ELEMENTS"); } }
+        public static string CDATA_SECTION_ELEMENTS { get { return SGetField<string>(LocalBridgeClazz, "CDATA_SECTION_ELEMENTS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#DOCTYPE_PUBLIC"/>
         /// </summary>
-        public static string DOCTYPE_PUBLIC { get { return SGetField<string>(LocalClazz, "DOCTYPE_PUBLIC"); } }
+        public static string DOCTYPE_PUBLIC { get { return SGetField<string>(LocalBridgeClazz, "DOCTYPE_PUBLIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#DOCTYPE_SYSTEM"/>
         /// </summary>
-        public static string DOCTYPE_SYSTEM { get { return SGetField<string>(LocalClazz, "DOCTYPE_SYSTEM"); } }
+        public static string DOCTYPE_SYSTEM { get { return SGetField<string>(LocalBridgeClazz, "DOCTYPE_SYSTEM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#ENCODING"/>
         /// </summary>
-        public static string ENCODING { get { return SGetField<string>(LocalClazz, "ENCODING"); } }
+        public static string ENCODING { get { return SGetField<string>(LocalBridgeClazz, "ENCODING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#INDENT"/>
         /// </summary>
-        public static string INDENT { get { return SGetField<string>(LocalClazz, "INDENT"); } }
+        public static string INDENT { get { return SGetField<string>(LocalBridgeClazz, "INDENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#MEDIA_TYPE"/>
         /// </summary>
-        public static string MEDIA_TYPE { get { return SGetField<string>(LocalClazz, "MEDIA_TYPE"); } }
+        public static string MEDIA_TYPE { get { return SGetField<string>(LocalBridgeClazz, "MEDIA_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#METHOD"/>
         /// </summary>
-        public static string METHOD { get { return SGetField<string>(LocalClazz, "METHOD"); } }
+        public static string METHOD { get { return SGetField<string>(LocalBridgeClazz, "METHOD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#OMIT_XML_DECLARATION"/>
         /// </summary>
-        public static string OMIT_XML_DECLARATION { get { return SGetField<string>(LocalClazz, "OMIT_XML_DECLARATION"); } }
+        public static string OMIT_XML_DECLARATION { get { return SGetField<string>(LocalBridgeClazz, "OMIT_XML_DECLARATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#STANDALONE"/>
         /// </summary>
-        public static string STANDALONE { get { return SGetField<string>(LocalClazz, "STANDALONE"); } }
+        public static string STANDALONE { get { return SGetField<string>(LocalBridgeClazz, "STANDALONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html#VERSION"/>
         /// </summary>
-        public static string VERSION { get { return SGetField<string>(LocalClazz, "VERSION"); } }
+        public static string VERSION { get { return SGetField<string>(LocalBridgeClazz, "VERSION"); } }
 
         #endregion
 

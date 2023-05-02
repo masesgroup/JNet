@@ -58,7 +58,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<T> LookupProviders<T>(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Util.Iterator<T>>(LocalClazz, "lookupProviders", arg0, arg1);
+            return SExecute<Java.Util.Iterator<T>>(LocalBridgeClazz, "lookupProviders", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#lookupProviders(java.lang.Class)"/>
@@ -68,7 +68,7 @@ namespace Javax.Imageio.Spi
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public static Java.Util.Iterator<T> LookupProviders<T>(Java.Lang.Class arg0)
         {
-            return SExecute<Java.Util.Iterator<T>>(LocalClazz, "lookupProviders", arg0);
+            return SExecute<Java.Util.Iterator<T>>(LocalBridgeClazz, "lookupProviders", arg0);
         }
 
         #endregion

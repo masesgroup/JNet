@@ -40,11 +40,11 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#CLOSE_ALL_WINDOWS"/>
         /// </summary>
-        public static Java.Awt.DesktopNs.QuitStrategy CLOSE_ALL_WINDOWS { get { return SGetField<Java.Awt.DesktopNs.QuitStrategy>(LocalClazz, "CLOSE_ALL_WINDOWS"); } }
+        public static Java.Awt.DesktopNs.QuitStrategy CLOSE_ALL_WINDOWS { get { return SGetField<Java.Awt.DesktopNs.QuitStrategy>(LocalBridgeClazz, "CLOSE_ALL_WINDOWS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#NORMAL_EXIT"/>
         /// </summary>
-        public static Java.Awt.DesktopNs.QuitStrategy NORMAL_EXIT { get { return SGetField<Java.Awt.DesktopNs.QuitStrategy>(LocalClazz, "NORMAL_EXIT"); } }
+        public static Java.Awt.DesktopNs.QuitStrategy NORMAL_EXIT { get { return SGetField<Java.Awt.DesktopNs.QuitStrategy>(LocalBridgeClazz, "NORMAL_EXIT"); } }
 
         #endregion
 
@@ -54,7 +54,7 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         public static Java.Awt.DesktopNs.QuitStrategy[] Values
         {
-            get { return SExecuteArray<Java.Awt.DesktopNs.QuitStrategy>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Awt.DesktopNs.QuitStrategy>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html#valueOf(java.lang.String)"/>
@@ -63,7 +63,7 @@ namespace Java.Awt.DesktopNs
         /// <returns><see cref="Java.Awt.DesktopNs.QuitStrategy"/></returns>
         public static Java.Awt.DesktopNs.QuitStrategy ValueOf(string arg0)
         {
-            return SExecute<Java.Awt.DesktopNs.QuitStrategy>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Awt.DesktopNs.QuitStrategy>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

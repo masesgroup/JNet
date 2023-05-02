@@ -57,19 +57,19 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#BUFFERED_OPTION"/>
         /// </summary>
-        public static int BUFFERED_OPTION { get { return SGetField<int>(LocalClazz, "BUFFERED_OPTION"); } }
+        public static int BUFFERED_OPTION { get { return SGetField<int>(LocalBridgeClazz, "BUFFERED_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#FLASH_OPTION"/>
         /// </summary>
-        public static int FLASH_OPTION { get { return SGetField<int>(LocalClazz, "FLASH_OPTION"); } }
+        public static int FLASH_OPTION { get { return SGetField<int>(LocalBridgeClazz, "FLASH_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#LOG_OPTION"/>
         /// </summary>
-        public static int LOG_OPTION { get { return SGetField<int>(LocalClazz, "LOG_OPTION"); } }
+        public static int LOG_OPTION { get { return SGetField<int>(LocalBridgeClazz, "LOG_OPTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#NONE_OPTION"/>
         /// </summary>
-        public static int NONE_OPTION { get { return SGetField<int>(LocalClazz, "NONE_OPTION"); } }
+        public static int NONE_OPTION { get { return SGetField<int>(LocalBridgeClazz, "NONE_OPTION"); } }
 
         #endregion
 
@@ -79,28 +79,28 @@ namespace Javax.Swing
         /// </summary>
         public static Java.Awt.Color FlashColor
         {
-            get { return SExecute<Java.Awt.Color>(LocalClazz, "flashColor"); }
+            get { return SExecute<Java.Awt.Color>(LocalBridgeClazz, "flashColor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashCount()"/> 
         /// </summary>
         public static int FlashCount
         {
-            get { return SExecute<int>(LocalClazz, "flashCount"); }
+            get { return SExecute<int>(LocalBridgeClazz, "flashCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#flashTime()"/> 
         /// </summary>
         public static int FlashTime
         {
-            get { return SExecute<int>(LocalClazz, "flashTime"); }
+            get { return SExecute<int>(LocalBridgeClazz, "flashTime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#logStream()"/> 
         /// </summary>
         public static Java.Io.PrintStream LogStream
         {
-            get { return SExecute<Java.Io.PrintStream>(LocalClazz, "logStream"); }
+            get { return SExecute<Java.Io.PrintStream>(LocalBridgeClazz, "logStream"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashColor(java.awt.Color)"/>
@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Color"/></param>
         public static void SetFlashColor(Java.Awt.Color arg0)
         {
-            SExecute(LocalClazz, "setFlashColor", arg0);
+            SExecute(LocalBridgeClazz, "setFlashColor", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashCount(int)"/>
@@ -116,7 +116,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public static void SetFlashCount(int arg0)
         {
-            SExecute(LocalClazz, "setFlashCount", arg0);
+            SExecute(LocalBridgeClazz, "setFlashCount", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setFlashTime(int)"/>
@@ -124,7 +124,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         public static void SetFlashTime(int arg0)
         {
-            SExecute(LocalClazz, "setFlashTime", arg0);
+            SExecute(LocalBridgeClazz, "setFlashTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#setLogStream(java.io.PrintStream)"/>
@@ -132,7 +132,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public static void SetLogStream(Java.Io.PrintStream arg0)
         {
-            SExecute(LocalClazz, "setLogStream", arg0);
+            SExecute(LocalBridgeClazz, "setLogStream", arg0);
         }
 
         #endregion

@@ -78,19 +78,19 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#ACTION"/>
         /// </summary>
-        public static int ACTION { get { return SGetField<int>(LocalClazz, "ACTION"); } }
+        public static int ACTION { get { return SGetField<int>(LocalBridgeClazz, "ACTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#ACTION_INFO"/>
         /// </summary>
-        public static int ACTION_INFO { get { return SGetField<int>(LocalClazz, "ACTION_INFO"); } }
+        public static int ACTION_INFO { get { return SGetField<int>(LocalBridgeClazz, "ACTION_INFO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#INFO"/>
         /// </summary>
-        public static int INFO { get { return SGetField<int>(LocalClazz, "INFO"); } }
+        public static int INFO { get { return SGetField<int>(LocalBridgeClazz, "INFO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#UNKNOWN"/>
         /// </summary>
-        public static int UNKNOWN { get { return SGetField<int>(LocalClazz, "UNKNOWN"); } }
+        public static int UNKNOWN { get { return SGetField<int>(LocalBridgeClazz, "UNKNOWN"); } }
 
         #endregion
 

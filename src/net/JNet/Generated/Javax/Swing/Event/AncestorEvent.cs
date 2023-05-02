@@ -51,15 +51,15 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_ADDED"/>
         /// </summary>
-        public static int ANCESTOR_ADDED { get { return SGetField<int>(LocalClazz, "ANCESTOR_ADDED"); } }
+        public static int ANCESTOR_ADDED { get { return SGetField<int>(LocalBridgeClazz, "ANCESTOR_ADDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_MOVED"/>
         /// </summary>
-        public static int ANCESTOR_MOVED { get { return SGetField<int>(LocalClazz, "ANCESTOR_MOVED"); } }
+        public static int ANCESTOR_MOVED { get { return SGetField<int>(LocalBridgeClazz, "ANCESTOR_MOVED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_REMOVED"/>
         /// </summary>
-        public static int ANCESTOR_REMOVED { get { return SGetField<int>(LocalClazz, "ANCESTOR_REMOVED"); } }
+        public static int ANCESTOR_REMOVED { get { return SGetField<int>(LocalBridgeClazz, "ANCESTOR_REMOVED"); } }
 
         #endregion
 

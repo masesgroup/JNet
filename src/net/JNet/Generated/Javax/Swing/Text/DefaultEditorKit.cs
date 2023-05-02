@@ -40,199 +40,199 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#backwardAction"/>
         /// </summary>
-        public static string backwardAction { get { return SGetField<string>(LocalClazz, "backwardAction"); } }
+        public static string backwardAction { get { return SGetField<string>(LocalBridgeClazz, "backwardAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beepAction"/>
         /// </summary>
-        public static string beepAction { get { return SGetField<string>(LocalClazz, "beepAction"); } }
+        public static string beepAction { get { return SGetField<string>(LocalBridgeClazz, "beepAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beginAction"/>
         /// </summary>
-        public static string beginAction { get { return SGetField<string>(LocalClazz, "beginAction"); } }
+        public static string beginAction { get { return SGetField<string>(LocalBridgeClazz, "beginAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beginLineAction"/>
         /// </summary>
-        public static string beginLineAction { get { return SGetField<string>(LocalClazz, "beginLineAction"); } }
+        public static string beginLineAction { get { return SGetField<string>(LocalBridgeClazz, "beginLineAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beginParagraphAction"/>
         /// </summary>
-        public static string beginParagraphAction { get { return SGetField<string>(LocalClazz, "beginParagraphAction"); } }
+        public static string beginParagraphAction { get { return SGetField<string>(LocalBridgeClazz, "beginParagraphAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#beginWordAction"/>
         /// </summary>
-        public static string beginWordAction { get { return SGetField<string>(LocalClazz, "beginWordAction"); } }
+        public static string beginWordAction { get { return SGetField<string>(LocalBridgeClazz, "beginWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#copyAction"/>
         /// </summary>
-        public static string copyAction { get { return SGetField<string>(LocalClazz, "copyAction"); } }
+        public static string copyAction { get { return SGetField<string>(LocalBridgeClazz, "copyAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#cutAction"/>
         /// </summary>
-        public static string cutAction { get { return SGetField<string>(LocalClazz, "cutAction"); } }
+        public static string cutAction { get { return SGetField<string>(LocalBridgeClazz, "cutAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#defaultKeyTypedAction"/>
         /// </summary>
-        public static string defaultKeyTypedAction { get { return SGetField<string>(LocalClazz, "defaultKeyTypedAction"); } }
+        public static string defaultKeyTypedAction { get { return SGetField<string>(LocalBridgeClazz, "defaultKeyTypedAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#deleteNextCharAction"/>
         /// </summary>
-        public static string deleteNextCharAction { get { return SGetField<string>(LocalClazz, "deleteNextCharAction"); } }
+        public static string deleteNextCharAction { get { return SGetField<string>(LocalBridgeClazz, "deleteNextCharAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#deleteNextWordAction"/>
         /// </summary>
-        public static string deleteNextWordAction { get { return SGetField<string>(LocalClazz, "deleteNextWordAction"); } }
+        public static string deleteNextWordAction { get { return SGetField<string>(LocalBridgeClazz, "deleteNextWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#deletePrevCharAction"/>
         /// </summary>
-        public static string deletePrevCharAction { get { return SGetField<string>(LocalClazz, "deletePrevCharAction"); } }
+        public static string deletePrevCharAction { get { return SGetField<string>(LocalBridgeClazz, "deletePrevCharAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#deletePrevWordAction"/>
         /// </summary>
-        public static string deletePrevWordAction { get { return SGetField<string>(LocalClazz, "deletePrevWordAction"); } }
+        public static string deletePrevWordAction { get { return SGetField<string>(LocalBridgeClazz, "deletePrevWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#downAction"/>
         /// </summary>
-        public static string downAction { get { return SGetField<string>(LocalClazz, "downAction"); } }
+        public static string downAction { get { return SGetField<string>(LocalBridgeClazz, "downAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#endAction"/>
         /// </summary>
-        public static string endAction { get { return SGetField<string>(LocalClazz, "endAction"); } }
+        public static string endAction { get { return SGetField<string>(LocalBridgeClazz, "endAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#endLineAction"/>
         /// </summary>
-        public static string endLineAction { get { return SGetField<string>(LocalClazz, "endLineAction"); } }
+        public static string endLineAction { get { return SGetField<string>(LocalBridgeClazz, "endLineAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#EndOfLineStringProperty"/>
         /// </summary>
-        public static string EndOfLineStringProperty { get { return SGetField<string>(LocalClazz, "EndOfLineStringProperty"); } }
+        public static string EndOfLineStringProperty { get { return SGetField<string>(LocalBridgeClazz, "EndOfLineStringProperty"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#endParagraphAction"/>
         /// </summary>
-        public static string endParagraphAction { get { return SGetField<string>(LocalClazz, "endParagraphAction"); } }
+        public static string endParagraphAction { get { return SGetField<string>(LocalBridgeClazz, "endParagraphAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#endWordAction"/>
         /// </summary>
-        public static string endWordAction { get { return SGetField<string>(LocalClazz, "endWordAction"); } }
+        public static string endWordAction { get { return SGetField<string>(LocalBridgeClazz, "endWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#forwardAction"/>
         /// </summary>
-        public static string forwardAction { get { return SGetField<string>(LocalClazz, "forwardAction"); } }
+        public static string forwardAction { get { return SGetField<string>(LocalBridgeClazz, "forwardAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#insertBreakAction"/>
         /// </summary>
-        public static string insertBreakAction { get { return SGetField<string>(LocalClazz, "insertBreakAction"); } }
+        public static string insertBreakAction { get { return SGetField<string>(LocalBridgeClazz, "insertBreakAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#insertContentAction"/>
         /// </summary>
-        public static string insertContentAction { get { return SGetField<string>(LocalClazz, "insertContentAction"); } }
+        public static string insertContentAction { get { return SGetField<string>(LocalBridgeClazz, "insertContentAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#insertTabAction"/>
         /// </summary>
-        public static string insertTabAction { get { return SGetField<string>(LocalClazz, "insertTabAction"); } }
+        public static string insertTabAction { get { return SGetField<string>(LocalBridgeClazz, "insertTabAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#nextWordAction"/>
         /// </summary>
-        public static string nextWordAction { get { return SGetField<string>(LocalClazz, "nextWordAction"); } }
+        public static string nextWordAction { get { return SGetField<string>(LocalBridgeClazz, "nextWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#pageDownAction"/>
         /// </summary>
-        public static string pageDownAction { get { return SGetField<string>(LocalClazz, "pageDownAction"); } }
+        public static string pageDownAction { get { return SGetField<string>(LocalBridgeClazz, "pageDownAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#pageUpAction"/>
         /// </summary>
-        public static string pageUpAction { get { return SGetField<string>(LocalClazz, "pageUpAction"); } }
+        public static string pageUpAction { get { return SGetField<string>(LocalBridgeClazz, "pageUpAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#pasteAction"/>
         /// </summary>
-        public static string pasteAction { get { return SGetField<string>(LocalClazz, "pasteAction"); } }
+        public static string pasteAction { get { return SGetField<string>(LocalBridgeClazz, "pasteAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#previousWordAction"/>
         /// </summary>
-        public static string previousWordAction { get { return SGetField<string>(LocalClazz, "previousWordAction"); } }
+        public static string previousWordAction { get { return SGetField<string>(LocalBridgeClazz, "previousWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#readOnlyAction"/>
         /// </summary>
-        public static string readOnlyAction { get { return SGetField<string>(LocalClazz, "readOnlyAction"); } }
+        public static string readOnlyAction { get { return SGetField<string>(LocalBridgeClazz, "readOnlyAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectAllAction"/>
         /// </summary>
-        public static string selectAllAction { get { return SGetField<string>(LocalClazz, "selectAllAction"); } }
+        public static string selectAllAction { get { return SGetField<string>(LocalBridgeClazz, "selectAllAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionBackwardAction"/>
         /// </summary>
-        public static string selectionBackwardAction { get { return SGetField<string>(LocalClazz, "selectionBackwardAction"); } }
+        public static string selectionBackwardAction { get { return SGetField<string>(LocalBridgeClazz, "selectionBackwardAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionBeginAction"/>
         /// </summary>
-        public static string selectionBeginAction { get { return SGetField<string>(LocalClazz, "selectionBeginAction"); } }
+        public static string selectionBeginAction { get { return SGetField<string>(LocalBridgeClazz, "selectionBeginAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionBeginLineAction"/>
         /// </summary>
-        public static string selectionBeginLineAction { get { return SGetField<string>(LocalClazz, "selectionBeginLineAction"); } }
+        public static string selectionBeginLineAction { get { return SGetField<string>(LocalBridgeClazz, "selectionBeginLineAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionBeginParagraphAction"/>
         /// </summary>
-        public static string selectionBeginParagraphAction { get { return SGetField<string>(LocalClazz, "selectionBeginParagraphAction"); } }
+        public static string selectionBeginParagraphAction { get { return SGetField<string>(LocalBridgeClazz, "selectionBeginParagraphAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionBeginWordAction"/>
         /// </summary>
-        public static string selectionBeginWordAction { get { return SGetField<string>(LocalClazz, "selectionBeginWordAction"); } }
+        public static string selectionBeginWordAction { get { return SGetField<string>(LocalBridgeClazz, "selectionBeginWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionDownAction"/>
         /// </summary>
-        public static string selectionDownAction { get { return SGetField<string>(LocalClazz, "selectionDownAction"); } }
+        public static string selectionDownAction { get { return SGetField<string>(LocalBridgeClazz, "selectionDownAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionEndAction"/>
         /// </summary>
-        public static string selectionEndAction { get { return SGetField<string>(LocalClazz, "selectionEndAction"); } }
+        public static string selectionEndAction { get { return SGetField<string>(LocalBridgeClazz, "selectionEndAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionEndLineAction"/>
         /// </summary>
-        public static string selectionEndLineAction { get { return SGetField<string>(LocalClazz, "selectionEndLineAction"); } }
+        public static string selectionEndLineAction { get { return SGetField<string>(LocalBridgeClazz, "selectionEndLineAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionEndParagraphAction"/>
         /// </summary>
-        public static string selectionEndParagraphAction { get { return SGetField<string>(LocalClazz, "selectionEndParagraphAction"); } }
+        public static string selectionEndParagraphAction { get { return SGetField<string>(LocalBridgeClazz, "selectionEndParagraphAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionEndWordAction"/>
         /// </summary>
-        public static string selectionEndWordAction { get { return SGetField<string>(LocalClazz, "selectionEndWordAction"); } }
+        public static string selectionEndWordAction { get { return SGetField<string>(LocalBridgeClazz, "selectionEndWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionForwardAction"/>
         /// </summary>
-        public static string selectionForwardAction { get { return SGetField<string>(LocalClazz, "selectionForwardAction"); } }
+        public static string selectionForwardAction { get { return SGetField<string>(LocalBridgeClazz, "selectionForwardAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionNextWordAction"/>
         /// </summary>
-        public static string selectionNextWordAction { get { return SGetField<string>(LocalClazz, "selectionNextWordAction"); } }
+        public static string selectionNextWordAction { get { return SGetField<string>(LocalBridgeClazz, "selectionNextWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionPreviousWordAction"/>
         /// </summary>
-        public static string selectionPreviousWordAction { get { return SGetField<string>(LocalClazz, "selectionPreviousWordAction"); } }
+        public static string selectionPreviousWordAction { get { return SGetField<string>(LocalBridgeClazz, "selectionPreviousWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectionUpAction"/>
         /// </summary>
-        public static string selectionUpAction { get { return SGetField<string>(LocalClazz, "selectionUpAction"); } }
+        public static string selectionUpAction { get { return SGetField<string>(LocalBridgeClazz, "selectionUpAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectLineAction"/>
         /// </summary>
-        public static string selectLineAction { get { return SGetField<string>(LocalClazz, "selectLineAction"); } }
+        public static string selectLineAction { get { return SGetField<string>(LocalBridgeClazz, "selectLineAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectParagraphAction"/>
         /// </summary>
-        public static string selectParagraphAction { get { return SGetField<string>(LocalClazz, "selectParagraphAction"); } }
+        public static string selectParagraphAction { get { return SGetField<string>(LocalBridgeClazz, "selectParagraphAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#selectWordAction"/>
         /// </summary>
-        public static string selectWordAction { get { return SGetField<string>(LocalClazz, "selectWordAction"); } }
+        public static string selectWordAction { get { return SGetField<string>(LocalBridgeClazz, "selectWordAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#upAction"/>
         /// </summary>
-        public static string upAction { get { return SGetField<string>(LocalClazz, "upAction"); } }
+        public static string upAction { get { return SGetField<string>(LocalBridgeClazz, "upAction"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultEditorKit.html#writableAction"/>
         /// </summary>
-        public static string writableAction { get { return SGetField<string>(LocalClazz, "writableAction"); } }
+        public static string writableAction { get { return SGetField<string>(LocalBridgeClazz, "writableAction"); } }
 
         #endregion
 

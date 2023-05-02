@@ -46,14 +46,14 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Desktop GetDesktop
         {
-            get { return SExecute<Java.Awt.Desktop>(LocalClazz, "getDesktop"); }
+            get { return SExecute<Java.Awt.Desktop>(LocalBridgeClazz, "getDesktop"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.html#isDesktopSupported()"/> 
         /// </summary>
         public static bool IsDesktopSupported
         {
-            get { return SExecute<bool>(LocalClazz, "isDesktopSupported"); }
+            get { return SExecute<bool>(LocalBridgeClazz, "isDesktopSupported"); }
         }
 
         #endregion
@@ -267,99 +267,99 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_ABOUT"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_ABOUT { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_ABOUT"); } }
+            public static Java.Awt.Desktop.Action APP_ABOUT { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_ABOUT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_FOREGROUND"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_EVENT_FOREGROUND { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_EVENT_FOREGROUND"); } }
+            public static Java.Awt.Desktop.Action APP_EVENT_FOREGROUND { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_EVENT_FOREGROUND"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_HIDDEN"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_EVENT_HIDDEN { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_EVENT_HIDDEN"); } }
+            public static Java.Awt.Desktop.Action APP_EVENT_HIDDEN { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_EVENT_HIDDEN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_REOPENED"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_EVENT_REOPENED { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_EVENT_REOPENED"); } }
+            public static Java.Awt.Desktop.Action APP_EVENT_REOPENED { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_EVENT_REOPENED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_SCREEN_SLEEP"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_EVENT_SCREEN_SLEEP { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_EVENT_SCREEN_SLEEP"); } }
+            public static Java.Awt.Desktop.Action APP_EVENT_SCREEN_SLEEP { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_EVENT_SCREEN_SLEEP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_SYSTEM_SLEEP"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_EVENT_SYSTEM_SLEEP { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_EVENT_SYSTEM_SLEEP"); } }
+            public static Java.Awt.Desktop.Action APP_EVENT_SYSTEM_SLEEP { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_EVENT_SYSTEM_SLEEP"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_USER_SESSION"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_EVENT_USER_SESSION { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_EVENT_USER_SESSION"); } }
+            public static Java.Awt.Desktop.Action APP_EVENT_USER_SESSION { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_EVENT_USER_SESSION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_HELP_VIEWER"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_HELP_VIEWER { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_HELP_VIEWER"); } }
+            public static Java.Awt.Desktop.Action APP_HELP_VIEWER { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_HELP_VIEWER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_MENU_BAR"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_MENU_BAR { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_MENU_BAR"); } }
+            public static Java.Awt.Desktop.Action APP_MENU_BAR { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_MENU_BAR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_OPEN_FILE"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_OPEN_FILE { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_OPEN_FILE"); } }
+            public static Java.Awt.Desktop.Action APP_OPEN_FILE { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_OPEN_FILE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_OPEN_URI"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_OPEN_URI { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_OPEN_URI"); } }
+            public static Java.Awt.Desktop.Action APP_OPEN_URI { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_OPEN_URI"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_PREFERENCES"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_PREFERENCES { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_PREFERENCES"); } }
+            public static Java.Awt.Desktop.Action APP_PREFERENCES { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_PREFERENCES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_PRINT_FILE"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_PRINT_FILE { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_PRINT_FILE"); } }
+            public static Java.Awt.Desktop.Action APP_PRINT_FILE { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_PRINT_FILE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_QUIT_HANDLER"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_QUIT_HANDLER { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_QUIT_HANDLER"); } }
+            public static Java.Awt.Desktop.Action APP_QUIT_HANDLER { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_QUIT_HANDLER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_QUIT_STRATEGY"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_QUIT_STRATEGY { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_QUIT_STRATEGY"); } }
+            public static Java.Awt.Desktop.Action APP_QUIT_STRATEGY { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_QUIT_STRATEGY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_REQUEST_FOREGROUND"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_REQUEST_FOREGROUND { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_REQUEST_FOREGROUND"); } }
+            public static Java.Awt.Desktop.Action APP_REQUEST_FOREGROUND { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_REQUEST_FOREGROUND"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_SUDDEN_TERMINATION"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_SUDDEN_TERMINATION { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "APP_SUDDEN_TERMINATION"); } }
+            public static Java.Awt.Desktop.Action APP_SUDDEN_TERMINATION { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "APP_SUDDEN_TERMINATION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#BROWSE"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action BROWSE { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "BROWSE"); } }
+            public static Java.Awt.Desktop.Action BROWSE { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "BROWSE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#BROWSE_FILE_DIR"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action BROWSE_FILE_DIR { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "BROWSE_FILE_DIR"); } }
+            public static Java.Awt.Desktop.Action BROWSE_FILE_DIR { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "BROWSE_FILE_DIR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#EDIT"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action EDIT { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "EDIT"); } }
+            public static Java.Awt.Desktop.Action EDIT { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "EDIT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#MAIL"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action MAIL { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "MAIL"); } }
+            public static Java.Awt.Desktop.Action MAIL { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "MAIL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#MOVE_TO_TRASH"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action MOVE_TO_TRASH { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "MOVE_TO_TRASH"); } }
+            public static Java.Awt.Desktop.Action MOVE_TO_TRASH { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "MOVE_TO_TRASH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#OPEN"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action OPEN { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "OPEN"); } }
+            public static Java.Awt.Desktop.Action OPEN { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "OPEN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#PRINT"/>
             /// </summary>
-            public static Java.Awt.Desktop.Action PRINT { get { return SGetField<Java.Awt.Desktop.Action>(LocalClazz, "PRINT"); } }
+            public static Java.Awt.Desktop.Action PRINT { get { return SGetField<Java.Awt.Desktop.Action>(LocalBridgeClazz, "PRINT"); } }
 
             #endregion
 
@@ -369,7 +369,7 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.Desktop.Action[] Values
             {
-                get { return SExecuteArray<Java.Awt.Desktop.Action>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Awt.Desktop.Action>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#valueOf(java.lang.String)"/>
@@ -378,7 +378,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Desktop.Action"/></returns>
             public static Java.Awt.Desktop.Action ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.Desktop.Action>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Awt.Desktop.Action>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

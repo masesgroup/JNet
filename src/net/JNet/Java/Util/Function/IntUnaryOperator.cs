@@ -35,14 +35,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java IntUnaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java IntUnaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class IntUnaryOperator : JVMBridgeListener, IIntUnaryOperator
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetIntUnaryOperator";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetIntUnaryOperator";
 
         Func<int, int> executionFunction = null;
         /// <summary>

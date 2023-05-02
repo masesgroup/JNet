@@ -66,23 +66,23 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#CENTER"/>
         /// </summary>
-        public static int CENTER { get { return SGetField<int>(LocalClazz, "CENTER"); } }
+        public static int CENTER { get { return SGetField<int>(LocalBridgeClazz, "CENTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#LEADING"/>
         /// </summary>
-        public static int LEADING { get { return SGetField<int>(LocalClazz, "LEADING"); } }
+        public static int LEADING { get { return SGetField<int>(LocalBridgeClazz, "LEADING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#LEFT"/>
         /// </summary>
-        public static int LEFT { get { return SGetField<int>(LocalClazz, "LEFT"); } }
+        public static int LEFT { get { return SGetField<int>(LocalBridgeClazz, "LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#RIGHT"/>
         /// </summary>
-        public static int RIGHT { get { return SGetField<int>(LocalClazz, "RIGHT"); } }
+        public static int RIGHT { get { return SGetField<int>(LocalBridgeClazz, "RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#TRAILING"/>
         /// </summary>
-        public static int TRAILING { get { return SGetField<int>(LocalClazz, "TRAILING"); } }
+        public static int TRAILING { get { return SGetField<int>(LocalBridgeClazz, "TRAILING"); } }
 
         #endregion
 

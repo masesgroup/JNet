@@ -44,7 +44,7 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistChronology.html#INSTANCE"/>
         /// </summary>
-        public static Java.Time.Chrono.ThaiBuddhistChronology INSTANCE { get { return SGetField<Java.Time.Chrono.ThaiBuddhistChronology>(LocalClazz, "INSTANCE"); } }
+        public static Java.Time.Chrono.ThaiBuddhistChronology INSTANCE { get { return SGetField<Java.Time.Chrono.ThaiBuddhistChronology>(LocalBridgeClazz, "INSTANCE"); } }
 
         #endregion
 

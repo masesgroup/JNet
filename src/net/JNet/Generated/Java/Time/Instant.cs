@@ -56,15 +56,15 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#EPOCH"/>
         /// </summary>
-        public static Java.Time.Instant EPOCH { get { return SGetField<Java.Time.Instant>(LocalClazz, "EPOCH"); } }
+        public static Java.Time.Instant EPOCH { get { return SGetField<Java.Time.Instant>(LocalBridgeClazz, "EPOCH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#MAX"/>
         /// </summary>
-        public static Java.Time.Instant MAX { get { return SGetField<Java.Time.Instant>(LocalClazz, "MAX"); } }
+        public static Java.Time.Instant MAX { get { return SGetField<Java.Time.Instant>(LocalBridgeClazz, "MAX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#MIN"/>
         /// </summary>
-        public static Java.Time.Instant MIN { get { return SGetField<Java.Time.Instant>(LocalClazz, "MIN"); } }
+        public static Java.Time.Instant MIN { get { return SGetField<Java.Time.Instant>(LocalBridgeClazz, "MIN"); } }
 
         #endregion
 
@@ -76,7 +76,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.Instant>(LocalClazz, "from", arg0);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#now()"/>
@@ -85,7 +85,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant Now()
         {
-            return SExecute<Java.Time.Instant>(LocalClazz, "now");
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#now(java.time.Clock)"/>
@@ -94,7 +94,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant Now(Java.Time.Clock arg0)
         {
-            return SExecute<Java.Time.Instant>(LocalClazz, "now", arg0);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#ofEpochMilli(long)"/>
@@ -103,7 +103,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant OfEpochMilli(long arg0)
         {
-            return SExecute<Java.Time.Instant>(LocalClazz, "ofEpochMilli", arg0);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "ofEpochMilli", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#ofEpochSecond(long,long)"/>
@@ -113,7 +113,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant OfEpochSecond(long arg0, long arg1)
         {
-            return SExecute<Java.Time.Instant>(LocalClazz, "ofEpochSecond", arg0, arg1);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "ofEpochSecond", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#ofEpochSecond(long)"/>
@@ -122,7 +122,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant OfEpochSecond(long arg0)
         {
-            return SExecute<Java.Time.Instant>(LocalClazz, "ofEpochSecond", arg0);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "ofEpochSecond", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#parse(java.lang.CharSequence)"/>
@@ -131,7 +131,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Time.Instant>(LocalClazz, "parse", arg0);
+            return SExecute<Java.Time.Instant>(LocalBridgeClazz, "parse", arg0);
         }
 
         #endregion

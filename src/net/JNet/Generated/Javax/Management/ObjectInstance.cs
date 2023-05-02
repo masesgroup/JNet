@@ -71,7 +71,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html#getClassName()"/> 
         /// </summary>
-        public string GetClassName
+        public string ClassName
         {
             get { return IExecute<string>("getClassName"); }
         }

@@ -46,14 +46,14 @@ namespace Java.Lang
         /// </summary>
         public static Java.Lang.ModuleLayer Boot
         {
-            get { return SExecute<Java.Lang.ModuleLayer>(LocalClazz, "boot"); }
+            get { return SExecute<Java.Lang.ModuleLayer>(LocalBridgeClazz, "boot"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#empty()"/> 
         /// </summary>
         public static Java.Lang.ModuleLayer Empty
         {
-            get { return SExecute<Java.Lang.ModuleLayer>(LocalClazz, "empty"); }
+            get { return SExecute<Java.Lang.ModuleLayer>(LocalBridgeClazz, "empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.List,java.util.function.Function)"/>
@@ -64,7 +64,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
         public static Java.Lang.ModuleLayer.Controller DefineModules(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List<Java.Lang.ModuleLayer> arg1, Java.Util.Function.Function<string, Java.Lang.ClassLoader> arg2)
         {
-            return SExecute<Java.Lang.ModuleLayer.Controller>(LocalClazz, "defineModules", arg0, arg1, arg2);
+            return SExecute<Java.Lang.ModuleLayer.Controller>(LocalBridgeClazz, "defineModules", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.util.List,java.lang.ClassLoader)"/>
@@ -75,7 +75,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
         public static Java.Lang.ModuleLayer.Controller DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List<Java.Lang.ModuleLayer> arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Lang.ModuleLayer.Controller>(LocalClazz, "defineModulesWithManyLoaders", arg0, arg1, arg2);
+            return SExecute<Java.Lang.ModuleLayer.Controller>(LocalBridgeClazz, "defineModulesWithManyLoaders", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithOneLoader(java.lang.module.Configuration,java.util.List,java.lang.ClassLoader)"/>
@@ -86,7 +86,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
         public static Java.Lang.ModuleLayer.Controller DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List<Java.Lang.ModuleLayer> arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Lang.ModuleLayer.Controller>(LocalClazz, "defineModulesWithOneLoader", arg0, arg1, arg2);
+            return SExecute<Java.Lang.ModuleLayer.Controller>(LocalBridgeClazz, "defineModulesWithOneLoader", arg0, arg1, arg2);
         }
 
         #endregion

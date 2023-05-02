@@ -92,19 +92,19 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_INTERCHAR"/>
         /// </summary>
-        public static int PRIORITY_INTERCHAR { get { return SGetField<int>(LocalClazz, "PRIORITY_INTERCHAR"); } }
+        public static int PRIORITY_INTERCHAR { get { return SGetField<int>(LocalBridgeClazz, "PRIORITY_INTERCHAR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_KASHIDA"/>
         /// </summary>
-        public static int PRIORITY_KASHIDA { get { return SGetField<int>(LocalClazz, "PRIORITY_KASHIDA"); } }
+        public static int PRIORITY_KASHIDA { get { return SGetField<int>(LocalBridgeClazz, "PRIORITY_KASHIDA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_NONE"/>
         /// </summary>
-        public static int PRIORITY_NONE { get { return SGetField<int>(LocalClazz, "PRIORITY_NONE"); } }
+        public static int PRIORITY_NONE { get { return SGetField<int>(LocalBridgeClazz, "PRIORITY_NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphJustificationInfo.html#PRIORITY_WHITESPACE"/>
         /// </summary>
-        public static int PRIORITY_WHITESPACE { get { return SGetField<int>(LocalClazz, "PRIORITY_WHITESPACE"); } }
+        public static int PRIORITY_WHITESPACE { get { return SGetField<int>(LocalBridgeClazz, "PRIORITY_WHITESPACE"); } }
 
         #endregion
 

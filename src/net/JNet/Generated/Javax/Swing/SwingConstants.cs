@@ -40,79 +40,79 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#BOTTOM"/>
         /// </summary>
-        public static int BOTTOM { get { return SGetField<int>(LocalClazz, "BOTTOM"); } }
+        public static int BOTTOM { get { return SGetField<int>(LocalBridgeClazz, "BOTTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#CENTER"/>
         /// </summary>
-        public static int CENTER { get { return SGetField<int>(LocalClazz, "CENTER"); } }
+        public static int CENTER { get { return SGetField<int>(LocalBridgeClazz, "CENTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#EAST"/>
         /// </summary>
-        public static int EAST { get { return SGetField<int>(LocalClazz, "EAST"); } }
+        public static int EAST { get { return SGetField<int>(LocalBridgeClazz, "EAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#HORIZONTAL"/>
         /// </summary>
-        public static int HORIZONTAL { get { return SGetField<int>(LocalClazz, "HORIZONTAL"); } }
+        public static int HORIZONTAL { get { return SGetField<int>(LocalBridgeClazz, "HORIZONTAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#LEADING"/>
         /// </summary>
-        public static int LEADING { get { return SGetField<int>(LocalClazz, "LEADING"); } }
+        public static int LEADING { get { return SGetField<int>(LocalBridgeClazz, "LEADING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#LEFT"/>
         /// </summary>
-        public static int LEFT { get { return SGetField<int>(LocalClazz, "LEFT"); } }
+        public static int LEFT { get { return SGetField<int>(LocalBridgeClazz, "LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#NEXT"/>
         /// </summary>
-        public static int NEXT { get { return SGetField<int>(LocalClazz, "NEXT"); } }
+        public static int NEXT { get { return SGetField<int>(LocalBridgeClazz, "NEXT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#NORTH"/>
         /// </summary>
-        public static int NORTH { get { return SGetField<int>(LocalClazz, "NORTH"); } }
+        public static int NORTH { get { return SGetField<int>(LocalBridgeClazz, "NORTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#NORTH_EAST"/>
         /// </summary>
-        public static int NORTH_EAST { get { return SGetField<int>(LocalClazz, "NORTH_EAST"); } }
+        public static int NORTH_EAST { get { return SGetField<int>(LocalBridgeClazz, "NORTH_EAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#NORTH_WEST"/>
         /// </summary>
-        public static int NORTH_WEST { get { return SGetField<int>(LocalClazz, "NORTH_WEST"); } }
+        public static int NORTH_WEST { get { return SGetField<int>(LocalBridgeClazz, "NORTH_WEST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#PREVIOUS"/>
         /// </summary>
-        public static int PREVIOUS { get { return SGetField<int>(LocalClazz, "PREVIOUS"); } }
+        public static int PREVIOUS { get { return SGetField<int>(LocalBridgeClazz, "PREVIOUS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#RIGHT"/>
         /// </summary>
-        public static int RIGHT { get { return SGetField<int>(LocalClazz, "RIGHT"); } }
+        public static int RIGHT { get { return SGetField<int>(LocalBridgeClazz, "RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#SOUTH"/>
         /// </summary>
-        public static int SOUTH { get { return SGetField<int>(LocalClazz, "SOUTH"); } }
+        public static int SOUTH { get { return SGetField<int>(LocalBridgeClazz, "SOUTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#SOUTH_EAST"/>
         /// </summary>
-        public static int SOUTH_EAST { get { return SGetField<int>(LocalClazz, "SOUTH_EAST"); } }
+        public static int SOUTH_EAST { get { return SGetField<int>(LocalBridgeClazz, "SOUTH_EAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#SOUTH_WEST"/>
         /// </summary>
-        public static int SOUTH_WEST { get { return SGetField<int>(LocalClazz, "SOUTH_WEST"); } }
+        public static int SOUTH_WEST { get { return SGetField<int>(LocalBridgeClazz, "SOUTH_WEST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#TOP"/>
         /// </summary>
-        public static int TOP { get { return SGetField<int>(LocalClazz, "TOP"); } }
+        public static int TOP { get { return SGetField<int>(LocalBridgeClazz, "TOP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#TRAILING"/>
         /// </summary>
-        public static int TRAILING { get { return SGetField<int>(LocalClazz, "TRAILING"); } }
+        public static int TRAILING { get { return SGetField<int>(LocalBridgeClazz, "TRAILING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#VERTICAL"/>
         /// </summary>
-        public static int VERTICAL { get { return SGetField<int>(LocalClazz, "VERTICAL"); } }
+        public static int VERTICAL { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingConstants.html#WEST"/>
         /// </summary>
-        public static int WEST { get { return SGetField<int>(LocalClazz, "WEST"); } }
+        public static int WEST { get { return SGetField<int>(LocalBridgeClazz, "WEST"); } }
 
         #endregion
 

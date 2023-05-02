@@ -145,15 +145,15 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.EventType.html#ACTIVATED"/>
             /// </summary>
-            public static Javax.Swing.Event.HyperlinkEvent.EventType ACTIVATED { get { return SGetField<Javax.Swing.Event.HyperlinkEvent.EventType>(LocalClazz, "ACTIVATED"); } }
+            public static Javax.Swing.Event.HyperlinkEvent.EventType ACTIVATED { get { return SGetField<Javax.Swing.Event.HyperlinkEvent.EventType>(LocalBridgeClazz, "ACTIVATED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.EventType.html#ENTERED"/>
             /// </summary>
-            public static Javax.Swing.Event.HyperlinkEvent.EventType ENTERED { get { return SGetField<Javax.Swing.Event.HyperlinkEvent.EventType>(LocalClazz, "ENTERED"); } }
+            public static Javax.Swing.Event.HyperlinkEvent.EventType ENTERED { get { return SGetField<Javax.Swing.Event.HyperlinkEvent.EventType>(LocalBridgeClazz, "ENTERED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.EventType.html#EXITED"/>
             /// </summary>
-            public static Javax.Swing.Event.HyperlinkEvent.EventType EXITED { get { return SGetField<Javax.Swing.Event.HyperlinkEvent.EventType>(LocalClazz, "EXITED"); } }
+            public static Javax.Swing.Event.HyperlinkEvent.EventType EXITED { get { return SGetField<Javax.Swing.Event.HyperlinkEvent.EventType>(LocalBridgeClazz, "EXITED"); } }
 
             #endregion
 

@@ -44,35 +44,35 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#BOTTOM"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray BOTTOM { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalClazz, "BOTTOM"); } }
+        public static Javax.Print.Attribute.Standard.MediaTray BOTTOM { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalBridgeClazz, "BOTTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#ENVELOPE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray ENVELOPE { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalClazz, "ENVELOPE"); } }
+        public static Javax.Print.Attribute.Standard.MediaTray ENVELOPE { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalBridgeClazz, "ENVELOPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#LARGE_CAPACITY"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray LARGE_CAPACITY { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalClazz, "LARGE_CAPACITY"); } }
+        public static Javax.Print.Attribute.Standard.MediaTray LARGE_CAPACITY { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalBridgeClazz, "LARGE_CAPACITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#MAIN"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray MAIN { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalClazz, "MAIN"); } }
+        public static Javax.Print.Attribute.Standard.MediaTray MAIN { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalBridgeClazz, "MAIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#MANUAL"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray MANUAL { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalClazz, "MANUAL"); } }
+        public static Javax.Print.Attribute.Standard.MediaTray MANUAL { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalBridgeClazz, "MANUAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#MIDDLE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray MIDDLE { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalClazz, "MIDDLE"); } }
+        public static Javax.Print.Attribute.Standard.MediaTray MIDDLE { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalBridgeClazz, "MIDDLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#SIDE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray SIDE { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalClazz, "SIDE"); } }
+        public static Javax.Print.Attribute.Standard.MediaTray SIDE { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalBridgeClazz, "SIDE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#TOP"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray TOP { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalClazz, "TOP"); } }
+        public static Javax.Print.Attribute.Standard.MediaTray TOP { get { return SGetField<Javax.Print.Attribute.Standard.MediaTray>(LocalBridgeClazz, "TOP"); } }
 
         #endregion
 

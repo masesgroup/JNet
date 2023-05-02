@@ -48,7 +48,7 @@ namespace Java.Security.Interfaces
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html#serialVersionUID"/>
         /// </summary>
-        public static long serialVersionUID { get { return SGetField<long>(LocalClazz, "serialVersionUID"); } }
+        public static long serialVersionUID { get { return SGetField<long>(LocalBridgeClazz, "serialVersionUID"); } }
 
         #endregion
 

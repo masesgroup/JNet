@@ -56,7 +56,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture CompletedFuture(object arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalClazz, "completedFuture", arg0);
+            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "completedFuture", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#failedFuture(java.lang.Throwable)"/>
@@ -65,7 +65,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture FailedFuture(Java.Lang.Throwable arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalClazz, "failedFuture", arg0);
+            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "failedFuture", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier,java.util.concurrent.Executor)"/>
@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture SupplyAsync(Java.Util.Function.Supplier arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalClazz, "supplyAsync", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "supplyAsync", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier)"/>
@@ -84,7 +84,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture SupplyAsync(Java.Util.Function.Supplier arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalClazz, "supplyAsync", arg0);
+            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "supplyAsync", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#completedStage(java.lang.Object)"/>
@@ -93,7 +93,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public static Java.Util.Concurrent.CompletionStage CompletedStage(object arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletionStage>(LocalClazz, "completedStage", arg0);
+            return SExecute<Java.Util.Concurrent.CompletionStage>(LocalBridgeClazz, "completedStage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#failedStage(java.lang.Throwable)"/>
@@ -102,7 +102,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public static Java.Util.Concurrent.CompletionStage FailedStage(Java.Lang.Throwable arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletionStage>(LocalClazz, "failedStage", arg0);
+            return SExecute<Java.Util.Concurrent.CompletionStage>(LocalBridgeClazz, "failedStage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
@@ -111,7 +111,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture AnyOfMethod(params Java.Util.Concurrent.CompletableFuture[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalClazz, "anyOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalClazz, "anyOf", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "anyOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "anyOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
@@ -120,7 +120,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture AllOf(params Java.Util.Concurrent.CompletableFuture[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalClazz, "allOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalClazz, "allOf", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "allOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "allOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
@@ -130,7 +130,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture RunAsync(Java.Lang.Runnable arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalClazz, "runAsync", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "runAsync", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable)"/>
@@ -139,7 +139,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture RunAsync(Java.Lang.Runnable arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalClazz, "runAsync", arg0);
+            return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "runAsync", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit,java.util.concurrent.Executor)"/>
@@ -150,7 +150,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
         public static Java.Util.Concurrent.Executor DelayedExecutorMethod(long arg0, Java.Util.Concurrent.TimeUnit arg1, Java.Util.Concurrent.Executor arg2)
         {
-            return SExecute<Java.Util.Concurrent.Executor>(LocalClazz, "delayedExecutor", arg0, arg1, arg2);
+            return SExecute<Java.Util.Concurrent.Executor>(LocalBridgeClazz, "delayedExecutor", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit)"/>
@@ -160,7 +160,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
         public static Java.Util.Concurrent.Executor DelayedExecutorMethod(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return SExecute<Java.Util.Concurrent.Executor>(LocalClazz, "delayedExecutor", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.Executor>(LocalBridgeClazz, "delayedExecutor", arg0, arg1);
         }
 
         #endregion
@@ -793,7 +793,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<U> CompletedFuture<U>(U arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture<U>>(LocalClazz, "completedFuture", arg0);
+            return SExecute<Java.Util.Concurrent.CompletableFuture<U>>(LocalBridgeClazz, "completedFuture", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#failedFuture(java.lang.Throwable)"/>
@@ -803,7 +803,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<U> FailedFuture<U>(Java.Lang.Throwable arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture<U>>(LocalClazz, "failedFuture", arg0);
+            return SExecute<Java.Util.Concurrent.CompletableFuture<U>>(LocalBridgeClazz, "failedFuture", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier,java.util.concurrent.Executor)"/>
@@ -814,7 +814,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<U> SupplyAsync<U>(Java.Util.Function.Supplier<U> arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture<U>>(LocalClazz, "supplyAsync", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.CompletableFuture<U>>(LocalBridgeClazz, "supplyAsync", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier)"/>
@@ -824,7 +824,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<U> SupplyAsync<U>(Java.Util.Function.Supplier<U> arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture<U>>(LocalClazz, "supplyAsync", arg0);
+            return SExecute<Java.Util.Concurrent.CompletableFuture<U>>(LocalBridgeClazz, "supplyAsync", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#completedStage(java.lang.Object)"/>
@@ -834,7 +834,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public static Java.Util.Concurrent.CompletionStage<U> CompletedStage<U>(U arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletionStage<U>>(LocalClazz, "completedStage", arg0);
+            return SExecute<Java.Util.Concurrent.CompletionStage<U>>(LocalBridgeClazz, "completedStage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#failedStage(java.lang.Throwable)"/>
@@ -844,7 +844,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public static Java.Util.Concurrent.CompletionStage<U> FailedStage<U>(Java.Lang.Throwable arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletionStage<U>>(LocalClazz, "failedStage", arg0);
+            return SExecute<Java.Util.Concurrent.CompletionStage<U>>(LocalBridgeClazz, "failedStage", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
@@ -854,7 +854,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<object> AnyOfMethod<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<object>>(LocalClazz, "anyOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<object>>(LocalClazz, "anyOf", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<object>>(LocalBridgeClazz, "anyOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<object>>(LocalBridgeClazz, "anyOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
@@ -864,7 +864,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> AllOf<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalClazz, "allOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalClazz, "allOf", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "allOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "allOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
@@ -874,7 +874,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> RunAsync(Java.Lang.Runnable arg0, Java.Util.Concurrent.Executor arg1)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalClazz, "runAsync", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "runAsync", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable)"/>
@@ -883,7 +883,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> RunAsync(Java.Lang.Runnable arg0)
         {
-            return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalClazz, "runAsync", arg0);
+            return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "runAsync", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit,java.util.concurrent.Executor)"/>
@@ -894,7 +894,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
         public static Java.Util.Concurrent.Executor DelayedExecutorMethod(long arg0, Java.Util.Concurrent.TimeUnit arg1, Java.Util.Concurrent.Executor arg2)
         {
-            return SExecute<Java.Util.Concurrent.Executor>(LocalClazz, "delayedExecutor", arg0, arg1, arg2);
+            return SExecute<Java.Util.Concurrent.Executor>(LocalBridgeClazz, "delayedExecutor", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit)"/>
@@ -904,7 +904,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
         public static Java.Util.Concurrent.Executor DelayedExecutorMethod(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return SExecute<Java.Util.Concurrent.Executor>(LocalClazz, "delayedExecutor", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.Executor>(LocalBridgeClazz, "delayedExecutor", arg0, arg1);
         }
 
         #endregion

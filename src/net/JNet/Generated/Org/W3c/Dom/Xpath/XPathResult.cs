@@ -40,43 +40,43 @@ namespace Org.W3c.Dom.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ANY_TYPE"/>
         /// </summary>
-        public static short ANY_TYPE { get { return SGetField<short>(LocalClazz, "ANY_TYPE"); } }
+        public static short ANY_TYPE { get { return SGetField<short>(LocalBridgeClazz, "ANY_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ANY_UNORDERED_NODE_TYPE"/>
         /// </summary>
-        public static short ANY_UNORDERED_NODE_TYPE { get { return SGetField<short>(LocalClazz, "ANY_UNORDERED_NODE_TYPE"); } }
+        public static short ANY_UNORDERED_NODE_TYPE { get { return SGetField<short>(LocalBridgeClazz, "ANY_UNORDERED_NODE_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#BOOLEAN_TYPE"/>
         /// </summary>
-        public static short BOOLEAN_TYPE { get { return SGetField<short>(LocalClazz, "BOOLEAN_TYPE"); } }
+        public static short BOOLEAN_TYPE { get { return SGetField<short>(LocalBridgeClazz, "BOOLEAN_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#FIRST_ORDERED_NODE_TYPE"/>
         /// </summary>
-        public static short FIRST_ORDERED_NODE_TYPE { get { return SGetField<short>(LocalClazz, "FIRST_ORDERED_NODE_TYPE"); } }
+        public static short FIRST_ORDERED_NODE_TYPE { get { return SGetField<short>(LocalBridgeClazz, "FIRST_ORDERED_NODE_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#NUMBER_TYPE"/>
         /// </summary>
-        public static short NUMBER_TYPE { get { return SGetField<short>(LocalClazz, "NUMBER_TYPE"); } }
+        public static short NUMBER_TYPE { get { return SGetField<short>(LocalBridgeClazz, "NUMBER_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ORDERED_NODE_ITERATOR_TYPE"/>
         /// </summary>
-        public static short ORDERED_NODE_ITERATOR_TYPE { get { return SGetField<short>(LocalClazz, "ORDERED_NODE_ITERATOR_TYPE"); } }
+        public static short ORDERED_NODE_ITERATOR_TYPE { get { return SGetField<short>(LocalBridgeClazz, "ORDERED_NODE_ITERATOR_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#ORDERED_NODE_SNAPSHOT_TYPE"/>
         /// </summary>
-        public static short ORDERED_NODE_SNAPSHOT_TYPE { get { return SGetField<short>(LocalClazz, "ORDERED_NODE_SNAPSHOT_TYPE"); } }
+        public static short ORDERED_NODE_SNAPSHOT_TYPE { get { return SGetField<short>(LocalBridgeClazz, "ORDERED_NODE_SNAPSHOT_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#STRING_TYPE"/>
         /// </summary>
-        public static short STRING_TYPE { get { return SGetField<short>(LocalClazz, "STRING_TYPE"); } }
+        public static short STRING_TYPE { get { return SGetField<short>(LocalBridgeClazz, "STRING_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#UNORDERED_NODE_ITERATOR_TYPE"/>
         /// </summary>
-        public static short UNORDERED_NODE_ITERATOR_TYPE { get { return SGetField<short>(LocalClazz, "UNORDERED_NODE_ITERATOR_TYPE"); } }
+        public static short UNORDERED_NODE_ITERATOR_TYPE { get { return SGetField<short>(LocalBridgeClazz, "UNORDERED_NODE_ITERATOR_TYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#UNORDERED_NODE_SNAPSHOT_TYPE"/>
         /// </summary>
-        public static short UNORDERED_NODE_SNAPSHOT_TYPE { get { return SGetField<short>(LocalClazz, "UNORDERED_NODE_SNAPSHOT_TYPE"); } }
+        public static short UNORDERED_NODE_SNAPSHOT_TYPE { get { return SGetField<short>(LocalBridgeClazz, "UNORDERED_NODE_SNAPSHOT_TYPE"); } }
 
         #endregion
 

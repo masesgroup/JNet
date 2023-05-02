@@ -44,39 +44,39 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#ALL"/>
         /// </summary>
-        public static Java.Util.Logging.Level ALL { get { return SGetField<Java.Util.Logging.Level>(LocalClazz, "ALL"); } }
+        public static Java.Util.Logging.Level ALL { get { return SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "ALL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#CONFIG"/>
         /// </summary>
-        public static Java.Util.Logging.Level CONFIG { get { return SGetField<Java.Util.Logging.Level>(LocalClazz, "CONFIG"); } }
+        public static Java.Util.Logging.Level CONFIG { get { return SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "CONFIG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINE"/>
         /// </summary>
-        public static Java.Util.Logging.Level FINE { get { return SGetField<Java.Util.Logging.Level>(LocalClazz, "FINE"); } }
+        public static Java.Util.Logging.Level FINE { get { return SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "FINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINER"/>
         /// </summary>
-        public static Java.Util.Logging.Level FINER { get { return SGetField<Java.Util.Logging.Level>(LocalClazz, "FINER"); } }
+        public static Java.Util.Logging.Level FINER { get { return SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "FINER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#FINEST"/>
         /// </summary>
-        public static Java.Util.Logging.Level FINEST { get { return SGetField<Java.Util.Logging.Level>(LocalClazz, "FINEST"); } }
+        public static Java.Util.Logging.Level FINEST { get { return SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "FINEST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#INFO"/>
         /// </summary>
-        public static Java.Util.Logging.Level INFO { get { return SGetField<Java.Util.Logging.Level>(LocalClazz, "INFO"); } }
+        public static Java.Util.Logging.Level INFO { get { return SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "INFO"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#OFF"/>
         /// </summary>
-        public static Java.Util.Logging.Level OFF { get { return SGetField<Java.Util.Logging.Level>(LocalClazz, "OFF"); } }
+        public static Java.Util.Logging.Level OFF { get { return SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "OFF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#SEVERE"/>
         /// </summary>
-        public static Java.Util.Logging.Level SEVERE { get { return SGetField<Java.Util.Logging.Level>(LocalClazz, "SEVERE"); } }
+        public static Java.Util.Logging.Level SEVERE { get { return SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "SEVERE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#WARNING"/>
         /// </summary>
-        public static Java.Util.Logging.Level WARNING { get { return SGetField<Java.Util.Logging.Level>(LocalClazz, "WARNING"); } }
+        public static Java.Util.Logging.Level WARNING { get { return SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "WARNING"); } }
 
         #endregion
 
@@ -89,7 +89,7 @@ namespace Java.Util.Logging
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public static Java.Util.Logging.Level Parse(string arg0)
         {
-            return SExecute<Java.Util.Logging.Level>(LocalClazz, "parse", arg0);
+            return SExecute<Java.Util.Logging.Level>(LocalBridgeClazz, "parse", arg0);
         }
 
         #endregion

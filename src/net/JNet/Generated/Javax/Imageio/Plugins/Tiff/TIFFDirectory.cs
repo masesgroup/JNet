@@ -62,7 +62,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
         public static Javax.Imageio.Plugins.Tiff.TIFFDirectory CreateFromMetadata(Javax.Imageio.Metadata.IIOMetadata arg0)
         {
-            return SExecute<Javax.Imageio.Plugins.Tiff.TIFFDirectory>(LocalClazz, "createFromMetadata", arg0);
+            return SExecute<Javax.Imageio.Plugins.Tiff.TIFFDirectory>(LocalBridgeClazz, "createFromMetadata", arg0);
         }
 
         #endregion

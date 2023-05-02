@@ -52,31 +52,31 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA1"/>
         /// </summary>
-        public static Java.Security.Spec.MGF1ParameterSpec SHA1 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalClazz, "SHA1"); } }
+        public static Java.Security.Spec.MGF1ParameterSpec SHA1 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA224"/>
         /// </summary>
-        public static Java.Security.Spec.MGF1ParameterSpec SHA224 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalClazz, "SHA224"); } }
+        public static Java.Security.Spec.MGF1ParameterSpec SHA224 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA224"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA256"/>
         /// </summary>
-        public static Java.Security.Spec.MGF1ParameterSpec SHA256 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalClazz, "SHA256"); } }
+        public static Java.Security.Spec.MGF1ParameterSpec SHA256 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA256"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA384"/>
         /// </summary>
-        public static Java.Security.Spec.MGF1ParameterSpec SHA384 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalClazz, "SHA384"); } }
+        public static Java.Security.Spec.MGF1ParameterSpec SHA384 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA384"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512"/>
         /// </summary>
-        public static Java.Security.Spec.MGF1ParameterSpec SHA512 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalClazz, "SHA512"); } }
+        public static Java.Security.Spec.MGF1ParameterSpec SHA512 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA512"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512_224"/>
         /// </summary>
-        public static Java.Security.Spec.MGF1ParameterSpec SHA512_224 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalClazz, "SHA512_224"); } }
+        public static Java.Security.Spec.MGF1ParameterSpec SHA512_224 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA512_224"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html#SHA512_256"/>
         /// </summary>
-        public static Java.Security.Spec.MGF1ParameterSpec SHA512_256 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalClazz, "SHA512_256"); } }
+        public static Java.Security.Spec.MGF1ParameterSpec SHA512_256 { get { return SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA512_256"); } }
 
         #endregion
 

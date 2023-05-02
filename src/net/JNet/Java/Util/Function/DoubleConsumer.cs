@@ -34,14 +34,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java DoubleConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java DoubleConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class DoubleConsumer : JVMBridgeListener, IDoubleConsumer
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetDoubleConsumer";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoubleConsumer";
 
         Action<double> executionFunction = null;
         /// <summary>

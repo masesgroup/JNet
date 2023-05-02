@@ -27,9 +27,9 @@ namespace Java.Lang.Reflect
     public class Field : AccessibleObject
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.reflect.Field";
+        public override string BridgeClassName => "java.lang.reflect.Field";
         /// <summary>
         /// Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the declared type of the field represented by this <see cref="Field"/>.
         /// </summary>

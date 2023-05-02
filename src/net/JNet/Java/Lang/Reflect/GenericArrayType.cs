@@ -27,9 +27,9 @@ namespace Java.Lang.Reflect
     public class GenericArrayType : Type
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.reflect.GenericArrayType";
+        public override string BridgeClassName => "java.lang.reflect.GenericArrayType";
         /// <summary>
         /// Returns a <see cref="Type"/> object representing the component type of this array.
         /// </summary>

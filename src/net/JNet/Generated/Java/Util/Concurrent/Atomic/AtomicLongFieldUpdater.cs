@@ -49,7 +49,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater"/></returns>
         public static Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater NewUpdater(Java.Lang.Class arg0, string arg1)
         {
-            return SExecute<Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater>(LocalClazz, "newUpdater", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater>(LocalBridgeClazz, "newUpdater", arg0, arg1);
         }
 
         #endregion
@@ -252,7 +252,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater"/></returns>
         public static Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater<U> NewUpdater<U>(Java.Lang.Class arg0, string arg1)
         {
-            return SExecute<Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater<U>>(LocalClazz, "newUpdater", arg0, arg1);
+            return SExecute<Java.Util.Concurrent.Atomic.AtomicLongFieldUpdater<U>>(LocalBridgeClazz, "newUpdater", arg0, arg1);
         }
 
         #endregion

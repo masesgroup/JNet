@@ -48,7 +48,7 @@ namespace Java.Lang.Ref
         /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
         public static Java.Lang.Ref.Cleaner Create()
         {
-            return SExecute<Java.Lang.Ref.Cleaner>(LocalClazz, "create");
+            return SExecute<Java.Lang.Ref.Cleaner>(LocalBridgeClazz, "create");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ref/Cleaner.html#create(java.util.concurrent.ThreadFactory)"/>
@@ -57,7 +57,7 @@ namespace Java.Lang.Ref
         /// <returns><see cref="Java.Lang.Ref.Cleaner"/></returns>
         public static Java.Lang.Ref.Cleaner Create(Java.Util.Concurrent.ThreadFactory arg0)
         {
-            return SExecute<Java.Lang.Ref.Cleaner>(LocalClazz, "create", arg0);
+            return SExecute<Java.Lang.Ref.Cleaner>(LocalBridgeClazz, "create", arg0);
         }
 
         #endregion

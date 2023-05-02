@@ -40,19 +40,19 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_BOTTOM"/>
         /// </summary>
-        public static int OUT_BOTTOM { get { return SGetField<int>(LocalClazz, "OUT_BOTTOM"); } }
+        public static int OUT_BOTTOM { get { return SGetField<int>(LocalBridgeClazz, "OUT_BOTTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_LEFT"/>
         /// </summary>
-        public static int OUT_LEFT { get { return SGetField<int>(LocalClazz, "OUT_LEFT"); } }
+        public static int OUT_LEFT { get { return SGetField<int>(LocalBridgeClazz, "OUT_LEFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_RIGHT"/>
         /// </summary>
-        public static int OUT_RIGHT { get { return SGetField<int>(LocalClazz, "OUT_RIGHT"); } }
+        public static int OUT_RIGHT { get { return SGetField<int>(LocalBridgeClazz, "OUT_RIGHT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#OUT_TOP"/>
         /// </summary>
-        public static int OUT_TOP { get { return SGetField<int>(LocalClazz, "OUT_TOP"); } }
+        public static int OUT_TOP { get { return SGetField<int>(LocalBridgeClazz, "OUT_TOP"); } }
 
         #endregion
 
@@ -65,7 +65,7 @@ namespace Java.Awt.Geom
         /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
         public static void Intersect(Java.Awt.Geom.Rectangle2D arg0, Java.Awt.Geom.Rectangle2D arg1, Java.Awt.Geom.Rectangle2D arg2)
         {
-            SExecute(LocalClazz, "intersect", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "intersect", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Rectangle2D.html#union(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D)"/>
@@ -75,7 +75,7 @@ namespace Java.Awt.Geom
         /// <param name="arg2"><see cref="Java.Awt.Geom.Rectangle2D"/></param>
         public static void Union(Java.Awt.Geom.Rectangle2D arg0, Java.Awt.Geom.Rectangle2D arg1, Java.Awt.Geom.Rectangle2D arg2)
         {
-            SExecute(LocalClazz, "union", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "union", arg0, arg1, arg2);
         }
 
         #endregion

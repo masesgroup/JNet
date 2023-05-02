@@ -40,7 +40,7 @@ namespace Java.Beans
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html#PROPERTYNAME"/>
         /// </summary>
-        public static string PROPERTYNAME { get { return SGetField<string>(LocalClazz, "PROPERTYNAME"); } }
+        public static string PROPERTYNAME { get { return SGetField<string>(LocalBridgeClazz, "PROPERTYNAME"); } }
 
         #endregion
 

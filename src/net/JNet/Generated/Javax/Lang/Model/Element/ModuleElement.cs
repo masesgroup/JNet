@@ -171,23 +171,23 @@ namespace Javax.Lang.Model.Element
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#EXPORTS"/>
             /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind EXPORTS { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "EXPORTS"); } }
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind EXPORTS { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "EXPORTS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#OPENS"/>
             /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind OPENS { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "OPENS"); } }
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind OPENS { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "OPENS"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#PROVIDES"/>
             /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind PROVIDES { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "PROVIDES"); } }
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind PROVIDES { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "PROVIDES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#REQUIRES"/>
             /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind REQUIRES { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "REQUIRES"); } }
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind REQUIRES { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "REQUIRES"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#USES"/>
             /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind USES { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "USES"); } }
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind USES { get { return SGetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "USES"); } }
 
             #endregion
 
@@ -197,7 +197,7 @@ namespace Javax.Lang.Model.Element
             /// </summary>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind[] Values
             {
-                get { return SExecuteArray<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "values"); }
+                get { return SExecuteArray<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#valueOf(java.lang.String)"/>
@@ -206,7 +206,7 @@ namespace Javax.Lang.Model.Element
             /// <returns><see cref="Javax.Lang.Model.Element.ModuleElement.DirectiveKind"/></returns>
             public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind ValueOf(string arg0)
             {
-                return SExecute<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalClazz, "valueOf", arg0);
+                return SExecute<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion
@@ -610,20 +610,18 @@ namespace Javax.Lang.Model.Element
                 get { return IExecute<Javax.Lang.Model.Element.ModuleElement>("getDependency"); }
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isStatic()"/> 
+            /// </summary>
+            public bool IsStatic
+            {
+                get { return IExecute<bool>("isStatic"); }
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isTransitive()"/> 
             /// </summary>
             public bool IsTransitive
             {
                 get { return IExecute<bool>("isTransitive"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html#isStatic()"/>
-            /// </summary>
-
-            /// <returns><see cref="bool"/></returns>
-            public bool IsStaticMethod()
-            {
-                return IExecute<bool>("isStatic");
             }
 
             #endregion

@@ -50,7 +50,7 @@ namespace Java.Io
         /// </summary>
         public static Java.Io.InputStream NullInputStream
         {
-            get { return SExecute<Java.Io.InputStream>(LocalClazz, "nullInputStream"); }
+            get { return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "nullInputStream"); }
         }
 
         #endregion

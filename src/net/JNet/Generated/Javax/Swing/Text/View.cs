@@ -52,27 +52,27 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#BadBreakWeight"/>
         /// </summary>
-        public static int BadBreakWeight { get { return SGetField<int>(LocalClazz, "BadBreakWeight"); } }
+        public static int BadBreakWeight { get { return SGetField<int>(LocalBridgeClazz, "BadBreakWeight"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#ExcellentBreakWeight"/>
         /// </summary>
-        public static int ExcellentBreakWeight { get { return SGetField<int>(LocalClazz, "ExcellentBreakWeight"); } }
+        public static int ExcellentBreakWeight { get { return SGetField<int>(LocalBridgeClazz, "ExcellentBreakWeight"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#ForcedBreakWeight"/>
         /// </summary>
-        public static int ForcedBreakWeight { get { return SGetField<int>(LocalClazz, "ForcedBreakWeight"); } }
+        public static int ForcedBreakWeight { get { return SGetField<int>(LocalBridgeClazz, "ForcedBreakWeight"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#GoodBreakWeight"/>
         /// </summary>
-        public static int GoodBreakWeight { get { return SGetField<int>(LocalClazz, "GoodBreakWeight"); } }
+        public static int GoodBreakWeight { get { return SGetField<int>(LocalBridgeClazz, "GoodBreakWeight"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#X_AXIS"/>
         /// </summary>
-        public static int X_AXIS { get { return SGetField<int>(LocalClazz, "X_AXIS"); } }
+        public static int X_AXIS { get { return SGetField<int>(LocalBridgeClazz, "X_AXIS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#Y_AXIS"/>
         /// </summary>
-        public static int Y_AXIS { get { return SGetField<int>(LocalClazz, "Y_AXIS"); } }
+        public static int Y_AXIS { get { return SGetField<int>(LocalBridgeClazz, "Y_AXIS"); } }
 
         #endregion
 

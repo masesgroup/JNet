@@ -63,7 +63,7 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MutableCallSite"/></param>
         public static void SyncAll(Java.Lang.Invoke.MutableCallSite[] arg0)
         {
-            SExecute(LocalClazz, "syncAll", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "syncAll", new object[] { arg0 });
         }
 
         #endregion

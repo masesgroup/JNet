@@ -48,19 +48,19 @@ namespace Java.Time.Chrono
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#HEISEI"/>
         /// </summary>
-        public static Java.Time.Chrono.JapaneseEra HEISEI { get { return SGetField<Java.Time.Chrono.JapaneseEra>(LocalClazz, "HEISEI"); } }
+        public static Java.Time.Chrono.JapaneseEra HEISEI { get { return SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "HEISEI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#MEIJI"/>
         /// </summary>
-        public static Java.Time.Chrono.JapaneseEra MEIJI { get { return SGetField<Java.Time.Chrono.JapaneseEra>(LocalClazz, "MEIJI"); } }
+        public static Java.Time.Chrono.JapaneseEra MEIJI { get { return SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "MEIJI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#SHOWA"/>
         /// </summary>
-        public static Java.Time.Chrono.JapaneseEra SHOWA { get { return SGetField<Java.Time.Chrono.JapaneseEra>(LocalClazz, "SHOWA"); } }
+        public static Java.Time.Chrono.JapaneseEra SHOWA { get { return SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "SHOWA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#TAISHO"/>
         /// </summary>
-        public static Java.Time.Chrono.JapaneseEra TAISHO { get { return SGetField<Java.Time.Chrono.JapaneseEra>(LocalClazz, "TAISHO"); } }
+        public static Java.Time.Chrono.JapaneseEra TAISHO { get { return SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "TAISHO"); } }
 
         #endregion
 
@@ -70,7 +70,7 @@ namespace Java.Time.Chrono
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra[] Values
         {
-            get { return SExecuteArray<Java.Time.Chrono.JapaneseEra>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#of(int)"/>
@@ -79,7 +79,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
         public static Java.Time.Chrono.JapaneseEra Of(int arg0)
         {
-            return SExecute<Java.Time.Chrono.JapaneseEra>(LocalClazz, "of", arg0);
+            return SExecute<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#valueOf(java.lang.String)"/>
@@ -88,7 +88,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
         public static Java.Time.Chrono.JapaneseEra ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Chrono.JapaneseEra>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

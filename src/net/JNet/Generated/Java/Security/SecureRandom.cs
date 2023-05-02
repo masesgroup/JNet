@@ -54,7 +54,7 @@ namespace Java.Security
         /// </summary>
         public static Java.Security.SecureRandom InstanceStrong
         {
-            get { return SExecute<Java.Security.SecureRandom>(LocalClazz, "getInstanceStrong"); }
+            get { return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstanceStrong"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getSeed(int)"/>
@@ -63,7 +63,7 @@ namespace Java.Security
         /// <returns><see cref="byte"/></returns>
         public static byte[] GetSeed(int arg0)
         {
-            return SExecuteArray<byte>(LocalClazz, "getSeed", arg0);
+            return SExecuteArray<byte>(LocalBridgeClazz, "getSeed", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -75,7 +75,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.SecureRandom GetInstance(string arg0, string arg1)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalClazz, "getInstance", arg0, arg1);
+            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -86,7 +86,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.SecureRandom GetInstance(string arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalClazz, "getInstance", arg0, arg1);
+            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters,java.lang.String)"/>
@@ -99,7 +99,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.SecureRandom GetInstance(string arg0, Java.Security.SecureRandomParameters arg1, string arg2)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalClazz, "getInstance", arg0, arg1, arg2);
+            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters,java.security.Provider)"/>
@@ -111,7 +111,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.SecureRandom GetInstance(string arg0, Java.Security.SecureRandomParameters arg1, Java.Security.Provider arg2)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalClazz, "getInstance", arg0, arg1, arg2);
+            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters)"/>
@@ -122,7 +122,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.SecureRandom GetInstance(string arg0, Java.Security.SecureRandomParameters arg1)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalClazz, "getInstance", arg0, arg1);
+            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String)"/>
@@ -132,7 +132,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.SecureRandom GetInstance(string arg0)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalClazz, "getInstance", arg0);
+            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion

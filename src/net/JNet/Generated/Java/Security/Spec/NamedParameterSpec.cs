@@ -52,11 +52,11 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/NamedParameterSpec.html#X25519"/>
         /// </summary>
-        public static Java.Security.Spec.NamedParameterSpec X25519 { get { return SGetField<Java.Security.Spec.NamedParameterSpec>(LocalClazz, "X25519"); } }
+        public static Java.Security.Spec.NamedParameterSpec X25519 { get { return SGetField<Java.Security.Spec.NamedParameterSpec>(LocalBridgeClazz, "X25519"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/NamedParameterSpec.html#X448"/>
         /// </summary>
-        public static Java.Security.Spec.NamedParameterSpec X448 { get { return SGetField<Java.Security.Spec.NamedParameterSpec>(LocalClazz, "X448"); } }
+        public static Java.Security.Spec.NamedParameterSpec X448 { get { return SGetField<Java.Security.Spec.NamedParameterSpec>(LocalBridgeClazz, "X448"); } }
 
         #endregion
 

@@ -44,39 +44,39 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#COLOR_CHOOSER_DIALOG"/>
         /// </summary>
-        public static int COLOR_CHOOSER_DIALOG { get { return SGetField<int>(LocalClazz, "COLOR_CHOOSER_DIALOG"); } }
+        public static int COLOR_CHOOSER_DIALOG { get { return SGetField<int>(LocalBridgeClazz, "COLOR_CHOOSER_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#ERROR_DIALOG"/>
         /// </summary>
-        public static int ERROR_DIALOG { get { return SGetField<int>(LocalClazz, "ERROR_DIALOG"); } }
+        public static int ERROR_DIALOG { get { return SGetField<int>(LocalBridgeClazz, "ERROR_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#FILE_CHOOSER_DIALOG"/>
         /// </summary>
-        public static int FILE_CHOOSER_DIALOG { get { return SGetField<int>(LocalClazz, "FILE_CHOOSER_DIALOG"); } }
+        public static int FILE_CHOOSER_DIALOG { get { return SGetField<int>(LocalBridgeClazz, "FILE_CHOOSER_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#FRAME"/>
         /// </summary>
-        public static int FRAME { get { return SGetField<int>(LocalClazz, "FRAME"); } }
+        public static int FRAME { get { return SGetField<int>(LocalBridgeClazz, "FRAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#INFORMATION_DIALOG"/>
         /// </summary>
-        public static int INFORMATION_DIALOG { get { return SGetField<int>(LocalClazz, "INFORMATION_DIALOG"); } }
+        public static int INFORMATION_DIALOG { get { return SGetField<int>(LocalBridgeClazz, "INFORMATION_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#NONE"/>
         /// </summary>
-        public static int NONE { get { return SGetField<int>(LocalClazz, "NONE"); } }
+        public static int NONE { get { return SGetField<int>(LocalBridgeClazz, "NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#PLAIN_DIALOG"/>
         /// </summary>
-        public static int PLAIN_DIALOG { get { return SGetField<int>(LocalClazz, "PLAIN_DIALOG"); } }
+        public static int PLAIN_DIALOG { get { return SGetField<int>(LocalBridgeClazz, "PLAIN_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#QUESTION_DIALOG"/>
         /// </summary>
-        public static int QUESTION_DIALOG { get { return SGetField<int>(LocalClazz, "QUESTION_DIALOG"); } }
+        public static int QUESTION_DIALOG { get { return SGetField<int>(LocalBridgeClazz, "QUESTION_DIALOG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JRootPane.html#WARNING_DIALOG"/>
         /// </summary>
-        public static int WARNING_DIALOG { get { return SGetField<int>(LocalClazz, "WARNING_DIALOG"); } }
+        public static int WARNING_DIALOG { get { return SGetField<int>(LocalBridgeClazz, "WARNING_DIALOG"); } }
 
         #endregion
 

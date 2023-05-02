@@ -50,14 +50,14 @@ namespace Java.Nio.Charset
         /// </summary>
         public static Java.Util.SortedMap<string, Java.Nio.Charset.Charset> AvailableCharsets
         {
-            get { return SExecute<Java.Util.SortedMap<string, Java.Nio.Charset.Charset>>(LocalClazz, "availableCharsets"); }
+            get { return SExecute<Java.Util.SortedMap<string, Java.Nio.Charset.Charset>>(LocalBridgeClazz, "availableCharsets"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#defaultCharset()"/> 
         /// </summary>
         public static Java.Nio.Charset.Charset DefaultCharset
         {
-            get { return SExecute<Java.Nio.Charset.Charset>(LocalClazz, "defaultCharset"); }
+            get { return SExecute<Java.Nio.Charset.Charset>(LocalBridgeClazz, "defaultCharset"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#isSupported(java.lang.String)"/>
@@ -66,7 +66,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="bool"/></returns>
         public static bool IsSupported(string arg0)
         {
-            return SExecute<bool>(LocalClazz, "isSupported", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isSupported", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html#forName(java.lang.String)"/>
@@ -75,7 +75,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
         public static Java.Nio.Charset.Charset ForName(string arg0)
         {
-            return SExecute<Java.Nio.Charset.Charset>(LocalClazz, "forName", arg0);
+            return SExecute<Java.Nio.Charset.Charset>(LocalBridgeClazz, "forName", arg0);
         }
 
         #endregion

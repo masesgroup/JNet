@@ -40,35 +40,35 @@ namespace Java.Math
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#CEILING"/>
         /// </summary>
-        public static Java.Math.RoundingMode CEILING { get { return SGetField<Java.Math.RoundingMode>(LocalClazz, "CEILING"); } }
+        public static Java.Math.RoundingMode CEILING { get { return SGetField<Java.Math.RoundingMode>(LocalBridgeClazz, "CEILING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#DOWN"/>
         /// </summary>
-        public static Java.Math.RoundingMode DOWN { get { return SGetField<Java.Math.RoundingMode>(LocalClazz, "DOWN"); } }
+        public static Java.Math.RoundingMode DOWN { get { return SGetField<Java.Math.RoundingMode>(LocalBridgeClazz, "DOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#FLOOR"/>
         /// </summary>
-        public static Java.Math.RoundingMode FLOOR { get { return SGetField<Java.Math.RoundingMode>(LocalClazz, "FLOOR"); } }
+        public static Java.Math.RoundingMode FLOOR { get { return SGetField<Java.Math.RoundingMode>(LocalBridgeClazz, "FLOOR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#HALF_DOWN"/>
         /// </summary>
-        public static Java.Math.RoundingMode HALF_DOWN { get { return SGetField<Java.Math.RoundingMode>(LocalClazz, "HALF_DOWN"); } }
+        public static Java.Math.RoundingMode HALF_DOWN { get { return SGetField<Java.Math.RoundingMode>(LocalBridgeClazz, "HALF_DOWN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#HALF_EVEN"/>
         /// </summary>
-        public static Java.Math.RoundingMode HALF_EVEN { get { return SGetField<Java.Math.RoundingMode>(LocalClazz, "HALF_EVEN"); } }
+        public static Java.Math.RoundingMode HALF_EVEN { get { return SGetField<Java.Math.RoundingMode>(LocalBridgeClazz, "HALF_EVEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#HALF_UP"/>
         /// </summary>
-        public static Java.Math.RoundingMode HALF_UP { get { return SGetField<Java.Math.RoundingMode>(LocalClazz, "HALF_UP"); } }
+        public static Java.Math.RoundingMode HALF_UP { get { return SGetField<Java.Math.RoundingMode>(LocalBridgeClazz, "HALF_UP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#UNNECESSARY"/>
         /// </summary>
-        public static Java.Math.RoundingMode UNNECESSARY { get { return SGetField<Java.Math.RoundingMode>(LocalClazz, "UNNECESSARY"); } }
+        public static Java.Math.RoundingMode UNNECESSARY { get { return SGetField<Java.Math.RoundingMode>(LocalBridgeClazz, "UNNECESSARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#UP"/>
         /// </summary>
-        public static Java.Math.RoundingMode UP { get { return SGetField<Java.Math.RoundingMode>(LocalClazz, "UP"); } }
+        public static Java.Math.RoundingMode UP { get { return SGetField<Java.Math.RoundingMode>(LocalBridgeClazz, "UP"); } }
 
         #endregion
 
@@ -78,7 +78,7 @@ namespace Java.Math
         /// </summary>
         public static Java.Math.RoundingMode[] Values
         {
-            get { return SExecuteArray<Java.Math.RoundingMode>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Math.RoundingMode>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#valueOf(int)"/>
@@ -87,7 +87,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.RoundingMode"/></returns>
         public static Java.Math.RoundingMode ValueOf(int arg0)
         {
-            return SExecute<Java.Math.RoundingMode>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Math.RoundingMode>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html#valueOf(java.lang.String)"/>
@@ -96,7 +96,7 @@ namespace Java.Math
         /// <returns><see cref="Java.Math.RoundingMode"/></returns>
         public static Java.Math.RoundingMode ValueOf(string arg0)
         {
-            return SExecute<Java.Math.RoundingMode>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Math.RoundingMode>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

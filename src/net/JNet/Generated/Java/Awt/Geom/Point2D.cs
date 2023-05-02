@@ -55,7 +55,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double Distance(double arg0, double arg1, double arg2, double arg3)
         {
-            return SExecute<double>(LocalClazz, "distance", arg0, arg1, arg2, arg3);
+            return SExecute<double>(LocalBridgeClazz, "distance", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distanceSq(double,double,double,double)"/>
@@ -67,7 +67,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double DistanceSq(double arg0, double arg1, double arg2, double arg3)
         {
-            return SExecute<double>(LocalClazz, "distanceSq", arg0, arg1, arg2, arg3);
+            return SExecute<double>(LocalBridgeClazz, "distanceSq", arg0, arg1, arg2, arg3);
         }
 
         #endregion

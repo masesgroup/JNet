@@ -52,7 +52,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A: Java.Nio.File.Attribute.BasicFileAttributes
         {
-            if (arg2.Length == 0) return SExecute<A>(LocalClazz, "readAttributes", arg0, arg1); else return SExecute<A>(LocalClazz, "readAttributes", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<A>(LocalBridgeClazz, "readAttributes", arg0, arg1); else return SExecute<A>(LocalBridgeClazz, "readAttributes", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getFileAttributeView(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
@@ -64,7 +64,7 @@ namespace Java.Nio.File
         /// <returns><typeparamref name="V"/></returns>
         public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.FileAttributeView
         {
-            if (arg2.Length == 0) return SExecute<V>(LocalClazz, "getFileAttributeView", arg0, arg1); else return SExecute<V>(LocalClazz, "getFileAttributeView", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", arg0, arg1); else return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#deleteIfExists(java.nio.file.Path)"/>
@@ -74,7 +74,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static bool DeleteIfExists(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalClazz, "deleteIfExists", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "deleteIfExists", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#exists(java.nio.file.Path,java.nio.file.LinkOption[])"/>
@@ -84,7 +84,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool Exists(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<bool>(LocalClazz, "exists", arg0); else return SExecute<bool>(LocalClazz, "exists", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "exists", arg0); else return SExecute<bool>(LocalBridgeClazz, "exists", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isDirectory(java.nio.file.Path,java.nio.file.LinkOption[])"/>
@@ -94,7 +94,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool IsDirectory(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<bool>(LocalClazz, "isDirectory", arg0); else return SExecute<bool>(LocalClazz, "isDirectory", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "isDirectory", arg0); else return SExecute<bool>(LocalBridgeClazz, "isDirectory", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isExecutable(java.nio.file.Path)"/>
@@ -103,7 +103,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool IsExecutable(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalClazz, "isExecutable", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isExecutable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isHidden(java.nio.file.Path)"/>
@@ -113,7 +113,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static bool IsHidden(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalClazz, "isHidden", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isHidden", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isReadable(java.nio.file.Path)"/>
@@ -122,7 +122,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool IsReadable(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalClazz, "isReadable", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isReadable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isRegularFile(java.nio.file.Path,java.nio.file.LinkOption[])"/>
@@ -132,7 +132,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool IsRegularFile(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<bool>(LocalClazz, "isRegularFile", arg0); else return SExecute<bool>(LocalClazz, "isRegularFile", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "isRegularFile", arg0); else return SExecute<bool>(LocalBridgeClazz, "isRegularFile", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isSameFile(java.nio.file.Path,java.nio.file.Path)"/>
@@ -143,7 +143,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static bool IsSameFile(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1)
         {
-            return SExecute<bool>(LocalClazz, "isSameFile", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "isSameFile", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isSymbolicLink(java.nio.file.Path)"/>
@@ -152,7 +152,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool IsSymbolicLink(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalClazz, "isSymbolicLink", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isSymbolicLink", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#isWritable(java.nio.file.Path)"/>
@@ -161,7 +161,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool IsWritable(Java.Nio.File.Path arg0)
         {
-            return SExecute<bool>(LocalClazz, "isWritable", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isWritable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#notExists(java.nio.file.Path,java.nio.file.LinkOption[])"/>
@@ -171,7 +171,7 @@ namespace Java.Nio.File
         /// <returns><see cref="bool"/></returns>
         public static bool NotExists(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<bool>(LocalClazz, "notExists", arg0); else return SExecute<bool>(LocalClazz, "notExists", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "notExists", arg0); else return SExecute<bool>(LocalBridgeClazz, "notExists", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readAllBytes(java.nio.file.Path)"/>
@@ -181,7 +181,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static byte[] ReadAllBytes(Java.Nio.File.Path arg0)
         {
-            return SExecuteArray<byte>(LocalClazz, "readAllBytes", arg0);
+            return SExecuteArray<byte>(LocalBridgeClazz, "readAllBytes", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path,java.nio.charset.Charset)"/>
@@ -192,7 +192,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.BufferedReader NewBufferedReader(Java.Nio.File.Path arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<Java.Io.BufferedReader>(LocalClazz, "newBufferedReader", arg0, arg1);
+            return SExecute<Java.Io.BufferedReader>(LocalBridgeClazz, "newBufferedReader", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path)"/>
@@ -202,7 +202,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.BufferedReader NewBufferedReader(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Io.BufferedReader>(LocalClazz, "newBufferedReader", arg0);
+            return SExecute<Java.Io.BufferedReader>(LocalBridgeClazz, "newBufferedReader", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption[])"/>
@@ -214,7 +214,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.BufferedWriter NewBufferedWriter(Java.Nio.File.Path arg0, Java.Nio.Charset.Charset arg1, params Java.Nio.File.OpenOption[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Io.BufferedWriter>(LocalClazz, "newBufferedWriter", arg0, arg1); else return SExecute<Java.Io.BufferedWriter>(LocalClazz, "newBufferedWriter", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Io.BufferedWriter>(LocalBridgeClazz, "newBufferedWriter", arg0, arg1); else return SExecute<Java.Io.BufferedWriter>(LocalBridgeClazz, "newBufferedWriter", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,java.nio.file.OpenOption[])"/>
@@ -225,7 +225,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.BufferedWriter NewBufferedWriter(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Io.BufferedWriter>(LocalClazz, "newBufferedWriter", arg0); else return SExecute<Java.Io.BufferedWriter>(LocalClazz, "newBufferedWriter", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Io.BufferedWriter>(LocalBridgeClazz, "newBufferedWriter", arg0); else return SExecute<Java.Io.BufferedWriter>(LocalBridgeClazz, "newBufferedWriter", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newInputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
@@ -236,7 +236,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.InputStream NewInputStream(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Io.InputStream>(LocalClazz, "newInputStream", arg0); else return SExecute<Java.Io.InputStream>(LocalClazz, "newInputStream", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "newInputStream", arg0); else return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "newInputStream", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newOutputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
@@ -247,7 +247,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Io.OutputStream NewOutputStream(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Io.OutputStream>(LocalClazz, "newOutputStream", arg0); else return SExecute<Java.Io.OutputStream>(LocalClazz, "newOutputStream", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Io.OutputStream>(LocalBridgeClazz, "newOutputStream", arg0); else return SExecute<Java.Io.OutputStream>(LocalBridgeClazz, "newOutputStream", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getAttribute(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
@@ -259,7 +259,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static object GetAttribute(Java.Nio.File.Path arg0, string arg1, params Java.Nio.File.LinkOption[] arg2)
         {
-            if (arg2.Length == 0) return SExecute(LocalClazz, "getAttribute", arg0, arg1); else return SExecute(LocalClazz, "getAttribute", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute(LocalBridgeClazz, "getAttribute", arg0, arg1); else return SExecute(LocalBridgeClazz, "getAttribute", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#probeContentType(java.nio.file.Path)"/>
@@ -269,7 +269,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static string ProbeContentType(Java.Nio.File.Path arg0)
         {
-            return SExecute<string>(LocalClazz, "probeContentType", arg0);
+            return SExecute<string>(LocalBridgeClazz, "probeContentType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readString(java.nio.file.Path,java.nio.charset.Charset)"/>
@@ -280,7 +280,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static string ReadString(Java.Nio.File.Path arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<string>(LocalClazz, "readString", arg0, arg1);
+            return SExecute<string>(LocalBridgeClazz, "readString", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readString(java.nio.file.Path)"/>
@@ -290,7 +290,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static string ReadString(Java.Nio.File.Path arg0)
         {
-            return SExecute<string>(LocalClazz, "readString", arg0);
+            return SExecute<string>(LocalBridgeClazz, "readString", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newByteChannel(java.nio.file.Path,java.nio.file.OpenOption[])"/>
@@ -301,7 +301,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.SeekableByteChannel NewByteChannel(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalClazz, "newByteChannel", arg0); else return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalClazz, "newByteChannel", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0); else return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newByteChannel(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
@@ -315,7 +315,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption, Arg2Extendsobject>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<Arg2Extendsobject>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalClazz, "newByteChannel", arg0, arg1); else return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalClazz, "newByteChannel", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0, arg1); else return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getLastModifiedTime(java.nio.file.Path,java.nio.file.LinkOption[])"/>
@@ -326,7 +326,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Attribute.FileTime GetLastModifiedTime(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.File.Attribute.FileTime>(LocalClazz, "getLastModifiedTime", arg0); else return SExecute<Java.Nio.File.Attribute.FileTime>(LocalClazz, "getLastModifiedTime", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "getLastModifiedTime", arg0); else return SExecute<Java.Nio.File.Attribute.FileTime>(LocalBridgeClazz, "getLastModifiedTime", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getOwner(java.nio.file.Path,java.nio.file.LinkOption[])"/>
@@ -337,7 +337,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Attribute.UserPrincipal GetOwner(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.File.Attribute.UserPrincipal>(LocalClazz, "getOwner", arg0); else return SExecute<Java.Nio.File.Attribute.UserPrincipal>(LocalClazz, "getOwner", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.File.Attribute.UserPrincipal>(LocalBridgeClazz, "getOwner", arg0); else return SExecute<Java.Nio.File.Attribute.UserPrincipal>(LocalBridgeClazz, "getOwner", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newDirectoryStream(java.nio.file.Path,java.lang.String)"/>
@@ -348,7 +348,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.DirectoryStream<Java.Nio.File.Path> NewDirectoryStream(Java.Nio.File.Path arg0, string arg1)
         {
-            return SExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalClazz, "newDirectoryStream", arg0, arg1);
+            return SExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalBridgeClazz, "newDirectoryStream", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newDirectoryStream(java.nio.file.Path,java.nio.file.DirectoryStream.Filter)"/>
@@ -360,7 +360,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.DirectoryStream<Java.Nio.File.Path> NewDirectoryStream<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.DirectoryStream.Filter<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path: Java.Nio.File.Path
         {
-            return SExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalClazz, "newDirectoryStream", arg0, arg1);
+            return SExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalBridgeClazz, "newDirectoryStream", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#newDirectoryStream(java.nio.file.Path)"/>
@@ -370,7 +370,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.DirectoryStream<Java.Nio.File.Path> NewDirectoryStream(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalClazz, "newDirectoryStream", arg0);
+            return SExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>(LocalBridgeClazz, "newDirectoryStream", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getFileStore(java.nio.file.Path)"/>
@@ -380,7 +380,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileStore GetFileStore(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Nio.File.FileStore>(LocalClazz, "getFileStore", arg0);
+            return SExecute<Java.Nio.File.FileStore>(LocalBridgeClazz, "getFileStore", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
@@ -392,7 +392,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path Copy(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1, params Java.Nio.File.CopyOption[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "copy", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalClazz, "copy", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "copy", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "copy", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createDirectories(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
@@ -404,7 +404,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateDirectories<Arg1Extendsobject>(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute<Arg1Extendsobject>[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "createDirectories", arg0); else return SExecute<Java.Nio.File.Path>(LocalClazz, "createDirectories", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectories", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectories", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createDirectory(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
@@ -416,7 +416,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateDirectory<Arg1Extendsobject>(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute<Arg1Extendsobject>[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "createDirectory", arg0); else return SExecute<Java.Nio.File.Path>(LocalClazz, "createDirectory", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectory", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectory", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createFile(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
@@ -428,7 +428,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateFile<Arg1Extendsobject>(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute<Arg1Extendsobject>[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "createFile", arg0); else return SExecute<Java.Nio.File.Path>(LocalClazz, "createFile", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createFile", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createFile", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createLink(java.nio.file.Path,java.nio.file.Path)"/>
@@ -439,7 +439,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateLink(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1)
         {
-            return SExecute<Java.Nio.File.Path>(LocalClazz, "createLink", arg0, arg1);
+            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createLink", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createSymbolicLink(java.nio.file.Path,java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
@@ -452,7 +452,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateSymbolicLink<Arg2Extendsobject>(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1, params Java.Nio.File.Attribute.FileAttribute<Arg2Extendsobject>[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "createSymbolicLink", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalClazz, "createSymbolicLink", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createSymbolicLink", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createSymbolicLink", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempDirectory(java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
@@ -464,7 +464,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateTempDirectory<Arg1Extendsobject>(string arg0, params Java.Nio.File.Attribute.FileAttribute<Arg1Extendsobject>[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "createTempDirectory", arg0); else return SExecute<Java.Nio.File.Path>(LocalClazz, "createTempDirectory", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempDirectory(java.nio.file.Path,java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
@@ -477,7 +477,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateTempDirectory<Arg2Extendsobject>(Java.Nio.File.Path arg0, string arg1, params Java.Nio.File.Attribute.FileAttribute<Arg2Extendsobject>[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "createTempDirectory", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalClazz, "createTempDirectory", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempFile(java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
@@ -490,7 +490,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateTempFile<Arg2Extendsobject>(string arg0, string arg1, params Java.Nio.File.Attribute.FileAttribute<Arg2Extendsobject>[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "createTempFile", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalClazz, "createTempFile", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempFile(java.nio.file.Path,java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute[])"/>
@@ -504,7 +504,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path CreateTempFile<Arg3Extendsobject>(Java.Nio.File.Path arg0, string arg1, string arg2, params Java.Nio.File.Attribute.FileAttribute<Arg3Extendsobject>[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "createTempFile", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalClazz, "createTempFile", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#move(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
@@ -516,7 +516,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path Move(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1, params Java.Nio.File.CopyOption[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "move", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalClazz, "move", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "move", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "move", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readSymbolicLink(java.nio.file.Path)"/>
@@ -526,7 +526,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path ReadSymbolicLink(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Nio.File.Path>(LocalClazz, "readSymbolicLink", arg0);
+            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "readSymbolicLink", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption[])"/>
@@ -539,7 +539,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path SetAttribute(Java.Nio.File.Path arg0, string arg1, object arg2, params Java.Nio.File.LinkOption[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "setAttribute", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalClazz, "setAttribute", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "setAttribute", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "setAttribute", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setLastModifiedTime(java.nio.file.Path,java.nio.file.attribute.FileTime)"/>
@@ -550,7 +550,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path SetLastModifiedTime(Java.Nio.File.Path arg0, Java.Nio.File.Attribute.FileTime arg1)
         {
-            return SExecute<Java.Nio.File.Path>(LocalClazz, "setLastModifiedTime", arg0, arg1);
+            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "setLastModifiedTime", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setOwner(java.nio.file.Path,java.nio.file.attribute.UserPrincipal)"/>
@@ -561,7 +561,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path SetOwner(Java.Nio.File.Path arg0, Java.Nio.File.Attribute.UserPrincipal arg1)
         {
-            return SExecute<Java.Nio.File.Path>(LocalClazz, "setOwner", arg0, arg1);
+            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "setOwner", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#setPosixFilePermissions(java.nio.file.Path,java.util.Set)"/>
@@ -572,7 +572,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path SetPosixFilePermissions(Java.Nio.File.Path arg0, Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg1)
         {
-            return SExecute<Java.Nio.File.Path>(LocalClazz, "setPosixFilePermissions", arg0, arg1);
+            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "setPosixFilePermissions", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#walkFileTree(java.nio.file.Path,java.nio.file.FileVisitor)"/>
@@ -584,7 +584,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path WalkFileTree<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.FileVisitor<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path: Java.Nio.File.Path
         {
-            return SExecute<Java.Nio.File.Path>(LocalClazz, "walkFileTree", arg0, arg1);
+            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "walkFileTree", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#walkFileTree(java.nio.file.Path,java.util.Set,int,java.nio.file.FileVisitor)"/>
@@ -598,7 +598,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path WalkFileTree<Arg3objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Util.Set<Java.Nio.File.FileVisitOption> arg1, int arg2, Java.Nio.File.FileVisitor<Arg3objectSuperJava_Nio_File_Path> arg3) where Arg3objectSuperJava_Nio_File_Path: Java.Nio.File.Path
         {
-            return SExecute<Java.Nio.File.Path>(LocalClazz, "walkFileTree", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "walkFileTree", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#write(java.nio.file.Path,byte[],java.nio.file.OpenOption[])"/>
@@ -610,7 +610,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path Write(Java.Nio.File.Path arg0, byte[] arg1, params Java.Nio.File.OpenOption[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "write", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalClazz, "write", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#write(java.nio.file.Path,java.lang.Iterable,java.nio.charset.Charset,java.nio.file.OpenOption[])"/>
@@ -624,7 +624,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path Write<Arg1ExtendsJava_Lang_CharSequence>(Java.Nio.File.Path arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1, Java.Nio.Charset.Charset arg2, params Java.Nio.File.OpenOption[] arg3) where Arg1ExtendsJava_Lang_CharSequence: Java.Lang.CharSequence
         {
-            if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "write", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalClazz, "write", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#write(java.nio.file.Path,java.lang.Iterable,java.nio.file.OpenOption[])"/>
@@ -637,7 +637,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path Write<Arg1ExtendsJava_Lang_CharSequence>(Java.Nio.File.Path arg0, Java.Lang.Iterable<Arg1ExtendsJava_Lang_CharSequence> arg1, params Java.Nio.File.OpenOption[] arg2) where Arg1ExtendsJava_Lang_CharSequence: Java.Lang.CharSequence
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "write", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalClazz, "write", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "write", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.charset.Charset,java.nio.file.OpenOption[])"/>
@@ -650,7 +650,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path WriteString(Java.Nio.File.Path arg0, Java.Lang.CharSequence arg1, Java.Nio.Charset.Charset arg2, params Java.Nio.File.OpenOption[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "writeString", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalClazz, "writeString", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "writeString", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "writeString", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.file.OpenOption[])"/>
@@ -662,7 +662,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.Path WriteString(Java.Nio.File.Path arg0, Java.Lang.CharSequence arg1, params Java.Nio.File.OpenOption[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalClazz, "writeString", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalClazz, "writeString", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "writeString", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "writeString", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readAllLines(java.nio.file.Path,java.nio.charset.Charset)"/>
@@ -673,7 +673,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.List<string> ReadAllLines(Java.Nio.File.Path arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<Java.Util.List<string>>(LocalClazz, "readAllLines", arg0, arg1);
+            return SExecute<Java.Util.List<string>>(LocalBridgeClazz, "readAllLines", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readAllLines(java.nio.file.Path)"/>
@@ -683,7 +683,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.List<string> ReadAllLines(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Util.List<string>>(LocalClazz, "readAllLines", arg0);
+            return SExecute<Java.Util.List<string>>(LocalBridgeClazz, "readAllLines", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
@@ -695,7 +695,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Map<string, object> ReadAttributes(Java.Nio.File.Path arg0, string arg1, params Java.Nio.File.LinkOption[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Util.Map<string, object>>(LocalClazz, "readAttributes", arg0, arg1); else return SExecute<Java.Util.Map<string, object>>(LocalClazz, "readAttributes", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Util.Map<string, object>>(LocalBridgeClazz, "readAttributes", arg0, arg1); else return SExecute<Java.Util.Map<string, object>>(LocalBridgeClazz, "readAttributes", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#getPosixFilePermissions(java.nio.file.Path,java.nio.file.LinkOption[])"/>
@@ -706,7 +706,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> GetPosixFilePermissions(Java.Nio.File.Path arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>(LocalClazz, "getPosixFilePermissions", arg0); else return SExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>(LocalClazz, "getPosixFilePermissions", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>(LocalBridgeClazz, "getPosixFilePermissions", arg0); else return SExecute<Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission>>(LocalBridgeClazz, "getPosixFilePermissions", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#lines(java.nio.file.Path,java.nio.charset.Charset)"/>
@@ -717,7 +717,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Stream.Stream<string> Lines(Java.Nio.File.Path arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<Java.Util.Stream.Stream<string>>(LocalClazz, "lines", arg0, arg1);
+            return SExecute<Java.Util.Stream.Stream<string>>(LocalBridgeClazz, "lines", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#lines(java.nio.file.Path)"/>
@@ -727,7 +727,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Stream.Stream<string> Lines(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Util.Stream.Stream<string>>(LocalClazz, "lines", arg0);
+            return SExecute<Java.Util.Stream.Stream<string>>(LocalBridgeClazz, "lines", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#find(java.nio.file.Path,int,java.util.function.BiPredicate,java.nio.file.FileVisitOption[])"/>
@@ -740,7 +740,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Stream.Stream<Java.Nio.File.Path> Find(Java.Nio.File.Path arg0, int arg1, Java.Util.Function.BiPredicate<Java.Nio.File.Path, Java.Nio.File.Attribute.BasicFileAttributes> arg2, params Java.Nio.File.FileVisitOption[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalClazz, "find", arg0, arg1, arg2); else return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalClazz, "find", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "find", arg0, arg1, arg2); else return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "find", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#list(java.nio.file.Path)"/>
@@ -750,7 +750,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Stream.Stream<Java.Nio.File.Path> List(Java.Nio.File.Path arg0)
         {
-            return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalClazz, "list", arg0);
+            return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "list", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#walk(java.nio.file.Path,int,java.nio.file.FileVisitOption[])"/>
@@ -762,7 +762,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Stream.Stream<Java.Nio.File.Path> Walk(Java.Nio.File.Path arg0, int arg1, params Java.Nio.File.FileVisitOption[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalClazz, "walk", arg0, arg1); else return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalClazz, "walk", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "walk", arg0, arg1); else return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "walk", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#walk(java.nio.file.Path,java.nio.file.FileVisitOption[])"/>
@@ -773,7 +773,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Util.Stream.Stream<Java.Nio.File.Path> Walk(Java.Nio.File.Path arg0, params Java.Nio.File.FileVisitOption[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalClazz, "walk", arg0); else return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalClazz, "walk", arg0, arg1);
+            if (arg1.Length == 0) return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "walk", arg0); else return SExecute<Java.Util.Stream.Stream<Java.Nio.File.Path>>(LocalBridgeClazz, "walk", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])"/>
@@ -785,7 +785,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static long Copy(Java.Io.InputStream arg0, Java.Nio.File.Path arg1, params Java.Nio.File.CopyOption[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<long>(LocalClazz, "copy", arg0, arg1); else return SExecute<long>(LocalClazz, "copy", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<long>(LocalBridgeClazz, "copy", arg0, arg1); else return SExecute<long>(LocalBridgeClazz, "copy", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#copy(java.nio.file.Path,java.io.OutputStream)"/>
@@ -796,7 +796,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static long Copy(Java.Nio.File.Path arg0, Java.Io.OutputStream arg1)
         {
-            return SExecute<long>(LocalClazz, "copy", arg0, arg1);
+            return SExecute<long>(LocalBridgeClazz, "copy", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#size(java.nio.file.Path)"/>
@@ -806,7 +806,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static long Size(Java.Nio.File.Path arg0)
         {
-            return SExecute<long>(LocalClazz, "size", arg0);
+            return SExecute<long>(LocalBridgeClazz, "size", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#delete(java.nio.file.Path)"/>
@@ -815,7 +815,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static void Delete(Java.Nio.File.Path arg0)
         {
-            SExecute(LocalClazz, "delete", arg0);
+            SExecute(LocalBridgeClazz, "delete", arg0);
         }
 
         #endregion

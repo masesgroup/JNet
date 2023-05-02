@@ -40,51 +40,51 @@ namespace Javax.Lang.Model
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_0"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_0 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_0"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_0 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_0"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_1"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_1 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_1"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_1 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_1"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_10"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_10 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_10"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_10 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_10"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_11"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_11 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_11"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_11 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_11"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_2"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_2 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_2"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_2 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_2"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_3"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_3 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_3"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_3 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_3"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_4"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_4 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_4"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_4 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_4"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_5"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_5 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_5"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_5 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_5"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_6"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_6 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_6"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_6 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_6"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_7"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_7 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_7"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_7 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_7"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_8"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_8 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_8"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_8 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_8"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_9"/>
         /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_9 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalClazz, "RELEASE_9"); } }
+        public static Javax.Lang.Model.SourceVersion RELEASE_9 { get { return SGetField<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "RELEASE_9"); } }
 
         #endregion
 
@@ -94,21 +94,21 @@ namespace Javax.Lang.Model
         /// </summary>
         public static Javax.Lang.Model.SourceVersion Latest
         {
-            get { return SExecute<Javax.Lang.Model.SourceVersion>(LocalClazz, "latest"); }
+            get { return SExecute<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "latest"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#latestSupported()"/> 
         /// </summary>
         public static Javax.Lang.Model.SourceVersion LatestSupported
         {
-            get { return SExecute<Javax.Lang.Model.SourceVersion>(LocalClazz, "latestSupported"); }
+            get { return SExecute<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "latestSupported"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#values()"/> 
         /// </summary>
         public static Javax.Lang.Model.SourceVersion[] Values
         {
-            get { return SExecuteArray<Javax.Lang.Model.SourceVersion>(LocalClazz, "values"); }
+            get { return SExecuteArray<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isIdentifier(java.lang.CharSequence)"/>
@@ -117,7 +117,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsIdentifier(Java.Lang.CharSequence arg0)
         {
-            return SExecute<bool>(LocalClazz, "isIdentifier", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isIdentifier", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence,javax.lang.model.SourceVersion)"/>
@@ -127,7 +127,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0, Javax.Lang.Model.SourceVersion arg1)
         {
-            return SExecute<bool>(LocalClazz, "isKeyword", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "isKeyword", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence)"/>
@@ -136,7 +136,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0)
         {
-            return SExecute<bool>(LocalClazz, "isKeyword", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isKeyword", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence,javax.lang.model.SourceVersion)"/>
@@ -146,7 +146,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0, Javax.Lang.Model.SourceVersion arg1)
         {
-            return SExecute<bool>(LocalClazz, "isName", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "isName", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence)"/>
@@ -155,7 +155,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0)
         {
-            return SExecute<bool>(LocalClazz, "isName", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#valueOf(java.lang.String)"/>
@@ -164,7 +164,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
         public static Javax.Lang.Model.SourceVersion ValueOf(string arg0)
         {
-            return SExecute<Javax.Lang.Model.SourceVersion>(LocalClazz, "valueOf", arg0);
+            return SExecute<Javax.Lang.Model.SourceVersion>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

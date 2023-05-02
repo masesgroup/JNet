@@ -44,23 +44,23 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_COMPLEX_GLYPHS"/>
         /// </summary>
-        public static int FLAG_COMPLEX_GLYPHS { get { return SGetField<int>(LocalClazz, "FLAG_COMPLEX_GLYPHS"); } }
+        public static int FLAG_COMPLEX_GLYPHS { get { return SGetField<int>(LocalBridgeClazz, "FLAG_COMPLEX_GLYPHS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_HAS_POSITION_ADJUSTMENTS"/>
         /// </summary>
-        public static int FLAG_HAS_POSITION_ADJUSTMENTS { get { return SGetField<int>(LocalClazz, "FLAG_HAS_POSITION_ADJUSTMENTS"); } }
+        public static int FLAG_HAS_POSITION_ADJUSTMENTS { get { return SGetField<int>(LocalBridgeClazz, "FLAG_HAS_POSITION_ADJUSTMENTS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_HAS_TRANSFORMS"/>
         /// </summary>
-        public static int FLAG_HAS_TRANSFORMS { get { return SGetField<int>(LocalClazz, "FLAG_HAS_TRANSFORMS"); } }
+        public static int FLAG_HAS_TRANSFORMS { get { return SGetField<int>(LocalBridgeClazz, "FLAG_HAS_TRANSFORMS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_MASK"/>
         /// </summary>
-        public static int FLAG_MASK { get { return SGetField<int>(LocalClazz, "FLAG_MASK"); } }
+        public static int FLAG_MASK { get { return SGetField<int>(LocalBridgeClazz, "FLAG_MASK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_RUN_RTL"/>
         /// </summary>
-        public static int FLAG_RUN_RTL { get { return SGetField<int>(LocalClazz, "FLAG_RUN_RTL"); } }
+        public static int FLAG_RUN_RTL { get { return SGetField<int>(LocalBridgeClazz, "FLAG_RUN_RTL"); } }
 
         #endregion
 

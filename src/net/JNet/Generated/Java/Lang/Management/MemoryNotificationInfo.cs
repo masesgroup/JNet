@@ -50,11 +50,11 @@ namespace Java.Lang.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#MEMORY_COLLECTION_THRESHOLD_EXCEEDED"/>
         /// </summary>
-        public static string MEMORY_COLLECTION_THRESHOLD_EXCEEDED { get { return SGetField<string>(LocalClazz, "MEMORY_COLLECTION_THRESHOLD_EXCEEDED"); } }
+        public static string MEMORY_COLLECTION_THRESHOLD_EXCEEDED { get { return SGetField<string>(LocalBridgeClazz, "MEMORY_COLLECTION_THRESHOLD_EXCEEDED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryNotificationInfo.html#MEMORY_THRESHOLD_EXCEEDED"/>
         /// </summary>
-        public static string MEMORY_THRESHOLD_EXCEEDED { get { return SGetField<string>(LocalClazz, "MEMORY_THRESHOLD_EXCEEDED"); } }
+        public static string MEMORY_THRESHOLD_EXCEEDED { get { return SGetField<string>(LocalBridgeClazz, "MEMORY_THRESHOLD_EXCEEDED"); } }
 
         #endregion
 
@@ -66,7 +66,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.MemoryNotificationInfo"/></returns>
         public static Java.Lang.Management.MemoryNotificationInfo From(Javax.Management.Openmbean.CompositeData arg0)
         {
-            return SExecute<Java.Lang.Management.MemoryNotificationInfo>(LocalClazz, "from", arg0);
+            return SExecute<Java.Lang.Management.MemoryNotificationInfo>(LocalBridgeClazz, "from", arg0);
         }
 
         #endregion

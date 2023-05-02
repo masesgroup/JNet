@@ -60,7 +60,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#EMPTY_DESCRIPTOR"/>
         /// </summary>
-        public static Javax.Management.ImmutableDescriptor EMPTY_DESCRIPTOR { get { return SGetField<Javax.Management.ImmutableDescriptor>(LocalClazz, "EMPTY_DESCRIPTOR"); } }
+        public static Javax.Management.ImmutableDescriptor EMPTY_DESCRIPTOR { get { return SGetField<Javax.Management.ImmutableDescriptor>(LocalBridgeClazz, "EMPTY_DESCRIPTOR"); } }
 
         #endregion
 
@@ -72,7 +72,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ImmutableDescriptor"/></returns>
         public static Javax.Management.ImmutableDescriptor Union(params Javax.Management.Descriptor[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Javax.Management.ImmutableDescriptor>(LocalClazz, "union"); else return SExecute<Javax.Management.ImmutableDescriptor>(LocalClazz, "union", arg0);
+            if (arg0.Length == 0) return SExecute<Javax.Management.ImmutableDescriptor>(LocalBridgeClazz, "union"); else return SExecute<Javax.Management.ImmutableDescriptor>(LocalBridgeClazz, "union", arg0);
         }
 
         #endregion

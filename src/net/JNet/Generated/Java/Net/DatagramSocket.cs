@@ -80,7 +80,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public static void SetDatagramSocketImplFactory(Java.Net.DatagramSocketImplFactory arg0)
         {
-            SExecute(LocalClazz, "setDatagramSocketImplFactory", arg0);
+            SExecute(LocalBridgeClazz, "setDatagramSocketImplFactory", arg0);
         }
 
         #endregion

@@ -48,11 +48,11 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobSheets.html#NONE"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobSheets NONE { get { return SGetField<Javax.Print.Attribute.Standard.JobSheets>(LocalClazz, "NONE"); } }
+        public static Javax.Print.Attribute.Standard.JobSheets NONE { get { return SGetField<Javax.Print.Attribute.Standard.JobSheets>(LocalBridgeClazz, "NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobSheets.html#STANDARD"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobSheets STANDARD { get { return SGetField<Javax.Print.Attribute.Standard.JobSheets>(LocalClazz, "STANDARD"); } }
+        public static Javax.Print.Attribute.Standard.JobSheets STANDARD { get { return SGetField<Javax.Print.Attribute.Standard.JobSheets>(LocalBridgeClazz, "STANDARD"); } }
 
         #endregion
 

@@ -40,11 +40,11 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#FRACTION_FIELD"/>
         /// </summary>
-        public static int FRACTION_FIELD { get { return SGetField<int>(LocalClazz, "FRACTION_FIELD"); } }
+        public static int FRACTION_FIELD { get { return SGetField<int>(LocalBridgeClazz, "FRACTION_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#INTEGER_FIELD"/>
         /// </summary>
-        public static int INTEGER_FIELD { get { return SGetField<int>(LocalClazz, "INTEGER_FIELD"); } }
+        public static int INTEGER_FIELD { get { return SGetField<int>(LocalBridgeClazz, "INTEGER_FIELD"); } }
 
         #endregion
 
@@ -54,44 +54,42 @@ namespace Java.Text
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteArray<Java.Util.Locale>(LocalClazz, "getAvailableLocales"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrencyInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat CurrencyInstance
         {
-            get { return SExecute<Java.Text.NumberFormat>(LocalClazz, "getCurrencyInstance"); }
+            get { return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getCurrencyInstance"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance()"/> 
+        /// </summary>
+        public static Java.Text.NumberFormat Instance
+        {
+            get { return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getIntegerInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat IntegerInstance
         {
-            get { return SExecute<Java.Text.NumberFormat>(LocalClazz, "getIntegerInstance"); }
+            get { return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getIntegerInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getNumberInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat NumberInstance
         {
-            get { return SExecute<Java.Text.NumberFormat>(LocalClazz, "getNumberInstance"); }
+            get { return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getNumberInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getPercentInstance()"/> 
         /// </summary>
         public static Java.Text.NumberFormat PercentInstance
         {
-            get { return SExecute<Java.Text.NumberFormat>(LocalClazz, "getPercentInstance"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
-        public static Java.Text.NumberFormat GetInstance()
-        {
-            return SExecute<Java.Text.NumberFormat>(LocalClazz, "getInstance");
+            get { return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getPercentInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getCurrencyInstance(java.util.Locale)"/>
@@ -100,7 +98,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetCurrencyInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.NumberFormat>(LocalClazz, "getCurrencyInstance", arg0);
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getCurrencyInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getInstance(java.util.Locale)"/>
@@ -109,7 +107,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.NumberFormat>(LocalClazz, "getInstance", arg0);
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getIntegerInstance(java.util.Locale)"/>
@@ -118,7 +116,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetIntegerInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.NumberFormat>(LocalClazz, "getIntegerInstance", arg0);
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getIntegerInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getNumberInstance(java.util.Locale)"/>
@@ -127,7 +125,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetNumberInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.NumberFormat>(LocalClazz, "getNumberInstance", arg0);
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getNumberInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#getPercentInstance(java.util.Locale)"/>
@@ -136,7 +134,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.NumberFormat"/></returns>
         public static Java.Text.NumberFormat GetPercentInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.NumberFormat>(LocalClazz, "getPercentInstance", arg0);
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getPercentInstance", arg0);
         }
 
         #endregion
@@ -293,47 +291,47 @@ namespace Java.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#CURRENCY"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field CURRENCY { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "CURRENCY"); } }
+            public static Java.Text.NumberFormat.Field CURRENCY { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "CURRENCY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#DECIMAL_SEPARATOR"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field DECIMAL_SEPARATOR { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "DECIMAL_SEPARATOR"); } }
+            public static Java.Text.NumberFormat.Field DECIMAL_SEPARATOR { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "DECIMAL_SEPARATOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field EXPONENT { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "EXPONENT"); } }
+            public static Java.Text.NumberFormat.Field EXPONENT { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "EXPONENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SIGN"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field EXPONENT_SIGN { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "EXPONENT_SIGN"); } }
+            public static Java.Text.NumberFormat.Field EXPONENT_SIGN { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "EXPONENT_SIGN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SYMBOL"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field EXPONENT_SYMBOL { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "EXPONENT_SYMBOL"); } }
+            public static Java.Text.NumberFormat.Field EXPONENT_SYMBOL { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "EXPONENT_SYMBOL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#FRACTION"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field FRACTION { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "FRACTION"); } }
+            public static Java.Text.NumberFormat.Field FRACTION { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "FRACTION"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#GROUPING_SEPARATOR"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field GROUPING_SEPARATOR { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "GROUPING_SEPARATOR"); } }
+            public static Java.Text.NumberFormat.Field GROUPING_SEPARATOR { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "GROUPING_SEPARATOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#INTEGER"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field INTEGER { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "INTEGER"); } }
+            public static Java.Text.NumberFormat.Field INTEGER { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "INTEGER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#PERCENT"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field PERCENT { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "PERCENT"); } }
+            public static Java.Text.NumberFormat.Field PERCENT { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "PERCENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#PERMILLE"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field PERMILLE { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "PERMILLE"); } }
+            public static Java.Text.NumberFormat.Field PERMILLE { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "PERMILLE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#SIGN"/>
             /// </summary>
-            public static Java.Text.NumberFormat.Field SIGN { get { return SGetField<Java.Text.NumberFormat.Field>(LocalClazz, "SIGN"); } }
+            public static Java.Text.NumberFormat.Field SIGN { get { return SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "SIGN"); } }
 
             #endregion
 

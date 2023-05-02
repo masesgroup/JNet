@@ -40,39 +40,39 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#DEFAULT_VALUE_FIELD"/>
         /// </summary>
-        public static string DEFAULT_VALUE_FIELD { get { return SGetField<string>(LocalClazz, "DEFAULT_VALUE_FIELD"); } }
+        public static string DEFAULT_VALUE_FIELD { get { return SGetField<string>(LocalBridgeClazz, "DEFAULT_VALUE_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#IMMUTABLE_INFO_FIELD"/>
         /// </summary>
-        public static string IMMUTABLE_INFO_FIELD { get { return SGetField<string>(LocalClazz, "IMMUTABLE_INFO_FIELD"); } }
+        public static string IMMUTABLE_INFO_FIELD { get { return SGetField<string>(LocalBridgeClazz, "IMMUTABLE_INFO_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#INTERFACE_CLASS_NAME_FIELD"/>
         /// </summary>
-        public static string INTERFACE_CLASS_NAME_FIELD { get { return SGetField<string>(LocalClazz, "INTERFACE_CLASS_NAME_FIELD"); } }
+        public static string INTERFACE_CLASS_NAME_FIELD { get { return SGetField<string>(LocalBridgeClazz, "INTERFACE_CLASS_NAME_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#LEGAL_VALUES_FIELD"/>
         /// </summary>
-        public static string LEGAL_VALUES_FIELD { get { return SGetField<string>(LocalClazz, "LEGAL_VALUES_FIELD"); } }
+        public static string LEGAL_VALUES_FIELD { get { return SGetField<string>(LocalBridgeClazz, "LEGAL_VALUES_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#MAX_VALUE_FIELD"/>
         /// </summary>
-        public static string MAX_VALUE_FIELD { get { return SGetField<string>(LocalClazz, "MAX_VALUE_FIELD"); } }
+        public static string MAX_VALUE_FIELD { get { return SGetField<string>(LocalBridgeClazz, "MAX_VALUE_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#MIN_VALUE_FIELD"/>
         /// </summary>
-        public static string MIN_VALUE_FIELD { get { return SGetField<string>(LocalClazz, "MIN_VALUE_FIELD"); } }
+        public static string MIN_VALUE_FIELD { get { return SGetField<string>(LocalBridgeClazz, "MIN_VALUE_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#MXBEAN_FIELD"/>
         /// </summary>
-        public static string MXBEAN_FIELD { get { return SGetField<string>(LocalClazz, "MXBEAN_FIELD"); } }
+        public static string MXBEAN_FIELD { get { return SGetField<string>(LocalBridgeClazz, "MXBEAN_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#OPEN_TYPE_FIELD"/>
         /// </summary>
-        public static string OPEN_TYPE_FIELD { get { return SGetField<string>(LocalClazz, "OPEN_TYPE_FIELD"); } }
+        public static string OPEN_TYPE_FIELD { get { return SGetField<string>(LocalBridgeClazz, "OPEN_TYPE_FIELD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#ORIGINAL_TYPE_FIELD"/>
         /// </summary>
-        public static string ORIGINAL_TYPE_FIELD { get { return SGetField<string>(LocalClazz, "ORIGINAL_TYPE_FIELD"); } }
+        public static string ORIGINAL_TYPE_FIELD { get { return SGetField<string>(LocalBridgeClazz, "ORIGINAL_TYPE_FIELD"); } }
 
         #endregion
 
@@ -88,7 +88,7 @@ namespace Javax.Management
         /// <returns><typeparamref name="T"/></returns>
         public static T NewMBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
-            return SExecute<T>(LocalClazz, "newMBeanProxy", arg0, arg1, arg2, arg3);
+            return SExecute<T>(LocalBridgeClazz, "newMBeanProxy", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#newMBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class)"/>
@@ -100,7 +100,7 @@ namespace Javax.Management
         /// <returns><typeparamref name="T"/></returns>
         public static T NewMBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2)
         {
-            return SExecute<T>(LocalClazz, "newMBeanProxy", arg0, arg1, arg2);
+            return SExecute<T>(LocalBridgeClazz, "newMBeanProxy", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#newMXBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class,boolean)"/>
@@ -113,7 +113,7 @@ namespace Javax.Management
         /// <returns><typeparamref name="T"/></returns>
         public static T NewMXBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
-            return SExecute<T>(LocalClazz, "newMXBeanProxy", arg0, arg1, arg2, arg3);
+            return SExecute<T>(LocalBridgeClazz, "newMXBeanProxy", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#newMXBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class)"/>
@@ -125,7 +125,7 @@ namespace Javax.Management
         /// <returns><typeparamref name="T"/></returns>
         public static T NewMXBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2)
         {
-            return SExecute<T>(LocalClazz, "newMXBeanProxy", arg0, arg1, arg2);
+            return SExecute<T>(LocalBridgeClazz, "newMXBeanProxy", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#isMXBeanInterface(java.lang.Class)"/>
@@ -134,7 +134,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public static bool IsMXBeanInterface(Java.Lang.Class arg0)
         {
-            return SExecute<bool>(LocalClazz, "isMXBeanInterface", arg0);
+            return SExecute<bool>(LocalBridgeClazz, "isMXBeanInterface", arg0);
         }
 
         #endregion

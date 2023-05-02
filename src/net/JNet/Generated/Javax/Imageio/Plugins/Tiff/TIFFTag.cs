@@ -71,67 +71,67 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#MAX_DATATYPE"/>
         /// </summary>
-        public static int MAX_DATATYPE { get { return SGetField<int>(LocalClazz, "MAX_DATATYPE"); } }
+        public static int MAX_DATATYPE { get { return SGetField<int>(LocalBridgeClazz, "MAX_DATATYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#MIN_DATATYPE"/>
         /// </summary>
-        public static int MIN_DATATYPE { get { return SGetField<int>(LocalClazz, "MIN_DATATYPE"); } }
+        public static int MIN_DATATYPE { get { return SGetField<int>(LocalBridgeClazz, "MIN_DATATYPE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_ASCII"/>
         /// </summary>
-        public static int TIFF_ASCII { get { return SGetField<int>(LocalClazz, "TIFF_ASCII"); } }
+        public static int TIFF_ASCII { get { return SGetField<int>(LocalBridgeClazz, "TIFF_ASCII"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_BYTE"/>
         /// </summary>
-        public static int TIFF_BYTE { get { return SGetField<int>(LocalClazz, "TIFF_BYTE"); } }
+        public static int TIFF_BYTE { get { return SGetField<int>(LocalBridgeClazz, "TIFF_BYTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_DOUBLE"/>
         /// </summary>
-        public static int TIFF_DOUBLE { get { return SGetField<int>(LocalClazz, "TIFF_DOUBLE"); } }
+        public static int TIFF_DOUBLE { get { return SGetField<int>(LocalBridgeClazz, "TIFF_DOUBLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_FLOAT"/>
         /// </summary>
-        public static int TIFF_FLOAT { get { return SGetField<int>(LocalClazz, "TIFF_FLOAT"); } }
+        public static int TIFF_FLOAT { get { return SGetField<int>(LocalBridgeClazz, "TIFF_FLOAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_IFD_POINTER"/>
         /// </summary>
-        public static int TIFF_IFD_POINTER { get { return SGetField<int>(LocalClazz, "TIFF_IFD_POINTER"); } }
+        public static int TIFF_IFD_POINTER { get { return SGetField<int>(LocalBridgeClazz, "TIFF_IFD_POINTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_LONG"/>
         /// </summary>
-        public static int TIFF_LONG { get { return SGetField<int>(LocalClazz, "TIFF_LONG"); } }
+        public static int TIFF_LONG { get { return SGetField<int>(LocalBridgeClazz, "TIFF_LONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_RATIONAL"/>
         /// </summary>
-        public static int TIFF_RATIONAL { get { return SGetField<int>(LocalClazz, "TIFF_RATIONAL"); } }
+        public static int TIFF_RATIONAL { get { return SGetField<int>(LocalBridgeClazz, "TIFF_RATIONAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_SBYTE"/>
         /// </summary>
-        public static int TIFF_SBYTE { get { return SGetField<int>(LocalClazz, "TIFF_SBYTE"); } }
+        public static int TIFF_SBYTE { get { return SGetField<int>(LocalBridgeClazz, "TIFF_SBYTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_SHORT"/>
         /// </summary>
-        public static int TIFF_SHORT { get { return SGetField<int>(LocalClazz, "TIFF_SHORT"); } }
+        public static int TIFF_SHORT { get { return SGetField<int>(LocalBridgeClazz, "TIFF_SHORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_SLONG"/>
         /// </summary>
-        public static int TIFF_SLONG { get { return SGetField<int>(LocalClazz, "TIFF_SLONG"); } }
+        public static int TIFF_SLONG { get { return SGetField<int>(LocalBridgeClazz, "TIFF_SLONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_SRATIONAL"/>
         /// </summary>
-        public static int TIFF_SRATIONAL { get { return SGetField<int>(LocalClazz, "TIFF_SRATIONAL"); } }
+        public static int TIFF_SRATIONAL { get { return SGetField<int>(LocalBridgeClazz, "TIFF_SRATIONAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_SSHORT"/>
         /// </summary>
-        public static int TIFF_SSHORT { get { return SGetField<int>(LocalClazz, "TIFF_SSHORT"); } }
+        public static int TIFF_SSHORT { get { return SGetField<int>(LocalBridgeClazz, "TIFF_SSHORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#TIFF_UNDEFINED"/>
         /// </summary>
-        public static int TIFF_UNDEFINED { get { return SGetField<int>(LocalClazz, "TIFF_UNDEFINED"); } }
+        public static int TIFF_UNDEFINED { get { return SGetField<int>(LocalBridgeClazz, "TIFF_UNDEFINED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#UNKNOWN_TAG_NAME"/>
         /// </summary>
-        public static string UNKNOWN_TAG_NAME { get { return SGetField<string>(LocalClazz, "UNKNOWN_TAG_NAME"); } }
+        public static string UNKNOWN_TAG_NAME { get { return SGetField<string>(LocalBridgeClazz, "UNKNOWN_TAG_NAME"); } }
 
         #endregion
 
@@ -143,7 +143,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="int"/></returns>
         public static int GetSizeOfType(int arg0)
         {
-            return SExecute<int>(LocalClazz, "getSizeOfType", arg0);
+            return SExecute<int>(LocalBridgeClazz, "getSizeOfType", arg0);
         }
 
         #endregion

@@ -53,6 +53,13 @@ namespace Javax.Management.Openmbean
             get { return IExecuteArray<Javax.Management.MBeanAttributeInfo>("getAttributes"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getClassName()"/> 
+        /// </summary>
+        public string ClassName
+        {
+            get { return IExecute<string>("getClassName"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getConstructors()"/> 
         /// </summary>
         public Javax.Management.MBeanConstructorInfo[] Constructors
@@ -65,13 +72,6 @@ namespace Javax.Management.Openmbean
         public string Description
         {
             get { return IExecute<string>("getDescription"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getClassName()"/> 
-        /// </summary>
-        public string GetClassName
-        {
-            get { return IExecute<string>("getClassName"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getNotifications()"/> 

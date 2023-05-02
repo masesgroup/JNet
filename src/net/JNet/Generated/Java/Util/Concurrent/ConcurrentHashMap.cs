@@ -91,7 +91,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView NewKeySet()
         {
-            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>(LocalClazz, "newKeySet");
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>(LocalBridgeClazz, "newKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#newKeySet(int)"/>
@@ -100,7 +100,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView NewKeySet(int arg0)
         {
-            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>(LocalClazz, "newKeySet", arg0);
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>(LocalBridgeClazz, "newKeySet", arg0);
         }
 
         #endregion
@@ -656,7 +656,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, bool?> NewKeySet()
         {
-            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, bool?>>(LocalClazz, "newKeySet");
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, bool?>>(LocalBridgeClazz, "newKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#newKeySet(int)"/>
@@ -665,7 +665,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
         public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, bool?> NewKeySet(int arg0)
         {
-            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, bool?>>(LocalClazz, "newKeySet", arg0);
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, bool?>>(LocalBridgeClazz, "newKeySet", arg0);
         }
 
         #endregion

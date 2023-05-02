@@ -40,47 +40,47 @@ namespace Javax.Transaction.Xa
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMENDRSCAN"/>
         /// </summary>
-        public static int TMENDRSCAN { get { return SGetField<int>(LocalClazz, "TMENDRSCAN"); } }
+        public static int TMENDRSCAN { get { return SGetField<int>(LocalBridgeClazz, "TMENDRSCAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMFAIL"/>
         /// </summary>
-        public static int TMFAIL { get { return SGetField<int>(LocalClazz, "TMFAIL"); } }
+        public static int TMFAIL { get { return SGetField<int>(LocalBridgeClazz, "TMFAIL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMJOIN"/>
         /// </summary>
-        public static int TMJOIN { get { return SGetField<int>(LocalClazz, "TMJOIN"); } }
+        public static int TMJOIN { get { return SGetField<int>(LocalBridgeClazz, "TMJOIN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMNOFLAGS"/>
         /// </summary>
-        public static int TMNOFLAGS { get { return SGetField<int>(LocalClazz, "TMNOFLAGS"); } }
+        public static int TMNOFLAGS { get { return SGetField<int>(LocalBridgeClazz, "TMNOFLAGS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMONEPHASE"/>
         /// </summary>
-        public static int TMONEPHASE { get { return SGetField<int>(LocalClazz, "TMONEPHASE"); } }
+        public static int TMONEPHASE { get { return SGetField<int>(LocalBridgeClazz, "TMONEPHASE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMRESUME"/>
         /// </summary>
-        public static int TMRESUME { get { return SGetField<int>(LocalClazz, "TMRESUME"); } }
+        public static int TMRESUME { get { return SGetField<int>(LocalBridgeClazz, "TMRESUME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSTARTRSCAN"/>
         /// </summary>
-        public static int TMSTARTRSCAN { get { return SGetField<int>(LocalClazz, "TMSTARTRSCAN"); } }
+        public static int TMSTARTRSCAN { get { return SGetField<int>(LocalBridgeClazz, "TMSTARTRSCAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSUCCESS"/>
         /// </summary>
-        public static int TMSUCCESS { get { return SGetField<int>(LocalClazz, "TMSUCCESS"); } }
+        public static int TMSUCCESS { get { return SGetField<int>(LocalBridgeClazz, "TMSUCCESS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#TMSUSPEND"/>
         /// </summary>
-        public static int TMSUSPEND { get { return SGetField<int>(LocalClazz, "TMSUSPEND"); } }
+        public static int TMSUSPEND { get { return SGetField<int>(LocalBridgeClazz, "TMSUSPEND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_OK"/>
         /// </summary>
-        public static int XA_OK { get { return SGetField<int>(LocalClazz, "XA_OK"); } }
+        public static int XA_OK { get { return SGetField<int>(LocalBridgeClazz, "XA_OK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_RDONLY"/>
         /// </summary>
-        public static int XA_RDONLY { get { return SGetField<int>(LocalClazz, "XA_RDONLY"); } }
+        public static int XA_RDONLY { get { return SGetField<int>(LocalBridgeClazz, "XA_RDONLY"); } }
 
         #endregion
 

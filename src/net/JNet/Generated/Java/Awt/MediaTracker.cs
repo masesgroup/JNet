@@ -52,19 +52,19 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#ABORTED"/>
         /// </summary>
-        public static int ABORTED { get { return SGetField<int>(LocalClazz, "ABORTED"); } }
+        public static int ABORTED { get { return SGetField<int>(LocalBridgeClazz, "ABORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#COMPLETE"/>
         /// </summary>
-        public static int COMPLETE { get { return SGetField<int>(LocalClazz, "COMPLETE"); } }
+        public static int COMPLETE { get { return SGetField<int>(LocalBridgeClazz, "COMPLETE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#ERRORED"/>
         /// </summary>
-        public static int ERRORED { get { return SGetField<int>(LocalClazz, "ERRORED"); } }
+        public static int ERRORED { get { return SGetField<int>(LocalBridgeClazz, "ERRORED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#LOADING"/>
         /// </summary>
-        public static int LOADING { get { return SGetField<int>(LocalClazz, "LOADING"); } }
+        public static int LOADING { get { return SGetField<int>(LocalBridgeClazz, "LOADING"); } }
 
         #endregion
 

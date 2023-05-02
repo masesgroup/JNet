@@ -52,7 +52,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public static Java.Nio.IntBuffer Allocate(int arg0)
         {
-            return SExecute<Java.Nio.IntBuffer>(LocalClazz, "allocate", arg0);
+            return SExecute<Java.Nio.IntBuffer>(LocalBridgeClazz, "allocate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#wrap(int[],int,int)"/>
@@ -63,7 +63,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public static Java.Nio.IntBuffer Wrap(int[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.IntBuffer>(LocalClazz, "wrap", arg0, arg1, arg2);
+            return SExecute<Java.Nio.IntBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#wrap(int[])"/>
@@ -72,7 +72,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
         public static Java.Nio.IntBuffer Wrap(int[] arg0)
         {
-            return SExecute<Java.Nio.IntBuffer>(LocalClazz, "wrap", new object[] { arg0 });
+            return SExecute<Java.Nio.IntBuffer>(LocalBridgeClazz, "wrap", new object[] { arg0 });
         }
 
         #endregion

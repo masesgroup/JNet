@@ -40,11 +40,11 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#ALLOW_UNASSIGNED"/>
         /// </summary>
-        public static int ALLOW_UNASSIGNED { get { return SGetField<int>(LocalClazz, "ALLOW_UNASSIGNED"); } }
+        public static int ALLOW_UNASSIGNED { get { return SGetField<int>(LocalBridgeClazz, "ALLOW_UNASSIGNED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#USE_STD3_ASCII_RULES"/>
         /// </summary>
-        public static int USE_STD3_ASCII_RULES { get { return SGetField<int>(LocalClazz, "USE_STD3_ASCII_RULES"); } }
+        public static int USE_STD3_ASCII_RULES { get { return SGetField<int>(LocalBridgeClazz, "USE_STD3_ASCII_RULES"); } }
 
         #endregion
 
@@ -57,7 +57,7 @@ namespace Java.Net
         /// <returns><see cref="string"/></returns>
         public static string ToASCII(string arg0, int arg1)
         {
-            return SExecute<string>(LocalClazz, "toASCII", arg0, arg1);
+            return SExecute<string>(LocalBridgeClazz, "toASCII", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toASCII(java.lang.String)"/>
@@ -66,7 +66,7 @@ namespace Java.Net
         /// <returns><see cref="string"/></returns>
         public static string ToASCII(string arg0)
         {
-            return SExecute<string>(LocalClazz, "toASCII", arg0);
+            return SExecute<string>(LocalBridgeClazz, "toASCII", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toUnicode(java.lang.String,int)"/>
@@ -76,7 +76,7 @@ namespace Java.Net
         /// <returns><see cref="string"/></returns>
         public static string ToUnicode(string arg0, int arg1)
         {
-            return SExecute<string>(LocalClazz, "toUnicode", arg0, arg1);
+            return SExecute<string>(LocalBridgeClazz, "toUnicode", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/IDN.html#toUnicode(java.lang.String)"/>
@@ -85,7 +85,7 @@ namespace Java.Net
         /// <returns><see cref="string"/></returns>
         public static string ToUnicode(string arg0)
         {
-            return SExecute<string>(LocalClazz, "toUnicode", arg0);
+            return SExecute<string>(LocalBridgeClazz, "toUnicode", arg0);
         }
 
         #endregion

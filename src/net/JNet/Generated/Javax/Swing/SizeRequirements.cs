@@ -80,7 +80,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int[] AdjustSizes(int arg0, Javax.Swing.SizeRequirements[] arg1)
         {
-            return SExecuteArray<int>(LocalClazz, "adjustSizes", arg0, arg1);
+            return SExecuteArray<int>(LocalBridgeClazz, "adjustSizes", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#getAlignedSizeRequirements(javax.swing.SizeRequirements[])"/>
@@ -89,7 +89,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.SizeRequirements"/></returns>
         public static Javax.Swing.SizeRequirements GetAlignedSizeRequirements(Javax.Swing.SizeRequirements[] arg0)
         {
-            return SExecute<Javax.Swing.SizeRequirements>(LocalClazz, "getAlignedSizeRequirements", new object[] { arg0 });
+            return SExecute<Javax.Swing.SizeRequirements>(LocalBridgeClazz, "getAlignedSizeRequirements", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#getTiledSizeRequirements(javax.swing.SizeRequirements[])"/>
@@ -98,7 +98,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.SizeRequirements"/></returns>
         public static Javax.Swing.SizeRequirements GetTiledSizeRequirements(Javax.Swing.SizeRequirements[] arg0)
         {
-            return SExecute<Javax.Swing.SizeRequirements>(LocalClazz, "getTiledSizeRequirements", new object[] { arg0 });
+            return SExecute<Javax.Swing.SizeRequirements>(LocalBridgeClazz, "getTiledSizeRequirements", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)"/>
@@ -111,7 +111,7 @@ namespace Javax.Swing
         /// <param name="arg5"><see cref="bool"/></param>
         public static void CalculateAlignedPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4, bool arg5)
         {
-            SExecute(LocalClazz, "calculateAlignedPositions", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecute(LocalBridgeClazz, "calculateAlignedPositions", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateAlignedPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[])"/>
@@ -123,7 +123,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="int"/></param>
         public static void CalculateAlignedPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4)
         {
-            SExecute(LocalClazz, "calculateAlignedPositions", arg0, arg1, arg2, arg3, arg4);
+            SExecute(LocalBridgeClazz, "calculateAlignedPositions", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateTiledPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[],boolean)"/>
@@ -136,7 +136,7 @@ namespace Javax.Swing
         /// <param name="arg5"><see cref="bool"/></param>
         public static void CalculateTiledPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4, bool arg5)
         {
-            SExecute(LocalClazz, "calculateTiledPositions", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecute(LocalBridgeClazz, "calculateTiledPositions", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#calculateTiledPositions(int,javax.swing.SizeRequirements,javax.swing.SizeRequirements[],int[],int[])"/>
@@ -148,7 +148,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="int"/></param>
         public static void CalculateTiledPositions(int arg0, Javax.Swing.SizeRequirements arg1, Javax.Swing.SizeRequirements[] arg2, int[] arg3, int[] arg4)
         {
-            SExecute(LocalClazz, "calculateTiledPositions", arg0, arg1, arg2, arg3, arg4);
+            SExecute(LocalBridgeClazz, "calculateTiledPositions", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

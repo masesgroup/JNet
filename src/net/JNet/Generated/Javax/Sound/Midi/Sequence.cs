@@ -61,23 +61,23 @@ namespace Javax.Sound.Midi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#PPQ"/>
         /// </summary>
-        public static float PPQ { get { return SGetField<float>(LocalClazz, "PPQ"); } }
+        public static float PPQ { get { return SGetField<float>(LocalBridgeClazz, "PPQ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_24"/>
         /// </summary>
-        public static float SMPTE_24 { get { return SGetField<float>(LocalClazz, "SMPTE_24"); } }
+        public static float SMPTE_24 { get { return SGetField<float>(LocalBridgeClazz, "SMPTE_24"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_25"/>
         /// </summary>
-        public static float SMPTE_25 { get { return SGetField<float>(LocalClazz, "SMPTE_25"); } }
+        public static float SMPTE_25 { get { return SGetField<float>(LocalBridgeClazz, "SMPTE_25"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30"/>
         /// </summary>
-        public static float SMPTE_30 { get { return SGetField<float>(LocalClazz, "SMPTE_30"); } }
+        public static float SMPTE_30 { get { return SGetField<float>(LocalBridgeClazz, "SMPTE_30"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30DROP"/>
         /// </summary>
-        public static float SMPTE_30DROP { get { return SGetField<float>(LocalClazz, "SMPTE_30DROP"); } }
+        public static float SMPTE_30DROP { get { return SGetField<float>(LocalBridgeClazz, "SMPTE_30DROP"); } }
 
         #endregion
 

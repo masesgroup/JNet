@@ -44,27 +44,27 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultCopyDrop"/>
         /// </summary>
-        public static Java.Awt.Cursor DefaultCopyDrop { get { return SGetField<Java.Awt.Cursor>(LocalClazz, "DefaultCopyDrop"); } }
+        public static Java.Awt.Cursor DefaultCopyDrop { get { return SGetField<Java.Awt.Cursor>(LocalBridgeClazz, "DefaultCopyDrop"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultCopyNoDrop"/>
         /// </summary>
-        public static Java.Awt.Cursor DefaultCopyNoDrop { get { return SGetField<Java.Awt.Cursor>(LocalClazz, "DefaultCopyNoDrop"); } }
+        public static Java.Awt.Cursor DefaultCopyNoDrop { get { return SGetField<Java.Awt.Cursor>(LocalBridgeClazz, "DefaultCopyNoDrop"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultLinkDrop"/>
         /// </summary>
-        public static Java.Awt.Cursor DefaultLinkDrop { get { return SGetField<Java.Awt.Cursor>(LocalClazz, "DefaultLinkDrop"); } }
+        public static Java.Awt.Cursor DefaultLinkDrop { get { return SGetField<Java.Awt.Cursor>(LocalBridgeClazz, "DefaultLinkDrop"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultLinkNoDrop"/>
         /// </summary>
-        public static Java.Awt.Cursor DefaultLinkNoDrop { get { return SGetField<Java.Awt.Cursor>(LocalClazz, "DefaultLinkNoDrop"); } }
+        public static Java.Awt.Cursor DefaultLinkNoDrop { get { return SGetField<Java.Awt.Cursor>(LocalBridgeClazz, "DefaultLinkNoDrop"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultMoveDrop"/>
         /// </summary>
-        public static Java.Awt.Cursor DefaultMoveDrop { get { return SGetField<Java.Awt.Cursor>(LocalClazz, "DefaultMoveDrop"); } }
+        public static Java.Awt.Cursor DefaultMoveDrop { get { return SGetField<Java.Awt.Cursor>(LocalBridgeClazz, "DefaultMoveDrop"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultMoveNoDrop"/>
         /// </summary>
-        public static Java.Awt.Cursor DefaultMoveNoDrop { get { return SGetField<Java.Awt.Cursor>(LocalClazz, "DefaultMoveNoDrop"); } }
+        public static Java.Awt.Cursor DefaultMoveNoDrop { get { return SGetField<Java.Awt.Cursor>(LocalBridgeClazz, "DefaultMoveNoDrop"); } }
 
         #endregion
 
@@ -74,21 +74,21 @@ namespace Java.Awt.Dnd
         /// </summary>
         public static Java.Awt.Dnd.DragSource DefaultDragSource
         {
-            get { return SExecute<Java.Awt.Dnd.DragSource>(LocalClazz, "getDefaultDragSource"); }
+            get { return SExecute<Java.Awt.Dnd.DragSource>(LocalBridgeClazz, "getDefaultDragSource"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#getDragThreshold()"/> 
         /// </summary>
         public static int DragThreshold
         {
-            get { return SExecute<int>(LocalClazz, "getDragThreshold"); }
+            get { return SExecute<int>(LocalBridgeClazz, "getDragThreshold"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#isDragImageSupported()"/> 
         /// </summary>
         public static bool IsDragImageSupported
         {
-            get { return SExecute<bool>(LocalClazz, "isDragImageSupported"); }
+            get { return SExecute<bool>(LocalBridgeClazz, "isDragImageSupported"); }
         }
 
         #endregion

@@ -286,11 +286,11 @@ namespace Java.Util
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#DECIMAL_FLOAT"/>
             /// </summary>
-            public static Java.Util.Formatter.BigDecimalLayoutForm DECIMAL_FLOAT { get { return SGetField<Java.Util.Formatter.BigDecimalLayoutForm>(LocalClazz, "DECIMAL_FLOAT"); } }
+            public static Java.Util.Formatter.BigDecimalLayoutForm DECIMAL_FLOAT { get { return SGetField<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "DECIMAL_FLOAT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#SCIENTIFIC"/>
             /// </summary>
-            public static Java.Util.Formatter.BigDecimalLayoutForm SCIENTIFIC { get { return SGetField<Java.Util.Formatter.BigDecimalLayoutForm>(LocalClazz, "SCIENTIFIC"); } }
+            public static Java.Util.Formatter.BigDecimalLayoutForm SCIENTIFIC { get { return SGetField<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "SCIENTIFIC"); } }
 
             #endregion
 
@@ -300,7 +300,7 @@ namespace Java.Util
             /// </summary>
             public static Java.Util.Formatter.BigDecimalLayoutForm[] Values
             {
-                get { return SExecuteArray<Java.Util.Formatter.BigDecimalLayoutForm>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#valueOf(java.lang.String)"/>
@@ -309,7 +309,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Formatter.BigDecimalLayoutForm"/></returns>
             public static Java.Util.Formatter.BigDecimalLayoutForm ValueOf(string arg0)
             {
-                return SExecute<Java.Util.Formatter.BigDecimalLayoutForm>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

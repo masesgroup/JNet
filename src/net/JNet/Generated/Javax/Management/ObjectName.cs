@@ -78,7 +78,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#WILDCARD"/>
         /// </summary>
-        public static Javax.Management.ObjectName WILDCARD { get { return SGetField<Javax.Management.ObjectName>(LocalClazz, "WILDCARD"); } }
+        public static Javax.Management.ObjectName WILDCARD { get { return SGetField<Javax.Management.ObjectName>(LocalBridgeClazz, "WILDCARD"); } }
 
         #endregion
 
@@ -90,7 +90,7 @@ namespace Javax.Management
         /// <returns><see cref="string"/></returns>
         public static string Quote(string arg0)
         {
-            return SExecute<string>(LocalClazz, "quote", arg0);
+            return SExecute<string>(LocalBridgeClazz, "quote", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#unquote(java.lang.String)"/>
@@ -99,7 +99,7 @@ namespace Javax.Management
         /// <returns><see cref="string"/></returns>
         public static string Unquote(string arg0)
         {
-            return SExecute<string>(LocalClazz, "unquote", arg0);
+            return SExecute<string>(LocalBridgeClazz, "unquote", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -111,7 +111,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public static Javax.Management.ObjectName GetInstance(string arg0, string arg1, string arg2)
         {
-            return SExecute<Javax.Management.ObjectName>(LocalClazz, "getInstance", arg0, arg1, arg2);
+            return SExecute<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String,java.util.Hashtable)"/>
@@ -122,7 +122,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public static Javax.Management.ObjectName GetInstance(string arg0, Java.Util.Hashtable<string, string> arg1)
         {
-            return SExecute<Javax.Management.ObjectName>(LocalClazz, "getInstance", arg0, arg1);
+            return SExecute<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String)"/>
@@ -133,7 +133,7 @@ namespace Javax.Management
         /// <exception cref="Java.Lang.NullPointerException"/>
         public static Javax.Management.ObjectName GetInstance(string arg0)
         {
-            return SExecute<Javax.Management.ObjectName>(LocalClazz, "getInstance", arg0);
+            return SExecute<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(javax.management.ObjectName)"/>
@@ -142,7 +142,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ObjectName"/></returns>
         public static Javax.Management.ObjectName GetInstance(Javax.Management.ObjectName arg0)
         {
-            return SExecute<Javax.Management.ObjectName>(LocalClazz, "getInstance", arg0);
+            return SExecute<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", arg0);
         }
 
         #endregion

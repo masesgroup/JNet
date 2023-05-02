@@ -49,39 +49,39 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_ACTIVATED"/>
         /// </summary>
-        public static int INTERNAL_FRAME_ACTIVATED { get { return SGetField<int>(LocalClazz, "INTERNAL_FRAME_ACTIVATED"); } }
+        public static int INTERNAL_FRAME_ACTIVATED { get { return SGetField<int>(LocalBridgeClazz, "INTERNAL_FRAME_ACTIVATED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_CLOSED"/>
         /// </summary>
-        public static int INTERNAL_FRAME_CLOSED { get { return SGetField<int>(LocalClazz, "INTERNAL_FRAME_CLOSED"); } }
+        public static int INTERNAL_FRAME_CLOSED { get { return SGetField<int>(LocalBridgeClazz, "INTERNAL_FRAME_CLOSED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_CLOSING"/>
         /// </summary>
-        public static int INTERNAL_FRAME_CLOSING { get { return SGetField<int>(LocalClazz, "INTERNAL_FRAME_CLOSING"); } }
+        public static int INTERNAL_FRAME_CLOSING { get { return SGetField<int>(LocalBridgeClazz, "INTERNAL_FRAME_CLOSING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_DEACTIVATED"/>
         /// </summary>
-        public static int INTERNAL_FRAME_DEACTIVATED { get { return SGetField<int>(LocalClazz, "INTERNAL_FRAME_DEACTIVATED"); } }
+        public static int INTERNAL_FRAME_DEACTIVATED { get { return SGetField<int>(LocalBridgeClazz, "INTERNAL_FRAME_DEACTIVATED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_DEICONIFIED"/>
         /// </summary>
-        public static int INTERNAL_FRAME_DEICONIFIED { get { return SGetField<int>(LocalClazz, "INTERNAL_FRAME_DEICONIFIED"); } }
+        public static int INTERNAL_FRAME_DEICONIFIED { get { return SGetField<int>(LocalBridgeClazz, "INTERNAL_FRAME_DEICONIFIED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_FIRST"/>
         /// </summary>
-        public static int INTERNAL_FRAME_FIRST { get { return SGetField<int>(LocalClazz, "INTERNAL_FRAME_FIRST"); } }
+        public static int INTERNAL_FRAME_FIRST { get { return SGetField<int>(LocalBridgeClazz, "INTERNAL_FRAME_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_ICONIFIED"/>
         /// </summary>
-        public static int INTERNAL_FRAME_ICONIFIED { get { return SGetField<int>(LocalClazz, "INTERNAL_FRAME_ICONIFIED"); } }
+        public static int INTERNAL_FRAME_ICONIFIED { get { return SGetField<int>(LocalBridgeClazz, "INTERNAL_FRAME_ICONIFIED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_LAST"/>
         /// </summary>
-        public static int INTERNAL_FRAME_LAST { get { return SGetField<int>(LocalClazz, "INTERNAL_FRAME_LAST"); } }
+        public static int INTERNAL_FRAME_LAST { get { return SGetField<int>(LocalBridgeClazz, "INTERNAL_FRAME_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameEvent.html#INTERNAL_FRAME_OPENED"/>
         /// </summary>
-        public static int INTERNAL_FRAME_OPENED { get { return SGetField<int>(LocalClazz, "INTERNAL_FRAME_OPENED"); } }
+        public static int INTERNAL_FRAME_OPENED { get { return SGetField<int>(LocalBridgeClazz, "INTERNAL_FRAME_OPENED"); } }
 
         #endregion
 

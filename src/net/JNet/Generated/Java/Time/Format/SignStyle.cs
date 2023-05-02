@@ -40,23 +40,23 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#ALWAYS"/>
         /// </summary>
-        public static Java.Time.Format.SignStyle ALWAYS { get { return SGetField<Java.Time.Format.SignStyle>(LocalClazz, "ALWAYS"); } }
+        public static Java.Time.Format.SignStyle ALWAYS { get { return SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "ALWAYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#EXCEEDS_PAD"/>
         /// </summary>
-        public static Java.Time.Format.SignStyle EXCEEDS_PAD { get { return SGetField<Java.Time.Format.SignStyle>(LocalClazz, "EXCEEDS_PAD"); } }
+        public static Java.Time.Format.SignStyle EXCEEDS_PAD { get { return SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "EXCEEDS_PAD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#NEVER"/>
         /// </summary>
-        public static Java.Time.Format.SignStyle NEVER { get { return SGetField<Java.Time.Format.SignStyle>(LocalClazz, "NEVER"); } }
+        public static Java.Time.Format.SignStyle NEVER { get { return SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "NEVER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#NORMAL"/>
         /// </summary>
-        public static Java.Time.Format.SignStyle NORMAL { get { return SGetField<Java.Time.Format.SignStyle>(LocalClazz, "NORMAL"); } }
+        public static Java.Time.Format.SignStyle NORMAL { get { return SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "NORMAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#NOT_NEGATIVE"/>
         /// </summary>
-        public static Java.Time.Format.SignStyle NOT_NEGATIVE { get { return SGetField<Java.Time.Format.SignStyle>(LocalClazz, "NOT_NEGATIVE"); } }
+        public static Java.Time.Format.SignStyle NOT_NEGATIVE { get { return SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "NOT_NEGATIVE"); } }
 
         #endregion
 
@@ -66,7 +66,7 @@ namespace Java.Time.Format
         /// </summary>
         public static Java.Time.Format.SignStyle[] Values
         {
-            get { return SExecuteArray<Java.Time.Format.SignStyle>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Time.Format.SignStyle>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#valueOf(java.lang.String)"/>
@@ -75,7 +75,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.SignStyle"/></returns>
         public static Java.Time.Format.SignStyle ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Format.SignStyle>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Time.Format.SignStyle>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

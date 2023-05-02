@@ -56,7 +56,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         public static Java.Sql.Timestamp ValueOf(string arg0)
         {
-            return SExecute<Java.Sql.Timestamp>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Sql.Timestamp>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Timestamp.html#valueOf(java.time.LocalDateTime)"/>
@@ -65,7 +65,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.Timestamp"/></returns>
         public static Java.Sql.Timestamp ValueOf(Java.Time.LocalDateTime arg0)
         {
-            return SExecute<Java.Sql.Timestamp>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Sql.Timestamp>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

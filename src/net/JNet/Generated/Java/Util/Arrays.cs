@@ -52,7 +52,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T[] CopyOf<T, U>(U[] arg0, int arg1, Java.Lang.Class arg2)
         {
-            return SExecuteArray<T>(LocalClazz, "copyOf", arg0, arg1, arg2);
+            return SExecuteArray<T>(LocalBridgeClazz, "copyOf", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(java.lang.Object[],int,int,java.lang.Class)"/>
@@ -66,7 +66,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T[] CopyOfRange<T, U>(U[] arg0, int arg1, int arg2, Java.Lang.Class arg3)
         {
-            return SExecuteArray<T>(LocalClazz, "copyOfRange", arg0, arg1, arg2, arg3);
+            return SExecuteArray<T>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],int,int,java.lang.Object[],int,int,java.util.Comparator)"/>
@@ -83,7 +83,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals<T, Arg6objectSuperT>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],java.lang.Object[],java.util.Comparator)"/>
@@ -96,7 +96,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals<T, Arg2objectSuperT>(T[] arg0, T[] arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],int,int,java.lang.Object,java.util.Comparator)"/>
@@ -111,7 +111,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch<T, Arg4objectSuperT>(T[] arg0, int arg1, int arg2, T arg3, Java.Util.Comparator<Arg4objectSuperT> arg4) where Arg4objectSuperT: T
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],java.lang.Object,java.util.Comparator)"/>
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch<T, Arg2objectSuperT>(T[] arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Object[],int,int,java.lang.Object[],int,int,java.util.Comparator)"/>
@@ -141,7 +141,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare<T, Arg6objectSuperT>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Comparable[],int,int,java.lang.Comparable[],int,int)"/>
@@ -156,7 +156,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare<T>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Object[],java.lang.Object[],java.util.Comparator)"/>
@@ -169,7 +169,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare<T, Arg2objectSuperT>(T[] arg0, T[] arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(java.lang.Comparable[],java.lang.Comparable[])"/>
@@ -180,7 +180,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare<T>(T[] arg0, T[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],int,int,java.lang.Object[],int,int,java.util.Comparator)"/>
@@ -197,7 +197,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch<T, Arg6objectSuperT>(T[] arg0, int arg1, int arg2, T[] arg3, int arg4, int arg5, Java.Util.Comparator<Arg6objectSuperT> arg6) where Arg6objectSuperT: T
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],java.lang.Object[],java.util.Comparator)"/>
@@ -210,7 +210,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch<T, Arg2objectSuperT>(T[] arg0, T[] arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT: T
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#asList(java.lang.Object[])"/>
@@ -220,7 +220,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> AsList<T>(params T[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.List<T>>(LocalClazz, "asList"); else return SExecute<Java.Util.List<T>>(LocalClazz, "asList", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "asList"); else return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "asList", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(java.lang.Object[],int,int)"/>
@@ -232,7 +232,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T>(T[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "spliterator", arg0, arg1, arg2);
+            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(java.lang.Object[])"/>
@@ -242,7 +242,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public static Java.Util.Spliterator<T> Spliterator<T>(T[] arg0)
         {
-            return SExecute<Java.Util.Spliterator<T>>(LocalClazz, "spliterator", new object[] { arg0 });
+            return SExecute<Java.Util.Spliterator<T>>(LocalBridgeClazz, "spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(java.lang.Object[],int,int)"/>
@@ -254,7 +254,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Stream<T>(T[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "stream", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(java.lang.Object[])"/>
@@ -264,7 +264,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Stream<T>(T[] arg0)
         {
-            return SExecute<Java.Util.Stream.Stream<T>>(LocalClazz, "stream", new object[] { arg0 });
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(java.lang.Object[],int)"/>
@@ -275,7 +275,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T[] CopyOf<T>(T[] arg0, int arg1)
         {
-            return SExecuteArray<T>(LocalClazz, "copyOf", arg0, arg1);
+            return SExecuteArray<T>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(java.lang.Object[],int,int)"/>
@@ -287,7 +287,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T[] CopyOfRange<T>(T[] arg0, int arg1, int arg2)
         {
-            return SExecuteArray<T>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
+            return SExecuteArray<T>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(java.lang.Object[],int,int,java.util.function.BinaryOperator)"/>
@@ -299,7 +299,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         public static void ParallelPrefix<T>(T[] arg0, int arg1, int arg2, Java.Util.Function.BinaryOperator<T> arg3)
         {
-            SExecute(LocalClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(java.lang.Object[],java.util.function.BinaryOperator)"/>
@@ -309,7 +309,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         public static void ParallelPrefix<T>(T[] arg0, Java.Util.Function.BinaryOperator<T> arg1)
         {
-            SExecute(LocalClazz, "parallelPrefix", arg0, arg1);
+            SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(java.lang.Object[],java.util.function.IntFunction)"/>
@@ -320,7 +320,7 @@ namespace Java.Util
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
         public static void ParallelSetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
         {
-            SExecute(LocalClazz, "parallelSetAll", arg0, arg1);
+            SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Object[],int,int,java.util.Comparator)"/>
@@ -333,7 +333,7 @@ namespace Java.Util
         /// <typeparam name="Arg3objectSuperT"><typeparamref name="T"/></typeparam>
         public static void ParallelSort<T, Arg3objectSuperT>(T[] arg0, int arg1, int arg2, Java.Util.Comparator<Arg3objectSuperT> arg3) where Arg3objectSuperT: T
         {
-            SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Comparable[],int,int)"/>
@@ -344,7 +344,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         public static void ParallelSort<T>(T[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Object[],java.util.Comparator)"/>
@@ -355,7 +355,7 @@ namespace Java.Util
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         public static void ParallelSort<T, Arg1objectSuperT>(T[] arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT: T
         {
-            SExecute(LocalClazz, "parallelSort", arg0, arg1);
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(java.lang.Comparable[])"/>
@@ -364,7 +364,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         public static void ParallelSort<T>(T[] arg0)
         {
-            SExecute(LocalClazz, "parallelSort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(java.lang.Object[],java.util.function.IntFunction)"/>
@@ -375,7 +375,7 @@ namespace Java.Util
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
         public static void SetAll<T, Arg1ExtendsT>(T[] arg0, Java.Util.Function.IntFunction<Arg1ExtendsT> arg1) where Arg1ExtendsT: T
         {
-            SExecute(LocalClazz, "setAll", arg0, arg1);
+            SExecute(LocalBridgeClazz, "setAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],int,int,java.util.Comparator)"/>
@@ -388,7 +388,7 @@ namespace Java.Util
         /// <typeparam name="Arg3objectSuperT"><typeparamref name="T"/></typeparam>
         public static void Sort<T, Arg3objectSuperT>(T[] arg0, int arg1, int arg2, Java.Util.Comparator<Arg3objectSuperT> arg3) where Arg3objectSuperT: T
         {
-            SExecute(LocalClazz, "sort", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],java.util.Comparator)"/>
@@ -399,7 +399,7 @@ namespace Java.Util
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         public static void Sort<T, Arg1objectSuperT>(T[] arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT: T
         {
-            SExecute(LocalClazz, "sort", arg0, arg1);
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepEquals(java.lang.Object[],java.lang.Object[])"/>
@@ -409,7 +409,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool DeepEquals(object[] arg0, object[] arg1)
         {
-            return SExecute<bool>(LocalClazz, "deepEquals", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "deepEquals", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(boolean[],boolean[])"/>
@@ -419,7 +419,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(bool[] arg0, bool[] arg1)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(boolean[],int,int,boolean[],int,int)"/>
@@ -433,7 +433,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(bool[] arg0, int arg1, int arg2, bool[] arg3, int arg4, int arg5)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(byte[],byte[])"/>
@@ -443,7 +443,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(byte[] arg0, byte[] arg1)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(byte[],int,int,byte[],int,int)"/>
@@ -457,7 +457,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(char[],char[])"/>
@@ -467,7 +467,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(char[] arg0, char[] arg1)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(char[],int,int,char[],int,int)"/>
@@ -481,7 +481,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(char[] arg0, int arg1, int arg2, char[] arg3, int arg4, int arg5)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(double[],double[])"/>
@@ -491,7 +491,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(double[] arg0, double[] arg1)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(double[],int,int,double[],int,int)"/>
@@ -505,7 +505,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(double[] arg0, int arg1, int arg2, double[] arg3, int arg4, int arg5)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(float[],float[])"/>
@@ -515,7 +515,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(float[] arg0, float[] arg1)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(float[],int,int,float[],int,int)"/>
@@ -529,7 +529,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(float[] arg0, int arg1, int arg2, float[] arg3, int arg4, int arg5)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(int[],int,int,int[],int,int)"/>
@@ -543,7 +543,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(int[],int[])"/>
@@ -553,7 +553,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(int[] arg0, int[] arg1)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],int,int,java.lang.Object[],int,int)"/>
@@ -567,7 +567,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(object[] arg0, int arg1, int arg2, object[] arg3, int arg4, int arg5)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(java.lang.Object[],java.lang.Object[])"/>
@@ -577,7 +577,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(object[] arg0, object[] arg1)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(long[],int,int,long[],int,int)"/>
@@ -591,7 +591,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(long[],long[])"/>
@@ -601,7 +601,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(long[] arg0, long[] arg1)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(short[],int,int,short[],int,int)"/>
@@ -615,7 +615,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#equals(short[],short[])"/>
@@ -625,7 +625,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(short[] arg0, short[] arg1)
         {
-            return SExecute<bool>(LocalClazz, "equals", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(boolean[],int)"/>
@@ -635,7 +635,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool[] CopyOf(bool[] arg0, int arg1)
         {
-            return SExecuteArray<bool>(LocalClazz, "copyOf", arg0, arg1);
+            return SExecuteArray<bool>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(boolean[],int,int)"/>
@@ -646,7 +646,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool[] CopyOfRange(bool[] arg0, int arg1, int arg2)
         {
-            return SExecuteArray<bool>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
+            return SExecuteArray<bool>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(byte[],int)"/>
@@ -656,7 +656,7 @@ namespace Java.Util
         /// <returns><see cref="byte"/></returns>
         public static byte[] CopyOf(byte[] arg0, int arg1)
         {
-            return SExecuteArray<byte>(LocalClazz, "copyOf", arg0, arg1);
+            return SExecuteArray<byte>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(byte[],int,int)"/>
@@ -667,7 +667,7 @@ namespace Java.Util
         /// <returns><see cref="byte"/></returns>
         public static byte[] CopyOfRange(byte[] arg0, int arg1, int arg2)
         {
-            return SExecuteArray<byte>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
+            return SExecuteArray<byte>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(char[],int)"/>
@@ -677,7 +677,7 @@ namespace Java.Util
         /// <returns><see cref="char"/></returns>
         public static char[] CopyOf(char[] arg0, int arg1)
         {
-            return SExecuteArray<char>(LocalClazz, "copyOf", arg0, arg1);
+            return SExecuteArray<char>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(char[],int,int)"/>
@@ -688,7 +688,7 @@ namespace Java.Util
         /// <returns><see cref="char"/></returns>
         public static char[] CopyOfRange(char[] arg0, int arg1, int arg2)
         {
-            return SExecuteArray<char>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
+            return SExecuteArray<char>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(double[],int)"/>
@@ -698,7 +698,7 @@ namespace Java.Util
         /// <returns><see cref="double"/></returns>
         public static double[] CopyOf(double[] arg0, int arg1)
         {
-            return SExecuteArray<double>(LocalClazz, "copyOf", arg0, arg1);
+            return SExecuteArray<double>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(double[],int,int)"/>
@@ -709,7 +709,7 @@ namespace Java.Util
         /// <returns><see cref="double"/></returns>
         public static double[] CopyOfRange(double[] arg0, int arg1, int arg2)
         {
-            return SExecuteArray<double>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
+            return SExecuteArray<double>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(float[],int)"/>
@@ -719,7 +719,7 @@ namespace Java.Util
         /// <returns><see cref="float"/></returns>
         public static float[] CopyOf(float[] arg0, int arg1)
         {
-            return SExecuteArray<float>(LocalClazz, "copyOf", arg0, arg1);
+            return SExecuteArray<float>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(float[],int,int)"/>
@@ -730,7 +730,7 @@ namespace Java.Util
         /// <returns><see cref="float"/></returns>
         public static float[] CopyOfRange(float[] arg0, int arg1, int arg2)
         {
-            return SExecuteArray<float>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
+            return SExecuteArray<float>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(byte[],byte)"/>
@@ -740,7 +740,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(byte[] arg0, byte arg1)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(byte[],int,int,byte)"/>
@@ -752,7 +752,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(byte[] arg0, int arg1, int arg2, byte arg3)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2, arg3);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(char[],char)"/>
@@ -762,7 +762,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(char[] arg0, char arg1)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(char[],int,int,char)"/>
@@ -774,7 +774,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(char[] arg0, int arg1, int arg2, char arg3)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2, arg3);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(double[],double)"/>
@@ -784,7 +784,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(double[] arg0, double arg1)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(double[],int,int,double)"/>
@@ -796,7 +796,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(double[] arg0, int arg1, int arg2, double arg3)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2, arg3);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(float[],float)"/>
@@ -806,7 +806,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(float[] arg0, float arg1)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(float[],int,int,float)"/>
@@ -818,7 +818,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(float[] arg0, int arg1, int arg2, float arg3)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2, arg3);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(int[],int,int,int)"/>
@@ -830,7 +830,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(int[] arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2, arg3);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(int[],int)"/>
@@ -840,7 +840,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(int[] arg0, int arg1)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],int,int,java.lang.Object)"/>
@@ -852,7 +852,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(object[] arg0, int arg1, int arg2, object arg3)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2, arg3);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(java.lang.Object[],java.lang.Object)"/>
@@ -862,7 +862,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(object[] arg0, object arg1)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(long[],int,int,long)"/>
@@ -874,7 +874,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(long[] arg0, int arg1, int arg2, long arg3)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2, arg3);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(long[],long)"/>
@@ -884,7 +884,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(long[] arg0, long arg1)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(short[],int,int,short)"/>
@@ -896,7 +896,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(short[] arg0, int arg1, int arg2, short arg3)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1, arg2, arg3);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#binarySearch(short[],short)"/>
@@ -906,7 +906,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch(short[] arg0, short arg1)
         {
-            return SExecute<int>(LocalClazz, "binarySearch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(boolean[],boolean[])"/>
@@ -916,7 +916,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(bool[] arg0, bool[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(boolean[],int,int,boolean[],int,int)"/>
@@ -930,7 +930,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(bool[] arg0, int arg1, int arg2, bool[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(byte[],byte[])"/>
@@ -940,7 +940,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(byte[] arg0, byte[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(byte[],int,int,byte[],int,int)"/>
@@ -954,7 +954,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(char[],char[])"/>
@@ -964,7 +964,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(char[] arg0, char[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(char[],int,int,char[],int,int)"/>
@@ -978,7 +978,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(char[] arg0, int arg1, int arg2, char[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(double[],double[])"/>
@@ -988,7 +988,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(double[] arg0, double[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(double[],int,int,double[],int,int)"/>
@@ -1002,7 +1002,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(double[] arg0, int arg1, int arg2, double[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(float[],float[])"/>
@@ -1012,7 +1012,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(float[] arg0, float[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(float[],int,int,float[],int,int)"/>
@@ -1026,7 +1026,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(float[] arg0, int arg1, int arg2, float[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(int[],int,int,int[],int,int)"/>
@@ -1040,7 +1040,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(int[],int[])"/>
@@ -1050,7 +1050,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(int[] arg0, int[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(long[],int,int,long[],int,int)"/>
@@ -1064,7 +1064,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(long[],long[])"/>
@@ -1074,7 +1074,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(long[] arg0, long[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(short[],int,int,short[],int,int)"/>
@@ -1088,7 +1088,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compare(short[],short[])"/>
@@ -1098,7 +1098,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare(short[] arg0, short[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compare", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(byte[],byte[])"/>
@@ -1108,7 +1108,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(byte[] arg0, byte[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compareUnsigned", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(byte[],int,int,byte[],int,int)"/>
@@ -1122,7 +1122,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(int[],int,int,int[],int,int)"/>
@@ -1136,7 +1136,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(int[],int[])"/>
@@ -1146,7 +1146,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(int[] arg0, int[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compareUnsigned", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(long[],int,int,long[],int,int)"/>
@@ -1160,7 +1160,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(long[],long[])"/>
@@ -1170,7 +1170,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(long[] arg0, long[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compareUnsigned", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(short[],int,int,short[],int,int)"/>
@@ -1184,7 +1184,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#compareUnsigned(short[],short[])"/>
@@ -1194,7 +1194,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(short[] arg0, short[] arg1)
         {
-            return SExecute<int>(LocalClazz, "compareUnsigned", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepHashCode(java.lang.Object[])"/>
@@ -1203,7 +1203,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int DeepHashCode(object[] arg0)
         {
-            return SExecute<int>(LocalClazz, "deepHashCode", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "deepHashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(boolean[])"/>
@@ -1212,7 +1212,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(bool[] arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(byte[])"/>
@@ -1221,7 +1221,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(byte[] arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(char[])"/>
@@ -1230,7 +1230,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(char[] arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(double[])"/>
@@ -1239,7 +1239,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(double[] arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(float[])"/>
@@ -1248,7 +1248,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(float[] arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(int[])"/>
@@ -1257,7 +1257,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(int[] arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(java.lang.Object[])"/>
@@ -1266,7 +1266,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(object[] arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(long[])"/>
@@ -1275,7 +1275,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(long[] arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#hashCode(short[])"/>
@@ -1284,7 +1284,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int HashCode(short[] arg0)
         {
-            return SExecute<int>(LocalClazz, "hashCode", new object[] { arg0 });
+            return SExecute<int>(LocalBridgeClazz, "hashCode", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(boolean[],boolean[])"/>
@@ -1294,7 +1294,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(bool[] arg0, bool[] arg1)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(boolean[],int,int,boolean[],int,int)"/>
@@ -1308,7 +1308,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(bool[] arg0, int arg1, int arg2, bool[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(byte[],byte[])"/>
@@ -1318,7 +1318,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(byte[] arg0, byte[] arg1)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(byte[],int,int,byte[],int,int)"/>
@@ -1332,7 +1332,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(char[],char[])"/>
@@ -1342,7 +1342,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(char[] arg0, char[] arg1)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(char[],int,int,char[],int,int)"/>
@@ -1356,7 +1356,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(char[] arg0, int arg1, int arg2, char[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(double[],double[])"/>
@@ -1366,7 +1366,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(double[] arg0, double[] arg1)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(double[],int,int,double[],int,int)"/>
@@ -1380,7 +1380,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(double[] arg0, int arg1, int arg2, double[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(float[],float[])"/>
@@ -1390,7 +1390,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(float[] arg0, float[] arg1)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(float[],int,int,float[],int,int)"/>
@@ -1404,7 +1404,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(float[] arg0, int arg1, int arg2, float[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(int[],int,int,int[],int,int)"/>
@@ -1418,7 +1418,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(int[] arg0, int arg1, int arg2, int[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(int[],int[])"/>
@@ -1428,7 +1428,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(int[] arg0, int[] arg1)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],int,int,java.lang.Object[],int,int)"/>
@@ -1442,7 +1442,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(object[] arg0, int arg1, int arg2, object[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(java.lang.Object[],java.lang.Object[])"/>
@@ -1452,7 +1452,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(object[] arg0, object[] arg1)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(long[],int,int,long[],int,int)"/>
@@ -1466,7 +1466,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(long[] arg0, int arg1, int arg2, long[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(long[],long[])"/>
@@ -1476,7 +1476,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(long[] arg0, long[] arg1)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(short[],int,int,short[],int,int)"/>
@@ -1490,7 +1490,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(short[] arg0, int arg1, int arg2, short[] arg3, int arg4, int arg5)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#mismatch(short[],short[])"/>
@@ -1500,7 +1500,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Mismatch(short[] arg0, short[] arg1)
         {
-            return SExecute<int>(LocalClazz, "mismatch", arg0, arg1);
+            return SExecute<int>(LocalBridgeClazz, "mismatch", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(int[],int)"/>
@@ -1510,7 +1510,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int[] CopyOf(int[] arg0, int arg1)
         {
-            return SExecuteArray<int>(LocalClazz, "copyOf", arg0, arg1);
+            return SExecuteArray<int>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(int[],int,int)"/>
@@ -1521,7 +1521,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int[] CopyOfRange(int[] arg0, int arg1, int arg2)
         {
-            return SExecuteArray<int>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
+            return SExecuteArray<int>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#deepToString(java.lang.Object[])"/>
@@ -1530,7 +1530,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string DeepToString(object[] arg0)
         {
-            return SExecute<string>(LocalClazz, "deepToString", new object[] { arg0 });
+            return SExecute<string>(LocalBridgeClazz, "deepToString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(boolean[])"/>
@@ -1539,7 +1539,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(bool[] arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", new object[] { arg0 });
+            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(byte[])"/>
@@ -1548,7 +1548,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(byte[] arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", new object[] { arg0 });
+            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(char[])"/>
@@ -1557,7 +1557,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(char[] arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", new object[] { arg0 });
+            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(double[])"/>
@@ -1566,7 +1566,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(double[] arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", new object[] { arg0 });
+            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(float[])"/>
@@ -1575,7 +1575,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(float[] arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", new object[] { arg0 });
+            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(int[])"/>
@@ -1584,7 +1584,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(int[] arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", new object[] { arg0 });
+            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(java.lang.Object[])"/>
@@ -1593,7 +1593,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(object[] arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", new object[] { arg0 });
+            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(long[])"/>
@@ -1602,7 +1602,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(long[] arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", new object[] { arg0 });
+            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#toString(short[])"/>
@@ -1611,7 +1611,7 @@ namespace Java.Util
         /// <returns><see cref="string"/></returns>
         public static string ToString(short[] arg0)
         {
-            return SExecute<string>(LocalClazz, "toString", new object[] { arg0 });
+            return SExecute<string>(LocalBridgeClazz, "toString", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(double[],int,int)"/>
@@ -1622,7 +1622,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble Spliterator(double[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>(LocalClazz, "spliterator", arg0, arg1, arg2);
+            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(double[])"/>
@@ -1631,7 +1631,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfDouble"/></returns>
         public static Java.Util.Spliterator.OfDouble Spliterator(double[] arg0)
         {
-            return SExecute<Java.Util.Spliterator.OfDouble>(LocalClazz, "spliterator", new object[] { arg0 });
+            return SExecute<Java.Util.Spliterator.OfDouble>(LocalBridgeClazz, "spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(int[],int,int)"/>
@@ -1642,7 +1642,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt Spliterator(int[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>(LocalClazz, "spliterator", arg0, arg1, arg2);
+            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(int[])"/>
@@ -1651,7 +1651,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfInt"/></returns>
         public static Java.Util.Spliterator.OfInt Spliterator(int[] arg0)
         {
-            return SExecute<Java.Util.Spliterator.OfInt>(LocalClazz, "spliterator", new object[] { arg0 });
+            return SExecute<Java.Util.Spliterator.OfInt>(LocalBridgeClazz, "spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(long[],int,int)"/>
@@ -1662,7 +1662,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong Spliterator(long[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>(LocalClazz, "spliterator", arg0, arg1, arg2);
+            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#spliterator(long[])"/>
@@ -1671,7 +1671,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Spliterator.OfLong"/></returns>
         public static Java.Util.Spliterator.OfLong Spliterator(long[] arg0)
         {
-            return SExecute<Java.Util.Spliterator.OfLong>(LocalClazz, "spliterator", new object[] { arg0 });
+            return SExecute<Java.Util.Spliterator.OfLong>(LocalBridgeClazz, "spliterator", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(double[],int,int)"/>
@@ -1682,7 +1682,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Stream(double[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>(LocalClazz, "stream", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "stream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(double[])"/>
@@ -1691,7 +1691,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public static Java.Util.Stream.DoubleStream Stream(double[] arg0)
         {
-            return SExecute<Java.Util.Stream.DoubleStream>(LocalClazz, "stream", new object[] { arg0 });
+            return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(int[],int,int)"/>
@@ -1702,7 +1702,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Stream(int[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalClazz, "stream", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "stream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(int[])"/>
@@ -1711,7 +1711,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Stream(int[] arg0)
         {
-            return SExecute<Java.Util.Stream.IntStream>(LocalClazz, "stream", new object[] { arg0 });
+            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(long[],int,int)"/>
@@ -1722,7 +1722,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Stream(long[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "stream", arg0, arg1, arg2);
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "stream", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#stream(long[])"/>
@@ -1731,7 +1731,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Stream(long[] arg0)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalClazz, "stream", new object[] { arg0 });
+            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "stream", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(long[],int)"/>
@@ -1741,7 +1741,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public static long[] CopyOf(long[] arg0, int arg1)
         {
-            return SExecuteArray<long>(LocalClazz, "copyOf", arg0, arg1);
+            return SExecuteArray<long>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(long[],int,int)"/>
@@ -1752,7 +1752,7 @@ namespace Java.Util
         /// <returns><see cref="long"/></returns>
         public static long[] CopyOfRange(long[] arg0, int arg1, int arg2)
         {
-            return SExecuteArray<long>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
+            return SExecuteArray<long>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOf(short[],int)"/>
@@ -1762,7 +1762,7 @@ namespace Java.Util
         /// <returns><see cref="short"/></returns>
         public static short[] CopyOf(short[] arg0, int arg1)
         {
-            return SExecuteArray<short>(LocalClazz, "copyOf", arg0, arg1);
+            return SExecuteArray<short>(LocalBridgeClazz, "copyOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#copyOfRange(short[],int,int)"/>
@@ -1773,7 +1773,7 @@ namespace Java.Util
         /// <returns><see cref="short"/></returns>
         public static short[] CopyOfRange(short[] arg0, int arg1, int arg2)
         {
-            return SExecuteArray<short>(LocalClazz, "copyOfRange", arg0, arg1, arg2);
+            return SExecuteArray<short>(LocalBridgeClazz, "copyOfRange", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(boolean[],boolean)"/>
@@ -1782,7 +1782,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="bool"/></param>
         public static void Fill(bool[] arg0, bool arg1)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(boolean[],int,int,boolean)"/>
@@ -1793,7 +1793,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="bool"/></param>
         public static void Fill(bool[] arg0, int arg1, int arg2, bool arg3)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(byte[],byte)"/>
@@ -1802,7 +1802,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="byte"/></param>
         public static void Fill(byte[] arg0, byte arg1)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(byte[],int,int,byte)"/>
@@ -1813,7 +1813,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="byte"/></param>
         public static void Fill(byte[] arg0, int arg1, int arg2, byte arg3)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(char[],char)"/>
@@ -1822,7 +1822,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="char"/></param>
         public static void Fill(char[] arg0, char arg1)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(char[],int,int,char)"/>
@@ -1833,7 +1833,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="char"/></param>
         public static void Fill(char[] arg0, int arg1, int arg2, char arg3)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(double[],double)"/>
@@ -1842,7 +1842,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="double"/></param>
         public static void Fill(double[] arg0, double arg1)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(double[],int,int,double)"/>
@@ -1853,7 +1853,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="double"/></param>
         public static void Fill(double[] arg0, int arg1, int arg2, double arg3)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(float[],float)"/>
@@ -1862,7 +1862,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="float"/></param>
         public static void Fill(float[] arg0, float arg1)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(float[],int,int,float)"/>
@@ -1873,7 +1873,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="float"/></param>
         public static void Fill(float[] arg0, int arg1, int arg2, float arg3)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(int[],int,int,int)"/>
@@ -1884,7 +1884,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         public static void Fill(int[] arg0, int arg1, int arg2, int arg3)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(int[],int)"/>
@@ -1893,7 +1893,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public static void Fill(int[] arg0, int arg1)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(java.lang.Object[],int,int,java.lang.Object)"/>
@@ -1904,7 +1904,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="object"/></param>
         public static void Fill(object[] arg0, int arg1, int arg2, object arg3)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(java.lang.Object[],java.lang.Object)"/>
@@ -1913,7 +1913,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="object"/></param>
         public static void Fill(object[] arg0, object arg1)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(long[],int,int,long)"/>
@@ -1924,7 +1924,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="long"/></param>
         public static void Fill(long[] arg0, int arg1, int arg2, long arg3)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(long[],long)"/>
@@ -1933,7 +1933,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="long"/></param>
         public static void Fill(long[] arg0, long arg1)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(short[],int,int,short)"/>
@@ -1944,7 +1944,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="short"/></param>
         public static void Fill(short[] arg0, int arg1, int arg2, short arg3)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#fill(short[],short)"/>
@@ -1953,7 +1953,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="short"/></param>
         public static void Fill(short[] arg0, short arg1)
         {
-            SExecute(LocalClazz, "fill", arg0, arg1);
+            SExecute(LocalBridgeClazz, "fill", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(double[],int,int,java.util.function.DoubleBinaryOperator)"/>
@@ -1964,7 +1964,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
         public static void ParallelPrefix(double[] arg0, int arg1, int arg2, Java.Util.Function.DoubleBinaryOperator arg3)
         {
-            SExecute(LocalClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(double[],java.util.function.DoubleBinaryOperator)"/>
@@ -1973,7 +1973,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
         public static void ParallelPrefix(double[] arg0, Java.Util.Function.DoubleBinaryOperator arg1)
         {
-            SExecute(LocalClazz, "parallelPrefix", arg0, arg1);
+            SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(int[],int,int,java.util.function.IntBinaryOperator)"/>
@@ -1984,7 +1984,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
         public static void ParallelPrefix(int[] arg0, int arg1, int arg2, Java.Util.Function.IntBinaryOperator arg3)
         {
-            SExecute(LocalClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(int[],java.util.function.IntBinaryOperator)"/>
@@ -1993,7 +1993,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
         public static void ParallelPrefix(int[] arg0, Java.Util.Function.IntBinaryOperator arg1)
         {
-            SExecute(LocalClazz, "parallelPrefix", arg0, arg1);
+            SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(long[],int,int,java.util.function.LongBinaryOperator)"/>
@@ -2004,7 +2004,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
         public static void ParallelPrefix(long[] arg0, int arg1, int arg2, Java.Util.Function.LongBinaryOperator arg3)
         {
-            SExecute(LocalClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
+            SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelPrefix(long[],java.util.function.LongBinaryOperator)"/>
@@ -2013,7 +2013,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.LongBinaryOperator"/></param>
         public static void ParallelPrefix(long[] arg0, Java.Util.Function.LongBinaryOperator arg1)
         {
-            SExecute(LocalClazz, "parallelPrefix", arg0, arg1);
+            SExecute(LocalBridgeClazz, "parallelPrefix", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(double[],java.util.function.IntToDoubleFunction)"/>
@@ -2022,7 +2022,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntToDoubleFunction"/></param>
         public static void ParallelSetAll(double[] arg0, Java.Util.Function.IntToDoubleFunction arg1)
         {
-            SExecute(LocalClazz, "parallelSetAll", arg0, arg1);
+            SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(int[],java.util.function.IntUnaryOperator)"/>
@@ -2031,7 +2031,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         public static void ParallelSetAll(int[] arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
-            SExecute(LocalClazz, "parallelSetAll", arg0, arg1);
+            SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSetAll(long[],java.util.function.IntToLongFunction)"/>
@@ -2040,7 +2040,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntToLongFunction"/></param>
         public static void ParallelSetAll(long[] arg0, Java.Util.Function.IntToLongFunction arg1)
         {
-            SExecute(LocalClazz, "parallelSetAll", arg0, arg1);
+            SExecute(LocalBridgeClazz, "parallelSetAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(byte[],int,int)"/>
@@ -2050,7 +2050,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void ParallelSort(byte[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(byte[])"/>
@@ -2058,7 +2058,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="byte"/></param>
         public static void ParallelSort(byte[] arg0)
         {
-            SExecute(LocalClazz, "parallelSort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(char[],int,int)"/>
@@ -2068,7 +2068,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void ParallelSort(char[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(char[])"/>
@@ -2076,7 +2076,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="char"/></param>
         public static void ParallelSort(char[] arg0)
         {
-            SExecute(LocalClazz, "parallelSort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(double[],int,int)"/>
@@ -2086,7 +2086,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void ParallelSort(double[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(double[])"/>
@@ -2094,7 +2094,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="double"/></param>
         public static void ParallelSort(double[] arg0)
         {
-            SExecute(LocalClazz, "parallelSort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(float[],int,int)"/>
@@ -2104,7 +2104,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void ParallelSort(float[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(float[])"/>
@@ -2112,7 +2112,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="float"/></param>
         public static void ParallelSort(float[] arg0)
         {
-            SExecute(LocalClazz, "parallelSort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(int[],int,int)"/>
@@ -2122,7 +2122,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void ParallelSort(int[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(int[])"/>
@@ -2130,7 +2130,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public static void ParallelSort(int[] arg0)
         {
-            SExecute(LocalClazz, "parallelSort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(long[],int,int)"/>
@@ -2140,7 +2140,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void ParallelSort(long[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(long[])"/>
@@ -2148,7 +2148,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="long"/></param>
         public static void ParallelSort(long[] arg0)
         {
-            SExecute(LocalClazz, "parallelSort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(short[],int,int)"/>
@@ -2158,7 +2158,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void ParallelSort(short[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "parallelSort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "parallelSort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#parallelSort(short[])"/>
@@ -2166,7 +2166,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="short"/></param>
         public static void ParallelSort(short[] arg0)
         {
-            SExecute(LocalClazz, "parallelSort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "parallelSort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(double[],java.util.function.IntToDoubleFunction)"/>
@@ -2175,7 +2175,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntToDoubleFunction"/></param>
         public static void SetAll(double[] arg0, Java.Util.Function.IntToDoubleFunction arg1)
         {
-            SExecute(LocalClazz, "setAll", arg0, arg1);
+            SExecute(LocalBridgeClazz, "setAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(int[],java.util.function.IntUnaryOperator)"/>
@@ -2184,7 +2184,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         public static void SetAll(int[] arg0, Java.Util.Function.IntUnaryOperator arg1)
         {
-            SExecute(LocalClazz, "setAll", arg0, arg1);
+            SExecute(LocalBridgeClazz, "setAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#setAll(long[],java.util.function.IntToLongFunction)"/>
@@ -2193,7 +2193,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Function.IntToLongFunction"/></param>
         public static void SetAll(long[] arg0, Java.Util.Function.IntToLongFunction arg1)
         {
-            SExecute(LocalClazz, "setAll", arg0, arg1);
+            SExecute(LocalBridgeClazz, "setAll", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(byte[],int,int)"/>
@@ -2203,7 +2203,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void Sort(byte[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "sort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(byte[])"/>
@@ -2211,7 +2211,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="byte"/></param>
         public static void Sort(byte[] arg0)
         {
-            SExecute(LocalClazz, "sort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(char[],int,int)"/>
@@ -2221,7 +2221,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void Sort(char[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "sort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(char[])"/>
@@ -2229,7 +2229,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="char"/></param>
         public static void Sort(char[] arg0)
         {
-            SExecute(LocalClazz, "sort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(double[],int,int)"/>
@@ -2239,7 +2239,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void Sort(double[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "sort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(double[])"/>
@@ -2247,7 +2247,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="double"/></param>
         public static void Sort(double[] arg0)
         {
-            SExecute(LocalClazz, "sort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(float[],int,int)"/>
@@ -2257,7 +2257,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void Sort(float[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "sort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(float[])"/>
@@ -2265,7 +2265,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="float"/></param>
         public static void Sort(float[] arg0)
         {
-            SExecute(LocalClazz, "sort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(int[],int,int)"/>
@@ -2275,7 +2275,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void Sort(int[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "sort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(int[])"/>
@@ -2283,7 +2283,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="int"/></param>
         public static void Sort(int[] arg0)
         {
-            SExecute(LocalClazz, "sort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[],int,int)"/>
@@ -2293,7 +2293,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void Sort(object[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "sort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(java.lang.Object[])"/>
@@ -2301,7 +2301,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="object"/></param>
         public static void Sort(object[] arg0)
         {
-            SExecute(LocalClazz, "sort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(long[],int,int)"/>
@@ -2311,7 +2311,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void Sort(long[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "sort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(long[])"/>
@@ -2319,7 +2319,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="long"/></param>
         public static void Sort(long[] arg0)
         {
-            SExecute(LocalClazz, "sort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(short[],int,int)"/>
@@ -2329,7 +2329,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void Sort(short[] arg0, int arg1, int arg2)
         {
-            SExecute(LocalClazz, "sort", arg0, arg1, arg2);
+            SExecute(LocalBridgeClazz, "sort", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#sort(short[])"/>
@@ -2337,7 +2337,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="short"/></param>
         public static void Sort(short[] arg0)
         {
-            SExecute(LocalClazz, "sort", new object[] { arg0 });
+            SExecute(LocalBridgeClazz, "sort", new object[] { arg0 });
         }
 
         #endregion

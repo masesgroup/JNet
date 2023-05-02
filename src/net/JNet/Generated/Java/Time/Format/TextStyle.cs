@@ -40,27 +40,27 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#FULL"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle FULL { get { return SGetField<Java.Time.Format.TextStyle>(LocalClazz, "FULL"); } }
+        public static Java.Time.Format.TextStyle FULL { get { return SGetField<Java.Time.Format.TextStyle>(LocalBridgeClazz, "FULL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#FULL_STANDALONE"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle FULL_STANDALONE { get { return SGetField<Java.Time.Format.TextStyle>(LocalClazz, "FULL_STANDALONE"); } }
+        public static Java.Time.Format.TextStyle FULL_STANDALONE { get { return SGetField<Java.Time.Format.TextStyle>(LocalBridgeClazz, "FULL_STANDALONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#NARROW"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle NARROW { get { return SGetField<Java.Time.Format.TextStyle>(LocalClazz, "NARROW"); } }
+        public static Java.Time.Format.TextStyle NARROW { get { return SGetField<Java.Time.Format.TextStyle>(LocalBridgeClazz, "NARROW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#NARROW_STANDALONE"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle NARROW_STANDALONE { get { return SGetField<Java.Time.Format.TextStyle>(LocalClazz, "NARROW_STANDALONE"); } }
+        public static Java.Time.Format.TextStyle NARROW_STANDALONE { get { return SGetField<Java.Time.Format.TextStyle>(LocalBridgeClazz, "NARROW_STANDALONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#SHORT"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle SHORT { get { return SGetField<Java.Time.Format.TextStyle>(LocalClazz, "SHORT"); } }
+        public static Java.Time.Format.TextStyle SHORT { get { return SGetField<Java.Time.Format.TextStyle>(LocalBridgeClazz, "SHORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#SHORT_STANDALONE"/>
         /// </summary>
-        public static Java.Time.Format.TextStyle SHORT_STANDALONE { get { return SGetField<Java.Time.Format.TextStyle>(LocalClazz, "SHORT_STANDALONE"); } }
+        public static Java.Time.Format.TextStyle SHORT_STANDALONE { get { return SGetField<Java.Time.Format.TextStyle>(LocalBridgeClazz, "SHORT_STANDALONE"); } }
 
         #endregion
 
@@ -70,7 +70,7 @@ namespace Java.Time.Format
         /// </summary>
         public static Java.Time.Format.TextStyle[] Values
         {
-            get { return SExecuteArray<Java.Time.Format.TextStyle>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Time.Format.TextStyle>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#valueOf(java.lang.String)"/>
@@ -79,7 +79,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.TextStyle"/></returns>
         public static Java.Time.Format.TextStyle ValueOf(string arg0)
         {
-            return SExecute<Java.Time.Format.TextStyle>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Time.Format.TextStyle>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

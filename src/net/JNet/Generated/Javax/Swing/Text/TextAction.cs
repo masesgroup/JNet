@@ -57,7 +57,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Action"/></returns>
         public static Javax.Swing.Action[] AugmentList(Javax.Swing.Action[] arg0, Javax.Swing.Action[] arg1)
         {
-            return SExecuteArray<Javax.Swing.Action>(LocalClazz, "augmentList", arg0, arg1);
+            return SExecuteArray<Javax.Swing.Action>(LocalBridgeClazz, "augmentList", arg0, arg1);
         }
 
         #endregion

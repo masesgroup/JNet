@@ -48,23 +48,23 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_NONE"/>
         /// </summary>
-        public static int TRANSACTION_NONE { get { return SGetField<int>(LocalClazz, "TRANSACTION_NONE"); } }
+        public static int TRANSACTION_NONE { get { return SGetField<int>(LocalBridgeClazz, "TRANSACTION_NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_READ_COMMITTED"/>
         /// </summary>
-        public static int TRANSACTION_READ_COMMITTED { get { return SGetField<int>(LocalClazz, "TRANSACTION_READ_COMMITTED"); } }
+        public static int TRANSACTION_READ_COMMITTED { get { return SGetField<int>(LocalBridgeClazz, "TRANSACTION_READ_COMMITTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_READ_UNCOMMITTED"/>
         /// </summary>
-        public static int TRANSACTION_READ_UNCOMMITTED { get { return SGetField<int>(LocalClazz, "TRANSACTION_READ_UNCOMMITTED"); } }
+        public static int TRANSACTION_READ_UNCOMMITTED { get { return SGetField<int>(LocalBridgeClazz, "TRANSACTION_READ_UNCOMMITTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_REPEATABLE_READ"/>
         /// </summary>
-        public static int TRANSACTION_REPEATABLE_READ { get { return SGetField<int>(LocalClazz, "TRANSACTION_REPEATABLE_READ"); } }
+        public static int TRANSACTION_REPEATABLE_READ { get { return SGetField<int>(LocalBridgeClazz, "TRANSACTION_REPEATABLE_READ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_SERIALIZABLE"/>
         /// </summary>
-        public static int TRANSACTION_SERIALIZABLE { get { return SGetField<int>(LocalClazz, "TRANSACTION_SERIALIZABLE"); } }
+        public static int TRANSACTION_SERIALIZABLE { get { return SGetField<int>(LocalBridgeClazz, "TRANSACTION_SERIALIZABLE"); } }
 
         #endregion
 

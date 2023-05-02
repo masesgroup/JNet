@@ -27,7 +27,7 @@ namespace Java.Util
         /// <inheritdoc cref="IEnumerable{T}.GetEnumerator"/>
         public IEnumerator<E> GetEnumerator()
         {
-            return new JVMBridgeBaseEnumerator<E>(Instance);
+            return new JVMBridgeBaseEnumerator<E>(BridgeInstance);
         }
         /// <inheritdoc cref="IEnumerable.GetEnumerator"/>
         IEnumerator IEnumerable.GetEnumerator()

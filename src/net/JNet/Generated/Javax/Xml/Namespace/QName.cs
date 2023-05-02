@@ -79,7 +79,7 @@ namespace Javax.Xml.Namespace
         /// <returns><see cref="Javax.Xml.Namespace.QName"/></returns>
         public static Javax.Xml.Namespace.QName ValueOf(string arg0)
         {
-            return SExecute<Javax.Xml.Namespace.QName>(LocalClazz, "valueOf", arg0);
+            return SExecute<Javax.Xml.Namespace.QName>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

@@ -46,7 +46,7 @@ namespace Java.Lang.ModuleNs
         /// </summary>
         public static Java.Lang.ModuleNs.ModuleFinder OfSystem
         {
-            get { return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalClazz, "ofSystem"); }
+            get { return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "ofSystem"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#compose(java.lang.module.ModuleFinder[])"/>
@@ -55,7 +55,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder Compose(params Java.Lang.ModuleNs.ModuleFinder[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalClazz, "compose"); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalClazz, "compose", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "compose"); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "compose", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#of(java.nio.file.Path[])"/>
@@ -64,7 +64,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
         public static Java.Lang.ModuleNs.ModuleFinder Of(params Java.Nio.File.Path[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalClazz, "of"); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalClazz, "of", arg0);
+            if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "of"); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "of", arg0);
         }
 
         #endregion

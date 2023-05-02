@@ -40,15 +40,15 @@ namespace Java.Awt.Geom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#CHORD"/>
         /// </summary>
-        public static int CHORD { get { return SGetField<int>(LocalClazz, "CHORD"); } }
+        public static int CHORD { get { return SGetField<int>(LocalBridgeClazz, "CHORD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#OPEN"/>
         /// </summary>
-        public static int OPEN { get { return SGetField<int>(LocalClazz, "OPEN"); } }
+        public static int OPEN { get { return SGetField<int>(LocalBridgeClazz, "OPEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#PIE"/>
         /// </summary>
-        public static int PIE { get { return SGetField<int>(LocalClazz, "PIE"); } }
+        public static int PIE { get { return SGetField<int>(LocalBridgeClazz, "PIE"); } }
 
         #endregion
 

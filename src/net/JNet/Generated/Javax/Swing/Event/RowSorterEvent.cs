@@ -105,11 +105,11 @@ namespace Javax.Swing.Event
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#SORT_ORDER_CHANGED"/>
             /// </summary>
-            public static Javax.Swing.Event.RowSorterEvent.Type SORT_ORDER_CHANGED { get { return SGetField<Javax.Swing.Event.RowSorterEvent.Type>(LocalClazz, "SORT_ORDER_CHANGED"); } }
+            public static Javax.Swing.Event.RowSorterEvent.Type SORT_ORDER_CHANGED { get { return SGetField<Javax.Swing.Event.RowSorterEvent.Type>(LocalBridgeClazz, "SORT_ORDER_CHANGED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#SORTED"/>
             /// </summary>
-            public static Javax.Swing.Event.RowSorterEvent.Type SORTED { get { return SGetField<Javax.Swing.Event.RowSorterEvent.Type>(LocalClazz, "SORTED"); } }
+            public static Javax.Swing.Event.RowSorterEvent.Type SORTED { get { return SGetField<Javax.Swing.Event.RowSorterEvent.Type>(LocalBridgeClazz, "SORTED"); } }
 
             #endregion
 
@@ -119,7 +119,7 @@ namespace Javax.Swing.Event
             /// </summary>
             public static Javax.Swing.Event.RowSorterEvent.Type[] Values
             {
-                get { return SExecuteArray<Javax.Swing.Event.RowSorterEvent.Type>(LocalClazz, "values"); }
+                get { return SExecuteArray<Javax.Swing.Event.RowSorterEvent.Type>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html#valueOf(java.lang.String)"/>
@@ -128,7 +128,7 @@ namespace Javax.Swing.Event
             /// <returns><see cref="Javax.Swing.Event.RowSorterEvent.Type"/></returns>
             public static Javax.Swing.Event.RowSorterEvent.Type ValueOf(string arg0)
             {
-                return SExecute<Javax.Swing.Event.RowSorterEvent.Type>(LocalClazz, "valueOf", arg0);
+                return SExecute<Javax.Swing.Event.RowSorterEvent.Type>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

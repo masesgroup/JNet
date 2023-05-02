@@ -48,7 +48,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public static Java.Util.Function.BinaryOperator MaxBy(Java.Util.Comparator arg0)
         {
-            return SExecute<Java.Util.Function.BinaryOperator>(LocalClazz, "maxBy", arg0);
+            return SExecute<Java.Util.Function.BinaryOperator>(LocalBridgeClazz, "maxBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#minBy(java.util.Comparator)"/>
@@ -57,7 +57,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public static Java.Util.Function.BinaryOperator MinBy(Java.Util.Comparator arg0)
         {
-            return SExecute<Java.Util.Function.BinaryOperator>(LocalClazz, "minBy", arg0);
+            return SExecute<Java.Util.Function.BinaryOperator>(LocalBridgeClazz, "minBy", arg0);
         }
 
         #endregion
@@ -102,7 +102,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public static Java.Util.Function.BinaryOperator<T> MaxBy<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Function.BinaryOperator<T>>(LocalClazz, "maxBy", arg0);
+            return SExecute<Java.Util.Function.BinaryOperator<T>>(LocalBridgeClazz, "maxBy", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#minBy(java.util.Comparator)"/>
@@ -112,7 +112,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public static Java.Util.Function.BinaryOperator<T> MinBy<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return SExecute<Java.Util.Function.BinaryOperator<T>>(LocalClazz, "minBy", arg0);
+            return SExecute<Java.Util.Function.BinaryOperator<T>>(LocalBridgeClazz, "minBy", arg0);
         }
 
         #endregion

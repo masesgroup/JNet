@@ -56,11 +56,11 @@ namespace Java.Time
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#MAX"/>
         /// </summary>
-        public static Java.Time.OffsetDateTime MAX { get { return SGetField<Java.Time.OffsetDateTime>(LocalClazz, "MAX"); } }
+        public static Java.Time.OffsetDateTime MAX { get { return SGetField<Java.Time.OffsetDateTime>(LocalBridgeClazz, "MAX"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#MIN"/>
         /// </summary>
-        public static Java.Time.OffsetDateTime MIN { get { return SGetField<Java.Time.OffsetDateTime>(LocalClazz, "MIN"); } }
+        public static Java.Time.OffsetDateTime MIN { get { return SGetField<Java.Time.OffsetDateTime>(LocalBridgeClazz, "MIN"); } }
 
         #endregion
 
@@ -70,7 +70,7 @@ namespace Java.Time
         /// </summary>
         public static Java.Util.Comparator<Java.Time.OffsetDateTime> TimeLineOrder
         {
-            get { return SExecute<Java.Util.Comparator<Java.Time.OffsetDateTime>>(LocalClazz, "timeLineOrder"); }
+            get { return SExecute<Java.Util.Comparator<Java.Time.OffsetDateTime>>(LocalBridgeClazz, "timeLineOrder"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#from(java.time.temporal.TemporalAccessor)"/>
@@ -79,7 +79,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime From(Java.Time.Temporal.TemporalAccessor arg0)
         {
-            return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "from", arg0);
+            return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "from", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#now()"/>
@@ -88,7 +88,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Now()
         {
-            return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "now");
+            return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "now");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#now(java.time.Clock)"/>
@@ -97,7 +97,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Now(Java.Time.Clock arg0)
         {
-            return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "now", arg0);
+            return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#now(java.time.ZoneId)"/>
@@ -106,7 +106,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Now(Java.Time.ZoneId arg0)
         {
-            return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "now", arg0);
+            return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "now", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#of(int,int,int,int,int,int,int,java.time.ZoneOffset)"/>
@@ -122,7 +122,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Of(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Time.ZoneOffset arg7)
         {
-            return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#of(java.time.LocalDate,java.time.LocalTime,java.time.ZoneOffset)"/>
@@ -133,7 +133,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Of(Java.Time.LocalDate arg0, Java.Time.LocalTime arg1, Java.Time.ZoneOffset arg2)
         {
-            return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "of", arg0, arg1, arg2);
+            return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#of(java.time.LocalDateTime,java.time.ZoneOffset)"/>
@@ -143,7 +143,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Of(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1)
         {
-            return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "of", arg0, arg1);
+            return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#ofInstant(java.time.Instant,java.time.ZoneId)"/>
@@ -153,7 +153,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime OfInstant(Java.Time.Instant arg0, Java.Time.ZoneId arg1)
         {
-            return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "ofInstant", arg0, arg1);
+            return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "ofInstant", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
@@ -163,7 +163,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Parse(Java.Lang.CharSequence arg0, Java.Time.Format.DateTimeFormatter arg1)
         {
-            return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "parse", arg0, arg1);
+            return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "parse", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#parse(java.lang.CharSequence)"/>
@@ -172,7 +172,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public static Java.Time.OffsetDateTime Parse(Java.Lang.CharSequence arg0)
         {
-            return SExecute<Java.Time.OffsetDateTime>(LocalClazz, "parse", arg0);
+            return SExecute<Java.Time.OffsetDateTime>(LocalBridgeClazz, "parse", arg0);
         }
 
         #endregion

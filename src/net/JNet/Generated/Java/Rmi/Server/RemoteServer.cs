@@ -46,14 +46,14 @@ namespace Java.Rmi.Server
         /// </summary>
         public static string ClientHost
         {
-            get { return SExecute<string>(LocalClazz, "getClientHost"); }
+            get { return SExecute<string>(LocalBridgeClazz, "getClientHost"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteServer.html#getLog()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteServer.html#setLog(java.io.OutputStream)"/>
         /// </summary>
         public static Java.Io.PrintStream Log
         {
-            get { return SExecute<Java.Io.PrintStream>(LocalClazz, "getLog"); } set { SExecute(LocalClazz, "setLog", value); }
+            get { return SExecute<Java.Io.PrintStream>(LocalBridgeClazz, "getLog"); } set { SExecute(LocalBridgeClazz, "setLog", value); }
         }
 
         #endregion

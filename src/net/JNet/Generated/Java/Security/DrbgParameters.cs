@@ -50,7 +50,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.DrbgParameters.Instantiation"/></returns>
         public static Java.Security.DrbgParameters.Instantiation InstantiationMethod(int arg0, Java.Security.DrbgParameters.Capability arg1, byte[] arg2)
         {
-            return SExecute<Java.Security.DrbgParameters.Instantiation>(LocalClazz, "instantiation", arg0, arg1, arg2);
+            return SExecute<Java.Security.DrbgParameters.Instantiation>(LocalBridgeClazz, "instantiation", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#nextBytes(int,boolean,byte[])"/>
@@ -61,7 +61,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.DrbgParameters.NextBytes"/></returns>
         public static Java.Security.DrbgParameters.NextBytes NextBytesMethod(int arg0, bool arg1, byte[] arg2)
         {
-            return SExecute<Java.Security.DrbgParameters.NextBytes>(LocalClazz, "nextBytes", arg0, arg1, arg2);
+            return SExecute<Java.Security.DrbgParameters.NextBytes>(LocalBridgeClazz, "nextBytes", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.html#reseed(boolean,byte[])"/>
@@ -71,7 +71,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.DrbgParameters.Reseed"/></returns>
         public static Java.Security.DrbgParameters.Reseed ReseedMethod(bool arg0, byte[] arg1)
         {
-            return SExecute<Java.Security.DrbgParameters.Reseed>(LocalClazz, "reseed", arg0, arg1);
+            return SExecute<Java.Security.DrbgParameters.Reseed>(LocalBridgeClazz, "reseed", arg0, arg1);
         }
 
         #endregion
@@ -96,15 +96,15 @@ namespace Java.Security
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#NONE"/>
             /// </summary>
-            public static Java.Security.DrbgParameters.Capability NONE { get { return SGetField<Java.Security.DrbgParameters.Capability>(LocalClazz, "NONE"); } }
+            public static Java.Security.DrbgParameters.Capability NONE { get { return SGetField<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "NONE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#PR_AND_RESEED"/>
             /// </summary>
-            public static Java.Security.DrbgParameters.Capability PR_AND_RESEED { get { return SGetField<Java.Security.DrbgParameters.Capability>(LocalClazz, "PR_AND_RESEED"); } }
+            public static Java.Security.DrbgParameters.Capability PR_AND_RESEED { get { return SGetField<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "PR_AND_RESEED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#RESEED_ONLY"/>
             /// </summary>
-            public static Java.Security.DrbgParameters.Capability RESEED_ONLY { get { return SGetField<Java.Security.DrbgParameters.Capability>(LocalClazz, "RESEED_ONLY"); } }
+            public static Java.Security.DrbgParameters.Capability RESEED_ONLY { get { return SGetField<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "RESEED_ONLY"); } }
 
             #endregion
 
@@ -114,7 +114,7 @@ namespace Java.Security
             /// </summary>
             public static Java.Security.DrbgParameters.Capability[] Values
             {
-                get { return SExecuteArray<Java.Security.DrbgParameters.Capability>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#valueOf(java.lang.String)"/>
@@ -123,7 +123,7 @@ namespace Java.Security
             /// <returns><see cref="Java.Security.DrbgParameters.Capability"/></returns>
             public static Java.Security.DrbgParameters.Capability ValueOf(string arg0)
             {
-                return SExecute<Java.Security.DrbgParameters.Capability>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

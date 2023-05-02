@@ -42,20 +42,18 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Static methods
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance()"/> 
+        /// </summary>
+        public static Javax.Security.Auth.Kerberos.KeyTab Instance
+        {
+            get { return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalBridgeClazz, "getInstance"); }
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getUnboundInstance()"/> 
         /// </summary>
         public static Javax.Security.Auth.Kerberos.KeyTab UnboundInstance
         {
-            get { return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalClazz, "getUnboundInstance"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance()"/>
-        /// </summary>
-
-        /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
-        public static Javax.Security.Auth.Kerberos.KeyTab GetInstance()
-        {
-            return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalClazz, "getInstance");
+            get { return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalBridgeClazz, "getUnboundInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance(java.io.File)"/>
@@ -64,7 +62,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetInstance(Java.Io.File arg0)
         {
-            return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalClazz, "getInstance", arg0);
+            return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance(javax.security.auth.kerberos.KerberosPrincipal,java.io.File)"/>
@@ -74,7 +72,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetInstance(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, Java.Io.File arg1)
         {
-            return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalClazz, "getInstance", arg0, arg1);
+            return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance(javax.security.auth.kerberos.KerberosPrincipal)"/>
@@ -83,7 +81,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetInstance(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0)
         {
-            return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalClazz, "getInstance", arg0);
+            return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalBridgeClazz, "getInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getUnboundInstance(java.io.File)"/>
@@ -92,7 +90,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetUnboundInstance(Java.Io.File arg0)
         {
-            return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalClazz, "getUnboundInstance", arg0);
+            return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalBridgeClazz, "getUnboundInstance", arg0);
         }
 
         #endregion

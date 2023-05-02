@@ -40,11 +40,11 @@ namespace Javax.Naming.Ldap
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#CRITICAL"/>
         /// </summary>
-        public static bool CRITICAL { get { return SGetField<bool>(LocalClazz, "CRITICAL"); } }
+        public static bool CRITICAL { get { return SGetField<bool>(LocalBridgeClazz, "CRITICAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#NONCRITICAL"/>
         /// </summary>
-        public static bool NONCRITICAL { get { return SGetField<bool>(LocalClazz, "NONCRITICAL"); } }
+        public static bool NONCRITICAL { get { return SGetField<bool>(LocalBridgeClazz, "NONCRITICAL"); } }
 
         #endregion
 

@@ -40,7 +40,7 @@ namespace Java.Util.Logging
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogManager.html#LOGGING_MXBEAN_NAME"/>
         /// </summary>
-        public static string LOGGING_MXBEAN_NAME { get { return SGetField<string>(LocalClazz, "LOGGING_MXBEAN_NAME"); } }
+        public static string LOGGING_MXBEAN_NAME { get { return SGetField<string>(LocalBridgeClazz, "LOGGING_MXBEAN_NAME"); } }
 
         #endregion
 
@@ -50,7 +50,7 @@ namespace Java.Util.Logging
         /// </summary>
         public static Java.Util.Logging.LogManager GetLogManager
         {
-            get { return SExecute<Java.Util.Logging.LogManager>(LocalClazz, "getLogManager"); }
+            get { return SExecute<Java.Util.Logging.LogManager>(LocalBridgeClazz, "getLogManager"); }
         }
 
         #endregion

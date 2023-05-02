@@ -60,15 +60,15 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#CHOOSER_PANELS_PROPERTY"/>
         /// </summary>
-        public static string CHOOSER_PANELS_PROPERTY { get { return SGetField<string>(LocalClazz, "CHOOSER_PANELS_PROPERTY"); } }
+        public static string CHOOSER_PANELS_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "CHOOSER_PANELS_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#PREVIEW_PANEL_PROPERTY"/>
         /// </summary>
-        public static string PREVIEW_PANEL_PROPERTY { get { return SGetField<string>(LocalClazz, "PREVIEW_PANEL_PROPERTY"); } }
+        public static string PREVIEW_PANEL_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "PREVIEW_PANEL_PROPERTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#SELECTION_MODEL_PROPERTY"/>
         /// </summary>
-        public static string SELECTION_MODEL_PROPERTY { get { return SGetField<string>(LocalClazz, "SELECTION_MODEL_PROPERTY"); } }
+        public static string SELECTION_MODEL_PROPERTY { get { return SGetField<string>(LocalBridgeClazz, "SELECTION_MODEL_PROPERTY"); } }
 
         #endregion
 
@@ -84,7 +84,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Color ShowDialog(Java.Awt.Component arg0, string arg1, Java.Awt.Color arg2, bool arg3)
         {
-            return SExecute<Java.Awt.Color>(LocalClazz, "showDialog", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "showDialog", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#showDialog(java.awt.Component,java.lang.String,java.awt.Color)"/>
@@ -96,7 +96,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Java.Awt.Color ShowDialog(Java.Awt.Component arg0, string arg1, Java.Awt.Color arg2)
         {
-            return SExecute<Java.Awt.Color>(LocalClazz, "showDialog", arg0, arg1, arg2);
+            return SExecute<Java.Awt.Color>(LocalBridgeClazz, "showDialog", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#createDialog(java.awt.Component,java.lang.String,boolean,javax.swing.JColorChooser,java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
@@ -111,7 +111,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public static Javax.Swing.JDialog CreateDialog(Java.Awt.Component arg0, string arg1, bool arg2, Javax.Swing.JColorChooser arg3, Java.Awt.EventNs.ActionListener arg4, Java.Awt.EventNs.ActionListener arg5)
         {
-            return SExecute<Javax.Swing.JDialog>(LocalClazz, "createDialog", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<Javax.Swing.JDialog>(LocalBridgeClazz, "createDialog", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

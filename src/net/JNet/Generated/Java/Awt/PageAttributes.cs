@@ -215,11 +215,11 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html#COLOR"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.ColorType COLOR { get { return SGetField<Java.Awt.PageAttributes.ColorType>(LocalClazz, "COLOR"); } }
+            public static Java.Awt.PageAttributes.ColorType COLOR { get { return SGetField<Java.Awt.PageAttributes.ColorType>(LocalBridgeClazz, "COLOR"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html#MONOCHROME"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.ColorType MONOCHROME { get { return SGetField<Java.Awt.PageAttributes.ColorType>(LocalClazz, "MONOCHROME"); } }
+            public static Java.Awt.PageAttributes.ColorType MONOCHROME { get { return SGetField<Java.Awt.PageAttributes.ColorType>(LocalBridgeClazz, "MONOCHROME"); } }
 
             #endregion
 
@@ -254,591 +254,591 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A"); } }
+            public static Java.Awt.PageAttributes.MediaType A { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A0"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A0"); } }
+            public static Java.Awt.PageAttributes.MediaType A0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A1"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A1"); } }
+            public static Java.Awt.PageAttributes.MediaType A1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A10"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A10"); } }
+            public static Java.Awt.PageAttributes.MediaType A10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A10"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A2"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A2"); } }
+            public static Java.Awt.PageAttributes.MediaType A2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A2"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A3"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A3"); } }
+            public static Java.Awt.PageAttributes.MediaType A3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A3"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A4"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A4"); } }
+            public static Java.Awt.PageAttributes.MediaType A4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A4"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A5"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A5"); } }
+            public static Java.Awt.PageAttributes.MediaType A5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A5"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A6"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A6"); } }
+            public static Java.Awt.PageAttributes.MediaType A6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A6"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A7"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A7"); } }
+            public static Java.Awt.PageAttributes.MediaType A7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A7"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A8"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A8"); } }
+            public static Java.Awt.PageAttributes.MediaType A8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A8"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A9"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "A9"); } }
+            public static Java.Awt.PageAttributes.MediaType A9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "A9"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B"); } }
+            public static Java.Awt.PageAttributes.MediaType B { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B0"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B0"); } }
+            public static Java.Awt.PageAttributes.MediaType B0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B1"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B1"); } }
+            public static Java.Awt.PageAttributes.MediaType B1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B10"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B10"); } }
+            public static Java.Awt.PageAttributes.MediaType B10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B10"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B2"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B2"); } }
+            public static Java.Awt.PageAttributes.MediaType B2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B2"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B3"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B3"); } }
+            public static Java.Awt.PageAttributes.MediaType B3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B3"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B4"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B4"); } }
+            public static Java.Awt.PageAttributes.MediaType B4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B4"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B5"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B5"); } }
+            public static Java.Awt.PageAttributes.MediaType B5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B5"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B6"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B6"); } }
+            public static Java.Awt.PageAttributes.MediaType B6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B6"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B7"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B7"); } }
+            public static Java.Awt.PageAttributes.MediaType B7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B7"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B8"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B8"); } }
+            public static Java.Awt.PageAttributes.MediaType B8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B8"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B9"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "B9"); } }
+            public static Java.Awt.PageAttributes.MediaType B9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "B9"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C"); } }
+            public static Java.Awt.PageAttributes.MediaType C { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C0"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C0"); } }
+            public static Java.Awt.PageAttributes.MediaType C0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C1"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C1"); } }
+            public static Java.Awt.PageAttributes.MediaType C1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C10"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C10"); } }
+            public static Java.Awt.PageAttributes.MediaType C10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C10"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C2"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C2"); } }
+            public static Java.Awt.PageAttributes.MediaType C2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C2"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C3"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C3"); } }
+            public static Java.Awt.PageAttributes.MediaType C3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C3"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C4"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C4"); } }
+            public static Java.Awt.PageAttributes.MediaType C4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C4"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C5"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C5"); } }
+            public static Java.Awt.PageAttributes.MediaType C5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C5"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C6"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C6"); } }
+            public static Java.Awt.PageAttributes.MediaType C6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C6"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C7"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C7"); } }
+            public static Java.Awt.PageAttributes.MediaType C7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C7"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C8"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C8"); } }
+            public static Java.Awt.PageAttributes.MediaType C8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C8"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C9"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "C9"); } }
+            public static Java.Awt.PageAttributes.MediaType C9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "C9"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#D"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType D { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "D"); } }
+            public static Java.Awt.PageAttributes.MediaType D { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "D"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#E"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType E { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "E"); } }
+            public static Java.Awt.PageAttributes.MediaType E { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "E"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_10"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_10"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10X13"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_10X13 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_10X13"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_10X13 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_10X13"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10X14"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_10X14 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_10X14"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_10X14 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_10X14"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10X15"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_10X15 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_10X15"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_10X15 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_10X15"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_11"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_11 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_11"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_11 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_11"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_12"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_12 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_12"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_12 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_12"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_14"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_14 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_14"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_14 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_14"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_6X9"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_6X9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_6X9"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_6X9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_6X9"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_7X9"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_7X9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_7X9"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_7X9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_7X9"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_9"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_9"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_9"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_9X11"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_9X11 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_9X11"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_9X11 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_9X11"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_9X12"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_9X12 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_9X12"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_9X12 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_9X12"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_INVITE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_INVITE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_INVITE"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_INVITE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_INVITE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_ITALY"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_ITALY { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_ITALY"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_ITALY { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_ITALY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_MONARCH"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_MONARCH { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_MONARCH"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_MONARCH { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_MONARCH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_PERSONAL"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_PERSONAL { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ENV_PERSONAL"); } }
+            public static Java.Awt.PageAttributes.MediaType ENV_PERSONAL { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ENV_PERSONAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#EXECUTIVE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType EXECUTIVE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "EXECUTIVE"); } }
+            public static Java.Awt.PageAttributes.MediaType EXECUTIVE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "EXECUTIVE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#FOLIO"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType FOLIO { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "FOLIO"); } }
+            public static Java.Awt.PageAttributes.MediaType FOLIO { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "FOLIO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#INVITE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType INVITE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "INVITE"); } }
+            public static Java.Awt.PageAttributes.MediaType INVITE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "INVITE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#INVITE_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType INVITE_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "INVITE_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType INVITE_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "INVITE_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#INVOICE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType INVOICE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "INVOICE"); } }
+            public static Java.Awt.PageAttributes.MediaType INVOICE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "INVOICE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_2A0"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_2A0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_2A0"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_2A0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_2A0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_4A0"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_4A0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_4A0"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_4A0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_4A0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A0"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A0"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A1"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A1"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A10"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A10"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A10"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A2"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A2"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A2"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A3"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A3"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A3"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A4"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A4"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A4"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A5"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A5"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A5"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A6"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A6"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A6"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A7"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A7"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A7"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A8"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A8"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A8"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A9"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_A9"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_A9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_A9"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B0"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B0"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B1"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B1"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B10"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B10"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B10"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B2"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B2"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B2"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B3"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B3"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B3"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B4"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B4"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B4"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B4_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B4_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B4_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B4_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B4_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B5"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B5"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B5"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B5_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B5_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B5_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B5_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B5_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B6"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B6"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B6"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B7"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B7"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B7"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B8"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B8"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B8"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B9"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_B9"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_B9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_B9"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C0"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C0"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C0_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C0_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C0_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C0_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C0_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C1"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C1"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C1_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C1_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C1_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C1_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C1_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C10"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C10"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C10"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C10_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C10_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C10_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C10_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C10_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C2"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C2"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C2"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C2_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C2_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C2_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C2_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C2_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C3"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C3"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C3"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C3_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C3_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C3_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C3_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C3_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C4"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C4"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C4"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C4_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C4_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C4_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C4_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C4_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C5"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C5"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C5"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C5_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C5_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C5_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C5_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C5_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C6"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C6"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C6"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C6_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C6_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C6_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C6_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C6_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C7"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C7"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C7"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C7_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C7_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C7_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C7_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C7_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C8"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C8"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C8"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C8_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C8_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C8_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C8_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C8_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C9"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C9"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C9"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C9_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C9_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_C9_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_C9_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_C9_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_DESIGNATED_LONG"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_DESIGNATED_LONG { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_DESIGNATED_LONG"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_DESIGNATED_LONG { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_DESIGNATED_LONG"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_DESIGNATED_LONG_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_DESIGNATED_LONG_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ISO_DESIGNATED_LONG_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ISO_DESIGNATED_LONG_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ISO_DESIGNATED_LONG_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ITALY"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ITALY { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ITALY"); } }
+            public static Java.Awt.PageAttributes.MediaType ITALY { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ITALY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ITALY_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ITALY_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "ITALY_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType ITALY_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "ITALY_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B0"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B0"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B0 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B0"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B1"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B1"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B1 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B1"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B10"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B10"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B10 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B10"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B2"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B2"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B2 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B2"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B3"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B3"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B3 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B3"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B4"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B4"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B4 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B4"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B5"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B5"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B5 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B5"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B6"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B6"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B6 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B6"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B7"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B7"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B7 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B7"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B8"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B8"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B8 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B8"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B9"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "JIS_B9"); } }
+            public static Java.Awt.PageAttributes.MediaType JIS_B9 { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "JIS_B9"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#LEDGER"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType LEDGER { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "LEDGER"); } }
+            public static Java.Awt.PageAttributes.MediaType LEDGER { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "LEDGER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#LEGAL"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType LEGAL { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "LEGAL"); } }
+            public static Java.Awt.PageAttributes.MediaType LEGAL { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "LEGAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#LETTER"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType LETTER { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "LETTER"); } }
+            public static Java.Awt.PageAttributes.MediaType LETTER { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "LETTER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#MONARCH"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType MONARCH { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "MONARCH"); } }
+            public static Java.Awt.PageAttributes.MediaType MONARCH { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "MONARCH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#MONARCH_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType MONARCH_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "MONARCH_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType MONARCH_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "MONARCH_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_10X13_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_10X13_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_10X13_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_10X13_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_10X13_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_10X14_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_10X14_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_10X14_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_10X14_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_10X14_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_10X15_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_10X15_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_10X15_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_10X15_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_10X15_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_6X9_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_6X9_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_6X9_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_6X9_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_6X9_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_7X9_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_7X9_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_7X9_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_7X9_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_7X9_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_9X11_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_9X11_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_9X11_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_9X11_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_9X11_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_9X12_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_9X12_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_9X12_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_9X12_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_9X12_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_LEGAL"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_LEGAL { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_LEGAL"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_LEGAL { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_LEGAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_LETTER"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_LETTER { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_LETTER"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_LETTER { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_LETTER"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_10_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_10_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_NUMBER_10_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_10_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_NUMBER_10_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_11_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_11_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_NUMBER_11_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_11_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_NUMBER_11_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_12_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_12_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_NUMBER_12_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_12_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_NUMBER_12_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_14_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_14_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_NUMBER_14_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_14_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_NUMBER_14_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_9_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_9_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NA_NUMBER_9_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_9_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NA_NUMBER_9_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NOTE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NOTE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "NOTE"); } }
+            public static Java.Awt.PageAttributes.MediaType NOTE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "NOTE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#PERSONAL"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType PERSONAL { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "PERSONAL"); } }
+            public static Java.Awt.PageAttributes.MediaType PERSONAL { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "PERSONAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#PERSONAL_ENVELOPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType PERSONAL_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "PERSONAL_ENVELOPE"); } }
+            public static Java.Awt.PageAttributes.MediaType PERSONAL_ENVELOPE { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "PERSONAL_ENVELOPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#QUARTO"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType QUARTO { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "QUARTO"); } }
+            public static Java.Awt.PageAttributes.MediaType QUARTO { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "QUARTO"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#STATEMENT"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType STATEMENT { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "STATEMENT"); } }
+            public static Java.Awt.PageAttributes.MediaType STATEMENT { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "STATEMENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#TABLOID"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType TABLOID { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalClazz, "TABLOID"); } }
+            public static Java.Awt.PageAttributes.MediaType TABLOID { get { return SGetField<Java.Awt.PageAttributes.MediaType>(LocalBridgeClazz, "TABLOID"); } }
 
             #endregion
 
@@ -873,11 +873,11 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#LANDSCAPE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.OrientationRequestedType LANDSCAPE { get { return SGetField<Java.Awt.PageAttributes.OrientationRequestedType>(LocalClazz, "LANDSCAPE"); } }
+            public static Java.Awt.PageAttributes.OrientationRequestedType LANDSCAPE { get { return SGetField<Java.Awt.PageAttributes.OrientationRequestedType>(LocalBridgeClazz, "LANDSCAPE"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#PORTRAIT"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.OrientationRequestedType PORTRAIT { get { return SGetField<Java.Awt.PageAttributes.OrientationRequestedType>(LocalClazz, "PORTRAIT"); } }
+            public static Java.Awt.PageAttributes.OrientationRequestedType PORTRAIT { get { return SGetField<Java.Awt.PageAttributes.OrientationRequestedType>(LocalBridgeClazz, "PORTRAIT"); } }
 
             #endregion
 
@@ -912,11 +912,11 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PHYSICAL"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.OriginType PHYSICAL { get { return SGetField<Java.Awt.PageAttributes.OriginType>(LocalClazz, "PHYSICAL"); } }
+            public static Java.Awt.PageAttributes.OriginType PHYSICAL { get { return SGetField<Java.Awt.PageAttributes.OriginType>(LocalBridgeClazz, "PHYSICAL"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PRINTABLE"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.OriginType PRINTABLE { get { return SGetField<Java.Awt.PageAttributes.OriginType>(LocalClazz, "PRINTABLE"); } }
+            public static Java.Awt.PageAttributes.OriginType PRINTABLE { get { return SGetField<Java.Awt.PageAttributes.OriginType>(LocalBridgeClazz, "PRINTABLE"); } }
 
             #endregion
 
@@ -951,15 +951,15 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#DRAFT"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.PrintQualityType DRAFT { get { return SGetField<Java.Awt.PageAttributes.PrintQualityType>(LocalClazz, "DRAFT"); } }
+            public static Java.Awt.PageAttributes.PrintQualityType DRAFT { get { return SGetField<Java.Awt.PageAttributes.PrintQualityType>(LocalBridgeClazz, "DRAFT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#HIGH"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.PrintQualityType HIGH { get { return SGetField<Java.Awt.PageAttributes.PrintQualityType>(LocalClazz, "HIGH"); } }
+            public static Java.Awt.PageAttributes.PrintQualityType HIGH { get { return SGetField<Java.Awt.PageAttributes.PrintQualityType>(LocalBridgeClazz, "HIGH"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#NORMAL"/>
             /// </summary>
-            public static Java.Awt.PageAttributes.PrintQualityType NORMAL { get { return SGetField<Java.Awt.PageAttributes.PrintQualityType>(LocalClazz, "NORMAL"); } }
+            public static Java.Awt.PageAttributes.PrintQualityType NORMAL { get { return SGetField<Java.Awt.PageAttributes.PrintQualityType>(LocalBridgeClazz, "NORMAL"); } }
 
             #endregion
 

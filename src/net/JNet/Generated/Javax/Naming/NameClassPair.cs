@@ -69,11 +69,11 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getClassName()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getClassName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setClassName(java.lang.String)"/>
         /// </summary>
-        public string GetClassName
+        public string ClassName
         {
-            get { return IExecute<string>("getClassName"); }
+            get { return IExecute<string>("getClassName"); } set { IExecute("setClassName", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#isRelative()"/> 
@@ -95,14 +95,6 @@ namespace Javax.Naming
         public string NameInNamespace
         {
             get { return IExecute<string>("getNameInNamespace"); } set { IExecute("setNameInNamespace", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setClassName(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="string"/></param>
-        public void SetClassName(string arg0)
-        {
-            IExecute("setClassName", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setRelative(boolean)"/>

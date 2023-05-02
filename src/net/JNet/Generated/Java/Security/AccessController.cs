@@ -46,7 +46,7 @@ namespace Java.Security
         /// </summary>
         public static Java.Security.AccessControlContext Context
         {
-            get { return SExecute<Java.Security.AccessControlContext>(LocalClazz, "getContext"); }
+            get { return SExecute<Java.Security.AccessControlContext>(LocalBridgeClazz, "getContext"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission[])"/>
@@ -58,7 +58,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<T>(LocalClazz, "doPrivileged", arg0, arg1); else return SExecute<T>(LocalClazz, "doPrivileged", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1); else return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext,java.security.Permission[])"/>
@@ -71,7 +71,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<T>(LocalClazz, "doPrivileged", arg0, arg1); else return SExecute<T>(LocalClazz, "doPrivileged", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1); else return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission[])"/>
@@ -83,7 +83,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<T>(LocalClazz, "doPrivilegedWithCombiner", arg0, arg1); else return SExecute<T>(LocalClazz, "doPrivilegedWithCombiner", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0, arg1); else return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction)"/>
@@ -93,7 +93,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedAction<T> arg0)
         {
-            return SExecute<T>(LocalClazz, "doPrivilegedWithCombiner", arg0);
+            return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction,java.security.AccessControlContext,java.security.Permission[])"/>
@@ -106,7 +106,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
-            if (arg2.Length == 0) return SExecute<T>(LocalClazz, "doPrivilegedWithCombiner", arg0, arg1); else return SExecute<T>(LocalClazz, "doPrivilegedWithCombiner", arg0, arg1, arg2);
+            if (arg2.Length == 0) return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0, arg1); else return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction)"/>
@@ -117,7 +117,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoPrivilegedWithCombiner<T>(Java.Security.PrivilegedExceptionAction<T> arg0)
         {
-            return SExecute<T>(LocalClazz, "doPrivilegedWithCombiner", arg0);
+            return SExecute<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext)"/>
@@ -128,7 +128,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1)
         {
-            return SExecute<T>(LocalClazz, "doPrivileged", arg0, arg1);
+            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction)"/>
@@ -138,7 +138,7 @@ namespace Java.Security
         /// <returns><typeparamref name="T"/></returns>
         public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0)
         {
-            return SExecute<T>(LocalClazz, "doPrivileged", arg0);
+            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
@@ -150,7 +150,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1)
         {
-            return SExecute<T>(LocalClazz, "doPrivileged", arg0, arg1);
+            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction)"/>
@@ -161,7 +161,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0)
         {
-            return SExecute<T>(LocalClazz, "doPrivileged", arg0);
+            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#checkPermission(java.security.Permission)"/>
@@ -170,7 +170,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.AccessControlException"/>
         public static void CheckPermission(Java.Security.Permission arg0)
         {
-            SExecute(LocalClazz, "checkPermission", arg0);
+            SExecute(LocalBridgeClazz, "checkPermission", arg0);
         }
 
         #endregion

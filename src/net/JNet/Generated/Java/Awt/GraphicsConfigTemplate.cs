@@ -44,15 +44,15 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html#PREFERRED"/>
         /// </summary>
-        public static int PREFERRED { get { return SGetField<int>(LocalClazz, "PREFERRED"); } }
+        public static int PREFERRED { get { return SGetField<int>(LocalBridgeClazz, "PREFERRED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html#REQUIRED"/>
         /// </summary>
-        public static int REQUIRED { get { return SGetField<int>(LocalClazz, "REQUIRED"); } }
+        public static int REQUIRED { get { return SGetField<int>(LocalBridgeClazz, "REQUIRED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html#UNNECESSARY"/>
         /// </summary>
-        public static int UNNECESSARY { get { return SGetField<int>(LocalClazz, "UNNECESSARY"); } }
+        public static int UNNECESSARY { get { return SGetField<int>(LocalBridgeClazz, "UNNECESSARY"); } }
 
         #endregion
 

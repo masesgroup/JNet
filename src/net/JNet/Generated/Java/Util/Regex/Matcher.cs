@@ -52,7 +52,7 @@ namespace Java.Util.Regex
         /// <returns><see cref="string"/></returns>
         public static string QuoteReplacement(string arg0)
         {
-            return SExecute<string>(LocalClazz, "quoteReplacement", arg0);
+            return SExecute<string>(LocalBridgeClazz, "quoteReplacement", arg0);
         }
 
         #endregion

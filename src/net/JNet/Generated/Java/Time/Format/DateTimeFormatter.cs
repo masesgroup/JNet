@@ -40,63 +40,63 @@ namespace Java.Time.Format
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#BASIC_ISO_DATE"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter BASIC_ISO_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "BASIC_ISO_DATE"); } }
+        public static Java.Time.Format.DateTimeFormatter BASIC_ISO_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "BASIC_ISO_DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_DATE"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_DATE"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_DATE_TIME"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_DATE_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_DATE_TIME"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_DATE_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_DATE_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_INSTANT"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_INSTANT { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_INSTANT"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_INSTANT { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_INSTANT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_LOCAL_DATE"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_LOCAL_DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_DATE_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_LOCAL_DATE_TIME"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_DATE_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_LOCAL_DATE_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_LOCAL_TIME"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_LOCAL_TIME"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_LOCAL_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_OFFSET_DATE"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_OFFSET_DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_DATE_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_OFFSET_DATE_TIME"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_DATE_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_OFFSET_DATE_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_OFFSET_TIME"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_OFFSET_TIME"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_OFFSET_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_ORDINAL_DATE"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_ORDINAL_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_ORDINAL_DATE"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_ORDINAL_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_ORDINAL_DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_TIME"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_TIME"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_WEEK_DATE"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_WEEK_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_WEEK_DATE"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_WEEK_DATE { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_WEEK_DATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_ZONED_DATE_TIME"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_ZONED_DATE_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ISO_ZONED_DATE_TIME"); } }
+        public static Java.Time.Format.DateTimeFormatter ISO_ZONED_DATE_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ISO_ZONED_DATE_TIME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#RFC_1123_DATE_TIME"/>
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter RFC_1123_DATE_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalClazz, "RFC_1123_DATE_TIME"); } }
+        public static Java.Time.Format.DateTimeFormatter RFC_1123_DATE_TIME { get { return SGetField<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "RFC_1123_DATE_TIME"); } }
 
         #endregion
 
@@ -106,14 +106,14 @@ namespace Java.Time.Format
         /// </summary>
         public static Java.Time.Temporal.TemporalQuery<Java.Time.Period> ParsedExcessDays
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.Period>>(LocalClazz, "parsedExcessDays"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<Java.Time.Period>>(LocalBridgeClazz, "parsedExcessDays"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedLeapSecond()"/> 
         /// </summary>
         public static Java.Time.Temporal.TemporalQuery<bool?> ParsedLeapSecond
         {
-            get { return SExecute<Java.Time.Temporal.TemporalQuery<bool?>>(LocalClazz, "parsedLeapSecond"); }
+            get { return SExecute<Java.Time.Temporal.TemporalQuery<bool?>>(LocalBridgeClazz, "parsedLeapSecond"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedDate(java.time.format.FormatStyle)"/>
@@ -122,7 +122,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public static Java.Time.Format.DateTimeFormatter OfLocalizedDate(Java.Time.Format.FormatStyle arg0)
         {
-            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ofLocalizedDate", arg0);
+            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofLocalizedDate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedDateTime(java.time.format.FormatStyle,java.time.format.FormatStyle)"/>
@@ -132,7 +132,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public static Java.Time.Format.DateTimeFormatter OfLocalizedDateTime(Java.Time.Format.FormatStyle arg0, Java.Time.Format.FormatStyle arg1)
         {
-            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ofLocalizedDateTime", arg0, arg1);
+            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofLocalizedDateTime", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedDateTime(java.time.format.FormatStyle)"/>
@@ -141,7 +141,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public static Java.Time.Format.DateTimeFormatter OfLocalizedDateTime(Java.Time.Format.FormatStyle arg0)
         {
-            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ofLocalizedDateTime", arg0);
+            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofLocalizedDateTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofLocalizedTime(java.time.format.FormatStyle)"/>
@@ -150,7 +150,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public static Java.Time.Format.DateTimeFormatter OfLocalizedTime(Java.Time.Format.FormatStyle arg0)
         {
-            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ofLocalizedTime", arg0);
+            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofLocalizedTime", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofPattern(java.lang.String,java.util.Locale)"/>
@@ -160,7 +160,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public static Java.Time.Format.DateTimeFormatter OfPattern(string arg0, Java.Util.Locale arg1)
         {
-            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ofPattern", arg0, arg1);
+            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofPattern", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ofPattern(java.lang.String)"/>
@@ -169,7 +169,7 @@ namespace Java.Time.Format
         /// <returns><see cref="Java.Time.Format.DateTimeFormatter"/></returns>
         public static Java.Time.Format.DateTimeFormatter OfPattern(string arg0)
         {
-            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalClazz, "ofPattern", arg0);
+            return SExecute<Java.Time.Format.DateTimeFormatter>(LocalBridgeClazz, "ofPattern", arg0);
         }
 
         #endregion

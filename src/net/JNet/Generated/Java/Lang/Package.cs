@@ -50,7 +50,7 @@ namespace Java.Lang
         /// </summary>
         public static Java.Lang.Package[] Packages
         {
-            get { return SExecuteArray<Java.Lang.Package>(LocalClazz, "getPackages"); }
+            get { return SExecuteArray<Java.Lang.Package>(LocalBridgeClazz, "getPackages"); }
         }
 
         #endregion

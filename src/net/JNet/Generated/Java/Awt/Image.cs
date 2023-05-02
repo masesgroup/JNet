@@ -40,27 +40,27 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_AREA_AVERAGING"/>
         /// </summary>
-        public static int SCALE_AREA_AVERAGING { get { return SGetField<int>(LocalClazz, "SCALE_AREA_AVERAGING"); } }
+        public static int SCALE_AREA_AVERAGING { get { return SGetField<int>(LocalBridgeClazz, "SCALE_AREA_AVERAGING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_DEFAULT"/>
         /// </summary>
-        public static int SCALE_DEFAULT { get { return SGetField<int>(LocalClazz, "SCALE_DEFAULT"); } }
+        public static int SCALE_DEFAULT { get { return SGetField<int>(LocalBridgeClazz, "SCALE_DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_FAST"/>
         /// </summary>
-        public static int SCALE_FAST { get { return SGetField<int>(LocalClazz, "SCALE_FAST"); } }
+        public static int SCALE_FAST { get { return SGetField<int>(LocalBridgeClazz, "SCALE_FAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_REPLICATE"/>
         /// </summary>
-        public static int SCALE_REPLICATE { get { return SGetField<int>(LocalClazz, "SCALE_REPLICATE"); } }
+        public static int SCALE_REPLICATE { get { return SGetField<int>(LocalBridgeClazz, "SCALE_REPLICATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_SMOOTH"/>
         /// </summary>
-        public static int SCALE_SMOOTH { get { return SGetField<int>(LocalClazz, "SCALE_SMOOTH"); } }
+        public static int SCALE_SMOOTH { get { return SGetField<int>(LocalBridgeClazz, "SCALE_SMOOTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#UndefinedProperty"/>
         /// </summary>
-        public static object UndefinedProperty { get { return SGetField(LocalClazz, "UndefinedProperty"); } }
+        public static object UndefinedProperty { get { return SGetField(LocalBridgeClazz, "UndefinedProperty"); } }
 
         #endregion
 

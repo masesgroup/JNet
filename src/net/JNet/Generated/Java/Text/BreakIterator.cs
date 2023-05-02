@@ -44,7 +44,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#DONE"/>
         /// </summary>
-        public static int DONE { get { return SGetField<int>(LocalClazz, "DONE"); } }
+        public static int DONE { get { return SGetField<int>(LocalBridgeClazz, "DONE"); } }
 
         #endregion
 
@@ -54,35 +54,35 @@ namespace Java.Text
         /// </summary>
         public static Java.Util.Locale[] AvailableLocales
         {
-            get { return SExecuteArray<Java.Util.Locale>(LocalClazz, "getAvailableLocales"); }
+            get { return SExecuteArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getCharacterInstance()"/> 
         /// </summary>
         public static Java.Text.BreakIterator CharacterInstance
         {
-            get { return SExecute<Java.Text.BreakIterator>(LocalClazz, "getCharacterInstance"); }
+            get { return SExecute<Java.Text.BreakIterator>(LocalBridgeClazz, "getCharacterInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getLineInstance()"/> 
         /// </summary>
         public static Java.Text.BreakIterator LineInstance
         {
-            get { return SExecute<Java.Text.BreakIterator>(LocalClazz, "getLineInstance"); }
+            get { return SExecute<Java.Text.BreakIterator>(LocalBridgeClazz, "getLineInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getSentenceInstance()"/> 
         /// </summary>
         public static Java.Text.BreakIterator SentenceInstance
         {
-            get { return SExecute<Java.Text.BreakIterator>(LocalClazz, "getSentenceInstance"); }
+            get { return SExecute<Java.Text.BreakIterator>(LocalBridgeClazz, "getSentenceInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getWordInstance()"/> 
         /// </summary>
         public static Java.Text.BreakIterator WordInstance
         {
-            get { return SExecute<Java.Text.BreakIterator>(LocalClazz, "getWordInstance"); }
+            get { return SExecute<Java.Text.BreakIterator>(LocalBridgeClazz, "getWordInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getCharacterInstance(java.util.Locale)"/>
@@ -91,7 +91,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public static Java.Text.BreakIterator GetCharacterInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.BreakIterator>(LocalClazz, "getCharacterInstance", arg0);
+            return SExecute<Java.Text.BreakIterator>(LocalBridgeClazz, "getCharacterInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getLineInstance(java.util.Locale)"/>
@@ -100,7 +100,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public static Java.Text.BreakIterator GetLineInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.BreakIterator>(LocalClazz, "getLineInstance", arg0);
+            return SExecute<Java.Text.BreakIterator>(LocalBridgeClazz, "getLineInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getSentenceInstance(java.util.Locale)"/>
@@ -109,7 +109,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public static Java.Text.BreakIterator GetSentenceInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.BreakIterator>(LocalClazz, "getSentenceInstance", arg0);
+            return SExecute<Java.Text.BreakIterator>(LocalBridgeClazz, "getSentenceInstance", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html#getWordInstance(java.util.Locale)"/>
@@ -118,7 +118,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.BreakIterator"/></returns>
         public static Java.Text.BreakIterator GetWordInstance(Java.Util.Locale arg0)
         {
-            return SExecute<Java.Text.BreakIterator>(LocalClazz, "getWordInstance", arg0);
+            return SExecute<Java.Text.BreakIterator>(LocalBridgeClazz, "getWordInstance", arg0);
         }
 
         #endregion

@@ -40,15 +40,15 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#MULTIPLE_INTERVAL_SELECTION"/>
         /// </summary>
-        public static int MULTIPLE_INTERVAL_SELECTION { get { return SGetField<int>(LocalClazz, "MULTIPLE_INTERVAL_SELECTION"); } }
+        public static int MULTIPLE_INTERVAL_SELECTION { get { return SGetField<int>(LocalBridgeClazz, "MULTIPLE_INTERVAL_SELECTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#SINGLE_INTERVAL_SELECTION"/>
         /// </summary>
-        public static int SINGLE_INTERVAL_SELECTION { get { return SGetField<int>(LocalClazz, "SINGLE_INTERVAL_SELECTION"); } }
+        public static int SINGLE_INTERVAL_SELECTION { get { return SGetField<int>(LocalBridgeClazz, "SINGLE_INTERVAL_SELECTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#SINGLE_SELECTION"/>
         /// </summary>
-        public static int SINGLE_SELECTION { get { return SGetField<int>(LocalClazz, "SINGLE_SELECTION"); } }
+        public static int SINGLE_SELECTION { get { return SGetField<int>(LocalBridgeClazz, "SINGLE_SELECTION"); } }
 
         #endregion
 

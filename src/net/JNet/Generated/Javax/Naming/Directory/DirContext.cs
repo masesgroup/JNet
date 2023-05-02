@@ -40,15 +40,15 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#ADD_ATTRIBUTE"/>
         /// </summary>
-        public static int ADD_ATTRIBUTE { get { return SGetField<int>(LocalClazz, "ADD_ATTRIBUTE"); } }
+        public static int ADD_ATTRIBUTE { get { return SGetField<int>(LocalBridgeClazz, "ADD_ATTRIBUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#REMOVE_ATTRIBUTE"/>
         /// </summary>
-        public static int REMOVE_ATTRIBUTE { get { return SGetField<int>(LocalClazz, "REMOVE_ATTRIBUTE"); } }
+        public static int REMOVE_ATTRIBUTE { get { return SGetField<int>(LocalBridgeClazz, "REMOVE_ATTRIBUTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#REPLACE_ATTRIBUTE"/>
         /// </summary>
-        public static int REPLACE_ATTRIBUTE { get { return SGetField<int>(LocalClazz, "REPLACE_ATTRIBUTE"); } }
+        public static int REPLACE_ATTRIBUTE { get { return SGetField<int>(LocalBridgeClazz, "REPLACE_ATTRIBUTE"); } }
 
         #endregion
 

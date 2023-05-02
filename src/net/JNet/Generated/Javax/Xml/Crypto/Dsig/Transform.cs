@@ -48,23 +48,23 @@ namespace Javax.Xml.Crypto.Dsig
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#BASE64"/>
         /// </summary>
-        public static string BASE64 { get { return SGetField<string>(LocalClazz, "BASE64"); } }
+        public static string BASE64 { get { return SGetField<string>(LocalBridgeClazz, "BASE64"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#ENVELOPED"/>
         /// </summary>
-        public static string ENVELOPED { get { return SGetField<string>(LocalClazz, "ENVELOPED"); } }
+        public static string ENVELOPED { get { return SGetField<string>(LocalBridgeClazz, "ENVELOPED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XPATH"/>
         /// </summary>
-        public static string XPATH { get { return SGetField<string>(LocalClazz, "XPATH"); } }
+        public static string XPATH { get { return SGetField<string>(LocalBridgeClazz, "XPATH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XPATH2"/>
         /// </summary>
-        public static string XPATH2 { get { return SGetField<string>(LocalClazz, "XPATH2"); } }
+        public static string XPATH2 { get { return SGetField<string>(LocalBridgeClazz, "XPATH2"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#XSLT"/>
         /// </summary>
-        public static string XSLT { get { return SGetField<string>(LocalClazz, "XSLT"); } }
+        public static string XSLT { get { return SGetField<string>(LocalBridgeClazz, "XSLT"); } }
 
         #endregion
 

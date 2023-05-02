@@ -48,7 +48,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="Javax.Xml.Crypto.KeySelector"/></returns>
         public static Javax.Xml.Crypto.KeySelector SingletonKeySelectorMethod(Java.Security.Key arg0)
         {
-            return SExecute<Javax.Xml.Crypto.KeySelector>(LocalClazz, "singletonKeySelector", arg0);
+            return SExecute<Javax.Xml.Crypto.KeySelector>(LocalBridgeClazz, "singletonKeySelector", arg0);
         }
 
         #endregion
@@ -86,19 +86,19 @@ namespace Javax.Xml.Crypto
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#DECRYPT"/>
             /// </summary>
-            public static Javax.Xml.Crypto.KeySelector.Purpose DECRYPT { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalClazz, "DECRYPT"); } }
+            public static Javax.Xml.Crypto.KeySelector.Purpose DECRYPT { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalBridgeClazz, "DECRYPT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#ENCRYPT"/>
             /// </summary>
-            public static Javax.Xml.Crypto.KeySelector.Purpose ENCRYPT { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalClazz, "ENCRYPT"); } }
+            public static Javax.Xml.Crypto.KeySelector.Purpose ENCRYPT { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalBridgeClazz, "ENCRYPT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#SIGN"/>
             /// </summary>
-            public static Javax.Xml.Crypto.KeySelector.Purpose SIGN { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalClazz, "SIGN"); } }
+            public static Javax.Xml.Crypto.KeySelector.Purpose SIGN { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalBridgeClazz, "SIGN"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#VERIFY"/>
             /// </summary>
-            public static Javax.Xml.Crypto.KeySelector.Purpose VERIFY { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalClazz, "VERIFY"); } }
+            public static Javax.Xml.Crypto.KeySelector.Purpose VERIFY { get { return SGetField<Javax.Xml.Crypto.KeySelector.Purpose>(LocalBridgeClazz, "VERIFY"); } }
 
             #endregion
 

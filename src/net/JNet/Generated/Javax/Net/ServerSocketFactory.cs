@@ -46,7 +46,7 @@ namespace Javax.Net
         /// </summary>
         public static Javax.Net.ServerSocketFactory Default
         {
-            get { return SExecute<Javax.Net.ServerSocketFactory>(LocalClazz, "getDefault"); }
+            get { return SExecute<Javax.Net.ServerSocketFactory>(LocalBridgeClazz, "getDefault"); }
         }
 
         #endregion

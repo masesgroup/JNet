@@ -63,7 +63,7 @@ namespace Javax.Imageio.Metadata
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#standardMetadataFormatName"/>
         /// </summary>
-        public static string standardMetadataFormatName { get { return SGetField<string>(LocalClazz, "standardMetadataFormatName"); } }
+        public static string standardMetadataFormatName { get { return SGetField<string>(LocalBridgeClazz, "standardMetadataFormatName"); } }
 
         #endregion
 
@@ -73,7 +73,7 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         public static Javax.Imageio.Metadata.IIOMetadataFormat StandardFormatInstance
         {
-            get { return SExecute<Javax.Imageio.Metadata.IIOMetadataFormat>(LocalClazz, "getStandardFormatInstance"); }
+            get { return SExecute<Javax.Imageio.Metadata.IIOMetadataFormat>(LocalBridgeClazz, "getStandardFormatInstance"); }
         }
 
         #endregion

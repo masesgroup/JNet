@@ -46,14 +46,14 @@ namespace Java.Awt
         /// </summary>
         public static bool IsHeadless
         {
-            get { return SExecute<bool>(LocalClazz, "isHeadless"); }
+            get { return SExecute<bool>(LocalBridgeClazz, "isHeadless"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getLocalGraphicsEnvironment()"/> 
         /// </summary>
         public static Java.Awt.GraphicsEnvironment LocalGraphicsEnvironment
         {
-            get { return SExecute<Java.Awt.GraphicsEnvironment>(LocalClazz, "getLocalGraphicsEnvironment"); }
+            get { return SExecute<Java.Awt.GraphicsEnvironment>(LocalBridgeClazz, "getLocalGraphicsEnvironment"); }
         }
 
         #endregion

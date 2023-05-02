@@ -33,15 +33,15 @@ namespace Java.Awt.EventNs
     }
 
     /// <summary>
-    /// Listener for AdjustmentListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IAdjustmentListener"/>
+    /// Listener for AdjustmentListener. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>, implements <see cref="IAdjustmentListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class AdjustmentListener : IAdjustmentListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.awt.event.JNetAdjustmentListener";
+        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetAdjustmentListener";
 
         readonly Action<AdjustmentEvent> adjustmentValueChangedFunction = null;
         /// <summary>

@@ -64,11 +64,11 @@ namespace Java.Security.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#TRAILER_FIELD_BC"/>
         /// </summary>
-        public static int TRAILER_FIELD_BC { get { return SGetField<int>(LocalClazz, "TRAILER_FIELD_BC"); } }
+        public static int TRAILER_FIELD_BC { get { return SGetField<int>(LocalBridgeClazz, "TRAILER_FIELD_BC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html#DEFAULT"/>
         /// </summary>
-        public static Java.Security.Spec.PSSParameterSpec DEFAULT { get { return SGetField<Java.Security.Spec.PSSParameterSpec>(LocalClazz, "DEFAULT"); } }
+        public static Java.Security.Spec.PSSParameterSpec DEFAULT { get { return SGetField<Java.Security.Spec.PSSParameterSpec>(LocalBridgeClazz, "DEFAULT"); } }
 
         #endregion
 

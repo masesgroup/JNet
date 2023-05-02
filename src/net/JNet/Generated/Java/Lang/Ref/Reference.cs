@@ -47,7 +47,7 @@ namespace Java.Lang.Ref
         /// <param name="arg0"><see cref="object"/></param>
         public static void ReachabilityFence(object arg0)
         {
-            SExecute(LocalClazz, "reachabilityFence", arg0);
+            SExecute(LocalBridgeClazz, "reachabilityFence", arg0);
         }
 
         #endregion
@@ -118,7 +118,7 @@ namespace Java.Lang.Ref
         /// <param name="arg0"><see cref="object"/></param>
         public static void ReachabilityFence(object arg0)
         {
-            SExecute(LocalClazz, "reachabilityFence", arg0);
+            SExecute(LocalBridgeClazz, "reachabilityFence", arg0);
         }
 
         #endregion

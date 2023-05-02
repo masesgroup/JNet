@@ -40,15 +40,15 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#ASCENDING"/>
         /// </summary>
-        public static Javax.Swing.SortOrder ASCENDING { get { return SGetField<Javax.Swing.SortOrder>(LocalClazz, "ASCENDING"); } }
+        public static Javax.Swing.SortOrder ASCENDING { get { return SGetField<Javax.Swing.SortOrder>(LocalBridgeClazz, "ASCENDING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#DESCENDING"/>
         /// </summary>
-        public static Javax.Swing.SortOrder DESCENDING { get { return SGetField<Javax.Swing.SortOrder>(LocalClazz, "DESCENDING"); } }
+        public static Javax.Swing.SortOrder DESCENDING { get { return SGetField<Javax.Swing.SortOrder>(LocalBridgeClazz, "DESCENDING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#UNSORTED"/>
         /// </summary>
-        public static Javax.Swing.SortOrder UNSORTED { get { return SGetField<Javax.Swing.SortOrder>(LocalClazz, "UNSORTED"); } }
+        public static Javax.Swing.SortOrder UNSORTED { get { return SGetField<Javax.Swing.SortOrder>(LocalBridgeClazz, "UNSORTED"); } }
 
         #endregion
 
@@ -58,7 +58,7 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.SortOrder[] Values
         {
-            get { return SExecuteArray<Javax.Swing.SortOrder>(LocalClazz, "values"); }
+            get { return SExecuteArray<Javax.Swing.SortOrder>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html#valueOf(java.lang.String)"/>
@@ -67,7 +67,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.SortOrder"/></returns>
         public static Javax.Swing.SortOrder ValueOf(string arg0)
         {
-            return SExecute<Javax.Swing.SortOrder>(LocalClazz, "valueOf", arg0);
+            return SExecute<Javax.Swing.SortOrder>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

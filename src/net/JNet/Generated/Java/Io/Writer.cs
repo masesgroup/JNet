@@ -58,7 +58,7 @@ namespace Java.Io
         /// </summary>
         public static Java.Io.Writer NullWriter
         {
-            get { return SExecute<Java.Io.Writer>(LocalClazz, "nullWriter"); }
+            get { return SExecute<Java.Io.Writer>(LocalBridgeClazz, "nullWriter"); }
         }
 
         #endregion

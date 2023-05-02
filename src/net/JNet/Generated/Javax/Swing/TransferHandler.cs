@@ -52,23 +52,23 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#COPY"/>
         /// </summary>
-        public static int COPY { get { return SGetField<int>(LocalClazz, "COPY"); } }
+        public static int COPY { get { return SGetField<int>(LocalBridgeClazz, "COPY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#COPY_OR_MOVE"/>
         /// </summary>
-        public static int COPY_OR_MOVE { get { return SGetField<int>(LocalClazz, "COPY_OR_MOVE"); } }
+        public static int COPY_OR_MOVE { get { return SGetField<int>(LocalBridgeClazz, "COPY_OR_MOVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#LINK"/>
         /// </summary>
-        public static int LINK { get { return SGetField<int>(LocalClazz, "LINK"); } }
+        public static int LINK { get { return SGetField<int>(LocalBridgeClazz, "LINK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#MOVE"/>
         /// </summary>
-        public static int MOVE { get { return SGetField<int>(LocalClazz, "MOVE"); } }
+        public static int MOVE { get { return SGetField<int>(LocalBridgeClazz, "MOVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#NONE"/>
         /// </summary>
-        public static int NONE { get { return SGetField<int>(LocalClazz, "NONE"); } }
+        public static int NONE { get { return SGetField<int>(LocalBridgeClazz, "NONE"); } }
 
         #endregion
 
@@ -78,21 +78,21 @@ namespace Javax.Swing
         /// </summary>
         public static Javax.Swing.Action CopyAction
         {
-            get { return SExecute<Javax.Swing.Action>(LocalClazz, "getCopyAction"); }
+            get { return SExecute<Javax.Swing.Action>(LocalBridgeClazz, "getCopyAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getCutAction()"/> 
         /// </summary>
         public static Javax.Swing.Action CutAction
         {
-            get { return SExecute<Javax.Swing.Action>(LocalClazz, "getCutAction"); }
+            get { return SExecute<Javax.Swing.Action>(LocalBridgeClazz, "getCutAction"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#getPasteAction()"/> 
         /// </summary>
         public static Javax.Swing.Action PasteAction
         {
-            get { return SExecute<Javax.Swing.Action>(LocalClazz, "getPasteAction"); }
+            get { return SExecute<Javax.Swing.Action>(LocalBridgeClazz, "getPasteAction"); }
         }
 
         #endregion

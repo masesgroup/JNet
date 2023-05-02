@@ -59,7 +59,7 @@ namespace Javax.Swing
         /// </summary>
         public static bool LogTimers
         {
-            get { return SExecute<bool>(LocalClazz, "getLogTimers"); } set { SExecute(LocalClazz, "setLogTimers", value); }
+            get { return SExecute<bool>(LocalBridgeClazz, "getLogTimers"); } set { SExecute(LocalBridgeClazz, "setLogTimers", value); }
         }
 
         #endregion

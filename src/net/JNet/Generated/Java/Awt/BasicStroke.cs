@@ -86,27 +86,27 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_BUTT"/>
         /// </summary>
-        public static int CAP_BUTT { get { return SGetField<int>(LocalClazz, "CAP_BUTT"); } }
+        public static int CAP_BUTT { get { return SGetField<int>(LocalBridgeClazz, "CAP_BUTT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_ROUND"/>
         /// </summary>
-        public static int CAP_ROUND { get { return SGetField<int>(LocalClazz, "CAP_ROUND"); } }
+        public static int CAP_ROUND { get { return SGetField<int>(LocalBridgeClazz, "CAP_ROUND"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_SQUARE"/>
         /// </summary>
-        public static int CAP_SQUARE { get { return SGetField<int>(LocalClazz, "CAP_SQUARE"); } }
+        public static int CAP_SQUARE { get { return SGetField<int>(LocalBridgeClazz, "CAP_SQUARE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_BEVEL"/>
         /// </summary>
-        public static int JOIN_BEVEL { get { return SGetField<int>(LocalClazz, "JOIN_BEVEL"); } }
+        public static int JOIN_BEVEL { get { return SGetField<int>(LocalBridgeClazz, "JOIN_BEVEL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_MITER"/>
         /// </summary>
-        public static int JOIN_MITER { get { return SGetField<int>(LocalClazz, "JOIN_MITER"); } }
+        public static int JOIN_MITER { get { return SGetField<int>(LocalBridgeClazz, "JOIN_MITER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_ROUND"/>
         /// </summary>
-        public static int JOIN_ROUND { get { return SGetField<int>(LocalClazz, "JOIN_ROUND"); } }
+        public static int JOIN_ROUND { get { return SGetField<int>(LocalBridgeClazz, "JOIN_ROUND"); } }
 
         #endregion
 

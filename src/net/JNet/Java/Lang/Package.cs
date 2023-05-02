@@ -26,9 +26,9 @@ namespace Java.Lang
     public sealed class Package : JVMBridgeBase<Package>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.Package";
+        public override string BridgeClassName => "java.lang.Package";
         /// <summary>
         /// Returns this element's annotation for the specified type if such an annotation is present, else null.
         /// </summary>

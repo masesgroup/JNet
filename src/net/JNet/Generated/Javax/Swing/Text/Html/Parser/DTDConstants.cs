@@ -40,143 +40,143 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#ANY"/>
         /// </summary>
-        public static int ANY { get { return SGetField<int>(LocalClazz, "ANY"); } }
+        public static int ANY { get { return SGetField<int>(LocalBridgeClazz, "ANY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#CDATA"/>
         /// </summary>
-        public static int CDATA { get { return SGetField<int>(LocalClazz, "CDATA"); } }
+        public static int CDATA { get { return SGetField<int>(LocalBridgeClazz, "CDATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#CONREF"/>
         /// </summary>
-        public static int CONREF { get { return SGetField<int>(LocalClazz, "CONREF"); } }
+        public static int CONREF { get { return SGetField<int>(LocalBridgeClazz, "CONREF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#CURRENT"/>
         /// </summary>
-        public static int CURRENT { get { return SGetField<int>(LocalClazz, "CURRENT"); } }
+        public static int CURRENT { get { return SGetField<int>(LocalBridgeClazz, "CURRENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#DEFAULT"/>
         /// </summary>
-        public static int DEFAULT { get { return SGetField<int>(LocalClazz, "DEFAULT"); } }
+        public static int DEFAULT { get { return SGetField<int>(LocalBridgeClazz, "DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#EMPTY"/>
         /// </summary>
-        public static int EMPTY { get { return SGetField<int>(LocalClazz, "EMPTY"); } }
+        public static int EMPTY { get { return SGetField<int>(LocalBridgeClazz, "EMPTY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#ENDTAG"/>
         /// </summary>
-        public static int ENDTAG { get { return SGetField<int>(LocalClazz, "ENDTAG"); } }
+        public static int ENDTAG { get { return SGetField<int>(LocalBridgeClazz, "ENDTAG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#ENTITIES"/>
         /// </summary>
-        public static int ENTITIES { get { return SGetField<int>(LocalClazz, "ENTITIES"); } }
+        public static int ENTITIES { get { return SGetField<int>(LocalBridgeClazz, "ENTITIES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#ENTITY"/>
         /// </summary>
-        public static int ENTITY { get { return SGetField<int>(LocalClazz, "ENTITY"); } }
+        public static int ENTITY { get { return SGetField<int>(LocalBridgeClazz, "ENTITY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#FIXED"/>
         /// </summary>
-        public static int FIXED { get { return SGetField<int>(LocalClazz, "FIXED"); } }
+        public static int FIXED { get { return SGetField<int>(LocalBridgeClazz, "FIXED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#GENERAL"/>
         /// </summary>
-        public static int GENERAL { get { return SGetField<int>(LocalClazz, "GENERAL"); } }
+        public static int GENERAL { get { return SGetField<int>(LocalBridgeClazz, "GENERAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#ID"/>
         /// </summary>
-        public static int ID { get { return SGetField<int>(LocalClazz, "ID"); } }
+        public static int ID { get { return SGetField<int>(LocalBridgeClazz, "ID"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#IDREF"/>
         /// </summary>
-        public static int IDREF { get { return SGetField<int>(LocalClazz, "IDREF"); } }
+        public static int IDREF { get { return SGetField<int>(LocalBridgeClazz, "IDREF"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#IDREFS"/>
         /// </summary>
-        public static int IDREFS { get { return SGetField<int>(LocalClazz, "IDREFS"); } }
+        public static int IDREFS { get { return SGetField<int>(LocalBridgeClazz, "IDREFS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#IMPLIED"/>
         /// </summary>
-        public static int IMPLIED { get { return SGetField<int>(LocalClazz, "IMPLIED"); } }
+        public static int IMPLIED { get { return SGetField<int>(LocalBridgeClazz, "IMPLIED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#MD"/>
         /// </summary>
-        public static int MD { get { return SGetField<int>(LocalClazz, "MD"); } }
+        public static int MD { get { return SGetField<int>(LocalBridgeClazz, "MD"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#MODEL"/>
         /// </summary>
-        public static int MODEL { get { return SGetField<int>(LocalClazz, "MODEL"); } }
+        public static int MODEL { get { return SGetField<int>(LocalBridgeClazz, "MODEL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#MS"/>
         /// </summary>
-        public static int MS { get { return SGetField<int>(LocalClazz, "MS"); } }
+        public static int MS { get { return SGetField<int>(LocalBridgeClazz, "MS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NAME"/>
         /// </summary>
-        public static int NAME { get { return SGetField<int>(LocalClazz, "NAME"); } }
+        public static int NAME { get { return SGetField<int>(LocalBridgeClazz, "NAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NAMES"/>
         /// </summary>
-        public static int NAMES { get { return SGetField<int>(LocalClazz, "NAMES"); } }
+        public static int NAMES { get { return SGetField<int>(LocalBridgeClazz, "NAMES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NMTOKEN"/>
         /// </summary>
-        public static int NMTOKEN { get { return SGetField<int>(LocalClazz, "NMTOKEN"); } }
+        public static int NMTOKEN { get { return SGetField<int>(LocalBridgeClazz, "NMTOKEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NMTOKENS"/>
         /// </summary>
-        public static int NMTOKENS { get { return SGetField<int>(LocalClazz, "NMTOKENS"); } }
+        public static int NMTOKENS { get { return SGetField<int>(LocalBridgeClazz, "NMTOKENS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NOTATION"/>
         /// </summary>
-        public static int NOTATION { get { return SGetField<int>(LocalClazz, "NOTATION"); } }
+        public static int NOTATION { get { return SGetField<int>(LocalBridgeClazz, "NOTATION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NUMBER"/>
         /// </summary>
-        public static int NUMBER { get { return SGetField<int>(LocalClazz, "NUMBER"); } }
+        public static int NUMBER { get { return SGetField<int>(LocalBridgeClazz, "NUMBER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NUMBERS"/>
         /// </summary>
-        public static int NUMBERS { get { return SGetField<int>(LocalClazz, "NUMBERS"); } }
+        public static int NUMBERS { get { return SGetField<int>(LocalBridgeClazz, "NUMBERS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NUTOKEN"/>
         /// </summary>
-        public static int NUTOKEN { get { return SGetField<int>(LocalClazz, "NUTOKEN"); } }
+        public static int NUTOKEN { get { return SGetField<int>(LocalBridgeClazz, "NUTOKEN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#NUTOKENS"/>
         /// </summary>
-        public static int NUTOKENS { get { return SGetField<int>(LocalClazz, "NUTOKENS"); } }
+        public static int NUTOKENS { get { return SGetField<int>(LocalBridgeClazz, "NUTOKENS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#PARAMETER"/>
         /// </summary>
-        public static int PARAMETER { get { return SGetField<int>(LocalClazz, "PARAMETER"); } }
+        public static int PARAMETER { get { return SGetField<int>(LocalBridgeClazz, "PARAMETER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#PI"/>
         /// </summary>
-        public static int PI { get { return SGetField<int>(LocalClazz, "PI"); } }
+        public static int PI { get { return SGetField<int>(LocalBridgeClazz, "PI"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#PUBLIC"/>
         /// </summary>
-        public static int PUBLIC { get { return SGetField<int>(LocalClazz, "PUBLIC"); } }
+        public static int PUBLIC { get { return SGetField<int>(LocalBridgeClazz, "PUBLIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#RCDATA"/>
         /// </summary>
-        public static int RCDATA { get { return SGetField<int>(LocalClazz, "RCDATA"); } }
+        public static int RCDATA { get { return SGetField<int>(LocalBridgeClazz, "RCDATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#REQUIRED"/>
         /// </summary>
-        public static int REQUIRED { get { return SGetField<int>(LocalClazz, "REQUIRED"); } }
+        public static int REQUIRED { get { return SGetField<int>(LocalBridgeClazz, "REQUIRED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#SDATA"/>
         /// </summary>
-        public static int SDATA { get { return SGetField<int>(LocalClazz, "SDATA"); } }
+        public static int SDATA { get { return SGetField<int>(LocalBridgeClazz, "SDATA"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#STARTTAG"/>
         /// </summary>
-        public static int STARTTAG { get { return SGetField<int>(LocalClazz, "STARTTAG"); } }
+        public static int STARTTAG { get { return SGetField<int>(LocalBridgeClazz, "STARTTAG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html#SYSTEM"/>
         /// </summary>
-        public static int SYSTEM { get { return SGetField<int>(LocalClazz, "SYSTEM"); } }
+        public static int SYSTEM { get { return SGetField<int>(LocalBridgeClazz, "SYSTEM"); } }
 
         #endregion
 

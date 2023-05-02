@@ -52,23 +52,23 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#BOTTOM_ALIGNMENT"/>
         /// </summary>
-        public static float BOTTOM_ALIGNMENT { get { return SGetField<float>(LocalClazz, "BOTTOM_ALIGNMENT"); } }
+        public static float BOTTOM_ALIGNMENT { get { return SGetField<float>(LocalBridgeClazz, "BOTTOM_ALIGNMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#CENTER_ALIGNMENT"/>
         /// </summary>
-        public static float CENTER_ALIGNMENT { get { return SGetField<float>(LocalClazz, "CENTER_ALIGNMENT"); } }
+        public static float CENTER_ALIGNMENT { get { return SGetField<float>(LocalBridgeClazz, "CENTER_ALIGNMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#LEFT_ALIGNMENT"/>
         /// </summary>
-        public static float LEFT_ALIGNMENT { get { return SGetField<float>(LocalClazz, "LEFT_ALIGNMENT"); } }
+        public static float LEFT_ALIGNMENT { get { return SGetField<float>(LocalBridgeClazz, "LEFT_ALIGNMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#RIGHT_ALIGNMENT"/>
         /// </summary>
-        public static float RIGHT_ALIGNMENT { get { return SGetField<float>(LocalClazz, "RIGHT_ALIGNMENT"); } }
+        public static float RIGHT_ALIGNMENT { get { return SGetField<float>(LocalBridgeClazz, "RIGHT_ALIGNMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#TOP_ALIGNMENT"/>
         /// </summary>
-        public static float TOP_ALIGNMENT { get { return SGetField<float>(LocalClazz, "TOP_ALIGNMENT"); } }
+        public static float TOP_ALIGNMENT { get { return SGetField<float>(LocalBridgeClazz, "TOP_ALIGNMENT"); } }
 
         #endregion
 
@@ -1330,19 +1330,19 @@ namespace Java.Awt
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CENTER_OFFSET"/>
             /// </summary>
-            public static Java.Awt.Component.BaselineResizeBehavior CENTER_OFFSET { get { return SGetField<Java.Awt.Component.BaselineResizeBehavior>(LocalClazz, "CENTER_OFFSET"); } }
+            public static Java.Awt.Component.BaselineResizeBehavior CENTER_OFFSET { get { return SGetField<Java.Awt.Component.BaselineResizeBehavior>(LocalBridgeClazz, "CENTER_OFFSET"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CONSTANT_ASCENT"/>
             /// </summary>
-            public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_ASCENT { get { return SGetField<Java.Awt.Component.BaselineResizeBehavior>(LocalClazz, "CONSTANT_ASCENT"); } }
+            public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_ASCENT { get { return SGetField<Java.Awt.Component.BaselineResizeBehavior>(LocalBridgeClazz, "CONSTANT_ASCENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CONSTANT_DESCENT"/>
             /// </summary>
-            public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_DESCENT { get { return SGetField<Java.Awt.Component.BaselineResizeBehavior>(LocalClazz, "CONSTANT_DESCENT"); } }
+            public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_DESCENT { get { return SGetField<Java.Awt.Component.BaselineResizeBehavior>(LocalBridgeClazz, "CONSTANT_DESCENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#OTHER"/>
             /// </summary>
-            public static Java.Awt.Component.BaselineResizeBehavior OTHER { get { return SGetField<Java.Awt.Component.BaselineResizeBehavior>(LocalClazz, "OTHER"); } }
+            public static Java.Awt.Component.BaselineResizeBehavior OTHER { get { return SGetField<Java.Awt.Component.BaselineResizeBehavior>(LocalBridgeClazz, "OTHER"); } }
 
             #endregion
 
@@ -1352,7 +1352,7 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.Component.BaselineResizeBehavior[] Values
             {
-                get { return SExecuteArray<Java.Awt.Component.BaselineResizeBehavior>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Awt.Component.BaselineResizeBehavior>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#valueOf(java.lang.String)"/>
@@ -1361,7 +1361,7 @@ namespace Java.Awt
             /// <returns><see cref="Java.Awt.Component.BaselineResizeBehavior"/></returns>
             public static Java.Awt.Component.BaselineResizeBehavior ValueOf(string arg0)
             {
-                return SExecute<Java.Awt.Component.BaselineResizeBehavior>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Awt.Component.BaselineResizeBehavior>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

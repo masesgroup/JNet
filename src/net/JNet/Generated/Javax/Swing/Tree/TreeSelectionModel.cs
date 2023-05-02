@@ -40,15 +40,15 @@ namespace Javax.Swing.Tree
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#CONTIGUOUS_TREE_SELECTION"/>
         /// </summary>
-        public static int CONTIGUOUS_TREE_SELECTION { get { return SGetField<int>(LocalClazz, "CONTIGUOUS_TREE_SELECTION"); } }
+        public static int CONTIGUOUS_TREE_SELECTION { get { return SGetField<int>(LocalBridgeClazz, "CONTIGUOUS_TREE_SELECTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#DISCONTIGUOUS_TREE_SELECTION"/>
         /// </summary>
-        public static int DISCONTIGUOUS_TREE_SELECTION { get { return SGetField<int>(LocalClazz, "DISCONTIGUOUS_TREE_SELECTION"); } }
+        public static int DISCONTIGUOUS_TREE_SELECTION { get { return SGetField<int>(LocalBridgeClazz, "DISCONTIGUOUS_TREE_SELECTION"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#SINGLE_TREE_SELECTION"/>
         /// </summary>
-        public static int SINGLE_TREE_SELECTION { get { return SGetField<int>(LocalClazz, "SINGLE_TREE_SELECTION"); } }
+        public static int SINGLE_TREE_SELECTION { get { return SGetField<int>(LocalBridgeClazz, "SINGLE_TREE_SELECTION"); } }
 
         #endregion
 

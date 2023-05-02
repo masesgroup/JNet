@@ -46,7 +46,7 @@ namespace Java.Net
         /// </summary>
         public static Java.Net.Authenticator Default
         {
-            get { return SExecute<Java.Net.Authenticator>(LocalClazz, "getDefault"); } set { SExecute(LocalClazz, "setDefault", value); }
+            get { return SExecute<Java.Net.Authenticator>(LocalBridgeClazz, "getDefault"); } set { SExecute(LocalBridgeClazz, "setDefault", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
@@ -62,7 +62,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(string arg0, Java.Net.InetAddress arg1, int arg2, string arg3, string arg4, string arg5, Java.Net.URL arg6, Java.Net.Authenticator.RequestorType arg7)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -76,7 +76,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(string arg0, Java.Net.InetAddress arg1, int arg2, string arg3, string arg4, string arg5)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.Authenticator,java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
@@ -93,7 +93,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Net.Authenticator arg0, string arg1, Java.Net.InetAddress arg2, int arg3, string arg4, string arg5, string arg6, Java.Net.URL arg7, Java.Net.Authenticator.RequestorType arg8)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -106,7 +106,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Net.InetAddress arg0, int arg1, string arg2, string arg3, string arg4)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4);
+            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion
@@ -147,11 +147,11 @@ namespace Java.Net
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#PROXY"/>
             /// </summary>
-            public static Java.Net.Authenticator.RequestorType PROXY { get { return SGetField<Java.Net.Authenticator.RequestorType>(LocalClazz, "PROXY"); } }
+            public static Java.Net.Authenticator.RequestorType PROXY { get { return SGetField<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "PROXY"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#SERVER"/>
             /// </summary>
-            public static Java.Net.Authenticator.RequestorType SERVER { get { return SGetField<Java.Net.Authenticator.RequestorType>(LocalClazz, "SERVER"); } }
+            public static Java.Net.Authenticator.RequestorType SERVER { get { return SGetField<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "SERVER"); } }
 
             #endregion
 
@@ -161,7 +161,7 @@ namespace Java.Net
             /// </summary>
             public static Java.Net.Authenticator.RequestorType[] Values
             {
-                get { return SExecuteArray<Java.Net.Authenticator.RequestorType>(LocalClazz, "values"); }
+                get { return SExecuteArray<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#valueOf(java.lang.String)"/>
@@ -170,7 +170,7 @@ namespace Java.Net
             /// <returns><see cref="Java.Net.Authenticator.RequestorType"/></returns>
             public static Java.Net.Authenticator.RequestorType ValueOf(string arg0)
             {
-                return SExecute<Java.Net.Authenticator.RequestorType>(LocalClazz, "valueOf", arg0);
+                return SExecute<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

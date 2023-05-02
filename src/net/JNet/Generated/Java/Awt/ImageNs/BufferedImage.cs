@@ -80,59 +80,59 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_3BYTE_BGR"/>
         /// </summary>
-        public static int TYPE_3BYTE_BGR { get { return SGetField<int>(LocalClazz, "TYPE_3BYTE_BGR"); } }
+        public static int TYPE_3BYTE_BGR { get { return SGetField<int>(LocalBridgeClazz, "TYPE_3BYTE_BGR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_4BYTE_ABGR"/>
         /// </summary>
-        public static int TYPE_4BYTE_ABGR { get { return SGetField<int>(LocalClazz, "TYPE_4BYTE_ABGR"); } }
+        public static int TYPE_4BYTE_ABGR { get { return SGetField<int>(LocalBridgeClazz, "TYPE_4BYTE_ABGR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_4BYTE_ABGR_PRE"/>
         /// </summary>
-        public static int TYPE_4BYTE_ABGR_PRE { get { return SGetField<int>(LocalClazz, "TYPE_4BYTE_ABGR_PRE"); } }
+        public static int TYPE_4BYTE_ABGR_PRE { get { return SGetField<int>(LocalBridgeClazz, "TYPE_4BYTE_ABGR_PRE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_BINARY"/>
         /// </summary>
-        public static int TYPE_BYTE_BINARY { get { return SGetField<int>(LocalClazz, "TYPE_BYTE_BINARY"); } }
+        public static int TYPE_BYTE_BINARY { get { return SGetField<int>(LocalBridgeClazz, "TYPE_BYTE_BINARY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_GRAY"/>
         /// </summary>
-        public static int TYPE_BYTE_GRAY { get { return SGetField<int>(LocalClazz, "TYPE_BYTE_GRAY"); } }
+        public static int TYPE_BYTE_GRAY { get { return SGetField<int>(LocalBridgeClazz, "TYPE_BYTE_GRAY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_INDEXED"/>
         /// </summary>
-        public static int TYPE_BYTE_INDEXED { get { return SGetField<int>(LocalClazz, "TYPE_BYTE_INDEXED"); } }
+        public static int TYPE_BYTE_INDEXED { get { return SGetField<int>(LocalBridgeClazz, "TYPE_BYTE_INDEXED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_CUSTOM"/>
         /// </summary>
-        public static int TYPE_CUSTOM { get { return SGetField<int>(LocalClazz, "TYPE_CUSTOM"); } }
+        public static int TYPE_CUSTOM { get { return SGetField<int>(LocalBridgeClazz, "TYPE_CUSTOM"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_ARGB"/>
         /// </summary>
-        public static int TYPE_INT_ARGB { get { return SGetField<int>(LocalClazz, "TYPE_INT_ARGB"); } }
+        public static int TYPE_INT_ARGB { get { return SGetField<int>(LocalBridgeClazz, "TYPE_INT_ARGB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_ARGB_PRE"/>
         /// </summary>
-        public static int TYPE_INT_ARGB_PRE { get { return SGetField<int>(LocalClazz, "TYPE_INT_ARGB_PRE"); } }
+        public static int TYPE_INT_ARGB_PRE { get { return SGetField<int>(LocalBridgeClazz, "TYPE_INT_ARGB_PRE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_BGR"/>
         /// </summary>
-        public static int TYPE_INT_BGR { get { return SGetField<int>(LocalClazz, "TYPE_INT_BGR"); } }
+        public static int TYPE_INT_BGR { get { return SGetField<int>(LocalBridgeClazz, "TYPE_INT_BGR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_RGB"/>
         /// </summary>
-        public static int TYPE_INT_RGB { get { return SGetField<int>(LocalClazz, "TYPE_INT_RGB"); } }
+        public static int TYPE_INT_RGB { get { return SGetField<int>(LocalBridgeClazz, "TYPE_INT_RGB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_555_RGB"/>
         /// </summary>
-        public static int TYPE_USHORT_555_RGB { get { return SGetField<int>(LocalClazz, "TYPE_USHORT_555_RGB"); } }
+        public static int TYPE_USHORT_555_RGB { get { return SGetField<int>(LocalBridgeClazz, "TYPE_USHORT_555_RGB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_565_RGB"/>
         /// </summary>
-        public static int TYPE_USHORT_565_RGB { get { return SGetField<int>(LocalClazz, "TYPE_USHORT_565_RGB"); } }
+        public static int TYPE_USHORT_565_RGB { get { return SGetField<int>(LocalBridgeClazz, "TYPE_USHORT_565_RGB"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_GRAY"/>
         /// </summary>
-        public static int TYPE_USHORT_GRAY { get { return SGetField<int>(LocalClazz, "TYPE_USHORT_GRAY"); } }
+        public static int TYPE_USHORT_GRAY { get { return SGetField<int>(LocalBridgeClazz, "TYPE_USHORT_GRAY"); } }
 
         #endregion
 

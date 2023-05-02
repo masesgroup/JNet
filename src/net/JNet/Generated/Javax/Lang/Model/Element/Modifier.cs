@@ -40,51 +40,51 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#ABSTRACT"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier ABSTRACT { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "ABSTRACT"); } }
+        public static Javax.Lang.Model.Element.Modifier ABSTRACT { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "ABSTRACT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#DEFAULT"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier DEFAULT { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "DEFAULT"); } }
+        public static Javax.Lang.Model.Element.Modifier DEFAULT { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "DEFAULT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#FINAL"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier FINAL { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "FINAL"); } }
+        public static Javax.Lang.Model.Element.Modifier FINAL { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "FINAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#NATIVE"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier NATIVE { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "NATIVE"); } }
+        public static Javax.Lang.Model.Element.Modifier NATIVE { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "NATIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#PRIVATE"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier PRIVATE { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "PRIVATE"); } }
+        public static Javax.Lang.Model.Element.Modifier PRIVATE { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "PRIVATE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#PROTECTED"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier PROTECTED { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "PROTECTED"); } }
+        public static Javax.Lang.Model.Element.Modifier PROTECTED { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "PROTECTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#PUBLIC"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier PUBLIC { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "PUBLIC"); } }
+        public static Javax.Lang.Model.Element.Modifier PUBLIC { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "PUBLIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#STATIC"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier STATIC { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "STATIC"); } }
+        public static Javax.Lang.Model.Element.Modifier STATIC { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "STATIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#STRICTFP"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier STRICTFP { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "STRICTFP"); } }
+        public static Javax.Lang.Model.Element.Modifier STRICTFP { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "STRICTFP"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#SYNCHRONIZED"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier SYNCHRONIZED { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "SYNCHRONIZED"); } }
+        public static Javax.Lang.Model.Element.Modifier SYNCHRONIZED { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "SYNCHRONIZED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#TRANSIENT"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier TRANSIENT { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "TRANSIENT"); } }
+        public static Javax.Lang.Model.Element.Modifier TRANSIENT { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "TRANSIENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#VOLATILE"/>
         /// </summary>
-        public static Javax.Lang.Model.Element.Modifier VOLATILE { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalClazz, "VOLATILE"); } }
+        public static Javax.Lang.Model.Element.Modifier VOLATILE { get { return SGetField<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "VOLATILE"); } }
 
         #endregion
 
@@ -94,7 +94,7 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         public static Javax.Lang.Model.Element.Modifier[] Values
         {
-            get { return SExecuteArray<Javax.Lang.Model.Element.Modifier>(LocalClazz, "values"); }
+            get { return SExecuteArray<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#valueOf(java.lang.String)"/>
@@ -103,7 +103,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><see cref="Javax.Lang.Model.Element.Modifier"/></returns>
         public static Javax.Lang.Model.Element.Modifier ValueOf(string arg0)
         {
-            return SExecute<Javax.Lang.Model.Element.Modifier>(LocalClazz, "valueOf", arg0);
+            return SExecute<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

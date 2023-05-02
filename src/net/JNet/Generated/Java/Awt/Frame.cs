@@ -70,23 +70,23 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#ICONIFIED"/>
         /// </summary>
-        public static int ICONIFIED { get { return SGetField<int>(LocalClazz, "ICONIFIED"); } }
+        public static int ICONIFIED { get { return SGetField<int>(LocalBridgeClazz, "ICONIFIED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_BOTH"/>
         /// </summary>
-        public static int MAXIMIZED_BOTH { get { return SGetField<int>(LocalClazz, "MAXIMIZED_BOTH"); } }
+        public static int MAXIMIZED_BOTH { get { return SGetField<int>(LocalBridgeClazz, "MAXIMIZED_BOTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_HORIZ"/>
         /// </summary>
-        public static int MAXIMIZED_HORIZ { get { return SGetField<int>(LocalClazz, "MAXIMIZED_HORIZ"); } }
+        public static int MAXIMIZED_HORIZ { get { return SGetField<int>(LocalBridgeClazz, "MAXIMIZED_HORIZ"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_VERT"/>
         /// </summary>
-        public static int MAXIMIZED_VERT { get { return SGetField<int>(LocalClazz, "MAXIMIZED_VERT"); } }
+        public static int MAXIMIZED_VERT { get { return SGetField<int>(LocalBridgeClazz, "MAXIMIZED_VERT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#NORMAL"/>
         /// </summary>
-        public static int NORMAL { get { return SGetField<int>(LocalClazz, "NORMAL"); } }
+        public static int NORMAL { get { return SGetField<int>(LocalBridgeClazz, "NORMAL"); } }
 
         #endregion
 
@@ -96,7 +96,7 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.Frame[] Frames
         {
-            get { return SExecuteArray<Java.Awt.Frame>(LocalClazz, "getFrames"); }
+            get { return SExecuteArray<Java.Awt.Frame>(LocalBridgeClazz, "getFrames"); }
         }
 
         #endregion

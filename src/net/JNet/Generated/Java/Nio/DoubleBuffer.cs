@@ -52,7 +52,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public static Java.Nio.DoubleBuffer Allocate(int arg0)
         {
-            return SExecute<Java.Nio.DoubleBuffer>(LocalClazz, "allocate", arg0);
+            return SExecute<Java.Nio.DoubleBuffer>(LocalBridgeClazz, "allocate", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#wrap(double[],int,int)"/>
@@ -63,7 +63,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public static Java.Nio.DoubleBuffer Wrap(double[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.DoubleBuffer>(LocalClazz, "wrap", arg0, arg1, arg2);
+            return SExecute<Java.Nio.DoubleBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#wrap(double[])"/>
@@ -72,7 +72,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public static Java.Nio.DoubleBuffer Wrap(double[] arg0)
         {
-            return SExecute<Java.Nio.DoubleBuffer>(LocalClazz, "wrap", new object[] { arg0 });
+            return SExecute<Java.Nio.DoubleBuffer>(LocalBridgeClazz, "wrap", new object[] { arg0 });
         }
 
         #endregion

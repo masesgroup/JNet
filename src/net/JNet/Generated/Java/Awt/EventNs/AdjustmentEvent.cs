@@ -63,35 +63,35 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_FIRST"/>
         /// </summary>
-        public static int ADJUSTMENT_FIRST { get { return SGetField<int>(LocalClazz, "ADJUSTMENT_FIRST"); } }
+        public static int ADJUSTMENT_FIRST { get { return SGetField<int>(LocalBridgeClazz, "ADJUSTMENT_FIRST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_LAST"/>
         /// </summary>
-        public static int ADJUSTMENT_LAST { get { return SGetField<int>(LocalClazz, "ADJUSTMENT_LAST"); } }
+        public static int ADJUSTMENT_LAST { get { return SGetField<int>(LocalBridgeClazz, "ADJUSTMENT_LAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#ADJUSTMENT_VALUE_CHANGED"/>
         /// </summary>
-        public static int ADJUSTMENT_VALUE_CHANGED { get { return SGetField<int>(LocalClazz, "ADJUSTMENT_VALUE_CHANGED"); } }
+        public static int ADJUSTMENT_VALUE_CHANGED { get { return SGetField<int>(LocalBridgeClazz, "ADJUSTMENT_VALUE_CHANGED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#BLOCK_DECREMENT"/>
         /// </summary>
-        public static int BLOCK_DECREMENT { get { return SGetField<int>(LocalClazz, "BLOCK_DECREMENT"); } }
+        public static int BLOCK_DECREMENT { get { return SGetField<int>(LocalBridgeClazz, "BLOCK_DECREMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#BLOCK_INCREMENT"/>
         /// </summary>
-        public static int BLOCK_INCREMENT { get { return SGetField<int>(LocalClazz, "BLOCK_INCREMENT"); } }
+        public static int BLOCK_INCREMENT { get { return SGetField<int>(LocalBridgeClazz, "BLOCK_INCREMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#TRACK"/>
         /// </summary>
-        public static int TRACK { get { return SGetField<int>(LocalClazz, "TRACK"); } }
+        public static int TRACK { get { return SGetField<int>(LocalBridgeClazz, "TRACK"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_DECREMENT"/>
         /// </summary>
-        public static int UNIT_DECREMENT { get { return SGetField<int>(LocalClazz, "UNIT_DECREMENT"); } }
+        public static int UNIT_DECREMENT { get { return SGetField<int>(LocalBridgeClazz, "UNIT_DECREMENT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_INCREMENT"/>
         /// </summary>
-        public static int UNIT_INCREMENT { get { return SGetField<int>(LocalClazz, "UNIT_INCREMENT"); } }
+        public static int UNIT_INCREMENT { get { return SGetField<int>(LocalBridgeClazz, "UNIT_INCREMENT"); } }
 
         #endregion
 

@@ -40,39 +40,39 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#COMPLETESCANLINES"/>
         /// </summary>
-        public static int COMPLETESCANLINES { get { return SGetField<int>(LocalClazz, "COMPLETESCANLINES"); } }
+        public static int COMPLETESCANLINES { get { return SGetField<int>(LocalBridgeClazz, "COMPLETESCANLINES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#IMAGEABORTED"/>
         /// </summary>
-        public static int IMAGEABORTED { get { return SGetField<int>(LocalClazz, "IMAGEABORTED"); } }
+        public static int IMAGEABORTED { get { return SGetField<int>(LocalBridgeClazz, "IMAGEABORTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#IMAGEERROR"/>
         /// </summary>
-        public static int IMAGEERROR { get { return SGetField<int>(LocalClazz, "IMAGEERROR"); } }
+        public static int IMAGEERROR { get { return SGetField<int>(LocalBridgeClazz, "IMAGEERROR"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#RANDOMPIXELORDER"/>
         /// </summary>
-        public static int RANDOMPIXELORDER { get { return SGetField<int>(LocalClazz, "RANDOMPIXELORDER"); } }
+        public static int RANDOMPIXELORDER { get { return SGetField<int>(LocalBridgeClazz, "RANDOMPIXELORDER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#SINGLEFRAME"/>
         /// </summary>
-        public static int SINGLEFRAME { get { return SGetField<int>(LocalClazz, "SINGLEFRAME"); } }
+        public static int SINGLEFRAME { get { return SGetField<int>(LocalBridgeClazz, "SINGLEFRAME"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#SINGLEFRAMEDONE"/>
         /// </summary>
-        public static int SINGLEFRAMEDONE { get { return SGetField<int>(LocalClazz, "SINGLEFRAMEDONE"); } }
+        public static int SINGLEFRAMEDONE { get { return SGetField<int>(LocalBridgeClazz, "SINGLEFRAMEDONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#SINGLEPASS"/>
         /// </summary>
-        public static int SINGLEPASS { get { return SGetField<int>(LocalClazz, "SINGLEPASS"); } }
+        public static int SINGLEPASS { get { return SGetField<int>(LocalBridgeClazz, "SINGLEPASS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#STATICIMAGEDONE"/>
         /// </summary>
-        public static int STATICIMAGEDONE { get { return SGetField<int>(LocalClazz, "STATICIMAGEDONE"); } }
+        public static int STATICIMAGEDONE { get { return SGetField<int>(LocalBridgeClazz, "STATICIMAGEDONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html#TOPDOWNLEFTRIGHT"/>
         /// </summary>
-        public static int TOPDOWNLEFTRIGHT { get { return SGetField<int>(LocalClazz, "TOPDOWNLEFTRIGHT"); } }
+        public static int TOPDOWNLEFTRIGHT { get { return SGetField<int>(LocalBridgeClazz, "TOPDOWNLEFTRIGHT"); } }
 
         #endregion
 

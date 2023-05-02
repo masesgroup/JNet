@@ -69,7 +69,7 @@ namespace Javax.Management.Openmbean
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
         public static Javax.Management.Openmbean.ArrayType GetArrayType(Javax.Management.Openmbean.OpenType arg0)
         {
-            return SExecute<Javax.Management.Openmbean.ArrayType>(LocalClazz, "getArrayType", arg0);
+            return SExecute<Javax.Management.Openmbean.ArrayType>(LocalBridgeClazz, "getArrayType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getPrimitiveArrayType(java.lang.Class)"/>
@@ -78,7 +78,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Javax.Management.Openmbean.ArrayType"/></returns>
         public static Javax.Management.Openmbean.ArrayType GetPrimitiveArrayType(Java.Lang.Class arg0)
         {
-            return SExecute<Javax.Management.Openmbean.ArrayType>(LocalClazz, "getPrimitiveArrayType", arg0);
+            return SExecute<Javax.Management.Openmbean.ArrayType>(LocalBridgeClazz, "getPrimitiveArrayType", arg0);
         }
 
         #endregion
@@ -165,7 +165,7 @@ namespace Javax.Management.Openmbean
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
         public static Javax.Management.Openmbean.ArrayType<E[]> GetArrayType<E>(Javax.Management.Openmbean.OpenType<E> arg0)
         {
-            return SExecute<Javax.Management.Openmbean.ArrayType<E[]>>(LocalClazz, "getArrayType", arg0);
+            return SExecute<Javax.Management.Openmbean.ArrayType<E[]>>(LocalBridgeClazz, "getArrayType", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getPrimitiveArrayType(java.lang.Class)"/>
@@ -174,7 +174,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="Javax.Management.Openmbean.ArrayType"/></returns>
         public static Javax.Management.Openmbean.ArrayType<T> GetPrimitiveArrayType(Java.Lang.Class arg0)
         {
-            return SExecute<Javax.Management.Openmbean.ArrayType<T>>(LocalClazz, "getPrimitiveArrayType", arg0);
+            return SExecute<Javax.Management.Openmbean.ArrayType<T>>(LocalBridgeClazz, "getPrimitiveArrayType", arg0);
         }
 
         #endregion

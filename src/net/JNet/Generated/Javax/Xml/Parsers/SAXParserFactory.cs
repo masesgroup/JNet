@@ -46,7 +46,7 @@ namespace Javax.Xml.Parsers
         /// </summary>
         public static Javax.Xml.Parsers.SAXParserFactory NewDefaultInstance
         {
-            get { return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalClazz, "newDefaultInstance"); }
+            get { return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newDefaultInstance"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newInstance()"/>
@@ -55,7 +55,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
         public static Javax.Xml.Parsers.SAXParserFactory NewInstance()
         {
-            return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalClazz, "newInstance");
+            return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newInstance(java.lang.String,java.lang.ClassLoader)"/>
@@ -65,7 +65,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
         public static Javax.Xml.Parsers.SAXParserFactory NewInstance(string arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalClazz, "newInstance", arg0, arg1);
+            return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
         }
 
         #endregion

@@ -104,15 +104,15 @@ namespace Javax.Xml.Crypto.Dsig.Spec
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html#INTERSECT"/>
             /// </summary>
-            public static Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter INTERSECT { get { return SGetField<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>(LocalClazz, "INTERSECT"); } }
+            public static Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter INTERSECT { get { return SGetField<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>(LocalBridgeClazz, "INTERSECT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html#SUBTRACT"/>
             /// </summary>
-            public static Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter SUBTRACT { get { return SGetField<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>(LocalClazz, "SUBTRACT"); } }
+            public static Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter SUBTRACT { get { return SGetField<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>(LocalBridgeClazz, "SUBTRACT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathType.Filter.html#UNION"/>
             /// </summary>
-            public static Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter UNION { get { return SGetField<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>(LocalClazz, "UNION"); } }
+            public static Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter UNION { get { return SGetField<Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter>(LocalBridgeClazz, "UNION"); } }
 
             #endregion
 

@@ -28,9 +28,9 @@ namespace Java.Lang.Reflect
     public class Modifier : JVMBridgeBase<Modifier>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.reflect.Modifier";
+        public override string BridgeClassName => "java.lang.reflect.Modifier";
         /// <summary>
         /// Return an <see cref="int"/> value OR-ing together the source language modifiers that can be applied to a class.
         /// </summary>
@@ -58,7 +58,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Return <see langword="true"/> if the integer argument includes the abstract modifier, <see langword="false"/> otherwise.
         /// </summary>
-        public new static bool IsAbstract(int mod) => SExecute<bool>("isAbstract", mod);
+        public static bool IsAbstract(int mod) => SExecute<bool>("isAbstract", mod);
         /// <summary>
         /// Return <see langword="true"/> if the integer argument includes the final modifier, <see langword="false"/> otherwise.
         /// </summary>
@@ -66,7 +66,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Return <see langword="true"/> if the integer argument includes the interface modifier, <see langword="false"/> otherwise.
         /// </summary>
-        public new static bool IsInterface(int mod) => SExecute<bool>("isInterface", mod);
+        public static bool IsInterface(int mod) => SExecute<bool>("isInterface", mod);
         /// <summary>
         /// Return <see langword="true"/> if the integer argument includes the native modifier, <see langword="false"/> otherwise.
         /// </summary>
@@ -86,7 +86,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Return <see langword="true"/> if the integer argument includes the static modifier, <see langword="false"/> otherwise.
         /// </summary>
-        public new static bool IsStatic(int mod) => SExecute<bool>("isStatic", mod);
+        public static bool IsStatic(int mod) => SExecute<bool>("isStatic", mod);
         /// <summary>
         /// Return <see langword="true"/> if the integer argument includes the strictfp modifier, <see langword="false"/> otherwise.
         /// </summary>

@@ -1170,7 +1170,7 @@ namespace MASES.JNetReflector
                 StringBuilder executionStub = new StringBuilder();
                 if (getMethod != null)
                 {
-                    string execStub = getMethod.IsStatic() ? "SExecute" : "IExecute";
+                    string execStub = getMethod.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE;
                     if (isArrayReturnType) execStub += "Array";
                     if (JNetReflectorCore.ReflectDeprecated) isGetDeprecated = getMethod.IsDeprecated();
                     if (getMethod.IsReturnTypeAnException())
@@ -1195,7 +1195,7 @@ namespace MASES.JNetReflector
                     {
                         setExecStub = setMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_SET_ARRAY_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.SET_ARRAY_EXECUTION_FORMAT;
                     }
-                    executionStub.AppendFormat(setExecStub, setMethod.IsStatic() ? "SExecute" : "IExecute",
+                    executionStub.AppendFormat(setExecStub, setMethod.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE,
                                                               setMethod.Name);
                 }
 
@@ -1397,7 +1397,7 @@ namespace MASES.JNetReflector
 
                 bool isArrayReturnType = false;
 
-                string execStub = method.IsStatic() ? "SExecute" : "IExecute";
+                string execStub = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE;
                 if (returnType.EndsWith(SpecialNames.ArrayTypeTrailer))
                 {
                     returnType = returnType.Substring(0, returnType.IndexOf(SpecialNames.ArrayTypeTrailer));

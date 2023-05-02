@@ -52,15 +52,15 @@ namespace Javax.Print.Attribute.Standard
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#DRAFT"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrintQuality DRAFT { get { return SGetField<Javax.Print.Attribute.Standard.PrintQuality>(LocalClazz, "DRAFT"); } }
+        public static Javax.Print.Attribute.Standard.PrintQuality DRAFT { get { return SGetField<Javax.Print.Attribute.Standard.PrintQuality>(LocalBridgeClazz, "DRAFT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#HIGH"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrintQuality HIGH { get { return SGetField<Javax.Print.Attribute.Standard.PrintQuality>(LocalClazz, "HIGH"); } }
+        public static Javax.Print.Attribute.Standard.PrintQuality HIGH { get { return SGetField<Javax.Print.Attribute.Standard.PrintQuality>(LocalBridgeClazz, "HIGH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrintQuality.html#NORMAL"/>
         /// </summary>
-        public static Javax.Print.Attribute.Standard.PrintQuality NORMAL { get { return SGetField<Javax.Print.Attribute.Standard.PrintQuality>(LocalClazz, "NORMAL"); } }
+        public static Javax.Print.Attribute.Standard.PrintQuality NORMAL { get { return SGetField<Javax.Print.Attribute.Standard.PrintQuality>(LocalBridgeClazz, "NORMAL"); } }
 
         #endregion
 

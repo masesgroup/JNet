@@ -42,19 +42,11 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#getInstance()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#getInstance()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#setInstance(javax.swing.LayoutStyle)"/>
         /// </summary>
-        public static Javax.Swing.LayoutStyle GetInstance
+        public static Javax.Swing.LayoutStyle Instance
         {
-            get { return SExecute<Javax.Swing.LayoutStyle>(LocalClazz, "getInstance"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.html#setInstance(javax.swing.LayoutStyle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Swing.LayoutStyle"/></param>
-        public static void SetInstance(Javax.Swing.LayoutStyle arg0)
-        {
-            SExecute(LocalClazz, "setInstance", arg0);
+            get { return SExecute<Javax.Swing.LayoutStyle>(LocalBridgeClazz, "getInstance"); } set { SExecute(LocalBridgeClazz, "setInstance", value); }
         }
 
         #endregion
@@ -103,15 +95,15 @@ namespace Javax.Swing
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#INDENT"/>
             /// </summary>
-            public static Javax.Swing.LayoutStyle.ComponentPlacement INDENT { get { return SGetField<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalClazz, "INDENT"); } }
+            public static Javax.Swing.LayoutStyle.ComponentPlacement INDENT { get { return SGetField<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalBridgeClazz, "INDENT"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#RELATED"/>
             /// </summary>
-            public static Javax.Swing.LayoutStyle.ComponentPlacement RELATED { get { return SGetField<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalClazz, "RELATED"); } }
+            public static Javax.Swing.LayoutStyle.ComponentPlacement RELATED { get { return SGetField<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalBridgeClazz, "RELATED"); } }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#UNRELATED"/>
             /// </summary>
-            public static Javax.Swing.LayoutStyle.ComponentPlacement UNRELATED { get { return SGetField<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalClazz, "UNRELATED"); } }
+            public static Javax.Swing.LayoutStyle.ComponentPlacement UNRELATED { get { return SGetField<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalBridgeClazz, "UNRELATED"); } }
 
             #endregion
 
@@ -121,7 +113,7 @@ namespace Javax.Swing
             /// </summary>
             public static Javax.Swing.LayoutStyle.ComponentPlacement[] Values
             {
-                get { return SExecuteArray<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalClazz, "values"); }
+                get { return SExecuteArray<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalBridgeClazz, "values"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#valueOf(java.lang.String)"/>
@@ -130,7 +122,7 @@ namespace Javax.Swing
             /// <returns><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></returns>
             public static Javax.Swing.LayoutStyle.ComponentPlacement ValueOf(string arg0)
             {
-                return SExecute<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalClazz, "valueOf", arg0);
+                return SExecute<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalBridgeClazz, "valueOf", arg0);
             }
 
             #endregion

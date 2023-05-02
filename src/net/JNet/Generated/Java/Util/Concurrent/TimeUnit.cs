@@ -40,31 +40,31 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#DAYS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit DAYS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalClazz, "DAYS"); } }
+        public static Java.Util.Concurrent.TimeUnit DAYS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "DAYS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#HOURS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit HOURS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalClazz, "HOURS"); } }
+        public static Java.Util.Concurrent.TimeUnit HOURS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "HOURS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MICROSECONDS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit MICROSECONDS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalClazz, "MICROSECONDS"); } }
+        public static Java.Util.Concurrent.TimeUnit MICROSECONDS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "MICROSECONDS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MILLISECONDS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit MILLISECONDS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalClazz, "MILLISECONDS"); } }
+        public static Java.Util.Concurrent.TimeUnit MILLISECONDS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "MILLISECONDS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MINUTES"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit MINUTES { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalClazz, "MINUTES"); } }
+        public static Java.Util.Concurrent.TimeUnit MINUTES { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "MINUTES"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#NANOSECONDS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit NANOSECONDS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalClazz, "NANOSECONDS"); } }
+        public static Java.Util.Concurrent.TimeUnit NANOSECONDS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "NANOSECONDS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#SECONDS"/>
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit SECONDS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalClazz, "SECONDS"); } }
+        public static Java.Util.Concurrent.TimeUnit SECONDS { get { return SGetField<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "SECONDS"); } }
 
         #endregion
 
@@ -74,7 +74,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit[] Values
         {
-            get { return SExecuteArray<Java.Util.Concurrent.TimeUnit>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#of(java.time.temporal.ChronoUnit)"/>
@@ -83,7 +83,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
         public static Java.Util.Concurrent.TimeUnit Of(Java.Time.Temporal.ChronoUnit arg0)
         {
-            return SExecute<Java.Util.Concurrent.TimeUnit>(LocalClazz, "of", arg0);
+            return SExecute<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "of", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#valueOf(java.lang.String)"/>
@@ -92,7 +92,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.TimeUnit"/></returns>
         public static Java.Util.Concurrent.TimeUnit ValueOf(string arg0)
         {
-            return SExecute<Java.Util.Concurrent.TimeUnit>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Util.Concurrent.TimeUnit>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

@@ -51,7 +51,7 @@ namespace Java.Time.Format
         /// <returns><see cref="string"/></returns>
         public static string GetLocalizedDateTimePattern(Java.Time.Format.FormatStyle arg0, Java.Time.Format.FormatStyle arg1, Java.Time.Chrono.Chronology arg2, Java.Util.Locale arg3)
         {
-            return SExecute<string>(LocalClazz, "getLocalizedDateTimePattern", arg0, arg1, arg2, arg3);
+            return SExecute<string>(LocalBridgeClazz, "getLocalizedDateTimePattern", arg0, arg1, arg2, arg3);
         }
 
         #endregion

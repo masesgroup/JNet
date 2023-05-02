@@ -63,7 +63,7 @@ namespace Javax.Crypto.Spec
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESKeySpec.html#DES_KEY_LEN"/>
         /// </summary>
-        public static int DES_KEY_LEN { get { return SGetField<int>(LocalClazz, "DES_KEY_LEN"); } }
+        public static int DES_KEY_LEN { get { return SGetField<int>(LocalBridgeClazz, "DES_KEY_LEN"); } }
 
         #endregion
 
@@ -77,7 +77,7 @@ namespace Javax.Crypto.Spec
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public static bool IsParityAdjusted(byte[] arg0, int arg1)
         {
-            return SExecute<bool>(LocalClazz, "isParityAdjusted", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "isParityAdjusted", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESKeySpec.html#isWeak(byte[],int)"/>
@@ -88,7 +88,7 @@ namespace Javax.Crypto.Spec
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public static bool IsWeak(byte[] arg0, int arg1)
         {
-            return SExecute<bool>(LocalClazz, "isWeak", arg0, arg1);
+            return SExecute<bool>(LocalBridgeClazz, "isWeak", arg0, arg1);
         }
 
         #endregion

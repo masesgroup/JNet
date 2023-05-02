@@ -46,7 +46,7 @@ namespace Java.Lang.ModuleNs
         /// </summary>
         public static Java.Lang.ModuleNs.Configuration Empty
         {
-            get { return SExecute<Java.Lang.ModuleNs.Configuration>(LocalClazz, "empty"); }
+            get { return SExecute<Java.Lang.ModuleNs.Configuration>(LocalBridgeClazz, "empty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#resolve(java.lang.module.ModuleFinder,java.util.List,java.lang.module.ModuleFinder,java.util.Collection)"/>
@@ -58,7 +58,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public static Java.Lang.ModuleNs.Configuration Resolve(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Util.List<Java.Lang.ModuleNs.Configuration> arg1, Java.Lang.ModuleNs.ModuleFinder arg2, Java.Util.Collection<string> arg3)
         {
-            return SExecute<Java.Lang.ModuleNs.Configuration>(LocalClazz, "resolve", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Lang.ModuleNs.Configuration>(LocalBridgeClazz, "resolve", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#resolveAndBind(java.lang.module.ModuleFinder,java.util.List,java.lang.module.ModuleFinder,java.util.Collection)"/>
@@ -70,7 +70,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public static Java.Lang.ModuleNs.Configuration ResolveAndBind(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Util.List<Java.Lang.ModuleNs.Configuration> arg1, Java.Lang.ModuleNs.ModuleFinder arg2, Java.Util.Collection<string> arg3)
         {
-            return SExecute<Java.Lang.ModuleNs.Configuration>(LocalClazz, "resolveAndBind", arg0, arg1, arg2, arg3);
+            return SExecute<Java.Lang.ModuleNs.Configuration>(LocalBridgeClazz, "resolveAndBind", arg0, arg1, arg2, arg3);
         }
 
         #endregion

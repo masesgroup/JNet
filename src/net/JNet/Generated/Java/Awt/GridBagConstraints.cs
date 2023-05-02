@@ -110,131 +110,131 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#ABOVE_BASELINE"/>
         /// </summary>
-        public static int ABOVE_BASELINE { get { return SGetField<int>(LocalClazz, "ABOVE_BASELINE"); } }
+        public static int ABOVE_BASELINE { get { return SGetField<int>(LocalBridgeClazz, "ABOVE_BASELINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#ABOVE_BASELINE_LEADING"/>
         /// </summary>
-        public static int ABOVE_BASELINE_LEADING { get { return SGetField<int>(LocalClazz, "ABOVE_BASELINE_LEADING"); } }
+        public static int ABOVE_BASELINE_LEADING { get { return SGetField<int>(LocalBridgeClazz, "ABOVE_BASELINE_LEADING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#ABOVE_BASELINE_TRAILING"/>
         /// </summary>
-        public static int ABOVE_BASELINE_TRAILING { get { return SGetField<int>(LocalClazz, "ABOVE_BASELINE_TRAILING"); } }
+        public static int ABOVE_BASELINE_TRAILING { get { return SGetField<int>(LocalBridgeClazz, "ABOVE_BASELINE_TRAILING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BASELINE"/>
         /// </summary>
-        public static int BASELINE { get { return SGetField<int>(LocalClazz, "BASELINE"); } }
+        public static int BASELINE { get { return SGetField<int>(LocalBridgeClazz, "BASELINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BASELINE_LEADING"/>
         /// </summary>
-        public static int BASELINE_LEADING { get { return SGetField<int>(LocalClazz, "BASELINE_LEADING"); } }
+        public static int BASELINE_LEADING { get { return SGetField<int>(LocalBridgeClazz, "BASELINE_LEADING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BASELINE_TRAILING"/>
         /// </summary>
-        public static int BASELINE_TRAILING { get { return SGetField<int>(LocalClazz, "BASELINE_TRAILING"); } }
+        public static int BASELINE_TRAILING { get { return SGetField<int>(LocalBridgeClazz, "BASELINE_TRAILING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BELOW_BASELINE"/>
         /// </summary>
-        public static int BELOW_BASELINE { get { return SGetField<int>(LocalClazz, "BELOW_BASELINE"); } }
+        public static int BELOW_BASELINE { get { return SGetField<int>(LocalBridgeClazz, "BELOW_BASELINE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BELOW_BASELINE_LEADING"/>
         /// </summary>
-        public static int BELOW_BASELINE_LEADING { get { return SGetField<int>(LocalClazz, "BELOW_BASELINE_LEADING"); } }
+        public static int BELOW_BASELINE_LEADING { get { return SGetField<int>(LocalBridgeClazz, "BELOW_BASELINE_LEADING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BELOW_BASELINE_TRAILING"/>
         /// </summary>
-        public static int BELOW_BASELINE_TRAILING { get { return SGetField<int>(LocalClazz, "BELOW_BASELINE_TRAILING"); } }
+        public static int BELOW_BASELINE_TRAILING { get { return SGetField<int>(LocalBridgeClazz, "BELOW_BASELINE_TRAILING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#BOTH"/>
         /// </summary>
-        public static int BOTH { get { return SGetField<int>(LocalClazz, "BOTH"); } }
+        public static int BOTH { get { return SGetField<int>(LocalBridgeClazz, "BOTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#CENTER"/>
         /// </summary>
-        public static int CENTER { get { return SGetField<int>(LocalClazz, "CENTER"); } }
+        public static int CENTER { get { return SGetField<int>(LocalBridgeClazz, "CENTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#EAST"/>
         /// </summary>
-        public static int EAST { get { return SGetField<int>(LocalClazz, "EAST"); } }
+        public static int EAST { get { return SGetField<int>(LocalBridgeClazz, "EAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#FIRST_LINE_END"/>
         /// </summary>
-        public static int FIRST_LINE_END { get { return SGetField<int>(LocalClazz, "FIRST_LINE_END"); } }
+        public static int FIRST_LINE_END { get { return SGetField<int>(LocalBridgeClazz, "FIRST_LINE_END"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#FIRST_LINE_START"/>
         /// </summary>
-        public static int FIRST_LINE_START { get { return SGetField<int>(LocalClazz, "FIRST_LINE_START"); } }
+        public static int FIRST_LINE_START { get { return SGetField<int>(LocalBridgeClazz, "FIRST_LINE_START"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#HORIZONTAL"/>
         /// </summary>
-        public static int HORIZONTAL { get { return SGetField<int>(LocalClazz, "HORIZONTAL"); } }
+        public static int HORIZONTAL { get { return SGetField<int>(LocalBridgeClazz, "HORIZONTAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#LAST_LINE_END"/>
         /// </summary>
-        public static int LAST_LINE_END { get { return SGetField<int>(LocalClazz, "LAST_LINE_END"); } }
+        public static int LAST_LINE_END { get { return SGetField<int>(LocalBridgeClazz, "LAST_LINE_END"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#LAST_LINE_START"/>
         /// </summary>
-        public static int LAST_LINE_START { get { return SGetField<int>(LocalClazz, "LAST_LINE_START"); } }
+        public static int LAST_LINE_START { get { return SGetField<int>(LocalBridgeClazz, "LAST_LINE_START"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#LINE_END"/>
         /// </summary>
-        public static int LINE_END { get { return SGetField<int>(LocalClazz, "LINE_END"); } }
+        public static int LINE_END { get { return SGetField<int>(LocalBridgeClazz, "LINE_END"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#LINE_START"/>
         /// </summary>
-        public static int LINE_START { get { return SGetField<int>(LocalClazz, "LINE_START"); } }
+        public static int LINE_START { get { return SGetField<int>(LocalBridgeClazz, "LINE_START"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#NONE"/>
         /// </summary>
-        public static int NONE { get { return SGetField<int>(LocalClazz, "NONE"); } }
+        public static int NONE { get { return SGetField<int>(LocalBridgeClazz, "NONE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#NORTH"/>
         /// </summary>
-        public static int NORTH { get { return SGetField<int>(LocalClazz, "NORTH"); } }
+        public static int NORTH { get { return SGetField<int>(LocalBridgeClazz, "NORTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#NORTHEAST"/>
         /// </summary>
-        public static int NORTHEAST { get { return SGetField<int>(LocalClazz, "NORTHEAST"); } }
+        public static int NORTHEAST { get { return SGetField<int>(LocalBridgeClazz, "NORTHEAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#NORTHWEST"/>
         /// </summary>
-        public static int NORTHWEST { get { return SGetField<int>(LocalClazz, "NORTHWEST"); } }
+        public static int NORTHWEST { get { return SGetField<int>(LocalBridgeClazz, "NORTHWEST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#PAGE_END"/>
         /// </summary>
-        public static int PAGE_END { get { return SGetField<int>(LocalClazz, "PAGE_END"); } }
+        public static int PAGE_END { get { return SGetField<int>(LocalBridgeClazz, "PAGE_END"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#PAGE_START"/>
         /// </summary>
-        public static int PAGE_START { get { return SGetField<int>(LocalClazz, "PAGE_START"); } }
+        public static int PAGE_START { get { return SGetField<int>(LocalBridgeClazz, "PAGE_START"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#RELATIVE"/>
         /// </summary>
-        public static int RELATIVE { get { return SGetField<int>(LocalClazz, "RELATIVE"); } }
+        public static int RELATIVE { get { return SGetField<int>(LocalBridgeClazz, "RELATIVE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#REMAINDER"/>
         /// </summary>
-        public static int REMAINDER { get { return SGetField<int>(LocalClazz, "REMAINDER"); } }
+        public static int REMAINDER { get { return SGetField<int>(LocalBridgeClazz, "REMAINDER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#SOUTH"/>
         /// </summary>
-        public static int SOUTH { get { return SGetField<int>(LocalClazz, "SOUTH"); } }
+        public static int SOUTH { get { return SGetField<int>(LocalBridgeClazz, "SOUTH"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#SOUTHEAST"/>
         /// </summary>
-        public static int SOUTHEAST { get { return SGetField<int>(LocalClazz, "SOUTHEAST"); } }
+        public static int SOUTHEAST { get { return SGetField<int>(LocalBridgeClazz, "SOUTHEAST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#SOUTHWEST"/>
         /// </summary>
-        public static int SOUTHWEST { get { return SGetField<int>(LocalClazz, "SOUTHWEST"); } }
+        public static int SOUTHWEST { get { return SGetField<int>(LocalBridgeClazz, "SOUTHWEST"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#VERTICAL"/>
         /// </summary>
-        public static int VERTICAL { get { return SGetField<int>(LocalClazz, "VERTICAL"); } }
+        public static int VERTICAL { get { return SGetField<int>(LocalBridgeClazz, "VERTICAL"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagConstraints.html#WEST"/>
         /// </summary>
-        public static int WEST { get { return SGetField<int>(LocalClazz, "WEST"); } }
+        public static int WEST { get { return SGetField<int>(LocalBridgeClazz, "WEST"); } }
 
         #endregion
 

@@ -40,11 +40,11 @@ namespace Java.Nio.Charset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#OVERFLOW"/>
         /// </summary>
-        public static Java.Nio.Charset.CoderResult OVERFLOW { get { return SGetField<Java.Nio.Charset.CoderResult>(LocalClazz, "OVERFLOW"); } }
+        public static Java.Nio.Charset.CoderResult OVERFLOW { get { return SGetField<Java.Nio.Charset.CoderResult>(LocalBridgeClazz, "OVERFLOW"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#UNDERFLOW"/>
         /// </summary>
-        public static Java.Nio.Charset.CoderResult UNDERFLOW { get { return SGetField<Java.Nio.Charset.CoderResult>(LocalClazz, "UNDERFLOW"); } }
+        public static Java.Nio.Charset.CoderResult UNDERFLOW { get { return SGetField<Java.Nio.Charset.CoderResult>(LocalBridgeClazz, "UNDERFLOW"); } }
 
         #endregion
 
@@ -56,7 +56,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public static Java.Nio.Charset.CoderResult MalformedForLength(int arg0)
         {
-            return SExecute<Java.Nio.Charset.CoderResult>(LocalClazz, "malformedForLength", arg0);
+            return SExecute<Java.Nio.Charset.CoderResult>(LocalBridgeClazz, "malformedForLength", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#unmappableForLength(int)"/>
@@ -65,7 +65,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public static Java.Nio.Charset.CoderResult UnmappableForLength(int arg0)
         {
-            return SExecute<Java.Nio.Charset.CoderResult>(LocalClazz, "unmappableForLength", arg0);
+            return SExecute<Java.Nio.Charset.CoderResult>(LocalBridgeClazz, "unmappableForLength", arg0);
         }
 
         #endregion

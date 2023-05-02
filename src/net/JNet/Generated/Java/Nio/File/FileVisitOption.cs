@@ -40,7 +40,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html#FOLLOW_LINKS"/>
         /// </summary>
-        public static Java.Nio.File.FileVisitOption FOLLOW_LINKS { get { return SGetField<Java.Nio.File.FileVisitOption>(LocalClazz, "FOLLOW_LINKS"); } }
+        public static Java.Nio.File.FileVisitOption FOLLOW_LINKS { get { return SGetField<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "FOLLOW_LINKS"); } }
 
         #endregion
 
@@ -50,7 +50,7 @@ namespace Java.Nio.File
         /// </summary>
         public static Java.Nio.File.FileVisitOption[] Values
         {
-            get { return SExecuteArray<Java.Nio.File.FileVisitOption>(LocalClazz, "values"); }
+            get { return SExecuteArray<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html#valueOf(java.lang.String)"/>
@@ -59,7 +59,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.FileVisitOption"/></returns>
         public static Java.Nio.File.FileVisitOption ValueOf(string arg0)
         {
-            return SExecute<Java.Nio.File.FileVisitOption>(LocalClazz, "valueOf", arg0);
+            return SExecute<Java.Nio.File.FileVisitOption>(LocalBridgeClazz, "valueOf", arg0);
         }
 
         #endregion

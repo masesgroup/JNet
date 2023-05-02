@@ -34,14 +34,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java BooleanSupplier <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BooleanSupplier.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java BooleanSupplier <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BooleanSupplier.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class BooleanSupplier : JVMBridgeListener, IBooleanSupplier
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetBooleanSupplier";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetBooleanSupplier";
 
         Func<bool> executionFunction = null;
         /// <summary>

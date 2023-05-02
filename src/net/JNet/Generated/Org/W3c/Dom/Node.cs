@@ -40,75 +40,75 @@ namespace Org.W3c.Dom
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ATTRIBUTE_NODE"/>
         /// </summary>
-        public static short ATTRIBUTE_NODE { get { return SGetField<short>(LocalClazz, "ATTRIBUTE_NODE"); } }
+        public static short ATTRIBUTE_NODE { get { return SGetField<short>(LocalBridgeClazz, "ATTRIBUTE_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#CDATA_SECTION_NODE"/>
         /// </summary>
-        public static short CDATA_SECTION_NODE { get { return SGetField<short>(LocalClazz, "CDATA_SECTION_NODE"); } }
+        public static short CDATA_SECTION_NODE { get { return SGetField<short>(LocalBridgeClazz, "CDATA_SECTION_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#COMMENT_NODE"/>
         /// </summary>
-        public static short COMMENT_NODE { get { return SGetField<short>(LocalClazz, "COMMENT_NODE"); } }
+        public static short COMMENT_NODE { get { return SGetField<short>(LocalBridgeClazz, "COMMENT_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_FRAGMENT_NODE"/>
         /// </summary>
-        public static short DOCUMENT_FRAGMENT_NODE { get { return SGetField<short>(LocalClazz, "DOCUMENT_FRAGMENT_NODE"); } }
+        public static short DOCUMENT_FRAGMENT_NODE { get { return SGetField<short>(LocalBridgeClazz, "DOCUMENT_FRAGMENT_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_NODE"/>
         /// </summary>
-        public static short DOCUMENT_NODE { get { return SGetField<short>(LocalClazz, "DOCUMENT_NODE"); } }
+        public static short DOCUMENT_NODE { get { return SGetField<short>(LocalBridgeClazz, "DOCUMENT_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_CONTAINED_BY"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_CONTAINED_BY { get { return SGetField<short>(LocalClazz, "DOCUMENT_POSITION_CONTAINED_BY"); } }
+        public static short DOCUMENT_POSITION_CONTAINED_BY { get { return SGetField<short>(LocalBridgeClazz, "DOCUMENT_POSITION_CONTAINED_BY"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_CONTAINS"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_CONTAINS { get { return SGetField<short>(LocalClazz, "DOCUMENT_POSITION_CONTAINS"); } }
+        public static short DOCUMENT_POSITION_CONTAINS { get { return SGetField<short>(LocalBridgeClazz, "DOCUMENT_POSITION_CONTAINS"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_DISCONNECTED"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_DISCONNECTED { get { return SGetField<short>(LocalClazz, "DOCUMENT_POSITION_DISCONNECTED"); } }
+        public static short DOCUMENT_POSITION_DISCONNECTED { get { return SGetField<short>(LocalBridgeClazz, "DOCUMENT_POSITION_DISCONNECTED"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_FOLLOWING"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_FOLLOWING { get { return SGetField<short>(LocalClazz, "DOCUMENT_POSITION_FOLLOWING"); } }
+        public static short DOCUMENT_POSITION_FOLLOWING { get { return SGetField<short>(LocalBridgeClazz, "DOCUMENT_POSITION_FOLLOWING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC { get { return SGetField<short>(LocalClazz, "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC"); } }
+        public static short DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC { get { return SGetField<short>(LocalBridgeClazz, "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_PRECEDING"/>
         /// </summary>
-        public static short DOCUMENT_POSITION_PRECEDING { get { return SGetField<short>(LocalClazz, "DOCUMENT_POSITION_PRECEDING"); } }
+        public static short DOCUMENT_POSITION_PRECEDING { get { return SGetField<short>(LocalBridgeClazz, "DOCUMENT_POSITION_PRECEDING"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_TYPE_NODE"/>
         /// </summary>
-        public static short DOCUMENT_TYPE_NODE { get { return SGetField<short>(LocalClazz, "DOCUMENT_TYPE_NODE"); } }
+        public static short DOCUMENT_TYPE_NODE { get { return SGetField<short>(LocalBridgeClazz, "DOCUMENT_TYPE_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ELEMENT_NODE"/>
         /// </summary>
-        public static short ELEMENT_NODE { get { return SGetField<short>(LocalClazz, "ELEMENT_NODE"); } }
+        public static short ELEMENT_NODE { get { return SGetField<short>(LocalBridgeClazz, "ELEMENT_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ENTITY_NODE"/>
         /// </summary>
-        public static short ENTITY_NODE { get { return SGetField<short>(LocalClazz, "ENTITY_NODE"); } }
+        public static short ENTITY_NODE { get { return SGetField<short>(LocalBridgeClazz, "ENTITY_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ENTITY_REFERENCE_NODE"/>
         /// </summary>
-        public static short ENTITY_REFERENCE_NODE { get { return SGetField<short>(LocalClazz, "ENTITY_REFERENCE_NODE"); } }
+        public static short ENTITY_REFERENCE_NODE { get { return SGetField<short>(LocalBridgeClazz, "ENTITY_REFERENCE_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#NOTATION_NODE"/>
         /// </summary>
-        public static short NOTATION_NODE { get { return SGetField<short>(LocalClazz, "NOTATION_NODE"); } }
+        public static short NOTATION_NODE { get { return SGetField<short>(LocalBridgeClazz, "NOTATION_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#PROCESSING_INSTRUCTION_NODE"/>
         /// </summary>
-        public static short PROCESSING_INSTRUCTION_NODE { get { return SGetField<short>(LocalClazz, "PROCESSING_INSTRUCTION_NODE"); } }
+        public static short PROCESSING_INSTRUCTION_NODE { get { return SGetField<short>(LocalBridgeClazz, "PROCESSING_INSTRUCTION_NODE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#TEXT_NODE"/>
         /// </summary>
-        public static short TEXT_NODE { get { return SGetField<short>(LocalClazz, "TEXT_NODE"); } }
+        public static short TEXT_NODE { get { return SGetField<short>(LocalBridgeClazz, "TEXT_NODE"); } }
 
         #endregion
 
