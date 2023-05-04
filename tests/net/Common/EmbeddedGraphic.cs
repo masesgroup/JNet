@@ -54,7 +54,7 @@ namespace MASES.JNetTest.GraphicCommon
                 container.add(TextArea);
                 dynamic button = new Button("Send TextArea text to Host Application");
                 button.setActionCommand("sendData");
-                button.addActionListener(_Listener.Instance);
+                button.addActionListener(_Listener.BridgeInstance);
                 container.add(button);
 #if WINFORMS
                 return CommonContainer.CreateHostedContainer(false);
@@ -154,7 +154,7 @@ namespace MASES.JNetTest.GraphicCommon
                 // don't work: JFrame.SetDefaultLookAndFeelDecorated(true);
                 JNetTestCore.GlobalInstance.DynJVM.JFrame.setDefaultLookAndFeelDecorated(true);
 
-                UIManager.DynClazz.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+                UIManager.DynBridgeClazz.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
                 // Define the panel to hold the components  
                 CommonContainer = new JPanel();
@@ -169,10 +169,10 @@ namespace MASES.JNetTest.GraphicCommon
                 imagePanel = new JPanel();
 
                 // Define layouts
-                dynamic chatLayout = new BoxLayout(chatPanel, BoxLayout.DynClazz.Y_AXIS);
-                dynamic messageLayout = new BoxLayout(messagePanel, BoxLayout.DynClazz.X_AXIS);
-                dynamic tableLayout = new BoxLayout(tablePanel, BoxLayout.DynClazz.Y_AXIS);
-                dynamic tableButtonLayout = new BoxLayout(tableButtonPanel, BoxLayout.DynClazz.X_AXIS);
+                dynamic chatLayout = new BoxLayout(chatPanel, BoxLayout.DynBridgeClazz.Y_AXIS);
+                dynamic messageLayout = new BoxLayout(messagePanel, BoxLayout.DynBridgeClazz.X_AXIS);
+                dynamic tableLayout = new BoxLayout(tablePanel, BoxLayout.DynBridgeClazz.Y_AXIS);
+                dynamic tableButtonLayout = new BoxLayout(tableButtonPanel, BoxLayout.DynBridgeClazz.X_AXIS);
                 layout = new SpringLayout();
 
                 // Set Layouts
@@ -195,7 +195,7 @@ namespace MASES.JNetTest.GraphicCommon
                 textField.setActionCommand("TextEntered");
                 textArea = new JTextArea("Message Area\n", 10, 5);
 
-                // don't work var keystroke = KeyStroke.DynClazz.getKeyStroke('a', false);
+                // don't work var keystroke = KeyStroke.DynBridgeClazz.getKeyStroke('a', false);
                 var keystroke = JNetTestCore.GlobalInstance.DynJVM.KeyStroke.getKeyStroke('a', false);
                 var condition = JNetTestCore.GlobalInstance.DynJVM.JComponent.WHEN_FOCUSED;
 
@@ -204,7 +204,7 @@ namespace MASES.JNetTest.GraphicCommon
                 messagePanel.Dyn().add(sendButton);
                 messagePanel.Dyn().add(clearButton);
                 chatPanel.Dyn().add(textArea);
-                chatPanel.Dyn().add(messagePanel.Instance);
+                chatPanel.Dyn().add(messagePanel.BridgeInstance);
                 chatPanel.Dyn().setSize(100, 100);
 
                 // Add spinner
@@ -226,16 +226,16 @@ namespace MASES.JNetTest.GraphicCommon
                 tableModel = jt.getModel();
                 Java.Util.Vector<string> vector = new();
                 vector.Add(columns[0]); vector.Add(columns[1]); vector.Add(columns[2]);
-                tableModel.setColumnIdentifiers(vector.Instance);
+                tableModel.setColumnIdentifiers(vector.BridgeInstance);
                 vector = new();
                 vector.Add(data[0][0]); vector.Add(data[0][1]); vector.Add(data[0][2]);
-                tableModel.addRow(vector.Instance);
+                tableModel.addRow(vector.BridgeInstance);
                 vector = new();
                 vector.Add(data[1][0]); vector.Add(data[1][1]); vector.Add(data[1][2]);
-                tableModel.addRow(vector.Instance);
+                tableModel.addRow(vector.BridgeInstance);
                 vector = new();
                 vector.Add(data[2][0]); vector.Add(data[2][1]); vector.Add(data[2][2]);
-                tableModel.addRow(vector.Instance);
+                tableModel.addRow(vector.BridgeInstance);
                 jt.setBounds(30, 40, 200, 300);
                 // Put table in a scroll panel
                 var scrollPane = JNetTestCore.GlobalInstance.DynJVM.JScrollPane.@new(jt);
@@ -243,26 +243,26 @@ namespace MASES.JNetTest.GraphicCommon
                 //configure panel
                 container.setSize(500, 600);
                 container.setLayout(layout);
-                container.add(chatPanel.Instance);
+                container.add(chatPanel.BridgeInstance);
                 tableButtonPanel.Dyn().add(addRowButton);
-                tablePanel.Dyn().add(tableButtonPanel.Instance);
+                tablePanel.Dyn().add(tableButtonPanel.BridgeInstance);
                 tablePanel.Dyn().add(scrollPane);
-                container.add(tablePanel.Instance);
+                container.add(tablePanel.BridgeInstance);
 
                 dynamic layoutAccessor = JNetTestCore.GlobalInstance.DynJVM.SpringLayout;
 
                 // Put constraint on components
-                layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, chatPanel.Instance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.Instance);
-                layout.putConstraint(layoutAccessor.WIDTH, chatPanel.Instance, 5, layoutAccessor.WIDTH, CommonContainer.Instance);
-                layout.putConstraint(layoutAccessor.NORTH, chatPanel.Instance, 5, layoutAccessor.NORTH, CommonContainer.Instance);
+                layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, chatPanel.BridgeInstance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.BridgeInstance);
+                layout.putConstraint(layoutAccessor.WIDTH, chatPanel.BridgeInstance, 5, layoutAccessor.WIDTH, CommonContainer.BridgeInstance);
+                layout.putConstraint(layoutAccessor.NORTH, chatPanel.BridgeInstance, 5, layoutAccessor.NORTH, CommonContainer.BridgeInstance);
 
-                layout.putConstraint(layoutAccessor.NORTH, imagePanel.Instance, 5, layoutAccessor.SOUTH, chatPanel.Instance);
-                layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, imagePanel.Instance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.Instance);
-                layout.putConstraint(layoutAccessor.WIDTH, imagePanel.Instance, 5, layoutAccessor.WIDTH, CommonContainer.Instance);
+                layout.putConstraint(layoutAccessor.NORTH, imagePanel.BridgeInstance, 5, layoutAccessor.SOUTH, chatPanel.BridgeInstance);
+                layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, imagePanel.BridgeInstance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.BridgeInstance);
+                layout.putConstraint(layoutAccessor.WIDTH, imagePanel.BridgeInstance, 5, layoutAccessor.WIDTH, CommonContainer.BridgeInstance);
 
-                layout.putConstraint(layoutAccessor.NORTH, tablePanel.Instance, 5, layoutAccessor.SOUTH, imagePanel.Instance);
-                layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, imagePanel.Instance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.Instance);
-                layout.putConstraint(layoutAccessor.WIDTH, tablePanel.Instance, 5, layoutAccessor.WIDTH, CommonContainer.Instance);
+                layout.putConstraint(layoutAccessor.NORTH, tablePanel.BridgeInstance, 5, layoutAccessor.SOUTH, imagePanel.BridgeInstance);
+                layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, imagePanel.BridgeInstance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.BridgeInstance);
+                layout.putConstraint(layoutAccessor.WIDTH, tablePanel.BridgeInstance, 5, layoutAccessor.WIDTH, CommonContainer.BridgeInstance);
 #if WINFORMS
                 return CommonContainer.CreateHostedContainer(false);
 #else
