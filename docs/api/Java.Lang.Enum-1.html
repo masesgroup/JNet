@@ -97,7 +97,7 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Java.Lang.Enum.html#Java_Lang_Enum_ClassName">Enum.ClassName</a>
+      <a class="xref" href="Java.Lang.Enum.html#Java_Lang_Enum_BridgeClassName">Enum.BridgeClassName</a>
     </div>
     <div>
       <a class="xref" href="Java.Lang.Enum.html#Java_Lang_Enum_Name">Enum.Name</a>
@@ -154,6 +154,36 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SGetField(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SGetField(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SGetField&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SGetField&lt;TReturn&gt;(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SGetFieldArray&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SGetFieldArray&lt;TReturn&gt;(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SSetField(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SSetField(System.String, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SSetField&lt;TValue&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, TValue)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.SSetField&lt;TValue&gt;(System.String, TValue)</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.IsAssignableFrom(System.String)</span>
     </div>
     <div>
@@ -169,16 +199,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.Execute&lt;T&gt;(T[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.DynClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.DynBridgeClazz</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.Clazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.BridgeClazz</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynBridgeClazz</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Enum&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.BridgeClazz</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClazzOf&lt;TClass&gt;(System.Boolean)</span>
@@ -271,25 +301,40 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.DynInstance</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IGetField(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Instance</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IGetField&lt;TReturn&gt;(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInterface</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsAbstract</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ISetField(System.String, System.Object)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsStatic</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ISetField&lt;TValue&gt;(System.String, TValue)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsCloseable</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.DynBridgeInstance</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsListener</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeInterface</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeAbstract</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeStatic</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeCloseable</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember#system-dynamic-dynamicobject-trygetmember(system-dynamic-getmemberbinder-system-object@)">DynamicObject.TryGetMember(GetMemberBinder, Object)</a>
