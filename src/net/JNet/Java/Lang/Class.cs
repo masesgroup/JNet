@@ -28,9 +28,9 @@ namespace Java.Lang
     public class Class : JVMBridgeBase<Class>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.Class";
+        public override string BridgeClassName => "java.lang.Class";
         /// <summary>
         /// Returns the <see cref="Class"/> object associated with the class or interface with the given string name.
         /// </summary>
@@ -272,7 +272,7 @@ namespace Java.Lang
         /// <summary>
         /// Determines if the specified Class object represents an interface type.
         /// </summary>
-        public new bool IsInterface => IExecute<bool>("isInterface");
+        public bool IsInterface => IExecute<bool>("isInterface");
         /// <summary>
         /// Returns true if and only if the underlying class is a local class.
         /// </summary>

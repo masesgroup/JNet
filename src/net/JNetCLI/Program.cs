@@ -61,7 +61,7 @@ namespace MASES.JNetCLI
                                     }
                                     else if (o is JVMBridgeException jvmbe)
                                     {
-                                        Console.WriteLine($"{jvmbe.ClassName}: {jvmbe.Message}");
+                                        Console.WriteLine($"{jvmbe.BridgeClassName}: {jvmbe.Message}");
                                         return true;
                                     }
                                     return false;

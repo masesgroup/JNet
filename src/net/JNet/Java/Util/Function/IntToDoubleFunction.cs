@@ -35,14 +35,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java IntToDoubleFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToDoubleFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java IntToDoubleFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToDoubleFunction.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class IntToDoubleFunction : JVMBridgeListener, IIntToDoubleFunction
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetIntToDoubleFunction";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetIntToDoubleFunction";
 
         Func<int, long> executionFunction = null;
         /// <summary>

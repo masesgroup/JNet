@@ -28,9 +28,9 @@ namespace Java.Lang.Reflect
     public class WildcardType : Type
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.reflect.WildcardType";
+        public override string BridgeClassName => "java.lang.reflect.WildcardType";
         /// <summary>
         /// Returns an array of <see cref="Type"/> objects representing the lower bound(s) of this type variable.
         /// </summary>

@@ -26,8 +26,8 @@ namespace Java.Lang
     public class AbstractMethodError : IncompatibleClassChangeError
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.AbstractMethodError";
+        public override string BridgeClassName => "java.lang.AbstractMethodError";
     }
 }

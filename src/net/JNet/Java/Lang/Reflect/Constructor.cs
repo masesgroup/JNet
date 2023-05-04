@@ -27,9 +27,9 @@ namespace Java.Lang.Reflect
     public class Constructor : Executable
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.reflect.Constructor";
+        public override string BridgeClassName => "java.lang.reflect.Constructor";
 #else
     public partial class Constructor
     {

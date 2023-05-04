@@ -3,9 +3,9 @@ ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER
 public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER
 {
     /// <summary>
-    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_ClassName.htm"/>
+    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
     /// </summary>
-    public override string ClassName => "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
+    public override string BridgeClassName => "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
 
     // TODO: complete the class
 // ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER

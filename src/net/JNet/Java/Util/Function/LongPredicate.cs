@@ -29,14 +29,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java LongPredicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java LongPredicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class LongPredicate : Predicate<long>, ILongPredicate
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetLongPredicate";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetLongPredicate";
 
         /// <inheritdoc cref="Predicate{Int64}"/>
         /// <param name="func">The <see cref="Func{Int64, Boolean}"/> to be executed</param>

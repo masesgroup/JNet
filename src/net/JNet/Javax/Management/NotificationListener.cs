@@ -37,9 +37,9 @@ namespace Javax.Management
     public partial class NotificationListener : INotificationListener
     {
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_IsInterface.htm"/>
-        public override bool IsInterface => true;
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
-        public override string ClassName => "org.mases.jnet.management.JNetNotificationListener";
+        public override bool IsBridgeInterface => true;
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        public override string BridgeClassName => "org.mases.jnet.management.JNetNotificationListener";
 
         readonly Action<Notification, object> handleNotificationFunction = null;
         /// <summary>

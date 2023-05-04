@@ -33,15 +33,15 @@ namespace Java.Awt.Dnd
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IDragGestureListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>, implements <see cref="IDragGestureListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class DragGestureListener : IDragGestureListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.awt.dnd.JNetDragGestureListener";
+        public override string BridgeClassName => "org.mases.jnet.awt.dnd.JNetDragGestureListener";
 
         readonly Action<DragGestureEvent> DragGestureRecognizedFunction = null;
         /// <summary>

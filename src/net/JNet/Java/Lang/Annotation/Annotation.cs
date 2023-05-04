@@ -27,9 +27,9 @@ namespace Java.Lang.Annotation
     public class Annotation : JVMBridgeBase<Annotation>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.annotation.Annotation";
+        public override string BridgeClassName => "java.lang.annotation.Annotation";
         /// <summary>
         /// Returns the annotation type of this annotation.
         /// </summary>

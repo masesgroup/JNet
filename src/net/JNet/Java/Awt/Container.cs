@@ -45,7 +45,7 @@ namespace Java.Awt
             {
                 if (_container == null)
                 {
-                    _container = Management.GetJCGraphicContainer(Instance, isWPF);
+                    _container = Management.GetJCGraphicContainer(BridgeInstance, isWPF);
                     _container.Initialize(manager != null ? manager : JCWindowsManager.Default);
                 }
                 return _container.GraphicObject;

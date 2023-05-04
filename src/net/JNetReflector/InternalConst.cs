@@ -178,12 +178,12 @@ namespace MASES.JNetReflector
         static IEnumerable<string> CreateReservedJNetNames()
         {
             List<string> lst = new List<string>();
-            lst.Add("Instance");
-            lst.Add("ClassName");
-            lst.Add("IsAbstract");
-            lst.Add("IsCloseable");
-            lst.Add("IsInterface");
-            lst.Add("IsStatic");
+            lst.Add("BridgeInstance");
+            lst.Add("BridgeClassName");
+            lst.Add("IsBridgeAbstract");
+            lst.Add("IsBridgeCloseable");
+            lst.Add("IsBridgeInterface");
+            lst.Add("IsBridgeStatic");
             return lst;
         }
 

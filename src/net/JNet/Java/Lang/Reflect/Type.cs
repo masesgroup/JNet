@@ -27,9 +27,9 @@ namespace Java.Lang.Reflect
     public class Type : JVMBridgeBase<Type>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.reflect.Type";
+        public override string BridgeClassName => "java.lang.reflect.Type";
         /// <summary>
         /// Returns a string describing this type, including information about any type parameters.
         /// </summary>

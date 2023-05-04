@@ -1170,7 +1170,7 @@ namespace MASES.JNetReflector
                 StringBuilder executionStub = new StringBuilder();
                 if (getMethod != null)
                 {
-                    string execStub = getMethod.IsStatic() ? "SExecute" : "IExecute";
+                    string execStub = getMethod.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE;
                     if (isArrayReturnType) execStub += "Array";
                     if (JNetReflectorCore.ReflectDeprecated) isGetDeprecated = getMethod.IsDeprecated();
                     if (getMethod.IsReturnTypeAnException())
@@ -1195,7 +1195,7 @@ namespace MASES.JNetReflector
                     {
                         setExecStub = setMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_SET_ARRAY_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.SET_ARRAY_EXECUTION_FORMAT;
                     }
-                    executionStub.AppendFormat(setExecStub, setMethod.IsStatic() ? "SExecute" : "IExecute",
+                    executionStub.AppendFormat(setExecStub, setMethod.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE,
                                                               setMethod.Name);
                 }
 
@@ -1397,7 +1397,7 @@ namespace MASES.JNetReflector
 
                 bool isArrayReturnType = false;
 
-                string execStub = method.IsStatic() ? "SExecute" : "IExecute";
+                string execStub = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE;
                 if (returnType.EndsWith(SpecialNames.ArrayTypeTrailer))
                 {
                     returnType = returnType.Substring(0, returnType.IndexOf(SpecialNames.ArrayTypeTrailer));
@@ -1590,14 +1590,35 @@ namespace MASES.JNetReflector
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing field {0}", field.GenericString);
 
-                string executionStub = string.Format(AllPackageClasses.ClassStub.FieldStub.GET_EXECUTION_FORMAT, field.IsStatic() ? "LocalClazz" : "Instance",
-                                                                                                                 field.IsObjectReturnType(JNetReflectorCore.UseCamel) ? string.Empty : $"<{fieldType}>",
-                                                                                                                 field.Name);
+                string getFunction;
+                string getFormat;
+                string setFormat;
+                if (field.IsStatic())
+                {
+                    getFunction = "SGetField";
+                    getFormat = AllPackageClasses.ClassStub.FieldStub.GET_STATIC_EXECUTION_FORMAT;
+                    setFormat = AllPackageClasses.ClassStub.FieldStub.SET_STATIC_EXECUTION_FORMAT;
+                }
+                else
+                {
+                    getFunction = "IGetField";
+                    getFormat = AllPackageClasses.ClassStub.FieldStub.GET_EXECUTION_FORMAT;
+                    setFormat = AllPackageClasses.ClassStub.FieldStub.SET_EXECUTION_FORMAT;
+                }
+
+                bool isArrayReturnType = false;
+                if (fieldType.EndsWith(SpecialNames.ArrayTypeTrailer))
+                {
+                    fieldType = fieldType.Substring(0, fieldType.IndexOf(SpecialNames.ArrayTypeTrailer));
+                    getFunction += "Array";
+                    isArrayReturnType = true;
+                }
+
+                string executionStub = string.Format(getFormat, getFunction, field.IsObjectReturnType(JNetReflectorCore.UseCamel) ? string.Empty : $"<{fieldType}>", field.Name);
 
                 if (!field.IsFinal())
                 {
-                    executionStub += " " + string.Format(AllPackageClasses.ClassStub.FieldStub.SET_EXECUTION_FORMAT, field.IsStatic() ? "LocalClazz" : "Instance",
-                                                                                                                     field.Name);
+                    executionStub += " " + string.Format(setFormat, field.Name);
                 }
 
                 StringBuilder jDecoration = new StringBuilder(AllPackageClasses.ClassStub.FieldStub.DEFAULT_DECORATION);
@@ -1609,7 +1630,7 @@ namespace MASES.JNetReflector
 
                 var singleField = singleFieldTemplate.Replace(AllPackageClasses.ClassStub.FieldStub.DECORATION, jDecoration.ToString())
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.MODIFIER, modifier)
-                                                     .Replace(AllPackageClasses.ClassStub.FieldStub.TYPE, fieldType)
+                                                     .Replace(AllPackageClasses.ClassStub.FieldStub.TYPE, isArrayReturnType ? fieldType + SpecialNames.ArrayTypeTrailer : fieldType)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.NAME, fieldName)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.EXECUTION, executionStub)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.HELP, field.JavadocHrefUrl(JNetReflectorCore.UseCamel));

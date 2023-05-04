@@ -37,15 +37,15 @@ namespace Java.Awt.EventNs
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IFocusListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>, implements <see cref="IFocusListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class FocusListener : IFocusListener
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.awt.event.JNetFocusListener";
+        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetFocusListener";
 
         readonly Action<FocusEvent> focusGainedFunction = null;
         readonly Action<FocusEvent> focusLostFunction = null;

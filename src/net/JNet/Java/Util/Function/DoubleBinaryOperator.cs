@@ -36,14 +36,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java DoubleBinaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java DoubleBinaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class DoubleBinaryOperator : JVMBridgeListener, IDoubleBinaryOperator
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetDoubleBinaryOperator";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoubleBinaryOperator";
 
         Func<double, double, double> executionFunction = null;
         /// <summary>

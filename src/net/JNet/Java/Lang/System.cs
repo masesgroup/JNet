@@ -29,13 +29,13 @@ namespace Java.Lang
     public sealed class System : JVMBridgeBase<System>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.System";
+        public override string BridgeClassName => "java.lang.System";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsStatic.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
-        public override bool IsStatic => true;
+        public override bool IsBridgeStatic => true;
         /// <summary>
         /// Copies an array from the specified source array, beginning at the specified position, to the specified position of the destination array.
         /// </summary>
@@ -155,11 +155,11 @@ namespace Java.Lang
         public sealed class Logger : JVMBridgeBase<Logger>
         {
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override bool IsInterface => true;
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
-            public override string ClassName => "java.lang.System$Logger";
+            public override bool IsBridgeInterface => true;
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            public override string BridgeClassName => "java.lang.System$Logger";
         }
     }
 }

@@ -35,14 +35,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java LongUnaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongUnaryOperator.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java LongUnaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongUnaryOperator.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class LongUnaryOperator : JVMBridgeListener, ILongUnaryOperator
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetLongUnaryOperator";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetLongUnaryOperator";
 
         Func<long, long> executionFunction = null;
         /// <summary>

@@ -69,15 +69,15 @@ namespace Java.Awt.EventNs
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IWindowAdapter"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>, implements <see cref="IWindowAdapter"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class WindowAdapter : IWindowAdapter
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.awt.event.JNetWindowAdapter";
+        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetWindowAdapter";
 
         readonly Action<WindowEvent> WindowActivatedFunction = null;
         readonly Action<WindowEvent> WindowClosedFunction = null;

@@ -35,14 +35,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java DoublePredicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java DoublePredicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class DoublePredicate : JVMBridgeListener, IDoublePredicate
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetDoublePredicate";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoublePredicate";
 
         Func<double, bool> executionFunction = null;
         /// <summary>

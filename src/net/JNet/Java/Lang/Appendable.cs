@@ -26,13 +26,13 @@ namespace Java.Lang
     public class Appendable : JVMBridgeBase<Appendable>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.Appendable";
+        public override string BridgeClassName => "java.lang.Appendable";
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsInterface.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
         /// </summary>
-        public override bool IsInterface => true;
+        public override bool IsBridgeInterface => true;
         /// <summary>
         /// Closes this resource, relinquishing any underlying resources.
         /// </summary>

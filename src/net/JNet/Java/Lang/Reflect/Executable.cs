@@ -32,9 +32,9 @@ namespace Java.Lang.Reflect
     public class Executable : AccessibleObject
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "java.lang.reflect.Executable";
+        public override string BridgeClassName => "java.lang.reflect.Executable";
         /// <summary>
         /// Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the return type of the method/constructor represented by this <see cref="Executable"/>.
         /// </summary>

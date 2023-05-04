@@ -29,14 +29,14 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java LongConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java LongConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
     /// </summary>
     public class LongConsumer : Consumer<long>, ILongConsumer
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string ClassName => "org.mases.jnet.util.function.JNetLongConsumer";
+        public override string BridgeClassName => "org.mases.jnet.util.function.JNetLongConsumer";
 
         /// <inheritdoc cref="Consumer{Int64}"/>
         /// <param name="action">The <see cref="Action{Int64}"/> to be executed</param>

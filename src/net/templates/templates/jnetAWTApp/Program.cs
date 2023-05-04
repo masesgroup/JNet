@@ -64,13 +64,13 @@ namespace MASES.JNetTemplate.JNetAWTApp
 
                 dynamic buttonWrite = new Button("Write to console");
                 buttonWrite.setActionCommand("writeToConsole");
-                buttonWrite.addActionListener(listener.Instance);
+                buttonWrite.addActionListener(listener.BridgeInstance);
                 dynamic buttonClose = new Button("Close application");
                 buttonClose.setActionCommand("closeApplication");
-                buttonClose.addActionListener(listener.Instance);
+                buttonClose.addActionListener(listener.BridgeInstance);
                 dynamic panel = new Panel();
                 var layout = new GridLayout(1, 2);
-                panel.setLayout(layout.Instance);
+                panel.setLayout(layout.BridgeInstance);
 
                 panel.add(buttonWrite); // Adds Button to content pane of frame
                 panel.add(buttonClose); // Adds Button to content pane of frame
