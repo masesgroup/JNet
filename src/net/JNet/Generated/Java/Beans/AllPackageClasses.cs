@@ -961,7 +961,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html"/>
     /// </summary>
-    public partial class PropertyChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class PropertyChangeListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 
@@ -974,7 +974,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListenerProxy.html"/>
     /// </summary>
-    public partial class PropertyChangeListenerProxy : Java.Util.EventListenerProxy
+    public partial class PropertyChangeListenerProxy : Java.Util.EventListenerProxy<Java.Beans.PropertyChangeListener>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1377,7 +1377,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html"/>
     /// </summary>
-    public partial class VetoableChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class VetoableChangeListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 
@@ -1390,7 +1390,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListenerProxy.html"/>
     /// </summary>
-    public partial class VetoableChangeListenerProxy : Java.Util.EventListenerProxy
+    public partial class VetoableChangeListenerProxy : Java.Util.EventListenerProxy<Java.Beans.VetoableChangeListener>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

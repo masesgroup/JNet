@@ -115,7 +115,7 @@ namespace Javax.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html"/>
     /// </summary>
-    public partial class ConnectionEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ConnectionEventListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 
@@ -429,7 +429,7 @@ namespace Javax.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html"/>
     /// </summary>
-    public partial class RowSetListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class RowSetListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 
@@ -614,7 +614,7 @@ namespace Javax.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html"/>
     /// </summary>
-    public partial class StatementEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class StatementEventListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 

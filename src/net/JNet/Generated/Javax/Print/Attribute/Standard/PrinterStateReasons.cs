@@ -50,7 +50,7 @@ namespace Javax.Print.Attribute.Standard
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public PrinterStateReasons(Java.Util.Map arg0)
+        public PrinterStateReasons(Java.Util.Map<Javax.Print.Attribute.Standard.PrinterStateReason, Javax.Print.Attribute.Standard.Severity> arg0)
             : base(arg0)
         {
         }

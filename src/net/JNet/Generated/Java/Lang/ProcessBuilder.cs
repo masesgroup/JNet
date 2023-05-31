@@ -41,7 +41,7 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public ProcessBuilder(Java.Util.List arg0)
+        public ProcessBuilder(Java.Util.List<string> arg0)
             : base(arg0)
         {
         }

@@ -29,7 +29,7 @@ namespace Javax.Sound.Midi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html"/>
     /// </summary>
-    public partial class ControllerEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ControllerEventListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 
@@ -101,7 +101,7 @@ namespace Javax.Sound.Midi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html"/>
     /// </summary>
-    public partial class MetaEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class MetaEventListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 

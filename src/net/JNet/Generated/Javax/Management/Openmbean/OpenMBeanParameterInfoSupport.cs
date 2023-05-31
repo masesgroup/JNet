@@ -44,6 +44,19 @@ namespace Javax.Management.Openmbean
         {
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object,java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <param name="arg4"><see cref="object"/></param>
+        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        public OpenMBeanParameterInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenType arg2, object arg3, object[] arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>

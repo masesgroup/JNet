@@ -42,7 +42,7 @@ namespace Javax.Management.Relation
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public RoleList(Java.Util.List arg0)
+        public RoleList(Java.Util.List<Javax.Management.Relation.Role> arg0)
             : base(arg0)
         {
         }

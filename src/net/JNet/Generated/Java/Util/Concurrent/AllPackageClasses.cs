@@ -3441,7 +3441,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RecursiveAction.html"/>
     /// </summary>
-    public partial class RecursiveAction : Java.Util.Concurrent.ForkJoinTask
+    public partial class RecursiveAction : Java.Util.Concurrent.ForkJoinTask<Java.Lang.Void>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4511,7 +4511,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html"/>
     /// </summary>
-    public partial class TimeUnit : Java.Lang.Enum
+    public partial class TimeUnit : Java.Lang.Enum<Java.Util.Concurrent.TimeUnit>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

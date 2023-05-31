@@ -36,7 +36,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Lang.Comparable"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Comparable"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        public SpinnerDateModel(Java.Util.Date arg0, Java.Lang.Comparable arg1, Java.Lang.Comparable arg2, int arg3)
+        public SpinnerDateModel(Java.Util.Date arg0, Java.Lang.Comparable<Java.Util.Date> arg1, Java.Lang.Comparable<Java.Util.Date> arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }

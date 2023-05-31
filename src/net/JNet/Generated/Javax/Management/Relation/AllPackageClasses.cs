@@ -662,7 +662,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html"/>
     /// </summary>
-    public partial class RoleList : Java.Util.ArrayList
+    public partial class RoleList : Java.Util.ArrayList<object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -850,7 +850,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html"/>
     /// </summary>
-    public partial class RoleUnresolvedList : Java.Util.ArrayList
+    public partial class RoleUnresolvedList : Java.Util.ArrayList<object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

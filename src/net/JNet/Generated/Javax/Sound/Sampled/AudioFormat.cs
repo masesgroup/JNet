@@ -52,7 +52,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg5"><see cref="float"/></param>
         /// <param name="arg6"><see cref="bool"/></param>
         /// <param name="arg7"><see cref="Java.Util.Map"/></param>
-        public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map arg7)
+        public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6, Java.Util.Map<string, object> arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }

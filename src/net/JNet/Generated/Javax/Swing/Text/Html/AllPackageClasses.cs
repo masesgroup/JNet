@@ -197,7 +197,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html"/>
         /// </summary>
-        public partial class MethodType : Java.Lang.Enum
+        public partial class MethodType : Java.Lang.Enum<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

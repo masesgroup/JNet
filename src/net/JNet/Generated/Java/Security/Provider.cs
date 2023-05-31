@@ -116,7 +116,7 @@ namespace Java.Security
             /// <param name="arg3"><see cref="string"/></param>
             /// <param name="arg4"><see cref="Java.Util.List"/></param>
             /// <param name="arg5"><see cref="Java.Util.Map"/></param>
-            public Service(Java.Security.Provider arg0, string arg1, string arg2, string arg3, Java.Util.List arg4, Java.Util.Map arg5)
+            public Service(Java.Security.Provider arg0, string arg1, string arg2, string arg3, Java.Util.List<string> arg4, Java.Util.Map<string, string> arg5)
                 : base(arg0, arg1, arg2, arg3, arg4, arg5)
             {
             }

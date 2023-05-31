@@ -68,7 +68,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html"/>
         /// </summary>
-        public partial class Kind : Java.Lang.Enum
+        public partial class Kind : Java.Lang.Enum<Javax.Tools.Diagnostic.Kind>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -355,7 +355,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html"/>
         /// </summary>
-        public partial class Location : Java.Lang.Enum
+        public partial class Location : Java.Lang.Enum<Javax.Tools.DocumentationTool.Location>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -917,7 +917,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html"/>
         /// </summary>
-        public partial class Kind : Java.Lang.Enum
+        public partial class Kind : Java.Lang.Enum<Javax.Tools.JavaFileObject.Kind>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1136,7 +1136,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html"/>
     /// </summary>
-    public partial class StandardLocation : Java.Lang.Enum
+    public partial class StandardLocation : Java.Lang.Enum<Javax.Tools.StandardLocation>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

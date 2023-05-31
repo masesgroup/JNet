@@ -158,7 +158,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html"/>
     /// </summary>
-    public partial class AttributeList : Java.Util.ArrayList
+    public partial class AttributeList : Java.Util.ArrayList<object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1932,7 +1932,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html"/>
     /// </summary>
-    public partial class NotificationListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class NotificationListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 

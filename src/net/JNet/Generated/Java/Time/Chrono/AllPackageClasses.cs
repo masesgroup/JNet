@@ -416,7 +416,7 @@ namespace Java.Time.Chrono
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/HijrahEra.html"/>
     /// </summary>
-    public partial class HijrahEra : Java.Lang.Enum
+    public partial class HijrahEra : Java.Lang.Enum<Java.Time.Chrono.HijrahEra>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -502,7 +502,7 @@ namespace Java.Time.Chrono
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/IsoEra.html"/>
     /// </summary>
-    public partial class IsoEra : Java.Lang.Enum
+    public partial class IsoEra : Java.Lang.Enum<Java.Time.Chrono.IsoEra>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -760,7 +760,7 @@ namespace Java.Time.Chrono
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html"/>
     /// </summary>
-    public partial class MinguoEra : Java.Lang.Enum
+    public partial class MinguoEra : Java.Lang.Enum<Java.Time.Chrono.MinguoEra>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -889,7 +889,7 @@ namespace Java.Time.Chrono
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html"/>
     /// </summary>
-    public partial class ThaiBuddhistEra : Java.Lang.Enum
+    public partial class ThaiBuddhistEra : Java.Lang.Enum<Java.Time.Chrono.ThaiBuddhistEra>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

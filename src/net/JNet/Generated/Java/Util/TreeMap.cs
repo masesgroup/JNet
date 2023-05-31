@@ -302,7 +302,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#%3Cinit%3E(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        public TreeMap(Java.Util.Comparator arg0)
+        public TreeMap(Java.Util.Comparator<K> arg0)
             : base(arg0)
         {
         }
@@ -310,7 +310,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public TreeMap(Java.Util.Map arg0)
+        public TreeMap(Java.Util.Map<K, V> arg0)
             : base(arg0)
         {
         }
@@ -318,7 +318,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#%3Cinit%3E(java.util.SortedMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedMap"/></param>
-        public TreeMap(Java.Util.SortedMap arg0)
+        public TreeMap(Java.Util.SortedMap<K, V> arg0)
             : base(arg0)
         {
         }

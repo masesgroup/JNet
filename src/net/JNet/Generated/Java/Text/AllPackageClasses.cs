@@ -971,7 +971,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html"/>
         /// </summary>
-        public partial class Form : Java.Lang.Enum
+        public partial class Form : Java.Lang.Enum<Java.Text.Normalizer.Form>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

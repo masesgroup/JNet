@@ -561,7 +561,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html"/>
     /// </summary>
-    public partial class CryptoPrimitive : Java.Lang.Enum
+    public partial class CryptoPrimitive : Java.Lang.Enum<Java.Security.CryptoPrimitive>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -831,7 +831,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html"/>
         /// </summary>
-        public partial class Capability : Java.Lang.Enum
+        public partial class Capability : Java.Lang.Enum<Java.Security.DrbgParameters.Capability>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1486,7 +1486,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html"/>
         /// </summary>
-        public partial class Type : Java.Lang.Enum
+        public partial class Type : Java.Lang.Enum<Java.Security.KeyRep.Type>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -315,7 +315,7 @@ namespace Javax.Smartcardio
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html"/>
         /// </summary>
-        public partial class State : Java.Lang.Enum
+        public partial class State : Java.Lang.Enum<Javax.Smartcardio.CardTerminals.State>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -38,7 +38,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
         /// <param name="arg5"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
-        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.RejectedExecutionHandler arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
@@ -52,7 +52,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
         /// <param name="arg5"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
         /// <param name="arg6"><see cref="Java.Util.Concurrent.RejectedExecutionHandler"/></param>
-        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5, Java.Util.Concurrent.RejectedExecutionHandler arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
@@ -65,7 +65,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
         /// <param name="arg5"><see cref="Java.Util.Concurrent.ThreadFactory"/></param>
-        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4, Java.Util.Concurrent.ThreadFactory arg5)
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4, Java.Util.Concurrent.ThreadFactory arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
@@ -77,7 +77,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         /// <param name="arg4"><see cref="Java.Util.Concurrent.BlockingQueue"/></param>
-        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue arg4)
+        public ThreadPoolExecutor(int arg0, int arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3, Java.Util.Concurrent.BlockingQueue<Java.Lang.Runnable> arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }

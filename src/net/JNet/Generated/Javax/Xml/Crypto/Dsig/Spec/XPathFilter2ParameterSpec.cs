@@ -33,7 +33,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public XPathFilter2ParameterSpec(Java.Util.List arg0)
+        public XPathFilter2ParameterSpec(Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType> arg0)
             : base(arg0)
         {
         }

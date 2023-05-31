@@ -225,7 +225,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html"/>
             /// </summary>
-            public partial class Modifier : Java.Lang.Enum
+            public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>
             {
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -272,7 +272,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html"/>
         /// </summary>
-        public partial class Modifier : Java.Lang.Enum
+        public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -354,7 +354,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html"/>
             /// </summary>
-            public partial class Modifier : Java.Lang.Enum
+            public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>
             {
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -483,7 +483,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html"/>
             /// </summary>
-            public partial class Modifier : Java.Lang.Enum
+            public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>
             {
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

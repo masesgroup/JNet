@@ -702,7 +702,7 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html"/>
         /// </summary>
-        public partial class AccessMode : Java.Lang.Enum
+        public partial class AccessMode : Java.Lang.Enum<Java.Lang.Invoke.VarHandle.AccessMode>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

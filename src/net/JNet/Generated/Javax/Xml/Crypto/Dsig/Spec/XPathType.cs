@@ -35,7 +35,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        public XPathType(string arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1, Java.Util.Map arg2)
+        public XPathType(string arg0, Javax.Xml.Crypto.Dsig.Spec.XPathType.Filter arg1, Java.Util.Map<string, string> arg2)
             : base(arg0, arg1, arg2)
         {
         }

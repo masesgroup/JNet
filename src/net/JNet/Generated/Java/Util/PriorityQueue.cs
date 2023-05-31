@@ -125,7 +125,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
-        public PriorityQueue(int arg0, Java.Util.Comparator arg1)
+        public PriorityQueue(int arg0, Java.Util.Comparator<E> arg1)
             : base(arg0, arg1)
         {
         }
@@ -141,7 +141,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public PriorityQueue(Java.Util.Collection arg0)
+        public PriorityQueue(Java.Util.Collection<E> arg0)
             : base(arg0)
         {
         }
@@ -149,7 +149,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        public PriorityQueue(Java.Util.Comparator arg0)
+        public PriorityQueue(Java.Util.Comparator<E> arg0)
             : base(arg0)
         {
         }
@@ -157,7 +157,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.PriorityQueue)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.PriorityQueue"/></param>
-        public PriorityQueue(Java.Util.PriorityQueue arg0)
+        public PriorityQueue(Java.Util.PriorityQueue<E> arg0)
             : base(arg0)
         {
         }
@@ -165,7 +165,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#%3Cinit%3E(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
-        public PriorityQueue(Java.Util.SortedSet arg0)
+        public PriorityQueue(Java.Util.SortedSet<E> arg0)
             : base(arg0)
         {
         }

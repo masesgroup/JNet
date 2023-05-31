@@ -232,7 +232,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#%3Cinit%3E(java.util.Map.Entry)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
-            public SimpleEntry(Java.Util.Map.Entry arg0)
+            public SimpleEntry(Java.Util.Map.Entry<K, V> arg0)
                 : base(arg0)
             {
             }
@@ -386,7 +386,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#%3Cinit%3E(java.util.Map.Entry)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
-            public SimpleImmutableEntry(Java.Util.Map.Entry arg0)
+            public SimpleImmutableEntry(Java.Util.Map.Entry<K, V> arg0)
                 : base(arg0)
             {
             }

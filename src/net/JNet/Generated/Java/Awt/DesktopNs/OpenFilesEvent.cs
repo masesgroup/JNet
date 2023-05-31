@@ -34,7 +34,7 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        public OpenFilesEvent(Java.Util.List arg0, string arg1)
+        public OpenFilesEvent(Java.Util.List<Java.Io.File> arg0, string arg1)
             : base(arg0, arg1)
         {
         }

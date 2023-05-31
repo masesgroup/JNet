@@ -1519,7 +1519,7 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html"/>
         /// </summary>
-        public partial class Origin : Java.Lang.Enum
+        public partial class Origin : Java.Lang.Enum<Javax.Lang.Model.Util.Elements.Origin>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

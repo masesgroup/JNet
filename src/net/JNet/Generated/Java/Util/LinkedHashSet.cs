@@ -106,7 +106,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public LinkedHashSet(Java.Util.Collection arg0)
+        public LinkedHashSet(Java.Util.Collection<E> arg0)
             : base(arg0)
         {
         }

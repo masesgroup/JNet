@@ -36,7 +36,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg1"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
-        public AudioFileFormat(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2, Java.Util.Map arg3)
+        public AudioFileFormat(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioFormat arg1, int arg2, Java.Util.Map<string, object> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }

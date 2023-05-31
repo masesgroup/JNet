@@ -166,7 +166,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="Java.Util.Collection"/></param>
-        public ArrayBlockingQueue(int arg0, bool arg1, Java.Util.Collection arg2)
+        public ArrayBlockingQueue(int arg0, bool arg1, Java.Util.Collection<E> arg2)
             : base(arg0, arg1, arg2)
         {
         }

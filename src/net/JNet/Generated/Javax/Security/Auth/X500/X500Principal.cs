@@ -50,7 +50,7 @@ namespace Javax.Security.Auth.X500
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        public X500Principal(string arg0, Java.Util.Map arg1)
+        public X500Principal(string arg0, Java.Util.Map<string, string> arg1)
             : base(arg0, arg1)
         {
         }

@@ -156,7 +156,7 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html"/>
         /// </summary>
-        public partial class Characteristics : Java.Lang.Enum
+        public partial class Characteristics : Java.Lang.Enum<Java.Util.Stream.Collector.Characteristics>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

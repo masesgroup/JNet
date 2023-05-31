@@ -34,7 +34,7 @@ namespace Java.Security
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        public DomainLoadStoreParameter(Java.Net.URI arg0, Java.Util.Map arg1)
+        public DomainLoadStoreParameter(Java.Net.URI arg0, Java.Util.Map<string, Java.Security.KeyStore.ProtectionParameter> arg1)
             : base(arg0, arg1)
         {
         }

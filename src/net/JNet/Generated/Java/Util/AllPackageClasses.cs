@@ -2258,7 +2258,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html"/>
         /// </summary>
-        public partial class BigDecimalLayoutForm : Java.Lang.Enum
+        public partial class BigDecimalLayoutForm : Java.Lang.Enum<Java.Util.Formatter.BigDecimalLayoutForm>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3550,7 +3550,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html"/>
         /// </summary>
-        public partial class Category : Java.Lang.Enum
+        public partial class Category : Java.Lang.Enum<Java.Util.Locale.Category>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3593,7 +3593,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html"/>
         /// </summary>
-        public partial class FilteringMode : Java.Lang.Enum
+        public partial class FilteringMode : Java.Lang.Enum<Java.Util.Locale.FilteringMode>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3636,7 +3636,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html"/>
         /// </summary>
-        public partial class IsoCountryCode : Java.Lang.Enum
+        public partial class IsoCountryCode : Java.Lang.Enum<Java.Util.Locale.IsoCountryCode>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4747,7 +4747,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html"/>
     /// </summary>
-    public partial class Properties : Java.Util.Hashtable
+    public partial class Properties : Java.Util.Hashtable<object, object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

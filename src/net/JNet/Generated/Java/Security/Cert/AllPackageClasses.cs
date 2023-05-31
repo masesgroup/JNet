@@ -583,7 +583,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html"/>
         /// </summary>
-        public partial class BasicReason : Java.Lang.Enum
+        public partial class BasicReason : Java.Lang.Enum<Java.Security.Cert.CertPathValidatorException.BasicReason>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1049,7 +1049,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html"/>
     /// </summary>
-    public partial class CRLReason : Java.Lang.Enum
+    public partial class CRLReason : Java.Lang.Enum<Java.Security.Cert.CRLReason>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1436,7 +1436,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html"/>
     /// </summary>
-    public partial class PKIXReason : Java.Lang.Enum
+    public partial class PKIXReason : Java.Lang.Enum<Java.Security.Cert.PKIXReason>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1518,7 +1518,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html"/>
         /// </summary>
-        public partial class Option : Java.Lang.Enum
+        public partial class Option : Java.Lang.Enum<Java.Security.Cert.PKIXRevocationChecker.Option>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -917,7 +917,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html"/>
         /// </summary>
-        public partial class BaselineResizeBehavior : Java.Lang.Enum
+        public partial class BaselineResizeBehavior : Java.Lang.Enum<Java.Awt.Component.BaselineResizeBehavior>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1347,7 +1347,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html"/>
         /// </summary>
-        public partial class Action : Java.Lang.Enum
+        public partial class Action : Java.Lang.Enum<Java.Awt.Desktop.Action>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1433,7 +1433,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html"/>
         /// </summary>
-        public partial class ModalExclusionType : Java.Lang.Enum
+        public partial class ModalExclusionType : Java.Lang.Enum<Java.Awt.Dialog.ModalExclusionType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1476,7 +1476,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html"/>
         /// </summary>
-        public partial class ModalityType : Java.Lang.Enum
+        public partial class ModalityType : Java.Lang.Enum<Java.Awt.Dialog.ModalityType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2180,7 +2180,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsDevice.WindowTranslucency.html"/>
         /// </summary>
-        public partial class WindowTranslucency : Java.Lang.Enum
+        public partial class WindowTranslucency : Java.Lang.Enum<Java.Awt.GraphicsDevice.WindowTranslucency>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3631,7 +3631,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html"/>
         /// </summary>
-        public partial class ColorSpaceType : Java.Lang.Enum
+        public partial class ColorSpaceType : Java.Lang.Enum<Java.Awt.MultipleGradientPaint.ColorSpaceType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3674,7 +3674,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html"/>
         /// </summary>
-        public partial class CycleMethod : Java.Lang.Enum
+        public partial class CycleMethod : Java.Lang.Enum<Java.Awt.MultipleGradientPaint.CycleMethod>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5007,7 +5007,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html"/>
         /// </summary>
-        public partial class Feature : Java.Lang.Enum
+        public partial class Feature : Java.Lang.Enum<Java.Awt.Taskbar.Feature>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5050,7 +5050,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html"/>
         /// </summary>
-        public partial class State : Java.Lang.Enum
+        public partial class State : Java.Lang.Enum<Java.Awt.Taskbar.State>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5394,7 +5394,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html"/>
         /// </summary>
-        public partial class MessageType : Java.Lang.Enum
+        public partial class MessageType : Java.Lang.Enum<Java.Awt.TrayIcon.MessageType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5480,7 +5480,7 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html"/>
         /// </summary>
-        public partial class Type : Java.Lang.Enum
+        public partial class Type : Java.Lang.Enum<Java.Awt.Window.Type>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

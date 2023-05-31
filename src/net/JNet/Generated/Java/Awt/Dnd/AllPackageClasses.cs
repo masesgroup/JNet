@@ -158,7 +158,7 @@ namespace Java.Awt.Dnd
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html"/>
     /// </summary>
-    public partial class DragGestureListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DragGestureListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 
@@ -442,7 +442,7 @@ namespace Java.Awt.Dnd
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html"/>
     /// </summary>
-    public partial class DragSourceListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DragSourceListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 
@@ -455,7 +455,7 @@ namespace Java.Awt.Dnd
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html"/>
     /// </summary>
-    public partial class DragSourceMotionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DragSourceMotionListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 
@@ -696,7 +696,7 @@ namespace Java.Awt.Dnd
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html"/>
     /// </summary>
-    public partial class DropTargetListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DropTargetListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 

@@ -288,7 +288,7 @@ namespace Javax.Management.Openmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html"/>
     /// </summary>
-    public partial class CompositeType : Javax.Management.Openmbean.OpenType
+    public partial class CompositeType : Javax.Management.Openmbean.OpenType<Javax.Management.Openmbean.CompositeData>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1085,7 +1085,7 @@ namespace Javax.Management.Openmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularType.html"/>
     /// </summary>
-    public partial class TabularType : Javax.Management.Openmbean.OpenType
+    public partial class TabularType : Javax.Management.Openmbean.OpenType<Javax.Management.Openmbean.TabularData>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

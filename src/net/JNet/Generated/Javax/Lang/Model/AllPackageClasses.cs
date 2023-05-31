@@ -72,7 +72,7 @@ namespace Javax.Lang.Model
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html"/>
     /// </summary>
-    public partial class SourceVersion : Java.Lang.Enum
+    public partial class SourceVersion : Java.Lang.Enum<Javax.Lang.Model.SourceVersion>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

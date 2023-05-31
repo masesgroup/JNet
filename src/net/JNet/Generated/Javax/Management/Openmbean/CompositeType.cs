@@ -38,7 +38,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="Javax.Management.Openmbean.OpenType"/></param>
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
-        public CompositeType(string arg0, string arg1, string[] arg2, string[] arg3, Javax.Management.Openmbean.OpenType[] arg4)
+        public CompositeType(string arg0, string arg1, string[] arg2, string[] arg3, Javax.Management.Openmbean.OpenType arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }

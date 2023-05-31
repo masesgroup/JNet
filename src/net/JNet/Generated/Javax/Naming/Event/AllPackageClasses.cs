@@ -214,7 +214,7 @@ namespace Javax.Naming.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html"/>
     /// </summary>
-    public partial class NamingListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class NamingListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 

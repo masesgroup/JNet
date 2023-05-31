@@ -1639,7 +1639,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html"/>
     /// </summary>
-    public partial class DropMode : Java.Lang.Enum
+    public partial class DropMode : Java.Lang.Enum<Javax.Swing.DropMode>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1807,7 +1807,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html"/>
         /// </summary>
-        public partial class Alignment : Java.Lang.Enum
+        public partial class Alignment : Java.Lang.Enum<Javax.Swing.GroupLayout.Alignment>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4390,7 +4390,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html"/>
         /// </summary>
-        public partial class PrintMode : Java.Lang.Enum
+        public partial class PrintMode : Java.Lang.Enum<Javax.Swing.JTable.PrintMode>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5121,7 +5121,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html"/>
         /// </summary>
-        public partial class ComponentPlacement : Java.Lang.Enum
+        public partial class ComponentPlacement : Java.Lang.Enum<Javax.Swing.LayoutStyle.ComponentPlacement>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6071,7 +6071,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html"/>
         /// </summary>
-        public partial class ComparisonType : Java.Lang.Enum
+        public partial class ComparisonType : Java.Lang.Enum<Javax.Swing.RowFilter.ComparisonType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6725,7 +6725,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html"/>
     /// </summary>
-    public partial class SortOrder : Java.Lang.Enum
+    public partial class SortOrder : Java.Lang.Enum<Javax.Swing.SortOrder>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7237,7 +7237,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html"/>
         /// </summary>
-        public partial class StateValue : Java.Lang.Enum
+        public partial class StateValue : Java.Lang.Enum<Javax.Swing.SwingWorker.StateValue>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7544,7 +7544,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html"/>
     /// </summary>
-    public partial class UIDefaults : Java.Util.Hashtable
+    public partial class UIDefaults : Java.Util.Hashtable<object, object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -170,7 +170,7 @@ namespace Javax.Xml.Catalog
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html"/>
         /// </summary>
-        public partial class Feature : Java.Lang.Enum
+        public partial class Feature : Java.Lang.Enum<Javax.Xml.Catalog.CatalogFeatures.Feature>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -154,7 +154,7 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html"/>
         /// </summary>
-        public partial class XPathResultType : Java.Lang.Enum
+        public partial class XPathResultType : Java.Lang.Enum<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

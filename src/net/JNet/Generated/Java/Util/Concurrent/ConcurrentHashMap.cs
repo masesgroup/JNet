@@ -621,7 +621,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public ConcurrentHashMap(Java.Util.Map arg0)
+        public ConcurrentHashMap(Java.Util.Map<K, V> arg0)
             : base(arg0)
         {
         }

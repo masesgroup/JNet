@@ -174,7 +174,7 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ClientInfoStatus.html"/>
     /// </summary>
-    public partial class ClientInfoStatus : Java.Lang.Enum
+    public partial class ClientInfoStatus : Java.Lang.Enum<Java.Sql.ClientInfoStatus>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -620,7 +620,7 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html"/>
     /// </summary>
-    public partial class JDBCType : Java.Lang.Enum
+    public partial class JDBCType : Java.Lang.Enum<Java.Sql.JDBCType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -792,7 +792,7 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html"/>
     /// </summary>
-    public partial class PseudoColumnUsage : Java.Lang.Enum
+    public partial class PseudoColumnUsage : Java.Lang.Enum<Java.Sql.PseudoColumnUsage>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1007,7 +1007,7 @@ namespace Java.Sql
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html"/>
     /// </summary>
-    public partial class RowIdLifetime : Java.Lang.Enum
+    public partial class RowIdLifetime : Java.Lang.Enum<Java.Sql.RowIdLifetime>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

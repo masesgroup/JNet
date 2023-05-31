@@ -82,7 +82,7 @@ namespace Java.Lang.Ref
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Ref.ReferenceQueue"/></param>
-        public SoftReference(T arg0, Java.Lang.Ref.ReferenceQueue arg1)
+        public SoftReference(T arg0, Java.Lang.Ref.ReferenceQueue<T> arg1)
             : base(arg0, arg1)
         {
         }

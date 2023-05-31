@@ -842,7 +842,7 @@ namespace Java.Awt.DesktopNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitStrategy.html"/>
     /// </summary>
-    public partial class QuitStrategy : Java.Lang.Enum
+    public partial class QuitStrategy : Java.Lang.Enum<Java.Awt.DesktopNs.QuitStrategy>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -941,7 +941,7 @@ namespace Java.Awt.DesktopNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemEventListener.html"/>
     /// </summary>
-    public partial class SystemEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class SystemEventListener : Java.Util.EventListener
     {
     #warning Remember to build the body class for event listener
 
@@ -1049,7 +1049,7 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html"/>
         /// </summary>
-        public partial class Reason : Java.Lang.Enum
+        public partial class Reason : Java.Lang.Enum<Java.Awt.DesktopNs.UserSessionEvent.Reason>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

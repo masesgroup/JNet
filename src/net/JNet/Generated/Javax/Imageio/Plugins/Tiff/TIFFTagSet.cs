@@ -33,7 +33,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public TIFFTagSet(Java.Util.List arg0)
+        public TIFFTagSet(Java.Util.List<Javax.Imageio.Plugins.Tiff.TIFFTag> arg0)
             : base(arg0)
         {
         }

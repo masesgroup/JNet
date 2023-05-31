@@ -68,7 +68,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html"/>
         /// </summary>
-        public partial class RequestorType : Java.Lang.Enum
+        public partial class RequestorType : Java.Lang.Enum<Java.Net.Authenticator.RequestorType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1427,7 +1427,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html"/>
         /// </summary>
-        public partial class Type : Java.Lang.Enum
+        public partial class Type : Java.Lang.Enum<Java.Net.Proxy.Type>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2023,7 +2023,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html"/>
     /// </summary>
-    public partial class StandardProtocolFamily : Java.Lang.Enum
+    public partial class StandardProtocolFamily : Java.Lang.Enum<Java.Net.StandardProtocolFamily>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -45,7 +45,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html"/>
     /// </summary>
-    public partial class AccessMode : Java.Lang.Enum
+    public partial class AccessMode : Java.Lang.Enum<Java.Nio.File.AccessMode>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -653,7 +653,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html"/>
     /// </summary>
-    public partial class FileVisitOption : Java.Lang.Enum
+    public partial class FileVisitOption : Java.Lang.Enum<Java.Nio.File.FileVisitOption>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -783,7 +783,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html"/>
     /// </summary>
-    public partial class FileVisitResult : Java.Lang.Enum
+    public partial class FileVisitResult : Java.Lang.Enum<Java.Nio.File.FileVisitResult>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -842,7 +842,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html"/>
     /// </summary>
-    public partial class LinkOption : Java.Lang.Enum
+    public partial class LinkOption : Java.Lang.Enum<Java.Nio.File.LinkOption>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1370,7 +1370,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html"/>
     /// </summary>
-    public partial class StandardCopyOption : Java.Lang.Enum
+    public partial class StandardCopyOption : Java.Lang.Enum<Java.Nio.File.StandardCopyOption>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1413,7 +1413,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html"/>
     /// </summary>
-    public partial class StandardOpenOption : Java.Lang.Enum
+    public partial class StandardOpenOption : Java.Lang.Enum<Java.Nio.File.StandardOpenOption>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

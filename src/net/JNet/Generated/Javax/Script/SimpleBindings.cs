@@ -33,7 +33,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public SimpleBindings(Java.Util.Map arg0)
+        public SimpleBindings(Java.Util.Map<string, object> arg0)
             : base(arg0)
         {
         }

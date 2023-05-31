@@ -711,7 +711,7 @@ namespace Java.Security
             /// <param name="arg0"><see cref="Java.Security.PrivateKey"/></param>
             /// <param name="arg1"><see cref="Java.Security.Cert.Certificate"/></param>
             /// <param name="arg2"><see cref="Java.Util.Set"/></param>
-            public PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1, Java.Util.Set arg2)
+            public PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1, Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> arg2)
                 : base(arg0, arg1, arg2)
             {
             }
@@ -819,7 +819,7 @@ namespace Java.Security
             /// </summary>
             /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
             /// <param name="arg1"><see cref="Java.Util.Set"/></param>
-            public SecretKeyEntry(Javax.Crypto.SecretKey arg0, Java.Util.Set arg1)
+            public SecretKeyEntry(Javax.Crypto.SecretKey arg0, Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> arg1)
                 : base(arg0, arg1)
             {
             }
@@ -881,7 +881,7 @@ namespace Java.Security
             /// </summary>
             /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
             /// <param name="arg1"><see cref="Java.Util.Set"/></param>
-            public TrustedCertificateEntry(Java.Security.Cert.Certificate arg0, Java.Util.Set arg1)
+            public TrustedCertificateEntry(Java.Security.Cert.Certificate arg0, Java.Util.Set<Java.Security.KeyStore.Entry.Attribute> arg1)
                 : base(arg0, arg1)
             {
             }

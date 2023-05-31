@@ -41,10 +41,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.EventListenerProxy"/> to <see cref="Java.Util.EventListener"/>
-        /// </summary>
-        public static implicit operator Java.Util.EventListener(Java.Util.EventListenerProxy t) => t.Cast<Java.Util.EventListener>();
 
         #endregion
 
@@ -91,10 +87,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.EventListenerProxy{T}"/> to <see cref="Java.Util.EventListener"/>
-        /// </summary>
-        public static implicit operator Java.Util.EventListener(Java.Util.EventListenerProxy<T> t) => t.Cast<Java.Util.EventListener>();
         /// <summary>
         /// Converter from <see cref="Java.Util.EventListenerProxy{T}"/> to <see cref="Java.Util.EventListenerProxy"/>
         /// </summary>

@@ -448,7 +448,7 @@ namespace Javax.Lang.Model.Type
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html"/>
     /// </summary>
-    public partial class TypeKind : Java.Lang.Enum
+    public partial class TypeKind : Java.Lang.Enum<Javax.Lang.Model.Type.TypeKind>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

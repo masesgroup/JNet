@@ -326,7 +326,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html"/>
         /// </summary>
-        public partial class UnicodeScript : Java.Lang.Enum
+        public partial class UnicodeScript : Java.Lang.Enum<Java.Lang.Character.UnicodeScript>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1779,7 +1779,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html"/>
             /// </summary>
-            public partial class Type : Java.Lang.Enum
+            public partial class Type : Java.Lang.Enum<Java.Lang.ProcessBuilder.Redirect.Type>
             {
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2342,7 +2342,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html"/>
         /// </summary>
-        public partial class Option : Java.Lang.Enum
+        public partial class Option : Java.Lang.Enum<Java.Lang.StackWalker.Option>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2725,7 +2725,7 @@ namespace Java.Lang
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html"/>
             /// </summary>
-            public partial class Level : Java.Lang.Enum
+            public partial class Level : Java.Lang.Enum<Java.Lang.System.Logger.Level>
             {
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2858,7 +2858,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html"/>
         /// </summary>
-        public partial class State : Java.Lang.Enum
+        public partial class State : Java.Lang.Enum<Java.Lang.Thread.State>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

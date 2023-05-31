@@ -158,7 +158,7 @@ namespace Java.Math
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html"/>
     /// </summary>
-    public partial class RoundingMode : Java.Lang.Enum
+    public partial class RoundingMode : Java.Lang.Enum<Java.Math.RoundingMode>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

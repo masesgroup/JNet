@@ -246,7 +246,7 @@ namespace Javax.Lang.Model.Element
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html"/>
     /// </summary>
-    public partial class ElementKind : Java.Lang.Enum
+    public partial class ElementKind : Java.Lang.Enum<Javax.Lang.Model.Element.ElementKind>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -420,7 +420,7 @@ namespace Javax.Lang.Model.Element
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html"/>
     /// </summary>
-    public partial class Modifier : Java.Lang.Enum
+    public partial class Modifier : Java.Lang.Enum<Javax.Lang.Model.Element.Modifier>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -545,7 +545,7 @@ namespace Javax.Lang.Model.Element
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html"/>
         /// </summary>
-        public partial class DirectiveKind : Java.Lang.Enum
+        public partial class DirectiveKind : Java.Lang.Enum<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -938,7 +938,7 @@ namespace Javax.Lang.Model.Element
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html"/>
     /// </summary>
-    public partial class NestingKind : Java.Lang.Enum
+    public partial class NestingKind : Java.Lang.Enum<Javax.Lang.Model.Element.NestingKind>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

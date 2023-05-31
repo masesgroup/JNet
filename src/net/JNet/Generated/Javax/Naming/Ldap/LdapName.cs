@@ -42,7 +42,7 @@ namespace Javax.Naming.Ldap
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public LdapName(Java.Util.List arg0)
+        public LdapName(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
             : base(arg0)
         {
         }
