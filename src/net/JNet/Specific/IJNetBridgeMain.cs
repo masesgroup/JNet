@@ -16,10 +16,13 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Util
+namespace MASES.JNet.Specific
 {
-    public partial class HashMap<K, V>
+    /// <summary>
+    /// Public interface to identify a class which is a Main-Class
+    /// </summary>
+    /// <remarks>Used from JNetReflector to mark a type to be identified as a Main-Class</remarks>
+    public interface IJNetBridgeMain
     {
-
     }
 }

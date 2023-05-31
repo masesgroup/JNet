@@ -116,6 +116,7 @@
     <Compile Include="..\JNet\Java\Util\Collection.cs" Link="Java\Util\Collection.cs" />
     <Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
     <Compile Include="..\JNet\Specific\AsyncEnumerable.cs" Link="Specific\AsyncEnumerable.cs" />
+    <Compile Include="..\JNet\Specific\IJNetBridgeMain.cs" Link="Specific\IJNetBridgeMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />

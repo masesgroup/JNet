@@ -16,10 +16,12 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
-    public partial class HashMap<K, V>
+    public partial class EventListener
     {
-
+        // can be extended with methods not reflected or not available in Java;
     }
 }

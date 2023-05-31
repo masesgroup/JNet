@@ -54,6 +54,14 @@ namespace Java.Lang
     public class Enum<E> : Enum where E : Enum<E>
     {
         /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Enum() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Enum(params object[] args) : base(args) { }
+        /// <summary>
         /// Compares this enum with the specified object for order.
         /// </summary>
         public int CompareTo(E o) => IExecute<int>("compareTo", o);

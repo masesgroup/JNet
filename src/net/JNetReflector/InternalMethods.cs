@@ -525,12 +525,8 @@ namespace MASES.JNetReflector
             if (!jClassIsListener)
             {
                 methodPrefilter = jClass.PrefilterMethods(isGeneric, out isMainClass);
-                if (isMainClass)
-                {
-                    template = Template.GetTemplate(Template.AllPackageClassesStubClassMainClassTemplate);
-                }
             }
-            bool classCantBeAnalyzed = jClassIsListener || isMainClass;
+            bool classCantBeAnalyzed = jClassIsListener;
 
             ReportTrace(ReflectionTraceLevel.Debug, "Preparing nested class {0}", jClass.GenericString);
 
@@ -592,7 +588,7 @@ namespace MASES.JNetReflector
                                                 .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(genClause, false))
                                                 .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(genClause, isGeneric))
                                                 .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
-                                                .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel))
+                                                .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel) + (isMainClass ? SpecialNames.MainClassPlaceHolder : string.Empty))
                                                 .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric, JNetReflectorCore.UseCamel))
                                                 .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
                                                 .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
@@ -627,6 +623,11 @@ namespace MASES.JNetReflector
         static string AnalyzeConstructors(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric, bool isNested)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Constructors of {0} *******************", classDefinition.GenericString);
+
+            if (!JNetReflectorCore.DisableGenericsInNonGenericClasses && !JNetReflectorCore.DisableGenerics && !classDefinition.IsJVMGenericClass())
+            {
+                isGeneric = true; // force generic to true to build generic constructors on classes that does not have generics
+            }
 
             var singleConstructorTemplate = Template.GetTemplate(Template.SingleConstructorTemplate);
 
@@ -678,7 +679,7 @@ namespace MASES.JNetReflector
                     List<KeyValuePair<string, string>> genClauseLocal = new List<KeyValuePair<string, string>>();
                     if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
                     if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
-                    if (parameter.Type(genArgumentsLocal, genClauseLocal, string.Empty, isGeneric, JNetReflectorCore.UseCamel) == "object[]") { bypass = true; break; }
+                    if (parameter.Type(genArgumentsLocal, genClauseLocal, isGeneric ? null : string.Empty, isGeneric, JNetReflectorCore.UseCamel) == "object[]") { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
                         parameters.Add(parameter);
@@ -710,14 +711,25 @@ namespace MASES.JNetReflector
                 {
                     List<string> paramGenArguments = new List<string>();
                     List<KeyValuePair<string, string>> paramGenClause = new List<KeyValuePair<string, string>>();
-                    var typeStr = item.Type(paramGenArguments, paramGenClause, item.Name().Camel(), isGeneric, JNetReflectorCore.UseCamel);
+                    var typeStr = item.Type(paramGenArguments, paramGenClause, isGeneric ? null : item.Name().Camel(), isGeneric, JNetReflectorCore.UseCamel);
                     var typeStrForDoc = typeStr.Contains('<') ? typeStr.Substring(0, typeStr.IndexOf('<')) : typeStr;
                     if (isGeneric && paramGenArguments.Count != 0 && classGenerics != null)
                     {
                         bool usableGenStrings = true;
                         foreach (var genString in paramGenArguments)
                         {
-                            if (!classGenerics.Contains(genString)) usableGenStrings = false;
+                            if (!classGenerics.Contains(genString))
+                            {
+                                usableGenStrings = false; // avoid generics in parameter type
+                                if (typeStr == genString)
+                                {
+                                    typeStrForDoc = SpecialNames.NetObject;
+                                }
+                                if (typeStr == genString + SpecialNames.ArrayTypeTrailer)
+                                {
+                                    typeStrForDoc = SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer;
+                                }
+                            }
                         }
                         if (typeStr.StartsWith(SpecialNames.JavaLangClass))
                         {
@@ -928,8 +940,6 @@ namespace MASES.JNetReflector
                 if (methodNameOrigin == "main" && method.IsStatic())
                 {
                     isMainClass = true;
-                    prefilteredMethods.Clear();
-                    return prefilteredMethods;
                 }
 
                 if (paramCount == 0 && !method.IsVoid() &&
@@ -1236,7 +1246,7 @@ namespace MASES.JNetReflector
                 genericClauses.AddRange(retGenClause);
                 string methodName = method.MethodName(classDefinitions, false, JNetReflectorCore.UseCamel);
 
-                if (methodName == "Clone" && returnType == "object") continue;
+                if (methodName == "Clone" && returnType == SpecialNames.NetObject) continue;
                 if (methodName == "Dispose") modifier = " new" + modifier; // avoids warning for override
                 if (returnType.StartsWith(SpecialNames.JavaLangClass))
                 {

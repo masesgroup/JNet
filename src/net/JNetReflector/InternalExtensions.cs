@@ -597,7 +597,7 @@ namespace MASES.JNetReflector
                 foreach (var bound in entry.Bounds)
                 {
                     var result = ToNetType(bound.TypeName, false, camel);
-                    if (!(result == "object" || result == "object[]"
+                    if (!(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
                         || result.Contains("?"))) // type used in Java to define any-type
                     {
                         bounds.Add(result);
@@ -867,6 +867,11 @@ namespace MASES.JNetReflector
                         // if there is single super interface Collection use it as superclass, it will be avoided in operators
                         return false;
                     }
+                    else if (entry.Interfaces.Length == 1 && entry.Interfaces[0].IsEventListener())
+                    {
+                        // if there is single super interface Collection use it as superclass, it will be avoided in operators
+                        return false;
+                    }
                     else
                     {
                         return true;
@@ -886,7 +891,14 @@ namespace MASES.JNetReflector
 
         public static string JVMBaseClassName(this Class entry, bool usedInGenerics, bool isListener, bool camel)
         {
-            if (isListener) return "MASES.JCOBridge.C2JBridge.JVMBridgeListener";
+            if (isListener)
+            {
+                if (entry.ContainsEventListener())
+                {
+                    return "Java.Util.EventListener";
+                }
+                return "MASES.JCOBridge.C2JBridge.JVMBridgeListener";
+            }
             try
             {
                 var superCls = entry.SuperClass;
@@ -934,7 +946,7 @@ namespace MASES.JNetReflector
                         return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
                     }
                 }
-                else if (usedInGenerics && superCls.IsJVMGenericClass())
+                else if ((usedInGenerics || !entry.IsJVMGenericClass()) && superCls.IsJVMGenericClass())
                 {
                     return entry.GenericSuperClass.ApplyGenerics(null, null, null, true, camel);
                 }
@@ -1045,6 +1057,29 @@ namespace MASES.JNetReflector
             foreach (var item in entry.Interfaces) // or implemented interfaces contains iterbale
             {
                 if (item.IsIterable())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static bool IsEventListener(this Class entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            if (entry.TypeName.StartsWith(SpecialNames.JavaUtilEventListener)) // direct name is EventListener
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool ContainsEventListener(this Class entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            foreach (var item in entry.Interfaces) // or implemented interfaces contains java.util.EventListener
+            {
+                if (item.IsEventListener())
                 {
                     return true;
                 }
@@ -1632,7 +1667,7 @@ namespace MASES.JNetReflector
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             if (!usedInGenerics || !entry.GenericReturnType.IsGenerics())
             {
-                return entry.ReturnType.ToNetType(camel) == "object";
+                return entry.ReturnType.ToNetType(camel) == SpecialNames.NetObject;
             }
             else return false;
         }
@@ -1642,7 +1677,7 @@ namespace MASES.JNetReflector
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             if (!usedInGenerics || !entry.GenericReturnType.IsGenerics())
             {
-                return entry.ReturnType.ToNetType(camel) == "object[]";
+                return entry.ReturnType.ToNetType(camel) == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer);
             }
             else return false;
         }
@@ -1800,7 +1835,7 @@ namespace MASES.JNetReflector
         public static bool IsObjectReturnType(this Field entry, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
-            return entry.Type.ToNetType(camel) == "object";
+            return entry.Type.ToNetType(camel) == SpecialNames.NetObject;
         }
 
         public static string JavadocUrl(this Field entry, bool camel)
@@ -1871,7 +1906,9 @@ namespace MASES.JNetReflector
         public static string Name(this Parameter entry)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
-            return entry.Name.Replace(SpecialNames.NestedClassSeparator, '_');
+            var cName = entry.Name.Replace(SpecialNames.NestedClassSeparator, '_');
+            if (SpecialNames.ReservedLanguageNames.Any((n) => cName.Equals(n))) cName = "_" + cName;
+            return cName;
         }
 
         public static string Type(this Parameter entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool usedInGenerics, bool camel)
@@ -1884,7 +1921,7 @@ namespace MASES.JNetReflector
             else
             {
                 var entryType = entry.Type.ToNetType(camel);
-                if (entry.ParameterizedType.IsGenerics() && (entryType == "object" || entryType == "object[]"))
+                if (entry.ParameterizedType.IsGenerics() && (entryType == SpecialNames.NetObject || entryType == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)))
                 {
                     var retVal = entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, camel);
                     //var retVal = genArguments.ConvertGenerics();
@@ -1900,7 +1937,7 @@ namespace MASES.JNetReflector
         public static bool IsObjectType(this Parameter entry, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
-            return entry.Type.ToNetType(camel) == "object";
+            return entry.Type.ToNetType(camel) == SpecialNames.NetObject;
         }
 
         #endregion

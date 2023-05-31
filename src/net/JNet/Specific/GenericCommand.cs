@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace MASES.JNet
+namespace MASES.JNet.Specific
 {
     /// <summary>
     /// Generic class to launch a main method in a Java class

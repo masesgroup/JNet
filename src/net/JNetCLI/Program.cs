@@ -18,6 +18,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
+using MASES.JNet.Specific;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
 using System;
