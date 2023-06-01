@@ -162,6 +162,8 @@ namespace MASES.JNetReflector
         {
             List<string> lst = new List<string>();
             lst.Add("clone");
+            lst.Add("build");
+            lst.Add("create");
             return lst;
         }
 
@@ -177,6 +179,8 @@ namespace MASES.JNetReflector
             lst.Add("interface");
             lst.Add("class");
             lst.Add("enum");
+            lst.Add("namespace");
+            lst.Add("where");
             return lst;
         }
 
