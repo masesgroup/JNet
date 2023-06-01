@@ -196,11 +196,13 @@ namespace Java.Net.Http
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#build()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#build()"/>
             /// </summary>
-            public Java.Net.Http.HttpClient Build
+
+            /// <returns><see cref="Java.Net.Http.HttpClient"/></returns>
+            public Java.Net.Http.HttpClient Build()
             {
-                get { return IExecute<Java.Net.Http.HttpClient>("build"); }
+                return IExecute<Java.Net.Http.HttpClient>("build");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Builder.html#authenticator(java.net.Authenticator)"/>

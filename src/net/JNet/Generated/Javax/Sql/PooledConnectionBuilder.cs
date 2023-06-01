@@ -46,11 +46,14 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#build()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#build()"/>
         /// </summary>
-        public Javax.Sql.PooledConnection Build
+
+        /// <returns><see cref="Javax.Sql.PooledConnection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Javax.Sql.PooledConnection Build()
         {
-            get { return IExecute<Javax.Sql.PooledConnection>("build"); }
+            return IExecute<Javax.Sql.PooledConnection>("build");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#password(java.lang.String)"/>

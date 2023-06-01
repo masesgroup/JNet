@@ -46,11 +46,14 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#build()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#build()"/>
         /// </summary>
-        public Javax.Sql.XAConnection Build
+
+        /// <returns><see cref="Javax.Sql.XAConnection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Javax.Sql.XAConnection Build()
         {
-            get { return IExecute<Javax.Sql.XAConnection>("build"); }
+            return IExecute<Javax.Sql.XAConnection>("build");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#password(java.lang.String)"/>

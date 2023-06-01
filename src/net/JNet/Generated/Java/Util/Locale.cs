@@ -509,13 +509,6 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#build()"/> 
-            /// </summary>
-            public Java.Util.Locale Build
-            {
-                get { return IExecute<Java.Util.Locale>("build"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#clear()"/> 
             /// </summary>
             public Java.Util.Locale.Builder Clear
@@ -528,6 +521,15 @@ namespace Java.Util
             public Java.Util.Locale.Builder ClearExtensions
             {
                 get { return IExecute<Java.Util.Locale.Builder>("clearExtensions"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#build()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Util.Locale"/></returns>
+            public Java.Util.Locale Build()
+            {
+                return IExecute<Java.Util.Locale>("build");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html#addUnicodeLocaleAttribute(java.lang.String)"/>

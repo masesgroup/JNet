@@ -256,13 +256,6 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#build()"/> 
-            /// </summary>
-            public Java.Util.Optional<int?> Build
-            {
-                get { return IExecute<Java.Util.Optional<int?>>("build"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#feature()"/> 
             /// </summary>
             public int Feature
@@ -348,6 +341,15 @@ namespace Java.Lang
             public Java.Util.List<int?> VersionMethod()
             {
                 return IExecute<Java.Util.List<int?>>("version");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#build()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Util.Optional"/></returns>
+            public Java.Util.Optional<int?> Build()
+            {
+                return IExecute<Java.Util.Optional<int?>>("build");
             }
 
             #endregion

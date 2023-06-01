@@ -277,11 +277,13 @@ namespace Java.Lang.ModuleNs
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#build()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#build()"/>
             /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor Build
+
+            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor Build()
             {
-                get { return IExecute<Java.Lang.ModuleNs.ModuleDescriptor>("build"); }
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor>("build");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.lang.module.ModuleDescriptor.Exports)"/>
