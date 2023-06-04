@@ -104,6 +104,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
+                        Name = CLIParam.ClassesInConflict,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of classes in conflict with namespace name: to this one will be added an \"Class\" at the end",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
                         Name = CLIParam.NamespacesToAvoid,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of namespaces to be removed during analysis",
@@ -232,6 +238,9 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _NamespacesInConflict;
         public static IEnumerable<string> NamespacesInConflict => _NamespacesInConflict;
 
+        static IEnumerable<string> _ClassesInConflict;
+        public static IEnumerable<string> ClassesInConflict => _ClassesInConflict;
+
         static IEnumerable<string> _NamespacesToAvoid;
         public static IEnumerable<string> NamespacesToAvoid => _NamespacesToAvoid;
 
@@ -333,7 +342,7 @@ namespace MASES.JNetReflector
                     jarURLsToAnaylyze.Add((version, url));
                 }
                 _OriginJavadocJARVersionAndUrls = jarURLsToAnaylyze;
-                if (_JarsToAnalyze.Count() != _OriginJavadocJARVersionAndUrls.Count())
+                if (_JarsToAnalyze?.Count() != _OriginJavadocJARVersionAndUrls.Count())
                     throw new System.InvalidOperationException("Number of entries in OriginJavadocJARVersionAndUrls shall be equal to the number of JarList");
             }
 
@@ -358,6 +367,17 @@ namespace MASES.JNetReflector
                 }
             }
             _NamespacesInConflict = namespacesInConflict;
+
+            List<string> classesInConflict = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesInConflict))
+            {
+                var namespaces = ParsedArgs.Get<string>(CLIParam.ClassesInConflict).Split(',', ';');
+                foreach (var item in namespaces.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
+                {
+                    if (!classesInConflict.Contains(item)) classesInConflict.Add(item);
+                }
+            }
+            _ClassesInConflict = classesInConflict;
 
             List<string> namespacesToAvoid = new List<string>();
             if (ParsedArgs.Exist(CLIParam.NamespacesToAvoid))

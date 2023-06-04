@@ -132,7 +132,8 @@ namespace MASES.JNetReflector
         public static string JVMSimpleClassName(this string entry)
         {
             var cName = entry.Remove(0, entry.LastIndexOf(SpecialNames.NamespaceSeparator) + 1);
-            return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
+            cName = cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
+            return cName;
         }
 
         public static string Namespace(string fullName, bool camel)
@@ -173,6 +174,31 @@ namespace MASES.JNetReflector
             {
                 return canonicalName.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
             }
+        }
+
+        static string ConvertClassesInConflict(this string fName)
+        {
+            string nName = string.Empty;
+            string cName = string.Empty;
+            if (fName.Contains(SpecialNames.NamespaceSeparator))
+            {
+                var index = fName.LastIndexOf(SpecialNames.NamespaceSeparator);
+                nName = fName.Substring(0, index);
+                cName = fName.Substring(index + 1);
+            }
+            else
+            {
+                cName = fName;
+            }
+            foreach (var cic in JNetReflectorCore.ClassesInConflict)
+            {
+                if (cName == cic)
+                {
+                    cName += "Class";
+                    break;
+                }
+            }
+            return string.IsNullOrEmpty(nName) ? cName : nName + SpecialNames.NamespaceSeparator + cName;
         }
 
         public static string AddTabLevel(this string origin, int level)
@@ -365,9 +391,22 @@ namespace MASES.JNetReflector
                 List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
                 clazz.GetGenerics(classArguments, classClauses, string.Empty, JNetReflectorCore.UseCamel);
                 int classNeedsConstraints = 0;
-                foreach (var item in classClauses)
+                foreach (var classClause in classClauses)
                 {
-                    if (!string.IsNullOrWhiteSpace(item.Value)) { classNeedsConstraints++; }
+                    if (genClauses != null)
+                    {
+                        foreach (var genClause in genClauses)
+                        {
+                            if (classClause.Key == genClause.Key && !string.IsNullOrWhiteSpace(classClause.Value))
+                            {
+                                classNeedsConstraints++;
+                            }
+                        }
+                    }
+                    else if (!string.IsNullOrWhiteSpace(classClause.Value))
+                    {
+                        classNeedsConstraints++;
+                    }
                 }
                 if (classNeedsConstraints > 0) // the return class have some constraint
                 {
@@ -777,6 +816,7 @@ namespace MASES.JNetReflector
             if (entry.IsJVMNestedClass()) return entry.JVMNestedClassName(entry.JVMNestingLevels(), genClause, usedInGenerics);
             var cName = entry.SimpleName;
             cName = cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
+            cName = cName.ConvertClassesInConflict();
             if (usedInGenerics) cName = entry.ApplyGenerics(genClause, usedInGenerics, cName);
             return cName;
         }
@@ -795,6 +835,7 @@ namespace MASES.JNetReflector
                 var names = cName.Split(SpecialNames.NestedClassSeparator);
                 cName = names[nestingLevel];
             }
+            cName = cName.ConvertClassesInConflict();
             if (!onlyName) cName = entry.ApplyGenerics(genClause, usedInGenerics, cName);
             return cName;
         }
@@ -1323,7 +1364,10 @@ namespace MASES.JNetReflector
                 case "java.lang.Object":
                     return "object";
                 default:
-                    return ToFullQualifiedClassName(typeName, camel);
+                    {
+                        var fName = ToFullQualifiedClassName(typeName, camel);
+                        return fName.ConvertClassesInConflict();
+                    }
             }
         }
 

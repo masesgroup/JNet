@@ -21,7 +21,6 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Reflection;
-using MASES.JCOBridge.C2JBridge;
 
 namespace MASES.JNetReflector
 {
@@ -38,6 +37,7 @@ namespace MASES.JNetReflector
         public const string ModulesToParse = "ModulesToParse";
         public const string ClassesToBeListener = "ClassesToBeListener";
         public const string NamespacesInConflict = "NamespacesInConflict";
+        public const string ClassesInConflict = "ClassesInConflict";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string ClassesToAvoid = "ClassesToAvoid";
         public const string ClassesToAvoidInGenerics = "ClassesToAvoidInGenerics";

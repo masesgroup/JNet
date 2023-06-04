@@ -53,6 +53,7 @@
     <Compile Include="..\JNet\Java\Lang\ClassNotFoundException.cs" Link="Java\Lang\ClassNotFoundException.cs" />
     <Compile Include="..\JNet\Java\Lang\ClassValue.cs" Link="Java\Lang\ClassValue.cs" />
     <Compile Include="..\JNet\Java\Lang\CloneNotSupportedException.cs" Link="Java\Lang\CloneNotSupportedException.cs" />
+    <Compile Include="..\JNet\Java\Lang\Enum.cs" Link="Java\Lang\Enum.cs" />
     <Compile Include="..\JNet\Java\Lang\EnumConstantNotPresentException.cs" Link="Java\Lang\EnumConstantNotPresentException.cs" />
     <Compile Include="..\JNet\Java\Lang\Error.cs" Link="Java\Lang\Error.cs" />
     <Compile Include="..\JNet\Java\Lang\Exception.cs" Link="Java\Lang\Exception.cs" />
