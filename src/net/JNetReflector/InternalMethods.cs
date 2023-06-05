@@ -29,11 +29,15 @@ using Org.Mases.Jnet;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Collections.Concurrent;
 
 namespace MASES.JNetReflector
 {
     static class ReflectionUtils
     {
+        static object _allPackagesLock = new object();
+        static Dictionary<string, string> _allPackages = new Dictionary<string, string>();
+
         public enum ReflectionTraceLevel
         {
             Critical,
@@ -101,6 +105,18 @@ namespace MASES.JNetReflector
             }
             else throw new ArgumentException("At least one of ClassesToAnaylyze, NamespacesToParse or OriginRootPath must be set");
             w.Stop();
+
+            if (JNetReflectorCore.JarsToAnalyze != null)
+            {
+                foreach (var item in _allPackages)
+                {
+                    var packageContent = File.ReadAllText(item.Key);
+                    var itemPackage = packageContent.Replace(AllPackageClasses.CLASSES, string.Empty);
+
+                    WriteFile(item.Key, itemPackage);
+                }
+            }
+
             Console.WriteLine();
             Console.WriteLine($"Operation completed in {w.Elapsed}. Namespaces: {namespaces} - Classes: {classes}");
         }
@@ -289,13 +305,41 @@ namespace MASES.JNetReflector
                 }
             }
 
-            var itemPackage = allPackageClasses.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
-                                               .Replace(AllPackageClasses.JAR, jarOrModuleName)
-                                               .Replace(AllPackageClasses.NAMESPACE, package)
-                                               .Replace(AllPackageClasses.CLASSES, sb.ToString());
-
             var path = Path.Combine(JNetReflectorCore.DestinationRootPath, package.Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), "AllPackageClasses.cs");
-            WriteFile(path, itemPackage);
+            if (JNetReflectorCore.JarsToAnalyze != null)
+            {
+                sb.AppendLine(AllPackageClasses.CLASSES);
+                lock (_allPackagesLock)
+                {
+                    if (!_allPackages.ContainsKey(path))
+                    {
+                        var itemPackage = allPackageClasses.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
+                                                           .Replace(AllPackageClasses.JAR, jarOrModuleName)
+                                                           .Replace(AllPackageClasses.NAMESPACE, package)
+                                                           .Replace(AllPackageClasses.CLASSES, sb.ToString());
+
+                        WriteFile(path, itemPackage);
+                        _allPackages.Add(path, itemPackage);
+                    }
+                    else
+                    {
+                        var packageContent = File.ReadAllText(path);
+                        var itemPackage = packageContent.Replace(AllPackageClasses.CLASSES, sb.ToString());
+
+                        WriteFile(path, itemPackage);
+                        _allPackages[path] = itemPackage;
+                    }
+                }
+            }
+            else
+            {
+                var itemPackage = allPackageClasses.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
+                                                   .Replace(AllPackageClasses.JAR, jarOrModuleName)
+                                                   .Replace(AllPackageClasses.NAMESPACE, package)
+                                                   .Replace(AllPackageClasses.CLASSES, sb.ToString());
+
+                WriteFile(path, itemPackage);
+            }
         }
 
         static string AnalyzeClass(string jarOrModuleName, IEnumerable<Class> classDefinitions, string rootDesinationFolder)
