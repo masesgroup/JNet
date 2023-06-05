@@ -438,7 +438,38 @@ namespace Java.Util.Stream
         #endregion
 
         #region Nested classes
+        #region Builder
+        public partial class Builder
+        {
+            #region Constructors
 
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+    
         #endregion
 
         // TODO: complete the class

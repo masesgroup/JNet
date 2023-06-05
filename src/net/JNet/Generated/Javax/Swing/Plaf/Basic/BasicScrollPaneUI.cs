@@ -53,6 +53,37 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
+        #region HSBChangeListener
+        public partial class HSBChangeListener
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region PropertyChangeHandler
         public partial class PropertyChangeHandler
         {
@@ -144,6 +175,37 @@ namespace Javax.Swing.Plaf.Basic
             {
                 IExecute("stateChanged", arg0);
             }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region VSBChangeListener
+        public partial class VSBChangeListener
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
 
             #endregion
 

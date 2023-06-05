@@ -570,7 +570,6 @@ namespace MASES.JNetReflector
             {
                 methodPrefilter = jClass.PrefilterMethods(isGeneric, out isMainClass);
             }
-            bool classCantBeAnalyzed = jClassIsListener;
 
             ReportTrace(ReflectionTraceLevel.Debug, "Preparing nested class {0}", jClass.GenericString);
 
@@ -639,7 +638,7 @@ namespace MASES.JNetReflector
                                                 .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isClassInterface ? "true" : "false")
                                                 .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false");
 
-                if (!classCantBeAnalyzed)
+                if (!jClassIsListener)
                 {
                     constructorBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true).AddTabLevel(1);
                     operatorBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
@@ -649,19 +648,12 @@ namespace MASES.JNetReflector
                 }
             }
 
-            singleClassStr = string.Empty;
-
-            if (!classCantBeAnalyzed)
-            {
-                List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
-
-                singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(genClause, isGeneric))
-                                            .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
-                                            .Replace(AllPackageClasses.ClassStub.OPERATORS, operatorBlock)
-                                            .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
-                                            .Replace(AllPackageClasses.ClassStub.STATICMETHODS, staticMethodBlock)
-                                            .Replace(AllPackageClasses.ClassStub.METHODS, methodBlock);
-            }
+            singleClassStr = singleClass.Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric))
+                                        .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
+                                        .Replace(AllPackageClasses.ClassStub.OPERATORS, operatorBlock)
+                                        .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
+                                        .Replace(AllPackageClasses.ClassStub.STATICMETHODS, staticMethodBlock)
+                                        .Replace(AllPackageClasses.ClassStub.METHODS, methodBlock);
         }
 
         static string AnalyzeConstructors(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric, bool isNested)
