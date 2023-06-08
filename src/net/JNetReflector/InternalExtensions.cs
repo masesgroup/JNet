@@ -1000,6 +1000,49 @@ namespace MASES.JNetReflector
             }
         }
 
+        public static string JVMInterfaceName(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool fullyQualified)
+        {
+            var cName = entry.JVMClassName(genClause, usedInGenerics);
+            cName = "I" + cName;
+            if (fullyQualified)
+            {
+                var nName = entry.Namespace(JNetReflectorCore.UseCamel);
+                return string.IsNullOrWhiteSpace(nName) ? cName : nName + SpecialNames.NamespaceSeparator + cName;
+            }
+            else return cName;
+        }
+
+        public static IEnumerable<Class> JVMInterfaces(this Class entry)
+        {
+            List<Class> filteredInterfaces = new List<Class>();
+            foreach (var implementedInterface in entry.Interfaces)
+            {
+                var superCls = entry.SuperClass;
+                if (superCls == null
+                    || !superCls.IsPublic()
+                    || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
+                    || superCls.MustBeAvoided()
+                    || superCls.TypeName == SpecialNames.JavaLangObject)
+                {
+                    filteredInterfaces.Add(implementedInterface);
+                }
+                else
+                {
+                    bool foundInSuperClass = false;
+                    foreach (var supInterface in superCls.Interfaces)
+                    {
+                        if (supInterface.TypeName == implementedInterface.TypeName)
+                        {
+                            foundInSuperClass = true; break;
+                        }
+                    }
+                    if (!foundInSuperClass) filteredInterfaces.Add(implementedInterface);
+                }
+            }
+
+            return filteredInterfaces;
+        }
+
         public static bool IsNamespaceToAvoid(this Class entry)
         {
             if (JNetReflectorCore.NamespacesToAvoid.Any((n) => entry.Namespace(false).StartsWith(n))) return true;

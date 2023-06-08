@@ -34,6 +34,9 @@
     <None Remove="Templates\SingleClassFile.template" />
     <None Remove="Templates\SingleConstructor.template" />
     <None Remove="Templates\SingleField.template" />
+    <None Remove="Templates\SingleInterface.template" />
+    <None Remove="Templates\SingleInterfaceMethod.template" />
+    <None Remove="Templates\SingleInterfaceProperty.template" />
     <None Remove="Templates\SingleMethod.template" />
     <None Remove="Templates\SingleProperty.template" />
   </ItemGroup>
@@ -123,9 +126,12 @@
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
+    <EmbeddedResource Include="Templates\SingleInterface.template" />
     <EmbeddedResource Include="Templates\SingleClassFile.template" />
     <EmbeddedResource Include="Templates\SingleConstructor.template" />
     <EmbeddedResource Include="Templates\SingleField.template" />
+    <EmbeddedResource Include="Templates\SingleInterfaceProperty.template" />
+    <EmbeddedResource Include="Templates\SingleInterfaceMethod.template" />
     <EmbeddedResource Include="Templates\SingleProperty.template" />
     <EmbeddedResource Include="Templates\SingleMethod.template" />
     <EmbeddedResource Include="Templates\SingleClass.template" />

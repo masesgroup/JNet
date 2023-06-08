@@ -34,12 +34,15 @@ namespace MASES.JNetReflector.Templates
             AllPackageClassesStubExceptionTemplate,
 
             SingleClassTemplate,
+            SingleInterfaceTemplate,
             SingleClassFileTemplate,
 
             SingleConstructorTemplate,
             SingleFieldTemplate,
             SingleMethodTemplate,
+            SingleInterfaceMethodTemplate,
             SinglePropertyTemplate,
+            SingleInterfacePropertyTemplate,
         };
 
         static Template()
@@ -76,11 +79,14 @@ namespace MASES.JNetReflector.Templates
         public const string AllPackageClassesStubExceptionTemplate = "AllPackageClassesStubException.template";
 
         public const string SingleClassTemplate = "SingleClass.template";
+        public const string SingleInterfaceTemplate = "SingleInterface.template";
         public const string SingleClassFileTemplate = "SingleClassFile.template";
         public const string SingleConstructorTemplate = "SingleConstructor.template";
         public const string SingleFieldTemplate = "SingleField.template";
         public const string SingleMethodTemplate = "SingleMethod.template";
+        public const string SingleInterfaceMethodTemplate = "SingleInterfaceMethod.template";
         public const string SinglePropertyTemplate = "SingleProperty.template";
+        public const string SingleInterfacePropertyTemplate = "SingleInterfaceProperty.template";
     }
 
     public class AllPackageClasses
@@ -101,6 +107,8 @@ namespace MASES.JNetReflector.Templates
             public const string HELP = "ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER";
             public const string SIMPLECLASS = "ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER";
             public const string CLASS = "ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
+            public const string INTERFACE = "ALLPACKAGE_CLASSES_STUB_INTERFACE_PLACEHOLDER";
+            public const string INTERFACE_CONSTRAINT = "ALLPACKAGE_CLASSES_STUB_CLASS_INTERFACE_PLACEHOLDER";
             public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
             public const string WHERECLAUSES = "ALLPACKAGE_CLASSES_STUB_WHERECLAUSES_PLACEHOLDER";
             public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
@@ -110,6 +118,7 @@ namespace MASES.JNetReflector.Templates
             public const string STATICMETHODS = "// ALLPACKAGE_CLASSES_STUB_STATIC_METHODS_PLACEHOLDER";
             public const string METHODS = "// ALLPACKAGE_CLASSES_STUB_METHODS_PLACEHOLDER";
             public const string NESTED_CLASSES = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER";
+            public const string NESTED_INTERFACES = "// ALLPACKAGE_CLASSES_STUB_NESTED_INTERFACES_PLACEHOLDER";
 
             public const string ISABSTRACT = "ALLPACKAGE_CLASSES_STUB_ISABSTRACT_PLACEHOLDER";
             public const string ISCLOSEABLE = "ALLPACKAGE_CLASSES_STUB_ISCLOSEABLE_PLACEHOLDER";
@@ -190,6 +199,8 @@ namespace MASES.JNetReflector.Templates
                 public const string TYPE = "PROPERTY_STUB_RETURN_TYPE_PLACEHOLDER";
                 public const string NAME = "PROPERTY_STUB_PROPERTY_NAME_PLACEHOLDER";
                 public const string EXECUTION = "PROPERTY_STUB_EXECUTION_PLACEHOLDER";
+                public const string GET_INTERFACE_FORMAT = "get;";
+                public const string SET_INTERFACE_FORMAT = " set;";
                 public const string GET_EXECUTION_FORMAT = "get {{ return {0}{1}(\"{2}\"); }}";
                 public const string STATIC_GET_EXECUTION_FORMAT = "get {{ return {0}{1}(LocalBridgeClazz, \"{2}\"); }}";
                 public const string SET_EXECUTION_FORMAT = " set {{ {0}(\"{1}\", value); }}";
