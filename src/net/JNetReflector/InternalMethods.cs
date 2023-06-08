@@ -713,7 +713,8 @@ namespace MASES.JNetReflector
                 {
                     baseInterface = " : " + baseInterface;
                 }
-                singleInterfaceStr = singleInterface.Replace(AllPackageClasses.ClassStub.INTERFACE, jClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), isGeneric, false))
+                singleInterfaceStr = singleInterface.Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
+                                                    .Replace(AllPackageClasses.ClassStub.INTERFACE, jClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), isGeneric, false))
                                                     .Replace(AllPackageClasses.ClassStub.BASEINTERFACE, baseInterface)
                                                     .Replace(AllPackageClasses.ClassStub.METHODS, methodInterfaceBlock);
 
