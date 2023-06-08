@@ -25,8 +25,53 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
+    #region IJdbcRowSet
+    public partial interface IJdbcRowSet
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#getAutoCommit()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#setAutoCommit(boolean)"/>
+        /// </summary>
+        bool AutoCommit { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#getRowSetWarnings()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.RowSetWarning RowSetWarnings { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#getShowDeleted()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#setShowDeleted(boolean)"/>
+        /// </summary>
+        bool ShowDeleted { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#commit()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Commit();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#rollback()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Rollback();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JdbcRowSet.html#rollback(java.sql.Savepoint)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Rollback(Java.Sql.Savepoint arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region JdbcRowSet
-    public partial class JdbcRowSet
+    public partial class JdbcRowSet : Javax.Sql.Rowset.IJdbcRowSet
     {
         #region Constructors
 

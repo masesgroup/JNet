@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
+    #region IBeanContextServicesListener
+    public partial interface IBeanContextServicesListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceAvailableEvent"/></param>
+        void ServiceAvailable(Java.Beans.Beancontext.BeanContextServiceAvailableEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BeanContextServicesListener
-    public partial class BeanContextServicesListener
+    public partial class BeanContextServicesListener : Java.Beans.Beancontext.IBeanContextServicesListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceAvailableEvent"/></param>
+        public virtual void ServiceAvailable(Java.Beans.Beancontext.BeanContextServiceAvailableEvent arg0)
+        {
+            
+        }
 
         #endregion
 

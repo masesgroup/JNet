@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IMouseInputListener
+    public partial interface IMouseInputListener
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MouseInputListener
-    public partial class MouseInputListener
+    public partial class MouseInputListener : Javax.Swing.Event.IMouseInputListener
     {
         #region Constructors
 

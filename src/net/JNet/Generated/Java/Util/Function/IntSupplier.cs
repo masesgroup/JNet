@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IIntSupplier
+    public partial interface IIntSupplier
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/> 
+        /// </summary>
+        int AsInt { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IntSupplier
-    public partial class IntSupplier
+    public partial class IntSupplier : Java.Util.Function.IIntSupplier
     {
         #region Constructors
 

@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
+    #region IDragGestureListener
+    public partial interface IDragGestureListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureEvent"/></param>
+        void DragGestureRecognized(Java.Awt.Dnd.DragGestureEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DragGestureListener
-    public partial class DragGestureListener
+    public partial class DragGestureListener : Java.Awt.Dnd.IDragGestureListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragGestureEvent"/></param>
+        public virtual void DragGestureRecognized(Java.Awt.Dnd.DragGestureEvent arg0)
+        {
+            
+        }
 
         #endregion
 

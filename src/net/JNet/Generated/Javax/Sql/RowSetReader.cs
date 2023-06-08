@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
+    #region IRowSetReader
+    public partial interface IRowSetReader
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetReader.html#readData(javax.sql.RowSetInternal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void ReadData(Javax.Sql.RowSetInternal arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RowSetReader
-    public partial class RowSetReader
+    public partial class RowSetReader : Javax.Sql.IRowSetReader
     {
         #region Constructors
 

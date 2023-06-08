@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
+    #region IC14NMethodParameterSpec
+    public partial interface IC14NMethodParameterSpec
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region C14NMethodParameterSpec
-    public partial class C14NMethodParameterSpec
+    public partial class C14NMethodParameterSpec : Javax.Xml.Crypto.Dsig.Spec.IC14NMethodParameterSpec
     {
         #region Constructors
 

@@ -33,7 +33,7 @@ namespace MASES.JNet.Extensions
         /// <typeparam name="T">Type</typeparam>
         /// <param name="set">The <see cref="Collection{T}"/></param>
         /// <returns>The <see cref="ICollection{T}"/></returns>
-        public static ICollection<T> ToCollection<T>(this Collection<T> set)
+        public static System.Collections.Generic.ICollection<T> ToCollection<T>(this Collection<T> set)
         {
             System.Collections.Generic.List<T> list = new();
             if (set.IsEmpty) return list;
@@ -65,7 +65,7 @@ namespace MASES.JNet.Extensions
         /// <typeparam name="T">Type</typeparam>
         /// <param name="collection">The <see cref="ICollection{T}"/></param>
         /// <returns>The <see cref="Collection{T}"/></returns>
-        public static Collection<T> ToJCollection<T>(this ICollection<T> collection)
+        public static Collection<T> ToJCollection<T>(this System.Collections.Generic.ICollection<T> collection)
         {
             ArrayList<T> list = new();
             if (collection.Count == 0) return list.CastTo<Collection<T>>();
@@ -81,7 +81,7 @@ namespace MASES.JNet.Extensions
         /// <typeparam name="T">Type</typeparam>
         /// <param name="collection">The <see cref="ICollection{T}"/></param>
         /// <returns>The <see cref="Java.Util.List{T}"/></returns>
-        public static Java.Util.List<T> ToJList<T>(this ICollection<T> collection)
+        public static Java.Util.List<T> ToJList<T>(this System.Collections.Generic.ICollection<T> collection)
         {
             ArrayList<T> list = new();
             if (collection.Count == 0) return list;

@@ -204,8 +204,124 @@ namespace Java.Util
     }
     #endregion
 
+    #region ICollection<E>
+    public partial interface ICollection<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#isEmpty()"/> 
+        /// </summary>
+        bool IsEmpty { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/> 
+        /// </summary>
+        Java.Util.Iterator<E> Iterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#parallelStream()"/> 
+        /// </summary>
+        Java.Util.Stream.Stream<E> ParallelStream { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#size()"/> 
+        /// </summary>
+        int Size { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#spliterator()"/> 
+        /// </summary>
+        Java.Util.Spliterator<E> Spliterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#stream()"/> 
+        /// </summary>
+        Java.Util.Stream.Stream<E> Stream { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray(java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        T[] ToArray<T>(T[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#add(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Add(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#addAll(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#contains(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Contains(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#containsAll(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        bool ContainsAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#remove(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Remove(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#removeAll(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        bool RemoveAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#retainAll(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        bool RetainAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        object[] ToArray();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#clear()"/>
+        /// </summary>
+        void Clear();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray(java.util.function.IntFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        T[] ToArray<T>(Java.Util.Function.IntFunction<T[]> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#removeIf(java.util.function.Predicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
+        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE: E;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Collection<E>
-    public partial class Collection<E>
+    public partial class Collection<E> : Java.Util.ICollection<E>
     {
         #region Constructors
 

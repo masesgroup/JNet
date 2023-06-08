@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IIntToLongFunction
+    public partial interface IIntToLongFunction
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToLongFunction.html#applyAsLong(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="long"/></returns>
+        long ApplyAsLong(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IntToLongFunction
-    public partial class IntToLongFunction
+    public partial class IntToLongFunction : Java.Util.Function.IIntToLongFunction
     {
         #region Constructors
 

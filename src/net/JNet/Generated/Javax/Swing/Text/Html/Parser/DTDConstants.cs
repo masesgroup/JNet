@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text.Html.Parser
 {
+    #region IDTDConstants
+    public partial interface IDTDConstants
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DTDConstants
-    public partial class DTDConstants
+    public partial class DTDConstants : Javax.Swing.Text.Html.Parser.IDTDConstants
     {
         #region Constructors
 

@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IQuitHandler
+    public partial interface IQuitHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitHandler.html#handleQuitRequestWith(java.awt.desktop.QuitEvent,java.awt.desktop.QuitResponse)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.QuitEvent"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.DesktopNs.QuitResponse"/></param>
+        void HandleQuitRequestWith(Java.Awt.DesktopNs.QuitEvent arg0, Java.Awt.DesktopNs.QuitResponse arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region QuitHandler
-    public partial class QuitHandler
+    public partial class QuitHandler : Java.Awt.DesktopNs.IQuitHandler
     {
         #region Constructors
 

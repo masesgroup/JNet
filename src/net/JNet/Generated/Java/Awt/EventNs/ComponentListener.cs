@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IComponentListener
+    public partial interface IComponentListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentHidden(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentMoved(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentResized(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentShown(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ComponentListener
-    public partial class ComponentListener
+    public partial class ComponentListener : Java.Awt.EventNs.IComponentListener
     {
         #region Constructors
 
@@ -45,6 +80,38 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentHidden(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        public virtual void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentMoved(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        public virtual void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentResized(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        public virtual void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentShown(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        public virtual void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0)
+        {
+            
+        }
 
         #endregion
 

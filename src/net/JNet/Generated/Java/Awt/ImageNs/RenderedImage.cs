@@ -25,8 +25,116 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
+    #region IRenderedImage
+    public partial interface IRenderedImage
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getColorModel()"/> 
+        /// </summary>
+        Java.Awt.ImageNs.ColorModel ColorModel { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getData()"/> 
+        /// </summary>
+        Java.Awt.ImageNs.Raster Data { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getHeight()"/> 
+        /// </summary>
+        int Height { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getMinTileX()"/> 
+        /// </summary>
+        int MinTileX { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getMinTileY()"/> 
+        /// </summary>
+        int MinTileY { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getMinX()"/> 
+        /// </summary>
+        int MinX { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getMinY()"/> 
+        /// </summary>
+        int MinY { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getNumXTiles()"/> 
+        /// </summary>
+        int NumXTiles { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getNumYTiles()"/> 
+        /// </summary>
+        int NumYTiles { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getPropertyNames()"/> 
+        /// </summary>
+        string[] PropertyNames { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getSampleModel()"/> 
+        /// </summary>
+        Java.Awt.ImageNs.SampleModel SampleModel { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getSources()"/> 
+        /// </summary>
+        Java.Util.Vector<Java.Awt.ImageNs.RenderedImage> Sources { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileGridXOffset()"/> 
+        /// </summary>
+        int TileGridXOffset { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileGridYOffset()"/> 
+        /// </summary>
+        int TileGridYOffset { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileHeight()"/> 
+        /// </summary>
+        int TileHeight { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTileWidth()"/> 
+        /// </summary>
+        int TileWidth { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getWidth()"/> 
+        /// </summary>
+        int Width { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getData(java.awt.Rectangle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Rectangle"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
+        Java.Awt.ImageNs.Raster GetData(Java.Awt.Rectangle arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getTile(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
+        Java.Awt.ImageNs.Raster GetTile(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#copyData(java.awt.image.WritableRaster)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        Java.Awt.ImageNs.WritableRaster CopyData(Java.Awt.ImageNs.WritableRaster arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#getProperty(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        object GetProperty(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RenderedImage
-    public partial class RenderedImage
+    public partial class RenderedImage : Java.Awt.ImageNs.IRenderedImage
     {
         #region Constructors
 

@@ -24,12 +24,9 @@ namespace Javax.Management
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html"/>
     /// </summary>
-    public interface INotificationListener : IJVMBridgeBase
+    public partial interface INotificationListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
-        /// </summary>
-        void HandleNotification(Notification notification, object handback);
+
     }
     /// <summary>
     /// Implementation of <see cref="INotificationListener"/>
@@ -65,11 +62,6 @@ namespace Javax.Management
         void EventHandlerHandleNotification(object sender, CLRListenerEventArgs<CLREventData<Notification>> data)
         {
             OnHandleNotification(data.EventData.TypedEventData, data.EventData.To<object>(0));
-        }
-        /// <inheritdoc cref="INotificationListener.HandleNotification(Notification, object)"/>
-        public virtual void HandleNotification(Notification notification, object handback)
-        {
-
         }
     }
 }

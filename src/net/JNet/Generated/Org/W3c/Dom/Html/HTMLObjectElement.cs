@@ -25,8 +25,99 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLObjectElement
+    public partial interface IHTMLObjectElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setAlign(java.lang.String)"/>
+        /// </summary>
+        string Align { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getArchive()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setArchive(java.lang.String)"/>
+        /// </summary>
+        string Archive { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setBorder(java.lang.String)"/>
+        /// </summary>
+        string Border { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getCode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setCode(java.lang.String)"/>
+        /// </summary>
+        string Code { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getCodeBase()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setCodeBase(java.lang.String)"/>
+        /// </summary>
+        string CodeBase { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getCodeType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setCodeType(java.lang.String)"/>
+        /// </summary>
+        string CodeType { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getContentDocument()"/> 
+        /// </summary>
+        Org.W3c.Dom.Document ContentDocument { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setData(java.lang.String)"/>
+        /// </summary>
+        string Data { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getDeclare()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setDeclare(boolean)"/>
+        /// </summary>
+        bool Declare { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getForm()"/> 
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLFormElement Form { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setHeight(java.lang.String)"/>
+        /// </summary>
+        string Height { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getHspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setHspace(java.lang.String)"/>
+        /// </summary>
+        string Hspace { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setName(java.lang.String)"/>
+        /// </summary>
+        string Name { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getStandby()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setStandby(java.lang.String)"/>
+        /// </summary>
+        string Standby { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getTabIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setTabIndex(int)"/>
+        /// </summary>
+        int TabIndex { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setType(java.lang.String)"/>
+        /// </summary>
+        string Type { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getUseMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setUseMap(java.lang.String)"/>
+        /// </summary>
+        string UseMap { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getVspace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setVspace(java.lang.String)"/>
+        /// </summary>
+        string Vspace { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLObjectElement.html#setWidth(java.lang.String)"/>
+        /// </summary>
+        string Width { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLObjectElement
-    public partial class HTMLObjectElement
+    public partial class HTMLObjectElement : Org.W3c.Dom.Html.IHTMLObjectElement
     {
         #region Constructors
 

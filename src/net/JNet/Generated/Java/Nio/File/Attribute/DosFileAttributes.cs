@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IDosFileAttributes
+    public partial interface IDosFileAttributes
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/> 
+        /// </summary>
+        bool IsArchive { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/> 
+        /// </summary>
+        bool IsHidden { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/> 
+        /// </summary>
+        bool IsReadOnly { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/> 
+        /// </summary>
+        bool IsSystem { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DosFileAttributes
-    public partial class DosFileAttributes
+    public partial class DosFileAttributes : Java.Nio.File.Attribute.IDosFileAttributes
     {
         #region Constructors
 

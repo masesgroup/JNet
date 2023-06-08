@@ -25,8 +25,105 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
+    #region IRelation
+    public partial interface IRelation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getAllRoles()"/> 
+        /// </summary>
+        Javax.Management.Relation.RoleResult AllRoles { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getReferencedMBeans()"/> 
+        /// </summary>
+        Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<string>> ReferencedMBeans { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRelationId()"/> 
+        /// </summary>
+        string RelationId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRelationServiceName()"/> 
+        /// </summary>
+        Javax.Management.ObjectName RelationServiceName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRelationTypeName()"/> 
+        /// </summary>
+        string RelationTypeName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#retrieveAllRoles()"/> 
+        /// </summary>
+        Javax.Management.Relation.RoleList RetrieveAllRoles { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoleCardinality(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
+        int? GetRoleCardinality(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRole(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
+        /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
+        Java.Util.List<Javax.Management.ObjectName> GetRole(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoles(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Management.Relation.RoleResult"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
+        Javax.Management.Relation.RoleResult GetRoles(string[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#setRoles(javax.management.relation.RoleList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Relation.RoleList"/></param>
+        /// <returns><see cref="Javax.Management.Relation.RoleResult"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
+        /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
+        /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
+        Javax.Management.Relation.RoleResult SetRoles(Javax.Management.Relation.RoleList arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#handleMBeanUnregistration(javax.management.ObjectName,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
+        /// <exception cref="Javax.Management.Relation.InvalidRoleValueException"/>
+        /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
+        /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
+        /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
+        void HandleMBeanUnregistration(Javax.Management.ObjectName arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#setRole(javax.management.relation.Role)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Relation.Role"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
+        /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
+        /// <exception cref="Javax.Management.Relation.InvalidRoleValueException"/>
+        /// <exception cref="Javax.Management.Relation.RelationServiceNotRegisteredException"/>
+        /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
+        void SetRole(Javax.Management.Relation.Role arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Relation
-    public partial class Relation
+    public partial class Relation : Javax.Management.Relation.IRelation
     {
         #region Constructors
 

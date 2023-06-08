@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
+    #region ITransparency
+    public partial interface ITransparency
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#getTransparency()"/> 
+        /// </summary>
+        int GetTransparency { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Transparency
-    public partial class Transparency
+    public partial class Transparency : Java.Awt.ITransparency
     {
         #region Constructors
 

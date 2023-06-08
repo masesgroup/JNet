@@ -24,28 +24,9 @@ namespace Java.Awt.Dnd
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html"/>
     /// </summary>
-    public interface IDragSourceListener : IJVMBridgeBase
+    public partial interface IDragSourceListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
-        /// </summary>
-        void DragEnter(DragSourceDragEvent dtde);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
-        /// </summary>
-        void DragOver(DragSourceDragEvent dtde);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
-        /// </summary>
-        void DropActionChanged(DragSourceDragEvent dtde);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
-        /// </summary>
-        void DragExit(DragSourceEvent dte);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
-        /// </summary>
-        void DragDropEnd(DragSourceDropEvent dsde);
+
     }
 
     /// <summary>
@@ -144,32 +125,6 @@ namespace Java.Awt.Dnd
         void EventHandlerDragDropEnd(object sender, CLRListenerEventArgs<CLREventData<DragSourceDropEvent>> data)
         {
             OnDragDropEnd(data.EventData.TypedEventData);
-        }
-
-        /// <inheritdoc cref="IDragSourceListener.DragEnter(DragSourceDragEvent)"/>
-        public virtual void DragEnter(DragSourceDragEvent dtde)
-        {
-
-        }
-        /// <inheritdoc cref="IDragSourceListener.DragOver(DragSourceDragEvent)"/>
-        public virtual void DragOver(DragSourceDragEvent dtde)
-        {
-
-        }
-        /// <inheritdoc cref="IDragSourceListener.DropActionChanged(DragSourceDragEvent)"/>
-        public virtual void DropActionChanged(DragSourceDragEvent dtde)
-        {
-
-        }
-        /// <inheritdoc cref="IDragSourceListener.DragExit(DragSourceEvent)"/>
-        public virtual void DragExit(DragSourceEvent dte)
-        {
-
-        }
-        /// <inheritdoc cref="IDragSourceListener.DragDropEnd(DragSourceDropEvent)"/>
-        public virtual void DragDropEnd(DragSourceDropEvent dsde)
-        {
-
         }
     }
 }

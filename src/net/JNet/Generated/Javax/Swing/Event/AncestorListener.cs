@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IAncestorListener
+    public partial interface IAncestorListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorAdded(javax.swing.event.AncestorEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
+        void AncestorAdded(Javax.Swing.Event.AncestorEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorMoved(javax.swing.event.AncestorEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
+        void AncestorMoved(Javax.Swing.Event.AncestorEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorRemoved(javax.swing.event.AncestorEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
+        void AncestorRemoved(Javax.Swing.Event.AncestorEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AncestorListener
-    public partial class AncestorListener
+    public partial class AncestorListener : Javax.Swing.Event.IAncestorListener
     {
         #region Constructors
 
@@ -45,6 +75,30 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorAdded(javax.swing.event.AncestorEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
+        public virtual void AncestorAdded(Javax.Swing.Event.AncestorEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorMoved(javax.swing.event.AncestorEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
+        public virtual void AncestorMoved(Javax.Swing.Event.AncestorEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorRemoved(javax.swing.event.AncestorEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
+        public virtual void AncestorRemoved(Javax.Swing.Event.AncestorEvent arg0)
+        {
+            
+        }
 
         #endregion
 

@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
+    #region ILSSerializerFilter
+    public partial interface ILSSerializerFilter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializerFilter.html#getWhatToShow()"/> 
+        /// </summary>
+        int WhatToShow { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LSSerializerFilter
-    public partial class LSSerializerFilter
+    public partial class LSSerializerFilter : Org.W3c.Dom.Ls.ILSSerializerFilter
     {
         #region Constructors
 

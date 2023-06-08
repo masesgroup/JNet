@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region INotificationListener
+    public partial interface INotificationListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        void HandleNotification(Javax.Management.Notification arg0, object arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NotificationListener
-    public partial class NotificationListener
+    public partial class NotificationListener : Javax.Management.INotificationListener
     {
         #region Constructors
 
@@ -45,6 +66,15 @@ namespace Javax.Management
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        public virtual void HandleNotification(Javax.Management.Notification arg0, object arg1)
+        {
+            
+        }
 
         #endregion
 

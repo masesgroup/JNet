@@ -198,6 +198,14 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFramePropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+            public virtual void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
+            {
+                
+            }
 
             #endregion
 

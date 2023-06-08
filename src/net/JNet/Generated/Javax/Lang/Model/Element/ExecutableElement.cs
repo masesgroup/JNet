@@ -25,8 +25,59 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
+    #region IExecutableElement
+    public partial interface IExecutableElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getDefaultValue()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.AnnotationValue DefaultValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()"/> 
+        /// </summary>
+        bool IsDefault { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isVarArgs()"/> 
+        /// </summary>
+        bool IsVarArgs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getParameters()"/> 
+        /// </summary>
+        Java.Util.List Parameters { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getReceiverType()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror ReceiverType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getReturnType()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror ReturnType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getSimpleName()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Name SimpleName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getThrownTypes()"/> 
+        /// </summary>
+        Java.Util.List ThrownTypes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getTypeParameters()"/> 
+        /// </summary>
+        Java.Util.List TypeParameters { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ExecutableElement
-    public partial class ExecutableElement
+    public partial class ExecutableElement : Javax.Lang.Model.Element.IExecutableElement
     {
         #region Constructors
 

@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
+    #region IAnnotationMirror
+    public partial interface IAnnotationMirror
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html#getAnnotationType()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.DeclaredType AnnotationType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html#getElementValues()"/> 
+        /// </summary>
+        Java.Util.Map ElementValues { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AnnotationMirror
-    public partial class AnnotationMirror
+    public partial class AnnotationMirror : Javax.Lang.Model.Element.IAnnotationMirror
     {
         #region Constructors
 

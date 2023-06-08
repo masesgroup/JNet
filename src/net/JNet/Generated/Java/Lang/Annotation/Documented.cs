@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
+    #region IDocumented
+    public partial interface IDocumented
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Documented
-    public partial class Documented
+    public partial class Documented : Java.Lang.Annotation.IDocumented
     {
         #region Constructors
 

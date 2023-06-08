@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region ICDATASection
+    public partial interface ICDATASection
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CDATASection
-    public partial class CDATASection
+    public partial class CDATASection : Org.W3c.Dom.ICDATASection
     {
         #region Constructors
 

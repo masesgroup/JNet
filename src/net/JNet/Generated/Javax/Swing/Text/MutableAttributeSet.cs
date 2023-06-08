@@ -25,8 +25,55 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
+    #region IMutableAttributeSet
+    public partial interface IMutableAttributeSet
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#addAttribute(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        void AddAttribute(object arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#addAttributes(javax.swing.text.AttributeSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        void AddAttributes(Javax.Swing.Text.AttributeSet arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttribute(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        void RemoveAttribute(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttributes(java.util.Enumeration)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        void RemoveAttributes<Arg0Extendsobject>(Java.Util.Enumeration<Arg0Extendsobject> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#removeAttributes(javax.swing.text.AttributeSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        void RemoveAttributes(Javax.Swing.Text.AttributeSet arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/MutableAttributeSet.html#setResolveParent(javax.swing.text.AttributeSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
+        void SetResolveParent(Javax.Swing.Text.AttributeSet arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MutableAttributeSet
-    public partial class MutableAttributeSet
+    public partial class MutableAttributeSet : Javax.Swing.Text.IMutableAttributeSet
     {
         #region Constructors
 

@@ -407,6 +407,30 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ScrollListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
+            public virtual void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
+            {
+                
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ScrollListener.html#setDirection(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public virtual void SetDirection(int arg0)
+            {
+                
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ScrollListener.html#setScrollByBlock(boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="bool"/></param>
+            public virtual void SetScrollByBlock(bool arg0)
+            {
+                
+            }
 
             #endregion
 
@@ -438,6 +462,15 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html#shouldScroll(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="bool"/></returns>
+            public virtual bool ShouldScroll(int arg0)
+            {
+                return default;
+            }
 
             #endregion
 

@@ -25,8 +25,219 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
+    #region ICachedRowSet
+    public partial interface ICachedRowSet
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopy()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.CachedRowSet CreateCopy { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopyNoConstraints()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.CachedRowSet CreateCopyNoConstraints { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createCopySchema()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.CachedRowSet CreateCopySchema { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#createShared()"/> 
+        /// </summary>
+        Javax.Sql.RowSet CreateShared { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getKeyColumns()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setKeyColumns(int[])"/>
+        /// </summary>
+        int[] KeyColumns { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#nextPage()"/> 
+        /// </summary>
+        bool NextPage { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getOriginal()"/> 
+        /// </summary>
+        Java.Sql.ResultSet Original { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getOriginalRow()"/> 
+        /// </summary>
+        Java.Sql.ResultSet OriginalRow { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getPageSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setPageSize(int)"/>
+        /// </summary>
+        int PageSize { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#previousPage()"/> 
+        /// </summary>
+        bool PreviousPage { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getRowSetWarnings()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.RowSetWarning RowSetWarnings { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getShowDeleted()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setShowDeleted(boolean)"/>
+        /// </summary>
+        bool ShowDeleted { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#size()"/> 
+        /// </summary>
+        int Size { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getSyncProvider()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setSyncProvider(java.lang.String)"/>
+        /// </summary>
+        Javax.Sql.Rowset.Spi.SyncProvider SyncProvider { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#getTableName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setTableName(java.lang.String)"/>
+        /// </summary>
+        string TableName { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#columnUpdated(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool ColumnUpdated(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#columnUpdated(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool ColumnUpdated(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection()"/>
+        /// </summary>
+
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#acceptChanges()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Sql.Rowset.Spi.SyncProviderException"/>
+        void AcceptChanges();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#acceptChanges(java.sql.Connection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Connection"/></param>
+        /// <exception cref="Javax.Sql.Rowset.Spi.SyncProviderException"/>
+        void AcceptChanges(Java.Sql.Connection arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#commit()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Commit();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#execute(java.sql.Connection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Connection"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Execute(Java.Sql.Connection arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#populate(java.sql.ResultSet,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ResultSet"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Populate(Java.Sql.ResultSet arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#populate(java.sql.ResultSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ResultSet"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Populate(Java.Sql.ResultSet arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#release()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Release();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#restoreOriginal()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void RestoreOriginal();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#rollback()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Rollback();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#rollback(java.sql.Savepoint)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Rollback(Java.Sql.Savepoint arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#rowSetPopulated(javax.sql.RowSetEvent,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void RowSetPopulated(Javax.Sql.RowSetEvent arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setMetaData(javax.sql.RowSetMetaData)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetMetaData"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetMetaData(Javax.Sql.RowSetMetaData arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#setOriginalRow()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetOriginalRow();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoDelete()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void UndoDelete();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoInsert()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void UndoInsert();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#undoUpdate()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void UndoUpdate();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CachedRowSet
-    public partial class CachedRowSet
+    public partial class CachedRowSet : Javax.Sql.Rowset.ICachedRowSet
     {
         #region Constructors
 

@@ -24,12 +24,9 @@ namespace Javax.Swing.Event
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html"/>
     /// </summary>
-    public interface IChangeListener : IJVMBridgeBase
+    public partial interface IChangeListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
-        /// </summary>
-        void StateChanged(ChangeEvent e);
+
     }
 
     /// <summary>
@@ -67,11 +64,6 @@ namespace Javax.Swing.Event
         void EventHandlerStateChanged(object sender, CLRListenerEventArgs<CLREventData<ChangeEvent>> data)
         {
             OnStateChanged(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IChangeListener.StateChanged(ChangeEvent)"/>
-        public virtual void StateChanged(ChangeEvent e)
-        {
-
         }
     }
 }

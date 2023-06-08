@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi
 {
+    #region IRemote
+    public partial interface IRemote
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Remote
-    public partial class Remote
+    public partial class Remote : Java.Rmi.IRemote
     {
         #region Constructors
 

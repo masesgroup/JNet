@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region IShardingKey
+    public partial interface IShardingKey
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ShardingKey
-    public partial class ShardingKey
+    public partial class ShardingKey : Java.Sql.IShardingKey
     {
         #region Constructors
 

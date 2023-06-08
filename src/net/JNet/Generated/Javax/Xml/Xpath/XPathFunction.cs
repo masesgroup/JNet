@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Xpath
 {
+    #region IXPathFunction
+    public partial interface IXPathFunction
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunction.html#evaluate(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Xml.Xpath.XPathFunctionException"/>
+        object Evaluate<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XPathFunction
-    public partial class XPathFunction
+    public partial class XPathFunction : Javax.Xml.Xpath.IXPathFunction
     {
         #region Constructors
 

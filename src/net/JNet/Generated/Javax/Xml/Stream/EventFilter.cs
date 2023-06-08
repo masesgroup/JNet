@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
+    #region IEventFilter
+    public partial interface IEventFilter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/EventFilter.html#accept(javax.xml.stream.events.XMLEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.Events.XMLEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Accept(Javax.Xml.Stream.Events.XMLEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region EventFilter
-    public partial class EventFilter
+    public partial class EventFilter : Javax.Xml.Stream.IEventFilter
     {
         #region Constructors
 

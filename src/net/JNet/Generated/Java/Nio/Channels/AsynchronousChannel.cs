@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
+    #region IAsynchronousChannel
+    public partial interface IAsynchronousChannel
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannel.html#close()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Io.IOException"/>
+        void Close();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AsynchronousChannel
-    public partial class AsynchronousChannel
+    public partial class AsynchronousChannel : Java.Nio.Channels.IAsynchronousChannel
     {
         #region Constructors
 

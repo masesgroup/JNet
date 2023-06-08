@@ -25,8 +25,51 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
+    #region IStartElement
+    public partial interface IStartElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getAttributes()"/> 
+        /// </summary>
+        Java.Util.Iterator<Javax.Xml.Stream.Events.Attribute> Attributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getName()"/> 
+        /// </summary>
+        Javax.Xml.Namespace.QName Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceContext()"/> 
+        /// </summary>
+        Javax.Xml.Namespace.NamespaceContext NamespaceContext { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaces()"/> 
+        /// </summary>
+        Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace> Namespaces { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getNamespaceURI(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="string"/></returns>
+        string GetNamespaceURI(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartElement.html#getAttributeByName(javax.xml.namespace.QName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
+        /// <returns><see cref="Javax.Xml.Stream.Events.Attribute"/></returns>
+        Javax.Xml.Stream.Events.Attribute GetAttributeByName(Javax.Xml.Namespace.QName arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region StartElement
-    public partial class StartElement
+    public partial class StartElement : Javax.Xml.Stream.Events.IStartElement
     {
         #region Constructors
 

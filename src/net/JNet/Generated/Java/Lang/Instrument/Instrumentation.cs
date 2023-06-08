@@ -25,8 +25,122 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Instrument
 {
+    #region IInstrumentation
+    public partial interface IInstrumentation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getAllLoadedClasses()"/> 
+        /// </summary>
+        Java.Lang.Class[] AllLoadedClasses { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()"/> 
+        /// </summary>
+        bool IsNativeMethodPrefixSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()"/> 
+        /// </summary>
+        bool IsRedefineClassesSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()"/> 
+        /// </summary>
+        bool IsRetransformClassesSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsModifiableClass(Java.Lang.Class arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableModule(java.lang.Module)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsModifiableModule(Java.Lang.Module arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#removeTransformer(java.lang.instrument.ClassFileTransformer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassFileTransformer"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool RemoveTransformer(Java.Lang.Instrument.ClassFileTransformer arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getInitiatedClasses(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        Java.Lang.Class[] GetInitiatedClasses(Java.Lang.ClassLoader arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getObjectSize(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="long"/></returns>
+        long GetObjectSize(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassFileTransformer"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        void AddTransformer(Java.Lang.Instrument.ClassFileTransformer arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassFileTransformer"/></param>
+        void AddTransformer(Java.Lang.Instrument.ClassFileTransformer arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToBootstrapClassLoaderSearch(java.util.jar.JarFile)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Jar.JarFile"/></param>
+        void AppendToBootstrapClassLoaderSearch(Java.Util.Jar.JarFile arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToSystemClassLoaderSearch(java.util.jar.JarFile)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Jar.JarFile"/></param>
+        void AppendToSystemClassLoaderSearch(Java.Util.Jar.JarFile arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassDefinition"/></param>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Java.Lang.Instrument.UnmodifiableClassException"/>
+        void RedefineClasses(params Java.Lang.Instrument.ClassDefinition[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineModule(java.lang.Module,java.util.Set,java.util.Map,java.util.Map,java.util.Set,java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg4"><see cref="Java.Util.Set"/></param>
+        /// <param name="arg5"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg4Extendsobject"></typeparam>
+        /// <typeparam name="Arg5Extendsobject"></typeparam>
+        void RedefineModule<Arg4Extendsobject, Arg5Extendsobject>(Java.Lang.Module arg0, Java.Util.Set<Java.Lang.Module> arg1, Java.Util.Map<string, Java.Util.Set<Java.Lang.Module>> arg2, Java.Util.Map<string, Java.Util.Set<Java.Lang.Module>> arg3, Java.Util.Set<Java.Lang.Class> arg4, Java.Util.Map<Java.Lang.Class, Java.Util.List<Java.Lang.Class>> arg5);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <exception cref="Java.Lang.Instrument.UnmodifiableClassException"/>
+        void RetransformClasses<Arg0Extendsobject>(params Java.Lang.Class[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassFileTransformer"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        void SetNativeMethodPrefix(Java.Lang.Instrument.ClassFileTransformer arg0, string arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Instrumentation
-    public partial class Instrumentation
+    public partial class Instrumentation : Java.Lang.Instrument.IInstrumentation
     {
         #region Constructors
 

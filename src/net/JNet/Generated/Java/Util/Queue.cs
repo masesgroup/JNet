@@ -102,8 +102,51 @@ namespace Java.Util
     }
     #endregion
 
+    #region IQueue<E>
+    public partial interface IQueue<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/> 
+        /// </summary>
+        E Element { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/> 
+        /// </summary>
+        E Peek { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/> 
+        /// </summary>
+        E Poll { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/> 
+        /// </summary>
+        E Remove { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#add(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Add(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#offer(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Offer(E arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Queue<E>
-    public partial class Queue<E>
+    public partial class Queue<E> : Java.Util.IQueue<E>
     {
         #region Constructors
 

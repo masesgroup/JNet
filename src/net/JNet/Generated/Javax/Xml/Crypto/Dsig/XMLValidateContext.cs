@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region IXMLValidateContext
+    public partial interface IXMLValidateContext
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLValidateContext
-    public partial class XMLValidateContext
+    public partial class XMLValidateContext : Javax.Xml.Crypto.Dsig.IXMLValidateContext
     {
         #region Constructors
 

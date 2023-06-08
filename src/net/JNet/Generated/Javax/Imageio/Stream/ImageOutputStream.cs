@@ -25,8 +25,176 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Stream
 {
+    #region IImageOutputStream
+    public partial interface IImageOutputStream
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#flushBefore(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void FlushBefore(long arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#write(byte[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void Write(byte[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#write(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void Write(byte[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#write(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void Write(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeBit(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteBit(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeBits(long,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteBits(long arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeBoolean(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteBoolean(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeByte(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteByte(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeBytes(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteBytes(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeChar(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteChar(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeChars(char[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteChars(char[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeChars(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteChars(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeDouble(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteDouble(double arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeDoubles(double[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteDoubles(double[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeFloat(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteFloat(float arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeFloats(float[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteFloats(float[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeInt(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteInt(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeInts(int[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteInts(int[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeLong(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteLong(long arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeLongs(long[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteLongs(long[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeShort(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteShort(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeShorts(short[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteShorts(short[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeUTF(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteUTF(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ImageOutputStream
-    public partial class ImageOutputStream
+    public partial class ImageOutputStream : Javax.Imageio.Stream.IImageOutputStream
     {
         #region Constructors
 

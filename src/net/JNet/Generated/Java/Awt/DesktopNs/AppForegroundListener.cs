@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IAppForegroundListener
+    public partial interface IAppForegroundListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appMovedToBackground(java.awt.desktop.AppForegroundEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        void AppMovedToBackground(Java.Awt.DesktopNs.AppForegroundEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appRaisedToForeground(java.awt.desktop.AppForegroundEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        void AppRaisedToForeground(Java.Awt.DesktopNs.AppForegroundEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AppForegroundListener
-    public partial class AppForegroundListener
+    public partial class AppForegroundListener : Java.Awt.DesktopNs.IAppForegroundListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appMovedToBackground(java.awt.desktop.AppForegroundEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        public virtual void AppMovedToBackground(Java.Awt.DesktopNs.AppForegroundEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appRaisedToForeground(java.awt.desktop.AppForegroundEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
+        public virtual void AppRaisedToForeground(Java.Awt.DesktopNs.AppForegroundEvent arg0)
+        {
+            
+        }
 
         #endregion
 

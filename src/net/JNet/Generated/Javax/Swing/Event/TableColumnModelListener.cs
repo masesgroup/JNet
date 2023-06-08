@@ -25,8 +25,48 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region ITableColumnModelListener
+    public partial interface ITableColumnModelListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnAdded(javax.swing.event.TableColumnModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        void ColumnAdded(Javax.Swing.Event.TableColumnModelEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMarginChanged(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        void ColumnMarginChanged(Javax.Swing.Event.ChangeEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMoved(javax.swing.event.TableColumnModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        void ColumnMoved(Javax.Swing.Event.TableColumnModelEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnRemoved(javax.swing.event.TableColumnModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        void ColumnRemoved(Javax.Swing.Event.TableColumnModelEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnSelectionChanged(javax.swing.event.ListSelectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+        void ColumnSelectionChanged(Javax.Swing.Event.ListSelectionEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TableColumnModelListener
-    public partial class TableColumnModelListener
+    public partial class TableColumnModelListener : Javax.Swing.Event.ITableColumnModelListener
     {
         #region Constructors
 
@@ -45,6 +85,46 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnAdded(javax.swing.event.TableColumnModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        public virtual void ColumnAdded(Javax.Swing.Event.TableColumnModelEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMarginChanged(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        public virtual void ColumnMarginChanged(Javax.Swing.Event.ChangeEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnMoved(javax.swing.event.TableColumnModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        public virtual void ColumnMoved(Javax.Swing.Event.TableColumnModelEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnRemoved(javax.swing.event.TableColumnModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelEvent"/></param>
+        public virtual void ColumnRemoved(Javax.Swing.Event.TableColumnModelEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnSelectionChanged(javax.swing.event.ListSelectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+        public virtual void ColumnSelectionChanged(Javax.Swing.Event.ListSelectionEvent arg0)
+        {
+            
+        }
 
         #endregion
 

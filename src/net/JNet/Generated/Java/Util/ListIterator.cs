@@ -121,8 +121,61 @@ namespace Java.Util
     }
     #endregion
 
+    #region IListIterator<E>
+    public partial interface IListIterator<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasNext()"/> 
+        /// </summary>
+        bool HasNext { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#hasPrevious()"/> 
+        /// </summary>
+        bool HasPrevious { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#next()"/> 
+        /// </summary>
+        E Next { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#nextIndex()"/> 
+        /// </summary>
+        int NextIndex { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previous()"/> 
+        /// </summary>
+        E Previous { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#previousIndex()"/> 
+        /// </summary>
+        int PreviousIndex { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#add(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        void Add(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#remove()"/>
+        /// </summary>
+        void Remove();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ListIterator.html#set(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        void Set(E arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ListIterator<E>
-    public partial class ListIterator<E>
+    public partial class ListIterator<E> : Java.Util.IListIterator<E>
     {
         #region Constructors
 

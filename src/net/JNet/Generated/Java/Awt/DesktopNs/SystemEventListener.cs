@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region ISystemEventListener
+    public partial interface ISystemEventListener
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SystemEventListener
-    public partial class SystemEventListener
+    public partial class SystemEventListener : Java.Awt.DesktopNs.ISystemEventListener
     {
         #region Constructors
 

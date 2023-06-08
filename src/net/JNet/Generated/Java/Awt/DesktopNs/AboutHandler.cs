@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IAboutHandler
+    public partial interface IAboutHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AboutHandler.html#handleAbout(java.awt.desktop.AboutEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AboutEvent"/></param>
+        void HandleAbout(Java.Awt.DesktopNs.AboutEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AboutHandler
-    public partial class AboutHandler
+    public partial class AboutHandler : Java.Awt.DesktopNs.IAboutHandler
     {
         #region Constructors
 

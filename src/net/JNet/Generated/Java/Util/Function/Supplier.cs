@@ -63,8 +63,27 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region ISupplier<T>
+    public partial interface ISupplier<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/> 
+        /// </summary>
+        T Get { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Supplier<T>
-    public partial class Supplier<T>
+    public partial class Supplier<T> : Java.Util.Function.ISupplier<T>
     {
         #region Constructors
 

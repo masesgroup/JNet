@@ -25,8 +25,141 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
+    #region IRowSetMetaData
+    public partial interface IRowSetMetaData
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setAutoIncrement(int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetAutoIncrement(int arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setCaseSensitive(int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetCaseSensitive(int arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setCatalogName(int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetCatalogName(int arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetColumnCount(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnDisplaySize(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetColumnDisplaySize(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnLabel(int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetColumnLabel(int arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnName(int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetColumnName(int arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnType(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetColumnType(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setColumnTypeName(int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetColumnTypeName(int arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setCurrency(int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetCurrency(int arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setNullable(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetNullable(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setPrecision(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetPrecision(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setScale(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetScale(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setSchemaName(int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetSchemaName(int arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setSearchable(int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetSearchable(int arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setSigned(int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetSigned(int arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html#setTableName(int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void SetTableName(int arg0, string arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RowSetMetaData
-    public partial class RowSetMetaData
+    public partial class RowSetMetaData : Javax.Sql.IRowSetMetaData
     {
         #region Constructors
 

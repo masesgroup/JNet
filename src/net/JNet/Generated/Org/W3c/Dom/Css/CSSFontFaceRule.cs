@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSFontFaceRule
+    public partial interface ICSSFontFaceRule
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSFontFaceRule.html#getStyle()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSStyleDeclaration Style { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSFontFaceRule
-    public partial class CSSFontFaceRule
+    public partial class CSSFontFaceRule : Org.W3c.Dom.Css.ICSSFontFaceRule
     {
         #region Constructors
 

@@ -65,8 +65,29 @@ namespace Java.Lang
     }
     #endregion
 
+    #region IComparable<T>
+    public partial interface IComparable<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><see cref="int"/></returns>
+        int CompareTo(T arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Comparable<T>
-    public partial class Comparable<T>
+    public partial class Comparable<T> : Java.Lang.IComparable<T>
     {
         #region Constructors
 

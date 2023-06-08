@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IHierarchyBoundsListener
+    public partial interface IHierarchyBoundsListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        void AncestorMoved(Java.Awt.EventNs.HierarchyEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        void AncestorResized(Java.Awt.EventNs.HierarchyEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HierarchyBoundsListener
-    public partial class HierarchyBoundsListener
+    public partial class HierarchyBoundsListener : Java.Awt.EventNs.IHierarchyBoundsListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        public virtual void AncestorMoved(Java.Awt.EventNs.HierarchyEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        public virtual void AncestorResized(Java.Awt.EventNs.HierarchyEvent arg0)
+        {
+            
+        }
 
         #endregion
 

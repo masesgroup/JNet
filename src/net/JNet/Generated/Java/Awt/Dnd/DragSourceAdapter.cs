@@ -45,6 +45,54 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDropEvent"/></param>
+        public virtual void DragDropEnd(Java.Awt.Dnd.DragSourceDropEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        public virtual void DragEnter(Java.Awt.Dnd.DragSourceDragEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceEvent"/></param>
+        public virtual void DragExit(Java.Awt.Dnd.DragSourceEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        public virtual void DragMouseMoved(Java.Awt.Dnd.DragSourceDragEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        public virtual void DragOver(Java.Awt.Dnd.DragSourceDragEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        public virtual void DropActionChanged(Java.Awt.Dnd.DragSourceDragEvent arg0)
+        {
+            
+        }
 
         #endregion
 

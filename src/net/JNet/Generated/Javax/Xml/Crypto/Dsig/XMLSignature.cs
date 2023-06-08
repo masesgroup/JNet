@@ -25,8 +25,61 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region IXMLSignature
+    public partial interface IXMLSignature
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignatureValue()"/> 
+        /// </summary>
+        Javax.Xml.Crypto.Dsig.XMLSignature.SignatureValue GetSignatureValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getId()"/> 
+        /// </summary>
+        string Id { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getKeyInfo()"/> 
+        /// </summary>
+        Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo KeyInfo { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getKeySelectorResult()"/> 
+        /// </summary>
+        Javax.Xml.Crypto.KeySelectorResult KeySelectorResult { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getObjects()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Crypto.Dsig.XMLObject> Objects { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#getSignedInfo()"/> 
+        /// </summary>
+        Javax.Xml.Crypto.Dsig.SignedInfo SignedInfo { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#validate(javax.xml.crypto.dsig.XMLValidateContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.XMLValidateContext"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
+        bool Validate(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignature.html#sign(javax.xml.crypto.dsig.XMLSignContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.XMLSignContext"/></param>
+        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
+        /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
+        void Sign(Javax.Xml.Crypto.Dsig.XMLSignContext arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLSignature
-    public partial class XMLSignature
+    public partial class XMLSignature : Javax.Xml.Crypto.Dsig.IXMLSignature
     {
         #region Constructors
 

@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
+    #region IUnreferenced
+    public partial interface IUnreferenced
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/Unreferenced.html#unreferenced()"/>
+        /// </summary>
+        void UnreferencedMethod();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Unreferenced
-    public partial class Unreferenced
+    public partial class Unreferenced : Java.Rmi.Server.IUnreferenced
     {
         #region Constructors
 

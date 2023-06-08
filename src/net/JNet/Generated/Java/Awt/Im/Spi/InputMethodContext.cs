@@ -25,8 +25,52 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Im.Spi
 {
+    #region IInputMethodContext
+    public partial interface IInputMethodContext
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#createInputMethodWindow(java.lang.String,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Awt.Window"/></returns>
+        Java.Awt.Window CreateInputMethodWindow(string arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#createInputMethodJFrame(java.lang.String,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Javax.Swing.JFrame"/></returns>
+        Javax.Swing.JFrame CreateInputMethodJFrame(string arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#dispatchInputMethodEvent(int,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Text.AttributedCharacterIterator"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <param name="arg4"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        void DispatchInputMethodEvent(int arg0, Java.Text.AttributedCharacterIterator arg1, int arg2, Java.Awt.FontNs.TextHitInfo arg3, Java.Awt.FontNs.TextHitInfo arg4);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#enableClientWindowNotification(java.awt.im.spi.InputMethod,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Im.Spi.InputMethod"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        void EnableClientWindowNotification(Java.Awt.Im.Spi.InputMethod arg0, bool arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region InputMethodContext
-    public partial class InputMethodContext
+    public partial class InputMethodContext : Java.Awt.Im.Spi.IInputMethodContext
     {
         #region Constructors
 

@@ -25,8 +25,75 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Undo
 {
+    #region IUndoableEdit
+    public partial interface IUndoableEdit
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#canRedo()"/> 
+        /// </summary>
+        bool CanRedo { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#canUndo()"/> 
+        /// </summary>
+        bool CanUndo { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#isSignificant()"/> 
+        /// </summary>
+        bool IsSignificant { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getPresentationName()"/> 
+        /// </summary>
+        string PresentationName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getRedoPresentationName()"/> 
+        /// </summary>
+        string RedoPresentationName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#getUndoPresentationName()"/> 
+        /// </summary>
+        string UndoPresentationName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#addEdit(javax.swing.undo.UndoableEdit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool AddEdit(Javax.Swing.Undo.UndoableEdit arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#replaceEdit(javax.swing.undo.UndoableEdit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Undo.UndoableEdit"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool ReplaceEdit(Javax.Swing.Undo.UndoableEdit arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#die()"/>
+        /// </summary>
+        void Die();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#redo()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Swing.Undo.CannotRedoException"/>
+        void Redo();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html#undo()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Swing.Undo.CannotUndoException"/>
+        void Undo();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region UndoableEdit
-    public partial class UndoableEdit
+    public partial class UndoableEdit : Javax.Swing.Undo.IUndoableEdit
     {
         #region Constructors
 

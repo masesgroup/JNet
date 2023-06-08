@@ -25,8 +25,45 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSStyleSheet
+    public partial interface ICSSStyleSheet
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleSheet.html#getCssRules()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSRuleList CssRules { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleSheet.html#getOwnerRule()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSRule OwnerRule { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleSheet.html#insertRule(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        int InsertRule(string arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleSheet.html#deleteRule(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void DeleteRule(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSStyleSheet
-    public partial class CSSStyleSheet
+    public partial class CSSStyleSheet : Org.W3c.Dom.Css.ICSSStyleSheet
     {
         #region Constructors
 

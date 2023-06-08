@@ -73,8 +73,35 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IConsumer<T>
+    public partial interface IConsumer<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        void Accept(T arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
+        Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Consumer<T>
-    public partial class Consumer<T>
+    public partial class Consumer<T> : Java.Util.Function.IConsumer<T>
     {
         #region Constructors
 

@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IMember
+    public partial interface IMember
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#getDeclaringClass()"/> 
+        /// </summary>
+        Java.Lang.Class DeclaringClass { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#isSynthetic()"/> 
+        /// </summary>
+        bool IsSynthetic { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#getModifiers()"/> 
+        /// </summary>
+        int Modifiers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Member
-    public partial class Member
+    public partial class Member : Java.Lang.Reflect.IMember
     {
         #region Constructors
 

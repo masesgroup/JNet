@@ -25,8 +25,60 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
+    #region ITemporalUnit
+    public partial interface ITemporalUnit
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#getDuration()"/> 
+        /// </summary>
+        Java.Time.Duration Duration { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/> 
+        /// </summary>
+        bool IsDateBased { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/> 
+        /// </summary>
+        bool IsDurationEstimated { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/> 
+        /// </summary>
+        bool IsTimeBased { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#addTo(java.time.temporal.Temporal,long)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="R"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <typeparam name="R"><see cref="Java.Time.Temporal.Temporal"/></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
+        R AddTo<R>(R arg0, long arg1) where R: Java.Time.Temporal.Temporal;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="long"/></returns>
+        long Between(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.Temporal arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isSupportedBy(java.time.temporal.Temporal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsSupportedBy(Java.Time.Temporal.Temporal arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TemporalUnit
-    public partial class TemporalUnit
+    public partial class TemporalUnit : Java.Time.Temporal.ITemporalUnit
     {
         #region Constructors
 

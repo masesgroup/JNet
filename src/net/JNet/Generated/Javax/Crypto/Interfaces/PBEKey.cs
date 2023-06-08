@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Interfaces
 {
+    #region IPBEKey
+    public partial interface IPBEKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getIterationCount()"/> 
+        /// </summary>
+        int IterationCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getPassword()"/> 
+        /// </summary>
+        char[] Password { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html#getSalt()"/> 
+        /// </summary>
+        byte[] Salt { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PBEKey
-    public partial class PBEKey
+    public partial class PBEKey : Javax.Crypto.Interfaces.IPBEKey
     {
         #region Constructors
 

@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
+    #region IOpenOption
+    public partial interface IOpenOption
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region OpenOption
-    public partial class OpenOption
+    public partial class OpenOption : Java.Nio.File.IOpenOption
     {
         #region Constructors
 

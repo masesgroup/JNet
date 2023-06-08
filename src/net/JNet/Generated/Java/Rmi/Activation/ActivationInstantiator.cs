@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Activation
 {
+    #region IActivationInstantiator
+    public partial interface IActivationInstantiator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationInstantiator.html#newInstance(java.rmi.activation.ActivationID,java.rmi.activation.ActivationDesc)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Activation.ActivationDesc"/></param>
+        /// <typeparam name="ReturnExtendsJava_Rmi_Remote"><see cref="Java.Rmi.Remote"/></typeparam>
+        /// <returns><see cref="Java.Rmi.MarshalledObject"/></returns>
+        /// <exception cref="Java.Rmi.Activation.ActivationException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        Java.Rmi.MarshalledObject<ReturnExtendsJava_Rmi_Remote> NewInstance<ReturnExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Activation.ActivationDesc arg1) where ReturnExtendsJava_Rmi_Remote: Java.Rmi.Remote;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ActivationInstantiator
-    public partial class ActivationInstantiator
+    public partial class ActivationInstantiator : Java.Rmi.Activation.IActivationInstantiator
     {
         #region Constructors
 

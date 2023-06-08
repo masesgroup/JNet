@@ -25,8 +25,87 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
+    #region ITabularData
+    public partial interface ITabularData
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#isEmpty()"/> 
+        /// </summary>
+        bool IsEmpty { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#keySet()"/> 
+        /// </summary>
+        Java.Util.Set KeySet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#size()"/> 
+        /// </summary>
+        int Size { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#getTabularType()"/> 
+        /// </summary>
+        Javax.Management.Openmbean.TabularType TabularType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#values()"/> 
+        /// </summary>
+        Java.Util.Collection Values { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#containsKey(java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool ContainsKey(object[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#containsValue(javax.management.openmbean.CompositeData)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool ContainsValue(Javax.Management.Openmbean.CompositeData arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#calculateIndex(javax.management.openmbean.CompositeData)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
+        /// <returns><see cref="object"/></returns>
+        object[] CalculateIndex(Javax.Management.Openmbean.CompositeData arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#get(java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
+        Javax.Management.Openmbean.CompositeData Get(object[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#remove(java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
+        Javax.Management.Openmbean.CompositeData Remove(object[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#clear()"/>
+        /// </summary>
+        void Clear();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#put(javax.management.openmbean.CompositeData)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
+        void Put(Javax.Management.Openmbean.CompositeData arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html#putAll(javax.management.openmbean.CompositeData[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeData"/></param>
+        void PutAll(Javax.Management.Openmbean.CompositeData[] arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TabularData
-    public partial class TabularData
+    public partial class TabularData : Javax.Management.Openmbean.ITabularData
     {
         #region Constructors
 

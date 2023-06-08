@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IAppHiddenListener
+    public partial interface IAppHiddenListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appHidden(java.awt.desktop.AppHiddenEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
+        void AppHidden(Java.Awt.DesktopNs.AppHiddenEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appUnhidden(java.awt.desktop.AppHiddenEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
+        void AppUnhidden(Java.Awt.DesktopNs.AppHiddenEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AppHiddenListener
-    public partial class AppHiddenListener
+    public partial class AppHiddenListener : Java.Awt.DesktopNs.IAppHiddenListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appHidden(java.awt.desktop.AppHiddenEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
+        public virtual void AppHidden(Java.Awt.DesktopNs.AppHiddenEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appUnhidden(java.awt.desktop.AppHiddenEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
+        public virtual void AppUnhidden(Java.Awt.DesktopNs.AppHiddenEvent arg0)
+        {
+            
+        }
 
         #endregion
 

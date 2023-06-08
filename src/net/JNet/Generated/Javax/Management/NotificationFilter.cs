@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region INotificationFilter
+    public partial interface INotificationFilter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsNotificationEnabled(Javax.Management.Notification arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NotificationFilter
-    public partial class NotificationFilter
+    public partial class NotificationFilter : Javax.Management.INotificationFilter
     {
         #region Constructors
 
@@ -45,6 +66,15 @@ namespace Javax.Management
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Notification"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public virtual bool IsNotificationEnabled(Javax.Management.Notification arg0)
+        {
+            return default;
+        }
 
         #endregion
 

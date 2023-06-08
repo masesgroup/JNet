@@ -25,8 +25,53 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Event
 {
+    #region IPrintJobListener
+    public partial interface IPrintJobListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printDataTransferCompleted(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        void PrintDataTransferCompleted(Javax.Print.Event.PrintJobEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobCanceled(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        void PrintJobCanceled(Javax.Print.Event.PrintJobEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobCompleted(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        void PrintJobCompleted(Javax.Print.Event.PrintJobEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobFailed(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        void PrintJobFailed(Javax.Print.Event.PrintJobEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobNoMoreEvents(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        void PrintJobNoMoreEvents(Javax.Print.Event.PrintJobEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobRequiresAttention(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        void PrintJobRequiresAttention(Javax.Print.Event.PrintJobEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrintJobListener
-    public partial class PrintJobListener
+    public partial class PrintJobListener : Javax.Print.Event.IPrintJobListener
     {
         #region Constructors
 
@@ -45,6 +90,54 @@ namespace Javax.Print.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printDataTransferCompleted(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintDataTransferCompleted(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobCanceled(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintJobCanceled(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobCompleted(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintJobCompleted(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobFailed(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintJobFailed(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobNoMoreEvents(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintJobNoMoreEvents(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printJobRequiresAttention(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintJobRequiresAttention(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
 
         #endregion
 

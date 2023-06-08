@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IComment
+    public partial interface IComment
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Comment
-    public partial class Comment
+    public partial class Comment : Org.W3c.Dom.IComment
     {
         #region Constructors
 

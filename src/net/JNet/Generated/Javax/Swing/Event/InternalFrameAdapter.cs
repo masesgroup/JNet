@@ -45,6 +45,62 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html#internalFrameActivated(javax.swing.event.InternalFrameEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        public virtual void InternalFrameActivated(Javax.Swing.Event.InternalFrameEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html#internalFrameClosed(javax.swing.event.InternalFrameEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        public virtual void InternalFrameClosed(Javax.Swing.Event.InternalFrameEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html#internalFrameClosing(javax.swing.event.InternalFrameEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        public virtual void InternalFrameClosing(Javax.Swing.Event.InternalFrameEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html#internalFrameDeactivated(javax.swing.event.InternalFrameEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        public virtual void InternalFrameDeactivated(Javax.Swing.Event.InternalFrameEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html#internalFrameDeiconified(javax.swing.event.InternalFrameEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        public virtual void InternalFrameDeiconified(Javax.Swing.Event.InternalFrameEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html#internalFrameIconified(javax.swing.event.InternalFrameEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        public virtual void InternalFrameIconified(Javax.Swing.Event.InternalFrameEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameAdapter.html#internalFrameOpened(javax.swing.event.InternalFrameEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.InternalFrameEvent"/></param>
+        public virtual void InternalFrameOpened(Javax.Swing.Event.InternalFrameEvent arg0)
+        {
+            
+        }
 
         #endregion
 

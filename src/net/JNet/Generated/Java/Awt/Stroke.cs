@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
+    #region IStroke
+    public partial interface IStroke
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Stroke.html#createStrokedShape(java.awt.Shape)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Shape"/></param>
+        /// <returns><see cref="Java.Awt.Shape"/></returns>
+        Java.Awt.Shape CreateStrokedShape(Java.Awt.Shape arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Stroke
-    public partial class Stroke
+    public partial class Stroke : Java.Awt.IStroke
     {
         #region Constructors
 

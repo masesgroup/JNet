@@ -25,8 +25,64 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
+    #region IWebRowSet
+    public partial interface IWebRowSet
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#readXml(java.io.InputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        void ReadXml(Java.Io.InputStream arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#readXml(java.io.Reader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void ReadXml(Java.Io.Reader arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.io.OutputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteXml(Java.Io.OutputStream arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.io.Writer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void WriteXml(Java.Io.Writer arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.sql.ResultSet,java.io.OutputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ResultSet"/></param>
+        /// <param name="arg1"><see cref="Java.Io.OutputStream"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        void WriteXml(Java.Sql.ResultSet arg0, Java.Io.OutputStream arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.sql.ResultSet,java.io.Writer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ResultSet"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Writer"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void WriteXml(Java.Sql.ResultSet arg0, Java.Io.Writer arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region WebRowSet
-    public partial class WebRowSet
+    public partial class WebRowSet : Javax.Sql.Rowset.IWebRowSet
     {
         #region Constructors
 

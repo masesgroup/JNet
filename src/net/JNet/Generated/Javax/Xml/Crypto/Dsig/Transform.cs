@@ -25,8 +25,44 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region ITransform
+    public partial interface ITransform
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#getParameterSpec()"/> 
+        /// </summary>
+        Java.Security.Spec.AlgorithmParameterSpec ParameterSpec { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext,java.io.OutputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Data"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <param name="arg2"><see cref="Java.Io.OutputStream"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.Dsig.TransformException"/>
+        Javax.Xml.Crypto.Data TransformMethod(Javax.Xml.Crypto.Data arg0, Javax.Xml.Crypto.XMLCryptoContext arg1, Java.Io.OutputStream arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Transform.html#transform(javax.xml.crypto.Data,javax.xml.crypto.XMLCryptoContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Data"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.Dsig.TransformException"/>
+        Javax.Xml.Crypto.Data TransformMethod(Javax.Xml.Crypto.Data arg0, Javax.Xml.Crypto.XMLCryptoContext arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Transform
-    public partial class Transform
+    public partial class Transform : Javax.Xml.Crypto.Dsig.ITransform
     {
         #region Constructors
 

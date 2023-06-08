@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
+    #region IAccessibleKeyBinding
+    public partial interface IAccessibleKeyBinding
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleKeyBinding.html#getAccessibleKeyBindingCount()"/> 
+        /// </summary>
+        int AccessibleKeyBindingCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleKeyBinding.html#getAccessibleKeyBinding(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="object"/></returns>
+        object GetAccessibleKeyBinding(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AccessibleKeyBinding
-    public partial class AccessibleKeyBinding
+    public partial class AccessibleKeyBinding : Javax.Accessibility.IAccessibleKeyBinding
     {
         #region Constructors
 

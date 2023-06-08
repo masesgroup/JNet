@@ -24,12 +24,9 @@ namespace Javax.Naming.Event
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html"/>
     /// </summary>
-    public interface IObjectChangeListener : IJVMBridgeBase
+    public partial interface IObjectChangeListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
-        /// </summary>
-        void ObjectChanged(NamingEvent evt);
+
     }
 
     /// <summary>
@@ -67,11 +64,6 @@ namespace Javax.Naming.Event
         void EventHandlerObjectChanged(object sender, CLRListenerEventArgs<CLREventData<NamingEvent>> data)
         {
             OnObjectChanged(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IObjectChangeListener.ObjectChanged(NamingEvent)"/>
-        public virtual void ObjectChanged(NamingEvent evt)
-        {
-
         }
     }
 }

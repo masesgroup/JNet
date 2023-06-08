@@ -74,8 +74,35 @@ namespace Java.Nio.Channels
     }
     #endregion
 
+    #region ICompletionHandler<V, A>
+    public partial interface ICompletionHandler<V, A>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="V"/></param>
+        /// <param name="arg1"><typeparamref name="A"/></param>
+        void Completed(V arg0, A arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg1"><typeparamref name="A"/></param>
+        void Failed(Java.Lang.Throwable arg0, A arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CompletionHandler<V, A>
-    public partial class CompletionHandler<V, A>
+    public partial class CompletionHandler<V, A> : Java.Nio.Channels.ICompletionHandler<V, A>
     {
         #region Constructors
 

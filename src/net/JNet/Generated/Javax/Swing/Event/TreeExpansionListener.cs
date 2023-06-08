@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region ITreeExpansionListener
+    public partial interface ITreeExpansionListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html#treeCollapsed(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        void TreeCollapsed(Javax.Swing.Event.TreeExpansionEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html#treeExpanded(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        void TreeExpanded(Javax.Swing.Event.TreeExpansionEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TreeExpansionListener
-    public partial class TreeExpansionListener
+    public partial class TreeExpansionListener : Javax.Swing.Event.ITreeExpansionListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html#treeCollapsed(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        public virtual void TreeCollapsed(Javax.Swing.Event.TreeExpansionEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html#treeExpanded(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        public virtual void TreeExpanded(Javax.Swing.Event.TreeExpansionEvent arg0)
+        {
+            
+        }
 
         #endregion
 

@@ -45,6 +45,86 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowActivated(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowActivated(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosed(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowClosed(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosing(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowClosing(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeactivated(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeiconified(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowIconified(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowIconified(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowLostFocus(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowOpened(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowOpened(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowStateChanged(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
 
         #endregion
 

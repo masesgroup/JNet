@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs.Renderable
 {
+    #region IRenderedImageFactory
+    public partial interface IRenderedImageFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html#create(java.awt.image.renderable.ParameterBlock,java.awt.RenderingHints)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.RenderingHints"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        Java.Awt.ImageNs.RenderedImage Create(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, Java.Awt.RenderingHints arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RenderedImageFactory
-    public partial class RenderedImageFactory
+    public partial class RenderedImageFactory : Java.Awt.ImageNs.Renderable.IRenderedImageFactory
     {
         #region Constructors
 

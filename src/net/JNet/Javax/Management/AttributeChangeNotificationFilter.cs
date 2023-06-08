@@ -24,9 +24,5 @@ namespace Javax.Management
     {
         // can be extended with methods not reflected or not available in Java;
 
-        /// <summary>
-        /// Gets all the enabled attribute names for this filter.
-        /// </summary>
-        public Java.Util.Vector<string> EnabledAttributes2 => EnabledAttributes.Cast<Java.Util.Vector<string>>();
     }
 }

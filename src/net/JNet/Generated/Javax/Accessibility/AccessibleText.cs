@@ -25,8 +25,82 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
+    #region IAccessibleText
+    public partial interface IAccessibleText
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getCaretPosition()"/> 
+        /// </summary>
+        int CaretPosition { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getCharCount()"/> 
+        /// </summary>
+        int CharCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getSelectedText()"/> 
+        /// </summary>
+        string SelectedText { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getSelectionEnd()"/> 
+        /// </summary>
+        int SelectionEnd { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getSelectionStart()"/> 
+        /// </summary>
+        int SelectionStart { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getIndexAtPoint(java.awt.Point)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        /// <returns><see cref="int"/></returns>
+        int GetIndexAtPoint(Java.Awt.Point arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getCharacterBounds(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        Java.Awt.Rectangle GetCharacterBounds(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getAfterIndex(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="string"/></returns>
+        string GetAfterIndex(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getAtIndex(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="string"/></returns>
+        string GetAtIndex(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getBeforeIndex(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="string"/></returns>
+        string GetBeforeIndex(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#getCharacterAttribute(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+        Javax.Swing.Text.AttributeSet GetCharacterAttribute(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AccessibleText
-    public partial class AccessibleText
+    public partial class AccessibleText : Javax.Accessibility.IAccessibleText
     {
         #region Constructors
 

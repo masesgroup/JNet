@@ -25,8 +25,47 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
+    #region IStartDocument
+    public partial interface IStartDocument
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#getCharacterEncodingScheme()"/> 
+        /// </summary>
+        string CharacterEncodingScheme { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#encodingSet()"/> 
+        /// </summary>
+        bool EncodingSet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#isStandalone()"/> 
+        /// </summary>
+        bool IsStandalone { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#standaloneSet()"/> 
+        /// </summary>
+        bool StandaloneSet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#getSystemId()"/> 
+        /// </summary>
+        string SystemId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#getVersion()"/> 
+        /// </summary>
+        string Version { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region StartDocument
-    public partial class StartDocument
+    public partial class StartDocument : Javax.Xml.Stream.Events.IStartDocument
     {
         #region Constructors
 

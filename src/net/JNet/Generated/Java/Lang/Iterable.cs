@@ -78,8 +78,37 @@ namespace Java.Lang
     }
     #endregion
 
+    #region IIterable<T>
+    public partial interface IIterable<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#iterator()"/> 
+        /// </summary>
+        Java.Util.Iterator<T> Iterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#spliterator()"/> 
+        /// </summary>
+        Java.Util.Spliterator<T> Spliterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html#forEach(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        void ForEach<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Iterable<T>
-    public partial class Iterable<T>
+    public partial class Iterable<T> : Java.Lang.IIterable<T>
     {
         #region Constructors
 

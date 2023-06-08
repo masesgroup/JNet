@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IProcessingInstruction
+    public partial interface IProcessingInstruction
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html#setData(java.lang.String)"/>
+        /// </summary>
+        string Data { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html#getTarget()"/> 
+        /// </summary>
+        string Target { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ProcessingInstruction
-    public partial class ProcessingInstruction
+    public partial class ProcessingInstruction : Org.W3c.Dom.IProcessingInstruction
     {
         #region Constructors
 

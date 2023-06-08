@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Sax
 {
+    #region ITemplatesHandler
+    public partial interface ITemplatesHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        string SystemId { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getTemplates()"/> 
+        /// </summary>
+        Javax.Xml.Transform.Templates Templates { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TemplatesHandler
-    public partial class TemplatesHandler
+    public partial class TemplatesHandler : Javax.Xml.Transform.Sax.ITemplatesHandler
     {
         #region Constructors
 

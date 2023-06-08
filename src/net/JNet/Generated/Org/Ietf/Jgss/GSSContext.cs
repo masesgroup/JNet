@@ -25,8 +25,220 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Ietf.Jgss
 {
+    #region IGSSContext
+    public partial interface IGSSContext
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getAnonymityState()"/> 
+        /// </summary>
+        bool AnonymityState { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getConfState()"/> 
+        /// </summary>
+        bool ConfState { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getCredDelegState()"/> 
+        /// </summary>
+        bool CredDelegState { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getDelegCred()"/> 
+        /// </summary>
+        Org.Ietf.Jgss.GSSCredential DelegCred { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#export()"/> 
+        /// </summary>
+        byte[] Export { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getIntegState()"/> 
+        /// </summary>
+        bool IntegState { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isEstablished()"/> 
+        /// </summary>
+        bool IsEstablished { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isInitiator()"/> 
+        /// </summary>
+        bool IsInitiator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isProtReady()"/> 
+        /// </summary>
+        bool IsProtReady { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#isTransferable()"/> 
+        /// </summary>
+        bool IsTransferable { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getLifetime()"/> 
+        /// </summary>
+        int Lifetime { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getMech()"/> 
+        /// </summary>
+        Org.Ietf.Jgss.Oid Mech { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getMutualAuthState()"/> 
+        /// </summary>
+        bool MutualAuthState { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getReplayDetState()"/> 
+        /// </summary>
+        bool ReplayDetState { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getSequenceDetState()"/> 
+        /// </summary>
+        bool SequenceDetState { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getSrcName()"/> 
+        /// </summary>
+        Org.Ietf.Jgss.GSSName SrcName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getTargName()"/> 
+        /// </summary>
+        Org.Ietf.Jgss.GSSName TargName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#acceptSecContext(byte[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        byte[] AcceptSecContext(byte[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getMIC(byte[],int,int,org.ietf.jgss.MessageProp)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Org.Ietf.Jgss.MessageProp"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        byte[] GetMIC(byte[] arg0, int arg1, int arg2, Org.Ietf.Jgss.MessageProp arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#initSecContext(byte[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        byte[] InitSecContext(byte[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#unwrap(byte[],int,int,org.ietf.jgss.MessageProp)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Org.Ietf.Jgss.MessageProp"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        byte[] Unwrap(byte[] arg0, int arg1, int arg2, Org.Ietf.Jgss.MessageProp arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#wrap(byte[],int,int,org.ietf.jgss.MessageProp)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Org.Ietf.Jgss.MessageProp"/></param>
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        byte[] Wrap(byte[] arg0, int arg1, int arg2, Org.Ietf.Jgss.MessageProp arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#getWrapSizeLimit(int,boolean,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        int GetWrapSizeLimit(int arg0, bool arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#dispose()"/>
+        /// </summary>
+
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void Dispose();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestAnonymity(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void RequestAnonymity(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestConf(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void RequestConf(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestCredDeleg(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void RequestCredDeleg(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestInteg(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void RequestInteg(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestLifetime(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void RequestLifetime(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestMutualAuth(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void RequestMutualAuth(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestReplayDet(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void RequestReplayDet(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#requestSequenceDet(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void RequestSequenceDet(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#setChannelBinding(org.ietf.jgss.ChannelBinding)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.ChannelBinding"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void SetChannelBinding(Org.Ietf.Jgss.ChannelBinding arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSContext.html#verifyMIC(byte[],int,int,byte[],int,int,org.ietf.jgss.MessageProp)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="byte"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="Org.Ietf.Jgss.MessageProp"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void VerifyMIC(byte[] arg0, int arg1, int arg2, byte[] arg3, int arg4, int arg5, Org.Ietf.Jgss.MessageProp arg6);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region GSSContext
-    public partial class GSSContext
+    public partial class GSSContext : Org.Ietf.Jgss.IGSSContext
     {
         #region Constructors
 

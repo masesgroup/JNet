@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Event
 {
+    #region INamespaceChangeListener
+    public partial interface INamespaceChangeListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectAdded(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        void ObjectAdded(Javax.Naming.Event.NamingEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRemoved(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        void ObjectRemoved(Javax.Naming.Event.NamingEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRenamed(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        void ObjectRenamed(Javax.Naming.Event.NamingEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NamespaceChangeListener
-    public partial class NamespaceChangeListener
+    public partial class NamespaceChangeListener : Javax.Naming.Event.INamespaceChangeListener
     {
         #region Constructors
 
@@ -45,6 +75,30 @@ namespace Javax.Naming.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectAdded(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        public virtual void ObjectAdded(Javax.Naming.Event.NamingEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRemoved(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        public virtual void ObjectRemoved(Javax.Naming.Event.NamingEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRenamed(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        public virtual void ObjectRenamed(Javax.Naming.Event.NamingEvent arg0)
+        {
+            
+        }
 
         #endregion
 

@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Views
 {
+    #region IAbstractView
+    public partial interface IAbstractView
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/views/AbstractView.html#getDocument()"/> 
+        /// </summary>
+        Org.W3c.Dom.Views.DocumentView Document { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AbstractView
-    public partial class AbstractView
+    public partial class AbstractView : Org.W3c.Dom.Views.IAbstractView
     {
         #region Constructors
 

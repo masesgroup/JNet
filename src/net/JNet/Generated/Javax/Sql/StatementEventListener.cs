@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
+    #region IStatementEventListener
+    public partial interface IStatementEventListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
+        void StatementClosed(Javax.Sql.StatementEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
+        void StatementErrorOccurred(Javax.Sql.StatementEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region StatementEventListener
-    public partial class StatementEventListener
+    public partial class StatementEventListener : Javax.Sql.IStatementEventListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Javax.Sql
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
+        public virtual void StatementClosed(Javax.Sql.StatementEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.StatementEvent"/></param>
+        public virtual void StatementErrorOccurred(Javax.Sql.StatementEvent arg0)
+        {
+            
+        }
 
         #endregion
 

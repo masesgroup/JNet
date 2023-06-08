@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
+    #region ICertPathParameters
+    public partial interface ICertPathParameters
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CertPathParameters
-    public partial class CertPathParameters
+    public partial class CertPathParameters : Java.Security.Cert.ICertPathParameters
     {
         #region Constructors
 

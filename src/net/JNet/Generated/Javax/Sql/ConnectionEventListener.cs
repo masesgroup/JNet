@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
+    #region IConnectionEventListener
+    public partial interface IConnectionEventListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
+        void ConnectionClosed(Javax.Sql.ConnectionEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
+        void ConnectionErrorOccurred(Javax.Sql.ConnectionEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ConnectionEventListener
-    public partial class ConnectionEventListener
+    public partial class ConnectionEventListener : Javax.Sql.IConnectionEventListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Javax.Sql
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
+        public virtual void ConnectionClosed(Javax.Sql.ConnectionEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
+        public virtual void ConnectionErrorOccurred(Javax.Sql.ConnectionEvent arg0)
+        {
+            
+        }
 
         #endregion
 

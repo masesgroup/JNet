@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IAppReopenedListener
+    public partial interface IAppReopenedListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html#appReopened(java.awt.desktop.AppReopenedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppReopenedEvent"/></param>
+        void AppReopened(Java.Awt.DesktopNs.AppReopenedEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AppReopenedListener
-    public partial class AppReopenedListener
+    public partial class AppReopenedListener : Java.Awt.DesktopNs.IAppReopenedListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html#appReopened(java.awt.desktop.AppReopenedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppReopenedEvent"/></param>
+        public virtual void AppReopened(Java.Awt.DesktopNs.AppReopenedEvent arg0)
+        {
+            
+        }
 
         #endregion
 

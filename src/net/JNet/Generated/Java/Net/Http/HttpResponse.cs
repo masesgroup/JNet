@@ -816,8 +816,55 @@ namespace Java.Net.Http
     }
     #endregion
 
+    #region IHttpResponse<T>
+    public partial interface IHttpResponse<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#body()"/> 
+        /// </summary>
+        T Body { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#headers()"/> 
+        /// </summary>
+        Java.Net.Http.HttpHeaders Headers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#previousResponse()"/> 
+        /// </summary>
+        Java.Util.Optional<Java.Net.Http.HttpResponse<T>> PreviousResponse { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#request()"/> 
+        /// </summary>
+        Java.Net.Http.HttpRequest Request { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#sslSession()"/> 
+        /// </summary>
+        Java.Util.Optional<Javax.Net.Ssl.SSLSession> SslSession { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#statusCode()"/> 
+        /// </summary>
+        int StatusCode { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#uri()"/> 
+        /// </summary>
+        Java.Net.URI Uri { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html#version()"/> 
+        /// </summary>
+        Java.Net.Http.HttpClient.Version Version { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HttpResponse<T>
-    public partial class HttpResponse<T>
+    public partial class HttpResponse<T> : Java.Net.Http.IHttpResponse<T>
     {
         #region Constructors
 

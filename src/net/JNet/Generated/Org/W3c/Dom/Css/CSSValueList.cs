@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSValueList
+    public partial interface ICSSValueList
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValueList.html#getLength()"/> 
+        /// </summary>
+        int Length { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValueList.html#item(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Css.CSSValue"/></returns>
+        Org.W3c.Dom.Css.CSSValue Item(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSValueList
-    public partial class CSSValueList
+    public partial class CSSValueList : Org.W3c.Dom.Css.ICSSValueList
     {
         #region Constructors
 

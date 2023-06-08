@@ -25,8 +25,47 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Monitor
 {
+    #region IStringMonitorMBean
+    public partial interface IStringMonitorMBean
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#getNotifyDiffer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#setNotifyDiffer(boolean)"/>
+        /// </summary>
+        bool NotifyDiffer { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#getNotifyMatch()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#setNotifyMatch(boolean)"/>
+        /// </summary>
+        bool NotifyMatch { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#getStringToCompare()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#setStringToCompare(java.lang.String)"/>
+        /// </summary>
+        string StringToCompare { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#getDerivedGauge(javax.management.ObjectName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="string"/></returns>
+        string GetDerivedGauge(Javax.Management.ObjectName arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html#getDerivedGaugeTimeStamp(javax.management.ObjectName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="long"/></returns>
+        long GetDerivedGaugeTimeStamp(Javax.Management.ObjectName arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region StringMonitorMBean
-    public partial class StringMonitorMBean
+    public partial class StringMonitorMBean : Javax.Management.Monitor.IStringMonitorMBean
     {
         #region Constructors
 

@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
+    #region IKeyValue
+    public partial interface IKeyValue
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html#getPublicKey()"/> 
+        /// </summary>
+        Java.Security.PublicKey PublicKey { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region KeyValue
-    public partial class KeyValue
+    public partial class KeyValue : Javax.Xml.Crypto.Dsig.Keyinfo.IKeyValue
     {
         #region Constructors
 

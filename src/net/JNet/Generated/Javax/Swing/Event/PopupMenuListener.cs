@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IPopupMenuListener
+    public partial interface IPopupMenuListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        void PopupMenuCanceled(Javax.Swing.Event.PopupMenuEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        void PopupMenuWillBecomeInvisible(Javax.Swing.Event.PopupMenuEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        void PopupMenuWillBecomeVisible(Javax.Swing.Event.PopupMenuEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PopupMenuListener
-    public partial class PopupMenuListener
+    public partial class PopupMenuListener : Javax.Swing.Event.IPopupMenuListener
     {
         #region Constructors
 
@@ -45,6 +75,30 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        public virtual void PopupMenuCanceled(Javax.Swing.Event.PopupMenuEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        public virtual void PopupMenuWillBecomeInvisible(Javax.Swing.Event.PopupMenuEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
+        public virtual void PopupMenuWillBecomeVisible(Javax.Swing.Event.PopupMenuEvent arg0)
+        {
+            
+        }
 
         #endregion
 

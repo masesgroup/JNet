@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IAnnotatedParameterizedType
+    public partial interface IAnnotatedParameterizedType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedParameterizedType.html#getAnnotatedActualTypeArguments()"/> 
+        /// </summary>
+        Java.Lang.Reflect.AnnotatedType[] AnnotatedActualTypeArguments { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedParameterizedType.html#getAnnotatedOwnerType()"/> 
+        /// </summary>
+        Java.Lang.Reflect.AnnotatedType AnnotatedOwnerType { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AnnotatedParameterizedType
-    public partial class AnnotatedParameterizedType
+    public partial class AnnotatedParameterizedType : Java.Lang.Reflect.IAnnotatedParameterizedType
     {
         #region Constructors
 

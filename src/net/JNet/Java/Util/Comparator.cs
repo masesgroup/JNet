@@ -70,12 +70,9 @@ namespace Java.Util
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html"/>
     /// </summary>
     /// <typeparam name="T">The comparator type</typeparam>
-    public interface IComparator<T> : IJVMBridgeBase
+    public partial interface IComparator<T> : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(T,T)"/>
-        /// </summary>
-        int Compare(T o1, T o2);
+
     }
 
     /// <summary>
@@ -114,11 +111,6 @@ namespace Java.Util
         {
             var retVal = OnCompare(data.EventData.TypedEventData, data.EventData.GetAt<T>(0));
             data.SetReturnValue(retVal);
-        }
-        /// <inheritdoc cref="IComparator{T}.Compare(T, T)"/>
-        public virtual int Compare(T o1, T o2)
-        {
-            return default;
         }
     }
 }

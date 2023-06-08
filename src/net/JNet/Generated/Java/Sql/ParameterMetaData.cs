@@ -25,8 +25,83 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region IParameterMetaData
+    public partial interface IParameterMetaData
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterCount()"/> 
+        /// </summary>
+        int ParameterCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#isSigned(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool IsSigned(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        int GetParameterMode(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        int GetParameterType(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getPrecision(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        int GetPrecision(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getScale(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        int GetScale(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#isNullable(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        int IsNullable(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterClassName(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        string GetParameterClassName(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#getParameterTypeName(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        string GetParameterTypeName(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ParameterMetaData
-    public partial class ParameterMetaData
+    public partial class ParameterMetaData : Java.Sql.IParameterMetaData
     {
         #region Constructors
 

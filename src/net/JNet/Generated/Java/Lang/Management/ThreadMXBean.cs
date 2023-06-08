@@ -25,8 +25,171 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
+    #region IThreadMXBean
+    public partial interface IThreadMXBean
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getAllThreadIds()"/> 
+        /// </summary>
+        long[] AllThreadIds { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getCurrentThreadCpuTime()"/> 
+        /// </summary>
+        long CurrentThreadCpuTime { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getCurrentThreadUserTime()"/> 
+        /// </summary>
+        long CurrentThreadUserTime { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getDaemonThreadCount()"/> 
+        /// </summary>
+        int DaemonThreadCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findDeadlockedThreads()"/> 
+        /// </summary>
+        long[] FindDeadlockedThreads { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#findMonitorDeadlockedThreads()"/> 
+        /// </summary>
+        long[] FindMonitorDeadlockedThreads { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isCurrentThreadCpuTimeSupported()"/> 
+        /// </summary>
+        bool IsCurrentThreadCpuTimeSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isObjectMonitorUsageSupported()"/> 
+        /// </summary>
+        bool IsObjectMonitorUsageSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isSynchronizerUsageSupported()"/> 
+        /// </summary>
+        bool IsSynchronizerUsageSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringEnabled()"/> 
+        /// </summary>
+        bool IsThreadContentionMonitoringEnabled { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadContentionMonitoringSupported()"/> 
+        /// </summary>
+        bool IsThreadContentionMonitoringSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeEnabled()"/> 
+        /// </summary>
+        bool IsThreadCpuTimeEnabled { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#isThreadCpuTimeSupported()"/> 
+        /// </summary>
+        bool IsThreadCpuTimeSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getPeakThreadCount()"/> 
+        /// </summary>
+        int PeakThreadCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadCount()"/> 
+        /// </summary>
+        int ThreadCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getTotalStartedThreadCount()"/> 
+        /// </summary>
+        long TotalStartedThreadCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
+        Java.Lang.Management.ThreadInfo GetThreadInfo(long arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
+        Java.Lang.Management.ThreadInfo GetThreadInfo(long arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#dumpAllThreads(boolean,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
+        Java.Lang.Management.ThreadInfo[] DumpAllThreads(bool arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],boolean,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
+        Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0, bool arg1, bool arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
+        Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
+        Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadCpuTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        long GetThreadCpuTime(long arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadUserTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        long GetThreadUserTime(long arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#resetPeakThreadCount()"/>
+        /// </summary>
+        void ResetPeakThreadCount();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#setThreadContentionMonitoringEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        void SetThreadContentionMonitoringEnabled(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#setThreadCpuTimeEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        void SetThreadCpuTimeEnabled(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#dumpAllThreads(boolean,boolean,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
+        Java.Lang.Management.ThreadInfo[] DumpAllThreads(bool arg0, bool arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],boolean,boolean,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
+        Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0, bool arg1, bool arg2, int arg3);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ThreadMXBean
-    public partial class ThreadMXBean
+    public partial class ThreadMXBean : Java.Lang.Management.IThreadMXBean
     {
         #region Constructors
 

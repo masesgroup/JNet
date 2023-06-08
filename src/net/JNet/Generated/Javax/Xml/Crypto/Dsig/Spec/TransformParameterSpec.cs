@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
+    #region ITransformParameterSpec
+    public partial interface ITransformParameterSpec
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TransformParameterSpec
-    public partial class TransformParameterSpec
+    public partial class TransformParameterSpec : Javax.Xml.Crypto.Dsig.Spec.ITransformParameterSpec
     {
         #region Constructors
 

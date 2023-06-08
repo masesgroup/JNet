@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
+    #region ICancelablePrintJob
+    public partial interface ICancelablePrintJob
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/CancelablePrintJob.html#cancel()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Print.PrintException"/>
+        void Cancel();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CancelablePrintJob
-    public partial class CancelablePrintJob
+    public partial class CancelablePrintJob : Javax.Print.ICancelablePrintJob
     {
         #region Constructors
 

@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
+    #region IX509Data
+    public partial interface IX509Data
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html#getContent()"/> 
+        /// </summary>
+        Java.Util.List Content { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region X509Data
-    public partial class X509Data
+    public partial class X509Data : Javax.Xml.Crypto.Dsig.Keyinfo.IX509Data
     {
         #region Constructors
 

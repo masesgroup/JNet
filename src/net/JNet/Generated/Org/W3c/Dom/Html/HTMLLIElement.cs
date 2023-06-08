@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLLIElement
+    public partial interface IHTMLLIElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLIElement.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLIElement.html#setType(java.lang.String)"/>
+        /// </summary>
+        string Type { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLIElement.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLIElement.html#setValue(int)"/>
+        /// </summary>
+        int Value { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLLIElement
-    public partial class HTMLLIElement
+    public partial class HTMLLIElement : Org.W3c.Dom.Html.IHTMLLIElement
     {
         #region Constructors
 

@@ -25,8 +25,47 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
+    #region IEntityDeclaration
+    public partial interface IEntityDeclaration
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getBaseURI()"/> 
+        /// </summary>
+        string BaseURI { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getNotationName()"/> 
+        /// </summary>
+        string NotationName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getPublicId()"/> 
+        /// </summary>
+        string PublicId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getReplacementText()"/> 
+        /// </summary>
+        string ReplacementText { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html#getSystemId()"/> 
+        /// </summary>
+        string SystemId { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region EntityDeclaration
-    public partial class EntityDeclaration
+    public partial class EntityDeclaration : Javax.Xml.Stream.Events.IEntityDeclaration
     {
         #region Constructors
 

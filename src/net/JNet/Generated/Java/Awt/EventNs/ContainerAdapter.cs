@@ -45,6 +45,22 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerAdapter.html#componentAdded(java.awt.event.ContainerEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
+        public virtual void ComponentAdded(Java.Awt.EventNs.ContainerEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerAdapter.html#componentRemoved(java.awt.event.ContainerEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
+        public virtual void ComponentRemoved(Java.Awt.EventNs.ContainerEvent arg0)
+        {
+            
+        }
 
         #endregion
 

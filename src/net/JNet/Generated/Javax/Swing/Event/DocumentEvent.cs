@@ -25,8 +25,45 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IDocumentEvent
+    public partial interface IDocumentEvent
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getDocument()"/> 
+        /// </summary>
+        Javax.Swing.Text.Document Document { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getLength()"/> 
+        /// </summary>
+        int Length { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getOffset()"/> 
+        /// </summary>
+        int Offset { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getType()"/> 
+        /// </summary>
+        Javax.Swing.Event.DocumentEvent.EventType Type { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.html#getChange(javax.swing.text.Element)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Text.Element"/></param>
+        /// <returns><see cref="Javax.Swing.Event.DocumentEvent.ElementChange"/></returns>
+        Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DocumentEvent
-    public partial class DocumentEvent
+    public partial class DocumentEvent : Javax.Swing.Event.IDocumentEvent
     {
         #region Constructors
 

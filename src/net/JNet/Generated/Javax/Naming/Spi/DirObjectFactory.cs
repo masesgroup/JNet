@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
+    #region IDirObjectFactory
+    public partial interface IDirObjectFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirObjectFactory.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
+        /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
+        /// <typeparam name="Arg3Extendsobject"></typeparam>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        object GetObjectInstance<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3, Javax.Naming.Directory.Attributes arg4);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DirObjectFactory
-    public partial class DirObjectFactory
+    public partial class DirObjectFactory : Javax.Naming.Spi.IDirObjectFactory
     {
         #region Constructors
 

@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLHeadElement
+    public partial interface IHTMLHeadElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHeadElement.html#getProfile()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHeadElement.html#setProfile(java.lang.String)"/>
+        /// </summary>
+        string Profile { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLHeadElement
-    public partial class HTMLHeadElement
+    public partial class HTMLHeadElement : Org.W3c.Dom.Html.IHTMLHeadElement
     {
         #region Constructors
 

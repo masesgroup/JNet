@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio
 {
+    #region IImageTranscoder
+    public partial interface IImageTranscoder
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTranscoder.html#convertImageMetadata(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageTypeSpecifier,javax.imageio.ImageWriteParam)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
+        /// <param name="arg1"><see cref="Javax.Imageio.ImageTypeSpecifier"/></param>
+        /// <param name="arg2"><see cref="Javax.Imageio.ImageWriteParam"/></param>
+        /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
+        Javax.Imageio.Metadata.IIOMetadata ConvertImageMetadata(Javax.Imageio.Metadata.IIOMetadata arg0, Javax.Imageio.ImageTypeSpecifier arg1, Javax.Imageio.ImageWriteParam arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTranscoder.html#convertStreamMetadata(javax.imageio.metadata.IIOMetadata,javax.imageio.ImageWriteParam)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
+        /// <param name="arg1"><see cref="Javax.Imageio.ImageWriteParam"/></param>
+        /// <returns><see cref="Javax.Imageio.Metadata.IIOMetadata"/></returns>
+        Javax.Imageio.Metadata.IIOMetadata ConvertStreamMetadata(Javax.Imageio.Metadata.IIOMetadata arg0, Javax.Imageio.ImageWriteParam arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ImageTranscoder
-    public partial class ImageTranscoder
+    public partial class ImageTranscoder : Javax.Imageio.IImageTranscoder
     {
         #region Constructors
 

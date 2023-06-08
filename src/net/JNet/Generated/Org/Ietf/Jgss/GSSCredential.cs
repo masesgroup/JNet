@@ -25,8 +25,83 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Ietf.Jgss
 {
+    #region IGSSCredential
+    public partial interface IGSSCredential
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getMechs()"/> 
+        /// </summary>
+        Org.Ietf.Jgss.Oid[] Mechs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getName()"/> 
+        /// </summary>
+        Org.Ietf.Jgss.GSSName Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingLifetime()"/> 
+        /// </summary>
+        int RemainingLifetime { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage()"/> 
+        /// </summary>
+        int Usage { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingAcceptLifetime(org.ietf.jgss.Oid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        int GetRemainingAcceptLifetime(Org.Ietf.Jgss.Oid arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getRemainingInitLifetime(org.ietf.jgss.Oid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        int GetRemainingInitLifetime(Org.Ietf.Jgss.Oid arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getUsage(org.ietf.jgss.Oid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        int GetUsage(Org.Ietf.Jgss.Oid arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#getName(org.ietf.jgss.Oid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        Org.Ietf.Jgss.GSSName GetName(Org.Ietf.Jgss.Oid arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#add(org.ietf.jgss.GSSName,int,int,org.ietf.jgss.Oid,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.GSSName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void Add(Org.Ietf.Jgss.GSSName arg0, int arg1, int arg2, Org.Ietf.Jgss.Oid arg3, int arg4);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#dispose()"/>
+        /// </summary>
+
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        void Dispose();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region GSSCredential
-    public partial class GSSCredential
+    public partial class GSSCredential : Org.Ietf.Jgss.IGSSCredential
     {
         #region Constructors
 

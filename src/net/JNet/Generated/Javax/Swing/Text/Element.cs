@@ -25,8 +25,67 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
+    #region IElement
+    public partial interface IElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getAttributes()"/> 
+        /// </summary>
+        Javax.Swing.Text.AttributeSet Attributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getDocument()"/> 
+        /// </summary>
+        Javax.Swing.Text.Document Document { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElementCount()"/> 
+        /// </summary>
+        int ElementCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getEndOffset()"/> 
+        /// </summary>
+        int EndOffset { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#isLeaf()"/> 
+        /// </summary>
+        bool IsLeaf { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getParentElement()"/> 
+        /// </summary>
+        Javax.Swing.Text.Element ParentElement { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getStartOffset()"/> 
+        /// </summary>
+        int StartOffset { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElementIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        int GetElementIndex(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Element.html#getElement(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
+        Javax.Swing.Text.Element GetElement(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Element
-    public partial class Element
+    public partial class Element : Javax.Swing.Text.IElement
     {
         #region Constructors
 

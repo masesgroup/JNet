@@ -73,6 +73,14 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.HSBChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+            public virtual void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
+            {
+                
+            }
 
             #endregion
 
@@ -206,6 +214,14 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.VSBChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+            public virtual void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
+            {
+                
+            }
 
             #endregion
 

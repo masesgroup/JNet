@@ -45,6 +45,38 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentAdapter.html#componentHidden(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        public virtual void ComponentHidden(Java.Awt.EventNs.ComponentEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentAdapter.html#componentMoved(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        public virtual void ComponentMoved(Java.Awt.EventNs.ComponentEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentAdapter.html#componentResized(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        public virtual void ComponentResized(Java.Awt.EventNs.ComponentEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentAdapter.html#componentShown(java.awt.event.ComponentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ComponentEvent"/></param>
+        public virtual void ComponentShown(Java.Awt.EventNs.ComponentEvent arg0)
+        {
+            
+        }
 
         #endregion
 

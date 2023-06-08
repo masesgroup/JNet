@@ -25,8 +25,49 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Event
 {
+    #region IEventContext
+    public partial interface IEventContext
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#targetMustExist()"/> 
+        /// </summary>
+        bool TargetMustExist { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(java.lang.String,int,javax.naming.event.NamingListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        void AddNamingListener(string arg0, int arg1, Javax.Naming.Event.NamingListener arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(javax.naming.Name,int,javax.naming.event.NamingListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        void AddNamingListener(Javax.Naming.Name arg0, int arg1, Javax.Naming.Event.NamingListener arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#removeNamingListener(javax.naming.event.NamingListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        void RemoveNamingListener(Javax.Naming.Event.NamingListener arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region EventContext
-    public partial class EventContext
+    public partial class EventContext : Javax.Naming.Event.IEventContext
     {
         #region Constructors
 

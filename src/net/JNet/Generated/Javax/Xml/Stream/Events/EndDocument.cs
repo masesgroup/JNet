@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
+    #region IEndDocument
+    public partial interface IEndDocument
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region EndDocument
-    public partial class EndDocument
+    public partial class EndDocument : Javax.Xml.Stream.Events.IEndDocument
     {
         #region Constructors
 

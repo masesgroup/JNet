@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
+    #region IPropertyChangeListener
+    public partial interface IPropertyChangeListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        void PropertyChange(Java.Beans.PropertyChangeEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PropertyChangeListener
-    public partial class PropertyChangeListener
+    public partial class PropertyChangeListener : Java.Beans.IPropertyChangeListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Beans
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        public virtual void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
+        {
+            
+        }
 
         #endregion
 

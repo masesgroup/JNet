@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
+    #region IOpenMBeanAttributeInfo
+    public partial interface IOpenMBeanAttributeInfo
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()"/> 
+        /// </summary>
+        bool IsIs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/> 
+        /// </summary>
+        bool IsReadable { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/> 
+        /// </summary>
+        bool IsWritable { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region OpenMBeanAttributeInfo
-    public partial class OpenMBeanAttributeInfo
+    public partial class OpenMBeanAttributeInfo : Javax.Management.Openmbean.IOpenMBeanAttributeInfo
     {
         #region Constructors
 

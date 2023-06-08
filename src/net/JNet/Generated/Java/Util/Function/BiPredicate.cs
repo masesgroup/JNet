@@ -91,8 +91,50 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IBiPredicate<T, U>
+    public partial interface IBiPredicate<T, U>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/> 
+        /// </summary>
+        Java.Util.Function.BiPredicate<T, U> Negate { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Test(T arg0, U arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperU"></typeparam>
+        /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
+        Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperU"></typeparam>
+        /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
+        Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BiPredicate<T, U>
-    public partial class BiPredicate<T, U>
+    public partial class BiPredicate<T, U> : Java.Util.Function.IBiPredicate<T, U>
     {
         #region Constructors
 

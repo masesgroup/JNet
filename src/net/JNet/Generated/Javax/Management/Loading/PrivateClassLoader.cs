@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Loading
 {
+    #region IPrivateClassLoader
+    public partial interface IPrivateClassLoader
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrivateClassLoader
-    public partial class PrivateClassLoader
+    public partial class PrivateClassLoader : Javax.Management.Loading.IPrivateClassLoader
     {
         #region Constructors
 

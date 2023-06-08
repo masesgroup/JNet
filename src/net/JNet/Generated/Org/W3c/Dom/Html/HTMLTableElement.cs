@@ -25,8 +25,116 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLTableElement
+    public partial interface IHTMLTableElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setAlign(java.lang.String)"/>
+        /// </summary>
+        string Align { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getBgColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setBgColor(java.lang.String)"/>
+        /// </summary>
+        string BgColor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setBorder(java.lang.String)"/>
+        /// </summary>
+        string Border { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getCaption()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setCaption(org.w3c.dom.html.HTMLTableCaptionElement)"/>
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLTableCaptionElement Caption { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getCellPadding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setCellPadding(java.lang.String)"/>
+        /// </summary>
+        string CellPadding { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getCellSpacing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setCellSpacing(java.lang.String)"/>
+        /// </summary>
+        string CellSpacing { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createCaption()"/> 
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLElement CreateCaption { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTFoot()"/> 
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLElement CreateTFoot { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTHead()"/> 
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLElement CreateTHead { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getFrame()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setFrame(java.lang.String)"/>
+        /// </summary>
+        string Frame { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getRows()"/> 
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLCollection Rows { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getRules()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setRules(java.lang.String)"/>
+        /// </summary>
+        string Rules { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getSummary()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setSummary(java.lang.String)"/>
+        /// </summary>
+        string Summary { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getTBodies()"/> 
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLCollection TBodies { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getTFoot()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setTFoot(org.w3c.dom.html.HTMLTableSectionElement)"/>
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLTableSectionElement TFoot { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getTHead()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setTHead(org.w3c.dom.html.HTMLTableSectionElement)"/>
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLTableSectionElement THead { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setWidth(java.lang.String)"/>
+        /// </summary>
+        string Width { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#insertRow(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.Html.HTMLElement InsertRow(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteCaption()"/>
+        /// </summary>
+        void DeleteCaption();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteRow(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void DeleteRow(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteTFoot()"/>
+        /// </summary>
+        void DeleteTFoot();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#deleteTHead()"/>
+        /// </summary>
+        void DeleteTHead();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLTableElement
-    public partial class HTMLTableElement
+    public partial class HTMLTableElement : Org.W3c.Dom.Html.IHTMLTableElement
     {
         #region Constructors
 

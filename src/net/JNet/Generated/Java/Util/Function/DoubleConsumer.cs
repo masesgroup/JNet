@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IDoubleConsumer
+    public partial interface IDoubleConsumer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#accept(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        void Accept(double arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
+        Java.Util.Function.DoubleConsumer AndThen(Java.Util.Function.DoubleConsumer arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DoubleConsumer
-    public partial class DoubleConsumer
+    public partial class DoubleConsumer : Java.Util.Function.IDoubleConsumer
     {
         #region Constructors
 

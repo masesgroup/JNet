@@ -45,6 +45,22 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html#focusGained(java.awt.event.FocusEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        public virtual void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html#focusLost(java.awt.event.FocusEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusEvent"/></param>
+        public virtual void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
+        {
+            
+        }
 
         #endregion
 

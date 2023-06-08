@@ -25,8 +25,84 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
+    #region IScriptContext
+    public partial interface IScriptContext
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getErrorWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setErrorWriter(java.io.Writer)"/>
+        /// </summary>
+        Java.Io.Writer ErrorWriter { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getReader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setReader(java.io.Reader)"/>
+        /// </summary>
+        Java.Io.Reader Reader { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getScopes()"/> 
+        /// </summary>
+        Java.Util.List<int?> Scopes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setWriter(java.io.Writer)"/>
+        /// </summary>
+        Java.Io.Writer Writer { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getAttributesScope(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="int"/></returns>
+        int GetAttributesScope(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getAttribute(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="object"/></returns>
+        object GetAttribute(string arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getAttribute(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        object GetAttribute(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#removeAttribute(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="object"/></returns>
+        object RemoveAttribute(string arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getBindings(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Script.Bindings"/></returns>
+        Javax.Script.Bindings GetBindings(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setAttribute(java.lang.String,java.lang.Object,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        void SetAttribute(string arg0, object arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setBindings(javax.script.Bindings,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Script.Bindings"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        void SetBindings(Javax.Script.Bindings arg0, int arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ScriptContext
-    public partial class ScriptContext
+    public partial class ScriptContext : Javax.Script.IScriptContext
     {
         #region Constructors
 

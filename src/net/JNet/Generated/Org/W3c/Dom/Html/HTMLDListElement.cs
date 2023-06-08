@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLDListElement
+    public partial interface IHTMLDListElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDListElement.html#getCompact()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDListElement.html#setCompact(boolean)"/>
+        /// </summary>
+        bool Compact { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLDListElement
-    public partial class HTMLDListElement
+    public partial class HTMLDListElement : Org.W3c.Dom.Html.IHTMLDListElement
     {
         #region Constructors
 

@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
+    #region IRandomAccess
+    public partial interface IRandomAccess
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RandomAccess
-    public partial class RandomAccess
+    public partial class RandomAccess : Java.Util.IRandomAccess
     {
         #region Constructors
 

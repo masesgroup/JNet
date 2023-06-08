@@ -25,8 +25,57 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
+    #region IBeanInfo
+    public partial interface IBeanInfo
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getAdditionalBeanInfo()"/> 
+        /// </summary>
+        Java.Beans.BeanInfo[] AdditionalBeanInfo { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getBeanDescriptor()"/> 
+        /// </summary>
+        Java.Beans.BeanDescriptor BeanDescriptor { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getDefaultEventIndex()"/> 
+        /// </summary>
+        int DefaultEventIndex { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getDefaultPropertyIndex()"/> 
+        /// </summary>
+        int DefaultPropertyIndex { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getEventSetDescriptors()"/> 
+        /// </summary>
+        Java.Beans.EventSetDescriptor[] EventSetDescriptors { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getMethodDescriptors()"/> 
+        /// </summary>
+        Java.Beans.MethodDescriptor[] MethodDescriptors { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getPropertyDescriptors()"/> 
+        /// </summary>
+        Java.Beans.PropertyDescriptor[] PropertyDescriptors { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html#getIcon(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.Image"/></returns>
+        Java.Awt.Image GetIcon(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BeanInfo
-    public partial class BeanInfo
+    public partial class BeanInfo : Java.Beans.IBeanInfo
     {
         #region Constructors
 

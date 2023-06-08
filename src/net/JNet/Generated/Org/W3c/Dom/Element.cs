@@ -25,8 +25,158 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IElement
+    public partial interface IElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#getSchemaTypeInfo()"/> 
+        /// </summary>
+        Org.W3c.Dom.TypeInfo SchemaTypeInfo { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#getTagName()"/> 
+        /// </summary>
+        string TagName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#hasAttribute(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool HasAttribute(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#hasAttributeNS(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        bool HasAttributeNS(string arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#getAttribute(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="string"/></returns>
+        string GetAttribute(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#getAttributeNS(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        string GetAttributeNS(string arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#getAttributeNode(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
+        Org.W3c.Dom.Attr GetAttributeNode(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#getAttributeNodeNS(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.Attr GetAttributeNodeNS(string arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#removeAttributeNode(org.w3c.dom.Attr)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Attr"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.Attr RemoveAttributeNode(Org.W3c.Dom.Attr arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setAttributeNode(org.w3c.dom.Attr)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Attr"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.Attr SetAttributeNode(Org.W3c.Dom.Attr arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setAttributeNodeNS(org.w3c.dom.Attr)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Attr"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Attr"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.Attr SetAttributeNodeNS(Org.W3c.Dom.Attr arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#getElementsByTagName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
+        Org.W3c.Dom.NodeList GetElementsByTagName(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#getElementsByTagNameNS(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.NodeList"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.NodeList GetElementsByTagNameNS(string arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#removeAttribute(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void RemoveAttribute(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#removeAttributeNS(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void RemoveAttributeNS(string arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setAttribute(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void SetAttribute(string arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setAttributeNS(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void SetAttributeNS(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setIdAttribute(java.lang.String,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void SetIdAttribute(string arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setIdAttributeNode(org.w3c.dom.Attr,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Attr"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void SetIdAttributeNode(Org.W3c.Dom.Attr arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setIdAttributeNS(java.lang.String,java.lang.String,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void SetIdAttributeNS(string arg0, string arg1, bool arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Element
-    public partial class Element
+    public partial class Element : Org.W3c.Dom.IElement
     {
         #region Constructors
 

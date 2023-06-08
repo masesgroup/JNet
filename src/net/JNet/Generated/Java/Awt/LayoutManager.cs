@@ -25,8 +25,51 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
+    #region ILayoutManager
+    public partial interface ILayoutManager
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager.html#minimumLayoutSize(java.awt.Container)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager.html#preferredLayoutSize(java.awt.Container)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
+        void AddLayoutComponent(string arg0, Java.Awt.Component arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager.html#layoutContainer(java.awt.Container)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        void LayoutContainer(Java.Awt.Container arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager.html#removeLayoutComponent(java.awt.Component)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        void RemoveLayoutComponent(Java.Awt.Component arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LayoutManager
-    public partial class LayoutManager
+    public partial class LayoutManager : Java.Awt.ILayoutManager
     {
         #region Constructors
 

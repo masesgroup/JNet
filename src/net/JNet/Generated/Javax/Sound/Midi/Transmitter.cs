@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
+    #region ITransmitter
+    public partial interface ITransmitter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html#getReceiver()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html#setReceiver(javax.sound.midi.Receiver)"/>
+        /// </summary>
+        Javax.Sound.Midi.Receiver Receiver { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html#close()"/>
+        /// </summary>
+        void Close();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Transmitter
-    public partial class Transmitter
+    public partial class Transmitter : Javax.Sound.Midi.ITransmitter
     {
         #region Constructors
 

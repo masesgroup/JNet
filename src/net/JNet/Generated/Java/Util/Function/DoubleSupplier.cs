@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IDoubleSupplier
+    public partial interface IDoubleSupplier
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/> 
+        /// </summary>
+        double AsDouble { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DoubleSupplier
-    public partial class DoubleSupplier
+    public partial class DoubleSupplier : Java.Util.Function.IDoubleSupplier
     {
         #region Constructors
 

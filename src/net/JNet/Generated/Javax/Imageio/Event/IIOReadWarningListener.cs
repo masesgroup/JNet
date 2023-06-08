@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Event
 {
+    #region IIIOReadWarningListener
+    public partial interface IIIOReadWarningListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        void WarningOccurred(Javax.Imageio.ImageReader arg0, string arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IIOReadWarningListener
-    public partial class IIOReadWarningListener
+    public partial class IIOReadWarningListener : Javax.Imageio.Event.IIIOReadWarningListener
     {
         #region Constructors
 
@@ -45,6 +66,15 @@ namespace Javax.Imageio.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        public virtual void WarningOccurred(Javax.Imageio.ImageReader arg0, string arg1)
+        {
+            
+        }
 
         #endregion
 

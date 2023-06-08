@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IMouseWheelListener
+    public partial interface IMouseWheelListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelListener.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelEvent"/></param>
+        void MouseWheelMoved(Java.Awt.EventNs.MouseWheelEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MouseWheelListener
-    public partial class MouseWheelListener
+    public partial class MouseWheelListener : Java.Awt.EventNs.IMouseWheelListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelListener.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseWheelEvent"/></param>
+        public virtual void MouseWheelMoved(Java.Awt.EventNs.MouseWheelEvent arg0)
+        {
+            
+        }
 
         #endregion
 

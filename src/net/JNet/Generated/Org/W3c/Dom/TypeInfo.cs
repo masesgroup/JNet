@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region ITypeInfo
+    public partial interface ITypeInfo
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#getTypeName()"/> 
+        /// </summary>
+        string TypeName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#getTypeNamespace()"/> 
+        /// </summary>
+        string TypeNamespace { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#isDerivedFrom(java.lang.String,java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsDerivedFrom(string arg0, string arg1, int arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TypeInfo
-    public partial class TypeInfo
+    public partial class TypeInfo : Org.W3c.Dom.ITypeInfo
     {
         #region Constructors
 

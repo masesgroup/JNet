@@ -25,8 +25,59 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
+    #region IModuleReader
+    public partial interface IModuleReader
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/> 
+        /// </summary>
+        Java.Util.Stream.Stream<string> List { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#find(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Util.Optional<Java.Net.URI> Find(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#close()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Io.IOException"/>
+        void Close();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#open(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Util.Optional<Java.Io.InputStream> Open(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#read(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Util.Optional<Java.Nio.ByteBuffer> Read(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#release(java.nio.ByteBuffer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        void Release(Java.Nio.ByteBuffer arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ModuleReader
-    public partial class ModuleReader
+    public partial class ModuleReader : Java.Lang.ModuleNs.IModuleReader
     {
         #region Constructors
 

@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLHeadingElement
+    public partial interface IHTMLHeadingElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHeadingElement.html#getAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHeadingElement.html#setAlign(java.lang.String)"/>
+        /// </summary>
+        string Align { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLHeadingElement
-    public partial class HTMLHeadingElement
+    public partial class HTMLHeadingElement : Org.W3c.Dom.Html.IHTMLHeadingElement
     {
         #region Constructors
 

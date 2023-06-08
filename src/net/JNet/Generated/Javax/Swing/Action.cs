@@ -25,8 +25,62 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region IAction
+    public partial interface IAction
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#isEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsEnabled();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#getValue(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        object GetValue(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#putValue(java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        void PutValue(string arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#setEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        void SetEnabled(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Accept(object arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Action
-    public partial class Action
+    public partial class Action : Javax.Swing.IAction
     {
         #region Constructors
 
@@ -45,6 +99,66 @@ namespace Javax.Swing
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#isEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public virtual bool IsEnabled()
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#getValue(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        public virtual object GetValue(string arg0)
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        public virtual void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#putValue(java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        public virtual void PutValue(string arg0, object arg1)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        public virtual void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#setEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public virtual void SetEnabled(bool arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        public virtual bool Accept(object arg0)
+        {
+            return default;
+        }
 
         #endregion
 

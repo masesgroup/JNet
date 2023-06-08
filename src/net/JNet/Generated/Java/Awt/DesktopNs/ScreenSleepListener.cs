@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IScreenSleepListener
+    public partial interface IScreenSleepListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAboutToSleep(java.awt.desktop.ScreenSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.ScreenSleepEvent"/></param>
+        void ScreenAboutToSleep(Java.Awt.DesktopNs.ScreenSleepEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAwoke(java.awt.desktop.ScreenSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.ScreenSleepEvent"/></param>
+        void ScreenAwoke(Java.Awt.DesktopNs.ScreenSleepEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ScreenSleepListener
-    public partial class ScreenSleepListener
+    public partial class ScreenSleepListener : Java.Awt.DesktopNs.IScreenSleepListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAboutToSleep(java.awt.desktop.ScreenSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.ScreenSleepEvent"/></param>
+        public virtual void ScreenAboutToSleep(Java.Awt.DesktopNs.ScreenSleepEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAwoke(java.awt.desktop.ScreenSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.ScreenSleepEvent"/></param>
+        public virtual void ScreenAwoke(Java.Awt.DesktopNs.ScreenSleepEvent arg0)
+        {
+            
+        }
 
         #endregion
 

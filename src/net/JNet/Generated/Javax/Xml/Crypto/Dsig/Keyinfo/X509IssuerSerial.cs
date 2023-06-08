@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
+    #region IX509IssuerSerial
+    public partial interface IX509IssuerSerial
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getIssuerName()"/> 
+        /// </summary>
+        string IssuerName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html#getSerialNumber()"/> 
+        /// </summary>
+        Java.Math.BigInteger SerialNumber { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region X509IssuerSerial
-    public partial class X509IssuerSerial
+    public partial class X509IssuerSerial : Javax.Xml.Crypto.Dsig.Keyinfo.IX509IssuerSerial
     {
         #region Constructors
 

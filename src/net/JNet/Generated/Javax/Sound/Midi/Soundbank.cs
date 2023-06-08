@@ -25,8 +25,53 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
+    #region ISoundbank
+    public partial interface ISoundbank
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getDescription()"/> 
+        /// </summary>
+        string Description { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getInstruments()"/> 
+        /// </summary>
+        Javax.Sound.Midi.Instrument[] Instruments { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getResources()"/> 
+        /// </summary>
+        Javax.Sound.Midi.SoundbankResource[] Resources { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getVendor()"/> 
+        /// </summary>
+        string Vendor { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getVersion()"/> 
+        /// </summary>
+        string Version { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html#getInstrument(javax.sound.midi.Patch)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Patch"/></param>
+        /// <returns><see cref="Javax.Sound.Midi.Instrument"/></returns>
+        Javax.Sound.Midi.Instrument GetInstrument(Javax.Sound.Midi.Patch arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Soundbank
-    public partial class Soundbank
+    public partial class Soundbank : Javax.Sound.Midi.ISoundbank
     {
         #region Constructors
 

@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IHierarchyListener
+    public partial interface IHierarchyListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        void HierarchyChanged(Java.Awt.EventNs.HierarchyEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HierarchyListener
-    public partial class HierarchyListener
+    public partial class HierarchyListener : Java.Awt.EventNs.IHierarchyListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
+        public virtual void HierarchyChanged(Java.Awt.EventNs.HierarchyEvent arg0)
+        {
+            
+        }
 
         #endregion
 

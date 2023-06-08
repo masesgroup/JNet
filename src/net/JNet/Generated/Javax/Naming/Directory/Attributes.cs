@@ -25,8 +25,64 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
+    #region IAttributes
+    public partial interface IAttributes
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#getAll()"/> 
+        /// </summary>
+        Javax.Naming.NamingEnumeration All { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#getIDs()"/> 
+        /// </summary>
+        Javax.Naming.NamingEnumeration<string> IDs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#isCaseIgnored()"/> 
+        /// </summary>
+        bool IsCaseIgnored { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#size()"/> 
+        /// </summary>
+        int Size { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#get(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
+        Javax.Naming.Directory.Attribute Get(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#put(java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
+        Javax.Naming.Directory.Attribute Put(string arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#put(javax.naming.directory.Attribute)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Directory.Attribute"/></param>
+        /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
+        Javax.Naming.Directory.Attribute Put(Javax.Naming.Directory.Attribute arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#remove(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
+        Javax.Naming.Directory.Attribute Remove(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Attributes
-    public partial class Attributes
+    public partial class Attributes : Javax.Naming.Directory.IAttributes
     {
         #region Constructors
 

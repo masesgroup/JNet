@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
+    #region IJMXConnectorProvider
+    public partial interface IJMXConnectorProvider
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorProvider.html#newJMXConnector(javax.management.remote.JMXServiceURL,java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
+        /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Javax.Management.Remote.JMXConnector NewJMXConnector<Arg1Extendsobject>(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, Arg1Extendsobject> arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region JMXConnectorProvider
-    public partial class JMXConnectorProvider
+    public partial class JMXConnectorProvider : Javax.Management.Remote.IJMXConnectorProvider
     {
         #region Constructors
 

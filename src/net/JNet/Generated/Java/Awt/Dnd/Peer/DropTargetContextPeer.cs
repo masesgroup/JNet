@@ -25,8 +25,66 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd.Peer
 {
+    #region IDropTargetContextPeer
+    public partial interface IDropTargetContextPeer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#getDropTarget()"/> 
+        /// </summary>
+        Java.Awt.Dnd.DropTarget DropTarget { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#isTransferableJVMLocal()"/> 
+        /// </summary>
+        bool IsTransferableJVMLocal { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#getTargetActions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#setTargetActions(int)"/>
+        /// </summary>
+        int TargetActions { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#getTransferable()"/> 
+        /// </summary>
+        Java.Awt.Datatransfer.Transferable Transferable { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#getTransferDataFlavors()"/> 
+        /// </summary>
+        Java.Awt.Datatransfer.DataFlavor[] TransferDataFlavors { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#acceptDrag(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        void AcceptDrag(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#acceptDrop(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        void AcceptDrop(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#dropComplete(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        void DropComplete(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#rejectDrag()"/>
+        /// </summary>
+        void RejectDrag();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#rejectDrop()"/>
+        /// </summary>
+        void RejectDrop();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DropTargetContextPeer
-    public partial class DropTargetContextPeer
+    public partial class DropTargetContextPeer : Java.Awt.Dnd.Peer.IDropTargetContextPeer
     {
         #region Constructors
 

@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
+    #region IURIException
+    public partial interface IURIException
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#getReason()"/> 
+        /// </summary>
+        int Reason { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/URIException.html#getUnsupportedURI()"/> 
+        /// </summary>
+        Java.Net.URI UnsupportedURI { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region URIException
-    public partial class URIException
+    public partial class URIException : Javax.Print.IURIException
     {
         #region Constructors
 

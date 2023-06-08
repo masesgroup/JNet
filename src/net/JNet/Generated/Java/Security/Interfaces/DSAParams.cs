@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IDSAParams
+    public partial interface IDSAParams
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html#getG()"/> 
+        /// </summary>
+        Java.Math.BigInteger G { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html#getP()"/> 
+        /// </summary>
+        Java.Math.BigInteger P { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html#getQ()"/> 
+        /// </summary>
+        Java.Math.BigInteger Q { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DSAParams
-    public partial class DSAParams
+    public partial class DSAParams : Java.Security.Interfaces.IDSAParams
     {
         #region Constructors
 

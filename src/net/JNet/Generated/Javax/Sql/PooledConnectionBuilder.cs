@@ -25,8 +25,54 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
+    #region IPooledConnectionBuilder
+    public partial interface IPooledConnectionBuilder
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#build()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Sql.PooledConnection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Javax.Sql.PooledConnection Build();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#password(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
+        Javax.Sql.PooledConnectionBuilder Password(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#shardingKey(java.sql.ShardingKey)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
+        /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
+        Javax.Sql.PooledConnectionBuilder ShardingKey(Java.Sql.ShardingKey arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#superShardingKey(java.sql.ShardingKey)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
+        /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
+        Javax.Sql.PooledConnectionBuilder SuperShardingKey(Java.Sql.ShardingKey arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html#user(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Sql.PooledConnectionBuilder"/></returns>
+        Javax.Sql.PooledConnectionBuilder User(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PooledConnectionBuilder
-    public partial class PooledConnectionBuilder
+    public partial class PooledConnectionBuilder : Javax.Sql.IPooledConnectionBuilder
     {
         #region Constructors
 

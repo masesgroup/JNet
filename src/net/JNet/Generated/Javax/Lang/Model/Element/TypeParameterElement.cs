@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
+    #region ITypeParameterElement
+    public partial interface ITypeParameterElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getBounds()"/> 
+        /// </summary>
+        Java.Util.List Bounds { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getEnclosingElement()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Element EnclosingElement { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html#getGenericElement()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Element GenericElement { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TypeParameterElement
-    public partial class TypeParameterElement
+    public partial class TypeParameterElement : Javax.Lang.Model.Element.ITypeParameterElement
     {
         #region Constructors
 

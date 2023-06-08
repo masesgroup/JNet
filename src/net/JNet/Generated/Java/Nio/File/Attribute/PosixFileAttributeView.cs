@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IPosixFileAttributeView
+    public partial interface IPosixFileAttributeView
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#name()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#readAttributes()"/> 
+        /// </summary>
+        Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setGroup(java.nio.file.attribute.GroupPrincipal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.GroupPrincipal"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void SetGroup(Java.Nio.File.Attribute.GroupPrincipal arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributeView.html#setPermissions(java.util.Set)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void SetPermissions(Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PosixFileAttributeView
-    public partial class PosixFileAttributeView
+    public partial class PosixFileAttributeView : Java.Nio.File.Attribute.IPosixFileAttributeView
     {
         #region Constructors
 

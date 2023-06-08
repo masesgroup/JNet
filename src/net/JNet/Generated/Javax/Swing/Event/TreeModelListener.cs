@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region ITreeModelListener
+    public partial interface ITreeModelListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesChanged(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        void TreeNodesChanged(Javax.Swing.Event.TreeModelEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesInserted(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        void TreeNodesInserted(Javax.Swing.Event.TreeModelEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        void TreeNodesRemoved(Javax.Swing.Event.TreeModelEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeStructureChanged(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        void TreeStructureChanged(Javax.Swing.Event.TreeModelEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TreeModelListener
-    public partial class TreeModelListener
+    public partial class TreeModelListener : Javax.Swing.Event.ITreeModelListener
     {
         #region Constructors
 
@@ -45,6 +80,38 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesChanged(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        public virtual void TreeNodesChanged(Javax.Swing.Event.TreeModelEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesInserted(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        public virtual void TreeNodesInserted(Javax.Swing.Event.TreeModelEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        public virtual void TreeNodesRemoved(Javax.Swing.Event.TreeModelEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeStructureChanged(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeModelEvent"/></param>
+        public virtual void TreeStructureChanged(Javax.Swing.Event.TreeModelEvent arg0)
+        {
+            
+        }
 
         #endregion
 

@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region IWindowConstants
+    public partial interface IWindowConstants
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region WindowConstants
-    public partial class WindowConstants
+    public partial class WindowConstants : Javax.Swing.IWindowConstants
     {
         #region Constructors
 

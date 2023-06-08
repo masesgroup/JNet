@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region ICaretListener
+    public partial interface ICaretListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.CaretEvent"/></param>
+        void CaretUpdate(Javax.Swing.Event.CaretEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CaretListener
-    public partial class CaretListener
+    public partial class CaretListener : Javax.Swing.Event.ICaretListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.CaretEvent"/></param>
+        public virtual void CaretUpdate(Javax.Swing.Event.CaretEvent arg0)
+        {
+            
+        }
 
         #endregion
 

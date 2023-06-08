@@ -25,8 +25,55 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
+    #region IMutationEvent
+    public partial interface IMutationEvent
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#getAttrChange()"/> 
+        /// </summary>
+        short AttrChange { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#getAttrName()"/> 
+        /// </summary>
+        string AttrName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#getNewValue()"/> 
+        /// </summary>
+        string NewValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#getPrevValue()"/> 
+        /// </summary>
+        string PrevValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#getRelatedNode()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node RelatedNode { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html#initMutationEvent(java.lang.String,boolean,boolean,org.w3c.dom.Node,java.lang.String,java.lang.String,java.lang.String,short)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see cref="string"/></param>
+        /// <param name="arg6"><see cref="string"/></param>
+        /// <param name="arg7"><see cref="short"/></param>
+        void InitMutationEvent(string arg0, bool arg1, bool arg2, Org.W3c.Dom.Node arg3, string arg4, string arg5, string arg6, short arg7);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MutationEvent
-    public partial class MutationEvent
+    public partial class MutationEvent : Org.W3c.Dom.Events.IMutationEvent
     {
         #region Constructors
 

@@ -25,8 +25,77 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region IProcessHandle
+    public partial interface IProcessHandle
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#children()"/> 
+        /// </summary>
+        Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Children { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#descendants()"/> 
+        /// </summary>
+        Java.Util.Stream.Stream<Java.Lang.ProcessHandle> Descendants { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#destroy()"/> 
+        /// </summary>
+        bool Destroy { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#destroyForcibly()"/> 
+        /// </summary>
+        bool DestroyForcibly { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#isAlive()"/> 
+        /// </summary>
+        bool IsAlive { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#onExit()"/> 
+        /// </summary>
+        Java.Util.Concurrent.CompletableFuture<Java.Lang.ProcessHandle> OnExit { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#parent()"/> 
+        /// </summary>
+        Java.Util.Optional<Java.Lang.ProcessHandle> Parent { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#pid()"/> 
+        /// </summary>
+        long Pid { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#supportsNormalTermination()"/> 
+        /// </summary>
+        bool SupportsNormalTermination { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#compareTo(java.lang.ProcessHandle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ProcessHandle"/></param>
+        /// <returns><see cref="int"/></returns>
+        int CompareTo(Java.Lang.ProcessHandle arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#info()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Lang.ProcessHandle.Info"/></returns>
+        Java.Lang.ProcessHandle.Info InfoMethod();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html#compareTo(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="int"/></returns>
+        int CompareTo(object arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ProcessHandle
-    public partial class ProcessHandle
+    public partial class ProcessHandle : Java.Lang.IProcessHandle
     {
         #region Constructors
 

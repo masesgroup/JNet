@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
+    #region ICompletion
+    public partial interface ICompletion
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completion.html#getMessage()"/> 
+        /// </summary>
+        string Message { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completion.html#getValue()"/> 
+        /// </summary>
+        string Value { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Completion
-    public partial class Completion
+    public partial class Completion : Javax.Annotation.Processing.ICompletion
     {
         #region Constructors
 

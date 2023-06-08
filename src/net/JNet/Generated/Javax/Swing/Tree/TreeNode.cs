@@ -25,8 +25,55 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
+    #region ITreeNode
+    public partial interface ITreeNode
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getAllowsChildren()"/> 
+        /// </summary>
+        bool AllowsChildren { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getChildCount()"/> 
+        /// </summary>
+        int ChildCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#children()"/> 
+        /// </summary>
+        Java.Util.Enumeration Children { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#isLeaf()"/> 
+        /// </summary>
+        bool IsLeaf { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getParent()"/> 
+        /// </summary>
+        Javax.Swing.Tree.TreeNode Parent { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getIndex(javax.swing.tree.TreeNode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreeNode"/></param>
+        /// <returns><see cref="int"/></returns>
+        int GetIndex(Javax.Swing.Tree.TreeNode arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html#getChildAt(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Swing.Tree.TreeNode"/></returns>
+        Javax.Swing.Tree.TreeNode GetChildAt(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TreeNode
-    public partial class TreeNode
+    public partial class TreeNode : Javax.Swing.Tree.ITreeNode
     {
         #region Constructors
 

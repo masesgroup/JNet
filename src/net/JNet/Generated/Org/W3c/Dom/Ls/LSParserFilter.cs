@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
+    #region ILSParserFilter
+    public partial interface ILSParserFilter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#getWhatToShow()"/> 
+        /// </summary>
+        int WhatToShow { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#acceptNode(org.w3c.dom.Node)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <returns><see cref="short"/></returns>
+        short AcceptNode(Org.W3c.Dom.Node arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#startElement(org.w3c.dom.Element)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Element"/></param>
+        /// <returns><see cref="short"/></returns>
+        short StartElement(Org.W3c.Dom.Element arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LSParserFilter
-    public partial class LSParserFilter
+    public partial class LSParserFilter : Org.W3c.Dom.Ls.ILSParserFilter
     {
         #region Constructors
 

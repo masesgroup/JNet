@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSUnknownRule
+    public partial interface ICSSUnknownRule
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSUnknownRule
-    public partial class CSSUnknownRule
+    public partial class CSSUnknownRule : Org.W3c.Dom.Css.ICSSUnknownRule
     {
         #region Constructors
 

@@ -25,8 +25,54 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region IConnectionBuilder
+    public partial interface IConnectionBuilder
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#build()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Sql.Connection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.Connection Build();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#password(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
+        Java.Sql.ConnectionBuilder Password(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#shardingKey(java.sql.ShardingKey)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
+        /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
+        Java.Sql.ConnectionBuilder ShardingKey(Java.Sql.ShardingKey arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#superShardingKey(java.sql.ShardingKey)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
+        /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
+        Java.Sql.ConnectionBuilder SuperShardingKey(Java.Sql.ShardingKey arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html#user(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ConnectionBuilder"/></returns>
+        Java.Sql.ConnectionBuilder User(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ConnectionBuilder
-    public partial class ConnectionBuilder
+    public partial class ConnectionBuilder : Java.Sql.IConnectionBuilder
     {
         #region Constructors
 

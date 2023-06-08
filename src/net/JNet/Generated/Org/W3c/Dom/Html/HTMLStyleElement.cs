@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLStyleElement
+    public partial interface IHTMLStyleElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLStyleElement.html#getDisabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLStyleElement.html#setDisabled(boolean)"/>
+        /// </summary>
+        bool Disabled { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLStyleElement.html#getMedia()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLStyleElement.html#setMedia(java.lang.String)"/>
+        /// </summary>
+        string Media { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLStyleElement.html#getType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLStyleElement.html#setType(java.lang.String)"/>
+        /// </summary>
+        string Type { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLStyleElement
-    public partial class HTMLStyleElement
+    public partial class HTMLStyleElement : Org.W3c.Dom.Html.IHTMLStyleElement
     {
         #region Constructors
 

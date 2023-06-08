@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region IStruct
+    public partial interface IStruct
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Struct.html#getAttributes()"/> 
+        /// </summary>
+        object[] Attributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Struct.html#getSQLTypeName()"/> 
+        /// </summary>
+        string SQLTypeName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Struct.html#getAttributes(java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        object[] GetAttributes<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Struct
-    public partial class Struct
+    public partial class Struct : Java.Sql.IStruct
     {
         #region Constructors
 

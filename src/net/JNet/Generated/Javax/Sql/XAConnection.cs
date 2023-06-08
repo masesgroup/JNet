@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
+    #region IXAConnection
+    public partial interface IXAConnection
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnection.html#getXAResource()"/> 
+        /// </summary>
+        Javax.Transaction.Xa.XAResource XAResource { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XAConnection
-    public partial class XAConnection
+    public partial class XAConnection : Javax.Sql.IXAConnection
     {
         #region Constructors
 

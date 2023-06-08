@@ -25,8 +25,47 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IDocumentType
+    public partial interface IDocumentType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getEntities()"/> 
+        /// </summary>
+        Org.W3c.Dom.NamedNodeMap Entities { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getInternalSubset()"/> 
+        /// </summary>
+        string InternalSubset { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getNotations()"/> 
+        /// </summary>
+        Org.W3c.Dom.NamedNodeMap Notations { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getPublicId()"/> 
+        /// </summary>
+        string PublicId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html#getSystemId()"/> 
+        /// </summary>
+        string SystemId { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DocumentType
-    public partial class DocumentType
+    public partial class DocumentType : Org.W3c.Dom.IDocumentType
     {
         #region Constructors
 

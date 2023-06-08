@@ -25,8 +25,88 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Transaction.Xa
 {
+    #region IXAResource
+    public partial interface IXAResource
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#getTransactionTimeout()"/> 
+        /// </summary>
+        int TransactionTimeout { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#isSameRM(javax.transaction.xa.XAResource)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.XAResource"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
+        bool IsSameRM(Javax.Transaction.Xa.XAResource arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#setTransactionTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
+        bool SetTransactionTimeout(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#prepare(javax.transaction.xa.Xid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
+        int Prepare(Javax.Transaction.Xa.Xid arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#recover(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Transaction.Xa.Xid"/></returns>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
+        Javax.Transaction.Xa.Xid[] Recover(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#commit(javax.transaction.xa.Xid,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
+        void Commit(Javax.Transaction.Xa.Xid arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#end(javax.transaction.xa.Xid,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
+        void End(Javax.Transaction.Xa.Xid arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#forget(javax.transaction.xa.Xid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
+        void Forget(Javax.Transaction.Xa.Xid arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#rollback(javax.transaction.xa.Xid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
+        void Rollback(Javax.Transaction.Xa.Xid arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#start(javax.transaction.xa.Xid,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Transaction.Xa.Xid"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Javax.Transaction.Xa.XAException"/>
+        void Start(Javax.Transaction.Xa.Xid arg0, int arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XAResource
-    public partial class XAResource
+    public partial class XAResource : Javax.Transaction.Xa.IXAResource
     {
         #region Constructors
 

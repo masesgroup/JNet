@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
+    #region IControl
+    public partial interface IControl
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#getEncodedValue()"/> 
+        /// </summary>
+        byte[] EncodedValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#getID()"/> 
+        /// </summary>
+        string ID { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#isCritical()"/> 
+        /// </summary>
+        bool IsCritical { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Control
-    public partial class Control
+    public partial class Control : Javax.Naming.Ldap.IControl
     {
         #region Constructors
 

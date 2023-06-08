@@ -45,6 +45,54 @@ namespace Javax.Print.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printDataTransferCompleted(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintDataTransferCompleted(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobCanceled(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintJobCanceled(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobCompleted(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintJobCompleted(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobFailed(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintJobFailed(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobNoMoreEvents(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintJobNoMoreEvents(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobRequiresAttention(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobEvent"/></param>
+        public virtual void PrintJobRequiresAttention(Javax.Print.Event.PrintJobEvent arg0)
+        {
+            
+        }
 
         #endregion
 

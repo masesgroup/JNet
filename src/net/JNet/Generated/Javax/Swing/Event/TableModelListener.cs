@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region ITableModelListener
+    public partial interface ITableModelListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
+        void TableChanged(Javax.Swing.Event.TableModelEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TableModelListener
-    public partial class TableModelListener
+    public partial class TableModelListener : Javax.Swing.Event.ITableModelListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableModelEvent"/></param>
+        public virtual void TableChanged(Javax.Swing.Event.TableModelEvent arg0)
+        {
+            
+        }
 
         #endregion
 

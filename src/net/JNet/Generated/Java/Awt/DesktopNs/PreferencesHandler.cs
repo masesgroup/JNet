@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IPreferencesHandler
+    public partial interface IPreferencesHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PreferencesHandler.html#handlePreferences(java.awt.desktop.PreferencesEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PreferencesEvent"/></param>
+        void HandlePreferences(Java.Awt.DesktopNs.PreferencesEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PreferencesHandler
-    public partial class PreferencesHandler
+    public partial class PreferencesHandler : Java.Awt.DesktopNs.IPreferencesHandler
     {
         #region Constructors
 

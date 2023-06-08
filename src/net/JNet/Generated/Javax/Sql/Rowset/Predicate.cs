@@ -25,8 +25,45 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
+    #region IPredicate
+    public partial interface IPredicate
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Predicate.html#evaluate(java.lang.Object,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool Evaluate(object arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Predicate.html#evaluate(java.lang.Object,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool Evaluate(object arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Predicate.html#evaluate(javax.sql.RowSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Evaluate(Javax.Sql.RowSet arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Predicate
-    public partial class Predicate
+    public partial class Predicate : Javax.Sql.Rowset.IPredicate
     {
         #region Constructors
 

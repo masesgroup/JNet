@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
+    #region ICertPathChecker
+    public partial interface ICertPathChecker
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/> 
+        /// </summary>
+        bool IsForwardCheckingSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#check(java.security.cert.Certificate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
+        void Check(Java.Security.Cert.Certificate arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#init(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
+        void Init(bool arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CertPathChecker
-    public partial class CertPathChecker
+    public partial class CertPathChecker : Java.Security.Cert.ICertPathChecker
     {
         #region Constructors
 

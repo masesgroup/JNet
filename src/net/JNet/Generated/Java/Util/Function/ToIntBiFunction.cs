@@ -66,8 +66,30 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IToIntBiFunction<T, U>
+    public partial interface IToIntBiFunction<T, U>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <returns><see cref="int"/></returns>
+        int ApplyAsInt(T arg0, U arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ToIntBiFunction<T, U>
-    public partial class ToIntBiFunction<T, U>
+    public partial class ToIntBiFunction<T, U> : Java.Util.Function.IToIntBiFunction<T, U>
     {
         #region Constructors
 

@@ -25,8 +25,60 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IUserDefinedFileAttributeView
+    public partial interface IUserDefinedFileAttributeView
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#list()"/> 
+        /// </summary>
+        Java.Util.List<string> List { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#name()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#read(java.lang.String,java.nio.ByteBuffer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        int Read(string arg0, Java.Nio.ByteBuffer arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#size(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        int Size(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#write(java.lang.String,java.nio.ByteBuffer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        int Write(string arg0, Java.Nio.ByteBuffer arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#delete(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void Delete(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region UserDefinedFileAttributeView
-    public partial class UserDefinedFileAttributeView
+    public partial class UserDefinedFileAttributeView : Java.Nio.File.Attribute.IUserDefinedFileAttributeView
     {
         #region Constructors
 

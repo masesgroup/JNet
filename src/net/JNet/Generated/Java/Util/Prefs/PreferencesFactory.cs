@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
+    #region IPreferencesFactory
+    public partial interface IPreferencesFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html#systemRoot()"/> 
+        /// </summary>
+        Java.Util.Prefs.Preferences SystemRoot { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferencesFactory.html#userRoot()"/> 
+        /// </summary>
+        Java.Util.Prefs.Preferences UserRoot { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PreferencesFactory
-    public partial class PreferencesFactory
+    public partial class PreferencesFactory : Java.Util.Prefs.IPreferencesFactory
     {
         #region Constructors
 

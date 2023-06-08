@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
+    #region ITabExpander
+    public partial interface ITabExpander
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabExpander.html#nextTabStop(float,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="float"/></returns>
+        float NextTabStop(float arg0, int arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TabExpander
-    public partial class TabExpander
+    public partial class TabExpander : Javax.Swing.Text.ITabExpander
     {
         #region Constructors
 

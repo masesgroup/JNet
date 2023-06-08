@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
+    #region IEndElement
+    public partial interface IEndElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EndElement.html#getName()"/> 
+        /// </summary>
+        Javax.Xml.Namespace.QName Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EndElement.html#getNamespaces()"/> 
+        /// </summary>
+        Java.Util.Iterator<Javax.Xml.Stream.Events.Namespace> Namespaces { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region EndElement
-    public partial class EndElement
+    public partial class EndElement : Javax.Xml.Stream.Events.IEndElement
     {
         #region Constructors
 

@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
+    #region IEventListener
+    public partial interface IEventListener
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region EventListener
-    public partial class EventListener
+    public partial class EventListener : Java.Util.IEventListener
     {
         #region Constructors
 

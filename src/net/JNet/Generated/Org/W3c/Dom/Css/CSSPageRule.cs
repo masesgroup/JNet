@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSPageRule
+    public partial interface ICSSPageRule
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPageRule.html#getSelectorText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPageRule.html#setSelectorText(java.lang.String)"/>
+        /// </summary>
+        string SelectorText { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPageRule.html#getStyle()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSStyleDeclaration Style { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSPageRule
-    public partial class CSSPageRule
+    public partial class CSSPageRule : Org.W3c.Dom.Css.ICSSPageRule
     {
         #region Constructors
 

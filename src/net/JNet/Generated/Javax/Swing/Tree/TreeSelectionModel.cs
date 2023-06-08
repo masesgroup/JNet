@@ -25,8 +25,127 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
+    #region ITreeSelectionModel
+    public partial interface ITreeSelectionModel
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#isSelectionEmpty()"/> 
+        /// </summary>
+        bool IsSelectionEmpty { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getLeadSelectionPath()"/> 
+        /// </summary>
+        Javax.Swing.Tree.TreePath LeadSelectionPath { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getLeadSelectionRow()"/> 
+        /// </summary>
+        int LeadSelectionRow { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getMaxSelectionRow()"/> 
+        /// </summary>
+        int MaxSelectionRow { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getMinSelectionRow()"/> 
+        /// </summary>
+        int MinSelectionRow { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getRowMapper()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#setRowMapper(javax.swing.tree.RowMapper)"/>
+        /// </summary>
+        Javax.Swing.Tree.RowMapper RowMapper { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getSelectionCount()"/> 
+        /// </summary>
+        int SelectionCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getSelectionMode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#setSelectionMode(int)"/>
+        /// </summary>
+        int SelectionMode { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getSelectionPath()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#setSelectionPath(javax.swing.tree.TreePath)"/>
+        /// </summary>
+        Javax.Swing.Tree.TreePath SelectionPath { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getSelectionPaths()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#setSelectionPaths(javax.swing.tree.TreePath[])"/>
+        /// </summary>
+        Javax.Swing.Tree.TreePath[] SelectionPaths { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#getSelectionRows()"/> 
+        /// </summary>
+        int[] SelectionRows { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#isPathSelected(javax.swing.tree.TreePath)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsPathSelected(Javax.Swing.Tree.TreePath arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#isRowSelected(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsRowSelected(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#addSelectionPath(javax.swing.tree.TreePath)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        void AddSelectionPath(Javax.Swing.Tree.TreePath arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#addSelectionPaths(javax.swing.tree.TreePath[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        void AddSelectionPaths(Javax.Swing.Tree.TreePath[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#addTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionListener"/></param>
+        void AddTreeSelectionListener(Javax.Swing.Event.TreeSelectionListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#clearSelection()"/>
+        /// </summary>
+        void ClearSelection();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#removeSelectionPath(javax.swing.tree.TreePath)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        void RemoveSelectionPath(Javax.Swing.Tree.TreePath arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#removeSelectionPaths(javax.swing.tree.TreePath[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        void RemoveSelectionPaths(Javax.Swing.Tree.TreePath[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#removeTreeSelectionListener(javax.swing.event.TreeSelectionListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionListener"/></param>
+        void RemoveTreeSelectionListener(Javax.Swing.Event.TreeSelectionListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#resetRowSelection()"/>
+        /// </summary>
+        void ResetRowSelection();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TreeSelectionModel
-    public partial class TreeSelectionModel
+    public partial class TreeSelectionModel : Javax.Swing.Tree.ITreeSelectionModel
     {
         #region Constructors
 

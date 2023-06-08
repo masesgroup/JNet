@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax
 {
+    #region IXMLFilter
+    public partial interface IXMLFilter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLFilter.html#getParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLFilter.html#setParent(org.xml.sax.XMLReader)"/>
+        /// </summary>
+        Org.Xml.Sax.XMLReader Parent { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLFilter
-    public partial class XMLFilter
+    public partial class XMLFilter : Org.Xml.Sax.IXMLFilter
     {
         #region Constructors
 

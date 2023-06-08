@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
+    #region IMultiDocPrintJob
+    public partial interface IMultiDocPrintJob
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintJob.html#print(javax.print.MultiDoc,javax.print.attribute.PrintRequestAttributeSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.MultiDoc"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <exception cref="Javax.Print.PrintException"/>
+        void Print(Javax.Print.MultiDoc arg0, Javax.Print.Attribute.PrintRequestAttributeSet arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MultiDocPrintJob
-    public partial class MultiDocPrintJob
+    public partial class MultiDocPrintJob : Javax.Print.IMultiDocPrintJob
     {
         #region Constructors
 

@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
+    #region IMetaEventListener
+    public partial interface IMetaEventListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html#meta(javax.sound.midi.MetaMessage)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaMessage"/></param>
+        void Meta(Javax.Sound.Midi.MetaMessage arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MetaEventListener
-    public partial class MetaEventListener
+    public partial class MetaEventListener : Javax.Sound.Midi.IMetaEventListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html#meta(javax.sound.midi.MetaMessage)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.MetaMessage"/></param>
+        public virtual void Meta(Javax.Sound.Midi.MetaMessage arg0)
+        {
+            
+        }
 
         #endregion
 

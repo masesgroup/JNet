@@ -25,8 +25,55 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IDOMImplementation
+    public partial interface IDOMImplementation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#hasFeature(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool HasFeature(string arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#getFeature(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        object GetFeature(string arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#createDocument(java.lang.String,java.lang.String,org.w3c.dom.DocumentType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Org.W3c.Dom.DocumentType"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.Document CreateDocument(string arg0, string arg1, Org.W3c.Dom.DocumentType arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#createDocumentType(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.DocumentType"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.DocumentType CreateDocumentType(string arg0, string arg1, string arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DOMImplementation
-    public partial class DOMImplementation
+    public partial class DOMImplementation : Org.W3c.Dom.IDOMImplementation
     {
         #region Constructors
 

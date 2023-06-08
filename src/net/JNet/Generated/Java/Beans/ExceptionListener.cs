@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
+    #region IExceptionListener
+    public partial interface IExceptionListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html#exceptionThrown(java.lang.Exception)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
+        void ExceptionThrown(Java.Lang.Exception arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ExceptionListener
-    public partial class ExceptionListener
+    public partial class ExceptionListener : Java.Beans.IExceptionListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Beans
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html#exceptionThrown(java.lang.Exception)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
+        public virtual void ExceptionThrown(Java.Lang.Exception arg0)
+        {
+            
+        }
 
         #endregion
 

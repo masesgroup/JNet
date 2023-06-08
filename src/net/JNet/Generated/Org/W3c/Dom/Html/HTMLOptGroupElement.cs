@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLOptGroupElement
+    public partial interface IHTMLOptGroupElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptGroupElement.html#getDisabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptGroupElement.html#setDisabled(boolean)"/>
+        /// </summary>
+        bool Disabled { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptGroupElement.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptGroupElement.html#setLabel(java.lang.String)"/>
+        /// </summary>
+        string Label { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLOptGroupElement
-    public partial class HTMLOptGroupElement
+    public partial class HTMLOptGroupElement : Org.W3c.Dom.Html.IHTMLOptGroupElement
     {
         #region Constructors
 

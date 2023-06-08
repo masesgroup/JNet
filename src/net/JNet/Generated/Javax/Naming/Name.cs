@@ -25,8 +25,108 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming
 {
+    #region IName
+    public partial interface IName
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#getAll()"/> 
+        /// </summary>
+        Java.Util.Enumeration<string> All { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#isEmpty()"/> 
+        /// </summary>
+        bool IsEmpty { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#size()"/> 
+        /// </summary>
+        int Size { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#endsWith(javax.naming.Name)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool EndsWith(Javax.Naming.Name arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#startsWith(javax.naming.Name)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool StartsWith(Javax.Naming.Name arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#compareTo(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="int"/></returns>
+        int CompareTo(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#remove(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Naming.InvalidNameException"/>
+        object Remove(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#get(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="string"/></returns>
+        string Get(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#add(int,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Naming.Name"/></returns>
+        /// <exception cref="Javax.Naming.InvalidNameException"/>
+        Javax.Naming.Name Add(int arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#add(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Naming.Name"/></returns>
+        /// <exception cref="Javax.Naming.InvalidNameException"/>
+        Javax.Naming.Name Add(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#addAll(int,javax.naming.Name)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
+        /// <returns><see cref="Javax.Naming.Name"/></returns>
+        /// <exception cref="Javax.Naming.InvalidNameException"/>
+        Javax.Naming.Name AddAll(int arg0, Javax.Naming.Name arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#addAll(javax.naming.Name)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
+        /// <returns><see cref="Javax.Naming.Name"/></returns>
+        /// <exception cref="Javax.Naming.InvalidNameException"/>
+        Javax.Naming.Name AddAll(Javax.Naming.Name arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#getPrefix(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Naming.Name"/></returns>
+        Javax.Naming.Name GetPrefix(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#getSuffix(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Naming.Name"/></returns>
+        Javax.Naming.Name GetSuffix(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Name
-    public partial class Name
+    public partial class Name : Javax.Naming.IName
     {
         #region Constructors
 

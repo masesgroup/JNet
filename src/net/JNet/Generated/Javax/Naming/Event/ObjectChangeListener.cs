@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Event
 {
+    #region IObjectChangeListener
+    public partial interface IObjectChangeListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        void ObjectChanged(Javax.Naming.Event.NamingEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjectChangeListener
-    public partial class ObjectChangeListener
+    public partial class ObjectChangeListener : Javax.Naming.Event.IObjectChangeListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Naming.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
+        public virtual void ObjectChanged(Javax.Naming.Event.NamingEvent arg0)
+        {
+            
+        }
 
         #endregion
 

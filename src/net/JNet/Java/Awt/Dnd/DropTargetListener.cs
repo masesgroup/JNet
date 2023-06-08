@@ -24,28 +24,9 @@ namespace Java.Awt.Dnd
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html"/>
     /// </summary>
-    public interface IDropTargetListener : IJVMBridgeBase
+    public partial interface IDropTargetListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragEnter(java.awt.dnd.DropTargetDragEvent)"/>
-        /// </summary>
-        void DragEnter(DropTargetDragEvent dtde);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragOver(java.awt.dnd.DropTargetDragEvent)"/>
-        /// </summary>
-        void DragOver(DropTargetDragEvent dtde);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dropActionChanged(java.awt.dnd.DropTargetDragEvent)"/>
-        /// </summary>
-        void DropActionChanged(DropTargetDragEvent dtde);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragExit(java.awt.dnd.DropTargetEvent)"/>
-        /// </summary>
-        void DragExit(DropTargetEvent dte);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#drop(java.awt.dnd.DropTargetDropEvent)"/>
-        /// </summary>
-        void Drop(DropTargetDropEvent dtde);
+
     }
 
     /// <summary>
@@ -144,31 +125,6 @@ namespace Java.Awt.Dnd
         void EventHandlerDrop(object sender, CLRListenerEventArgs<CLREventData<DropTargetDropEvent>> data)
         {
             OnDrop(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IDropTargetListener.DragEnter(DropTargetDragEvent)"/>
-        public virtual void DragEnter(DropTargetDragEvent dtde)
-        {
-
-        }
-        /// <inheritdoc cref="IDropTargetListener.DragOver(DropTargetDragEvent)"/>
-        public virtual void DragOver(DropTargetDragEvent dtde)
-        {
-
-        }
-        /// <inheritdoc cref="IDropTargetListener.DropActionChanged(DropTargetDragEvent)"/>
-        public virtual void DropActionChanged(DropTargetDragEvent dtde)
-        {
-
-        }
-        /// <inheritdoc cref="IDropTargetListener.DragExit(DropTargetEvent)"/>
-        public virtual void DragExit(DropTargetEvent dte)
-        {
-
-        }
-        /// <inheritdoc cref="IDropTargetListener.Drop(DropTargetDropEvent)"/>
-        public virtual void Drop(DropTargetDropEvent dtde)
-        {
-
         }
     }
 }

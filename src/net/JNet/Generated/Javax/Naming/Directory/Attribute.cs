@@ -25,8 +25,102 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Directory
 {
+    #region IAttribute
+    public partial interface IAttribute
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#getAll()"/> 
+        /// </summary>
+        Javax.Naming.NamingEnumeration All { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#getAttributeDefinition()"/> 
+        /// </summary>
+        Javax.Naming.Directory.DirContext AttributeDefinition { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#getAttributeSyntaxDefinition()"/> 
+        /// </summary>
+        Javax.Naming.Directory.DirContext AttributeSyntaxDefinition { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#getID()"/> 
+        /// </summary>
+        string ID { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#isOrdered()"/> 
+        /// </summary>
+        bool IsOrdered { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#size()"/> 
+        /// </summary>
+        int Size { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#add(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Add(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#contains(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Contains(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#remove(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Remove(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#get()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        object Get();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#get(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        object Get(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#remove(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="object"/></returns>
+        object Remove(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#set(int,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        object Set(int arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#add(int,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        void Add(int arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#clear()"/>
+        /// </summary>
+        void Clear();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Attribute
-    public partial class Attribute
+    public partial class Attribute : Javax.Naming.Directory.IAttribute
     {
         #region Constructors
 

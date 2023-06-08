@@ -240,55 +240,5 @@ namespace Java.Awt.EventNs
         {
             OnWindowStateChanged(data.EventData.TypedEventData);
         }
-        /// <inheritdoc cref="IWindowAdapter.WindowActivated(WindowEvent)"/>
-        public virtual void WindowActivated(WindowEvent e)
-        {
-        
-        }
-        /// <inheritdoc cref="IWindowAdapter.WindowClosed(WindowEvent)"/>
-        public virtual void WindowClosed(WindowEvent e)
-        {
-            
-        }
-        /// <inheritdoc cref="IWindowAdapter.WindowClosing(WindowEvent)"/>
-        public virtual void WindowClosing(WindowEvent e)
-        {
-           
-        }
-        /// <inheritdoc cref="IWindowAdapter.WindowDeactivated(WindowEvent)"/>
-        public virtual void WindowDeactivated(WindowEvent e)
-        {
- 
-        }
-        /// <inheritdoc cref="IWindowAdapter.WindowDeiconified(WindowEvent)"/>
-        public virtual void WindowDeiconified(WindowEvent e)
-        {
-        
-        }
-        /// <inheritdoc cref="IWindowAdapter.WindowGainedFocus(WindowEvent)"/>
-        public virtual void WindowGainedFocus(WindowEvent e)
-        {
-     
-        }
-        /// <inheritdoc cref="IWindowAdapter.WindowIconified(WindowEvent)"/>
-        public virtual void WindowIconified(WindowEvent e)
-        {
-            
-        }
-        /// <inheritdoc cref="IWindowAdapter.WindowLostFocus(WindowEvent)"/>
-        public virtual void WindowLostFocus(WindowEvent e)
-        {
-          
-        }
-        /// <inheritdoc cref="IWindowAdapter.WindowOpened(WindowEvent)"/>
-        public virtual void WindowOpened(WindowEvent e)
-        {
-           
-        }
-        /// <inheritdoc cref="IWindowAdapter.WindowStateChanged(WindowEvent)"/>
-        public virtual void WindowStateChanged(WindowEvent e)
-        {
-         
-        }
     }
 }

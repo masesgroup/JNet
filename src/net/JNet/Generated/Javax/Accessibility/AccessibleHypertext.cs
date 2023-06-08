@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
+    #region IAccessibleHypertext
+    public partial interface IAccessibleHypertext
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLinkCount()"/> 
+        /// </summary>
+        int LinkCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLinkIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        int GetLinkIndex(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHypertext.html#getLink(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Accessibility.AccessibleHyperlink"/></returns>
+        Javax.Accessibility.AccessibleHyperlink GetLink(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AccessibleHypertext
-    public partial class AccessibleHypertext
+    public partial class AccessibleHypertext : Javax.Accessibility.IAccessibleHypertext
     {
         #region Constructors
 

@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region IDeclaredType
+    public partial interface IDeclaredType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#asElement()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Element AsElement { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#getEnclosingType()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror EnclosingType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/DeclaredType.html#getTypeArguments()"/> 
+        /// </summary>
+        Java.Util.List TypeArguments { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DeclaredType
-    public partial class DeclaredType
+    public partial class DeclaredType : Javax.Lang.Model.Type.IDeclaredType
     {
         #region Constructors
 

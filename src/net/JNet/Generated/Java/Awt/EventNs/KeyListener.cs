@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IKeyListener
+    public partial interface IKeyListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyPressed(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        void KeyPressed(Java.Awt.EventNs.KeyEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyReleased(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        void KeyReleased(Java.Awt.EventNs.KeyEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyTyped(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        void KeyTyped(Java.Awt.EventNs.KeyEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region KeyListener
-    public partial class KeyListener
+    public partial class KeyListener : Java.Awt.EventNs.IKeyListener
     {
         #region Constructors
 
@@ -45,6 +75,30 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyPressed(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        public virtual void KeyPressed(Java.Awt.EventNs.KeyEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyReleased(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        public virtual void KeyReleased(Java.Awt.EventNs.KeyEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyTyped(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        public virtual void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
+        {
+            
+        }
 
         #endregion
 

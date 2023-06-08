@@ -25,8 +25,62 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
+    #region IBindings
+    public partial interface IBindings
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html#containsKey(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool ContainsKey(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html#get(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        object Get(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html#put(java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        object Put(string arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html#remove(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        object Remove(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html#putAll(java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0Extendsstring"></typeparam>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        void PutAll<Arg0Extendsstring, Arg0Extendsobject>(Java.Util.Map<Arg0Extendsstring, Arg0Extendsobject> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html#put(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        object Put(object arg0, object arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Bindings
-    public partial class Bindings
+    public partial class Bindings : Javax.Script.IBindings
     {
         #region Constructors
 

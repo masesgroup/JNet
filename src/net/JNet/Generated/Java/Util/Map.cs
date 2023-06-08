@@ -673,8 +673,175 @@ namespace Java.Util
     }
     #endregion
 
+    #region IMap<K, V>
+    public partial interface IMap<K, V>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entrySet()"/> 
+        /// </summary>
+        Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()"/> 
+        /// </summary>
+        bool IsEmpty { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#keySet()"/> 
+        /// </summary>
+        Java.Util.Set<K> KeySet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()"/> 
+        /// </summary>
+        int Size { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#values()"/> 
+        /// </summary>
+        Java.Util.Collection<V> Values { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsKey(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool ContainsKey(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsValue(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool ContainsValue(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#get(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><typeparamref name="V"/></returns>
+        V Get(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#put(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><typeparamref name="V"/></returns>
+        V Put(K arg0, V arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><typeparamref name="V"/></returns>
+        V Remove(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#clear()"/>
+        /// </summary>
+        void Clear();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putAll(java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
+        void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Remove(object arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <param name="arg2"><typeparamref name="V"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Replace(K arg0, V arg1, V arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"></typeparam>
+        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <returns><typeparamref name="V"/></returns>
+        V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <returns><typeparamref name="V"/></returns>
+        V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK: K;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperV"></typeparam>
+        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <returns><typeparamref name="V"/></returns>
+        V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><typeparamref name="V"/></returns>
+        V GetOrDefault(object arg0, V arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <typeparam name="Arg2objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg2ExtendsV"><typeparamref name="V"/></typeparam>
+        /// <returns><typeparamref name="V"/></returns>
+        V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV: V where Arg2ExtendsV: V;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><typeparamref name="V"/></returns>
+        V PutIfAbsent(K arg0, V arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><typeparamref name="V"/></returns>
+        V Replace(K arg0, V arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#forEach(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"></typeparam>
+        void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK: K;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replaceAll(java.util.function.BiFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg0objectSuperV"></typeparam>
+        /// <typeparam name="Arg0ExtendsV"></typeparam>
+        void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK: K;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Map<K, V>
-    public partial class Map<K, V>
+    public partial class Map<K, V> : Java.Util.IMap<K, V>
     {
         #region Constructors
 

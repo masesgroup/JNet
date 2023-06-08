@@ -202,45 +202,5 @@ namespace Java.Awt.EventNs
         {
             OnMouseWheelMoved(data.EventData.TypedEventData);
         }
-        /// <inheritdoc cref="IMouseAdapter.MouseClicked(MouseEvent)"/>
-        public virtual void MouseClicked(MouseEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IMouseAdapter.MouseEntered(MouseEvent)"/>
-        public virtual void MouseEntered(MouseEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IMouseAdapter.MouseExited(MouseEvent)"/>
-        public virtual void MouseExited(MouseEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IMouseAdapter.MousePressed(MouseEvent)"/>
-        public virtual void MousePressed(MouseEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IMouseAdapter.MouseReleased(MouseEvent)"/>
-        public virtual void MouseReleased(MouseEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IMouseAdapter.MouseDragged(MouseEvent)"/>
-        public virtual void MouseDragged(MouseEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IMouseAdapter.MouseMoved(MouseEvent)"/>
-        public virtual void MouseMoved(MouseEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IMouseAdapter.MouseWheelMoved(MouseWheelEvent)"/>
-        public virtual void MouseWheelMoved(MouseWheelEvent e)
-        {
-
-        }
     }
 }

@@ -25,8 +25,511 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSS2Properties
+    public partial interface ICSS2Properties
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getAzimuth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setAzimuth(java.lang.String)"/>
+        /// </summary>
+        string Azimuth { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackground(java.lang.String)"/>
+        /// </summary>
+        string Background { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundAttachment()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundAttachment(java.lang.String)"/>
+        /// </summary>
+        string BackgroundAttachment { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundColor(java.lang.String)"/>
+        /// </summary>
+        string BackgroundColor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundImage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundImage(java.lang.String)"/>
+        /// </summary>
+        string BackgroundImage { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundPosition(java.lang.String)"/>
+        /// </summary>
+        string BackgroundPosition { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBackgroundRepeat()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBackgroundRepeat(java.lang.String)"/>
+        /// </summary>
+        string BackgroundRepeat { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorder()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorder(java.lang.String)"/>
+        /// </summary>
+        string Border { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottom()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottom(java.lang.String)"/>
+        /// </summary>
+        string BorderBottom { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomColor(java.lang.String)"/>
+        /// </summary>
+        string BorderBottomColor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomStyle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomStyle(java.lang.String)"/>
+        /// </summary>
+        string BorderBottomStyle { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderBottomWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderBottomWidth(java.lang.String)"/>
+        /// </summary>
+        string BorderBottomWidth { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderCollapse()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderCollapse(java.lang.String)"/>
+        /// </summary>
+        string BorderCollapse { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderColor(java.lang.String)"/>
+        /// </summary>
+        string BorderColor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeft()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeft(java.lang.String)"/>
+        /// </summary>
+        string BorderLeft { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftColor(java.lang.String)"/>
+        /// </summary>
+        string BorderLeftColor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftStyle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftStyle(java.lang.String)"/>
+        /// </summary>
+        string BorderLeftStyle { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderLeftWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderLeftWidth(java.lang.String)"/>
+        /// </summary>
+        string BorderLeftWidth { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRight(java.lang.String)"/>
+        /// </summary>
+        string BorderRight { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightColor(java.lang.String)"/>
+        /// </summary>
+        string BorderRightColor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightStyle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightStyle(java.lang.String)"/>
+        /// </summary>
+        string BorderRightStyle { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderRightWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderRightWidth(java.lang.String)"/>
+        /// </summary>
+        string BorderRightWidth { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderSpacing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderSpacing(java.lang.String)"/>
+        /// </summary>
+        string BorderSpacing { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderStyle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderStyle(java.lang.String)"/>
+        /// </summary>
+        string BorderStyle { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTop()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTop(java.lang.String)"/>
+        /// </summary>
+        string BorderTop { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopColor(java.lang.String)"/>
+        /// </summary>
+        string BorderTopColor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopStyle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopStyle(java.lang.String)"/>
+        /// </summary>
+        string BorderTopStyle { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderTopWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderTopWidth(java.lang.String)"/>
+        /// </summary>
+        string BorderTopWidth { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBorderWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBorderWidth(java.lang.String)"/>
+        /// </summary>
+        string BorderWidth { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getBottom()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setBottom(java.lang.String)"/>
+        /// </summary>
+        string Bottom { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCaptionSide()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCaptionSide(java.lang.String)"/>
+        /// </summary>
+        string CaptionSide { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getClear()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setClear(java.lang.String)"/>
+        /// </summary>
+        string Clear { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getClip()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setClip(java.lang.String)"/>
+        /// </summary>
+        string Clip { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setColor(java.lang.String)"/>
+        /// </summary>
+        string Color { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getContent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setContent(java.lang.String)"/>
+        /// </summary>
+        string Content { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCounterIncrement()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCounterIncrement(java.lang.String)"/>
+        /// </summary>
+        string CounterIncrement { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCounterReset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCounterReset(java.lang.String)"/>
+        /// </summary>
+        string CounterReset { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCssFloat()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCssFloat(java.lang.String)"/>
+        /// </summary>
+        string CssFloat { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCue(java.lang.String)"/>
+        /// </summary>
+        string Cue { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCueAfter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCueAfter(java.lang.String)"/>
+        /// </summary>
+        string CueAfter { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCueBefore()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCueBefore(java.lang.String)"/>
+        /// </summary>
+        string CueBefore { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getCursor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setCursor(java.lang.String)"/>
+        /// </summary>
+        string Cursor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getDirection()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setDirection(java.lang.String)"/>
+        /// </summary>
+        string Direction { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getDisplay()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setDisplay(java.lang.String)"/>
+        /// </summary>
+        string Display { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getElevation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setElevation(java.lang.String)"/>
+        /// </summary>
+        string Elevation { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getEmptyCells()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setEmptyCells(java.lang.String)"/>
+        /// </summary>
+        string EmptyCells { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFont(java.lang.String)"/>
+        /// </summary>
+        string Font { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontFamily()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontFamily(java.lang.String)"/>
+        /// </summary>
+        string FontFamily { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontSize(java.lang.String)"/>
+        /// </summary>
+        string FontSize { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontSizeAdjust()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontSizeAdjust(java.lang.String)"/>
+        /// </summary>
+        string FontSizeAdjust { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontStretch()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontStretch(java.lang.String)"/>
+        /// </summary>
+        string FontStretch { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontStyle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontStyle(java.lang.String)"/>
+        /// </summary>
+        string FontStyle { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontVariant()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontVariant(java.lang.String)"/>
+        /// </summary>
+        string FontVariant { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getFontWeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setFontWeight(java.lang.String)"/>
+        /// </summary>
+        string FontWeight { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setHeight(java.lang.String)"/>
+        /// </summary>
+        string Height { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLeft()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLeft(java.lang.String)"/>
+        /// </summary>
+        string Left { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLetterSpacing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLetterSpacing(java.lang.String)"/>
+        /// </summary>
+        string LetterSpacing { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getLineHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setLineHeight(java.lang.String)"/>
+        /// </summary>
+        string LineHeight { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyle(java.lang.String)"/>
+        /// </summary>
+        string ListStyle { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyleImage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyleImage(java.lang.String)"/>
+        /// </summary>
+        string ListStyleImage { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStylePosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStylePosition(java.lang.String)"/>
+        /// </summary>
+        string ListStylePosition { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getListStyleType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setListStyleType(java.lang.String)"/>
+        /// </summary>
+        string ListStyleType { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMargin()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMargin(java.lang.String)"/>
+        /// </summary>
+        string Margin { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginBottom()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginBottom(java.lang.String)"/>
+        /// </summary>
+        string MarginBottom { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginLeft()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginLeft(java.lang.String)"/>
+        /// </summary>
+        string MarginLeft { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginRight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginRight(java.lang.String)"/>
+        /// </summary>
+        string MarginRight { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarginTop()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarginTop(java.lang.String)"/>
+        /// </summary>
+        string MarginTop { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarkerOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarkerOffset(java.lang.String)"/>
+        /// </summary>
+        string MarkerOffset { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMarks()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMarks(java.lang.String)"/>
+        /// </summary>
+        string Marks { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMaxHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMaxHeight(java.lang.String)"/>
+        /// </summary>
+        string MaxHeight { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMaxWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMaxWidth(java.lang.String)"/>
+        /// </summary>
+        string MaxWidth { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMinHeight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMinHeight(java.lang.String)"/>
+        /// </summary>
+        string MinHeight { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getMinWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setMinWidth(java.lang.String)"/>
+        /// </summary>
+        string MinWidth { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOrphans()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOrphans(java.lang.String)"/>
+        /// </summary>
+        string Orphans { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutline()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutline(java.lang.String)"/>
+        /// </summary>
+        string Outline { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineColor(java.lang.String)"/>
+        /// </summary>
+        string OutlineColor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineStyle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineStyle(java.lang.String)"/>
+        /// </summary>
+        string OutlineStyle { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOutlineWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOutlineWidth(java.lang.String)"/>
+        /// </summary>
+        string OutlineWidth { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getOverflow()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setOverflow(java.lang.String)"/>
+        /// </summary>
+        string Overflow { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPadding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPadding(java.lang.String)"/>
+        /// </summary>
+        string Padding { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingBottom()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingBottom(java.lang.String)"/>
+        /// </summary>
+        string PaddingBottom { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingLeft()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingLeft(java.lang.String)"/>
+        /// </summary>
+        string PaddingLeft { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingRight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingRight(java.lang.String)"/>
+        /// </summary>
+        string PaddingRight { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPaddingTop()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPaddingTop(java.lang.String)"/>
+        /// </summary>
+        string PaddingTop { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPage()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPage(java.lang.String)"/>
+        /// </summary>
+        string Page { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakAfter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakAfter(java.lang.String)"/>
+        /// </summary>
+        string PageBreakAfter { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakBefore()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakBefore(java.lang.String)"/>
+        /// </summary>
+        string PageBreakBefore { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPageBreakInside()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPageBreakInside(java.lang.String)"/>
+        /// </summary>
+        string PageBreakInside { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPause()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPause(java.lang.String)"/>
+        /// </summary>
+        string Pause { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPauseAfter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPauseAfter(java.lang.String)"/>
+        /// </summary>
+        string PauseAfter { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPauseBefore()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPauseBefore(java.lang.String)"/>
+        /// </summary>
+        string PauseBefore { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPitch()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPitch(java.lang.String)"/>
+        /// </summary>
+        string Pitch { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPitchRange()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPitchRange(java.lang.String)"/>
+        /// </summary>
+        string PitchRange { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPlayDuring()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPlayDuring(java.lang.String)"/>
+        /// </summary>
+        string PlayDuring { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setPosition(java.lang.String)"/>
+        /// </summary>
+        string Position { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getQuotes()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setQuotes(java.lang.String)"/>
+        /// </summary>
+        string Quotes { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getRichness()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setRichness(java.lang.String)"/>
+        /// </summary>
+        string Richness { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getRight()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setRight(java.lang.String)"/>
+        /// </summary>
+        string Right { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSize(java.lang.String)"/>
+        /// </summary>
+        string Size { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeak()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeak(java.lang.String)"/>
+        /// </summary>
+        string Speak { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakHeader()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakHeader(java.lang.String)"/>
+        /// </summary>
+        string SpeakHeader { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakNumeral()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakNumeral(java.lang.String)"/>
+        /// </summary>
+        string SpeakNumeral { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeakPunctuation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeakPunctuation(java.lang.String)"/>
+        /// </summary>
+        string SpeakPunctuation { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getSpeechRate()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setSpeechRate(java.lang.String)"/>
+        /// </summary>
+        string SpeechRate { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getStress()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setStress(java.lang.String)"/>
+        /// </summary>
+        string Stress { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTableLayout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTableLayout(java.lang.String)"/>
+        /// </summary>
+        string TableLayout { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextAlign(java.lang.String)"/>
+        /// </summary>
+        string TextAlign { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextDecoration()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextDecoration(java.lang.String)"/>
+        /// </summary>
+        string TextDecoration { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextIndent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextIndent(java.lang.String)"/>
+        /// </summary>
+        string TextIndent { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextShadow()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextShadow(java.lang.String)"/>
+        /// </summary>
+        string TextShadow { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTextTransform()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTextTransform(java.lang.String)"/>
+        /// </summary>
+        string TextTransform { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getTop()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setTop(java.lang.String)"/>
+        /// </summary>
+        string Top { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getUnicodeBidi()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setUnicodeBidi(java.lang.String)"/>
+        /// </summary>
+        string UnicodeBidi { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVerticalAlign()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVerticalAlign(java.lang.String)"/>
+        /// </summary>
+        string VerticalAlign { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVisibility()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVisibility(java.lang.String)"/>
+        /// </summary>
+        string Visibility { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVoiceFamily()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVoiceFamily(java.lang.String)"/>
+        /// </summary>
+        string VoiceFamily { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getVolume()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setVolume(java.lang.String)"/>
+        /// </summary>
+        string Volume { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWhiteSpace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWhiteSpace(java.lang.String)"/>
+        /// </summary>
+        string WhiteSpace { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWidows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWidows(java.lang.String)"/>
+        /// </summary>
+        string Widows { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWidth(java.lang.String)"/>
+        /// </summary>
+        string Width { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getWordSpacing()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setWordSpacing(java.lang.String)"/>
+        /// </summary>
+        string WordSpacing { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#getZIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSS2Properties.html#setZIndex(java.lang.String)"/>
+        /// </summary>
+        string ZIndex { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSS2Properties
-    public partial class CSS2Properties
+    public partial class CSS2Properties : Org.W3c.Dom.Css.ICSS2Properties
     {
         #region Constructors
 

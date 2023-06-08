@@ -25,8 +25,87 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
+    #region IMemoryPoolMXBean
+    public partial interface IMemoryPoolMXBean
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getCollectionUsage()"/> 
+        /// </summary>
+        Java.Lang.Management.MemoryUsage CollectionUsage { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getCollectionUsageThreshold()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#setCollectionUsageThreshold(long)"/>
+        /// </summary>
+        long CollectionUsageThreshold { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getCollectionUsageThresholdCount()"/> 
+        /// </summary>
+        long CollectionUsageThresholdCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdExceeded()"/> 
+        /// </summary>
+        bool IsCollectionUsageThresholdExceeded { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdSupported()"/> 
+        /// </summary>
+        bool IsCollectionUsageThresholdSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdExceeded()"/> 
+        /// </summary>
+        bool IsUsageThresholdExceeded { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdSupported()"/> 
+        /// </summary>
+        bool IsUsageThresholdSupported { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isValid()"/> 
+        /// </summary>
+        bool IsValid { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getMemoryManagerNames()"/> 
+        /// </summary>
+        string[] MemoryManagerNames { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getPeakUsage()"/> 
+        /// </summary>
+        Java.Lang.Management.MemoryUsage PeakUsage { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getType()"/> 
+        /// </summary>
+        Java.Lang.Management.MemoryType Type { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getUsage()"/> 
+        /// </summary>
+        Java.Lang.Management.MemoryUsage Usage { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getUsageThreshold()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#setUsageThreshold(long)"/>
+        /// </summary>
+        long UsageThreshold { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getUsageThresholdCount()"/> 
+        /// </summary>
+        long UsageThresholdCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#resetPeakUsage()"/>
+        /// </summary>
+        void ResetPeakUsage();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MemoryPoolMXBean
-    public partial class MemoryPoolMXBean
+    public partial class MemoryPoolMXBean : Java.Lang.Management.IMemoryPoolMXBean
     {
         #region Constructors
 

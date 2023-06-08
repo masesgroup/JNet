@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region IReadable
+    public partial interface IReadable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Readable.html#read(java.nio.CharBuffer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        int Read(Java.Nio.CharBuffer arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Readable
-    public partial class Readable
+    public partial class Readable : Java.Lang.IReadable
     {
         #region Constructors
 

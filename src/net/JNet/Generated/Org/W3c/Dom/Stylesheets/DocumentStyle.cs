@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Stylesheets
 {
+    #region IDocumentStyle
+    public partial interface IDocumentStyle
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/DocumentStyle.html#getStyleSheets()"/> 
+        /// </summary>
+        Org.W3c.Dom.Stylesheets.StyleSheetList StyleSheets { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DocumentStyle
-    public partial class DocumentStyle
+    public partial class DocumentStyle : Org.W3c.Dom.Stylesheets.IDocumentStyle
     {
         #region Constructors
 

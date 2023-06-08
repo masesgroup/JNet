@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
+    #region IBeanContextMembershipListener
+    public partial interface IBeanContextMembershipListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
+        void ChildrenAdded(Java.Beans.Beancontext.BeanContextMembershipEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
+        void ChildrenRemoved(Java.Beans.Beancontext.BeanContextMembershipEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BeanContextMembershipListener
-    public partial class BeanContextMembershipListener
+    public partial class BeanContextMembershipListener : Java.Beans.Beancontext.IBeanContextMembershipListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
+        public virtual void ChildrenAdded(Java.Beans.Beancontext.BeanContextMembershipEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextMembershipEvent"/></param>
+        public virtual void ChildrenRemoved(Java.Beans.Beancontext.BeanContextMembershipEvent arg0)
+        {
+            
+        }
 
         #endregion
 

@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
+    #region IXMLResolver
+    public partial interface IXMLResolver
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLResolver.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        object ResolveEntity(string arg0, string arg1, string arg2, string arg3);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLResolver
-    public partial class XMLResolver
+    public partial class XMLResolver : Javax.Xml.Stream.IXMLResolver
     {
         #region Constructors
 

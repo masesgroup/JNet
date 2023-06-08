@@ -323,8 +323,195 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
+    #region IBlockingDeque<E>
+    public partial interface IBlockingDeque<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#element()"/> 
+        /// </summary>
+        E Element { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#iterator()"/> 
+        /// </summary>
+        Java.Util.Iterator<E> Iterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#peek()"/> 
+        /// </summary>
+        E Peek { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#size()"/> 
+        /// </summary>
+        int Size { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#take()"/> 
+        /// </summary>
+        E Take { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#takeFirst()"/> 
+        /// </summary>
+        E TakeFirst { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#takeLast()"/> 
+        /// </summary>
+        E TakeLast { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#add(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Add(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#contains(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Contains(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        bool Offer(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offer(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Offer(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        bool OfferFirst(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offerFirst(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool OfferFirst(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        bool OfferLast(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#offerLast(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool OfferLast(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#remove(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Remove(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#removeFirstOccurrence(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool RemoveFirstOccurrence(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#removeLastOccurrence(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool RemoveLastOccurrence(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#poll()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        E Poll();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><typeparamref name="E"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        E Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#pollFirst(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><typeparamref name="E"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        E PollFirst(long arg0, Java.Util.Concurrent.TimeUnit arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#pollLast(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><typeparamref name="E"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        E PollLast(long arg0, Java.Util.Concurrent.TimeUnit arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#remove()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        E Remove();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#addFirst(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        void AddFirst(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#addLast(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        void AddLast(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#push(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        void Push(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#put(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        void Put(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#putFirst(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        void PutFirst(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingDeque.html#putLast(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        void PutLast(E arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BlockingDeque<E>
-    public partial class BlockingDeque<E>
+    public partial class BlockingDeque<E> : Java.Util.Concurrent.IBlockingDeque<E>
     {
         #region Constructors
 

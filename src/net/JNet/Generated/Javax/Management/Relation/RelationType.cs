@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
+    #region IRelationType
+    public partial interface IRelationType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRelationTypeName()"/> 
+        /// </summary>
+        string RelationTypeName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfos()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Management.Relation.RoleInfo> RoleInfos { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html#getRoleInfo(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Management.Relation.RoleInfo"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Javax.Management.Relation.RoleInfoNotFoundException"/>
+        Javax.Management.Relation.RoleInfo GetRoleInfo(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RelationType
-    public partial class RelationType
+    public partial class RelationType : Javax.Management.Relation.IRelationType
     {
         #region Constructors
 

@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IRSAKey
+    public partial interface IRSAKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAKey.html#getModulus()"/> 
+        /// </summary>
+        Java.Math.BigInteger Modulus { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAKey.html#getParams()"/> 
+        /// </summary>
+        Java.Security.Spec.AlgorithmParameterSpec Params { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RSAKey
-    public partial class RSAKey
+    public partial class RSAKey : Java.Security.Interfaces.IRSAKey
     {
         #region Constructors
 

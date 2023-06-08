@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region IPrimitiveType
+    public partial interface IPrimitiveType
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrimitiveType
-    public partial class PrimitiveType
+    public partial class PrimitiveType : Javax.Lang.Model.Type.IPrimitiveType
     {
         #region Constructors
 

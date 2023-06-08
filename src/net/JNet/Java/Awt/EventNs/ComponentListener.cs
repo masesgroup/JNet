@@ -24,24 +24,9 @@ namespace Java.Awt.EventNs
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html"/>
     /// </summary>
-    public interface IComponentListener : IJVMBridgeBase
+    public partial interface IComponentListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentResized(java.awt.event.ComponentEvent)"/>
-        /// </summary>
-        void ComponentResized(ComponentEvent e);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentMoved(java.awt.event.ComponentEvent)"/>
-        /// </summary>
-        void ComponentMoved(ComponentEvent e);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentShown(java.awt.event.ComponentEvent)"/>
-        /// </summary>
-        void ComponentShown(ComponentEvent e);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentHidden(java.awt.event.ComponentEvent)"/>
-        /// </summary>
-        void ComponentHidden(ComponentEvent e);
+
     }
 
     /// <summary>
@@ -125,26 +110,6 @@ namespace Java.Awt.EventNs
         void EventHandlerComponentHidden(object sender, CLRListenerEventArgs<CLREventData<ComponentEvent>> data)
         {
             OnComponentHidden(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IComponentListener.ComponentResized(ComponentEvent)"/>
-        public virtual void ComponentResized(ComponentEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IComponentListener.ComponentMoved(ComponentEvent)"/>
-        public virtual void ComponentMoved(ComponentEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IComponentListener.ComponentShown(ComponentEvent)"/>
-        public virtual void ComponentShown(ComponentEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IComponentListener.ComponentHidden(ComponentEvent)"/>
-        public virtual void ComponentHidden(ComponentEvent e)
-        {
-
         }
     }
 }

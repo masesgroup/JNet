@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Xpath
 {
+    #region IXPathFunctionResolver
+    public partial interface IXPathFunctionResolver
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunctionResolver.html#resolveFunction(javax.xml.namespace.QName,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Namespace.QName"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Xml.Xpath.XPathFunction"/></returns>
+        Javax.Xml.Xpath.XPathFunction ResolveFunction(Javax.Xml.Namespace.QName arg0, int arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XPathFunctionResolver
-    public partial class XPathFunctionResolver
+    public partial class XPathFunctionResolver : Javax.Xml.Xpath.IXPathFunctionResolver
     {
         #region Constructors
 

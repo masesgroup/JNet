@@ -25,8 +25,55 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Ext
 {
+    #region IDeclHandler
+    public partial interface IDeclHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#attributeDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void AttributeDecl(string arg0, string arg1, string arg2, string arg3, string arg4);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#elementDecl(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void ElementDecl(string arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#externalEntityDecl(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void ExternalEntityDecl(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/DeclHandler.html#internalEntityDecl(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void InternalEntityDecl(string arg0, string arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DeclHandler
-    public partial class DeclHandler
+    public partial class DeclHandler : Org.Xml.Sax.Ext.IDeclHandler
     {
         #region Constructors
 

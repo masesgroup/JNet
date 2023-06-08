@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
+    #region IByteChannel
+    public partial interface IByteChannel
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ByteChannel
-    public partial class ByteChannel
+    public partial class ByteChannel : Java.Nio.Channels.IByteChannel
     {
         #region Constructors
 

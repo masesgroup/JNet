@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region ILongToDoubleFunction
+    public partial interface ILongToDoubleFunction
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToDoubleFunction.html#applyAsDouble(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="double"/></returns>
+        double ApplyAsDouble(long arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LongToDoubleFunction
-    public partial class LongToDoubleFunction
+    public partial class LongToDoubleFunction : Java.Util.Function.ILongToDoubleFunction
     {
         #region Constructors
 

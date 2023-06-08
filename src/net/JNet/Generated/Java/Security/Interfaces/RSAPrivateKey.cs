@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IRSAPrivateKey
+    public partial interface IRSAPrivateKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateKey.html#getPrivateExponent()"/> 
+        /// </summary>
+        Java.Math.BigInteger PrivateExponent { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RSAPrivateKey
-    public partial class RSAPrivateKey
+    public partial class RSAPrivateKey : Java.Security.Interfaces.IRSAPrivateKey
     {
         #region Constructors
 

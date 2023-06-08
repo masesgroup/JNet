@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Event
 {
+    #region IPrintServiceAttributeListener
+    public partial interface IPrintServiceAttributeListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeEvent"/></param>
+        void AttributeUpdate(Javax.Print.Event.PrintServiceAttributeEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrintServiceAttributeListener
-    public partial class PrintServiceAttributeListener
+    public partial class PrintServiceAttributeListener : Javax.Print.Event.IPrintServiceAttributeListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Print.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintServiceAttributeEvent"/></param>
+        public virtual void AttributeUpdate(Javax.Print.Event.PrintServiceAttributeEvent arg0)
+        {
+            
+        }
 
         #endregion
 

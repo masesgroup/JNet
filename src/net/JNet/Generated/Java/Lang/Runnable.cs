@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region IRunnable
+    public partial interface IRunnable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html#run()"/>
+        /// </summary>
+        void Run();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Runnable
-    public partial class Runnable
+    public partial class Runnable : Java.Lang.IRunnable
     {
         #region Constructors
 

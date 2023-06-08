@@ -25,8 +25,113 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
+    #region IAccessibleComponent
+    public partial interface IAccessibleComponent
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getBackground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setBackground(java.awt.Color)"/>
+        /// </summary>
+        Java.Awt.Color Background { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getBounds()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setBounds(java.awt.Rectangle)"/>
+        /// </summary>
+        Java.Awt.Rectangle Bounds { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getCursor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setCursor(java.awt.Cursor)"/>
+        /// </summary>
+        Java.Awt.Cursor Cursor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getFont()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setFont(java.awt.Font)"/>
+        /// </summary>
+        Java.Awt.Font Font { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getForeground()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setForeground(java.awt.Color)"/>
+        /// </summary>
+        Java.Awt.Color Foreground { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isEnabled()"/> 
+        /// </summary>
+        bool IsEnabled { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isFocusTraversable()"/> 
+        /// </summary>
+        bool IsFocusTraversable { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isShowing()"/> 
+        /// </summary>
+        bool IsShowing { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#isVisible()"/> 
+        /// </summary>
+        bool IsVisible { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getLocation()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setLocation(java.awt.Point)"/>
+        /// </summary>
+        Java.Awt.Point Location { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getLocationOnScreen()"/> 
+        /// </summary>
+        Java.Awt.Point LocationOnScreen { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setSize(java.awt.Dimension)"/>
+        /// </summary>
+        Java.Awt.Dimension Size { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#contains(java.awt.Point)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Contains(Java.Awt.Point arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getFontMetrics(java.awt.Font)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Font"/></param>
+        /// <returns><see cref="Java.Awt.FontMetrics"/></returns>
+        Java.Awt.FontMetrics GetFontMetrics(Java.Awt.Font arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#getAccessibleAt(java.awt.Point)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
+        Javax.Accessibility.Accessible GetAccessibleAt(Java.Awt.Point arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#addFocusListener(java.awt.event.FocusListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
+        void AddFocusListener(Java.Awt.EventNs.FocusListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#removeFocusListener(java.awt.event.FocusListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.FocusListener"/></param>
+        void RemoveFocusListener(Java.Awt.EventNs.FocusListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#requestFocus()"/>
+        /// </summary>
+        void RequestFocus();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        void SetEnabled(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleComponent.html#setVisible(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        void SetVisible(bool arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AccessibleComponent
-    public partial class AccessibleComponent
+    public partial class AccessibleComponent : Javax.Accessibility.IAccessibleComponent
     {
         #region Constructors
 

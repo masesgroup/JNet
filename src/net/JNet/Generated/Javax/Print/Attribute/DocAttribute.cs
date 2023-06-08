@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
+    #region IDocAttribute
+    public partial interface IDocAttribute
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DocAttribute
-    public partial class DocAttribute
+    public partial class DocAttribute : Javax.Print.Attribute.IDocAttribute
     {
         #region Constructors
 

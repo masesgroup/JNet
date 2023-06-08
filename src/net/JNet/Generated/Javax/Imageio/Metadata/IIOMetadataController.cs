@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Metadata
 {
+    #region IIIOMetadataController
+    public partial interface IIIOMetadataController
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataController.html#activate(javax.imageio.metadata.IIOMetadata)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Metadata.IIOMetadata"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Activate(Javax.Imageio.Metadata.IIOMetadata arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IIOMetadataController
-    public partial class IIOMetadataController
+    public partial class IIOMetadataController : Javax.Imageio.Metadata.IIIOMetadataController
     {
         #region Constructors
 

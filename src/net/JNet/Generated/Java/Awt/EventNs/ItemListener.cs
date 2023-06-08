@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IItemListener
+    public partial interface IItemListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
+        void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ItemListener
-    public partial class ItemListener
+    public partial class ItemListener : Java.Awt.EventNs.IItemListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemEvent"/></param>
+        public virtual void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
+        {
+            
+        }
 
         #endregion
 

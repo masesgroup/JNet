@@ -75,8 +75,39 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IBiFunction<T, U, R>
+    public partial interface IBiFunction<T, U, R>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R Apply(T arg0, U arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"></typeparam>
+        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BiFunction<T, U, R>
-    public partial class BiFunction<T, U, R>
+    public partial class BiFunction<T, U, R> : Java.Util.Function.IBiFunction<T, U, R>
     {
         #region Constructors
 

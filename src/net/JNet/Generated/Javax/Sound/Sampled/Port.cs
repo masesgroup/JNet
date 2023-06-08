@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
+    #region IPort
+    public partial interface IPort
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Port
-    public partial class Port
+    public partial class Port : Javax.Sound.Sampled.IPort
     {
         #region Constructors
 

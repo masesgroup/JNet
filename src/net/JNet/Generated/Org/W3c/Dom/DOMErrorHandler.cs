@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IDOMErrorHandler
+    public partial interface IDOMErrorHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMErrorHandler.html#handleError(org.w3c.dom.DOMError)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.DOMError"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool HandleError(Org.W3c.Dom.DOMError arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DOMErrorHandler
-    public partial class DOMErrorHandler
+    public partial class DOMErrorHandler : Org.W3c.Dom.IDOMErrorHandler
     {
         #region Constructors
 

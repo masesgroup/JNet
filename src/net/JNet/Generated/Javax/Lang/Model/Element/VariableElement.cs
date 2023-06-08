@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
+    #region IVariableElement
+    public partial interface IVariableElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getConstantValue()"/> 
+        /// </summary>
+        object ConstantValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getEnclosingElement()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Element EnclosingElement { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/VariableElement.html#getSimpleName()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Name SimpleName { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region VariableElement
-    public partial class VariableElement
+    public partial class VariableElement : Javax.Lang.Model.Element.IVariableElement
     {
         #region Constructors
 

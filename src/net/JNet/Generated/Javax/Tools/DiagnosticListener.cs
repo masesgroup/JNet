@@ -45,6 +45,35 @@ namespace Javax.Tools
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html#report(javax.tools.Diagnostic)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.Diagnostic"/></param>
+        public virtual void Report(Javax.Tools.Diagnostic arg0)
+        {
+            
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region IDiagnosticListener<S>
+    public partial interface IDiagnosticListener<S>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html#report(javax.tools.Diagnostic)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.Diagnostic"/></param>
+        /// <typeparam name="Arg0ExtendsS"><typeparamref name="S"/></typeparam>
+        void Report<Arg0ExtendsS>(Javax.Tools.Diagnostic<Arg0ExtendsS> arg0) where Arg0ExtendsS: S;
 
         #endregion
 
@@ -57,7 +86,7 @@ namespace Javax.Tools
     #endregion
 
     #region DiagnosticListener<S>
-    public partial class DiagnosticListener<S>
+    public partial class DiagnosticListener<S> : Javax.Tools.IDiagnosticListener<S>
     {
         #region Constructors
 
@@ -76,6 +105,15 @@ namespace Javax.Tools
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html#report(javax.tools.Diagnostic)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.Diagnostic"/></param>
+        /// <typeparam name="Arg0ExtendsS"><typeparamref name="S"/></typeparam>
+        public virtual void Report<Arg0ExtendsS>(Javax.Tools.Diagnostic<Arg0ExtendsS> arg0) where Arg0ExtendsS: S
+        {
+            
+        }
 
         #endregion
 

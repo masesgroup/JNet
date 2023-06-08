@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region ITreeSelectionListener
+    public partial interface ITreeSelectionListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html#valueChanged(javax.swing.event.TreeSelectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionEvent"/></param>
+        void ValueChanged(Javax.Swing.Event.TreeSelectionEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TreeSelectionListener
-    public partial class TreeSelectionListener
+    public partial class TreeSelectionListener : Javax.Swing.Event.ITreeSelectionListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html#valueChanged(javax.swing.event.TreeSelectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeSelectionEvent"/></param>
+        public virtual void ValueChanged(Javax.Swing.Event.TreeSelectionEvent arg0)
+        {
+            
+        }
 
         #endregion
 

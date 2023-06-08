@@ -24,12 +24,9 @@ namespace Javax.Naming.Event
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html"/>
     /// </summary>
-    public interface INamingListener : IJVMBridgeBase
+    public partial interface INamingListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
-        /// </summary>
-        void NamingExceptionThrown(NamingExceptionEvent evt);
+
     }
 
     /// <summary>
@@ -67,11 +64,6 @@ namespace Javax.Naming.Event
         void EventHandlerNamingExceptionThrown(object sender, CLRListenerEventArgs<CLREventData<NamingExceptionEvent>> data)
         {
             OnNamingExceptionThrown(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="INamingListener.NamingExceptionThrown(NamingExceptionEvent)"/>
-        public virtual void NamingExceptionThrown(NamingExceptionEvent evt)
-        {
-
         }
     }
 }

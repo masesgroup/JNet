@@ -25,8 +25,55 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IDosFileAttributeView
+    public partial interface IDosFileAttributeView
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#name()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()"/> 
+        /// </summary>
+        Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setArchive(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void SetArchive(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setHidden(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void SetHidden(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setReadOnly(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void SetReadOnly(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setSystem(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void SetSystem(bool arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DosFileAttributeView
-    public partial class DosFileAttributeView
+    public partial class DosFileAttributeView : Java.Nio.File.Attribute.IDosFileAttributeView
     {
         #region Constructors
 

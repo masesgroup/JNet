@@ -45,6 +45,166 @@ namespace Org.Xml.Sax.Helpers
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#characters(char[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void Characters(char[] arg0, int arg1, int arg2)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endDocument()"/>
+        /// </summary>
+
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void EndDocument()
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void EndElement(string arg0, string arg1, string arg2)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endPrefixMapping(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        public virtual void EndPrefixMapping(string arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#ignorableWhitespace(char[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void IgnorableWhitespace(char[] arg0, int arg1, int arg2)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void Parse(string arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(org.xml.sax.InputSource)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void Parse(Org.Xml.Sax.InputSource arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void ProcessingInstruction(string arg0, string arg1)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
+        public virtual void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.DTDHandler"/></param>
+        public virtual void SetDTDHandler(Org.Xml.Sax.DTDHandler arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
+        public virtual void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
+        public virtual void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setLocale(java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void SetLocale(Java.Util.Locale arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#skippedEntity(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void SkippedEntity(string arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startDocument()"/>
+        /// </summary>
+
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void StartDocument()
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Org.Xml.Sax.Attributes"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void StartElement(string arg0, string arg1, string arg2, Org.Xml.Sax.Attributes arg3)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        public virtual void StartPrefixMapping(string arg0, string arg1)
+        {
+            
+        }
 
         #endregion
 

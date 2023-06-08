@@ -66,8 +66,30 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IToLongBiFunction<T, U>
+    public partial interface IToLongBiFunction<T, U>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <returns><see cref="long"/></returns>
+        long ApplyAsLong(T arg0, U arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ToLongBiFunction<T, U>
-    public partial class ToLongBiFunction<T, U>
+    public partial class ToLongBiFunction<T, U> : Java.Util.Function.IToLongBiFunction<T, U>
     {
         #region Constructors
 

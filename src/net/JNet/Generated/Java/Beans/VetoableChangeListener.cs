@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
+    #region IVetoableChangeListener
+    public partial interface IVetoableChangeListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        void VetoableChange(Java.Beans.PropertyChangeEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region VetoableChangeListener
-    public partial class VetoableChangeListener
+    public partial class VetoableChangeListener : Java.Beans.IVetoableChangeListener
     {
         #region Constructors
 
@@ -45,6 +66,15 @@ namespace Java.Beans
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+        /// <exception cref="Java.Beans.PropertyVetoException"/>
+        public virtual void VetoableChange(Java.Beans.PropertyChangeEvent arg0)
+        {
+            
+        }
 
         #endregion
 

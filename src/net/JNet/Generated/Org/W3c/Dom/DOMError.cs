@@ -25,8 +25,47 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IDOMError
+    public partial interface IDOMError
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getLocation()"/> 
+        /// </summary>
+        Org.W3c.Dom.DOMLocator Location { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getMessage()"/> 
+        /// </summary>
+        string Message { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getRelatedData()"/> 
+        /// </summary>
+        object RelatedData { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getRelatedException()"/> 
+        /// </summary>
+        object RelatedException { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getSeverity()"/> 
+        /// </summary>
+        short Severity { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#getType()"/> 
+        /// </summary>
+        string Type { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DOMError
-    public partial class DOMError
+    public partial class DOMError : Org.W3c.Dom.IDOMError
     {
         #region Constructors
 

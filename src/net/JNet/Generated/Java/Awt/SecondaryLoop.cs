@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
+    #region ISecondaryLoop
+    public partial interface ISecondaryLoop
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#enter()"/> 
+        /// </summary>
+        bool Enter { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#exit()"/> 
+        /// </summary>
+        bool Exit { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SecondaryLoop
-    public partial class SecondaryLoop
+    public partial class SecondaryLoop : Java.Awt.ISecondaryLoop
     {
         #region Constructors
 

@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
+    #region IDoc
+    public partial interface IDoc
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getAttributes()"/> 
+        /// </summary>
+        Javax.Print.Attribute.DocAttributeSet Attributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getDocFlavor()"/> 
+        /// </summary>
+        Javax.Print.DocFlavor DocFlavor { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getPrintData()"/> 
+        /// </summary>
+        object PrintData { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getReaderForText()"/> 
+        /// </summary>
+        Java.Io.Reader ReaderForText { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html#getStreamForBytes()"/> 
+        /// </summary>
+        Java.Io.InputStream StreamForBytes { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Doc
-    public partial class Doc
+    public partial class Doc : Javax.Print.IDoc
     {
         #region Constructors
 

@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
+    #region IDTD
+    public partial interface IDTD
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getDocumentTypeDeclaration()"/> 
+        /// </summary>
+        string DocumentTypeDeclaration { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getEntities()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Stream.Events.EntityDeclaration> Entities { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getNotations()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Stream.Events.NotationDeclaration> Notations { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html#getProcessedDTD()"/> 
+        /// </summary>
+        object ProcessedDTD { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DTD
-    public partial class DTD
+    public partial class DTD : Javax.Xml.Stream.Events.IDTD
     {
         #region Constructors
 

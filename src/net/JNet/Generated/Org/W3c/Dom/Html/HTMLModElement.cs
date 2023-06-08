@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLModElement
+    public partial interface IHTMLModElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#getCite()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#setCite(java.lang.String)"/>
+        /// </summary>
+        string Cite { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#getDateTime()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLModElement.html#setDateTime(java.lang.String)"/>
+        /// </summary>
+        string DateTime { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLModElement
-    public partial class HTMLModElement
+    public partial class HTMLModElement : Org.W3c.Dom.Html.IHTMLModElement
     {
         #region Constructors
 

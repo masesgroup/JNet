@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
+    #region IRowMapper
+    public partial interface IRowMapper
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/RowMapper.html#getRowsForPaths(javax.swing.tree.TreePath[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
+        /// <returns><see cref="int"/></returns>
+        int[] GetRowsForPaths(Javax.Swing.Tree.TreePath[] arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RowMapper
-    public partial class RowMapper
+    public partial class RowMapper : Javax.Swing.Tree.IRowMapper
     {
         #region Constructors
 

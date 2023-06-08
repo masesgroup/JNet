@@ -25,8 +25,57 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
+    #region IInvocable
+    public partial interface IInvocable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#getInterface(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        T GetInterface<T>(Java.Lang.Class arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#getInterface(java.lang.Object,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        T GetInterface<T>(object arg0, Java.Lang.Class arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <exception cref="Java.Lang.NoSuchMethodException"/>
+        object InvokeFunction(string arg0, params object[] arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        /// <exception cref="Java.Lang.NoSuchMethodException"/>
+        object InvokeMethod(object arg0, string arg1, params object[] arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Invocable
-    public partial class Invocable
+    public partial class Invocable : Javax.Script.IInvocable
     {
         #region Constructors
 

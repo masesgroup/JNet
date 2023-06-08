@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICounter
+    public partial interface ICounter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Counter.html#getIdentifier()"/> 
+        /// </summary>
+        string Identifier { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Counter.html#getListStyle()"/> 
+        /// </summary>
+        string ListStyle { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Counter.html#getSeparator()"/> 
+        /// </summary>
+        string Separator { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Counter
-    public partial class Counter
+    public partial class Counter : Org.W3c.Dom.Css.ICounter
     {
         #region Constructors
 

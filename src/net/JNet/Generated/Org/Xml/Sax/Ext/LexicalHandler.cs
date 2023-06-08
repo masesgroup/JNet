@@ -25,8 +25,69 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax.Ext
 {
+    #region ILexicalHandler
+    public partial interface ILexicalHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#comment(char[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void Comment(char[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endCDATA()"/>
+        /// </summary>
+
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void EndCDATA();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endDTD()"/>
+        /// </summary>
+
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void EndDTD();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endEntity(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void EndEntity(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startCDATA()"/>
+        /// </summary>
+
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void StartCDATA();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startDTD(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void StartDTD(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startEntity(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void StartEntity(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LexicalHandler
-    public partial class LexicalHandler
+    public partial class LexicalHandler : Org.Xml.Sax.Ext.ILexicalHandler
     {
         #region Constructors
 

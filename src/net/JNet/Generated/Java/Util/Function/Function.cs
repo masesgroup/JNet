@@ -90,8 +90,47 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IFunction<T, R>
+    public partial interface IFunction<T, R>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R Apply(T arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"></typeparam>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg0ExtendsT"></typeparam>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Function<T, R>
-    public partial class Function<T, R>
+    public partial class Function<T, R> : Java.Util.Function.IFunction<T, R>
     {
         #region Constructors
 

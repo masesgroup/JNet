@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region ICellEditorListener
+    public partial interface ICellEditorListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingCanceled(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        void EditingCanceled(Javax.Swing.Event.ChangeEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingStopped(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        void EditingStopped(Javax.Swing.Event.ChangeEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CellEditorListener
-    public partial class CellEditorListener
+    public partial class CellEditorListener : Javax.Swing.Event.ICellEditorListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingCanceled(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        public virtual void EditingCanceled(Javax.Swing.Event.ChangeEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingStopped(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
+        public virtual void EditingStopped(Javax.Swing.Event.ChangeEvent arg0)
+        {
+            
+        }
 
         #endregion
 

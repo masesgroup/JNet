@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IAttributeView
+    public partial interface IAttributeView
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AttributeView.html#name()"/> 
+        /// </summary>
+        string Name { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AttributeView
-    public partial class AttributeView
+    public partial class AttributeView : Java.Nio.File.Attribute.IAttributeView
     {
         #region Constructors
 

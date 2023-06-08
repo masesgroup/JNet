@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region ISafeVarargs
+    public partial interface ISafeVarargs
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SafeVarargs
-    public partial class SafeVarargs
+    public partial class SafeVarargs : Java.Lang.ISafeVarargs
     {
         #region Constructors
 

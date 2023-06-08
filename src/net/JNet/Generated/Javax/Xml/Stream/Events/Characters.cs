@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
+    #region ICharacters
+    public partial interface ICharacters
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#getData()"/> 
+        /// </summary>
+        string Data { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isCData()"/> 
+        /// </summary>
+        bool IsCData { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isIgnorableWhiteSpace()"/> 
+        /// </summary>
+        bool IsIgnorableWhiteSpace { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isWhiteSpace()"/> 
+        /// </summary>
+        bool IsWhiteSpace { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Characters
-    public partial class Characters
+    public partial class Characters : Javax.Xml.Stream.Events.ICharacters
     {
         #region Constructors
 

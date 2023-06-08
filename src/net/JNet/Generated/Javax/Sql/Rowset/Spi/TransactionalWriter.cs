@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset.Spi
 {
+    #region ITransactionalWriter
+    public partial interface ITransactionalWriter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#commit()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Commit();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Rollback();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/TransactionalWriter.html#rollback(java.sql.Savepoint)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Rollback(Java.Sql.Savepoint arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TransactionalWriter
-    public partial class TransactionalWriter
+    public partial class TransactionalWriter : Javax.Sql.Rowset.Spi.ITransactionalWriter
     {
         #region Constructors
 

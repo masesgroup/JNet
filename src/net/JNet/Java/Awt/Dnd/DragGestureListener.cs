@@ -24,12 +24,9 @@ namespace Java.Awt.Dnd
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html"/>
     /// </summary>
-    public interface IDragGestureListener : IJVMBridgeBase
+    public partial interface IDragGestureListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent)"/>
-        /// </summary>
-        void DragGestureRecognized(DragGestureEvent dge);
+
     }
 
     /// <summary>
@@ -67,11 +64,6 @@ namespace Java.Awt.Dnd
         void EventHandlerDragGestureRecognized(object sender, CLRListenerEventArgs<CLREventData<DragGestureEvent>> data)
         {
             OnDragGestureRecognized(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IDragGestureListener.DragGestureRecognized(DragGestureEvent)"/>
-        public virtual void DragGestureRecognized(DragGestureEvent dge)
-        {
-
         }
     }
 }

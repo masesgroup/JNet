@@ -25,8 +25,45 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IIntPredicate
+    public partial interface IIntPredicate
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/> 
+        /// </summary>
+        Java.Util.Function.IntPredicate Negate { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#test(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Test(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        Java.Util.Function.IntPredicate And(Java.Util.Function.IntPredicate arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IntPredicate
-    public partial class IntPredicate
+    public partial class IntPredicate : Java.Util.Function.IIntPredicate
     {
         #region Constructors
 

@@ -24,12 +24,9 @@ namespace Java.Awt.EventNs
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html"/>
     /// </summary>
-    public interface IAdjustmentListener : IJVMBridgeBase
+    public partial interface IAdjustmentListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
-        /// </summary>
-        void AdjustmentValueChanged(AdjustmentEvent e);
+
     }
 
     /// <summary>
@@ -67,11 +64,6 @@ namespace Java.Awt.EventNs
         void EventHandlerAdjustmentValueChanged(object sender, CLRListenerEventArgs<CLREventData<AdjustmentEvent>> data)
         {
             OnAdjustmentValueChanged(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IAdjustmentListener.AdjustmentValueChanged(AdjustmentEvent)"/>
-        public virtual void AdjustmentValueChanged(AdjustmentEvent e)
-        {
-
         }
     }
 }

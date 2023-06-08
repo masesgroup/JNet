@@ -25,8 +25,63 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent.Locks
 {
+    #region ICondition
+    public partial interface ICondition
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#await(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        bool Await(long arg0, Java.Util.Concurrent.TimeUnit arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitUntil(java.util.Date)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Date"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        bool AwaitUntil(Java.Util.Date arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitNanos(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        long AwaitNanos(long arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#await()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        void Await();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#awaitUninterruptibly()"/>
+        /// </summary>
+        void AwaitUninterruptibly();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#signal()"/>
+        /// </summary>
+        void Signal();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Condition.html#signalAll()"/>
+        /// </summary>
+        void SignalAll();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Condition
-    public partial class Condition
+    public partial class Condition : Java.Util.Concurrent.Locks.ICondition
     {
         #region Constructors
 

@@ -24,12 +24,9 @@ namespace Javax.Management
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html"/>
     /// </summary>
-    public interface INotificationFilter : IJVMBridgeBase
+    public partial interface INotificationFilter : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
-        /// </summary>
-        bool IsNotificationEnabled(Notification notification);
+
     }
     /// <summary>
     /// Implementation of <see cref="INotificationFilter"/>
@@ -66,11 +63,6 @@ namespace Javax.Management
         {
             bool result = OnIsNotificationEnabled(data.EventData.TypedEventData);
             data.SetReturnValue(result);
-        }
-        /// <inheritdoc cref="INotificationFilter.IsNotificationEnabled(Notification)"/>
-        public virtual bool IsNotificationEnabled(Notification notification)
-        {
-            return false;
         }
     }
 }

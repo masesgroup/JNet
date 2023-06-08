@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
+    #region IDocumentEvent
+    public partial interface IDocumentEvent
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/DocumentEvent.html#createEvent(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Events.Event"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.Events.Event CreateEvent(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DocumentEvent
-    public partial class DocumentEvent
+    public partial class DocumentEvent : Org.W3c.Dom.Events.IDocumentEvent
     {
         #region Constructors
 

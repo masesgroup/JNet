@@ -25,8 +25,48 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region ICharSequence
+    public partial interface ICharSequence
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#chars()"/> 
+        /// </summary>
+        Java.Util.Stream.IntStream Chars { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#codePoints()"/> 
+        /// </summary>
+        Java.Util.Stream.IntStream CodePoints { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#length()"/> 
+        /// </summary>
+        int Length { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#charAt(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="char"/></returns>
+        char CharAt(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#subSequence(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        Java.Lang.CharSequence SubSequence(int arg0, int arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CharSequence
-    public partial class CharSequence
+    public partial class CharSequence : Java.Lang.ICharSequence
     {
         #region Constructors
 

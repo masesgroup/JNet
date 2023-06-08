@@ -56,8 +56,23 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IUnaryOperator<T>
+    public partial interface IUnaryOperator<T>
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region UnaryOperator<T>
-    public partial class UnaryOperator<T>
+    public partial class UnaryOperator<T> : Java.Util.Function.IUnaryOperator<T>
     {
         #region Constructors
 

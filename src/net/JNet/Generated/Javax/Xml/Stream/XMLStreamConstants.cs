@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
+    #region IXMLStreamConstants
+    public partial interface IXMLStreamConstants
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLStreamConstants
-    public partial class XMLStreamConstants
+    public partial class XMLStreamConstants : Javax.Xml.Stream.IXMLStreamConstants
     {
         #region Constructors
 

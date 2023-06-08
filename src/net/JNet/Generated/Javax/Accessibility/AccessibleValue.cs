@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
+    #region IAccessibleValue
+    public partial interface IAccessibleValue
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getCurrentAccessibleValue()"/> 
+        /// </summary>
+        Java.Lang.Number CurrentAccessibleValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getMaximumAccessibleValue()"/> 
+        /// </summary>
+        Java.Lang.Number MaximumAccessibleValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#getMinimumAccessibleValue()"/> 
+        /// </summary>
+        Java.Lang.Number MinimumAccessibleValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleValue.html#setCurrentAccessibleValue(java.lang.Number)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Number"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool SetCurrentAccessibleValue(Java.Lang.Number arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AccessibleValue
-    public partial class AccessibleValue
+    public partial class AccessibleValue : Javax.Accessibility.IAccessibleValue
     {
         #region Constructors
 

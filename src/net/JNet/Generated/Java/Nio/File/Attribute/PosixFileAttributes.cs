@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IPosixFileAttributes
+    public partial interface IPosixFileAttributes
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#group()"/> 
+        /// </summary>
+        Java.Nio.File.Attribute.GroupPrincipal Group { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#owner()"/> 
+        /// </summary>
+        Java.Nio.File.Attribute.UserPrincipal Owner { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html#permissions()"/> 
+        /// </summary>
+        Java.Util.Set<Java.Nio.File.Attribute.PosixFilePermission> Permissions { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PosixFileAttributes
-    public partial class PosixFileAttributes
+    public partial class PosixFileAttributes : Java.Nio.File.Attribute.IPosixFileAttributes
     {
         #region Constructors
 

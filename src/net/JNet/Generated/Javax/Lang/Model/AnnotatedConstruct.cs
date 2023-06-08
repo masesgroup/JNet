@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model
 {
+    #region IAnnotatedConstruct
+    public partial interface IAnnotatedConstruct
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotationMirrors()"/> 
+        /// </summary>
+        Java.Util.List AnnotationMirrors { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotation(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="A"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="A"/></returns>
+        A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotationsByType(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="A"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><typeparamref name="A"/></returns>
+        A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AnnotatedConstruct
-    public partial class AnnotatedConstruct
+    public partial class AnnotatedConstruct : Javax.Lang.Model.IAnnotatedConstruct
     {
         #region Constructors
 

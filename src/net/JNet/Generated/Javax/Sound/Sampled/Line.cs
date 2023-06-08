@@ -25,8 +25,67 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
+    #region ILine
+    public partial interface ILine
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getControls()"/> 
+        /// </summary>
+        Javax.Sound.Sampled.Control[] Controls { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/> 
+        /// </summary>
+        bool IsOpen { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getLineInfo()"/> 
+        /// </summary>
+        Javax.Sound.Sampled.Line.Info LineInfo { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isControlSupported(javax.sound.sampled.Control.Type)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Control.Type"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsControlSupported(Javax.Sound.Sampled.Control.Type arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getControl(javax.sound.sampled.Control.Type)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.Control.Type"/></param>
+        /// <returns><see cref="Javax.Sound.Sampled.Control"/></returns>
+        Javax.Sound.Sampled.Control GetControl(Javax.Sound.Sampled.Control.Type arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#addLineListener(javax.sound.sampled.LineListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineListener"/></param>
+        void AddLineListener(Javax.Sound.Sampled.LineListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#close()"/>
+        /// </summary>
+        void Close();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#open()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        void Open();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#removeLineListener(javax.sound.sampled.LineListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineListener"/></param>
+        void RemoveLineListener(Javax.Sound.Sampled.LineListener arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Line
-    public partial class Line
+    public partial class Line : Javax.Sound.Sampled.ILine
     {
         #region Constructors
 

@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Datatransfer
 {
+    #region IFlavorListener
+    public partial interface IFlavorListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorEvent"/></param>
+        void FlavorsChanged(Java.Awt.Datatransfer.FlavorEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region FlavorListener
-    public partial class FlavorListener
+    public partial class FlavorListener : Java.Awt.Datatransfer.IFlavorListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.Datatransfer
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.FlavorEvent"/></param>
+        public virtual void FlavorsChanged(Java.Awt.Datatransfer.FlavorEvent arg0)
+        {
+            
+        }
 
         #endregion
 

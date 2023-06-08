@@ -157,8 +157,93 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
+    #region IBlockingQueue<E>
+    public partial interface IBlockingQueue<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#remainingCapacity()"/> 
+        /// </summary>
+        int RemainingCapacity { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#take()"/> 
+        /// </summary>
+        E Take { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#add(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Add(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#contains(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Contains(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        bool Offer(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#offer(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Offer(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#remove(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Remove(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><typeparamref name="E"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        E Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE: E;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE: E;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html#put(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        void Put(E arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BlockingQueue<E>
-    public partial class BlockingQueue<E>
+    public partial class BlockingQueue<E> : Java.Util.Concurrent.IBlockingQueue<E>
     {
         #region Constructors
 

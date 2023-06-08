@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
+    #region IControllerEventListener
+    public partial interface IControllerEventListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.ShortMessage"/></param>
+        void ControlChange(Javax.Sound.Midi.ShortMessage arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ControllerEventListener
-    public partial class ControllerEventListener
+    public partial class ControllerEventListener : Javax.Sound.Midi.IControllerEventListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.ShortMessage"/></param>
+        public virtual void ControlChange(Javax.Sound.Midi.ShortMessage arg0)
+        {
+            
+        }
 
         #endregion
 

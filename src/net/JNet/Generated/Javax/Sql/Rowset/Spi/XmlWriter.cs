@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset.Spi
 {
+    #region IXmlWriter
+    public partial interface IXmlWriter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlWriter.html#writeXML(javax.sql.rowset.WebRowSet,java.io.Writer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.Rowset.WebRowSet"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Writer"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void WriteXML(Javax.Sql.Rowset.WebRowSet arg0, Java.Io.Writer arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XmlWriter
-    public partial class XmlWriter
+    public partial class XmlWriter : Javax.Sql.Rowset.Spi.IXmlWriter
     {
         #region Constructors
 

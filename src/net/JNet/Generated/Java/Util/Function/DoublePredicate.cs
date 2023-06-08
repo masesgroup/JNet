@@ -25,8 +25,45 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IDoublePredicate
+    public partial interface IDoublePredicate
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/> 
+        /// </summary>
+        Java.Util.Function.DoublePredicate Negate { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Test(double arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        Java.Util.Function.DoublePredicate And(Java.Util.Function.DoublePredicate arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DoublePredicate
-    public partial class DoublePredicate
+    public partial class DoublePredicate : Java.Util.Function.IDoublePredicate
     {
         #region Constructors
 

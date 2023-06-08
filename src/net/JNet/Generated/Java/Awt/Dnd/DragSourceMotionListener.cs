@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
+    #region IDragSourceMotionListener
+    public partial interface IDragSourceMotionListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        void DragMouseMoved(Java.Awt.Dnd.DragSourceDragEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DragSourceMotionListener
-    public partial class DragSourceMotionListener
+    public partial class DragSourceMotionListener : Java.Awt.Dnd.IDragSourceMotionListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceDragEvent"/></param>
+        public virtual void DragMouseMoved(Java.Awt.Dnd.DragSourceDragEvent arg0)
+        {
+            
+        }
 
         #endregion
 

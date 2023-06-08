@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IXECPrivateKey
+    public partial interface IXECPrivateKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPrivateKey.html#getScalar()"/> 
+        /// </summary>
+        Java.Util.Optional<byte[]> Scalar { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XECPrivateKey
-    public partial class XECPrivateKey
+    public partial class XECPrivateKey : Java.Security.Interfaces.IXECPrivateKey
     {
         #region Constructors
 

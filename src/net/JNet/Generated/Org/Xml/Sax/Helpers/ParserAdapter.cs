@@ -45,6 +45,205 @@ namespace Org.Xml.Sax.Helpers
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        public virtual bool GetFeature(string arg0)
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        public virtual object GetProperty(string arg0)
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.Xml.Sax.ContentHandler"/></returns>
+        public virtual Org.Xml.Sax.ContentHandler GetContentHandler()
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.Xml.Sax.DTDHandler"/></returns>
+        public virtual Org.Xml.Sax.DTDHandler GetDTDHandler()
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.Xml.Sax.EntityResolver"/></returns>
+        public virtual Org.Xml.Sax.EntityResolver GetEntityResolver()
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.Xml.Sax.ErrorHandler"/></returns>
+        public virtual Org.Xml.Sax.ErrorHandler GetErrorHandler()
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void Characters(char[] arg0, int arg1, int arg2)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
+        /// </summary>
+
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void EndDocument()
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void EndElement(string arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void IgnorableWhitespace(char[] arg0, int arg1, int arg2)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void Parse(string arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void Parse(Org.Xml.Sax.InputSource arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void ProcessingInstruction(string arg0, string arg1)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ContentHandler"/></param>
+        public virtual void SetContentHandler(Org.Xml.Sax.ContentHandler arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
+        public virtual void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.DTDHandler"/></param>
+        public virtual void SetDTDHandler(Org.Xml.Sax.DTDHandler arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
+        public virtual void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
+        public virtual void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        public virtual void SetFeature(string arg0, bool arg1)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXNotRecognizedException"/>
+        /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
+        public virtual void SetProperty(string arg0, object arg1)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>
+        /// </summary>
+
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public virtual void StartDocument()
+        {
+            
+        }
 
         #endregion
 

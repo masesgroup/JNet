@@ -25,8 +25,47 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IAttr
+    public partial interface IAttr
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#isId()"/> 
+        /// </summary>
+        bool IsId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getOwnerElement()"/> 
+        /// </summary>
+        Org.W3c.Dom.Element OwnerElement { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getSchemaTypeInfo()"/> 
+        /// </summary>
+        Org.W3c.Dom.TypeInfo SchemaTypeInfo { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getSpecified()"/> 
+        /// </summary>
+        bool Specified { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html#setValue(java.lang.String)"/>
+        /// </summary>
+        string Value { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Attr
-    public partial class Attr
+    public partial class Attr : Org.W3c.Dom.IAttr
     {
         #region Constructors
 

@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
+    #region IChannel
+    public partial interface IChannel
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channel.html#isOpen()"/> 
+        /// </summary>
+        bool IsOpen { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channel.html#close()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Io.IOException"/>
+        void Close();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Channel
-    public partial class Channel
+    public partial class Channel : Java.Nio.Channels.IChannel
     {
         #region Constructors
 

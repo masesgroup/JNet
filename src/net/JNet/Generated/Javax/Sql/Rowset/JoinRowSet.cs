@@ -25,8 +25,97 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
+    #region IJoinRowSet
+    public partial interface IJoinRowSet
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getJoinType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#setJoinType(int)"/>
+        /// </summary>
+        int JoinType { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getRowSetNames()"/> 
+        /// </summary>
+        string[] RowSetNames { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getRowSets()"/> 
+        /// </summary>
+        Java.Util.Collection RowSets { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsCrossJoin()"/> 
+        /// </summary>
+        bool SupportsCrossJoin { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsFullJoin()"/> 
+        /// </summary>
+        bool SupportsFullJoin { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsInnerJoin()"/> 
+        /// </summary>
+        bool SupportsInnerJoin { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsLeftOuterJoin()"/> 
+        /// </summary>
+        bool SupportsLeftOuterJoin { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsRightOuterJoin()"/> 
+        /// </summary>
+        bool SupportsRightOuterJoin { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#toCachedRowSet()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.CachedRowSet ToCachedRowSet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getWhereClause()"/> 
+        /// </summary>
+        string WhereClause { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void AddRowSet(Javax.Sql.RowSet arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void AddRowSet(Javax.Sql.RowSet arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.rowset.Joinable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.Rowset.Joinable"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void AddRowSet(Javax.Sql.Rowset.Joinable arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet[],int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void AddRowSet(Javax.Sql.RowSet[] arg0, int[] arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet[],java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSet"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void AddRowSet(Javax.Sql.RowSet[] arg0, string[] arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region JoinRowSet
-    public partial class JoinRowSet
+    public partial class JoinRowSet : Javax.Sql.Rowset.IJoinRowSet
     {
         #region Constructors
 

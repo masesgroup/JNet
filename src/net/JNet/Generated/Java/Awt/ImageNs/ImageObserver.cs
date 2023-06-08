@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
+    #region IImageObserver
+    public partial interface IImageObserver
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageObserver.html#imageUpdate(java.awt.Image,int,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool ImageUpdate(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ImageObserver
-    public partial class ImageObserver
+    public partial class ImageObserver : Java.Awt.ImageNs.IImageObserver
     {
         #region Constructors
 

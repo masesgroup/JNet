@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region ITextListener
+    public partial interface ITextListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
+        void TextValueChanged(Java.Awt.EventNs.TextEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TextListener
-    public partial class TextListener
+    public partial class TextListener : Java.Awt.EventNs.ITextListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.TextEvent"/></param>
+        public virtual void TextValueChanged(Java.Awt.EventNs.TextEvent arg0)
+        {
+            
+        }
 
         #endregion
 

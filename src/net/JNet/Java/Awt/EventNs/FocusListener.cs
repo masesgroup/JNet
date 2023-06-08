@@ -24,16 +24,9 @@ namespace Java.Awt.EventNs
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html"/>
     /// </summary>
-    public interface IFocusListener : IJVMBridgeBase
+    public partial interface IFocusListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusGained(java.awt.event.FocusEvent)"/>
-        /// </summary>
-        void FocusGained(FocusEvent e);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusLost(java.awt.event.FocusEvent)"/>
-        /// </summary>
-        void FocusLost(FocusEvent e);
+
     }
 
     /// <summary>
@@ -87,16 +80,6 @@ namespace Java.Awt.EventNs
         void EventHandlerFocusLost(object sender, CLRListenerEventArgs<CLREventData<FocusEvent>> data)
         {
             OnFocusLost(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IFocusListener.FocusGained(FocusEvent)"/>
-        public virtual void FocusGained(FocusEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IFocusListener.FocusLost(FocusEvent)"/>
-        public virtual void FocusLost(FocusEvent e)
-        {
-
         }
     }
 }

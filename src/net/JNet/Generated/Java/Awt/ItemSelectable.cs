@@ -25,8 +25,37 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
+    #region IItemSelectable
+    public partial interface IItemSelectable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ItemSelectable.html#getSelectedObjects()"/> 
+        /// </summary>
+        object[] SelectedObjects { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ItemSelectable.html#addItemListener(java.awt.event.ItemListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        void AddItemListener(Java.Awt.EventNs.ItemListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ItemSelectable.html#removeItemListener(java.awt.event.ItemListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ItemListener"/></param>
+        void RemoveItemListener(Java.Awt.EventNs.ItemListener arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ItemSelectable
-    public partial class ItemSelectable
+    public partial class ItemSelectable : Java.Awt.IItemSelectable
     {
         #region Constructors
 

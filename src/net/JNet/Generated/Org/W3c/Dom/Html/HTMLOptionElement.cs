@@ -25,8 +25,55 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLOptionElement
+    public partial interface IHTMLOptionElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getDefaultSelected()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#setDefaultSelected(boolean)"/>
+        /// </summary>
+        bool DefaultSelected { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getDisabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#setDisabled(boolean)"/>
+        /// </summary>
+        bool Disabled { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getForm()"/> 
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLFormElement Form { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getIndex()"/> 
+        /// </summary>
+        int Index { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getLabel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#setLabel(java.lang.String)"/>
+        /// </summary>
+        string Label { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getSelected()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#setSelected(boolean)"/>
+        /// </summary>
+        bool Selected { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getText()"/> 
+        /// </summary>
+        string Text { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptionElement.html#setValue(java.lang.String)"/>
+        /// </summary>
+        string Value { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLOptionElement
-    public partial class HTMLOptionElement
+    public partial class HTMLOptionElement : Org.W3c.Dom.Html.IHTMLOptionElement
     {
         #region Constructors
 

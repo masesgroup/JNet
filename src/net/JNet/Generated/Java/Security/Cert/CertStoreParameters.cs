@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
+    #region ICertStoreParameters
+    public partial interface ICertStoreParameters
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CertStoreParameters
-    public partial class CertStoreParameters
+    public partial class CertStoreParameters : Java.Security.Cert.ICertStoreParameters
     {
         #region Constructors
 

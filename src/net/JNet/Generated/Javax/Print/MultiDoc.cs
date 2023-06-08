@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
+    #region IMultiDoc
+    public partial interface IMultiDoc
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#getDoc()"/> 
+        /// </summary>
+        Javax.Print.Doc Doc { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#next()"/> 
+        /// </summary>
+        Javax.Print.MultiDoc Next { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MultiDoc
-    public partial class MultiDoc
+    public partial class MultiDoc : Javax.Print.IMultiDoc
     {
         #region Constructors
 

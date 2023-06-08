@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
+    #region IRowSetWriter
+    public partial interface IRowSetWriter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetWriter.html#writeData(javax.sql.RowSetInternal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetInternal"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool WriteData(Javax.Sql.RowSetInternal arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RowSetWriter
-    public partial class RowSetWriter
+    public partial class RowSetWriter : Javax.Sql.IRowSetWriter
     {
         #region Constructors
 

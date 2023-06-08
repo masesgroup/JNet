@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
+    #region ICopyOption
+    public partial interface ICopyOption
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CopyOption
-    public partial class CopyOption
+    public partial class CopyOption : Java.Nio.File.ICopyOption
     {
         #region Constructors
 

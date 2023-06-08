@@ -25,8 +25,46 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Ietf.Jgss
 {
+    #region IGSSName
+    public partial interface IGSSName
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/> 
+        /// </summary>
+        byte[] Export { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/> 
+        /// </summary>
+        bool IsAnonymous { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/> 
+        /// </summary>
+        bool IsMN { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#getStringNameType()"/> 
+        /// </summary>
+        Org.Ietf.Jgss.Oid StringNameType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#canonicalize(org.ietf.jgss.Oid)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Ietf.Jgss.Oid"/></param>
+        /// <returns><see cref="Org.Ietf.Jgss.GSSName"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        Org.Ietf.Jgss.GSSName Canonicalize(Org.Ietf.Jgss.Oid arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region GSSName
-    public partial class GSSName
+    public partial class GSSName : Org.Ietf.Jgss.IGSSName
     {
         #region Constructors
 

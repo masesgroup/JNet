@@ -25,8 +25,47 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
+    #region IBeanContextServiceProvider
+    public partial interface IBeanContextServiceProvider
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#getService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Class,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
+        /// <param name="arg3"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        object GetService(Java.Beans.Beancontext.BeanContextServices arg0, object arg1, Java.Lang.Class arg2, object arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#getCurrentServiceSelectors(java.beans.beancontext.BeanContextServices,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="ReturnExtendsobject"></typeparam>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        Java.Util.Iterator<ReturnExtendsobject> GetCurrentServiceSelectors<ReturnExtendsobject>(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#releaseService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        void ReleaseService(Java.Beans.Beancontext.BeanContextServices arg0, object arg1, object arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BeanContextServiceProvider
-    public partial class BeanContextServiceProvider
+    public partial class BeanContextServiceProvider : Java.Beans.Beancontext.IBeanContextServiceProvider
     {
         #region Constructors
 

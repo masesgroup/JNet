@@ -152,8 +152,81 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
+    #region IConcurrentNavigableMap<K, V>
+    public partial interface IConcurrentNavigableMap<K, V>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingKeySet()"/> 
+        /// </summary>
+        Java.Util.NavigableSet<K> DescendingKeySet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#descendingMap()"/> 
+        /// </summary>
+        Java.Util.NavigableMap DescendingMap { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#keySet()"/> 
+        /// </summary>
+        Java.Util.Set KeySet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#navigableKeySet()"/> 
+        /// </summary>
+        Java.Util.NavigableSet<K> NavigableKeySet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        Java.Util.NavigableMap HeadMap(object arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        Java.Util.NavigableMap SubMap(object arg0, bool arg1, object arg2, bool arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        Java.Util.NavigableMap TailMap(object arg0, bool arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#headMap(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        Java.Util.SortedMap HeadMap(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#subMap(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        Java.Util.SortedMap SubMap(object arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html#tailMap(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        Java.Util.SortedMap TailMap(object arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ConcurrentNavigableMap<K, V>
-    public partial class ConcurrentNavigableMap<K, V>
+    public partial class ConcurrentNavigableMap<K, V> : Java.Util.Concurrent.IConcurrentNavigableMap<K, V>
     {
         #region Constructors
 

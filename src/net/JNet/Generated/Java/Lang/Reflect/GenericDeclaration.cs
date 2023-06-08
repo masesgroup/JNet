@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IGenericDeclaration
+    public partial interface IGenericDeclaration
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericDeclaration.html#getTypeParameters()"/> 
+        /// </summary>
+        Java.Lang.Reflect.TypeVariable TypeParameters { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region GenericDeclaration
-    public partial class GenericDeclaration
+    public partial class GenericDeclaration : Java.Lang.Reflect.IGenericDeclaration
     {
         #region Constructors
 

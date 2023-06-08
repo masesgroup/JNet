@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IActionListener
+    public partial interface IActionListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
+        void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ActionListener
-    public partial class ActionListener
+    public partial class ActionListener : Java.Awt.EventNs.IActionListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
+        public virtual void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
+        {
+            
+        }
 
         #endregion
 

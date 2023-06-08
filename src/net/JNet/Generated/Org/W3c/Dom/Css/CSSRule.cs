@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSRule
+    public partial interface ICSSRule
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#getCssText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#setCssText(java.lang.String)"/>
+        /// </summary>
+        string CssText { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#getParentRule()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSRule ParentRule { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#getParentStyleSheet()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSStyleSheet ParentStyleSheet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRule.html#getType()"/> 
+        /// </summary>
+        short Type { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSRule
-    public partial class CSSRule
+    public partial class CSSRule : Org.W3c.Dom.Css.ICSSRule
     {
         #region Constructors
 

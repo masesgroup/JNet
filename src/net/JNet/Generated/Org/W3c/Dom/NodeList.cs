@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region INodeList
+    public partial interface INodeList
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NodeList.html#getLength()"/> 
+        /// </summary>
+        int Length { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NodeList.html#item(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        Org.W3c.Dom.Node Item(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NodeList
-    public partial class NodeList
+    public partial class NodeList : Org.W3c.Dom.INodeList
     {
         #region Constructors
 

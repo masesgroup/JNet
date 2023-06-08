@@ -25,8 +25,37 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
+    #region ICompilable
+    public partial interface ICompilable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.io.Reader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <returns><see cref="Javax.Script.CompiledScript"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        Javax.Script.CompiledScript Compile(Java.Io.Reader arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html#compile(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Script.CompiledScript"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        Javax.Script.CompiledScript Compile(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Compilable
-    public partial class Compilable
+    public partial class Compilable : Javax.Script.ICompilable
     {
         #region Constructors
 

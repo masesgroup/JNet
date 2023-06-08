@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
+    #region IManagerFactoryParameters
+    public partial interface IManagerFactoryParameters
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ManagerFactoryParameters
-    public partial class ManagerFactoryParameters
+    public partial class ManagerFactoryParameters : Javax.Net.Ssl.IManagerFactoryParameters
     {
         #region Constructors
 

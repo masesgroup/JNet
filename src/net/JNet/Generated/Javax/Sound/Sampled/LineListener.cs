@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
+    #region ILineListener
+    public partial interface ILineListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineEvent"/></param>
+        void Update(Javax.Sound.Sampled.LineEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LineListener
-    public partial class LineListener
+    public partial class LineListener : Javax.Sound.Sampled.ILineListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.LineEvent"/></param>
+        public virtual void Update(Javax.Sound.Sampled.LineEvent arg0)
+        {
+            
+        }
 
         #endregion
 

@@ -25,8 +25,897 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region IDatabaseMetaData
+    public partial interface IDatabaseMetaData
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#allProceduresAreCallable()"/> 
+        /// </summary>
+        bool AllProceduresAreCallable { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#allTablesAreSelectable()"/> 
+        /// </summary>
+        bool AllTablesAreSelectable { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#autoCommitFailureClosesAllResultSets()"/> 
+        /// </summary>
+        bool AutoCommitFailureClosesAllResultSets { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getCatalogs()"/> 
+        /// </summary>
+        Java.Sql.ResultSet Catalogs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getCatalogSeparator()"/> 
+        /// </summary>
+        string CatalogSeparator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getCatalogTerm()"/> 
+        /// </summary>
+        string CatalogTerm { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getClientInfoProperties()"/> 
+        /// </summary>
+        Java.Sql.ResultSet ClientInfoProperties { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getConnection()"/> 
+        /// </summary>
+        Java.Sql.Connection Connection { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDatabaseMajorVersion()"/> 
+        /// </summary>
+        int DatabaseMajorVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDatabaseMinorVersion()"/> 
+        /// </summary>
+        int DatabaseMinorVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDatabaseProductName()"/> 
+        /// </summary>
+        string DatabaseProductName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDatabaseProductVersion()"/> 
+        /// </summary>
+        string DatabaseProductVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#dataDefinitionCausesTransactionCommit()"/> 
+        /// </summary>
+        bool DataDefinitionCausesTransactionCommit { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#dataDefinitionIgnoredInTransactions()"/> 
+        /// </summary>
+        bool DataDefinitionIgnoredInTransactions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDefaultTransactionIsolation()"/> 
+        /// </summary>
+        int DefaultTransactionIsolation { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#doesMaxRowSizeIncludeBlobs()"/> 
+        /// </summary>
+        bool DoesMaxRowSizeIncludeBlobs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDriverMajorVersion()"/> 
+        /// </summary>
+        int DriverMajorVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDriverMinorVersion()"/> 
+        /// </summary>
+        int DriverMinorVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDriverName()"/> 
+        /// </summary>
+        string DriverName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getDriverVersion()"/> 
+        /// </summary>
+        string DriverVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getExtraNameCharacters()"/> 
+        /// </summary>
+        string ExtraNameCharacters { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#generatedKeyAlwaysReturned()"/> 
+        /// </summary>
+        bool GeneratedKeyAlwaysReturned { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getIdentifierQuoteString()"/> 
+        /// </summary>
+        string IdentifierQuoteString { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#isCatalogAtStart()"/> 
+        /// </summary>
+        bool IsCatalogAtStart { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#isReadOnly()"/> 
+        /// </summary>
+        bool IsReadOnly { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getJDBCMajorVersion()"/> 
+        /// </summary>
+        int JDBCMajorVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getJDBCMinorVersion()"/> 
+        /// </summary>
+        int JDBCMinorVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#locatorsUpdateCopy()"/> 
+        /// </summary>
+        bool LocatorsUpdateCopy { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxBinaryLiteralLength()"/> 
+        /// </summary>
+        int MaxBinaryLiteralLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxCatalogNameLength()"/> 
+        /// </summary>
+        int MaxCatalogNameLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxCharLiteralLength()"/> 
+        /// </summary>
+        int MaxCharLiteralLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnNameLength()"/> 
+        /// </summary>
+        int MaxColumnNameLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnsInGroupBy()"/> 
+        /// </summary>
+        int MaxColumnsInGroupBy { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnsInIndex()"/> 
+        /// </summary>
+        int MaxColumnsInIndex { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnsInOrderBy()"/> 
+        /// </summary>
+        int MaxColumnsInOrderBy { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnsInSelect()"/> 
+        /// </summary>
+        int MaxColumnsInSelect { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxColumnsInTable()"/> 
+        /// </summary>
+        int MaxColumnsInTable { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxConnections()"/> 
+        /// </summary>
+        int MaxConnections { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxCursorNameLength()"/> 
+        /// </summary>
+        int MaxCursorNameLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxIndexLength()"/> 
+        /// </summary>
+        int MaxIndexLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxLogicalLobSize()"/> 
+        /// </summary>
+        long MaxLogicalLobSize { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxProcedureNameLength()"/> 
+        /// </summary>
+        int MaxProcedureNameLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxRowSize()"/> 
+        /// </summary>
+        int MaxRowSize { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxSchemaNameLength()"/> 
+        /// </summary>
+        int MaxSchemaNameLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxStatementLength()"/> 
+        /// </summary>
+        int MaxStatementLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxStatements()"/> 
+        /// </summary>
+        int MaxStatements { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxTableNameLength()"/> 
+        /// </summary>
+        int MaxTableNameLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxTablesInSelect()"/> 
+        /// </summary>
+        int MaxTablesInSelect { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getMaxUserNameLength()"/> 
+        /// </summary>
+        int MaxUserNameLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#nullPlusNonNullIsNull()"/> 
+        /// </summary>
+        bool NullPlusNonNullIsNull { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#nullsAreSortedAtEnd()"/> 
+        /// </summary>
+        bool NullsAreSortedAtEnd { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#nullsAreSortedAtStart()"/> 
+        /// </summary>
+        bool NullsAreSortedAtStart { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#nullsAreSortedHigh()"/> 
+        /// </summary>
+        bool NullsAreSortedHigh { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#nullsAreSortedLow()"/> 
+        /// </summary>
+        bool NullsAreSortedLow { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getNumericFunctions()"/> 
+        /// </summary>
+        string NumericFunctions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getProcedureTerm()"/> 
+        /// </summary>
+        string ProcedureTerm { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getResultSetHoldability()"/> 
+        /// </summary>
+        int ResultSetHoldability { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getRowIdLifetime()"/> 
+        /// </summary>
+        Java.Sql.RowIdLifetime RowIdLifetime { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSchemas()"/> 
+        /// </summary>
+        Java.Sql.ResultSet Schemas { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSchemaTerm()"/> 
+        /// </summary>
+        string SchemaTerm { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSearchStringEscape()"/> 
+        /// </summary>
+        string SearchStringEscape { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSQLKeywords()"/> 
+        /// </summary>
+        string SQLKeywords { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSQLStateType()"/> 
+        /// </summary>
+        int SQLStateType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesLowerCaseIdentifiers()"/> 
+        /// </summary>
+        bool StoresLowerCaseIdentifiers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesLowerCaseQuotedIdentifiers()"/> 
+        /// </summary>
+        bool StoresLowerCaseQuotedIdentifiers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesMixedCaseIdentifiers()"/> 
+        /// </summary>
+        bool StoresMixedCaseIdentifiers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesMixedCaseQuotedIdentifiers()"/> 
+        /// </summary>
+        bool StoresMixedCaseQuotedIdentifiers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesUpperCaseIdentifiers()"/> 
+        /// </summary>
+        bool StoresUpperCaseIdentifiers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#storesUpperCaseQuotedIdentifiers()"/> 
+        /// </summary>
+        bool StoresUpperCaseQuotedIdentifiers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getStringFunctions()"/> 
+        /// </summary>
+        string StringFunctions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsAlterTableWithAddColumn()"/> 
+        /// </summary>
+        bool SupportsAlterTableWithAddColumn { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsAlterTableWithDropColumn()"/> 
+        /// </summary>
+        bool SupportsAlterTableWithDropColumn { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsANSI92EntryLevelSQL()"/> 
+        /// </summary>
+        bool SupportsANSI92EntryLevelSQL { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsANSI92FullSQL()"/> 
+        /// </summary>
+        bool SupportsANSI92FullSQL { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsANSI92IntermediateSQL()"/> 
+        /// </summary>
+        bool SupportsANSI92IntermediateSQL { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsBatchUpdates()"/> 
+        /// </summary>
+        bool SupportsBatchUpdates { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCatalogsInDataManipulation()"/> 
+        /// </summary>
+        bool SupportsCatalogsInDataManipulation { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCatalogsInIndexDefinitions()"/> 
+        /// </summary>
+        bool SupportsCatalogsInIndexDefinitions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCatalogsInPrivilegeDefinitions()"/> 
+        /// </summary>
+        bool SupportsCatalogsInPrivilegeDefinitions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCatalogsInProcedureCalls()"/> 
+        /// </summary>
+        bool SupportsCatalogsInProcedureCalls { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCatalogsInTableDefinitions()"/> 
+        /// </summary>
+        bool SupportsCatalogsInTableDefinitions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsColumnAliasing()"/> 
+        /// </summary>
+        bool SupportsColumnAliasing { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCoreSQLGrammar()"/> 
+        /// </summary>
+        bool SupportsCoreSQLGrammar { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCorrelatedSubqueries()"/> 
+        /// </summary>
+        bool SupportsCorrelatedSubqueries { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsDataDefinitionAndDataManipulationTransactions()"/> 
+        /// </summary>
+        bool SupportsDataDefinitionAndDataManipulationTransactions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsDataManipulationTransactionsOnly()"/> 
+        /// </summary>
+        bool SupportsDataManipulationTransactionsOnly { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsDifferentTableCorrelationNames()"/> 
+        /// </summary>
+        bool SupportsDifferentTableCorrelationNames { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsExpressionsInOrderBy()"/> 
+        /// </summary>
+        bool SupportsExpressionsInOrderBy { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsExtendedSQLGrammar()"/> 
+        /// </summary>
+        bool SupportsExtendedSQLGrammar { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsFullOuterJoins()"/> 
+        /// </summary>
+        bool SupportsFullOuterJoins { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsGetGeneratedKeys()"/> 
+        /// </summary>
+        bool SupportsGetGeneratedKeys { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsGroupBy()"/> 
+        /// </summary>
+        bool SupportsGroupBy { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsGroupByBeyondSelect()"/> 
+        /// </summary>
+        bool SupportsGroupByBeyondSelect { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsGroupByUnrelated()"/> 
+        /// </summary>
+        bool SupportsGroupByUnrelated { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsIntegrityEnhancementFacility()"/> 
+        /// </summary>
+        bool SupportsIntegrityEnhancementFacility { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsLikeEscapeClause()"/> 
+        /// </summary>
+        bool SupportsLikeEscapeClause { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsLimitedOuterJoins()"/> 
+        /// </summary>
+        bool SupportsLimitedOuterJoins { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMinimumSQLGrammar()"/> 
+        /// </summary>
+        bool SupportsMinimumSQLGrammar { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMixedCaseIdentifiers()"/> 
+        /// </summary>
+        bool SupportsMixedCaseIdentifiers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMixedCaseQuotedIdentifiers()"/> 
+        /// </summary>
+        bool SupportsMixedCaseQuotedIdentifiers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMultipleOpenResults()"/> 
+        /// </summary>
+        bool SupportsMultipleOpenResults { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMultipleResultSets()"/> 
+        /// </summary>
+        bool SupportsMultipleResultSets { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsMultipleTransactions()"/> 
+        /// </summary>
+        bool SupportsMultipleTransactions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsNamedParameters()"/> 
+        /// </summary>
+        bool SupportsNamedParameters { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsNonNullableColumns()"/> 
+        /// </summary>
+        bool SupportsNonNullableColumns { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOpenCursorsAcrossCommit()"/> 
+        /// </summary>
+        bool SupportsOpenCursorsAcrossCommit { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOpenCursorsAcrossRollback()"/> 
+        /// </summary>
+        bool SupportsOpenCursorsAcrossRollback { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOpenStatementsAcrossCommit()"/> 
+        /// </summary>
+        bool SupportsOpenStatementsAcrossCommit { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOpenStatementsAcrossRollback()"/> 
+        /// </summary>
+        bool SupportsOpenStatementsAcrossRollback { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOrderByUnrelated()"/> 
+        /// </summary>
+        bool SupportsOrderByUnrelated { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsOuterJoins()"/> 
+        /// </summary>
+        bool SupportsOuterJoins { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsPositionedDelete()"/> 
+        /// </summary>
+        bool SupportsPositionedDelete { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsPositionedUpdate()"/> 
+        /// </summary>
+        bool SupportsPositionedUpdate { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsRefCursors()"/> 
+        /// </summary>
+        bool SupportsRefCursors { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSavepoints()"/> 
+        /// </summary>
+        bool SupportsSavepoints { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSchemasInDataManipulation()"/> 
+        /// </summary>
+        bool SupportsSchemasInDataManipulation { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSchemasInIndexDefinitions()"/> 
+        /// </summary>
+        bool SupportsSchemasInIndexDefinitions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSchemasInPrivilegeDefinitions()"/> 
+        /// </summary>
+        bool SupportsSchemasInPrivilegeDefinitions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSchemasInProcedureCalls()"/> 
+        /// </summary>
+        bool SupportsSchemasInProcedureCalls { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSchemasInTableDefinitions()"/> 
+        /// </summary>
+        bool SupportsSchemasInTableDefinitions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSelectForUpdate()"/> 
+        /// </summary>
+        bool SupportsSelectForUpdate { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSharding()"/> 
+        /// </summary>
+        bool SupportsSharding { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsStatementPooling()"/> 
+        /// </summary>
+        bool SupportsStatementPooling { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsStoredFunctionsUsingCallSyntax()"/> 
+        /// </summary>
+        bool SupportsStoredFunctionsUsingCallSyntax { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsStoredProcedures()"/> 
+        /// </summary>
+        bool SupportsStoredProcedures { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSubqueriesInComparisons()"/> 
+        /// </summary>
+        bool SupportsSubqueriesInComparisons { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSubqueriesInExists()"/> 
+        /// </summary>
+        bool SupportsSubqueriesInExists { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSubqueriesInIns()"/> 
+        /// </summary>
+        bool SupportsSubqueriesInIns { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsSubqueriesInQuantifieds()"/> 
+        /// </summary>
+        bool SupportsSubqueriesInQuantifieds { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsTableCorrelationNames()"/> 
+        /// </summary>
+        bool SupportsTableCorrelationNames { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsTransactions()"/> 
+        /// </summary>
+        bool SupportsTransactions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsUnion()"/> 
+        /// </summary>
+        bool SupportsUnion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsUnionAll()"/> 
+        /// </summary>
+        bool SupportsUnionAll { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSystemFunctions()"/> 
+        /// </summary>
+        string SystemFunctions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getTableTypes()"/> 
+        /// </summary>
+        Java.Sql.ResultSet TableTypes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getTimeDateFunctions()"/> 
+        /// </summary>
+        string TimeDateFunctions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getTypeInfo()"/> 
+        /// </summary>
+        Java.Sql.ResultSet TypeInfo { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getURL()"/> 
+        /// </summary>
+        string URL { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getUserName()"/> 
+        /// </summary>
+        string UserName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#usesLocalFilePerTable()"/> 
+        /// </summary>
+        bool UsesLocalFilePerTable { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#usesLocalFiles()"/> 
+        /// </summary>
+        bool UsesLocalFiles { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#deletesAreDetected(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool DeletesAreDetected(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#insertsAreDetected(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool InsertsAreDetected(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#othersDeletesAreVisible(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool OthersDeletesAreVisible(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#othersInsertsAreVisible(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool OthersInsertsAreVisible(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#othersUpdatesAreVisible(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool OthersUpdatesAreVisible(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#ownDeletesAreVisible(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool OwnDeletesAreVisible(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#ownInsertsAreVisible(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool OwnInsertsAreVisible(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#ownUpdatesAreVisible(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool OwnUpdatesAreVisible(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsConvert()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool SupportsConvert();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsConvert(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool SupportsConvert(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsResultSetConcurrency(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool SupportsResultSetConcurrency(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsResultSetHoldability(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool SupportsResultSetHoldability(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsResultSetType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool SupportsResultSetType(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsTransactionIsolationLevel(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool SupportsTransactionIsolationLevel(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#updatesAreDetected(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool UpdatesAreDetected(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getAttributes(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetAttributes(string arg0, string arg1, string arg2, string arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getBestRowIdentifier(java.lang.String,java.lang.String,java.lang.String,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetBestRowIdentifier(string arg0, string arg1, string arg2, int arg3, bool arg4);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getColumnPrivileges(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetColumnPrivileges(string arg0, string arg1, string arg2, string arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetColumns(string arg0, string arg1, string arg2, string arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getCrossReference(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <param name="arg5"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetCrossReference(string arg0, string arg1, string arg2, string arg3, string arg4, string arg5);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getExportedKeys(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetExportedKeys(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getFunctionColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetFunctionColumns(string arg0, string arg1, string arg2, string arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getFunctions(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetFunctions(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getImportedKeys(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetImportedKeys(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getIndexInfo(java.lang.String,java.lang.String,java.lang.String,boolean,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetIndexInfo(string arg0, string arg1, string arg2, bool arg3, bool arg4);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getPrimaryKeys(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetPrimaryKeys(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getProcedureColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetProcedureColumns(string arg0, string arg1, string arg2, string arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getProcedures(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetProcedures(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getPseudoColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetPseudoColumns(string arg0, string arg1, string arg2, string arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSchemas(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetSchemas(string arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSuperTables(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetSuperTables(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSuperTypes(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetSuperTypes(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getTablePrivileges(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetTablePrivileges(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getTables(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetTables(string arg0, string arg1, string arg2, string[] arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getUDTs(java.lang.String,java.lang.String,java.lang.String,int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetUDTs(string arg0, string arg1, string arg2, int[] arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getVersionColumns(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ResultSet GetVersionColumns(string arg0, string arg1, string arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DatabaseMetaData
-    public partial class DatabaseMetaData
+    public partial class DatabaseMetaData : Java.Sql.IDatabaseMetaData
     {
         #region Constructors
 

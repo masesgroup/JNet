@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth
 {
+    #region IDestroyable
+    public partial interface IDestroyable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/> 
+        /// </summary>
+        bool IsDestroyed { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#destroy()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
+        void Destroy();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Destroyable
-    public partial class Destroyable
+    public partial class Destroyable : Javax.Security.Auth.IDestroyable
     {
         #region Constructors
 

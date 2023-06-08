@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IUndoableEditListener
+    public partial interface IUndoableEditListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditEvent"/></param>
+        void UndoableEditHappened(Javax.Swing.Event.UndoableEditEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region UndoableEditListener
-    public partial class UndoableEditListener
+    public partial class UndoableEditListener : Javax.Swing.Event.IUndoableEditListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.UndoableEditEvent"/></param>
+        public virtual void UndoableEditHappened(Javax.Swing.Event.UndoableEditEvent arg0)
+        {
+            
+        }
 
         #endregion
 

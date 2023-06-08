@@ -25,8 +25,57 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
+    #region IAccessibleSelection
+    public partial interface IAccessibleSelection
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#getAccessibleSelectionCount()"/> 
+        /// </summary>
+        int AccessibleSelectionCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#isAccessibleChildSelected(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsAccessibleChildSelected(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#getAccessibleSelection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
+        Javax.Accessibility.Accessible GetAccessibleSelection(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#addAccessibleSelection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        void AddAccessibleSelection(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#clearAccessibleSelection()"/>
+        /// </summary>
+        void ClearAccessibleSelection();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#removeAccessibleSelection(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        void RemoveAccessibleSelection(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleSelection.html#selectAllAccessibleSelection()"/>
+        /// </summary>
+        void SelectAllAccessibleSelection();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AccessibleSelection
-    public partial class AccessibleSelection
+    public partial class AccessibleSelection : Javax.Accessibility.IAccessibleSelection
     {
         #region Constructors
 

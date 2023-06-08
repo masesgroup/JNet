@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region ICanonicalizationMethod
+    public partial interface ICanonicalizationMethod
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/CanonicalizationMethod.html#getParameterSpec()"/> 
+        /// </summary>
+        Java.Security.Spec.AlgorithmParameterSpec ParameterSpec { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CanonicalizationMethod
-    public partial class CanonicalizationMethod
+    public partial class CanonicalizationMethod : Javax.Xml.Crypto.Dsig.ICanonicalizationMethod
     {
         #region Constructors
 

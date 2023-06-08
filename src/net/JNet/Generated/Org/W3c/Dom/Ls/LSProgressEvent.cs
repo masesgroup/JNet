@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
+    #region ILSProgressEvent
+    public partial interface ILSProgressEvent
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getInput()"/> 
+        /// </summary>
+        Org.W3c.Dom.Ls.LSInput Input { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getPosition()"/> 
+        /// </summary>
+        int Position { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSProgressEvent.html#getTotalSize()"/> 
+        /// </summary>
+        int TotalSize { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LSProgressEvent
-    public partial class LSProgressEvent
+    public partial class LSProgressEvent : Org.W3c.Dom.Ls.ILSProgressEvent
     {
         #region Constructors
 

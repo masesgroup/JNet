@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Table
 {
+    #region ITableCellEditor
+    public partial interface ITableCellEditor
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableCellEditor.html#getTableCellEditorComponent(javax.swing.JTable,java.lang.Object,boolean,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTable"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
+        Java.Awt.Component GetTableCellEditorComponent(Javax.Swing.JTable arg0, object arg1, bool arg2, int arg3, int arg4);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TableCellEditor
-    public partial class TableCellEditor
+    public partial class TableCellEditor : Javax.Swing.Table.ITableCellEditor
     {
         #region Constructors
 

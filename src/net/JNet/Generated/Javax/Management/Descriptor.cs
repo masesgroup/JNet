@@ -25,8 +25,67 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region IDescriptor
+    public partial interface IDescriptor
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldNames()"/> 
+        /// </summary>
+        string[] FieldNames { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFields()"/> 
+        /// </summary>
+        string[] Fields { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#isValid()"/> 
+        /// </summary>
+        bool IsValid { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValue(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        object GetFieldValue(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValues(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        object[] GetFieldValues(params string[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#removeField(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        void RemoveField(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#setField(java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        void SetField(string arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#setFields(java.lang.String[],java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        void SetFields(string[] arg0, object[] arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Descriptor
-    public partial class Descriptor
+    public partial class Descriptor : Javax.Management.IDescriptor
     {
         #region Constructors
 

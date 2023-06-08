@@ -24,12 +24,9 @@ namespace Java.Awt.EventNs
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html"/>
     /// </summary>
-    public interface IItemListener : IJVMBridgeBase
+    public partial interface IItemListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent)"/>
-        /// </summary>
-        void ItemStateChanged(ItemEvent e);
+
     }
 
     /// <summary>
@@ -67,11 +64,6 @@ namespace Java.Awt.EventNs
         void EventHandlerItemStateChanged(object sender, CLRListenerEventArgs<CLREventData<ItemEvent>> data)
         {
             OnItemStateChanged(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IItemListener.ItemStateChanged(ItemEvent)"/>
-        public void ItemStateChanged(ItemEvent e)
-        {
-            throw new NotImplementedException();
         }
     }
 }

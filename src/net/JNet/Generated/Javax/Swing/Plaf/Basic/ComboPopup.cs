@@ -25,8 +25,55 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Basic
 {
+    #region IComboPopup
+    public partial interface IComboPopup
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#isVisible()"/> 
+        /// </summary>
+        bool IsVisible { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getKeyListener()"/> 
+        /// </summary>
+        Java.Awt.EventNs.KeyListener KeyListener { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getList()"/> 
+        /// </summary>
+        Javax.Swing.JList<object> List { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getMouseListener()"/> 
+        /// </summary>
+        Java.Awt.EventNs.MouseListener MouseListener { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#getMouseMotionListener()"/> 
+        /// </summary>
+        Java.Awt.EventNs.MouseMotionListener MouseMotionListener { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#hide()"/>
+        /// </summary>
+        void Hide();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#show()"/>
+        /// </summary>
+        void Show();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/ComboPopup.html#uninstallingUI()"/>
+        /// </summary>
+        void UninstallingUI();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ComboPopup
-    public partial class ComboPopup
+    public partial class ComboPopup : Javax.Swing.Plaf.Basic.IComboPopup
     {
         #region Constructors
 

@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IBasicFileAttributeView
+    public partial interface IBasicFileAttributeView
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#name()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#readAttributes()"/> 
+        /// </summary>
+        Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributeView.html#setTimes(java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime,java.nio.file.attribute.FileTime)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileTime"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        void SetTimes(Java.Nio.File.Attribute.FileTime arg0, Java.Nio.File.Attribute.FileTime arg1, Java.Nio.File.Attribute.FileTime arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BasicFileAttributeView
-    public partial class BasicFileAttributeView
+    public partial class BasicFileAttributeView : Java.Nio.File.Attribute.IBasicFileAttributeView
     {
         #region Constructors
 

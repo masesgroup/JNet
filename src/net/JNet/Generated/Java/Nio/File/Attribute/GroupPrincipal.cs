@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IGroupPrincipal
+    public partial interface IGroupPrincipal
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region GroupPrincipal
-    public partial class GroupPrincipal
+    public partial class GroupPrincipal : Java.Nio.File.Attribute.IGroupPrincipal
     {
         #region Constructors
 

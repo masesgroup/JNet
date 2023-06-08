@@ -164,35 +164,5 @@ namespace Java.Awt.Dnd
         {
             OnDragMouseMoved(data.EventData.TypedEventData);
         }
-        /// <inheritdoc cref="IDragSourceAdapter.DragEnter(DragSourceDragEvent)"/>
-        public virtual void DragEnter(DragSourceDragEvent dtde)
-        {
-
-        }
-        /// <inheritdoc cref="IDragSourceAdapter.DragOver(DragSourceDragEvent)"/>
-        public virtual void DragOver(DragSourceDragEvent dtde)
-        {
-
-        }
-        /// <inheritdoc cref="IDragSourceAdapter.DropActionChanged(DragSourceDragEvent)"/>
-        public virtual void DropActionChanged(DragSourceDragEvent dtde)
-        {
-
-        }
-        /// <inheritdoc cref="IDragSourceAdapter.DragExit(DragSourceEvent)"/>
-        public virtual void DragExit(DragSourceEvent dte)
-        {
-
-        }
-        /// <inheritdoc cref="IDragSourceAdapter.DragDropEnd(DragSourceDropEvent)"/>
-        public virtual void DragDropEnd(DragSourceDropEvent dsde)
-        {
-
-        }
-        /// <inheritdoc cref="IDragSourceAdapter.DragMouseMoved(DragSourceDragEvent)"/>
-        public virtual void DragMouseMoved(DragSourceDragEvent dsde)
-        {
-
-        }
     }
 }

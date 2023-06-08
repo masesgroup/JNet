@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region IDeprecated
+    public partial interface IDeprecated
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/> 
+        /// </summary>
+        bool ForRemoval { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/> 
+        /// </summary>
+        string Since { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Deprecated
-    public partial class Deprecated
+    public partial class Deprecated : Java.Lang.IDeprecated
     {
         #region Constructors
 

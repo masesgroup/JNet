@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Callback
 {
+    #region ICallback
+    public partial interface ICallback
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Callback
-    public partial class Callback
+    public partial class Callback : Javax.Security.Auth.Callback.ICallback
     {
         #region Constructors
 

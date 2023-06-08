@@ -45,6 +45,38 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#dragEnter(java.awt.dnd.DropTargetDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
+        public virtual void DragEnter(Java.Awt.Dnd.DropTargetDragEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#dragExit(java.awt.dnd.DropTargetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetEvent"/></param>
+        public virtual void DragExit(Java.Awt.Dnd.DropTargetEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#dragOver(java.awt.dnd.DropTargetDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
+        public virtual void DragOver(Java.Awt.Dnd.DropTargetDragEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#dropActionChanged(java.awt.dnd.DropTargetDragEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
+        public virtual void DropActionChanged(Java.Awt.Dnd.DropTargetDragEvent arg0)
+        {
+            
+        }
 
         #endregion
 

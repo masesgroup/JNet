@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
+    #region INodeChangeListener
+    public partial interface INodeChangeListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NodeChangeListener
-    public partial class NodeChangeListener
+    public partial class NodeChangeListener : Java.Util.Prefs.INodeChangeListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Util.Prefs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        public virtual void ChildAdded(Java.Util.Prefs.NodeChangeEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.NodeChangeEvent"/></param>
+        public virtual void ChildRemoved(Java.Util.Prefs.NodeChangeEvent arg0)
+        {
+            
+        }
 
         #endregion
 

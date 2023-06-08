@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
+    #region IHostnameVerifier
+    public partial interface IHostnameVerifier
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HostnameVerifier.html#verify(java.lang.String,javax.net.ssl.SSLSession)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSession"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Verify(string arg0, Javax.Net.Ssl.SSLSession arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HostnameVerifier
-    public partial class HostnameVerifier
+    public partial class HostnameVerifier : Javax.Net.Ssl.IHostnameVerifier
     {
         #region Constructors
 

@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Event
 {
+    #region IPrintJobAttributeListener
+    public partial interface IPrintJobAttributeListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html#attributeUpdate(javax.print.event.PrintJobAttributeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobAttributeEvent"/></param>
+        void AttributeUpdate(Javax.Print.Event.PrintJobAttributeEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrintJobAttributeListener
-    public partial class PrintJobAttributeListener
+    public partial class PrintJobAttributeListener : Javax.Print.Event.IPrintJobAttributeListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Print.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html#attributeUpdate(javax.print.event.PrintJobAttributeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobAttributeEvent"/></param>
+        public virtual void AttributeUpdate(Javax.Print.Event.PrintJobAttributeEvent arg0)
+        {
+            
+        }
 
         #endregion
 

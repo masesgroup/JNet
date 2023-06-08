@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
+    #region IECField
+    public partial interface IECField
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECField.html#getFieldSize()"/> 
+        /// </summary>
+        int FieldSize { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ECField
-    public partial class ECField
+    public partial class ECField : Java.Security.Spec.IECField
     {
         #region Constructors
 

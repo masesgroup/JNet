@@ -100,8 +100,52 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
+    #region ITransferQueue<E>
+    public partial interface ITransferQueue<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#hasWaitingConsumer()"/> 
+        /// </summary>
+        bool HasWaitingConsumer { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#getWaitingConsumerCount()"/> 
+        /// </summary>
+        int WaitingConsumerCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        bool TryTransfer(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool TryTransfer(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#transfer(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        void Transfer(E arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TransferQueue<E>
-    public partial class TransferQueue<E>
+    public partial class TransferQueue<E> : Java.Util.Concurrent.ITransferQueue<E>
     {
         #region Constructors
 

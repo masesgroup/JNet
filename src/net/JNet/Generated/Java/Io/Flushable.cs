@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
+    #region IFlushable
+    public partial interface IFlushable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Flushable.html#flush()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Io.IOException"/>
+        void Flush();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Flushable
-    public partial class Flushable
+    public partial class Flushable : Java.Io.IFlushable
     {
         #region Constructors
 

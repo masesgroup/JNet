@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
+    #region IKeySelectorResult
+    public partial interface IKeySelectorResult
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelectorResult.html#getKey()"/> 
+        /// </summary>
+        Java.Security.Key Key { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region KeySelectorResult
-    public partial class KeySelectorResult
+    public partial class KeySelectorResult : Javax.Xml.Crypto.IKeySelectorResult
     {
         #region Constructors
 

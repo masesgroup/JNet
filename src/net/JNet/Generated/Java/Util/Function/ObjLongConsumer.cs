@@ -65,8 +65,29 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IObjLongConsumer<T>
+    public partial interface IObjLongConsumer<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        void Accept(T arg0, long arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjLongConsumer<T>
-    public partial class ObjLongConsumer<T>
+    public partial class ObjLongConsumer<T> : Java.Util.Function.IObjLongConsumer<T>
     {
         #region Constructors
 

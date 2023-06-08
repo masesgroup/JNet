@@ -25,8 +25,61 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Event
 {
+    #region IEventDirContext
+    public partial interface IEventDirContext
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(java.lang.String,java.lang.String,java.lang.Object[],javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="Javax.Naming.Directory.SearchControls"/></param>
+        /// <param name="arg4"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        void AddNamingListener(string arg0, string arg1, object[] arg2, Javax.Naming.Directory.SearchControls arg3, Javax.Naming.Event.NamingListener arg4);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(java.lang.String,java.lang.String,javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Directory.SearchControls"/></param>
+        /// <param name="arg3"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        void AddNamingListener(string arg0, string arg1, Javax.Naming.Directory.SearchControls arg2, Javax.Naming.Event.NamingListener arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(javax.naming.Name,java.lang.String,java.lang.Object[],javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="Javax.Naming.Directory.SearchControls"/></param>
+        /// <param name="arg4"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        void AddNamingListener(Javax.Naming.Name arg0, string arg1, object[] arg2, Javax.Naming.Directory.SearchControls arg3, Javax.Naming.Event.NamingListener arg4);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(javax.naming.Name,java.lang.String,javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Directory.SearchControls"/></param>
+        /// <param name="arg3"><see cref="Javax.Naming.Event.NamingListener"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        void AddNamingListener(Javax.Naming.Name arg0, string arg1, Javax.Naming.Directory.SearchControls arg2, Javax.Naming.Event.NamingListener arg3);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region EventDirContext
-    public partial class EventDirContext
+    public partial class EventDirContext : Javax.Naming.Event.IEventDirContext
     {
         #region Constructors
 

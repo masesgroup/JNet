@@ -65,8 +65,29 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IDoubleFunction<R>
+    public partial interface IDoubleFunction<R>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R Apply(double arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DoubleFunction<R>
-    public partial class DoubleFunction<R>
+    public partial class DoubleFunction<R> : Java.Util.Function.IDoubleFunction<R>
     {
         #region Constructors
 

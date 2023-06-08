@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IType
+    public partial interface IType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Type.html#getTypeName()"/> 
+        /// </summary>
+        string TypeName { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Type
-    public partial class Type
+    public partial class Type : Java.Lang.Reflect.IType
     {
         #region Constructors
 

@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region ILongSupplier
+    public partial interface ILongSupplier
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/> 
+        /// </summary>
+        long AsLong { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LongSupplier
-    public partial class LongSupplier
+    public partial class LongSupplier : Java.Util.Function.ILongSupplier
     {
         #region Constructors
 

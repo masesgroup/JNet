@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLBaseFontElement
+    public partial interface IHTMLBaseFontElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseFontElement.html#getColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseFontElement.html#setColor(java.lang.String)"/>
+        /// </summary>
+        string Color { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseFontElement.html#getFace()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseFontElement.html#setFace(java.lang.String)"/>
+        /// </summary>
+        string Face { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseFontElement.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLBaseFontElement.html#setSize(java.lang.String)"/>
+        /// </summary>
+        string Size { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLBaseFontElement
-    public partial class HTMLBaseFontElement
+    public partial class HTMLBaseFontElement : Org.W3c.Dom.Html.IHTMLBaseFontElement
     {
         #region Constructors
 

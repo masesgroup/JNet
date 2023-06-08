@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
+    #region IBeanContextServiceProviderBeanInfo
+    public partial interface IBeanContextServiceProviderBeanInfo
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProviderBeanInfo.html#getServicesBeanInfo()"/> 
+        /// </summary>
+        Java.Beans.BeanInfo[] ServicesBeanInfo { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BeanContextServiceProviderBeanInfo
-    public partial class BeanContextServiceProviderBeanInfo
+    public partial class BeanContextServiceProviderBeanInfo : Java.Beans.Beancontext.IBeanContextServiceProviderBeanInfo
     {
         #region Constructors
 

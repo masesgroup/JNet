@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Stylesheets
 {
+    #region ILinkStyle
+    public partial interface ILinkStyle
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/LinkStyle.html#getSheet()"/> 
+        /// </summary>
+        Org.W3c.Dom.Stylesheets.StyleSheet Sheet { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LinkStyle
-    public partial class LinkStyle
+    public partial class LinkStyle : Org.W3c.Dom.Stylesheets.ILinkStyle
     {
         #region Constructors
 

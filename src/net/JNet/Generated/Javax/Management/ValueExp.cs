@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region IValueExp
+    public partial interface IValueExp
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ValueExp.html#apply(javax.management.ObjectName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ValueExp"/></returns>
+        /// <exception cref="Javax.Management.BadStringOperationException"/>
+        /// <exception cref="Javax.Management.BadBinaryOpValueExpException"/>
+        /// <exception cref="Javax.Management.BadAttributeValueExpException"/>
+        /// <exception cref="Javax.Management.InvalidApplicationException"/>
+        Javax.Management.ValueExp Apply(Javax.Management.ObjectName arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ValueExp
-    public partial class ValueExp
+    public partial class ValueExp : Javax.Management.IValueExp
     {
         #region Constructors
 

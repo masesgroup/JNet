@@ -25,8 +25,42 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Tools
 {
+    #region IJavaFileObject
+    public partial interface IJavaFileObject
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#getAccessLevel()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Modifier AccessLevel { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#getKind()"/> 
+        /// </summary>
+        Javax.Tools.JavaFileObject.Kind GetKind { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#getNestingKind()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.NestingKind NestingKind { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html#isNameCompatible(java.lang.String,javax.tools.JavaFileObject.Kind)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Tools.JavaFileObject.Kind"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsNameCompatible(string arg0, Javax.Tools.JavaFileObject.Kind arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region JavaFileObject
-    public partial class JavaFileObject
+    public partial class JavaFileObject : Javax.Tools.IJavaFileObject
     {
         #region Constructors
 

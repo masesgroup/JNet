@@ -65,8 +65,29 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region ILongFunction<R>
+    public partial interface ILongFunction<R>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R Apply(long arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LongFunction<R>
-    public partial class LongFunction<R>
+    public partial class LongFunction<R> : Java.Util.Function.ILongFunction<R>
     {
         #region Constructors
 

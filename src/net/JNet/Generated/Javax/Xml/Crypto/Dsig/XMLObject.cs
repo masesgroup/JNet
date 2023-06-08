@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region IXMLObject
+    public partial interface IXMLObject
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getContent()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Crypto.XMLStructure> Content { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getEncoding()"/> 
+        /// </summary>
+        string Encoding { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getId()"/> 
+        /// </summary>
+        string Id { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLObject.html#getMimeType()"/> 
+        /// </summary>
+        string MimeType { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLObject
-    public partial class XMLObject
+    public partial class XMLObject : Javax.Xml.Crypto.Dsig.IXMLObject
     {
         #region Constructors
 

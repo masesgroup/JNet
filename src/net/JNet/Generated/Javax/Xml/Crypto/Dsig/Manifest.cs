@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region IManifest
+    public partial interface IManifest
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Manifest.html#getId()"/> 
+        /// </summary>
+        string Id { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Manifest.html#getReferences()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Crypto.Dsig.Reference> References { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Manifest
-    public partial class Manifest
+    public partial class Manifest : Javax.Xml.Crypto.Dsig.IManifest
     {
         #region Constructors
 

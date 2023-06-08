@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
+    #region IAlgorithmMethod
+    public partial interface IAlgorithmMethod
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/AlgorithmMethod.html#getAlgorithm()"/> 
+        /// </summary>
+        string Algorithm { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/AlgorithmMethod.html#getParameterSpec()"/> 
+        /// </summary>
+        Java.Security.Spec.AlgorithmParameterSpec ParameterSpec { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AlgorithmMethod
-    public partial class AlgorithmMethod
+    public partial class AlgorithmMethod : Javax.Xml.Crypto.IAlgorithmMethod
     {
         #region Constructors
 

@@ -24,16 +24,9 @@ namespace Java.Awt.EventNs
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html"/>
     /// </summary>
-    public interface IInputMethodListener : IJVMBridgeBase
+    public partial interface IInputMethodListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
-        /// </summary>
-        void InputMethodTextChanged(InputMethodEvent e);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
-        /// </summary>
-        void CaretPositionChanged(InputMethodEvent e);
+
     }
 
     /// <summary>
@@ -87,16 +80,6 @@ namespace Java.Awt.EventNs
         void EventHandlerCaretPositionChanged(object sender, CLRListenerEventArgs<CLREventData<InputMethodEvent>> data)
         {
             OnCaretPositionChanged(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IInputMethodListener.InputMethodTextChanged(InputMethodEvent)"/>
-        public void InputMethodTextChanged(InputMethodEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IInputMethodListener.CaretPositionChanged(InputMethodEvent)"/>
-        public void CaretPositionChanged(InputMethodEvent e)
-        {
-
         }
     }
 }

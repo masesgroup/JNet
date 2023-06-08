@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Prefs
 {
+    #region IPreferenceChangeListener
+    public partial interface IPreferenceChangeListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
+        void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PreferenceChangeListener
-    public partial class PreferenceChangeListener
+    public partial class PreferenceChangeListener : Java.Util.Prefs.IPreferenceChangeListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Util.Prefs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Prefs.PreferenceChangeEvent"/></param>
+        public virtual void PreferenceChange(Java.Util.Prefs.PreferenceChangeEvent arg0)
+        {
+            
+        }
 
         #endregion
 

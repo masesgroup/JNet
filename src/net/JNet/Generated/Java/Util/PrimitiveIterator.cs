@@ -274,8 +274,28 @@ namespace Java.Util
     }
     #endregion
 
+    #region IPrimitiveIterator<T, T_CONS>
+    public partial interface IPrimitiveIterator<T, T_CONS>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html#forEachRemaining(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T_CONS"/></param>
+        void ForEachRemaining(T_CONS arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrimitiveIterator<T, T_CONS>
-    public partial class PrimitiveIterator<T, T_CONS>
+    public partial class PrimitiveIterator<T, T_CONS> : Java.Util.IPrimitiveIterator<T, T_CONS>
     {
         #region Constructors
 

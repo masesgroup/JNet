@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region ISQLType
+    public partial interface ISQLType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getVendor()"/> 
+        /// </summary>
+        string Vendor { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getVendorTypeNumber()"/> 
+        /// </summary>
+        int? VendorTypeNumber { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SQLType
-    public partial class SQLType
+    public partial class SQLType : Java.Sql.ISQLType
     {
         #region Constructors
 

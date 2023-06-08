@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region IRootPaneContainer
+    public partial interface IRootPaneContainer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getContentPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setContentPane(java.awt.Container)"/>
+        /// </summary>
+        Java.Awt.Container ContentPane { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setGlassPane(java.awt.Component)"/>
+        /// </summary>
+        Java.Awt.Component GlassPane { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getLayeredPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#setLayeredPane(javax.swing.JLayeredPane)"/>
+        /// </summary>
+        Javax.Swing.JLayeredPane LayeredPane { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RootPaneContainer.html#getRootPane()"/> 
+        /// </summary>
+        Javax.Swing.JRootPane RootPane { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RootPaneContainer
-    public partial class RootPaneContainer
+    public partial class RootPaneContainer : Javax.Swing.IRootPaneContainer
     {
         #region Constructors
 

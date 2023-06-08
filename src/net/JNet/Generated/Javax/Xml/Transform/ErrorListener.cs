@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
+    #region IErrorListener
+    public partial interface IErrorListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        void Error(Javax.Xml.Transform.TransformerException arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        void FatalError(Javax.Xml.Transform.TransformerException arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        void Warning(Javax.Xml.Transform.TransformerException arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ErrorListener
-    public partial class ErrorListener
+    public partial class ErrorListener : Javax.Xml.Transform.IErrorListener
     {
         #region Constructors
 
@@ -45,6 +78,33 @@ namespace Javax.Xml.Transform
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        public virtual void Error(Javax.Xml.Transform.TransformerException arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        public virtual void FatalError(Javax.Xml.Transform.TransformerException arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        public virtual void Warning(Javax.Xml.Transform.TransformerException arg0)
+        {
+            
+        }
 
         #endregion
 

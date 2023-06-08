@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IDoubleUnaryOperator
+    public partial interface IDoubleUnaryOperator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see cref="double"/></returns>
+        double ApplyAsDouble(double arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
+        Java.Util.Function.DoubleUnaryOperator AndThen(Java.Util.Function.DoubleUnaryOperator arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
+        Java.Util.Function.DoubleUnaryOperator Compose(Java.Util.Function.DoubleUnaryOperator arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DoubleUnaryOperator
-    public partial class DoubleUnaryOperator
+    public partial class DoubleUnaryOperator : Java.Util.Function.IDoubleUnaryOperator
     {
         #region Constructors
 

@@ -192,8 +192,61 @@ namespace Javax.Tools
     }
     #endregion
 
+    #region IDiagnostic<S>
+    public partial interface IDiagnostic<S>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getCode()"/> 
+        /// </summary>
+        string Code { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getColumnNumber()"/> 
+        /// </summary>
+        long ColumnNumber { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getEndPosition()"/> 
+        /// </summary>
+        long EndPosition { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getKind()"/> 
+        /// </summary>
+        Javax.Tools.Diagnostic.Kind GetKind { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getLineNumber()"/> 
+        /// </summary>
+        long LineNumber { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getPosition()"/> 
+        /// </summary>
+        long Position { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getSource()"/> 
+        /// </summary>
+        S Source { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getStartPosition()"/> 
+        /// </summary>
+        long StartPosition { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.html#getMessage(java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="string"/></returns>
+        string GetMessage(Java.Util.Locale arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Diagnostic<S>
-    public partial class Diagnostic<S>
+    public partial class Diagnostic<S> : Javax.Tools.IDiagnostic<S>
     {
         #region Constructors
 

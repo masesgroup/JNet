@@ -24,12 +24,9 @@ namespace Java.Awt.EventNs
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html"/>
     /// </summary>
-    public interface IAWTEventListener : IJVMBridgeBase
+    public partial interface IAWTEventListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
-        /// </summary>
-        void EventDispatched(AWTEvent e);
+
     }
 
     /// <summary>
@@ -67,11 +64,6 @@ namespace Java.Awt.EventNs
         void EventHandlerEventDispatched(object sender, CLRListenerEventArgs<CLREventData<AWTEvent>> data)
         {
             OnEventDispatched(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IAWTEventListener.EventDispatched(AWTEvent)"/>
-        public virtual void EventDispatched(AWTEvent e)
-        {
-
         }
     }
 }

@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
+    #region IAttribute
+    public partial interface IAttribute
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Attribute.html#getCategory()"/> 
+        /// </summary>
+        Java.Lang.Class Category { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/Attribute.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Attribute
-    public partial class Attribute
+    public partial class Attribute : Javax.Print.Attribute.IAttribute
     {
         #region Constructors
 

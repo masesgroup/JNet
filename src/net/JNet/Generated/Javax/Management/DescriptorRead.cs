@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region IDescriptorRead
+    public partial interface IDescriptorRead
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorRead.html#getDescriptor()"/> 
+        /// </summary>
+        Javax.Management.Descriptor Descriptor { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DescriptorRead
-    public partial class DescriptorRead
+    public partial class DescriptorRead : Javax.Management.IDescriptorRead
     {
         #region Constructors
 

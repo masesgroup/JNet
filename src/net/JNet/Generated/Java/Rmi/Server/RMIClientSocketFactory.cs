@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
+    #region IRMIClientSocketFactory
+    public partial interface IRMIClientSocketFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClientSocketFactory.html#createSocket(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Net.Socket CreateSocket(string arg0, int arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RMIClientSocketFactory
-    public partial class RMIClientSocketFactory
+    public partial class RMIClientSocketFactory : Java.Rmi.Server.IRMIClientSocketFactory
     {
         #region Constructors
 

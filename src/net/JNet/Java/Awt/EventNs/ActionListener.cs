@@ -24,12 +24,8 @@ namespace Java.Awt.EventNs
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html"/>
     /// </summary>
-    public interface IActionListener : IJVMBridgeBase
+    public partial interface IActionListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
-        /// </summary>
-        void ActionPerformed(ActionEvent e);
     }
 
     /// <summary>
@@ -67,11 +63,6 @@ namespace Java.Awt.EventNs
         void EventHandlerActionPerformed(object sender, CLRListenerEventArgs<CLREventData<ActionEvent>> data)
         {
             OnActionPerformed(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IActionListener.ActionPerformed(ActionEvent)"/>
-        public virtual void ActionPerformed(ActionEvent e)
-        {
-
         }
     }
 }

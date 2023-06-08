@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Interfaces
 {
+    #region IDHPublicKey
+    public partial interface IDHPublicKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPublicKey.html#getY()"/> 
+        /// </summary>
+        Java.Math.BigInteger Y { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DHPublicKey
-    public partial class DHPublicKey
+    public partial class DHPublicKey : Javax.Crypto.Interfaces.IDHPublicKey
     {
         #region Constructors
 

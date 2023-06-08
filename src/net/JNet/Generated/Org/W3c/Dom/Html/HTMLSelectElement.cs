@@ -25,8 +25,87 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLSelectElement
+    public partial interface IHTMLSelectElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getDisabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#setDisabled(boolean)"/>
+        /// </summary>
+        bool Disabled { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getForm()"/> 
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLFormElement Form { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getLength()"/> 
+        /// </summary>
+        int Length { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getMultiple()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#setMultiple(boolean)"/>
+        /// </summary>
+        bool Multiple { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#setName(java.lang.String)"/>
+        /// </summary>
+        string Name { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getOptions()"/> 
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLCollection Options { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#setSelectedIndex(int)"/>
+        /// </summary>
+        int SelectedIndex { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getSize()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#setSize(int)"/>
+        /// </summary>
+        int Size { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getTabIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#setTabIndex(int)"/>
+        /// </summary>
+        int TabIndex { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getType()"/> 
+        /// </summary>
+        string Type { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#getValue()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#setValue(java.lang.String)"/>
+        /// </summary>
+        string Value { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#add(org.w3c.dom.html.HTMLElement,org.w3c.dom.html.HTMLElement)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Html.HTMLElement"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Html.HTMLElement"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void Add(Org.W3c.Dom.Html.HTMLElement arg0, Org.W3c.Dom.Html.HTMLElement arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#blur()"/>
+        /// </summary>
+        void Blur();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#focus()"/>
+        /// </summary>
+        void Focus();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#remove(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        void Remove(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLSelectElement
-    public partial class HTMLSelectElement
+    public partial class HTMLSelectElement : Org.W3c.Dom.Html.IHTMLSelectElement
     {
         #region Constructors
 

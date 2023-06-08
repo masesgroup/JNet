@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IFileOwnerAttributeView
+    public partial interface IFileOwnerAttributeView
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#name()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#getOwner()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html#setOwner(java.nio.file.attribute.UserPrincipal)"/>
+        /// </summary>
+        Java.Nio.File.Attribute.UserPrincipal Owner { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region FileOwnerAttributeView
-    public partial class FileOwnerAttributeView
+    public partial class FileOwnerAttributeView : Java.Nio.File.Attribute.IFileOwnerAttributeView
     {
         #region Constructors
 

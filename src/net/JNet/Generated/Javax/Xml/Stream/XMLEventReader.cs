@@ -25,8 +25,56 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
+    #region IXMLEventReader
+    public partial interface IXMLEventReader
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#getElementText()"/> 
+        /// </summary>
+        string ElementText { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#hasNext()"/> 
+        /// </summary>
+        bool HasNext { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextEvent()"/> 
+        /// </summary>
+        Javax.Xml.Stream.Events.XMLEvent NextEvent { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextTag()"/> 
+        /// </summary>
+        Javax.Xml.Stream.Events.XMLEvent NextTag { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#peek()"/> 
+        /// </summary>
+        Javax.Xml.Stream.Events.XMLEvent Peek { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#getProperty(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        object GetProperty(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#close()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        void Close();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLEventReader
-    public partial class XMLEventReader
+    public partial class XMLEventReader : Javax.Xml.Stream.IXMLEventReader
     {
         #region Constructors
 

@@ -25,8 +25,59 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IBasicFileAttributes
+    public partial interface IBasicFileAttributes
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#creationTime()"/> 
+        /// </summary>
+        Java.Nio.File.Attribute.FileTime CreationTime { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#fileKey()"/> 
+        /// </summary>
+        object FileKey { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isDirectory()"/> 
+        /// </summary>
+        bool IsDirectory { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isOther()"/> 
+        /// </summary>
+        bool IsOther { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isRegularFile()"/> 
+        /// </summary>
+        bool IsRegularFile { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isSymbolicLink()"/> 
+        /// </summary>
+        bool IsSymbolicLink { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastAccessTime()"/> 
+        /// </summary>
+        Java.Nio.File.Attribute.FileTime LastAccessTime { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastModifiedTime()"/> 
+        /// </summary>
+        Java.Nio.File.Attribute.FileTime LastModifiedTime { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#size()"/> 
+        /// </summary>
+        long Size { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BasicFileAttributes
-    public partial class BasicFileAttributes
+    public partial class BasicFileAttributes : Java.Nio.File.Attribute.IBasicFileAttributes
     {
         #region Constructors
 

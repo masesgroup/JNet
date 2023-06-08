@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
+    #region IRowSetListener
+    public partial interface IRowSetListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
+        void CursorMoved(Javax.Sql.RowSetEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
+        void RowChanged(Javax.Sql.RowSetEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
+        void RowSetChanged(Javax.Sql.RowSetEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RowSetListener
-    public partial class RowSetListener
+    public partial class RowSetListener : Javax.Sql.IRowSetListener
     {
         #region Constructors
 
@@ -45,6 +75,30 @@ namespace Javax.Sql
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
+        public virtual void CursorMoved(Javax.Sql.RowSetEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
+        public virtual void RowChanged(Javax.Sql.RowSetEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.RowSetEvent"/></param>
+        public virtual void RowSetChanged(Javax.Sql.RowSetEvent arg0)
+        {
+            
+        }
 
         #endregion
 

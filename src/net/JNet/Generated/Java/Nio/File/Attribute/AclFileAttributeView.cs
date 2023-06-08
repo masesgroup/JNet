@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IAclFileAttributeView
+    public partial interface IAclFileAttributeView
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#getAcl()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#setAcl(java.util.List)"/>
+        /// </summary>
+        Java.Util.List<Java.Nio.File.Attribute.AclEntry> Acl { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/> 
+        /// </summary>
+        string Name { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AclFileAttributeView
-    public partial class AclFileAttributeView
+    public partial class AclFileAttributeView : Java.Nio.File.Attribute.IAclFileAttributeView
     {
         #region Constructors
 

@@ -25,8 +25,75 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
+    #region IDataLine
+    public partial interface IDataLine
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/> 
+        /// </summary>
+        int Available { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getBufferSize()"/> 
+        /// </summary>
+        int BufferSize { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getFormat()"/> 
+        /// </summary>
+        Javax.Sound.Sampled.AudioFormat Format { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getFramePosition()"/> 
+        /// </summary>
+        int FramePosition { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/> 
+        /// </summary>
+        bool IsActive { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/> 
+        /// </summary>
+        bool IsRunning { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getLevel()"/> 
+        /// </summary>
+        float Level { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getLongFramePosition()"/> 
+        /// </summary>
+        long LongFramePosition { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getMicrosecondPosition()"/> 
+        /// </summary>
+        long MicrosecondPosition { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#drain()"/>
+        /// </summary>
+        void Drain();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#flush()"/>
+        /// </summary>
+        void Flush();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#start()"/>
+        /// </summary>
+        void Start();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#stop()"/>
+        /// </summary>
+        void Stop();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DataLine
-    public partial class DataLine
+    public partial class DataLine : Javax.Sound.Sampled.IDataLine
     {
         #region Constructors
 

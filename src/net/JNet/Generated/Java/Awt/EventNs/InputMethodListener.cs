@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IInputMethodListener
+    public partial interface IInputMethodListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        void CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        void InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region InputMethodListener
-    public partial class InputMethodListener
+    public partial class InputMethodListener : Java.Awt.EventNs.IInputMethodListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        public virtual void CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
+        public virtual void InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent arg0)
+        {
+            
+        }
 
         #endregion
 

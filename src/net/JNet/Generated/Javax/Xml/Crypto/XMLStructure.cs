@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
+    #region IXMLStructure
+    public partial interface IXMLStructure
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLStructure.html#isFeatureSupported(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsFeatureSupported(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLStructure
-    public partial class XMLStructure
+    public partial class XMLStructure : Javax.Xml.Crypto.IXMLStructure
     {
         #region Constructors
 

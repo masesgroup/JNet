@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region ISavepoint
+    public partial interface ISavepoint
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Savepoint.html#getSavepointId()"/> 
+        /// </summary>
+        int SavepointId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Savepoint.html#getSavepointName()"/> 
+        /// </summary>
+        string SavepointName { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Savepoint
-    public partial class Savepoint
+    public partial class Savepoint : Java.Sql.ISavepoint
     {
         #region Constructors
 

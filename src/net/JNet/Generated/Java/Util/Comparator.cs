@@ -45,6 +45,156 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="int"/></returns>
+        public virtual int Compare(object arg0, object arg1)
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator ThenComparing(Java.Util.Function.Function arg0, Java.Util.Comparator arg1)
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator ThenComparing(Java.Util.Function.Function arg0)
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#reversed()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator Reversed()
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator ThenComparing(Java.Util.Comparator arg0)
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingDouble(java.util.function.ToDoubleFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator ThenComparingDouble(Java.Util.Function.ToDoubleFunction arg0)
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingInt(java.util.function.ToIntFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator ThenComparingInt(Java.Util.Function.ToIntFunction arg0)
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingLong(java.util.function.ToLongFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator ThenComparingLong(Java.Util.Function.ToLongFunction arg0)
+        {
+            return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region IComparator<T>
+    public partial interface IComparator<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <returns><see cref="int"/></returns>
+        int Compare(T arg0, T arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
+        /// <typeparam name="U"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="Arg1objectSuperU"></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        Java.Util.Comparator<T> ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0, Java.Util.Comparator<Arg1objectSuperU> arg1) where Arg0objectSuperT: T;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
+        /// <typeparam name="U"><typeparamref name="U"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        Java.Util.Comparator<T> ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT: T;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#reversed()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        Java.Util.Comparator<T> Reversed();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        Java.Util.Comparator<T> ThenComparing<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingDouble(java.util.function.ToDoubleFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        Java.Util.Comparator<T> ThenComparingDouble<Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingInt(java.util.function.ToIntFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        Java.Util.Comparator<T> ThenComparingInt<Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingLong(java.util.function.ToLongFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        Java.Util.Comparator<T> ThenComparingLong<Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
 
         #endregion
 
@@ -57,7 +207,7 @@ namespace Java.Util
     #endregion
 
     #region Comparator<T>
-    public partial class Comparator<T>
+    public partial class Comparator<T> : Java.Util.IComparator<T>
     {
         #region Constructors
 
@@ -76,6 +226,91 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <returns><see cref="int"/></returns>
+        public virtual int Compare(T arg0, T arg1)
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function,java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
+        /// <typeparam name="U"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="Arg1objectSuperU"></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator<T> ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0, Java.Util.Comparator<Arg1objectSuperU> arg1) where Arg0objectSuperT: T
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"></typeparam>
+        /// <typeparam name="U"><typeparamref name="U"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator<T> ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT: T
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#reversed()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator<T> Reversed()
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.Comparator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator<T> ThenComparing<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingDouble(java.util.function.ToDoubleFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToDoubleFunction"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator<T> ThenComparingDouble<Arg0objectSuperT>(Java.Util.Function.ToDoubleFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingInt(java.util.function.ToIntFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToIntFunction"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator<T> ThenComparingInt<Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        {
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingLong(java.util.function.ToLongFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public virtual Java.Util.Comparator<T> ThenComparingLong<Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        {
+            return default;
+        }
 
         #endregion
 

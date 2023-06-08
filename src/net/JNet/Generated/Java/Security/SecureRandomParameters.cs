@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
+    #region ISecureRandomParameters
+    public partial interface ISecureRandomParameters
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SecureRandomParameters
-    public partial class SecureRandomParameters
+    public partial class SecureRandomParameters : Java.Security.ISecureRandomParameters
     {
         #region Constructors
 

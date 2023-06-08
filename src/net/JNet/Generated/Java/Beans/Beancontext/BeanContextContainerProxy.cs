@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
+    #region IBeanContextContainerProxy
+    public partial interface IBeanContextContainerProxy
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextContainerProxy.html#getContainer()"/> 
+        /// </summary>
+        Java.Awt.Container Container { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BeanContextContainerProxy
-    public partial class BeanContextContainerProxy
+    public partial class BeanContextContainerProxy : Java.Beans.Beancontext.IBeanContextContainerProxy
     {
         #region Constructors
 

@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
+    #region IFileNameMap
+    public partial interface IFileNameMap
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/FileNameMap.html#getContentTypeFor(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="string"/></returns>
+        string GetContentTypeFor(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region FileNameMap
-    public partial class FileNameMap
+    public partial class FileNameMap : Java.Net.IFileNameMap
     {
         #region Constructors
 

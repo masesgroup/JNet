@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
+    #region IPathMatcher
+    public partial interface IPathMatcher
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/PathMatcher.html#matches(java.nio.file.Path)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Matches(Java.Nio.File.Path arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PathMatcher
-    public partial class PathMatcher
+    public partial class PathMatcher : Java.Nio.File.IPathMatcher
     {
         #region Constructors
 

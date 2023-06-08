@@ -63,8 +63,27 @@ namespace Java.Security
     }
     #endregion
 
+    #region IPrivilegedExceptionAction<T>
+    public partial interface IPrivilegedExceptionAction<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedExceptionAction.html#run()"/> 
+        /// </summary>
+        T Run { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrivilegedExceptionAction<T>
-    public partial class PrivilegedExceptionAction<T>
+    public partial class PrivilegedExceptionAction<T> : Java.Security.IPrivilegedExceptionAction<T>
     {
         #region Constructors
 

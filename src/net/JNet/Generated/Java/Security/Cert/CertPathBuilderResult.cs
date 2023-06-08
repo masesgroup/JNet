@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
+    #region ICertPathBuilderResult
+    public partial interface ICertPathBuilderResult
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderResult.html#getCertPath()"/> 
+        /// </summary>
+        Java.Security.Cert.CertPath CertPath { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CertPathBuilderResult
-    public partial class CertPathBuilderResult
+    public partial class CertPathBuilderResult : Java.Security.Cert.ICertPathBuilderResult
     {
         #region Constructors
 

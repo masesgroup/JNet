@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
+    #region IKey
+    public partial interface IKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html#getAlgorithm()"/> 
+        /// </summary>
+        string Algorithm { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html#getEncoded()"/> 
+        /// </summary>
+        byte[] Encoded { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Key.html#getFormat()"/> 
+        /// </summary>
+        string Format { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Key
-    public partial class Key
+    public partial class Key : Java.Security.IKey
     {
         #region Constructors
 

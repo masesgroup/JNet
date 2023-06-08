@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IWindowStateListener
+    public partial interface IWindowStateListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region WindowStateListener
-    public partial class WindowStateListener
+    public partial class WindowStateListener : Java.Awt.EventNs.IWindowStateListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowStateChanged(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
 
         #endregion
 

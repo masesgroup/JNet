@@ -25,8 +25,67 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
+    #region IObjectInput
+    public partial interface IObjectInput
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#available()"/> 
+        /// </summary>
+        int Available { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#readObject()"/> 
+        /// </summary>
+        object ReadObject { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#read()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        int Read();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#read(byte[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        int Read(byte[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#read(byte[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        int Read(byte[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#skip(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        long Skip(long arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#close()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Io.IOException"/>
+        void Close();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjectInput
-    public partial class ObjectInput
+    public partial class ObjectInput : Java.Io.IObjectInput
     {
         #region Constructors
 

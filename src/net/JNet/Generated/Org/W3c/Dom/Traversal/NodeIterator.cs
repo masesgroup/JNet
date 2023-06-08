@@ -25,8 +25,51 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Traversal
 {
+    #region INodeIterator
+    public partial interface INodeIterator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getExpandEntityReferences()"/> 
+        /// </summary>
+        bool ExpandEntityReferences { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getFilter()"/> 
+        /// </summary>
+        Org.W3c.Dom.Traversal.NodeFilter Filter { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#nextNode()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node NextNode { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#previousNode()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node PreviousNode { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getRoot()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node Root { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#getWhatToShow()"/> 
+        /// </summary>
+        int WhatToShow { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html#detach()"/>
+        /// </summary>
+        void Detach();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NodeIterator
-    public partial class NodeIterator
+    public partial class NodeIterator : Org.W3c.Dom.Traversal.INodeIterator
     {
         #region Constructors
 

@@ -25,8 +25,53 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
+    #region IRemoteRef
+    public partial interface IRemoteRef
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteHashCode()"/> 
+        /// </summary>
+        int RemoteHashCode { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteToString()"/> 
+        /// </summary>
+        string RemoteToString { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#remoteEquals(java.rmi.server.RemoteRef)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Server.RemoteRef"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool RemoteEquals(Java.Rmi.Server.RemoteRef arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#invoke(java.rmi.Remote,java.lang.reflect.Method,java.lang.Object[],long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Remote"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Reflect.Method"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <param name="arg3"><see cref="long"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        object Invoke(Java.Rmi.Remote arg0, Java.Lang.Reflect.Method arg1, object[] arg2, long arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#getRefClass(java.io.ObjectOutput)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
+        /// <returns><see cref="string"/></returns>
+        string GetRefClass(Java.Io.ObjectOutput arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RemoteRef
-    public partial class RemoteRef
+    public partial class RemoteRef : Java.Rmi.Server.IRemoteRef
     {
         #region Constructors
 

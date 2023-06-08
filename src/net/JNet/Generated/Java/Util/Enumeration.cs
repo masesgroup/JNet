@@ -77,8 +77,35 @@ namespace Java.Util
     }
     #endregion
 
+    #region IEnumeration<E>
+    public partial interface IEnumeration<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#asIterator()"/> 
+        /// </summary>
+        Java.Util.Iterator<E> AsIterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#hasMoreElements()"/> 
+        /// </summary>
+        bool HasMoreElements { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html#nextElement()"/> 
+        /// </summary>
+        E NextElement { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Enumeration<E>
-    public partial class Enumeration<E>
+    public partial class Enumeration<E> : Java.Util.IEnumeration<E>
     {
         #region Constructors
 

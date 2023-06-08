@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IWindowFocusListener
+    public partial interface IWindowFocusListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowLostFocus(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region WindowFocusListener
-    public partial class WindowFocusListener
+    public partial class WindowFocusListener : Java.Awt.EventNs.IWindowFocusListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowGainedFocus(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowLostFocus(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowLostFocus(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
 
         #endregion
 

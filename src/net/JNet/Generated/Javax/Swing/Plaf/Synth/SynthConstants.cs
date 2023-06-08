@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Synth
 {
+    #region ISynthConstants
+    public partial interface ISynthConstants
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SynthConstants
-    public partial class SynthConstants
+    public partial class SynthConstants : Javax.Swing.Plaf.Synth.ISynthConstants
     {
         #region Constructors
 

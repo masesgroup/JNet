@@ -25,8 +25,75 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Loading
 {
+    #region IMLetMBean
+    public partial interface IMLetMBean
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getLibraryDirectory()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#setLibraryDirectory(java.lang.String)"/>
+        /// </summary>
+        string LibraryDirectory { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getURLs()"/> 
+        /// </summary>
+        Java.Net.URL[] URLs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResourceAsStream(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        Java.Io.InputStream GetResourceAsStream(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResource(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Net.URL"/></returns>
+        Java.Net.URL GetResource(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getResources(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Util.Enumeration<Java.Net.URL> GetResources(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getMBeansFromURL(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
+        Java.Util.Set<object> GetMBeansFromURL(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#getMBeansFromURL(java.net.URL)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
+        Java.Util.Set<object> GetMBeansFromURL(Java.Net.URL arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#addURL(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Javax.Management.ServiceNotFoundException"/>
+        void AddURL(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLetMBean.html#addURL(java.net.URL)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URL"/></param>
+        void AddURL(Java.Net.URL arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MLetMBean
-    public partial class MLetMBean
+    public partial class MLetMBean : Javax.Management.Loading.IMLetMBean
     {
         #region Constructors
 

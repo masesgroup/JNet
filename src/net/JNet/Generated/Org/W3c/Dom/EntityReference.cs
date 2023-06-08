@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IEntityReference
+    public partial interface IEntityReference
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region EntityReference
-    public partial class EntityReference
+    public partial class EntityReference : Org.W3c.Dom.IEntityReference
     {
         #region Constructors
 

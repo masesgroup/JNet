@@ -25,8 +25,55 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
+    #region ILSInput
+    public partial interface ILSInput
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getBaseURI()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setBaseURI(java.lang.String)"/>
+        /// </summary>
+        string BaseURI { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getByteStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setByteStream(java.io.InputStream)"/>
+        /// </summary>
+        Java.Io.InputStream ByteStream { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getCertifiedText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setCertifiedText(boolean)"/>
+        /// </summary>
+        bool CertifiedText { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getCharacterStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setCharacterStream(java.io.Reader)"/>
+        /// </summary>
+        Java.Io.Reader CharacterStream { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getEncoding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setEncoding(java.lang.String)"/>
+        /// </summary>
+        string Encoding { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getPublicId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setPublicId(java.lang.String)"/>
+        /// </summary>
+        string PublicId { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getStringData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setStringData(java.lang.String)"/>
+        /// </summary>
+        string StringData { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSInput.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        string SystemId { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LSInput
-    public partial class LSInput
+    public partial class LSInput : Org.W3c.Dom.Ls.ILSInput
     {
         #region Constructors
 

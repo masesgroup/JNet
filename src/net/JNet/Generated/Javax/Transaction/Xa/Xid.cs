@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Transaction.Xa
 {
+    #region IXid
+    public partial interface IXid
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getBranchQualifier()"/> 
+        /// </summary>
+        byte[] BranchQualifier { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getFormatId()"/> 
+        /// </summary>
+        int FormatId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#getGlobalTransactionId()"/> 
+        /// </summary>
+        byte[] GlobalTransactionId { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Xid
-    public partial class Xid
+    public partial class Xid : Javax.Transaction.Xa.IXid
     {
         #region Constructors
 

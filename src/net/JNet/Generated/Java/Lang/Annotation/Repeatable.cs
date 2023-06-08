@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
+    #region IRepeatable
+    public partial interface IRepeatable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Repeatable.html#value()"/> 
+        /// </summary>
+        Java.Lang.Class Value { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Repeatable
-    public partial class Repeatable
+    public partial class Repeatable : Java.Lang.Annotation.IRepeatable
     {
         #region Constructors
 

@@ -24,20 +24,9 @@ namespace Java.Awt.EventNs
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html"/>
     /// </summary>
-    public interface IKeyListener : IJVMBridgeBase
+    public partial interface IKeyListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyTyped(java.awt.event.KeyEvent)"/>
-        /// </summary>
-        void KeyTyped(KeyEvent e);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyPressed(java.awt.event.KeyEvent)"/>
-        /// </summary>
-        void KeyPressed(KeyEvent e);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html#keyReleased(java.awt.event.KeyEvent)"/>
-        /// </summary>
-        void KeyReleased(KeyEvent e);
+
     }
 
     /// <summary>
@@ -106,21 +95,6 @@ namespace Java.Awt.EventNs
         void EventHandlerKeyReleased(object sender, CLRListenerEventArgs<CLREventData<KeyEvent>> data)
         {
             OnKeyReleased(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IKeyListener.KeyTyped(KeyEvent)"/>
-        public virtual void KeyTyped(KeyEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IKeyListener.KeyPressed(KeyEvent)"/>
-        public virtual void KeyPressed(KeyEvent e)
-        {
-
-        }
-        /// <inheritdoc cref="IKeyListener.KeyReleased(KeyEvent)"/>
-        public virtual void KeyReleased(KeyEvent e)
-        {
-            
         }
     }
 }

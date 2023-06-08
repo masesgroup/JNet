@@ -334,8 +334,102 @@ namespace Java.Util
     }
     #endregion
 
+    #region ISet<E>
+    public partial interface ISet<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#isEmpty()"/> 
+        /// </summary>
+        bool IsEmpty { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#iterator()"/> 
+        /// </summary>
+        Java.Util.Iterator<E> Iterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#size()"/> 
+        /// </summary>
+        int Size { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#spliterator()"/> 
+        /// </summary>
+        Java.Util.Spliterator<E> Spliterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#toArray(java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        T[] ToArray<T>(T[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#add(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Add(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#addAll(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0ExtendsE"><typeparamref name="E"/></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        bool AddAll<Arg0ExtendsE>(Java.Util.Collection<Arg0ExtendsE> arg0) where Arg0ExtendsE: E;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#contains(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Contains(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#containsAll(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        bool ContainsAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#remove(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Remove(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#removeAll(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        bool RemoveAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#retainAll(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <returns><see cref="bool"/></returns>
+        bool RetainAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#toArray()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        object[] ToArray();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#clear()"/>
+        /// </summary>
+        void Clear();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Set<E>
-    public partial class Set<E>
+    public partial class Set<E> : Java.Util.ISet<E>
     {
         #region Constructors
 

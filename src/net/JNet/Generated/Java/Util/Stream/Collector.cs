@@ -177,8 +177,45 @@ namespace Java.Util.Stream
     }
     #endregion
 
+    #region ICollector<T, A, R>
+    public partial interface ICollector<T, A, R>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/> 
+        /// </summary>
+        Java.Util.Function.BiConsumer<A, T> Accumulator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/> 
+        /// </summary>
+        Java.Util.Function.BinaryOperator<A> Combiner { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/> 
+        /// </summary>
+        Java.Util.Function.Function<A, R> Finisher { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/> 
+        /// </summary>
+        Java.Util.Function.Supplier<A> Supplier { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        Java.Util.Set<Java.Util.Stream.Collector.Characteristics> CharacteristicsMethod();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Collector<T, A, R>
-    public partial class Collector<T, A, R>
+    public partial class Collector<T, A, R> : Java.Util.Stream.ICollector<T, A, R>
     {
         #region Constructors
 

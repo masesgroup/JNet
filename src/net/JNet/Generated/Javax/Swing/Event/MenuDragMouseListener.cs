@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IMenuDragMouseListener
+    public partial interface IMenuDragMouseListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseDragged(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        void MenuDragMouseDragged(Javax.Swing.Event.MenuDragMouseEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseEntered(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        void MenuDragMouseEntered(Javax.Swing.Event.MenuDragMouseEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseExited(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        void MenuDragMouseExited(Javax.Swing.Event.MenuDragMouseEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseReleased(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        void MenuDragMouseReleased(Javax.Swing.Event.MenuDragMouseEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MenuDragMouseListener
-    public partial class MenuDragMouseListener
+    public partial class MenuDragMouseListener : Javax.Swing.Event.IMenuDragMouseListener
     {
         #region Constructors
 
@@ -45,6 +80,38 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseDragged(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        public virtual void MenuDragMouseDragged(Javax.Swing.Event.MenuDragMouseEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseEntered(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        public virtual void MenuDragMouseEntered(Javax.Swing.Event.MenuDragMouseEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseExited(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        public virtual void MenuDragMouseExited(Javax.Swing.Event.MenuDragMouseEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseReleased(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
+        public virtual void MenuDragMouseReleased(Javax.Swing.Event.MenuDragMouseEvent arg0)
+        {
+            
+        }
 
         #endregion
 

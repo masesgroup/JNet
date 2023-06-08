@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
+    #region IObjectFactoryBuilder
+    public partial interface IObjectFactoryBuilder
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactoryBuilder.html#createObjectFactory(java.lang.Object,java.util.Hashtable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
+        /// <typeparam name="Arg1Extendsobject"></typeparam>
+        /// <returns><see cref="Javax.Naming.Spi.ObjectFactory"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        Javax.Naming.Spi.ObjectFactory CreateObjectFactory<Arg1Extendsobject>(object arg0, Java.Util.Hashtable<Arg1Extendsobject, Arg1Extendsobject> arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjectFactoryBuilder
-    public partial class ObjectFactoryBuilder
+    public partial class ObjectFactoryBuilder : Javax.Naming.Spi.IObjectFactoryBuilder
     {
         #region Constructors
 

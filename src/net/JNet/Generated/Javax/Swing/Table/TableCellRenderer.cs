@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Table
 {
+    #region ITableCellRenderer
+    public partial interface ITableCellRenderer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableCellRenderer.html#getTableCellRendererComponent(javax.swing.JTable,java.lang.Object,boolean,boolean,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JTable"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.Component"/></returns>
+        Java.Awt.Component GetTableCellRendererComponent(Javax.Swing.JTable arg0, object arg1, bool arg2, bool arg3, int arg4, int arg5);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TableCellRenderer
-    public partial class TableCellRenderer
+    public partial class TableCellRenderer : Javax.Swing.Table.ITableCellRenderer
     {
         #region Constructors
 

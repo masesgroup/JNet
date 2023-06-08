@@ -25,8 +25,46 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region IMBeanRegistration
+    public partial interface IMBeanRegistration
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanRegistration.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        /// <param name="arg1"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="Javax.Management.ObjectName"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanRegistration.html#postDeregister()"/>
+        /// </summary>
+        void PostDeregister();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanRegistration.html#postRegister(java.lang.Boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        void PostRegister(bool? arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanRegistration.html#preDeregister()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Lang.Exception"/>
+        void PreDeregister();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MBeanRegistration
-    public partial class MBeanRegistration
+    public partial class MBeanRegistration : Javax.Management.IMBeanRegistration
     {
         #region Constructors
 

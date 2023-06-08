@@ -71,8 +71,27 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
+    #region IRunnableScheduledFuture<V>
+    public partial interface IRunnableScheduledFuture<V>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/> 
+        /// </summary>
+        bool IsPeriodic { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RunnableScheduledFuture<V>
-    public partial class RunnableScheduledFuture<V>
+    public partial class RunnableScheduledFuture<V> : Java.Util.Concurrent.IRunnableScheduledFuture<V>
     {
         #region Constructors
 

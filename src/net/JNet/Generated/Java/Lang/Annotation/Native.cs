@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
+    #region INative
+    public partial interface INative
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Native
-    public partial class Native
+    public partial class Native : Java.Lang.Annotation.INative
     {
         #region Constructors
 

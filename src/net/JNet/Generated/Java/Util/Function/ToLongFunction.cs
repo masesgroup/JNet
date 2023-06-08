@@ -65,8 +65,29 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IToLongFunction<T>
+    public partial interface IToLongFunction<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><see cref="long"/></returns>
+        long ApplyAsLong(T arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ToLongFunction<T>
-    public partial class ToLongFunction<T>
+    public partial class ToLongFunction<T> : Java.Util.Function.IToLongFunction<T>
     {
         #region Constructors
 

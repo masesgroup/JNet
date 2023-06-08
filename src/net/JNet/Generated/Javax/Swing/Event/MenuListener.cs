@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IMenuListener
+    public partial interface IMenuListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuCanceled(javax.swing.event.MenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        void MenuCanceled(Javax.Swing.Event.MenuEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuDeselected(javax.swing.event.MenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        void MenuDeselected(Javax.Swing.Event.MenuEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuSelected(javax.swing.event.MenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        void MenuSelected(Javax.Swing.Event.MenuEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MenuListener
-    public partial class MenuListener
+    public partial class MenuListener : Javax.Swing.Event.IMenuListener
     {
         #region Constructors
 
@@ -45,6 +75,30 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuCanceled(javax.swing.event.MenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        public virtual void MenuCanceled(Javax.Swing.Event.MenuEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuDeselected(javax.swing.event.MenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        public virtual void MenuDeselected(Javax.Swing.Event.MenuEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuSelected(javax.swing.event.MenuEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.MenuEvent"/></param>
+        public virtual void MenuSelected(Javax.Swing.Event.MenuEvent arg0)
+        {
+            
+        }
 
         #endregion
 

@@ -25,8 +25,51 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Stylesheets
 {
+    #region IStyleSheet
+    public partial interface IStyleSheet
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getDisabled()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#setDisabled(boolean)"/>
+        /// </summary>
+        bool Disabled { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getHref()"/> 
+        /// </summary>
+        string Href { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getMedia()"/> 
+        /// </summary>
+        Org.W3c.Dom.Stylesheets.MediaList Media { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getOwnerNode()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node OwnerNode { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getParentStyleSheet()"/> 
+        /// </summary>
+        Org.W3c.Dom.Stylesheets.StyleSheet ParentStyleSheet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getTitle()"/> 
+        /// </summary>
+        string Title { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html#getType()"/> 
+        /// </summary>
+        string Type { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region StyleSheet
-    public partial class StyleSheet
+    public partial class StyleSheet : Org.W3c.Dom.Stylesheets.IStyleSheet
     {
         #region Constructors
 

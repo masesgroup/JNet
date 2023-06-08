@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region ILongUnaryOperator
+    public partial interface ILongUnaryOperator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#applyAsLong(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        long ApplyAsLong(long arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#andThen(java.util.function.LongUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
+        Java.Util.Function.LongUnaryOperator AndThen(Java.Util.Function.LongUnaryOperator arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongUnaryOperator.html#compose(java.util.function.LongUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.LongUnaryOperator"/></returns>
+        Java.Util.Function.LongUnaryOperator Compose(Java.Util.Function.LongUnaryOperator arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LongUnaryOperator
-    public partial class LongUnaryOperator
+    public partial class LongUnaryOperator : Java.Util.Function.ILongUnaryOperator
     {
         #region Constructors
 

@@ -92,8 +92,39 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
+    #region ITypeVariable<D>
+    public partial interface ITypeVariable<D>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getAnnotatedBounds()"/> 
+        /// </summary>
+        Java.Lang.Reflect.AnnotatedType[] AnnotatedBounds { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getBounds()"/> 
+        /// </summary>
+        Java.Lang.Reflect.Type[] Bounds { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/> 
+        /// </summary>
+        D GenericDeclaration { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TypeVariable<D>
-    public partial class TypeVariable<D>
+    public partial class TypeVariable<D> : Java.Lang.Reflect.ITypeVariable<D>
     {
         #region Constructors
 

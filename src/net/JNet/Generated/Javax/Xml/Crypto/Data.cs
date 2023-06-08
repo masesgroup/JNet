@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
+    #region IData
+    public partial interface IData
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Data
-    public partial class Data
+    public partial class Data : Javax.Xml.Crypto.IData
     {
         #region Constructors
 

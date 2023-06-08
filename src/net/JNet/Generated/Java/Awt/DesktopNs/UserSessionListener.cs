@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IUserSessionListener
+    public partial interface IUserSessionListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionActivated(java.awt.desktop.UserSessionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent"/></param>
+        void UserSessionActivated(Java.Awt.DesktopNs.UserSessionEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionDeactivated(java.awt.desktop.UserSessionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent"/></param>
+        void UserSessionDeactivated(Java.Awt.DesktopNs.UserSessionEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region UserSessionListener
-    public partial class UserSessionListener
+    public partial class UserSessionListener : Java.Awt.DesktopNs.IUserSessionListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionActivated(java.awt.desktop.UserSessionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent"/></param>
+        public virtual void UserSessionActivated(Java.Awt.DesktopNs.UserSessionEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionDeactivated(java.awt.desktop.UserSessionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent"/></param>
+        public virtual void UserSessionDeactivated(Java.Awt.DesktopNs.UserSessionEvent arg0)
+        {
+            
+        }
 
         #endregion
 

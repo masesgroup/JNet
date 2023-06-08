@@ -25,8 +25,82 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
+    #region IMouseEvent
+    public partial interface IMouseEvent
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getAltKey()"/> 
+        /// </summary>
+        bool AltKey { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getButton()"/> 
+        /// </summary>
+        short Button { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getClientX()"/> 
+        /// </summary>
+        int ClientX { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getClientY()"/> 
+        /// </summary>
+        int ClientY { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getCtrlKey()"/> 
+        /// </summary>
+        bool CtrlKey { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getMetaKey()"/> 
+        /// </summary>
+        bool MetaKey { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getRelatedTarget()"/> 
+        /// </summary>
+        Org.W3c.Dom.Events.EventTarget RelatedTarget { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getScreenX()"/> 
+        /// </summary>
+        int ScreenX { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getScreenY()"/> 
+        /// </summary>
+        int ScreenY { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#getShiftKey()"/> 
+        /// </summary>
+        bool ShiftKey { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MouseEvent.html#initMouseEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int,int,int,int,int,boolean,boolean,boolean,boolean,short,org.w3c.dom.events.EventTarget)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Org.W3c.Dom.Views.AbstractView"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        /// <param name="arg6"><see cref="int"/></param>
+        /// <param name="arg7"><see cref="int"/></param>
+        /// <param name="arg8"><see cref="int"/></param>
+        /// <param name="arg9"><see cref="bool"/></param>
+        /// <param name="arg10"><see cref="bool"/></param>
+        /// <param name="arg11"><see cref="bool"/></param>
+        /// <param name="arg12"><see cref="bool"/></param>
+        /// <param name="arg13"><see cref="short"/></param>
+        /// <param name="arg14"><see cref="Org.W3c.Dom.Events.EventTarget"/></param>
+        void InitMouseEvent(string arg0, bool arg1, bool arg2, Org.W3c.Dom.Views.AbstractView arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, bool arg10, bool arg11, bool arg12, short arg13, Org.W3c.Dom.Events.EventTarget arg14);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MouseEvent
-    public partial class MouseEvent
+    public partial class MouseEvent : Org.W3c.Dom.Events.IMouseEvent
     {
         #region Constructors
 

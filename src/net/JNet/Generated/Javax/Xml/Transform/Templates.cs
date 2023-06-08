@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
+    #region ITemplates
+    public partial interface ITemplates
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#newTransformer()"/> 
+        /// </summary>
+        Javax.Xml.Transform.Transformer NewTransformer { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Templates.html#getOutputProperties()"/> 
+        /// </summary>
+        Java.Util.Properties OutputProperties { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Templates
-    public partial class Templates
+    public partial class Templates : Javax.Xml.Transform.ITemplates
     {
         #region Constructors
 

@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IMouseMotionListener
+    public partial interface IMouseMotionListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html#mouseDragged(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        void MouseDragged(Java.Awt.EventNs.MouseEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html#mouseMoved(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        void MouseMoved(Java.Awt.EventNs.MouseEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MouseMotionListener
-    public partial class MouseMotionListener
+    public partial class MouseMotionListener : Java.Awt.EventNs.IMouseMotionListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html#mouseDragged(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        public virtual void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html#mouseMoved(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
+        public virtual void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
+        {
+            
+        }
 
         #endregion
 

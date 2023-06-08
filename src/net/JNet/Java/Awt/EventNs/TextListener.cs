@@ -24,12 +24,9 @@ namespace Java.Awt.EventNs
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html"/>
     /// </summary>
-    public interface ITextListener : IJVMBridgeBase
+    public partial interface ITextListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
-        /// </summary>
-        void TextValueChanged(TextEvent e);
+
     }
 
     /// <summary>
@@ -67,11 +64,6 @@ namespace Java.Awt.EventNs
         void EventHandlerTextValueChanged(object sender, CLRListenerEventArgs<CLREventData<TextEvent>> data)
         {
             OnTextValueChanged(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="ITextListener.TextValueChanged(TextEvent)"/>
-        public virtual void TextValueChanged(TextEvent e)
-        {
-
         }
     }
 }

@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IDSAPrivateKey
+    public partial interface IDSAPrivateKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html#getX()"/> 
+        /// </summary>
+        Java.Math.BigInteger X { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DSAPrivateKey
-    public partial class DSAPrivateKey
+    public partial class DSAPrivateKey : Java.Security.Interfaces.IDSAPrivateKey
     {
         #region Constructors
 

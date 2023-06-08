@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IHyperlinkListener
+    public partial interface IHyperlinkListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkEvent"/></param>
+        void HyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HyperlinkListener
-    public partial class HyperlinkListener
+    public partial class HyperlinkListener : Javax.Swing.Event.IHyperlinkListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.HyperlinkEvent"/></param>
+        public virtual void HyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent arg0)
+        {
+            
+        }
 
         #endregion
 

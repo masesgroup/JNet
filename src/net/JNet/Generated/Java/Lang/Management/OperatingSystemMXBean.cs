@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
+    #region IOperatingSystemMXBean
+    public partial interface IOperatingSystemMXBean
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html#getArch()"/> 
+        /// </summary>
+        string Arch { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html#getAvailableProcessors()"/> 
+        /// </summary>
+        int AvailableProcessors { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage()"/> 
+        /// </summary>
+        double SystemLoadAverage { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/OperatingSystemMXBean.html#getVersion()"/> 
+        /// </summary>
+        string Version { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region OperatingSystemMXBean
-    public partial class OperatingSystemMXBean
+    public partial class OperatingSystemMXBean : Java.Lang.Management.IOperatingSystemMXBean
     {
         #region Constructors
 

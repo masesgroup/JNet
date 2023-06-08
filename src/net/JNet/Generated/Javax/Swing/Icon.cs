@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region IIcon
+    public partial interface IIcon
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Icon.html#getIconHeight()"/> 
+        /// </summary>
+        int IconHeight { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Icon.html#getIconWidth()"/> 
+        /// </summary>
+        int IconWidth { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Icon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Icon
-    public partial class Icon
+    public partial class Icon : Javax.Swing.IIcon
     {
         #region Constructors
 

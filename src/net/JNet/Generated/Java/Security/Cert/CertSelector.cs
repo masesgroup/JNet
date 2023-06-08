@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
+    #region ICertSelector
+    public partial interface ICertSelector
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertSelector.html#match(java.security.cert.Certificate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Match(Java.Security.Cert.Certificate arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CertSelector
-    public partial class CertSelector
+    public partial class CertSelector : Java.Security.Cert.ICertSelector
     {
         #region Constructors
 

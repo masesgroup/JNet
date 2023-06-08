@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IDOMImplementationSource
+    public partial interface IDOMImplementationSource
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementation(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.DOMImplementation"/></returns>
+        Org.W3c.Dom.DOMImplementation GetDOMImplementation(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationSource.html#getDOMImplementationList(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.DOMImplementationList"/></returns>
+        Org.W3c.Dom.DOMImplementationList GetDOMImplementationList(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DOMImplementationSource
-    public partial class DOMImplementationSource
+    public partial class DOMImplementationSource : Org.W3c.Dom.IDOMImplementationSource
     {
         #region Constructors
 

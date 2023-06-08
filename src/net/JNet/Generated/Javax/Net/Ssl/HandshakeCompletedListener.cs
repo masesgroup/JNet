@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
+    #region IHandshakeCompletedListener
+    public partial interface IHandshakeCompletedListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
+        void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HandshakeCompletedListener
-    public partial class HandshakeCompletedListener
+    public partial class HandshakeCompletedListener : Javax.Net.Ssl.IHandshakeCompletedListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedEvent"/></param>
+        public virtual void HandshakeCompleted(Javax.Net.Ssl.HandshakeCompletedEvent arg0)
+        {
+            
+        }
 
         #endregion
 

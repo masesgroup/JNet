@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
+    #region IDomainCombiner
+    public partial interface IDomainCombiner
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
+        /// <param name="arg1"><see cref="Java.Security.ProtectionDomain"/></param>
+        /// <returns><see cref="Java.Security.ProtectionDomain"/></returns>
+        Java.Security.ProtectionDomain[] Combine(Java.Security.ProtectionDomain[] arg0, Java.Security.ProtectionDomain[] arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DomainCombiner
-    public partial class DomainCombiner
+    public partial class DomainCombiner : Java.Security.IDomainCombiner
     {
         #region Constructors
 

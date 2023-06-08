@@ -74,8 +74,23 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IBinaryOperator<T>
+    public partial interface IBinaryOperator<T>
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BinaryOperator<T>
-    public partial class BinaryOperator<T>
+    public partial class BinaryOperator<T> : Java.Util.Function.IBinaryOperator<T>
     {
         #region Constructors
 

@@ -79,8 +79,37 @@ namespace Javax.Naming
     }
     #endregion
 
+    #region INamingEnumeration<T>
+    public partial interface INamingEnumeration<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/> 
+        /// </summary>
+        bool HasMore { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/> 
+        /// </summary>
+        T Next { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Naming.NamingException"/>
+        void Close();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NamingEnumeration<T>
-    public partial class NamingEnumeration<T>
+    public partial class NamingEnumeration<T> : Javax.Naming.INamingEnumeration<T>
     {
         #region Constructors
 

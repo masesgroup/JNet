@@ -25,8 +25,66 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
+    #region IWritableRenderedImage
+    public partial interface IWritableRenderedImage
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#hasTileWriters()"/> 
+        /// </summary>
+        bool HasTileWriters { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#getWritableTileIndices()"/> 
+        /// </summary>
+        Java.Awt.Point[] WritableTileIndices { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#isTileWritable(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsTileWritable(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#getWritableTile(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
+        Java.Awt.ImageNs.WritableRaster GetWritableTile(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#addTileObserver(java.awt.image.TileObserver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
+        void AddTileObserver(Java.Awt.ImageNs.TileObserver arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#releaseWritableTile(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        void ReleaseWritableTile(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#removeTileObserver(java.awt.image.TileObserver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.TileObserver"/></param>
+        void RemoveTileObserver(Java.Awt.ImageNs.TileObserver arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#setData(java.awt.image.Raster)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Raster"/></param>
+        void SetData(Java.Awt.ImageNs.Raster arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region WritableRenderedImage
-    public partial class WritableRenderedImage
+    public partial class WritableRenderedImage : Java.Awt.ImageNs.IWritableRenderedImage
     {
         #region Constructors
 

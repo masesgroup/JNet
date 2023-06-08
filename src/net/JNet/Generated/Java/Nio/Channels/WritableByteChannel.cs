@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.Channels
 {
+    #region IWritableByteChannel
+    public partial interface IWritableByteChannel
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/WritableByteChannel.html#write(java.nio.ByteBuffer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        int Write(Java.Nio.ByteBuffer arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region WritableByteChannel
-    public partial class WritableByteChannel
+    public partial class WritableByteChannel : Java.Nio.Channels.IWritableByteChannel
     {
         #region Constructors
 

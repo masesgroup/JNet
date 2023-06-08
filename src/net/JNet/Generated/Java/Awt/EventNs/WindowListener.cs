@@ -25,8 +25,58 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IWindowListener
+    public partial interface IWindowListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowActivated(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        void WindowActivated(Java.Awt.EventNs.WindowEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowClosed(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        void WindowClosed(Java.Awt.EventNs.WindowEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowClosing(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        void WindowClosing(Java.Awt.EventNs.WindowEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowDeactivated(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowDeiconified(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowIconified(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        void WindowIconified(Java.Awt.EventNs.WindowEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowOpened(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        void WindowOpened(Java.Awt.EventNs.WindowEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region WindowListener
-    public partial class WindowListener
+    public partial class WindowListener : Java.Awt.EventNs.IWindowListener
     {
         #region Constructors
 
@@ -45,6 +95,62 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowActivated(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowActivated(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowClosed(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowClosed(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowClosing(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowClosing(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowDeactivated(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowDeactivated(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowDeiconified(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowDeiconified(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowIconified(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowIconified(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowOpened(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.WindowEvent"/></param>
+        public virtual void WindowOpened(Java.Awt.EventNs.WindowEvent arg0)
+        {
+            
+        }
 
         #endregion
 

@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IBooleanSupplier
+    public partial interface IBooleanSupplier
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/> 
+        /// </summary>
+        bool AsBoolean { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BooleanSupplier
-    public partial class BooleanSupplier
+    public partial class BooleanSupplier : Java.Util.Function.IBooleanSupplier
     {
         #region Constructors
 

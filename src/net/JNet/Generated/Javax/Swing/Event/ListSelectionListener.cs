@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IListSelectionListener
+    public partial interface IListSelectionListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionListener.html#valueChanged(javax.swing.event.ListSelectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+        void ValueChanged(Javax.Swing.Event.ListSelectionEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ListSelectionListener
-    public partial class ListSelectionListener
+    public partial class ListSelectionListener : Javax.Swing.Event.IListSelectionListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionListener.html#valueChanged(javax.swing.event.ListSelectionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListSelectionEvent"/></param>
+        public virtual void ValueChanged(Javax.Swing.Event.ListSelectionEvent arg0)
+        {
+            
+        }
 
         #endregion
 

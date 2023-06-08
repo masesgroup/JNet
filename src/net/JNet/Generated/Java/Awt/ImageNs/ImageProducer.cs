@@ -25,8 +25,49 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
+    #region IImageProducer
+    public partial interface IImageProducer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#isConsumer(java.awt.image.ImageConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsConsumer(Java.Awt.ImageNs.ImageConsumer arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#addConsumer(java.awt.image.ImageConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        void AddConsumer(Java.Awt.ImageNs.ImageConsumer arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#removeConsumer(java.awt.image.ImageConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        void RemoveConsumer(Java.Awt.ImageNs.ImageConsumer arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#requestTopDownLeftRightResend(java.awt.image.ImageConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        void RequestTopDownLeftRightResend(Java.Awt.ImageNs.ImageConsumer arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageProducer.html#startProduction(java.awt.image.ImageConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.ImageConsumer"/></param>
+        void StartProduction(Java.Awt.ImageNs.ImageConsumer arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ImageProducer
-    public partial class ImageProducer
+    public partial class ImageProducer : Java.Awt.ImageNs.IImageProducer
     {
         #region Constructors
 

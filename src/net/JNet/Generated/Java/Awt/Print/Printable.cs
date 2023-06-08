@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Print
 {
+    #region IPrintable
+    public partial interface IPrintable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#print(java.awt.Graphics,java.awt.print.PageFormat,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Awt.Print.PrinterException"/>
+        int Print(Java.Awt.Graphics arg0, Java.Awt.Print.PageFormat arg1, int arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Printable
-    public partial class Printable
+    public partial class Printable : Java.Awt.Print.IPrintable
     {
         #region Constructors
 

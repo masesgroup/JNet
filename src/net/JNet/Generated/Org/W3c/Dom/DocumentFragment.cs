@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IDocumentFragment
+    public partial interface IDocumentFragment
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DocumentFragment
-    public partial class DocumentFragment
+    public partial class DocumentFragment : Org.W3c.Dom.IDocumentFragment
     {
         #region Constructors
 

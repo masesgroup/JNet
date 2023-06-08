@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
+    #region ITrustManager
+    public partial interface ITrustManager
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TrustManager
-    public partial class TrustManager
+    public partial class TrustManager : Javax.Net.Ssl.ITrustManager
     {
         #region Constructors
 

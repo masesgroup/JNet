@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IAWTEventListener
+    public partial interface IAWTEventListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        void EventDispatched(Java.Awt.AWTEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AWTEventListener
-    public partial class AWTEventListener
+    public partial class AWTEventListener : Java.Awt.EventNs.IAWTEventListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.AWTEvent"/></param>
+        public virtual void EventDispatched(Java.Awt.AWTEvent arg0)
+        {
+            
+        }
 
         #endregion
 

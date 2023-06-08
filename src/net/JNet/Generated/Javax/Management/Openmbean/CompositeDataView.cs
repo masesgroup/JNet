@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
+    #region ICompositeDataView
+    public partial interface ICompositeDataView
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataView.html#toCompositeData(javax.management.openmbean.CompositeType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeType"/></param>
+        /// <returns><see cref="Javax.Management.Openmbean.CompositeData"/></returns>
+        Javax.Management.Openmbean.CompositeData ToCompositeData(Javax.Management.Openmbean.CompositeType arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CompositeDataView
-    public partial class CompositeDataView
+    public partial class CompositeDataView : Javax.Management.Openmbean.ICompositeDataView
     {
         #region Constructors
 

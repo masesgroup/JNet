@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
+    #region IObjectInputValidation
+    public partial interface IObjectInputValidation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputValidation.html#validateObject()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Io.InvalidObjectException"/>
+        void ValidateObject();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjectInputValidation
-    public partial class ObjectInputValidation
+    public partial class ObjectInputValidation : Java.Io.IObjectInputValidation
     {
         #region Constructors
 

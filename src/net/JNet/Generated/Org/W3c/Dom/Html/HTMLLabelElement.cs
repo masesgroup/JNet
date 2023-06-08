@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLLabelElement
+    public partial interface IHTMLLabelElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getAccessKey()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#setAccessKey(java.lang.String)"/>
+        /// </summary>
+        string AccessKey { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getForm()"/> 
+        /// </summary>
+        Org.W3c.Dom.Html.HTMLFormElement Form { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#getHtmlFor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLLabelElement.html#setHtmlFor(java.lang.String)"/>
+        /// </summary>
+        string HtmlFor { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLLabelElement
-    public partial class HTMLLabelElement
+    public partial class HTMLLabelElement : Org.W3c.Dom.Html.IHTMLLabelElement
     {
         #region Constructors
 

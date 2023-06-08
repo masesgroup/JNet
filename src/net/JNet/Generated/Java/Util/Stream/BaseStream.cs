@@ -114,8 +114,57 @@ namespace Java.Util.Stream
     }
     #endregion
 
+    #region IBaseStream<T, S>
+    public partial interface IBaseStream<T, S>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/> 
+        /// </summary>
+        bool IsParallel { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/> 
+        /// </summary>
+        Java.Util.Iterator<T> Iterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/> 
+        /// </summary>
+        S Parallel { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/> 
+        /// </summary>
+        S Sequential { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/> 
+        /// </summary>
+        Java.Util.Spliterator<T> Spliterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/> 
+        /// </summary>
+        S Unordered { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><typeparamref name="S"/></returns>
+        S OnClose(Java.Lang.Runnable arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#close()"/>
+        /// </summary>
+        void Close();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BaseStream<T, S>
-    public partial class BaseStream<T, S>
+    public partial class BaseStream<T, S> : Java.Util.Stream.IBaseStream<T, S>
     {
         #region Constructors
 

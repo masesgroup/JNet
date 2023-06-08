@@ -25,8 +25,54 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
+    #region IXAConnectionBuilder
+    public partial interface IXAConnectionBuilder
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#build()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Sql.XAConnection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Javax.Sql.XAConnection Build();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#password(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
+        Javax.Sql.XAConnectionBuilder Password(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#shardingKey(java.sql.ShardingKey)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
+        /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
+        Javax.Sql.XAConnectionBuilder ShardingKey(Java.Sql.ShardingKey arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#superShardingKey(java.sql.ShardingKey)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.ShardingKey"/></param>
+        /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
+        Javax.Sql.XAConnectionBuilder SuperShardingKey(Java.Sql.ShardingKey arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnectionBuilder.html#user(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Sql.XAConnectionBuilder"/></returns>
+        Javax.Sql.XAConnectionBuilder User(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XAConnectionBuilder
-    public partial class XAConnectionBuilder
+    public partial class XAConnectionBuilder : Javax.Sql.IXAConnectionBuilder
     {
         #region Constructors
 

@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
+    #region IVisibility
+    public partial interface IVisibility
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#avoidingGui()"/> 
+        /// </summary>
+        bool AvoidingGui { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#needsGui()"/> 
+        /// </summary>
+        bool NeedsGui { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#dontUseGui()"/>
+        /// </summary>
+        void DontUseGui();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#okToUseGui()"/>
+        /// </summary>
+        void OkToUseGui();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Visibility
-    public partial class Visibility
+    public partial class Visibility : Java.Beans.IVisibility
     {
         #region Constructors
 

@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region IErrorType
+    public partial interface IErrorType
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ErrorType
-    public partial class ErrorType
+    public partial class ErrorType : Javax.Lang.Model.Type.IErrorType
     {
         #region Constructors
 

@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.EventNs
 {
+    #region IAdjustmentListener
+    public partial interface IAdjustmentListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentEvent"/></param>
+        void AdjustmentValueChanged(Java.Awt.EventNs.AdjustmentEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AdjustmentListener
-    public partial class AdjustmentListener
+    public partial class AdjustmentListener : Java.Awt.EventNs.IAdjustmentListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.AdjustmentEvent"/></param>
+        public virtual void AdjustmentValueChanged(Java.Awt.EventNs.AdjustmentEvent arg0)
+        {
+            
+        }
 
         #endregion
 

@@ -25,8 +25,69 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
+    #region IMidiDevice
+    public partial interface IMidiDevice
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getDeviceInfo()"/> 
+        /// </summary>
+        Javax.Sound.Midi.MidiDevice.Info DeviceInfo { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/> 
+        /// </summary>
+        bool IsOpen { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getMaxReceivers()"/> 
+        /// </summary>
+        int MaxReceivers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getMaxTransmitters()"/> 
+        /// </summary>
+        int MaxTransmitters { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getMicrosecondPosition()"/> 
+        /// </summary>
+        long MicrosecondPosition { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getReceiver()"/> 
+        /// </summary>
+        Javax.Sound.Midi.Receiver Receiver { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getReceivers()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Sound.Midi.Receiver> Receivers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitter()"/> 
+        /// </summary>
+        Javax.Sound.Midi.Transmitter Transmitter { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitters()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Sound.Midi.Transmitter> Transmitters { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#close()"/>
+        /// </summary>
+        void Close();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#open()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Sound.Midi.MidiUnavailableException"/>
+        void Open();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MidiDevice
-    public partial class MidiDevice
+    public partial class MidiDevice : Javax.Sound.Midi.IMidiDevice
     {
         #region Constructors
 

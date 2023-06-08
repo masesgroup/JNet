@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region IFunctionalInterface
+    public partial interface IFunctionalInterface
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region FunctionalInterface
-    public partial class FunctionalInterface
+    public partial class FunctionalInterface : Java.Lang.IFunctionalInterface
     {
         #region Constructors
 

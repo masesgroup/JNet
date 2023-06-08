@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
+    #region IStreamFilter
+    public partial interface IStreamFilter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/StreamFilter.html#accept(javax.xml.stream.XMLStreamReader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Accept(Javax.Xml.Stream.XMLStreamReader arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region StreamFilter
-    public partial class StreamFilter
+    public partial class StreamFilter : Javax.Xml.Stream.IStreamFilter
     {
         #region Constructors
 

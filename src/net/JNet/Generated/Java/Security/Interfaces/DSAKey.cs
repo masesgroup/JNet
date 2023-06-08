@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IDSAKey
+    public partial interface IDSAKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKey.html#getParams()"/> 
+        /// </summary>
+        Java.Security.Interfaces.DSAParams Params { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DSAKey
-    public partial class DSAKey
+    public partial class DSAKey : Java.Security.Interfaces.IDSAKey
     {
         #region Constructors
 

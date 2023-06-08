@@ -24,12 +24,9 @@ namespace Javax.Swing.Event
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html"/>
     /// </summary>
-    public interface ICaretListener : IJVMBridgeBase
+    public partial interface ICaretListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
-        /// </summary>
-        void CaretUpdate(CaretEvent e);
+
     }
 
     /// <summary>
@@ -67,11 +64,6 @@ namespace Javax.Swing.Event
         void EventHandlerCaretUpdate(object sender, CLRListenerEventArgs<CLREventData<CaretEvent>> data)
         {
             OnCaretUpdate(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="ICaretListener.CaretUpdate(CaretEvent)"/>
-        public virtual void CaretUpdate(CaretEvent e)
-        {
-
         }
     }
 }

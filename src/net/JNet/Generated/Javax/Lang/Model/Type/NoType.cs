@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region INoType
+    public partial interface INoType
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NoType
-    public partial class NoType
+    public partial class NoType : Javax.Lang.Model.Type.INoType
     {
         #region Constructors
 

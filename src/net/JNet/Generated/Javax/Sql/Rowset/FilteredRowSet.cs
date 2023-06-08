@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
+    #region IFilteredRowSet
+    public partial interface IFilteredRowSet
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/FilteredRowSet.html#getFilter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/FilteredRowSet.html#setFilter(javax.sql.rowset.Predicate)"/>
+        /// </summary>
+        Javax.Sql.Rowset.Predicate Filter { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region FilteredRowSet
-    public partial class FilteredRowSet
+    public partial class FilteredRowSet : Javax.Sql.Rowset.IFilteredRowSet
     {
         #region Constructors
 

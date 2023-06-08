@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region ISignatureProperties
+    public partial interface ISignatureProperties
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperties.html#getId()"/> 
+        /// </summary>
+        string Id { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureProperties.html#getProperties()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Crypto.Dsig.SignatureProperty> Properties { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SignatureProperties
-    public partial class SignatureProperties
+    public partial class SignatureProperties : Javax.Xml.Crypto.Dsig.ISignatureProperties
     {
         #region Constructors
 

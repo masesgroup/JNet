@@ -24,13 +24,9 @@ namespace Java.Beans
     /// <summary>
     /// Interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html"/>
     /// </summary>
-    public interface IPropertyChangeListener : IJVMBridgeBase
+    public partial interface IPropertyChangeListener : IJVMBridgeBase
     {
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)
-        /// </summary>
-        /// <param name="evt"><see cref="PropertyChangeEvent"/></param>
-        void PropertyChange(PropertyChangeEvent evt);
+
     }
 
     /// <summary>
@@ -68,11 +64,6 @@ namespace Java.Beans
         void EventHandlerPropertyChange(object sender, CLRListenerEventArgs<CLREventData<PropertyChangeEvent>> data)
         {
             OnPropertyChange(data.EventData.TypedEventData);
-        }
-        /// <inheritdoc cref="IPropertyChangeListener.PropertyChange(PropertyChangeEvent)"/>
-        public virtual void PropertyChange(PropertyChangeEvent evt)
-        {
-
         }
     }
 }

@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File.Attribute
 {
+    #region IFileStoreAttributeView
+    public partial interface IFileStoreAttributeView
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region FileStoreAttributeView
-    public partial class FileStoreAttributeView
+    public partial class FileStoreAttributeView : Java.Nio.File.Attribute.IFileStoreAttributeView
     {
         #region Constructors
 

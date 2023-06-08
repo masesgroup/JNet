@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
+    #region IBeanContextServiceRevokedListener
+    public partial interface IBeanContextServiceRevokedListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BeanContextServiceRevokedListener
-    public partial class BeanContextServiceRevokedListener
+    public partial class BeanContextServiceRevokedListener : Java.Beans.Beancontext.IBeanContextServiceRevokedListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        public virtual void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
+        {
+            
+        }
 
         #endregion
 

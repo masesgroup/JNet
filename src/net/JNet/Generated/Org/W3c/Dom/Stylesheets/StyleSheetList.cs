@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Stylesheets
 {
+    #region IStyleSheetList
+    public partial interface IStyleSheetList
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheetList.html#getLength()"/> 
+        /// </summary>
+        int Length { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheetList.html#item(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Stylesheets.StyleSheet"/></returns>
+        Org.W3c.Dom.Stylesheets.StyleSheet Item(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region StyleSheetList
-    public partial class StyleSheetList
+    public partial class StyleSheetList : Org.W3c.Dom.Stylesheets.IStyleSheetList
     {
         #region Constructors
 

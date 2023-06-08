@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
+    #region ILSOutput
+    public partial interface ILSOutput
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getByteStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setByteStream(java.io.OutputStream)"/>
+        /// </summary>
+        Java.Io.OutputStream ByteStream { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getCharacterStream()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setCharacterStream(java.io.Writer)"/>
+        /// </summary>
+        Java.Io.Writer CharacterStream { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getEncoding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setEncoding(java.lang.String)"/>
+        /// </summary>
+        string Encoding { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSOutput.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        string SystemId { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LSOutput
-    public partial class LSOutput
+    public partial class LSOutput : Org.W3c.Dom.Ls.ILSOutput
     {
         #region Constructors
 

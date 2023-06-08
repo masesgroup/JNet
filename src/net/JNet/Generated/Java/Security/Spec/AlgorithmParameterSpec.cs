@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
+    #region IAlgorithmParameterSpec
+    public partial interface IAlgorithmParameterSpec
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AlgorithmParameterSpec
-    public partial class AlgorithmParameterSpec
+    public partial class AlgorithmParameterSpec : Java.Security.Spec.IAlgorithmParameterSpec
     {
         #region Constructors
 

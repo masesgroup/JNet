@@ -25,8 +25,40 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd.Peer
 {
+    #region IDragSourceContextPeer
+    public partial interface IDragSourceContextPeer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#getCursor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#setCursor(java.awt.Cursor)"/>
+        /// </summary>
+        Java.Awt.Cursor Cursor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#startDrag(java.awt.dnd.DragSourceContext,java.awt.Cursor,java.awt.Image,java.awt.Point)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DragSourceContext"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Cursor"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.Image"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.Point"/></param>
+        /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
+        void StartDrag(Java.Awt.Dnd.DragSourceContext arg0, Java.Awt.Cursor arg1, Java.Awt.Image arg2, Java.Awt.Point arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html#transferablesFlavorsChanged()"/>
+        /// </summary>
+        void TransferablesFlavorsChanged();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DragSourceContextPeer
-    public partial class DragSourceContextPeer
+    public partial class DragSourceContextPeer : Java.Awt.Dnd.Peer.IDragSourceContextPeer
     {
         #region Constructors
 

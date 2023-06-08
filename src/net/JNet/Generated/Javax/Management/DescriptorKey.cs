@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region IDescriptorKey
+    public partial interface IDescriptorKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorKey.html#value()"/> 
+        /// </summary>
+        string Value { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DescriptorKey
-    public partial class DescriptorKey
+    public partial class DescriptorKey : Javax.Management.IDescriptorKey
     {
         #region Constructors
 

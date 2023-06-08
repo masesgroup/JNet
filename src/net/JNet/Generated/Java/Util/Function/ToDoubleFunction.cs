@@ -65,8 +65,29 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IToDoubleFunction<T>
+    public partial interface IToDoubleFunction<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleFunction.html#applyAsDouble(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><see cref="double"/></returns>
+        double ApplyAsDouble(T arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ToDoubleFunction<T>
-    public partial class ToDoubleFunction<T>
+    public partial class ToDoubleFunction<T> : Java.Util.Function.IToDoubleFunction<T>
     {
         #region Constructors
 

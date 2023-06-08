@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Spec
 {
+    #region IKeySpec
+    public partial interface IKeySpec
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region KeySpec
-    public partial class KeySpec
+    public partial class KeySpec : Java.Security.Spec.IKeySpec
     {
         #region Constructors
 

@@ -25,8 +25,23 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region IReferenceType
+    public partial interface IReferenceType
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ReferenceType
-    public partial class ReferenceType
+    public partial class ReferenceType : Javax.Lang.Model.Type.IReferenceType
     {
         #region Constructors
 

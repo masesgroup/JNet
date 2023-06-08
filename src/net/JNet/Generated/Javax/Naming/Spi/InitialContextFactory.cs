@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
+    #region IInitialContextFactory
+    public partial interface IInitialContextFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/InitialContextFactory.html#getInitialContext(java.util.Hashtable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
+        /// <typeparam name="Arg0Extendsobject"></typeparam>
+        /// <returns><see cref="Javax.Naming.Context"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        Javax.Naming.Context GetInitialContext<Arg0Extendsobject>(Java.Util.Hashtable<Arg0Extendsobject, Arg0Extendsobject> arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region InitialContextFactory
-    public partial class InitialContextFactory
+    public partial class InitialContextFactory : Javax.Naming.Spi.IInitialContextFactory
     {
         #region Constructors
 

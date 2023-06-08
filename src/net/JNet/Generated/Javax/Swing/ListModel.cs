@@ -88,8 +88,43 @@ namespace Javax.Swing
     }
     #endregion
 
+    #region IListModel<E>
+    public partial interface IListModel<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#getSize()"/> 
+        /// </summary>
+        int Size { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#getElementAt(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><typeparamref name="E"/></returns>
+        E GetElementAt(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#addListDataListener(javax.swing.event.ListDataListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        void AddListDataListener(Javax.Swing.Event.ListDataListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html#removeListDataListener(javax.swing.event.ListDataListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataListener"/></param>
+        void RemoveListDataListener(Javax.Swing.Event.ListDataListener arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ListModel<E>
-    public partial class ListModel<E>
+    public partial class ListModel<E> : Javax.Swing.IListModel<E>
     {
         #region Constructors
 

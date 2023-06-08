@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
+    #region IUnsolicitedNotification
+    public partial interface IUnsolicitedNotification
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotification.html#getException()"/> 
+        /// </summary>
+        Javax.Naming.NamingException Exception { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotification.html#getReferrals()"/> 
+        /// </summary>
+        string[] Referrals { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region UnsolicitedNotification
-    public partial class UnsolicitedNotification
+    public partial class UnsolicitedNotification : Javax.Naming.Ldap.IUnsolicitedNotification
     {
         #region Constructors
 

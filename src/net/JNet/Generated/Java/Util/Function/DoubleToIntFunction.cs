@@ -25,8 +25,29 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IDoubleToIntFunction
+    public partial interface IDoubleToIntFunction
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToIntFunction.html#applyAsInt(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see cref="int"/></returns>
+        int ApplyAsInt(double arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DoubleToIntFunction
-    public partial class DoubleToIntFunction
+    public partial class DoubleToIntFunction : Java.Util.Function.IDoubleToIntFunction
     {
         #region Constructors
 

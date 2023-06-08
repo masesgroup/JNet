@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region ITreeWillExpandListener
+    public partial interface ITreeWillExpandListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        void TreeWillCollapse(Javax.Swing.Event.TreeExpansionEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        void TreeWillExpand(Javax.Swing.Event.TreeExpansionEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TreeWillExpandListener
-    public partial class TreeWillExpandListener
+    public partial class TreeWillExpandListener : Javax.Swing.Event.ITreeWillExpandListener
     {
         #region Constructors
 
@@ -45,6 +72,24 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        public virtual void TreeWillCollapse(Javax.Swing.Event.TreeExpansionEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
+        /// <exception cref="Javax.Swing.Tree.ExpandVetoException"/>
+        public virtual void TreeWillExpand(Javax.Swing.Event.TreeExpansionEvent arg0)
+        {
+            
+        }
 
         #endregion
 

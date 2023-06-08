@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto
 {
+    #region IURIDereferencer
+    public partial interface IURIDereferencer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIDereferencer.html#dereference(javax.xml.crypto.URIReference,javax.xml.crypto.XMLCryptoContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.URIReference"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.URIReferenceException"/>
+        Javax.Xml.Crypto.Data Dereference(Javax.Xml.Crypto.URIReference arg0, Javax.Xml.Crypto.XMLCryptoContext arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region URIDereferencer
-    public partial class URIDereferencer
+    public partial class URIDereferencer : Javax.Xml.Crypto.IURIDereferencer
     {
         #region Constructors
 

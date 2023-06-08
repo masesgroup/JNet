@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region ISystemSleepListener
+    public partial interface ISystemSleepListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAboutToSleep(java.awt.desktop.SystemSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        void SystemAboutToSleep(Java.Awt.DesktopNs.SystemSleepEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAwoke(java.awt.desktop.SystemSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        void SystemAwoke(Java.Awt.DesktopNs.SystemSleepEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SystemSleepListener
-    public partial class SystemSleepListener
+    public partial class SystemSleepListener : Java.Awt.DesktopNs.ISystemSleepListener
     {
         #region Constructors
 
@@ -45,6 +70,22 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAboutToSleep(java.awt.desktop.SystemSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        public virtual void SystemAboutToSleep(Java.Awt.DesktopNs.SystemSleepEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAwoke(java.awt.desktop.SystemSleepEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.SystemSleepEvent"/></param>
+        public virtual void SystemAwoke(Java.Awt.DesktopNs.SystemSleepEvent arg0)
+        {
+            
+        }
 
         #endregion
 

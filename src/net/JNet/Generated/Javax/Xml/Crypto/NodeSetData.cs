@@ -67,8 +67,27 @@ namespace Javax.Xml.Crypto
     }
     #endregion
 
+    #region INodeSetData<T>
+    public partial interface INodeSetData<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/> 
+        /// </summary>
+        Java.Util.Iterator<T> Iterator { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NodeSetData<T>
-    public partial class NodeSetData<T>
+    public partial class NodeSetData<T> : Javax.Xml.Crypto.INodeSetData<T>
     {
         #region Constructors
 

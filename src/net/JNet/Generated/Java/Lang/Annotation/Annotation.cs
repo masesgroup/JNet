@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
+    #region IAnnotation
+    public partial interface IAnnotation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html#annotationType()"/> 
+        /// </summary>
+        Java.Lang.Class AnnotationType { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Annotation
-    public partial class Annotation
+    public partial class Annotation : Java.Lang.Annotation.IAnnotation
     {
         #region Constructors
 

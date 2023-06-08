@@ -25,8 +25,62 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Xpath
 {
+    #region IXPathResult
+    public partial interface IXPathResult
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getBooleanValue()"/> 
+        /// </summary>
+        bool BooleanValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getInvalidIteratorState()"/> 
+        /// </summary>
+        bool InvalidIteratorState { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node IterateNext { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getNumberValue()"/> 
+        /// </summary>
+        double NumberValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getResultType()"/> 
+        /// </summary>
+        short ResultType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getSingleNodeValue()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node SingleNodeValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getSnapshotLength()"/> 
+        /// </summary>
+        int SnapshotLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getStringValue()"/> 
+        /// </summary>
+        string StringValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#snapshotItem(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        Org.W3c.Dom.Node SnapshotItem(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XPathResult
-    public partial class XPathResult
+    public partial class XPathResult : Org.W3c.Dom.Xpath.IXPathResult
     {
         #region Constructors
 

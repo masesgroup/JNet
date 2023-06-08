@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
+    #region IExecutor
+    public partial interface IExecutor
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executor.html#execute(java.lang.Runnable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        void Execute(Java.Lang.Runnable arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Executor
-    public partial class Executor
+    public partial class Executor : Java.Util.Concurrent.IExecutor
     {
         #region Constructors
 

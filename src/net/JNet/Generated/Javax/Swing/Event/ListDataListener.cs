@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IListDataListener
+    public partial interface IListDataListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+        void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+        void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+        void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ListDataListener
-    public partial class ListDataListener
+    public partial class ListDataListener : Javax.Swing.Event.IListDataListener
     {
         #region Constructors
 
@@ -45,6 +75,30 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+        public virtual void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+        public virtual void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ListDataEvent"/></param>
+        public virtual void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
+        {
+            
+        }
 
         #endregion
 

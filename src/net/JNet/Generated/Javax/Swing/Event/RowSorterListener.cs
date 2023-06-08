@@ -25,8 +25,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IRowSorterListener
+    public partial interface IRowSorterListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterListener.html#sorterChanged(javax.swing.event.RowSorterEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterEvent"/></param>
+        void SorterChanged(Javax.Swing.Event.RowSorterEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RowSorterListener
-    public partial class RowSorterListener
+    public partial class RowSorterListener : Javax.Swing.Event.IRowSorterListener
     {
         #region Constructors
 
@@ -45,6 +65,14 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterListener.html#sorterChanged(javax.swing.event.RowSorterEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.RowSorterEvent"/></param>
+        public virtual void SorterChanged(Javax.Swing.Event.RowSorterEvent arg0)
+        {
+            
+        }
 
         #endregion
 

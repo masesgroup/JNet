@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Spi
 {
+    #region IToolProvider
+    public partial interface IToolProvider
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#name()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintWriter,java.io.PrintWriter,java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
+        /// <param name="arg1"><see cref="Java.Io.PrintWriter"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="int"/></returns>
+        int Run(Java.Io.PrintWriter arg0, Java.Io.PrintWriter arg1, params string[] arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
+        /// <param name="arg1"><see cref="Java.Io.PrintStream"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <returns><see cref="int"/></returns>
+        int Run(Java.Io.PrintStream arg0, Java.Io.PrintStream arg1, params string[] arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ToolProvider
-    public partial class ToolProvider
+    public partial class ToolProvider : Java.Util.Spi.IToolProvider
     {
         #region Constructors
 

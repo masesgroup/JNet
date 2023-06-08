@@ -25,8 +25,60 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs.Renderable
 {
+    #region IContextualRenderedImageFactory
+    public partial interface IContextualRenderedImageFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#isDynamic()"/> 
+        /// </summary>
+        bool IsDynamic { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getPropertyNames()"/> 
+        /// </summary>
+        string[] PropertyNames { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getBounds2D(java.awt.image.renderable.ParameterBlock)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
+        /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
+        Java.Awt.Geom.Rectangle2D GetBounds2D(Java.Awt.ImageNs.Renderable.ParameterBlock arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#mapRenderContext(int,java.awt.image.renderable.RenderContext,java.awt.image.renderable.ParameterBlock,java.awt.image.renderable.RenderableImage)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
+        /// <param name="arg2"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
+        /// <param name="arg3"><see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></returns>
+        Java.Awt.ImageNs.Renderable.RenderContext MapRenderContext(int arg0, Java.Awt.ImageNs.Renderable.RenderContext arg1, Java.Awt.ImageNs.Renderable.ParameterBlock arg2, Java.Awt.ImageNs.Renderable.RenderableImage arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#create(java.awt.image.renderable.RenderContext,java.awt.image.renderable.ParameterBlock)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
+        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        Java.Awt.ImageNs.RenderedImage Create(Java.Awt.ImageNs.Renderable.RenderContext arg0, Java.Awt.ImageNs.Renderable.ParameterBlock arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getProperty(java.awt.image.renderable.ParameterBlock,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        object GetProperty(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, string arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ContextualRenderedImageFactory
-    public partial class ContextualRenderedImageFactory
+    public partial class ContextualRenderedImageFactory : Java.Awt.ImageNs.Renderable.IContextualRenderedImageFactory
     {
         #region Constructors
 

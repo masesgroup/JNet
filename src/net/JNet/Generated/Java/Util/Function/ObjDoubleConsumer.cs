@@ -65,8 +65,29 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IObjDoubleConsumer<T>
+    public partial interface IObjDoubleConsumer<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        void Accept(T arg0, double arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjDoubleConsumer<T>
-    public partial class ObjDoubleConsumer<T>
+    public partial class ObjDoubleConsumer<T> : Java.Util.Function.IObjDoubleConsumer<T>
     {
         #region Constructors
 

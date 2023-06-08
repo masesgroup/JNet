@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region IRGBColor
+    public partial interface IRGBColor
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getBlue()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSPrimitiveValue Blue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getGreen()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSPrimitiveValue Green { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/RGBColor.html#getRed()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSPrimitiveValue Red { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RGBColor
-    public partial class RGBColor
+    public partial class RGBColor : Org.W3c.Dom.Css.IRGBColor
     {
         #region Constructors
 

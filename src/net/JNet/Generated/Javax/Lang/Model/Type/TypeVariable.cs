@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region ITypeVariable
+    public partial interface ITypeVariable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Element AsElement { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#getLowerBound()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror LowerBound { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#getUpperBound()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror UpperBound { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TypeVariable
-    public partial class TypeVariable
+    public partial class TypeVariable : Javax.Lang.Model.Type.ITypeVariable
     {
         #region Constructors
 

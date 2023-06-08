@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Event
 {
+    #region IDocumentListener
+    public partial interface IDocumentListener
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#changedUpdate(javax.swing.event.DocumentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
+        void ChangedUpdate(Javax.Swing.Event.DocumentEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#insertUpdate(javax.swing.event.DocumentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
+        void InsertUpdate(Javax.Swing.Event.DocumentEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#removeUpdate(javax.swing.event.DocumentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
+        void RemoveUpdate(Javax.Swing.Event.DocumentEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DocumentListener
-    public partial class DocumentListener
+    public partial class DocumentListener : Javax.Swing.Event.IDocumentListener
     {
         #region Constructors
 
@@ -45,6 +75,30 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#changedUpdate(javax.swing.event.DocumentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
+        public virtual void ChangedUpdate(Javax.Swing.Event.DocumentEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#insertUpdate(javax.swing.event.DocumentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
+        public virtual void InsertUpdate(Javax.Swing.Event.DocumentEvent arg0)
+        {
+            
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#removeUpdate(javax.swing.event.DocumentEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.DocumentEvent"/></param>
+        public virtual void RemoveUpdate(Javax.Swing.Event.DocumentEvent arg0)
+        {
+            
+        }
 
         #endregion
 

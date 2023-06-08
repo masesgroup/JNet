@@ -25,8 +25,27 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
+    #region ISupportedOptions
+    public partial interface ISupportedOptions
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedOptions.html#value()"/> 
+        /// </summary>
+        string[] Value { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SupportedOptions
-    public partial class SupportedOptions
+    public partial class SupportedOptions : Javax.Annotation.Processing.ISupportedOptions
     {
         #region Constructors
 
