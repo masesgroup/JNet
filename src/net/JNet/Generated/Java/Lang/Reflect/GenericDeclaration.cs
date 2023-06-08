@@ -32,7 +32,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericDeclaration.html#getTypeParameters()"/> 
         /// </summary>
-        Java.Lang.Reflect.TypeVariable<object>[] TypeParameters { get; }
+        Java.Lang.Reflect.TypeVariable[] TypeParameters { get; }
 
         #endregion
 
@@ -67,9 +67,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericDeclaration.html#getTypeParameters()"/> 
         /// </summary>
-        public Java.Lang.Reflect.TypeVariable<object>[] TypeParameters
+        public Java.Lang.Reflect.TypeVariable[] TypeParameters
         {
-            get { return IExecuteArray<Java.Lang.Reflect.TypeVariable<object>>("getTypeParameters"); }
+            get { return IExecuteArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters"); }
         }
 
         #endregion

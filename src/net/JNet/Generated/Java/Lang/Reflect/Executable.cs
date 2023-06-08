@@ -175,9 +175,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getTypeParameters()"/> 
         /// </summary>
-        public Java.Lang.Reflect.TypeVariable<object>[] TypeParameters
+        public Java.Lang.Reflect.TypeVariable[] TypeParameters
         {
-            get { return IExecuteArray<Java.Lang.Reflect.TypeVariable<object>>("getTypeParameters"); }
+            get { return IExecuteArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters"); }
         }
 
         #endregion
