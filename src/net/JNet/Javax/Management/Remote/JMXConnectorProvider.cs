@@ -25,9 +25,5 @@ namespace Javax.Management.Remote
     {
         // can be extended with methods not reflected or not available in Java;
 
-        /// <summary>
-        /// Creates a new connector client that is ready to connect to the connector server at the given address. Each successful call to this method produces a different <see cref="JMXConnector"/> object.
-        /// </summary>
-        public JMXConnector NewJMXConnector(JMXServiceURL serviceURL, Map<string, object> environment) => IExecute<JMXConnector>("newJMXConnector", serviceURL, environment);
     }
 }

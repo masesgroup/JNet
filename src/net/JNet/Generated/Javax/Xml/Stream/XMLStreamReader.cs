@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream
 {
     #region IXMLStreamReader
-    public partial interface IXMLStreamReader
+    public partial interface IXMLStreamReader : Javax.Xml.Stream.IXMLStreamConstants
     {
         #region Instance methods
         /// <summary>

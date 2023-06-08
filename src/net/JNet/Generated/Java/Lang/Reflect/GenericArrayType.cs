@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Reflect
 {
     #region IGenericArrayType
-    public partial interface IGenericArrayType
+    public partial interface IGenericArrayType : Java.Lang.Reflect.IType
     {
         #region Instance methods
         /// <summary>

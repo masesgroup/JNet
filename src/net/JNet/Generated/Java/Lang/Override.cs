@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region IOverride
-    public partial interface IOverride
+    public partial interface IOverride : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
 

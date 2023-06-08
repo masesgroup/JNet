@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Events
 {
     #region IUIEvent
-    public partial interface IUIEvent
+    public partial interface IUIEvent : Org.W3c.Dom.Events.IEvent
     {
         #region Instance methods
         /// <summary>

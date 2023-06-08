@@ -219,9 +219,8 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html#newX509Data(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Xml.Crypto.Dsig.Keyinfo.X509Data"/></returns>
-        public Javax.Xml.Crypto.Dsig.Keyinfo.X509Data NewX509Data<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0)
+        public Javax.Xml.Crypto.Dsig.Keyinfo.X509Data NewX509Data(Java.Util.List<object> arg0)
         {
             return IExecute<Javax.Xml.Crypto.Dsig.Keyinfo.X509Data>("newX509Data", arg0);
         }

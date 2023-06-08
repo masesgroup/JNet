@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream
 {
     #region IXMLEventReader
-    public partial interface IXMLEventReader
+    public partial interface IXMLEventReader : Java.Util.IIterator<object>
     {
         #region Instance methods
         /// <summary>

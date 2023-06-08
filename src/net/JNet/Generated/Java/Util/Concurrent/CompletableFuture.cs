@@ -850,9 +850,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public static Java.Util.Concurrent.CompletableFuture<object> AnyOfMethod<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
+        public static Java.Util.Concurrent.CompletableFuture<object> AnyOfMethod(params Java.Util.Concurrent.CompletableFuture<object>[] arg0)
         {
             if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<object>>(LocalBridgeClazz, "anyOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<object>>(LocalBridgeClazz, "anyOf", arg0);
         }
@@ -860,9 +859,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> AllOf<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
+        public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> AllOf(params Java.Util.Concurrent.CompletableFuture<object>[] arg0)
         {
             if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "allOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "allOf", arg0);
         }

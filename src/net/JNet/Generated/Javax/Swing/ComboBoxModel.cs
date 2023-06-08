@@ -64,7 +64,7 @@ namespace Javax.Swing
     #endregion
 
     #region IComboBoxModel<E>
-    public partial interface IComboBoxModel<E>
+    public partial interface IComboBoxModel<E> : Javax.Swing.IListModel<E>
     {
         #region Instance methods
         /// <summary>

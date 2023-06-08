@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Type
 {
     #region ITypeVariable
-    public partial interface ITypeVariable
+    public partial interface ITypeVariable : Javax.Lang.Model.Type.IReferenceType
     {
         #region Instance methods
         /// <summary>

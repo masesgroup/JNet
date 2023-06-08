@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Plaf.Synth
 {
     #region ISynthUI
-    public partial interface ISynthUI
+    public partial interface ISynthUI : Javax.Swing.Plaf.Synth.ISynthConstants
     {
         #region Instance methods
         /// <summary>

@@ -59,9 +59,8 @@ namespace Java.Lang.Invoke
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public static Java.Lang.Class PrimitiveClass<ReturnExtendsobject>(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
+        public static Java.Lang.Class PrimitiveClass(Java.Lang.Invoke.MethodHandles.Lookup arg0, string arg1, Java.Lang.Class arg2)
         {
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "primitiveClass", arg0, arg1, arg2);
         }

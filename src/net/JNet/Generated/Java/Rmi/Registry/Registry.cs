@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Rmi.Registry
 {
     #region IRegistry
-    public partial interface IRegistry
+    public partial interface IRegistry : Java.Rmi.IRemote
     {
         #region Instance methods
         /// <summary>

@@ -101,7 +101,7 @@ namespace Java.Util.Concurrent
     #endregion
 
     #region ITransferQueue<E>
-    public partial interface ITransferQueue<E>
+    public partial interface ITransferQueue<E> : Java.Util.Concurrent.IBlockingQueue<E>
     {
         #region Instance methods
         /// <summary>

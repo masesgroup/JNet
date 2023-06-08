@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Html
 {
     #region IHTMLQuoteElement
-    public partial interface IHTMLQuoteElement
+    public partial interface IHTMLQuoteElement : Org.W3c.Dom.Html.IHTMLElement
     {
         #region Instance methods
         /// <summary>

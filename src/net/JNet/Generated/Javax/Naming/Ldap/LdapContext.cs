@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming.Ldap
 {
     #region ILdapContext
-    public partial interface ILdapContext
+    public partial interface ILdapContext : Javax.Naming.Directory.IDirContext
     {
         #region Instance methods
         /// <summary>

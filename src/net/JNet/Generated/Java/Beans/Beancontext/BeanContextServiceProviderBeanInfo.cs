@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Beans.Beancontext
 {
     #region IBeanContextServiceProviderBeanInfo
-    public partial interface IBeanContextServiceProviderBeanInfo
+    public partial interface IBeanContextServiceProviderBeanInfo : Java.Beans.IBeanInfo
     {
         #region Instance methods
         /// <summary>

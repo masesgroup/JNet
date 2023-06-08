@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.Xml.Sax.Ext
 {
     #region IEntityResolver2
-    public partial interface IEntityResolver2
+    public partial interface IEntityResolver2 : Org.Xml.Sax.IEntityResolver
     {
         #region Instance methods
         /// <summary>

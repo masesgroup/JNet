@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Transform.Dom
 {
     #region IDOMLocator
-    public partial interface IDOMLocator
+    public partial interface IDOMLocator : Javax.Xml.Transform.ISourceLocator
     {
         #region Instance methods
         /// <summary>

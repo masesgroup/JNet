@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.Channels
 {
     #region INetworkChannel
-    public partial interface INetworkChannel
+    public partial interface INetworkChannel : Java.Nio.Channels.IChannel
     {
         #region Instance methods
         /// <summary>
@@ -36,7 +36,7 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#supportedOptions()"/> 
         /// </summary>
-        Java.Util.Set SupportedOptions { get; }
+        Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
@@ -102,9 +102,9 @@ namespace Java.Nio.Channels
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#supportedOptions()"/> 
         /// </summary>
-        public Java.Util.Set SupportedOptions
+        public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions
         {
-            get { return IExecute<Java.Util.Set>("supportedOptions"); }
+            get { return IExecute<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>

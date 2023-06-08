@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Table
 {
     #region ITableCellEditor
-    public partial interface ITableCellEditor
+    public partial interface ITableCellEditor : Javax.Swing.ICellEditor
     {
         #region Instance methods
         /// <summary>

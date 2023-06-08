@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region IDescriptorKey
-    public partial interface IDescriptorKey
+    public partial interface IDescriptorKey : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
         /// <summary>

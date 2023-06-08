@@ -38,7 +38,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg5"><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></param>
-        public AttributeList(string arg0, int arg1, int arg2, string arg3, Java.Util.Vector arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
+        public AttributeList(string arg0, int arg1, int arg2, string arg3, Java.Util.Vector<object> arg4, Javax.Swing.Text.Html.Parser.AttributeList arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
@@ -154,9 +154,9 @@ namespace Javax.Swing.Text.Html.Parser
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#getValues()"/> 
         /// </summary>
-        public Java.Util.Enumeration Values
+        public Java.Util.Enumeration<object> Values
         {
-            get { return IExecute<Java.Util.Enumeration>("getValues"); }
+            get { return IExecute<Java.Util.Enumeration<object>>("getValues"); }
         }
 
         #endregion

@@ -43,9 +43,8 @@ namespace Java.Beans.Beancontext
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        Java.Util.Iterator<ReturnExtendsobject> GetCurrentServiceSelectors<ReturnExtendsobject>(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1);
+        Java.Util.Iterator<object> GetCurrentServiceSelectors(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#releaseService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -101,11 +100,10 @@ namespace Java.Beans.Beancontext
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServices"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<ReturnExtendsobject> GetCurrentServiceSelectors<ReturnExtendsobject>(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
+        public Java.Util.Iterator<object> GetCurrentServiceSelectors(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Util.Iterator<ReturnExtendsobject>>("getCurrentServiceSelectors", arg0, arg1);
+            return IExecute<Java.Util.Iterator<object>>("getCurrentServiceSelectors", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#releaseService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Object)"/>

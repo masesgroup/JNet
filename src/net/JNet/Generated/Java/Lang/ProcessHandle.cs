@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region IProcessHandle
-    public partial interface IProcessHandle
+    public partial interface IProcessHandle : Java.Lang.IComparable<Java.Lang.ProcessHandle>
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Element
 {
     #region IVariableElement
-    public partial interface IVariableElement
+    public partial interface IVariableElement : Javax.Lang.Model.Element.IElement
     {
         #region Instance methods
         /// <summary>

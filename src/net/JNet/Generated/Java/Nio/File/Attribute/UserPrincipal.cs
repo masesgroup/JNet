@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.File.Attribute
 {
     #region IUserPrincipal
-    public partial interface IUserPrincipal
+    public partial interface IUserPrincipal : Java.Security.IPrincipal
     {
         #region Instance methods
 

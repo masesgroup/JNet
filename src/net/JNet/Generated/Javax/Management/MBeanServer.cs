@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region IMBeanServer
-    public partial interface IMBeanServer
+    public partial interface IMBeanServer : Javax.Management.IMBeanServerConnection
     {
         #region Instance methods
         /// <summary>

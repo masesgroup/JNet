@@ -1820,7 +1820,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Delayed.html"/>
     /// </summary>
-    public partial class Delayed : Java.Lang.Comparable
+    public partial class Delayed : Java.Lang.Comparable<Java.Util.Concurrent.Delayed>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.ModuleNs
 {
     #region IModuleReader
-    public partial interface IModuleReader
+    public partial interface IModuleReader : Java.Io.ICloseable
     {
         #region Instance methods
         /// <summary>

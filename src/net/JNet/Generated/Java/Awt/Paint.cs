@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt
 {
     #region IPaint
-    public partial interface IPaint
+    public partial interface IPaint : Java.Awt.ITransparency
     {
         #region Instance methods
         /// <summary>

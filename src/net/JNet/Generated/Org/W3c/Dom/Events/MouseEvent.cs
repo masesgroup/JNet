@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Events
 {
     #region IMouseEvent
-    public partial interface IMouseEvent
+    public partial interface IMouseEvent : Org.W3c.Dom.Events.IUIEvent
     {
         #region Instance methods
         /// <summary>

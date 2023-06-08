@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Modelmbean
 {
     #region IModelMBeanNotificationBroadcaster
-    public partial interface IModelMBeanNotificationBroadcaster
+    public partial interface IModelMBeanNotificationBroadcaster : Javax.Management.INotificationBroadcaster
     {
         #region Instance methods
         /// <summary>

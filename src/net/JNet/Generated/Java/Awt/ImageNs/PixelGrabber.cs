@@ -229,8 +229,7 @@ namespace Java.Awt.ImageNs
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#setProperties(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public void SetProperties<Arg0Extendsobject>(Java.Util.Hashtable<Arg0Extendsobject, Arg0Extendsobject> arg0)
+        public void SetProperties(Java.Util.Hashtable<object, object> arg0)
         {
             IExecute("setProperties", arg0);
         }

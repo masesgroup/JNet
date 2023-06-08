@@ -56,15 +56,15 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getLegalValues()"/> 
         /// </summary>
-        Java.Util.Set LegalValues { get; }
+        Java.Util.Set<object> LegalValues { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getMaxValue()"/> 
         /// </summary>
-        Java.Lang.Comparable MaxValue { get; }
+        Java.Lang.Comparable<object> MaxValue { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getMinValue()"/> 
         /// </summary>
-        Java.Lang.Comparable MinValue { get; }
+        Java.Lang.Comparable<object> MinValue { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getName()"/> 
         /// </summary>
@@ -72,7 +72,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getOpenType()"/> 
         /// </summary>
-        Javax.Management.Openmbean.OpenType OpenType { get; }
+        Javax.Management.Openmbean.OpenType<object> OpenType { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#isValue(java.lang.Object)"/>
         /// </summary>
@@ -155,23 +155,23 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getLegalValues()"/> 
         /// </summary>
-        public Java.Util.Set LegalValues
+        public Java.Util.Set<object> LegalValues
         {
-            get { return IExecute<Java.Util.Set>("getLegalValues"); }
+            get { return IExecute<Java.Util.Set<object>>("getLegalValues"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getMaxValue()"/> 
         /// </summary>
-        public Java.Lang.Comparable MaxValue
+        public Java.Lang.Comparable<object> MaxValue
         {
-            get { return IExecute<Java.Lang.Comparable>("getMaxValue"); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMaxValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getMinValue()"/> 
         /// </summary>
-        public Java.Lang.Comparable MinValue
+        public Java.Lang.Comparable<object> MinValue
         {
-            get { return IExecute<Java.Lang.Comparable>("getMinValue"); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMinValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getName()"/> 
@@ -183,9 +183,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getOpenType()"/> 
         /// </summary>
-        public Javax.Management.Openmbean.OpenType OpenType
+        public Javax.Management.Openmbean.OpenType<object> OpenType
         {
-            get { return IExecute<Javax.Management.Openmbean.OpenType>("getOpenType"); }
+            get { return IExecute<Javax.Management.Openmbean.OpenType<object>>("getOpenType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#isValue(java.lang.Object)"/>

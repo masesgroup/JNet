@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Openmbean
 {
     #region IOpenMBeanAttributeInfo
-    public partial interface IOpenMBeanAttributeInfo
+    public partial interface IOpenMBeanAttributeInfo : Javax.Management.Openmbean.IOpenMBeanParameterInfo
     {
         #region Instance methods
         /// <summary>

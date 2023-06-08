@@ -38,7 +38,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="Javax.Management.Openmbean.OpenType"/></param>
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
-        public CompositeType(string arg0, string arg1, string[] arg2, string[] arg3, Javax.Management.Openmbean.OpenType arg4)
+        public CompositeType(string arg0, string arg1, string[] arg2, string[] arg3, Javax.Management.Openmbean.OpenType<object>[] arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
@@ -87,11 +87,10 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Javax.Management.Openmbean.OpenType"/></returns>
-        public Javax.Management.Openmbean.OpenType<ReturnExtendsobject> GetType<ReturnExtendsobject>(string arg0)
+        public Javax.Management.Openmbean.OpenType<object> GetType(string arg0)
         {
-            return IExecute<Javax.Management.Openmbean.OpenType<ReturnExtendsobject>>("getType", arg0);
+            return IExecute<Javax.Management.Openmbean.OpenType<object>>("getType", arg0);
         }
 
         #endregion

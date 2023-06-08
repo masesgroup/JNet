@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.Im.Spi
 {
     #region IInputMethodContext
-    public partial interface IInputMethodContext
+    public partial interface IInputMethodContext : Java.Awt.Im.IInputMethodRequests
     {
         #region Instance methods
         /// <summary>

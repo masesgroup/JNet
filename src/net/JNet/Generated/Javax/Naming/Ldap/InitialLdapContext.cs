@@ -35,7 +35,7 @@ namespace Javax.Naming.Ldap
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
         /// <param name="arg1"><see cref="Javax.Naming.Ldap.Control"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public InitialLdapContext(Java.Util.Hashtable arg0, Javax.Naming.Ldap.Control[] arg1)
+        public InitialLdapContext(Java.Util.Hashtable<object, object> arg0, Javax.Naming.Ldap.Control[] arg1)
             : base(arg0, arg1)
         {
         }

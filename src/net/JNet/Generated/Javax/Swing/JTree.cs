@@ -33,7 +33,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        public JTree(Java.Util.Hashtable arg0)
+        public JTree(Java.Util.Hashtable<object, object> arg0)
             : base(arg0)
         {
         }
@@ -41,7 +41,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#%3Cinit%3E(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        public JTree(Java.Util.Vector arg0)
+        public JTree(Java.Util.Vector<object> arg0)
             : base(arg0)
         {
         }

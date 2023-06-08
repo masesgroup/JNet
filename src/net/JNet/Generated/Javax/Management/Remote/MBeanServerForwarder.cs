@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Remote
 {
     #region IMBeanServerForwarder
-    public partial interface IMBeanServerForwarder
+    public partial interface IMBeanServerForwarder : Javax.Management.IMBeanServer
     {
         #region Instance methods
         /// <summary>

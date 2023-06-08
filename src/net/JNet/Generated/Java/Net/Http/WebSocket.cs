@@ -302,9 +302,8 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
             /// <param name="arg2"><see cref="bool"/></param>
-            /// <typeparam name="ReturnExtendsobject"></typeparam>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            public virtual Java.Util.Concurrent.CompletionStage<ReturnExtendsobject> OnBinary<ReturnExtendsobject>(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
+            public virtual Java.Util.Concurrent.CompletionStage<object> OnBinary(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
             {
                 return default;
             }
@@ -314,9 +313,8 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="string"/></param>
-            /// <typeparam name="ReturnExtendsobject"></typeparam>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            public virtual Java.Util.Concurrent.CompletionStage<ReturnExtendsobject> OnClose<ReturnExtendsobject>(Java.Net.Http.WebSocket arg0, int arg1, string arg2)
+            public virtual Java.Util.Concurrent.CompletionStage<object> OnClose(Java.Net.Http.WebSocket arg0, int arg1, string arg2)
             {
                 return default;
             }
@@ -325,9 +323,8 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <typeparam name="ReturnExtendsobject"></typeparam>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            public virtual Java.Util.Concurrent.CompletionStage<ReturnExtendsobject> OnPing<ReturnExtendsobject>(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
+            public virtual Java.Util.Concurrent.CompletionStage<object> OnPing(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
                 return default;
             }
@@ -336,9 +333,8 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
-            /// <typeparam name="ReturnExtendsobject"></typeparam>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            public virtual Java.Util.Concurrent.CompletionStage<ReturnExtendsobject> OnPong<ReturnExtendsobject>(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
+            public virtual Java.Util.Concurrent.CompletionStage<object> OnPong(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
                 return default;
             }
@@ -348,9 +344,8 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
             /// <param name="arg2"><see cref="bool"/></param>
-            /// <typeparam name="ReturnExtendsobject"></typeparam>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-            public virtual Java.Util.Concurrent.CompletionStage<ReturnExtendsobject> OnText<ReturnExtendsobject>(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
+            public virtual Java.Util.Concurrent.CompletionStage<object> OnText(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
             {
                 return default;
             }

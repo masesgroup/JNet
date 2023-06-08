@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Rmi.Server
 {
     #region IRemoteRef
-    public partial interface IRemoteRef
+    public partial interface IRemoteRef : Java.Io.IExternalizable
     {
         #region Instance methods
         /// <summary>

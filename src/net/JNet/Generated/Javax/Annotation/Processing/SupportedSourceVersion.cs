@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Annotation.Processing
 {
     #region ISupportedSourceVersion
-    public partial interface ISupportedSourceVersion
+    public partial interface ISupportedSourceVersion : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
         /// <summary>

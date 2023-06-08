@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Text
 {
     #region ICharacterIterator
-    public partial interface ICharacterIterator
+    public partial interface ICharacterIterator : Java.Lang.ICloneable
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming.Ldap
 {
     #region IControl
-    public partial interface IControl
+    public partial interface IControl : Java.Io.ISerializable
     {
         #region Instance methods
         /// <summary>

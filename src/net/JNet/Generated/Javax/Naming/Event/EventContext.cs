@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming.Event
 {
     #region IEventContext
-    public partial interface IEventContext
+    public partial interface IEventContext : Javax.Naming.IContext
     {
         #region Instance methods
         /// <summary>

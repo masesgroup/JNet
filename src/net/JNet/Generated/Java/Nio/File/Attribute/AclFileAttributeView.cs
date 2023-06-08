@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.File.Attribute
 {
     #region IAclFileAttributeView
-    public partial interface IAclFileAttributeView
+    public partial interface IAclFileAttributeView : Java.Nio.File.Attribute.IFileOwnerAttributeView
     {
         #region Instance methods
         /// <summary>

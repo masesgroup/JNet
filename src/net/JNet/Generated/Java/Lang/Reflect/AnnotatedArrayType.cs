@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Reflect
 {
     #region IAnnotatedArrayType
-    public partial interface IAnnotatedArrayType
+    public partial interface IAnnotatedArrayType : Java.Lang.Reflect.IAnnotatedType
     {
         #region Instance methods
         /// <summary>

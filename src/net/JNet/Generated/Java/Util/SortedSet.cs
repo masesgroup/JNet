@@ -113,7 +113,7 @@ namespace Java.Util
     #endregion
 
     #region ISortedSet<E>
-    public partial interface ISortedSet<E>
+    public partial interface ISortedSet<E> : Java.Util.ISet<E>
     {
         #region Instance methods
         /// <summary>

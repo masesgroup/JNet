@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Print
 {
     #region ICancelablePrintJob
-    public partial interface ICancelablePrintJob
+    public partial interface ICancelablePrintJob : Javax.Print.IDocPrintJob
     {
         #region Instance methods
         /// <summary>

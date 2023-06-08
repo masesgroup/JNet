@@ -34,7 +34,7 @@ namespace Javax.Management
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Reflect.Constructor"/></param>
-        public MBeanConstructorInfo(string arg0, Java.Lang.Reflect.Constructor arg1)
+        public MBeanConstructorInfo(string arg0, Java.Lang.Reflect.Constructor<object> arg1)
             : base(arg0, arg1)
         {
         }

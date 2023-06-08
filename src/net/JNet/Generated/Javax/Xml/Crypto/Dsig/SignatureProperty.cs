@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Crypto.Dsig
 {
     #region ISignatureProperty
-    public partial interface ISignatureProperty
+    public partial interface ISignatureProperty : Javax.Xml.Crypto.IXMLStructure
     {
         #region Instance methods
         /// <summary>

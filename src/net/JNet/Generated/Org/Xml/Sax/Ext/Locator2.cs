@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.Xml.Sax.Ext
 {
     #region ILocator2
-    public partial interface ILocator2
+    public partial interface ILocator2 : Org.Xml.Sax.ILocator
     {
         #region Instance methods
         /// <summary>

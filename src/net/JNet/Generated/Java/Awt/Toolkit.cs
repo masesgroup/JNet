@@ -280,12 +280,11 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#mapInputMethodHighlight(java.awt.im.InputMethodHighlight)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Im.InputMethodHighlight"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Map"/></returns>
         /// <exception cref="Java.Awt.HeadlessException"/>
-        public Java.Util.Map<Java.Awt.FontNs.TextAttribute, ReturnExtendsobject> MapInputMethodHighlight<ReturnExtendsobject>(Java.Awt.Im.InputMethodHighlight arg0)
+        public Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> MapInputMethodHighlight(Java.Awt.Im.InputMethodHighlight arg0)
         {
-            return IExecute<Java.Util.Map<Java.Awt.FontNs.TextAttribute, ReturnExtendsobject>>("mapInputMethodHighlight", arg0);
+            return IExecute<Java.Util.Map<Java.Awt.FontNs.TextAttribute, object>>("mapInputMethodHighlight", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#beep()"/>

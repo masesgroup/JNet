@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql.Rowset.Spi
 {
     #region IXmlReader
-    public partial interface IXmlReader
+    public partial interface IXmlReader : Javax.Sql.IRowSetReader
     {
         #region Instance methods
         /// <summary>

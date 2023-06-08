@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Accessibility
 {
     #region IAccessibleEditableText
-    public partial interface IAccessibleEditableText
+    public partial interface IAccessibleEditableText : Javax.Accessibility.IAccessibleText
     {
         #region Instance methods
         /// <summary>

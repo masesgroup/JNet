@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
     #region IDigestMethodParameterSpec
-    public partial interface IDigestMethodParameterSpec
+    public partial interface IDigestMethodParameterSpec : Java.Security.Spec.IAlgorithmParameterSpec
     {
         #region Instance methods
 

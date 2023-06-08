@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Beans
 {
     #region ITransient
-    public partial interface ITransient
+    public partial interface ITransient : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
         /// <summary>

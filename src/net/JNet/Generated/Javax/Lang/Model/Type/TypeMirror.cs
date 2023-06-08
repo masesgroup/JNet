@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Type
 {
     #region ITypeMirror
-    public partial interface ITypeMirror
+    public partial interface ITypeMirror : Javax.Lang.Model.IAnnotatedConstruct
     {
         #region Instance methods
         /// <summary>

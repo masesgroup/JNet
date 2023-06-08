@@ -238,7 +238,7 @@ namespace Java.Util
     #endregion
 
     #region INavigableMap<K, V>
-    public partial interface INavigableMap<K, V>
+    public partial interface INavigableMap<K, V> : Java.Util.ISortedMap<K, V>
     {
         #region Instance methods
         /// <summary>

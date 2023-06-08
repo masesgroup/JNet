@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Print.Attribute
 {
     #region IPrintServiceAttribute
-    public partial interface IPrintServiceAttribute
+    public partial interface IPrintServiceAttribute : Javax.Print.Attribute.IAttribute
     {
         #region Instance methods
 

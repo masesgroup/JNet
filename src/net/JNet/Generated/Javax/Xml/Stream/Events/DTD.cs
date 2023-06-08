@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream.Events
 {
     #region IDTD
-    public partial interface IDTD
+    public partial interface IDTD : Javax.Xml.Stream.Events.IXMLEvent
     {
         #region Instance methods
         /// <summary>

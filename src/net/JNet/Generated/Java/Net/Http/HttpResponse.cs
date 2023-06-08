@@ -312,9 +312,8 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
-            /// <typeparam name="Arg0objectSuperstring"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
-            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> FromLineSubscriber<Arg0objectSuperstring>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperstring> arg0)
+            public static Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void> FromLineSubscriber(Java.Util.Concurrent.Flow.Subscriber<string> arg0)
             {
                 return SExecute<Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void>>(LocalBridgeClazz, "fromLineSubscriber", arg0);
             }
@@ -583,9 +582,8 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#fromLineSubscriber(java.util.concurrent.Flow.Subscriber)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Concurrent.Flow.Subscriber"/></param>
-            /// <typeparam name="Arg0objectSuperstring"></typeparam>
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
-            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> FromLineSubscriber<Arg0objectSuperstring>(Java.Util.Concurrent.Flow.Subscriber<Arg0objectSuperstring> arg0)
+            public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void> FromLineSubscriber(Java.Util.Concurrent.Flow.Subscriber<string> arg0)
             {
                 return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void>>(LocalBridgeClazz, "fromLineSubscriber", arg0);
             }

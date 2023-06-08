@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Management
 {
     #region IGarbageCollectorMXBean
-    public partial interface IGarbageCollectorMXBean
+    public partial interface IGarbageCollectorMXBean : Java.Lang.Management.IMemoryManagerMXBean
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Concurrent
 {
     #region IDelayed
-    public partial interface IDelayed
+    public partial interface IDelayed : Java.Lang.IComparable<Java.Util.Concurrent.Delayed>
     {
         #region Instance methods
         /// <summary>

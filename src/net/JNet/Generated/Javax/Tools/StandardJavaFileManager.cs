@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Tools
 {
     #region IStandardJavaFileManager
-    public partial interface IStandardJavaFileManager
+    public partial interface IStandardJavaFileManager : Javax.Tools.IJavaFileManager
     {
         #region Instance methods
         /// <summary>

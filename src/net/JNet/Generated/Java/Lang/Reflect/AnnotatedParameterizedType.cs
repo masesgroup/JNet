@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Reflect
 {
     #region IAnnotatedParameterizedType
-    public partial interface IAnnotatedParameterizedType
+    public partial interface IAnnotatedParameterizedType : Java.Lang.Reflect.IAnnotatedType
     {
         #region Instance methods
         /// <summary>

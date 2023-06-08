@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql
 {
     #region IRowSetMetaData
-    public partial interface IRowSetMetaData
+    public partial interface IRowSetMetaData : Java.Sql.IResultSetMetaData
     {
         #region Instance methods
         /// <summary>

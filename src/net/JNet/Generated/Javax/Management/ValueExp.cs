@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region IValueExp
-    public partial interface IValueExp
+    public partial interface IValueExp : Java.Io.ISerializable
     {
         #region Instance methods
         /// <summary>

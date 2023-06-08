@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.Channels
 {
     #region IAsynchronousChannel
-    public partial interface IAsynchronousChannel
+    public partial interface IAsynchronousChannel : Java.Nio.Channels.IChannel
     {
         #region Instance methods
         /// <summary>

@@ -650,9 +650,8 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public static Java.Lang.Class ForName<ReturnExtendsobject>(Java.Lang.Module arg0, string arg1)
+        public static Java.Lang.Class ForName(Java.Lang.Module arg0, string arg1)
         {
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0, arg1);
         }
@@ -662,10 +661,9 @@ namespace Java.Lang
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public static Java.Lang.Class ForName<ReturnExtendsobject>(string arg0, bool arg1, Java.Lang.ClassLoader arg2)
+        public static Java.Lang.Class ForName(string arg0, bool arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0, arg1, arg2);
         }
@@ -673,10 +671,9 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#forName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public static Java.Lang.Class ForName<ReturnExtendsobject>(string arg0)
+        public static Java.Lang.Class ForName(string arg0)
         {
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0);
         }
@@ -736,9 +733,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructors()"/> 
         /// </summary>
-        public Java.Lang.Reflect.Constructor Constructors
+        public Java.Lang.Reflect.Constructor<object>[] Constructors
         {
-            get { return IExecute<Java.Lang.Reflect.Constructor>("getConstructors"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Constructor<object>>("getConstructors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredAnnotations()"/> 
@@ -757,9 +754,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructors()"/> 
         /// </summary>
-        public Java.Lang.Reflect.Constructor DeclaredConstructors
+        public Java.Lang.Reflect.Constructor<object>[] DeclaredConstructors
         {
-            get { return IExecute<Java.Lang.Reflect.Constructor>("getDeclaredConstructors"); }
+            get { return IExecuteArray<Java.Lang.Reflect.Constructor<object>>("getDeclaredConstructors"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredFields()"/> 
@@ -799,9 +796,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnclosingConstructor()"/> 
         /// </summary>
-        public Java.Lang.Reflect.Constructor EnclosingConstructor
+        public Java.Lang.Reflect.Constructor<object> EnclosingConstructor
         {
-            get { return IExecute<Java.Lang.Reflect.Constructor>("getEnclosingConstructor"); }
+            get { return IExecute<Java.Lang.Reflect.Constructor<object>>("getEnclosingConstructor"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnclosingMethod()"/> 
@@ -1095,11 +1092,10 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructor(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
-        public Java.Lang.Reflect.Constructor<T> GetConstructor<Arg0Extendsobject>(params Java.Lang.Class[] arg0)
+        public Java.Lang.Reflect.Constructor<T> GetConstructor(params Java.Lang.Class[] arg0)
         {
             if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor<T>>("getConstructor"); else return IExecute<Java.Lang.Reflect.Constructor<T>>("getConstructor", arg0);
         }
@@ -1107,11 +1103,10 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
-        public Java.Lang.Reflect.Constructor<T> GetDeclaredConstructor<Arg0Extendsobject>(params Java.Lang.Class[] arg0)
+        public Java.Lang.Reflect.Constructor<T> GetDeclaredConstructor(params Java.Lang.Class[] arg0)
         {
             if (arg0.Length == 0) return IExecute<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor"); else return IExecute<Java.Lang.Reflect.Constructor<T>>("getDeclaredConstructor", arg0);
         }
@@ -1142,11 +1137,10 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
-        public Java.Lang.Reflect.Method GetDeclaredMethod<Arg1Extendsobject>(string arg0, params Java.Lang.Class[] arg1)
+        public Java.Lang.Reflect.Method GetDeclaredMethod(string arg0, params Java.Lang.Class[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0, arg1);
         }
@@ -1155,11 +1149,10 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Reflect.Method"/></returns>
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         /// <exception cref="Java.Lang.SecurityException"/>
-        public Java.Lang.Reflect.Method GetMethod<Arg1Extendsobject>(string arg0, params Java.Lang.Class[] arg1)
+        public Java.Lang.Reflect.Method GetMethod(string arg0, params Java.Lang.Class[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0, arg1);
         }

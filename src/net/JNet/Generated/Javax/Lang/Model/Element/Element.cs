@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Element
 {
     #region IElement
-    public partial interface IElement
+    public partial interface IElement : Javax.Lang.Model.IAnnotatedConstruct
     {
         #region Instance methods
         /// <summary>

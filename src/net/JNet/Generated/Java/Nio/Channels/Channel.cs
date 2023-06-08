@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.Channels
 {
     #region IChannel
-    public partial interface IChannel
+    public partial interface IChannel : Java.Io.ICloseable
     {
         #region Instance methods
         /// <summary>

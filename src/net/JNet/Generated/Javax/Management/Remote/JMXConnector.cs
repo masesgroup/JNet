@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Remote
 {
     #region IJMXConnector
-    public partial interface IJMXConnector
+    public partial interface IJMXConnector : Java.Io.ICloseable
     {
         #region Instance methods
         /// <summary>
@@ -67,9 +67,8 @@ namespace Javax.Management.Remote
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <exception cref="Java.Io.IOException"/>
-        void Connect<Arg0Extendsobject>(Java.Util.Map<string, Arg0Extendsobject> arg0);
+        void Connect(Java.Util.Map<string, object> arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
         /// </summary>
@@ -175,9 +174,8 @@ namespace Javax.Management.Remote
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <exception cref="Java.Io.IOException"/>
-        public void Connect<Arg0Extendsobject>(Java.Util.Map<string, Arg0Extendsobject> arg0)
+        public void Connect(Java.Util.Map<string, object> arg0)
         {
             IExecute("connect", arg0);
         }

@@ -158,7 +158,7 @@ namespace Java.Util.Concurrent
     #endregion
 
     #region IBlockingQueue<E>
-    public partial interface IBlockingQueue<E>
+    public partial interface IBlockingQueue<E> : Java.Util.IQueue<E>
     {
         #region Instance methods
         /// <summary>

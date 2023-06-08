@@ -37,7 +37,7 @@ namespace Java.Rmi.Activation
         /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        public ActivationDesc(string arg0, string arg1, Java.Rmi.MarshalledObject arg2, bool arg3)
+        public ActivationDesc(string arg0, string arg1, Java.Rmi.MarshalledObject<object> arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -48,7 +48,7 @@ namespace Java.Rmi.Activation
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
-        public ActivationDesc(string arg0, string arg1, Java.Rmi.MarshalledObject arg2)
+        public ActivationDesc(string arg0, string arg1, Java.Rmi.MarshalledObject<object> arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -60,7 +60,7 @@ namespace Java.Rmi.Activation
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
         /// <param name="arg4"><see cref="bool"/></param>
-        public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, string arg1, string arg2, Java.Rmi.MarshalledObject arg3, bool arg4)
+        public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, string arg1, string arg2, Java.Rmi.MarshalledObject<object> arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
@@ -71,7 +71,7 @@ namespace Java.Rmi.Activation
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Rmi.MarshalledObject"/></param>
-        public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, string arg1, string arg2, Java.Rmi.MarshalledObject arg3)
+        public ActivationDesc(Java.Rmi.Activation.ActivationGroupID arg0, string arg1, string arg2, Java.Rmi.MarshalledObject<object> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -105,9 +105,9 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getData()"/> 
         /// </summary>
-        public Java.Rmi.MarshalledObject Data
+        public Java.Rmi.MarshalledObject<object> Data
         {
-            get { return IExecute<Java.Rmi.MarshalledObject>("getData"); }
+            get { return IExecute<Java.Rmi.MarshalledObject<object>>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html#getGroupID()"/> 

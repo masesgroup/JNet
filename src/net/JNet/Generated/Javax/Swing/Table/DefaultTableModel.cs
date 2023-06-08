@@ -43,7 +43,7 @@ namespace Javax.Swing.Table
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
-        public DefaultTableModel(Java.Util.Vector arg0, Java.Util.Vector arg1)
+        public DefaultTableModel(Java.Util.Vector arg0, Java.Util.Vector<object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -52,7 +52,7 @@ namespace Javax.Swing.Table
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        public DefaultTableModel(Java.Util.Vector arg0, int arg1)
+        public DefaultTableModel(Java.Util.Vector<object> arg0, int arg1)
             : base(arg0, arg1)
         {
         }
@@ -93,8 +93,7 @@ namespace Javax.Swing.Table
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
-        public void AddColumn<Arg1Extendsobject>(object arg0, Java.Util.Vector<Arg1Extendsobject> arg1)
+        public void AddColumn(object arg0, Java.Util.Vector<object> arg1)
         {
             IExecute("addColumn", arg0, arg1);
         }
@@ -118,8 +117,7 @@ namespace Javax.Swing.Table
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addRow(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public void AddRow<Arg0Extendsobject>(Java.Util.Vector<Arg0Extendsobject> arg0)
+        public void AddRow(Java.Util.Vector<object> arg0)
         {
             IExecute("addRow", arg0);
         }
@@ -137,8 +135,7 @@ namespace Javax.Swing.Table
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
-        public void InsertRow<Arg1Extendsobject>(int arg0, Java.Util.Vector<Arg1Extendsobject> arg1)
+        public void InsertRow(int arg0, Java.Util.Vector<object> arg1)
         {
             IExecute("insertRow", arg0, arg1);
         }
@@ -204,8 +201,7 @@ namespace Javax.Swing.Table
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setColumnIdentifiers(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public void SetColumnIdentifiers<Arg0Extendsobject>(Java.Util.Vector<Arg0Extendsobject> arg0)
+        public void SetColumnIdentifiers(Java.Util.Vector<object> arg0)
         {
             IExecute("setColumnIdentifiers", arg0);
         }
@@ -224,8 +220,7 @@ namespace Javax.Swing.Table
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
         /// <typeparam name="Arg0ExtendsJava_Util_Vector"><see cref="Java.Util.Vector"/></typeparam>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
-        public void SetDataVector<Arg0ExtendsJava_Util_Vector, Arg1Extendsobject>(Java.Util.Vector<Arg0ExtendsJava_Util_Vector> arg0, Java.Util.Vector<Arg1Extendsobject> arg1) where Arg0ExtendsJava_Util_Vector: Java.Util.Vector
+        public void SetDataVector<Arg0ExtendsJava_Util_Vector>(Java.Util.Vector<Arg0ExtendsJava_Util_Vector> arg0, Java.Util.Vector<object> arg1) where Arg0ExtendsJava_Util_Vector: Java.Util.Vector
         {
             IExecute("setDataVector", arg0, arg1);
         }

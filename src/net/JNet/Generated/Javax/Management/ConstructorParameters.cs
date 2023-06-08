@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region IConstructorParameters
-    public partial interface IConstructorParameters
+    public partial interface IConstructorParameters : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
         /// <summary>

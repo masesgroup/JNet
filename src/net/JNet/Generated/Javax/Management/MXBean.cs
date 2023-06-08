@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region IMXBean
-    public partial interface IMXBean
+    public partial interface IMXBean : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
         /// <summary>

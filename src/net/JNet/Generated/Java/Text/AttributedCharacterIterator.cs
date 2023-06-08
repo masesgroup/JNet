@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Text
 {
     #region IAttributedCharacterIterator
-    public partial interface IAttributedCharacterIterator
+    public partial interface IAttributedCharacterIterator : Java.Text.ICharacterIterator
     {
         #region Instance methods
         /// <summary>

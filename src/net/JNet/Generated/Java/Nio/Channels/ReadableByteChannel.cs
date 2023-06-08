@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.Channels
 {
     #region IReadableByteChannel
-    public partial interface IReadableByteChannel
+    public partial interface IReadableByteChannel : Java.Nio.Channels.IChannel
     {
         #region Instance methods
         /// <summary>

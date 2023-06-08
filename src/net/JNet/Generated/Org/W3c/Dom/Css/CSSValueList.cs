@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Css
 {
     #region ICSSValueList
-    public partial interface ICSSValueList
+    public partial interface ICSSValueList : Org.W3c.Dom.Css.ICSSValue
     {
         #region Instance methods
         /// <summary>

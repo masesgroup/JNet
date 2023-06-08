@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Css
 {
     #region ICSSCharsetRule
-    public partial interface ICSSCharsetRule
+    public partial interface ICSSCharsetRule : Org.W3c.Dom.Css.ICSSRule
     {
         #region Instance methods
         /// <summary>

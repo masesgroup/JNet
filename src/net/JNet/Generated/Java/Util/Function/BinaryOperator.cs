@@ -75,7 +75,7 @@ namespace Java.Util.Function
     #endregion
 
     #region IBinaryOperator<T>
-    public partial interface IBinaryOperator<T>
+    public partial interface IBinaryOperator<T> : Java.Util.Function.IBiFunction<T, T, T>
     {
         #region Instance methods
 

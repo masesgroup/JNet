@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sound.Midi
 {
     #region IMidiDeviceTransmitter
-    public partial interface IMidiDeviceTransmitter
+    public partial interface IMidiDeviceTransmitter : Javax.Sound.Midi.ITransmitter
     {
         #region Instance methods
         /// <summary>

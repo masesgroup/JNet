@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Remote.Rmi
 {
     #region IRMIServer
-    public partial interface IRMIServer
+    public partial interface IRMIServer : Java.Rmi.IRemote
     {
         #region Instance methods
         /// <summary>

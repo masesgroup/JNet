@@ -127,7 +127,7 @@ namespace Java.Util
     #endregion
 
     #region ISortedMap<K, V>
-    public partial interface ISortedMap<K, V>
+    public partial interface ISortedMap<K, V> : Java.Util.IMap<K, V>
     {
         #region Instance methods
         /// <summary>

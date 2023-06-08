@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region IDescriptorAccess
-    public partial interface IDescriptorAccess
+    public partial interface IDescriptorAccess : Javax.Management.IDescriptorRead
     {
         #region Instance methods
         /// <summary>

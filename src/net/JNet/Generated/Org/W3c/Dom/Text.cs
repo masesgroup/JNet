@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom
 {
     #region IText
-    public partial interface IText
+    public partial interface IText : Org.W3c.Dom.ICharacterData
     {
         #region Instance methods
         /// <summary>

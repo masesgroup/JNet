@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql.Rowset.Spi
 {
     #region ISyncResolver
-    public partial interface ISyncResolver
+    public partial interface ISyncResolver : Javax.Sql.IRowSet
     {
         #region Instance methods
         /// <summary>

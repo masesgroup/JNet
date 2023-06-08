@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region ISafeVarargs
-    public partial interface ISafeVarargs
+    public partial interface ISafeVarargs : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
 

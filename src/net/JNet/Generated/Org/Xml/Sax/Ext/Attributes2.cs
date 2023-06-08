@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.Xml.Sax.Ext
 {
     #region IAttributes2
-    public partial interface IAttributes2
+    public partial interface IAttributes2 : Org.Xml.Sax.IAttributes
     {
         #region Instance methods
         /// <summary>

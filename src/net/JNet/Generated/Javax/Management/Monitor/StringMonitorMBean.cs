@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Monitor
 {
     #region IStringMonitorMBean
-    public partial interface IStringMonitorMBean
+    public partial interface IStringMonitorMBean : Javax.Management.Monitor.IMonitorMBean
     {
         #region Instance methods
         /// <summary>

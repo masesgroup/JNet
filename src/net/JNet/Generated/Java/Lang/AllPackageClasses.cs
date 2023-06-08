@@ -1830,7 +1830,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html"/>
     /// </summary>
-    public partial class ProcessHandle : Java.Lang.Comparable
+    public partial class ProcessHandle : Java.Lang.Comparable<Java.Lang.ProcessHandle>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

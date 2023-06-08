@@ -261,9 +261,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#supportedOptions()"/> 
         /// </summary>
-        public Java.Util.Set SupportedOptions
+        public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions
         {
-            get { return IExecute<Java.Util.Set>("supportedOptions"); }
+            get { return IExecute<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTcpNoDelay()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTcpNoDelay(boolean)"/>

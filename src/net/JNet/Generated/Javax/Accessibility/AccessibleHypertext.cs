@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Accessibility
 {
     #region IAccessibleHypertext
-    public partial interface IAccessibleHypertext
+    public partial interface IAccessibleHypertext : Javax.Accessibility.IAccessibleText
     {
         #region Instance methods
         /// <summary>

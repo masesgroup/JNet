@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Crypto.Dsig
 {
     #region ICanonicalizationMethod
-    public partial interface ICanonicalizationMethod
+    public partial interface ICanonicalizationMethod : Javax.Xml.Crypto.Dsig.ITransform
     {
         #region Instance methods
         /// <summary>

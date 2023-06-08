@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Html
 {
     #region IHTMLDocument
-    public partial interface IHTMLDocument
+    public partial interface IHTMLDocument : Org.W3c.Dom.IDocument
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Accessibility
 {
     #region IAccessibleExtendedComponent
-    public partial interface IAccessibleExtendedComponent
+    public partial interface IAccessibleExtendedComponent : Javax.Accessibility.IAccessibleComponent
     {
         #region Instance methods
         /// <summary>

@@ -165,7 +165,7 @@ namespace Java.Util.Concurrent
     #endregion
 
     #region IConcurrentMap<K, V>
-    public partial interface IConcurrentMap<K, V>
+    public partial interface IConcurrentMap<K, V> : Java.Util.IMap<K, V>
     {
         #region Instance methods
         /// <summary>

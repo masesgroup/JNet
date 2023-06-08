@@ -36,7 +36,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#getAttributeNames()"/> 
         /// </summary>
-        Java.Util.Enumeration AttributeNames { get; }
+        Java.Util.Enumeration<object> AttributeNames { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#copyAttributes()"/> 
         /// </summary>
@@ -125,9 +125,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#getAttributeNames()"/> 
         /// </summary>
-        public Java.Util.Enumeration AttributeNames
+        public Java.Util.Enumeration<object> AttributeNames
         {
-            get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
+            get { return IExecute<Java.Util.Enumeration<object>>("getAttributeNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#copyAttributes()"/> 

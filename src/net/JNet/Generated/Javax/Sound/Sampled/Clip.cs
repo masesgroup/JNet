@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sound.Sampled
 {
     #region IClip
-    public partial interface IClip
+    public partial interface IClip : Javax.Sound.Sampled.IDataLine
     {
         #region Instance methods
         /// <summary>

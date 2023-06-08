@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
     #region IC14NMethodParameterSpec
-    public partial interface IC14NMethodParameterSpec
+    public partial interface IC14NMethodParameterSpec : Javax.Xml.Crypto.Dsig.Spec.ITransformParameterSpec
     {
         #region Instance methods
 

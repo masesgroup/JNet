@@ -124,9 +124,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getStyleNames()"/> 
         /// </summary>
-        public Java.Util.Enumeration StyleNames
+        public Java.Util.Enumeration<object> StyleNames
         {
-            get { return IExecute<Java.Util.Enumeration>("getStyleNames"); }
+            get { return IExecute<Java.Util.Enumeration<object>>("getStyleNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.html#getBackground(javax.swing.text.AttributeSet)"/>
@@ -230,9 +230,8 @@ namespace Javax.Swing.Text
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Text.AttributeSet"/></param>
         /// <param name="arg1"><see cref="Java.Util.Enumeration"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
-        public Javax.Swing.Text.AttributeSet RemoveAttributes<Arg1Extendsobject>(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration<Arg1Extendsobject> arg1)
+        public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration<object> arg1)
         {
             return IExecute<Javax.Swing.Text.AttributeSet>("removeAttributes", arg0, arg1);
         }
@@ -368,9 +367,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getAttributeNames()"/> 
             /// </summary>
-            public Java.Util.Enumeration AttributeNames
+            public Java.Util.Enumeration<object> AttributeNames
             {
-                get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
+                get { return IExecute<Java.Util.Enumeration<object>>("getAttributeNames"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getChangeListeners()"/> 
@@ -493,8 +492,7 @@ namespace Javax.Swing.Text
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#removeAttributes(java.util.Enumeration)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
-            /// <typeparam name="Arg0Extendsobject"></typeparam>
-            public void RemoveAttributes<Arg0Extendsobject>(Java.Util.Enumeration<Arg0Extendsobject> arg0)
+            public void RemoveAttributes(Java.Util.Enumeration<object> arg0)
             {
                 IExecute("removeAttributes", arg0);
             }
@@ -568,9 +566,9 @@ namespace Javax.Swing.Text
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttributeNames()"/> 
             /// </summary>
-            public Java.Util.Enumeration AttributeNames
+            public Java.Util.Enumeration<object> AttributeNames
             {
-                get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
+                get { return IExecute<Java.Util.Enumeration<object>>("getAttributeNames"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#copyAttributes()"/> 

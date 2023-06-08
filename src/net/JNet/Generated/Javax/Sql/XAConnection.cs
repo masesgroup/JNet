@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql
 {
     #region IXAConnection
-    public partial interface IXAConnection
+    public partial interface IXAConnection : Javax.Sql.IPooledConnection
     {
         #region Instance methods
         /// <summary>

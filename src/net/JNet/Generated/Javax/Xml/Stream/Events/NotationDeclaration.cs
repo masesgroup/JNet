@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream.Events
 {
     #region INotationDeclaration
-    public partial interface INotationDeclaration
+    public partial interface INotationDeclaration : Javax.Xml.Stream.Events.IXMLEvent
     {
         #region Instance methods
         /// <summary>

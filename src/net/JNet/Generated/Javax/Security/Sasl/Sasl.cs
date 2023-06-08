@@ -120,10 +120,9 @@ namespace Javax.Security.Sasl
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="Java.Util.Map"/></param>
         /// <param name="arg5"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
-        /// <typeparam name="Arg4Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Security.Sasl.SaslClient"/></returns>
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        public static Javax.Security.Sasl.SaslClient CreateSaslClient<Arg4Extendsobject>(string[] arg0, string arg1, string arg2, string arg3, Java.Util.Map<string, Arg4Extendsobject> arg4, Javax.Security.Auth.Callback.CallbackHandler arg5)
+        public static Javax.Security.Sasl.SaslClient CreateSaslClient(string[] arg0, string arg1, string arg2, string arg3, Java.Util.Map<string, object> arg4, Javax.Security.Auth.Callback.CallbackHandler arg5)
         {
             return SExecute<Javax.Security.Sasl.SaslClient>(LocalBridgeClazz, "createSaslClient", arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -135,10 +134,9 @@ namespace Javax.Security.Sasl
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
         /// <param name="arg4"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
-        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Security.Sasl.SaslServer"/></returns>
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        public static Javax.Security.Sasl.SaslServer CreateSaslServer<Arg3Extendsobject>(string arg0, string arg1, string arg2, Java.Util.Map<string, Arg3Extendsobject> arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
+        public static Javax.Security.Sasl.SaslServer CreateSaslServer(string arg0, string arg1, string arg2, Java.Util.Map<string, object> arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
         {
             return SExecute<Javax.Security.Sasl.SaslServer>(LocalBridgeClazz, "createSaslServer", arg0, arg1, arg2, arg3, arg4);
         }

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming.Directory
 {
     #region IDirContext
-    public partial interface IDirContext
+    public partial interface IDirContext : Javax.Naming.IContext
     {
         #region Instance methods
         /// <summary>

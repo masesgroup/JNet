@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Relation
 {
     #region IRelationType
-    public partial interface IRelationType
+    public partial interface IRelationType : Java.Io.ISerializable
     {
         #region Instance methods
         /// <summary>

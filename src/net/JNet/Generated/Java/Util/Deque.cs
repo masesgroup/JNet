@@ -276,7 +276,7 @@ namespace Java.Util
     #endregion
 
     #region IDeque<E>
-    public partial interface IDeque<E>
+    public partial interface IDeque<E> : Java.Util.IQueue<E>
     {
         #region Instance methods
         /// <summary>

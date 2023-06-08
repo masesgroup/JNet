@@ -79,9 +79,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#getAttributeNames()"/> 
         /// </summary>
-        public Java.Util.Enumeration AttributeNames
+        public Java.Util.Enumeration<object> AttributeNames
         {
-            get { return IExecute<Java.Util.Enumeration>("getAttributeNames"); }
+            get { return IExecute<Java.Util.Enumeration<object>>("getAttributeNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#copyAttributes()"/> 
@@ -179,8 +179,7 @@ namespace Javax.Swing.Text
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/SimpleAttributeSet.html#removeAttributes(java.util.Enumeration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Enumeration"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public void RemoveAttributes<Arg0Extendsobject>(Java.Util.Enumeration<Arg0Extendsobject> arg0)
+        public void RemoveAttributes(Java.Util.Enumeration<object> arg0)
         {
             IExecute("removeAttributes", arg0);
         }

@@ -191,9 +191,8 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperdouble"></typeparam>
             /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance<Arg0objectSuperdouble>(Java.Util.Function.Consumer<Arg0objectSuperdouble> arg0)
+            public bool TryAdvance(Java.Util.Function.Consumer<double> arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
@@ -209,8 +208,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperdouble"></typeparam>
-            public void ForEachRemaining<Arg0objectSuperdouble>(Java.Util.Function.Consumer<Arg0objectSuperdouble> arg0)
+            public void ForEachRemaining(Java.Util.Function.Consumer<double> arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -282,9 +280,8 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#tryAdvance(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperint"></typeparam>
             /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance<Arg0objectSuperint>(Java.Util.Function.Consumer<Arg0objectSuperint> arg0)
+            public bool TryAdvance(Java.Util.Function.Consumer<int> arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
@@ -300,8 +297,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperint"></typeparam>
-            public void ForEachRemaining<Arg0objectSuperint>(Java.Util.Function.Consumer<Arg0objectSuperint> arg0)
+            public void ForEachRemaining(Java.Util.Function.Consumer<int> arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -373,9 +369,8 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#tryAdvance(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperlong"></typeparam>
             /// <returns><see cref="bool"/></returns>
-            public bool TryAdvance<Arg0objectSuperlong>(Java.Util.Function.Consumer<Arg0objectSuperlong> arg0)
+            public bool TryAdvance(Java.Util.Function.Consumer<long> arg0)
             {
                 return IExecute<bool>("tryAdvance", arg0);
             }
@@ -391,8 +386,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperlong"></typeparam>
-            public void ForEachRemaining<Arg0objectSuperlong>(Java.Util.Function.Consumer<Arg0objectSuperlong> arg0)
+            public void ForEachRemaining(Java.Util.Function.Consumer<long> arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Print.Attribute
 {
     #region ISupportedValuesAttribute
-    public partial interface ISupportedValuesAttribute
+    public partial interface ISupportedValuesAttribute : Javax.Print.Attribute.IAttribute
     {
         #region Instance methods
 

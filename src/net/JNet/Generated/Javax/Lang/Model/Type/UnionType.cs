@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Type
 {
     #region IUnionType
-    public partial interface IUnionType
+    public partial interface IUnionType : Javax.Lang.Model.Type.ITypeMirror
     {
         #region Instance methods
         /// <summary>

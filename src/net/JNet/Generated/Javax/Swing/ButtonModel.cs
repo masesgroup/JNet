@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing
 {
     #region IButtonModel
-    public partial interface IButtonModel
+    public partial interface IButtonModel : Java.Awt.IItemSelectable
     {
         #region Instance methods
         /// <summary>

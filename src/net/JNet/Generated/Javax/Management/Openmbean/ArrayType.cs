@@ -126,7 +126,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Javax.Management.Openmbean.OpenType"/></param>
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
-        public ArrayType(int arg0, Javax.Management.Openmbean.OpenType arg1)
+        public ArrayType(int arg0, Javax.Management.Openmbean.OpenType<object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -136,7 +136,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg0"><see cref="Javax.Management.Openmbean.SimpleType"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
-        public ArrayType(Javax.Management.Openmbean.SimpleType arg0, bool arg1)
+        public ArrayType(Javax.Management.Openmbean.SimpleType<object> arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
@@ -190,9 +190,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#getElementOpenType()"/> 
         /// </summary>
-        public Javax.Management.Openmbean.OpenType ElementOpenType
+        public Javax.Management.Openmbean.OpenType<object> ElementOpenType
         {
-            get { return IExecute<Javax.Management.Openmbean.OpenType>("getElementOpenType"); }
+            get { return IExecute<Javax.Management.Openmbean.OpenType<object>>("getElementOpenType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/ArrayType.html#isPrimitiveArray()"/> 

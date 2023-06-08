@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Sql
 {
     #region IPreparedStatement
-    public partial interface IPreparedStatement
+    public partial interface IPreparedStatement : Java.Sql.IStatement
     {
         #region Instance methods
         /// <summary>

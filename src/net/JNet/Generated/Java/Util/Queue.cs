@@ -103,7 +103,7 @@ namespace Java.Util
     #endregion
 
     #region IQueue<E>
-    public partial interface IQueue<E>
+    public partial interface IQueue<E> : Java.Util.ICollection<E>
     {
         #region Instance methods
         /// <summary>

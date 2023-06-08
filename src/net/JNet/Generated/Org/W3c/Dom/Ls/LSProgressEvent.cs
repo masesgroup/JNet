@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Ls
 {
     #region ILSProgressEvent
-    public partial interface ILSProgressEvent
+    public partial interface ILSProgressEvent : Org.W3c.Dom.Events.IEvent
     {
         #region Instance methods
         /// <summary>

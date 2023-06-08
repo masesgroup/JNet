@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Element
 {
     #region IQualifiedNameable
-    public partial interface IQualifiedNameable
+    public partial interface IQualifiedNameable : Javax.Lang.Model.Element.IElement
     {
         #region Instance methods
         /// <summary>

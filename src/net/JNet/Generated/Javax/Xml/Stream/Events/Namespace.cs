@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream.Events
 {
     #region INamespace
-    public partial interface INamespace
+    public partial interface INamespace : Javax.Xml.Stream.Events.IAttribute
     {
         #region Instance methods
         /// <summary>

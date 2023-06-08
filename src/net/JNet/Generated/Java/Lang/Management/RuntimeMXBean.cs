@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Management
 {
     #region IRuntimeMXBean
-    public partial interface IRuntimeMXBean
+    public partial interface IRuntimeMXBean : Java.Lang.Management.IPlatformManagedObject
     {
         #region Instance methods
         /// <summary>

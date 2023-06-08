@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Time.Chrono
 {
     #region IChronology
-    public partial interface IChronology
+    public partial interface IChronology : Java.Lang.IComparable<Java.Time.Chrono.Chronology>
     {
         #region Instance methods
         /// <summary>

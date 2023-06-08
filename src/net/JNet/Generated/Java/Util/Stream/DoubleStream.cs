@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Stream
 {
     #region IDoubleStream
-    public partial interface IDoubleStream
+    public partial interface IDoubleStream : Java.Util.Stream.IBaseStream<double?, Java.Util.Stream.DoubleStream>
     {
         #region Instance methods
         /// <summary>

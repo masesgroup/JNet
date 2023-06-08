@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql.Rowset.Spi
 {
     #region ITransactionalWriter
-    public partial interface ITransactionalWriter
+    public partial interface ITransactionalWriter : Javax.Sql.IRowSetWriter
     {
         #region Instance methods
         /// <summary>

@@ -36,7 +36,7 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#values()"/> 
         /// </summary>
-        Java.Util.Collection Values { get; }
+        Java.Util.Collection<object> Values { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#containsKey(java.lang.String)"/>
         /// </summary>
@@ -102,9 +102,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#values()"/> 
         /// </summary>
-        public Java.Util.Collection Values
+        public Java.Util.Collection<object> Values
         {
-            get { return IExecute<Java.Util.Collection>("values"); }
+            get { return IExecute<Java.Util.Collection<object>>("values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#containsKey(java.lang.String)"/>

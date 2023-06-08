@@ -72,7 +72,7 @@ namespace Javax.Script
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html"/>
     /// </summary>
-    public partial class Bindings : Java.Util.Map
+    public partial class Bindings : Java.Util.Map<string, object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

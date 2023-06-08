@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Type
 {
     #region INullType
-    public partial interface INullType
+    public partial interface INullType : Javax.Lang.Model.Type.IReferenceType
     {
         #region Instance methods
 

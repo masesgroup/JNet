@@ -33,10 +33,9 @@ namespace Javax.Xml.Xpath
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunction.html#evaluate(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathFunctionException"/>
-        object Evaluate<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0);
+        object Evaluate(Java.Util.List<object> arg0);
 
         #endregion
 
@@ -72,10 +71,9 @@ namespace Javax.Xml.Xpath
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFunction.html#evaluate(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Xml.Xpath.XPathFunctionException"/>
-        public object Evaluate<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0)
+        public object Evaluate(Java.Util.List<object> arg0)
         {
             return IExecute("evaluate", arg0);
         }

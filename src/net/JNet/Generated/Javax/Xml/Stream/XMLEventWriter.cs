@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream
 {
     #region IXMLEventWriter
-    public partial interface IXMLEventWriter
+    public partial interface IXMLEventWriter : Javax.Xml.Stream.Util.IXMLEventConsumer
     {
         #region Instance methods
         /// <summary>

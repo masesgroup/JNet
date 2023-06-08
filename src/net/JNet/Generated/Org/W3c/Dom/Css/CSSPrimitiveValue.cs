@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Css
 {
     #region ICSSPrimitiveValue
-    public partial interface ICSSPrimitiveValue
+    public partial interface ICSSPrimitiveValue : Org.W3c.Dom.Css.ICSSValue
     {
         #region Instance methods
         /// <summary>

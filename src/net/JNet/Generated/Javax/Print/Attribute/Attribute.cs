@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Print.Attribute
 {
     #region IAttribute
-    public partial interface IAttribute
+    public partial interface IAttribute : Java.Io.ISerializable
     {
         #region Instance methods
         /// <summary>

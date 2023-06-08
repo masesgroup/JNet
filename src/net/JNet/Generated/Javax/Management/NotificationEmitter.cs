@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region INotificationEmitter
-    public partial interface INotificationEmitter
+    public partial interface INotificationEmitter : Javax.Management.INotificationBroadcaster
     {
         #region Instance methods
         /// <summary>

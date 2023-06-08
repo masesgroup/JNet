@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Rmi.Activation
 {
     #region IActivationSystem
-    public partial interface IActivationSystem
+    public partial interface IActivationSystem : Java.Rmi.IRemote
     {
         #region Instance methods
         /// <summary>

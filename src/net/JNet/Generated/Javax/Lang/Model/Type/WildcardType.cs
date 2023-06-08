@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Type
 {
     #region IWildcardType
-    public partial interface IWildcardType
+    public partial interface IWildcardType : Javax.Lang.Model.Type.ITypeMirror
     {
         #region Instance methods
         /// <summary>

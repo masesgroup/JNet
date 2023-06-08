@@ -20,10 +20,28 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region ICloneable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.html"/>
+    /// </summary>
+    public partial interface ICloneable
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.html"/>
     /// </summary>
-    public class Cloneable : JVMBridgeBase<Cloneable>
+    public class Cloneable : JVMBridgeBase<Cloneable>, ICloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

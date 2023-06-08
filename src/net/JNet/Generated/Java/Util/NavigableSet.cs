@@ -188,7 +188,7 @@ namespace Java.Util
     #endregion
 
     #region INavigableSet<E>
-    public partial interface INavigableSet<E>
+    public partial interface INavigableSet<E> : Java.Util.ISortedSet<E>
     {
         #region Instance methods
         /// <summary>

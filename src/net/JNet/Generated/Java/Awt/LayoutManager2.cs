@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt
 {
     #region ILayoutManager2
-    public partial interface ILayoutManager2
+    public partial interface ILayoutManager2 : Java.Awt.ILayoutManager
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Management
 {
     #region IThreadMXBean
-    public partial interface IThreadMXBean
+    public partial interface IThreadMXBean : Java.Lang.Management.IPlatformManagedObject
     {
         #region Instance methods
         /// <summary>

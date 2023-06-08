@@ -112,16 +112,13 @@ namespace Java.Lang.Instrument
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
         /// <param name="arg4"><see cref="Java.Util.Set"/></param>
         /// <param name="arg5"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg4Extendsobject"></typeparam>
-        /// <typeparam name="Arg5Extendsobject"></typeparam>
-        void RedefineModule<Arg4Extendsobject, Arg5Extendsobject>(Java.Lang.Module arg0, Java.Util.Set<Java.Lang.Module> arg1, Java.Util.Map<string, Java.Util.Set<Java.Lang.Module>> arg2, Java.Util.Map<string, Java.Util.Set<Java.Lang.Module>> arg3, Java.Util.Set<Java.Lang.Class> arg4, Java.Util.Map<Java.Lang.Class, Java.Util.List<Java.Lang.Class>> arg5);
+        void RedefineModule(Java.Lang.Module arg0, Java.Util.Set<Java.Lang.Module> arg1, Java.Util.Map<string, Java.Util.Set<Java.Lang.Module>> arg2, Java.Util.Map<string, Java.Util.Set<Java.Lang.Module>> arg3, Java.Util.Set<Java.Lang.Class> arg4, Java.Util.Map<Java.Lang.Class, Java.Util.List<Java.Lang.Class>> arg5);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <exception cref="Java.Lang.Instrument.UnmodifiableClassException"/>
-        void RetransformClasses<Arg0Extendsobject>(params Java.Lang.Class[] arg0);
+        void RetransformClasses(params Java.Lang.Class[] arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer,java.lang.String)"/>
         /// </summary>
@@ -284,9 +281,7 @@ namespace Java.Lang.Instrument
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
         /// <param name="arg4"><see cref="Java.Util.Set"/></param>
         /// <param name="arg5"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg4Extendsobject"></typeparam>
-        /// <typeparam name="Arg5Extendsobject"></typeparam>
-        public void RedefineModule<Arg4Extendsobject, Arg5Extendsobject>(Java.Lang.Module arg0, Java.Util.Set<Java.Lang.Module> arg1, Java.Util.Map<string, Java.Util.Set<Java.Lang.Module>> arg2, Java.Util.Map<string, Java.Util.Set<Java.Lang.Module>> arg3, Java.Util.Set<Java.Lang.Class> arg4, Java.Util.Map<Java.Lang.Class, Java.Util.List<Java.Lang.Class>> arg5)
+        public void RedefineModule(Java.Lang.Module arg0, Java.Util.Set<Java.Lang.Module> arg1, Java.Util.Map<string, Java.Util.Set<Java.Lang.Module>> arg2, Java.Util.Map<string, Java.Util.Set<Java.Lang.Module>> arg3, Java.Util.Set<Java.Lang.Class> arg4, Java.Util.Map<Java.Lang.Class, Java.Util.List<Java.Lang.Class>> arg5)
         {
             IExecute("redefineModule", arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -294,9 +289,8 @@ namespace Java.Lang.Instrument
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <exception cref="Java.Lang.Instrument.UnmodifiableClassException"/>
-        public void RetransformClasses<Arg0Extendsobject>(params Java.Lang.Class[] arg0)
+        public void RetransformClasses(params Java.Lang.Class[] arg0)
         {
             if (arg0.Length == 0) IExecute("retransformClasses"); else IExecute("retransformClasses", arg0);
         }

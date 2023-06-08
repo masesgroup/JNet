@@ -36,7 +36,7 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/> 
         /// </summary>
-        Java.Util.List PollEvents { get; }
+        Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#reset()"/> 
         /// </summary>
@@ -90,9 +90,9 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/> 
         /// </summary>
-        public Java.Util.List PollEvents
+        public Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents
         {
-            get { return IExecute<Java.Util.List>("pollEvents"); }
+            get { return IExecute<Java.Util.List<Java.Nio.File.WatchEvent<object>>>("pollEvents"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#reset()"/> 

@@ -250,9 +250,8 @@ namespace Java.Time.Format
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#toFormat(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Text.Format"/></returns>
-        public Java.Text.Format ToFormat<Arg0Extendsobject>(Java.Time.Temporal.TemporalQuery<Arg0Extendsobject> arg0)
+        public Java.Text.Format ToFormat(Java.Time.Temporal.TemporalQuery<object> arg0)
         {
             return IExecute<Java.Text.Format>("toFormat", arg0);
         }
@@ -352,9 +351,8 @@ namespace Java.Time.Format
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
-        public Java.Time.Temporal.TemporalAccessor ParseBest<Arg1Extendsobject>(Java.Lang.CharSequence arg0, params Java.Time.Temporal.TemporalQuery<Arg1Extendsobject>[] arg1)
+        public Java.Time.Temporal.TemporalAccessor ParseBest(Java.Lang.CharSequence arg0, params Java.Time.Temporal.TemporalQuery<object>[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Time.Temporal.TemporalAccessor>("parseBest", arg0); else return IExecute<Java.Time.Temporal.TemporalAccessor>("parseBest", arg0, arg1);
         }

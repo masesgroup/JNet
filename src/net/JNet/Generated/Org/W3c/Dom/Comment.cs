@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom
 {
     #region IComment
-    public partial interface IComment
+    public partial interface IComment : Org.W3c.Dom.ICharacterData
     {
         #region Instance methods
 

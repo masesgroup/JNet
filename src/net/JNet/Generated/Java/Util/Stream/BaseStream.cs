@@ -115,7 +115,7 @@ namespace Java.Util.Stream
     #endregion
 
     #region IBaseStream<T, S>
-    public partial interface IBaseStream<T, S>
+    public partial interface IBaseStream<T, S> : Java.Lang.IAutoCloseable
     {
         #region Instance methods
         /// <summary>

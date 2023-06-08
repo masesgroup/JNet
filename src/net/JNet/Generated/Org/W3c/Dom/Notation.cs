@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom
 {
     #region INotation
-    public partial interface INotation
+    public partial interface INotation : Org.W3c.Dom.INode
     {
         #region Instance methods
         /// <summary>

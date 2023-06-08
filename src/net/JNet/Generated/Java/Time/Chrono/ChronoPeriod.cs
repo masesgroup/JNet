@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Time.Chrono
 {
     #region IChronoPeriod
-    public partial interface IChronoPeriod
+    public partial interface IChronoPeriod : Java.Time.Temporal.ITemporalAmount
     {
         #region Instance methods
         /// <summary>

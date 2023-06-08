@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Security
 {
     #region IKey
-    public partial interface IKey
+    public partial interface IKey : Java.Io.ISerializable
     {
         #region Instance methods
         /// <summary>

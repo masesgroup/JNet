@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Css
 {
     #region IDOMImplementationCSS
-    public partial interface IDOMImplementationCSS
+    public partial interface IDOMImplementationCSS : Org.W3c.Dom.IDOMImplementation
     {
         #region Instance methods
         /// <summary>

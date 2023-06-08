@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.ImageNs
 {
     #region IWritableRenderedImage
-    public partial interface IWritableRenderedImage
+    public partial interface IWritableRenderedImage : Java.Awt.ImageNs.IRenderedImage
     {
         #region Instance methods
         /// <summary>

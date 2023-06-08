@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Transform.Sax
 {
     #region ITemplatesHandler
-    public partial interface ITemplatesHandler
+    public partial interface ITemplatesHandler : Org.Xml.Sax.IContentHandler
     {
         #region Instance methods
         /// <summary>

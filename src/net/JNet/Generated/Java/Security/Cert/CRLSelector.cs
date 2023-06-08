@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Security.Cert
 {
     #region ICRLSelector
-    public partial interface ICRLSelector
+    public partial interface ICRLSelector : Java.Lang.ICloneable
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Io
 {
     #region IExternalizable
-    public partial interface IExternalizable
+    public partial interface IExternalizable : Java.Io.ISerializable
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sound.Sampled
 {
     #region IDataLine
-    public partial interface IDataLine
+    public partial interface IDataLine : Javax.Sound.Sampled.ILine
     {
         #region Instance methods
         /// <summary>

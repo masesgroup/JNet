@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql.Rowset
 {
     #region IWebRowSet
-    public partial interface IWebRowSet
+    public partial interface IWebRowSet : Javax.Sql.Rowset.ICachedRowSet
     {
         #region Instance methods
         /// <summary>

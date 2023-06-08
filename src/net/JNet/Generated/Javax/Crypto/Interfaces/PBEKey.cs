@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Crypto.Interfaces
 {
     #region IPBEKey
-    public partial interface IPBEKey
+    public partial interface IPBEKey : Javax.Crypto.ISecretKey
     {
         #region Instance methods
         /// <summary>

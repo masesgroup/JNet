@@ -57,7 +57,7 @@ namespace Java.Util.Function
     #endregion
 
     #region IUnaryOperator<T>
-    public partial interface IUnaryOperator<T>
+    public partial interface IUnaryOperator<T> : Java.Util.Function.IFunction<T, T>
     {
         #region Instance methods
 

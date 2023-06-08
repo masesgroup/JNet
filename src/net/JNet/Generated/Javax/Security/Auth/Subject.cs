@@ -36,7 +36,7 @@ namespace Javax.Security.Auth
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         /// <param name="arg2"><see cref="Java.Util.Set"/></param>
         /// <param name="arg3"><see cref="Java.Util.Set"/></param>
-        public Subject(bool arg0, Java.Util.Set arg1, Java.Util.Set arg2, Java.Util.Set arg3)
+        public Subject(bool arg0, Java.Util.Set arg1, Java.Util.Set<object> arg2, Java.Util.Set<object> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }

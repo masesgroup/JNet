@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
     #region IX509IssuerSerial
-    public partial interface IX509IssuerSerial
+    public partial interface IX509IssuerSerial : Javax.Xml.Crypto.IXMLStructure
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Type
 {
     #region IPrimitiveType
-    public partial interface IPrimitiveType
+    public partial interface IPrimitiveType : Javax.Lang.Model.Type.ITypeMirror
     {
         #region Instance methods
 

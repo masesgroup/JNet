@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sound.Midi
 {
     #region IMidiDevice
-    public partial interface IMidiDevice
+    public partial interface IMidiDevice : Java.Lang.IAutoCloseable
     {
         #region Instance methods
         /// <summary>

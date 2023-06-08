@@ -38,7 +38,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg3"><see cref="Javax.Management.Openmbean.OpenType"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Javax.Management.Descriptor"/></param>
-        public OpenMBeanOperationInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Openmbean.OpenType arg3, int arg4, Javax.Management.Descriptor arg5)
+        public OpenMBeanOperationInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Openmbean.OpenType<object> arg3, int arg4, Javax.Management.Descriptor arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
@@ -50,7 +50,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenMBeanParameterInfo"/></param>
         /// <param name="arg3"><see cref="Javax.Management.Openmbean.OpenType"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        public OpenMBeanOperationInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Openmbean.OpenType arg3, int arg4)
+        public OpenMBeanOperationInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Openmbean.OpenType<object> arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
@@ -77,9 +77,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfoSupport.html#getReturnOpenType()"/> 
         /// </summary>
-        public Javax.Management.Openmbean.OpenType ReturnOpenType
+        public Javax.Management.Openmbean.OpenType<object> ReturnOpenType
         {
-            get { return IExecute<Javax.Management.Openmbean.OpenType>("getReturnOpenType"); }
+            get { return IExecute<Javax.Management.Openmbean.OpenType<object>>("getReturnOpenType"); }
         }
 
         #endregion

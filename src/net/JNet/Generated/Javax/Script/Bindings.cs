@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Script
 {
     #region IBindings
-    public partial interface IBindings
+    public partial interface IBindings : Java.Util.IMap<string, object>
     {
         #region Instance methods
         /// <summary>
@@ -58,9 +58,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0Extendsstring"></typeparam>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        void PutAll<Arg0Extendsstring, Arg0Extendsobject>(Java.Util.Map<Arg0Extendsstring, Arg0Extendsobject> arg0);
+        void PutAll(Java.Util.Map<string, object> arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html#put(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -140,9 +138,7 @@ namespace Javax.Script
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0Extendsstring"></typeparam>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public void PutAll<Arg0Extendsstring, Arg0Extendsobject>(Java.Util.Map<Arg0Extendsstring, Arg0Extendsobject> arg0)
+        public void PutAll(Java.Util.Map<string, object> arg0)
         {
             IExecute("putAll", arg0);
         }

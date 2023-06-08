@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Type
 {
     #region IIntersectionType
-    public partial interface IIntersectionType
+    public partial interface IIntersectionType : Javax.Lang.Model.Type.ITypeMirror
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.Ietf.Jgss
 {
     #region IGSSCredential
-    public partial interface IGSSCredential
+    public partial interface IGSSCredential : Java.Lang.ICloneable
     {
         #region Instance methods
         /// <summary>

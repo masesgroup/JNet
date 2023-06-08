@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Time.Temporal
 {
     #region ITemporal
-    public partial interface ITemporal
+    public partial interface ITemporal : Java.Time.Temporal.ITemporalAccessor
     {
         #region Instance methods
         /// <summary>

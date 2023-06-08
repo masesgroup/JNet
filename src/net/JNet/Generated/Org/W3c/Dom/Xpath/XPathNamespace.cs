@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Xpath
 {
     #region IXPathNamespace
-    public partial interface IXPathNamespace
+    public partial interface IXPathNamespace : Org.W3c.Dom.INode
     {
         #region Instance methods
         /// <summary>

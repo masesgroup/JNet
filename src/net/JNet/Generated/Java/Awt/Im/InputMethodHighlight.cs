@@ -36,7 +36,7 @@ namespace Java.Awt.Im
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
-        public InputMethodHighlight(bool arg0, int arg1, int arg2, Java.Util.Map arg3)
+        public InputMethodHighlight(bool arg0, int arg1, int arg2, Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -116,9 +116,9 @@ namespace Java.Awt.Im
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getStyle()"/> 
         /// </summary>
-        public Java.Util.Map Style
+        public Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> Style
         {
-            get { return IExecute<Java.Util.Map>("getStyle"); }
+            get { return IExecute<Java.Util.Map<Java.Awt.FontNs.TextAttribute, object>>("getStyle"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#getVariation()"/> 

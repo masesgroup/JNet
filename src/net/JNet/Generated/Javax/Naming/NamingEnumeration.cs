@@ -80,7 +80,7 @@ namespace Javax.Naming
     #endregion
 
     #region INamingEnumeration<T>
-    public partial interface INamingEnumeration<T>
+    public partial interface INamingEnumeration<T> : Java.Util.IEnumeration<T>
     {
         #region Instance methods
         /// <summary>

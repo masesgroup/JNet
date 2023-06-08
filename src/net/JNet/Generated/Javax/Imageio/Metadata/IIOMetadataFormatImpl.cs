@@ -204,9 +204,8 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getObjectClass(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class GetObjectClass<ReturnExtendsobject>(string arg0)
+        public Java.Lang.Class GetObjectClass(string arg0)
         {
             return IExecute<Java.Lang.Class>("getObjectClass", arg0);
         }
@@ -214,21 +213,19 @@ namespace Javax.Imageio.Metadata
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getObjectMaxValue(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Comparable"/></returns>
-        public Java.Lang.Comparable<ReturnExtendsobject> GetObjectMaxValue<ReturnExtendsobject>(string arg0)
+        public Java.Lang.Comparable<object> GetObjectMaxValue(string arg0)
         {
-            return IExecute<Java.Lang.Comparable<ReturnExtendsobject>>("getObjectMaxValue", arg0);
+            return IExecute<Java.Lang.Comparable<object>>("getObjectMaxValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getObjectMinValue(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Comparable"/></returns>
-        public Java.Lang.Comparable<ReturnExtendsobject> GetObjectMinValue<ReturnExtendsobject>(string arg0)
+        public Java.Lang.Comparable<object> GetObjectMinValue(string arg0)
         {
-            return IExecute<Java.Lang.Comparable<ReturnExtendsobject>>("getObjectMinValue", arg0);
+            return IExecute<Java.Lang.Comparable<object>>("getObjectMinValue", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html#getObjectDefaultValue(java.lang.String)"/>

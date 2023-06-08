@@ -107,26 +107,23 @@ namespace Javax.Sql.Rowset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection()"/>
         /// </summary>
 
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>();
+        Java.Util.Collection<object> ToCollection();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>(int arg0);
+        Java.Util.Collection<object> ToCollection(int arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>(string arg0);
+        Java.Util.Collection<object> ToCollection(string arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#acceptChanges()"/>
         /// </summary>
@@ -393,34 +390,31 @@ namespace Javax.Sql.Rowset
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection()"/>
         /// </summary>
 
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>()
+        public Java.Util.Collection<object> ToCollection()
         {
-            return IExecute<Java.Util.Collection<ReturnExtendsobject>>("toCollection");
+            return IExecute<Java.Util.Collection<object>>("toCollection");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>(int arg0)
+        public Java.Util.Collection<object> ToCollection(int arg0)
         {
-            return IExecute<Java.Util.Collection<ReturnExtendsobject>>("toCollection", arg0);
+            return IExecute<Java.Util.Collection<object>>("toCollection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#toCollection(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public Java.Util.Collection<ReturnExtendsobject> ToCollection<ReturnExtendsobject>(string arg0)
+        public Java.Util.Collection<object> ToCollection(string arg0)
         {
-            return IExecute<Java.Util.Collection<ReturnExtendsobject>>("toCollection", arg0);
+            return IExecute<Java.Util.Collection<object>>("toCollection", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/CachedRowSet.html#acceptChanges()"/>

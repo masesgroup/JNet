@@ -43,7 +43,7 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
-        public JTable(Java.Util.Vector arg0, Java.Util.Vector arg1)
+        public JTable(Java.Util.Vector arg0, Java.Util.Vector<object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -682,9 +682,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnClass(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class GetColumnClass<ReturnExtendsobject>(int arg0)
+        public Java.Lang.Class GetColumnClass(int arg0)
         {
             return IExecute<Java.Lang.Class>("getColumnClass", arg0);
         }

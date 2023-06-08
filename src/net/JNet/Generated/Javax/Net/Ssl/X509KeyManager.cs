@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Net.Ssl
 {
     #region IX509KeyManager
-    public partial interface IX509KeyManager
+    public partial interface IX509KeyManager : Javax.Net.Ssl.IKeyManager
     {
         #region Instance methods
         /// <summary>

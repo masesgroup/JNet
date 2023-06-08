@@ -418,11 +418,10 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
-        public static Java.Util.Concurrent.ForkJoinTask<ReturnExtendsobject> Adapt<ReturnExtendsobject>(Java.Lang.Runnable arg0)
+        public static Java.Util.Concurrent.ForkJoinTask<object> Adapt(Java.Lang.Runnable arg0)
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask<ReturnExtendsobject>>(LocalBridgeClazz, "adapt", arg0);
+            return SExecute<Java.Util.Concurrent.ForkJoinTask<object>>(LocalBridgeClazz, "adapt", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#helpQuiesce()"/>
@@ -436,9 +435,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
-        public static void InvokeAll<Arg0Extendsobject, Arg1Extendsobject>(Java.Util.Concurrent.ForkJoinTask<Arg0Extendsobject> arg0, Java.Util.Concurrent.ForkJoinTask<Arg1Extendsobject> arg1)
+        public static void InvokeAll(Java.Util.Concurrent.ForkJoinTask<object> arg0, Java.Util.Concurrent.ForkJoinTask<object> arg1)
         {
             SExecute(LocalBridgeClazz, "invokeAll", arg0, arg1);
         }
@@ -446,8 +443,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public static void InvokeAll<Arg0Extendsobject>(params Java.Util.Concurrent.ForkJoinTask<Arg0Extendsobject>[] arg0)
+        public static void InvokeAll(params Java.Util.Concurrent.ForkJoinTask<object>[] arg0)
         {
             if (arg0.Length == 0) SExecute(LocalBridgeClazz, "invokeAll"); else SExecute(LocalBridgeClazz, "invokeAll", arg0);
         }

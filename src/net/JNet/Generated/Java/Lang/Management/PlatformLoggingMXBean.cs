@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Management
 {
     #region IPlatformLoggingMXBean
-    public partial interface IPlatformLoggingMXBean
+    public partial interface IPlatformLoggingMXBean : Java.Lang.Management.IPlatformManagedObject
     {
         #region Instance methods
         /// <summary>

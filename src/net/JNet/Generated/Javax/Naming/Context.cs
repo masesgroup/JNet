@@ -32,7 +32,7 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#getEnvironment()"/> 
         /// </summary>
-        Java.Util.Hashtable Environment { get; }
+        Java.Util.Hashtable<object, object> Environment { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#getNameInNamespace()"/> 
         /// </summary>
@@ -314,9 +314,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#getEnvironment()"/> 
         /// </summary>
-        public Java.Util.Hashtable Environment
+        public Java.Util.Hashtable<object, object> Environment
         {
-            get { return IExecute<Java.Util.Hashtable>("getEnvironment"); }
+            get { return IExecute<Java.Util.Hashtable<object, object>>("getEnvironment"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#getNameInNamespace()"/> 

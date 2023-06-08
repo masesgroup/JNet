@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Stream
 {
     #region ILongStream
-    public partial interface ILongStream
+    public partial interface ILongStream : Java.Util.Stream.IBaseStream<long?, Java.Util.Stream.LongStream>
     {
         #region Instance methods
         /// <summary>

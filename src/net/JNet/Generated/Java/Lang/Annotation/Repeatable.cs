@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Annotation
 {
     #region IRepeatable
-    public partial interface IRepeatable
+    public partial interface IRepeatable : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Tree
 {
     #region IMutableTreeNode
-    public partial interface IMutableTreeNode
+    public partial interface IMutableTreeNode : Javax.Swing.Tree.ITreeNode
     {
         #region Instance methods
         /// <summary>

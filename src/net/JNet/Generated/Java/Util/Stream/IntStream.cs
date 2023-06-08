@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Stream
 {
     #region IIntStream
-    public partial interface IIntStream
+    public partial interface IIntStream : Java.Util.Stream.IBaseStream<int?, Java.Util.Stream.IntStream>
     {
         #region Instance methods
         /// <summary>

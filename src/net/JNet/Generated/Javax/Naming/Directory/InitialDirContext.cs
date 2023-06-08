@@ -34,7 +34,7 @@ namespace Javax.Naming.Directory
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public InitialDirContext(Java.Util.Hashtable arg0)
+        public InitialDirContext(Java.Util.Hashtable<object, object> arg0)
             : base(arg0)
         {
         }

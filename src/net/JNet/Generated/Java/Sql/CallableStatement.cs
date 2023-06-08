@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Sql
 {
     #region ICallableStatement
-    public partial interface ICallableStatement
+    public partial interface ICallableStatement : Java.Sql.IPreparedStatement
     {
         #region Instance methods
         /// <summary>
@@ -168,10 +168,9 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        object GetObject<Arg1Extendsobject>(int arg0, Java.Util.Map<string, Java.Lang.Class> arg1);
+        object GetObject(int arg0, Java.Util.Map<string, Java.Lang.Class> arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getObject(int)"/>
         /// </summary>
@@ -184,10 +183,9 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        object GetObject<Arg1Extendsobject>(string arg0, Java.Util.Map<string, Java.Lang.Class> arg1);
+        object GetObject(string arg0, Java.Util.Map<string, Java.Lang.Class> arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getObject(java.lang.String)"/>
         /// </summary>
@@ -1135,10 +1133,9 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject<Arg1Extendsobject>(int arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
+        public object GetObject(int arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
         {
             return IExecute("getObject", arg0, arg1);
         }
@@ -1157,10 +1154,9 @@ namespace Java.Sql
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public object GetObject<Arg1Extendsobject>(string arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
+        public object GetObject(string arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
         {
             return IExecute("getObject", arg0, arg1);
         }

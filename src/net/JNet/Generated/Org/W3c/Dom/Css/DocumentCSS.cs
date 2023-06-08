@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Css
 {
     #region IDocumentCSS
-    public partial interface IDocumentCSS
+    public partial interface IDocumentCSS : Org.W3c.Dom.Stylesheets.IDocumentStyle
     {
         #region Instance methods
         /// <summary>

@@ -656,51 +656,45 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBoth<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1);
+        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBoth(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2);
+        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1);
+        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterEither(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEither<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1);
+        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEither(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2);
+        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1);
+        Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html#thenAccept(java.util.function.Consumer)"/>
         /// </summary>
@@ -1101,9 +1095,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBoth<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1)
+        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBoth(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1)
         {
             return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterBoth", arg0, arg1);
         }
@@ -1113,9 +1106,8 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2)
+        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2)
         {
             return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterBothAsync", arg0, arg1, arg2);
         }
@@ -1124,9 +1116,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1)
+        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterBothAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1)
         {
             return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterBothAsync", arg0, arg1);
         }
@@ -1135,9 +1126,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEither<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1)
+        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEither(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1)
         {
             return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterEither", arg0, arg1);
         }
@@ -1147,9 +1137,8 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2)
+        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1, Java.Util.Concurrent.Executor arg2)
         {
             return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterEitherAsync", arg0, arg1, arg2);
         }
@@ -1158,9 +1147,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync<Arg0Extendsobject>(Java.Util.Concurrent.CompletionStage<Arg0Extendsobject> arg0, Java.Lang.Runnable arg1)
+        public Java.Util.Concurrent.CompletionStage<Java.Lang.Void> RunAfterEitherAsync(Java.Util.Concurrent.CompletionStage<object> arg0, Java.Lang.Runnable arg1)
         {
             return IExecute<Java.Util.Concurrent.CompletionStage<Java.Lang.Void>>("runAfterEitherAsync", arg0, arg1);
         }

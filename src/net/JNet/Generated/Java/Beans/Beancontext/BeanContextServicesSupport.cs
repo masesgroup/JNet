@@ -129,11 +129,10 @@ namespace Java.Beans.Beancontext
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getCurrentServiceSelectors(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<ReturnExtendsobject> GetCurrentServiceSelectors<ReturnExtendsobject>(Java.Lang.Class arg0)
+        public Java.Util.Iterator<object> GetCurrentServiceSelectors(Java.Lang.Class arg0)
         {
-            return IExecute<Java.Util.Iterator<ReturnExtendsobject>>("getCurrentServiceSelectors", arg0);
+            return IExecute<Java.Util.Iterator<object>>("getCurrentServiceSelectors", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#hasService(java.lang.Class)"/>

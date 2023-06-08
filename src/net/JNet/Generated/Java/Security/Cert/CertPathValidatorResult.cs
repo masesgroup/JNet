@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Security.Cert
 {
     #region ICertPathValidatorResult
-    public partial interface ICertPathValidatorResult
+    public partial interface ICertPathValidatorResult : Java.Lang.ICloneable
     {
         #region Instance methods
 

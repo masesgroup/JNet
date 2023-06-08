@@ -555,7 +555,7 @@ namespace Java.Util.Stream
     #endregion
 
     #region IStream<T>
-    public partial interface IStream<T>
+    public partial interface IStream<T> : Java.Util.Stream.IBaseStream<T, Java.Util.Stream.Stream<T>>
     {
         #region Instance methods
         /// <summary>

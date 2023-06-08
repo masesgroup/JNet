@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sound.Sampled
 {
     #region IMixer
-    public partial interface IMixer
+    public partial interface IMixer : Javax.Sound.Sampled.ILine
     {
         #region Instance methods
         /// <summary>

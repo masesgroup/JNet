@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Type
 {
     #region IArrayType
-    public partial interface IArrayType
+    public partial interface IArrayType : Javax.Lang.Model.Type.IReferenceType
     {
         #region Instance methods
         /// <summary>

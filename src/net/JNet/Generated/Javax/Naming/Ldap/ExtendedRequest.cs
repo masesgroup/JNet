@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming.Ldap
 {
     #region IExtendedRequest
-    public partial interface IExtendedRequest
+    public partial interface IExtendedRequest : Java.Io.ISerializable
     {
         #region Instance methods
         /// <summary>

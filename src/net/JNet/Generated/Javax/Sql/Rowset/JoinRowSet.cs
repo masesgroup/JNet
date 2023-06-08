@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql.Rowset
 {
     #region IJoinRowSet
-    public partial interface IJoinRowSet
+    public partial interface IJoinRowSet : Javax.Sql.Rowset.IWebRowSet
     {
         #region Instance methods
         /// <summary>
@@ -40,7 +40,7 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getRowSets()"/> 
         /// </summary>
-        Java.Util.Collection RowSets { get; }
+        Java.Util.Collection<object> RowSets { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsCrossJoin()"/> 
         /// </summary>
@@ -171,9 +171,9 @@ namespace Javax.Sql.Rowset
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#getRowSets()"/> 
         /// </summary>
-        public Java.Util.Collection RowSets
+        public Java.Util.Collection<object> RowSets
         {
-            get { return IExecute<Java.Util.Collection>("getRowSets"); }
+            get { return IExecute<Java.Util.Collection<object>>("getRowSets"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#supportsCrossJoin()"/> 

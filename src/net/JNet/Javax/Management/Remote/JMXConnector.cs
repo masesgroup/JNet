@@ -26,10 +26,5 @@ namespace Javax.Management.Remote
     {
         // can be extended with methods not reflected or not available in Java;
 
-        /// <summary>
-        /// Establishes the connection to the connector server.
-        /// </summary>
-        /// <param name="env"></param>
-        public void Connect(Map<string, object> env) => IExecute("connect", env);
     }
 }

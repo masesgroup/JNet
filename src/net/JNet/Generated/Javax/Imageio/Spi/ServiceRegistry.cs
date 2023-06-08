@@ -33,7 +33,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#%3Cinit%3E(java.util.Iterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
-        public ServiceRegistry(Java.Util.Iterator arg0)
+        public ServiceRegistry(Java.Util.Iterator<Java.Lang.Class> arg0)
             : base(arg0)
         {
         }
@@ -77,9 +77,9 @@ namespace Javax.Imageio.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#getCategories()"/> 
         /// </summary>
-        public Java.Util.Iterator Categories
+        public Java.Util.Iterator<Java.Lang.Class> Categories
         {
-            get { return IExecute<Java.Util.Iterator>("getCategories"); }
+            get { return IExecute<Java.Util.Iterator<Java.Lang.Class>>("getCategories"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#deregisterServiceProvider(java.lang.Object,java.lang.Class)"/>
@@ -204,8 +204,7 @@ namespace Javax.Imageio.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ServiceRegistry.html#registerServiceProviders(java.util.Iterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Iterator"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public void RegisterServiceProviders<Arg0Extendsobject>(Java.Util.Iterator<Arg0Extendsobject> arg0)
+        public void RegisterServiceProviders(Java.Util.Iterator<object> arg0)
         {
             IExecute("registerServiceProviders", arg0);
         }

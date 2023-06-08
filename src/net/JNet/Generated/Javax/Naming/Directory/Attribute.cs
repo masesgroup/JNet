@@ -32,7 +32,7 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#getAll()"/> 
         /// </summary>
-        Javax.Naming.NamingEnumeration All { get; }
+        Javax.Naming.NamingEnumeration<object> All { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#getAttributeDefinition()"/> 
         /// </summary>
@@ -154,9 +154,9 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#getAll()"/> 
         /// </summary>
-        public Javax.Naming.NamingEnumeration All
+        public Javax.Naming.NamingEnumeration<object> All
         {
-            get { return IExecute<Javax.Naming.NamingEnumeration>("getAll"); }
+            get { return IExecute<Javax.Naming.NamingEnumeration<object>>("getAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#getAttributeDefinition()"/> 

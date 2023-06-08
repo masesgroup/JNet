@@ -199,9 +199,8 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Awt.Font"/></returns>
-        public static Java.Awt.Font GetFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
+        public static Java.Awt.Font GetFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, object> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
         {
             return SExecute<Java.Awt.Font>(LocalBridgeClazz, "getFont", arg0);
         }
@@ -234,9 +233,9 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getAttributes()"/> 
         /// </summary>
-        public Java.Util.Map Attributes
+        public Java.Util.Map<Java.Awt.FontNs.TextAttribute, object> Attributes
         {
-            get { return IExecute<Java.Util.Map>("getAttributes"); }
+            get { return IExecute<Java.Util.Map<Java.Awt.FontNs.TextAttribute, object>>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getAvailableAttributes()"/> 
@@ -474,9 +473,8 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Awt.Font"/></returns>
-        public Java.Awt.Font DeriveFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, Arg0Extendsobject> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
+        public Java.Awt.Font DeriveFont<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, object> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute
         {
             return IExecute<Java.Awt.Font>("deriveFont", arg0);
         }

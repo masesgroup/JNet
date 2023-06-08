@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom
 {
     #region ICharacterData
-    public partial interface ICharacterData
+    public partial interface ICharacterData : Org.W3c.Dom.INode
     {
         #region Instance methods
         /// <summary>

@@ -34,7 +34,7 @@ namespace Javax.Naming
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public InitialContext(Java.Util.Hashtable arg0)
+        public InitialContext(Java.Util.Hashtable<object, object> arg0)
             : base(arg0)
         {
         }
@@ -83,9 +83,9 @@ namespace Javax.Naming
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#getEnvironment()"/> 
         /// </summary>
-        public Java.Util.Hashtable Environment
+        public Java.Util.Hashtable<object, object> Environment
         {
-            get { return IExecute<Java.Util.Hashtable>("getEnvironment"); }
+            get { return IExecute<Java.Util.Hashtable<object, object>>("getEnvironment"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html#getNameInNamespace()"/> 

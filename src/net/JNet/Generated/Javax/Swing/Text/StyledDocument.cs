@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Text
 {
     #region IStyledDocument
-    public partial interface IStyledDocument
+    public partial interface IStyledDocument : Javax.Swing.Text.IDocument
     {
         #region Instance methods
         /// <summary>

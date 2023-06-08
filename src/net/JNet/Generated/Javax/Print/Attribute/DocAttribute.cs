@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Print.Attribute
 {
     #region IDocAttribute
-    public partial interface IDocAttribute
+    public partial interface IDocAttribute : Javax.Print.Attribute.IAttribute
     {
         #region Instance methods
 

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Css
 {
     #region ICSSImportRule
-    public partial interface ICSSImportRule
+    public partial interface ICSSImportRule : Org.W3c.Dom.Css.ICSSRule
     {
         #region Instance methods
         /// <summary>

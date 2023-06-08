@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Element
 {
     #region IName
-    public partial interface IName
+    public partial interface IName : Java.Lang.ICharSequence
     {
         #region Instance methods
         /// <summary>

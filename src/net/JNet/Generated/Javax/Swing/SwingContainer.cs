@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing
 {
     #region ISwingContainer
-    public partial interface ISwingContainer
+    public partial interface ISwingContainer : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
         /// <summary>

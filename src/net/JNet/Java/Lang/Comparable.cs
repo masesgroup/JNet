@@ -20,6 +20,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region IComparable<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/>
+    /// </summary>
+    public partial interface IComparable<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><see cref="int"/></returns>
+        int CompareTo(T arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/>
     /// </summary>
@@ -47,7 +71,7 @@ namespace Java.Lang
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/>
     /// </summary>
     /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/></typeparam>
-    public class Comparable<T> : Comparable
+    public class Comparable<T> : Comparable, IComparable<T>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

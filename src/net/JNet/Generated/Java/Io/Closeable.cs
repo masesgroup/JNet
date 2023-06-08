@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Io
 {
     #region ICloseable
-    public partial interface ICloseable
+    public partial interface ICloseable : Java.Lang.IAutoCloseable
     {
         #region Instance methods
         /// <summary>

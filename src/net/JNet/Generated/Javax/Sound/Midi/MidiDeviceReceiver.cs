@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sound.Midi
 {
     #region IMidiDeviceReceiver
-    public partial interface IMidiDeviceReceiver
+    public partial interface IMidiDeviceReceiver : Javax.Sound.Midi.IReceiver
     {
         #region Instance methods
         /// <summary>

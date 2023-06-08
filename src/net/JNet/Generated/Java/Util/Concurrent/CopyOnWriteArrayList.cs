@@ -506,9 +506,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#containsAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool ContainsAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0)
+        public bool ContainsAll(Java.Util.Collection<object> arg0)
         {
             return IExecute<bool>("containsAll", arg0);
         }
@@ -525,9 +524,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#removeAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool RemoveAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0)
+        public bool RemoveAll(Java.Util.Collection<object> arg0)
         {
             return IExecute<bool>("removeAll", arg0);
         }
@@ -545,9 +543,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CopyOnWriteArrayList.html#retainAll(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool RetainAll<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0)
+        public bool RetainAll(Java.Util.Collection<object> arg0)
         {
             return IExecute<bool>("retainAll", arg0);
         }

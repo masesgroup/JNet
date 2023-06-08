@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream.Events
 {
     #region ICharacters
-    public partial interface ICharacters
+    public partial interface ICharacters : Javax.Xml.Stream.Events.IXMLEvent
     {
         #region Instance methods
         /// <summary>

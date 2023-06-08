@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
     #region IPGPData
-    public partial interface IPGPData
+    public partial interface IPGPData : Javax.Xml.Crypto.IXMLStructure
     {
         #region Instance methods
         /// <summary>

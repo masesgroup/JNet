@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Relation
 {
     #region IRelationSupportMBean
-    public partial interface IRelationSupportMBean
+    public partial interface IRelationSupportMBean : Javax.Management.Relation.IRelation
     {
         #region Instance methods
         /// <summary>

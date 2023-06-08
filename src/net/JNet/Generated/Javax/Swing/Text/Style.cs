@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Text
 {
     #region IStyle
-    public partial interface IStyle
+    public partial interface IStyle : Javax.Swing.Text.IMutableAttributeSet
     {
         #region Instance methods
         /// <summary>

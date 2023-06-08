@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.Channels
 {
     #region IInterruptibleChannel
-    public partial interface IInterruptibleChannel
+    public partial interface IInterruptibleChannel : Java.Nio.Channels.IChannel
     {
         #region Instance methods
         /// <summary>

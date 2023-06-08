@@ -33,10 +33,9 @@ namespace Javax.Naming.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/InitialContextFactory.html#getInitialContext(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        Javax.Naming.Context GetInitialContext<Arg0Extendsobject>(Java.Util.Hashtable<Arg0Extendsobject, Arg0Extendsobject> arg0);
+        Javax.Naming.Context GetInitialContext(Java.Util.Hashtable<object, object> arg0);
 
         #endregion
 
@@ -72,10 +71,9 @@ namespace Javax.Naming.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/InitialContextFactory.html#getInitialContext(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public Javax.Naming.Context GetInitialContext<Arg0Extendsobject>(Java.Util.Hashtable<Arg0Extendsobject, Arg0Extendsobject> arg0)
+        public Javax.Naming.Context GetInitialContext(Java.Util.Hashtable<object, object> arg0)
         {
             return IExecute<Javax.Naming.Context>("getInitialContext", arg0);
         }

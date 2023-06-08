@@ -64,9 +64,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#propertyNames()"/> 
         /// </summary>
-        public Java.Util.Enumeration PropertyNames
+        public Java.Util.Enumeration<object> PropertyNames
         {
-            get { return IExecute<Java.Util.Enumeration>("propertyNames"); }
+            get { return IExecute<Java.Util.Enumeration<object>>("propertyNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#stringPropertyNames()"/> 

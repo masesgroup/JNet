@@ -35,7 +35,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Sql.SQLData"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public SerialStruct(Java.Sql.SQLData arg0, Java.Util.Map arg1)
+        public SerialStruct(Java.Sql.SQLData arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
             : base(arg0, arg1)
         {
         }
@@ -45,7 +45,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Sql.Struct"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public SerialStruct(Java.Sql.Struct arg0, Java.Util.Map arg1)
+        public SerialStruct(Java.Sql.Struct arg0, Java.Util.Map<string, Java.Lang.Class> arg1)
             : base(arg0, arg1)
         {
         }
@@ -95,10 +95,9 @@ namespace Javax.Sql.Rowset.Serial
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialStruct.html#getAttributes(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
-        public object[] GetAttributes<Arg0Extendsobject>(Java.Util.Map<string, Java.Lang.Class> arg0)
+        public object[] GetAttributes(Java.Util.Map<string, Java.Lang.Class> arg0)
         {
             return IExecuteArray<object>("getAttributes", arg0);
         }

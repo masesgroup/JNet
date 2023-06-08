@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Concurrent
 {
     #region IScheduledExecutorService
-    public partial interface IScheduledExecutorService
+    public partial interface IScheduledExecutorService : Java.Util.Concurrent.IExecutorService
     {
         #region Instance methods
         /// <summary>
@@ -44,9 +44,8 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
-        Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject> Schedule<ReturnExtendsobject>(Java.Lang.Runnable arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2);
+        Java.Util.Concurrent.ScheduledFuture<object> Schedule(Java.Lang.Runnable arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledExecutorService.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
@@ -54,9 +53,8 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
-        Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject> ScheduleAtFixedRate<ReturnExtendsobject>(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3);
+        Java.Util.Concurrent.ScheduledFuture<object> ScheduleAtFixedRate(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledExecutorService.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
@@ -64,9 +62,8 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
-        Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject> ScheduleWithFixedDelay<ReturnExtendsobject>(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3);
+        Java.Util.Concurrent.ScheduledFuture<object> ScheduleWithFixedDelay(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3);
 
         #endregion
 
@@ -116,11 +113,10 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
-        public Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject> Schedule<ReturnExtendsobject>(Java.Lang.Runnable arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
+        public Java.Util.Concurrent.ScheduledFuture<object> Schedule(Java.Lang.Runnable arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject>>("schedule", arg0, arg1, arg2);
+            return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("schedule", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledExecutorService.html#scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
@@ -129,11 +125,10 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
-        public Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject> ScheduleAtFixedRate<ReturnExtendsobject>(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
+        public Java.Util.Concurrent.ScheduledFuture<object> ScheduleAtFixedRate(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject>>("scheduleAtFixedRate", arg0, arg1, arg2, arg3);
+            return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleAtFixedRate", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledExecutorService.html#scheduleWithFixedDelay(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)"/>
@@ -142,11 +137,10 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.ScheduledFuture"/></returns>
-        public Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject> ScheduleWithFixedDelay<ReturnExtendsobject>(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
+        public Java.Util.Concurrent.ScheduledFuture<object> ScheduleWithFixedDelay(Java.Lang.Runnable arg0, long arg1, long arg2, Java.Util.Concurrent.TimeUnit arg3)
         {
-            return IExecute<Java.Util.Concurrent.ScheduledFuture<ReturnExtendsobject>>("scheduleWithFixedDelay", arg0, arg1, arg2, arg3);
+            return IExecute<Java.Util.Concurrent.ScheduledFuture<object>>("scheduleWithFixedDelay", arg0, arg1, arg2, arg3);
         }
 
         #endregion

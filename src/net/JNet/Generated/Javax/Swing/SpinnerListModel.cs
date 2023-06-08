@@ -33,7 +33,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerListModel.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public SpinnerListModel(Java.Util.List arg0)
+        public SpinnerListModel(Java.Util.List<object> arg0)
             : base(arg0)
         {
         }
@@ -56,9 +56,9 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerListModel.html#getList()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpinnerListModel.html#setList(java.util.List)"/>
         /// </summary>
-        public Java.Util.List List
+        public Java.Util.List<object> List
         {
-            get { return IExecute<Java.Util.List>("getList"); } set { IExecute("setList", value); }
+            get { return IExecute<Java.Util.List<object>>("getList"); } set { IExecute("setList", value); }
         }
 
         #endregion

@@ -90,7 +90,7 @@ namespace Javax.Swing
     #endregion
 
     #region IMutableComboBoxModel<E>
-    public partial interface IMutableComboBoxModel<E>
+    public partial interface IMutableComboBoxModel<E> : Javax.Swing.IComboBoxModel<E>
     {
         #region Instance methods
         /// <summary>

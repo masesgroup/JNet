@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Rmi.Dgc
 {
     #region IDGC
-    public partial interface IDGC
+    public partial interface IDGC : Java.Rmi.IRemote
     {
         #region Instance methods
         /// <summary>

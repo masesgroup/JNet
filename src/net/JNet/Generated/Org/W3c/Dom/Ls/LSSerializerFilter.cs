@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Ls
 {
     #region ILSSerializerFilter
-    public partial interface ILSSerializerFilter
+    public partial interface ILSSerializerFilter : Org.W3c.Dom.Traversal.INodeFilter
     {
         #region Instance methods
         /// <summary>

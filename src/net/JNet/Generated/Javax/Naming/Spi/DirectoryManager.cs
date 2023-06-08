@@ -49,10 +49,9 @@ namespace Javax.Naming.Spi
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
         /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
-        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
-        public static object GetObjectInstance<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3, Javax.Naming.Directory.Attributes arg4)
+        public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3, Javax.Naming.Directory.Attributes arg4)
         {
             return SExecute(LocalBridgeClazz, "getObjectInstance", arg0, arg1, arg2, arg3, arg4);
         }
@@ -74,10 +73,9 @@ namespace Javax.Naming.Spi
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
         /// <param name="arg4"><see cref="Javax.Naming.Directory.Attributes"/></param>
-        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Naming.Spi.DirStateFactory.Result"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Spi.DirStateFactory.Result GetStateToBind<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3, Javax.Naming.Directory.Attributes arg4)
+        public static Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3, Javax.Naming.Directory.Attributes arg4)
         {
             return SExecute<Javax.Naming.Spi.DirStateFactory.Result>(LocalBridgeClazz, "getStateToBind", arg0, arg1, arg2, arg3, arg4);
         }

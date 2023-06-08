@@ -129,11 +129,10 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/AbstractExecutorService.html#submit(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<ReturnExtendsobject> Submit<ReturnExtendsobject>(Java.Lang.Runnable arg0)
+        public Java.Util.Concurrent.Future<object> Submit(Java.Lang.Runnable arg0)
         {
-            return IExecute<Java.Util.Concurrent.Future<ReturnExtendsobject>>("submit", arg0);
+            return IExecute<Java.Util.Concurrent.Future<object>>("submit", arg0);
         }
 
         #endregion

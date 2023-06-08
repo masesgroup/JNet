@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Events
 {
     #region IMutationEvent
-    public partial interface IMutationEvent
+    public partial interface IMutationEvent : Org.W3c.Dom.Events.IEvent
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region ISuppressWarnings
-    public partial interface ISuppressWarnings
+    public partial interface ISuppressWarnings : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Security.Interfaces
 {
     #region IRSAPrivateCrtKey
-    public partial interface IRSAPrivateCrtKey
+    public partial interface IRSAPrivateCrtKey : Java.Security.Interfaces.IRSAPrivateKey
     {
         #region Instance methods
         /// <summary>

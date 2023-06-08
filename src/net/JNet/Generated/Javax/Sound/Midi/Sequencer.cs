@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sound.Midi
 {
     #region ISequencer
-    public partial interface ISequencer
+    public partial interface ISequencer : Javax.Sound.Midi.IMidiDevice
     {
         #region Instance methods
         /// <summary>

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Css
 {
     #region IViewCSS
-    public partial interface IViewCSS
+    public partial interface IViewCSS : Org.W3c.Dom.Views.IAbstractView
     {
         #region Instance methods
         /// <summary>

@@ -122,7 +122,7 @@ namespace Java.Util
     #endregion
 
     #region IListIterator<E>
-    public partial interface IListIterator<E>
+    public partial interface IListIterator<E> : Java.Util.IIterator<E>
     {
         #region Instance methods
         /// <summary>

@@ -197,9 +197,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getCompleter()"/> 
         /// </summary>
-        public Java.Util.Concurrent.CountedCompleter Completer
+        public Java.Util.Concurrent.CountedCompleter<object> Completer
         {
-            get { return IExecute<Java.Util.Concurrent.CountedCompleter>("getCompleter"); }
+            get { return IExecute<Java.Util.Concurrent.CountedCompleter<object>>("getCompleter"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/> 
@@ -211,16 +211,16 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/> 
         /// </summary>
-        public Java.Util.Concurrent.CountedCompleter FirstComplete
+        public Java.Util.Concurrent.CountedCompleter<object> FirstComplete
         {
-            get { return IExecute<Java.Util.Concurrent.CountedCompleter>("firstComplete"); }
+            get { return IExecute<Java.Util.Concurrent.CountedCompleter<object>>("firstComplete"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/> 
         /// </summary>
-        public Java.Util.Concurrent.CountedCompleter NextComplete
+        public Java.Util.Concurrent.CountedCompleter<object> NextComplete
         {
-            get { return IExecute<Java.Util.Concurrent.CountedCompleter>("nextComplete"); }
+            get { return IExecute<Java.Util.Concurrent.CountedCompleter<object>>("nextComplete"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getPendingCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#setPendingCount(int)"/>
@@ -232,9 +232,9 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#getRoot()"/> 
         /// </summary>
-        public Java.Util.Concurrent.CountedCompleter Root
+        public Java.Util.Concurrent.CountedCompleter<object> Root
         {
-            get { return IExecute<Java.Util.Concurrent.CountedCompleter>("getRoot"); }
+            get { return IExecute<Java.Util.Concurrent.CountedCompleter<object>>("getRoot"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#compute()"/>
@@ -248,9 +248,8 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool OnExceptionalCompletion<Arg1Extendsobject>(Java.Lang.Throwable arg0, Java.Util.Concurrent.CountedCompleter<Arg1Extendsobject> arg1)
+        public bool OnExceptionalCompletion(Java.Lang.Throwable arg0, Java.Util.Concurrent.CountedCompleter<object> arg1)
         {
             return IExecute<bool>("onExceptionalCompletion", arg0, arg1);
         }
@@ -305,8 +304,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#onCompletion(java.util.concurrent.CountedCompleter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public void OnCompletion<Arg0Extendsobject>(Java.Util.Concurrent.CountedCompleter<Arg0Extendsobject> arg0)
+        public void OnCompletion(Java.Util.Concurrent.CountedCompleter<object> arg0)
         {
             IExecute("onCompletion", arg0);
         }

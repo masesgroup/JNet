@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql
 {
     #region IRowSet
-    public partial interface IRowSet
+    public partial interface IRowSet : Java.Sql.IResultSet
     {
         #region Instance methods
         /// <summary>
@@ -68,7 +68,7 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#getTypeMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTypeMap(java.util.Map)"/>
         /// </summary>
-        Java.Util.Map TypeMap { get; set; }
+        Java.Util.Map<string, Java.Lang.Class> TypeMap { get; set; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#getUrl()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setUrl(java.lang.String)"/>
         /// </summary>
@@ -837,9 +837,9 @@ namespace Javax.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#getTypeMap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setTypeMap(java.util.Map)"/>
         /// </summary>
-        public Java.Util.Map TypeMap
+        public Java.Util.Map<string, Java.Lang.Class> TypeMap
         {
-            get { return IExecute<Java.Util.Map>("getTypeMap"); } set { IExecute("setTypeMap", value); }
+            get { return IExecute<Java.Util.Map<string, Java.Lang.Class>>("getTypeMap"); } set { IExecute("setTypeMap", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#getUrl()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html#setUrl(java.lang.String)"/>

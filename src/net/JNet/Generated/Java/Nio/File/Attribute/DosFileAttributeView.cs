@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.File.Attribute
 {
     #region IDosFileAttributeView
-    public partial interface IDosFileAttributeView
+    public partial interface IDosFileAttributeView : Java.Nio.File.Attribute.IBasicFileAttributeView
     {
         #region Instance methods
         /// <summary>

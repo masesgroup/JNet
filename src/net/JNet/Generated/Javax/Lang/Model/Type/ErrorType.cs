@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Type
 {
     #region IErrorType
-    public partial interface IErrorType
+    public partial interface IErrorType : Javax.Lang.Model.Type.IDeclaredType
     {
         #region Instance methods
 

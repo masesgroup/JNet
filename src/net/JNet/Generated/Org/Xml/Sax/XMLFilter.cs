@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.Xml.Sax
 {
     #region IXMLFilter
-    public partial interface IXMLFilter
+    public partial interface IXMLFilter : Org.Xml.Sax.IXMLReader
     {
         #region Instance methods
         /// <summary>
