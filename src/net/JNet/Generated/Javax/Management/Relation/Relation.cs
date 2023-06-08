@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Relation
 {
     #region IRelation
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html"/>
+    /// </summary>
     public partial interface IRelation
     {
         #region Instance methods

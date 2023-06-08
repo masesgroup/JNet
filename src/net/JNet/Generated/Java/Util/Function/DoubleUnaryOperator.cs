@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Function
 {
     #region IDoubleUnaryOperator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html"/>
+    /// </summary>
     public partial interface IDoubleUnaryOperator
     {
         #region Instance methods

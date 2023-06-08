@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.ImageNs.Renderable
 {
     #region IRenderedImageFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html"/>
+    /// </summary>
     public partial interface IRenderedImageFactory
     {
         #region Instance methods

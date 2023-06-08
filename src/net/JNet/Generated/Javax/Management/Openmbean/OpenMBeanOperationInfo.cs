@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Openmbean
 {
     #region IOpenMBeanOperationInfo
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html"/>
+    /// </summary>
     public partial interface IOpenMBeanOperationInfo
     {
         #region Instance methods

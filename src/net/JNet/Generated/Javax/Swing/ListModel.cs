@@ -89,6 +89,9 @@ namespace Javax.Swing
     #endregion
 
     #region IListModel<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListModel.html"/>
+    /// </summary>
     public partial interface IListModel<E>
     {
         #region Instance methods

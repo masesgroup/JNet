@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.ImageNs
 {
     #region IWritableRenderedImage
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html"/>
+    /// </summary>
     public partial interface IWritableRenderedImage : Java.Awt.ImageNs.IRenderedImage
     {
         #region Instance methods

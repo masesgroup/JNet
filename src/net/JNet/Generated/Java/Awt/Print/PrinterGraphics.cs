@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.Print
 {
     #region IPrinterGraphics
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterGraphics.html"/>
+    /// </summary>
     public partial interface IPrinterGraphics
     {
         #region Instance methods

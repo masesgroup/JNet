@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.Xml.Sax
 {
     #region IErrorHandler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html"/>
+    /// </summary>
     public partial interface IErrorHandler
     {
         #region Instance methods

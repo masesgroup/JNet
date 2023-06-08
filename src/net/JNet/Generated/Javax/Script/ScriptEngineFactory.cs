@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Script
 {
     #region IScriptEngineFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html"/>
+    /// </summary>
     public partial interface IScriptEngineFactory
     {
         #region Instance methods

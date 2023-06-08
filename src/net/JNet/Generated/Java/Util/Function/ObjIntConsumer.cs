@@ -66,6 +66,9 @@ namespace Java.Util.Function
     #endregion
 
     #region IObjIntConsumer<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjIntConsumer.html"/>
+    /// </summary>
     public partial interface IObjIntConsumer<T>
     {
         #region Instance methods

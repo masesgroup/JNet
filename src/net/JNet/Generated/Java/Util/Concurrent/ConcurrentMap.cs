@@ -165,6 +165,9 @@ namespace Java.Util.Concurrent
     #endregion
 
     #region IConcurrentMap<K, V>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html"/>
+    /// </summary>
     public partial interface IConcurrentMap<K, V> : Java.Util.IMap<K, V>
     {
         #region Instance methods

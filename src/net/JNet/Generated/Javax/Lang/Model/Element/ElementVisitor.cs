@@ -146,6 +146,9 @@ namespace Javax.Lang.Model.Element
     #endregion
 
     #region IElementVisitor<R, P>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementVisitor.html"/>
+    /// </summary>
     public partial interface IElementVisitor<R, P>
     {
         #region Instance methods

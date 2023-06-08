@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Transaction.Xa
 {
     #region IXid
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html"/>
+    /// </summary>
     public partial interface IXid
     {
         #region Instance methods

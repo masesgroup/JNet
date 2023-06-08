@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.ModuleNs
 {
     #region IModuleFinder
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html"/>
+    /// </summary>
     public partial interface IModuleFinder
     {
         #region Instance methods

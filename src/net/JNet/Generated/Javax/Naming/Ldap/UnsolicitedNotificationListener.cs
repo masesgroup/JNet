@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming.Ldap
 {
     #region IUnsolicitedNotificationListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html"/>
+    /// </summary>
     public partial interface IUnsolicitedNotificationListener
     {
         #region Instance methods

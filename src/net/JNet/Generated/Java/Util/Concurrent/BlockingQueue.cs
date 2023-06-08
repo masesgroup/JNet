@@ -158,6 +158,9 @@ namespace Java.Util.Concurrent
     #endregion
 
     #region IBlockingQueue<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/BlockingQueue.html"/>
+    /// </summary>
     public partial interface IBlockingQueue<E> : Java.Util.IQueue<E>
     {
         #region Instance methods

@@ -90,6 +90,9 @@ namespace Javax.Swing
     #endregion
 
     #region IMutableComboBoxModel<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html"/>
+    /// </summary>
     public partial interface IMutableComboBoxModel<E> : Javax.Swing.IComboBoxModel<E>
     {
         #region Instance methods

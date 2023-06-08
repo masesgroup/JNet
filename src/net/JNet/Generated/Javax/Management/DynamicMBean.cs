@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region IDynamicMBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html"/>
+    /// </summary>
     public partial interface IDynamicMBean
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Crypto
 {
     #region IKeySelectorResult
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelectorResult.html"/>
+    /// </summary>
     public partial interface IKeySelectorResult
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Concurrent.Locks
 {
     #region IReadWriteLock
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html"/>
+    /// </summary>
     public partial interface IReadWriteLock
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.DesktopNs
 {
     #region IAppHiddenListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html"/>
+    /// </summary>
     public partial interface IAppHiddenListener
     {
         #region Instance methods

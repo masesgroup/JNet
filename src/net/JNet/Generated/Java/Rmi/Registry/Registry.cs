@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Rmi.Registry
 {
     #region IRegistry
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html"/>
+    /// </summary>
     public partial interface IRegistry : Java.Rmi.IRemote
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Script
 {
     #region IBindings
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Bindings.html"/>
+    /// </summary>
     public partial interface IBindings : Java.Util.IMap<string, object>
     {
         #region Instance methods

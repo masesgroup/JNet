@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.FontNs
 {
     #region IMultipleMaster
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html"/>
+    /// </summary>
     public partial interface IMultipleMaster
     {
         #region Instance methods

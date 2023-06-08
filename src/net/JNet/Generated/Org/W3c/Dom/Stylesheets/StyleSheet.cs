@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Stylesheets
 {
     #region IStyleSheet
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html"/>
+    /// </summary>
     public partial interface IStyleSheet
     {
         #region Instance methods

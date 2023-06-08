@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Event
 {
     #region ITreeExpansionListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html"/>
+    /// </summary>
     public partial interface ITreeExpansionListener
     {
         #region Instance methods

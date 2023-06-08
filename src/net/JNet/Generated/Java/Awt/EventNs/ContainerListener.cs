@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.EventNs
 {
     #region IContainerListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerListener.html"/>
+    /// </summary>
     public partial interface IContainerListener
     {
         #region Instance methods

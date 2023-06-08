@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.Xml.Sax
 {
     #region IXMLReader
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html"/>
+    /// </summary>
     public partial interface IXMLReader
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Concurrent.Locks
 {
     #region ILock
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html"/>
+    /// </summary>
     public partial interface ILock
     {
         #region Instance methods

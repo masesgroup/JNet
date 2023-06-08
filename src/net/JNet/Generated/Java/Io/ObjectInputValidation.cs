@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Io
 {
     #region IObjectInputValidation
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputValidation.html"/>
+    /// </summary>
     public partial interface IObjectInputValidation
     {
         #region Instance methods

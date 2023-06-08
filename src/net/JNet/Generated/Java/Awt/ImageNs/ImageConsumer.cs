@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.ImageNs
 {
     #region IImageConsumer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ImageConsumer.html"/>
+    /// </summary>
     public partial interface IImageConsumer
     {
         #region Instance methods

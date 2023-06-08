@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region IOverride
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Override.html"/>
+    /// </summary>
     public partial interface IOverride : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods

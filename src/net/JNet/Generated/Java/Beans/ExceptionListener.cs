@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Beans
 {
     #region IExceptionListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html"/>
+    /// </summary>
     public partial interface IExceptionListener
     {
         #region Instance methods

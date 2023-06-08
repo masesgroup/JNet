@@ -113,6 +113,9 @@ namespace Java.Util
     #endregion
 
     #region ISortedSet<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html"/>
+    /// </summary>
     public partial interface ISortedSet<E> : Java.Util.ISet<E>
     {
         #region Instance methods

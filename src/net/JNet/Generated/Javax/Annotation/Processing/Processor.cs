@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Annotation.Processing
 {
     #region IProcessor
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html"/>
+    /// </summary>
     public partial interface IProcessor
     {
         #region Instance methods

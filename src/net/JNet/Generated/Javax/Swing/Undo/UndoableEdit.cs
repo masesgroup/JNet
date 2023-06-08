@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Undo
 {
     #region IUndoableEdit
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html"/>
+    /// </summary>
     public partial interface IUndoableEdit
     {
         #region Instance methods

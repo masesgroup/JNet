@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Imageio.Event
 {
     #region IIIOReadUpdateListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html"/>
+    /// </summary>
     public partial interface IIIOReadUpdateListener
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Tree
 {
     #region ITreeNode
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html"/>
+    /// </summary>
     public partial interface ITreeNode
     {
         #region Instance methods

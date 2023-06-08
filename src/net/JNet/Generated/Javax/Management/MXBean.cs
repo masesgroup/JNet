@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region IMXBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html"/>
+    /// </summary>
     public partial interface IMXBean : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods

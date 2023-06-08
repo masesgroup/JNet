@@ -91,6 +91,9 @@ namespace Java.Util.Function
     #endregion
 
     #region IFunction<T, R>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html"/>
+    /// </summary>
     public partial interface IFunction<T, R>
     {
         #region Instance methods

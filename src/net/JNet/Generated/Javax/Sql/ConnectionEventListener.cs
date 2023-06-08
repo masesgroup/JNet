@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql
 {
     #region IConnectionEventListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html"/>
+    /// </summary>
     public partial interface IConnectionEventListener
     {
         #region Instance methods

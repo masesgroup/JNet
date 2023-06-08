@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Imageio.Metadata
 {
     #region IIIOMetadataFormat
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html"/>
+    /// </summary>
     public partial interface IIIOMetadataFormat
     {
         #region Instance methods

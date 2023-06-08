@@ -555,6 +555,9 @@ namespace Java.Util.Stream
     #endregion
 
     #region IStream<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html"/>
+    /// </summary>
     public partial interface IStream<T> : Java.Util.Stream.IBaseStream<T, Java.Util.Stream.Stream<T>>
     {
         #region Instance methods

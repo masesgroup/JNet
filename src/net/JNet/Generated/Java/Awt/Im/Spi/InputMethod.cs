@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.Im.Spi
 {
     #region IInputMethod
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html"/>
+    /// </summary>
     public partial interface IInputMethod
     {
         #region Instance methods

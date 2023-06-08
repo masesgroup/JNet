@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.Xml.Sax.Ext
 {
     #region ILexicalHandler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html"/>
+    /// </summary>
     public partial interface ILexicalHandler
     {
         #region Instance methods

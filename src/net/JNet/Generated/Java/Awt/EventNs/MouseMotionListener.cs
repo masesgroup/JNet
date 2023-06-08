@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.EventNs
 {
     #region IMouseMotionListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html"/>
+    /// </summary>
     public partial interface IMouseMotionListener
     {
         #region Instance methods

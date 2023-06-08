@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Transform
 {
     #region IResult
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html"/>
+    /// </summary>
     public partial interface IResult
     {
         #region Instance methods

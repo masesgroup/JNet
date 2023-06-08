@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Logging
 {
     #region IFilter
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Filter.html"/>
+    /// </summary>
     public partial interface IFilter
     {
         #region Instance methods

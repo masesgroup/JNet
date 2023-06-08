@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region IReadable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Readable.html"/>
+    /// </summary>
     public partial interface IReadable
     {
         #region Instance methods

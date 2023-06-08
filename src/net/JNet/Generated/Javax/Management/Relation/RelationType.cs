@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Relation
 {
     #region IRelationType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationType.html"/>
+    /// </summary>
     public partial interface IRelationType : Java.Io.ISerializable
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Annotation
 {
     #region IInherited
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Inherited.html"/>
+    /// </summary>
     public partial interface IInherited : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods

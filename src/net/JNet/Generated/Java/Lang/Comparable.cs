@@ -66,6 +66,9 @@ namespace Java.Lang
     #endregion
 
     #region IComparable<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html"/>
+    /// </summary>
     public partial interface IComparable<T>
     {
         #region Instance methods

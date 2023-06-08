@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region ISuppressWarnings
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SuppressWarnings.html"/>
+    /// </summary>
     public partial interface ISuppressWarnings : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.Ietf.Jgss
 {
     #region IGSSName
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html"/>
+    /// </summary>
     public partial interface IGSSName
     {
         #region Instance methods

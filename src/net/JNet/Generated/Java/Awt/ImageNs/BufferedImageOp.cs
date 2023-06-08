@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.ImageNs
 {
     #region IBufferedImageOp
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImageOp.html"/>
+    /// </summary>
     public partial interface IBufferedImageOp
     {
         #region Instance methods

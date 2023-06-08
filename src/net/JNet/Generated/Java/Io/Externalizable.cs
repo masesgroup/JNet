@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Io
 {
     #region IExternalizable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Externalizable.html"/>
+    /// </summary>
     public partial interface IExternalizable : Java.Io.ISerializable
     {
         #region Instance methods

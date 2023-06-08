@@ -66,6 +66,9 @@ namespace Java.Time.Temporal
     #endregion
 
     #region ITemporalQuery<R>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html"/>
+    /// </summary>
     public partial interface ITemporalQuery<R>
     {
         #region Instance methods

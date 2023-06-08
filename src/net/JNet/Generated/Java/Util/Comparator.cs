@@ -131,6 +131,9 @@ namespace Java.Util
     #endregion
 
     #region IComparator<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html"/>
+    /// </summary>
     public partial interface IComparator<T>
     {
         #region Instance methods

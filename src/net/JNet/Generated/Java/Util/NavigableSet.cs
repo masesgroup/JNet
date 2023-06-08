@@ -188,6 +188,9 @@ namespace Java.Util
     #endregion
 
     #region INavigableSet<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html"/>
+    /// </summary>
     public partial interface INavigableSet<E> : Java.Util.ISortedSet<E>
     {
         #region Instance methods

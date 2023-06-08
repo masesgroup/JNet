@@ -103,6 +103,9 @@ namespace Java.Util
     #endregion
 
     #region IQueue<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html"/>
+    /// </summary>
     public partial interface IQueue<E> : Java.Util.ICollection<E>
     {
         #region Instance methods

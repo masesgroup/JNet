@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Beans.Beancontext
 {
     #region IBeanContextChildComponentProxy
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildComponentProxy.html"/>
+    /// </summary>
     public partial interface IBeanContextChildComponentProxy
     {
         #region Instance methods

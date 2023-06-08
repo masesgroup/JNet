@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Function
 {
     #region IIntToDoubleFunction
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToDoubleFunction.html"/>
+    /// </summary>
     public partial interface IIntToDoubleFunction
     {
         #region Instance methods

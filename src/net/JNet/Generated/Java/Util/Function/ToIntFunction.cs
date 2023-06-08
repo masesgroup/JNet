@@ -66,6 +66,9 @@ namespace Java.Util.Function
     #endregion
 
     #region IToIntFunction<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html"/>
+    /// </summary>
     public partial interface IToIntFunction<T>
     {
         #region Instance methods

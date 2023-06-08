@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Crypto
 {
     #region IData
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/Data.html"/>
+    /// </summary>
     public partial interface IData
     {
         #region Instance methods

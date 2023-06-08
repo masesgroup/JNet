@@ -79,6 +79,9 @@ namespace Java.Lang
     #endregion
 
     #region IIterable<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html"/>
+    /// </summary>
     public partial interface IIterable<T>
     {
         #region Instance methods

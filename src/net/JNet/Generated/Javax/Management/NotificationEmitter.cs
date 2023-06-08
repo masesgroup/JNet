@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region INotificationEmitter
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationEmitter.html"/>
+    /// </summary>
     public partial interface INotificationEmitter : Javax.Management.INotificationBroadcaster
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Monitor
 {
     #region IStringMonitorMBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html"/>
+    /// </summary>
     public partial interface IStringMonitorMBean : Javax.Management.Monitor.IMonitorMBean
     {
         #region Instance methods

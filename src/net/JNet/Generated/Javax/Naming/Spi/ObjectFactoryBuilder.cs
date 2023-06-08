@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming.Spi
 {
     #region IObjectFactoryBuilder
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactoryBuilder.html"/>
+    /// </summary>
     public partial interface IObjectFactoryBuilder
     {
         #region Instance methods

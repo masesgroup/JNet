@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Function
 {
     #region ILongToIntFunction
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToIntFunction.html"/>
+    /// </summary>
     public partial interface ILongToIntFunction
     {
         #region Instance methods

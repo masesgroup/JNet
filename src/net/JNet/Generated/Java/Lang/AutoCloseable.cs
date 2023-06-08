@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region IAutoCloseable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html"/>
+    /// </summary>
     public partial interface IAutoCloseable
     {
         #region Instance methods

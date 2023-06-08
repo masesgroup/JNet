@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream
 {
     #region IEventFilter
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/EventFilter.html"/>
+    /// </summary>
     public partial interface IEventFilter
     {
         #region Instance methods

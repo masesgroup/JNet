@@ -72,6 +72,9 @@ namespace Java.Util.Concurrent
     #endregion
 
     #region IRunnableScheduledFuture<V>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html"/>
+    /// </summary>
     public partial interface IRunnableScheduledFuture<V>
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Io
 {
     #region IFilenameFilter
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FilenameFilter.html"/>
+    /// </summary>
     public partial interface IFilenameFilter
     {
         #region Instance methods

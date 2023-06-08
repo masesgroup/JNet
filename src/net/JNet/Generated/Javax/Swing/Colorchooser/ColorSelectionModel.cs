@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Colorchooser
 {
     #region IColorSelectionModel
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorSelectionModel.html"/>
+    /// </summary>
     public partial interface IColorSelectionModel
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Openmbean
 {
     #region ITabularData
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularData.html"/>
+    /// </summary>
     public partial interface ITabularData
     {
         #region Instance methods

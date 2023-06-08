@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql
 {
     #region IConnectionPoolDataSource
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html"/>
+    /// </summary>
     public partial interface IConnectionPoolDataSource : Javax.Sql.ICommonDataSource
     {
         #region Instance methods

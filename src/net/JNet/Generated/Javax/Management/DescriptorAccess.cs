@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management
 {
     #region IDescriptorAccess
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorAccess.html"/>
+    /// </summary>
     public partial interface IDescriptorAccess : Javax.Management.IDescriptorRead
     {
         #region Instance methods

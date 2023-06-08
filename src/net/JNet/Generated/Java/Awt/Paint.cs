@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt
 {
     #region IPaint
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Paint.html"/>
+    /// </summary>
     public partial interface IPaint : Java.Awt.ITransparency
     {
         #region Instance methods

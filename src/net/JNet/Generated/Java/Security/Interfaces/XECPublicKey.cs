@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Security.Interfaces
 {
     #region IXECPublicKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPublicKey.html"/>
+    /// </summary>
     public partial interface IXECPublicKey
     {
         #region Instance methods

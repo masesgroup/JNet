@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Css
 {
     #region ICSSImportRule
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html"/>
+    /// </summary>
     public partial interface ICSSImportRule : Org.W3c.Dom.Css.ICSSRule
     {
         #region Instance methods

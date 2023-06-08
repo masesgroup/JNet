@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Text
 {
     #region ICaret
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Caret.html"/>
+    /// </summary>
     public partial interface ICaret
     {
         #region Instance methods

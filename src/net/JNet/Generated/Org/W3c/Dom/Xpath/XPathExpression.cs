@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Xpath
 {
     #region IXPathExpression
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathExpression.html"/>
+    /// </summary>
     public partial interface IXPathExpression
     {
         #region Instance methods

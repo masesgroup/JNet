@@ -153,6 +153,9 @@ namespace Java.Util.Concurrent
     #endregion
 
     #region IConcurrentNavigableMap<K, V>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentNavigableMap.html"/>
+    /// </summary>
     public partial interface IConcurrentNavigableMap<K, V>
     {
         #region Instance methods

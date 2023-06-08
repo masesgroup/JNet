@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Security.Interfaces
 {
     #region IDSAPrivateKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html"/>
+    /// </summary>
     public partial interface IDSAPrivateKey
     {
         #region Instance methods

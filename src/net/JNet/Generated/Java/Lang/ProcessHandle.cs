@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region IProcessHandle
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessHandle.html"/>
+    /// </summary>
     public partial interface IProcessHandle : Java.Lang.IComparable<Java.Lang.ProcessHandle>
     {
         #region Instance methods

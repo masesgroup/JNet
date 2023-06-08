@@ -216,6 +216,9 @@ namespace Javax.Lang.Model.Element
     #endregion
 
     #region IAnnotationValueVisitor<R, P>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html"/>
+    /// </summary>
     public partial interface IAnnotationValueVisitor<R, P>
     {
         #region Instance methods

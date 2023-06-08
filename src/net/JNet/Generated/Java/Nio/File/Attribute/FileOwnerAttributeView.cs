@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.File.Attribute
 {
     #region IFileOwnerAttributeView
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileOwnerAttributeView.html"/>
+    /// </summary>
     public partial interface IFileOwnerAttributeView : Java.Nio.File.Attribute.IFileAttributeView
     {
         #region Instance methods

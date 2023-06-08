@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream.Util
 {
     #region IXMLEventAllocator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html"/>
+    /// </summary>
     public partial interface IXMLEventAllocator
     {
         #region Instance methods

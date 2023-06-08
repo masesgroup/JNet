@@ -57,6 +57,9 @@ namespace Java.Util.Function
     #endregion
 
     #region IUnaryOperator<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/UnaryOperator.html"/>
+    /// </summary>
     public partial interface IUnaryOperator<T> : Java.Util.Function.IFunction<T, T>
     {
         #region Instance methods

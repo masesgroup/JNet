@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Tree
 {
     #region ITreeCellEditor
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeCellEditor.html"/>
+    /// </summary>
     public partial interface ITreeCellEditor : Javax.Swing.ICellEditor
     {
         #region Instance methods

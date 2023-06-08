@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream.Events
 {
     #region IProcessingInstruction
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/ProcessingInstruction.html"/>
+    /// </summary>
     public partial interface IProcessingInstruction : Javax.Xml.Stream.Events.IXMLEvent
     {
         #region Instance methods

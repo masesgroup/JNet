@@ -101,6 +101,9 @@ namespace Java.Util.Concurrent
     #endregion
 
     #region ITransferQueue<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html"/>
+    /// </summary>
     public partial interface ITransferQueue<E> : Java.Util.Concurrent.IBlockingQueue<E>
     {
         #region Instance methods

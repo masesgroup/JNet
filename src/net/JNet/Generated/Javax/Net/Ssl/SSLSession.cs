@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Net.Ssl
 {
     #region ISSLSession
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html"/>
+    /// </summary>
     public partial interface ISSLSession
     {
         #region Instance methods

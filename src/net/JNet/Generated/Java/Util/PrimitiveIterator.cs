@@ -272,6 +272,9 @@ namespace Java.Util
     #endregion
 
     #region IPrimitiveIterator<T, T_CONS>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html"/>
+    /// </summary>
     public partial interface IPrimitiveIterator<T, T_CONS> : Java.Util.IIterator<T>
     {
         #region Instance methods

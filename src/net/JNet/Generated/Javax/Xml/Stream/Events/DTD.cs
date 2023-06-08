@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream.Events
 {
     #region IDTD
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/DTD.html"/>
+    /// </summary>
     public partial interface IDTD : Javax.Xml.Stream.Events.IXMLEvent
     {
         #region Instance methods

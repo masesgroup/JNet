@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Net
 {
     #region IFileNameMap
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/FileNameMap.html"/>
+    /// </summary>
     public partial interface IFileNameMap
     {
         #region Instance methods

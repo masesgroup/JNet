@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom
 {
     #region IDocumentFragment
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentFragment.html"/>
+    /// </summary>
     public partial interface IDocumentFragment : Org.W3c.Dom.INode
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Crypto.Interfaces
 {
     #region IPBEKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/PBEKey.html"/>
+    /// </summary>
     public partial interface IPBEKey : Javax.Crypto.ISecretKey
     {
         #region Instance methods

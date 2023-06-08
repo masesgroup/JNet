@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Function
 {
     #region IDoubleSupplier
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html"/>
+    /// </summary>
     public partial interface IDoubleSupplier
     {
         #region Instance methods

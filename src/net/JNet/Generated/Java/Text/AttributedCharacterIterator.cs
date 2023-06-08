@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Text
 {
     #region IAttributedCharacterIterator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html"/>
+    /// </summary>
     public partial interface IAttributedCharacterIterator : Java.Text.ICharacterIterator
     {
         #region Instance methods

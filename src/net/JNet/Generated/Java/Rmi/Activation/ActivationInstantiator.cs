@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Rmi.Activation
 {
     #region IActivationInstantiator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationInstantiator.html"/>
+    /// </summary>
     public partial interface IActivationInstantiator : Java.Rmi.IRemote
     {
         #region Instance methods

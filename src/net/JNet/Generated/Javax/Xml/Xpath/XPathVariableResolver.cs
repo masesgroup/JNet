@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Xpath
 {
     #region IXPathVariableResolver
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathVariableResolver.html"/>
+    /// </summary>
     public partial interface IXPathVariableResolver
     {
         #region Instance methods

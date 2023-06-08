@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Reflect
 {
     #region IGenericDeclaration
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericDeclaration.html"/>
+    /// </summary>
     public partial interface IGenericDeclaration : Java.Lang.Reflect.IAnnotatedElement
     {
         #region Instance methods

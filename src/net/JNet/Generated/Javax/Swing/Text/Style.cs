@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Text
 {
     #region IStyle
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html"/>
+    /// </summary>
     public partial interface IStyle : Javax.Swing.Text.IMutableAttributeSet
     {
         #region Instance methods

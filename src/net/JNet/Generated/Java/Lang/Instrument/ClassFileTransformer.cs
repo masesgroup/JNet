@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Instrument
 {
     #region IClassFileTransformer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html"/>
+    /// </summary>
     public partial interface IClassFileTransformer
     {
         #region Instance methods

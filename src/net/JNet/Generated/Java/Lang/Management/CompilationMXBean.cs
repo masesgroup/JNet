@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Management
 {
     #region ICompilationMXBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/CompilationMXBean.html"/>
+    /// </summary>
     public partial interface ICompilationMXBean : Java.Lang.Management.IPlatformManagedObject
     {
         #region Instance methods

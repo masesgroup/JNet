@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Tools
 {
     #region IJavaFileManager
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html"/>
+    /// </summary>
     public partial interface IJavaFileManager
     {
         #region Instance methods

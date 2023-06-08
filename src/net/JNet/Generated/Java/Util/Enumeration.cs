@@ -78,6 +78,9 @@ namespace Java.Util
     #endregion
 
     #region IEnumeration<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Enumeration.html"/>
+    /// </summary>
     public partial interface IEnumeration<E>
     {
         #region Instance methods

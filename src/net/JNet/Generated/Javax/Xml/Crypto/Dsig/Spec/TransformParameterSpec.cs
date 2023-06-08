@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
     #region ITransformParameterSpec
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/TransformParameterSpec.html"/>
+    /// </summary>
     public partial interface ITransformParameterSpec : Java.Security.Spec.IAlgorithmParameterSpec
     {
         #region Instance methods

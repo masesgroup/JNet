@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.File
 {
     #region IWatchService
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchService.html"/>
+    /// </summary>
     public partial interface IWatchService : Java.Io.ICloseable
     {
         #region Instance methods

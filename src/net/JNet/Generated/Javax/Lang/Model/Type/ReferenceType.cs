@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Type
 {
     #region IReferenceType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ReferenceType.html"/>
+    /// </summary>
     public partial interface IReferenceType : Javax.Lang.Model.Type.ITypeMirror
     {
         #region Instance methods

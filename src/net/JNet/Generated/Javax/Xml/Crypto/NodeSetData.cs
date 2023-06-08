@@ -68,6 +68,9 @@ namespace Javax.Xml.Crypto
     #endregion
 
     #region INodeSetData<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html"/>
+    /// </summary>
     public partial interface INodeSetData<T>
     {
         #region Instance methods

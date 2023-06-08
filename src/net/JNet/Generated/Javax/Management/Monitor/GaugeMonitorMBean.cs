@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Monitor
 {
     #region IGaugeMonitorMBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/GaugeMonitorMBean.html"/>
+    /// </summary>
     public partial interface IGaugeMonitorMBean : Javax.Management.Monitor.IMonitorMBean
     {
         #region Instance methods

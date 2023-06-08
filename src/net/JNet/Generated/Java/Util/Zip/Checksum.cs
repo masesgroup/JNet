@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Zip
 {
     #region IChecksum
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Checksum.html"/>
+    /// </summary>
     public partial interface IChecksum
     {
         #region Instance methods

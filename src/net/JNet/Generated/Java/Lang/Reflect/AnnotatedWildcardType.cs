@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Reflect
 {
     #region IAnnotatedWildcardType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html"/>
+    /// </summary>
     public partial interface IAnnotatedWildcardType : Java.Lang.Reflect.IAnnotatedType
     {
         #region Instance methods

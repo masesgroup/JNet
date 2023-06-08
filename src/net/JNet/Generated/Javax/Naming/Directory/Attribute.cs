@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming.Directory
 {
     #region IAttribute
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html"/>
+    /// </summary>
     public partial interface IAttribute
     {
         #region Instance methods

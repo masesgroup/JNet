@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Stream
 {
     #region IDoubleStream
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html"/>
+    /// </summary>
     public partial interface IDoubleStream : Java.Util.Stream.IBaseStream<double?, Java.Util.Stream.DoubleStream>
     {
         #region Instance methods

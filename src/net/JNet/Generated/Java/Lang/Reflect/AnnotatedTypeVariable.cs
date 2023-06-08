@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Reflect
 {
     #region IAnnotatedTypeVariable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedTypeVariable.html"/>
+    /// </summary>
     public partial interface IAnnotatedTypeVariable : Java.Lang.Reflect.IAnnotatedType
     {
         #region Instance methods

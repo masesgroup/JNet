@@ -64,6 +64,9 @@ namespace Java.Security
     #endregion
 
     #region IPrivilegedExceptionAction<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedExceptionAction.html"/>
+    /// </summary>
     public partial interface IPrivilegedExceptionAction<T>
     {
         #region Instance methods

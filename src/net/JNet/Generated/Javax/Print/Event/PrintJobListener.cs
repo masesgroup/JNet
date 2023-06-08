@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Print.Event
 {
     #region IPrintJobListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html"/>
+    /// </summary>
     public partial interface IPrintJobListener
     {
         #region Instance methods

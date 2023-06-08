@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Management
 {
     #region IGarbageCollectorMXBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html"/>
+    /// </summary>
     public partial interface IGarbageCollectorMXBean : Java.Lang.Management.IMemoryManagerMXBean
     {
         #region Instance methods

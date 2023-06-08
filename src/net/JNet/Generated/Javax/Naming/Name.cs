@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming
 {
     #region IName
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html"/>
+    /// </summary>
     public partial interface IName
     {
         #region Instance methods

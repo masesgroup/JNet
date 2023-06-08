@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sound.Sampled
 {
     #region IPort
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Port.html"/>
+    /// </summary>
     public partial interface IPort : Javax.Sound.Sampled.ILine
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.DesktopNs
 {
     #region IUserSessionListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html"/>
+    /// </summary>
     public partial interface IUserSessionListener
     {
         #region Instance methods

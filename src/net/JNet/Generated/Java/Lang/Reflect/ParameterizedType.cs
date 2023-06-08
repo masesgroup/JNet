@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Reflect
 {
     #region IParameterizedType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html"/>
+    /// </summary>
     public partial interface IParameterizedType : Java.Lang.Reflect.IType
     {
         #region Instance methods

@@ -129,6 +129,9 @@ namespace Java.Nio.File
     #endregion
 
     #region ISecureDirectoryStream<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html"/>
+    /// </summary>
     public partial interface ISecureDirectoryStream<T> : Java.Nio.File.IDirectoryStream<T>
     {
         #region Instance methods

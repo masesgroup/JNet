@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.DesktopNs
 {
     #region IAppForegroundListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html"/>
+    /// </summary>
     public partial interface IAppForegroundListener
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Imageio
 {
     #region IImageTranscoder
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTranscoder.html"/>
+    /// </summary>
     public partial interface IImageTranscoder
     {
         #region Instance methods

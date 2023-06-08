@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Naming.Ldap
 {
     #region ILdapContext
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html"/>
+    /// </summary>
     public partial interface ILdapContext : Javax.Naming.Directory.IDirContext
     {
         #region Instance methods

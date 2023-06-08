@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Swing.Plaf.Synth
 {
     #region ISynthUI
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthUI.html"/>
+    /// </summary>
     public partial interface ISynthUI : Javax.Swing.Plaf.Synth.ISynthConstants
     {
         #region Instance methods

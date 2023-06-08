@@ -75,6 +75,9 @@ namespace Java.Util.Function
     #endregion
 
     #region IBinaryOperator<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html"/>
+    /// </summary>
     public partial interface IBinaryOperator<T> : Java.Util.Function.IBiFunction<T, T, T>
     {
         #region Instance methods

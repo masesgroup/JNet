@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.File
 {
     #region ICopyOption
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/CopyOption.html"/>
+    /// </summary>
     public partial interface ICopyOption
     {
         #region Instance methods

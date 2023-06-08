@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Sql
 {
     #region ICallableStatement
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html"/>
+    /// </summary>
     public partial interface ICallableStatement : Java.Sql.IPreparedStatement
     {
         #region Instance methods

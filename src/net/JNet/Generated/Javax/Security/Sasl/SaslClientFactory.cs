@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Security.Sasl
 {
     #region ISaslClientFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClientFactory.html"/>
+    /// </summary>
     public partial interface ISaslClientFactory
     {
         #region Instance methods

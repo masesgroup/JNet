@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Util
 {
     #region ITypes
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html"/>
+    /// </summary>
     public partial interface ITypes
     {
         #region Instance methods

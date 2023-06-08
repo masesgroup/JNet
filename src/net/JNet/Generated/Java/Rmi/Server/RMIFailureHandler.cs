@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Rmi.Server
 {
     #region IRMIFailureHandler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIFailureHandler.html"/>
+    /// </summary>
     public partial interface IRMIFailureHandler
     {
         #region Instance methods

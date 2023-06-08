@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Html
 {
     #region IHTMLUListElement
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLUListElement.html"/>
+    /// </summary>
     public partial interface IHTMLUListElement : Org.W3c.Dom.Html.IHTMLElement
     {
         #region Instance methods

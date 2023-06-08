@@ -93,6 +93,9 @@ namespace Java.Lang.Reflect
     #endregion
 
     #region ITypeVariable<D>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html"/>
+    /// </summary>
     public partial interface ITypeVariable<D>
     {
         #region Instance methods

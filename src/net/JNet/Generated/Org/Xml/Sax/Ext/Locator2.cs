@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.Xml.Sax.Ext
 {
     #region ILocator2
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/Locator2.html"/>
+    /// </summary>
     public partial interface ILocator2 : Org.Xml.Sax.ILocator
     {
         #region Instance methods

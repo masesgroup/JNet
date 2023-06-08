@@ -66,6 +66,9 @@ namespace Java.Util.Function
     #endregion
 
     #region ILongFunction<R>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html"/>
+    /// </summary>
     public partial interface ILongFunction<R>
     {
         #region Instance methods

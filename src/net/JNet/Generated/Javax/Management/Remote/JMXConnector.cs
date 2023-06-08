@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Remote
 {
     #region IJMXConnector
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html"/>
+    /// </summary>
     public partial interface IJMXConnector : Java.Io.ICloseable
     {
         #region Instance methods

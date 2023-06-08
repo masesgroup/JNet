@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Crypto.Dom
 {
     #region IDOMURIReference
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMURIReference.html"/>
+    /// </summary>
     public partial interface IDOMURIReference : Javax.Xml.Crypto.IURIReference
     {
         #region Instance methods

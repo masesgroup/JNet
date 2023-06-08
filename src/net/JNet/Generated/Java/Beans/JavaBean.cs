@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Beans
 {
     #region IJavaBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html"/>
+    /// </summary>
     public partial interface IJavaBean : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods

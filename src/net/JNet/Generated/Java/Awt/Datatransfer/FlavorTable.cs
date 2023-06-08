@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.Datatransfer
 {
     #region IFlavorTable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorTable.html"/>
+    /// </summary>
     public partial interface IFlavorTable : Java.Awt.Datatransfer.IFlavorMap
     {
         #region Instance methods

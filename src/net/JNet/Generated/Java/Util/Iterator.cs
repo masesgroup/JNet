@@ -86,6 +86,9 @@ namespace Java.Util
     #endregion
 
     #region IIterator<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
+    /// </summary>
     public partial interface IIterator<E>
     {
         #region Instance methods

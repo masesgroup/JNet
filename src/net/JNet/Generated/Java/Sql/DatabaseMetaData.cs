@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Sql
 {
     #region IDatabaseMetaData
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html"/>
+    /// </summary>
     public partial interface IDatabaseMetaData : Java.Sql.IWrapper
     {
         #region Instance methods

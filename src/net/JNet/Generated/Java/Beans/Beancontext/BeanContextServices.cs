@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Beans.Beancontext
 {
     #region IBeanContextServices
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html"/>
+    /// </summary>
     public partial interface IBeanContextServices
     {
         #region Instance methods

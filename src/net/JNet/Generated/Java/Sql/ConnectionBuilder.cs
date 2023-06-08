@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Sql
 {
     #region IConnectionBuilder
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ConnectionBuilder.html"/>
+    /// </summary>
     public partial interface IConnectionBuilder
     {
         #region Instance methods

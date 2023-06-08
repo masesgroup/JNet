@@ -276,6 +276,9 @@ namespace Java.Util
     #endregion
 
     #region IDeque<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html"/>
+    /// </summary>
     public partial interface IDeque<E> : Java.Util.IQueue<E>
     {
         #region Instance methods

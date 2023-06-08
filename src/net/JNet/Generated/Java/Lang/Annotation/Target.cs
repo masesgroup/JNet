@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Annotation
 {
     #region ITarget
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Target.html"/>
+    /// </summary>
     public partial interface ITarget : Java.Lang.Annotation.IAnnotation
     {
         #region Instance methods

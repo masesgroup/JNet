@@ -178,6 +178,9 @@ namespace Java.Util.Stream
     #endregion
 
     #region ICollector<T, A, R>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html"/>
+    /// </summary>
     public partial interface ICollector<T, A, R>
     {
         #region Instance methods

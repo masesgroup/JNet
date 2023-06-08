@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom
 {
     #region IEntityReference
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/EntityReference.html"/>
+    /// </summary>
     public partial interface IEntityReference : Org.W3c.Dom.INode
     {
         #region Instance methods

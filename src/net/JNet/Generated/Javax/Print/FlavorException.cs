@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Print
 {
     #region IFlavorException
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/FlavorException.html"/>
+    /// </summary>
     public partial interface IFlavorException
     {
         #region Instance methods

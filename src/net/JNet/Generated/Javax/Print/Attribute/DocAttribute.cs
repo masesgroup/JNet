@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Print.Attribute
 {
     #region IDocAttribute
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/DocAttribute.html"/>
+    /// </summary>
     public partial interface IDocAttribute : Javax.Print.Attribute.IAttribute
     {
         #region Instance methods

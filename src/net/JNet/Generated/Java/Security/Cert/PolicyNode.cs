@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Security.Cert
 {
     #region IPolicyNode
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html"/>
+    /// </summary>
     public partial interface IPolicyNode
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Sql
 {
     #region ISQLInput
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLInput.html"/>
+    /// </summary>
     public partial interface ISQLInput
     {
         #region Instance methods

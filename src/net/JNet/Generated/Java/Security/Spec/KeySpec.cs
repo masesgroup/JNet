@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Security.Spec
 {
     #region IKeySpec
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/KeySpec.html"/>
+    /// </summary>
     public partial interface IKeySpec
     {
         #region Instance methods

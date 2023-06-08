@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sound.Midi
 {
     #region IMidiDeviceReceiver
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDeviceReceiver.html"/>
+    /// </summary>
     public partial interface IMidiDeviceReceiver : Javax.Sound.Midi.IReceiver
     {
         #region Instance methods

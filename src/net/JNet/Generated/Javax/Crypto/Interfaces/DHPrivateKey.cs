@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Crypto.Interfaces
 {
     #region IDHPrivateKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHPrivateKey.html"/>
+    /// </summary>
     public partial interface IDHPrivateKey
     {
         #region Instance methods

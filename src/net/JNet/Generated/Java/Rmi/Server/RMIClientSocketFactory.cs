@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Rmi.Server
 {
     #region IRMIClientSocketFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClientSocketFactory.html"/>
+    /// </summary>
     public partial interface IRMIClientSocketFactory
     {
         #region Instance methods

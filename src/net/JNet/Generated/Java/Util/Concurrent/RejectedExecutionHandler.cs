@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Concurrent
 {
     #region IRejectedExecutionHandler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RejectedExecutionHandler.html"/>
+    /// </summary>
     public partial interface IRejectedExecutionHandler
     {
         #region Instance methods

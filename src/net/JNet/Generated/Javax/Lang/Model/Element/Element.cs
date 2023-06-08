@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Lang.Model.Element
 {
     #region IElement
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html"/>
+    /// </summary>
     public partial interface IElement : Javax.Lang.Model.IAnnotatedConstruct
     {
         #region Instance methods

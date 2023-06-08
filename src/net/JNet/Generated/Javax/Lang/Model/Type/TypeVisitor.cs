@@ -196,6 +196,9 @@ namespace Javax.Lang.Model.Type
     #endregion
 
     #region ITypeVisitor<R, P>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html"/>
+    /// </summary>
     public partial interface ITypeVisitor<R, P>
     {
         #region Instance methods

@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Nio.File.Attribute
 {
     #region IPosixFileAttributes
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html"/>
+    /// </summary>
     public partial interface IPosixFileAttributes : Java.Nio.File.Attribute.IBasicFileAttributes
     {
         #region Instance methods

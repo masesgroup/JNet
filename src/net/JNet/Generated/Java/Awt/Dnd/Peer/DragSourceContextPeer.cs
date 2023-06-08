@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Awt.Dnd.Peer
 {
     #region IDragSourceContextPeer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DragSourceContextPeer.html"/>
+    /// </summary>
     public partial interface IDragSourceContextPeer
     {
         #region Instance methods

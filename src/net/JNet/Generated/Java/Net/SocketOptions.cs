@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Net
 {
     #region ISocketOptions
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html"/>
+    /// </summary>
     public partial interface ISocketOptions
     {
         #region Instance methods

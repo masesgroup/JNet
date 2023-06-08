@@ -212,6 +212,9 @@ namespace Java.Nio.File
     #endregion
 
     #region IWatchEvent<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html"/>
+    /// </summary>
     public partial interface IWatchEvent<T>
     {
         #region Instance methods

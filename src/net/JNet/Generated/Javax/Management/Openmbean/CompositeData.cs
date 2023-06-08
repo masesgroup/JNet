@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Management.Openmbean
 {
     #region ICompositeData
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html"/>
+    /// </summary>
     public partial interface ICompositeData
     {
         #region Instance methods

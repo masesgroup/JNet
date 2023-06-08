@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Accessibility
 {
     #region IAccessibleKeyBinding
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleKeyBinding.html"/>
+    /// </summary>
     public partial interface IAccessibleKeyBinding
     {
         #region Instance methods

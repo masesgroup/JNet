@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Transform.Sax
 {
     #region ITransformerHandler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html"/>
+    /// </summary>
     public partial interface ITransformerHandler
     {
         #region Instance methods

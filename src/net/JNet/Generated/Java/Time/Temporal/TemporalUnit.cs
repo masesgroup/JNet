@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Time.Temporal
 {
     #region ITemporalUnit
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html"/>
+    /// </summary>
     public partial interface ITemporalUnit
     {
         #region Instance methods

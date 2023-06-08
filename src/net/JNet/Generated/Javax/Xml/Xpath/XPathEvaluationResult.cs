@@ -151,6 +151,9 @@ namespace Javax.Xml.Xpath
     #endregion
 
     #region IXPathEvaluationResult<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html"/>
+    /// </summary>
     public partial interface IXPathEvaluationResult<T>
     {
         #region Instance methods

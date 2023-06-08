@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Print
 {
     #region ICancelablePrintJob
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/CancelablePrintJob.html"/>
+    /// </summary>
     public partial interface ICancelablePrintJob : Javax.Print.IDocPrintJob
     {
         #region Instance methods

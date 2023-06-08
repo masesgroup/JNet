@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Util.Concurrent
 {
     #region IExecutorService
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorService.html"/>
+    /// </summary>
     public partial interface IExecutorService : Java.Util.Concurrent.IExecutor
     {
         #region Instance methods

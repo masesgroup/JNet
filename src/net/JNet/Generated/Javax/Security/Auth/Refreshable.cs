@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Security.Auth
 {
     #region IRefreshable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html"/>
+    /// </summary>
     public partial interface IRefreshable
     {
         #region Instance methods

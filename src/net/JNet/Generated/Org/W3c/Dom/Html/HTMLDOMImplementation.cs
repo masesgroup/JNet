@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Org.W3c.Dom.Html
 {
     #region IHTMLDOMImplementation
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDOMImplementation.html"/>
+    /// </summary>
     public partial interface IHTMLDOMImplementation : Org.W3c.Dom.IDOMImplementation
     {
         #region Instance methods

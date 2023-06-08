@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Xml.Stream
 {
     #region IXMLEventWriter
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html"/>
+    /// </summary>
     public partial interface IXMLEventWriter : Javax.Xml.Stream.Util.IXMLEventConsumer
     {
         #region Instance methods

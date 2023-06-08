@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Sql.Rowset
 {
     #region IJoinable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Joinable.html"/>
+    /// </summary>
     public partial interface IJoinable
     {
         #region Instance methods

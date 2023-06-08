@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Beans
 {
     #region IPropertyEditor
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html"/>
+    /// </summary>
     public partial interface IPropertyEditor
     {
         #region Instance methods

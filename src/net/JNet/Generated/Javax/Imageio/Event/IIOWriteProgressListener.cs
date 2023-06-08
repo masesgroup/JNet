@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Javax.Imageio.Event
 {
     #region IIIOWriteProgressListener
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html"/>
+    /// </summary>
     public partial interface IIIOWriteProgressListener
     {
         #region Instance methods

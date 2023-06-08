@@ -26,6 +26,9 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Security.Cert
 {
     #region IExtension
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Extension.html"/>
+    /// </summary>
     public partial interface IExtension
     {
         #region Instance methods
