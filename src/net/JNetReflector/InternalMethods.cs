@@ -118,7 +118,7 @@ namespace MASES.JNetReflector
             }
 
             Console.WriteLine();
-            Console.WriteLine($"Operation completed in {w.Elapsed}. Namespaces: {namespaces} - Classes: {classes}");
+            Console.WriteLine($"Operation completed at {DateTime.Now} in {w.Elapsed}. Namespaces: {namespaces} - Classes: {classes}");
         }
 
         public static void AnalyzeJars()
@@ -708,7 +708,13 @@ namespace MASES.JNetReflector
             singleInterfaceStr = string.Empty;
             if (createInterfaceData)
             {
+                string baseInterface = jClass.JVMBaseInterfaceName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel);
+                if (!string.IsNullOrWhiteSpace(baseInterface))
+                {
+                    baseInterface = " : " + baseInterface;
+                }
                 singleInterfaceStr = singleInterface.Replace(AllPackageClasses.ClassStub.INTERFACE, jClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), isGeneric, false))
+                                                    .Replace(AllPackageClasses.ClassStub.BASEINTERFACE, baseInterface)
                                                     .Replace(AllPackageClasses.ClassStub.METHODS, methodInterfaceBlock);
 
                 interfaceConstraint = jClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), isGeneric, true);

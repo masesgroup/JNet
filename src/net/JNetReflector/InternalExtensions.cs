@@ -176,6 +176,41 @@ namespace MASES.JNetReflector
             }
         }
 
+        static string ToFullQualifiedInterfaceName(string canonicalName, bool camel)
+        {
+            string nsStr = string.Empty;
+            string className = string.Empty;
+            if (canonicalName.Contains("<"))
+            {
+                var generic = canonicalName.Substring(canonicalName.IndexOf("<"));
+                var baseClass = canonicalName.Substring(0, canonicalName.IndexOf(generic));
+                if (baseClass.Contains(SpecialNames.NamespaceSeparator))
+                {
+                    className = baseClass.Substring(baseClass.LastIndexOf(SpecialNames.NamespaceSeparator) + 1);
+                    nsStr = baseClass.Substring(0, baseClass.LastIndexOf(SpecialNames.NamespaceSeparator));
+                }
+                else
+                {
+                    className = baseClass;
+                }
+                className += generic;
+            }
+            else
+            {
+                if (canonicalName.Contains(SpecialNames.NamespaceSeparator))
+                {
+                    className = canonicalName.Substring(canonicalName.LastIndexOf(SpecialNames.NamespaceSeparator) + 1);
+                    nsStr = canonicalName.Substring(0, canonicalName.LastIndexOf(SpecialNames.NamespaceSeparator));
+                }
+                else
+                {
+                    className = canonicalName;
+                }
+            }
+
+            return string.IsNullOrWhiteSpace(nsStr) ? "I" + className : nsStr + SpecialNames.NamespaceSeparator + "I" + className;
+        }
+
         static string ConvertClassesInConflict(this string fName)
         {
             string nName = string.Empty;
@@ -611,12 +646,24 @@ namespace MASES.JNetReflector
             List<string> types = new List<string>();
             List<string> genArgumentsLocal = new List<string>();
             List<KeyValuePair<string, string>> genClauseLocal = new List<KeyValuePair<string, string>>();
-            foreach (var item in entry.ActualTypeArguments)
+            bool constraintMismatch = false;
+            var cName = entry.TypeName;
+            cName = cName.Contains("<") ? cName.Substring(0, cName.IndexOf("<")) : cName;
+            var cEntry = cName.JVMClass();
+            for (int i = 0; i < entry.ActualTypeArguments.Length; i++)
             {
-                types.Add(item.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, usedInGenerics, camel));
+                var actualType = entry.ActualTypeArguments[i];
+                var actualTypeName = actualType.TypeName;
+                var expectedType = cEntry.TypeParameters[i];
+                var resType = actualType.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, usedInGenerics, camel);
+                //if (actualTypeName == "?" && expectedType.Bounds.Length != 0)
+                //{
+                //    constraintMismatch = true;
+                //}
+                types.Add(resType);
             }
             var type = entry.ToNetType(camel);
-            if (entry.IsClassToAvoidInGenerics())
+            if (constraintMismatch || entry.IsClassToAvoidInGenerics())
             {
                 return type;
             }
@@ -678,53 +725,61 @@ namespace MASES.JNetReflector
                     List<string> innerGenArguments = new List<string>();
                     List<KeyValuePair<string, string>> innerGenClauses = new List<KeyValuePair<string, string>>();
                     var upper = GetGenerics(entry.UpperBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, usedInGenerics, camel);
-                    upper = upper.EndsWith("?") ? upper.Substring(0, upper.LastIndexOf("?")) : upper;
-                    var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_')
-                                              .Replace(", ", "_")
-                                              .Replace(",", "_")
-                                              .Replace('<', '_')
-                                              .Replace('>', '_')
-                                              .Replace('?', '_');
-                    if (prefix == null)
+
+                    if (IsNetNativeType(upper))
                     {
-                        retVal = upperConverted;
+                        retVal = upper;
                     }
                     else
                     {
-                        retVal = $"{prefix}Extends{upperConverted}";
-                    }
-                    genArguments?.Add(retVal);
-                    genClause?.Add(new KeyValuePair<string, string>(retVal, IsNetNativeType(upper) ? null : upper));
-                    if (entry.UpperBounds[i].IsInstanceOf<TypeVariable>())
-                    {
-                        if (genArguments != null && !genArguments.Contains(upper))
+                        upper = upper.EndsWith("?") ? upper.Substring(0, upper.LastIndexOf("?")) : upper;
+                        var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_')
+                                                  .Replace(", ", "_")
+                                                  .Replace(",", "_")
+                                                  .Replace('<', '_')
+                                                  .Replace('>', '_')
+                                                  .Replace('?', '_');
+                        if (prefix == null)
                         {
-                            genArguments?.Add(upper);
+                            retVal = upperConverted;
                         }
-                        if (genClause != null)
+                        else
                         {
-                            bool hasKey = false;
-                            foreach (var item in genClause)
+                            retVal = $"{prefix}Extends{upperConverted}";
+                        }
+                        genArguments?.Add(retVal);
+                        genClause?.Add(new KeyValuePair<string, string>(retVal, IsNetNativeType(upper) ? null : upper));
+                        if (entry.UpperBounds[i].IsInstanceOf<TypeVariable>())
+                        {
+                            if (genArguments != null && !genArguments.Contains(upper))
                             {
-                                if (item.Key == upper) { hasKey = true; break; }
+                                genArguments?.Add(upper);
                             }
-                            if (!hasKey) genClause?.Add(new KeyValuePair<string, string>(upper, null));
-                        }
-                    }
-                    if (!JNetReflectorCore.AvoidCSharpGenericClauseDefinition)
-                    {
-                        foreach (var item in innerGenArguments)
-                        {
-                            if (item != upper && genArguments != null && !genArguments.Contains(item))
+                            if (genClause != null)
                             {
-                                genArguments?.Add(item);
+                                bool hasKey = false;
+                                foreach (var item in genClause)
+                                {
+                                    if (item.Key == upper) { hasKey = true; break; }
+                                }
+                                if (!hasKey) genClause?.Add(new KeyValuePair<string, string>(upper, null));
                             }
                         }
-                        foreach (var item in innerGenClauses)
+                        if (!JNetReflectorCore.AvoidCSharpGenericClauseDefinition)
                         {
-                            if (item.Key != upper && genClause != null && !genClause.Contains(item))
+                            foreach (var item in innerGenArguments)
                             {
-                                genClause?.Add(item);
+                                if (item != upper && genArguments != null && !genArguments.Contains(item))
+                                {
+                                    genArguments?.Add(item);
+                                }
+                            }
+                            foreach (var item in innerGenClauses)
+                            {
+                                if (item.Key != upper && genClause != null && !genClause.Contains(item))
+                                {
+                                    genClause?.Add(item);
+                                }
                             }
                         }
                     }
@@ -740,58 +795,66 @@ namespace MASES.JNetReflector
                     upper = upper.EndsWith("?") ? upper.Substring(0, upper.LastIndexOf("?")) : upper;
                     var lower = GetGenerics(entry.LowerBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, usedInGenerics, camel);
                     lower = lower.EndsWith("?") ? lower.Substring(0, lower.LastIndexOf("?")) : lower;
-                    var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_')
-                                              .Replace(", ", "_")
-                                              .Replace(",", "_")
-                                              .Replace('<', '_')
-                                              .Replace('>', '_')
-                                              .Replace('?', '_');
-                    var lowerConverted = lower.Replace(SpecialNames.NamespaceSeparator, '_')
-                                              .Replace(", ", "_")
-                                              .Replace(",", "_")
-                                              .Replace('<', '_')
-                                              .Replace('>', '_')
-                                              .Replace('?', '_');
-                    if (prefix == null)
+
+                    if (IsNetNativeType(lower))
                     {
-                        retVal = lowerConverted;
+                        retVal = lower;
                     }
                     else
                     {
-                        retVal = $"{prefix}{upperConverted}Super{lowerConverted}";
-                    }
-                    genArguments?.Add(retVal);
-                    genClause?.Add(new KeyValuePair<string, string>(retVal, IsNetNativeType(lower) ? null : lower));
-                    if (entry.LowerBounds[i].IsInstanceOf<TypeVariable>())
-                    {
-                        if (genArguments != null && !genArguments.Contains(lower))
+                        var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_')
+                                              .Replace(", ", "_")
+                                              .Replace(",", "_")
+                                              .Replace('<', '_')
+                                              .Replace('>', '_')
+                                              .Replace('?', '_');
+                        var lowerConverted = lower.Replace(SpecialNames.NamespaceSeparator, '_')
+                                                  .Replace(", ", "_")
+                                                  .Replace(",", "_")
+                                                  .Replace('<', '_')
+                                                  .Replace('>', '_')
+                                                  .Replace('?', '_');
+                        if (prefix == null)
                         {
-                            genArguments?.Add(lower);
+                            retVal = lowerConverted;
                         }
-                        if (genClause != null)
+                        else
                         {
-                            bool hasKey = false;
-                            foreach (var item in genClause)
+                            retVal = $"{prefix}{upperConverted}Super{lowerConverted}";
+                        }
+                        genArguments?.Add(retVal);
+                        genClause?.Add(new KeyValuePair<string, string>(retVal, IsNetNativeType(lower) ? null : lower));
+                        if (entry.LowerBounds[i].IsInstanceOf<TypeVariable>())
+                        {
+                            if (genArguments != null && !genArguments.Contains(lower))
                             {
-                                if (item.Key == lower) { hasKey = true; break; }
+                                genArguments?.Add(lower);
                             }
-                            if (!hasKey) genClause?.Add(new KeyValuePair<string, string>(lower, null));
-                        }
-                    }
-                    if (!JNetReflectorCore.AvoidCSharpGenericClauseDefinition)
-                    {
-                        foreach (var item in innerGenArguments)
-                        {
-                            if (item != upper && genArguments != null && !genArguments.Contains(item))
+                            if (genClause != null)
                             {
-                                genArguments?.Add(item);
+                                bool hasKey = false;
+                                foreach (var item in genClause)
+                                {
+                                    if (item.Key == lower) { hasKey = true; break; }
+                                }
+                                if (!hasKey) genClause?.Add(new KeyValuePair<string, string>(lower, null));
                             }
                         }
-                        foreach (var item in innerGenClauses)
+                        if (!JNetReflectorCore.AvoidCSharpGenericClauseDefinition)
                         {
-                            if (item.Key != upper && genClause != null && !genClause.Contains(item))
+                            foreach (var item in innerGenArguments)
                             {
-                                genClause?.Add(item);
+                                if (item != upper && genArguments != null && !genArguments.Contains(item))
+                                {
+                                    genArguments?.Add(item);
+                                }
+                            }
+                            foreach (var item in innerGenClauses)
+                            {
+                                if (item.Key != upper && genClause != null && !genClause.Contains(item))
+                                {
+                                    genClause?.Add(item);
+                                }
                             }
                         }
                     }
@@ -950,6 +1013,50 @@ namespace MASES.JNetReflector
             }
         }
 
+        public static bool HasJVMBaseClassName(this Class entry, bool usedInGenerics, bool isListener, bool camel)
+        {
+            if (isListener)
+            {
+                return false;
+            }
+            try
+            {
+                var superCls = entry.SuperClass;
+                if (superCls != null && SpecialNames.IsJavaLangException(superCls.TypeName))
+                {
+                    return false;
+                }
+                else if (superCls == null
+                    || !superCls.IsPublic()
+                    || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
+                    || superCls.MustBeAvoided()
+                    || superCls.TypeName == SpecialNames.JavaLangObject)
+                {
+                    if ((superCls == null || superCls.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterable())
+                    {
+                        return false;
+                    }
+                    else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else if ((usedInGenerics || !entry.IsJVMGenericClass()) && superCls.IsJVMGenericClass())
+                {
+                    return true;
+                }
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         public static string JVMBaseClassName(this Class entry, bool usedInGenerics, bool isListener, bool camel)
         {
             if (isListener)
@@ -987,18 +1094,12 @@ namespace MASES.JNetReflector
                     }
                     else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
                     {
-                        if (usedInGenerics && entry.Interfaces[0].IsJVMGenericClass())
+                        if ((usedInGenerics && entry.Interfaces[0].IsJVMGenericClass())
+                            || (!usedInGenerics && !entry.IsJVMGenericClass() && entry.Interfaces[0].IsJVMGenericClass()))
                         {
                             return entry.GenericInterfaces[0].ApplyGenerics(null, null, null, true, usedInGenerics, camel);
                         }
-                        return ToFullQualifiedClassName(entry.Interfaces[0], false, camel);
-                    }
-                    else if (entry.Interfaces.Length == 1 && entry.Interfaces[0].IsCollection())
-                    {
-                        if (usedInGenerics && entry.Interfaces[0].IsJVMGenericClass())
-                        {
-                            return entry.GenericInterfaces[0].ApplyGenerics(null, null, null, true, usedInGenerics, camel);
-                        }
+
                         return ToFullQualifiedClassName(entry.Interfaces[0], false, camel);
                     }
                     else
@@ -1018,6 +1119,14 @@ namespace MASES.JNetReflector
                 string className = entry.JVMClassName(null, usedInGenerics);
                 return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
             }
+        }
+
+        public static string JVMBaseInterfaceName(this Class entry, bool usedInGenerics, bool isListener, bool camel)
+        {
+            if (!entry.HasJVMBaseClassName(usedInGenerics, isListener, camel)) return string.Empty;
+
+            var fName = entry.JVMBaseClassName(usedInGenerics, isListener, camel);
+            return ToFullQualifiedInterfaceName(fName, camel);
         }
 
         public static string JVMInterfaceName(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool fullyQualified)
