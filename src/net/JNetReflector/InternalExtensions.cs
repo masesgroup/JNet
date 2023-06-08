@@ -656,10 +656,17 @@ namespace MASES.JNetReflector
                 var actualTypeName = actualType.TypeName;
                 var expectedType = cEntry.TypeParameters[i];
                 var resType = actualType.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, usedInGenerics, camel);
-                //if (actualTypeName == "?" && expectedType.Bounds.Length != 0)
-                //{
-                //    constraintMismatch = true;
-                //}
+                foreach (var bound in expectedType.Bounds)
+                {
+                    string result = bound.GetBound(usedInGenerics, camel);
+                    if (actualTypeName == "?" && !(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
+                                                  || result.Contains("?"))) // type used in Java to define any-type
+                    {
+                        constraintMismatch = true;
+                    }
+                }
+
+
                 types.Add(resType);
             }
             var type = entry.ToNetType(camel);
