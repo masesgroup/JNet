@@ -136,18 +136,18 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.FileAttributeView"/></typeparam>
+        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        V GetFileAttributeView<V>(Java.Lang.Class arg0) where V: Java.Nio.File.Attribute.FileAttributeView;
+        V GetFileAttributeView<V>(Java.Lang.Class arg0) where V: Java.Nio.File.Attribute.IFileAttributeView, new();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Object,java.lang.Class,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
-        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.FileAttributeView"/></typeparam>
+        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        V GetFileAttributeView<V>(T arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.FileAttributeView;
+        V GetFileAttributeView<V>(T arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.IFileAttributeView, new();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#newByteChannel(java.lang.Object,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
@@ -226,9 +226,9 @@ namespace Java.Nio.File
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#getFileAttributeView(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.FileAttributeView"/></typeparam>
+        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V GetFileAttributeView<V>(Java.Lang.Class arg0) where V: Java.Nio.File.Attribute.FileAttributeView
+        public V GetFileAttributeView<V>(Java.Lang.Class arg0) where V: Java.Nio.File.Attribute.IFileAttributeView, new()
         {
             return IExecute<V>("getFileAttributeView", arg0);
         }
@@ -238,9 +238,9 @@ namespace Java.Nio.File
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
-        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.FileAttributeView"/></typeparam>
+        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V GetFileAttributeView<V>(T arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.FileAttributeView
+        public V GetFileAttributeView<V>(T arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.IFileAttributeView, new()
         {
             if (arg2.Length == 0) return IExecute<V>("getFileAttributeView", arg0, arg1); else return IExecute<V>("getFileAttributeView", arg0, arg1, arg2);
         }

@@ -203,6 +203,11 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class AppForegroundListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AppForegroundListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -259,6 +264,11 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class AppHiddenListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AppHiddenListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -315,6 +325,11 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class AppReopenedListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AppReopenedListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -930,6 +945,11 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class ScreenSleepListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ScreenSleepListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -943,6 +963,11 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class SystemEventListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SystemEventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -999,6 +1024,11 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class SystemSleepListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SystemSleepListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1098,6 +1128,11 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class UserSessionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public UserSessionListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

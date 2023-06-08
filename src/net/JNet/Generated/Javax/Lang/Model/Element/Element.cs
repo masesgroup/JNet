@@ -61,9 +61,9 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation;
+        A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#accept(javax.lang.model.element.ElementVisitor,java.lang.Object)"/>
         /// </summary>
@@ -157,9 +157,9 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="A"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.Annotation
+        public A GetAnnotation<A>(Java.Lang.Class arg0) where A: Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecute<A>("getAnnotation", arg0);
         }

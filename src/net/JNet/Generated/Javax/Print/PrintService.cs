@@ -57,9 +57,9 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getAttribute(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Print.Attribute.PrintServiceAttribute"/></typeparam>
+        /// <typeparam name="T"><see cref="Javax.Print.Attribute.IPrintServiceAttribute"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        T GetAttribute<T>(Java.Lang.Class arg0) where T: Javax.Print.Attribute.PrintServiceAttribute;
+        T GetAttribute<T>(Java.Lang.Class arg0) where T: Javax.Print.Attribute.IPrintServiceAttribute, new();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isAttributeCategorySupported(java.lang.Class)"/>
         /// </summary>
@@ -188,9 +188,9 @@ namespace Javax.Print
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getAttribute(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Print.Attribute.PrintServiceAttribute"/></typeparam>
+        /// <typeparam name="T"><see cref="Javax.Print.Attribute.IPrintServiceAttribute"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetAttribute<T>(Java.Lang.Class arg0) where T: Javax.Print.Attribute.PrintServiceAttribute
+        public T GetAttribute<T>(Java.Lang.Class arg0) where T: Javax.Print.Attribute.IPrintServiceAttribute, new()
         {
             return IExecute<T>("getAttribute", arg0);
         }

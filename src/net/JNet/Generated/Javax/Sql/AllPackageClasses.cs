@@ -117,6 +117,11 @@ namespace Javax.Sql
     /// </summary>
     public partial class ConnectionEventListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ConnectionEventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -431,6 +436,11 @@ namespace Javax.Sql
     /// </summary>
     public partial class RowSetListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RowSetListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -616,6 +626,11 @@ namespace Javax.Sql
     /// </summary>
     public partial class StatementEventListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public StatementEventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

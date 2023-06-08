@@ -133,6 +133,11 @@ namespace Org.W3c.Dom.Events
     /// </summary>
     public partial class EventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public EventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

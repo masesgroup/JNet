@@ -1142,8 +1142,8 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
-    /// <typeparam name="D"><see cref="Java.Lang.Reflect.GenericDeclaration"/></typeparam>
-    public partial class TypeVariable<D> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVariable<D>> where D: Java.Lang.Reflect.GenericDeclaration
+    /// <typeparam name="D"><see cref="Java.Lang.Reflect.IGenericDeclaration"/></typeparam>
+    public partial class TypeVariable<D> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVariable<D>> where D: Java.Lang.Reflect.IGenericDeclaration, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

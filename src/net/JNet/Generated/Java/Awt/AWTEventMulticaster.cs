@@ -114,9 +114,9 @@ namespace Java.Awt
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EventListener"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T[] GetListeners<T>(Java.Util.EventListener arg0, Java.Lang.Class arg1) where T: Java.Util.EventListener
+        public static T[] GetListeners<T>(Java.Util.EventListener arg0, Java.Lang.Class arg1) where T: Java.Util.IEventListener, new()
         {
             return SExecuteArray<T>(LocalBridgeClazz, "getListeners", arg0, arg1);
         }

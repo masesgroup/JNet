@@ -31,6 +31,11 @@ namespace Javax.Sound.Midi
     /// </summary>
     public partial class ControllerEventListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ControllerEventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -103,6 +108,11 @@ namespace Javax.Sound.Midi
     /// </summary>
     public partial class MetaEventListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MetaEventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

@@ -461,6 +461,11 @@ namespace Javax.Swing.Plaf.Basic
     /// </summary>
     public partial class BasicButtonListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public BasicButtonListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -2104,6 +2109,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class InternalFramePropertyChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public InternalFramePropertyChangeListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -2676,6 +2686,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class ButtonActionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ButtonActionListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -3291,6 +3306,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class HSBChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public HSBChangeListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -3390,6 +3410,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class VSBChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public VSBChangeListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -3661,6 +3686,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class ScrollListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ScrollListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -3674,6 +3704,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class TrackListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public TrackListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -4977,6 +5012,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class DockingListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public DockingListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class

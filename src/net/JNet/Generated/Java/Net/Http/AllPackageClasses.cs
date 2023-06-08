@@ -1009,6 +1009,11 @@ namespace Java.Net.Http
         /// </summary>
         public partial class Listener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Listener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class

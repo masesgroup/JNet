@@ -74,6 +74,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ActionListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ActionListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -130,6 +135,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class AdjustmentListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AdjustmentListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -143,6 +153,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class AWTEventListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AWTEventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -199,6 +214,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ComponentAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ComponentAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -255,6 +275,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ComponentListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ComponentListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -268,6 +293,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ContainerAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ContainerAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -324,6 +354,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ContainerListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ContainerListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -337,6 +372,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class FocusAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FocusAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -436,6 +476,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class FocusListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FocusListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -449,6 +494,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class HierarchyBoundsAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HierarchyBoundsAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -462,6 +512,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class HierarchyBoundsListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HierarchyBoundsListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -518,6 +573,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class HierarchyListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HierarchyListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -617,6 +677,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class InputMethodListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public InputMethodListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -716,6 +781,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ItemListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ItemListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -729,6 +799,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class KeyAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public KeyAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -785,6 +860,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class KeyListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public KeyListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -798,6 +878,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class MouseAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MouseAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -854,6 +939,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class MouseListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MouseListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -867,6 +957,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class MouseMotionAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MouseMotionAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -880,6 +975,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class MouseMotionListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MouseMotionListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -936,6 +1036,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class MouseWheelListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MouseWheelListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1035,6 +1140,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class TextListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TextListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1048,6 +1158,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class WindowAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public WindowAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1104,6 +1219,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class WindowFocusListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public WindowFocusListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1117,6 +1237,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class WindowListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public WindowListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1130,6 +1255,11 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class WindowStateListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public WindowStateListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

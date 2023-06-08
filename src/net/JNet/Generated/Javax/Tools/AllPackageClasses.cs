@@ -248,6 +248,11 @@ namespace Javax.Tools
     /// </summary>
     public partial class DiagnosticListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DiagnosticListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -262,6 +267,11 @@ namespace Javax.Tools
     /// <typeparam name="S"></typeparam>
     public partial class DiagnosticListener<S> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DiagnosticListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -488,8 +498,8 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html"/>
     /// </summary>
-    /// <typeparam name="F"><see cref="Javax.Tools.FileObject"/></typeparam>
-    public partial class ForwardingFileObject<F> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForwardingFileObject<F>> where F: Javax.Tools.FileObject
+    /// <typeparam name="F"><see cref="Javax.Tools.IFileObject"/></typeparam>
+    public partial class ForwardingFileObject<F> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForwardingFileObject<F>> where F: Javax.Tools.IFileObject, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -575,8 +585,8 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html"/>
     /// </summary>
-    /// <typeparam name="M"><see cref="Javax.Tools.JavaFileManager"/></typeparam>
-    public partial class ForwardingJavaFileManager<M> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForwardingJavaFileManager<M>> where M: Javax.Tools.JavaFileManager
+    /// <typeparam name="M"><see cref="Javax.Tools.IJavaFileManager"/></typeparam>
+    public partial class ForwardingJavaFileManager<M> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForwardingJavaFileManager<M>> where M: Javax.Tools.IJavaFileManager, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -662,8 +672,8 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html"/>
     /// </summary>
-    /// <typeparam name="F"><see cref="Javax.Tools.JavaFileObject"/></typeparam>
-    public partial class ForwardingJavaFileObject<F> : Javax.Tools.ForwardingFileObject<F> where F: Javax.Tools.JavaFileObject
+    /// <typeparam name="F"><see cref="Javax.Tools.IJavaFileObject"/></typeparam>
+    public partial class ForwardingJavaFileObject<F> : Javax.Tools.ForwardingFileObject<F> where F: Javax.Tools.IJavaFileObject, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -74,6 +74,11 @@ namespace Javax.Print.Event
     /// </summary>
     public partial class PrintJobAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PrintJobAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -130,6 +135,11 @@ namespace Javax.Print.Event
     /// </summary>
     public partial class PrintJobAttributeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PrintJobAttributeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -186,6 +196,11 @@ namespace Javax.Print.Event
     /// </summary>
     public partial class PrintJobListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PrintJobListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -242,6 +257,11 @@ namespace Javax.Print.Event
     /// </summary>
     public partial class PrintServiceAttributeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PrintServiceAttributeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

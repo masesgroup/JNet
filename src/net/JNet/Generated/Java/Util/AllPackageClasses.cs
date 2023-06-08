@@ -1335,6 +1335,11 @@ namespace Java.Util
     /// </summary>
     public partial class Comparator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Comparator() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1349,6 +1354,11 @@ namespace Java.Util
     /// <typeparam name="T"></typeparam>
     public partial class Comparator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Comparator() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1976,6 +1986,11 @@ namespace Java.Util
     /// </summary>
     public partial class EventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public EventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -2030,8 +2045,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html"/>
     /// </summary>
-    /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
-    public partial class EventListenerProxy<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventListenerProxy<T>> where T: Java.Util.EventListener
+    /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
+    public partial class EventListenerProxy<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventListenerProxy<T>> where T: Java.Util.IEventListener, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5235,6 +5250,11 @@ namespace Java.Util
         /// </summary>
         public partial class Provider : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Provider() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -5249,6 +5269,11 @@ namespace Java.Util
         /// <typeparam name="S"></typeparam>
         public partial class Provider<S> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Provider() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class

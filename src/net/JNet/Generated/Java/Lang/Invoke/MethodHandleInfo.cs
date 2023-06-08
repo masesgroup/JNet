@@ -58,9 +58,9 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Reflect.Member"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Lang.Reflect.IMember"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T: Java.Lang.Reflect.Member;
+        T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T: Java.Lang.Reflect.IMember, new();
 
         #endregion
 
@@ -196,9 +196,9 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Reflect.Member"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Lang.Reflect.IMember"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T: Java.Lang.Reflect.Member
+        public T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T: Java.Lang.Reflect.IMember, new()
         {
             return IExecute<T>("reflectAs", arg0, arg1);
         }

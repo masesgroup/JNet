@@ -332,6 +332,11 @@ namespace Java.Beans.Beancontext
     /// </summary>
     public partial class BeanContextMembershipListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public BeanContextMembershipListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -560,6 +565,11 @@ namespace Java.Beans.Beancontext
     /// </summary>
     public partial class BeanContextServiceRevokedListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public BeanContextServiceRevokedListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -616,6 +626,11 @@ namespace Java.Beans.Beancontext
     /// </summary>
     public partial class BeanContextServicesListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public BeanContextServicesListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

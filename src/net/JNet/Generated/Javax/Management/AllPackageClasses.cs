@@ -1878,6 +1878,11 @@ namespace Javax.Management
     /// </summary>
     public partial class NotificationFilter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NotificationFilter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1934,6 +1939,11 @@ namespace Javax.Management
     /// </summary>
     public partial class NotificationListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NotificationListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

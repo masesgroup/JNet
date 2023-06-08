@@ -50,9 +50,9 @@ namespace Java.Time.Temporal
         /// </summary>
         /// <param name="arg0"><typeparamref name="R"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <typeparam name="R"><see cref="Java.Time.Temporal.Temporal"/></typeparam>
+        /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        R AddTo<R>(R arg0, long arg1) where R: Java.Time.Temporal.Temporal;
+        R AddTo<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>
         /// </summary>
@@ -130,9 +130,9 @@ namespace Java.Time.Temporal
         /// </summary>
         /// <param name="arg0"><typeparamref name="R"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <typeparam name="R"><see cref="Java.Time.Temporal.Temporal"/></typeparam>
+        /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R AddTo<R>(R arg0, long arg1) where R: Java.Time.Temporal.Temporal
+        public R AddTo<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new()
         {
             return IExecute<R>("addTo", arg0, arg1);
         }

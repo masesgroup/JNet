@@ -203,6 +203,11 @@ namespace Java.Awt.Datatransfer
     /// </summary>
     public partial class FlavorListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FlavorListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

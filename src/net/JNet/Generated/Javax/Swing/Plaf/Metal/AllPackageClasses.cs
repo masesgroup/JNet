@@ -1102,6 +1102,11 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public partial class MetalPropertyChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public MetalPropertyChangeListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class

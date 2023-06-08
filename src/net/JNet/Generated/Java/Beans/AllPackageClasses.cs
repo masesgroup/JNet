@@ -504,6 +504,11 @@ namespace Java.Beans
     /// </summary>
     public partial class ExceptionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ExceptionListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -963,6 +968,11 @@ namespace Java.Beans
     /// </summary>
     public partial class PropertyChangeListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PropertyChangeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1379,6 +1389,11 @@ namespace Java.Beans
     /// </summary>
     public partial class VetoableChangeListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public VetoableChangeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

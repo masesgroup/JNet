@@ -31,6 +31,11 @@ namespace Javax.Imageio.Event
     /// </summary>
     public partial class IIOReadProgressListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public IIOReadProgressListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -44,6 +49,11 @@ namespace Javax.Imageio.Event
     /// </summary>
     public partial class IIOReadUpdateListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public IIOReadUpdateListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -57,6 +67,11 @@ namespace Javax.Imageio.Event
     /// </summary>
     public partial class IIOReadWarningListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public IIOReadWarningListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -70,6 +85,11 @@ namespace Javax.Imageio.Event
     /// </summary>
     public partial class IIOWriteProgressListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public IIOWriteProgressListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -83,6 +103,11 @@ namespace Javax.Imageio.Event
     /// </summary>
     public partial class IIOWriteWarningListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public IIOWriteWarningListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

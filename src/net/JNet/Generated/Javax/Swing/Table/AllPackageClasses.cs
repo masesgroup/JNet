@@ -545,8 +545,8 @@ namespace Javax.Swing.Table
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableRowSorter.html"/>
     /// </summary>
-    /// <typeparam name="M"><see cref="Javax.Swing.Table.TableModel"/></typeparam>
-    public partial class TableRowSorter<M> : Javax.Swing.DefaultRowSorter<M, int?> where M: Javax.Swing.Table.TableModel
+    /// <typeparam name="M"><see cref="Javax.Swing.Table.ITableModel"/></typeparam>
+    public partial class TableRowSorter<M> : Javax.Swing.DefaultRowSorter<M, int?> where M: Javax.Swing.Table.ITableModel, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -160,6 +160,11 @@ namespace Javax.Net.Ssl
     /// </summary>
     public partial class HandshakeCompletedListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HandshakeCompletedListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1199,6 +1204,11 @@ namespace Javax.Net.Ssl
     /// </summary>
     public partial class SSLSessionBindingListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SSLSessionBindingListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

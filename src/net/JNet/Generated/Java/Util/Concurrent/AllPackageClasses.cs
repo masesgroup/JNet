@@ -1906,8 +1906,8 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html"/>
     /// </summary>
-    /// <typeparam name="E"><see cref="Java.Util.Concurrent.Delayed"/></typeparam>
-    public partial class DelayQueue<E> : Java.Util.AbstractQueue<E> where E: Java.Util.Concurrent.Delayed
+    /// <typeparam name="E"><see cref="Java.Util.Concurrent.IDelayed"/></typeparam>
+    public partial class DelayQueue<E> : Java.Util.AbstractQueue<E> where E: Java.Util.Concurrent.IDelayed, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

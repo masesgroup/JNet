@@ -333,6 +333,11 @@ namespace Java.Util.Stream
         /// </summary>
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Builder() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -389,6 +394,11 @@ namespace Java.Util.Stream
         /// </summary>
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Builder() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -445,6 +455,11 @@ namespace Java.Util.Stream
         /// </summary>
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Builder() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -501,6 +516,11 @@ namespace Java.Util.Stream
         /// </summary>
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Builder() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -515,6 +535,11 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         public partial class Builder<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Builder() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class

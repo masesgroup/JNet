@@ -160,6 +160,11 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DragGestureListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DragGestureListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -259,6 +264,11 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DragSourceAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DragSourceAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -444,6 +454,11 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DragSourceListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DragSourceListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -457,6 +472,11 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DragSourceMotionListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DragSourceMotionListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -513,6 +533,11 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DropTargetAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DropTargetAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -698,6 +723,11 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class DropTargetListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DropTargetListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

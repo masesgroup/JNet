@@ -158,9 +158,9 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMXBeans(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Management.PlatformManagedObject"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Lang.Management.IPlatformManagedObject"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<T> GetPlatformMXBeans<T>(Java.Lang.Class arg0) where T: Java.Lang.Management.PlatformManagedObject
+        public static Java.Util.List<T> GetPlatformMXBeans<T>(Java.Lang.Class arg0) where T: Java.Lang.Management.IPlatformManagedObject, new()
         {
             return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "getPlatformMXBeans", arg0);
         }
@@ -169,10 +169,10 @@ namespace Java.Lang.Management
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Management.PlatformManagedObject"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Lang.Management.IPlatformManagedObject"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Util.List<T> GetPlatformMXBeans<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1) where T: Java.Lang.Management.PlatformManagedObject
+        public static Java.Util.List<T> GetPlatformMXBeans<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1) where T: Java.Lang.Management.IPlatformManagedObject, new()
         {
             return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "getPlatformMXBeans", arg0, arg1);
         }
@@ -180,9 +180,9 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#getPlatformMXBean(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Management.PlatformManagedObject"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Lang.Management.IPlatformManagedObject"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T GetPlatformMXBean<T>(Java.Lang.Class arg0) where T: Java.Lang.Management.PlatformManagedObject
+        public static T GetPlatformMXBean<T>(Java.Lang.Class arg0) where T: Java.Lang.Management.IPlatformManagedObject, new()
         {
             return SExecute<T>(LocalBridgeClazz, "getPlatformMXBean", arg0);
         }
@@ -191,10 +191,10 @@ namespace Java.Lang.Management
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanServerConnection"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Management.PlatformManagedObject"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Lang.Management.IPlatformManagedObject"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static T GetPlatformMXBean<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1) where T: Java.Lang.Management.PlatformManagedObject
+        public static T GetPlatformMXBean<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1) where T: Java.Lang.Management.IPlatformManagedObject, new()
         {
             return SExecute<T>(LocalBridgeClazz, "getPlatformMXBean", arg0, arg1);
         }

@@ -149,6 +149,11 @@ namespace Java.Util.Prefs
     /// </summary>
     public partial class NodeChangeListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NodeChangeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -205,6 +210,11 @@ namespace Java.Util.Prefs
     /// </summary>
     public partial class PreferenceChangeListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PreferenceChangeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

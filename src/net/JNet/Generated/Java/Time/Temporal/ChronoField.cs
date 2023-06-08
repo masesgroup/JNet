@@ -225,9 +225,9 @@ namespace Java.Time.Temporal
         /// </summary>
         /// <param name="arg0"><typeparamref name="R"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <typeparam name="R"><see cref="Java.Time.Temporal.Temporal"/></typeparam>
+        /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
-        public R AdjustInto<R>(R arg0, long arg1) where R: Java.Time.Temporal.Temporal
+        public R AdjustInto<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new()
         {
             return IExecute<R>("adjustInto", arg0, arg1);
         }

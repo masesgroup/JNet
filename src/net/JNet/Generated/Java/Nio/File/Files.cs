@@ -47,10 +47,10 @@ namespace Java.Nio.File
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
-        /// <typeparam name="A"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></typeparam>
+        /// <typeparam name="A"><see cref="Java.Nio.File.Attribute.IBasicFileAttributes"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A: Java.Nio.File.Attribute.BasicFileAttributes
+        public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A: Java.Nio.File.Attribute.IBasicFileAttributes, new()
         {
             if (arg2.Length == 0) return SExecute<A>(LocalBridgeClazz, "readAttributes", arg0, arg1); else return SExecute<A>(LocalBridgeClazz, "readAttributes", arg0, arg1, arg2);
         }
@@ -60,9 +60,9 @@ namespace Java.Nio.File
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
-        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.FileAttributeView"/></typeparam>
+        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.FileAttributeView
+        public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.IFileAttributeView, new()
         {
             if (arg2.Length == 0) return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", arg0, arg1); else return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", arg0, arg1, arg2);
         }

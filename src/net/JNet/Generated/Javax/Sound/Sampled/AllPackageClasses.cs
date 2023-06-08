@@ -1063,6 +1063,11 @@ namespace Javax.Sound.Sampled
     /// </summary>
     public partial class LineListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public LineListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

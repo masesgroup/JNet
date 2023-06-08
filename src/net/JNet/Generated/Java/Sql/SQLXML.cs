@@ -53,18 +53,18 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.Source"/></typeparam>
+        /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        T GetSource<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.Source;
+        T GetSource<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.ISource, new();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setResult(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.Result"/></typeparam>
+        /// <typeparam name="T"><see cref="Javax.Xml.Transform.IResult"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.Result;
+        T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.IResult, new();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>
         /// </summary>
@@ -141,10 +141,10 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.Source"/></typeparam>
+        /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public T GetSource<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.Source
+        public T GetSource<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.ISource, new()
         {
             return IExecute<T>("getSource", arg0);
         }
@@ -152,10 +152,10 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setResult(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.Result"/></typeparam>
+        /// <typeparam name="T"><see cref="Javax.Xml.Transform.IResult"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.Result
+        public T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.IResult, new()
         {
             return IExecute<T>("setResult", arg0);
         }

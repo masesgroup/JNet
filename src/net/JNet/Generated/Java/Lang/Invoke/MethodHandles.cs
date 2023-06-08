@@ -53,9 +53,9 @@ namespace Java.Lang.Invoke
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Reflect.Member"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Lang.Reflect.IMember"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1) where T: Java.Lang.Reflect.Member
+        public static T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1) where T: Java.Lang.Reflect.IMember, new()
         {
             return SExecute<T>(LocalBridgeClazz, "reflectAs", arg0, arg1);
         }
