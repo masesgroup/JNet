@@ -631,7 +631,7 @@ namespace MASES.JNetReflector
             {
                 List<string> classGenerics = new List<string>();
                 List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
-                jClass.GetGenerics(classGenerics, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+                jClass.GetGenerics(classGenerics, classClauses, string.Empty, isGeneric, JNetReflectorCore.UseCamel);
 
                 if (classClauses.Count != 0)
                 {
@@ -786,7 +786,7 @@ namespace MASES.JNetReflector
 
             List<string> classGenerics = new List<string>();
             List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
-            classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+            classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, isGeneric, JNetReflectorCore.UseCamel);
 
             StringBuilder subClassBlock = new StringBuilder();
             foreach (var constructor in sortedFilteredCtors.Values)
@@ -950,7 +950,7 @@ namespace MASES.JNetReflector
             {
                 List<string> classGenerics = new List<string>();
                 List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
-                classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+                classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, isGeneric, JNetReflectorCore.UseCamel);
 
                 IEnumerable<Class> filteredInterfaces = classDefinition.JVMInterfaces();
                 foreach (var implementedInterface in filteredInterfaces)
@@ -978,7 +978,7 @@ namespace MASES.JNetReflector
 
                     List<string> implClassGenerics = new List<string>();
                     List<KeyValuePair<string, string>> implClassClauses = new List<KeyValuePair<string, string>>();
-                    implementedInterface.GetGenerics(implClassGenerics, implClassClauses, string.Empty, JNetReflectorCore.UseCamel);
+                    implementedInterface.GetGenerics(implClassGenerics, implClassClauses, string.Empty, isGeneric, JNetReflectorCore.UseCamel);
 
                     var implClass = implementedInterface.ToFullQualifiedClassName(false, JNetReflectorCore.UseCamel);
                     if (isGeneric && implClassGenerics != null && classGenerics != null)
@@ -1153,7 +1153,7 @@ namespace MASES.JNetReflector
 
             List<string> classGenerics = new List<string>();
             List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
-            classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, JNetReflectorCore.UseCamel);
+            classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, isGeneric, JNetReflectorCore.UseCamel);
 
             foreach (var prop in properties.ToArray())
             {
