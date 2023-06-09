@@ -952,7 +952,36 @@ namespace MASES.JNetReflector
         public static string WhereClauses(this Class entry, bool usedInGenerics, bool camel)
         {
             if (JNetReflectorCore.AvoidCSharpGenericClauseDefinition || !usedInGenerics || !entry.IsJVMGenericClass()) return string.Empty;
-            return entry.TypeParameters.WhereClauses(usedInGenerics, camel);
+            StringBuilder sbWhere = new StringBuilder();
+            foreach (var typeParameter in entry.TypeParameters)
+            {
+                StringBuilder sbBounds = new StringBuilder();
+                foreach (var bound in typeParameter.Bounds)
+                {
+                    if (!IsJVMNativeType(bound.TypeName))
+                    {
+                        string result;
+                        if (entry.TypeName == bound.TypeName && entry.IsJVMGenericClass() && usedInGenerics)
+                        {
+                            // force the generic class in this case
+                            result = entry.ToFullQualifiedClassName(usedInGenerics, camel);
+                        }
+                        else
+                        {
+                            result = bound.GetBound(usedInGenerics, camel);
+                        }
+                        sbBounds.AppendFormat("{0}, ", result);
+                    }
+                }
+                var bounds = sbBounds.ToString();
+                if (!string.IsNullOrEmpty(bounds))
+                {
+                    bounds = bounds.Substring(0, bounds.LastIndexOf(", "));
+                    sbWhere.AppendFormat(" where {0}: {1}", typeParameter.Name, bounds);
+                }
+            }
+            var parameters = sbWhere.ToString();
+            return parameters;
         }
 
         public static string JVMFullClassName(this Class entry)
