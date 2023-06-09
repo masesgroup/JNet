@@ -164,6 +164,18 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.CreateInterfaceInheritance,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to create the C# interface inheritance",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.DisableInterfaceMethodGeneration,
+                        Type = ArgumentType.Single,
+                        Help = "The option disables the generation of the methods in the C# interface",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.AvoidParallelBuild,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to disable parallel execution",
@@ -267,6 +279,12 @@ namespace MASES.JNetReflector
 
         static bool _DisableGenerics;
         public static bool DisableGenerics => _DisableGenerics;
+
+        static bool _CreateInterfaceInheritance;
+        public static bool CreateInterfaceInheritance => _CreateInterfaceInheritance;
+
+        static bool _DisableInterfaceMethodGeneration;
+        public static bool DisableInterfaceMethodGeneration => _DisableInterfaceMethodGeneration;
 
         static bool _AvoidParallelBuild;
         public static bool AvoidParallelBuild => _AvoidParallelBuild;
@@ -424,6 +442,8 @@ namespace MASES.JNetReflector
             _AvoidCSharpGenericClauseDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericClauseDefinition);
             _DisableGenericsInNonGenericClasses = ParsedArgs.Exist(CLIParam.DisableGenericsInNonGenericClasses);
             _DisableGenerics = ParsedArgs.Exist(CLIParam.DisableGenerics);
+            _CreateInterfaceInheritance = ParsedArgs.Exist(CLIParam.CreateInterfaceInheritance);
+            _DisableInterfaceMethodGeneration = ParsedArgs.Exist(CLIParam.DisableInterfaceMethodGeneration);
             _AvoidParallelBuild = ParsedArgs.Exist(CLIParam.AvoidParallelBuild);
             _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
             _UseCamel = !ParsedArgs.Exist(CLIParam.DoNotCamel);

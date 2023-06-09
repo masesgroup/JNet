@@ -698,7 +698,7 @@ namespace MASES.JNetReflector
                 {
                     methodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false).AddTabLevel(1);
                 }
-                if (createInterfaceData)
+                if (!JNetReflectorCore.DisableInterfaceMethodGeneration && createInterfaceData)
                 {
                     methodInterfaceBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, jClassIsListener, false).AddTabLevel(1);
                 }
@@ -722,23 +722,26 @@ namespace MASES.JNetReflector
             }
 
             string extraInterfaces = string.Empty;
-            //if (!(jClass.IsJVMGenericClass() && isGeneric == false))
-            //{
-            //    StringBuilder sbInterfaces = new StringBuilder();
-            //    foreach (var item in jClass.JVMInterfaces())
-            //    {
-            //        if (item.JVMNestingLevels() == 0)
-            //        {
-            //            sbInterfaces.AppendFormat("{0}, ", item.JVMInterfaceName(new List<KeyValuePair<string, string>>(), isGeneric, true));
-            //        }
-            //    }
+            if (JNetReflectorCore.CreateInterfaceInheritance)
+            {
+                if (!(jClass.IsJVMGenericClass() && isGeneric == false))
+                {
+                    StringBuilder sbInterfaces = new StringBuilder();
+                    foreach (var item in jClass.JVMInterfaces())
+                    {
+                        if (item.JVMNestingLevels() == 0)
+                        {
+                            sbInterfaces.AppendFormat("{0}, ", item.JVMInterfaceName(new List<KeyValuePair<string, string>>(), isGeneric, true));
+                        }
+                    }
 
-            //    extraInterfaces = sbInterfaces.ToString();
-            //    if (!string.IsNullOrWhiteSpace(extraInterfaces))
-            //    {
-            //        extraInterfaces = extraInterfaces.Substring(0, extraInterfaces.LastIndexOf(", "));
-            //    }
-            //}
+                    extraInterfaces = sbInterfaces.ToString();
+                    if (!string.IsNullOrWhiteSpace(extraInterfaces))
+                    {
+                        extraInterfaces = extraInterfaces.Substring(0, extraInterfaces.LastIndexOf(", "));
+                    }
+                }
+            }
 
             interfaceConstraint = string.IsNullOrWhiteSpace(interfaceConstraint) ? extraInterfaces : interfaceConstraint + ", " + extraInterfaces;
 
