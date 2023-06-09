@@ -1214,6 +1214,7 @@ namespace MASES.JNetReflector
             List<Class> filteredInterfaces = new List<Class>();
             foreach (var implementedInterface in entry.Interfaces)
             {
+                if (implementedInterface.MustBeAvoided()) continue;
                 var superCls = entry.SuperClass;
                 if (superCls == null
                     || !superCls.IsPublic()
