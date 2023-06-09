@@ -29,7 +29,7 @@ namespace Javax.Xml.Stream
     /// <summary>
     /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html"/>
     /// </summary>
-    public partial interface IXMLEventReader : Java.Util.IIterator<object>
+    public partial interface IXMLEventReader
     {
         #region Instance methods
         /// <summary>

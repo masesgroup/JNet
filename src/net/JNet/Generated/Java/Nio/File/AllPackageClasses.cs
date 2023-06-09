@@ -1019,7 +1019,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html"/>
     /// </summary>
-    public partial class Path : Java.Lang.Iterable
+    public partial class Path : Java.Lang.Iterable<Java.Nio.File.Path>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

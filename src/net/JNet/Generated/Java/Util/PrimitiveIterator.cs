@@ -275,7 +275,7 @@ namespace Java.Util
     /// <summary>
     /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html"/>
     /// </summary>
-    public partial interface IPrimitiveIterator<T, T_CONS> : Java.Util.IIterator<T>
+    public partial interface IPrimitiveIterator<T, T_CONS>
     {
         #region Instance methods
         /// <summary>

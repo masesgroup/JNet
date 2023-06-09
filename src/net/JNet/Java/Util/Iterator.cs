@@ -16,23 +16,140 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-using System.Collections;
-using System.Collections.Generic;
-
 namespace Java.Util
 {
-    public partial class Iterator<E> : IEnumerable<E>
+    #region Iterator
+    public partial class Iterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterator>
     {
-        /// <inheritdoc cref="IEnumerable{T}.GetEnumerator"/>
-        public IEnumerator<E> GetEnumerator()
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.lang.Iterator";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Iterator() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Iterator(params object[] args) : base(args) { }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/> 
+        /// </summary>
+        public bool HasNext
         {
-            return new JVMBridgeBaseEnumerator<E>(BridgeInstance);
+            get { return IExecute<bool>("hasNext"); }
         }
-        /// <inheritdoc cref="IEnumerable.GetEnumerator"/>
-        IEnumerator IEnumerable.GetEnumerator()
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/> 
+        /// </summary>
+        public object Next
         {
-            return GetEnumerator();
+            get { return IExecute("next"); }
         }
+#if !JNETREFLECTOR
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        public void ForEachRemaining(Java.Util.Function.Consumer arg0)
+        {
+            IExecute("forEachRemaining", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()"/>
+        /// </summary>
+        public void Remove()
+        {
+            IExecute("remove");
+        }
+#endif
+    }
+    #endregion
+
+    #region IIterator<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
+    /// </summary>
+    public partial interface IIterator<E>
+    {
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/> 
+        /// </summary>
+        bool HasNext { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/> 
+        /// </summary>
+        E Next { get; }
+#if !JNETREFLECTOR
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
+        void ForEachRemaining<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE : E;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()"/>
+        /// </summary>
+        void Remove();
+#endif
+    }
+    #endregion
+
+    public partial class Iterator<E> : MASES.JNet.Specific.JNetAsyncEnumerable<Iterator<E>, E>, IIterator<E>
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "java.lang.Iterator";
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => true;
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Iterator() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Iterator(params object[] args) : base(args) { }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/> 
+        /// </summary>
+        public bool HasNext
+        {
+            get { return IExecute<bool>("hasNext"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#next()"/> 
+        /// </summary>
+        public E Next
+        {
+            get { return IExecute<E>("next"); }
+        }
+#if !JNETREFLECTOR
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#forEachRemaining(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
+        public void ForEachRemaining<Arg0objectSuperE>(Java.Util.Function.Consumer<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
+        {
+            IExecute("forEachRemaining", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#remove()"/>
+        /// </summary>
+        public void Remove()
+        {
+            IExecute("remove");
+        }
+#endif
     }
 }
