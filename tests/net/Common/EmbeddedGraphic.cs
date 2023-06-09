@@ -391,7 +391,7 @@ namespace MASES.JNetTest.GraphicCommon
                 if (tableModel.IsInstanceOf<DefaultTableModel>())
                 {
                     var tModel = tableModel.CastTo<DefaultTableModel>();
-                    Java.Util.Vector<string> vector = new();
+                    Java.Util.Vector<object> vector = new();
                     vector.Add(columns[0]); vector.Add(columns[1]); vector.Add(columns[2]);
                     tModel.SetColumnIdentifiers(vector); // (new string[] { columns[0], columns[1], columns[2] });
                     vector = new();
