@@ -118,6 +118,7 @@
     <Compile Include="..\JNet\Java\Lang\VerifyError.cs" Link="Java\Lang\VerifyError.cs" />
     <Compile Include="..\JNet\Java\Lang\VirtualMachineError.cs" Link="Java\Lang\VirtualMachineError.cs" />
     <Compile Include="..\JNet\Java\Util\Collection.cs" Link="Java\Util\Collection.cs" />
+    <Compile Include="..\JNet\Java\Util\Iterator.cs" Link="Java\Util\Iterator.cs" />
     <Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
     <Compile Include="..\JNet\Specific\AsyncEnumerable.cs" Link="Specific\AsyncEnumerable.cs" />
     <Compile Include="..\JNet\Specific\IJNetBridgeMain.cs" Link="Specific\IJNetBridgeMain.cs" />

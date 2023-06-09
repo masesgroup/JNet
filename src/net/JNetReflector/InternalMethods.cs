@@ -592,6 +592,12 @@ namespace MASES.JNetReflector
 
         static void PrepareSingleClass(this Class jClass, IEnumerable<Class> classDefinitions, bool isGeneric, out string allPackagesClassBlock, out string singleClassStr, out string singleInterfaceStr)
         {
+            if (jClass.IsJNetInternal())
+            {
+                allPackagesClassBlock = singleClassStr = singleInterfaceStr = string.Empty;
+                return;
+            }
+
             int nestingLevel = jClass.JVMNestingLevels();
             string stubException = Template.GetTemplate(Template.AllPackageClassesStubExceptionTemplate);
             string stubListener = Template.GetTemplate(Template.AllPackageClassesStubClassListenerTemplate);
@@ -965,9 +971,9 @@ namespace MASES.JNetReflector
                 IEnumerable<Class> filteredInterfaces = classDefinition.JVMInterfaces();
                 foreach (var implementedInterface in filteredInterfaces)
                 {
-                    if (implementedInterface.IsIterable())
+                    if (implementedInterface.IsIterable() || implementedInterface.IsIterator())
                     {
-                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded iterable {0}", implementedInterface.GenericString);
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded iterable/iterator {0}", implementedInterface.GenericString);
                         continue;
                     }
                     if (implementedInterface.MustBeAvoided())

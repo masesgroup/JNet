@@ -1018,6 +1018,10 @@ namespace MASES.JNetReflector
                     {
                         return true;
                     }
+                    else if ((superCls == null || superCls.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterator())
+                    {
+                        return true;
+                    }
                     else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
                     {
                         return false;
@@ -1072,6 +1076,10 @@ namespace MASES.JNetReflector
                     {
                         return false;
                     }
+                    else if ((superCls == null || superCls.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterator())
+                    {
+                        return false;
+                    }
                     else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
                     {
                         return true;
@@ -1119,14 +1127,38 @@ namespace MASES.JNetReflector
                     if ((superCls == null || superCls.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterable())
                     {
                         string innerName = string.Empty;
-                        if (usedInGenerics)
+                        if (usedInGenerics || (!usedInGenerics && !entry.IsJVMGenericClass()))
                         {
-                            var method = entry.GetMethod("iterator");
-                            List<string> genArguments = new List<string>();
-                            method.GenericReturnType.GetGenerics(genArguments, null, string.Empty, true, usedInGenerics, camel);
-                            innerName = genArguments.ApplyGenerics();
+                            foreach (var genInterface in entry.GenericInterfaces)
+                            {
+                                if (genInterface.IsIterable())
+                                {
+                                    List<string> genArguments = new List<string>();
+                                    var genInt = genInterface.GetGenerics(genArguments, null, string.Empty, true, usedInGenerics, camel);
+                                    innerName = genInt.Substring(genInt.IndexOf("<"));
+                                    break;
+                                }
+                            }
                         }
                         return string.Format("Java.Lang.Iterable{0}", innerName);
+                    }
+                    else if ((superCls == null || superCls.TypeName == SpecialNames.JavaLangObject) && entry.ContainsIterator())
+                    {
+                        string innerName = string.Empty;
+                        if (usedInGenerics || (!usedInGenerics && !entry.IsJVMGenericClass()))
+                        {
+                            foreach (var genInterface in entry.GenericInterfaces)
+                            {
+                                if (genInterface.IsIterator())
+                                {
+                                    List<string> genArguments = new List<string>();
+                                    var genInt = genInterface.GetGenerics(genArguments, null, string.Empty, true, usedInGenerics, camel);
+                                    innerName = genInt.Substring(genInt.IndexOf("<"));
+                                    break;
+                                }
+                            }
+                        }
+                        return string.Format("Java.Util.Iterator{0}", innerName);
                     }
                     else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
                     {
@@ -1290,6 +1322,16 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        public static bool IsIterable(this Java.Lang.Reflect.Type entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            if (entry.TypeName.StartsWith(SpecialNames.JavaLangIterable)) // direct name is Iterabale
+            {
+                return true;
+            }
+            return false;
+        }
+
         public static bool IsIterable(this Class entry)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
@@ -1303,9 +1345,42 @@ namespace MASES.JNetReflector
         public static bool ContainsIterable(this Class entry)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
-            foreach (var item in entry.Interfaces) // or implemented interfaces contains iterbale
+            foreach (var item in entry.Interfaces) // or implemented interfaces contains Iterabale
             {
                 if (item.IsIterable())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static bool IsIterator(this Java.Lang.Reflect.Type entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            if (entry.TypeName.StartsWith(SpecialNames.JavaUtilIterator)) // direct name is Iterabale
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool IsIterator(this Class entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            if (entry.TypeName.StartsWith(SpecialNames.JavaUtilIterator)) // direct name is Iterator
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool ContainsIterator(this Class entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            foreach (var item in entry.Interfaces) // or implemented interfaces contains Iterator
+            {
+                if (item.IsIterator())
                 {
                     return true;
                 }
@@ -1396,6 +1471,14 @@ namespace MASES.JNetReflector
             if (entry.EnclosingClass != null && entry.EnclosingClass.IsOrInheritFromJVMGenericClass()) return true;
             if (entry.IsJVMGenericClass()) return true;
             return IsOrInheritFromJVMGenericClass(entry.SuperClass);
+        }
+
+        public static bool IsJNetInternal(this Class entry)
+        {
+            if (entry.TypeName == SpecialNames.JavaLangIterable
+                || entry.TypeName == SpecialNames.JavaUtilIterator) return true;
+
+            return false;
         }
 
         public static bool MustBeAvoided(this Class entry)
