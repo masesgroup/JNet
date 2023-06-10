@@ -16,6 +16,8 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace MASES.JNet.Specific
 {
     /// <summary>
@@ -24,5 +26,21 @@ namespace MASES.JNet.Specific
     /// <remarks>Used from JNetReflector to mark a type to be identified as a Main-Class</remarks>
     public interface IJNetBridgeMain
     {
+    }
+
+    public abstract class JNetBridgeMain<TClass> : JVMBridgeBase<TClass>, IJNetBridgeMain
+        where TClass : JNetBridgeMain<TClass>, new()
+    {
+        /// <summary>
+        /// Expected method to execute the class
+        /// </summary>
+        /// <param name="args"><see cref="string"/>Main arguments</param>
+        /// <remarks>Can be used to define a Main-Class</remarks>
+#pragma warning disable CS0402 // 'JNetBridgeMain<TClass>.Main(string[])': warning disabled
+        public static void Main(string[] args)
+#pragma warning restore CS0402 // 'JNetBridgeMain<TClass>.Main(string[])': warning disabled
+        {
+            SExecute(BridgeClazz, "main", new object[] { args });
+        }
     }
 }

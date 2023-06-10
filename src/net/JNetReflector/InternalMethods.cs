@@ -733,7 +733,7 @@ namespace MASES.JNetReflector
                 if (!(jClass.IsJVMGenericClass() && isGeneric == false))
                 {
                     StringBuilder sbInterfaces = new StringBuilder();
-                    foreach (var item in jClass.JVMInterfaces())
+                    foreach (var item in jClass.JVMGenericInterfaces())
                     {
                         if (item.JVMNestingLevels() == 0)
                         {
@@ -1426,6 +1426,7 @@ namespace MASES.JNetReflector
                 {
                     List<string> paramGenArguments = new List<string>();
                     List<KeyValuePair<string, string>> paramGenClauses = new List<KeyValuePair<string, string>>();
+
                     var typeStr = parameter.Type(paramGenArguments, paramGenClauses, parameter.Name().Camel(), isGeneric, JNetReflectorCore.UseCamel);
                     var typeStrForDoc = typeStr.Contains('<') ? typeStr.Substring(0, typeStr.IndexOf('<')) : typeStr;
                     if (isGeneric && paramGenArguments.Count != 0 && classGenerics != null)
@@ -1446,6 +1447,12 @@ namespace MASES.JNetReflector
                             genericArguments.AddRange(paramGenArguments);
                             genericClauses.AddRange(paramGenClauses);
                         }
+                    }
+
+                    if (parameter.IsJVMException())
+                    {
+                        // https://github.com/masesgroup/JNet/issues/137#issuecomment-1585716272: replace only the type used in signature and leaves anything else like it was from Java
+                        typeStr = SpecialNames.JVMBridgeException;
                     }
 
                     var helpFormat = AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_SEE_DECORATION;

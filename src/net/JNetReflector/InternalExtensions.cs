@@ -124,6 +124,15 @@ namespace MASES.JNetReflector
             }
         }
 
+        static bool IsJVMListenerClass(this string typeName)
+        {
+            if (typeName.StartsWith(SpecialNames.JavaUtilFunctions)) return true;
+            if (typeName.EndsWith(SpecialNames.JavaLangListener)) return true;
+            if (typeName.EndsWith(SpecialNames.JavaLangAdapter)) return true;
+            if (JNetReflectorCore.ClassesToBeListener.Any((o) => typeName == o)) return true;
+            return false;
+        }
+
         public static string JVMNestedClassName(this string entry)
         {
             return entry.Substring(entry.LastIndexOf(SpecialNames.NestedClassSeparator) + 1);
@@ -421,6 +430,42 @@ namespace MASES.JNetReflector
         #endregion
 
         #region Type extension
+
+        public static bool MustBeAvoided(this Java.Lang.Reflect.Type type)
+        {
+            if (type == null) return false;
+            var tName = type.TypeName;
+            tName = tName.Contains("<") ? tName.Substring(0, tName.IndexOf("<")) : tName;
+            var tClass = tName.JVMClass();
+            return tClass == null || tClass.MustBeAvoided();
+        }
+
+        public static int JVMNestingLevels(this Java.Lang.Reflect.Type type)
+        {
+            var result = type.TypeName.Split(SpecialNames.NestedClassSeparator);
+            return result.Length - 1;
+        }
+
+        public static string JVMInterfaceName(this Java.Lang.Reflect.Type type, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool fullyQualified)
+        {
+            var tName = type.TypeName;
+            tName = tName.Contains("<") ? tName.Substring(0, tName.IndexOf("<")) : tName;
+            var tClass = tName.JVMClass();
+
+            var cName = tClass.JVMClassName(genClause, usedInGenerics);
+            cName = "I" + cName;
+            if (fullyQualified)
+            {
+                var nName = tClass.Namespace(JNetReflectorCore.UseCamel);
+                return string.IsNullOrWhiteSpace(nName) ? cName : nName + SpecialNames.NamespaceSeparator + cName;
+            }
+            else return cName;
+        }
+
+        public static bool IsJVMListenerClass(this Java.Lang.Reflect.Type type)
+        {
+            return type.TypeName.IsJVMListenerClass();
+        }
 
         public static string Type(this Java.Lang.Reflect.Type type, Class clazz, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool usedInGenerics, bool camel)
         {
@@ -877,11 +922,7 @@ namespace MASES.JNetReflector
 
         public static bool IsJVMListenerClass(this Class entry)
         {
-            if (entry.TypeName.StartsWith(SpecialNames.JavaUtilFunctions)) return true;
-            if (entry.TypeName.EndsWith(SpecialNames.JavaLangListener)) return true;
-            if (entry.TypeName.EndsWith(SpecialNames.JavaLangAdapter)) return true;
-            if (JNetReflectorCore.ClassesToBeListener.Any((o) => entry.TypeName == o)) return true;
-            return false;
+            return entry.TypeName.IsJVMListenerClass();
         }
 
         public static bool ImplementsJVMListenerClass(this Class entry)
@@ -1252,7 +1293,43 @@ namespace MASES.JNetReflector
         public static IEnumerable<Class> JVMInterfaces(this Class entry)
         {
             List<Class> filteredInterfaces = new List<Class>();
+
             foreach (var implementedInterface in entry.Interfaces)
+            {
+                if (implementedInterface.MustBeAvoided()) continue;
+                var superCls = entry.SuperClass;
+                if (superCls == null
+                    || !superCls.IsPublic()
+                    || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
+                    || superCls.MustBeAvoided()
+                    || superCls.TypeName == SpecialNames.JavaLangObject)
+                {
+                    filteredInterfaces.Add(implementedInterface);
+                }
+                else
+                {
+                    bool foundInSuperClass = false;
+                    foreach (var supInterface in superCls.Interfaces)
+                    {
+                        if (supInterface.TypeName == implementedInterface.TypeName)
+                        {
+                            foundInSuperClass = true; break;
+                        }
+                    }
+                    if (!foundInSuperClass) filteredInterfaces.Add(implementedInterface);
+                }
+            }
+
+            return filteredInterfaces;
+        }
+
+        public static IEnumerable<Java.Lang.Reflect.Type> JVMGenericInterfaces(this Class entry)
+        {
+            List<Java.Lang.Reflect.Type> filteredInterfaces = new List<Java.Lang.Reflect.Type>();
+
+            bool isInterface = entry.IsInterface();
+
+            foreach (var implementedInterface in entry.GenericInterfaces)
             {
                 if (implementedInterface.MustBeAvoided()) continue;
                 var superCls = entry.SuperClass;
@@ -2314,6 +2391,15 @@ namespace MASES.JNetReflector
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             return entry.Type.ToNetType(camel) == SpecialNames.NetObject;
+        }
+
+        public static bool IsJVMException(this Parameter entry)
+        {
+            if (entry == null || entry.ParameterizedType == null || entry.ParameterizedType.TypeName == null) return false;
+            var cName = entry.ParameterizedType.TypeName;
+            cName = cName.Contains("<") ? cName.Substring(0, cName.IndexOf("<")) : cName;
+            var cEntry = cName.JVMClass();
+            return cEntry.IsJVMException();
         }
 
         #endregion
