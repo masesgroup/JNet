@@ -877,9 +877,25 @@ namespace MASES.JNetReflector
 
         public static bool IsJVMListenerClass(this Class entry)
         {
+            if (entry.TypeName.StartsWith(SpecialNames.JavaUtilFunctions)) return true;
             if (entry.TypeName.EndsWith(SpecialNames.JavaLangListener)) return true;
             if (entry.TypeName.EndsWith(SpecialNames.JavaLangAdapter)) return true;
             if (JNetReflectorCore.ClassesToBeListener.Any((o) => entry.TypeName == o)) return true;
+            return false;
+        }
+
+        public static bool ImplementsJVMListenerClass(this Class entry)
+        {
+            if (!entry.IsInterface())
+            {
+                foreach (var item in entry.Interfaces)
+                {
+                    if (item.IsJVMListenerClass())
+                    {
+                        return true;
+                    }
+                }
+            }
             return false;
         }
 
@@ -1022,7 +1038,13 @@ namespace MASES.JNetReflector
                     {
                         return true;
                     }
-                    else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
+                    // if there is single super interface use it as superclass, it will be avoided in operators
+                    else if (entry.IsInterface() && entry.Interfaces.Length == 1) 
+                    {
+                        return false;
+                    }
+                    // if there is single super interface which isn't a listener use it as superclass, it will be avoided in operators
+                    else if (entry.Interfaces.Length == 1 && !entry.ImplementsJVMListenerClass()) 
                     {
                         return false;
                     }
@@ -1080,7 +1102,13 @@ namespace MASES.JNetReflector
                     {
                         return false;
                     }
-                    else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
+                    // if there is single super interface use it as superclass, it will be avoided in operators
+                    else if (entry.IsInterface() && entry.Interfaces.Length == 1)
+                    {
+                        return true;
+                    }
+                    // if there is single super interface which isn't a listener use it as superclass, it will be avoided in operators
+                    else if (entry.Interfaces.Length == 1 && !entry.ImplementsJVMListenerClass())
                     {
                         return true;
                     }
@@ -1160,7 +1188,19 @@ namespace MASES.JNetReflector
                         }
                         return string.Format("Java.Util.Iterator{0}", innerName);
                     }
-                    else if (entry.IsInterface() && entry.Interfaces.Length == 1) // if there is single super interface use it as superclass, it will be avoided in operators
+                    // if there is single super interface use it as superclass, it will be avoided in operators
+                    else if (entry.IsInterface() && entry.Interfaces.Length == 1)
+                    {
+                        if ((usedInGenerics && entry.Interfaces[0].IsJVMGenericClass())
+                            || (!usedInGenerics && !entry.IsJVMGenericClass() && entry.Interfaces[0].IsJVMGenericClass()))
+                        {
+                            return entry.GenericInterfaces[0].ApplyGenerics(null, null, null, true, usedInGenerics, camel);
+                        }
+
+                        return ToFullQualifiedClassName(entry.Interfaces[0], false, camel);
+                    }
+                    // if there is single super interface which isn't a listener use it as superclass, it will be avoided in operators
+                    else if (entry.Interfaces.Length == 1 && !entry.ImplementsJVMListenerClass())
                     {
                         if ((usedInGenerics && entry.Interfaces[0].IsJVMGenericClass())
                             || (!usedInGenerics && !entry.IsJVMGenericClass() && entry.Interfaces[0].IsJVMGenericClass()))

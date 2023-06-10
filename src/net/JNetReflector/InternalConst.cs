@@ -79,6 +79,7 @@ namespace MASES.JNetReflector
         public const string JavaUtilIterator = "java.util.Iterator";
         public const string JavaUtilCollection = "java.util.Collection";
         public const string JavaUtilEventListener = "java.util.EventListener";
+        public const string JavaUtilFunctions = "java.util.function.";
         public const string JavaLangListener = "Listener";
         public const string JavaLangAdapter = "Adapter";
         public const string ArrayTypeTrailer = "[]";
