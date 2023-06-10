@@ -52,7 +52,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult PostVisitDirectory(object arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult PostVisitDirectory(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
         }
@@ -85,7 +85,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult VisitFileFailed(object arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult VisitFileFailed(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
         }
@@ -114,7 +114,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, Java.Io.IOException arg1);
+        Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
         /// </summary>
@@ -138,7 +138,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, Java.Io.IOException arg1);
+        Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1);
 
         #endregion
 
@@ -181,7 +181,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
         }
@@ -214,7 +214,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
         }

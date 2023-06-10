@@ -304,7 +304,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#completeExceptionally(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        public void CompleteExceptionally(Java.Lang.Throwable arg0)
+        public void CompleteExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecute("completeExceptionally", arg0);
         }
@@ -613,7 +613,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#completeExceptionally(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        public void CompleteExceptionally(Java.Lang.Throwable arg0)
+        public void CompleteExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecute("completeExceptionally", arg0);
         }

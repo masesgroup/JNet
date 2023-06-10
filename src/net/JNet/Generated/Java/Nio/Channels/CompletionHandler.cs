@@ -59,7 +59,7 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        public void Failed(Java.Lang.Throwable arg0, object arg1)
+        public void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, object arg1)
         {
             IExecute("failed", arg0, arg1);
         }
@@ -92,7 +92,7 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><typeparamref name="A"/></param>
-        void Failed(Java.Lang.Throwable arg0, A arg1);
+        void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, A arg1);
 
         #endregion
 
@@ -142,7 +142,7 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><typeparamref name="A"/></param>
-        public void Failed(Java.Lang.Throwable arg0, A arg1)
+        public void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, A arg1)
         {
             IExecute("failed", arg0, arg1);
         }

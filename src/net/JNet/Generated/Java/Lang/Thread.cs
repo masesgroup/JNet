@@ -475,7 +475,7 @@ namespace Java.Lang
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
             /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
-            public void UncaughtException(Java.Lang.Thread arg0, Java.Lang.Throwable arg1)
+            public void UncaughtException(Java.Lang.Thread arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
                 IExecute("uncaughtException", arg0, arg1);
             }

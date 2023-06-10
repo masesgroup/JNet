@@ -76,7 +76,7 @@ namespace Java.Net
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Net.SocketAddress"/></param>
         /// <param name="arg2"><see cref="Java.Io.IOException"/></param>
-        public void ConnectFailed(Java.Net.URI arg0, Java.Net.SocketAddress arg1, Java.Io.IOException arg2)
+        public void ConnectFailed(Java.Net.URI arg0, Java.Net.SocketAddress arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
             IExecute("connectFailed", arg0, arg1, arg2);
         }

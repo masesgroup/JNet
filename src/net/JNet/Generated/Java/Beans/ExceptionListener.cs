@@ -36,7 +36,7 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html#exceptionThrown(java.lang.Exception)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
-        void ExceptionThrown(Java.Lang.Exception arg0);
+        void ExceptionThrown(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
 
         #endregion
 
@@ -72,7 +72,7 @@ namespace Java.Beans
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html#exceptionThrown(java.lang.Exception)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
-        public virtual void ExceptionThrown(Java.Lang.Exception arg0)
+        public virtual void ExceptionThrown(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             
         }

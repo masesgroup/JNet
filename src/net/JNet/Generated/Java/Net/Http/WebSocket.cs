@@ -357,7 +357,7 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
-            public virtual void OnError(Java.Net.Http.WebSocket arg0, Java.Lang.Throwable arg1)
+            public virtual void OnError(Java.Net.Http.WebSocket arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
                 
             }

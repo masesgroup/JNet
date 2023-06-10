@@ -37,19 +37,19 @@ namespace Javax.Xml.Transform
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
-        void Error(Javax.Xml.Transform.TransformerException arg0);
+        void Error(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
-        void FatalError(Javax.Xml.Transform.TransformerException arg0);
+        void FatalError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
-        void Warning(Javax.Xml.Transform.TransformerException arg0);
+        void Warning(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
 
         #endregion
 
@@ -86,7 +86,7 @@ namespace Javax.Xml.Transform
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
-        public virtual void Error(Javax.Xml.Transform.TransformerException arg0)
+        public virtual void Error(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             
         }
@@ -95,7 +95,7 @@ namespace Javax.Xml.Transform
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
-        public virtual void FatalError(Javax.Xml.Transform.TransformerException arg0)
+        public virtual void FatalError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             
         }
@@ -104,7 +104,7 @@ namespace Javax.Xml.Transform
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
-        public virtual void Warning(Javax.Xml.Transform.TransformerException arg0)
+        public virtual void Warning(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             
         }

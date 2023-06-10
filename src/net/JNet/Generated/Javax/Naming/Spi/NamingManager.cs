@@ -84,7 +84,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg0"><see cref="Javax.Naming.CannotProceedException"/></param>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Context GetContinuationContext(Javax.Naming.CannotProceedException arg0)
+        public static Javax.Naming.Context GetContinuationContext(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return SExecute<Javax.Naming.Context>(LocalBridgeClazz, "getContinuationContext", arg0);
         }

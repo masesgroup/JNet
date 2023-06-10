@@ -37,7 +37,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
         /// <returns><see cref="bool"/></returns>
-        bool Failure(Java.Lang.Exception arg0);
+        bool Failure(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
 
         #endregion
 
@@ -74,7 +74,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Failure(Java.Lang.Exception arg0)
+        public bool Failure(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return IExecute<bool>("failure", arg0);
         }

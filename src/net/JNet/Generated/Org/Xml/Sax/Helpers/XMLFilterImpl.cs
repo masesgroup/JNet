@@ -187,7 +187,7 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
-        public void Error(Org.Xml.Sax.SAXParseException arg0)
+        public void Error(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecute("error", arg0);
         }
@@ -196,7 +196,7 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
-        public void FatalError(Org.Xml.Sax.SAXParseException arg0)
+        public void FatalError(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecute("fatalError", arg0);
         }
@@ -339,7 +339,7 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
-        public void Warning(Org.Xml.Sax.SAXParseException arg0)
+        public void Warning(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecute("warning", arg0);
         }

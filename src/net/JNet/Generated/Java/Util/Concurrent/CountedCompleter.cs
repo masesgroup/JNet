@@ -100,7 +100,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool OnExceptionalCompletion(Java.Lang.Throwable arg0, Java.Util.Concurrent.CountedCompleter arg1)
+        public bool OnExceptionalCompletion(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, Java.Util.Concurrent.CountedCompleter arg1)
         {
             return IExecute<bool>("onExceptionalCompletion", arg0, arg1);
         }
@@ -249,7 +249,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool OnExceptionalCompletion(Java.Lang.Throwable arg0, Java.Util.Concurrent.CountedCompleter<object> arg1)
+        public bool OnExceptionalCompletion(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, Java.Util.Concurrent.CountedCompleter<object> arg1)
         {
             return IExecute<bool>("onExceptionalCompletion", arg0, arg1);
         }

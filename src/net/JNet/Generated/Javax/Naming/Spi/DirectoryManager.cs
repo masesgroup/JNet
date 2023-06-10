@@ -61,7 +61,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg0"><see cref="Javax.Naming.CannotProceedException"/></param>
         /// <returns><see cref="Javax.Naming.Directory.DirContext"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Directory.DirContext GetContinuationDirContext(Javax.Naming.CannotProceedException arg0)
+        public static Javax.Naming.Directory.DirContext GetContinuationDirContext(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return SExecute<Javax.Naming.Directory.DirContext>(LocalBridgeClazz, "getContinuationDirContext", arg0);
         }
