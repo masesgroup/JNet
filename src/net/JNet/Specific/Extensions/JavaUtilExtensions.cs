@@ -19,7 +19,7 @@
 using Java.Util;
 using System.Collections.Generic;
 
-namespace MASES.JNet.Extensions
+namespace MASES.JNet.Specific.Extensions
 {
     /// <summary>
     /// Extension for Java.Util classes

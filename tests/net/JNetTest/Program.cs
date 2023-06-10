@@ -18,7 +18,7 @@
 
 using Java.Util;
 using MASES.JNetTest.Common;
-using MASES.JNet.Extensions;
+using MASES.JNet.Specific.Extensions;
 using System.Diagnostics;
 using Java.Lang;
 using MASES.JCOBridge.C2JBridge;

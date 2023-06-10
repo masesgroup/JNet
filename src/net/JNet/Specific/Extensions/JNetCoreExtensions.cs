@@ -18,7 +18,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace MASES.JNet.Extensions
+namespace MASES.JNet.Specific.Extensions
 {
     /// <summary>
     /// Extension class
