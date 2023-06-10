@@ -44,10 +44,6 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.SizeRequirements"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Swing.SizeRequirements t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

@@ -52,10 +52,6 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Io.ObjectStreamField"/> to <see cref="Java.Lang.Comparable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Comparable(Java.Io.ObjectStreamField t) => t.Cast<Java.Lang.Comparable>();
 
         #endregion
 

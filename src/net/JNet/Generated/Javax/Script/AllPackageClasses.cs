@@ -29,7 +29,7 @@ namespace Javax.Script
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/AbstractScriptEngine.html"/>
     /// </summary>
-    public partial class AbstractScriptEngine : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractScriptEngine>
+    public partial class AbstractScriptEngine : Javax.Script.ScriptEngine
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -432,7 +432,7 @@ namespace Javax.Script
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html"/>
     /// </summary>
-    public partial class SimpleBindings : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleBindings>
+    public partial class SimpleBindings : Javax.Script.Bindings
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -475,7 +475,7 @@ namespace Javax.Script
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html"/>
     /// </summary>
-    public partial class SimpleScriptContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleScriptContext>
+    public partial class SimpleScriptContext : Javax.Script.ScriptContext
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

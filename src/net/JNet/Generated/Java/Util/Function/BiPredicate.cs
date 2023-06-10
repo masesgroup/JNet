@@ -46,39 +46,41 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/> 
-        /// </summary>
-        public Java.Util.Function.BiPredicate Negate
-        {
-            get { return IExecute<Java.Util.Function.BiPredicate>("negate"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Test(object arg0, object arg1)
+        public virtual bool Test(object arg0, object arg1)
         {
-            return IExecute<bool>("test", arg0, arg1);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        public Java.Util.Function.BiPredicate And(Java.Util.Function.BiPredicate arg0)
+        public virtual Java.Util.Function.BiPredicate And(Java.Util.Function.BiPredicate arg0)
         {
-            return IExecute<Java.Util.Function.BiPredicate>("and", arg0);
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
+        public virtual Java.Util.Function.BiPredicate Negate()
+        {
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        public Java.Util.Function.BiPredicate Or(Java.Util.Function.BiPredicate arg0)
+        public virtual Java.Util.Function.BiPredicate Or(Java.Util.Function.BiPredicate arg0)
         {
-            return IExecute<Java.Util.Function.BiPredicate>("or", arg0);
+            return default;
         }
 
         #endregion
@@ -99,10 +101,6 @@ namespace Java.Util.Function
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/> 
-        /// </summary>
-        Java.Util.Function.BiPredicate<T, U> Negate { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -117,6 +115,12 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperU"></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
+        Java.Util.Function.BiPredicate<T, U> Negate();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
@@ -144,10 +148,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.BiPredicate{T, U}"/> to <see cref="Java.Util.Function.BiPredicate"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.BiPredicate(Java.Util.Function.BiPredicate<T, U> t) => t.Cast<Java.Util.Function.BiPredicate>();
 
         #endregion
 
@@ -161,21 +161,14 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/> 
-        /// </summary>
-        public Java.Util.Function.BiPredicate<T, U> Negate
-        {
-            get { return IExecute<Java.Util.Function.BiPredicate<T, U>>("negate"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Test(T arg0, U arg1)
+        public virtual bool Test(T arg0, U arg1)
         {
-            return IExecute<bool>("test", arg0, arg1);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
@@ -184,9 +177,18 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        public Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T
+        public virtual Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T
         {
-            return IExecute<Java.Util.Function.BiPredicate<T, U>>("and", arg0);
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
+        public virtual Java.Util.Function.BiPredicate<T, U> Negate()
+        {
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
@@ -195,9 +197,9 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        public Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T
+        public virtual Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T
         {
-            return IExecute<Java.Util.Function.BiPredicate<T, U>>("or", arg0);
+            return default;
         }
 
         #endregion

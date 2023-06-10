@@ -45,7 +45,7 @@ namespace Java.Awt.ColorNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html"/>
     /// </summary>
-    public partial class ColorSpace : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ColorSpace>
+    public partial class ColorSpace : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -131,7 +131,7 @@ namespace Java.Awt.ColorNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html"/>
     /// </summary>
-    public partial class ICC_Profile : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ICC_Profile>
+    public partial class ICC_Profile : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

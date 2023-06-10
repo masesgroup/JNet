@@ -690,7 +690,7 @@ namespace Java.Time
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneId.html"/>
     /// </summary>
-    public partial class ZoneId : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZoneId>
+    public partial class ZoneId : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

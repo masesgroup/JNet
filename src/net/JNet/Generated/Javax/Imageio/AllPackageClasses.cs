@@ -432,7 +432,7 @@ namespace Javax.Imageio
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriter.html"/>
     /// </summary>
-    public partial class ImageWriter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImageWriter>
+    public partial class ImageWriter : Javax.Imageio.ImageTranscoder
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -29,7 +29,7 @@ namespace Org.Xml.Sax.Helpers
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html"/>
     /// </summary>
-    public partial class AttributesImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AttributesImpl>
+    public partial class AttributesImpl : Org.Xml.Sax.Attributes
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -115,7 +115,7 @@ namespace Org.Xml.Sax.Helpers
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/LocatorImpl.html"/>
     /// </summary>
-    public partial class LocatorImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LocatorImpl>
+    public partial class LocatorImpl : Org.Xml.Sax.Locator
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

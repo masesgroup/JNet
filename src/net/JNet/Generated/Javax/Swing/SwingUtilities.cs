@@ -33,10 +33,6 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.SwingUtilities"/> to <see cref="Javax.Swing.SwingConstants"/>
-        /// </summary>
-        public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.SwingUtilities t) => t.Cast<Javax.Swing.SwingConstants>();
 
         #endregion
 

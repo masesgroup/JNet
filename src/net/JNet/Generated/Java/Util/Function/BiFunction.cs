@@ -51,18 +51,18 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
-        public object Apply(object arg0, object arg1)
+        public virtual object Apply(object arg0, object arg1)
         {
-            return IExecute("apply", arg0, arg1);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        public Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
+        public virtual Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
         {
-            return IExecute<Java.Util.Function.BiFunction>("andThen", arg0);
+            return default;
         }
 
         #endregion
@@ -117,10 +117,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.BiFunction{T, U, R}"/> to <see cref="Java.Util.Function.BiFunction"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.BiFunction(Java.Util.Function.BiFunction<T, U, R> t) => t.Cast<Java.Util.Function.BiFunction>();
 
         #endregion
 
@@ -139,9 +135,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
         /// <returns><typeparamref name="R"/></returns>
-        public R Apply(T arg0, U arg1)
+        public virtual R Apply(T arg0, U arg1)
         {
-            return IExecute<R>("apply", arg0, arg1);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
@@ -151,9 +147,9 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        public Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R
+        public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R
         {
-            return IExecute<Java.Util.Function.BiFunction<T, U, V>>("andThen", arg0);
+            return default;
         }
 
         #endregion

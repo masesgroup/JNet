@@ -29,7 +29,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Attribute.html"/>
     /// </summary>
-    public partial class Attribute : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Attribute>
+    public partial class Attribute : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -217,7 +217,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeValueExp.html"/>
     /// </summary>
-    public partial class AttributeValueExp : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AttributeValueExp>
+    public partial class AttributeValueExp : Javax.Management.ValueExp
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -566,7 +566,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html"/>
     /// </summary>
-    public partial class ImmutableDescriptor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImmutableDescriptor>
+    public partial class ImmutableDescriptor : Javax.Management.Descriptor
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1473,7 +1473,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html"/>
     /// </summary>
-    public partial class MBeanServerInvocationHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MBeanServerInvocationHandler>
+    public partial class MBeanServerInvocationHandler : Java.Lang.Reflect.InvocationHandler
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1790,7 +1790,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcasterSupport.html"/>
     /// </summary>
-    public partial class NotificationBroadcasterSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NotificationBroadcasterSupport>
+    public partial class NotificationBroadcasterSupport : Javax.Management.NotificationEmitter
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1955,7 +1955,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectInstance.html"/>
     /// </summary>
-    public partial class ObjectInstance : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjectInstance>
+    public partial class ObjectInstance : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2143,7 +2143,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryEval.html"/>
     /// </summary>
-    public partial class QueryEval : MASES.JCOBridge.C2JBridge.JVMBridgeBase<QueryEval>
+    public partial class QueryEval : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2395,7 +2395,7 @@ namespace Javax.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StringValueExp.html"/>
     /// </summary>
-    public partial class StringValueExp : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringValueExp>
+    public partial class StringValueExp : Javax.Management.ValueExp
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

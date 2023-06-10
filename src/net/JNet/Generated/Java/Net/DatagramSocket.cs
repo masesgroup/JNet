@@ -61,10 +61,6 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Net.DatagramSocket"/> to <see cref="Java.Io.Closeable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Closeable(Java.Net.DatagramSocket t) => t.Cast<Java.Io.Closeable>();
 
         #endregion
 

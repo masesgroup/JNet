@@ -33,10 +33,6 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Nio.Channels.FileLock"/> to <see cref="Java.Lang.AutoCloseable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.AutoCloseable(Java.Nio.Channels.FileLock t) => t.Cast<Java.Lang.AutoCloseable>();
 
         #endregion
 

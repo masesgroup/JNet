@@ -50,10 +50,6 @@ namespace Javax.Xml.Transform.Stax
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Transform.Stax.StAXSource"/> to <see cref="Javax.Xml.Transform.Source"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Transform.Source(Javax.Xml.Transform.Stax.StAXSource t) => t.Cast<Javax.Xml.Transform.Source>();
 
         #endregion
 

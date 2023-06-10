@@ -377,7 +377,7 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html"/>
     /// </summary>
-    public partial class EventListenerList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventListenerList>
+    public partial class EventListenerList : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -99,10 +99,6 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Net.URL"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Net.URL t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

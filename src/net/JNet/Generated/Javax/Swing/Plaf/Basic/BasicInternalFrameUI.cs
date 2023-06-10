@@ -108,10 +108,6 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameUI.InternalFrameLayout"/> to <see cref="Java.Awt.LayoutManager"/>
-            /// </summary>
-            public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicInternalFrameUI.InternalFrameLayout t) => t.Cast<Java.Awt.LayoutManager>();
 
             #endregion
 

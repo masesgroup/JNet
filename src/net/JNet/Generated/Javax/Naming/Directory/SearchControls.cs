@@ -46,10 +46,6 @@ namespace Javax.Naming.Directory
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.Directory.SearchControls"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Naming.Directory.SearchControls t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

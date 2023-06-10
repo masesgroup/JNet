@@ -76,9 +76,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
-        public long ApplyAsLong(long arg0, long arg1)
+        public virtual long ApplyAsLong(long arg0, long arg1)
         {
-            return IExecute<long>("applyAsLong", arg0, arg1);
+            return default;
         }
 
         #endregion

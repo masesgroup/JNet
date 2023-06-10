@@ -176,7 +176,7 @@ namespace Java.Awt.Dnd
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html"/>
     /// </summary>
-    public partial class DragGestureRecognizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DragGestureRecognizer>
+    public partial class DragGestureRecognizer : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -219,7 +219,7 @@ namespace Java.Awt.Dnd
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html"/>
     /// </summary>
-    public partial class DragSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DragSource>
+    public partial class DragSource : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -549,7 +549,7 @@ namespace Java.Awt.Dnd
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html"/>
     /// </summary>
-    public partial class DropTargetContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DropTargetContext>
+    public partial class DropTargetContext : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

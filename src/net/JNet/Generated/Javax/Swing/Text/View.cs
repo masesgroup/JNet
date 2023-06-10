@@ -41,10 +41,6 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.View"/> to <see cref="Javax.Swing.SwingConstants"/>
-        /// </summary>
-        public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Text.View t) => t.Cast<Javax.Swing.SwingConstants>();
 
         #endregion
 

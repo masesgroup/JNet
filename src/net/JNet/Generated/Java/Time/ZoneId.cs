@@ -33,10 +33,6 @@ namespace Java.Time
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Time.ZoneId"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Time.ZoneId t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

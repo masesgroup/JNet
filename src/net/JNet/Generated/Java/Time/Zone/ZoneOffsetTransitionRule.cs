@@ -33,10 +33,6 @@ namespace Java.Time.Zone
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Time.Zone.ZoneOffsetTransitionRule"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Time.Zone.ZoneOffsetTransitionRule t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

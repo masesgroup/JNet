@@ -502,7 +502,7 @@ namespace Javax.Accessibility
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleHyperlink.html"/>
     /// </summary>
-    public partial class AccessibleHyperlink : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AccessibleHyperlink>
+    public partial class AccessibleHyperlink : Javax.Accessibility.AccessibleAction
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

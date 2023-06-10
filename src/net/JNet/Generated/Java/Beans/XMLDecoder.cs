@@ -79,10 +79,6 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Beans.XMLDecoder"/> to <see cref="Java.Lang.AutoCloseable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.AutoCloseable(Java.Beans.XMLDecoder t) => t.Cast<Java.Lang.AutoCloseable>();
 
         #endregion
 

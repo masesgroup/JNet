@@ -346,7 +346,7 @@ namespace Javax.Sql.Rowset.Serial
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html"/>
     /// </summary>
-    public partial class SQLInputImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SQLInputImpl>
+    public partial class SQLInputImpl : Java.Sql.SQLInput
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -389,7 +389,7 @@ namespace Javax.Sql.Rowset.Serial
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLOutputImpl.html"/>
     /// </summary>
-    public partial class SQLOutputImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SQLOutputImpl>
+    public partial class SQLOutputImpl : Java.Sql.SQLOutput
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

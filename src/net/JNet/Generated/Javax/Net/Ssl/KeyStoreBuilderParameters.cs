@@ -49,10 +49,6 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Net.Ssl.KeyStoreBuilderParameters"/> to <see cref="Javax.Net.Ssl.ManagerFactoryParameters"/>
-        /// </summary>
-        public static implicit operator Javax.Net.Ssl.ManagerFactoryParameters(Javax.Net.Ssl.KeyStoreBuilderParameters t) => t.Cast<Javax.Net.Ssl.ManagerFactoryParameters>();
 
         #endregion
 

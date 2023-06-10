@@ -33,10 +33,6 @@ namespace Javax.Swing.Plaf.Nimbus
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Nimbus.AbstractRegionPainter"/> to <see cref="Javax.Swing.Painter"/>
-        /// </summary>
-        public static implicit operator Javax.Swing.Painter(Javax.Swing.Plaf.Nimbus.AbstractRegionPainter t) => t.Cast<Javax.Swing.Painter>();
 
         #endregion
 

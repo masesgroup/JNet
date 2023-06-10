@@ -171,10 +171,6 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.Html.HTMLEditorKit.HTMLFactory"/> to <see cref="Javax.Swing.Text.ViewFactory"/>
-            /// </summary>
-            public static implicit operator Javax.Swing.Text.ViewFactory(Javax.Swing.Text.Html.HTMLEditorKit.HTMLFactory t) => t.Cast<Javax.Swing.Text.ViewFactory>();
 
             #endregion
 

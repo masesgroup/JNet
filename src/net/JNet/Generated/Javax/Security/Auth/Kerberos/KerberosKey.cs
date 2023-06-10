@@ -54,10 +54,6 @@ namespace Javax.Security.Auth.Kerberos
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Kerberos.KerberosKey"/> to <see cref="Javax.Crypto.SecretKey"/>
-        /// </summary>
-        public static implicit operator Javax.Crypto.SecretKey(Javax.Security.Auth.Kerberos.KerberosKey t) => t.Cast<Javax.Crypto.SecretKey>();
 
         #endregion
 

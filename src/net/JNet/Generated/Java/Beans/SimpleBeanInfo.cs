@@ -33,10 +33,6 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Beans.SimpleBeanInfo"/> to <see cref="Java.Beans.BeanInfo"/>
-        /// </summary>
-        public static implicit operator Java.Beans.BeanInfo(Java.Beans.SimpleBeanInfo t) => t.Cast<Java.Beans.BeanInfo>();
 
         #endregion
 

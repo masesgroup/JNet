@@ -83,10 +83,6 @@ namespace Javax.Xml.Transform.Stream
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Transform.Stream.StreamSource"/> to <see cref="Javax.Xml.Transform.Source"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Transform.Source(Javax.Xml.Transform.Stream.StreamSource t) => t.Cast<Javax.Xml.Transform.Source>();
 
         #endregion
 

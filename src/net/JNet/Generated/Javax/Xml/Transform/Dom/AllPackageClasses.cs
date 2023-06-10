@@ -72,7 +72,7 @@ namespace Javax.Xml.Transform.Dom
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html"/>
     /// </summary>
-    public partial class DOMResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMResult>
+    public partial class DOMResult : Javax.Xml.Transform.Result
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -115,7 +115,7 @@ namespace Javax.Xml.Transform.Dom
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html"/>
     /// </summary>
-    public partial class DOMSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMSource>
+    public partial class DOMSource : Javax.Xml.Transform.Source
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

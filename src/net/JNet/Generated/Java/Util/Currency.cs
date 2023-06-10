@@ -33,10 +33,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Currency"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Currency t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

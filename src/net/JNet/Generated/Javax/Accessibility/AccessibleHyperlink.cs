@@ -33,10 +33,6 @@ namespace Javax.Accessibility
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Accessibility.AccessibleHyperlink"/> to <see cref="Javax.Accessibility.AccessibleAction"/>
-        /// </summary>
-        public static implicit operator Javax.Accessibility.AccessibleAction(Javax.Accessibility.AccessibleHyperlink t) => t.Cast<Javax.Accessibility.AccessibleAction>();
 
         #endregion
 

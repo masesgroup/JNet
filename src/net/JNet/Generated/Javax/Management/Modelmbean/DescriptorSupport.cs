@@ -70,10 +70,6 @@ namespace Javax.Management.Modelmbean
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Modelmbean.DescriptorSupport"/> to <see cref="Javax.Management.Descriptor"/>
-        /// </summary>
-        public static implicit operator Javax.Management.Descriptor(Javax.Management.Modelmbean.DescriptorSupport t) => t.Cast<Javax.Management.Descriptor>();
 
         #endregion
 

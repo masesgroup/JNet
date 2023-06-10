@@ -42,10 +42,6 @@ namespace Javax.Naming
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.InitialContext"/> to <see cref="Javax.Naming.Context"/>
-        /// </summary>
-        public static implicit operator Javax.Naming.Context(Javax.Naming.InitialContext t) => t.Cast<Javax.Naming.Context>();
 
         #endregion
 

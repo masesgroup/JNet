@@ -1274,7 +1274,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html"/>
     /// </summary>
-    public partial class Module : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Module>
+    public partial class Module : Java.Lang.Reflect.AnnotatedElement
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1403,7 +1403,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Number.html"/>
     /// </summary>
-    public partial class Number : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Number>
+    public partial class Number : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1532,7 +1532,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Package.html"/>
     /// </summary>
-    public partial class Package : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Package>
+    public partial class Package : Java.Lang.Reflect.AnnotatedElement
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1958,7 +1958,7 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html"/>
         /// </summary>
-        public partial class Version : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Version>
+        public partial class Version : Java.Lang.Comparable<Java.Lang.Runtime.Version>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2177,7 +2177,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html"/>
     /// </summary>
-    public partial class StackTraceElement : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StackTraceElement>
+    public partial class StackTraceElement : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2736,7 +2736,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html"/>
     /// </summary>
-    public partial class Thread : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Thread>
+    public partial class Thread : Java.Lang.Runnable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2881,7 +2881,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html"/>
     /// </summary>
-    public partial class ThreadGroup : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ThreadGroup>
+    public partial class ThreadGroup : Java.Lang.Thread.UncaughtExceptionHandler
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -88,7 +88,7 @@ namespace Java.Rmi.Activation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationDesc.html"/>
     /// </summary>
-    public partial class ActivationDesc : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ActivationDesc>
+    public partial class ActivationDesc : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -233,7 +233,7 @@ namespace Java.Rmi.Activation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html"/>
     /// </summary>
-    public partial class ActivationGroupDesc : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ActivationGroupDesc>
+    public partial class ActivationGroupDesc : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -272,7 +272,7 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.CommandEnvironment.html"/>
         /// </summary>
-        public partial class CommandEnvironment : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CommandEnvironment>
+        public partial class CommandEnvironment : Java.Io.Serializable
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -319,7 +319,7 @@ namespace Java.Rmi.Activation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupID.html"/>
     /// </summary>
-    public partial class ActivationGroupID : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ActivationGroupID>
+    public partial class ActivationGroupID : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -362,7 +362,7 @@ namespace Java.Rmi.Activation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationID.html"/>
     /// </summary>
-    public partial class ActivationID : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ActivationID>
+    public partial class ActivationID : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

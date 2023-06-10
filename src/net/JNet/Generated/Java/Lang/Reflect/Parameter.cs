@@ -33,10 +33,6 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Reflect.Parameter"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Reflect.Parameter t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
 
         #endregion
 

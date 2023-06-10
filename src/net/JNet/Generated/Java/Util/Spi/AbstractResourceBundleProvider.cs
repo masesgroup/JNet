@@ -33,10 +33,6 @@ namespace Java.Util.Spi
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Spi.AbstractResourceBundleProvider"/> to <see cref="Java.Util.Spi.ResourceBundleProvider"/>
-        /// </summary>
-        public static implicit operator Java.Util.Spi.ResourceBundleProvider(Java.Util.Spi.AbstractResourceBundleProvider t) => t.Cast<Java.Util.Spi.ResourceBundleProvider>();
 
         #endregion
 

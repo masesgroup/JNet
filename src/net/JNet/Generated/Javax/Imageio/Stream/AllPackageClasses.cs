@@ -287,7 +287,7 @@ namespace Javax.Imageio.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html"/>
     /// </summary>
-    public partial class ImageInputStreamImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImageInputStreamImpl>
+    public partial class ImageInputStreamImpl : Javax.Imageio.Stream.ImageInputStream
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

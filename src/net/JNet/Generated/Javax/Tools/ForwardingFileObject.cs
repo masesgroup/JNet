@@ -33,10 +33,6 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Tools.ForwardingFileObject"/> to <see cref="Javax.Tools.FileObject"/>
-        /// </summary>
-        public static implicit operator Javax.Tools.FileObject(Javax.Tools.ForwardingFileObject t) => t.Cast<Javax.Tools.FileObject>();
 
         #endregion
 
@@ -137,10 +133,6 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Tools.ForwardingFileObject{F}"/> to <see cref="Javax.Tools.FileObject"/>
-        /// </summary>
-        public static implicit operator Javax.Tools.FileObject(Javax.Tools.ForwardingFileObject<F> t) => t.Cast<Javax.Tools.FileObject>();
         /// <summary>
         /// Converter from <see cref="Javax.Tools.ForwardingFileObject{F}"/> to <see cref="Javax.Tools.ForwardingFileObject"/>
         /// </summary>

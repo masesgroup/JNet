@@ -42,10 +42,6 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.BandCombineOp"/> to <see cref="Java.Awt.ImageNs.RasterOp"/>
-        /// </summary>
-        public static implicit operator Java.Awt.ImageNs.RasterOp(Java.Awt.ImageNs.BandCombineOp t) => t.Cast<Java.Awt.ImageNs.RasterOp>();
 
         #endregion
 

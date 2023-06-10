@@ -41,10 +41,6 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Security.Spec.ECFieldFp"/> to <see cref="Java.Security.Spec.ECField"/>
-        /// </summary>
-        public static implicit operator Java.Security.Spec.ECField(Java.Security.Spec.ECFieldFp t) => t.Cast<Java.Security.Spec.ECField>();
 
         #endregion
 

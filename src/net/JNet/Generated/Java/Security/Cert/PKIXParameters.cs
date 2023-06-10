@@ -52,10 +52,6 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.PKIXParameters"/> to <see cref="Java.Security.Cert.CertPathParameters"/>
-        /// </summary>
-        public static implicit operator Java.Security.Cert.CertPathParameters(Java.Security.Cert.PKIXParameters t) => t.Cast<Java.Security.Cert.CertPathParameters>();
 
         #endregion
 

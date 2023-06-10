@@ -33,10 +33,6 @@ namespace Java.Nio.Charset
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Nio.Charset.Charset"/> to <see cref="Java.Lang.Comparable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Comparable(Java.Nio.Charset.Charset t) => t.Cast<Java.Lang.Comparable>();
 
         #endregion
 

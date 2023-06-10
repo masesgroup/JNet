@@ -78,18 +78,18 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#accept(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        public void Accept(long arg0)
+        public virtual void Accept(long arg0)
         {
-            IExecute("accept", arg0);
+            
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
-        public Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0)
+        public virtual Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0)
         {
-            return IExecute<Java.Util.Function.LongConsumer>("andThen", arg0);
+            return default;
         }
 
         #endregion

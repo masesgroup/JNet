@@ -432,7 +432,7 @@ namespace Java.Lang.Invoke
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodType.html"/>
     /// </summary>
-    public partial class MethodType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MethodType>
+    public partial class MethodType : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -518,7 +518,7 @@ namespace Java.Lang.Invoke
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html"/>
     /// </summary>
-    public partial class SerializedLambda : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SerializedLambda>
+    public partial class SerializedLambda : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

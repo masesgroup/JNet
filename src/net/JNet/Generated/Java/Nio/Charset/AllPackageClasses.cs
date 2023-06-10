@@ -45,7 +45,7 @@ namespace Java.Nio.Charset
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/Charset.html"/>
     /// </summary>
-    public partial class Charset : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Charset>
+    public partial class Charset : Java.Lang.Comparable<Java.Nio.Charset.Charset>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -29,7 +29,7 @@ namespace Javax.Xml.Crypto.Dom
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMCryptoContext.html"/>
     /// </summary>
-    public partial class DOMCryptoContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMCryptoContext>
+    public partial class DOMCryptoContext : Javax.Xml.Crypto.XMLCryptoContext
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -72,7 +72,7 @@ namespace Javax.Xml.Crypto.Dom
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMStructure.html"/>
     /// </summary>
-    public partial class DOMStructure : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMStructure>
+    public partial class DOMStructure : Javax.Xml.Crypto.XMLStructure
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

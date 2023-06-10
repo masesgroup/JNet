@@ -330,7 +330,7 @@ namespace Javax.Imageio.Plugins.Tiff
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html"/>
     /// </summary>
-    public partial class TIFFDirectory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TIFFDirectory>
+    public partial class TIFFDirectory : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -373,7 +373,7 @@ namespace Javax.Imageio.Plugins.Tiff
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html"/>
     /// </summary>
-    public partial class TIFFField : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TIFFField>
+    public partial class TIFFField : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

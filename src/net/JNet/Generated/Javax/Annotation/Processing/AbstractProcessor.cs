@@ -33,10 +33,6 @@ namespace Javax.Annotation.Processing
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Annotation.Processing.AbstractProcessor"/> to <see cref="Javax.Annotation.Processing.Processor"/>
-        /// </summary>
-        public static implicit operator Javax.Annotation.Processing.Processor(Javax.Annotation.Processing.AbstractProcessor t) => t.Cast<Javax.Annotation.Processing.Processor>();
 
         #endregion
 

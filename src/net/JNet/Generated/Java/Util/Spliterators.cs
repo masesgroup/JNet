@@ -472,10 +472,6 @@ namespace Java.Util
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Util.Spliterators.AbstractSpliterator"/> to <see cref="Java.Util.Spliterator"/>
-            /// </summary>
-            public static implicit operator Java.Util.Spliterator(Java.Util.Spliterators.AbstractSpliterator t) => t.Cast<Java.Util.Spliterator>();
 
             #endregion
 
@@ -528,10 +524,6 @@ namespace Java.Util
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Util.Spliterators.AbstractSpliterator{T}"/> to <see cref="Java.Util.Spliterator{T}"/>
-            /// </summary>
-            public static implicit operator Java.Util.Spliterator<T>(Java.Util.Spliterators.AbstractSpliterator<T> t) => t.Cast<Java.Util.Spliterator<T>>();
             /// <summary>
             /// Converter from <see cref="Java.Util.Spliterators.AbstractSpliterator{T}"/> to <see cref="Java.Util.Spliterators.AbstractSpliterator"/>
             /// </summary>

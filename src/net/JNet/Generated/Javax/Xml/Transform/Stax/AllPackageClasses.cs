@@ -29,7 +29,7 @@ namespace Javax.Xml.Transform.Stax
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXResult.html"/>
     /// </summary>
-    public partial class StAXResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StAXResult>
+    public partial class StAXResult : Javax.Xml.Transform.Result
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -72,7 +72,7 @@ namespace Javax.Xml.Transform.Stax
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stax/StAXSource.html"/>
     /// </summary>
-    public partial class StAXSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StAXSource>
+    public partial class StAXSource : Javax.Xml.Transform.Source
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

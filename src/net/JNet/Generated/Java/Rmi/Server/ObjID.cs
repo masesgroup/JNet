@@ -41,10 +41,6 @@ namespace Java.Rmi.Server
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Rmi.Server.ObjID"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Rmi.Server.ObjID t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

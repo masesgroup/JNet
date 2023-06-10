@@ -475,7 +475,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSigner.html"/>
     /// </summary>
-    public partial class CodeSigner : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CodeSigner>
+    public partial class CodeSigner : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -518,7 +518,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CodeSource.html"/>
     /// </summary>
-    public partial class CodeSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CodeSource>
+    public partial class CodeSource : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -749,7 +749,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainLoadStoreParameter.html"/>
     /// </summary>
-    public partial class DomainLoadStoreParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DomainLoadStoreParameter>
+    public partial class DomainLoadStoreParameter : Java.Security.KeyStore.LoadStoreParameter
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -874,7 +874,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Instantiation.html"/>
         /// </summary>
-        public partial class Instantiation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Instantiation>
+        public partial class Instantiation : Java.Security.SecureRandomParameters
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -917,7 +917,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html"/>
         /// </summary>
-        public partial class NextBytes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NextBytes>
+        public partial class NextBytes : Java.Security.SecureRandomParameters
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -960,7 +960,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html"/>
         /// </summary>
-        public partial class Reseed : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reseed>
+        public partial class Reseed : Java.Security.SecureRandomParameters
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1066,7 +1066,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/GuardedObject.html"/>
     /// </summary>
-    public partial class GuardedObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GuardedObject>
+    public partial class GuardedObject : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1318,7 +1318,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPair.html"/>
     /// </summary>
-    public partial class KeyPair : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyPair>
+    public partial class KeyPair : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1447,7 +1447,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.html"/>
     /// </summary>
-    public partial class KeyRep : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyRep>
+    public partial class KeyRep : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1615,7 +1615,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.CallbackHandlerProtection.html"/>
         /// </summary>
-        public partial class CallbackHandlerProtection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CallbackHandlerProtection>
+        public partial class CallbackHandlerProtection : Java.Security.KeyStore.ProtectionParameter
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1830,7 +1830,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html"/>
         /// </summary>
-        public partial class PrivateKeyEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivateKeyEntry>
+        public partial class PrivateKeyEntry : Java.Security.KeyStore.Entry
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1916,7 +1916,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html"/>
         /// </summary>
-        public partial class SecretKeyEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecretKeyEntry>
+        public partial class SecretKeyEntry : Java.Security.KeyStore.Entry
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1959,7 +1959,7 @@ namespace Java.Security
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html"/>
         /// </summary>
-        public partial class TrustedCertificateEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustedCertificateEntry>
+        public partial class TrustedCertificateEntry : Java.Security.KeyStore.Entry
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2226,7 +2226,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html"/>
     /// </summary>
-    public partial class PermissionCollection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PermissionCollection>
+    public partial class PermissionCollection : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2312,7 +2312,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PKCS12Attribute.html"/>
     /// </summary>
-    public partial class PKCS12Attribute : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PKCS12Attribute>
+    public partial class PKCS12Attribute : Java.Security.KeyStore.Entry.Attribute
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3077,7 +3077,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandomSpi.html"/>
     /// </summary>
-    public partial class SecureRandomSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecureRandomSpi>
+    public partial class SecureRandomSpi : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3308,7 +3308,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SignedObject.html"/>
     /// </summary>
-    public partial class SignedObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SignedObject>
+    public partial class SignedObject : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3351,7 +3351,7 @@ namespace Java.Security
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Timestamp.html"/>
     /// </summary>
-    public partial class Timestamp : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Timestamp>
+    public partial class Timestamp : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

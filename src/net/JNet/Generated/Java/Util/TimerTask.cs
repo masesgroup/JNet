@@ -33,10 +33,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.TimerTask"/> to <see cref="Java.Lang.Runnable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Runnable(Java.Util.TimerTask t) => t.Cast<Java.Lang.Runnable>();
 
         #endregion
 

@@ -29,7 +29,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/ChaCha20ParameterSpec.html"/>
     /// </summary>
-    public partial class ChaCha20ParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChaCha20ParameterSpec>
+    public partial class ChaCha20ParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -72,7 +72,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESedeKeySpec.html"/>
     /// </summary>
-    public partial class DESedeKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DESedeKeySpec>
+    public partial class DESedeKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -115,7 +115,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DESKeySpec.html"/>
     /// </summary>
-    public partial class DESKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DESKeySpec>
+    public partial class DESKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -158,7 +158,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHGenParameterSpec.html"/>
     /// </summary>
-    public partial class DHGenParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DHGenParameterSpec>
+    public partial class DHGenParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -201,7 +201,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html"/>
     /// </summary>
-    public partial class DHParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DHParameterSpec>
+    public partial class DHParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -244,7 +244,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHPrivateKeySpec.html"/>
     /// </summary>
-    public partial class DHPrivateKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DHPrivateKeySpec>
+    public partial class DHPrivateKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -287,7 +287,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHPublicKeySpec.html"/>
     /// </summary>
-    public partial class DHPublicKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DHPublicKeySpec>
+    public partial class DHPublicKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -330,7 +330,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/GCMParameterSpec.html"/>
     /// </summary>
-    public partial class GCMParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GCMParameterSpec>
+    public partial class GCMParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -373,7 +373,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/IvParameterSpec.html"/>
     /// </summary>
-    public partial class IvParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IvParameterSpec>
+    public partial class IvParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -416,7 +416,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/OAEPParameterSpec.html"/>
     /// </summary>
-    public partial class OAEPParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OAEPParameterSpec>
+    public partial class OAEPParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -459,7 +459,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEKeySpec.html"/>
     /// </summary>
-    public partial class PBEKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PBEKeySpec>
+    public partial class PBEKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -502,7 +502,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEParameterSpec.html"/>
     /// </summary>
-    public partial class PBEParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PBEParameterSpec>
+    public partial class PBEParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -631,7 +631,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC2ParameterSpec.html"/>
     /// </summary>
-    public partial class RC2ParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RC2ParameterSpec>
+    public partial class RC2ParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -674,7 +674,7 @@ namespace Javax.Crypto.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/RC5ParameterSpec.html"/>
     /// </summary>
-    public partial class RC5ParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RC5ParameterSpec>
+    public partial class RC5ParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

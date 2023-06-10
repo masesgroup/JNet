@@ -29,7 +29,7 @@ namespace Java.Util.Regex
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html"/>
     /// </summary>
-    public partial class Matcher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Matcher>
+    public partial class Matcher : Java.Util.Regex.MatchResult
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -115,7 +115,7 @@ namespace Java.Util.Regex
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html"/>
     /// </summary>
-    public partial class Pattern : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Pattern>
+    public partial class Pattern : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

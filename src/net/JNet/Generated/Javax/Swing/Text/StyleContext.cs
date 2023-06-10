@@ -540,10 +540,6 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.StyleContext.SmallAttributeSet"/> to <see cref="Javax.Swing.Text.AttributeSet"/>
-            /// </summary>
-            public static implicit operator Javax.Swing.Text.AttributeSet(Javax.Swing.Text.StyleContext.SmallAttributeSet t) => t.Cast<Javax.Swing.Text.AttributeSet>();
 
             #endregion
 

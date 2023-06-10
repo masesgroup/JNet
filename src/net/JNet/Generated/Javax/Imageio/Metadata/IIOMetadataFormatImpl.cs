@@ -52,10 +52,6 @@ namespace Javax.Imageio.Metadata
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Imageio.Metadata.IIOMetadataFormatImpl"/> to <see cref="Javax.Imageio.Metadata.IIOMetadataFormat"/>
-        /// </summary>
-        public static implicit operator Javax.Imageio.Metadata.IIOMetadataFormat(Javax.Imageio.Metadata.IIOMetadataFormatImpl t) => t.Cast<Javax.Imageio.Metadata.IIOMetadataFormat>();
 
         #endregion
 

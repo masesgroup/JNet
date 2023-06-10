@@ -76,10 +76,6 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.PixelGrabber"/> to <see cref="Java.Awt.ImageNs.ImageConsumer"/>
-        /// </summary>
-        public static implicit operator Java.Awt.ImageNs.ImageConsumer(Java.Awt.ImageNs.PixelGrabber t) => t.Cast<Java.Awt.ImageNs.ImageConsumer>();
 
         #endregion
 

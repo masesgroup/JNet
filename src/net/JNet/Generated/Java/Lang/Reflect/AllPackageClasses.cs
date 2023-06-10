@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html"/>
     /// </summary>
-    public partial class AccessibleObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AccessibleObject>
+    public partial class AccessibleObject : Java.Lang.Reflect.AnnotatedElement
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -884,7 +884,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Parameter.html"/>
     /// </summary>
-    public partial class Parameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Parameter>
+    public partial class Parameter : Java.Lang.Reflect.AnnotatedElement
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -970,7 +970,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html"/>
     /// </summary>
-    public partial class Proxy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Proxy>
+    public partial class Proxy : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

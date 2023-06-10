@@ -46,11 +46,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
-        public object Get
+
+        /// <returns><see cref="object"/></returns>
+        public virtual object Get()
         {
-            get { return IExecute("get"); }
+            return default;
         }
 
         #endregion
@@ -71,9 +73,11 @@ namespace Java.Util.Function
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
-        T Get { get; }
+
+        /// <returns><typeparamref name="T"/></returns>
+        T Get();
 
         #endregion
 
@@ -93,10 +97,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.Supplier{T}"/> to <see cref="Java.Util.Function.Supplier"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.Supplier(Java.Util.Function.Supplier<T> t) => t.Cast<Java.Util.Function.Supplier>();
 
         #endregion
 
@@ -110,11 +110,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
-        public T Get
+
+        /// <returns><typeparamref name="T"/></returns>
+        public virtual T Get()
         {
-            get { return IExecute<T>("get"); }
+            return default;
         }
 
         #endregion

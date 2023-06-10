@@ -115,7 +115,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html"/>
     /// </summary>
-    public partial class ExcC14NParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExcC14NParameterSpec>
+    public partial class ExcC14NParameterSpec : Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -158,7 +158,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/HMACParameterSpec.html"/>
     /// </summary>
-    public partial class HMACParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HMACParameterSpec>
+    public partial class HMACParameterSpec : Javax.Xml.Crypto.Dsig.Spec.SignatureMethodParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -287,7 +287,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html"/>
     /// </summary>
-    public partial class XPathFilter2ParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathFilter2ParameterSpec>
+    public partial class XPathFilter2ParameterSpec : Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -330,7 +330,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilterParameterSpec.html"/>
     /// </summary>
-    public partial class XPathFilterParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathFilterParameterSpec>
+    public partial class XPathFilterParameterSpec : Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -459,7 +459,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XSLTTransformParameterSpec.html"/>
     /// </summary>
-    public partial class XSLTTransformParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XSLTTransformParameterSpec>
+    public partial class XSLTTransformParameterSpec : Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

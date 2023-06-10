@@ -54,10 +54,6 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Rmi.Activation.ActivationGroupDesc"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationGroupDesc t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 
@@ -126,10 +122,6 @@ namespace Java.Rmi.Activation
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment"/> to <see cref="Java.Io.Serializable"/>
-            /// </summary>
-            public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment t) => t.Cast<Java.Io.Serializable>();
 
             #endregion
 

@@ -41,24 +41,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#maxBy(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
-        public static Java.Util.Function.BinaryOperator MaxBy(Java.Util.Comparator arg0)
-        {
-            return SExecute<Java.Util.Function.BinaryOperator>(LocalBridgeClazz, "maxBy", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#minBy(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
-        public static Java.Util.Function.BinaryOperator MinBy(Java.Util.Comparator arg0)
-        {
-            return SExecute<Java.Util.Function.BinaryOperator>(LocalBridgeClazz, "minBy", arg0);
-        }
 
         #endregion
 
@@ -78,7 +60,7 @@ namespace Java.Util.Function
     /// <summary>
     /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html"/>
     /// </summary>
-    public partial interface IBinaryOperator<T> : Java.Util.Function.IBiFunction<T, T, T>
+    public partial interface IBinaryOperator<T>
     {
         #region Instance methods
 
@@ -100,10 +82,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.BinaryOperator{T}"/> to <see cref="Java.Util.Function.BinaryOperator"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.BinaryOperator(Java.Util.Function.BinaryOperator<T> t) => t.Cast<Java.Util.Function.BinaryOperator>();
 
         #endregion
 
@@ -112,26 +90,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#maxBy(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
-        public static Java.Util.Function.BinaryOperator<T> MaxBy<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
-        {
-            return SExecute<Java.Util.Function.BinaryOperator<T>>(LocalBridgeClazz, "maxBy", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html#minBy(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
-        public static Java.Util.Function.BinaryOperator<T> MinBy<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
-        {
-            return SExecute<Java.Util.Function.BinaryOperator<T>>(LocalBridgeClazz, "minBy", arg0);
-        }
 
         #endregion
 

@@ -33,10 +33,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractMap"/> to <see cref="Java.Util.Map"/>
-        /// </summary>
-        public static implicit operator Java.Util.Map(Java.Util.AbstractMap t) => t.Cast<Java.Util.Map>();
 
         #endregion
 
@@ -472,10 +468,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractMap{K, V}"/> to <see cref="Java.Util.Map{K, V}"/>
-        /// </summary>
-        public static implicit operator Java.Util.Map<K, V>(Java.Util.AbstractMap<K, V> t) => t.Cast<Java.Util.Map<K, V>>();
         /// <summary>
         /// Converter from <see cref="Java.Util.AbstractMap{K, V}"/> to <see cref="Java.Util.AbstractMap"/>
         /// </summary>

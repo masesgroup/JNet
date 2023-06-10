@@ -33,9 +33,11 @@ namespace Java.Util.Function
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>
-        int AsInt { get; }
+
+        /// <returns><see cref="int"/></returns>
+        int GetAsInt();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>
-        public int AsInt
+
+        /// <returns><see cref="int"/></returns>
+        public virtual int GetAsInt()
         {
-            get { return IExecute<int>("getAsInt"); }
+            return default;
         }
 
         #endregion

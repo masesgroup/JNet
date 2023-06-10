@@ -74,9 +74,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="double"/></returns>
-        public double ApplyAsDouble(int arg0)
+        public virtual double ApplyAsDouble(int arg0)
         {
-            return IExecute<double>("applyAsDouble", arg0);
+            return default;
         }
 
         #endregion

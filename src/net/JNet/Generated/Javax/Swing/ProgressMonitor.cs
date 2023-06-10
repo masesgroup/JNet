@@ -45,10 +45,6 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.ProgressMonitor"/> to <see cref="Javax.Accessibility.Accessible"/>
-        /// </summary>
-        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.ProgressMonitor t) => t.Cast<Javax.Accessibility.Accessible>();
 
         #endregion
 

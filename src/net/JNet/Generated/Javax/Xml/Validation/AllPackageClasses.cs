@@ -260,7 +260,7 @@ namespace Javax.Xml.Validation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html"/>
     /// </summary>
-    public partial class ValidatorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ValidatorHandler>
+    public partial class ValidatorHandler : Org.Xml.Sax.ContentHandler
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

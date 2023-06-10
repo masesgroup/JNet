@@ -41,10 +41,6 @@ namespace Javax.Script
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Script.SimpleBindings"/> to <see cref="Javax.Script.Bindings"/>
-        /// </summary>
-        public static implicit operator Javax.Script.Bindings(Javax.Script.SimpleBindings t) => t.Cast<Javax.Script.Bindings>();
 
         #endregion
 

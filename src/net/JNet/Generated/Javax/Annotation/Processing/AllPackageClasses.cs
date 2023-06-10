@@ -29,7 +29,7 @@ namespace Javax.Annotation.Processing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html"/>
     /// </summary>
-    public partial class AbstractProcessor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractProcessor>
+    public partial class AbstractProcessor : Javax.Annotation.Processing.Processor
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

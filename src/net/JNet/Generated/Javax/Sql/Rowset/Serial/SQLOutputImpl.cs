@@ -43,10 +43,6 @@ namespace Javax.Sql.Rowset.Serial
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SQLOutputImpl"/> to <see cref="Java.Sql.SQLOutput"/>
-        /// </summary>
-        public static implicit operator Java.Sql.SQLOutput(Javax.Sql.Rowset.Serial.SQLOutputImpl t) => t.Cast<Java.Sql.SQLOutput>();
 
         #endregion
 

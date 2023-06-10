@@ -50,9 +50,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        public void Accept(object arg0, double arg1)
+        public virtual void Accept(object arg0, double arg1)
         {
-            IExecute("accept", arg0, arg1);
+            
         }
 
         #endregion
@@ -97,10 +97,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.ObjDoubleConsumer{T}"/> to <see cref="Java.Util.Function.ObjDoubleConsumer"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.ObjDoubleConsumer(Java.Util.Function.ObjDoubleConsumer<T> t) => t.Cast<Java.Util.Function.ObjDoubleConsumer>();
 
         #endregion
 
@@ -118,9 +114,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        public void Accept(T arg0, double arg1)
+        public virtual void Accept(T arg0, double arg1)
         {
-            IExecute("accept", arg0, arg1);
+            
         }
 
         #endregion

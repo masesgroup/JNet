@@ -33,10 +33,6 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.X509CertSelector"/> to <see cref="Java.Security.Cert.CertSelector"/>
-        /// </summary>
-        public static implicit operator Java.Security.Cert.CertSelector(Java.Security.Cert.X509CertSelector t) => t.Cast<Java.Security.Cert.CertSelector>();
 
         #endregion
 

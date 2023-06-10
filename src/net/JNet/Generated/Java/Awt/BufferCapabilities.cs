@@ -43,10 +43,6 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.BufferCapabilities"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Awt.BufferCapabilities t) => t.Cast<Java.Lang.Cloneable>();
 
         #endregion
 

@@ -33,10 +33,6 @@ namespace Java.Util.Logging
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Logging.Level"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Logging.Level t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

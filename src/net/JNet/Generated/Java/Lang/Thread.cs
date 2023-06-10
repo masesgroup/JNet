@@ -109,10 +109,6 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Thread"/> to <see cref="Java.Lang.Runnable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Runnable(Java.Lang.Thread t) => t.Cast<Java.Lang.Runnable>();
 
         #endregion
 

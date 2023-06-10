@@ -41,10 +41,6 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.ExcC14NParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec(Javax.Xml.Crypto.Dsig.Spec.ExcC14NParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec>();
 
         #endregion
 

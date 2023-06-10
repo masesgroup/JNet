@@ -174,7 +174,7 @@ namespace Javax.Imageio.Metadata
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html"/>
     /// </summary>
-    public partial class IIOMetadataFormatImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOMetadataFormatImpl>
+    public partial class IIOMetadataFormatImpl : Javax.Imageio.Metadata.IIOMetadataFormat
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

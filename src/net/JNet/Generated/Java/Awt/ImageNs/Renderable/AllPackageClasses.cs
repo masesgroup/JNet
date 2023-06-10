@@ -158,7 +158,7 @@ namespace Java.Awt.ImageNs.Renderable
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html"/>
     /// </summary>
-    public partial class RenderableImageOp : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderableImageOp>
+    public partial class RenderableImageOp : Java.Awt.ImageNs.Renderable.RenderableImage
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -244,7 +244,7 @@ namespace Java.Awt.ImageNs.Renderable
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html"/>
     /// </summary>
-    public partial class RenderContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderContext>
+    public partial class RenderContext : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

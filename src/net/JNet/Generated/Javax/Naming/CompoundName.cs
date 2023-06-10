@@ -43,10 +43,6 @@ namespace Javax.Naming
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.CompoundName"/> to <see cref="Javax.Naming.Name"/>
-        /// </summary>
-        public static implicit operator Javax.Naming.Name(Javax.Naming.CompoundName t) => t.Cast<Javax.Naming.Name>();
 
         #endregion
 

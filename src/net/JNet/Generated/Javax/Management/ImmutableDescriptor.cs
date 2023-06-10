@@ -49,10 +49,6 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.ImmutableDescriptor"/> to <see cref="Javax.Management.Descriptor"/>
-        /// </summary>
-        public static implicit operator Javax.Management.Descriptor(Javax.Management.ImmutableDescriptor t) => t.Cast<Javax.Management.Descriptor>();
 
         #endregion
 

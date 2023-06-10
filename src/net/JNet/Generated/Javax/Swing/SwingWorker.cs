@@ -33,10 +33,6 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.SwingWorker"/> to <see cref="Java.Util.Concurrent.RunnableFuture"/>
-        /// </summary>
-        public static implicit operator Java.Util.Concurrent.RunnableFuture(Javax.Swing.SwingWorker t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
 
         #endregion
 
@@ -235,10 +231,6 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.SwingWorker{T, V}"/> to <see cref="Java.Util.Concurrent.RunnableFuture{V}"/>
-        /// </summary>
-        public static implicit operator Java.Util.Concurrent.RunnableFuture<V>(Javax.Swing.SwingWorker<T, V> t) => t.Cast<Java.Util.Concurrent.RunnableFuture<V>>();
         /// <summary>
         /// Converter from <see cref="Javax.Swing.SwingWorker{T, V}"/> to <see cref="Javax.Swing.SwingWorker"/>
         /// </summary>

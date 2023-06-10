@@ -648,7 +648,7 @@ namespace Java.Time.Temporal
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ValueRange.html"/>
     /// </summary>
-    public partial class ValueRange : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ValueRange>
+    public partial class ValueRange : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -691,7 +691,7 @@ namespace Java.Time.Temporal
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html"/>
     /// </summary>
-    public partial class WeekFields : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WeekFields>
+    public partial class WeekFields : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

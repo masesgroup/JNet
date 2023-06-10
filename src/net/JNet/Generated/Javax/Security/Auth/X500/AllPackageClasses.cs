@@ -72,7 +72,7 @@ namespace Javax.Security.Auth.X500
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html"/>
     /// </summary>
-    public partial class X500PrivateCredential : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X500PrivateCredential>
+    public partial class X500PrivateCredential : Javax.Security.Auth.Destroyable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

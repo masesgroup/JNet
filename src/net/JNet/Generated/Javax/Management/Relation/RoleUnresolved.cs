@@ -44,10 +44,6 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Relation.RoleUnresolved"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Management.Relation.RoleUnresolved t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

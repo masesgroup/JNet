@@ -42,10 +42,6 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Timer"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Swing.Timer t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

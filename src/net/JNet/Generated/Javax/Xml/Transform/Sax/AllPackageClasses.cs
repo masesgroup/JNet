@@ -29,7 +29,7 @@ namespace Javax.Xml.Transform.Sax
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXResult.html"/>
     /// </summary>
-    public partial class SAXResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SAXResult>
+    public partial class SAXResult : Javax.Xml.Transform.Result
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -72,7 +72,7 @@ namespace Javax.Xml.Transform.Sax
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html"/>
     /// </summary>
-    public partial class SAXSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SAXSource>
+    public partial class SAXSource : Javax.Xml.Transform.Source
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

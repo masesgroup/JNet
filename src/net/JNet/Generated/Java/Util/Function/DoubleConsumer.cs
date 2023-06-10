@@ -78,18 +78,18 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#accept(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        public void Accept(double arg0)
+        public virtual void Accept(double arg0)
         {
-            IExecute("accept", arg0);
+            
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
-        public Java.Util.Function.DoubleConsumer AndThen(Java.Util.Function.DoubleConsumer arg0)
+        public virtual Java.Util.Function.DoubleConsumer AndThen(Java.Util.Function.DoubleConsumer arg0)
         {
-            return IExecute<Java.Util.Function.DoubleConsumer>("andThen", arg0);
+            return default;
         }
 
         #endregion

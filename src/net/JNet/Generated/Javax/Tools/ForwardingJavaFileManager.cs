@@ -33,10 +33,6 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Tools.ForwardingJavaFileManager"/> to <see cref="Javax.Tools.JavaFileManager"/>
-        /// </summary>
-        public static implicit operator Javax.Tools.JavaFileManager(Javax.Tools.ForwardingJavaFileManager t) => t.Cast<Javax.Tools.JavaFileManager>();
 
         #endregion
 
@@ -270,10 +266,6 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Tools.ForwardingJavaFileManager{M}"/> to <see cref="Javax.Tools.JavaFileManager"/>
-        /// </summary>
-        public static implicit operator Javax.Tools.JavaFileManager(Javax.Tools.ForwardingJavaFileManager<M> t) => t.Cast<Javax.Tools.JavaFileManager>();
         /// <summary>
         /// Converter from <see cref="Javax.Tools.ForwardingJavaFileManager{M}"/> to <see cref="Javax.Tools.ForwardingJavaFileManager"/>
         /// </summary>

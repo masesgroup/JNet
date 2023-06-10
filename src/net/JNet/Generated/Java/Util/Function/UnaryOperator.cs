@@ -60,7 +60,7 @@ namespace Java.Util.Function
     /// <summary>
     /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/UnaryOperator.html"/>
     /// </summary>
-    public partial interface IUnaryOperator<T> : Java.Util.Function.IFunction<T, T>
+    public partial interface IUnaryOperator<T>
     {
         #region Instance methods
 
@@ -82,10 +82,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.UnaryOperator{T}"/> to <see cref="Java.Util.Function.UnaryOperator"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.UnaryOperator(Java.Util.Function.UnaryOperator<T> t) => t.Cast<Java.Util.Function.UnaryOperator>();
 
         #endregion
 

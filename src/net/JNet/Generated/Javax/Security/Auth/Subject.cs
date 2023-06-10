@@ -44,10 +44,6 @@ namespace Javax.Security.Auth
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Subject"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Subject t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

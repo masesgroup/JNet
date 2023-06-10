@@ -33,10 +33,6 @@ namespace Javax.Script
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Script.SimpleScriptContext"/> to <see cref="Javax.Script.ScriptContext"/>
-        /// </summary>
-        public static implicit operator Javax.Script.ScriptContext(Javax.Script.SimpleScriptContext t) => t.Cast<Javax.Script.ScriptContext>();
 
         #endregion
 

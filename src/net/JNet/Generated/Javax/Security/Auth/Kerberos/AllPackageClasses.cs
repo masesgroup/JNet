@@ -72,7 +72,7 @@ namespace Javax.Security.Auth.Kerberos
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/EncryptionKey.html"/>
     /// </summary>
-    public partial class EncryptionKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EncryptionKey>
+    public partial class EncryptionKey : Javax.Crypto.SecretKey
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -115,7 +115,7 @@ namespace Javax.Security.Auth.Kerberos
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosCredMessage.html"/>
     /// </summary>
-    public partial class KerberosCredMessage : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KerberosCredMessage>
+    public partial class KerberosCredMessage : Javax.Security.Auth.Destroyable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -158,7 +158,7 @@ namespace Javax.Security.Auth.Kerberos
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosKey.html"/>
     /// </summary>
-    public partial class KerberosKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KerberosKey>
+    public partial class KerberosKey : Javax.Crypto.SecretKey
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

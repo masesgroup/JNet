@@ -33,10 +33,6 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor"/> to <see cref="Java.Nio.File.FileVisitor"/>
-        /// </summary>
-        public static implicit operator Java.Nio.File.FileVisitor(Java.Nio.File.SimpleFileVisitor t) => t.Cast<Java.Nio.File.FileVisitor>();
 
         #endregion
 
@@ -112,10 +108,6 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor{T}"/> to <see cref="Java.Nio.File.FileVisitor{T}"/>
-        /// </summary>
-        public static implicit operator Java.Nio.File.FileVisitor<T>(Java.Nio.File.SimpleFileVisitor<T> t) => t.Cast<Java.Nio.File.FileVisitor<T>>();
         /// <summary>
         /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor{T}"/> to <see cref="Java.Nio.File.SimpleFileVisitor"/>
         /// </summary>

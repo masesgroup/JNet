@@ -222,7 +222,7 @@ namespace Java.Nio.Channels
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html"/>
     /// </summary>
-    public partial class AsynchronousFileChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousFileChannel>
+    public partial class AsynchronousFileChannel : Java.Nio.Channels.AsynchronousChannel
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -777,7 +777,7 @@ namespace Java.Nio.Channels
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html"/>
     /// </summary>
-    public partial class FileLock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileLock>
+    public partial class FileLock : Java.Lang.AutoCloseable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1571,7 +1571,7 @@ namespace Java.Nio.Channels
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html"/>
     /// </summary>
-    public partial class Selector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Selector>
+    public partial class Selector : Java.Io.Closeable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

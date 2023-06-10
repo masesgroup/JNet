@@ -33,10 +33,6 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Nio.File.FileSystem"/> to <see cref="Java.Io.Closeable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Closeable(Java.Nio.File.FileSystem t) => t.Cast<Java.Io.Closeable>();
 
         #endregion
 

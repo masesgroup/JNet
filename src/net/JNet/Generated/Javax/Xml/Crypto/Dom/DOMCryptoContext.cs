@@ -33,10 +33,6 @@ namespace Javax.Xml.Crypto.Dom
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dom.DOMCryptoContext"/> to <see cref="Javax.Xml.Crypto.XMLCryptoContext"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Crypto.XMLCryptoContext(Javax.Xml.Crypto.Dom.DOMCryptoContext t) => t.Cast<Javax.Xml.Crypto.XMLCryptoContext>();
 
         #endregion
 

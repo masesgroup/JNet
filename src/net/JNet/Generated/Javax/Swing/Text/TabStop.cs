@@ -51,10 +51,6 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.TabStop"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Swing.Text.TabStop t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

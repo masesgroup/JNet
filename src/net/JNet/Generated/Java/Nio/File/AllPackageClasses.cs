@@ -503,7 +503,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html"/>
     /// </summary>
-    public partial class FileSystem : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileSystem>
+    public partial class FileSystem : Java.Io.Closeable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1283,7 +1283,7 @@ namespace Java.Nio.File
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html"/>
     /// </summary>
-    public partial class SimpleFileVisitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleFileVisitor>
+    public partial class SimpleFileVisitor : Java.Nio.File.FileVisitor
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1327,7 +1327,7 @@ namespace Java.Nio.File
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class SimpleFileVisitor<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleFileVisitor<T>>
+    public partial class SimpleFileVisitor<T> : Java.Nio.File.FileVisitor<T>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

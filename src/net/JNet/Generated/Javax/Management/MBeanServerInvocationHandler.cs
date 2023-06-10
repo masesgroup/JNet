@@ -52,10 +52,6 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.MBeanServerInvocationHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Reflect.InvocationHandler(Javax.Management.MBeanServerInvocationHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
 
         #endregion
 

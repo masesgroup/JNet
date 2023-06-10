@@ -162,10 +162,6 @@ namespace Java.Security
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Security.DrbgParameters.Instantiation"/> to <see cref="Java.Security.SecureRandomParameters"/>
-            /// </summary>
-            public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.Instantiation t) => t.Cast<Java.Security.SecureRandomParameters>();
 
             #endregion
 
@@ -218,10 +214,6 @@ namespace Java.Security
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Security.DrbgParameters.NextBytes"/> to <see cref="Java.Security.SecureRandomParameters"/>
-            /// </summary>
-            public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.NextBytes t) => t.Cast<Java.Security.SecureRandomParameters>();
 
             #endregion
 
@@ -274,10 +266,6 @@ namespace Java.Security
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Security.DrbgParameters.Reseed"/> to <see cref="Java.Security.SecureRandomParameters"/>
-            /// </summary>
-            public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.Reseed t) => t.Cast<Java.Security.SecureRandomParameters>();
 
             #endregion
 

@@ -468,7 +468,7 @@ namespace Javax.Sound.Midi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiMessage.html"/>
     /// </summary>
-    public partial class MidiMessage : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiMessage>
+    public partial class MidiMessage : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

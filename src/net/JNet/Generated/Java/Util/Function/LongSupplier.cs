@@ -33,9 +33,11 @@ namespace Java.Util.Function
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>
-        long AsLong { get; }
+
+        /// <returns><see cref="long"/></returns>
+        long GetAsLong();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>
-        public long AsLong
+
+        /// <returns><see cref="long"/></returns>
+        public virtual long GetAsLong()
         {
-            get { return IExecute<long>("getAsLong"); }
+            return default;
         }
 
         #endregion

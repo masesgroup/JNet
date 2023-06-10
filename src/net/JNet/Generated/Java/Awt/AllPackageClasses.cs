@@ -115,7 +115,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html"/>
     /// </summary>
-    public partial class AlphaComposite : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AlphaComposite>
+    public partial class AlphaComposite : Java.Awt.Composite
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -276,7 +276,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html"/>
     /// </summary>
-    public partial class AWTKeyStroke : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AWTKeyStroke>
+    public partial class AWTKeyStroke : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -362,7 +362,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html"/>
     /// </summary>
-    public partial class BasicStroke : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicStroke>
+    public partial class BasicStroke : Java.Awt.Stroke
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -448,7 +448,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.html"/>
     /// </summary>
-    public partial class BufferCapabilities : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BufferCapabilities>
+    public partial class BufferCapabilities : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -706,7 +706,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CheckboxGroup.html"/>
     /// </summary>
-    public partial class CheckboxGroup : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CheckboxGroup>
+    public partial class CheckboxGroup : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -964,7 +964,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html"/>
     /// </summary>
-    public partial class ComponentOrientation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ComponentOrientation>
+    public partial class ComponentOrientation : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1179,7 +1179,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html"/>
     /// </summary>
-    public partial class Cursor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Cursor>
+    public partial class Cursor : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1781,7 +1781,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html"/>
     /// </summary>
-    public partial class Font : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Font>
+    public partial class Font : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1840,7 +1840,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html"/>
     /// </summary>
-    public partial class FontMetrics : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FontMetrics>
+    public partial class FontMetrics : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1926,7 +1926,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html"/>
     /// </summary>
-    public partial class GradientPaint : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GradientPaint>
+    public partial class GradientPaint : Java.Awt.Paint
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2055,7 +2055,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html"/>
     /// </summary>
-    public partial class GraphicsConfigTemplate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GraphicsConfigTemplate>
+    public partial class GraphicsConfigTemplate : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2356,7 +2356,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayoutInfo.html"/>
     /// </summary>
-    public partial class GridBagLayoutInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GridBagLayoutInfo>
+    public partial class GridBagLayoutInfo : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2517,7 +2517,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html"/>
     /// </summary>
-    public partial class ImageCapabilities : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImageCapabilities>
+    public partial class ImageCapabilities : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2646,7 +2646,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.html"/>
     /// </summary>
-    public partial class JobAttributes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JobAttributes>
+    public partial class JobAttributes : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3248,7 +3248,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html"/>
     /// </summary>
-    public partial class MediaTracker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MediaTracker>
+    public partial class MediaTracker : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3377,7 +3377,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuComponent.html"/>
     /// </summary>
-    public partial class MenuComponent : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MenuComponent>
+    public partial class MenuComponent : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3506,7 +3506,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html"/>
     /// </summary>
-    public partial class MenuShortcut : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MenuShortcut>
+    public partial class MenuShortcut : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3592,7 +3592,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.html"/>
     /// </summary>
-    public partial class MultipleGradientPaint : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MultipleGradientPaint>
+    public partial class MultipleGradientPaint : Java.Awt.Paint
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3721,7 +3721,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html"/>
     /// </summary>
-    public partial class PageAttributes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PageAttributes>
+    public partial class PageAttributes : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5226,7 +5226,7 @@ namespace Java.Awt
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TexturePaint.html"/>
     /// </summary>
-    public partial class TexturePaint : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TexturePaint>
+    public partial class TexturePaint : Java.Awt.Paint
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

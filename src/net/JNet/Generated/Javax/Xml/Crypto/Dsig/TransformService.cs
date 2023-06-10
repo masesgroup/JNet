@@ -33,10 +33,6 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.TransformService"/> to <see cref="Javax.Xml.Crypto.Dsig.Transform"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Crypto.Dsig.Transform(Javax.Xml.Crypto.Dsig.TransformService t) => t.Cast<Javax.Xml.Crypto.Dsig.Transform>();
 
         #endregion
 

@@ -19,6 +19,9 @@
 namespace Java.Util
 {
     #region Iterator
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
+    /// </summary>
     public partial class Iterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterator>
     {
         /// <summary>
@@ -99,7 +102,9 @@ namespace Java.Util
 #endif
     }
     #endregion
-
+    /// <summary>
+    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
+    /// </summary>
     public partial class Iterator<E> : MASES.JNet.Specific.JNetAsyncEnumerable<Iterator<E>, E>, IIterator<E>
     {
         /// <summary>

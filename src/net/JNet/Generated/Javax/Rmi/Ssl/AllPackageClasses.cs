@@ -72,7 +72,7 @@ namespace Javax.Rmi.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html"/>
     /// </summary>
-    public partial class SslRMIServerSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SslRMIServerSocketFactory>
+    public partial class SslRMIServerSocketFactory : Java.Rmi.Server.RMIServerSocketFactory
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

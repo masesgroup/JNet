@@ -51,9 +51,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
-        public int ApplyAsInt(object arg0, object arg1)
+        public virtual int ApplyAsInt(object arg0, object arg1)
         {
-            return IExecute<int>("applyAsInt", arg0, arg1);
+            return default;
         }
 
         #endregion
@@ -99,10 +99,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.ToIntBiFunction{T, U}"/> to <see cref="Java.Util.Function.ToIntBiFunction"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.ToIntBiFunction(Java.Util.Function.ToIntBiFunction<T, U> t) => t.Cast<Java.Util.Function.ToIntBiFunction>();
 
         #endregion
 
@@ -121,9 +117,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
         /// <returns><see cref="int"/></returns>
-        public int ApplyAsInt(T arg0, U arg1)
+        public virtual int ApplyAsInt(T arg0, U arg1)
         {
-            return IExecute<int>("applyAsInt", arg0, arg1);
+            return default;
         }
 
         #endregion

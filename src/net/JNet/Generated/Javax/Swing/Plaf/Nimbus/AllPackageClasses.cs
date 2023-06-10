@@ -29,7 +29,7 @@ namespace Javax.Swing.Plaf.Nimbus
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/AbstractRegionPainter.html"/>
     /// </summary>
-    public partial class AbstractRegionPainter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractRegionPainter>
+    public partial class AbstractRegionPainter : Javax.Swing.Painter<Javax.Swing.JComponent>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

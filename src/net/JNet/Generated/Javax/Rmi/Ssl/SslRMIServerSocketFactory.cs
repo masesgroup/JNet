@@ -56,10 +56,6 @@ namespace Javax.Rmi.Ssl
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Rmi.Ssl.SslRMIServerSocketFactory"/> to <see cref="Java.Rmi.Server.RMIServerSocketFactory"/>
-        /// </summary>
-        public static implicit operator Java.Rmi.Server.RMIServerSocketFactory(Javax.Rmi.Ssl.SslRMIServerSocketFactory t) => t.Cast<Java.Rmi.Server.RMIServerSocketFactory>();
 
         #endregion
 

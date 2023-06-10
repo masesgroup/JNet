@@ -29,7 +29,7 @@ namespace Javax.Xml.Stream.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/EventReaderDelegate.html"/>
     /// </summary>
-    public partial class EventReaderDelegate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventReaderDelegate>
+    public partial class EventReaderDelegate : Javax.Xml.Stream.XMLEventReader
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -72,7 +72,7 @@ namespace Javax.Xml.Stream.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html"/>
     /// </summary>
-    public partial class StreamReaderDelegate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamReaderDelegate>
+    public partial class StreamReaderDelegate : Javax.Xml.Stream.XMLStreamReader
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

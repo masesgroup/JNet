@@ -249,10 +249,6 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.AbortPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
-            /// </summary>
-            public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.AbortPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
 
             #endregion
 
@@ -293,10 +289,6 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.CallerRunsPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
-            /// </summary>
-            public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.CallerRunsPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
 
             #endregion
 
@@ -337,10 +329,6 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.DiscardOldestPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
-            /// </summary>
-            public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.DiscardOldestPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
 
             #endregion
 
@@ -381,10 +369,6 @@ namespace Java.Util.Concurrent
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Util.Concurrent.ThreadPoolExecutor.DiscardPolicy"/> to <see cref="Java.Util.Concurrent.RejectedExecutionHandler"/>
-            /// </summary>
-            public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.DiscardPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
 
             #endregion
 

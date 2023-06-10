@@ -29,7 +29,7 @@ namespace Java.Util.Zip
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Adler32.html"/>
     /// </summary>
-    public partial class Adler32 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Adler32>
+    public partial class Adler32 : Java.Util.Zip.Checksum
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -201,7 +201,7 @@ namespace Java.Util.Zip
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CRC32.html"/>
     /// </summary>
-    public partial class CRC32 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CRC32>
+    public partial class CRC32 : Java.Util.Zip.Checksum
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -244,7 +244,7 @@ namespace Java.Util.Zip
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CRC32C.html"/>
     /// </summary>
-    public partial class CRC32C : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CRC32C>
+    public partial class CRC32C : Java.Util.Zip.Checksum
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

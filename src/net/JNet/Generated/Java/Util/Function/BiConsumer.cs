@@ -50,18 +50,18 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        public void Accept(object arg0, object arg1)
+        public virtual void Accept(object arg0, object arg1)
         {
-            IExecute("accept", arg0, arg1);
+            
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        public Java.Util.Function.BiConsumer AndThen(Java.Util.Function.BiConsumer arg0)
+        public virtual Java.Util.Function.BiConsumer AndThen(Java.Util.Function.BiConsumer arg0)
         {
-            return IExecute<Java.Util.Function.BiConsumer>("andThen", arg0);
+            return default;
         }
 
         #endregion
@@ -114,10 +114,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.BiConsumer{T, U}"/> to <see cref="Java.Util.Function.BiConsumer"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.BiConsumer(Java.Util.Function.BiConsumer<T, U> t) => t.Cast<Java.Util.Function.BiConsumer>();
 
         #endregion
 
@@ -135,9 +131,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
-        public void Accept(T arg0, U arg1)
+        public virtual void Accept(T arg0, U arg1)
         {
-            IExecute("accept", arg0, arg1);
+            
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
@@ -146,9 +142,9 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"></typeparam>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        public Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T
+        public virtual Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T
         {
-            return IExecute<Java.Util.Function.BiConsumer<T, U>>("andThen", arg0);
+            return default;
         }
 
         #endregion

@@ -566,7 +566,7 @@ namespace Javax.Crypto
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html"/>
     /// </summary>
-    public partial class Mac : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Mac>
+    public partial class Mac : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -711,7 +711,7 @@ namespace Javax.Crypto
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html"/>
     /// </summary>
-    public partial class SealedObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SealedObject>
+    public partial class SealedObject : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

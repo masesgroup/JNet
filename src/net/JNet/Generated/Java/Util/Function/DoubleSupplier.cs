@@ -33,9 +33,11 @@ namespace Java.Util.Function
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/>
         /// </summary>
-        double AsDouble { get; }
+
+        /// <returns><see cref="double"/></returns>
+        double GetAsDouble();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/>
         /// </summary>
-        public double AsDouble
+
+        /// <returns><see cref="double"/></returns>
+        public virtual double GetAsDouble()
         {
-            get { return IExecute<double>("getAsDouble"); }
+            return default;
         }
 
         #endregion

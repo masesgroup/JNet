@@ -72,7 +72,7 @@ namespace Javax.Swing.Text.Html.Parser
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/ContentModel.html"/>
     /// </summary>
-    public partial class ContentModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ContentModel>
+    public partial class ContentModel : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -158,7 +158,7 @@ namespace Javax.Swing.Text.Html.Parser
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html"/>
     /// </summary>
-    public partial class DTD : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DTD>
+    public partial class DTD : Javax.Swing.Text.Html.Parser.DTDConstants
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -287,7 +287,7 @@ namespace Javax.Swing.Text.Html.Parser
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html"/>
     /// </summary>
-    public partial class Entity : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entity>
+    public partial class Entity : Javax.Swing.Text.Html.Parser.DTDConstants
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -330,7 +330,7 @@ namespace Javax.Swing.Text.Html.Parser
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html"/>
     /// </summary>
-    public partial class Parser : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Parser>
+    public partial class Parser : Javax.Swing.Text.Html.Parser.DTDConstants
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

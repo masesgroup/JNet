@@ -459,7 +459,7 @@ namespace Javax.Naming.Spi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html"/>
     /// </summary>
-    public partial class ResolveResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ResolveResult>
+    public partial class ResolveResult : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

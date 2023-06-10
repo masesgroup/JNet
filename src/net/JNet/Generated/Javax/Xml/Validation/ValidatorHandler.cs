@@ -33,10 +33,6 @@ namespace Javax.Xml.Validation
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Validation.ValidatorHandler"/> to <see cref="Org.Xml.Sax.ContentHandler"/>
-        /// </summary>
-        public static implicit operator Org.Xml.Sax.ContentHandler(Javax.Xml.Validation.ValidatorHandler t) => t.Cast<Org.Xml.Sax.ContentHandler>();
 
         #endregion
 

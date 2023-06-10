@@ -1251,7 +1251,7 @@ namespace Javax.Swing.Plaf.Metal
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html"/>
     /// </summary>
-    public partial class MetalIconFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MetalIconFactory>
+    public partial class MetalIconFactory : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

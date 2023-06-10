@@ -79,10 +79,6 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Rmi.Activation.ActivationDesc"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationDesc t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

@@ -50,10 +50,6 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.Ldap.LdapName"/> to <see cref="Javax.Naming.Name"/>
-        /// </summary>
-        public static implicit operator Javax.Naming.Name(Javax.Naming.Ldap.LdapName t) => t.Cast<Javax.Naming.Name>();
 
         #endregion
 

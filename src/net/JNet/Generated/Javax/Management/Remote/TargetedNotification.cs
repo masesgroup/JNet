@@ -42,10 +42,6 @@ namespace Javax.Management.Remote
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.TargetedNotification"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Management.Remote.TargetedNotification t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

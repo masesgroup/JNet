@@ -33,10 +33,6 @@ namespace Java.Util.Zip
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Zip.Adler32"/> to <see cref="Java.Util.Zip.Checksum"/>
-        /// </summary>
-        public static implicit operator Java.Util.Zip.Checksum(Java.Util.Zip.Adler32 t) => t.Cast<Java.Util.Zip.Checksum>();
 
         #endregion
 

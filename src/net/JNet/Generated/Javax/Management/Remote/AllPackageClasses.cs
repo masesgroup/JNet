@@ -534,7 +534,7 @@ namespace Javax.Management.Remote
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXServiceURL.html"/>
     /// </summary>
-    public partial class JMXServiceURL : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXServiceURL>
+    public partial class JMXServiceURL : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -620,7 +620,7 @@ namespace Javax.Management.Remote
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html"/>
     /// </summary>
-    public partial class NotificationResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NotificationResult>
+    public partial class NotificationResult : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -706,7 +706,7 @@ namespace Javax.Management.Remote
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html"/>
     /// </summary>
-    public partial class TargetedNotification : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TargetedNotification>
+    public partial class TargetedNotification : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -43,10 +43,6 @@ namespace Javax.Print
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Print.SimpleDoc"/> to <see cref="Javax.Print.Doc"/>
-        /// </summary>
-        public static implicit operator Javax.Print.Doc(Javax.Print.SimpleDoc t) => t.Cast<Javax.Print.Doc>();
 
         #endregion
 

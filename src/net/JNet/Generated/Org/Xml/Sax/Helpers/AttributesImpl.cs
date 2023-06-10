@@ -41,10 +41,6 @@ namespace Org.Xml.Sax.Helpers
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Org.Xml.Sax.Helpers.AttributesImpl"/> to <see cref="Org.Xml.Sax.Attributes"/>
-        /// </summary>
-        public static implicit operator Org.Xml.Sax.Attributes(Org.Xml.Sax.Helpers.AttributesImpl t) => t.Cast<Org.Xml.Sax.Attributes>();
 
         #endregion
 

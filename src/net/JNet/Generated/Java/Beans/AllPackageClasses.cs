@@ -416,7 +416,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html"/>
     /// </summary>
-    public partial class EventHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventHandler>
+    public partial class EventHandler : Java.Lang.Reflect.InvocationHandler
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1027,7 +1027,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html"/>
     /// </summary>
-    public partial class PropertyChangeSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PropertyChangeSupport>
+    public partial class PropertyChangeSupport : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1199,7 +1199,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html"/>
     /// </summary>
-    public partial class PropertyEditorSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PropertyEditorSupport>
+    public partial class PropertyEditorSupport : Java.Beans.PropertyEditor
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1258,7 +1258,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html"/>
     /// </summary>
-    public partial class SimpleBeanInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleBeanInfo>
+    public partial class SimpleBeanInfo : Java.Beans.BeanInfo
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1448,7 +1448,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeSupport.html"/>
     /// </summary>
-    public partial class VetoableChangeSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VetoableChangeSupport>
+    public partial class VetoableChangeSupport : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1534,7 +1534,7 @@ namespace Java.Beans
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html"/>
     /// </summary>
-    public partial class XMLDecoder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLDecoder>
+    public partial class XMLDecoder : Java.Lang.AutoCloseable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

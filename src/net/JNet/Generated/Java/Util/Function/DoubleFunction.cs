@@ -50,9 +50,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="object"/></returns>
-        public object Apply(double arg0)
+        public virtual object Apply(double arg0)
         {
-            return IExecute("apply", arg0);
+            return default;
         }
 
         #endregion
@@ -97,10 +97,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.DoubleFunction{R}"/> to <see cref="Java.Util.Function.DoubleFunction"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.DoubleFunction(Java.Util.Function.DoubleFunction<R> t) => t.Cast<Java.Util.Function.DoubleFunction>();
 
         #endregion
 
@@ -118,9 +114,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><typeparamref name="R"/></returns>
-        public R Apply(double arg0)
+        public virtual R Apply(double arg0)
         {
-            return IExecute<R>("apply", arg0);
+            return default;
         }
 
         #endregion

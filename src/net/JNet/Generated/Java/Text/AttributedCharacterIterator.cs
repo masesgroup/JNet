@@ -198,10 +198,6 @@ namespace Java.Text
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Text.AttributedCharacterIterator.Attribute"/> to <see cref="Java.Io.Serializable"/>
-            /// </summary>
-            public static implicit operator Java.Io.Serializable(Java.Text.AttributedCharacterIterator.Attribute t) => t.Cast<Java.Io.Serializable>();
 
             #endregion
 

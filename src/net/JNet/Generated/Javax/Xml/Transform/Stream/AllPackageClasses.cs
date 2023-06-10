@@ -29,7 +29,7 @@ namespace Javax.Xml.Transform.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html"/>
     /// </summary>
-    public partial class StreamResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamResult>
+    public partial class StreamResult : Javax.Xml.Transform.Result
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -72,7 +72,7 @@ namespace Javax.Xml.Transform.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html"/>
     /// </summary>
-    public partial class StreamSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamSource>
+    public partial class StreamSource : Javax.Xml.Transform.Source
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

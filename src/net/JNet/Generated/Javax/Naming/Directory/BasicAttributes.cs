@@ -60,10 +60,6 @@ namespace Javax.Naming.Directory
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.Directory.BasicAttributes"/> to <see cref="Javax.Naming.Directory.Attributes"/>
-        /// </summary>
-        public static implicit operator Javax.Naming.Directory.Attributes(Javax.Naming.Directory.BasicAttributes t) => t.Cast<Javax.Naming.Directory.Attributes>();
 
         #endregion
 

@@ -159,7 +159,7 @@ namespace Javax.Management.Openmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataInvocationHandler.html"/>
     /// </summary>
-    public partial class CompositeDataInvocationHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompositeDataInvocationHandler>
+    public partial class CompositeDataInvocationHandler : Java.Lang.Reflect.InvocationHandler
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -825,7 +825,7 @@ namespace Javax.Management.Openmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html"/>
     /// </summary>
-    public partial class OpenType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OpenType>
+    public partial class OpenType : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -869,7 +869,7 @@ namespace Javax.Management.Openmbean
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class OpenType<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OpenType<T>>
+    public partial class OpenType<T> : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

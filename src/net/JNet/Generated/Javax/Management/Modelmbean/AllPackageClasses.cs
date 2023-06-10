@@ -29,7 +29,7 @@ namespace Javax.Management.Modelmbean
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html"/>
     /// </summary>
-    public partial class DescriptorSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DescriptorSupport>
+    public partial class DescriptorSupport : Javax.Management.Descriptor
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

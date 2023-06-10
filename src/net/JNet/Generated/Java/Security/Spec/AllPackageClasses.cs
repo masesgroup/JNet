@@ -72,7 +72,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAGenParameterSpec.html"/>
     /// </summary>
-    public partial class DSAGenParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAGenParameterSpec>
+    public partial class DSAGenParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -158,7 +158,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPrivateKeySpec.html"/>
     /// </summary>
-    public partial class DSAPrivateKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAPrivateKeySpec>
+    public partial class DSAPrivateKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -201,7 +201,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/DSAPublicKeySpec.html"/>
     /// </summary>
-    public partial class DSAPublicKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAPublicKeySpec>
+    public partial class DSAPublicKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -287,7 +287,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldF2m.html"/>
     /// </summary>
-    public partial class ECFieldF2m : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECFieldF2m>
+    public partial class ECFieldF2m : Java.Security.Spec.ECField
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -330,7 +330,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECFieldFp.html"/>
     /// </summary>
-    public partial class ECFieldFp : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECFieldFp>
+    public partial class ECFieldFp : Java.Security.Spec.ECField
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -416,7 +416,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECParameterSpec.html"/>
     /// </summary>
-    public partial class ECParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECParameterSpec>
+    public partial class ECParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -502,7 +502,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPrivateKeySpec.html"/>
     /// </summary>
-    public partial class ECPrivateKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPrivateKeySpec>
+    public partial class ECPrivateKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -545,7 +545,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/ECPublicKeySpec.html"/>
     /// </summary>
-    public partial class ECPublicKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPublicKeySpec>
+    public partial class ECPublicKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -631,7 +631,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/EncodedKeySpec.html"/>
     /// </summary>
-    public partial class EncodedKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EncodedKeySpec>
+    public partial class EncodedKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -749,7 +749,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/MGF1ParameterSpec.html"/>
     /// </summary>
-    public partial class MGF1ParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MGF1ParameterSpec>
+    public partial class MGF1ParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -792,7 +792,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/NamedParameterSpec.html"/>
     /// </summary>
-    public partial class NamedParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NamedParameterSpec>
+    public partial class NamedParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -878,7 +878,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/PSSParameterSpec.html"/>
     /// </summary>
-    public partial class PSSParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PSSParameterSpec>
+    public partial class PSSParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -921,7 +921,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html"/>
     /// </summary>
-    public partial class RSAKeyGenParameterSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAKeyGenParameterSpec>
+    public partial class RSAKeyGenParameterSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1093,7 +1093,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPrivateKeySpec.html"/>
     /// </summary>
-    public partial class RSAPrivateKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAPrivateKeySpec>
+    public partial class RSAPrivateKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1136,7 +1136,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAPublicKeySpec.html"/>
     /// </summary>
-    public partial class RSAPublicKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAPublicKeySpec>
+    public partial class RSAPublicKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1222,7 +1222,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/XECPrivateKeySpec.html"/>
     /// </summary>
-    public partial class XECPrivateKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XECPrivateKeySpec>
+    public partial class XECPrivateKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1265,7 +1265,7 @@ namespace Java.Security.Spec
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/XECPublicKeySpec.html"/>
     /// </summary>
-    public partial class XECPublicKeySpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XECPublicKeySpec>
+    public partial class XECPublicKeySpec : Java.Security.Spec.KeySpec
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

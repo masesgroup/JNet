@@ -33,10 +33,6 @@ namespace Java.Awt.ColorNs
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.ColorNs.ICC_Profile"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Awt.ColorNs.ICC_Profile t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

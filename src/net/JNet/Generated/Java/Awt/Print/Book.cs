@@ -33,10 +33,6 @@ namespace Java.Awt.Print
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.Print.Book"/> to <see cref="Java.Awt.Print.Pageable"/>
-        /// </summary>
-        public static implicit operator Java.Awt.Print.Pageable(Java.Awt.Print.Book t) => t.Cast<Java.Awt.Print.Pageable>();
 
         #endregion
 

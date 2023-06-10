@@ -718,7 +718,7 @@ namespace Java.Nio.File.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html"/>
     /// </summary>
-    public partial class FileTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileTime>
+    public partial class FileTime : Java.Lang.Comparable<Java.Nio.File.Attribute.FileTime>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

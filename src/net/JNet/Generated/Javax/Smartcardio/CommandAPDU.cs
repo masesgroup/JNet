@@ -136,10 +136,6 @@ namespace Javax.Smartcardio
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Smartcardio.CommandAPDU"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Smartcardio.CommandAPDU t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

@@ -33,10 +33,6 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicIconFactory"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Basic.BasicIconFactory t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

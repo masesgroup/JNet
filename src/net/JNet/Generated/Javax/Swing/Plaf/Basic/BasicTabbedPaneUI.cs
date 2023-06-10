@@ -120,10 +120,6 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.TabbedPaneLayout"/> to <see cref="Java.Awt.LayoutManager"/>
-            /// </summary>
-            public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.TabbedPaneLayout t) => t.Cast<Java.Awt.LayoutManager>();
 
             #endregion
 

@@ -33,10 +33,6 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Openmbean.OpenType"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Management.Openmbean.OpenType t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 
@@ -109,10 +105,6 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Openmbean.OpenType{T}"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Management.Openmbean.OpenType<T> t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
         /// Converter from <see cref="Javax.Management.Openmbean.OpenType{T}"/> to <see cref="Javax.Management.Openmbean.OpenType"/>
         /// </summary>

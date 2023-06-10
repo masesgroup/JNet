@@ -44,10 +44,6 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Beans.EventHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Reflect.InvocationHandler(Java.Beans.EventHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
 
         #endregion
 

@@ -498,7 +498,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html"/>
         /// </summary>
-        public partial class ChildState : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChildState>
+        public partial class ChildState : Java.Lang.Runnable
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1691,7 +1691,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html"/>
         /// </summary>
-        public partial class ElementBuffer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ElementBuffer>
+        public partial class ElementBuffer : Java.Io.Serializable
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1996,7 +1996,7 @@ namespace Javax.Swing.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/ElementIterator.html"/>
     /// </summary>
-    public partial class ElementIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ElementIterator>
+    public partial class ElementIterator : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2770,7 +2770,7 @@ namespace Javax.Swing.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.html"/>
     /// </summary>
-    public partial class LayeredHighlighter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LayeredHighlighter>
+    public partial class LayeredHighlighter : Javax.Swing.Text.Highlighter
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2809,7 +2809,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/LayeredHighlighter.LayerPainter.html"/>
         /// </summary>
-        public partial class LayerPainter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LayerPainter>
+        public partial class LayerPainter : Javax.Swing.Text.Highlighter.HighlightPainter
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3841,7 +3841,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html"/>
         /// </summary>
-        public partial class SmallAttributeSet : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SmallAttributeSet>
+        public partial class SmallAttributeSet : Javax.Swing.Text.AttributeSet
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4490,7 +4490,7 @@ namespace Javax.Swing.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabSet.html"/>
     /// </summary>
-    public partial class TabSet : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TabSet>
+    public partial class TabSet : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4533,7 +4533,7 @@ namespace Javax.Swing.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabStop.html"/>
     /// </summary>
-    public partial class TabStop : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TabStop>
+    public partial class TabStop : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4662,7 +4662,7 @@ namespace Javax.Swing.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html"/>
     /// </summary>
-    public partial class View : MASES.JCOBridge.C2JBridge.JVMBridgeBase<View>
+    public partial class View : Javax.Swing.SwingConstants
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -432,7 +432,7 @@ namespace Javax.Xml.Crypto.Dsig
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html"/>
     /// </summary>
-    public partial class TransformService : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TransformService>
+    public partial class TransformService : Javax.Xml.Crypto.Dsig.Transform
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

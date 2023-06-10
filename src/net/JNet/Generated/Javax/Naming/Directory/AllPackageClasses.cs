@@ -147,7 +147,7 @@ namespace Javax.Naming.Directory
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html"/>
     /// </summary>
-    public partial class BasicAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicAttribute>
+    public partial class BasicAttribute : Javax.Naming.Directory.Attribute
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -190,7 +190,7 @@ namespace Javax.Naming.Directory
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html"/>
     /// </summary>
-    public partial class BasicAttributes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicAttributes>
+    public partial class BasicAttributes : Javax.Naming.Directory.Attributes
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -399,7 +399,7 @@ namespace Javax.Naming.Directory
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/ModificationItem.html"/>
     /// </summary>
-    public partial class ModificationItem : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ModificationItem>
+    public partial class ModificationItem : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -474,7 +474,7 @@ namespace Javax.Naming.Directory
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchControls.html"/>
     /// </summary>
-    public partial class SearchControls : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SearchControls>
+    public partial class SearchControls : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

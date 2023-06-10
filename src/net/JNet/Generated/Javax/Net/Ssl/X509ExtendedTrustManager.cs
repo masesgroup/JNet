@@ -33,10 +33,6 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Net.Ssl.X509ExtendedTrustManager"/> to <see cref="Javax.Net.Ssl.X509TrustManager"/>
-        /// </summary>
-        public static implicit operator Javax.Net.Ssl.X509TrustManager(Javax.Net.Ssl.X509ExtendedTrustManager t) => t.Cast<Javax.Net.Ssl.X509TrustManager>();
 
         #endregion
 

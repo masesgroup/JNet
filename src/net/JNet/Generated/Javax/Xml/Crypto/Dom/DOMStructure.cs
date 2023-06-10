@@ -41,10 +41,6 @@ namespace Javax.Xml.Crypto.Dom
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dom.DOMStructure"/> to <see cref="Javax.Xml.Crypto.XMLStructure"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dom.DOMStructure t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
 
         #endregion
 

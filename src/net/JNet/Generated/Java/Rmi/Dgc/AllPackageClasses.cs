@@ -72,7 +72,7 @@ namespace Java.Rmi.Dgc
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/Lease.html"/>
     /// </summary>
-    public partial class Lease : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Lease>
+    public partial class Lease : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -115,7 +115,7 @@ namespace Java.Rmi.Dgc
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/VMID.html"/>
     /// </summary>
-    public partial class VMID : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VMID>
+    public partial class VMID : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

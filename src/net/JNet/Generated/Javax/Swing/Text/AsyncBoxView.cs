@@ -193,10 +193,6 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.AsyncBoxView.ChildState"/> to <see cref="Java.Lang.Runnable"/>
-            /// </summary>
-            public static implicit operator Java.Lang.Runnable(Javax.Swing.Text.AsyncBoxView.ChildState t) => t.Cast<Java.Lang.Runnable>();
 
             #endregion
 

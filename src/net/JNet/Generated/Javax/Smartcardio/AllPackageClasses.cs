@@ -29,7 +29,7 @@ namespace Javax.Smartcardio
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ATR.html"/>
     /// </summary>
-    public partial class ATR : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ATR>
+    public partial class ATR : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -362,7 +362,7 @@ namespace Javax.Smartcardio
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html"/>
     /// </summary>
-    public partial class CommandAPDU : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CommandAPDU>
+    public partial class CommandAPDU : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -405,7 +405,7 @@ namespace Javax.Smartcardio
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ResponseAPDU.html"/>
     /// </summary>
-    public partial class ResponseAPDU : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ResponseAPDU>
+    public partial class ResponseAPDU : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

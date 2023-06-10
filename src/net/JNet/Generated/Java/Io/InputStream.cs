@@ -33,10 +33,6 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Io.InputStream"/> to <see cref="Java.Io.Closeable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Closeable(Java.Io.InputStream t) => t.Cast<Java.Io.Closeable>();
 
         #endregion
 

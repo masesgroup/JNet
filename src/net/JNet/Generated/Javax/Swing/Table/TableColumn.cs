@@ -61,10 +61,6 @@ namespace Javax.Swing.Table
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Table.TableColumn"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Swing.Table.TableColumn t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

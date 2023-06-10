@@ -29,7 +29,7 @@ namespace Javax.Swing.Tree
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html"/>
     /// </summary>
-    public partial class AbstractLayoutCache : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractLayoutCache>
+    public partial class AbstractLayoutCache : Javax.Swing.Tree.RowMapper
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -733,7 +733,7 @@ namespace Javax.Swing.Tree
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html"/>
     /// </summary>
-    public partial class TreePath : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreePath>
+    public partial class TreePath : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

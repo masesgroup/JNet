@@ -41,10 +41,6 @@ namespace Java.Util.Concurrent.Atomic
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceArray"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Atomic.AtomicReferenceArray t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 
@@ -320,10 +316,6 @@ namespace Java.Util.Concurrent.Atomic
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceArray{E}"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Atomic.AtomicReferenceArray<E> t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceArray{E}"/> to <see cref="Java.Util.Concurrent.Atomic.AtomicReferenceArray"/>
         /// </summary>
