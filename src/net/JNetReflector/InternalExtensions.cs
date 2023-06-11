@@ -1328,33 +1328,34 @@ namespace MASES.JNetReflector
             List<Java.Lang.Reflect.Type> filteredInterfaces = new List<Java.Lang.Reflect.Type>();
 
             bool isInterface = entry.IsInterface();
-
-            foreach (var implementedInterface in entry.GenericInterfaces)
+            if (entry.GenericInterfaces.Length != 1) // a single interface will be the base class
             {
-                if (implementedInterface.MustBeAvoided()) continue;
-                var superCls = entry.SuperClass;
-                if (superCls == null
-                    || !superCls.IsPublic()
-                    || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
-                    || superCls.MustBeAvoided()
-                    || superCls.TypeName == SpecialNames.JavaLangObject)
+                foreach (var implementedInterface in entry.GenericInterfaces)
                 {
-                    filteredInterfaces.Add(implementedInterface);
-                }
-                else
-                {
-                    bool foundInSuperClass = false;
-                    foreach (var supInterface in superCls.Interfaces)
+                    if (implementedInterface.MustBeAvoided()) continue;
+                    var superCls = entry.SuperClass;
+                    if (superCls == null
+                        || !superCls.IsPublic()
+                        || (JNetReflectorCore.ReflectDeprecated ? false : superCls.IsDeprecated())
+                        || superCls.MustBeAvoided()
+                        || superCls.TypeName == SpecialNames.JavaLangObject)
                     {
-                        if (supInterface.TypeName == implementedInterface.TypeName)
-                        {
-                            foundInSuperClass = true; break;
-                        }
+                        filteredInterfaces.Add(implementedInterface);
                     }
-                    if (!foundInSuperClass) filteredInterfaces.Add(implementedInterface);
+                    else
+                    {
+                        bool foundInSuperClass = false;
+                        foreach (var supInterface in superCls.Interfaces)
+                        {
+                            if (supInterface.TypeName == implementedInterface.TypeName)
+                            {
+                                foundInSuperClass = true; break;
+                            }
+                        }
+                        if (!foundInSuperClass) filteredInterfaces.Add(implementedInterface);
+                    }
                 }
             }
-
             return filteredInterfaces;
         }
 
