@@ -468,20 +468,25 @@ namespace MASES.JNetReflector
             return result.Length - 1;
         }
 
-        public static string JVMInterfaceName(this Java.Lang.Reflect.Type type, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool fullyQualified)
+        public static string JVMInterfaceName(this Java.Lang.Reflect.Type type, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool camel)
         {
-            var tName = type.TypeName;
-            tName = tName.Contains("<") ? tName.Substring(0, tName.IndexOf("<")) : tName;
-            var tClass = tName.JVMClass();
-
-            var cName = tClass.JVMClassName(genClause, usedInGenerics);
-            cName = "I" + cName;
-            if (fullyQualified)
+            var tName = type.GetGenerics(null, genClause, string.Empty, true, usedInGenerics, camel);
+            string genName = null;
+            string nsName = null;
+            string cName = tName;
+            if (tName.Contains("<"))
             {
-                var nName = tClass.Namespace(JNetReflectorCore.UseCamel);
-                return string.IsNullOrWhiteSpace(nName) ? cName : nName + SpecialNames.NamespaceSeparator + cName;
+                genName = tName.Substring(tName.IndexOf("<"));
+                cName = tName.Substring(0, tName.IndexOf("<")); 
             }
-            else return cName;
+            if (cName.Contains(SpecialNames.NamespaceSeparator))
+            {
+                nsName = cName.Substring(0, cName.LastIndexOf(SpecialNames.NamespaceSeparator));
+                cName = cName.Substring(cName.LastIndexOf(SpecialNames.NamespaceSeparator) + 1);
+            }
+            cName = "I" + cName;
+            cName = genName != null ? cName + genName : cName;
+            return nsName != null ? nsName + SpecialNames.NamespaceSeparator + cName : cName;
         }
 
         public static bool IsJVMListenerClass(this Java.Lang.Reflect.Type type)
@@ -1102,12 +1107,12 @@ namespace MASES.JNetReflector
                         return true;
                     }
                     // if there is single super interface use it as superclass, it will be avoided in operators
-                    else if (entry.IsInterface() && entry.Interfaces.Length == 1 && !entry.Interfaces[0].MustBeAvoided()) 
+                    else if (entry.IsInterface() && entry.Interfaces.Length == 1 && !entry.Interfaces[0].MustBeAvoided())
                     {
                         return false;
                     }
                     // if there is single super interface which isn't a listener use it as superclass, it will be avoided in operators
-                    else if (entry.Interfaces.Length == 1 && !entry.Interfaces[0].MustBeAvoided() && !entry.ImplementsJVMListenerClass()) 
+                    else if (entry.Interfaces.Length == 1 && !entry.Interfaces[0].MustBeAvoided() && !entry.ImplementsJVMListenerClass())
                     {
                         return false;
                     }

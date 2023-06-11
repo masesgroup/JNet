@@ -737,7 +737,7 @@ namespace MASES.JNetReflector
                     {
                         if (item.JVMNestingLevels() == 0)
                         {
-                            sbInterfaces.AppendFormat("{0}, ", item.JVMInterfaceName(new List<KeyValuePair<string, string>>(), isGeneric, true));
+                            sbInterfaces.AppendFormat("{0}, ", item.JVMInterfaceName(new List<KeyValuePair<string, string>>(), isGeneric, JNetReflectorCore.UseCamel));
                         }
                     }
 
