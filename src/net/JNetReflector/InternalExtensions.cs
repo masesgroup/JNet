@@ -427,6 +427,28 @@ namespace MASES.JNetReflector
             return parameters;
         }
 
+        public static string Namespace(this TypeVariable entry, bool camel)
+        {
+            var typeName = entry.Name;
+            typeName = typeName.Contains("<") ? typeName.Substring(0, typeName.IndexOf("<")) : typeName;
+            return Namespace(typeName, camel);
+        }
+
+        public static bool IsNamespaceToAvoid(this TypeVariable entry)
+        {
+            if (JNetReflectorCore.NamespacesToAvoid.Any((n) => entry.Namespace(false).StartsWith(n))) return true;
+            return false;
+        }
+
+        public static bool IsClassToAvoid(this TypeVariable entry)
+        {
+            var typeName = entry.Name;
+            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
+            typeName = typeName.Contains("<") ? typeName.Substring(0, typeName.IndexOf("<")) : typeName;
+            if (JNetReflectorCore.ClassesToAvoid.Any((n) => typeName == n)) return true;
+            return false;
+        }
+
         #endregion
 
         #region Type extension
@@ -1080,12 +1102,12 @@ namespace MASES.JNetReflector
                         return true;
                     }
                     // if there is single super interface use it as superclass, it will be avoided in operators
-                    else if (entry.IsInterface() && entry.Interfaces.Length == 1) 
+                    else if (entry.IsInterface() && entry.Interfaces.Length == 1 && !entry.Interfaces[0].MustBeAvoided()) 
                     {
                         return false;
                     }
                     // if there is single super interface which isn't a listener use it as superclass, it will be avoided in operators
-                    else if (entry.Interfaces.Length == 1 && !entry.ImplementsJVMListenerClass()) 
+                    else if (entry.Interfaces.Length == 1 && !entry.Interfaces[0].MustBeAvoided() && !entry.ImplementsJVMListenerClass()) 
                     {
                         return false;
                     }
@@ -1144,12 +1166,12 @@ namespace MASES.JNetReflector
                         return false;
                     }
                     // if there is single super interface use it as superclass, it will be avoided in operators
-                    else if (entry.IsInterface() && entry.Interfaces.Length == 1)
+                    else if (entry.IsInterface() && entry.Interfaces.Length == 1 && !entry.Interfaces[0].MustBeAvoided())
                     {
                         return true;
                     }
                     // if there is single super interface which isn't a listener use it as superclass, it will be avoided in operators
-                    else if (entry.Interfaces.Length == 1 && !entry.ImplementsJVMListenerClass())
+                    else if (entry.Interfaces.Length == 1 && !entry.Interfaces[0].MustBeAvoided() && !entry.ImplementsJVMListenerClass())
                     {
                         return true;
                     }
@@ -1230,7 +1252,7 @@ namespace MASES.JNetReflector
                         return string.Format("Java.Util.Iterator{0}", innerName);
                     }
                     // if there is single super interface use it as superclass, it will be avoided in operators
-                    else if (entry.IsInterface() && entry.Interfaces.Length == 1)
+                    else if (entry.IsInterface() && entry.Interfaces.Length == 1 && !entry.Interfaces[0].MustBeAvoided())
                     {
                         if ((usedInGenerics && entry.Interfaces[0].IsJVMGenericClass())
                             || (!usedInGenerics && !entry.IsJVMGenericClass() && entry.Interfaces[0].IsJVMGenericClass()))
@@ -1241,7 +1263,7 @@ namespace MASES.JNetReflector
                         return ToFullQualifiedClassName(entry.Interfaces[0], false, camel);
                     }
                     // if there is single super interface which isn't a listener use it as superclass, it will be avoided in operators
-                    else if (entry.Interfaces.Length == 1 && !entry.ImplementsJVMListenerClass())
+                    else if (entry.Interfaces.Length == 1 && !entry.Interfaces[0].MustBeAvoided() && !entry.ImplementsJVMListenerClass())
                     {
                         if ((usedInGenerics && entry.Interfaces[0].IsJVMGenericClass())
                             || (!usedInGenerics && !entry.IsJVMGenericClass() && entry.Interfaces[0].IsJVMGenericClass()))
@@ -1602,17 +1624,31 @@ namespace MASES.JNetReflector
 
         public static bool MustBeAvoided(this Class entry)
         {
-            if (entry == null) return false;
-            if (entry.IsJVMNativeType()) return false;
-            if (!entry.IsPublic()) return true;
-            if (!JNetReflectorCore.ReflectDeprecated && entry.IsDeprecated()) return true;
+            bool toBeAvoided = false;
+            if (entry == null) toBeAvoided = false;
+            if (entry.IsJVMNativeType()) toBeAvoided = false;
+            if (!entry.IsPublic()) toBeAvoided = true;
+            if (!JNetReflectorCore.ReflectDeprecated && entry.IsDeprecated()) toBeAvoided = true;
             if (entry.TypeName.Contains(SpecialNames.NamespaceSeparator))
             {
-                if (entry.IsNamespaceToAvoid()) return true;
-                if (entry.IsClassToAvoid()) return true;
+                if (entry.IsNamespaceToAvoid()) toBeAvoided = true;
+                if (entry.IsClassToAvoid()) toBeAvoided = true;
             }
 
-            return false;
+            if (toBeAvoided && !entry.IsJVMGenericClass()) // test inner types
+            {
+                foreach (var item in entry.TypeParameters)
+                {
+                    if (item.Name.Contains(SpecialNames.NamespaceSeparator))
+                    {
+                        if (item.IsNamespaceToAvoid()) toBeAvoided = true;
+                        if (item.IsClassToAvoid()) toBeAvoided = true;
+                        if (toBeAvoided) break;
+                    }
+                }
+            }
+
+            return toBeAvoided;
         }
 
         public static bool IsJVMGenericClass(this Class entry)
