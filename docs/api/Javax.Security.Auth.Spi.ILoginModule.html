@@ -82,25 +82,25 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface ILoginModule</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Security_Auth_Spi_ILoginModule_Abort.md&amp;value=---%0Auid%3A%20Javax.Security.Auth.Spi.ILoginModule.Abort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Security/Auth/Spi/LoginModule.cs/#L38">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Security/Auth/Spi/LoginModule.cs/#L41">View Source</a>
   </span>
   <a id="Javax_Security_Auth_Spi_ILoginModule_Abort_" data-uid="Javax.Security.Auth.Spi.ILoginModule.Abort*"></a>
-  <h4 id="Javax_Security_Auth_Spi_ILoginModule_Abort" data-uid="Javax.Security.Auth.Spi.ILoginModule.Abort">Abort</h4>
+  <h4 id="Javax_Security_Auth_Spi_ILoginModule_Abort" data-uid="Javax.Security.Auth.Spi.ILoginModule.Abort">Abort()</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#abort()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#abort()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Abort { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">bool Abort()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -111,6 +111,22 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Security.Auth.Login.LoginException.html">LoginException</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -120,18 +136,18 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Security_Auth_Spi_ILoginModule_Commit.md&amp;value=---%0Auid%3A%20Javax.Security.Auth.Spi.ILoginModule.Commit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Security/Auth/Spi/LoginModule.cs/#L42">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Security/Auth/Spi/LoginModule.cs/#L48">View Source</a>
   </span>
   <a id="Javax_Security_Auth_Spi_ILoginModule_Commit_" data-uid="Javax.Security.Auth.Spi.ILoginModule.Commit*"></a>
-  <h4 id="Javax_Security_Auth_Spi_ILoginModule_Commit" data-uid="Javax.Security.Auth.Spi.ILoginModule.Commit">Commit</h4>
+  <h4 id="Javax_Security_Auth_Spi_ILoginModule_Commit" data-uid="Javax.Security.Auth.Spi.ILoginModule.Commit">Commit()</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#commit()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#commit()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Commit { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">bool Commit()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -142,80 +158,32 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Security_Auth_Spi_ILoginModule_Login.md&amp;value=---%0Auid%3A%20Javax.Security.Auth.Spi.ILoginModule.Login%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Security/Auth/Spi/LoginModule.cs/#L46">View Source</a>
-  </span>
-  <a id="Javax_Security_Auth_Spi_ILoginModule_Login_" data-uid="Javax.Security.Auth.Spi.ILoginModule.Login*"></a>
-  <h4 id="Javax_Security_Auth_Spi_ILoginModule_Login" data-uid="Javax.Security.Auth.Spi.ILoginModule.Login">Login</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Login { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Description</th>
+        <th>Condition</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="Javax.Security.Auth.Login.LoginException.html">LoginException</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Security_Auth_Spi_ILoginModule_Logout.md&amp;value=---%0Auid%3A%20Javax.Security.Auth.Spi.ILoginModule.Logout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Security/Auth/Spi/LoginModule.cs/#L50">View Source</a>
-  </span>
-  <a id="Javax_Security_Auth_Spi_ILoginModule_Logout_" data-uid="Javax.Security.Auth.Spi.ILoginModule.Logout*"></a>
-  <h4 id="Javax_Security_Auth_Spi_ILoginModule_Logout" data-uid="Javax.Security.Auth.Spi.ILoginModule.Logout">Logout</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Logout { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Security_Auth_Spi_ILoginModule_Initialize_Javax_Security_Auth_Subject_Javax_Security_Auth_Callback_CallbackHandler_Java_Util_Map_System_String_System_Object__Java_Util_Map_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Javax.Security.Auth.Spi.ILoginModule.Initialize(Javax.Security.Auth.Subject%2CJavax.Security.Auth.Callback.CallbackHandler%2CJava.Util.Map%7BSystem.String%2CSystem.Object%7D%2CJava.Util.Map%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Security/Auth/Spi/LoginModule.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Security/Auth/Spi/LoginModule.cs/#L70">View Source</a>
   </span>
   <a id="Javax_Security_Auth_Spi_ILoginModule_Initialize_" data-uid="Javax.Security.Auth.Spi.ILoginModule.Initialize*"></a>
   <h4 id="Javax_Security_Auth_Spi_ILoginModule_Initialize_Javax_Security_Auth_Subject_Javax_Security_Auth_Callback_CallbackHandler_Java_Util_Map_System_String_System_Object__Java_Util_Map_System_String_System_Object__" data-uid="Javax.Security.Auth.Spi.ILoginModule.Initialize(Javax.Security.Auth.Subject,Javax.Security.Auth.Callback.CallbackHandler,Java.Util.Map{System.String,System.Object},Java.Util.Map{System.String,System.Object})">Initialize(Subject, CallbackHandler, Map&lt;String, Object&gt;, Map&lt;String, Object&gt;)</h4>
@@ -259,6 +227,100 @@
         <td><span class="parametername">arg3</span></td>
         <td><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Security_Auth_Spi_ILoginModule_Login.md&amp;value=---%0Auid%3A%20Javax.Security.Auth.Spi.ILoginModule.Login%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Security/Auth/Spi/LoginModule.cs/#L55">View Source</a>
+  </span>
+  <a id="Javax_Security_Auth_Spi_ILoginModule_Login_" data-uid="Javax.Security.Auth.Spi.ILoginModule.Login*"></a>
+  <h4 id="Javax_Security_Auth_Spi_ILoginModule_Login" data-uid="Javax.Security.Auth.Spi.ILoginModule.Login">Login()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Login()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Security.Auth.Login.LoginException.html">LoginException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Security_Auth_Spi_ILoginModule_Logout.md&amp;value=---%0Auid%3A%20Javax.Security.Auth.Spi.ILoginModule.Logout%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Security/Auth/Spi/LoginModule.cs/#L62">View Source</a>
+  </span>
+  <a id="Javax_Security_Auth_Spi_ILoginModule_Logout_" data-uid="Javax.Security.Auth.Spi.ILoginModule.Logout*"></a>
+  <h4 id="Javax_Security_Auth_Spi_ILoginModule_Logout" data-uid="Javax.Security.Auth.Spi.ILoginModule.Logout">Logout()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Logout()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Security.Auth.Login.LoginException.html">LoginException</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

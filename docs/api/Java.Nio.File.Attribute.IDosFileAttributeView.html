@@ -88,25 +88,25 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IDosFileAttributeView : IBasicFileAttributeView, IFileAttributeView, IAttributeView</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_Attribute_IDosFileAttributeView_Name.md&amp;value=---%0Auid%3A%20Java.Nio.File.Attribute.IDosFileAttributeView.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L38">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L40">View Source</a>
   </span>
   <a id="Java_Nio_File_Attribute_IDosFileAttributeView_Name_" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.Name*"></a>
-  <h4 id="Java_Nio_File_Attribute_IDosFileAttributeView_Name" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.Name">Name</h4>
+  <h4 id="Java_Nio_File_Attribute_IDosFileAttributeView_Name" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.Name">Name()</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#name()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#name()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">string Name()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -117,7 +117,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -126,18 +127,18 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_Attribute_IDosFileAttributeView_ReadAttributes.md&amp;value=---%0Auid%3A%20Java.Nio.File.Attribute.IDosFileAttributeView.ReadAttributes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L42">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L71">View Source</a>
   </span>
   <a id="Java_Nio_File_Attribute_IDosFileAttributeView_ReadAttributes_" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.ReadAttributes*"></a>
-  <h4 id="Java_Nio_File_Attribute_IDosFileAttributeView_ReadAttributes" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.ReadAttributes">ReadAttributes</h4>
+  <h4 id="Java_Nio_File_Attribute_IDosFileAttributeView_ReadAttributes" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.ReadAttributes">ReadAttributes()</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">BasicFileAttributes ReadAttributes { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">BasicFileAttributes ReadAttributes()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -148,18 +149,32 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Nio.File.Attribute.BasicFileAttributes.html">BasicFileAttributes</a></td>
+        <td><p><a class="xref" href="Java.Nio.File.Attribute.BasicFileAttributes.html">BasicFileAttributes</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_Attribute_IDosFileAttributeView_SetArchive_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Nio.File.Attribute.IDosFileAttributeView.SetArchive(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L48">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L46">View Source</a>
   </span>
   <a id="Java_Nio_File_Attribute_IDosFileAttributeView_SetArchive_" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.SetArchive*"></a>
   <h4 id="Java_Nio_File_Attribute_IDosFileAttributeView_SetArchive_System_Boolean_" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.SetArchive(System.Boolean)">SetArchive(Boolean)</h4>
@@ -208,7 +223,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_Attribute_IDosFileAttributeView_SetHidden_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Nio.File.Attribute.IDosFileAttributeView.SetHidden(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L54">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L52">View Source</a>
   </span>
   <a id="Java_Nio_File_Attribute_IDosFileAttributeView_SetHidden_" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.SetHidden*"></a>
   <h4 id="Java_Nio_File_Attribute_IDosFileAttributeView_SetHidden_System_Boolean_" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.SetHidden(System.Boolean)">SetHidden(Boolean)</h4>
@@ -257,7 +272,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_Attribute_IDosFileAttributeView_SetReadOnly_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Nio.File.Attribute.IDosFileAttributeView.SetReadOnly(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L60">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L58">View Source</a>
   </span>
   <a id="Java_Nio_File_Attribute_IDosFileAttributeView_SetReadOnly_" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.SetReadOnly*"></a>
   <h4 id="Java_Nio_File_Attribute_IDosFileAttributeView_SetReadOnly_System_Boolean_" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.SetReadOnly(System.Boolean)">SetReadOnly(Boolean)</h4>
@@ -306,7 +321,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_Attribute_IDosFileAttributeView_SetSystem_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Nio.File.Attribute.IDosFileAttributeView.SetSystem(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L66">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/Attribute/DosFileAttributeView.cs/#L64">View Source</a>
   </span>
   <a id="Java_Nio_File_Attribute_IDosFileAttributeView_SetSystem_" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.SetSystem*"></a>
   <h4 id="Java_Nio_File_Attribute_IDosFileAttributeView_SetSystem_System_Boolean_" data-uid="Java.Nio.File.Attribute.IDosFileAttributeView.SetSystem(System.Boolean)">SetSystem(Boolean)</h4>
