@@ -125,10 +125,10 @@
       <a class="xref" href="Javax.Swing.DefaultRowSorter-2.html#Javax_Swing_DefaultRowSorter_2_IsSortable_System_Int32_">DefaultRowSorter&lt;M, Nullable&lt;Int32&gt;&gt;.IsSortable(Int32)</a>
     </div>
     <div>
-      <a class="xref" href="Javax.Swing.DefaultRowSorter-2.html#Javax_Swing_DefaultRowSorter_2_GetComparator__1_System_Int32_">DefaultRowSorter&lt;M, Nullable&lt;Int32&gt;&gt;.GetComparator&lt;ReturnExtendsobject&gt;(Int32)</a>
+      <a class="xref" href="Javax.Swing.DefaultRowSorter-2.html#Javax_Swing_DefaultRowSorter_2_GetComparator_System_Int32_">DefaultRowSorter&lt;M, Nullable&lt;Int32&gt;&gt;.GetComparator(Int32)</a>
     </div>
     <div>
-      <a class="xref" href="Javax.Swing.DefaultRowSorter-2.html#Javax_Swing_DefaultRowSorter_2_SetComparator__1_System_Int32_Java_Util_Comparator___0__">DefaultRowSorter&lt;M, Nullable&lt;Int32&gt;&gt;.SetComparator&lt;Arg1Extendsobject&gt;(Int32, Comparator&lt;Arg1Extendsobject&gt;)</a>
+      <a class="xref" href="Javax.Swing.DefaultRowSorter-2.html#Javax_Swing_DefaultRowSorter_2_SetComparator_System_Int32_Java_Util_Comparator_System_Object__">DefaultRowSorter&lt;M, Nullable&lt;Int32&gt;&gt;.SetComparator(Int32, Comparator&lt;Object&gt;)</a>
     </div>
     <div>
       <a class="xref" href="Javax.Swing.DefaultRowSorter-2.html#Javax_Swing_DefaultRowSorter_2_SetSortable_System_Int32_System_Boolean_">DefaultRowSorter&lt;M, Nullable&lt;Int32&gt;&gt;.SetSortable(Int32, Boolean)</a>
@@ -459,7 +459,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Swing_Table_TableRowSorter_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TableRowSorter&lt;M&gt; : DefaultRowSorter&lt;M, int?&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition where M : TableModel</code></pre>
+    <pre><code class="lang-csharp hljs">public class TableRowSorter&lt;M&gt; : DefaultRowSorter&lt;M, int?&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition where M : ITableModel, new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -472,7 +472,7 @@
     <tbody>
       <tr>
         <td><span class="parametername">M</span></td>
-        <td><p><a class="xref" href="Javax.Swing.Table.TableModel.html">TableModel</a></p>
+        <td><p><a class="xref" href="Javax.Swing.Table.ITableModel.html">ITableModel</a></p>
 </td>
       </tr>
     </tbody>
@@ -867,7 +867,7 @@
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>

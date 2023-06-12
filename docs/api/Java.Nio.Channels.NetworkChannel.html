@@ -96,6 +96,10 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Nio.Channels.INetworkChannel.html">INetworkChannel</a></div>
+    <div><a class="xref" href="Java.Nio.Channels.IChannel.html">IChannel</a></div>
+    <div><a class="xref" href="Java.Io.ICloseable.html">ICloseable</a></div>
+    <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -383,7 +387,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Nio_Channels_NetworkChannel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class NetworkChannel : Channel, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class NetworkChannel : Channel, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, INetworkChannel, IChannel, ICloseable, IAutoCloseable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -608,7 +612,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_Channels_NetworkChannel_LocalAddress.md&amp;value=---%0Auid%3A%20Java.Nio.Channels.NetworkChannel.LocalAddress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L101">View Source</a>
   </span>
   <a id="Java_Nio_Channels_NetworkChannel_LocalAddress_" data-uid="Java.Nio.Channels.NetworkChannel.LocalAddress*"></a>
   <h4 id="Java_Nio_Channels_NetworkChannel_LocalAddress" data-uid="Java.Nio.Channels.NetworkChannel.LocalAddress">LocalAddress</h4>
@@ -639,7 +643,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_Channels_NetworkChannel_SupportedOptions.md&amp;value=---%0Auid%3A%20Java.Nio.Channels.NetworkChannel.SupportedOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L108">View Source</a>
   </span>
   <a id="Java_Nio_Channels_NetworkChannel_SupportedOptions_" data-uid="Java.Nio.Channels.NetworkChannel.SupportedOptions*"></a>
   <h4 id="Java_Nio_Channels_NetworkChannel_SupportedOptions" data-uid="Java.Nio.Channels.NetworkChannel.SupportedOptions">SupportedOptions</h4>
@@ -648,7 +652,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Set SupportedOptions { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Set&lt;SocketOption&lt;object&gt;&gt; SupportedOptions { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -660,7 +664,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Set.html">Set</a></td>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Net.SocketOption-1.html">SocketOption</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -672,7 +676,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_Channels_NetworkChannel_Bind_Java_Net_SocketAddress_.md&amp;value=---%0Auid%3A%20Java.Nio.Channels.NetworkChannel.Bind(Java.Net.SocketAddress)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L91">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L141">View Source</a>
   </span>
   <a id="Java_Nio_Channels_NetworkChannel_Bind_" data-uid="Java.Nio.Channels.NetworkChannel.Bind*"></a>
   <h4 id="Java_Nio_Channels_NetworkChannel_Bind_Java_Net_SocketAddress_" data-uid="Java.Nio.Channels.NetworkChannel.Bind(Java.Net.SocketAddress)">Bind(SocketAddress)</h4>
@@ -737,7 +741,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_Channels_NetworkChannel_GetOption__1_Java_Net_SocketOption___0__.md&amp;value=---%0Auid%3A%20Java.Nio.Channels.NetworkChannel.GetOption%60%601(Java.Net.SocketOption%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L81">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L131">View Source</a>
   </span>
   <a id="Java_Nio_Channels_NetworkChannel_GetOption_" data-uid="Java.Nio.Channels.NetworkChannel.GetOption*"></a>
   <h4 id="Java_Nio_Channels_NetworkChannel_GetOption__1_Java_Net_SocketOption___0__" data-uid="Java.Nio.Channels.NetworkChannel.GetOption``1(Java.Net.SocketOption{``0})">GetOption&lt;T&gt;(SocketOption&lt;T&gt;)</h4>
@@ -817,7 +821,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_Channels_NetworkChannel_SetOption__1_Java_Net_SocketOption___0____0_.md&amp;value=---%0Auid%3A%20Java.Nio.Channels.NetworkChannel.SetOption%60%601(Java.Net.SocketOption%7B%60%600%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L70">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L120">View Source</a>
   </span>
   <a id="Java_Nio_Channels_NetworkChannel_SetOption_" data-uid="Java.Nio.Channels.NetworkChannel.SetOption*"></a>
   <h4 id="Java_Nio_Channels_NetworkChannel_SetOption__1_Java_Net_SocketOption___0____0_" data-uid="Java.Nio.Channels.NetworkChannel.SetOption``1(Java.Net.SocketOption{``0},``0)">SetOption&lt;T&gt;(SocketOption&lt;T&gt;, T)</h4>
@@ -917,9 +921,21 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Nio.Channels.INetworkChannel.html">INetworkChannel</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Nio.Channels.IChannel.html">IChannel</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Io.ICloseable.html">ICloseable</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -932,7 +948,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_Channels_NetworkChannel.md&amp;value=---%0Auid%3A%20Java.Nio.Channels.NetworkChannel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/Channels/NetworkChannel.cs/#L79" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

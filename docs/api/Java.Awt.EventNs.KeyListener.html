@@ -73,7 +73,7 @@
   
   <h1 id="Java_Awt_EventNs_KeyListener" data-uid="Java.Awt.EventNs.KeyListener" class="text-break">Class KeyListener
   </h1>
-  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html</a></p>
+  <div class="markdown level0 summary"><p>Listener for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html</a>. Extends <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <a class="xref" href="Java.Awt.EventNs.IKeyListener.html">IKeyListener</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -83,7 +83,8 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span>&gt;</div>
     <div class="level4"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span></div>
-    <div class="level5"><span class="xref">KeyListener</span></div>
+    <div class="level5"><a class="xref" href="Java.Util.EventListener.html">EventListener</a></div>
+    <div class="level6"><span class="xref">KeyListener</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -91,6 +92,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
+    <div><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></div>
     <div><a class="xref" href="Java.Awt.EventNs.IKeyListener.html">IKeyListener</a></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
@@ -396,7 +398,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Awt_EventNs_KeyListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class KeyListener : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IKeyListener, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class KeyListener : EventListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IEventListener, IKeyListener, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
   <h5 id="Java_Awt_EventNs_KeyListener_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</p>
@@ -405,10 +407,26 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_KeyListener__ctor.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.KeyListener.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L866">View Source</a>
+  </span>
+  <a id="Java_Awt_EventNs_KeyListener__ctor_" data-uid="Java.Awt.EventNs.KeyListener.#ctor*"></a>
+  <h4 id="Java_Awt_EventNs_KeyListener__ctor" data-uid="Java.Awt.EventNs.KeyListener.#ctor">KeyListener()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyListener()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_KeyListener__ctor_System_Action_Java_Awt_EventNs_KeyEvent__System_Action_Java_Awt_EventNs_KeyEvent__System_Action_Java_Awt_EventNs_KeyEvent__System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.KeyListener.%23ctor(System.Action%7BJava.Awt.EventNs.KeyEvent%7D%2CSystem.Action%7BJava.Awt.EventNs.KeyEvent%7D%2CSystem.Action%7BJava.Awt.EventNs.KeyEvent%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/KeyListener.cs/#L76">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/KeyListener.cs/#L65">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_KeyListener__ctor_" data-uid="Java.Awt.EventNs.KeyListener.#ctor*"></a>
   <h4 id="Java_Awt_EventNs_KeyListener__ctor_System_Action_Java_Awt_EventNs_KeyEvent__System_Action_Java_Awt_EventNs_KeyEvent__System_Action_Java_Awt_EventNs_KeyEvent__System_Boolean_" data-uid="Java.Awt.EventNs.KeyListener.#ctor(System.Action{Java.Awt.EventNs.KeyEvent},System.Action{Java.Awt.EventNs.KeyEvent},System.Action{Java.Awt.EventNs.KeyEvent},System.Boolean)">KeyListener(Action&lt;KeyEvent&gt;, Action&lt;KeyEvent&gt;, Action&lt;KeyEvent&gt;, Boolean)</h4>
@@ -462,7 +480,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_KeyListener_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.KeyListener.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/KeyListener.cs/#L52">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/KeyListener.cs/#L41">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_KeyListener_BridgeClassName_" data-uid="Java.Awt.EventNs.KeyListener.BridgeClassName*"></a>
   <h4 id="Java_Awt_EventNs_KeyListener_BridgeClassName" data-uid="Java.Awt.EventNs.KeyListener.BridgeClassName">BridgeClassName</h4>
@@ -495,7 +513,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_KeyListener_OnKeyPressed.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.KeyListener.OnKeyPressed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/KeyListener.cs/#L64">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/KeyListener.cs/#L53">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_KeyListener_OnKeyPressed_" data-uid="Java.Awt.EventNs.KeyListener.OnKeyPressed*"></a>
   <h4 id="Java_Awt_EventNs_KeyListener_OnKeyPressed" data-uid="Java.Awt.EventNs.KeyListener.OnKeyPressed">OnKeyPressed</h4>
@@ -526,7 +544,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_KeyListener_OnKeyReleased.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.KeyListener.OnKeyReleased%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/KeyListener.cs/#L68">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/KeyListener.cs/#L57">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_KeyListener_OnKeyReleased_" data-uid="Java.Awt.EventNs.KeyListener.OnKeyReleased*"></a>
   <h4 id="Java_Awt_EventNs_KeyListener_OnKeyReleased" data-uid="Java.Awt.EventNs.KeyListener.OnKeyReleased">OnKeyReleased</h4>
@@ -557,7 +575,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_KeyListener_OnKeyTyped.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.KeyListener.OnKeyTyped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/KeyListener.cs/#L60">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/KeyListener.cs/#L49">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_KeyListener_OnKeyTyped_" data-uid="Java.Awt.EventNs.KeyListener.OnKeyTyped*"></a>
   <h4 id="Java_Awt_EventNs_KeyListener_OnKeyTyped" data-uid="Java.Awt.EventNs.KeyListener.OnKeyTyped">OnKeyTyped</h4>
@@ -590,7 +608,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_KeyListener_KeyPressed_Java_Awt_EventNs_KeyEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.KeyListener.KeyPressed(Java.Awt.EventNs.KeyEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/KeyListener.cs/#L116">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/KeyListener.cs/#L85">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_KeyListener_KeyPressed_" data-uid="Java.Awt.EventNs.KeyListener.KeyPressed*"></a>
   <h4 id="Java_Awt_EventNs_KeyListener_KeyPressed_Java_Awt_EventNs_KeyEvent_" data-uid="Java.Awt.EventNs.KeyListener.KeyPressed(Java.Awt.EventNs.KeyEvent)">KeyPressed(KeyEvent)</h4>
@@ -599,7 +617,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void KeyPressed(KeyEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void KeyPressed(KeyEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -613,8 +631,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.KeyEvent.html">KeyEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.KeyEvent.html">KeyEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -623,7 +642,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_KeyListener_KeyReleased_Java_Awt_EventNs_KeyEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.KeyListener.KeyReleased(Java.Awt.EventNs.KeyEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/KeyListener.cs/#L121">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/KeyListener.cs/#L93">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_KeyListener_KeyReleased_" data-uid="Java.Awt.EventNs.KeyListener.KeyReleased*"></a>
   <h4 id="Java_Awt_EventNs_KeyListener_KeyReleased_Java_Awt_EventNs_KeyEvent_" data-uid="Java.Awt.EventNs.KeyListener.KeyReleased(Java.Awt.EventNs.KeyEvent)">KeyReleased(KeyEvent)</h4>
@@ -632,7 +651,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void KeyReleased(KeyEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void KeyReleased(KeyEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -646,8 +665,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.KeyEvent.html">KeyEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.KeyEvent.html">KeyEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -656,7 +676,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_KeyListener_KeyTyped_Java_Awt_EventNs_KeyEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.KeyListener.KeyTyped(Java.Awt.EventNs.KeyEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/KeyListener.cs/#L111">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/KeyListener.cs/#L101">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_KeyListener_KeyTyped_" data-uid="Java.Awt.EventNs.KeyListener.KeyTyped*"></a>
   <h4 id="Java_Awt_EventNs_KeyListener_KeyTyped_Java_Awt_EventNs_KeyEvent_" data-uid="Java.Awt.EventNs.KeyListener.KeyTyped(Java.Awt.EventNs.KeyEvent)">KeyTyped(KeyEvent)</h4>
@@ -665,7 +685,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void KeyTyped(KeyEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void KeyTyped(KeyEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -679,8 +699,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.KeyEvent.html">KeyEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.KeyEvent.html">KeyEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -698,6 +719,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
   </div>
   <div>
+      <a class="xref" href="Java.Util.IEventListener.html">IEventListener</a>
+  </div>
+  <div>
       <a class="xref" href="Java.Awt.EventNs.IKeyListener.html">IKeyListener</a>
   </div>
   <div>
@@ -705,6 +729,10 @@
   </div>
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -717,7 +745,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_KeyListener.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.KeyListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/KeyListener.cs/#L47" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/KeyListener.cs/#L62" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

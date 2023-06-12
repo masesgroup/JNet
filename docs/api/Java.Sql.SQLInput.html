@@ -83,6 +83,7 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Sql.SQLInput.html">SQLInput</a>&gt;</div>
     <div class="level4"><span class="xref">SQLInput</span></div>
+      <div class="level5"><a class="xref" href="Javax.Sql.Rowset.Serial.SQLInputImpl.html">SQLInputImpl</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -92,6 +93,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Sql.ISQLInput.html">ISQLInput</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -373,7 +375,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Sql_SQLInput_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SQLInput : JVMBridgeBase&lt;SQLInput&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class SQLInput : JVMBridgeBase&lt;SQLInput&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISQLInput</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -598,7 +600,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadArray.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L188">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadArray_" data-uid="Java.Sql.SQLInput.ReadArray*"></a>
   <h4 id="Java_Sql_SQLInput_ReadArray" data-uid="Java.Sql.SQLInput.ReadArray">ReadArray</h4>
@@ -629,7 +631,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadAsciiStream.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadAsciiStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L195">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadAsciiStream_" data-uid="Java.Sql.SQLInput.ReadAsciiStream*"></a>
   <h4 id="Java_Sql_SQLInput_ReadAsciiStream" data-uid="Java.Sql.SQLInput.ReadAsciiStream">ReadAsciiStream</h4>
@@ -660,7 +662,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadBigDecimal.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadBigDecimal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L202">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadBigDecimal_" data-uid="Java.Sql.SQLInput.ReadBigDecimal*"></a>
   <h4 id="Java_Sql_SQLInput_ReadBigDecimal" data-uid="Java.Sql.SQLInput.ReadBigDecimal">ReadBigDecimal</h4>
@@ -691,7 +693,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadBinaryStream.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadBinaryStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L209">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadBinaryStream_" data-uid="Java.Sql.SQLInput.ReadBinaryStream*"></a>
   <h4 id="Java_Sql_SQLInput_ReadBinaryStream" data-uid="Java.Sql.SQLInput.ReadBinaryStream">ReadBinaryStream</h4>
@@ -722,7 +724,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadBlob.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadBlob%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L216">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadBlob_" data-uid="Java.Sql.SQLInput.ReadBlob*"></a>
   <h4 id="Java_Sql_SQLInput_ReadBlob" data-uid="Java.Sql.SQLInput.ReadBlob">ReadBlob</h4>
@@ -753,7 +755,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadBoolean.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadBoolean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L86">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L223">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadBoolean_" data-uid="Java.Sql.SQLInput.ReadBoolean*"></a>
   <h4 id="Java_Sql_SQLInput_ReadBoolean" data-uid="Java.Sql.SQLInput.ReadBoolean">ReadBoolean</h4>
@@ -784,7 +786,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadByte.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadByte%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L93">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L230">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadByte_" data-uid="Java.Sql.SQLInput.ReadByte*"></a>
   <h4 id="Java_Sql_SQLInput_ReadByte" data-uid="Java.Sql.SQLInput.ReadByte">ReadByte</h4>
@@ -815,7 +817,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadBytes.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L100">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L237">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadBytes_" data-uid="Java.Sql.SQLInput.ReadBytes*"></a>
   <h4 id="Java_Sql_SQLInput_ReadBytes" data-uid="Java.Sql.SQLInput.ReadBytes">ReadBytes</h4>
@@ -846,7 +848,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadCharacterStream.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadCharacterStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L107">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L244">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadCharacterStream_" data-uid="Java.Sql.SQLInput.ReadCharacterStream*"></a>
   <h4 id="Java_Sql_SQLInput_ReadCharacterStream" data-uid="Java.Sql.SQLInput.ReadCharacterStream">ReadCharacterStream</h4>
@@ -877,7 +879,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadClob.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadClob%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L114">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L251">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadClob_" data-uid="Java.Sql.SQLInput.ReadClob*"></a>
   <h4 id="Java_Sql_SQLInput_ReadClob" data-uid="Java.Sql.SQLInput.ReadClob">ReadClob</h4>
@@ -908,7 +910,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadDate.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadDate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L121">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L258">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadDate_" data-uid="Java.Sql.SQLInput.ReadDate*"></a>
   <h4 id="Java_Sql_SQLInput_ReadDate" data-uid="Java.Sql.SQLInput.ReadDate">ReadDate</h4>
@@ -939,7 +941,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadDouble.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadDouble%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L128">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L265">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadDouble_" data-uid="Java.Sql.SQLInput.ReadDouble*"></a>
   <h4 id="Java_Sql_SQLInput_ReadDouble" data-uid="Java.Sql.SQLInput.ReadDouble">ReadDouble</h4>
@@ -970,7 +972,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadFloat.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L135">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L272">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadFloat_" data-uid="Java.Sql.SQLInput.ReadFloat*"></a>
   <h4 id="Java_Sql_SQLInput_ReadFloat" data-uid="Java.Sql.SQLInput.ReadFloat">ReadFloat</h4>
@@ -1001,7 +1003,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadInt.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadInt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L142">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L279">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadInt_" data-uid="Java.Sql.SQLInput.ReadInt*"></a>
   <h4 id="Java_Sql_SQLInput_ReadInt" data-uid="Java.Sql.SQLInput.ReadInt">ReadInt</h4>
@@ -1032,7 +1034,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadLong.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadLong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L149">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L286">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadLong_" data-uid="Java.Sql.SQLInput.ReadLong*"></a>
   <h4 id="Java_Sql_SQLInput_ReadLong" data-uid="Java.Sql.SQLInput.ReadLong">ReadLong</h4>
@@ -1063,7 +1065,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadNClob.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadNClob%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L156">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L293">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadNClob_" data-uid="Java.Sql.SQLInput.ReadNClob*"></a>
   <h4 id="Java_Sql_SQLInput_ReadNClob" data-uid="Java.Sql.SQLInput.ReadNClob">ReadNClob</h4>
@@ -1094,7 +1096,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadNString.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadNString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L163">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L300">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadNString_" data-uid="Java.Sql.SQLInput.ReadNString*"></a>
   <h4 id="Java_Sql_SQLInput_ReadNString" data-uid="Java.Sql.SQLInput.ReadNString">ReadNString</h4>
@@ -1125,7 +1127,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadRef.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadRef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L170">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L307">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadRef_" data-uid="Java.Sql.SQLInput.ReadRef*"></a>
   <h4 id="Java_Sql_SQLInput_ReadRef" data-uid="Java.Sql.SQLInput.ReadRef">ReadRef</h4>
@@ -1156,7 +1158,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadRowId.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadRowId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L177">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L314">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadRowId_" data-uid="Java.Sql.SQLInput.ReadRowId*"></a>
   <h4 id="Java_Sql_SQLInput_ReadRowId" data-uid="Java.Sql.SQLInput.ReadRowId">ReadRowId</h4>
@@ -1187,7 +1189,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadShort.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadShort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L184">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L321">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadShort_" data-uid="Java.Sql.SQLInput.ReadShort*"></a>
   <h4 id="Java_Sql_SQLInput_ReadShort" data-uid="Java.Sql.SQLInput.ReadShort">ReadShort</h4>
@@ -1218,7 +1220,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadSQLXML.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadSQLXML%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L191">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L328">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadSQLXML_" data-uid="Java.Sql.SQLInput.ReadSQLXML*"></a>
   <h4 id="Java_Sql_SQLInput_ReadSQLXML" data-uid="Java.Sql.SQLInput.ReadSQLXML">ReadSQLXML</h4>
@@ -1249,7 +1251,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadString.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L198">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L335">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadString_" data-uid="Java.Sql.SQLInput.ReadString*"></a>
   <h4 id="Java_Sql_SQLInput_ReadString" data-uid="Java.Sql.SQLInput.ReadString">ReadString</h4>
@@ -1280,7 +1282,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadTime.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L205">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L342">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadTime_" data-uid="Java.Sql.SQLInput.ReadTime*"></a>
   <h4 id="Java_Sql_SQLInput_ReadTime" data-uid="Java.Sql.SQLInput.ReadTime">ReadTime</h4>
@@ -1311,7 +1313,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadTimestamp.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadTimestamp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L212">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L349">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadTimestamp_" data-uid="Java.Sql.SQLInput.ReadTimestamp*"></a>
   <h4 id="Java_Sql_SQLInput_ReadTimestamp" data-uid="Java.Sql.SQLInput.ReadTimestamp">ReadTimestamp</h4>
@@ -1342,7 +1344,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadURL.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadURL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L219">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L356">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadURL_" data-uid="Java.Sql.SQLInput.ReadURL*"></a>
   <h4 id="Java_Sql_SQLInput_ReadURL" data-uid="Java.Sql.SQLInput.ReadURL">ReadURL</h4>
@@ -1373,7 +1375,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_WasNull.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.WasNull%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L226">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L363">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_WasNull_" data-uid="Java.Sql.SQLInput.WasNull*"></a>
   <h4 id="Java_Sql_SQLInput_WasNull" data-uid="Java.Sql.SQLInput.WasNull">WasNull</h4>
@@ -1406,7 +1408,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadObject.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L236">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L373">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadObject_" data-uid="Java.Sql.SQLInput.ReadObject*"></a>
   <h4 id="Java_Sql_SQLInput_ReadObject" data-uid="Java.Sql.SQLInput.ReadObject">ReadObject()</h4>
@@ -1453,7 +1455,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput_ReadObject__1_Java_Lang_Class_.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput.ReadObject%60%601(Java.Lang.Class)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L247">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L384">View Source</a>
   </span>
   <a id="Java_Sql_SQLInput_ReadObject_" data-uid="Java.Sql.SQLInput.ReadObject*"></a>
   <h4 id="Java_Sql_SQLInput_ReadObject__1_Java_Lang_Class_" data-uid="Java.Sql.SQLInput.ReadObject``1(Java.Lang.Class)">ReadObject&lt;T&gt;(Class)</h4>
@@ -1547,9 +1549,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Sql.ISQLInput.html">ISQLInput</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1562,7 +1567,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLInput.md&amp;value=---%0Auid%3A%20Java.Sql.SQLInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/SQLInput.cs/#L166" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

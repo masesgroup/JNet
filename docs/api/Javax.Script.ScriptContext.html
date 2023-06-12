@@ -83,6 +83,7 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Javax.Script.ScriptContext.html">ScriptContext</a>&gt;</div>
     <div class="level4"><span class="xref">ScriptContext</span></div>
+      <div class="level5"><a class="xref" href="Javax.Script.SimpleScriptContext.html">SimpleScriptContext</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -92,6 +93,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Script.IScriptContext.html">IScriptContext</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -373,7 +375,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Script_ScriptContext_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ScriptContext : JVMBridgeBase&lt;ScriptContext&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class ScriptContext : JVMBridgeBase&lt;ScriptContext&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IScriptContext</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -466,7 +468,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_ENGINE_SCOPE.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.ENGINE_SCOPE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L122">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_ENGINE_SCOPE_" data-uid="Javax.Script.ScriptContext.ENGINE_SCOPE*"></a>
   <h4 id="Javax_Script_ScriptContext_ENGINE_SCOPE" data-uid="Javax.Script.ScriptContext.ENGINE_SCOPE">ENGINE_SCOPE</h4>
@@ -497,7 +499,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_ErrorWriter.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.ErrorWriter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L59">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L138">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_ErrorWriter_" data-uid="Javax.Script.ScriptContext.ErrorWriter*"></a>
   <h4 id="Javax_Script_ScriptContext_ErrorWriter" data-uid="Javax.Script.ScriptContext.ErrorWriter">ErrorWriter</h4>
@@ -528,7 +530,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_GLOBAL_SCOPE.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.GLOBAL_SCOPE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L47">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L126">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_GLOBAL_SCOPE_" data-uid="Javax.Script.ScriptContext.GLOBAL_SCOPE*"></a>
   <h4 id="Javax_Script_ScriptContext_GLOBAL_SCOPE" data-uid="Javax.Script.ScriptContext.GLOBAL_SCOPE">GLOBAL_SCOPE</h4>
@@ -691,7 +693,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_Reader.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.Reader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L66">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L145">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_Reader_" data-uid="Javax.Script.ScriptContext.Reader*"></a>
   <h4 id="Javax_Script_ScriptContext_Reader" data-uid="Javax.Script.ScriptContext.Reader">Reader</h4>
@@ -722,7 +724,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_Scopes.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.Scopes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L73">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L152">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_Scopes_" data-uid="Javax.Script.ScriptContext.Scopes*"></a>
   <h4 id="Javax_Script_ScriptContext_Scopes" data-uid="Javax.Script.ScriptContext.Scopes">Scopes</h4>
@@ -753,7 +755,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_Writer.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.Writer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L80">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L159">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_Writer_" data-uid="Javax.Script.ScriptContext.Writer*"></a>
   <h4 id="Javax_Script_ScriptContext_Writer" data-uid="Javax.Script.ScriptContext.Writer">Writer</h4>
@@ -786,7 +788,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_GetAttribute_System_String_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.GetAttribute(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L108">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L187">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_GetAttribute_" data-uid="Javax.Script.ScriptContext.GetAttribute*"></a>
   <h4 id="Javax_Script_ScriptContext_GetAttribute_System_String_" data-uid="Javax.Script.ScriptContext.GetAttribute(System.String)">GetAttribute(String)</h4>
@@ -836,7 +838,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_GetAttribute_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.GetAttribute(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L99">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L178">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_GetAttribute_" data-uid="Javax.Script.ScriptContext.GetAttribute*"></a>
   <h4 id="Javax_Script_ScriptContext_GetAttribute_System_String_System_Int32_" data-uid="Javax.Script.ScriptContext.GetAttribute(System.String,System.Int32)">GetAttribute(String, Int32)</h4>
@@ -892,7 +894,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_GetAttributesScope_System_String_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.GetAttributesScope(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L89">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L168">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_GetAttributesScope_" data-uid="Javax.Script.ScriptContext.GetAttributesScope*"></a>
   <h4 id="Javax_Script_ScriptContext_GetAttributesScope_System_String_" data-uid="Javax.Script.ScriptContext.GetAttributesScope(System.String)">GetAttributesScope(String)</h4>
@@ -942,7 +944,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_GetBindings_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.GetBindings(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L127">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L206">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_GetBindings_" data-uid="Javax.Script.ScriptContext.GetBindings*"></a>
   <h4 id="Javax_Script_ScriptContext_GetBindings_System_Int32_" data-uid="Javax.Script.ScriptContext.GetBindings(System.Int32)">GetBindings(Int32)</h4>
@@ -992,7 +994,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_RemoveAttribute_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.RemoveAttribute(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L118">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L197">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_RemoveAttribute_" data-uid="Javax.Script.ScriptContext.RemoveAttribute*"></a>
   <h4 id="Javax_Script_ScriptContext_RemoveAttribute_System_String_System_Int32_" data-uid="Javax.Script.ScriptContext.RemoveAttribute(System.String,System.Int32)">RemoveAttribute(String, Int32)</h4>
@@ -1048,7 +1050,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_SetAttribute_System_String_System_Object_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.SetAttribute(System.String%2CSystem.Object%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L137">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L216">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_SetAttribute_" data-uid="Javax.Script.ScriptContext.SetAttribute*"></a>
   <h4 id="Javax_Script_ScriptContext_SetAttribute_System_String_System_Object_System_Int32_" data-uid="Javax.Script.ScriptContext.SetAttribute(System.String,System.Object,System.Int32)">SetAttribute(String, Object, Int32)</h4>
@@ -1094,7 +1096,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext_SetBindings_Javax_Script_Bindings_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext.SetBindings(Javax.Script.Bindings%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L146">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L225">View Source</a>
   </span>
   <a id="Javax_Script_ScriptContext_SetBindings_" data-uid="Javax.Script.ScriptContext.SetBindings*"></a>
   <h4 id="Javax_Script_ScriptContext_SetBindings_Javax_Script_Bindings_System_Int32_" data-uid="Javax.Script.ScriptContext.SetBindings(Javax.Script.Bindings,System.Int32)">SetBindings(Bindings, Int32)</h4>
@@ -1148,9 +1150,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Script.IScriptContext.html">IScriptContext</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1163,7 +1168,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Script_ScriptContext.md&amp;value=---%0Auid%3A%20Javax.Script.ScriptContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Script/ScriptContext.cs/#L108" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

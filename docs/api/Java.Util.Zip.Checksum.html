@@ -83,6 +83,9 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Util.Zip.Checksum.html">Checksum</a>&gt;</div>
     <div class="level4"><span class="xref">Checksum</span></div>
+      <div class="level5"><a class="xref" href="Java.Util.Zip.Adler32.html">Adler32</a></div>
+      <div class="level5"><a class="xref" href="Java.Util.Zip.CRC32.html">CRC32</a></div>
+      <div class="level5"><a class="xref" href="Java.Util.Zip.CRC32C.html">CRC32C</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -92,6 +95,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Util.Zip.IChecksum.html">IChecksum</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -373,7 +377,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Util_Zip_Checksum_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Checksum : JVMBridgeBase&lt;Checksum&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Checksum : JVMBridgeBase&lt;Checksum&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IChecksum</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -598,7 +602,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Zip_Checksum_Value.md&amp;value=---%0Auid%3A%20Java.Util.Zip.Checksum.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L99">View Source</a>
   </span>
   <a id="Java_Util_Zip_Checksum_Value_" data-uid="Java.Util.Zip.Checksum.Value*"></a>
   <h4 id="Java_Util_Zip_Checksum_Value" data-uid="Java.Util.Zip.Checksum.Value">Value</h4>
@@ -631,7 +635,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Zip_Checksum_Reset.md&amp;value=---%0Auid%3A%20Java.Util.Zip.Checksum.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L106">View Source</a>
   </span>
   <a id="Java_Util_Zip_Checksum_Reset_" data-uid="Java.Util.Zip.Checksum.Reset*"></a>
   <h4 id="Java_Util_Zip_Checksum_Reset" data-uid="Java.Util.Zip.Checksum.Reset">Reset()</h4>
@@ -647,7 +651,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Zip_Checksum_Update_Java_Nio_ByteBuffer_.md&amp;value=---%0Auid%3A%20Java.Util.Zip.Checksum.Update(Java.Nio.ByteBuffer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L92">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L140">View Source</a>
   </span>
   <a id="Java_Util_Zip_Checksum_Update_" data-uid="Java.Util.Zip.Checksum.Update*"></a>
   <h4 id="Java_Util_Zip_Checksum_Update_Java_Nio_ByteBuffer_" data-uid="Java.Util.Zip.Checksum.Update(Java.Nio.ByteBuffer)">Update(ByteBuffer)</h4>
@@ -681,7 +685,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Zip_Checksum_Update_System_Byte___.md&amp;value=---%0Auid%3A%20Java.Util.Zip.Checksum.Update(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L84">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L132">View Source</a>
   </span>
   <a id="Java_Util_Zip_Checksum_Update_" data-uid="Java.Util.Zip.Checksum.Update*"></a>
   <h4 id="Java_Util_Zip_Checksum_Update_System_Byte___" data-uid="Java.Util.Zip.Checksum.Update(System.Byte[])">Update(Byte[])</h4>
@@ -715,7 +719,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Zip_Checksum_Update_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Zip.Checksum.Update(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L68">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L116">View Source</a>
   </span>
   <a id="Java_Util_Zip_Checksum_Update_" data-uid="Java.Util.Zip.Checksum.Update*"></a>
   <h4 id="Java_Util_Zip_Checksum_Update_System_Byte___System_Int32_System_Int32_" data-uid="Java.Util.Zip.Checksum.Update(System.Byte[],System.Int32,System.Int32)">Update(Byte[], Int32, Int32)</h4>
@@ -761,7 +765,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Zip_Checksum_Update_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Zip.Checksum.Update(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L76">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L124">View Source</a>
   </span>
   <a id="Java_Util_Zip_Checksum_Update_" data-uid="Java.Util.Zip.Checksum.Update*"></a>
   <h4 id="Java_Util_Zip_Checksum_Update_System_Int32_" data-uid="Java.Util.Zip.Checksum.Update(System.Int32)">Update(Int32)</h4>
@@ -809,9 +813,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Util.Zip.IChecksum.html">IChecksum</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -824,7 +831,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Zip_Checksum.md&amp;value=---%0Auid%3A%20Java.Util.Zip.Checksum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Zip/Checksum.cs/#L77" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

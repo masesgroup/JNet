@@ -85,6 +85,7 @@
     <div class="level4"><a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></div>
     <div class="level5"><span class="xref">CharacterIterator</span></div>
       <div class="level6"><a class="xref" href="Java.Text.AttributedCharacterIterator.html">AttributedCharacterIterator</a></div>
+      <div class="level6"><a class="xref" href="Java.Text.StringCharacterIterator.html">StringCharacterIterator</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -94,6 +95,8 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Text.ICharacterIterator.html">ICharacterIterator</a></div>
+    <div><a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -375,7 +378,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Text_CharacterIterator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CharacterIterator : Cloneable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class CharacterIterator : Cloneable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ICharacterIterator, ICloneable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -435,7 +438,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator_BeginIndex.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator.BeginIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L111">View Source</a>
   </span>
   <a id="Java_Text_CharacterIterator_BeginIndex_" data-uid="Java.Text.CharacterIterator.BeginIndex*"></a>
   <h4 id="Java_Text_CharacterIterator_BeginIndex" data-uid="Java.Text.CharacterIterator.BeginIndex">BeginIndex</h4>
@@ -499,7 +502,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator_Current.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator.Current%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L62">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L118">View Source</a>
   </span>
   <a id="Java_Text_CharacterIterator_Current_" data-uid="Java.Text.CharacterIterator.Current*"></a>
   <h4 id="Java_Text_CharacterIterator_Current" data-uid="Java.Text.CharacterIterator.Current">Current</h4>
@@ -530,7 +533,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator_DONE.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator.DONE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L99">View Source</a>
   </span>
   <a id="Java_Text_CharacterIterator_DONE_" data-uid="Java.Text.CharacterIterator.DONE*"></a>
   <h4 id="Java_Text_CharacterIterator_DONE" data-uid="Java.Text.CharacterIterator.DONE">DONE</h4>
@@ -561,7 +564,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator_EndIndex.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator.EndIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L69">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L125">View Source</a>
   </span>
   <a id="Java_Text_CharacterIterator_EndIndex_" data-uid="Java.Text.CharacterIterator.EndIndex*"></a>
   <h4 id="Java_Text_CharacterIterator_EndIndex" data-uid="Java.Text.CharacterIterator.EndIndex">EndIndex</h4>
@@ -592,7 +595,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator_First.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator.First%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L76">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L132">View Source</a>
   </span>
   <a id="Java_Text_CharacterIterator_First_" data-uid="Java.Text.CharacterIterator.First*"></a>
   <h4 id="Java_Text_CharacterIterator_First" data-uid="Java.Text.CharacterIterator.First">First</h4>
@@ -623,7 +626,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator_Index.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator.Index%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L83">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L139">View Source</a>
   </span>
   <a id="Java_Text_CharacterIterator_Index_" data-uid="Java.Text.CharacterIterator.Index*"></a>
   <h4 id="Java_Text_CharacterIterator_Index" data-uid="Java.Text.CharacterIterator.Index">Index</h4>
@@ -786,7 +789,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator_Last.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator.Last%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L90">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L146">View Source</a>
   </span>
   <a id="Java_Text_CharacterIterator_Last_" data-uid="Java.Text.CharacterIterator.Last*"></a>
   <h4 id="Java_Text_CharacterIterator_Last" data-uid="Java.Text.CharacterIterator.Last">Last</h4>
@@ -817,7 +820,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator_Next.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator.Next%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L153">View Source</a>
   </span>
   <a id="Java_Text_CharacterIterator_Next_" data-uid="Java.Text.CharacterIterator.Next*"></a>
   <h4 id="Java_Text_CharacterIterator_Next" data-uid="Java.Text.CharacterIterator.Next">Next</h4>
@@ -848,7 +851,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator_Previous.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator.Previous%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L104">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L160">View Source</a>
   </span>
   <a id="Java_Text_CharacterIterator_Previous_" data-uid="Java.Text.CharacterIterator.Previous*"></a>
   <h4 id="Java_Text_CharacterIterator_Previous" data-uid="Java.Text.CharacterIterator.Previous">Previous</h4>
@@ -881,7 +884,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator_SetIndex_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator.SetIndex(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L113">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L169">View Source</a>
   </span>
   <a id="Java_Text_CharacterIterator_SetIndex_" data-uid="Java.Text.CharacterIterator.SetIndex*"></a>
   <h4 id="Java_Text_CharacterIterator_SetIndex_System_Int32_" data-uid="Java.Text.CharacterIterator.SetIndex(System.Int32)">SetIndex(Int32)</h4>
@@ -945,9 +948,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Text.ICharacterIterator.html">ICharacterIterator</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -960,7 +969,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Text_CharacterIterator.md&amp;value=---%0Auid%3A%20Java.Text.CharacterIterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Text/CharacterIterator.cs/#L85" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

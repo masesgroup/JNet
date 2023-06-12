@@ -83,7 +83,8 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span>&gt;</div>
     <div class="level4"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span></div>
-    <div class="level5"><span class="xref">TreeModelListener</span></div>
+    <div class="level5"><a class="xref" href="Java.Util.EventListener.html">EventListener</a></div>
+    <div class="level6"><span class="xref">TreeModelListener</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -93,6 +94,8 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></div>
+    <div><a class="xref" href="Javax.Swing.Event.ITreeModelListener.html">ITreeModelListener</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -398,8 +401,164 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Swing_Event_TreeModelListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TreeModelListener : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class TreeModelListener : EventListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEventListener, ITreeModelListener</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Event_TreeModelListener__ctor.md&amp;value=---%0Auid%3A%20Javax.Swing.Event.TreeModelListener.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/AllPackageClasses.cs/#L1386">View Source</a>
+  </span>
+  <a id="Javax_Swing_Event_TreeModelListener__ctor_" data-uid="Javax.Swing.Event.TreeModelListener.#ctor*"></a>
+  <h4 id="Javax_Swing_Event_TreeModelListener__ctor" data-uid="Javax.Swing.Event.TreeModelListener.#ctor">TreeModelListener()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TreeModelListener()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Event_TreeModelListener_TreeNodesChanged_Javax_Swing_Event_TreeModelEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Event.TreeModelListener.TreeNodesChanged(Javax.Swing.Event.TreeModelEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/TreeModelListener.cs/#L90">View Source</a>
+  </span>
+  <a id="Javax_Swing_Event_TreeModelListener_TreeNodesChanged_" data-uid="Javax.Swing.Event.TreeModelListener.TreeNodesChanged*"></a>
+  <h4 id="Javax_Swing_Event_TreeModelListener_TreeNodesChanged_Javax_Swing_Event_TreeModelEvent_" data-uid="Javax.Swing.Event.TreeModelListener.TreeNodesChanged(Javax.Swing.Event.TreeModelEvent)">TreeNodesChanged(TreeModelEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesChanged(javax.swing.event.TreeModelEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesChanged(javax.swing.event.TreeModelEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TreeNodesChanged(TreeModelEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.TreeModelEvent.html">TreeModelEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Javax.Swing.Event.TreeModelEvent.html">TreeModelEvent</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Event_TreeModelListener_TreeNodesInserted_Javax_Swing_Event_TreeModelEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Event.TreeModelListener.TreeNodesInserted(Javax.Swing.Event.TreeModelEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/TreeModelListener.cs/#L98">View Source</a>
+  </span>
+  <a id="Javax_Swing_Event_TreeModelListener_TreeNodesInserted_" data-uid="Javax.Swing.Event.TreeModelListener.TreeNodesInserted*"></a>
+  <h4 id="Javax_Swing_Event_TreeModelListener_TreeNodesInserted_Javax_Swing_Event_TreeModelEvent_" data-uid="Javax.Swing.Event.TreeModelListener.TreeNodesInserted(Javax.Swing.Event.TreeModelEvent)">TreeNodesInserted(TreeModelEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesInserted(javax.swing.event.TreeModelEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesInserted(javax.swing.event.TreeModelEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TreeNodesInserted(TreeModelEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.TreeModelEvent.html">TreeModelEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Javax.Swing.Event.TreeModelEvent.html">TreeModelEvent</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Event_TreeModelListener_TreeNodesRemoved_Javax_Swing_Event_TreeModelEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Event.TreeModelListener.TreeNodesRemoved(Javax.Swing.Event.TreeModelEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/TreeModelListener.cs/#L106">View Source</a>
+  </span>
+  <a id="Javax_Swing_Event_TreeModelListener_TreeNodesRemoved_" data-uid="Javax.Swing.Event.TreeModelListener.TreeNodesRemoved*"></a>
+  <h4 id="Javax_Swing_Event_TreeModelListener_TreeNodesRemoved_Javax_Swing_Event_TreeModelEvent_" data-uid="Javax.Swing.Event.TreeModelListener.TreeNodesRemoved(Javax.Swing.Event.TreeModelEvent)">TreeNodesRemoved(TreeModelEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TreeNodesRemoved(TreeModelEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.TreeModelEvent.html">TreeModelEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Javax.Swing.Event.TreeModelEvent.html">TreeModelEvent</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Event_TreeModelListener_TreeStructureChanged_Javax_Swing_Event_TreeModelEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Event.TreeModelListener.TreeStructureChanged(Javax.Swing.Event.TreeModelEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/TreeModelListener.cs/#L114">View Source</a>
+  </span>
+  <a id="Javax_Swing_Event_TreeModelListener_TreeStructureChanged_" data-uid="Javax.Swing.Event.TreeModelListener.TreeStructureChanged*"></a>
+  <h4 id="Javax_Swing_Event_TreeModelListener_TreeStructureChanged_Javax_Swing_Event_TreeModelEvent_" data-uid="Javax.Swing.Event.TreeModelListener.TreeStructureChanged(Javax.Swing.Event.TreeModelEvent)">TreeStructureChanged(TreeModelEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeStructureChanged(javax.swing.event.TreeModelEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeStructureChanged(javax.swing.event.TreeModelEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void TreeStructureChanged(TreeModelEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.TreeModelEvent.html">TreeModelEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Javax.Swing.Event.TreeModelEvent.html">TreeModelEvent</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
@@ -419,9 +578,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Util.IEventListener.html">IEventListener</a>
+  </div>
+  <div>
+      <a class="xref" href="Javax.Swing.Event.ITreeModelListener.html">ITreeModelListener</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -434,7 +599,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Event_TreeModelListener.md&amp;value=---%0Auid%3A%20Javax.Swing.Event.TreeModelListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/AllPackageClasses.cs/#L1281" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Event/TreeModelListener.cs/#L67" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

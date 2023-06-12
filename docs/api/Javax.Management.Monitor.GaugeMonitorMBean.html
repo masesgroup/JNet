@@ -93,6 +93,8 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Management.Monitor.IGaugeMonitorMBean.html">IGaugeMonitorMBean</a></div>
+    <div><a class="xref" href="Javax.Management.Monitor.IMonitorMBean.html">IMonitorMBean</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -401,7 +403,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Management_Monitor_GaugeMonitorMBean_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GaugeMonitorMBean : MonitorMBean, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class GaugeMonitorMBean : MonitorMBean, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IGaugeMonitorMBean, IMonitorMBean</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -494,7 +496,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Monitor_GaugeMonitorMBean_DifferenceMode.md&amp;value=---%0Auid%3A%20Javax.Management.Monitor.GaugeMonitorMBean.DifferenceMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L108">View Source</a>
   </span>
   <a id="Javax_Management_Monitor_GaugeMonitorMBean_DifferenceMode_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.DifferenceMode*"></a>
   <h4 id="Javax_Management_Monitor_GaugeMonitorMBean_DifferenceMode" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.DifferenceMode">DifferenceMode</h4>
@@ -525,7 +527,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Monitor_GaugeMonitorMBean_HighThreshold.md&amp;value=---%0Auid%3A%20Javax.Management.Monitor.GaugeMonitorMBean.HighThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L115">View Source</a>
   </span>
   <a id="Javax_Management_Monitor_GaugeMonitorMBean_HighThreshold_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.HighThreshold*"></a>
   <h4 id="Javax_Management_Monitor_GaugeMonitorMBean_HighThreshold" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.HighThreshold">HighThreshold</h4>
@@ -688,7 +690,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Monitor_GaugeMonitorMBean_LowThreshold.md&amp;value=---%0Auid%3A%20Javax.Management.Monitor.GaugeMonitorMBean.LowThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L122">View Source</a>
   </span>
   <a id="Javax_Management_Monitor_GaugeMonitorMBean_LowThreshold_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.LowThreshold*"></a>
   <h4 id="Javax_Management_Monitor_GaugeMonitorMBean_LowThreshold" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.LowThreshold">LowThreshold</h4>
@@ -719,7 +721,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Monitor_GaugeMonitorMBean_NotifyHigh.md&amp;value=---%0Auid%3A%20Javax.Management.Monitor.GaugeMonitorMBean.NotifyHigh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L129">View Source</a>
   </span>
   <a id="Javax_Management_Monitor_GaugeMonitorMBean_NotifyHigh_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.NotifyHigh*"></a>
   <h4 id="Javax_Management_Monitor_GaugeMonitorMBean_NotifyHigh" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.NotifyHigh">NotifyHigh</h4>
@@ -750,7 +752,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Monitor_GaugeMonitorMBean_NotifyLow.md&amp;value=---%0Auid%3A%20Javax.Management.Monitor.GaugeMonitorMBean.NotifyLow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L136">View Source</a>
   </span>
   <a id="Javax_Management_Monitor_GaugeMonitorMBean_NotifyLow_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.NotifyLow*"></a>
   <h4 id="Javax_Management_Monitor_GaugeMonitorMBean_NotifyLow" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.NotifyLow">NotifyLow</h4>
@@ -783,7 +785,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Monitor_GaugeMonitorMBean_GetDerivedGauge_Javax_Management_ObjectName_.md&amp;value=---%0Auid%3A%20Javax.Management.Monitor.GaugeMonitorMBean.GetDerivedGauge(Javax.Management.ObjectName)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L88">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L145">View Source</a>
   </span>
   <a id="Javax_Management_Monitor_GaugeMonitorMBean_GetDerivedGauge_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.GetDerivedGauge*"></a>
   <h4 id="Javax_Management_Monitor_GaugeMonitorMBean_GetDerivedGauge_Javax_Management_ObjectName_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.GetDerivedGauge(Javax.Management.ObjectName)">GetDerivedGauge(ObjectName)</h4>
@@ -833,7 +835,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Monitor_GaugeMonitorMBean_GetDerivedGaugeTimeStamp_Javax_Management_ObjectName_.md&amp;value=---%0Auid%3A%20Javax.Management.Monitor.GaugeMonitorMBean.GetDerivedGaugeTimeStamp(Javax.Management.ObjectName)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L154">View Source</a>
   </span>
   <a id="Javax_Management_Monitor_GaugeMonitorMBean_GetDerivedGaugeTimeStamp_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.GetDerivedGaugeTimeStamp*"></a>
   <h4 id="Javax_Management_Monitor_GaugeMonitorMBean_GetDerivedGaugeTimeStamp_Javax_Management_ObjectName_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.GetDerivedGaugeTimeStamp(Javax.Management.ObjectName)">GetDerivedGaugeTimeStamp(ObjectName)</h4>
@@ -883,7 +885,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Monitor_GaugeMonitorMBean_SetThresholds_Java_Lang_Number_Java_Lang_Number_.md&amp;value=---%0Auid%3A%20Javax.Management.Monitor.GaugeMonitorMBean.SetThresholds(Java.Lang.Number%2CJava.Lang.Number)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L107">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L164">View Source</a>
   </span>
   <a id="Javax_Management_Monitor_GaugeMonitorMBean_SetThresholds_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.SetThresholds*"></a>
   <h4 id="Javax_Management_Monitor_GaugeMonitorMBean_SetThresholds_Java_Lang_Number_Java_Lang_Number_" data-uid="Javax.Management.Monitor.GaugeMonitorMBean.SetThresholds(Java.Lang.Number,Java.Lang.Number)">SetThresholds(Number, Number)</h4>
@@ -952,9 +954,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Management.Monitor.IGaugeMonitorMBean.html">IGaugeMonitorMBean</a>
+  </div>
+  <div>
+      <a class="xref" href="Javax.Management.Monitor.IMonitorMBean.html">IMonitorMBean</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -967,7 +975,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Monitor_GaugeMonitorMBean.md&amp;value=---%0Auid%3A%20Javax.Management.Monitor.GaugeMonitorMBean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Monitor/GaugeMonitorMBean.cs/#L86" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

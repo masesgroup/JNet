@@ -103,6 +103,9 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;E&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;E&gt;</div>
+    <div><a class="xref" href="Java.Util.Concurrent.IBlockingQueue-1.html">IBlockingQueue</a>&lt;E&gt;</div>
+    <div><a class="xref" href="Java.Util.IQueue-1.html">IQueue</a>&lt;E&gt;</div>
+    <div><a class="xref" href="Java.Util.ICollection-1.html">ICollection</a>&lt;E&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -143,13 +146,13 @@
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_AddAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.AddAll&lt;Arg0ExtendsE&gt;(Collection&lt;Arg0ExtendsE&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ContainsAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.ContainsAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</a>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ContainsAll_Java_Util_Collection_System_Object__">Collection&lt;E&gt;.ContainsAll(Collection&lt;Object&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.RemoveAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</a>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveAll_Java_Util_Collection_System_Object__">Collection&lt;E&gt;.RemoveAll(Collection&lt;Object&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RetainAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.RetainAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</a>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RetainAll_Java_Util_Collection_System_Object__">Collection&lt;E&gt;.RetainAll(Collection&lt;Object&gt;)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ToArray">Collection&lt;E&gt;.ToArray()</a>
@@ -459,7 +462,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Util_Concurrent_BlockingQueue_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BlockingQueue&lt;E&gt; : Queue&lt;E&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;E&gt;, IEnumerable, IAsyncEnumerable&lt;E&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class BlockingQueue&lt;E&gt; : Queue&lt;E&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;E&gt;, IEnumerable, IAsyncEnumerable&lt;E&gt;, IBlockingQueue&lt;E&gt;, IQueue&lt;E&gt;, ICollection&lt;E&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -699,7 +702,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_RemainingCapacity.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.RemainingCapacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L187">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L275">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_RemainingCapacity_" data-uid="Java.Util.Concurrent.BlockingQueue`1.RemainingCapacity*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_RemainingCapacity" data-uid="Java.Util.Concurrent.BlockingQueue`1.RemainingCapacity">RemainingCapacity</h4>
@@ -730,7 +733,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_Take.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.Take%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L194">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L282">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_Take_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Take*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_Take" data-uid="Java.Util.Concurrent.BlockingQueue`1.Take">Take</h4>
@@ -763,7 +766,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_Add__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.Add(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L203">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L291">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_Add_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Add*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_Add__0_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Add(`0)">Add(E)</h4>
@@ -813,7 +816,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_Contains_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.Contains(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L212">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L300">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_Contains_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Contains*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_Contains_System_Object_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Contains(System.Object)">Contains(Object)</h4>
@@ -863,7 +866,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_DrainTo__1_Java_Util_Collection___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.DrainTo%60%601(Java.Util.Collection%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L274">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L362">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_DrainTo_" data-uid="Java.Util.Concurrent.BlockingQueue`1.DrainTo*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_DrainTo__1_Java_Util_Collection___0__" data-uid="Java.Util.Concurrent.BlockingQueue`1.DrainTo``1(Java.Util.Collection{``0})">DrainTo&lt;Arg0objectSuperE&gt;(Collection&lt;Arg0objectSuperE&gt;)</h4>
@@ -930,7 +933,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_DrainTo__1_Java_Util_Collection___0__System_Int32_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.DrainTo%60%601(Java.Util.Collection%7B%60%600%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L264">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L352">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_DrainTo_" data-uid="Java.Util.Concurrent.BlockingQueue`1.DrainTo*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_DrainTo__1_Java_Util_Collection___0__System_Int32_" data-uid="Java.Util.Concurrent.BlockingQueue`1.DrainTo``1(Java.Util.Collection{``0},System.Int32)">DrainTo&lt;Arg0objectSuperE&gt;(Collection&lt;Arg0objectSuperE&gt;, Int32)</h4>
@@ -1003,7 +1006,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_Offer__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.Offer(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L233">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L321">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_Offer_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Offer*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_Offer__0_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Offer(`0)">Offer(E)</h4>
@@ -1053,7 +1056,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_Offer__0_System_Int64_Java_Util_Concurrent_TimeUnit_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.Offer(%600%2CSystem.Int64%2CJava.Util.Concurrent.TimeUnit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L224">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L312">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_Offer_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Offer*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_Offer__0_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Offer(`0,System.Int64,Java.Util.Concurrent.TimeUnit)">Offer(E, Int64, TimeUnit)</h4>
@@ -1130,7 +1133,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_Poll_System_Int64_Java_Util_Concurrent_TimeUnit_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.Poll(System.Int64%2CJava.Util.Concurrent.TimeUnit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L253">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L341">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_Poll_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Poll*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_Poll_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Poll(System.Int64,Java.Util.Concurrent.TimeUnit)">Poll(Int64, TimeUnit)</h4>
@@ -1201,7 +1204,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_Put__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.Put(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L283">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L371">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_Put_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Put*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_Put__0_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Put(`0)">Put(E)</h4>
@@ -1250,7 +1253,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_Remove_System_Object_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.Remove(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L242">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L330">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_Remove_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Remove*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_Remove_System_Object_" data-uid="Java.Util.Concurrent.BlockingQueue`1.Remove(System.Object)">Remove(Object)</h4>
@@ -1302,7 +1305,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1_op_Implicit_Java_Util_Concurrent_BlockingQueue__0___Java_Util_Concurrent_BlockingQueue.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601.op_Implicit(Java.Util.Concurrent.BlockingQueue%7B%600%7D)~Java.Util.Concurrent.BlockingQueue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L171">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L259">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_BlockingQueue_1_op_Implicit_" data-uid="Java.Util.Concurrent.BlockingQueue`1.op_Implicit*"></a>
   <h4 id="Java_Util_Concurrent_BlockingQueue_1_op_Implicit_Java_Util_Concurrent_BlockingQueue__0___Java_Util_Concurrent_BlockingQueue" data-uid="Java.Util.Concurrent.BlockingQueue`1.op_Implicit(Java.Util.Concurrent.BlockingQueue{`0})~Java.Util.Concurrent.BlockingQueue">Implicit(BlockingQueue&lt;E&gt; to BlockingQueue)</h4>
@@ -1376,15 +1379,24 @@
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">System.Collections.Generic.IAsyncEnumerable&lt;T&gt;</a>
   </div>
+  <div>
+      <a class="xref" href="Java.Util.Concurrent.IBlockingQueue-1.html">IBlockingQueue&lt;E&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Util.IQueue-1.html">IQueue&lt;E&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Util.ICollection-1.html">ICollection&lt;E&gt;</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToCollection__1_Java_Util_Collection___0__">JavaUtilExtensions.ToCollection&lt;T&gt;(Collection&lt;T&gt;)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToCollection__1_Java_Util_Collection___0__">JavaUtilExtensions.ToCollection&lt;T&gt;(Collection&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToList__1_Java_Util_Collection___0__">JavaUtilExtensions.ToList&lt;T&gt;(Collection&lt;T&gt;)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToList__1_Java_Util_Collection___0__">JavaUtilExtensions.ToList&lt;T&gt;(Collection&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1397,7 +1409,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_BlockingQueue_1.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.BlockingQueue%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L161" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/BlockingQueue.cs/#L249" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

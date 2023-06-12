@@ -93,11 +93,13 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Naming.Spi.IDirObjectFactory.html">IDirObjectFactory</a></div>
+    <div><a class="xref" href="Javax.Naming.Spi.IObjectFactory.html">IObjectFactory</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Javax.Naming.Spi.ObjectFactory.html#Javax_Naming_Spi_ObjectFactory_GetObjectInstance__1_System_Object_Javax_Naming_Name_Javax_Naming_Context_Java_Util_Hashtable___0___0__">ObjectFactory.GetObjectInstance&lt;Arg3Extendsobject&gt;(Object, Name, Context, Hashtable&lt;Arg3Extendsobject, Arg3Extendsobject&gt;)</a>
+      <a class="xref" href="Javax.Naming.Spi.ObjectFactory.html#Javax_Naming_Spi_ObjectFactory_GetObjectInstance_System_Object_Javax_Naming_Name_Javax_Naming_Context_Java_Util_Hashtable_System_Object_System_Object__">ObjectFactory.GetObjectInstance(Object, Name, Context, Hashtable&lt;Object, Object&gt;)</a>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Javax.Naming.Spi.ObjectFactory&gt;.SExecute(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
@@ -377,7 +379,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Naming_Spi_DirObjectFactory_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DirObjectFactory : ObjectFactory, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class DirObjectFactory : ObjectFactory, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IDirObjectFactory, IObjectFactory</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -601,19 +603,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Spi_DirObjectFactory_GetObjectInstance__1_System_Object_Javax_Naming_Name_Javax_Naming_Context_Java_Util_Hashtable___0___0__Javax_Naming_Directory_Attributes_.md&amp;value=---%0Auid%3A%20Javax.Naming.Spi.DirObjectFactory.GetObjectInstance%60%601(System.Object%2CJavax.Naming.Name%2CJavax.Naming.Context%2CJava.Util.Hashtable%7B%60%600%2C%60%600%7D%2CJavax.Naming.Directory.Attributes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Spi_DirObjectFactory_GetObjectInstance_System_Object_Javax_Naming_Name_Javax_Naming_Context_Java_Util_Hashtable_System_Object_System_Object__Javax_Naming_Directory_Attributes_.md&amp;value=---%0Auid%3A%20Javax.Naming.Spi.DirObjectFactory.GetObjectInstance(System.Object%2CJavax.Naming.Name%2CJavax.Naming.Context%2CJava.Util.Hashtable%7BSystem.Object%2CSystem.Object%7D%2CJavax.Naming.Directory.Attributes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Spi/DirObjectFactory.cs/#L59">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Spi/DirObjectFactory.cs/#L87">View Source</a>
   </span>
   <a id="Javax_Naming_Spi_DirObjectFactory_GetObjectInstance_" data-uid="Javax.Naming.Spi.DirObjectFactory.GetObjectInstance*"></a>
-  <h4 id="Javax_Naming_Spi_DirObjectFactory_GetObjectInstance__1_System_Object_Javax_Naming_Name_Javax_Naming_Context_Java_Util_Hashtable___0___0__Javax_Naming_Directory_Attributes_" data-uid="Javax.Naming.Spi.DirObjectFactory.GetObjectInstance``1(System.Object,Javax.Naming.Name,Javax.Naming.Context,Java.Util.Hashtable{``0,``0},Javax.Naming.Directory.Attributes)">GetObjectInstance&lt;Arg3Extendsobject&gt;(Object, Name, Context, Hashtable&lt;Arg3Extendsobject, Arg3Extendsobject&gt;, Attributes)</h4>
+  <h4 id="Javax_Naming_Spi_DirObjectFactory_GetObjectInstance_System_Object_Javax_Naming_Name_Javax_Naming_Context_Java_Util_Hashtable_System_Object_System_Object__Javax_Naming_Directory_Attributes_" data-uid="Javax.Naming.Spi.DirObjectFactory.GetObjectInstance(System.Object,Javax.Naming.Name,Javax.Naming.Context,Java.Util.Hashtable{System.Object,System.Object},Javax.Naming.Directory.Attributes)">GetObjectInstance(Object, Name, Context, Hashtable&lt;Object, Object&gt;, Attributes)</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirObjectFactory.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)">https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirObjectFactory.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable,javax.naming.directory.Attributes)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object GetObjectInstance&lt;Arg3Extendsobject&gt;(object arg0, Name arg1, Context arg2, Hashtable&lt;Arg3Extendsobject, Arg3Extendsobject&gt; arg3, Attributes arg4)</code></pre>
+    <pre><code class="lang-csharp hljs">public object GetObjectInstance(object arg0, Name arg1, Context arg2, Hashtable&lt;object, object&gt; arg3, Attributes arg4)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -644,7 +646,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Util.Hashtable-2.html">Hashtable</a>&lt;Arg3Extendsobject, Arg3Extendsobject&gt;</td>
+        <td><a class="xref" href="Java.Util.Hashtable-2.html">Hashtable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
         <td><span class="parametername">arg3</span></td>
         <td><p><a class="xref" href="Java.Util.Hashtable.html">Hashtable</a></p>
 </td>
@@ -670,21 +672,6 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">Arg3Extendsobject</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -722,9 +709,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Naming.Spi.IDirObjectFactory.html">IDirObjectFactory</a>
+  </div>
+  <div>
+      <a class="xref" href="Javax.Naming.Spi.IObjectFactory.html">IObjectFactory</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -737,7 +730,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Spi_DirObjectFactory.md&amp;value=---%0Auid%3A%20Javax.Naming.Spi.DirObjectFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Spi/DirObjectFactory.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Spi/DirObjectFactory.cs/#L58" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

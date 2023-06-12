@@ -83,6 +83,7 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Beans.PropertyEditor.html">PropertyEditor</a>&gt;</div>
     <div class="level4"><span class="xref">PropertyEditor</span></div>
+      <div class="level5"><a class="xref" href="Java.Beans.PropertyEditorSupport.html">PropertyEditorSupport</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -92,6 +93,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Beans.IPropertyEditor.html">IPropertyEditor</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -373,7 +375,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Beans_PropertyEditor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PropertyEditor : JVMBridgeBase&lt;PropertyEditor&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class PropertyEditor : JVMBridgeBase&lt;PropertyEditor&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IPropertyEditor</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -382,7 +384,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor__ctor.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1111">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1121">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor__ctor_" data-uid="Java.Beans.PropertyEditor.#ctor*"></a>
   <h4 id="Java_Beans_PropertyEditor__ctor" data-uid="Java.Beans.PropertyEditor.#ctor">PropertyEditor()</h4>
@@ -398,7 +400,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1115">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1125">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor__ctor_" data-uid="Java.Beans.PropertyEditor.#ctor*"></a>
   <h4 id="Java_Beans_PropertyEditor__ctor_System_Object___" data-uid="Java.Beans.PropertyEditor.#ctor(System.Object[])">PropertyEditor(Object[])</h4>
@@ -433,7 +435,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_AsText.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.AsText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L113">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_AsText_" data-uid="Java.Beans.PropertyEditor.AsText*"></a>
   <h4 id="Java_Beans_PropertyEditor_AsText" data-uid="Java.Beans.PropertyEditor.AsText">AsText</h4>
@@ -464,7 +466,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1122">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1132">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_BridgeClassName_" data-uid="Java.Beans.PropertyEditor.BridgeClassName*"></a>
   <h4 id="Java_Beans_PropertyEditor_BridgeClassName" data-uid="Java.Beans.PropertyEditor.BridgeClassName">BridgeClassName</h4>
@@ -497,7 +499,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_CustomEditor.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.CustomEditor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L120">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_CustomEditor_" data-uid="Java.Beans.PropertyEditor.CustomEditor*"></a>
   <h4 id="Java_Beans_PropertyEditor_CustomEditor" data-uid="Java.Beans.PropertyEditor.CustomEditor">CustomEditor</h4>
@@ -528,7 +530,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1126">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1136">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_IsBridgeAbstract_" data-uid="Java.Beans.PropertyEditor.IsBridgeAbstract*"></a>
   <h4 id="Java_Beans_PropertyEditor_IsBridgeAbstract" data-uid="Java.Beans.PropertyEditor.IsBridgeAbstract">IsBridgeAbstract</h4>
@@ -561,7 +563,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1130">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1140">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_IsBridgeCloseable_" data-uid="Java.Beans.PropertyEditor.IsBridgeCloseable*"></a>
   <h4 id="Java_Beans_PropertyEditor_IsBridgeCloseable" data-uid="Java.Beans.PropertyEditor.IsBridgeCloseable">IsBridgeCloseable</h4>
@@ -594,7 +596,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1134">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1144">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_IsBridgeInterface_" data-uid="Java.Beans.PropertyEditor.IsBridgeInterface*"></a>
   <h4 id="Java_Beans_PropertyEditor_IsBridgeInterface" data-uid="Java.Beans.PropertyEditor.IsBridgeInterface">IsBridgeInterface</h4>
@@ -627,7 +629,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1138">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/AllPackageClasses.cs/#L1148">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_IsBridgeStatic_" data-uid="Java.Beans.PropertyEditor.IsBridgeStatic*"></a>
   <h4 id="Java_Beans_PropertyEditor_IsBridgeStatic" data-uid="Java.Beans.PropertyEditor.IsBridgeStatic">IsBridgeStatic</h4>
@@ -660,7 +662,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_IsPaintable.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.IsPaintable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L127">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_IsPaintable_" data-uid="Java.Beans.PropertyEditor.IsPaintable*"></a>
   <h4 id="Java_Beans_PropertyEditor_IsPaintable" data-uid="Java.Beans.PropertyEditor.IsPaintable">IsPaintable</h4>
@@ -691,7 +693,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_JavaInitializationString.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.JavaInitializationString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L134">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_JavaInitializationString_" data-uid="Java.Beans.PropertyEditor.JavaInitializationString*"></a>
   <h4 id="Java_Beans_PropertyEditor_JavaInitializationString" data-uid="Java.Beans.PropertyEditor.JavaInitializationString">JavaInitializationString</h4>
@@ -722,7 +724,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_SupportsCustomEditor.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.SupportsCustomEditor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L141">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_SupportsCustomEditor_" data-uid="Java.Beans.PropertyEditor.SupportsCustomEditor*"></a>
   <h4 id="Java_Beans_PropertyEditor_SupportsCustomEditor" data-uid="Java.Beans.PropertyEditor.SupportsCustomEditor">SupportsCustomEditor</h4>
@@ -753,7 +755,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_Tags.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.Tags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L86">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L148">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_Tags_" data-uid="Java.Beans.PropertyEditor.Tags*"></a>
   <h4 id="Java_Beans_PropertyEditor_Tags" data-uid="Java.Beans.PropertyEditor.Tags">Tags</h4>
@@ -784,7 +786,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_Value.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L93">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L155">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_Value_" data-uid="Java.Beans.PropertyEditor.Value*"></a>
   <h4 id="Java_Beans_PropertyEditor_Value" data-uid="Java.Beans.PropertyEditor.Value">Value</h4>
@@ -817,7 +819,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_AddPropertyChangeListener_Java_Beans_PropertyChangeListener_.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.AddPropertyChangeListener(Java.Beans.PropertyChangeListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L101">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L163">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_AddPropertyChangeListener_" data-uid="Java.Beans.PropertyEditor.AddPropertyChangeListener*"></a>
   <h4 id="Java_Beans_PropertyEditor_AddPropertyChangeListener_Java_Beans_PropertyChangeListener_" data-uid="Java.Beans.PropertyEditor.AddPropertyChangeListener(Java.Beans.PropertyChangeListener)">AddPropertyChangeListener(PropertyChangeListener)</h4>
@@ -851,7 +853,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_PaintValue_Java_Awt_Graphics_Java_Awt_Rectangle_.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.PaintValue(Java.Awt.Graphics%2CJava.Awt.Rectangle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L110">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L172">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_PaintValue_" data-uid="Java.Beans.PropertyEditor.PaintValue*"></a>
   <h4 id="Java_Beans_PropertyEditor_PaintValue_Java_Awt_Graphics_Java_Awt_Rectangle_" data-uid="Java.Beans.PropertyEditor.PaintValue(Java.Awt.Graphics,Java.Awt.Rectangle)">PaintValue(Graphics, Rectangle)</h4>
@@ -891,7 +893,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor_RemovePropertyChangeListener_Java_Beans_PropertyChangeListener_.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor.RemovePropertyChangeListener(Java.Beans.PropertyChangeListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L118">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L180">View Source</a>
   </span>
   <a id="Java_Beans_PropertyEditor_RemovePropertyChangeListener_" data-uid="Java.Beans.PropertyEditor.RemovePropertyChangeListener*"></a>
   <h4 id="Java_Beans_PropertyEditor_RemovePropertyChangeListener_Java_Beans_PropertyChangeListener_" data-uid="Java.Beans.PropertyEditor.RemovePropertyChangeListener(Java.Beans.PropertyChangeListener)">RemovePropertyChangeListener(PropertyChangeListener)</h4>
@@ -939,9 +941,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Beans.IPropertyEditor.html">IPropertyEditor</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -954,7 +959,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_PropertyEditor.md&amp;value=---%0Auid%3A%20Java.Beans.PropertyEditor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/PropertyEditor.cs/#L91" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

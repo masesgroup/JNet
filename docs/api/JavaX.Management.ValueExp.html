@@ -84,6 +84,8 @@
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Io.Serializable.html">Serializable</a>&gt;</div>
     <div class="level4"><a class="xref" href="Java.Io.Serializable.html">Serializable</a></div>
     <div class="level5"><span class="xref">ValueExp</span></div>
+      <div class="level6"><a class="xref" href="Javax.Management.AttributeValueExp.html">AttributeValueExp</a></div>
+      <div class="level6"><a class="xref" href="Javax.Management.StringValueExp.html">StringValueExp</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -93,6 +95,8 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Management.IValueExp.html">IValueExp</a></div>
+    <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -374,7 +378,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Management_ValueExp_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ValueExp : Serializable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class ValueExp : Serializable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IValueExp, ISerializable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -383,7 +387,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_ValueExp__ctor.md&amp;value=---%0Auid%3A%20Javax.Management.ValueExp.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2436">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2446">View Source</a>
   </span>
   <a id="Javax_Management_ValueExp__ctor_" data-uid="Javax.Management.ValueExp.#ctor*"></a>
   <h4 id="Javax_Management_ValueExp__ctor" data-uid="Javax.Management.ValueExp.#ctor">ValueExp()</h4>
@@ -399,7 +403,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_ValueExp__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Javax.Management.ValueExp.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2440">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2450">View Source</a>
   </span>
   <a id="Javax_Management_ValueExp__ctor_" data-uid="Javax.Management.ValueExp.#ctor*"></a>
   <h4 id="Javax_Management_ValueExp__ctor_System_Object___" data-uid="Javax.Management.ValueExp.#ctor(System.Object[])">ValueExp(Object[])</h4>
@@ -434,7 +438,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_ValueExp_BridgeClassName.md&amp;value=---%0Auid%3A%20Javax.Management.ValueExp.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2447">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2457">View Source</a>
   </span>
   <a id="Javax_Management_ValueExp_BridgeClassName_" data-uid="Javax.Management.ValueExp.BridgeClassName*"></a>
   <h4 id="Javax_Management_ValueExp_BridgeClassName" data-uid="Javax.Management.ValueExp.BridgeClassName">BridgeClassName</h4>
@@ -467,7 +471,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_ValueExp_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Javax.Management.ValueExp.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2451">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2461">View Source</a>
   </span>
   <a id="Javax_Management_ValueExp_IsBridgeAbstract_" data-uid="Javax.Management.ValueExp.IsBridgeAbstract*"></a>
   <h4 id="Javax_Management_ValueExp_IsBridgeAbstract" data-uid="Javax.Management.ValueExp.IsBridgeAbstract">IsBridgeAbstract</h4>
@@ -500,7 +504,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_ValueExp_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Javax.Management.ValueExp.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2455">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2465">View Source</a>
   </span>
   <a id="Javax_Management_ValueExp_IsBridgeCloseable_" data-uid="Javax.Management.ValueExp.IsBridgeCloseable*"></a>
   <h4 id="Javax_Management_ValueExp_IsBridgeCloseable" data-uid="Javax.Management.ValueExp.IsBridgeCloseable">IsBridgeCloseable</h4>
@@ -533,7 +537,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_ValueExp_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Javax.Management.ValueExp.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2459">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2469">View Source</a>
   </span>
   <a id="Javax_Management_ValueExp_IsBridgeInterface_" data-uid="Javax.Management.ValueExp.IsBridgeInterface*"></a>
   <h4 id="Javax_Management_ValueExp_IsBridgeInterface" data-uid="Javax.Management.ValueExp.IsBridgeInterface">IsBridgeInterface</h4>
@@ -566,7 +570,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_ValueExp_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Javax.Management.ValueExp.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2463">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/AllPackageClasses.cs/#L2473">View Source</a>
   </span>
   <a id="Javax_Management_ValueExp_IsBridgeStatic_" data-uid="Javax.Management.ValueExp.IsBridgeStatic*"></a>
   <h4 id="Javax_Management_ValueExp_IsBridgeStatic" data-uid="Javax.Management.ValueExp.IsBridgeStatic">IsBridgeStatic</h4>
@@ -601,7 +605,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_ValueExp_Apply_Javax_Management_ObjectName_.md&amp;value=---%0Auid%3A%20Javax.Management.ValueExp.Apply(Javax.Management.ObjectName)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/ValueExp.cs/#L57">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/ValueExp.cs/#L85">View Source</a>
   </span>
   <a id="Javax_Management_ValueExp_Apply_" data-uid="Javax.Management.ValueExp.Apply*"></a>
   <h4 id="Javax_Management_ValueExp_Apply_Javax_Management_ObjectName_" data-uid="Javax.Management.ValueExp.Apply(Javax.Management.ObjectName)">Apply(ObjectName)</h4>
@@ -692,9 +696,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Management.IValueExp.html">IValueExp</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Io.ISerializable.html">ISerializable</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -707,7 +717,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_ValueExp.md&amp;value=---%0Auid%3A%20Javax.Management.ValueExp%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Javax/Management/ValueExp.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/ValueExp.cs/#L57" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

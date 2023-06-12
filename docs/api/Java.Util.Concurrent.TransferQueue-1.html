@@ -103,6 +103,10 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;E&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;E&gt;</div>
+    <div><a class="xref" href="Java.Util.Concurrent.ITransferQueue-1.html">ITransferQueue</a>&lt;E&gt;</div>
+    <div><a class="xref" href="Java.Util.Concurrent.IBlockingQueue-1.html">IBlockingQueue</a>&lt;E&gt;</div>
+    <div><a class="xref" href="Java.Util.IQueue-1.html">IQueue</a>&lt;E&gt;</div>
+    <div><a class="xref" href="Java.Util.ICollection-1.html">ICollection</a>&lt;E&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -176,13 +180,13 @@
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_AddAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.AddAll&lt;Arg0ExtendsE&gt;(Collection&lt;Arg0ExtendsE&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ContainsAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.ContainsAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</a>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ContainsAll_Java_Util_Collection_System_Object__">Collection&lt;E&gt;.ContainsAll(Collection&lt;Object&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.RemoveAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</a>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveAll_Java_Util_Collection_System_Object__">Collection&lt;E&gt;.RemoveAll(Collection&lt;Object&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RetainAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.RetainAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</a>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RetainAll_Java_Util_Collection_System_Object__">Collection&lt;E&gt;.RetainAll(Collection&lt;Object&gt;)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ToArray">Collection&lt;E&gt;.ToArray()</a>
@@ -492,7 +496,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Util_Concurrent_TransferQueue_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TransferQueue&lt;E&gt; : BlockingQueue&lt;E&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;E&gt;, IEnumerable, IAsyncEnumerable&lt;E&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class TransferQueue&lt;E&gt; : BlockingQueue&lt;E&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;E&gt;, IEnumerable, IAsyncEnumerable&lt;E&gt;, ITransferQueue&lt;E&gt;, IBlockingQueue&lt;E&gt;, IQueue&lt;E&gt;, ICollection&lt;E&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -600,7 +604,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_TransferQueue_1_HasWaitingConsumer.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.TransferQueue%601.HasWaitingConsumer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L130">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L177">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_TransferQueue_1_HasWaitingConsumer_" data-uid="Java.Util.Concurrent.TransferQueue`1.HasWaitingConsumer*"></a>
   <h4 id="Java_Util_Concurrent_TransferQueue_1_HasWaitingConsumer" data-uid="Java.Util.Concurrent.TransferQueue`1.HasWaitingConsumer">HasWaitingConsumer</h4>
@@ -763,7 +767,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_TransferQueue_1_WaitingConsumerCount.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.TransferQueue%601.WaitingConsumerCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L137">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L184">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_TransferQueue_1_WaitingConsumerCount_" data-uid="Java.Util.Concurrent.TransferQueue`1.WaitingConsumerCount*"></a>
   <h4 id="Java_Util_Concurrent_TransferQueue_1_WaitingConsumerCount" data-uid="Java.Util.Concurrent.TransferQueue`1.WaitingConsumerCount">WaitingConsumerCount</h4>
@@ -796,7 +800,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_TransferQueue_1_Transfer__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.TransferQueue%601.Transfer(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L167">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L214">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_TransferQueue_1_Transfer_" data-uid="Java.Util.Concurrent.TransferQueue`1.Transfer*"></a>
   <h4 id="Java_Util_Concurrent_TransferQueue_1_Transfer__0_" data-uid="Java.Util.Concurrent.TransferQueue`1.Transfer(`0)">Transfer(E)</h4>
@@ -845,7 +849,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_TransferQueue_1_TryTransfer__0_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.TransferQueue%601.TryTransfer(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L158">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L205">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_TransferQueue_1_TryTransfer_" data-uid="Java.Util.Concurrent.TransferQueue`1.TryTransfer*"></a>
   <h4 id="Java_Util_Concurrent_TransferQueue_1_TryTransfer__0_" data-uid="Java.Util.Concurrent.TransferQueue`1.TryTransfer(`0)">TryTransfer(E)</h4>
@@ -895,7 +899,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_TransferQueue_1_TryTransfer__0_System_Int64_Java_Util_Concurrent_TimeUnit_.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.TransferQueue%601.TryTransfer(%600%2CSystem.Int64%2CJava.Util.Concurrent.TimeUnit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L149">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L196">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_TransferQueue_1_TryTransfer_" data-uid="Java.Util.Concurrent.TransferQueue`1.TryTransfer*"></a>
   <h4 id="Java_Util_Concurrent_TransferQueue_1_TryTransfer__0_System_Int64_Java_Util_Concurrent_TimeUnit_" data-uid="Java.Util.Concurrent.TransferQueue`1.TryTransfer(`0,System.Int64,Java.Util.Concurrent.TimeUnit)">TryTransfer(E, Int64, TimeUnit)</h4>
@@ -974,7 +978,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_TransferQueue_1_op_Implicit_Java_Util_Concurrent_TransferQueue__0___Java_Util_Concurrent_TransferQueue.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.TransferQueue%601.op_Implicit(Java.Util.Concurrent.TransferQueue%7B%600%7D)~Java.Util.Concurrent.TransferQueue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L114">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L161">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_TransferQueue_1_op_Implicit_" data-uid="Java.Util.Concurrent.TransferQueue`1.op_Implicit*"></a>
   <h4 id="Java_Util_Concurrent_TransferQueue_1_op_Implicit_Java_Util_Concurrent_TransferQueue__0___Java_Util_Concurrent_TransferQueue" data-uid="Java.Util.Concurrent.TransferQueue`1.op_Implicit(Java.Util.Concurrent.TransferQueue{`0})~Java.Util.Concurrent.TransferQueue">Implicit(TransferQueue&lt;E&gt; to TransferQueue)</h4>
@@ -1048,15 +1052,27 @@
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">System.Collections.Generic.IAsyncEnumerable&lt;T&gt;</a>
   </div>
+  <div>
+      <a class="xref" href="Java.Util.Concurrent.ITransferQueue-1.html">ITransferQueue&lt;E&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Util.Concurrent.IBlockingQueue-1.html">IBlockingQueue&lt;E&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Util.IQueue-1.html">IQueue&lt;E&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Util.ICollection-1.html">ICollection&lt;E&gt;</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToCollection__1_Java_Util_Collection___0__">JavaUtilExtensions.ToCollection&lt;T&gt;(Collection&lt;T&gt;)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToCollection__1_Java_Util_Collection___0__">JavaUtilExtensions.ToCollection&lt;T&gt;(Collection&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToList__1_Java_Util_Collection___0__">JavaUtilExtensions.ToList&lt;T&gt;(Collection&lt;T&gt;)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToList__1_Java_Util_Collection___0__">JavaUtilExtensions.ToList&lt;T&gt;(Collection&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1069,7 +1085,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_TransferQueue_1.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.TransferQueue%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L104" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/TransferQueue.cs/#L151" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

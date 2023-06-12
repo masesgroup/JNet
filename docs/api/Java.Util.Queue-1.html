@@ -103,6 +103,8 @@
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;E&gt;</div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;E&gt;</div>
+    <div><a class="xref" href="Java.Util.IQueue-1.html">IQueue</a>&lt;E&gt;</div>
+    <div><a class="xref" href="Java.Util.ICollection-1.html">ICollection</a>&lt;E&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -134,16 +136,16 @@
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Contains_System_Object_">Collection&lt;E&gt;.Contains(Object)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ContainsAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.ContainsAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</a>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ContainsAll_Java_Util_Collection_System_Object__">Collection&lt;E&gt;.ContainsAll(Collection&lt;Object&gt;)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Remove_System_Object_">Collection&lt;E&gt;.Remove(Object)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.RemoveAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</a>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveAll_Java_Util_Collection_System_Object__">Collection&lt;E&gt;.RemoveAll(Collection&lt;Object&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RetainAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.RetainAll&lt;Arg0Extendsobject&gt;(Collection&lt;Arg0Extendsobject&gt;)</a>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RetainAll_Java_Util_Collection_System_Object__">Collection&lt;E&gt;.RetainAll(Collection&lt;Object&gt;)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ToArray">Collection&lt;E&gt;.ToArray()</a>
@@ -453,7 +455,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Util_Queue_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Queue&lt;E&gt; : Collection&lt;E&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;E&gt;, IEnumerable, IAsyncEnumerable&lt;E&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class Queue&lt;E&gt; : Collection&lt;E&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEnumerableExtension, IEnumerable&lt;E&gt;, IEnumerable, IAsyncEnumerable&lt;E&gt;, IQueue&lt;E&gt;, ICollection&lt;E&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -477,7 +479,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1__ctor.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4928">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4860">View Source</a>
   </span>
   <a id="Java_Util_Queue_1__ctor_" data-uid="Java.Util.Queue`1.#ctor*"></a>
   <h4 id="Java_Util_Queue_1__ctor" data-uid="Java.Util.Queue`1.#ctor">Queue()</h4>
@@ -493,7 +495,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4932">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4864">View Source</a>
   </span>
   <a id="Java_Util_Queue_1__ctor_" data-uid="Java.Util.Queue`1.#ctor*"></a>
   <h4 id="Java_Util_Queue_1__ctor_System_Object___" data-uid="Java.Util.Queue`1.#ctor(System.Object[])">Queue(Object[])</h4>
@@ -528,7 +530,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4939">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4871">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_BridgeClassName_" data-uid="Java.Util.Queue`1.BridgeClassName*"></a>
   <h4 id="Java_Util_Queue_1_BridgeClassName" data-uid="Java.Util.Queue`1.BridgeClassName">BridgeClassName</h4>
@@ -561,7 +563,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_Element.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.Element%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L132">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L178">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_Element_" data-uid="Java.Util.Queue`1.Element*"></a>
   <h4 id="Java_Util_Queue_1_Element" data-uid="Java.Util.Queue`1.Element">Element</h4>
@@ -592,7 +594,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4943">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4875">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_IsBridgeAbstract_" data-uid="Java.Util.Queue`1.IsBridgeAbstract*"></a>
   <h4 id="Java_Util_Queue_1_IsBridgeAbstract" data-uid="Java.Util.Queue`1.IsBridgeAbstract">IsBridgeAbstract</h4>
@@ -625,7 +627,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4947">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4879">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_IsBridgeCloseable_" data-uid="Java.Util.Queue`1.IsBridgeCloseable*"></a>
   <h4 id="Java_Util_Queue_1_IsBridgeCloseable" data-uid="Java.Util.Queue`1.IsBridgeCloseable">IsBridgeCloseable</h4>
@@ -658,7 +660,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4951">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4883">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_IsBridgeInterface_" data-uid="Java.Util.Queue`1.IsBridgeInterface*"></a>
   <h4 id="Java_Util_Queue_1_IsBridgeInterface" data-uid="Java.Util.Queue`1.IsBridgeInterface">IsBridgeInterface</h4>
@@ -691,7 +693,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4955">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L4887">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_IsBridgeStatic_" data-uid="Java.Util.Queue`1.IsBridgeStatic*"></a>
   <h4 id="Java_Util_Queue_1_IsBridgeStatic" data-uid="Java.Util.Queue`1.IsBridgeStatic">IsBridgeStatic</h4>
@@ -724,7 +726,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_Peek.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.Peek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L139">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L185">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_Peek_" data-uid="Java.Util.Queue`1.Peek*"></a>
   <h4 id="Java_Util_Queue_1_Peek" data-uid="Java.Util.Queue`1.Peek">Peek</h4>
@@ -755,7 +757,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_Poll.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.Poll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L146">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L192">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_Poll_" data-uid="Java.Util.Queue`1.Poll*"></a>
   <h4 id="Java_Util_Queue_1_Poll" data-uid="Java.Util.Queue`1.Poll">Poll</h4>
@@ -786,7 +788,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_Remove.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.Remove%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L153">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L199">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_Remove_" data-uid="Java.Util.Queue`1.Remove*"></a>
   <h4 id="Java_Util_Queue_1_Remove" data-uid="Java.Util.Queue`1.Remove">Remove</h4>
@@ -819,7 +821,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_Add__0_.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.Add(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L162">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L208">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_Add_" data-uid="Java.Util.Queue`1.Add*"></a>
   <h4 id="Java_Util_Queue_1_Add__0_" data-uid="Java.Util.Queue`1.Add(`0)">Add(E)</h4>
@@ -869,7 +871,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_Offer__0_.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.Offer(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L171">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L217">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_Offer_" data-uid="Java.Util.Queue`1.Offer*"></a>
   <h4 id="Java_Util_Queue_1_Offer__0_" data-uid="Java.Util.Queue`1.Offer(`0)">Offer(E)</h4>
@@ -921,7 +923,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1_op_Implicit_Java_Util_Queue__0___Java_Util_Queue.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601.op_Implicit(Java.Util.Queue%7B%600%7D)~Java.Util.Queue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L116">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L162">View Source</a>
   </span>
   <a id="Java_Util_Queue_1_op_Implicit_" data-uid="Java.Util.Queue`1.op_Implicit*"></a>
   <h4 id="Java_Util_Queue_1_op_Implicit_Java_Util_Queue__0___Java_Util_Queue" data-uid="Java.Util.Queue`1.op_Implicit(Java.Util.Queue{`0})~Java.Util.Queue">Implicit(Queue&lt;E&gt; to Queue)</h4>
@@ -995,15 +997,21 @@
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">System.Collections.Generic.IAsyncEnumerable&lt;T&gt;</a>
   </div>
+  <div>
+      <a class="xref" href="Java.Util.IQueue-1.html">IQueue&lt;E&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Util.ICollection-1.html">ICollection&lt;E&gt;</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToCollection__1_Java_Util_Collection___0__">JavaUtilExtensions.ToCollection&lt;T&gt;(Collection&lt;T&gt;)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToCollection__1_Java_Util_Collection___0__">JavaUtilExtensions.ToCollection&lt;T&gt;(Collection&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToList__1_Java_Util_Collection___0__">JavaUtilExtensions.ToList&lt;T&gt;(Collection&lt;T&gt;)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JavaUtilExtensions.html#MASES_JNet_Specific_Extensions_JavaUtilExtensions_ToList__1_Java_Util_Collection___0__">JavaUtilExtensions.ToList&lt;T&gt;(Collection&lt;T&gt;)</a>
   </div>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1016,7 +1024,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Queue_1.md&amp;value=---%0Auid%3A%20Java.Util.Queue%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Queue.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Queue.cs/#L152" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

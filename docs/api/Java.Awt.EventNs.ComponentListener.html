@@ -73,7 +73,7 @@
   
   <h1 id="Java_Awt_EventNs_ComponentListener" data-uid="Java.Awt.EventNs.ComponentListener" class="text-break">Class ComponentListener
   </h1>
-  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html</a></p>
+  <div class="markdown level0 summary"><p>Listener for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html</a>. Extends <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <a class="xref" href="Java.Awt.EventNs.IComponentListener.html">IComponentListener</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -83,7 +83,8 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span>&gt;</div>
     <div class="level4"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span></div>
-    <div class="level5"><span class="xref">ComponentListener</span></div>
+    <div class="level5"><a class="xref" href="Java.Util.EventListener.html">EventListener</a></div>
+    <div class="level6"><span class="xref">ComponentListener</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -91,6 +92,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
+    <div><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></div>
     <div><a class="xref" href="Java.Awt.EventNs.IComponentListener.html">IComponentListener</a></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
@@ -396,7 +398,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Awt_EventNs_ComponentListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ComponentListener : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IComponentListener, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class ComponentListener : EventListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IEventListener, IComponentListener, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
   <h5 id="Java_Awt_EventNs_ComponentListener_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</p>
@@ -405,10 +407,26 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener__ctor.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L281">View Source</a>
+  </span>
+  <a id="Java_Awt_EventNs_ComponentListener__ctor_" data-uid="Java.Awt.EventNs.ComponentListener.#ctor*"></a>
+  <h4 id="Java_Awt_EventNs_ComponentListener__ctor" data-uid="Java.Awt.EventNs.ComponentListener.#ctor">ComponentListener()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComponentListener()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener__ctor_System_Action_Java_Awt_EventNs_ComponentEvent__System_Action_Java_Awt_EventNs_ComponentEvent__System_Action_Java_Awt_EventNs_ComponentEvent__System_Action_Java_Awt_EventNs_ComponentEvent__System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.%23ctor(System.Action%7BJava.Awt.EventNs.ComponentEvent%7D%2CSystem.Action%7BJava.Awt.EventNs.ComponentEvent%7D%2CSystem.Action%7BJava.Awt.EventNs.ComponentEvent%7D%2CSystem.Action%7BJava.Awt.EventNs.ComponentEvent%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L86">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/ComponentListener.cs/#L71">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_ComponentListener__ctor_" data-uid="Java.Awt.EventNs.ComponentListener.#ctor*"></a>
   <h4 id="Java_Awt_EventNs_ComponentListener__ctor_System_Action_Java_Awt_EventNs_ComponentEvent__System_Action_Java_Awt_EventNs_ComponentEvent__System_Action_Java_Awt_EventNs_ComponentEvent__System_Action_Java_Awt_EventNs_ComponentEvent__System_Boolean_" data-uid="Java.Awt.EventNs.ComponentListener.#ctor(System.Action{Java.Awt.EventNs.ComponentEvent},System.Action{Java.Awt.EventNs.ComponentEvent},System.Action{Java.Awt.EventNs.ComponentEvent},System.Action{Java.Awt.EventNs.ComponentEvent},System.Boolean)">ComponentListener(Action&lt;ComponentEvent&gt;, Action&lt;ComponentEvent&gt;, Action&lt;ComponentEvent&gt;, Action&lt;ComponentEvent&gt;, Boolean)</h4>
@@ -468,7 +486,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L56">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/ComponentListener.cs/#L41">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_ComponentListener_BridgeClassName_" data-uid="Java.Awt.EventNs.ComponentListener.BridgeClassName*"></a>
   <h4 id="Java_Awt_EventNs_ComponentListener_BridgeClassName" data-uid="Java.Awt.EventNs.ComponentListener.BridgeClassName">BridgeClassName</h4>
@@ -501,7 +519,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener_OnComponentHidden.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.OnComponentHidden%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L77">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/ComponentListener.cs/#L62">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_ComponentListener_OnComponentHidden_" data-uid="Java.Awt.EventNs.ComponentListener.OnComponentHidden*"></a>
   <h4 id="Java_Awt_EventNs_ComponentListener_OnComponentHidden" data-uid="Java.Awt.EventNs.ComponentListener.OnComponentHidden">OnComponentHidden</h4>
@@ -532,7 +550,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener_OnComponentMoved.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.OnComponentMoved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L69">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/ComponentListener.cs/#L54">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_ComponentListener_OnComponentMoved_" data-uid="Java.Awt.EventNs.ComponentListener.OnComponentMoved*"></a>
   <h4 id="Java_Awt_EventNs_ComponentListener_OnComponentMoved" data-uid="Java.Awt.EventNs.ComponentListener.OnComponentMoved">OnComponentMoved</h4>
@@ -563,7 +581,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener_OnComponentResized.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.OnComponentResized%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/ComponentListener.cs/#L50">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_ComponentListener_OnComponentResized_" data-uid="Java.Awt.EventNs.ComponentListener.OnComponentResized*"></a>
   <h4 id="Java_Awt_EventNs_ComponentListener_OnComponentResized" data-uid="Java.Awt.EventNs.ComponentListener.OnComponentResized">OnComponentResized</h4>
@@ -594,7 +612,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener_OnComponentShown.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.OnComponentShown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L73">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/ComponentListener.cs/#L58">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_ComponentListener_OnComponentShown_" data-uid="Java.Awt.EventNs.ComponentListener.OnComponentShown*"></a>
   <h4 id="Java_Awt_EventNs_ComponentListener_OnComponentShown" data-uid="Java.Awt.EventNs.ComponentListener.OnComponentShown">OnComponentShown</h4>
@@ -627,7 +645,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener_ComponentHidden_Java_Awt_EventNs_ComponentEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.ComponentHidden(Java.Awt.EventNs.ComponentEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L145">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/ComponentListener.cs/#L90">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_ComponentListener_ComponentHidden_" data-uid="Java.Awt.EventNs.ComponentListener.ComponentHidden*"></a>
   <h4 id="Java_Awt_EventNs_ComponentListener_ComponentHidden_Java_Awt_EventNs_ComponentEvent_" data-uid="Java.Awt.EventNs.ComponentListener.ComponentHidden(Java.Awt.EventNs.ComponentEvent)">ComponentHidden(ComponentEvent)</h4>
@@ -636,7 +654,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ComponentHidden(ComponentEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void ComponentHidden(ComponentEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -650,8 +668,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.ComponentEvent.html">ComponentEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.ComponentEvent.html">ComponentEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -660,7 +679,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener_ComponentMoved_Java_Awt_EventNs_ComponentEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.ComponentMoved(Java.Awt.EventNs.ComponentEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L135">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/ComponentListener.cs/#L98">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_ComponentListener_ComponentMoved_" data-uid="Java.Awt.EventNs.ComponentListener.ComponentMoved*"></a>
   <h4 id="Java_Awt_EventNs_ComponentListener_ComponentMoved_Java_Awt_EventNs_ComponentEvent_" data-uid="Java.Awt.EventNs.ComponentListener.ComponentMoved(Java.Awt.EventNs.ComponentEvent)">ComponentMoved(ComponentEvent)</h4>
@@ -669,7 +688,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ComponentMoved(ComponentEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void ComponentMoved(ComponentEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -683,8 +702,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.ComponentEvent.html">ComponentEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.ComponentEvent.html">ComponentEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -693,7 +713,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener_ComponentResized_Java_Awt_EventNs_ComponentEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.ComponentResized(Java.Awt.EventNs.ComponentEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L130">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/ComponentListener.cs/#L106">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_ComponentListener_ComponentResized_" data-uid="Java.Awt.EventNs.ComponentListener.ComponentResized*"></a>
   <h4 id="Java_Awt_EventNs_ComponentListener_ComponentResized_Java_Awt_EventNs_ComponentEvent_" data-uid="Java.Awt.EventNs.ComponentListener.ComponentResized(Java.Awt.EventNs.ComponentEvent)">ComponentResized(ComponentEvent)</h4>
@@ -702,7 +722,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ComponentResized(ComponentEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void ComponentResized(ComponentEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -716,8 +736,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.ComponentEvent.html">ComponentEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.ComponentEvent.html">ComponentEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -726,7 +747,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener_ComponentShown_Java_Awt_EventNs_ComponentEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener.ComponentShown(Java.Awt.EventNs.ComponentEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L140">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/ComponentListener.cs/#L114">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_ComponentListener_ComponentShown_" data-uid="Java.Awt.EventNs.ComponentListener.ComponentShown*"></a>
   <h4 id="Java_Awt_EventNs_ComponentListener_ComponentShown_Java_Awt_EventNs_ComponentEvent_" data-uid="Java.Awt.EventNs.ComponentListener.ComponentShown(Java.Awt.EventNs.ComponentEvent)">ComponentShown(ComponentEvent)</h4>
@@ -735,7 +756,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ComponentShown(ComponentEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void ComponentShown(ComponentEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -749,8 +770,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.ComponentEvent.html">ComponentEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.ComponentEvent.html">ComponentEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -768,6 +790,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
   </div>
   <div>
+      <a class="xref" href="Java.Util.IEventListener.html">IEventListener</a>
+  </div>
+  <div>
       <a class="xref" href="Java.Awt.EventNs.IComponentListener.html">IComponentListener</a>
   </div>
   <div>
@@ -775,6 +800,10 @@
   </div>
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -787,7 +816,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_ComponentListener.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.ComponentListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/ComponentListener.cs/#L51" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/ComponentListener.cs/#L67" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

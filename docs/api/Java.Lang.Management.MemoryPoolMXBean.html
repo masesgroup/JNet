@@ -93,6 +93,8 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Lang.Management.IMemoryPoolMXBean.html">IMemoryPoolMXBean</a></div>
+    <div><a class="xref" href="Java.Lang.Management.IPlatformManagedObject.html">IPlatformManagedObject</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -377,7 +379,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Lang_Management_MemoryPoolMXBean_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MemoryPoolMXBean : PlatformManagedObject, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class MemoryPoolMXBean : PlatformManagedObject, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IMemoryPoolMXBean, IPlatformManagedObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -470,7 +472,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_CollectionUsage.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.CollectionUsage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L133">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_CollectionUsage_" data-uid="Java.Lang.Management.MemoryPoolMXBean.CollectionUsage*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_CollectionUsage" data-uid="Java.Lang.Management.MemoryPoolMXBean.CollectionUsage">CollectionUsage</h4>
@@ -501,7 +503,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_CollectionUsageThreshold.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.CollectionUsageThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L140">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_CollectionUsageThreshold_" data-uid="Java.Lang.Management.MemoryPoolMXBean.CollectionUsageThreshold*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_CollectionUsageThreshold" data-uid="Java.Lang.Management.MemoryPoolMXBean.CollectionUsageThreshold">CollectionUsageThreshold</h4>
@@ -532,7 +534,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_CollectionUsageThresholdCount.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.CollectionUsageThresholdCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L147">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_CollectionUsageThresholdCount_" data-uid="Java.Lang.Management.MemoryPoolMXBean.CollectionUsageThresholdCount*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_CollectionUsageThresholdCount" data-uid="Java.Lang.Management.MemoryPoolMXBean.CollectionUsageThresholdCount">CollectionUsageThresholdCount</h4>
@@ -695,7 +697,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_IsCollectionUsageThresholdExceeded.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.IsCollectionUsageThresholdExceeded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L154">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_IsCollectionUsageThresholdExceeded_" data-uid="Java.Lang.Management.MemoryPoolMXBean.IsCollectionUsageThresholdExceeded*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_IsCollectionUsageThresholdExceeded" data-uid="Java.Lang.Management.MemoryPoolMXBean.IsCollectionUsageThresholdExceeded">IsCollectionUsageThresholdExceeded</h4>
@@ -726,7 +728,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_IsCollectionUsageThresholdSupported.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.IsCollectionUsageThresholdSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L161">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_IsCollectionUsageThresholdSupported_" data-uid="Java.Lang.Management.MemoryPoolMXBean.IsCollectionUsageThresholdSupported*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_IsCollectionUsageThresholdSupported" data-uid="Java.Lang.Management.MemoryPoolMXBean.IsCollectionUsageThresholdSupported">IsCollectionUsageThresholdSupported</h4>
@@ -757,7 +759,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_IsUsageThresholdExceeded.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.IsUsageThresholdExceeded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L86">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L168">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_IsUsageThresholdExceeded_" data-uid="Java.Lang.Management.MemoryPoolMXBean.IsUsageThresholdExceeded*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_IsUsageThresholdExceeded" data-uid="Java.Lang.Management.MemoryPoolMXBean.IsUsageThresholdExceeded">IsUsageThresholdExceeded</h4>
@@ -788,7 +790,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_IsUsageThresholdSupported.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.IsUsageThresholdSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L93">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L175">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_IsUsageThresholdSupported_" data-uid="Java.Lang.Management.MemoryPoolMXBean.IsUsageThresholdSupported*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_IsUsageThresholdSupported" data-uid="Java.Lang.Management.MemoryPoolMXBean.IsUsageThresholdSupported">IsUsageThresholdSupported</h4>
@@ -819,7 +821,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_IsValid.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.IsValid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L100">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L182">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_IsValid_" data-uid="Java.Lang.Management.MemoryPoolMXBean.IsValid*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_IsValid" data-uid="Java.Lang.Management.MemoryPoolMXBean.IsValid">IsValid</h4>
@@ -850,7 +852,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_MemoryManagerNames.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.MemoryManagerNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L107">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L189">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_MemoryManagerNames_" data-uid="Java.Lang.Management.MemoryPoolMXBean.MemoryManagerNames*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_MemoryManagerNames" data-uid="Java.Lang.Management.MemoryPoolMXBean.MemoryManagerNames">MemoryManagerNames</h4>
@@ -881,7 +883,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_Name.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L114">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L196">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_Name_" data-uid="Java.Lang.Management.MemoryPoolMXBean.Name*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_Name" data-uid="Java.Lang.Management.MemoryPoolMXBean.Name">Name</h4>
@@ -912,7 +914,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_PeakUsage.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.PeakUsage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L121">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L203">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_PeakUsage_" data-uid="Java.Lang.Management.MemoryPoolMXBean.PeakUsage*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_PeakUsage" data-uid="Java.Lang.Management.MemoryPoolMXBean.PeakUsage">PeakUsage</h4>
@@ -943,7 +945,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_Type.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L128">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L210">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_Type_" data-uid="Java.Lang.Management.MemoryPoolMXBean.Type*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_Type" data-uid="Java.Lang.Management.MemoryPoolMXBean.Type">Type</h4>
@@ -974,7 +976,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_Usage.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.Usage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L135">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L217">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_Usage_" data-uid="Java.Lang.Management.MemoryPoolMXBean.Usage*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_Usage" data-uid="Java.Lang.Management.MemoryPoolMXBean.Usage">Usage</h4>
@@ -1005,7 +1007,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_UsageThreshold.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.UsageThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L142">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L224">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_UsageThreshold_" data-uid="Java.Lang.Management.MemoryPoolMXBean.UsageThreshold*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_UsageThreshold" data-uid="Java.Lang.Management.MemoryPoolMXBean.UsageThreshold">UsageThreshold</h4>
@@ -1036,7 +1038,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_UsageThresholdCount.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.UsageThresholdCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L149">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L231">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_UsageThresholdCount_" data-uid="Java.Lang.Management.MemoryPoolMXBean.UsageThresholdCount*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_UsageThresholdCount" data-uid="Java.Lang.Management.MemoryPoolMXBean.UsageThresholdCount">UsageThresholdCount</h4>
@@ -1069,7 +1071,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean_ResetPeakUsage.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean.ResetPeakUsage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L156">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L238">View Source</a>
   </span>
   <a id="Java_Lang_Management_MemoryPoolMXBean_ResetPeakUsage_" data-uid="Java.Lang.Management.MemoryPoolMXBean.ResetPeakUsage*"></a>
   <h4 id="Java_Lang_Management_MemoryPoolMXBean_ResetPeakUsage" data-uid="Java.Lang.Management.MemoryPoolMXBean.ResetPeakUsage">ResetPeakUsage()</h4>
@@ -1099,9 +1101,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Lang.Management.IMemoryPoolMXBean.html">IMemoryPoolMXBean</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Lang.Management.IPlatformManagedObject.html">IPlatformManagedObject</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1114,7 +1122,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_MemoryPoolMXBean.md&amp;value=---%0Auid%3A%20Java.Lang.Management.MemoryPoolMXBean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/MemoryPoolMXBean.cs/#L111" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

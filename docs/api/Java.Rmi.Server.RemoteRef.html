@@ -94,6 +94,9 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Rmi.Server.IRemoteRef.html">IRemoteRef</a></div>
+    <div><a class="xref" href="Java.Io.IExternalizable.html">IExternalizable</a></div>
+    <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -381,7 +384,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Rmi_Server_RemoteRef_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RemoteRef : Externalizable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class RemoteRef : Externalizable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IRemoteRef, IExternalizable, ISerializable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -606,7 +609,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Rmi_Server_RemoteRef_packagePrefix.md&amp;value=---%0Auid%3A%20Java.Rmi.Server.RemoteRef.packagePrefix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L91">View Source</a>
   </span>
   <a id="Java_Rmi_Server_RemoteRef_packagePrefix_" data-uid="Java.Rmi.Server.RemoteRef.packagePrefix*"></a>
   <h4 id="Java_Rmi_Server_RemoteRef_packagePrefix" data-uid="Java.Rmi.Server.RemoteRef.packagePrefix">packagePrefix</h4>
@@ -637,7 +640,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Rmi_Server_RemoteRef_RemoteHashCode.md&amp;value=---%0Auid%3A%20Java.Rmi.Server.RemoteRef.RemoteHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L59">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L107">View Source</a>
   </span>
   <a id="Java_Rmi_Server_RemoteRef_RemoteHashCode_" data-uid="Java.Rmi.Server.RemoteRef.RemoteHashCode*"></a>
   <h4 id="Java_Rmi_Server_RemoteRef_RemoteHashCode" data-uid="Java.Rmi.Server.RemoteRef.RemoteHashCode">RemoteHashCode</h4>
@@ -668,7 +671,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Rmi_Server_RemoteRef_RemoteToString.md&amp;value=---%0Auid%3A%20Java.Rmi.Server.RemoteRef.RemoteToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L66">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L114">View Source</a>
   </span>
   <a id="Java_Rmi_Server_RemoteRef_RemoteToString_" data-uid="Java.Rmi.Server.RemoteRef.RemoteToString*"></a>
   <h4 id="Java_Rmi_Server_RemoteRef_RemoteToString" data-uid="Java.Rmi.Server.RemoteRef.RemoteToString">RemoteToString</h4>
@@ -699,7 +702,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Rmi_Server_RemoteRef_serialVersionUID.md&amp;value=---%0Auid%3A%20Java.Rmi.Server.RemoteRef.serialVersionUID%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L47">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L95">View Source</a>
   </span>
   <a id="Java_Rmi_Server_RemoteRef_serialVersionUID_" data-uid="Java.Rmi.Server.RemoteRef.serialVersionUID*"></a>
   <h4 id="Java_Rmi_Server_RemoteRef_serialVersionUID" data-uid="Java.Rmi.Server.RemoteRef.serialVersionUID">serialVersionUID</h4>
@@ -732,7 +735,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Rmi_Server_RemoteRef_GetRefClass_Java_Io_ObjectOutput_.md&amp;value=---%0Auid%3A%20Java.Rmi.Server.RemoteRef.GetRefClass(Java.Io.ObjectOutput)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L145">View Source</a>
   </span>
   <a id="Java_Rmi_Server_RemoteRef_GetRefClass_" data-uid="Java.Rmi.Server.RemoteRef.GetRefClass*"></a>
   <h4 id="Java_Rmi_Server_RemoteRef_GetRefClass_Java_Io_ObjectOutput_" data-uid="Java.Rmi.Server.RemoteRef.GetRefClass(Java.Io.ObjectOutput)">GetRefClass(ObjectOutput)</h4>
@@ -782,7 +785,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Rmi_Server_RemoteRef_Invoke_Java_Rmi_Remote_Java_Lang_Reflect_Method_System_Object___System_Int64_.md&amp;value=---%0Auid%3A%20Java.Rmi.Server.RemoteRef.Invoke(Java.Rmi.Remote%2CJava.Lang.Reflect.Method%2CSystem.Object%5B%5D%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L88">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L136">View Source</a>
   </span>
   <a id="Java_Rmi_Server_RemoteRef_Invoke_" data-uid="Java.Rmi.Server.RemoteRef.Invoke*"></a>
   <h4 id="Java_Rmi_Server_RemoteRef_Invoke_Java_Rmi_Remote_Java_Lang_Reflect_Method_System_Object___System_Int64_" data-uid="Java.Rmi.Server.RemoteRef.Invoke(Java.Rmi.Remote,Java.Lang.Reflect.Method,System.Object[],System.Int64)">Invoke(Remote, Method, Object[], Int64)</h4>
@@ -865,7 +868,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Rmi_Server_RemoteRef_RemoteEquals_Java_Rmi_Server_RemoteRef_.md&amp;value=---%0Auid%3A%20Java.Rmi.Server.RemoteRef.RemoteEquals(Java.Rmi.Server.RemoteRef)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L75">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L123">View Source</a>
   </span>
   <a id="Java_Rmi_Server_RemoteRef_RemoteEquals_" data-uid="Java.Rmi.Server.RemoteRef.RemoteEquals*"></a>
   <h4 id="Java_Rmi_Server_RemoteRef_RemoteEquals_Java_Rmi_Server_RemoteRef_" data-uid="Java.Rmi.Server.RemoteRef.RemoteEquals(Java.Rmi.Server.RemoteRef)">RemoteEquals(RemoteRef)</h4>
@@ -929,9 +932,18 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Rmi.Server.IRemoteRef.html">IRemoteRef</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Io.IExternalizable.html">IExternalizable</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Io.ISerializable.html">ISerializable</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -944,7 +956,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Rmi_Server_RemoteRef.md&amp;value=---%0Auid%3A%20Java.Rmi.Server.RemoteRef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Rmi/Server/RemoteRef.cs/#L77" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
