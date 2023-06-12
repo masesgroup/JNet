@@ -37,13 +37,15 @@ namespace Javax.Security.Sasl
         /// </summary>
         string AuthorizationID { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#isComplete()"/> 
-        /// </summary>
-        bool IsComplete { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getMechanismName()"/> 
         /// </summary>
         string MechanismName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#isComplete()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsComplete();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#evaluateResponse(byte[])"/>
         /// </summary>
@@ -120,18 +122,20 @@ namespace Javax.Security.Sasl
             get { return IExecute<string>("getAuthorizationID"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#isComplete()"/> 
-        /// </summary>
-        public bool IsComplete
-        {
-            get { return IExecute<bool>("isComplete"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getMechanismName()"/> 
         /// </summary>
         public string MechanismName
         {
             get { return IExecute<string>("getMechanismName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#isComplete()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsComplete()
+        {
+            return IExecute<bool>("isComplete");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#evaluateResponse(byte[])"/>

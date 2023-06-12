@@ -78,13 +78,6 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#isMXBean()"/> 
-        /// </summary>
-        public bool IsMXBean
-        {
-            get { return IExecute<bool>("isMXBean"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#getMBeanServerConnection()"/> 
         /// </summary>
         public Javax.Management.MBeanServerConnection MBeanServerConnection
@@ -97,6 +90,15 @@ namespace Javax.Management
         public Javax.Management.ObjectName ObjectName
         {
             get { return IExecute<Javax.Management.ObjectName>("getObjectName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#isMXBean()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMXBean()
+        {
+            return IExecute<bool>("isMXBean");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerInvocationHandler.html#invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])"/>

@@ -85,13 +85,6 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#accept()"/> 
-        /// </summary>
-        public Java.Net.Socket Accept
-        {
-            get { return IExecute<Java.Net.Socket>("accept"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getChannel()"/> 
         /// </summary>
         public Java.Nio.Channels.ServerSocketChannel Channel
@@ -104,20 +97,6 @@ namespace Java.Net
         public Java.Net.InetAddress InetAddress
         {
             get { return IExecute<Java.Net.InetAddress>("getInetAddress"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#isBound()"/> 
-        /// </summary>
-        public bool IsBound
-        {
-            get { return IExecute<bool>("isBound"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#isClosed()"/> 
-        /// </summary>
-        public bool IsClosed
-        {
-            get { return IExecute<bool>("isClosed"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getLocalPort()"/> 
@@ -155,13 +134,6 @@ namespace Java.Net
             get { return IExecute<int>("getSoTimeout"); } set { IExecute("setSoTimeout", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#supportedOptions()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions
-        {
-            get { return IExecute<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
@@ -183,6 +155,43 @@ namespace Java.Net
         public T GetOption<T>(Java.Net.SocketOption<T> arg0)
         {
             return IExecute<T>("getOption", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#isBound()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBound()
+        {
+            return IExecute<bool>("isBound");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#isClosed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsClosed()
+        {
+            return IExecute<bool>("isClosed");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#accept()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Net.Socket"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Net.Socket Accept()
+        {
+            return IExecute<Java.Net.Socket>("accept");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#supportedOptions()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
+        {
+            return IExecute<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#bind(java.net.SocketAddress,int)"/>

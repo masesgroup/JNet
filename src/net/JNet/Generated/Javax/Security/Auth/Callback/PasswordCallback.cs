@@ -63,13 +63,6 @@ namespace Javax.Security.Auth.Callback
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#isEchoOn()"/> 
-        /// </summary>
-        public bool IsEchoOn
-        {
-            get { return IExecute<bool>("isEchoOn"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#getPassword()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#setPassword(char[])"/>
         /// </summary>
         public char[] Password
@@ -82,6 +75,15 @@ namespace Javax.Security.Auth.Callback
         public string Prompt
         {
             get { return IExecute<string>("getPrompt"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#isEchoOn()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEchoOn()
+        {
+            return IExecute<bool>("isEchoOn");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html#clearPassword()"/>

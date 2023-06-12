@@ -85,6 +85,7 @@
     <div class="level4"><span class="xref">Context</span></div>
       <div class="level5"><a class="xref" href="Javax.Naming.Directory.DirContext.html">DirContext</a></div>
       <div class="level5"><a class="xref" href="Javax.Naming.Event.EventContext.html">EventContext</a></div>
+      <div class="level5"><a class="xref" href="Javax.Naming.InitialContext.html">InitialContext</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -94,6 +95,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Naming.IContext.html">IContext</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -375,7 +377,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Naming_Context_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Context : JVMBridgeBase&lt;Context&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Context : JVMBridgeBase&lt;Context&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IContext</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -435,7 +437,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_AUTHORITATIVE.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.AUTHORITATIVE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L256">View Source</a>
   </span>
   <a id="Javax_Naming_Context_AUTHORITATIVE_" data-uid="Javax.Naming.Context.AUTHORITATIVE*"></a>
   <h4 id="Javax_Naming_Context_AUTHORITATIVE" data-uid="Javax.Naming.Context.AUTHORITATIVE">AUTHORITATIVE</h4>
@@ -466,7 +468,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_BATCHSIZE.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.BATCHSIZE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L47">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L260">View Source</a>
   </span>
   <a id="Javax_Naming_Context_BATCHSIZE_" data-uid="Javax.Naming.Context.BATCHSIZE*"></a>
   <h4 id="Javax_Naming_Context_BATCHSIZE" data-uid="Javax.Naming.Context.BATCHSIZE">BATCHSIZE</h4>
@@ -530,7 +532,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_DNS_URL.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.DNS_URL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L264">View Source</a>
   </span>
   <a id="Javax_Naming_Context_DNS_URL_" data-uid="Javax.Naming.Context.DNS_URL*"></a>
   <h4 id="Javax_Naming_Context_DNS_URL" data-uid="Javax.Naming.Context.DNS_URL">DNS_URL</h4>
@@ -561,7 +563,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Environment.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Environment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L107">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L320">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Environment_" data-uid="Javax.Naming.Context.Environment*"></a>
   <h4 id="Javax_Naming_Context_Environment" data-uid="Javax.Naming.Context.Environment">Environment</h4>
@@ -570,7 +572,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Hashtable Environment { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Hashtable&lt;object, object&gt; Environment { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -582,7 +584,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Hashtable.html">Hashtable</a></td>
+        <td><a class="xref" href="Java.Util.Hashtable-2.html">Hashtable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -592,7 +594,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_INITIAL_CONTEXT_FACTORY.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.INITIAL_CONTEXT_FACTORY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L268">View Source</a>
   </span>
   <a id="Javax_Naming_Context_INITIAL_CONTEXT_FACTORY_" data-uid="Javax.Naming.Context.INITIAL_CONTEXT_FACTORY*"></a>
   <h4 id="Javax_Naming_Context_INITIAL_CONTEXT_FACTORY" data-uid="Javax.Naming.Context.INITIAL_CONTEXT_FACTORY">INITIAL_CONTEXT_FACTORY</h4>
@@ -755,7 +757,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_LANGUAGE.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.LANGUAGE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L59">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L272">View Source</a>
   </span>
   <a id="Javax_Naming_Context_LANGUAGE_" data-uid="Javax.Naming.Context.LANGUAGE*"></a>
   <h4 id="Javax_Naming_Context_LANGUAGE" data-uid="Javax.Naming.Context.LANGUAGE">LANGUAGE</h4>
@@ -786,7 +788,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_NameInNamespace.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.NameInNamespace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L114">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L327">View Source</a>
   </span>
   <a id="Javax_Naming_Context_NameInNamespace_" data-uid="Javax.Naming.Context.NameInNamespace*"></a>
   <h4 id="Javax_Naming_Context_NameInNamespace" data-uid="Javax.Naming.Context.NameInNamespace">NameInNamespace</h4>
@@ -817,7 +819,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_OBJECT_FACTORIES.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.OBJECT_FACTORIES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L63">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L276">View Source</a>
   </span>
   <a id="Javax_Naming_Context_OBJECT_FACTORIES_" data-uid="Javax.Naming.Context.OBJECT_FACTORIES*"></a>
   <h4 id="Javax_Naming_Context_OBJECT_FACTORIES" data-uid="Javax.Naming.Context.OBJECT_FACTORIES">OBJECT_FACTORIES</h4>
@@ -848,7 +850,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_PROVIDER_URL.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.PROVIDER_URL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L67">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L280">View Source</a>
   </span>
   <a id="Javax_Naming_Context_PROVIDER_URL_" data-uid="Javax.Naming.Context.PROVIDER_URL*"></a>
   <h4 id="Javax_Naming_Context_PROVIDER_URL" data-uid="Javax.Naming.Context.PROVIDER_URL">PROVIDER_URL</h4>
@@ -879,7 +881,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_REFERRAL.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.REFERRAL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L71">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L284">View Source</a>
   </span>
   <a id="Javax_Naming_Context_REFERRAL_" data-uid="Javax.Naming.Context.REFERRAL*"></a>
   <h4 id="Javax_Naming_Context_REFERRAL" data-uid="Javax.Naming.Context.REFERRAL">REFERRAL</h4>
@@ -910,7 +912,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_SECURITY_AUTHENTICATION.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.SECURITY_AUTHENTICATION%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L75">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L288">View Source</a>
   </span>
   <a id="Javax_Naming_Context_SECURITY_AUTHENTICATION_" data-uid="Javax.Naming.Context.SECURITY_AUTHENTICATION*"></a>
   <h4 id="Javax_Naming_Context_SECURITY_AUTHENTICATION" data-uid="Javax.Naming.Context.SECURITY_AUTHENTICATION">SECURITY_AUTHENTICATION</h4>
@@ -941,7 +943,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_SECURITY_CREDENTIALS.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.SECURITY_CREDENTIALS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L292">View Source</a>
   </span>
   <a id="Javax_Naming_Context_SECURITY_CREDENTIALS_" data-uid="Javax.Naming.Context.SECURITY_CREDENTIALS*"></a>
   <h4 id="Javax_Naming_Context_SECURITY_CREDENTIALS" data-uid="Javax.Naming.Context.SECURITY_CREDENTIALS">SECURITY_CREDENTIALS</h4>
@@ -972,7 +974,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_SECURITY_PRINCIPAL.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.SECURITY_PRINCIPAL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L83">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L296">View Source</a>
   </span>
   <a id="Javax_Naming_Context_SECURITY_PRINCIPAL_" data-uid="Javax.Naming.Context.SECURITY_PRINCIPAL*"></a>
   <h4 id="Javax_Naming_Context_SECURITY_PRINCIPAL" data-uid="Javax.Naming.Context.SECURITY_PRINCIPAL">SECURITY_PRINCIPAL</h4>
@@ -1003,7 +1005,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_SECURITY_PROTOCOL.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.SECURITY_PROTOCOL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L87">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L300">View Source</a>
   </span>
   <a id="Javax_Naming_Context_SECURITY_PROTOCOL_" data-uid="Javax.Naming.Context.SECURITY_PROTOCOL*"></a>
   <h4 id="Javax_Naming_Context_SECURITY_PROTOCOL" data-uid="Javax.Naming.Context.SECURITY_PROTOCOL">SECURITY_PROTOCOL</h4>
@@ -1034,7 +1036,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_STATE_FACTORIES.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.STATE_FACTORIES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L91">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L304">View Source</a>
   </span>
   <a id="Javax_Naming_Context_STATE_FACTORIES_" data-uid="Javax.Naming.Context.STATE_FACTORIES*"></a>
   <h4 id="Javax_Naming_Context_STATE_FACTORIES" data-uid="Javax.Naming.Context.STATE_FACTORIES">STATE_FACTORIES</h4>
@@ -1065,7 +1067,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_URL_PKG_PREFIXES.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.URL_PKG_PREFIXES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L95">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L308">View Source</a>
   </span>
   <a id="Javax_Naming_Context_URL_PKG_PREFIXES_" data-uid="Javax.Naming.Context.URL_PKG_PREFIXES*"></a>
   <h4 id="Javax_Naming_Context_URL_PKG_PREFIXES" data-uid="Javax.Naming.Context.URL_PKG_PREFIXES">URL_PKG_PREFIXES</h4>
@@ -1098,7 +1100,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_AddToEnvironment_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.AddToEnvironment(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L125">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L338">View Source</a>
   </span>
   <a id="Javax_Naming_Context_AddToEnvironment_" data-uid="Javax.Naming.Context.AddToEnvironment*"></a>
   <h4 id="Javax_Naming_Context_AddToEnvironment_System_String_System_Object_" data-uid="Javax.Naming.Context.AddToEnvironment(System.String,System.Object)">AddToEnvironment(String, Object)</h4>
@@ -1169,7 +1171,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Bind_Javax_Naming_Name_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Bind(Javax.Naming.Name%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L297">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L510">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Bind_" data-uid="Javax.Naming.Context.Bind*"></a>
   <h4 id="Javax_Naming_Context_Bind_Javax_Naming_Name_System_Object_" data-uid="Javax.Naming.Context.Bind(Javax.Naming.Name,System.Object)">Bind(Name, Object)</h4>
@@ -1224,7 +1226,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Bind_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Bind(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L287">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L500">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Bind_" data-uid="Javax.Naming.Context.Bind*"></a>
   <h4 id="Javax_Naming_Context_Bind_System_String_System_Object_" data-uid="Javax.Naming.Context.Bind(System.String,System.Object)">Bind(String, Object)</h4>
@@ -1279,7 +1281,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Close.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L306">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L519">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Close_" data-uid="Javax.Naming.Context.Close*"></a>
   <h4 id="Javax_Naming_Context_Close" data-uid="Javax.Naming.Context.Close">Close()</h4>
@@ -1310,7 +1312,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_ComposeName_Javax_Naming_Name_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.ComposeName(Javax.Naming.Name%2CJavax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L217">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L430">View Source</a>
   </span>
   <a id="Javax_Naming_Context_ComposeName_" data-uid="Javax.Naming.Context.ComposeName*"></a>
   <h4 id="Javax_Naming_Context_ComposeName_Javax_Naming_Name_Javax_Naming_Name_" data-uid="Javax.Naming.Context.ComposeName(Javax.Naming.Name,Javax.Naming.Name)">ComposeName(Name, Name)</h4>
@@ -1381,7 +1383,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_ComposeName_System_String_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.ComposeName(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L186">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L399">View Source</a>
   </span>
   <a id="Javax_Naming_Context_ComposeName_" data-uid="Javax.Naming.Context.ComposeName*"></a>
   <h4 id="Javax_Naming_Context_ComposeName_System_String_System_String_" data-uid="Javax.Naming.Context.ComposeName(System.String,System.String)">ComposeName(String, String)</h4>
@@ -1452,7 +1454,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_CreateSubcontext_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.CreateSubcontext(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L206">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L419">View Source</a>
   </span>
   <a id="Javax_Naming_Context_CreateSubcontext_" data-uid="Javax.Naming.Context.CreateSubcontext*"></a>
   <h4 id="Javax_Naming_Context_CreateSubcontext_Javax_Naming_Name_" data-uid="Javax.Naming.Context.CreateSubcontext(Javax.Naming.Name)">CreateSubcontext(Name)</h4>
@@ -1517,7 +1519,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_CreateSubcontext_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.CreateSubcontext(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L196">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L409">View Source</a>
   </span>
   <a id="Javax_Naming_Context_CreateSubcontext_" data-uid="Javax.Naming.Context.CreateSubcontext*"></a>
   <h4 id="Javax_Naming_Context_CreateSubcontext_System_String_" data-uid="Javax.Naming.Context.CreateSubcontext(System.String)">CreateSubcontext(String)</h4>
@@ -1582,7 +1584,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_DestroySubcontext_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.DestroySubcontext(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L324">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L537">View Source</a>
   </span>
   <a id="Javax_Naming_Context_DestroySubcontext_" data-uid="Javax.Naming.Context.DestroySubcontext*"></a>
   <h4 id="Javax_Naming_Context_DestroySubcontext_Javax_Naming_Name_" data-uid="Javax.Naming.Context.DestroySubcontext(Javax.Naming.Name)">DestroySubcontext(Name)</h4>
@@ -1631,7 +1633,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_DestroySubcontext_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.DestroySubcontext(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L315">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L528">View Source</a>
   </span>
   <a id="Javax_Naming_Context_DestroySubcontext_" data-uid="Javax.Naming.Context.DestroySubcontext*"></a>
   <h4 id="Javax_Naming_Context_DestroySubcontext_System_String_" data-uid="Javax.Naming.Context.DestroySubcontext(System.String)">DestroySubcontext(String)</h4>
@@ -1680,7 +1682,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_GetNameParser_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.GetNameParser(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L237">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L450">View Source</a>
   </span>
   <a id="Javax_Naming_Context_GetNameParser_" data-uid="Javax.Naming.Context.GetNameParser*"></a>
   <h4 id="Javax_Naming_Context_GetNameParser_Javax_Naming_Name_" data-uid="Javax.Naming.Context.GetNameParser(Javax.Naming.Name)">GetNameParser(Name)</h4>
@@ -1745,7 +1747,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_GetNameParser_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.GetNameParser(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L227">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L440">View Source</a>
   </span>
   <a id="Javax_Naming_Context_GetNameParser_" data-uid="Javax.Naming.Context.GetNameParser*"></a>
   <h4 id="Javax_Naming_Context_GetNameParser_System_String_" data-uid="Javax.Naming.Context.GetNameParser(System.String)">GetNameParser(String)</h4>
@@ -1810,7 +1812,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_List_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.List(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L277">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L490">View Source</a>
   </span>
   <a id="Javax_Naming_Context_List_" data-uid="Javax.Naming.Context.List*"></a>
   <h4 id="Javax_Naming_Context_List_Javax_Naming_Name_" data-uid="Javax.Naming.Context.List(Javax.Naming.Name)">List(Name)</h4>
@@ -1875,7 +1877,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_List_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.List(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L267">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L480">View Source</a>
   </span>
   <a id="Javax_Naming_Context_List_" data-uid="Javax.Naming.Context.List*"></a>
   <h4 id="Javax_Naming_Context_List_System_String_" data-uid="Javax.Naming.Context.List(System.String)">List(String)</h4>
@@ -1940,7 +1942,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_ListBindings_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.ListBindings(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L257">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L470">View Source</a>
   </span>
   <a id="Javax_Naming_Context_ListBindings_" data-uid="Javax.Naming.Context.ListBindings*"></a>
   <h4 id="Javax_Naming_Context_ListBindings_Javax_Naming_Name_" data-uid="Javax.Naming.Context.ListBindings(Javax.Naming.Name)">ListBindings(Name)</h4>
@@ -2005,7 +2007,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_ListBindings_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.ListBindings(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L247">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L460">View Source</a>
   </span>
   <a id="Javax_Naming_Context_ListBindings_" data-uid="Javax.Naming.Context.ListBindings*"></a>
   <h4 id="Javax_Naming_Context_ListBindings_System_String_" data-uid="Javax.Naming.Context.ListBindings(System.String)">ListBindings(String)</h4>
@@ -2070,7 +2072,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Lookup_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Lookup(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L145">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L358">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Lookup_" data-uid="Javax.Naming.Context.Lookup*"></a>
   <h4 id="Javax_Naming_Context_Lookup_Javax_Naming_Name_" data-uid="Javax.Naming.Context.Lookup(Javax.Naming.Name)">Lookup(Name)</h4>
@@ -2135,7 +2137,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Lookup_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Lookup(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L135">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L348">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Lookup_" data-uid="Javax.Naming.Context.Lookup*"></a>
   <h4 id="Javax_Naming_Context_Lookup_System_String_" data-uid="Javax.Naming.Context.Lookup(System.String)">Lookup(String)</h4>
@@ -2200,7 +2202,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_LookupLink_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.LookupLink(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L165">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L378">View Source</a>
   </span>
   <a id="Javax_Naming_Context_LookupLink_" data-uid="Javax.Naming.Context.LookupLink*"></a>
   <h4 id="Javax_Naming_Context_LookupLink_Javax_Naming_Name_" data-uid="Javax.Naming.Context.LookupLink(Javax.Naming.Name)">LookupLink(Name)</h4>
@@ -2265,7 +2267,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_LookupLink_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.LookupLink(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L155">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L368">View Source</a>
   </span>
   <a id="Javax_Naming_Context_LookupLink_" data-uid="Javax.Naming.Context.LookupLink*"></a>
   <h4 id="Javax_Naming_Context_LookupLink_System_String_" data-uid="Javax.Naming.Context.LookupLink(System.String)">LookupLink(String)</h4>
@@ -2330,7 +2332,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Rebind_Javax_Naming_Name_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Rebind(Javax.Naming.Name%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L344">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L557">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Rebind_" data-uid="Javax.Naming.Context.Rebind*"></a>
   <h4 id="Javax_Naming_Context_Rebind_Javax_Naming_Name_System_Object_" data-uid="Javax.Naming.Context.Rebind(Javax.Naming.Name,System.Object)">Rebind(Name, Object)</h4>
@@ -2385,7 +2387,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Rebind_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Rebind(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L334">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L547">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Rebind_" data-uid="Javax.Naming.Context.Rebind*"></a>
   <h4 id="Javax_Naming_Context_Rebind_System_String_System_Object_" data-uid="Javax.Naming.Context.Rebind(System.String,System.Object)">Rebind(String, Object)</h4>
@@ -2440,7 +2442,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_RemoveFromEnvironment_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.RemoveFromEnvironment(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L175">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L388">View Source</a>
   </span>
   <a id="Javax_Naming_Context_RemoveFromEnvironment_" data-uid="Javax.Naming.Context.RemoveFromEnvironment*"></a>
   <h4 id="Javax_Naming_Context_RemoveFromEnvironment_System_String_" data-uid="Javax.Naming.Context.RemoveFromEnvironment(System.String)">RemoveFromEnvironment(String)</h4>
@@ -2505,7 +2507,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Rename_Javax_Naming_Name_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Rename(Javax.Naming.Name%2CJavax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L364">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L577">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Rename_" data-uid="Javax.Naming.Context.Rename*"></a>
   <h4 id="Javax_Naming_Context_Rename_Javax_Naming_Name_Javax_Naming_Name_" data-uid="Javax.Naming.Context.Rename(Javax.Naming.Name,Javax.Naming.Name)">Rename(Name, Name)</h4>
@@ -2560,7 +2562,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Rename_System_String_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Rename(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L354">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L567">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Rename_" data-uid="Javax.Naming.Context.Rename*"></a>
   <h4 id="Javax_Naming_Context_Rename_System_String_System_String_" data-uid="Javax.Naming.Context.Rename(System.String,System.String)">Rename(String, String)</h4>
@@ -2615,7 +2617,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Unbind_Javax_Naming_Name_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Unbind(Javax.Naming.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L382">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L595">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Unbind_" data-uid="Javax.Naming.Context.Unbind*"></a>
   <h4 id="Javax_Naming_Context_Unbind_Javax_Naming_Name_" data-uid="Javax.Naming.Context.Unbind(Javax.Naming.Name)">Unbind(Name)</h4>
@@ -2664,7 +2666,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context_Unbind_System_String_.md&amp;value=---%0Auid%3A%20Javax.Naming.Context.Unbind(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L373">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L586">View Source</a>
   </span>
   <a id="Javax_Naming_Context_Unbind_" data-uid="Javax.Naming.Context.Unbind*"></a>
   <h4 id="Javax_Naming_Context_Unbind_System_String_" data-uid="Javax.Naming.Context.Unbind(System.String)">Unbind(String)</h4>
@@ -2727,9 +2729,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Naming.IContext.html">IContext</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -2742,7 +2747,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Context.md&amp;value=---%0Auid%3A%20Javax.Naming.Context%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Context.cs/#L242" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

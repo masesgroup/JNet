@@ -79,13 +79,6 @@ namespace Javax.Swing
             get { return IExecute<Java.Awt.Dimension>("getDoubleBufferMaximumSize"); } set { IExecute("setDoubleBufferMaximumSize", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#isDoubleBufferingEnabled()"/> 
-        /// </summary>
-        public bool IsDoubleBufferingEnabled
-        {
-            get { return IExecute<bool>("isDoubleBufferingEnabled"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#isCompletelyDirty(javax.swing.JComponent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
@@ -93,6 +86,15 @@ namespace Javax.Swing
         public bool IsCompletelyDirty(Javax.Swing.JComponent arg0)
         {
             return IExecute<bool>("isCompletelyDirty", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#isDoubleBufferingEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDoubleBufferingEnabled()
+        {
+            return IExecute<bool>("isDoubleBufferingEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#getOffscreenBuffer(java.awt.Component,int,int)"/>

@@ -54,46 +54,11 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#console()"/> 
-        /// </summary>
-        public static Java.Io.Console Console
-        {
-            get { return SExecute<Java.Io.Console>(LocalBridgeClazz, "console"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#currentTimeMillis()"/> 
-        /// </summary>
-        public static long CurrentTimeMillis
-        {
-            get { return SExecute<long>(LocalBridgeClazz, "currentTimeMillis"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getenv()"/> 
         /// </summary>
         public static Java.Util.Map<string, string> Env
         {
             get { return SExecute<Java.Util.Map<string, string>>(LocalBridgeClazz, "getenv"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#inheritedChannel()"/> 
-        /// </summary>
-        public static Java.Nio.Channels.Channel InheritedChannel
-        {
-            get { return SExecute<Java.Nio.Channels.Channel>(LocalBridgeClazz, "inheritedChannel"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#lineSeparator()"/> 
-        /// </summary>
-        public static string LineSeparator
-        {
-            get { return SExecute<string>(LocalBridgeClazz, "lineSeparator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#nanoTime()"/> 
-        /// </summary>
-        public static long NanoTime
-        {
-            get { return SExecute<long>(LocalBridgeClazz, "nanoTime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#getProperties()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setProperties(java.util.Properties)"/>
@@ -108,6 +73,15 @@ namespace Java.Lang
         public static Java.Lang.SecurityManager SecurityManager
         {
             get { return SExecute<Java.Lang.SecurityManager>(LocalBridgeClazz, "getSecurityManager"); } set { SExecute(LocalBridgeClazz, "setSecurityManager", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#console()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Io.Console"/></returns>
+        public static Java.Io.Console Console()
+        {
+            return SExecute<Java.Io.Console>(LocalBridgeClazz, "console");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#clearProperty(java.lang.String)"/>
@@ -147,6 +121,15 @@ namespace Java.Lang
             return SExecute<string>(LocalBridgeClazz, "getProperty", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#lineSeparator()"/>
+        /// </summary>
+
+        /// <returns><see cref="string"/></returns>
+        public static string LineSeparator()
+        {
+            return SExecute<string>(LocalBridgeClazz, "lineSeparator");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#setProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -176,6 +159,16 @@ namespace Java.Lang
             return SExecute<Java.Lang.System.Logger>(LocalBridgeClazz, "getLogger", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#inheritedChannel()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static Java.Nio.Channels.Channel InheritedChannel()
+        {
+            return SExecute<Java.Nio.Channels.Channel>(LocalBridgeClazz, "inheritedChannel");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#identityHashCode(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -192,6 +185,24 @@ namespace Java.Lang
         public static string MapLibraryName(string arg0)
         {
             return SExecute<string>(LocalBridgeClazz, "mapLibraryName", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#currentTimeMillis()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public static long CurrentTimeMillis()
+        {
+            return SExecute<long>(LocalBridgeClazz, "currentTimeMillis");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#nanoTime()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public static long NanoTime()
+        {
+            return SExecute<long>(LocalBridgeClazz, "nanoTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#arraycopy(java.lang.Object,int,java.lang.Object,int,int)"/>
@@ -439,13 +450,6 @@ namespace Java.Lang
 
                 #region Static methods
                 /// <summary>
-                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#values()"/> 
-                /// </summary>
-                public static Java.Lang.System.Logger.Level[] Values
-                {
-                    get { return SExecuteArray<Java.Lang.System.Logger.Level>(LocalBridgeClazz, "values"); }
-                }
-                /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#valueOf(java.lang.String)"/>
                 /// </summary>
                 /// <param name="arg0"><see cref="string"/></param>
@@ -453,6 +457,15 @@ namespace Java.Lang
                 public static Java.Lang.System.Logger.Level ValueOf(string arg0)
                 {
                     return SExecute<Java.Lang.System.Logger.Level>(LocalBridgeClazz, "valueOf", arg0);
+                }
+                /// <summary>
+                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#values()"/>
+                /// </summary>
+
+                /// <returns><see cref="Java.Lang.System.Logger.Level"/></returns>
+                public static Java.Lang.System.Logger.Level[] Values()
+                {
+                    return SExecuteArray<Java.Lang.System.Logger.Level>(LocalBridgeClazz, "values");
                 }
 
                 #endregion

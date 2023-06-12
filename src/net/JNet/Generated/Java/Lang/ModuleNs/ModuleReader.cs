@@ -33,16 +33,19 @@ namespace Java.Lang.ModuleNs
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/> 
-        /// </summary>
-        Java.Util.Stream.Stream<string> List { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#find(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         Java.Util.Optional<Java.Net.URI> Find(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Util.Stream.Stream<string> List();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#close()"/>
         /// </summary>
@@ -100,13 +103,6 @@ namespace Java.Lang.ModuleNs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream<string> List
-        {
-            get { return IExecute<Java.Util.Stream.Stream<string>>("list"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#find(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -115,6 +111,16 @@ namespace Java.Lang.ModuleNs
         public Java.Util.Optional<Java.Net.URI> Find(string arg0)
         {
             return IExecute<Java.Util.Optional<Java.Net.URI>>("find", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#list()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Stream.Stream<string> List()
+        {
+            return IExecute<Java.Util.Stream.Stream<string>>("list");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html#close()"/>

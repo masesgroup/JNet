@@ -1,0 +1,1708 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IIntStream
+   | JNet website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IIntStream
+   | JNet website ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Java.Util.Stream.IIntStream">
+  
+  
+  <h1 id="Java_Util_Stream_IIntStream" data-uid="Java.Util.Stream.IIntStream" class="text-break">Interface IIntStream
+  </h1>
+  <div class="markdown level0 summary"><p>.NET interface for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Java.Util.Stream.IBaseStream-2.html#Java_Util_Stream_IBaseStream_2_IsParallel">IBaseStream&lt;Nullable&lt;Int32&gt;, IntStream&gt;.IsParallel</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.IBaseStream-2.html#Java_Util_Stream_IBaseStream_2_Iterator">IBaseStream&lt;Nullable&lt;Int32&gt;, IntStream&gt;.Iterator</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.IBaseStream-2.html#Java_Util_Stream_IBaseStream_2_Parallel">IBaseStream&lt;Nullable&lt;Int32&gt;, IntStream&gt;.Parallel</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.IBaseStream-2.html#Java_Util_Stream_IBaseStream_2_Sequential">IBaseStream&lt;Nullable&lt;Int32&gt;, IntStream&gt;.Sequential</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.IBaseStream-2.html#Java_Util_Stream_IBaseStream_2_Spliterator">IBaseStream&lt;Nullable&lt;Int32&gt;, IntStream&gt;.Spliterator</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.IBaseStream-2.html#Java_Util_Stream_IBaseStream_2_Unordered">IBaseStream&lt;Nullable&lt;Int32&gt;, IntStream&gt;.Unordered</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.IBaseStream-2.html#Java_Util_Stream_IBaseStream_2_OnClose_Java_Lang_Runnable_">IBaseStream&lt;Nullable&lt;Int32&gt;, IntStream&gt;.OnClose(Runnable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.IBaseStream-2.html#Java_Util_Stream_IBaseStream_2_Close">IBaseStream&lt;Nullable&lt;Int32&gt;, IntStream&gt;.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.IAutoCloseable.html#Java_Lang_IAutoCloseable_Close">IAutoCloseable.Close()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Java.Util.Stream.html">Java.Util.Stream</a></h6>
+  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
+  <h5 id="Java_Util_Stream_IIntStream_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IIntStream : IBaseStream&lt;int?, IntStream&gt;, IAutoCloseable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_AsDoubleStream.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.AsDoubleStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L38">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_AsDoubleStream_" data-uid="Java.Util.Stream.IIntStream.AsDoubleStream*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_AsDoubleStream" data-uid="Java.Util.Stream.IIntStream.AsDoubleStream">AsDoubleStream</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asDoubleStream()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asDoubleStream()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DoubleStream AsDoubleStream { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_AsLongStream.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.AsLongStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L42">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_AsLongStream_" data-uid="Java.Util.Stream.IIntStream.AsLongStream*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_AsLongStream" data-uid="Java.Util.Stream.IIntStream.AsLongStream">AsLongStream</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asLongStream()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asLongStream()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LongStream AsLongStream { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.LongStream.html">LongStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Average.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Average%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L46">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Average_" data-uid="Java.Util.Stream.IIntStream.Average*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Average" data-uid="Java.Util.Stream.IIntStream.Average">Average</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#average()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#average()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OptionalDouble Average { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Boxed.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Boxed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L50">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Boxed_" data-uid="Java.Util.Stream.IIntStream.Boxed*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Boxed" data-uid="Java.Util.Stream.IIntStream.Boxed">Boxed</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#boxed()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#boxed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Stream&lt;int?&gt; Boxed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.Stream-1.html">Stream</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Count.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L54">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Count_" data-uid="Java.Util.Stream.IIntStream.Count*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Count" data-uid="Java.Util.Stream.IIntStream.Count">Count</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#count()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#count()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Distinct.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Distinct%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L58">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Distinct_" data-uid="Java.Util.Stream.IIntStream.Distinct*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Distinct" data-uid="Java.Util.Stream.IIntStream.Distinct">Distinct</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#distinct()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#distinct()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntStream Distinct { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_FindAny.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.FindAny%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L62">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_FindAny_" data-uid="Java.Util.Stream.IIntStream.FindAny*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_FindAny" data-uid="Java.Util.Stream.IIntStream.FindAny">FindAny</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findAny()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findAny()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OptionalInt FindAny { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.OptionalInt.html">OptionalInt</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_FindFirst.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.FindFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L66">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_FindFirst_" data-uid="Java.Util.Stream.IIntStream.FindFirst*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_FindFirst" data-uid="Java.Util.Stream.IIntStream.FindFirst">FindFirst</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findFirst()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findFirst()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OptionalInt FindFirst { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.OptionalInt.html">OptionalInt</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Iterator.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Iterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L70">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Iterator_" data-uid="Java.Util.Stream.IIntStream.Iterator*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Iterator" data-uid="Java.Util.Stream.IIntStream.Iterator">Iterator</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#iterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#iterator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Iterator Iterator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Iterator.html">Iterator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Max.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Max%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L74">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Max_" data-uid="Java.Util.Stream.IIntStream.Max*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Max" data-uid="Java.Util.Stream.IIntStream.Max">Max</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#max()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#max()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OptionalInt Max { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.OptionalInt.html">OptionalInt</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Min.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Min%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L78">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Min_" data-uid="Java.Util.Stream.IIntStream.Min*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Min" data-uid="Java.Util.Stream.IIntStream.Min">Min</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#min()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#min()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OptionalInt Min { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.OptionalInt.html">OptionalInt</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Parallel.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Parallel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L82">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Parallel_" data-uid="Java.Util.Stream.IIntStream.Parallel*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Parallel" data-uid="Java.Util.Stream.IIntStream.Parallel">Parallel</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#parallel()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#parallel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BaseStream Parallel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.BaseStream.html">BaseStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Sequential.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Sequential%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L86">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Sequential_" data-uid="Java.Util.Stream.IIntStream.Sequential*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Sequential" data-uid="Java.Util.Stream.IIntStream.Sequential">Sequential</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sequential()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sequential()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">BaseStream Sequential { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.BaseStream.html">BaseStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Sorted.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Sorted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L90">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Sorted_" data-uid="Java.Util.Stream.IIntStream.Sorted*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Sorted" data-uid="Java.Util.Stream.IIntStream.Sorted">Sorted</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sorted()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sorted()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntStream Sorted { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Spliterator.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Spliterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L94">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Spliterator_" data-uid="Java.Util.Stream.IIntStream.Spliterator*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Spliterator" data-uid="Java.Util.Stream.IIntStream.Spliterator">Spliterator</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#spliterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#spliterator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Spliterator Spliterator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Spliterator.html">Spliterator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Sum.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Sum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L98">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Sum_" data-uid="Java.Util.Stream.IIntStream.Sum*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Sum" data-uid="Java.Util.Stream.IIntStream.Sum">Sum</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sum()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sum()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Sum { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_SummaryStatistics.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.SummaryStatistics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L102">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_SummaryStatistics_" data-uid="Java.Util.Stream.IIntStream.SummaryStatistics*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_SummaryStatistics" data-uid="Java.Util.Stream.IIntStream.SummaryStatistics">SummaryStatistics</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#summaryStatistics()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#summaryStatistics()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntSummaryStatistics SummaryStatistics { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.IntSummaryStatistics.html">IntSummaryStatistics</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_ToArray.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.ToArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L106">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_ToArray_" data-uid="Java.Util.Stream.IIntStream.ToArray*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_ToArray" data-uid="Java.Util.Stream.IIntStream.ToArray">ToArray</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#toArray()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#toArray()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int[] ToArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_AllMatch_Java_Util_Function_IntPredicate_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.AllMatch(Java.Util.Function.IntPredicate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L129">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_AllMatch_" data-uid="Java.Util.Stream.IIntStream.AllMatch*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_AllMatch_Java_Util_Function_IntPredicate_" data-uid="Java.Util.Stream.IIntStream.AllMatch(Java.Util.Function.IntPredicate)">AllMatch(IntPredicate)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#allMatch(java.util.function.IntPredicate)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#allMatch(java.util.function.IntPredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AllMatch(IntPredicate arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_AnyMatch_Java_Util_Function_IntPredicate_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.AnyMatch(Java.Util.Function.IntPredicate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L135">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_AnyMatch_" data-uid="Java.Util.Stream.IIntStream.AnyMatch*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_AnyMatch_Java_Util_Function_IntPredicate_" data-uid="Java.Util.Stream.IIntStream.AnyMatch(Java.Util.Function.IntPredicate)">AnyMatch(IntPredicate)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#anyMatch(java.util.function.IntPredicate)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#anyMatch(java.util.function.IntPredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AnyMatch(IntPredicate arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Collect__1_Java_Util_Function_Supplier___0__Java_Util_Function_ObjIntConsumer___0__Java_Util_Function_BiConsumer___0___0__.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Collect%60%601(Java.Util.Function.Supplier%7B%60%600%7D%2CJava.Util.Function.ObjIntConsumer%7B%60%600%7D%2CJava.Util.Function.BiConsumer%7B%60%600%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L115">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Collect_" data-uid="Java.Util.Stream.IIntStream.Collect*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Collect__1_Java_Util_Function_Supplier___0__Java_Util_Function_ObjIntConsumer___0__Java_Util_Function_BiConsumer___0___0__" data-uid="Java.Util.Stream.IIntStream.Collect``1(Java.Util.Function.Supplier{``0},Java.Util.Function.ObjIntConsumer{``0},Java.Util.Function.BiConsumer{``0,``0})">Collect&lt;R&gt;(Supplier&lt;R&gt;, ObjIntConsumer&lt;R&gt;, BiConsumer&lt;R, R&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#collect(java.util.function.Supplier,java.util.function.ObjIntConsumer,java.util.function.BiConsumer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#collect(java.util.function.Supplier,java.util.function.ObjIntConsumer,java.util.function.BiConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R Collect&lt;R&gt;(Supplier&lt;R&gt; arg0, ObjIntConsumer&lt;R&gt; arg1, BiConsumer&lt;R, R&gt; arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.Supplier-1.html">Supplier</a>&lt;R&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.Supplier.html">Supplier</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.ObjIntConsumer-1.html">ObjIntConsumer</a>&lt;R&gt;</td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.ObjIntConsumer.html">ObjIntConsumer</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer</a>&lt;R, R&gt;</td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">R</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">R</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_DropWhile_Java_Util_Function_IntPredicate_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.DropWhile(Java.Util.Function.IntPredicate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L219">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_DropWhile_" data-uid="Java.Util.Stream.IIntStream.DropWhile*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_DropWhile_Java_Util_Function_IntPredicate_" data-uid="Java.Util.Stream.IIntStream.DropWhile(Java.Util.Function.IntPredicate)">DropWhile(IntPredicate)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#dropWhile(java.util.function.IntPredicate)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#dropWhile(java.util.function.IntPredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntStream DropWhile(IntPredicate arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></td>
+        <td><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Filter_Java_Util_Function_IntPredicate_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Filter(Java.Util.Function.IntPredicate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L166">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Filter_" data-uid="Java.Util.Stream.IIntStream.Filter*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Filter_Java_Util_Function_IntPredicate_" data-uid="Java.Util.Stream.IIntStream.Filter(Java.Util.Function.IntPredicate)">Filter(IntPredicate)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#filter(java.util.function.IntPredicate)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#filter(java.util.function.IntPredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntStream Filter(IntPredicate arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></td>
+        <td><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_FlatMap__1_Java_Util_Function_IntFunction___0__.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.FlatMap%60%601(Java.Util.Function.IntFunction%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L173">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_FlatMap_" data-uid="Java.Util.Stream.IIntStream.FlatMap*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_FlatMap__1_Java_Util_Function_IntFunction___0__" data-uid="Java.Util.Stream.IIntStream.FlatMap``1(Java.Util.Function.IntFunction{``0})">FlatMap&lt;Arg0ExtendsJava_Util_Stream_IntStream&gt;(IntFunction&lt;Arg0ExtendsJava_Util_Stream_IntStream&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#flatMap(java.util.function.IntFunction)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#flatMap(java.util.function.IntFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntStream FlatMap&lt;Arg0ExtendsJava_Util_Stream_IntStream&gt;(IntFunction&lt;Arg0ExtendsJava_Util_Stream_IntStream&gt; arg0)
+    where Arg0ExtendsJava_Util_Stream_IntStream : IntStream</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntFunction-1.html">IntFunction</a>&lt;Arg0ExtendsJava_Util_Stream_IntStream&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntFunction.html">IntFunction</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></td>
+        <td><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Arg0ExtendsJava_Util_Stream_IntStream</span></td>
+        <td><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_ForEach_Java_Util_Function_IntConsumer_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.ForEach(Java.Util.Function.IntConsumer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L208">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_ForEach_" data-uid="Java.Util.Stream.IIntStream.ForEach*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_ForEach_Java_Util_Function_IntConsumer_" data-uid="Java.Util.Stream.IIntStream.ForEach(Java.Util.Function.IntConsumer)">ForEach(IntConsumer)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#forEach(java.util.function.IntConsumer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#forEach(java.util.function.IntConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ForEach(IntConsumer arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntConsumer.html">IntConsumer</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntConsumer.html">IntConsumer</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_ForEachOrdered_Java_Util_Function_IntConsumer_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.ForEachOrdered(Java.Util.Function.IntConsumer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L213">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_ForEachOrdered_" data-uid="Java.Util.Stream.IIntStream.ForEachOrdered*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_ForEachOrdered_Java_Util_Function_IntConsumer_" data-uid="Java.Util.Stream.IIntStream.ForEachOrdered(Java.Util.Function.IntConsumer)">ForEachOrdered(IntConsumer)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#forEachOrdered(java.util.function.IntConsumer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#forEachOrdered(java.util.function.IntConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ForEachOrdered(IntConsumer arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntConsumer.html">IntConsumer</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntConsumer.html">IntConsumer</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Limit_System_Int64_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Limit(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L179">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Limit_" data-uid="Java.Util.Stream.IIntStream.Limit*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Limit_System_Int64_" data-uid="Java.Util.Stream.IIntStream.Limit(System.Int64)">Limit(Int64)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#limit(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#limit(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntStream Limit(long arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></td>
+        <td><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Map_Java_Util_Function_IntUnaryOperator_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Map(Java.Util.Function.IntUnaryOperator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L185">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Map_" data-uid="Java.Util.Stream.IIntStream.Map*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Map_Java_Util_Function_IntUnaryOperator_" data-uid="Java.Util.Stream.IIntStream.Map(Java.Util.Function.IntUnaryOperator)">Map(IntUnaryOperator)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#map(java.util.function.IntUnaryOperator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#map(java.util.function.IntUnaryOperator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntStream Map(IntUnaryOperator arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntUnaryOperator.html">IntUnaryOperator</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntUnaryOperator.html">IntUnaryOperator</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></td>
+        <td><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_MapToDouble_Java_Util_Function_IntToDoubleFunction_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.MapToDouble(Java.Util.Function.IntToDoubleFunction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L160">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_MapToDouble_" data-uid="Java.Util.Stream.IIntStream.MapToDouble*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_MapToDouble_Java_Util_Function_IntToDoubleFunction_" data-uid="Java.Util.Stream.IIntStream.MapToDouble(Java.Util.Function.IntToDoubleFunction)">MapToDouble(IntToDoubleFunction)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToDouble(java.util.function.IntToDoubleFunction)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToDouble(java.util.function.IntToDoubleFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DoubleStream MapToDouble(IntToDoubleFunction arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntToDoubleFunction.html">IntToDoubleFunction</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntToDoubleFunction.html">IntToDoubleFunction</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></td>
+        <td><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_MapToLong_Java_Util_Function_IntToLongFunction_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.MapToLong(Java.Util.Function.IntToLongFunction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L203">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_MapToLong_" data-uid="Java.Util.Stream.IIntStream.MapToLong*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_MapToLong_Java_Util_Function_IntToLongFunction_" data-uid="Java.Util.Stream.IIntStream.MapToLong(Java.Util.Function.IntToLongFunction)">MapToLong(IntToLongFunction)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToLong(java.util.function.IntToLongFunction)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToLong(java.util.function.IntToLongFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">LongStream MapToLong(IntToLongFunction arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntToLongFunction.html">IntToLongFunction</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntToLongFunction.html">IntToLongFunction</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.LongStream.html">LongStream</a></td>
+        <td><p><a class="xref" href="Java.Util.Stream.LongStream.html">LongStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_MapToObj__2_Java_Util_Function_IntFunction___1__.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.MapToObj%60%602(Java.Util.Function.IntFunction%7B%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L123">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_MapToObj_" data-uid="Java.Util.Stream.IIntStream.MapToObj*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_MapToObj__2_Java_Util_Function_IntFunction___1__" data-uid="Java.Util.Stream.IIntStream.MapToObj``2(Java.Util.Function.IntFunction{``1})">MapToObj&lt;U, Arg0ExtendsU&gt;(IntFunction&lt;Arg0ExtendsU&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToObj(java.util.function.IntFunction)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToObj(java.util.function.IntFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Stream&lt;U&gt; MapToObj&lt;U, Arg0ExtendsU&gt;(IntFunction&lt;Arg0ExtendsU&gt; arg0)
+    where Arg0ExtendsU : U</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntFunction-1.html">IntFunction</a>&lt;Arg0ExtendsU&gt;</td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntFunction.html">IntFunction</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.Stream-1.html">Stream</a>&lt;U&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Stream.Stream.html">Stream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">Arg0ExtendsU</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_NoneMatch_Java_Util_Function_IntPredicate_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.NoneMatch(Java.Util.Function.IntPredicate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L141">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_NoneMatch_" data-uid="Java.Util.Stream.IIntStream.NoneMatch*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_NoneMatch_Java_Util_Function_IntPredicate_" data-uid="Java.Util.Stream.IIntStream.NoneMatch(Java.Util.Function.IntPredicate)">NoneMatch(IntPredicate)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#noneMatch(java.util.function.IntPredicate)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#noneMatch(java.util.function.IntPredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool NoneMatch(IntPredicate arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Peek_Java_Util_Function_IntConsumer_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Peek(Java.Util.Function.IntConsumer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L191">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Peek_" data-uid="Java.Util.Stream.IIntStream.Peek*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Peek_Java_Util_Function_IntConsumer_" data-uid="Java.Util.Stream.IIntStream.Peek(Java.Util.Function.IntConsumer)">Peek(IntConsumer)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#peek(java.util.function.IntConsumer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#peek(java.util.function.IntConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntStream Peek(IntConsumer arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntConsumer.html">IntConsumer</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntConsumer.html">IntConsumer</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></td>
+        <td><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Reduce_Java_Util_Function_IntBinaryOperator_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Reduce(Java.Util.Function.IntBinaryOperator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L154">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Reduce_" data-uid="Java.Util.Stream.IIntStream.Reduce*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Reduce_Java_Util_Function_IntBinaryOperator_" data-uid="Java.Util.Stream.IIntStream.Reduce(Java.Util.Function.IntBinaryOperator)">Reduce(IntBinaryOperator)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#reduce(java.util.function.IntBinaryOperator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#reduce(java.util.function.IntBinaryOperator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">OptionalInt Reduce(IntBinaryOperator arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntBinaryOperator.html">IntBinaryOperator</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntBinaryOperator.html">IntBinaryOperator</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.OptionalInt.html">OptionalInt</a></td>
+        <td><p><a class="xref" href="Java.Util.OptionalInt.html">OptionalInt</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Reduce_System_Int32_Java_Util_Function_IntBinaryOperator_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Reduce(System.Int32%2CJava.Util.Function.IntBinaryOperator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L148">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Reduce_" data-uid="Java.Util.Stream.IIntStream.Reduce*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Reduce_System_Int32_Java_Util_Function_IntBinaryOperator_" data-uid="Java.Util.Stream.IIntStream.Reduce(System.Int32,Java.Util.Function.IntBinaryOperator)">Reduce(Int32, IntBinaryOperator)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#reduce(int,java.util.function.IntBinaryOperator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#reduce(int,java.util.function.IntBinaryOperator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Reduce(int arg0, IntBinaryOperator arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntBinaryOperator.html">IntBinaryOperator</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntBinaryOperator.html">IntBinaryOperator</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_Skip_System_Int64_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.Skip(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L197">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_Skip_" data-uid="Java.Util.Stream.IIntStream.Skip*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_Skip_System_Int64_" data-uid="Java.Util.Stream.IIntStream.Skip(System.Int64)">Skip(Int64)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#skip(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#skip(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntStream Skip(long arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></td>
+        <td><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream_TakeWhile_Java_Util_Function_IntPredicate_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream.TakeWhile(Java.Util.Function.IntPredicate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L225">View Source</a>
+  </span>
+  <a id="Java_Util_Stream_IIntStream_TakeWhile_" data-uid="Java.Util.Stream.IIntStream.TakeWhile*"></a>
+  <h4 id="Java_Util_Stream_IIntStream_TakeWhile_Java_Util_Function_IntPredicate_" data-uid="Java.Util.Stream.IIntStream.TakeWhile(Java.Util.Function.IntPredicate)">TakeWhile(IntPredicate)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#takeWhile(java.util.function.IntPredicate)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#takeWhile(java.util.function.IntPredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IntStream TakeWhile(IntPredicate arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.IntPredicate.html">IntPredicate</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></td>
+        <td><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_IIntStream.md&amp;value=---%0Auid%3A%20Java.Util.Stream.IIntStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/IntStream.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

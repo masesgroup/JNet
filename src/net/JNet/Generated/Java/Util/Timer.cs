@@ -71,11 +71,13 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#purge()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#purge()"/>
         /// </summary>
-        public int Purge
+
+        /// <returns><see cref="int"/></returns>
+        public int Purge()
         {
-            get { return IExecute<int>("purge"); }
+            return IExecute<int>("purge");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Timer.html#cancel()"/>

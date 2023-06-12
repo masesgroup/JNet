@@ -84,6 +84,9 @@
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
     <div class="level4"><a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a></div>
     <div class="level5"><span class="xref">BaseStream&lt;T, S&gt;</span></div>
+      <div class="level6"><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></div>
+      <div class="level6"><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></div>
+      <div class="level6"><a class="xref" href="Java.Util.Stream.LongStream.html">LongStream</a></div>
       <div class="level6"><a class="xref" href="Java.Util.Stream.Stream-1.html">Stream&lt;T&gt;</a></div>
   </div>
   <div class="implements">
@@ -94,6 +97,8 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Util.Stream.IBaseStream-2.html">IBaseStream</a>&lt;T, S&gt;</div>
+    <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -375,7 +380,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Util_Stream_BaseStream_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BaseStream&lt;T, S&gt; : AutoCloseable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition where S : BaseStream&lt;T, S&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class BaseStream&lt;T, S&gt; : AutoCloseable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IBaseStream&lt;T, S&gt;, IAutoCloseable where S : BaseStream&lt;T, S&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -620,7 +625,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_BaseStream_2_IsParallel.md&amp;value=---%0Auid%3A%20Java.Util.Stream.BaseStream%602.IsParallel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L144">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L196">View Source</a>
   </span>
   <a id="Java_Util_Stream_BaseStream_2_IsParallel_" data-uid="Java.Util.Stream.BaseStream`2.IsParallel*"></a>
   <h4 id="Java_Util_Stream_BaseStream_2_IsParallel" data-uid="Java.Util.Stream.BaseStream`2.IsParallel">IsParallel</h4>
@@ -651,7 +656,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_BaseStream_2_Iterator.md&amp;value=---%0Auid%3A%20Java.Util.Stream.BaseStream%602.Iterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L151">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L203">View Source</a>
   </span>
   <a id="Java_Util_Stream_BaseStream_2_Iterator_" data-uid="Java.Util.Stream.BaseStream`2.Iterator*"></a>
   <h4 id="Java_Util_Stream_BaseStream_2_Iterator" data-uid="Java.Util.Stream.BaseStream`2.Iterator">Iterator</h4>
@@ -682,7 +687,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_BaseStream_2_Parallel.md&amp;value=---%0Auid%3A%20Java.Util.Stream.BaseStream%602.Parallel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L158">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L210">View Source</a>
   </span>
   <a id="Java_Util_Stream_BaseStream_2_Parallel_" data-uid="Java.Util.Stream.BaseStream`2.Parallel*"></a>
   <h4 id="Java_Util_Stream_BaseStream_2_Parallel" data-uid="Java.Util.Stream.BaseStream`2.Parallel">Parallel</h4>
@@ -713,7 +718,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_BaseStream_2_Sequential.md&amp;value=---%0Auid%3A%20Java.Util.Stream.BaseStream%602.Sequential%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L165">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L217">View Source</a>
   </span>
   <a id="Java_Util_Stream_BaseStream_2_Sequential_" data-uid="Java.Util.Stream.BaseStream`2.Sequential*"></a>
   <h4 id="Java_Util_Stream_BaseStream_2_Sequential" data-uid="Java.Util.Stream.BaseStream`2.Sequential">Sequential</h4>
@@ -744,7 +749,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_BaseStream_2_Spliterator.md&amp;value=---%0Auid%3A%20Java.Util.Stream.BaseStream%602.Spliterator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L172">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L224">View Source</a>
   </span>
   <a id="Java_Util_Stream_BaseStream_2_Spliterator_" data-uid="Java.Util.Stream.BaseStream`2.Spliterator*"></a>
   <h4 id="Java_Util_Stream_BaseStream_2_Spliterator" data-uid="Java.Util.Stream.BaseStream`2.Spliterator">Spliterator</h4>
@@ -775,7 +780,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_BaseStream_2_Unordered.md&amp;value=---%0Auid%3A%20Java.Util.Stream.BaseStream%602.Unordered%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L179">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L231">View Source</a>
   </span>
   <a id="Java_Util_Stream_BaseStream_2_Unordered_" data-uid="Java.Util.Stream.BaseStream`2.Unordered*"></a>
   <h4 id="Java_Util_Stream_BaseStream_2_Unordered" data-uid="Java.Util.Stream.BaseStream`2.Unordered">Unordered</h4>
@@ -808,7 +813,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_BaseStream_2_Close.md&amp;value=---%0Auid%3A%20Java.Util.Stream.BaseStream%602.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L195">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L247">View Source</a>
   </span>
   <a id="Java_Util_Stream_BaseStream_2_Close_" data-uid="Java.Util.Stream.BaseStream`2.Close*"></a>
   <h4 id="Java_Util_Stream_BaseStream_2_Close" data-uid="Java.Util.Stream.BaseStream`2.Close">Close()</h4>
@@ -824,7 +829,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_BaseStream_2_OnClose_Java_Lang_Runnable_.md&amp;value=---%0Auid%3A%20Java.Util.Stream.BaseStream%602.OnClose(Java.Lang.Runnable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L188">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L240">View Source</a>
   </span>
   <a id="Java_Util_Stream_BaseStream_2_OnClose_" data-uid="Java.Util.Stream.BaseStream`2.OnClose*"></a>
   <h4 id="Java_Util_Stream_BaseStream_2_OnClose_Java_Lang_Runnable_" data-uid="Java.Util.Stream.BaseStream`2.OnClose(Java.Lang.Runnable)">OnClose(Runnable)</h4>
@@ -876,7 +881,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_BaseStream_2_op_Implicit_Java_Util_Stream_BaseStream__0__1___Java_Util_Stream_BaseStream.md&amp;value=---%0Auid%3A%20Java.Util.Stream.BaseStream%602.op_Implicit(Java.Util.Stream.BaseStream%7B%600%2C%601%7D)~Java.Util.Stream.BaseStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L128">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L180">View Source</a>
   </span>
   <a id="Java_Util_Stream_BaseStream_2_op_Implicit_" data-uid="Java.Util.Stream.BaseStream`2.op_Implicit*"></a>
   <h4 id="Java_Util_Stream_BaseStream_2_op_Implicit_Java_Util_Stream_BaseStream__0__1___Java_Util_Stream_BaseStream" data-uid="Java.Util.Stream.BaseStream`2.op_Implicit(Java.Util.Stream.BaseStream{`0,`1})~Java.Util.Stream.BaseStream">Implicit(BaseStream&lt;T, S&gt; to BaseStream)</h4>
@@ -938,9 +943,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Util.Stream.IBaseStream-2.html">IBaseStream&lt;T, S&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -953,7 +964,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Stream_BaseStream_2.md&amp;value=---%0Auid%3A%20Java.Util.Stream.BaseStream%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L118" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Stream/BaseStream.cs/#L170" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

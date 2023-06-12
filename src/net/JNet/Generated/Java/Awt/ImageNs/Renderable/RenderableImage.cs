@@ -33,17 +33,9 @@ namespace Java.Awt.ImageNs.Renderable
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createDefaultRendering()"/> 
-        /// </summary>
-        Java.Awt.ImageNs.RenderedImage CreateDefaultRendering { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getHeight()"/> 
         /// </summary>
         float Height { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#isDynamic()"/> 
-        /// </summary>
-        bool IsDynamic { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getMinX()"/> 
         /// </summary>
@@ -64,6 +56,18 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getWidth()"/> 
         /// </summary>
         float Width { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#isDynamic()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsDynamic();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createDefaultRendering()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        Java.Awt.ImageNs.RenderedImage CreateDefaultRendering();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createRendering(java.awt.image.renderable.RenderContext)"/>
         /// </summary>
@@ -120,25 +124,11 @@ namespace Java.Awt.ImageNs.Renderable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createDefaultRendering()"/> 
-        /// </summary>
-        public Java.Awt.ImageNs.RenderedImage CreateDefaultRendering
-        {
-            get { return IExecute<Java.Awt.ImageNs.RenderedImage>("createDefaultRendering"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getHeight()"/> 
         /// </summary>
         public float Height
         {
             get { return IExecute<float>("getHeight"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#isDynamic()"/> 
-        /// </summary>
-        public bool IsDynamic
-        {
-            get { return IExecute<bool>("isDynamic"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#getMinX()"/> 
@@ -174,6 +164,24 @@ namespace Java.Awt.ImageNs.Renderable
         public float Width
         {
             get { return IExecute<float>("getWidth"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#isDynamic()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDynamic()
+        {
+            return IExecute<bool>("isDynamic");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createDefaultRendering()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        public Java.Awt.ImageNs.RenderedImage CreateDefaultRendering()
+        {
+            return IExecute<Java.Awt.ImageNs.RenderedImage>("createDefaultRendering");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html#createRendering(java.awt.image.renderable.RenderContext)"/>

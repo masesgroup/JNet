@@ -73,7 +73,7 @@
   
   <h1 id="Java_Awt_EventNs_FocusListener" data-uid="Java.Awt.EventNs.FocusListener" class="text-break">Class FocusListener
   </h1>
-  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html</a></p>
+  <div class="markdown level0 summary"><p>Listener for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html</a>. Extends <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <a class="xref" href="Java.Awt.EventNs.IFocusListener.html">IFocusListener</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -83,7 +83,8 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span>&gt;</div>
     <div class="level4"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span></div>
-    <div class="level5"><span class="xref">FocusListener</span></div>
+    <div class="level5"><a class="xref" href="Java.Util.EventListener.html">EventListener</a></div>
+    <div class="level6"><span class="xref">FocusListener</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -91,6 +92,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
+    <div><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></div>
     <div><a class="xref" href="Java.Awt.EventNs.IFocusListener.html">IFocusListener</a></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
@@ -396,7 +398,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Awt_EventNs_FocusListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FocusListener : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IFocusListener, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class FocusListener : EventListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IEventListener, IFocusListener, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
   <h5 id="Java_Awt_EventNs_FocusListener_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</p>
@@ -405,10 +407,26 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_FocusListener__ctor.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.FocusListener.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L482">View Source</a>
+  </span>
+  <a id="Java_Awt_EventNs_FocusListener__ctor_" data-uid="Java.Awt.EventNs.FocusListener.#ctor*"></a>
+  <h4 id="Java_Awt_EventNs_FocusListener__ctor" data-uid="Java.Awt.EventNs.FocusListener.#ctor">FocusListener()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FocusListener()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_FocusListener__ctor_System_Action_Java_Awt_EventNs_FocusEvent__System_Action_Java_Awt_EventNs_FocusEvent__System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.FocusListener.%23ctor(System.Action%7BJava.Awt.EventNs.FocusEvent%7D%2CSystem.Action%7BJava.Awt.EventNs.FocusEvent%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/FocusListener.cs/#L66">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/FocusListener.cs/#L59">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_FocusListener__ctor_" data-uid="Java.Awt.EventNs.FocusListener.#ctor*"></a>
   <h4 id="Java_Awt_EventNs_FocusListener__ctor_System_Action_Java_Awt_EventNs_FocusEvent__System_Action_Java_Awt_EventNs_FocusEvent__System_Boolean_" data-uid="Java.Awt.EventNs.FocusListener.#ctor(System.Action{Java.Awt.EventNs.FocusEvent},System.Action{Java.Awt.EventNs.FocusEvent},System.Boolean)">FocusListener(Action&lt;FocusEvent&gt;, Action&lt;FocusEvent&gt;, Boolean)</h4>
@@ -456,7 +474,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_FocusListener_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.FocusListener.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/FocusListener.cs/#L48">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/FocusListener.cs/#L41">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_FocusListener_BridgeClassName_" data-uid="Java.Awt.EventNs.FocusListener.BridgeClassName*"></a>
   <h4 id="Java_Awt_EventNs_FocusListener_BridgeClassName" data-uid="Java.Awt.EventNs.FocusListener.BridgeClassName">BridgeClassName</h4>
@@ -489,7 +507,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_FocusListener_OnFocusGained.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.FocusListener.OnFocusGained%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/FocusListener.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/FocusListener.cs/#L48">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_FocusListener_OnFocusGained_" data-uid="Java.Awt.EventNs.FocusListener.OnFocusGained*"></a>
   <h4 id="Java_Awt_EventNs_FocusListener_OnFocusGained" data-uid="Java.Awt.EventNs.FocusListener.OnFocusGained">OnFocusGained</h4>
@@ -520,7 +538,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_FocusListener_OnFocusLost.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.FocusListener.OnFocusLost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/FocusListener.cs/#L59">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/FocusListener.cs/#L52">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_FocusListener_OnFocusLost_" data-uid="Java.Awt.EventNs.FocusListener.OnFocusLost*"></a>
   <h4 id="Java_Awt_EventNs_FocusListener_OnFocusLost" data-uid="Java.Awt.EventNs.FocusListener.OnFocusLost">OnFocusLost</h4>
@@ -553,7 +571,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_FocusListener_FocusGained_Java_Awt_EventNs_FocusEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.FocusListener.FocusGained(Java.Awt.EventNs.FocusEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/FocusListener.cs/#L92">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/FocusListener.cs/#L80">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_FocusListener_FocusGained_" data-uid="Java.Awt.EventNs.FocusListener.FocusGained*"></a>
   <h4 id="Java_Awt_EventNs_FocusListener_FocusGained_Java_Awt_EventNs_FocusEvent_" data-uid="Java.Awt.EventNs.FocusListener.FocusGained(Java.Awt.EventNs.FocusEvent)">FocusGained(FocusEvent)</h4>
@@ -562,7 +580,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void FocusGained(FocusEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void FocusGained(FocusEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -576,8 +594,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.FocusEvent.html">FocusEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.FocusEvent.html">FocusEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -586,7 +605,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_FocusListener_FocusLost_Java_Awt_EventNs_FocusEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.FocusListener.FocusLost(Java.Awt.EventNs.FocusEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/FocusListener.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/FocusListener.cs/#L88">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_FocusListener_FocusLost_" data-uid="Java.Awt.EventNs.FocusListener.FocusLost*"></a>
   <h4 id="Java_Awt_EventNs_FocusListener_FocusLost_Java_Awt_EventNs_FocusEvent_" data-uid="Java.Awt.EventNs.FocusListener.FocusLost(Java.Awt.EventNs.FocusEvent)">FocusLost(FocusEvent)</h4>
@@ -595,7 +614,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void FocusLost(FocusEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void FocusLost(FocusEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -609,8 +628,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.FocusEvent.html">FocusEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.FocusEvent.html">FocusEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -628,6 +648,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
   </div>
   <div>
+      <a class="xref" href="Java.Util.IEventListener.html">IEventListener</a>
+  </div>
+  <div>
       <a class="xref" href="Java.Awt.EventNs.IFocusListener.html">IFocusListener</a>
   </div>
   <div>
@@ -635,6 +658,10 @@
   </div>
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -647,7 +674,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_FocusListener.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.FocusListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/FocusListener.cs/#L43" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/FocusListener.cs/#L57" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

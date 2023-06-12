@@ -42,11 +42,13 @@ namespace Javax.Xml.Catalog
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#defaults()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#defaults()"/>
         /// </summary>
-        public static Javax.Xml.Catalog.CatalogFeatures Defaults
+
+        /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures"/></returns>
+        public static Javax.Xml.Catalog.CatalogFeatures Defaults()
         {
-            get { return SExecute<Javax.Xml.Catalog.CatalogFeatures>(LocalBridgeClazz, "defaults"); }
+            return SExecute<Javax.Xml.Catalog.CatalogFeatures>(LocalBridgeClazz, "defaults");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.html#builder()"/>
@@ -157,13 +159,6 @@ namespace Javax.Xml.Catalog
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#values()"/> 
-            /// </summary>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature[] Values
-            {
-                get { return SExecuteArray<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -172,23 +167,34 @@ namespace Javax.Xml.Catalog
             {
                 return SExecute<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "valueOf", arg0);
             }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Feature"/></returns>
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature[] Values()
+            {
+                return SExecuteArray<Javax.Xml.Catalog.CatalogFeatures.Feature>(LocalBridgeClazz, "values");
+            }
 
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#defaultValue()"/> 
-            /// </summary>
-            public string DefaultValue
-            {
-                get { return IExecute<string>("defaultValue"); }
-            }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#getPropertyName()"/> 
             /// </summary>
             public string PropertyName
             {
                 get { return IExecute<string>("getPropertyName"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#defaultValue()"/>
+            /// </summary>
+
+            /// <returns><see cref="string"/></returns>
+            public string DefaultValue()
+            {
+                return IExecute<string>("defaultValue");
             }
 
             #endregion

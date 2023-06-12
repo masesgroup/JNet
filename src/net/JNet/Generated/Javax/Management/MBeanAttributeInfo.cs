@@ -89,32 +89,38 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isIs()"/> 
-        /// </summary>
-        public bool IsIs
-        {
-            get { return IExecute<bool>("isIs"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isReadable()"/> 
-        /// </summary>
-        public bool IsReadable
-        {
-            get { return IExecute<bool>("isReadable"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isWritable()"/> 
-        /// </summary>
-        public bool IsWritable
-        {
-            get { return IExecute<bool>("isWritable"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#getType()"/> 
         /// </summary>
         public string Type
         {
             get { return IExecute<string>("getType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isIs()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsIs()
+        {
+            return IExecute<bool>("isIs");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isReadable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsReadable()
+        {
+            return IExecute<bool>("isReadable");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanAttributeInfo.html#isWritable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWritable()
+        {
+            return IExecute<bool>("isWritable");
         }
 
         #endregion

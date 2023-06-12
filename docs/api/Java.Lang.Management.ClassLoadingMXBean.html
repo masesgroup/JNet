@@ -93,6 +93,8 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Lang.Management.IClassLoadingMXBean.html">IClassLoadingMXBean</a></div>
+    <div><a class="xref" href="Java.Lang.Management.IPlatformManagedObject.html">IPlatformManagedObject</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -377,7 +379,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Lang_Management_ClassLoadingMXBean_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ClassLoadingMXBean : PlatformManagedObject, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class ClassLoadingMXBean : PlatformManagedObject, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IClassLoadingMXBean, IPlatformManagedObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -602,7 +604,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_ClassLoadingMXBean_IsVerbose.md&amp;value=---%0Auid%3A%20Java.Lang.Management.ClassLoadingMXBean.IsVerbose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L90">View Source</a>
   </span>
   <a id="Java_Lang_Management_ClassLoadingMXBean_IsVerbose_" data-uid="Java.Lang.Management.ClassLoadingMXBean.IsVerbose*"></a>
   <h4 id="Java_Lang_Management_ClassLoadingMXBean_IsVerbose" data-uid="Java.Lang.Management.ClassLoadingMXBean.IsVerbose">IsVerbose</h4>
@@ -633,7 +635,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_ClassLoadingMXBean_LoadedClassCount.md&amp;value=---%0Auid%3A%20Java.Lang.Management.ClassLoadingMXBean.LoadedClassCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L97">View Source</a>
   </span>
   <a id="Java_Lang_Management_ClassLoadingMXBean_LoadedClassCount_" data-uid="Java.Lang.Management.ClassLoadingMXBean.LoadedClassCount*"></a>
   <h4 id="Java_Lang_Management_ClassLoadingMXBean_LoadedClassCount" data-uid="Java.Lang.Management.ClassLoadingMXBean.LoadedClassCount">LoadedClassCount</h4>
@@ -664,7 +666,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_ClassLoadingMXBean_TotalLoadedClassCount.md&amp;value=---%0Auid%3A%20Java.Lang.Management.ClassLoadingMXBean.TotalLoadedClassCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L104">View Source</a>
   </span>
   <a id="Java_Lang_Management_ClassLoadingMXBean_TotalLoadedClassCount_" data-uid="Java.Lang.Management.ClassLoadingMXBean.TotalLoadedClassCount*"></a>
   <h4 id="Java_Lang_Management_ClassLoadingMXBean_TotalLoadedClassCount" data-uid="Java.Lang.Management.ClassLoadingMXBean.TotalLoadedClassCount">TotalLoadedClassCount</h4>
@@ -695,7 +697,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_ClassLoadingMXBean_UnloadedClassCount.md&amp;value=---%0Auid%3A%20Java.Lang.Management.ClassLoadingMXBean.UnloadedClassCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L111">View Source</a>
   </span>
   <a id="Java_Lang_Management_ClassLoadingMXBean_UnloadedClassCount_" data-uid="Java.Lang.Management.ClassLoadingMXBean.UnloadedClassCount*"></a>
   <h4 id="Java_Lang_Management_ClassLoadingMXBean_UnloadedClassCount" data-uid="Java.Lang.Management.ClassLoadingMXBean.UnloadedClassCount">UnloadedClassCount</h4>
@@ -728,7 +730,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_ClassLoadingMXBean_SetVerbose_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Lang.Management.ClassLoadingMXBean.SetVerbose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L80">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L119">View Source</a>
   </span>
   <a id="Java_Lang_Management_ClassLoadingMXBean_SetVerbose_" data-uid="Java.Lang.Management.ClassLoadingMXBean.SetVerbose*"></a>
   <h4 id="Java_Lang_Management_ClassLoadingMXBean_SetVerbose_System_Boolean_" data-uid="Java.Lang.Management.ClassLoadingMXBean.SetVerbose(System.Boolean)">SetVerbose(Boolean)</h4>
@@ -776,9 +778,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Lang.Management.IClassLoadingMXBean.html">IClassLoadingMXBean</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Lang.Management.IPlatformManagedObject.html">IPlatformManagedObject</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -791,7 +799,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Management_ClassLoadingMXBean.md&amp;value=---%0Auid%3A%20Java.Lang.Management.ClassLoadingMXBean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Management/ClassLoadingMXBean.cs/#L68" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

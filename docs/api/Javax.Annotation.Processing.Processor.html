@@ -83,6 +83,7 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Javax.Annotation.Processing.Processor.html">Processor</a>&gt;</div>
     <div class="level4"><span class="xref">Processor</span></div>
+      <div class="level5"><a class="xref" href="Javax.Annotation.Processing.AbstractProcessor.html">AbstractProcessor</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -92,6 +93,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Annotation.Processing.IProcessor.html">IProcessor</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -373,7 +375,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Annotation_Processing_Processor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Processor : JVMBridgeBase&lt;Processor&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Processor : JVMBridgeBase&lt;Processor&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IProcessor</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -598,7 +600,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_Processor_SupportedAnnotationTypes.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.Processor.SupportedAnnotationTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L104">View Source</a>
   </span>
   <a id="Javax_Annotation_Processing_Processor_SupportedAnnotationTypes_" data-uid="Javax.Annotation.Processing.Processor.SupportedAnnotationTypes*"></a>
   <h4 id="Javax_Annotation_Processing_Processor_SupportedAnnotationTypes" data-uid="Javax.Annotation.Processing.Processor.SupportedAnnotationTypes">SupportedAnnotationTypes</h4>
@@ -629,7 +631,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_Processor_SupportedOptions.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.Processor.SupportedOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L111">View Source</a>
   </span>
   <a id="Javax_Annotation_Processing_Processor_SupportedOptions_" data-uid="Javax.Annotation.Processing.Processor.SupportedOptions*"></a>
   <h4 id="Javax_Annotation_Processing_Processor_SupportedOptions" data-uid="Javax.Annotation.Processing.Processor.SupportedOptions">SupportedOptions</h4>
@@ -660,7 +662,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_Processor_SupportedSourceVersion.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.Processor.SupportedSourceVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L118">View Source</a>
   </span>
   <a id="Javax_Annotation_Processing_Processor_SupportedSourceVersion_" data-uid="Javax.Annotation.Processing.Processor.SupportedSourceVersion*"></a>
   <h4 id="Javax_Annotation_Processing_Processor_SupportedSourceVersion" data-uid="Javax.Annotation.Processing.Processor.SupportedSourceVersion">SupportedSourceVersion</h4>
@@ -693,7 +695,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_Processor_GetCompletions__1_Javax_Lang_Model_Element_Element_Javax_Lang_Model_Element_AnnotationMirror_Javax_Lang_Model_Element_ExecutableElement_System_String_.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.Processor.GetCompletions%60%601(Javax.Lang.Model.Element.Element%2CJavax.Lang.Model.Element.AnnotationMirror%2CJavax.Lang.Model.Element.ExecutableElement%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L89">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L142">View Source</a>
   </span>
   <a id="Javax_Annotation_Processing_Processor_GetCompletions_" data-uid="Javax.Annotation.Processing.Processor.GetCompletions*"></a>
   <h4 id="Javax_Annotation_Processing_Processor_GetCompletions__1_Javax_Lang_Model_Element_Element_Javax_Lang_Model_Element_AnnotationMirror_Javax_Lang_Model_Element_ExecutableElement_System_String_" data-uid="Javax.Annotation.Processing.Processor.GetCompletions``1(Javax.Lang.Model.Element.Element,Javax.Lang.Model.Element.AnnotationMirror,Javax.Lang.Model.Element.ExecutableElement,System.String)">GetCompletions&lt;ReturnExtendsJavax_Annotation_Processing_Completion&gt;(Element, AnnotationMirror, ExecutableElement, String)</h4>
@@ -778,7 +780,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_Processor_Init_Javax_Annotation_Processing_ProcessingEnvironment_.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.Processor.Init(Javax.Annotation.Processing.ProcessingEnvironment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L150">View Source</a>
   </span>
   <a id="Javax_Annotation_Processing_Processor_Init_" data-uid="Javax.Annotation.Processing.Processor.Init*"></a>
   <h4 id="Javax_Annotation_Processing_Processor_Init_Javax_Annotation_Processing_ProcessingEnvironment_" data-uid="Javax.Annotation.Processing.Processor.Init(Javax.Annotation.Processing.ProcessingEnvironment)">Init(ProcessingEnvironment)</h4>
@@ -812,7 +814,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_Processor_Process__1_Java_Util_Set___0__Javax_Annotation_Processing_RoundEnvironment_.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.Processor.Process%60%601(Java.Util.Set%7B%60%600%7D%2CJavax.Annotation.Processing.RoundEnvironment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L76">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L129">View Source</a>
   </span>
   <a id="Javax_Annotation_Processing_Processor_Process_" data-uid="Javax.Annotation.Processing.Processor.Process*"></a>
   <h4 id="Javax_Annotation_Processing_Processor_Process__1_Java_Util_Set___0__Javax_Annotation_Processing_RoundEnvironment_" data-uid="Javax.Annotation.Processing.Processor.Process``1(Java.Util.Set{``0},Javax.Annotation.Processing.RoundEnvironment)">Process&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt;(Set&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt;, RoundEnvironment)</h4>
@@ -899,9 +901,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Annotation.Processing.IProcessor.html">IProcessor</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -914,7 +919,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_Processor.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.Processor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L82" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

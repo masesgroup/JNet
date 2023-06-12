@@ -46,27 +46,6 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#elements()"/> 
-        /// </summary>
-        public Java.Util.Enumeration<Java.Security.Permission> Elements
-        {
-            get { return IExecute<Java.Util.Enumeration<Java.Security.Permission>>("elements"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#elementsAsStream()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream<Java.Security.Permission> ElementsAsStream
-        {
-            get { return IExecute<Java.Util.Stream.Stream<Java.Security.Permission>>("elementsAsStream"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#isReadOnly()"/> 
-        /// </summary>
-        public bool IsReadOnly
-        {
-            get { return IExecute<bool>("isReadOnly"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#implies(java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
@@ -76,12 +55,39 @@ namespace Java.Security
             return IExecute<bool>("implies", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#elements()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<Java.Security.Permission> Elements()
+        {
+            return IExecute<Java.Util.Enumeration<Java.Security.Permission>>("elements");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#add(java.security.Permission)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Permission"/></param>
         public void Add(Java.Security.Permission arg0)
         {
             IExecute("add", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#isReadOnly()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsReadOnly()
+        {
+            return IExecute<bool>("isReadOnly");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#elementsAsStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<Java.Security.Permission> ElementsAsStream()
+        {
+            return IExecute<Java.Util.Stream.Stream<Java.Security.Permission>>("elementsAsStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PermissionCollection.html#setReadOnly()"/>

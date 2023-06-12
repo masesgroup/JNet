@@ -33,9 +33,12 @@ namespace Javax.Naming.Event
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#targetMustExist()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#targetMustExist()"/>
         /// </summary>
-        bool TargetMustExist { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        bool TargetMustExist();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(java.lang.String,int,javax.naming.event.NamingListener)"/>
         /// </summary>
@@ -102,11 +105,14 @@ namespace Javax.Naming.Event
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#targetMustExist()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#targetMustExist()"/>
         /// </summary>
-        public bool TargetMustExist
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public bool TargetMustExist()
         {
-            get { return IExecute<bool>("targetMustExist"); }
+            return IExecute<bool>("targetMustExist");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventContext.html#addNamingListener(java.lang.String,int,javax.naming.event.NamingListener)"/>

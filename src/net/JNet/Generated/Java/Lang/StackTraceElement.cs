@@ -92,13 +92,6 @@ namespace Java.Lang
             get { return IExecute<string>("getFileName"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#isNativeMethod()"/> 
-        /// </summary>
-        public bool IsNativeMethod
-        {
-            get { return IExecute<bool>("isNativeMethod"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#getLineNumber()"/> 
         /// </summary>
         public int LineNumber
@@ -125,6 +118,15 @@ namespace Java.Lang
         public string ModuleVersion
         {
             get { return IExecute<string>("getModuleVersion"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#isNativeMethod()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsNativeMethod()
+        {
+            return IExecute<bool>("isNativeMethod");
         }
 
         #endregion

@@ -94,6 +94,9 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Lang.Model.Element.IVariableElement.html">IVariableElement</a></div>
+    <div><a class="xref" href="Javax.Lang.Model.Element.IElement.html">IElement</a></div>
+    <div><a class="xref" href="Javax.Lang.Model.IAnnotatedConstruct.html">IAnnotatedConstruct</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -399,7 +402,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Lang_Model_Element_VariableElement_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VariableElement : Element, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class VariableElement : Element, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IVariableElement, IElement, IAnnotatedConstruct</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -492,7 +495,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_VariableElement_ConstantValue.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.VariableElement.ConstantValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/VariableElement.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/VariableElement.cs/#L81">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_VariableElement_ConstantValue_" data-uid="Javax.Lang.Model.Element.VariableElement.ConstantValue*"></a>
   <h4 id="Javax_Lang_Model_Element_VariableElement_ConstantValue" data-uid="Javax.Lang.Model.Element.VariableElement.ConstantValue">ConstantValue</h4>
@@ -523,7 +526,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_VariableElement_EnclosingElement.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.VariableElement.EnclosingElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/VariableElement.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/VariableElement.cs/#L88">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_VariableElement_EnclosingElement_" data-uid="Javax.Lang.Model.Element.VariableElement.EnclosingElement*"></a>
   <h4 id="Javax_Lang_Model_Element_VariableElement_EnclosingElement" data-uid="Javax.Lang.Model.Element.VariableElement.EnclosingElement">EnclosingElement</h4>
@@ -686,7 +689,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_VariableElement_SimpleName.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.VariableElement.SimpleName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/VariableElement.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/VariableElement.cs/#L95">View Source</a>
   </span>
   <a id="Javax_Lang_Model_Element_VariableElement_SimpleName_" data-uid="Javax.Lang.Model.Element.VariableElement.SimpleName*"></a>
   <h4 id="Javax_Lang_Model_Element_VariableElement_SimpleName" data-uid="Javax.Lang.Model.Element.VariableElement.SimpleName">SimpleName</h4>
@@ -731,9 +734,18 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Lang.Model.Element.IVariableElement.html">IVariableElement</a>
+  </div>
+  <div>
+      <a class="xref" href="Javax.Lang.Model.Element.IElement.html">IElement</a>
+  </div>
+  <div>
+      <a class="xref" href="Javax.Lang.Model.IAnnotatedConstruct.html">IAnnotatedConstruct</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -746,7 +758,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_VariableElement.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.VariableElement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/VariableElement.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/VariableElement.cs/#L59" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

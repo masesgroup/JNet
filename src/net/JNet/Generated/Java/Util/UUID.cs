@@ -59,13 +59,6 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#randomUUID()"/> 
-        /// </summary>
-        public static Java.Util.UUID RandomUUID
-        {
-            get { return SExecute<Java.Util.UUID>(LocalBridgeClazz, "randomUUID"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#fromString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -83,17 +76,19 @@ namespace Java.Util
         {
             return SExecute<Java.Util.UUID>(LocalBridgeClazz, "nameUUIDFromBytes", new object[] { arg0 });
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#randomUUID()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.UUID"/></returns>
+        public static Java.Util.UUID RandomUUID()
+        {
+            return SExecute<Java.Util.UUID>(LocalBridgeClazz, "randomUUID");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#clockSequence()"/> 
-        /// </summary>
-        public int ClockSequence
-        {
-            get { return IExecute<int>("clockSequence"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#getLeastSignificantBits()"/> 
         /// </summary>
@@ -109,32 +104,13 @@ namespace Java.Util
             get { return IExecute<long>("getMostSignificantBits"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#node()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#clockSequence()"/>
         /// </summary>
-        public long Node
+
+        /// <returns><see cref="int"/></returns>
+        public int ClockSequence()
         {
-            get { return IExecute<long>("node"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#timestamp()"/> 
-        /// </summary>
-        public long Timestamp
-        {
-            get { return IExecute<long>("timestamp"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#variant()"/> 
-        /// </summary>
-        public int Variant
-        {
-            get { return IExecute<int>("variant"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#version()"/> 
-        /// </summary>
-        public int Version
-        {
-            get { return IExecute<int>("version"); }
+            return IExecute<int>("clockSequence");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#compareTo(java.lang.Object)"/>
@@ -153,6 +129,42 @@ namespace Java.Util
         public int CompareTo(Java.Util.UUID arg0)
         {
             return IExecute<int>("compareTo", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#variant()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Variant()
+        {
+            return IExecute<int>("variant");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#version()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Version()
+        {
+            return IExecute<int>("version");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#node()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long Node()
+        {
+            return IExecute<long>("node");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/UUID.html#timestamp()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long Timestamp()
+        {
+            return IExecute<long>("timestamp");
         }
 
         #endregion

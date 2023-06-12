@@ -81,9 +81,11 @@
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
-    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html">AbstractExecutorService</a>&gt;</div>
-    <div class="level4"><a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html">AbstractExecutorService</a></div>
-    <div class="level5"><span class="xref">ForkJoinPool</span></div>
+    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a>&gt;</div>
+    <div class="level4"><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></div>
+    <div class="level5"><a class="xref" href="Java.Util.Concurrent.ExecutorService.html">ExecutorService</a></div>
+    <div class="level6"><a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html">AbstractExecutorService</a></div>
+    <div class="level7"><span class="xref">ForkJoinPool</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -93,6 +95,8 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Util.Concurrent.IExecutorService.html">IExecutorService</a></div>
+    <div><a class="xref" href="Java.Util.Concurrent.IExecutor.html">IExecutor</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -115,112 +119,130 @@
       <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_InvokeAny__2_Java_Util_Collection___1__">AbstractExecutorService.InvokeAny&lt;T, Arg0ExtendsJava_Util_Concurrent_Callable_T_&gt;(Collection&lt;Arg0ExtendsJava_Util_Concurrent_Callable_T_&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_Submit__1_Java_Lang_Runnable_">AbstractExecutorService.Submit&lt;ReturnExtendsobject&gt;(Runnable)</a>
+      <a class="xref" href="Java.Util.Concurrent.AbstractExecutorService.html#Java_Util_Concurrent_AbstractExecutorService_Submit_Java_Lang_Runnable_">AbstractExecutorService.Submit(Runnable)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Concurrent.ExecutorService.html#Java_Util_Concurrent_ExecutorService_IsShutdown">ExecutorService.IsShutdown</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute(System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Concurrent.ExecutorService.html#Java_Util_Concurrent_ExecutorService_IsTerminated">ExecutorService.IsTerminated</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Concurrent.ExecutorService.html#Java_Util_Concurrent_ExecutorService_ShutdownNow">ExecutorService.ShutdownNow</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Concurrent.ExecutorService.html#Java_Util_Concurrent_ExecutorService_AwaitTermination_System_Int64_Java_Util_Concurrent_TimeUnit_">ExecutorService.AwaitTermination(Int64, TimeUnit)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Concurrent.ExecutorService.html#Java_Util_Concurrent_ExecutorService_Shutdown">ExecutorService.Shutdown()</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute(System.Type, System.String, System.Object[])</span>
+      <a class="xref" href="Java.Util.Concurrent.Executor.html#Java_Util_Concurrent_Executor_Execute_Java_Lang_Runnable_">Executor.Execute(Runnable)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute(System.Type, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecuteArray&lt;T&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SGetField(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SGetField(System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SGetField&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SGetField&lt;TReturn&gt;(System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SGetFieldArray&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecuteArray&lt;T&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SGetFieldArray&lt;TReturn&gt;(System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SSetField(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SGetField(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SSetField(System.String, System.Object)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SGetField(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SSetField&lt;TValue&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, TValue)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SGetField&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.SSetField&lt;TValue&gt;(System.String, TValue)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SGetField&lt;TReturn&gt;(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.IsAssignableFrom(System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SGetFieldArray&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SGetFieldArray&lt;TReturn&gt;(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.IsAssignableFrom&lt;T&gt;()</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SSetField(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.New(System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SSetField(System.String, System.Object)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.Execute&lt;T&gt;(T[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SSetField&lt;TValue&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, TValue)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.DynBridgeClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.SSetField&lt;TValue&gt;(System.String, TValue)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.BridgeClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.IsAssignableFrom(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynBridgeClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.AbstractExecutorService&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.BridgeClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.New(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.Execute&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Util.Concurrent.Executor&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.BridgeClazz</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClazzOf&lt;TClass&gt;(System.Boolean)</span>
@@ -395,7 +417,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Util_Concurrent_ForkJoinPool_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ForkJoinPool : AbstractExecutorService, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class ForkJoinPool : AbstractExecutorService, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IExecutorService, IExecutor</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -1345,19 +1367,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ForkJoinPool_Execute__1_Java_Util_Concurrent_ForkJoinTask___0__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ForkJoinPool.Execute%60%601(Java.Util.Concurrent.ForkJoinTask%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Concurrent_ForkJoinPool_Execute_Java_Util_Concurrent_ForkJoinTask_System_Object__.md&amp;value=---%0Auid%3A%20Java.Util.Concurrent.ForkJoinPool.Execute(Java.Util.Concurrent.ForkJoinTask%7BSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinPool.cs/#L237">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/ForkJoinPool.cs/#L236">View Source</a>
   </span>
   <a id="Java_Util_Concurrent_ForkJoinPool_Execute_" data-uid="Java.Util.Concurrent.ForkJoinPool.Execute*"></a>
-  <h4 id="Java_Util_Concurrent_ForkJoinPool_Execute__1_Java_Util_Concurrent_ForkJoinTask___0__" data-uid="Java.Util.Concurrent.ForkJoinPool.Execute``1(Java.Util.Concurrent.ForkJoinTask{``0})">Execute&lt;Arg0Extendsobject&gt;(ForkJoinTask&lt;Arg0Extendsobject&gt;)</h4>
+  <h4 id="Java_Util_Concurrent_ForkJoinPool_Execute_Java_Util_Concurrent_ForkJoinTask_System_Object__" data-uid="Java.Util.Concurrent.ForkJoinPool.Execute(Java.Util.Concurrent.ForkJoinTask{System.Object})">Execute(ForkJoinTask&lt;Object&gt;)</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#execute(java.util.concurrent.ForkJoinTask)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#execute(java.util.concurrent.ForkJoinTask)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Execute&lt;Arg0Extendsobject&gt;(ForkJoinTask&lt;Arg0Extendsobject&gt; arg0)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Execute(ForkJoinTask&lt;object&gt; arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1370,25 +1392,10 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Concurrent.ForkJoinTask-1.html">ForkJoinTask</a>&lt;Arg0Extendsobject&gt;</td>
+        <td><a class="xref" href="Java.Util.Concurrent.ForkJoinTask-1.html">ForkJoinTask</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
         <td><span class="parametername">arg0</span></td>
         <td><p><a class="xref" href="Java.Util.Concurrent.ForkJoinTask.html">ForkJoinTask</a></p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">Arg0Extendsobject</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1590,9 +1597,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Util.Concurrent.IExecutorService.html">IExecutorService</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Util.Concurrent.IExecutor.html">IExecutor</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>

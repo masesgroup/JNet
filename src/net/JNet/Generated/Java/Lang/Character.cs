@@ -1080,11 +1080,13 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#charValue()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#charValue()"/>
         /// </summary>
-        public char CharValue
+
+        /// <returns><see cref="char"/></returns>
+        public char CharValue()
         {
-            get { return IExecute<char>("charValue"); }
+            return IExecute<char>("charValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#compareTo(java.lang.Character)"/>
@@ -2902,13 +2904,6 @@ namespace Java.Lang
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#values()"/> 
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript[] Values
-            {
-                get { return SExecuteArray<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#forName(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -2934,6 +2929,15 @@ namespace Java.Lang
             public static Java.Lang.Character.UnicodeScript ValueOf(string arg0)
             {
                 return SExecute<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Lang.Character.UnicodeScript"/></returns>
+            public static Java.Lang.Character.UnicodeScript[] Values()
+            {
+                return SExecuteArray<Java.Lang.Character.UnicodeScript>(LocalBridgeClazz, "values");
             }
 
             #endregion

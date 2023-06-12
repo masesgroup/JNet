@@ -184,13 +184,6 @@ namespace Javax.Swing.Text
             get { return IExecute<Javax.Swing.Text.Highlighter>("getHighlighter"); } set { IExecute("setHighlighter", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#isEditable()"/> 
-        /// </summary>
-        public bool IsEditable
-        {
-            get { return IExecute<bool>("isEditable"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#getKeymap()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#setKeymap(javax.swing.text.Keymap)"/>
         /// </summary>
         public Javax.Swing.Text.Keymap Keymap
@@ -273,6 +266,15 @@ namespace Javax.Swing.Text
         public string Text
         {
             get { return IExecute<string>("getText"); } set { IExecute("setText", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#isEditable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEditable()
+        {
+            return IExecute<bool>("isEditable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#print()"/>

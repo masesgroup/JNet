@@ -64,13 +64,6 @@ namespace Javax.Management.Openmbean
             get { return IExecute<string>("getDescription"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isArray()"/> 
-        /// </summary>
-        public bool IsArray
-        {
-            get { return IExecute<bool>("isArray"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getTypeName()"/> 
         /// </summary>
         public string TypeName
@@ -85,6 +78,15 @@ namespace Javax.Management.Openmbean
         public bool IsValue(object arg0)
         {
             return IExecute<bool>("isValue", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isArray()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsArray()
+        {
+            return IExecute<bool>("isArray");
         }
 
         #endregion
@@ -140,13 +142,6 @@ namespace Javax.Management.Openmbean
             get { return IExecute<string>("getDescription"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isArray()"/> 
-        /// </summary>
-        public bool IsArray
-        {
-            get { return IExecute<bool>("isArray"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#getTypeName()"/> 
         /// </summary>
         public string TypeName
@@ -161,6 +156,15 @@ namespace Javax.Management.Openmbean
         public bool IsValue(object arg0)
         {
             return IExecute<bool>("isValue", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenType.html#isArray()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsArray()
+        {
+            return IExecute<bool>("isArray");
         }
 
         #endregion

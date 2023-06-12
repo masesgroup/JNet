@@ -83,7 +83,9 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Comparable.html">Comparable</a>&gt;</div>
     <div class="level4"><a class="xref" href="Java.Lang.Comparable.html">Comparable</a></div>
-    <div class="level5"><span class="xref">Chronology</span></div>
+    <div class="level5"><a class="xref" href="Java.Lang.Comparable-1.html">Comparable</a>&lt;<a class="xref" href="Java.Time.Chrono.Chronology.html">Chronology</a>&gt;</div>
+    <div class="level6"><span class="xref">Chronology</span></div>
+      <div class="level7"><a class="xref" href="Java.Time.Chrono.AbstractChronology.html">AbstractChronology</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -93,6 +95,8 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Time.Chrono.IChronology.html">IChronology</a></div>
+    <div><a class="xref" href="Java.Lang.IComparable-1.html">IComparable</a>&lt;<a class="xref" href="Java.Time.Chrono.Chronology.html">Chronology</a>&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -374,7 +378,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Time_Chrono_Chronology_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Chronology : Comparable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Chronology : Comparable&lt;Chronology&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IChronology, IComparable&lt;Chronology&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -434,7 +438,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_AvailableChronologies.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.AvailableChronologies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L47">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L242">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_AvailableChronologies_" data-uid="Java.Time.Chrono.Chronology.AvailableChronologies*"></a>
   <h4 id="Java_Time_Chrono_Chronology_AvailableChronologies" data-uid="Java.Time.Chrono.Chronology.AvailableChronologies">AvailableChronologies</h4>
@@ -498,7 +502,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_CalendarType.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.CalendarType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L85">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L280">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_CalendarType_" data-uid="Java.Time.Chrono.Chronology.CalendarType*"></a>
   <h4 id="Java_Time_Chrono_Chronology_CalendarType" data-uid="Java.Time.Chrono.Chronology.CalendarType">CalendarType</h4>
@@ -529,7 +533,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_Eras.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.Eras%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L92">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L287">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_Eras_" data-uid="Java.Time.Chrono.Chronology.Eras*"></a>
   <h4 id="Java_Time_Chrono_Chronology_Eras" data-uid="Java.Time.Chrono.Chronology.Eras">Eras</h4>
@@ -560,7 +564,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_Id.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L99">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L294">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_Id_" data-uid="Java.Time.Chrono.Chronology.Id*"></a>
   <h4 id="Java_Time_Chrono_Chronology_Id" data-uid="Java.Time.Chrono.Chronology.Id">Id</h4>
@@ -725,7 +729,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_CompareTo_Java_Time_Chrono_Chronology_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.CompareTo(Java.Time.Chrono.Chronology)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L117">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L312">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_CompareTo_" data-uid="Java.Time.Chrono.Chronology.CompareTo*"></a>
   <h4 id="Java_Time_Chrono_Chronology_CompareTo_Java_Time_Chrono_Chronology_" data-uid="Java.Time.Chrono.Chronology.CompareTo(Java.Time.Chrono.Chronology)">CompareTo(Chronology)</h4>
@@ -775,7 +779,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_CompareTo_System_Object_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.CompareTo(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L203">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L398">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_CompareTo_" data-uid="Java.Time.Chrono.Chronology.CompareTo*"></a>
   <h4 id="Java_Time_Chrono_Chronology_CompareTo_System_Object_" data-uid="Java.Time.Chrono.Chronology.CompareTo(System.Object)">CompareTo(Object)</h4>
@@ -825,7 +829,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_Date_Java_Time_Chrono_Era_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.Date(Java.Time.Chrono.Era%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L225">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L420">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_Date_" data-uid="Java.Time.Chrono.Chronology.Date*"></a>
   <h4 id="Java_Time_Chrono_Chronology_Date_Java_Time_Chrono_Era_System_Int32_System_Int32_System_Int32_" data-uid="Java.Time.Chrono.Chronology.Date(Java.Time.Chrono.Era,System.Int32,System.Int32,System.Int32)">Date(Era, Int32, Int32, Int32)</h4>
@@ -893,7 +897,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_Date_Java_Time_Temporal_TemporalAccessor_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.Date(Java.Time.Temporal.TemporalAccessor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L147">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L342">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_Date_" data-uid="Java.Time.Chrono.Chronology.Date*"></a>
   <h4 id="Java_Time_Chrono_Chronology_Date_Java_Time_Temporal_TemporalAccessor_" data-uid="Java.Time.Chrono.Chronology.Date(Java.Time.Temporal.TemporalAccessor)">Date(TemporalAccessor)</h4>
@@ -943,7 +947,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_Date_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.Date(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L138">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L333">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_Date_" data-uid="Java.Time.Chrono.Chronology.Date*"></a>
   <h4 id="Java_Time_Chrono_Chronology_Date_System_Int32_System_Int32_System_Int32_" data-uid="Java.Time.Chrono.Chronology.Date(System.Int32,System.Int32,System.Int32)">Date(Int32, Int32, Int32)</h4>
@@ -1005,7 +1009,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_DateEpochDay_System_Int64_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.DateEpochDay(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L156">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L351">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_DateEpochDay_" data-uid="Java.Time.Chrono.Chronology.DateEpochDay*"></a>
   <h4 id="Java_Time_Chrono_Chronology_DateEpochDay_System_Int64_" data-uid="Java.Time.Chrono.Chronology.DateEpochDay(System.Int64)">DateEpochDay(Int64)</h4>
@@ -1055,7 +1059,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_DateNow.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.DateNow%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L234">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L429">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_DateNow_" data-uid="Java.Time.Chrono.Chronology.DateNow*"></a>
   <h4 id="Java_Time_Chrono_Chronology_DateNow" data-uid="Java.Time.Chrono.Chronology.DateNow">DateNow()</h4>
@@ -1087,7 +1091,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_DateNow_Java_Time_Clock_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.DateNow(Java.Time.Clock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L243">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L438">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_DateNow_" data-uid="Java.Time.Chrono.Chronology.DateNow*"></a>
   <h4 id="Java_Time_Chrono_Chronology_DateNow_Java_Time_Clock_" data-uid="Java.Time.Chrono.Chronology.DateNow(Java.Time.Clock)">DateNow(Clock)</h4>
@@ -1137,7 +1141,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_DateNow_Java_Time_ZoneId_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.DateNow(Java.Time.ZoneId)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L252">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L447">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_DateNow_" data-uid="Java.Time.Chrono.Chronology.DateNow*"></a>
   <h4 id="Java_Time_Chrono_Chronology_DateNow_Java_Time_ZoneId_" data-uid="Java.Time.Chrono.Chronology.DateNow(Java.Time.ZoneId)">DateNow(ZoneId)</h4>
@@ -1187,7 +1191,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_DateYearDay_Java_Time_Chrono_Era_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.DateYearDay(Java.Time.Chrono.Era%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L263">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L458">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_DateYearDay_" data-uid="Java.Time.Chrono.Chronology.DateYearDay*"></a>
   <h4 id="Java_Time_Chrono_Chronology_DateYearDay_Java_Time_Chrono_Era_System_Int32_System_Int32_" data-uid="Java.Time.Chrono.Chronology.DateYearDay(Java.Time.Chrono.Era,System.Int32,System.Int32)">DateYearDay(Era, Int32, Int32)</h4>
@@ -1249,7 +1253,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_DateYearDay_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.DateYearDay(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L166">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L361">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_DateYearDay_" data-uid="Java.Time.Chrono.Chronology.DateYearDay*"></a>
   <h4 id="Java_Time_Chrono_Chronology_DateYearDay_System_Int32_System_Int32_" data-uid="Java.Time.Chrono.Chronology.DateYearDay(System.Int32,System.Int32)">DateYearDay(Int32, Int32)</h4>
@@ -1305,7 +1309,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_EpochSecond_Java_Time_Chrono_Era_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_Java_Time_ZoneOffset_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.EpochSecond(Java.Time.Chrono.Era%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CJava.Time.ZoneOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L333">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L528">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_EpochSecond_" data-uid="Java.Time.Chrono.Chronology.EpochSecond*"></a>
   <h4 id="Java_Time_Chrono_Chronology_EpochSecond_Java_Time_Chrono_Era_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_Java_Time_ZoneOffset_" data-uid="Java.Time.Chrono.Chronology.EpochSecond(Java.Time.Chrono.Era,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Java.Time.ZoneOffset)">EpochSecond(Era, Int32, Int32, Int32, Int32, Int32, Int32, ZoneOffset)</h4>
@@ -1397,7 +1401,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_EpochSecond_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_Java_Time_ZoneOffset_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.EpochSecond(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CJava.Time.ZoneOffset)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L317">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L512">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_EpochSecond_" data-uid="Java.Time.Chrono.Chronology.EpochSecond*"></a>
   <h4 id="Java_Time_Chrono_Chronology_EpochSecond_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_Java_Time_ZoneOffset_" data-uid="Java.Time.Chrono.Chronology.EpochSecond(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Java.Time.ZoneOffset)">EpochSecond(Int32, Int32, Int32, Int32, Int32, Int32, ZoneOffset)</h4>
@@ -1483,7 +1487,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_EraOf_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.EraOf(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L185">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L380">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_EraOf_" data-uid="Java.Time.Chrono.Chronology.EraOf*"></a>
   <h4 id="Java_Time_Chrono_Chronology_EraOf_System_Int32_" data-uid="Java.Time.Chrono.Chronology.EraOf(System.Int32)">EraOf(Int32)</h4>
@@ -1533,7 +1537,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_From_Java_Time_Temporal_TemporalAccessor_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.From(Java.Time.Temporal.TemporalAccessor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L56">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L251">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_From_" data-uid="Java.Time.Chrono.Chronology.From*"></a>
   <h4 id="Java_Time_Chrono_Chronology_From_Java_Time_Temporal_TemporalAccessor_" data-uid="Java.Time.Chrono.Chronology.From(Java.Time.Temporal.TemporalAccessor)">From(TemporalAccessor)</h4>
@@ -1583,7 +1587,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_GetDisplayName_Java_Time_Format_TextStyle_Java_Util_Locale_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.GetDisplayName(Java.Time.Format.TextStyle%2CJava.Util.Locale)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L213">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L408">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_GetDisplayName_" data-uid="Java.Time.Chrono.Chronology.GetDisplayName*"></a>
   <h4 id="Java_Time_Chrono_Chronology_GetDisplayName_Java_Time_Format_TextStyle_Java_Util_Locale_" data-uid="Java.Time.Chrono.Chronology.GetDisplayName(Java.Time.Format.TextStyle,Java.Util.Locale)">GetDisplayName(TextStyle, Locale)</h4>
@@ -1639,7 +1643,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_IsLeapYear_System_Int64_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.IsLeapYear(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L108">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L303">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_IsLeapYear_" data-uid="Java.Time.Chrono.Chronology.IsLeapYear*"></a>
   <h4 id="Java_Time_Chrono_Chronology_IsLeapYear_System_Int64_" data-uid="Java.Time.Chrono.Chronology.IsLeapYear(System.Int64)">IsLeapYear(Int64)</h4>
@@ -1689,7 +1693,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_LocalDateTime_Java_Time_Temporal_TemporalAccessor_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.LocalDateTime(Java.Time.Temporal.TemporalAccessor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L272">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L467">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_LocalDateTime_" data-uid="Java.Time.Chrono.Chronology.LocalDateTime*"></a>
   <h4 id="Java_Time_Chrono_Chronology_LocalDateTime_Java_Time_Temporal_TemporalAccessor_" data-uid="Java.Time.Chrono.Chronology.LocalDateTime(Java.Time.Temporal.TemporalAccessor)">LocalDateTime(TemporalAccessor)</h4>
@@ -1739,7 +1743,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_Of_System_String_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.Of(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L260">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_Of_" data-uid="Java.Time.Chrono.Chronology.Of*"></a>
   <h4 id="Java_Time_Chrono_Chronology_Of_System_String_" data-uid="Java.Time.Chrono.Chronology.Of(System.String)">Of(String)</h4>
@@ -1789,7 +1793,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_OfLocale_Java_Util_Locale_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.OfLocale(Java.Util.Locale)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L74">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L269">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_OfLocale_" data-uid="Java.Time.Chrono.Chronology.OfLocale*"></a>
   <h4 id="Java_Time_Chrono_Chronology_OfLocale_Java_Util_Locale_" data-uid="Java.Time.Chrono.Chronology.OfLocale(Java.Util.Locale)">OfLocale(Locale)</h4>
@@ -1839,7 +1843,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_Period_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.Period(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L283">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L478">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_Period_" data-uid="Java.Time.Chrono.Chronology.Period*"></a>
   <h4 id="Java_Time_Chrono_Chronology_Period_System_Int32_System_Int32_System_Int32_" data-uid="Java.Time.Chrono.Chronology.Period(System.Int32,System.Int32,System.Int32)">Period(Int32, Int32, Int32)</h4>
@@ -1901,7 +1905,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_ProlepticYear_Java_Time_Chrono_Era_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.ProlepticYear(Java.Time.Chrono.Era%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L127">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L322">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_ProlepticYear_" data-uid="Java.Time.Chrono.Chronology.ProlepticYear*"></a>
   <h4 id="Java_Time_Chrono_Chronology_ProlepticYear_Java_Time_Chrono_Era_System_Int32_" data-uid="Java.Time.Chrono.Chronology.ProlepticYear(Java.Time.Chrono.Era,System.Int32)">ProlepticYear(Era, Int32)</h4>
@@ -1957,7 +1961,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_Range_Java_Time_Temporal_ChronoField_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.Range(Java.Time.Temporal.ChronoField)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L194">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L389">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_Range_" data-uid="Java.Time.Chrono.Chronology.Range*"></a>
   <h4 id="Java_Time_Chrono_Chronology_Range_Java_Time_Temporal_ChronoField_" data-uid="Java.Time.Chrono.Chronology.Range(Java.Time.Temporal.ChronoField)">Range(ChronoField)</h4>
@@ -2007,7 +2011,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_ResolveDate_Java_Util_Map_Java_Time_Temporal_TemporalField_System_Nullable_System_Int64___Java_Time_Format_ResolverStyle_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.ResolveDate(Java.Util.Map%7BJava.Time.Temporal.TemporalField%2CSystem.Nullable%7BSystem.Int64%7D%7D%2CJava.Time.Format.ResolverStyle)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L176">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L371">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_ResolveDate_" data-uid="Java.Time.Chrono.Chronology.ResolveDate*"></a>
   <h4 id="Java_Time_Chrono_Chronology_ResolveDate_Java_Util_Map_Java_Time_Temporal_TemporalField_System_Nullable_System_Int64___Java_Time_Format_ResolverStyle_" data-uid="Java.Time.Chrono.Chronology.ResolveDate(Java.Util.Map{Java.Time.Temporal.TemporalField,System.Nullable{System.Int64}},Java.Time.Format.ResolverStyle)">ResolveDate(Map&lt;TemporalField, Nullable&lt;Int64&gt;&gt;, ResolverStyle)</h4>
@@ -2063,7 +2067,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_ZonedDateTime_Java_Time_Instant_Java_Time_ZoneId_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.ZonedDateTime(Java.Time.Instant%2CJava.Time.ZoneId)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L293">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L488">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_ZonedDateTime_" data-uid="Java.Time.Chrono.Chronology.ZonedDateTime*"></a>
   <h4 id="Java_Time_Chrono_Chronology_ZonedDateTime_Java_Time_Instant_Java_Time_ZoneId_" data-uid="Java.Time.Chrono.Chronology.ZonedDateTime(Java.Time.Instant,Java.Time.ZoneId)">ZonedDateTime(Instant, ZoneId)</h4>
@@ -2119,7 +2123,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology_ZonedDateTime_Java_Time_Temporal_TemporalAccessor_.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology.ZonedDateTime(Java.Time.Temporal.TemporalAccessor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L302">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L497">View Source</a>
   </span>
   <a id="Java_Time_Chrono_Chronology_ZonedDateTime_" data-uid="Java.Time.Chrono.Chronology.ZonedDateTime*"></a>
   <h4 id="Java_Time_Chrono_Chronology_ZonedDateTime_Java_Time_Temporal_TemporalAccessor_" data-uid="Java.Time.Chrono.Chronology.ZonedDateTime(Java.Time.Temporal.TemporalAccessor)">ZonedDateTime(TemporalAccessor)</h4>
@@ -2183,9 +2187,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Time.Chrono.IChronology.html">IChronology</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Lang.IComparable-1.html">IComparable&lt;T&gt;</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -2198,7 +2208,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Time_Chrono_Chronology.md&amp;value=---%0Auid%3A%20Java.Time.Chrono.Chronology%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Time/Chrono/Chronology.cs/#L224" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

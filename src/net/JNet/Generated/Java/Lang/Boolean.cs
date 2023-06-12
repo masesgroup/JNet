@@ -160,11 +160,13 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#booleanValue()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#booleanValue()"/>
         /// </summary>
-        public bool BooleanValue
+
+        /// <returns><see cref="bool"/></returns>
+        public bool BooleanValue()
         {
-            get { return IExecute<bool>("booleanValue"); }
+            return IExecute<bool>("booleanValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#compareTo(java.lang.Boolean)"/>

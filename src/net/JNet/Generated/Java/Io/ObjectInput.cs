@@ -33,13 +33,12 @@ namespace Java.Io
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#available()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#available()"/>
         /// </summary>
-        int Available { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#readObject()"/> 
-        /// </summary>
-        object ReadObject { get; }
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        int Available();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#read()"/>
         /// </summary>
@@ -63,6 +62,14 @@ namespace Java.Io
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         int Read(byte[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#readObject()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        object ReadObject();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#skip(long)"/>
         /// </summary>
@@ -116,18 +123,14 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#available()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#available()"/>
         /// </summary>
-        public int Available
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int Available()
         {
-            get { return IExecute<int>("available"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#readObject()"/> 
-        /// </summary>
-        public object ReadObject
-        {
-            get { return IExecute("readObject"); }
+            return IExecute<int>("available");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#read()"/>
@@ -160,6 +163,17 @@ namespace Java.Io
         public int Read(byte[] arg0)
         {
             return IExecute<int>("read", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#readObject()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        public object ReadObject()
+        {
+            return IExecute("readObject");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInput.html#skip(long)"/>

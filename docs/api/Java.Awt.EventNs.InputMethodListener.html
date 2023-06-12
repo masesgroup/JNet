@@ -73,7 +73,7 @@
   
   <h1 id="Java_Awt_EventNs_InputMethodListener" data-uid="Java.Awt.EventNs.InputMethodListener" class="text-break">Class InputMethodListener
   </h1>
-  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html</a></p>
+  <div class="markdown level0 summary"><p>Listener for <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html</a>. Extends <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <a class="xref" href="Java.Awt.EventNs.IInputMethodListener.html">IInputMethodListener</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -83,7 +83,8 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span>&gt;</div>
     <div class="level4"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span></div>
-    <div class="level5"><span class="xref">InputMethodListener</span></div>
+    <div class="level5"><a class="xref" href="Java.Util.EventListener.html">EventListener</a></div>
+    <div class="level6"><span class="xref">InputMethodListener</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -91,6 +92,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
+    <div><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></div>
     <div><a class="xref" href="Java.Awt.EventNs.IInputMethodListener.html">IInputMethodListener</a></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
@@ -396,7 +398,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Awt_EventNs_InputMethodListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class InputMethodListener : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IInputMethodListener, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class InputMethodListener : EventListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IEventListener, IInputMethodListener, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
   <h5 id="Java_Awt_EventNs_InputMethodListener_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</p>
@@ -405,10 +407,26 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_InputMethodListener__ctor.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.InputMethodListener.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/AllPackageClasses.cs/#L683">View Source</a>
+  </span>
+  <a id="Java_Awt_EventNs_InputMethodListener__ctor_" data-uid="Java.Awt.EventNs.InputMethodListener.#ctor*"></a>
+  <h4 id="Java_Awt_EventNs_InputMethodListener__ctor" data-uid="Java.Awt.EventNs.InputMethodListener.#ctor">InputMethodListener()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputMethodListener()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_InputMethodListener__ctor_System_Action_Java_Awt_EventNs_InputMethodEvent__System_Action_Java_Awt_EventNs_InputMethodEvent__System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.InputMethodListener.%23ctor(System.Action%7BJava.Awt.EventNs.InputMethodEvent%7D%2CSystem.Action%7BJava.Awt.EventNs.InputMethodEvent%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/InputMethodListener.cs/#L66">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/InputMethodListener.cs/#L59">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_InputMethodListener__ctor_" data-uid="Java.Awt.EventNs.InputMethodListener.#ctor*"></a>
   <h4 id="Java_Awt_EventNs_InputMethodListener__ctor_System_Action_Java_Awt_EventNs_InputMethodEvent__System_Action_Java_Awt_EventNs_InputMethodEvent__System_Boolean_" data-uid="Java.Awt.EventNs.InputMethodListener.#ctor(System.Action{Java.Awt.EventNs.InputMethodEvent},System.Action{Java.Awt.EventNs.InputMethodEvent},System.Boolean)">InputMethodListener(Action&lt;InputMethodEvent&gt;, Action&lt;InputMethodEvent&gt;, Boolean)</h4>
@@ -456,7 +474,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_InputMethodListener_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.InputMethodListener.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/InputMethodListener.cs/#L48">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/InputMethodListener.cs/#L41">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_InputMethodListener_BridgeClassName_" data-uid="Java.Awt.EventNs.InputMethodListener.BridgeClassName*"></a>
   <h4 id="Java_Awt_EventNs_InputMethodListener_BridgeClassName" data-uid="Java.Awt.EventNs.InputMethodListener.BridgeClassName">BridgeClassName</h4>
@@ -489,7 +507,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_InputMethodListener_OnCaretPositionChanged.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.InputMethodListener.OnCaretPositionChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/InputMethodListener.cs/#L59">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/InputMethodListener.cs/#L52">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_InputMethodListener_OnCaretPositionChanged_" data-uid="Java.Awt.EventNs.InputMethodListener.OnCaretPositionChanged*"></a>
   <h4 id="Java_Awt_EventNs_InputMethodListener_OnCaretPositionChanged" data-uid="Java.Awt.EventNs.InputMethodListener.OnCaretPositionChanged">OnCaretPositionChanged</h4>
@@ -520,7 +538,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_InputMethodListener_OnInputMethodTextChanged.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.InputMethodListener.OnInputMethodTextChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/InputMethodListener.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Awt/EventNs/InputMethodListener.cs/#L48">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_InputMethodListener_OnInputMethodTextChanged_" data-uid="Java.Awt.EventNs.InputMethodListener.OnInputMethodTextChanged*"></a>
   <h4 id="Java_Awt_EventNs_InputMethodListener_OnInputMethodTextChanged" data-uid="Java.Awt.EventNs.InputMethodListener.OnInputMethodTextChanged">OnInputMethodTextChanged</h4>
@@ -553,7 +571,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_InputMethodListener_CaretPositionChanged_Java_Awt_EventNs_InputMethodEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.InputMethodListener.CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/InputMethodListener.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/InputMethodListener.cs/#L80">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_InputMethodListener_CaretPositionChanged_" data-uid="Java.Awt.EventNs.InputMethodListener.CaretPositionChanged*"></a>
   <h4 id="Java_Awt_EventNs_InputMethodListener_CaretPositionChanged_Java_Awt_EventNs_InputMethodEvent_" data-uid="Java.Awt.EventNs.InputMethodListener.CaretPositionChanged(Java.Awt.EventNs.InputMethodEvent)">CaretPositionChanged(InputMethodEvent)</h4>
@@ -562,7 +580,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CaretPositionChanged(InputMethodEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void CaretPositionChanged(InputMethodEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -576,8 +594,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.InputMethodEvent.html">InputMethodEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.InputMethodEvent.html">InputMethodEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -586,7 +605,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_InputMethodListener_InputMethodTextChanged_Java_Awt_EventNs_InputMethodEvent_.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.InputMethodListener.InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/InputMethodListener.cs/#L92">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/InputMethodListener.cs/#L88">View Source</a>
   </span>
   <a id="Java_Awt_EventNs_InputMethodListener_InputMethodTextChanged_" data-uid="Java.Awt.EventNs.InputMethodListener.InputMethodTextChanged*"></a>
   <h4 id="Java_Awt_EventNs_InputMethodListener_InputMethodTextChanged_Java_Awt_EventNs_InputMethodEvent_" data-uid="Java.Awt.EventNs.InputMethodListener.InputMethodTextChanged(Java.Awt.EventNs.InputMethodEvent)">InputMethodTextChanged(InputMethodEvent)</h4>
@@ -595,7 +614,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InputMethodTextChanged(InputMethodEvent e)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void InputMethodTextChanged(InputMethodEvent arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -609,8 +628,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Awt.EventNs.InputMethodEvent.html">InputMethodEvent</a></td>
-        <td><span class="parametername">e</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Awt.EventNs.InputMethodEvent.html">InputMethodEvent</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -628,6 +648,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
   </div>
   <div>
+      <a class="xref" href="Java.Util.IEventListener.html">IEventListener</a>
+  </div>
+  <div>
       <a class="xref" href="Java.Awt.EventNs.IInputMethodListener.html">IInputMethodListener</a>
   </div>
   <div>
@@ -635,6 +658,10 @@
   </div>
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -647,7 +674,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_EventNs_InputMethodListener.md&amp;value=---%0Auid%3A%20Java.Awt.EventNs.InputMethodListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/EventNs/InputMethodListener.cs/#L43" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/EventNs/InputMethodListener.cs/#L57" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

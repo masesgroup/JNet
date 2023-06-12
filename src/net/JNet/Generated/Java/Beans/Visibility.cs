@@ -33,13 +33,17 @@ namespace Java.Beans
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#avoidingGui()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#avoidingGui()"/>
         /// </summary>
-        bool AvoidingGui { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool AvoidingGui();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#needsGui()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#needsGui()"/>
         /// </summary>
-        bool NeedsGui { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool NeedsGui();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#dontUseGui()"/>
         /// </summary>
@@ -80,18 +84,22 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#avoidingGui()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#avoidingGui()"/>
         /// </summary>
-        public bool AvoidingGui
+
+        /// <returns><see cref="bool"/></returns>
+        public bool AvoidingGui()
         {
-            get { return IExecute<bool>("avoidingGui"); }
+            return IExecute<bool>("avoidingGui");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#needsGui()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#needsGui()"/>
         /// </summary>
-        public bool NeedsGui
+
+        /// <returns><see cref="bool"/></returns>
+        public bool NeedsGui()
         {
-            get { return IExecute<bool>("needsGui"); }
+            return IExecute<bool>("needsGui");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html#dontUseGui()"/>

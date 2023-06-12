@@ -114,25 +114,11 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#aliases()"/> 
-        /// </summary>
-        public Java.Util.Enumeration<string> Aliases
-        {
-            get { return IExecute<Java.Util.Enumeration<string>>("aliases"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
             get { return IExecute<Java.Security.Provider>("getProvider"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#size()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecute<int>("size"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getType()"/> 
@@ -181,6 +167,16 @@ namespace Java.Security
         public bool IsKeyEntry(string arg0)
         {
             return IExecute<bool>("isKeyEntry", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#size()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        public int Size()
+        {
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#getCertificateAlias(java.security.cert.Certificate)"/>
@@ -247,6 +243,16 @@ namespace Java.Security
         public Java.Util.Date GetCreationDate(string arg0)
         {
             return IExecute<Java.Util.Date>("getCreationDate", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#aliases()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        /// <exception cref="Java.Security.KeyStoreException"/>
+        public Java.Util.Enumeration<string> Aliases()
+        {
+            return IExecute<Java.Util.Enumeration<string>>("aliases");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.html#deleteEntry(java.lang.String)"/>
@@ -654,13 +660,6 @@ namespace Java.Security
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#isDestroyed()"/> 
-            /// </summary>
-            public bool IsDestroyed
-            {
-                get { return IExecute<bool>("isDestroyed"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#getPassword()"/> 
             /// </summary>
             public char[] Password
@@ -680,6 +679,15 @@ namespace Java.Security
             public Java.Security.Spec.AlgorithmParameterSpec ProtectionParameters
             {
                 get { return IExecute<Java.Security.Spec.AlgorithmParameterSpec>("getProtectionParameters"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#isDestroyed()"/>
+            /// </summary>
+
+            /// <returns><see cref="bool"/></returns>
+            public bool IsDestroyed()
+            {
+                return IExecute<bool>("isDestroyed");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#destroy()"/>

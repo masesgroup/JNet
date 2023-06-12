@@ -54,13 +54,6 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#values()"/> 
-        /// </summary>
-        public static Java.Time.Chrono.ThaiBuddhistEra[] Values
-        {
-            get { return SExecuteArray<Java.Time.Chrono.ThaiBuddhistEra>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -77,6 +70,15 @@ namespace Java.Time.Chrono
         public static Java.Time.Chrono.ThaiBuddhistEra ValueOf(string arg0)
         {
             return SExecute<Java.Time.Chrono.ThaiBuddhistEra>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistEra"/></returns>
+        public static Java.Time.Chrono.ThaiBuddhistEra[] Values()
+        {
+            return SExecuteArray<Java.Time.Chrono.ThaiBuddhistEra>(LocalBridgeClazz, "values");
         }
 
         #endregion

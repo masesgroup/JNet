@@ -84,6 +84,7 @@
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Beans.BeanInfo.html">BeanInfo</a>&gt;</div>
     <div class="level4"><span class="xref">BeanInfo</span></div>
       <div class="level5"><a class="xref" href="Java.Beans.Beancontext.BeanContextServiceProviderBeanInfo.html">BeanContextServiceProviderBeanInfo</a></div>
+      <div class="level5"><a class="xref" href="Java.Beans.SimpleBeanInfo.html">SimpleBeanInfo</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -93,6 +94,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Beans.IBeanInfo.html">IBeanInfo</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -374,7 +376,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Beans_BeanInfo_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class BeanInfo : JVMBridgeBase&lt;BeanInfo&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class BeanInfo : JVMBridgeBase&lt;BeanInfo&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IBeanInfo</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -434,7 +436,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_AdditionalBeanInfo.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.AdditionalBeanInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L67">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L119">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_AdditionalBeanInfo_" data-uid="Java.Beans.BeanInfo.AdditionalBeanInfo*"></a>
   <h4 id="Java_Beans_BeanInfo_AdditionalBeanInfo" data-uid="Java.Beans.BeanInfo.AdditionalBeanInfo">AdditionalBeanInfo</h4>
@@ -465,7 +467,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_BeanDescriptor.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.BeanDescriptor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L74">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L126">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_BeanDescriptor_" data-uid="Java.Beans.BeanInfo.BeanDescriptor*"></a>
   <h4 id="Java_Beans_BeanInfo_BeanDescriptor" data-uid="Java.Beans.BeanInfo.BeanDescriptor">BeanDescriptor</h4>
@@ -529,7 +531,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_DefaultEventIndex.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.DefaultEventIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L81">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L133">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_DefaultEventIndex_" data-uid="Java.Beans.BeanInfo.DefaultEventIndex*"></a>
   <h4 id="Java_Beans_BeanInfo_DefaultEventIndex" data-uid="Java.Beans.BeanInfo.DefaultEventIndex">DefaultEventIndex</h4>
@@ -560,7 +562,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_DefaultPropertyIndex.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.DefaultPropertyIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L88">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L140">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_DefaultPropertyIndex_" data-uid="Java.Beans.BeanInfo.DefaultPropertyIndex*"></a>
   <h4 id="Java_Beans_BeanInfo_DefaultPropertyIndex" data-uid="Java.Beans.BeanInfo.DefaultPropertyIndex">DefaultPropertyIndex</h4>
@@ -591,7 +593,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_EventSetDescriptors.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.EventSetDescriptors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L95">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L147">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_EventSetDescriptors_" data-uid="Java.Beans.BeanInfo.EventSetDescriptors*"></a>
   <h4 id="Java_Beans_BeanInfo_EventSetDescriptors" data-uid="Java.Beans.BeanInfo.EventSetDescriptors">EventSetDescriptors</h4>
@@ -622,7 +624,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_ICON_COLOR_16x16.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.ICON_COLOR_16x16%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L95">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_ICON_COLOR_16x16_" data-uid="Java.Beans.BeanInfo.ICON_COLOR_16x16*"></a>
   <h4 id="Java_Beans_BeanInfo_ICON_COLOR_16x16" data-uid="Java.Beans.BeanInfo.ICON_COLOR_16x16">ICON_COLOR_16x16</h4>
@@ -653,7 +655,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_ICON_COLOR_32x32.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.ICON_COLOR_32x32%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L47">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L99">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_ICON_COLOR_32x32_" data-uid="Java.Beans.BeanInfo.ICON_COLOR_32x32*"></a>
   <h4 id="Java_Beans_BeanInfo_ICON_COLOR_32x32" data-uid="Java.Beans.BeanInfo.ICON_COLOR_32x32">ICON_COLOR_32x32</h4>
@@ -684,7 +686,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_ICON_MONO_16x16.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.ICON_MONO_16x16%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L103">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_ICON_MONO_16x16_" data-uid="Java.Beans.BeanInfo.ICON_MONO_16x16*"></a>
   <h4 id="Java_Beans_BeanInfo_ICON_MONO_16x16" data-uid="Java.Beans.BeanInfo.ICON_MONO_16x16">ICON_MONO_16x16</h4>
@@ -715,7 +717,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_ICON_MONO_32x32.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.ICON_MONO_32x32%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L107">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_ICON_MONO_32x32_" data-uid="Java.Beans.BeanInfo.ICON_MONO_32x32*"></a>
   <h4 id="Java_Beans_BeanInfo_ICON_MONO_32x32" data-uid="Java.Beans.BeanInfo.ICON_MONO_32x32">ICON_MONO_32x32</h4>
@@ -878,7 +880,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_MethodDescriptors.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.MethodDescriptors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L102">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L154">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_MethodDescriptors_" data-uid="Java.Beans.BeanInfo.MethodDescriptors*"></a>
   <h4 id="Java_Beans_BeanInfo_MethodDescriptors" data-uid="Java.Beans.BeanInfo.MethodDescriptors">MethodDescriptors</h4>
@@ -909,7 +911,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_PropertyDescriptors.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.PropertyDescriptors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L109">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L161">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_PropertyDescriptors_" data-uid="Java.Beans.BeanInfo.PropertyDescriptors*"></a>
   <h4 id="Java_Beans_BeanInfo_PropertyDescriptors" data-uid="Java.Beans.BeanInfo.PropertyDescriptors">PropertyDescriptors</h4>
@@ -942,7 +944,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo_GetIcon_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo.GetIcon(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L118">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L170">View Source</a>
   </span>
   <a id="Java_Beans_BeanInfo_GetIcon_" data-uid="Java.Beans.BeanInfo.GetIcon*"></a>
   <h4 id="Java_Beans_BeanInfo_GetIcon_System_Int32_" data-uid="Java.Beans.BeanInfo.GetIcon(System.Int32)">GetIcon(Int32)</h4>
@@ -1006,9 +1008,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Beans.IBeanInfo.html">IBeanInfo</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1021,7 +1026,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_BeanInfo.md&amp;value=---%0Auid%3A%20Java.Beans.BeanInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/BeanInfo.cs/#L81" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

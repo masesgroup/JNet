@@ -88,13 +88,6 @@ namespace Javax.Management.Relation
             get { return IExecute<Javax.Management.Relation.RoleResult>("getAllRoles"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#isInRelationService()"/> 
-        /// </summary>
-        public bool? IsInRelationService
-        {
-            get { return IExecute<bool?>("isInRelationService"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getReferencedMBeans()"/> 
         /// </summary>
         public Java.Util.Map<Javax.Management.ObjectName, Java.Util.List<string>> ReferencedMBeans
@@ -123,11 +116,13 @@ namespace Javax.Management.Relation
             get { return IExecute<string>("getRelationTypeName"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#retrieveAllRoles()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#isInRelationService()"/>
         /// </summary>
-        public Javax.Management.Relation.RoleList RetrieveAllRoles
+
+        /// <returns><see cref="bool"/></returns>
+        public bool? IsInRelationService()
         {
-            get { return IExecute<Javax.Management.Relation.RoleList>("retrieveAllRoles"); }
+            return IExecute<bool?>("isInRelationService");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRoleCardinality(java.lang.String)"/>
@@ -162,6 +157,15 @@ namespace Javax.Management.Relation
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
             return IExecute<Javax.Management.ObjectName>("preRegister", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#retrieveAllRoles()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Management.Relation.RoleList"/></returns>
+        public Javax.Management.Relation.RoleList RetrieveAllRoles()
+        {
+            return IExecute<Javax.Management.Relation.RoleList>("retrieveAllRoles");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRoles(java.lang.String[])"/>

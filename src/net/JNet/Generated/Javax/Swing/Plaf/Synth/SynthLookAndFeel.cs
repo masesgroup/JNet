@@ -89,11 +89,13 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#shouldUpdateStyleOnAncestorChanged()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#shouldUpdateStyleOnAncestorChanged()"/>
         /// </summary>
-        public bool ShouldUpdateStyleOnAncestorChanged
+
+        /// <returns><see cref="bool"/></returns>
+        public bool ShouldUpdateStyleOnAncestorChanged()
         {
-            get { return IExecute<bool>("shouldUpdateStyleOnAncestorChanged"); }
+            return IExecute<bool>("shouldUpdateStyleOnAncestorChanged");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.io.InputStream,java.lang.Class)"/>

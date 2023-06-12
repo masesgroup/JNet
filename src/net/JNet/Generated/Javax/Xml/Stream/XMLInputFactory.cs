@@ -78,18 +78,13 @@ namespace Javax.Xml.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newDefaultFactory()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newDefaultFactory()"/>
         /// </summary>
-        public static Javax.Xml.Stream.XMLInputFactory NewDefaultFactory
+
+        /// <returns><see cref="Javax.Xml.Stream.XMLInputFactory"/></returns>
+        public static Javax.Xml.Stream.XMLInputFactory NewDefaultFactory()
         {
-            get { return SExecute<Javax.Xml.Stream.XMLInputFactory>(LocalBridgeClazz, "newDefaultFactory"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newInstance()"/> 
-        /// </summary>
-        public static Javax.Xml.Stream.XMLInputFactory NewInstance
-        {
-            get { return SExecute<Javax.Xml.Stream.XMLInputFactory>(LocalBridgeClazz, "newInstance"); }
+            return SExecute<Javax.Xml.Stream.XMLInputFactory>(LocalBridgeClazz, "newDefaultFactory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newFactory()"/>
@@ -111,6 +106,16 @@ namespace Javax.Xml.Stream
         public static Javax.Xml.Stream.XMLInputFactory NewFactory(string arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Xml.Stream.XMLInputFactory>(LocalBridgeClazz, "newFactory", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#newInstance()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Stream.XMLInputFactory"/></returns>
+        /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
+        public static Javax.Xml.Stream.XMLInputFactory NewInstance()
+        {
+            return SExecute<Javax.Xml.Stream.XMLInputFactory>(LocalBridgeClazz, "newInstance");
         }
 
         #endregion

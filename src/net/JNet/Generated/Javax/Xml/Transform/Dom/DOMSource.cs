@@ -67,13 +67,6 @@ namespace Javax.Xml.Transform.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html#isEmpty()"/> 
-        /// </summary>
-        public bool IsEmpty
-        {
-            get { return IExecute<bool>("isEmpty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html#getNode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html#setNode(org.w3c.dom.Node)"/>
         /// </summary>
         public Org.W3c.Dom.Node Node
@@ -86,6 +79,15 @@ namespace Javax.Xml.Transform.Dom
         public string SystemId
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMSource.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecute<bool>("isEmpty");
         }
 
         #endregion

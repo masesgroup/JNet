@@ -116,13 +116,6 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#values()"/> 
-            /// </summary>
-            public static Java.Awt.MultipleGradientPaint.ColorSpaceType[] Values
-            {
-                get { return SExecuteArray<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -130,6 +123,15 @@ namespace Java.Awt
             public static Java.Awt.MultipleGradientPaint.ColorSpaceType ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Awt.MultipleGradientPaint.ColorSpaceType"/></returns>
+            public static Java.Awt.MultipleGradientPaint.ColorSpaceType[] Values()
+            {
+                return SExecuteArray<Java.Awt.MultipleGradientPaint.ColorSpaceType>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -175,13 +177,6 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#values()"/> 
-            /// </summary>
-            public static Java.Awt.MultipleGradientPaint.CycleMethod[] Values
-            {
-                get { return SExecuteArray<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -189,6 +184,15 @@ namespace Java.Awt
             public static Java.Awt.MultipleGradientPaint.CycleMethod ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.CycleMethod.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Awt.MultipleGradientPaint.CycleMethod"/></returns>
+            public static Java.Awt.MultipleGradientPaint.CycleMethod[] Values()
+            {
+                return SExecuteArray<Java.Awt.MultipleGradientPaint.CycleMethod>(LocalBridgeClazz, "values");
             }
 
             #endregion

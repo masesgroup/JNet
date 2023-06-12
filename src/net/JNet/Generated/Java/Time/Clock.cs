@@ -42,20 +42,6 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#systemDefaultZone()"/> 
-        /// </summary>
-        public static Java.Time.Clock SystemDefaultZone
-        {
-            get { return SExecute<Java.Time.Clock>(LocalBridgeClazz, "systemDefaultZone"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#systemUTC()"/> 
-        /// </summary>
-        public static Java.Time.Clock SystemUTC
-        {
-            get { return SExecute<Java.Time.Clock>(LocalBridgeClazz, "systemUTC"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#fixed(java.time.Instant,java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
@@ -83,6 +69,24 @@ namespace Java.Time
         public static Java.Time.Clock System(Java.Time.ZoneId arg0)
         {
             return SExecute<Java.Time.Clock>(LocalBridgeClazz, "system", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#systemDefaultZone()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Clock"/></returns>
+        public static Java.Time.Clock SystemDefaultZone()
+        {
+            return SExecute<Java.Time.Clock>(LocalBridgeClazz, "systemDefaultZone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#systemUTC()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Clock"/></returns>
+        public static Java.Time.Clock SystemUTC()
+        {
+            return SExecute<Java.Time.Clock>(LocalBridgeClazz, "systemUTC");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#tick(java.time.Clock,java.time.Duration)"/>
@@ -126,20 +130,6 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#instant()"/> 
-        /// </summary>
-        public Java.Time.Instant Instant
-        {
-            get { return IExecute<Java.Time.Instant>("instant"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#millis()"/> 
-        /// </summary>
-        public long Millis
-        {
-            get { return IExecute<long>("millis"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#getZone()"/> 
         /// </summary>
         public Java.Time.ZoneId Zone
@@ -154,6 +144,24 @@ namespace Java.Time
         public Java.Time.Clock WithZone(Java.Time.ZoneId arg0)
         {
             return IExecute<Java.Time.Clock>("withZone", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#instant()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant Instant()
+        {
+            return IExecute<Java.Time.Instant>("instant");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Clock.html#millis()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long Millis()
+        {
+            return IExecute<long>("millis");
         }
 
         #endregion

@@ -64,20 +64,6 @@ namespace Javax.Swing.Plaf.Basic
             get { return IExecute<Java.Awt.Color>("getFloatingColor"); } set { IExecute("setFloatingColor", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isFloating()"/> 
-        /// </summary>
-        public bool IsFloating
-        {
-            get { return IExecute<bool>("isFloating"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isRolloverBorders()"/> 
-        /// </summary>
-        public bool IsRolloverBorders
-        {
-            get { return IExecute<bool>("isRolloverBorders"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#canDock(java.awt.Component,java.awt.Point)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
@@ -86,6 +72,24 @@ namespace Javax.Swing.Plaf.Basic
         public bool CanDock(Java.Awt.Component arg0, Java.Awt.Point arg1)
         {
             return IExecute<bool>("canDock", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isFloating()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFloating()
+        {
+            return IExecute<bool>("isFloating");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#isRolloverBorders()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRolloverBorders()
+        {
+            return IExecute<bool>("isRolloverBorders");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.html#setFloating(boolean,java.awt.Point)"/>

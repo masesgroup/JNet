@@ -94,6 +94,9 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Sound.Sampled.IMixer.html">IMixer</a></div>
+    <div><a class="xref" href="Javax.Sound.Sampled.ILine.html">ILine</a></div>
+    <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -402,7 +405,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Sound_Sampled_Mixer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Mixer : Line, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Mixer : Line, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IMixer, ILine, IAutoCloseable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -411,7 +414,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer__ctor.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1098">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1103">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer__ctor_" data-uid="Javax.Sound.Sampled.Mixer.#ctor*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer__ctor" data-uid="Javax.Sound.Sampled.Mixer.#ctor">Mixer()</h4>
@@ -427,7 +430,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1102">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1107">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer__ctor_" data-uid="Javax.Sound.Sampled.Mixer.#ctor*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer__ctor_System_Object___" data-uid="Javax.Sound.Sampled.Mixer.#ctor(System.Object[])">Mixer(Object[])</h4>
@@ -462,7 +465,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_BridgeClassName.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1109">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1114">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_BridgeClassName_" data-uid="Javax.Sound.Sampled.Mixer.BridgeClassName*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_BridgeClassName" data-uid="Javax.Sound.Sampled.Mixer.BridgeClassName">BridgeClassName</h4>
@@ -495,7 +498,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1113">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1118">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_IsBridgeAbstract_" data-uid="Javax.Sound.Sampled.Mixer.IsBridgeAbstract*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_IsBridgeAbstract" data-uid="Javax.Sound.Sampled.Mixer.IsBridgeAbstract">IsBridgeAbstract</h4>
@@ -528,7 +531,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1117">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1122">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_IsBridgeCloseable_" data-uid="Javax.Sound.Sampled.Mixer.IsBridgeCloseable*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_IsBridgeCloseable" data-uid="Javax.Sound.Sampled.Mixer.IsBridgeCloseable">IsBridgeCloseable</h4>
@@ -561,7 +564,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1121">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1126">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_IsBridgeInterface_" data-uid="Javax.Sound.Sampled.Mixer.IsBridgeInterface*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_IsBridgeInterface" data-uid="Javax.Sound.Sampled.Mixer.IsBridgeInterface">IsBridgeInterface</h4>
@@ -594,7 +597,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1125">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/AllPackageClasses.cs/#L1130">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_IsBridgeStatic_" data-uid="Javax.Sound.Sampled.Mixer.IsBridgeStatic*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_IsBridgeStatic" data-uid="Javax.Sound.Sampled.Mixer.IsBridgeStatic">IsBridgeStatic</h4>
@@ -627,7 +630,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_MixerInfo.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.MixerInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L138">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_MixerInfo_" data-uid="Javax.Sound.Sampled.Mixer.MixerInfo*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_MixerInfo" data-uid="Javax.Sound.Sampled.Mixer.MixerInfo">MixerInfo</h4>
@@ -658,7 +661,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_SourceLineInfo.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.SourceLineInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L145">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_SourceLineInfo_" data-uid="Javax.Sound.Sampled.Mixer.SourceLineInfo*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_SourceLineInfo" data-uid="Javax.Sound.Sampled.Mixer.SourceLineInfo">SourceLineInfo</h4>
@@ -689,7 +692,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_SourceLines.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.SourceLines%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L152">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_SourceLines_" data-uid="Javax.Sound.Sampled.Mixer.SourceLines*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_SourceLines" data-uid="Javax.Sound.Sampled.Mixer.SourceLines">SourceLines</h4>
@@ -720,7 +723,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_TargetLineInfo.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.TargetLineInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L159">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_TargetLineInfo_" data-uid="Javax.Sound.Sampled.Mixer.TargetLineInfo*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_TargetLineInfo" data-uid="Javax.Sound.Sampled.Mixer.TargetLineInfo">TargetLineInfo</h4>
@@ -751,7 +754,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_TargetLines.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.TargetLines%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L166">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_TargetLines_" data-uid="Javax.Sound.Sampled.Mixer.TargetLines*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_TargetLines" data-uid="Javax.Sound.Sampled.Mixer.TargetLines">TargetLines</h4>
@@ -784,7 +787,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_GetLine_Javax_Sound_Sampled_Line_Info_.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.GetLine(Javax.Sound.Sampled.Line.Info)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L117">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L204">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_GetLine_" data-uid="Javax.Sound.Sampled.Mixer.GetLine*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_GetLine_Javax_Sound_Sampled_Line_Info_" data-uid="Javax.Sound.Sampled.Mixer.GetLine(Javax.Sound.Sampled.Line.Info)">GetLine(Line.Info)</h4>
@@ -849,7 +852,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_GetMaxLines_Javax_Sound_Sampled_Line_Info_.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.GetMaxLines(Javax.Sound.Sampled.Line.Info)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L107">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L194">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_GetMaxLines_" data-uid="Javax.Sound.Sampled.Mixer.GetMaxLines*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_GetMaxLines_Javax_Sound_Sampled_Line_Info_" data-uid="Javax.Sound.Sampled.Mixer.GetMaxLines(Javax.Sound.Sampled.Line.Info)">GetMaxLines(Line.Info)</h4>
@@ -899,7 +902,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_GetSourceLineInfo_Javax_Sound_Sampled_Line_Info_.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.GetSourceLineInfo(Javax.Sound.Sampled.Line.Info)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L126">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L213">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_GetSourceLineInfo_" data-uid="Javax.Sound.Sampled.Mixer.GetSourceLineInfo*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_GetSourceLineInfo_Javax_Sound_Sampled_Line_Info_" data-uid="Javax.Sound.Sampled.Mixer.GetSourceLineInfo(Javax.Sound.Sampled.Line.Info)">GetSourceLineInfo(Line.Info)</h4>
@@ -949,7 +952,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_GetTargetLineInfo_Javax_Sound_Sampled_Line_Info_.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.GetTargetLineInfo(Javax.Sound.Sampled.Line.Info)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L135">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L222">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_GetTargetLineInfo_" data-uid="Javax.Sound.Sampled.Mixer.GetTargetLineInfo*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_GetTargetLineInfo_Javax_Sound_Sampled_Line_Info_" data-uid="Javax.Sound.Sampled.Mixer.GetTargetLineInfo(Javax.Sound.Sampled.Line.Info)">GetTargetLineInfo(Line.Info)</h4>
@@ -999,7 +1002,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_IsLineSupported_Javax_Sound_Sampled_Line_Info_.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.IsLineSupported(Javax.Sound.Sampled.Line.Info)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L88">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L175">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_IsLineSupported_" data-uid="Javax.Sound.Sampled.Mixer.IsLineSupported*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_IsLineSupported_Javax_Sound_Sampled_Line_Info_" data-uid="Javax.Sound.Sampled.Mixer.IsLineSupported(Javax.Sound.Sampled.Line.Info)">IsLineSupported(Line.Info)</h4>
@@ -1049,7 +1052,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_IsSynchronizationSupported_Javax_Sound_Sampled_Line___System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.IsSynchronizationSupported(Javax.Sound.Sampled.Line%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L98">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L185">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_IsSynchronizationSupported_" data-uid="Javax.Sound.Sampled.Mixer.IsSynchronizationSupported*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_IsSynchronizationSupported_Javax_Sound_Sampled_Line___System_Boolean_" data-uid="Javax.Sound.Sampled.Mixer.IsSynchronizationSupported(Javax.Sound.Sampled.Line[],System.Boolean)">IsSynchronizationSupported(Line[], Boolean)</h4>
@@ -1105,7 +1108,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_Synchronize_Javax_Sound_Sampled_Line___System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.Synchronize(Javax.Sound.Sampled.Line%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L144">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L231">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_Synchronize_" data-uid="Javax.Sound.Sampled.Mixer.Synchronize*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_Synchronize_Javax_Sound_Sampled_Line___System_Boolean_" data-uid="Javax.Sound.Sampled.Mixer.Synchronize(Javax.Sound.Sampled.Line[],System.Boolean)">Synchronize(Line[], Boolean)</h4>
@@ -1145,7 +1148,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer_Unsynchronize_Javax_Sound_Sampled_Line___.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer.Unsynchronize(Javax.Sound.Sampled.Line%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L152">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L239">View Source</a>
   </span>
   <a id="Javax_Sound_Sampled_Mixer_Unsynchronize_" data-uid="Javax.Sound.Sampled.Mixer.Unsynchronize*"></a>
   <h4 id="Javax_Sound_Sampled_Mixer_Unsynchronize_Javax_Sound_Sampled_Line___" data-uid="Javax.Sound.Sampled.Mixer.Unsynchronize(Javax.Sound.Sampled.Line[])">Unsynchronize(Line[])</h4>
@@ -1193,9 +1196,18 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Sound.Sampled.IMixer.html">IMixer</a>
+  </div>
+  <div>
+      <a class="xref" href="Javax.Sound.Sampled.ILine.html">ILine</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1208,7 +1220,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Sampled_Mixer.md&amp;value=---%0Auid%3A%20Javax.Sound.Sampled.Mixer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Sampled/Mixer.cs/#L116" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

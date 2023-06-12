@@ -82,55 +82,6 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#comparator()"/> 
-        /// </summary>
-        public Java.Util.Comparator Comparator
-        {
-            get { return IExecute<Java.Util.Comparator>("comparator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/> 
-        /// </summary>
-        public Java.Util.Iterator DescendingIterator
-        {
-            get { return IExecute<Java.Util.Iterator>("descendingIterator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingSet()"/> 
-        /// </summary>
-        public Java.Util.NavigableSet DescendingSet
-        {
-            get { return IExecute<Java.Util.NavigableSet>("descendingSet"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#first()"/> 
-        /// </summary>
-        public object First
-        {
-            get { return IExecute("first"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#last()"/> 
-        /// </summary>
-        public object Last
-        {
-            get { return IExecute("last"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollFirst()"/> 
-        /// </summary>
-        public object PollFirst
-        {
-            get { return IExecute("pollFirst"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollLast()"/> 
-        /// </summary>
-        public object PollLast
-        {
-            get { return IExecute("pollLast"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#ceiling(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -138,6 +89,15 @@ namespace Java.Util
         public object Ceiling(object arg0)
         {
             return IExecute("ceiling", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#first()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object First()
+        {
+            return IExecute("first");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#floor(java.lang.Object)"/>
@@ -158,6 +118,15 @@ namespace Java.Util
             return IExecute("higher", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#last()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object Last()
+        {
+            return IExecute("last");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#lower(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -165,6 +134,51 @@ namespace Java.Util
         public object Lower(object arg0)
         {
             return IExecute("lower", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object PollFirst()
+        {
+            return IExecute("pollFirst");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollLast()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object PollLast()
+        {
+            return IExecute("pollLast");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#comparator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
+        {
+            return IExecute<Java.Util.Comparator>("comparator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator DescendingIterator()
+        {
+            return IExecute<Java.Util.Iterator>("descendingIterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet DescendingSet()
+        {
+            return IExecute<Java.Util.NavigableSet>("descendingSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#headSet(java.lang.Object,boolean)"/>
@@ -298,55 +312,6 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#comparator()"/> 
-        /// </summary>
-        public Java.Util.Comparator Comparator
-        {
-            get { return IExecute<Java.Util.Comparator>("comparator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/> 
-        /// </summary>
-        public Java.Util.Iterator<E> DescendingIterator
-        {
-            get { return IExecute<Java.Util.Iterator<E>>("descendingIterator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingSet()"/> 
-        /// </summary>
-        public Java.Util.NavigableSet<E> DescendingSet
-        {
-            get { return IExecute<Java.Util.NavigableSet<E>>("descendingSet"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#first()"/> 
-        /// </summary>
-        public E First
-        {
-            get { return IExecute<E>("first"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#last()"/> 
-        /// </summary>
-        public E Last
-        {
-            get { return IExecute<E>("last"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollFirst()"/> 
-        /// </summary>
-        public E PollFirst
-        {
-            get { return IExecute<E>("pollFirst"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollLast()"/> 
-        /// </summary>
-        public E PollLast
-        {
-            get { return IExecute<E>("pollLast"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#ceiling(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
@@ -354,6 +319,15 @@ namespace Java.Util
         public E Ceiling(E arg0)
         {
             return IExecute<E>("ceiling", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#first()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E First()
+        {
+            return IExecute<E>("first");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#floor(java.lang.Object)"/>
@@ -374,6 +348,15 @@ namespace Java.Util
             return IExecute<E>("higher", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#last()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E Last()
+        {
+            return IExecute<E>("last");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#lower(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
@@ -381,6 +364,52 @@ namespace Java.Util
         public E Lower(E arg0)
         {
             return IExecute<E>("lower", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollFirst()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E PollFirst()
+        {
+            return IExecute<E>("pollFirst");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#pollLast()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E PollLast()
+        {
+            return IExecute<E>("pollLast");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#comparator()"/>
+        /// </summary>
+
+        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE: E
+        {
+            return IExecute<Java.Util.Comparator<ReturnobjectSuperE>>("comparator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<E> DescendingIterator()
+        {
+            return IExecute<Java.Util.Iterator<E>>("descendingIterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public Java.Util.NavigableSet<E> DescendingSet()
+        {
+            return IExecute<Java.Util.NavigableSet<E>>("descendingSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#headSet(java.lang.Object,boolean)"/>

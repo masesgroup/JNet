@@ -115,39 +115,11 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#baseIsLeftToRight()"/> 
-        /// </summary>
-        public bool BaseIsLeftToRight
-        {
-            get { return IExecute<bool>("baseIsLeftToRight"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getBaseLevel()"/> 
         /// </summary>
         public int BaseLevel
         {
             get { return IExecute<int>("getBaseLevel"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isLeftToRight()"/> 
-        /// </summary>
-        public bool IsLeftToRight
-        {
-            get { return IExecute<bool>("isLeftToRight"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isMixed()"/> 
-        /// </summary>
-        public bool IsMixed
-        {
-            get { return IExecute<bool>("isMixed"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isRightToLeft()"/> 
-        /// </summary>
-        public bool IsRightToLeft
-        {
-            get { return IExecute<bool>("isRightToLeft"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getLength()"/> 
@@ -162,6 +134,42 @@ namespace Java.Text
         public int RunCount
         {
             get { return IExecute<int>("getRunCount"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#baseIsLeftToRight()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool BaseIsLeftToRight()
+        {
+            return IExecute<bool>("baseIsLeftToRight");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isLeftToRight()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLeftToRight()
+        {
+            return IExecute<bool>("isLeftToRight");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isMixed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMixed()
+        {
+            return IExecute<bool>("isMixed");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#isRightToLeft()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRightToLeft()
+        {
+            return IExecute<bool>("isRightToLeft");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#getLevelAt(int)"/>

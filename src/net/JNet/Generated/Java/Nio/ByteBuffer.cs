@@ -88,67 +88,11 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asCharBuffer()"/> 
-        /// </summary>
-        public Java.Nio.CharBuffer AsCharBuffer
-        {
-            get { return IExecute<Java.Nio.CharBuffer>("asCharBuffer"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asDoubleBuffer()"/> 
-        /// </summary>
-        public Java.Nio.DoubleBuffer AsDoubleBuffer
-        {
-            get { return IExecute<Java.Nio.DoubleBuffer>("asDoubleBuffer"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asFloatBuffer()"/> 
-        /// </summary>
-        public Java.Nio.FloatBuffer AsFloatBuffer
-        {
-            get { return IExecute<Java.Nio.FloatBuffer>("asFloatBuffer"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asIntBuffer()"/> 
-        /// </summary>
-        public Java.Nio.IntBuffer AsIntBuffer
-        {
-            get { return IExecute<Java.Nio.IntBuffer>("asIntBuffer"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asLongBuffer()"/> 
-        /// </summary>
-        public Java.Nio.LongBuffer AsLongBuffer
-        {
-            get { return IExecute<Java.Nio.LongBuffer>("asLongBuffer"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asReadOnlyBuffer()"/> 
-        /// </summary>
-        public Java.Nio.ByteBuffer AsReadOnlyBuffer
-        {
-            get { return IExecute<Java.Nio.ByteBuffer>("asReadOnlyBuffer"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asShortBuffer()"/> 
-        /// </summary>
-        public Java.Nio.ShortBuffer AsShortBuffer
-        {
-            get { return IExecute<Java.Nio.ShortBuffer>("asShortBuffer"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getChar()"/> 
         /// </summary>
         public char Char
         {
             get { return IExecute<char>("getChar"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#compact()"/> 
-        /// </summary>
-        public Java.Nio.ByteBuffer Compact
-        {
-            get { return IExecute<Java.Nio.ByteBuffer>("compact"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getDouble()"/> 
@@ -238,6 +182,24 @@ namespace Java.Nio
         public int GetInt(int arg0)
         {
             return IExecute<int>("getInt", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asReadOnlyBuffer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        public Java.Nio.ByteBuffer AsReadOnlyBuffer()
+        {
+            return IExecute<Java.Nio.ByteBuffer>("asReadOnlyBuffer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#compact()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+        public Java.Nio.ByteBuffer Compact()
+        {
+            return IExecute<Java.Nio.ByteBuffer>("compact");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(byte)"/>
@@ -371,6 +333,60 @@ namespace Java.Nio
         public Java.Nio.ByteBuffer PutShort(short arg0)
         {
             return IExecute<Java.Nio.ByteBuffer>("putShort", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asCharBuffer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        public Java.Nio.CharBuffer AsCharBuffer()
+        {
+            return IExecute<Java.Nio.CharBuffer>("asCharBuffer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asDoubleBuffer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        public Java.Nio.DoubleBuffer AsDoubleBuffer()
+        {
+            return IExecute<Java.Nio.DoubleBuffer>("asDoubleBuffer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asFloatBuffer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        public Java.Nio.FloatBuffer AsFloatBuffer()
+        {
+            return IExecute<Java.Nio.FloatBuffer>("asFloatBuffer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asIntBuffer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        public Java.Nio.IntBuffer AsIntBuffer()
+        {
+            return IExecute<Java.Nio.IntBuffer>("asIntBuffer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asLongBuffer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        public Java.Nio.LongBuffer AsLongBuffer()
+        {
+            return IExecute<Java.Nio.LongBuffer>("asLongBuffer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asShortBuffer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
+        public Java.Nio.ShortBuffer AsShortBuffer()
+        {
+            return IExecute<Java.Nio.ShortBuffer>("asShortBuffer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getLong(int)"/>

@@ -79,18 +79,20 @@ namespace Javax.Security.Auth.X500
             get { return IExecute<Java.Security.Cert.X509Certificate>("getCertificate"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#isDestroyed()"/> 
-        /// </summary>
-        public bool IsDestroyed
-        {
-            get { return IExecute<bool>("isDestroyed"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#getPrivateKey()"/> 
         /// </summary>
         public Java.Security.PrivateKey PrivateKey
         {
             get { return IExecute<Java.Security.PrivateKey>("getPrivateKey"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#isDestroyed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDestroyed()
+        {
+            return IExecute<bool>("isDestroyed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#destroy()"/>

@@ -33,13 +33,15 @@ namespace Java.Awt.ImageNs.Renderable
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#isDynamic()"/> 
-        /// </summary>
-        bool IsDynamic { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getPropertyNames()"/> 
         /// </summary>
         string[] PropertyNames { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#isDynamic()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsDynamic();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getBounds2D(java.awt.image.renderable.ParameterBlock)"/>
         /// </summary>
@@ -101,18 +103,20 @@ namespace Java.Awt.ImageNs.Renderable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#isDynamic()"/> 
-        /// </summary>
-        public bool IsDynamic
-        {
-            get { return IExecute<bool>("isDynamic"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getPropertyNames()"/> 
         /// </summary>
         public string[] PropertyNames
         {
             get { return IExecuteArray<string>("getPropertyNames"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#isDynamic()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDynamic()
+        {
+            return IExecute<bool>("isDynamic");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getBounds2D(java.awt.image.renderable.ParameterBlock)"/>

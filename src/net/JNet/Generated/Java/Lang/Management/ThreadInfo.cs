@@ -69,27 +69,6 @@ namespace Java.Lang.Management
             get { return IExecute<long>("getBlockedTime"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isDaemon()"/> 
-        /// </summary>
-        public bool IsDaemon
-        {
-            get { return IExecute<bool>("isDaemon"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isInNative()"/> 
-        /// </summary>
-        public bool IsInNative
-        {
-            get { return IExecute<bool>("isInNative"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isSuspended()"/> 
-        /// </summary>
-        public bool IsSuspended
-        {
-            get { return IExecute<bool>("isSuspended"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#getLockedMonitors()"/> 
         /// </summary>
         public Java.Lang.Management.MonitorInfo[] LockedMonitors
@@ -179,6 +158,33 @@ namespace Java.Lang.Management
         public long WaitedTime
         {
             get { return IExecute<long>("getWaitedTime"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isDaemon()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDaemon()
+        {
+            return IExecute<bool>("isDaemon");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isInNative()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInNative()
+        {
+            return IExecute<bool>("isInNative");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadInfo.html#isSuspended()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSuspended()
+        {
+            return IExecute<bool>("isSuspended");
         }
 
         #endregion

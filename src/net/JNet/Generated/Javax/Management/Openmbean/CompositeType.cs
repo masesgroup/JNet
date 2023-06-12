@@ -59,13 +59,6 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#keySet()"/> 
-        /// </summary>
-        public Java.Util.Set<string> KeySet
-        {
-            get { return IExecute<Java.Util.Set<string>>("keySet"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#containsKey(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -82,6 +75,15 @@ namespace Javax.Management.Openmbean
         public string GetDescription(string arg0)
         {
             return IExecute<string>("getDescription", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#keySet()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<string> KeySet()
+        {
+            return IExecute<Java.Util.Set<string>>("keySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeType.html#getType(java.lang.String)"/>

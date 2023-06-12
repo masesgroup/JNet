@@ -94,6 +94,9 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Sound.Midi.ISequencer.html">ISequencer</a></div>
+    <div><a class="xref" href="Javax.Sound.Midi.IMidiDevice.html">IMidiDevice</a></div>
+    <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -405,7 +408,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Sound_Midi_Sequencer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Sequencer : MidiDevice, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Sequencer : MidiDevice, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISequencer, IMidiDevice, IAutoCloseable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -414,7 +417,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer__ctor.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L697">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L707">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer__ctor_" data-uid="Javax.Sound.Midi.Sequencer.#ctor*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer__ctor" data-uid="Javax.Sound.Midi.Sequencer.#ctor">Sequencer()</h4>
@@ -430,7 +433,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L701">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L711">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer__ctor_" data-uid="Javax.Sound.Midi.Sequencer.#ctor*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer__ctor_System_Object___" data-uid="Javax.Sound.Midi.Sequencer.#ctor(System.Object[])">Sequencer(Object[])</h4>
@@ -465,7 +468,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_BridgeClassName.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L708">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L718">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_BridgeClassName_" data-uid="Javax.Sound.Midi.Sequencer.BridgeClassName*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_BridgeClassName" data-uid="Javax.Sound.Midi.Sequencer.BridgeClassName">BridgeClassName</h4>
@@ -498,7 +501,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L712">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L722">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_IsBridgeAbstract_" data-uid="Javax.Sound.Midi.Sequencer.IsBridgeAbstract*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_IsBridgeAbstract" data-uid="Javax.Sound.Midi.Sequencer.IsBridgeAbstract">IsBridgeAbstract</h4>
@@ -531,7 +534,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L716">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L726">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_IsBridgeCloseable_" data-uid="Javax.Sound.Midi.Sequencer.IsBridgeCloseable*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_IsBridgeCloseable" data-uid="Javax.Sound.Midi.Sequencer.IsBridgeCloseable">IsBridgeCloseable</h4>
@@ -564,7 +567,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L720">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L730">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_IsBridgeInterface_" data-uid="Javax.Sound.Midi.Sequencer.IsBridgeInterface*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_IsBridgeInterface" data-uid="Javax.Sound.Midi.Sequencer.IsBridgeInterface">IsBridgeInterface</h4>
@@ -597,7 +600,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L724">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/AllPackageClasses.cs/#L734">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_IsBridgeStatic_" data-uid="Javax.Sound.Midi.Sequencer.IsBridgeStatic*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_IsBridgeStatic" data-uid="Javax.Sound.Midi.Sequencer.IsBridgeStatic">IsBridgeStatic</h4>
@@ -630,7 +633,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_IsRecording.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.IsRecording%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L230">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_IsRecording_" data-uid="Javax.Sound.Midi.Sequencer.IsRecording*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_IsRecording" data-uid="Javax.Sound.Midi.Sequencer.IsRecording">IsRecording</h4>
@@ -661,7 +664,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_IsRunning.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.IsRunning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L62">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L237">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_IsRunning_" data-uid="Javax.Sound.Midi.Sequencer.IsRunning*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_IsRunning" data-uid="Javax.Sound.Midi.Sequencer.IsRunning">IsRunning</h4>
@@ -692,7 +695,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_LOOP_CONTINUOUSLY.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.LOOP_CONTINUOUSLY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L218">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_LOOP_CONTINUOUSLY_" data-uid="Javax.Sound.Midi.Sequencer.LOOP_CONTINUOUSLY*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_LOOP_CONTINUOUSLY" data-uid="Javax.Sound.Midi.Sequencer.LOOP_CONTINUOUSLY">LOOP_CONTINUOUSLY</h4>
@@ -723,7 +726,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_LoopCount.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.LoopCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L69">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L244">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_LoopCount_" data-uid="Javax.Sound.Midi.Sequencer.LoopCount*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_LoopCount" data-uid="Javax.Sound.Midi.Sequencer.LoopCount">LoopCount</h4>
@@ -754,7 +757,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_LoopEndPoint.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.LoopEndPoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L76">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L251">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_LoopEndPoint_" data-uid="Javax.Sound.Midi.Sequencer.LoopEndPoint*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_LoopEndPoint" data-uid="Javax.Sound.Midi.Sequencer.LoopEndPoint">LoopEndPoint</h4>
@@ -785,7 +788,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_LoopStartPoint.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.LoopStartPoint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L83">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L258">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_LoopStartPoint_" data-uid="Javax.Sound.Midi.Sequencer.LoopStartPoint*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_LoopStartPoint" data-uid="Javax.Sound.Midi.Sequencer.LoopStartPoint">LoopStartPoint</h4>
@@ -816,7 +819,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_MasterSyncMode.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.MasterSyncMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L90">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L265">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_MasterSyncMode_" data-uid="Javax.Sound.Midi.Sequencer.MasterSyncMode*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_MasterSyncMode" data-uid="Javax.Sound.Midi.Sequencer.MasterSyncMode">MasterSyncMode</h4>
@@ -847,7 +850,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_MasterSyncModes.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.MasterSyncModes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L272">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_MasterSyncModes_" data-uid="Javax.Sound.Midi.Sequencer.MasterSyncModes*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_MasterSyncModes" data-uid="Javax.Sound.Midi.Sequencer.MasterSyncModes">MasterSyncModes</h4>
@@ -878,7 +881,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_MicrosecondLength.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.MicrosecondLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L104">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L279">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_MicrosecondLength_" data-uid="Javax.Sound.Midi.Sequencer.MicrosecondLength*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_MicrosecondLength" data-uid="Javax.Sound.Midi.Sequencer.MicrosecondLength">MicrosecondLength</h4>
@@ -909,7 +912,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_MicrosecondPosition.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.MicrosecondPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L111">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L286">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_MicrosecondPosition_" data-uid="Javax.Sound.Midi.Sequencer.MicrosecondPosition*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_MicrosecondPosition" data-uid="Javax.Sound.Midi.Sequencer.MicrosecondPosition">MicrosecondPosition</h4>
@@ -940,7 +943,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_Sequence.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.Sequence%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L118">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L293">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_Sequence_" data-uid="Javax.Sound.Midi.Sequencer.Sequence*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_Sequence" data-uid="Javax.Sound.Midi.Sequencer.Sequence">Sequence</h4>
@@ -971,7 +974,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_SlaveSyncMode.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.SlaveSyncMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L125">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L300">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_SlaveSyncMode_" data-uid="Javax.Sound.Midi.Sequencer.SlaveSyncMode*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_SlaveSyncMode" data-uid="Javax.Sound.Midi.Sequencer.SlaveSyncMode">SlaveSyncMode</h4>
@@ -1002,7 +1005,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_SlaveSyncModes.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.SlaveSyncModes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L132">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L307">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_SlaveSyncModes_" data-uid="Javax.Sound.Midi.Sequencer.SlaveSyncModes*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_SlaveSyncModes" data-uid="Javax.Sound.Midi.Sequencer.SlaveSyncModes">SlaveSyncModes</h4>
@@ -1033,7 +1036,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_TempoFactor.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.TempoFactor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L139">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L314">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_TempoFactor_" data-uid="Javax.Sound.Midi.Sequencer.TempoFactor*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_TempoFactor" data-uid="Javax.Sound.Midi.Sequencer.TempoFactor">TempoFactor</h4>
@@ -1064,7 +1067,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_TempoInBPM.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.TempoInBPM%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L146">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L321">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_TempoInBPM_" data-uid="Javax.Sound.Midi.Sequencer.TempoInBPM*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_TempoInBPM" data-uid="Javax.Sound.Midi.Sequencer.TempoInBPM">TempoInBPM</h4>
@@ -1095,7 +1098,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_TempoInMPQ.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.TempoInMPQ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L153">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L328">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_TempoInMPQ_" data-uid="Javax.Sound.Midi.Sequencer.TempoInMPQ*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_TempoInMPQ" data-uid="Javax.Sound.Midi.Sequencer.TempoInMPQ">TempoInMPQ</h4>
@@ -1126,7 +1129,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_TickLength.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.TickLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L160">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L335">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_TickLength_" data-uid="Javax.Sound.Midi.Sequencer.TickLength*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_TickLength" data-uid="Javax.Sound.Midi.Sequencer.TickLength">TickLength</h4>
@@ -1157,7 +1160,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_TickPosition.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.TickPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L167">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L342">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_TickPosition_" data-uid="Javax.Sound.Midi.Sequencer.TickPosition*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_TickPosition" data-uid="Javax.Sound.Midi.Sequencer.TickPosition">TickPosition</h4>
@@ -1190,7 +1193,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_AddControllerEventListener_Javax_Sound_Midi_ControllerEventListener_System_Int32___.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.AddControllerEventListener(Javax.Sound.Midi.ControllerEventListener%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L204">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L379">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_AddControllerEventListener_" data-uid="Javax.Sound.Midi.Sequencer.AddControllerEventListener*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_AddControllerEventListener_Javax_Sound_Midi_ControllerEventListener_System_Int32___" data-uid="Javax.Sound.Midi.Sequencer.AddControllerEventListener(Javax.Sound.Midi.ControllerEventListener,System.Int32[])">AddControllerEventListener(ControllerEventListener, Int32[])</h4>
@@ -1246,7 +1249,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_AddMetaEventListener_Javax_Sound_Midi_MetaEventListener_.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.AddMetaEventListener(Javax.Sound.Midi.MetaEventListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L176">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L351">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_AddMetaEventListener_" data-uid="Javax.Sound.Midi.Sequencer.AddMetaEventListener*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_AddMetaEventListener_Javax_Sound_Midi_MetaEventListener_" data-uid="Javax.Sound.Midi.Sequencer.AddMetaEventListener(Javax.Sound.Midi.MetaEventListener)">AddMetaEventListener(MetaEventListener)</h4>
@@ -1296,7 +1299,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_GetTrackMute_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.GetTrackMute(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L185">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L360">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_GetTrackMute_" data-uid="Javax.Sound.Midi.Sequencer.GetTrackMute*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_GetTrackMute_System_Int32_" data-uid="Javax.Sound.Midi.Sequencer.GetTrackMute(System.Int32)">GetTrackMute(Int32)</h4>
@@ -1346,7 +1349,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_GetTrackSolo_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.GetTrackSolo(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L194">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L369">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_GetTrackSolo_" data-uid="Javax.Sound.Midi.Sequencer.GetTrackSolo*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_GetTrackSolo_System_Int32_" data-uid="Javax.Sound.Midi.Sequencer.GetTrackSolo(System.Int32)">GetTrackSolo(Int32)</h4>
@@ -1396,7 +1399,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_RecordDisable_Javax_Sound_Midi_Track_.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.RecordDisable(Javax.Sound.Midi.Track)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L222">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L397">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_RecordDisable_" data-uid="Javax.Sound.Midi.Sequencer.RecordDisable*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_RecordDisable_Javax_Sound_Midi_Track_" data-uid="Javax.Sound.Midi.Sequencer.RecordDisable(Javax.Sound.Midi.Track)">RecordDisable(Track)</h4>
@@ -1430,7 +1433,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_RecordEnable_Javax_Sound_Midi_Track_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.RecordEnable(Javax.Sound.Midi.Track%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L231">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L406">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_RecordEnable_" data-uid="Javax.Sound.Midi.Sequencer.RecordEnable*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_RecordEnable_Javax_Sound_Midi_Track_System_Int32_" data-uid="Javax.Sound.Midi.Sequencer.RecordEnable(Javax.Sound.Midi.Track,System.Int32)">RecordEnable(Track, Int32)</h4>
@@ -1470,7 +1473,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_RemoveControllerEventListener_Javax_Sound_Midi_ControllerEventListener_System_Int32___.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.RemoveControllerEventListener(Javax.Sound.Midi.ControllerEventListener%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L214">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L389">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_RemoveControllerEventListener_" data-uid="Javax.Sound.Midi.Sequencer.RemoveControllerEventListener*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_RemoveControllerEventListener_Javax_Sound_Midi_ControllerEventListener_System_Int32___" data-uid="Javax.Sound.Midi.Sequencer.RemoveControllerEventListener(Javax.Sound.Midi.ControllerEventListener,System.Int32[])">RemoveControllerEventListener(ControllerEventListener, Int32[])</h4>
@@ -1526,7 +1529,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_RemoveMetaEventListener_Javax_Sound_Midi_MetaEventListener_.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.RemoveMetaEventListener(Javax.Sound.Midi.MetaEventListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L239">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L414">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_RemoveMetaEventListener_" data-uid="Javax.Sound.Midi.Sequencer.RemoveMetaEventListener*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_RemoveMetaEventListener_Javax_Sound_Midi_MetaEventListener_" data-uid="Javax.Sound.Midi.Sequencer.RemoveMetaEventListener(Javax.Sound.Midi.MetaEventListener)">RemoveMetaEventListener(MetaEventListener)</h4>
@@ -1560,7 +1563,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_SetSequence_Java_Io_InputStream_.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.SetSequence(Java.Io.InputStream)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L249">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L424">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_SetSequence_" data-uid="Javax.Sound.Midi.Sequencer.SetSequence*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_SetSequence_Java_Io_InputStream_" data-uid="Javax.Sound.Midi.Sequencer.SetSequence(Java.Io.InputStream)">SetSequence(InputStream)</h4>
@@ -1613,7 +1616,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_SetSequence_Javax_Sound_Midi_Sequence_.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.SetSequence(Javax.Sound.Midi.Sequence)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L258">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L433">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_SetSequence_" data-uid="Javax.Sound.Midi.Sequencer.SetSequence*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_SetSequence_Javax_Sound_Midi_Sequence_" data-uid="Javax.Sound.Midi.Sequencer.SetSequence(Javax.Sound.Midi.Sequence)">SetSequence(Sequence)</h4>
@@ -1662,7 +1665,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_SetTrackMute_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.SetTrackMute(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L267">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L442">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_SetTrackMute_" data-uid="Javax.Sound.Midi.Sequencer.SetTrackMute*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_SetTrackMute_System_Int32_System_Boolean_" data-uid="Javax.Sound.Midi.Sequencer.SetTrackMute(System.Int32,System.Boolean)">SetTrackMute(Int32, Boolean)</h4>
@@ -1702,7 +1705,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_SetTrackSolo_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.SetTrackSolo(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L276">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L451">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_SetTrackSolo_" data-uid="Javax.Sound.Midi.Sequencer.SetTrackSolo*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_SetTrackSolo_System_Int32_System_Boolean_" data-uid="Javax.Sound.Midi.Sequencer.SetTrackSolo(System.Int32,System.Boolean)">SetTrackSolo(Int32, Boolean)</h4>
@@ -1742,7 +1745,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_Start.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L283">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L458">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_Start_" data-uid="Javax.Sound.Midi.Sequencer.Start*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_Start" data-uid="Javax.Sound.Midi.Sequencer.Start">Start()</h4>
@@ -1758,7 +1761,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_StartRecording.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.StartRecording%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L290">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L465">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_StartRecording_" data-uid="Javax.Sound.Midi.Sequencer.StartRecording*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_StartRecording" data-uid="Javax.Sound.Midi.Sequencer.StartRecording">StartRecording()</h4>
@@ -1774,7 +1777,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_Stop.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L297">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L472">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_Stop_" data-uid="Javax.Sound.Midi.Sequencer.Stop*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_Stop" data-uid="Javax.Sound.Midi.Sequencer.Stop">Stop()</h4>
@@ -1790,7 +1793,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer_StopRecording.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer.StopRecording%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L304">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L479">View Source</a>
   </span>
   <a id="Javax_Sound_Midi_Sequencer_StopRecording_" data-uid="Javax.Sound.Midi.Sequencer.StopRecording*"></a>
   <h4 id="Javax_Sound_Midi_Sequencer_StopRecording" data-uid="Javax.Sound.Midi.Sequencer.StopRecording">StopRecording()</h4>
@@ -1820,9 +1823,18 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Sound.Midi.ISequencer.html">ISequencer</a>
+  </div>
+  <div>
+      <a class="xref" href="Javax.Sound.Midi.IMidiDevice.html">IMidiDevice</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1835,7 +1847,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sound_Midi_Sequencer.md&amp;value=---%0Auid%3A%20Javax.Sound.Midi.Sequencer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sound/Midi/Sequencer.cs/#L204" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

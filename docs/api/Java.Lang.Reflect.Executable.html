@@ -73,7 +73,7 @@
   
   <h1 id="Java_Lang_Reflect_Executable" data-uid="Java.Lang.Reflect.Executable" class="text-break">Class Executable
   </h1>
-  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html</a></p>
+  <div class="markdown level0 summary"><p>.NET implementations of <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Executable.html">https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Executable.html</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -81,12 +81,13 @@
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
-    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Reflect.AccessibleObject.html">AccessibleObject</a>&gt;</div>
-    <div class="level4"><a class="xref" href="Java.Lang.Reflect.AccessibleObject.html">AccessibleObject</a></div>
-    <div class="level5"><span class="xref">Executable</span></div>
-      <div class="level6"><a class="xref" href="Java.Lang.Reflect.Constructor.html">Constructor</a></div>
-      <div class="level6"><a class="xref" href="Java.Lang.Reflect.Constructor-1.html">Constructor&lt;T&gt;</a></div>
-      <div class="level6"><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></div>
+    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html">AnnotatedElement</a>&gt;</div>
+    <div class="level4"><a class="xref" href="Java.Lang.Reflect.AnnotatedElement.html">AnnotatedElement</a></div>
+    <div class="level5"><a class="xref" href="Java.Lang.Reflect.AccessibleObject.html">AccessibleObject</a></div>
+    <div class="level6"><span class="xref">Executable</span></div>
+      <div class="level7"><a class="xref" href="Java.Lang.Reflect.Constructor.html">Constructor</a></div>
+      <div class="level7"><a class="xref" href="Java.Lang.Reflect.Constructor-1.html">Constructor&lt;T&gt;</a></div>
+      <div class="level7"><a class="xref" href="Java.Lang.Reflect.Method.html">Method</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -96,9 +97,28 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Lang.Reflect.IAnnotatedElement.html">IAnnotatedElement</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetAnnotation__1_Java_Lang_Class___0__">AccessibleObject.GetAnnotation&lt;T&gt;(Class&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetAnnotationsByType__1_Java_Lang_Class___0__">AccessibleObject.GetAnnotationsByType&lt;T&gt;(Class&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetDeclaredAnnotation__1_Java_Lang_Class___0__">AccessibleObject.GetDeclaredAnnotation&lt;T&gt;(Class&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetDeclaredAnnotationsByType__1_Java_Lang_Class___0__">AccessibleObject.GetDeclaredAnnotationsByType&lt;T&gt;(Class&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_IsAccessible">AccessibleObject.IsAccessible</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_IsAnnotationPresent__1_Java_Lang_Class___0__">AccessibleObject.IsAnnotationPresent&lt;T&gt;(Class&lt;T&gt;)</a>
+    </div>
     <div>
       <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_SetAccessible_Java_Lang_Reflect_AccessibleObject___System_Boolean_">AccessibleObject.SetAccessible(AccessibleObject[], Boolean)</a>
     </div>
@@ -133,127 +153,109 @@
       <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_SetAccessible_System_Boolean_">AccessibleObject.SetAccessible(Boolean)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetAnnotation__1_Java_Lang_Class___0__">AccessibleObject.GetAnnotation&lt;T&gt;(Class&lt;T&gt;)</a>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetAnnotationsByType__1_Java_Lang_Class___0__">AccessibleObject.GetAnnotationsByType&lt;T&gt;(Class&lt;T&gt;)</a>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute(System.String, System.Object[])</span>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetDeclaredAnnotation__1_Java_Lang_Class___0__">AccessibleObject.GetDeclaredAnnotation&lt;T&gt;(Class&lt;T&gt;)</a>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_GetDeclaredAnnotationsByType__1_Java_Lang_Class___0__">AccessibleObject.GetDeclaredAnnotationsByType&lt;T&gt;(Class&lt;T&gt;)</a>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_IsAccessible">AccessibleObject.IsAccessible</a>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <a class="xref" href="Java.Lang.Reflect.AccessibleObject.html#Java_Lang_Reflect_AccessibleObject_IsAnnotationPresent__1_Java_Lang_Class___0__">AccessibleObject.IsAnnotationPresent&lt;T&gt;(Class&lt;T&gt;)</a>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute(System.Type, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute(System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute(System.Type, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecuteArray&lt;T&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SGetField(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SGetField(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SGetField&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SGetField&lt;TReturn&gt;(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecuteArray&lt;T&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SGetFieldArray&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SGetFieldArray&lt;TReturn&gt;(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SGetField(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SSetField(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SGetField(System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SSetField(System.String, System.Object)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SGetField&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SSetField&lt;TValue&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, TValue)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SGetField&lt;TReturn&gt;(System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.SSetField&lt;TValue&gt;(System.String, TValue)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SGetFieldArray&lt;TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.IsAssignableFrom(System.String)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SGetFieldArray&lt;TReturn&gt;(System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SSetField(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, System.Object)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.IsAssignableFrom&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SSetField(System.String, System.Object)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.New(System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SSetField&lt;TValue&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType, System.String, TValue)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.Execute&lt;T&gt;(T[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.SSetField&lt;TValue&gt;(System.String, TValue)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.DynBridgeClazz</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.IsAssignableFrom(System.String)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.BridgeClazz</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynBridgeClazz</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.IsAssignableFrom&lt;T&gt;()</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.New(System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.Execute&lt;T&gt;(T[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.BridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynBridgeClazz</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AccessibleObject&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.BridgeClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Lang.Reflect.AnnotatedElement&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.BridgeClazz</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClazzOf&lt;TClass&gt;(System.Boolean)</span>
@@ -428,7 +430,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Lang_Reflect_Executable_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Executable : AccessibleObject, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Executable : AccessibleObject, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAnnotatedElement</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -769,7 +771,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable_GenericString.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable.GenericString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Reflect/Executable.cs/#L117">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Reflect/Executable.cs/#L117">View Source</a>
   </span>
   <a id="Java_Lang_Reflect_Executable_GenericString_" data-uid="Java.Lang.Reflect.Executable.GenericString*"></a>
   <h4 id="Java_Lang_Reflect_Executable_GenericString" data-uid="Java.Lang.Reflect.Executable.GenericString">GenericString</h4>
@@ -1220,7 +1222,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TypeVariable TypeParameters { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TypeVariable[] TypeParameters { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1232,7 +1234,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Lang.Reflect.TypeVariable.html">TypeVariable</a></td>
+        <td><a class="xref" href="Java.Lang.Reflect.TypeVariable.html">TypeVariable</a>[]</td>
         <td></td>
       </tr>
     </tbody>
@@ -1354,9 +1356,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Lang.Reflect.IAnnotatedElement.html">IAnnotatedElement</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1369,7 +1374,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Reflect_Executable.md&amp;value=---%0Auid%3A%20Java.Lang.Reflect.Executable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Reflect/Executable.cs/#L108" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Reflect/Executable.cs/#L29" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

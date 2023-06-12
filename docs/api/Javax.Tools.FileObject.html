@@ -83,6 +83,8 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Javax.Tools.FileObject.html">FileObject</a>&gt;</div>
     <div class="level4"><span class="xref">FileObject</span></div>
+      <div class="level5"><a class="xref" href="Javax.Tools.ForwardingFileObject.html">ForwardingFileObject</a></div>
+      <div class="level5"><a class="xref" href="Javax.Tools.ForwardingFileObject-1.html">ForwardingFileObject&lt;F&gt;</a></div>
       <div class="level5"><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></div>
   </div>
   <div class="implements">
@@ -93,6 +95,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Tools.IFileObject.html">IFileObject</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -374,7 +377,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Tools_FileObject_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FileObject : JVMBridgeBase&lt;FileObject&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class FileObject : JVMBridgeBase&lt;FileObject&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IFileObject</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -383,7 +386,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject__ctor.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L410">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L420">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject__ctor_" data-uid="Javax.Tools.FileObject.#ctor*"></a>
   <h4 id="Javax_Tools_FileObject__ctor" data-uid="Javax.Tools.FileObject.#ctor">FileObject()</h4>
@@ -399,7 +402,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L414">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L424">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject__ctor_" data-uid="Javax.Tools.FileObject.#ctor*"></a>
   <h4 id="Javax_Tools_FileObject__ctor_System_Object___" data-uid="Javax.Tools.FileObject.#ctor(System.Object[])">FileObject(Object[])</h4>
@@ -434,7 +437,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_BridgeClassName.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L421">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L431">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_BridgeClassName_" data-uid="Javax.Tools.FileObject.BridgeClassName*"></a>
   <h4 id="Javax_Tools_FileObject_BridgeClassName" data-uid="Javax.Tools.FileObject.BridgeClassName">BridgeClassName</h4>
@@ -467,7 +470,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_Delete.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.Delete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L111">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_Delete_" data-uid="Javax.Tools.FileObject.Delete*"></a>
   <h4 id="Javax_Tools_FileObject_Delete" data-uid="Javax.Tools.FileObject.Delete">Delete</h4>
@@ -498,7 +501,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L425">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L435">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_IsBridgeAbstract_" data-uid="Javax.Tools.FileObject.IsBridgeAbstract*"></a>
   <h4 id="Javax_Tools_FileObject_IsBridgeAbstract" data-uid="Javax.Tools.FileObject.IsBridgeAbstract">IsBridgeAbstract</h4>
@@ -531,7 +534,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L429">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L439">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_IsBridgeCloseable_" data-uid="Javax.Tools.FileObject.IsBridgeCloseable*"></a>
   <h4 id="Javax_Tools_FileObject_IsBridgeCloseable" data-uid="Javax.Tools.FileObject.IsBridgeCloseable">IsBridgeCloseable</h4>
@@ -564,7 +567,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L433">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L443">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_IsBridgeInterface_" data-uid="Javax.Tools.FileObject.IsBridgeInterface*"></a>
   <h4 id="Javax_Tools_FileObject_IsBridgeInterface" data-uid="Javax.Tools.FileObject.IsBridgeInterface">IsBridgeInterface</h4>
@@ -597,7 +600,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L437">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L447">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_IsBridgeStatic_" data-uid="Javax.Tools.FileObject.IsBridgeStatic*"></a>
   <h4 id="Javax_Tools_FileObject_IsBridgeStatic" data-uid="Javax.Tools.FileObject.IsBridgeStatic">IsBridgeStatic</h4>
@@ -630,7 +633,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_LastModified.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.LastModified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L118">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_LastModified_" data-uid="Javax.Tools.FileObject.LastModified*"></a>
   <h4 id="Javax_Tools_FileObject_LastModified" data-uid="Javax.Tools.FileObject.LastModified">LastModified</h4>
@@ -661,7 +664,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_Name.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L125">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_Name_" data-uid="Javax.Tools.FileObject.Name*"></a>
   <h4 id="Javax_Tools_FileObject_Name" data-uid="Javax.Tools.FileObject.Name">Name</h4>
@@ -692,7 +695,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_OpenInputStream.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.OpenInputStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L132">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_OpenInputStream_" data-uid="Javax.Tools.FileObject.OpenInputStream*"></a>
   <h4 id="Javax_Tools_FileObject_OpenInputStream" data-uid="Javax.Tools.FileObject.OpenInputStream">OpenInputStream</h4>
@@ -723,7 +726,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_OpenOutputStream.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.OpenOutputStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L139">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_OpenOutputStream_" data-uid="Javax.Tools.FileObject.OpenOutputStream*"></a>
   <h4 id="Javax_Tools_FileObject_OpenOutputStream" data-uid="Javax.Tools.FileObject.OpenOutputStream">OpenOutputStream</h4>
@@ -754,7 +757,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_OpenWriter.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.OpenWriter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L86">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L146">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_OpenWriter_" data-uid="Javax.Tools.FileObject.OpenWriter*"></a>
   <h4 id="Javax_Tools_FileObject_OpenWriter" data-uid="Javax.Tools.FileObject.OpenWriter">OpenWriter</h4>
@@ -785,7 +788,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_ToUri.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.ToUri%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L93">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L153">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_ToUri_" data-uid="Javax.Tools.FileObject.ToUri*"></a>
   <h4 id="Javax_Tools_FileObject_ToUri" data-uid="Javax.Tools.FileObject.ToUri">ToUri</h4>
@@ -818,7 +821,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_GetCharContent_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.GetCharContent(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L113">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L173">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_GetCharContent_" data-uid="Javax.Tools.FileObject.GetCharContent*"></a>
   <h4 id="Javax_Tools_FileObject_GetCharContent_System_Boolean_" data-uid="Javax.Tools.FileObject.GetCharContent(System.Boolean)">GetCharContent(Boolean)</h4>
@@ -883,7 +886,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject_OpenReader_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject.OpenReader(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L103">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L163">View Source</a>
   </span>
   <a id="Javax_Tools_FileObject_OpenReader_" data-uid="Javax.Tools.FileObject.OpenReader*"></a>
   <h4 id="Javax_Tools_FileObject_OpenReader_System_Boolean_" data-uid="Javax.Tools.FileObject.OpenReader(System.Boolean)">OpenReader(Boolean)</h4>
@@ -962,9 +965,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Tools.IFileObject.html">IFileObject</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -977,7 +983,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_FileObject.md&amp;value=---%0Auid%3A%20Javax.Tools.FileObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/FileObject.cs/#L89" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

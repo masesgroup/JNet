@@ -94,6 +94,9 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Sql.IRowSetMetaData.html">IRowSetMetaData</a></div>
+    <div><a class="xref" href="Java.Sql.IResultSetMetaData.html">IResultSetMetaData</a></div>
+    <div><a class="xref" href="Java.Sql.IWrapper.html">IWrapper</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -453,7 +456,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Sql_RowSetMetaData_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RowSetMetaData : ResultSetMetaData, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class RowSetMetaData : ResultSetMetaData, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IRowSetMetaData, IResultSetMetaData, IWrapper</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -462,7 +465,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData__ctor.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L450">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L460">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData__ctor_" data-uid="Javax.Sql.RowSetMetaData.#ctor*"></a>
   <h4 id="Javax_Sql_RowSetMetaData__ctor" data-uid="Javax.Sql.RowSetMetaData.#ctor">RowSetMetaData()</h4>
@@ -478,7 +481,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L454">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L464">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData__ctor_" data-uid="Javax.Sql.RowSetMetaData.#ctor*"></a>
   <h4 id="Javax_Sql_RowSetMetaData__ctor_System_Object___" data-uid="Javax.Sql.RowSetMetaData.#ctor(System.Object[])">RowSetMetaData(Object[])</h4>
@@ -513,7 +516,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_BridgeClassName.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L461">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L471">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_BridgeClassName_" data-uid="Javax.Sql.RowSetMetaData.BridgeClassName*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_BridgeClassName" data-uid="Javax.Sql.RowSetMetaData.BridgeClassName">BridgeClassName</h4>
@@ -546,7 +549,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L465">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L475">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_IsBridgeAbstract_" data-uid="Javax.Sql.RowSetMetaData.IsBridgeAbstract*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_IsBridgeAbstract" data-uid="Javax.Sql.RowSetMetaData.IsBridgeAbstract">IsBridgeAbstract</h4>
@@ -579,7 +582,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L469">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L479">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_IsBridgeCloseable_" data-uid="Javax.Sql.RowSetMetaData.IsBridgeCloseable*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_IsBridgeCloseable" data-uid="Javax.Sql.RowSetMetaData.IsBridgeCloseable">IsBridgeCloseable</h4>
@@ -612,7 +615,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L473">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L483">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_IsBridgeInterface_" data-uid="Javax.Sql.RowSetMetaData.IsBridgeInterface*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_IsBridgeInterface" data-uid="Javax.Sql.RowSetMetaData.IsBridgeInterface">IsBridgeInterface</h4>
@@ -645,7 +648,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L477">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/AllPackageClasses.cs/#L487">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_IsBridgeStatic_" data-uid="Javax.Sql.RowSetMetaData.IsBridgeStatic*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_IsBridgeStatic" data-uid="Javax.Sql.RowSetMetaData.IsBridgeStatic">IsBridgeStatic</h4>
@@ -680,7 +683,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetAutoIncrement_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetAutoIncrement(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L54">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L190">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetAutoIncrement_" data-uid="Javax.Sql.RowSetMetaData.SetAutoIncrement*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetAutoIncrement_System_Int32_System_Boolean_" data-uid="Javax.Sql.RowSetMetaData.SetAutoIncrement(System.Int32,System.Boolean)">SetAutoIncrement(Int32, Boolean)</h4>
@@ -735,7 +738,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetCaseSensitive_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetCaseSensitive(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L64">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L200">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetCaseSensitive_" data-uid="Javax.Sql.RowSetMetaData.SetCaseSensitive*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetCaseSensitive_System_Int32_System_Boolean_" data-uid="Javax.Sql.RowSetMetaData.SetCaseSensitive(System.Int32,System.Boolean)">SetCaseSensitive(Int32, Boolean)</h4>
@@ -790,7 +793,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetCatalogName_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetCatalogName(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L74">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L210">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetCatalogName_" data-uid="Javax.Sql.RowSetMetaData.SetCatalogName*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetCatalogName_System_Int32_System_String_" data-uid="Javax.Sql.RowSetMetaData.SetCatalogName(System.Int32,System.String)">SetCatalogName(Int32, String)</h4>
@@ -845,7 +848,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetColumnCount_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetColumnCount(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L83">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L219">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetColumnCount_" data-uid="Javax.Sql.RowSetMetaData.SetColumnCount*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetColumnCount_System_Int32_" data-uid="Javax.Sql.RowSetMetaData.SetColumnCount(System.Int32)">SetColumnCount(Int32)</h4>
@@ -894,7 +897,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetColumnDisplaySize_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetColumnDisplaySize(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L93">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L229">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetColumnDisplaySize_" data-uid="Javax.Sql.RowSetMetaData.SetColumnDisplaySize*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetColumnDisplaySize_System_Int32_System_Int32_" data-uid="Javax.Sql.RowSetMetaData.SetColumnDisplaySize(System.Int32,System.Int32)">SetColumnDisplaySize(Int32, Int32)</h4>
@@ -949,7 +952,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetColumnLabel_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetColumnLabel(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L103">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L239">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetColumnLabel_" data-uid="Javax.Sql.RowSetMetaData.SetColumnLabel*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetColumnLabel_System_Int32_System_String_" data-uid="Javax.Sql.RowSetMetaData.SetColumnLabel(System.Int32,System.String)">SetColumnLabel(Int32, String)</h4>
@@ -1004,7 +1007,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetColumnName_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetColumnName(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L113">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L249">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetColumnName_" data-uid="Javax.Sql.RowSetMetaData.SetColumnName*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetColumnName_System_Int32_System_String_" data-uid="Javax.Sql.RowSetMetaData.SetColumnName(System.Int32,System.String)">SetColumnName(Int32, String)</h4>
@@ -1059,7 +1062,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetColumnType_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetColumnType(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L123">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L259">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetColumnType_" data-uid="Javax.Sql.RowSetMetaData.SetColumnType*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetColumnType_System_Int32_System_Int32_" data-uid="Javax.Sql.RowSetMetaData.SetColumnType(System.Int32,System.Int32)">SetColumnType(Int32, Int32)</h4>
@@ -1114,7 +1117,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetColumnTypeName_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetColumnTypeName(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L133">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L269">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetColumnTypeName_" data-uid="Javax.Sql.RowSetMetaData.SetColumnTypeName*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetColumnTypeName_System_Int32_System_String_" data-uid="Javax.Sql.RowSetMetaData.SetColumnTypeName(System.Int32,System.String)">SetColumnTypeName(Int32, String)</h4>
@@ -1169,7 +1172,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetCurrency_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetCurrency(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L143">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L279">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetCurrency_" data-uid="Javax.Sql.RowSetMetaData.SetCurrency*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetCurrency_System_Int32_System_Boolean_" data-uid="Javax.Sql.RowSetMetaData.SetCurrency(System.Int32,System.Boolean)">SetCurrency(Int32, Boolean)</h4>
@@ -1224,7 +1227,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetNullable_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetNullable(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L153">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L289">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetNullable_" data-uid="Javax.Sql.RowSetMetaData.SetNullable*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetNullable_System_Int32_System_Int32_" data-uid="Javax.Sql.RowSetMetaData.SetNullable(System.Int32,System.Int32)">SetNullable(Int32, Int32)</h4>
@@ -1279,7 +1282,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetPrecision_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetPrecision(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L163">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L299">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetPrecision_" data-uid="Javax.Sql.RowSetMetaData.SetPrecision*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetPrecision_System_Int32_System_Int32_" data-uid="Javax.Sql.RowSetMetaData.SetPrecision(System.Int32,System.Int32)">SetPrecision(Int32, Int32)</h4>
@@ -1334,7 +1337,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetScale_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetScale(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L173">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L309">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetScale_" data-uid="Javax.Sql.RowSetMetaData.SetScale*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetScale_System_Int32_System_Int32_" data-uid="Javax.Sql.RowSetMetaData.SetScale(System.Int32,System.Int32)">SetScale(Int32, Int32)</h4>
@@ -1389,7 +1392,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetSchemaName_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetSchemaName(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L183">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L319">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetSchemaName_" data-uid="Javax.Sql.RowSetMetaData.SetSchemaName*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetSchemaName_System_Int32_System_String_" data-uid="Javax.Sql.RowSetMetaData.SetSchemaName(System.Int32,System.String)">SetSchemaName(Int32, String)</h4>
@@ -1444,7 +1447,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetSearchable_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetSearchable(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L193">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L329">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetSearchable_" data-uid="Javax.Sql.RowSetMetaData.SetSearchable*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetSearchable_System_Int32_System_Boolean_" data-uid="Javax.Sql.RowSetMetaData.SetSearchable(System.Int32,System.Boolean)">SetSearchable(Int32, Boolean)</h4>
@@ -1499,7 +1502,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetSigned_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetSigned(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L203">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L339">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetSigned_" data-uid="Javax.Sql.RowSetMetaData.SetSigned*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetSigned_System_Int32_System_Boolean_" data-uid="Javax.Sql.RowSetMetaData.SetSigned(System.Int32,System.Boolean)">SetSigned(Int32, Boolean)</h4>
@@ -1554,7 +1557,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData_SetTableName_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData.SetTableName(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L213">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L349">View Source</a>
   </span>
   <a id="Javax_Sql_RowSetMetaData_SetTableName_" data-uid="Javax.Sql.RowSetMetaData.SetTableName*"></a>
   <h4 id="Javax_Sql_RowSetMetaData_SetTableName_System_Int32_System_String_" data-uid="Javax.Sql.RowSetMetaData.SetTableName(System.Int32,System.String)">SetTableName(Int32, String)</h4>
@@ -1623,9 +1626,18 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Sql.IRowSetMetaData.html">IRowSetMetaData</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Sql.IResultSetMetaData.html">IResultSetMetaData</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Sql.IWrapper.html">IWrapper</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1638,7 +1650,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Sql_RowSetMetaData.md&amp;value=---%0Auid%3A%20Javax.Sql.RowSetMetaData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Sql/RowSetMetaData.cs/#L165" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

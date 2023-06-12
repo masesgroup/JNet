@@ -94,13 +94,6 @@ namespace Javax.Tools
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#values()"/> 
-        /// </summary>
-        public static Javax.Tools.StandardLocation[] Values
-        {
-            get { return SExecuteArray<Javax.Tools.StandardLocation>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#locationFor(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -118,30 +111,43 @@ namespace Javax.Tools
         {
             return SExecute<Javax.Tools.StandardLocation>(LocalBridgeClazz, "valueOf", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Tools.StandardLocation"/></returns>
+        public static Javax.Tools.StandardLocation[] Values()
+        {
+            return SExecuteArray<Javax.Tools.StandardLocation>(LocalBridgeClazz, "values");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isModuleOrientedLocation()"/> 
-        /// </summary>
-        public bool IsModuleOrientedLocation
-        {
-            get { return IExecute<bool>("isModuleOrientedLocation"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isOutputLocation()"/> 
-        /// </summary>
-        public bool IsOutputLocation
-        {
-            get { return IExecute<bool>("isOutputLocation"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#getName()"/> 
         /// </summary>
         public string Name
         {
             get { return IExecute<string>("getName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isModuleOrientedLocation()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsModuleOrientedLocation()
+        {
+            return IExecute<bool>("isModuleOrientedLocation");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html#isOutputLocation()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOutputLocation()
+        {
+            return IExecute<bool>("isOutputLocation");
         }
 
         #endregion

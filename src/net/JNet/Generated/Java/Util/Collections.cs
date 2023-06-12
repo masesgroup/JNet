@@ -54,34 +54,6 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableMap()"/> 
-        /// </summary>
-        public static Java.Util.NavigableMap EmptyNavigableMap
-        {
-            get { return SExecute<Java.Util.NavigableMap>(LocalBridgeClazz, "emptyNavigableMap"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableSet()"/> 
-        /// </summary>
-        public static Java.Util.NavigableSet EmptyNavigableSet
-        {
-            get { return SExecute<Java.Util.NavigableSet>(LocalBridgeClazz, "emptyNavigableSet"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedMap()"/> 
-        /// </summary>
-        public static Java.Util.SortedMap EmptySortedMap
-        {
-            get { return SExecute<Java.Util.SortedMap>(LocalBridgeClazz, "emptySortedMap"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedSet()"/> 
-        /// </summary>
-        public static Java.Util.SortedSet EmptySortedSet
-        {
-            get { return SExecute<Java.Util.SortedSet>(LocalBridgeClazz, "emptySortedSet"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedCollection(java.util.Collection,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
@@ -113,6 +85,16 @@ namespace Java.Util
         public static Java.Util.NavigableSet<E> CheckedNavigableSetMethod<E>(Java.Util.NavigableSet<E> arg0, Java.Lang.Class arg1)
         {
             return SExecute<Java.Util.NavigableSet<E>>(LocalBridgeClazz, "checkedNavigableSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableSet()"/>
+        /// </summary>
+
+        /// <typeparam name="E"></typeparam>
+        /// <returns><see cref="Java.Util.NavigableSet"/></returns>
+        public static Java.Util.NavigableSet<E> EmptyNavigableSet<E>()
+        {
+            return SExecute<Java.Util.NavigableSet<E>>(LocalBridgeClazz, "emptyNavigableSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedQueue(java.util.Queue,java.lang.Class)"/>
@@ -156,6 +138,16 @@ namespace Java.Util
         public static Java.Util.SortedSet<E> CheckedSortedSetMethod<E>(Java.Util.SortedSet<E> arg0, Java.Lang.Class arg1)
         {
             return SExecute<Java.Util.SortedSet<E>>(LocalBridgeClazz, "checkedSortedSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedSet()"/>
+        /// </summary>
+
+        /// <typeparam name="E"></typeparam>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        public static Java.Util.SortedSet<E> EmptySortedSet<E>()
+        {
+            return SExecute<Java.Util.SortedSet<E>>(LocalBridgeClazz, "emptySortedSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedMap(java.util.Map,java.lang.Class,java.lang.Class)"/>
@@ -654,6 +646,28 @@ namespace Java.Util
         public static Java.Util.Map<K, V> EmptyMapMethod<K, V>()
         {
             return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "emptyMap");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableMap()"/>
+        /// </summary>
+
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
+        /// <returns><see cref="Java.Util.NavigableMap"/></returns>
+        public static Java.Util.NavigableMap<K, V> EmptyNavigableMap<K, V>()
+        {
+            return SExecute<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "emptyNavigableMap");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedMap()"/>
+        /// </summary>
+
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="V"></typeparam>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        public static Java.Util.SortedMap<K, V> EmptySortedMap<K, V>()
+        {
+            return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "emptySortedMap");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyList()"/>

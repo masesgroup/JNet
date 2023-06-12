@@ -46,18 +46,22 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
         /// </summary>
-        public string Name
+
+        /// <returns><see cref="string"/></returns>
+        public string Name()
         {
-            get { return IExecute<string>("name"); }
+            return IExecute<string>("name");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
         /// </summary>
-        public object Value
+
+        /// <returns><see cref="object"/></returns>
+        public object Value()
         {
-            get { return IExecute("value"); }
+            return IExecute("value");
         }
 
         #endregion
@@ -78,13 +82,17 @@ namespace Java.Nio.File.Attribute
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
         /// </summary>
-        string Name { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string Name();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
         /// </summary>
-        T Value { get; }
+
+        /// <returns><typeparamref name="T"/></returns>
+        T Value();
 
         #endregion
 
@@ -121,18 +129,22 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#name()"/>
         /// </summary>
-        public string Name
+
+        /// <returns><see cref="string"/></returns>
+        public string Name()
         {
-            get { return IExecute<string>("name"); }
+            return IExecute<string>("name");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html#value()"/>
         /// </summary>
-        public T Value
+
+        /// <returns><typeparamref name="T"/></returns>
+        public T Value()
         {
-            get { return IExecute<T>("value"); }
+            return IExecute<T>("value");
         }
 
         #endregion

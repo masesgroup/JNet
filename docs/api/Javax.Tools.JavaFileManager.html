@@ -83,6 +83,8 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>&gt;</div>
     <div class="level4"><span class="xref">JavaFileManager</span></div>
+      <div class="level5"><a class="xref" href="Javax.Tools.ForwardingJavaFileManager.html">ForwardingJavaFileManager</a></div>
+      <div class="level5"><a class="xref" href="Javax.Tools.ForwardingJavaFileManager-1.html">ForwardingJavaFileManager&lt;M&gt;</a></div>
       <div class="level5"><a class="xref" href="Javax.Tools.StandardJavaFileManager.html">StandardJavaFileManager</a></div>
   </div>
   <div class="implements">
@@ -93,6 +95,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Tools.IJavaFileManager.html">IJavaFileManager</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -374,7 +377,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Tools_JavaFileManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class JavaFileManager : JVMBridgeBase&lt;JavaFileManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class JavaFileManager : JVMBridgeBase&lt;JavaFileManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IJavaFileManager</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -383,7 +386,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager__ctor.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L800">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L810">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager__ctor_" data-uid="Javax.Tools.JavaFileManager.#ctor*"></a>
   <h4 id="Javax_Tools_JavaFileManager__ctor" data-uid="Javax.Tools.JavaFileManager.#ctor">JavaFileManager()</h4>
@@ -399,7 +402,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L804">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L814">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager__ctor_" data-uid="Javax.Tools.JavaFileManager.#ctor*"></a>
   <h4 id="Javax_Tools_JavaFileManager__ctor_System_Object___" data-uid="Javax.Tools.JavaFileManager.#ctor(System.Object[])">JavaFileManager(Object[])</h4>
@@ -434,7 +437,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_BridgeClassName.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L811">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L821">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_BridgeClassName_" data-uid="Javax.Tools.JavaFileManager.BridgeClassName*"></a>
   <h4 id="Javax_Tools_JavaFileManager_BridgeClassName" data-uid="Javax.Tools.JavaFileManager.BridgeClassName">BridgeClassName</h4>
@@ -467,7 +470,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L815">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L825">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_IsBridgeAbstract_" data-uid="Javax.Tools.JavaFileManager.IsBridgeAbstract*"></a>
   <h4 id="Javax_Tools_JavaFileManager_IsBridgeAbstract" data-uid="Javax.Tools.JavaFileManager.IsBridgeAbstract">IsBridgeAbstract</h4>
@@ -500,7 +503,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L819">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L829">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_IsBridgeCloseable_" data-uid="Javax.Tools.JavaFileManager.IsBridgeCloseable*"></a>
   <h4 id="Javax_Tools_JavaFileManager_IsBridgeCloseable" data-uid="Javax.Tools.JavaFileManager.IsBridgeCloseable">IsBridgeCloseable</h4>
@@ -533,7 +536,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L823">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L833">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_IsBridgeInterface_" data-uid="Javax.Tools.JavaFileManager.IsBridgeInterface*"></a>
   <h4 id="Javax_Tools_JavaFileManager_IsBridgeInterface" data-uid="Javax.Tools.JavaFileManager.IsBridgeInterface">IsBridgeInterface</h4>
@@ -566,7 +569,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L827">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/AllPackageClasses.cs/#L837">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_IsBridgeStatic_" data-uid="Javax.Tools.JavaFileManager.IsBridgeStatic*"></a>
   <h4 id="Javax_Tools_JavaFileManager_IsBridgeStatic" data-uid="Javax.Tools.JavaFileManager.IsBridgeStatic">IsBridgeStatic</h4>
@@ -601,7 +604,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_Close.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L176">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L334">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_Close_" data-uid="Javax.Tools.JavaFileManager.Close*"></a>
   <h4 id="Javax_Tools_JavaFileManager_Close" data-uid="Javax.Tools.JavaFileManager.Close">Close()</h4>
@@ -632,7 +635,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_Contains_Javax_Tools_JavaFileManager_Location_Javax_Tools_FileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.Contains(Javax.Tools.JavaFileManager.Location%2CJavax.Tools.FileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L208">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L366">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_Contains_" data-uid="Javax.Tools.JavaFileManager.Contains*"></a>
   <h4 id="Javax_Tools_JavaFileManager_Contains_Javax_Tools_JavaFileManager_Location_Javax_Tools_FileObject_" data-uid="Javax.Tools.JavaFileManager.Contains(Javax.Tools.JavaFileManager.Location,Javax.Tools.FileObject)">Contains(JavaFileManager.Location, FileObject)</h4>
@@ -703,7 +706,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_Flush.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.Flush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L185">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L343">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_Flush_" data-uid="Javax.Tools.JavaFileManager.Flush*"></a>
   <h4 id="Javax_Tools_JavaFileManager_Flush" data-uid="Javax.Tools.JavaFileManager.Flush">Flush()</h4>
@@ -734,7 +737,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_GetClassLoader_Javax_Tools_JavaFileManager_Location_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.GetClassLoader(Javax.Tools.JavaFileManager.Location)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L94">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L252">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_GetClassLoader_" data-uid="Javax.Tools.JavaFileManager.GetClassLoader*"></a>
   <h4 id="Javax_Tools_JavaFileManager_GetClassLoader_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.JavaFileManager.GetClassLoader(Javax.Tools.JavaFileManager.Location)">GetClassLoader(JavaFileManager.Location)</h4>
@@ -784,7 +787,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_GetFileForInput_Javax_Tools_JavaFileManager_Location_System_String_System_String_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.GetFileForInput(Javax.Tools.JavaFileManager.Location%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L129">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L287">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_GetFileForInput_" data-uid="Javax.Tools.JavaFileManager.GetFileForInput*"></a>
   <h4 id="Javax_Tools_JavaFileManager_GetFileForInput_Javax_Tools_JavaFileManager_Location_System_String_System_String_" data-uid="Javax.Tools.JavaFileManager.GetFileForInput(Javax.Tools.JavaFileManager.Location,System.String,System.String)">GetFileForInput(JavaFileManager.Location, String, String)</h4>
@@ -861,7 +864,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_GetFileForOutput_Javax_Tools_JavaFileManager_Location_System_String_System_String_Javax_Tools_FileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.GetFileForOutput(Javax.Tools.JavaFileManager.Location%2CSystem.String%2CSystem.String%2CJavax.Tools.FileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L142">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L300">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_GetFileForOutput_" data-uid="Javax.Tools.JavaFileManager.GetFileForOutput*"></a>
   <h4 id="Javax_Tools_JavaFileManager_GetFileForOutput_Javax_Tools_JavaFileManager_Location_System_String_System_String_Javax_Tools_FileObject_" data-uid="Javax.Tools.JavaFileManager.GetFileForOutput(Javax.Tools.JavaFileManager.Location,System.String,System.String,Javax.Tools.FileObject)">GetFileForOutput(JavaFileManager.Location, String, String, FileObject)</h4>
@@ -944,7 +947,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_GetJavaFileForInput_Javax_Tools_JavaFileManager_Location_System_String_Javax_Tools_JavaFileObject_Kind_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.GetJavaFileForInput(Javax.Tools.JavaFileManager.Location%2CSystem.String%2CJavax.Tools.JavaFileObject.Kind)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L154">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L312">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_GetJavaFileForInput_" data-uid="Javax.Tools.JavaFileManager.GetJavaFileForInput*"></a>
   <h4 id="Javax_Tools_JavaFileManager_GetJavaFileForInput_Javax_Tools_JavaFileManager_Location_System_String_Javax_Tools_JavaFileObject_Kind_" data-uid="Javax.Tools.JavaFileManager.GetJavaFileForInput(Javax.Tools.JavaFileManager.Location,System.String,Javax.Tools.JavaFileObject.Kind)">GetJavaFileForInput(JavaFileManager.Location, String, JavaFileObject.Kind)</h4>
@@ -1021,7 +1024,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_GetJavaFileForOutput_Javax_Tools_JavaFileManager_Location_System_String_Javax_Tools_JavaFileObject_Kind_Javax_Tools_FileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.GetJavaFileForOutput(Javax.Tools.JavaFileManager.Location%2CSystem.String%2CJavax.Tools.JavaFileObject.Kind%2CJavax.Tools.FileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L167">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L325">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_GetJavaFileForOutput_" data-uid="Javax.Tools.JavaFileManager.GetJavaFileForOutput*"></a>
   <h4 id="Javax_Tools_JavaFileManager_GetJavaFileForOutput_Javax_Tools_JavaFileManager_Location_System_String_Javax_Tools_JavaFileObject_Kind_Javax_Tools_FileObject_" data-uid="Javax.Tools.JavaFileManager.GetJavaFileForOutput(Javax.Tools.JavaFileManager.Location,System.String,Javax.Tools.JavaFileObject.Kind,Javax.Tools.FileObject)">GetJavaFileForOutput(JavaFileManager.Location, String, JavaFileObject.Kind, FileObject)</h4>
@@ -1104,7 +1107,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_GetLocationForModule_Javax_Tools_JavaFileManager_Location_Javax_Tools_JavaFileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.GetLocationForModule(Javax.Tools.JavaFileManager.Location%2CJavax.Tools.JavaFileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L250">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L408">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_GetLocationForModule_" data-uid="Javax.Tools.JavaFileManager.GetLocationForModule*"></a>
   <h4 id="Javax_Tools_JavaFileManager_GetLocationForModule_Javax_Tools_JavaFileManager_Location_Javax_Tools_JavaFileObject_" data-uid="Javax.Tools.JavaFileManager.GetLocationForModule(Javax.Tools.JavaFileManager.Location,Javax.Tools.JavaFileObject)">GetLocationForModule(JavaFileManager.Location, JavaFileObject)</h4>
@@ -1175,7 +1178,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_GetLocationForModule_Javax_Tools_JavaFileManager_Location_System_String_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.GetLocationForModule(Javax.Tools.JavaFileManager.Location%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L239">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L397">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_GetLocationForModule_" data-uid="Javax.Tools.JavaFileManager.GetLocationForModule*"></a>
   <h4 id="Javax_Tools_JavaFileManager_GetLocationForModule_Javax_Tools_JavaFileManager_Location_System_String_" data-uid="Javax.Tools.JavaFileManager.GetLocationForModule(Javax.Tools.JavaFileManager.Location,System.String)">GetLocationForModule(JavaFileManager.Location, String)</h4>
@@ -1246,7 +1249,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_GetServiceLoader__1_Javax_Tools_JavaFileManager_Location_Java_Lang_Class_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.GetServiceLoader%60%601(Javax.Tools.JavaFileManager.Location%2CJava.Lang.Class)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L197">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L355">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_GetServiceLoader_" data-uid="Javax.Tools.JavaFileManager.GetServiceLoader*"></a>
   <h4 id="Javax_Tools_JavaFileManager_GetServiceLoader__1_Javax_Tools_JavaFileManager_Location_Java_Lang_Class_" data-uid="Javax.Tools.JavaFileManager.GetServiceLoader``1(Javax.Tools.JavaFileManager.Location,Java.Lang.Class)">GetServiceLoader&lt;S&gt;(JavaFileManager.Location, Class)</h4>
@@ -1332,7 +1335,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_HandleOption_System_String_Java_Util_Iterator_System_String__.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.HandleOption(System.String%2CJava.Util.Iterator%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L66">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L224">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_HandleOption_" data-uid="Javax.Tools.JavaFileManager.HandleOption*"></a>
   <h4 id="Javax_Tools_JavaFileManager_HandleOption_System_String_Java_Util_Iterator_System_String__" data-uid="Javax.Tools.JavaFileManager.HandleOption(System.String,Java.Util.Iterator{System.String})">HandleOption(String, Iterator&lt;String&gt;)</h4>
@@ -1388,7 +1391,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_HasLocation_Javax_Tools_JavaFileManager_Location_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.HasLocation(Javax.Tools.JavaFileManager.Location)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L75">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L233">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_HasLocation_" data-uid="Javax.Tools.JavaFileManager.HasLocation*"></a>
   <h4 id="Javax_Tools_JavaFileManager_HasLocation_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.JavaFileManager.HasLocation(Javax.Tools.JavaFileManager.Location)">HasLocation(JavaFileManager.Location)</h4>
@@ -1438,7 +1441,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_InferBinaryName_Javax_Tools_JavaFileManager_Location_Javax_Tools_JavaFileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.InferBinaryName(Javax.Tools.JavaFileManager.Location%2CJavax.Tools.JavaFileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L117">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L275">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_InferBinaryName_" data-uid="Javax.Tools.JavaFileManager.InferBinaryName*"></a>
   <h4 id="Javax_Tools_JavaFileManager_InferBinaryName_Javax_Tools_JavaFileManager_Location_Javax_Tools_JavaFileObject_" data-uid="Javax.Tools.JavaFileManager.InferBinaryName(Javax.Tools.JavaFileManager.Location,Javax.Tools.JavaFileObject)">InferBinaryName(JavaFileManager.Location, JavaFileObject)</h4>
@@ -1494,7 +1497,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_InferModuleName_Javax_Tools_JavaFileManager_Location_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.InferModuleName(Javax.Tools.JavaFileManager.Location)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L228">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L386">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_InferModuleName_" data-uid="Javax.Tools.JavaFileManager.InferModuleName*"></a>
   <h4 id="Javax_Tools_JavaFileManager_InferModuleName_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.JavaFileManager.InferModuleName(Javax.Tools.JavaFileManager.Location)">InferModuleName(JavaFileManager.Location)</h4>
@@ -1559,7 +1562,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_IsSameFile_Javax_Tools_FileObject_Javax_Tools_FileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.IsSameFile(Javax.Tools.FileObject%2CJavax.Tools.FileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L85">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L243">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_IsSameFile_" data-uid="Javax.Tools.JavaFileManager.IsSameFile*"></a>
   <h4 id="Javax_Tools_JavaFileManager_IsSameFile_Javax_Tools_FileObject_Javax_Tools_FileObject_" data-uid="Javax.Tools.JavaFileManager.IsSameFile(Javax.Tools.FileObject,Javax.Tools.FileObject)">IsSameFile(FileObject, FileObject)</h4>
@@ -1615,7 +1618,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_List_Javax_Tools_JavaFileManager_Location_System_String_Java_Util_Set_Javax_Tools_JavaFileObject_Kind__System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.List(Javax.Tools.JavaFileManager.Location%2CSystem.String%2CJava.Util.Set%7BJavax.Tools.JavaFileObject.Kind%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L107">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L265">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_List_" data-uid="Javax.Tools.JavaFileManager.List*"></a>
   <h4 id="Javax_Tools_JavaFileManager_List_Javax_Tools_JavaFileManager_Location_System_String_Java_Util_Set_Javax_Tools_JavaFileObject_Kind__System_Boolean_" data-uid="Javax.Tools.JavaFileManager.List(Javax.Tools.JavaFileManager.Location,System.String,Java.Util.Set{Javax.Tools.JavaFileObject.Kind},System.Boolean)">List(JavaFileManager.Location, String, Set&lt;JavaFileObject.Kind&gt;, Boolean)</h4>
@@ -1698,7 +1701,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_ListLocationsForModules_Javax_Tools_JavaFileManager_Location_.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.ListLocationsForModules(Javax.Tools.JavaFileManager.Location)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L218">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L376">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_ListLocationsForModules_" data-uid="Javax.Tools.JavaFileManager.ListLocationsForModules*"></a>
   <h4 id="Javax_Tools_JavaFileManager_ListLocationsForModules_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.JavaFileManager.ListLocationsForModules(Javax.Tools.JavaFileManager.Location)">ListLocationsForModules(JavaFileManager.Location)</h4>
@@ -1765,7 +1768,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_op_Implicit_Javax_Tools_JavaFileManager__Java_Io_Closeable.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.op_Implicit(Javax.Tools.JavaFileManager)~Java.Io.Closeable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L39">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L197">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_op_Implicit_" data-uid="Javax.Tools.JavaFileManager.op_Implicit*"></a>
   <h4 id="Javax_Tools_JavaFileManager_op_Implicit_Javax_Tools_JavaFileManager__Java_Io_Closeable" data-uid="Javax.Tools.JavaFileManager.op_Implicit(Javax.Tools.JavaFileManager)~Java.Io.Closeable">Implicit(JavaFileManager to Closeable)</h4>
@@ -1813,7 +1816,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_op_Implicit_Javax_Tools_JavaFileManager__Java_Io_Flushable.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.op_Implicit(Javax.Tools.JavaFileManager)~Java.Io.Flushable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L201">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_op_Implicit_" data-uid="Javax.Tools.JavaFileManager.op_Implicit*"></a>
   <h4 id="Javax_Tools_JavaFileManager_op_Implicit_Javax_Tools_JavaFileManager__Java_Io_Flushable" data-uid="Javax.Tools.JavaFileManager.op_Implicit(Javax.Tools.JavaFileManager)~Java.Io.Flushable">Implicit(JavaFileManager to Flushable)</h4>
@@ -1861,7 +1864,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager_op_Implicit_Javax_Tools_JavaFileManager__Javax_Tools_OptionChecker.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager.op_Implicit(Javax.Tools.JavaFileManager)~Javax.Tools.OptionChecker%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L47">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L205">View Source</a>
   </span>
   <a id="Javax_Tools_JavaFileManager_op_Implicit_" data-uid="Javax.Tools.JavaFileManager.op_Implicit*"></a>
   <h4 id="Javax_Tools_JavaFileManager_op_Implicit_Javax_Tools_JavaFileManager__Javax_Tools_OptionChecker" data-uid="Javax.Tools.JavaFileManager.op_Implicit(Javax.Tools.JavaFileManager)~Javax.Tools.OptionChecker">Implicit(JavaFileManager to OptionChecker)</h4>
@@ -1923,9 +1926,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Tools.IJavaFileManager.html">IJavaFileManager</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1938,7 +1944,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_JavaFileManager.md&amp;value=---%0Auid%3A%20Javax.Tools.JavaFileManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L187" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

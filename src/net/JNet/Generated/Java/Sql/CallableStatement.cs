@@ -33,10 +33,6 @@ namespace Java.Sql
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#wasNull()"/> 
-        /// </summary>
-        bool WasNull { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getObject(int,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -68,6 +64,13 @@ namespace Java.Sql
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool GetBoolean(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#wasNull()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool WasNull();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getByte(int)"/>
         /// </summary>
@@ -941,13 +944,6 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#wasNull()"/> 
-        /// </summary>
-        public bool WasNull
-        {
-            get { return IExecute<bool>("wasNull"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getObject(int,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -990,6 +986,16 @@ namespace Java.Sql
         public bool GetBoolean(string arg0)
         {
             return IExecute<bool>("getBoolean", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#wasNull()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool WasNull()
+        {
+            return IExecute<bool>("wasNull");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/CallableStatement.html#getByte(int)"/>

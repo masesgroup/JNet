@@ -54,11 +54,13 @@ namespace Javax.Imageio.Plugins.Bmp
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#isTopDown()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#isTopDown()"/>
         /// </summary>
-        public bool IsTopDown
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTopDown()
         {
-            get { return IExecute<bool>("isTopDown"); }
+            return IExecute<bool>("isTopDown");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/bmp/BMPImageWriteParam.html#setTopDown(boolean)"/>

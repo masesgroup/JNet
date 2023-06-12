@@ -46,20 +46,6 @@ namespace Javax.Sound.Midi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#size()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecute<int>("size"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#ticks()"/> 
-        /// </summary>
-        public long Ticks
-        {
-            get { return IExecute<long>("ticks"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#add(javax.sound.midi.MidiEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sound.Midi.MidiEvent"/></param>
@@ -78,6 +64,15 @@ namespace Javax.Sound.Midi
             return IExecute<bool>("remove", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#size()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
+        {
+            return IExecute<int>("size");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -86,6 +81,15 @@ namespace Javax.Sound.Midi
         public Javax.Sound.Midi.MidiEvent Get(int arg0)
         {
             return IExecute<Javax.Sound.Midi.MidiEvent>("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html#ticks()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long Ticks()
+        {
+            return IExecute<long>("ticks");
         }
 
         #endregion

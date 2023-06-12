@@ -46,18 +46,22 @@ namespace Javax.Xml.Validation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidator()"/>
         /// </summary>
-        public Javax.Xml.Validation.Validator NewValidator
+
+        /// <returns><see cref="Javax.Xml.Validation.Validator"/></returns>
+        public Javax.Xml.Validation.Validator NewValidator()
         {
-            get { return IExecute<Javax.Xml.Validation.Validator>("newValidator"); }
+            return IExecute<Javax.Xml.Validation.Validator>("newValidator");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidatorHandler()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html#newValidatorHandler()"/>
         /// </summary>
-        public Javax.Xml.Validation.ValidatorHandler NewValidatorHandler
+
+        /// <returns><see cref="Javax.Xml.Validation.ValidatorHandler"/></returns>
+        public Javax.Xml.Validation.ValidatorHandler NewValidatorHandler()
         {
-            get { return IExecute<Javax.Xml.Validation.ValidatorHandler>("newValidatorHandler"); }
+            return IExecute<Javax.Xml.Validation.ValidatorHandler>("newValidatorHandler");
         }
 
         #endregion

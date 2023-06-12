@@ -94,6 +94,9 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Management.Remote.IJMXConnector.html">IJMXConnector</a></div>
+    <div><a class="xref" href="Java.Io.ICloseable.html">ICloseable</a></div>
+    <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -375,7 +378,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Management_Remote_JMXConnector_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class JMXConnector : Closeable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class JMXConnector : Closeable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IJMXConnector, ICloseable, IAutoCloseable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -468,7 +471,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_ConnectionId.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.ConnectionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L127">View Source</a>
   </span>
   <a id="Javax_Management_Remote_JMXConnector_ConnectionId_" data-uid="Javax.Management.Remote.JMXConnector.ConnectionId*"></a>
   <h4 id="Javax_Management_Remote_JMXConnector_ConnectionId" data-uid="Javax.Management.Remote.JMXConnector.ConnectionId">ConnectionId</h4>
@@ -499,7 +502,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_CREDENTIALS.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.CREDENTIALS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L115">View Source</a>
   </span>
   <a id="Javax_Management_Remote_JMXConnector_CREDENTIALS_" data-uid="Javax.Management.Remote.JMXConnector.CREDENTIALS*"></a>
   <h4 id="Javax_Management_Remote_JMXConnector_CREDENTIALS" data-uid="Javax.Management.Remote.JMXConnector.CREDENTIALS">CREDENTIALS</h4>
@@ -662,7 +665,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_MBeanServerConnection.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.MBeanServerConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L62">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L134">View Source</a>
   </span>
   <a id="Javax_Management_Remote_JMXConnector_MBeanServerConnection_" data-uid="Javax.Management.Remote.JMXConnector.MBeanServerConnection*"></a>
   <h4 id="Javax_Management_Remote_JMXConnector_MBeanServerConnection" data-uid="Javax.Management.Remote.JMXConnector.MBeanServerConnection">MBeanServerConnection</h4>
@@ -695,7 +698,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_AddConnectionNotificationListener_Javax_Management_NotificationListener_Javax_Management_NotificationFilter_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.AddConnectionNotificationListener(Javax.Management.NotificationListener%2CJavax.Management.NotificationFilter%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L82">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L154">View Source</a>
   </span>
   <a id="Javax_Management_Remote_JMXConnector_AddConnectionNotificationListener_" data-uid="Javax.Management.Remote.JMXConnector.AddConnectionNotificationListener*"></a>
   <h4 id="Javax_Management_Remote_JMXConnector_AddConnectionNotificationListener_Javax_Management_NotificationListener_Javax_Management_NotificationFilter_System_Object_" data-uid="Javax.Management.Remote.JMXConnector.AddConnectionNotificationListener(Javax.Management.NotificationListener,Javax.Management.NotificationFilter,System.Object)">AddConnectionNotificationListener(NotificationListener, NotificationFilter, Object)</h4>
@@ -741,7 +744,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_Close.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L91">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L163">View Source</a>
   </span>
   <a id="Javax_Management_Remote_JMXConnector_Close_" data-uid="Javax.Management.Remote.JMXConnector.Close*"></a>
   <h4 id="Javax_Management_Remote_JMXConnector_Close" data-uid="Javax.Management.Remote.JMXConnector.Close">Close()</h4>
@@ -772,7 +775,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_Connect.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.Connect%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L100">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L172">View Source</a>
   </span>
   <a id="Javax_Management_Remote_JMXConnector_Connect_" data-uid="Javax.Management.Remote.JMXConnector.Connect*"></a>
   <h4 id="Javax_Management_Remote_JMXConnector_Connect" data-uid="Javax.Management.Remote.JMXConnector.Connect">Connect()</h4>
@@ -803,16 +806,16 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_Connect_Java_Util_Map_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.Connect(Java.Util.Map%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Javax/Management/Remote/JMXConnector.cs/#L33">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L181">View Source</a>
   </span>
   <a id="Javax_Management_Remote_JMXConnector_Connect_" data-uid="Javax.Management.Remote.JMXConnector.Connect*"></a>
   <h4 id="Javax_Management_Remote_JMXConnector_Connect_Java_Util_Map_System_String_System_Object__" data-uid="Javax.Management.Remote.JMXConnector.Connect(Java.Util.Map{System.String,System.Object})">Connect(Map&lt;String, Object&gt;)</h4>
-  <div class="markdown level1 summary"><p>Establishes the connection to the connector server.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect(java.util.Map)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect(java.util.Map)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Connect(Map&lt;string, object&gt; env)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Connect(Map&lt;string, object&gt; arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -826,57 +829,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
-        <td><span class="parametername">env</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_Connect__1_Java_Util_Map_System_String___0__.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.Connect%60%601(Java.Util.Map%7BSystem.String%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L110">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_JMXConnector_Connect_" data-uid="Javax.Management.Remote.JMXConnector.Connect*"></a>
-  <h4 id="Javax_Management_Remote_JMXConnector_Connect__1_Java_Util_Map_System_String___0__" data-uid="Javax.Management.Remote.JMXConnector.Connect``1(Java.Util.Map{System.String,``0})">Connect&lt;Arg0Extendsobject&gt;(Map&lt;String, Arg0Extendsobject&gt;)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect(java.util.Map)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#connect(java.util.Map)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Connect&lt;Arg0Extendsobject&gt;(Map&lt;string, Arg0Extendsobject&gt; arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, Arg0Extendsobject&gt;</td>
         <td><span class="parametername">arg0</span></td>
         <td><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">Arg0Extendsobject</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -900,7 +855,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_GetMBeanServerConnection_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.GetMBeanServerConnection(Javax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L144">View Source</a>
   </span>
   <a id="Javax_Management_Remote_JMXConnector_GetMBeanServerConnection_" data-uid="Javax.Management.Remote.JMXConnector.GetMBeanServerConnection*"></a>
   <h4 id="Javax_Management_Remote_JMXConnector_GetMBeanServerConnection_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.JMXConnector.GetMBeanServerConnection(Javax.Security.Auth.Subject)">GetMBeanServerConnection(Subject)</h4>
@@ -965,7 +920,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_RemoveConnectionNotificationListener_Javax_Management_NotificationListener_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.RemoveConnectionNotificationListener(Javax.Management.NotificationListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L130">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L201">View Source</a>
   </span>
   <a id="Javax_Management_Remote_JMXConnector_RemoveConnectionNotificationListener_" data-uid="Javax.Management.Remote.JMXConnector.RemoveConnectionNotificationListener*"></a>
   <h4 id="Javax_Management_Remote_JMXConnector_RemoveConnectionNotificationListener_Javax_Management_NotificationListener_" data-uid="Javax.Management.Remote.JMXConnector.RemoveConnectionNotificationListener(Javax.Management.NotificationListener)">RemoveConnectionNotificationListener(NotificationListener)</h4>
@@ -1014,7 +969,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector_RemoveConnectionNotificationListener_Javax_Management_NotificationListener_Javax_Management_NotificationFilter_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector.RemoveConnectionNotificationListener(Javax.Management.NotificationListener%2CJavax.Management.NotificationFilter%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L121">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L192">View Source</a>
   </span>
   <a id="Javax_Management_Remote_JMXConnector_RemoveConnectionNotificationListener_" data-uid="Javax.Management.Remote.JMXConnector.RemoveConnectionNotificationListener*"></a>
   <h4 id="Javax_Management_Remote_JMXConnector_RemoveConnectionNotificationListener_Javax_Management_NotificationListener_Javax_Management_NotificationFilter_System_Object_" data-uid="Javax.Management.Remote.JMXConnector.RemoveConnectionNotificationListener(Javax.Management.NotificationListener,Javax.Management.NotificationFilter,System.Object)">RemoveConnectionNotificationListener(NotificationListener, NotificationFilter, Object)</h4>
@@ -1089,9 +1044,18 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Management.Remote.IJMXConnector.html">IJMXConnector</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Io.ICloseable.html">ICloseable</a>
+  </div>
+  <div>
+      <a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1104,7 +1068,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_JMXConnector.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.JMXConnector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Javax/Management/Remote/JMXConnector.cs/#L25" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/JMXConnector.cs/#L101" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -46,20 +46,6 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#reader()"/> 
-        /// </summary>
-        public Java.Io.Reader Reader
-        {
-            get { return IExecute<Java.Io.Reader>("reader"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#writer()"/> 
-        /// </summary>
-        public Java.Io.PrintWriter Writer
-        {
-            get { return IExecute<Java.Io.PrintWriter>("writer"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readPassword()"/>
         /// </summary>
 
@@ -97,6 +83,24 @@ namespace Java.Io
         public Java.Io.Console Printf(string arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Io.Console>("printf", arg0); else return IExecute<Java.Io.Console>("printf", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#writer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Io.PrintWriter"/></returns>
+        public Java.Io.PrintWriter Writer()
+        {
+            return IExecute<Java.Io.PrintWriter>("writer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#reader()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        public Java.Io.Reader Reader()
+        {
+            return IExecute<Java.Io.Reader>("reader");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html#readLine()"/>

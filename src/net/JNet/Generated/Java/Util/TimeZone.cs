@@ -124,32 +124,11 @@ namespace Java.Util
             get { return IExecute<string>("getID"); } set { IExecute("setID", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#observesDaylightTime()"/> 
-        /// </summary>
-        public bool ObservesDaylightTime
-        {
-            get { return IExecute<bool>("observesDaylightTime"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getRawOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#setRawOffset(int)"/>
         /// </summary>
         public int RawOffset
         {
             get { return IExecute<int>("getRawOffset"); } set { IExecute("setRawOffset", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#toZoneId()"/> 
-        /// </summary>
-        public Java.Time.ZoneId ToZoneId
-        {
-            get { return IExecute<Java.Time.ZoneId>("toZoneId"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#useDaylightTime()"/> 
-        /// </summary>
-        public bool UseDaylightTime
-        {
-            get { return IExecute<bool>("useDaylightTime"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#inDaylightTime(java.util.Date)"/>
@@ -159,6 +138,15 @@ namespace Java.Util
         public bool InDaylightTime(Java.Util.Date arg0)
         {
             return IExecute<bool>("inDaylightTime", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#useDaylightTime()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool UseDaylightTime()
+        {
+            return IExecute<bool>("useDaylightTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getOffset(int,int,int,int,int,int)"/>
@@ -182,6 +170,15 @@ namespace Java.Util
         public bool HasSameRules(Java.Util.TimeZone arg0)
         {
             return IExecute<bool>("hasSameRules", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#observesDaylightTime()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool ObservesDaylightTime()
+        {
+            return IExecute<bool>("observesDaylightTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#getDisplayName(boolean,int)"/>
@@ -221,6 +218,15 @@ namespace Java.Util
         public string GetDisplayName(bool arg0, int arg1, Java.Util.Locale arg2)
         {
             return IExecute<string>("getDisplayName", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#toZoneId()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.ZoneId"/></returns>
+        public Java.Time.ZoneId ToZoneId()
+        {
+            return IExecute<Java.Time.ZoneId>("toZoneId");
         }
 
         #endregion

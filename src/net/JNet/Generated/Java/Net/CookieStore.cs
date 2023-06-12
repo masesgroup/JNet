@@ -37,10 +37,6 @@ namespace Java.Net
         /// </summary>
         Java.Util.List<Java.Net.HttpCookie> Cookies { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/> 
-        /// </summary>
-        bool RemoveAll { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getURIs()"/> 
         /// </summary>
         Java.Util.List<Java.Net.URI> URIs { get; }
@@ -51,6 +47,12 @@ namespace Java.Net
         /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
         /// <returns><see cref="bool"/></returns>
         bool Remove(Java.Net.URI arg0, Java.Net.HttpCookie arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool RemoveAll();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#get(java.net.URI)"/>
         /// </summary>
@@ -102,13 +104,6 @@ namespace Java.Net
             get { return IExecute<Java.Util.List<Java.Net.HttpCookie>>("getCookies"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/> 
-        /// </summary>
-        public bool RemoveAll
-        {
-            get { return IExecute<bool>("removeAll"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getURIs()"/> 
         /// </summary>
         public Java.Util.List<Java.Net.URI> URIs
@@ -124,6 +119,15 @@ namespace Java.Net
         public bool Remove(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
             return IExecute<bool>("remove", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool RemoveAll()
+        {
+            return IExecute<bool>("removeAll");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#get(java.net.URI)"/>

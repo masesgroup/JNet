@@ -99,95 +99,124 @@ namespace Java.Io
             get { return IExecute<long>("getFilePointer"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#length()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readBoolean()"/>
         /// </summary>
-        public long Length
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public bool ReadBoolean()
         {
-            get { return IExecute<long>("length"); }
+            return IExecute<bool>("readBoolean");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readBoolean()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readByte()"/>
         /// </summary>
-        public bool ReadBoolean
+
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public byte ReadByte()
         {
-            get { return IExecute<bool>("readBoolean"); }
+            return IExecute<byte>("readByte");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readByte()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readChar()"/>
         /// </summary>
-        public byte ReadByte
+
+        /// <returns><see cref="char"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public char ReadChar()
         {
-            get { return IExecute<byte>("readByte"); }
+            return IExecute<char>("readChar");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readChar()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readDouble()"/>
         /// </summary>
-        public char ReadChar
+
+        /// <returns><see cref="double"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public double ReadDouble()
         {
-            get { return IExecute<char>("readChar"); }
+            return IExecute<double>("readDouble");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readDouble()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readFloat()"/>
         /// </summary>
-        public double ReadDouble
+
+        /// <returns><see cref="float"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public float ReadFloat()
         {
-            get { return IExecute<double>("readDouble"); }
+            return IExecute<float>("readFloat");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readFloat()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readInt()"/>
         /// </summary>
-        public float ReadFloat
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int ReadInt()
         {
-            get { return IExecute<float>("readFloat"); }
+            return IExecute<int>("readInt");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readInt()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readUnsignedByte()"/>
         /// </summary>
-        public int ReadInt
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int ReadUnsignedByte()
         {
-            get { return IExecute<int>("readInt"); }
+            return IExecute<int>("readUnsignedByte");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readLine()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readUnsignedShort()"/>
         /// </summary>
-        public string ReadLine
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int ReadUnsignedShort()
         {
-            get { return IExecute<string>("readLine"); }
+            return IExecute<int>("readUnsignedShort");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readLong()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readLine()"/>
         /// </summary>
-        public long ReadLong
+
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public string ReadLine()
         {
-            get { return IExecute<long>("readLong"); }
+            return IExecute<string>("readLine");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readShort()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readUTF()"/>
         /// </summary>
-        public short ReadShort
+
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public string ReadUTF()
         {
-            get { return IExecute<short>("readShort"); }
+            return IExecute<string>("readUTF");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readUnsignedByte()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readLong()"/>
         /// </summary>
-        public int ReadUnsignedByte
+
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public long ReadLong()
         {
-            get { return IExecute<int>("readUnsignedByte"); }
+            return IExecute<long>("readLong");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readUnsignedShort()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readShort()"/>
         /// </summary>
-        public int ReadUnsignedShort
+
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public short ReadShort()
         {
-            get { return IExecute<int>("readUnsignedShort"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readUTF()"/> 
-        /// </summary>
-        public string ReadUTF
-        {
-            get { return IExecute<string>("readUTF"); }
+            return IExecute<short>("readShort");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#readFully(byte[],int,int)"/>
@@ -349,6 +378,16 @@ namespace Java.Io
         public int SkipBytes(int arg0)
         {
             return IExecute<int>("skipBytes", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#length()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public long Length()
+        {
+            return IExecute<long>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#setLength(long)"/>

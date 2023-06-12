@@ -37,18 +37,6 @@ namespace Java.Time.Temporal
         /// </summary>
         Java.Time.Temporal.TemporalUnit BaseUnit { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isDateBased()"/> 
-        /// </summary>
-        bool IsDateBased { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isTimeBased()"/> 
-        /// </summary>
-        bool IsTimeBased { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#range()"/> 
-        /// </summary>
-        Java.Time.Temporal.ValueRange Range { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#getRangeUnit()"/> 
         /// </summary>
         Java.Time.Temporal.TemporalUnit RangeUnit { get; }
@@ -61,11 +49,29 @@ namespace Java.Time.Temporal
         /// <returns><typeparamref name="R"/></returns>
         R AdjustInto<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new();
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isDateBased()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsDateBased();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isSupportedBy(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="bool"/></returns>
         bool IsSupportedBy(Java.Time.Temporal.TemporalAccessor arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isTimeBased()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsTimeBased();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#range()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
+        Java.Time.Temporal.ValueRange Range();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#rangeRefinedBy(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
@@ -131,27 +137,6 @@ namespace Java.Time.Temporal
             get { return IExecute<Java.Time.Temporal.TemporalUnit>("getBaseUnit"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isDateBased()"/> 
-        /// </summary>
-        public bool IsDateBased
-        {
-            get { return IExecute<bool>("isDateBased"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isTimeBased()"/> 
-        /// </summary>
-        public bool IsTimeBased
-        {
-            get { return IExecute<bool>("isTimeBased"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#range()"/> 
-        /// </summary>
-        public Java.Time.Temporal.ValueRange Range
-        {
-            get { return IExecute<Java.Time.Temporal.ValueRange>("range"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#getRangeUnit()"/> 
         /// </summary>
         public Java.Time.Temporal.TemporalUnit RangeUnit
@@ -170,6 +155,15 @@ namespace Java.Time.Temporal
             return IExecute<R>("adjustInto", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isDateBased()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDateBased()
+        {
+            return IExecute<bool>("isDateBased");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isSupportedBy(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
@@ -177,6 +171,24 @@ namespace Java.Time.Temporal
         public bool IsSupportedBy(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return IExecute<bool>("isSupportedBy", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#isTimeBased()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTimeBased()
+        {
+            return IExecute<bool>("isTimeBased");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#range()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
+        public Java.Time.Temporal.ValueRange Range()
+        {
+            return IExecute<Java.Time.Temporal.ValueRange>("range");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalField.html#rangeRefinedBy(java.time.temporal.TemporalAccessor)"/>

@@ -33,13 +33,17 @@ namespace Javax.Swing
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()"/>
         /// </summary>
-        string Delegate { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool Value();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/>
         /// </summary>
-        bool Value { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string Delegate();
 
         #endregion
 
@@ -72,18 +76,22 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()"/>
         /// </summary>
-        public string Delegate
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Value()
         {
-            get { return IExecute<string>("delegate"); }
+            return IExecute<bool>("value");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/>
         /// </summary>
-        public bool Value
+
+        /// <returns><see cref="string"/></returns>
+        public string Delegate()
         {
-            get { return IExecute<bool>("value"); }
+            return IExecute<string>("delegate");
         }
 
         #endregion

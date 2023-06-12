@@ -83,6 +83,7 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Javax.Imageio.ImageTranscoder.html">ImageTranscoder</a>&gt;</div>
     <div class="level4"><span class="xref">ImageTranscoder</span></div>
+      <div class="level5"><a class="xref" href="Javax.Imageio.ImageWriter.html">ImageWriter</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -92,6 +93,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Imageio.IImageTranscoder.html">IImageTranscoder</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -373,7 +375,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Imageio_ImageTranscoder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ImageTranscoder : JVMBridgeBase&lt;ImageTranscoder&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class ImageTranscoder : JVMBridgeBase&lt;ImageTranscoder&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IImageTranscoder</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -600,7 +602,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_ImageTranscoder_ConvertImageMetadata_Javax_Imageio_Metadata_IIOMetadata_Javax_Imageio_ImageTypeSpecifier_Javax_Imageio_ImageWriteParam_.md&amp;value=---%0Auid%3A%20Javax.Imageio.ImageTranscoder.ConvertImageMetadata(Javax.Imageio.Metadata.IIOMetadata%2CJavax.Imageio.ImageTypeSpecifier%2CJavax.Imageio.ImageWriteParam)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/ImageTranscoder.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/ImageTranscoder.cs/#L88">View Source</a>
   </span>
   <a id="Javax_Imageio_ImageTranscoder_ConvertImageMetadata_" data-uid="Javax.Imageio.ImageTranscoder.ConvertImageMetadata*"></a>
   <h4 id="Javax_Imageio_ImageTranscoder_ConvertImageMetadata_Javax_Imageio_Metadata_IIOMetadata_Javax_Imageio_ImageTypeSpecifier_Javax_Imageio_ImageWriteParam_" data-uid="Javax.Imageio.ImageTranscoder.ConvertImageMetadata(Javax.Imageio.Metadata.IIOMetadata,Javax.Imageio.ImageTypeSpecifier,Javax.Imageio.ImageWriteParam)">ConvertImageMetadata(IIOMetadata, ImageTypeSpecifier, ImageWriteParam)</h4>
@@ -662,7 +664,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_ImageTranscoder_ConvertStreamMetadata_Javax_Imageio_Metadata_IIOMetadata_Javax_Imageio_ImageWriteParam_.md&amp;value=---%0Auid%3A%20Javax.Imageio.ImageTranscoder.ConvertStreamMetadata(Javax.Imageio.Metadata.IIOMetadata%2CJavax.Imageio.ImageWriteParam)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/ImageTranscoder.cs/#L65">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/ImageTranscoder.cs/#L98">View Source</a>
   </span>
   <a id="Javax_Imageio_ImageTranscoder_ConvertStreamMetadata_" data-uid="Javax.Imageio.ImageTranscoder.ConvertStreamMetadata*"></a>
   <h4 id="Javax_Imageio_ImageTranscoder_ConvertStreamMetadata_Javax_Imageio_Metadata_IIOMetadata_Javax_Imageio_ImageWriteParam_" data-uid="Javax.Imageio.ImageTranscoder.ConvertStreamMetadata(Javax.Imageio.Metadata.IIOMetadata,Javax.Imageio.ImageWriteParam)">ConvertStreamMetadata(IIOMetadata, ImageWriteParam)</h4>
@@ -732,9 +734,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Imageio.IImageTranscoder.html">IImageTranscoder</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -747,7 +752,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_ImageTranscoder.md&amp;value=---%0Auid%3A%20Javax.Imageio.ImageTranscoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/ImageTranscoder.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/ImageTranscoder.cs/#L62" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

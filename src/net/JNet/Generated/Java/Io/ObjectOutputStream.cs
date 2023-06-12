@@ -63,13 +63,6 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#putFields()"/> 
-        /// </summary>
-        public Java.Io.ObjectOutputStream.PutField PutFields
-        {
-            get { return IExecute<Java.Io.ObjectOutputStream.PutField>("putFields"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#writeObject(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -77,6 +70,16 @@ namespace Java.Io
         public void WriteObject(object arg0)
         {
             IExecute("writeObject", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#putFields()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Io.ObjectOutputStream.PutField"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.ObjectOutputStream.PutField PutFields()
+        {
+            return IExecute<Java.Io.ObjectOutputStream.PutField>("putFields");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.html#defaultWriteObject()"/>

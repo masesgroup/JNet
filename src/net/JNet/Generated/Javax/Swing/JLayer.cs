@@ -75,13 +75,6 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#createGlassPane()"/> 
-        /// </summary>
-        public Javax.Swing.JPanel CreateGlassPane
-        {
-            get { return IExecute<Javax.Swing.JPanel>("createGlassPane"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setGlassPane(javax.swing.JPanel)"/>
         /// </summary>
         public Javax.Swing.JPanel GlassPane
@@ -144,6 +137,15 @@ namespace Javax.Swing
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#createGlassPane()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.JPanel"/></returns>
+        public Javax.Swing.JPanel CreateGlassPane()
+        {
+            return IExecute<Javax.Swing.JPanel>("createGlassPane");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#propertyChange(java.beans.PropertyChangeEvent)"/>
@@ -226,13 +228,6 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#createGlassPane()"/> 
-        /// </summary>
-        public Javax.Swing.JPanel CreateGlassPane
-        {
-            get { return IExecute<Javax.Swing.JPanel>("createGlassPane"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getGlassPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setGlassPane(javax.swing.JPanel)"/>
         /// </summary>
         public Javax.Swing.JPanel GlassPane
@@ -295,6 +290,15 @@ namespace Javax.Swing
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
             return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#createGlassPane()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.JPanel"/></returns>
+        public Javax.Swing.JPanel CreateGlassPane()
+        {
+            return IExecute<Javax.Swing.JPanel>("createGlassPane");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#propertyChange(java.beans.PropertyChangeEvent)"/>

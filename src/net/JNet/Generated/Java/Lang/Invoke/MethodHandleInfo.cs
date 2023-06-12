@@ -37,10 +37,6 @@ namespace Java.Lang.Invoke
         /// </summary>
         Java.Lang.Class DeclaringClass { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/> 
-        /// </summary>
-        bool IsVarArgs { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getMethodType()"/> 
         /// </summary>
         Java.Lang.Invoke.MethodType MethodType { get; }
@@ -64,6 +60,12 @@ namespace Java.Lang.Invoke
         /// <typeparam name="T"><see cref="Java.Lang.Reflect.IMember"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T: Java.Lang.Reflect.IMember, new();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsVarArgs();
 
         #endregion
 
@@ -160,13 +162,6 @@ namespace Java.Lang.Invoke
             get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/> 
-        /// </summary>
-        public bool IsVarArgs
-        {
-            get { return IExecute<bool>("isVarArgs"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getMethodType()"/> 
         /// </summary>
         public Java.Lang.Invoke.MethodType MethodType
@@ -204,6 +199,15 @@ namespace Java.Lang.Invoke
         public T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T: Java.Lang.Reflect.IMember, new()
         {
             return IExecute<T>("reflectAs", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsVarArgs()
+        {
+            return IExecute<bool>("isVarArgs");
         }
 
         #endregion

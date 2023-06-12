@@ -83,6 +83,7 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Nio.File.FileVisitor-1.html">FileVisitor</a>&lt;T&gt;&gt;</div>
     <div class="level4"><span class="xref">FileVisitor&lt;T&gt;</span></div>
+      <div class="level5"><a class="xref" href="Java.Nio.File.SimpleFileVisitor-1.html">SimpleFileVisitor&lt;T&gt;</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -92,6 +93,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Nio.File.IFileVisitor-1.html">IFileVisitor</a>&lt;T&gt;</div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -373,7 +375,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Nio_File_FileVisitor_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class FileVisitor&lt;T&gt; : JVMBridgeBase&lt;FileVisitor&lt;T&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class FileVisitor&lt;T&gt; : JVMBridgeBase&lt;FileVisitor&lt;T&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IFileVisitor&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -612,19 +614,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_FileVisitor_1_PostVisitDirectory__0_Java_Io_IOException_.md&amp;value=---%0Auid%3A%20Java.Nio.File.FileVisitor%601.PostVisitDirectory(%600%2CJava.Io.IOException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_FileVisitor_1_PostVisitDirectory__0_MASES_JCOBridge_C2JBridge_JVMBridgeException_.md&amp;value=---%0Auid%3A%20Java.Nio.File.FileVisitor%601.PostVisitDirectory(%600%2CMASES.JCOBridge.C2JBridge.JVMBridgeException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L134">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L184">View Source</a>
   </span>
   <a id="Java_Nio_File_FileVisitor_1_PostVisitDirectory_" data-uid="Java.Nio.File.FileVisitor`1.PostVisitDirectory*"></a>
-  <h4 id="Java_Nio_File_FileVisitor_1_PostVisitDirectory__0_Java_Io_IOException_" data-uid="Java.Nio.File.FileVisitor`1.PostVisitDirectory(`0,Java.Io.IOException)">PostVisitDirectory(T, IOException)</h4>
+  <h4 id="Java_Nio_File_FileVisitor_1_PostVisitDirectory__0_MASES_JCOBridge_C2JBridge_JVMBridgeException_" data-uid="Java.Nio.File.FileVisitor`1.PostVisitDirectory(`0,MASES.JCOBridge.C2JBridge.JVMBridgeException)">PostVisitDirectory(T, JVMBridgeException)</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FileVisitResult PostVisitDirectory(T arg0, IOException arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public FileVisitResult PostVisitDirectory(T arg0, JVMBridgeException arg1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -643,7 +645,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
+        <td><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException</span></td>
         <td><span class="parametername">arg1</span></td>
         <td><p><a class="xref" href="Java.Io.IOException.html">IOException</a></p>
 </td>
@@ -686,7 +688,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_FileVisitor_1_PreVisitDirectory__0_Java_Nio_File_Attribute_BasicFileAttributes_.md&amp;value=---%0Auid%3A%20Java.Nio.File.FileVisitor%601.PreVisitDirectory(%600%2CJava.Nio.File.Attribute.BasicFileAttributes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L145">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L195">View Source</a>
   </span>
   <a id="Java_Nio_File_FileVisitor_1_PreVisitDirectory_" data-uid="Java.Nio.File.FileVisitor`1.PreVisitDirectory*"></a>
   <h4 id="Java_Nio_File_FileVisitor_1_PreVisitDirectory__0_Java_Nio_File_Attribute_BasicFileAttributes_" data-uid="Java.Nio.File.FileVisitor`1.PreVisitDirectory(`0,Java.Nio.File.Attribute.BasicFileAttributes)">PreVisitDirectory(T, BasicFileAttributes)</h4>
@@ -757,7 +759,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_FileVisitor_1_VisitFile__0_Java_Nio_File_Attribute_BasicFileAttributes_.md&amp;value=---%0Auid%3A%20Java.Nio.File.FileVisitor%601.VisitFile(%600%2CJava.Nio.File.Attribute.BasicFileAttributes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L156">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L206">View Source</a>
   </span>
   <a id="Java_Nio_File_FileVisitor_1_VisitFile_" data-uid="Java.Nio.File.FileVisitor`1.VisitFile*"></a>
   <h4 id="Java_Nio_File_FileVisitor_1_VisitFile__0_Java_Nio_File_Attribute_BasicFileAttributes_" data-uid="Java.Nio.File.FileVisitor`1.VisitFile(`0,Java.Nio.File.Attribute.BasicFileAttributes)">VisitFile(T, BasicFileAttributes)</h4>
@@ -825,19 +827,19 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_FileVisitor_1_VisitFileFailed__0_Java_Io_IOException_.md&amp;value=---%0Auid%3A%20Java.Nio.File.FileVisitor%601.VisitFileFailed(%600%2CJava.Io.IOException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_FileVisitor_1_VisitFileFailed__0_MASES_JCOBridge_C2JBridge_JVMBridgeException_.md&amp;value=---%0Auid%3A%20Java.Nio.File.FileVisitor%601.VisitFileFailed(%600%2CMASES.JCOBridge.C2JBridge.JVMBridgeException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L167">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L217">View Source</a>
   </span>
   <a id="Java_Nio_File_FileVisitor_1_VisitFileFailed_" data-uid="Java.Nio.File.FileVisitor`1.VisitFileFailed*"></a>
-  <h4 id="Java_Nio_File_FileVisitor_1_VisitFileFailed__0_Java_Io_IOException_" data-uid="Java.Nio.File.FileVisitor`1.VisitFileFailed(`0,Java.Io.IOException)">VisitFileFailed(T, IOException)</h4>
+  <h4 id="Java_Nio_File_FileVisitor_1_VisitFileFailed__0_MASES_JCOBridge_C2JBridge_JVMBridgeException_" data-uid="Java.Nio.File.FileVisitor`1.VisitFileFailed(`0,MASES.JCOBridge.C2JBridge.JVMBridgeException)">VisitFileFailed(T, JVMBridgeException)</h4>
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public FileVisitResult VisitFileFailed(T arg0, IOException arg1)</code></pre>
+    <pre><code class="lang-csharp hljs">public FileVisitResult VisitFileFailed(T arg0, JVMBridgeException arg1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -856,7 +858,7 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
+        <td><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException</span></td>
         <td><span class="parametername">arg1</span></td>
         <td><p><a class="xref" href="Java.Io.IOException.html">IOException</a></p>
 </td>
@@ -901,7 +903,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_FileVisitor_1_op_Implicit_Java_Nio_File_FileVisitor__0___Java_Nio_File_FileVisitor.md&amp;value=---%0Auid%3A%20Java.Nio.File.FileVisitor%601.op_Implicit(Java.Nio.File.FileVisitor%7B%600%7D)~Java.Nio.File.FileVisitor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L114">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L164">View Source</a>
   </span>
   <a id="Java_Nio_File_FileVisitor_1_op_Implicit_" data-uid="Java.Nio.File.FileVisitor`1.op_Implicit*"></a>
   <h4 id="Java_Nio_File_FileVisitor_1_op_Implicit_Java_Nio_File_FileVisitor__0___Java_Nio_File_FileVisitor" data-uid="Java.Nio.File.FileVisitor`1.op_Implicit(Java.Nio.File.FileVisitor{`0})~Java.Nio.File.FileVisitor">Implicit(FileVisitor&lt;T&gt; to FileVisitor)</h4>
@@ -963,9 +965,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Nio.File.IFileVisitor-1.html">IFileVisitor&lt;T&gt;</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -978,7 +983,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Nio_File_FileVisitor_1.md&amp;value=---%0Auid%3A%20Java.Nio.File.FileVisitor%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L104" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/File/FileVisitor.cs/#L154" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

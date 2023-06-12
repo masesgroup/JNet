@@ -102,27 +102,6 @@ namespace Javax.Swing.Text
             get { return IExecute<Javax.Swing.Text.Position.Bias>("getDotBias"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isActive()"/> 
-        /// </summary>
-        public bool IsActive
-        {
-            get { return IExecute<bool>("isActive"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isSelectionVisible()"/> 
-        /// </summary>
-        public bool IsSelectionVisible
-        {
-            get { return IExecute<bool>("isSelectionVisible"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isVisible()"/> 
-        /// </summary>
-        public bool IsVisible
-        {
-            get { return IExecute<bool>("isVisible"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMagicCaretPosition()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setMagicCaretPosition(java.awt.Point)"/>
         /// </summary>
         public Java.Awt.Point MagicCaretPosition
@@ -159,6 +138,33 @@ namespace Javax.Swing.Text
         public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.IEventListener, new()
         {
             return IExecuteArray<T>("getListeners", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isActive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsActive()
+        {
+            return IExecute<bool>("isActive");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isSelectionVisible()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSelectionVisible()
+        {
+            return IExecute<bool>("isSelectionVisible");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isVisible()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsVisible()
+        {
+            return IExecute<bool>("isVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#addChangeListener(javax.swing.event.ChangeListener)"/>

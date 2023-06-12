@@ -33,13 +33,15 @@ namespace Javax.Xml.Transform
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Source.html#isEmpty()"/> 
-        /// </summary>
-        bool IsEmpty { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Source.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Source.html#setSystemId(java.lang.String)"/>
         /// </summary>
         string SystemId { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Source.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsEmpty();
 
         #endregion
 
@@ -72,18 +74,20 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Source.html#isEmpty()"/> 
-        /// </summary>
-        public bool IsEmpty
-        {
-            get { return IExecute<bool>("isEmpty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Source.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Source.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
         {
             get { return IExecute<string>("getSystemId"); } set { IExecute("setSystemId", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Source.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecute<bool>("isEmpty");
         }
 
         #endregion

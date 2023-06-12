@@ -79,20 +79,6 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isBound()"/> 
-        /// </summary>
-        public bool IsBound
-        {
-            get { return IExecute<bool>("isBound"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isConstrained()"/> 
-        /// </summary>
-        public bool IsConstrained
-        {
-            get { return IExecute<bool>("isConstrained"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#getPropertyEditorClass()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#setPropertyEditorClass(java.lang.Class)"/>
         /// </summary>
         public Java.Lang.Class PropertyEditorClass
@@ -119,6 +105,24 @@ namespace Java.Beans
         public Java.Lang.Reflect.Method WriteMethod
         {
             get { return IExecute<Java.Lang.Reflect.Method>("getWriteMethod"); } set { IExecute("setWriteMethod", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isBound()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBound()
+        {
+            return IExecute<bool>("isBound");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#isConstrained()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsConstrained()
+        {
+            return IExecute<bool>("isConstrained");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html#createPropertyEditor(java.lang.Object)"/>

@@ -37,17 +37,23 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         string Data { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isCData()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isCData()"/>
         /// </summary>
-        bool IsCData { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsCData();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isIgnorableWhiteSpace()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isIgnorableWhiteSpace()"/>
         /// </summary>
-        bool IsIgnorableWhiteSpace { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsIgnorableWhiteSpace();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isWhiteSpace()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isWhiteSpace()"/>
         /// </summary>
-        bool IsWhiteSpace { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsWhiteSpace();
 
         #endregion
 
@@ -87,25 +93,31 @@ namespace Javax.Xml.Stream.Events
             get { return IExecute<string>("getData"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isCData()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isCData()"/>
         /// </summary>
-        public bool IsCData
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCData()
         {
-            get { return IExecute<bool>("isCData"); }
+            return IExecute<bool>("isCData");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isIgnorableWhiteSpace()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isIgnorableWhiteSpace()"/>
         /// </summary>
-        public bool IsIgnorableWhiteSpace
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsIgnorableWhiteSpace()
         {
-            get { return IExecute<bool>("isIgnorableWhiteSpace"); }
+            return IExecute<bool>("isIgnorableWhiteSpace");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isWhiteSpace()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/Characters.html#isWhiteSpace()"/>
         /// </summary>
-        public bool IsWhiteSpace
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWhiteSpace()
         {
-            get { return IExecute<bool>("isWhiteSpace"); }
+            return IExecute<bool>("isWhiteSpace");
         }
 
         #endregion

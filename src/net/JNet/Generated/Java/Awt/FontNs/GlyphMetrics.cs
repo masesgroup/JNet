@@ -116,41 +116,6 @@ namespace Java.Awt.FontNs
             get { return IExecute<Java.Awt.Geom.Rectangle2D>("getBounds2D"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isCombining()"/> 
-        /// </summary>
-        public bool IsCombining
-        {
-            get { return IExecute<bool>("isCombining"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isComponent()"/> 
-        /// </summary>
-        public bool IsComponent
-        {
-            get { return IExecute<bool>("isComponent"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isLigature()"/> 
-        /// </summary>
-        public bool IsLigature
-        {
-            get { return IExecute<bool>("isLigature"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isStandard()"/> 
-        /// </summary>
-        public bool IsStandard
-        {
-            get { return IExecute<bool>("isStandard"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isWhitespace()"/> 
-        /// </summary>
-        public bool IsWhitespace
-        {
-            get { return IExecute<bool>("isWhitespace"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#getLSB()"/> 
         /// </summary>
         public float LSB
@@ -170,6 +135,51 @@ namespace Java.Awt.FontNs
         public int Type
         {
             get { return IExecute<int>("getType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isCombining()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCombining()
+        {
+            return IExecute<bool>("isCombining");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isComponent()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsComponent()
+        {
+            return IExecute<bool>("isComponent");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isLigature()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLigature()
+        {
+            return IExecute<bool>("isLigature");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isStandard()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsStandard()
+        {
+            return IExecute<bool>("isStandard");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#isWhitespace()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWhitespace()
+        {
+            return IExecute<bool>("isWhitespace");
         }
 
         #endregion

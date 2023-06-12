@@ -77,13 +77,6 @@ namespace Java.Awt
             get { return IExecuteArray<object>("getErrorsAny"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#isErrorAny()"/> 
-        /// </summary>
-        public bool IsErrorAny
-        {
-            get { return IExecute<bool>("isErrorAny"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#checkAll()"/>
         /// </summary>
 
@@ -138,6 +131,15 @@ namespace Java.Awt
         public int StatusID(int arg0, bool arg1)
         {
             return IExecute<int>("statusID", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#isErrorAny()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsErrorAny()
+        {
+            return IExecute<bool>("isErrorAny");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#isErrorID(int)"/>

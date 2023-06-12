@@ -78,13 +78,6 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#values()"/> 
-        /// </summary>
-        public static Java.Time.DayOfWeek[] Values
-        {
-            get { return SExecuteArray<Java.Time.DayOfWeek>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
@@ -110,6 +103,15 @@ namespace Java.Time
         public static Java.Time.DayOfWeek ValueOf(string arg0)
         {
             return SExecute<Java.Time.DayOfWeek>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
+        public static Java.Time.DayOfWeek[] Values()
+        {
+            return SExecuteArray<Java.Time.DayOfWeek>(LocalBridgeClazz, "values");
         }
 
         #endregion

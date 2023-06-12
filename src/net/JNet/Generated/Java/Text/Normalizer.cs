@@ -102,13 +102,6 @@ namespace Java.Text
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#values()"/> 
-            /// </summary>
-            public static Java.Text.Normalizer.Form[] Values
-            {
-                get { return SExecuteArray<Java.Text.Normalizer.Form>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -116,6 +109,15 @@ namespace Java.Text
             public static Java.Text.Normalizer.Form ValueOf(string arg0)
             {
                 return SExecute<Java.Text.Normalizer.Form>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Text.Normalizer.Form"/></returns>
+            public static Java.Text.Normalizer.Form[] Values()
+            {
+                return SExecuteArray<Java.Text.Normalizer.Form>(LocalBridgeClazz, "values");
             }
 
             #endregion

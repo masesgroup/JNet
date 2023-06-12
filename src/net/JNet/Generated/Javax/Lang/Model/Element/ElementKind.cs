@@ -114,13 +114,6 @@ namespace Javax.Lang.Model.Element
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#values()"/> 
-        /// </summary>
-        public static Javax.Lang.Model.Element.ElementKind[] Values
-        {
-            get { return SExecuteArray<Javax.Lang.Model.Element.ElementKind>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -129,30 +122,45 @@ namespace Javax.Lang.Model.Element
         {
             return SExecute<Javax.Lang.Model.Element.ElementKind>(LocalBridgeClazz, "valueOf", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Lang.Model.Element.ElementKind"/></returns>
+        public static Javax.Lang.Model.Element.ElementKind[] Values()
+        {
+            return SExecuteArray<Javax.Lang.Model.Element.ElementKind>(LocalBridgeClazz, "values");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isClass()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isClass()"/>
         /// </summary>
-        public bool IsClass
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsClass()
         {
-            get { return IExecute<bool>("isClass"); }
+            return IExecute<bool>("isClass");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isField()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isField()"/>
         /// </summary>
-        public bool IsField
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsField()
         {
-            get { return IExecute<bool>("isField"); }
+            return IExecute<bool>("isField");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInterface()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ElementKind.html#isInterface()"/>
         /// </summary>
-        public bool IsInterface
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInterface()
         {
-            get { return IExecute<bool>("isInterface"); }
+            return IExecute<bool>("isInterface");
         }
 
         #endregion

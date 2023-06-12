@@ -55,13 +55,6 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/> 
-        /// </summary>
-        public bool IsMarked
-        {
-            get { return IExecute<bool>("isMarked"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#getReference()"/> 
         /// </summary>
         public object Reference
@@ -89,6 +82,15 @@ namespace Java.Util.Concurrent.Atomic
         public bool CompareAndSet(object arg0, object arg1, bool arg2, bool arg3)
         {
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMarked()
+        {
+            return IExecute<bool>("isMarked");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
@@ -165,13 +167,6 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/> 
-        /// </summary>
-        public bool IsMarked
-        {
-            get { return IExecute<bool>("isMarked"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#getReference()"/> 
         /// </summary>
         public V Reference
@@ -199,6 +194,15 @@ namespace Java.Util.Concurrent.Atomic
         public bool CompareAndSet(V arg0, V arg1, bool arg2, bool arg3)
         {
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMarked()
+        {
+            return IExecute<bool>("isMarked");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>

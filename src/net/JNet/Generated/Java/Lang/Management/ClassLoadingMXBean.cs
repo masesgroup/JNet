@@ -33,10 +33,6 @@ namespace Java.Lang.Management
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#isVerbose()"/> 
-        /// </summary>
-        bool IsVerbose { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#getLoadedClassCount()"/> 
         /// </summary>
         int LoadedClassCount { get; }
@@ -48,6 +44,12 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#getUnloadedClassCount()"/> 
         /// </summary>
         long UnloadedClassCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#isVerbose()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsVerbose();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#setVerbose(boolean)"/>
         /// </summary>
@@ -85,13 +87,6 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#isVerbose()"/> 
-        /// </summary>
-        public bool IsVerbose
-        {
-            get { return IExecute<bool>("isVerbose"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#getLoadedClassCount()"/> 
         /// </summary>
         public int LoadedClassCount
@@ -111,6 +106,15 @@ namespace Java.Lang.Management
         public long UnloadedClassCount
         {
             get { return IExecute<long>("getUnloadedClassCount"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#isVerbose()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsVerbose()
+        {
+            return IExecute<bool>("isVerbose");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ClassLoadingMXBean.html#setVerbose(boolean)"/>

@@ -86,18 +86,20 @@ namespace Java.Security
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#genKeyPair()"/> 
-        /// </summary>
-        public Java.Security.KeyPair GenKeyPair
-        {
-            get { return IExecute<Java.Security.KeyPair>("genKeyPair"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
             get { return IExecute<Java.Security.Provider>("getProvider"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#genKeyPair()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Security.KeyPair"/></returns>
+        public Java.Security.KeyPair GenKeyPair()
+        {
+            return IExecute<Java.Security.KeyPair>("genKeyPair");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGenerator.html#initialize(int)"/>

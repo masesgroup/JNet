@@ -37,21 +37,11 @@ namespace Javax.Xml.Stream
         /// </summary>
         string ElementText { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#hasNext()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#hasNext()"/>
         /// </summary>
-        bool HasNext { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextEvent()"/> 
-        /// </summary>
-        Javax.Xml.Stream.Events.XMLEvent NextEvent { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextTag()"/> 
-        /// </summary>
-        Javax.Xml.Stream.Events.XMLEvent NextTag { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#peek()"/> 
-        /// </summary>
-        Javax.Xml.Stream.Events.XMLEvent Peek { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool HasNext();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#getProperty(java.lang.String)"/>
         /// </summary>
@@ -59,6 +49,27 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         object GetProperty(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextEvent()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        Javax.Xml.Stream.Events.XMLEvent NextEvent();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextTag()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        Javax.Xml.Stream.Events.XMLEvent NextTag();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#peek()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        Javax.Xml.Stream.Events.XMLEvent Peek();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#close()"/>
         /// </summary>
@@ -104,32 +115,13 @@ namespace Javax.Xml.Stream
             get { return IExecute<string>("getElementText"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#hasNext()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#hasNext()"/>
         /// </summary>
-        public bool HasNext
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasNext()
         {
-            get { return IExecute<bool>("hasNext"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextEvent()"/> 
-        /// </summary>
-        public Javax.Xml.Stream.Events.XMLEvent NextEvent
-        {
-            get { return IExecute<Javax.Xml.Stream.Events.XMLEvent>("nextEvent"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextTag()"/> 
-        /// </summary>
-        public Javax.Xml.Stream.Events.XMLEvent NextTag
-        {
-            get { return IExecute<Javax.Xml.Stream.Events.XMLEvent>("nextTag"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#peek()"/> 
-        /// </summary>
-        public Javax.Xml.Stream.Events.XMLEvent Peek
-        {
-            get { return IExecute<Javax.Xml.Stream.Events.XMLEvent>("peek"); }
+            return IExecute<bool>("hasNext");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#getProperty(java.lang.String)"/>
@@ -140,6 +132,36 @@ namespace Javax.Xml.Stream
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextEvent()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        public Javax.Xml.Stream.Events.XMLEvent NextEvent()
+        {
+            return IExecute<Javax.Xml.Stream.Events.XMLEvent>("nextEvent");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#nextTag()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        public Javax.Xml.Stream.Events.XMLEvent NextTag()
+        {
+            return IExecute<Javax.Xml.Stream.Events.XMLEvent>("nextTag");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#peek()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        public Javax.Xml.Stream.Events.XMLEvent Peek()
+        {
+            return IExecute<Javax.Xml.Stream.Events.XMLEvent>("peek");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventReader.html#close()"/>

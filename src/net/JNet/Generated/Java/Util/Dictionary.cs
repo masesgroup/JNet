@@ -46,32 +46,40 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#elements()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#isEmpty()"/>
         /// </summary>
-        public Java.Util.Enumeration Elements
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
         {
-            get { return IExecute<Java.Util.Enumeration>("elements"); }
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#isEmpty()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#size()"/>
         /// </summary>
-        public bool IsEmpty
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
         {
-            get { return IExecute<bool>("isEmpty"); }
+            return IExecute<int>("size");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#keys()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#keys()"/>
         /// </summary>
-        public Java.Util.Enumeration Keys
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Keys()
         {
-            get { return IExecute<Java.Util.Enumeration>("keys"); }
+            return IExecute<Java.Util.Enumeration>("keys");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#elements()"/>
         /// </summary>
-        public int Size
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Elements()
         {
-            get { return IExecute<int>("size"); }
+            return IExecute<Java.Util.Enumeration>("elements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#get(java.lang.Object)"/>
@@ -137,32 +145,40 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#elements()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#isEmpty()"/>
         /// </summary>
-        public Java.Util.Enumeration<V> Elements
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
         {
-            get { return IExecute<Java.Util.Enumeration<V>>("elements"); }
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#isEmpty()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#size()"/>
         /// </summary>
-        public bool IsEmpty
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
         {
-            get { return IExecute<bool>("isEmpty"); }
+            return IExecute<int>("size");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#keys()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#keys()"/>
         /// </summary>
-        public Java.Util.Enumeration<K> Keys
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<K> Keys()
         {
-            get { return IExecute<Java.Util.Enumeration<K>>("keys"); }
+            return IExecute<Java.Util.Enumeration<K>>("keys");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#elements()"/>
         /// </summary>
-        public int Size
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<V> Elements()
         {
-            get { return IExecute<int>("size"); }
+            return IExecute<Java.Util.Enumeration<V>>("elements");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Dictionary.html#get(java.lang.Object)"/>

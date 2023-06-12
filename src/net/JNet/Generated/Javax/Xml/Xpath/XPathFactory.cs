@@ -50,11 +50,13 @@ namespace Javax.Xml.Xpath
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newDefaultInstance()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newDefaultInstance()"/>
         /// </summary>
-        public static Javax.Xml.Xpath.XPathFactory NewDefaultInstance
+
+        /// <returns><see cref="Javax.Xml.Xpath.XPathFactory"/></returns>
+        public static Javax.Xml.Xpath.XPathFactory NewDefaultInstance()
         {
-            get { return SExecute<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newDefaultInstance"); }
+            return SExecute<Javax.Xml.Xpath.XPathFactory>(LocalBridgeClazz, "newDefaultInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newInstance()"/>
@@ -92,13 +94,6 @@ namespace Javax.Xml.Xpath
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newXPath()"/> 
-        /// </summary>
-        public Javax.Xml.Xpath.XPath NewXPath
-        {
-            get { return IExecute<Javax.Xml.Xpath.XPath>("newXPath"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -116,6 +111,15 @@ namespace Javax.Xml.Xpath
         public bool IsObjectModelSupported(string arg0)
         {
             return IExecute<bool>("isObjectModelSupported", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#newXPath()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Xpath.XPath"/></returns>
+        public Javax.Xml.Xpath.XPath NewXPath()
+        {
+            return IExecute<Javax.Xml.Xpath.XPath>("newXPath");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathFactory.html#setFeature(java.lang.String,boolean)"/>

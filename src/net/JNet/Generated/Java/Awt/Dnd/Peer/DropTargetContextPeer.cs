@@ -37,10 +37,6 @@ namespace Java.Awt.Dnd.Peer
         /// </summary>
         Java.Awt.Dnd.DropTarget DropTarget { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#isTransferableJVMLocal()"/> 
-        /// </summary>
-        bool IsTransferableJVMLocal { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#getTargetActions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#setTargetActions(int)"/>
         /// </summary>
         int TargetActions { get; set; }
@@ -52,6 +48,12 @@ namespace Java.Awt.Dnd.Peer
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#getTransferDataFlavors()"/> 
         /// </summary>
         Java.Awt.Datatransfer.DataFlavor[] TransferDataFlavors { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#isTransferableJVMLocal()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsTransferableJVMLocal();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#acceptDrag(int)"/>
         /// </summary>
@@ -114,13 +116,6 @@ namespace Java.Awt.Dnd.Peer
             get { return IExecute<Java.Awt.Dnd.DropTarget>("getDropTarget"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#isTransferableJVMLocal()"/> 
-        /// </summary>
-        public bool IsTransferableJVMLocal
-        {
-            get { return IExecute<bool>("isTransferableJVMLocal"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#getTargetActions()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#setTargetActions(int)"/>
         /// </summary>
         public int TargetActions
@@ -140,6 +135,15 @@ namespace Java.Awt.Dnd.Peer
         public Java.Awt.Datatransfer.DataFlavor[] TransferDataFlavors
         {
             get { return IExecuteArray<Java.Awt.Datatransfer.DataFlavor>("getTransferDataFlavors"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#isTransferableJVMLocal()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTransferableJVMLocal()
+        {
+            return IExecute<bool>("isTransferableJVMLocal");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html#acceptDrag(int)"/>

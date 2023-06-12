@@ -33,10 +33,6 @@ namespace Java.Util.Concurrent.Locks
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#newCondition()"/> 
-        /// </summary>
-        Java.Util.Concurrent.Locks.Condition NewCondition { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#tryLock()"/>
         /// </summary>
 
@@ -50,6 +46,12 @@ namespace Java.Util.Concurrent.Locks
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
         bool TryLock(long arg0, Java.Util.Concurrent.TimeUnit arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#newCondition()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
+        Java.Util.Concurrent.Locks.Condition NewCondition();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#lock()"/>
         /// </summary>
@@ -96,13 +98,6 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#newCondition()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.Locks.Condition NewCondition
-        {
-            get { return IExecute<Java.Util.Concurrent.Locks.Condition>("newCondition"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#tryLock()"/>
         /// </summary>
 
@@ -121,6 +116,15 @@ namespace Java.Util.Concurrent.Locks
         public bool TryLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecute<bool>("tryLock", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#newCondition()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Concurrent.Locks.Condition"/></returns>
+        public Java.Util.Concurrent.Locks.Condition NewCondition()
+        {
+            return IExecute<Java.Util.Concurrent.Locks.Condition>("newCondition");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/Lock.html#lock()"/>

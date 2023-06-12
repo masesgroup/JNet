@@ -55,90 +55,6 @@ namespace Java.Util.Regex
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#groupCount()"/> 
-        /// </summary>
-        public int GroupCount
-        {
-            get { return IExecute<int>("groupCount"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hasAnchoringBounds()"/> 
-        /// </summary>
-        public bool HasAnchoringBounds
-        {
-            get { return IExecute<bool>("hasAnchoringBounds"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hasTransparentBounds()"/> 
-        /// </summary>
-        public bool HasTransparentBounds
-        {
-            get { return IExecute<bool>("hasTransparentBounds"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hitEnd()"/> 
-        /// </summary>
-        public bool HitEnd
-        {
-            get { return IExecute<bool>("hitEnd"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#lookingAt()"/> 
-        /// </summary>
-        public bool LookingAt
-        {
-            get { return IExecute<bool>("lookingAt"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#matches()"/> 
-        /// </summary>
-        public bool Matches
-        {
-            get { return IExecute<bool>("matches"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#pattern()"/> 
-        /// </summary>
-        public Java.Util.Regex.Pattern Pattern
-        {
-            get { return IExecute<Java.Util.Regex.Pattern>("pattern"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#regionEnd()"/> 
-        /// </summary>
-        public int RegionEnd
-        {
-            get { return IExecute<int>("regionEnd"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#regionStart()"/> 
-        /// </summary>
-        public int RegionStart
-        {
-            get { return IExecute<int>("regionStart"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#requireEnd()"/> 
-        /// </summary>
-        public bool RequireEnd
-        {
-            get { return IExecute<bool>("requireEnd"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#results()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream<Java.Util.Regex.MatchResult> Results
-        {
-            get { return IExecute<Java.Util.Stream.Stream<Java.Util.Regex.MatchResult>>("results"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#toMatchResult()"/> 
-        /// </summary>
-        public Java.Util.Regex.MatchResult ToMatchResult
-        {
-            get { return IExecute<Java.Util.Regex.MatchResult>("toMatchResult"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#find()"/>
         /// </summary>
 
@@ -155,6 +71,60 @@ namespace Java.Util.Regex
         public bool Find(int arg0)
         {
             return IExecute<bool>("find", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hasAnchoringBounds()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasAnchoringBounds()
+        {
+            return IExecute<bool>("hasAnchoringBounds");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hasTransparentBounds()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasTransparentBounds()
+        {
+            return IExecute<bool>("hasTransparentBounds");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#hitEnd()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HitEnd()
+        {
+            return IExecute<bool>("hitEnd");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#lookingAt()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool LookingAt()
+        {
+            return IExecute<bool>("lookingAt");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#matches()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Matches()
+        {
+            return IExecute<bool>("matches");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#requireEnd()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool RequireEnd()
+        {
+            return IExecute<bool>("requireEnd");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#end()"/>
@@ -182,6 +152,33 @@ namespace Java.Util.Regex
         public int End(string arg0)
         {
             return IExecute<int>("end", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#groupCount()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int GroupCount()
+        {
+            return IExecute<int>("groupCount");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#regionEnd()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int RegionEnd()
+        {
+            return IExecute<int>("regionEnd");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#regionStart()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int RegionStart()
+        {
+            return IExecute<int>("regionStart");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#start()"/>
@@ -365,6 +362,33 @@ namespace Java.Util.Regex
         public Java.Util.Regex.Matcher UseTransparentBounds(bool arg0)
         {
             return IExecute<Java.Util.Regex.Matcher>("useTransparentBounds", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#toMatchResult()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Regex.MatchResult"/></returns>
+        public Java.Util.Regex.MatchResult ToMatchResult()
+        {
+            return IExecute<Java.Util.Regex.MatchResult>("toMatchResult");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#pattern()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
+        public Java.Util.Regex.Pattern Pattern()
+        {
+            return IExecute<Java.Util.Regex.Pattern>("pattern");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Matcher.html#results()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<Java.Util.Regex.MatchResult> Results()
+        {
+            return IExecute<Java.Util.Stream.Stream<Java.Util.Regex.MatchResult>>("results");
         }
 
         #endregion

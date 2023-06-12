@@ -84,11 +84,13 @@ namespace Java.Beans.Beancontext
             get { return IExecute<Java.Beans.Beancontext.BeanContextChild>("getBeanContextChildPeer"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#isDelegated()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#isDelegated()"/>
         /// </summary>
-        public bool IsDelegated
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDelegated()
         {
-            get { return IExecute<bool>("isDelegated"); }
+            return IExecute<bool>("isDelegated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#validatePendingSetBeanContext(java.beans.beancontext.BeanContext)"/>

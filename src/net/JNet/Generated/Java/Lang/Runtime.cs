@@ -62,34 +62,6 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#availableProcessors()"/> 
-        /// </summary>
-        public int AvailableProcessors
-        {
-            get { return IExecute<int>("availableProcessors"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#freeMemory()"/> 
-        /// </summary>
-        public long FreeMemory
-        {
-            get { return IExecute<long>("freeMemory"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#maxMemory()"/> 
-        /// </summary>
-        public long MaxMemory
-        {
-            get { return IExecute<long>("maxMemory"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#totalMemory()"/> 
-        /// </summary>
-        public long TotalMemory
-        {
-            get { return IExecute<long>("totalMemory"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#removeShutdownHook(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
@@ -163,6 +135,42 @@ namespace Java.Lang
         public Java.Lang.Process Exec(string[] arg0)
         {
             return IExecute<Java.Lang.Process>("exec", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#availableProcessors()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int AvailableProcessors()
+        {
+            return IExecute<int>("availableProcessors");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#freeMemory()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long FreeMemory()
+        {
+            return IExecute<long>("freeMemory");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#maxMemory()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long MaxMemory()
+        {
+            return IExecute<long>("maxMemory");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#totalMemory()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long TotalMemory()
+        {
+            return IExecute<long>("totalMemory");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#gc()"/>
@@ -252,48 +260,6 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#feature()"/> 
-            /// </summary>
-            public int Feature
-            {
-                get { return IExecute<int>("feature"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#interim()"/> 
-            /// </summary>
-            public int Interim
-            {
-                get { return IExecute<int>("interim"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#optional()"/> 
-            /// </summary>
-            public Java.Util.Optional<string> Optional
-            {
-                get { return IExecute<Java.Util.Optional<string>>("optional"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#patch()"/> 
-            /// </summary>
-            public int Patch
-            {
-                get { return IExecute<int>("patch"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#pre()"/> 
-            /// </summary>
-            public Java.Util.Optional<string> Pre
-            {
-                get { return IExecute<Java.Util.Optional<string>>("pre"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#update()"/> 
-            /// </summary>
-            public int Update
-            {
-                get { return IExecute<int>("update"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#equalsIgnoreOptional(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
@@ -330,6 +296,42 @@ namespace Java.Lang
                 return IExecute<int>("compareToIgnoreOptional", arg0);
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#feature()"/>
+            /// </summary>
+
+            /// <returns><see cref="int"/></returns>
+            public int Feature()
+            {
+                return IExecute<int>("feature");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#interim()"/>
+            /// </summary>
+
+            /// <returns><see cref="int"/></returns>
+            public int Interim()
+            {
+                return IExecute<int>("interim");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#patch()"/>
+            /// </summary>
+
+            /// <returns><see cref="int"/></returns>
+            public int Patch()
+            {
+                return IExecute<int>("patch");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#update()"/>
+            /// </summary>
+
+            /// <returns><see cref="int"/></returns>
+            public int Update()
+            {
+                return IExecute<int>("update");
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#version()"/>
             /// </summary>
 
@@ -346,6 +348,24 @@ namespace Java.Lang
             public Java.Util.Optional<int?> Build()
             {
                 return IExecute<Java.Util.Optional<int?>>("build");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#optional()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Util.Optional"/></returns>
+            public Java.Util.Optional<string> Optional()
+            {
+                return IExecute<Java.Util.Optional<string>>("optional");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#pre()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Util.Optional"/></returns>
+            public Java.Util.Optional<string> Pre()
+            {
+                return IExecute<Java.Util.Optional<string>>("pre");
             }
 
             #endregion

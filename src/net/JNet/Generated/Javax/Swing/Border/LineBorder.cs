@@ -69,18 +69,22 @@ namespace Javax.Swing.Border
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#createBlackLineBorder()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#createBlackLineBorder()"/>
         /// </summary>
-        public static Javax.Swing.Border.Border CreateBlackLineBorder
+
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        public static Javax.Swing.Border.Border CreateBlackLineBorder()
         {
-            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createBlackLineBorder"); }
+            return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createBlackLineBorder");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#createGrayLineBorder()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#createGrayLineBorder()"/>
         /// </summary>
-        public static Javax.Swing.Border.Border CreateGrayLineBorder
+
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        public static Javax.Swing.Border.Border CreateGrayLineBorder()
         {
-            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createGrayLineBorder"); }
+            return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createGrayLineBorder");
         }
 
         #endregion

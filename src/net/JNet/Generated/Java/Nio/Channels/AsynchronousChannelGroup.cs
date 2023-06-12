@@ -78,27 +78,6 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#isShutdown()"/> 
-        /// </summary>
-        public bool IsShutdown
-        {
-            get { return IExecute<bool>("isShutdown"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#isTerminated()"/> 
-        /// </summary>
-        public bool IsTerminated
-        {
-            get { return IExecute<bool>("isTerminated"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#provider()"/> 
-        /// </summary>
-        public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider
-        {
-            get { return IExecute<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#awaitTermination(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -108,6 +87,24 @@ namespace Java.Nio.Channels
         public bool AwaitTermination(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecute<bool>("awaitTermination", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#isShutdown()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsShutdown()
+        {
+            return IExecute<bool>("isShutdown");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#isTerminated()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTerminated()
+        {
+            return IExecute<bool>("isTerminated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#shutdown()"/>
@@ -124,6 +121,15 @@ namespace Java.Nio.Channels
         public void ShutdownNow()
         {
             IExecute("shutdownNow");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#provider()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.Channels.Spi.AsynchronousChannelProvider"/></returns>
+        public Java.Nio.Channels.Spi.AsynchronousChannelProvider Provider()
+        {
+            return IExecute<Java.Nio.Channels.Spi.AsynchronousChannelProvider>("provider");
         }
 
         #endregion

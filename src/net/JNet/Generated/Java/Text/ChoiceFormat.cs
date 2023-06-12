@@ -105,11 +105,13 @@ namespace Java.Text
             get { return IExecuteArray<double>("getLimits"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#toPattern()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#toPattern()"/>
         /// </summary>
-        public string ToPattern
+
+        /// <returns><see cref="string"/></returns>
+        public string ToPattern()
         {
-            get { return IExecute<string>("toPattern"); }
+            return IExecute<string>("toPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#applyPattern(java.lang.String)"/>

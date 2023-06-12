@@ -54,13 +54,6 @@ namespace Javax.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#toArray()"/> 
-        /// </summary>
-        public Javax.Accessibility.AccessibleState[] ToArray
-        {
-            get { return IExecuteArray<Javax.Accessibility.AccessibleState>("toArray"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#add(javax.accessibility.AccessibleState)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Accessibility.AccessibleState"/></param>
@@ -86,6 +79,15 @@ namespace Javax.Accessibility
         public bool Remove(Javax.Accessibility.AccessibleState arg0)
         {
             return IExecute<bool>("remove", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#toArray()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Accessibility.AccessibleState"/></returns>
+        public Javax.Accessibility.AccessibleState[] ToArray()
+        {
+            return IExecuteArray<Javax.Accessibility.AccessibleState>("toArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStateSet.html#addAll(javax.accessibility.AccessibleState[])"/>

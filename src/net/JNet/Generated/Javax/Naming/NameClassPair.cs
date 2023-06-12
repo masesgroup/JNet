@@ -72,13 +72,6 @@ namespace Javax.Naming
             get { return IExecute<string>("getClassName"); } set { IExecute("setClassName", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#isRelative()"/> 
-        /// </summary>
-        public bool IsRelative
-        {
-            get { return IExecute<bool>("isRelative"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setName(java.lang.String)"/>
         /// </summary>
         public string Name
@@ -91,6 +84,15 @@ namespace Javax.Naming
         public string NameInNamespace
         {
             get { return IExecute<string>("getNameInNamespace"); } set { IExecute("setNameInNamespace", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#isRelative()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRelative()
+        {
+            return IExecute<bool>("isRelative");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html#setRelative(boolean)"/>

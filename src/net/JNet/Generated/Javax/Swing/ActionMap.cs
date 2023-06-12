@@ -46,20 +46,6 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#allKeys()"/> 
-        /// </summary>
-        public object[] AllKeys
-        {
-            get { return IExecuteArray<object>("allKeys"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#keys()"/> 
-        /// </summary>
-        public object[] Keys
-        {
-            get { return IExecuteArray<object>("keys"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#getParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#setParent(javax.swing.ActionMap)"/>
         /// </summary>
         public Javax.Swing.ActionMap Parent
@@ -67,11 +53,31 @@ namespace Javax.Swing
             get { return IExecute<Javax.Swing.ActionMap>("getParent"); } set { IExecute("setParent", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#size()"/>
         /// </summary>
-        public int Size
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
         {
-            get { return IExecute<int>("size"); }
+            return IExecute<int>("size");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#allKeys()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object[] AllKeys()
+        {
+            return IExecuteArray<object>("allKeys");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#keys()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object[] Keys()
+        {
+            return IExecuteArray<object>("keys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#get(java.lang.Object)"/>

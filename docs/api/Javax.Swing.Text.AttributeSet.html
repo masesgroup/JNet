@@ -84,6 +84,7 @@
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Javax.Swing.Text.AttributeSet.html">AttributeSet</a>&gt;</div>
     <div class="level4"><span class="xref">AttributeSet</span></div>
       <div class="level5"><a class="xref" href="Javax.Swing.Text.MutableAttributeSet.html">MutableAttributeSet</a></div>
+      <div class="level5"><a class="xref" href="Javax.Swing.Text.StyleContext.SmallAttributeSet.html">StyleContext.SmallAttributeSet</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -93,6 +94,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Swing.Text.IAttributeSet.html">IAttributeSet</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -374,7 +376,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Swing_Text_AttributeSet_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AttributeSet : JVMBridgeBase&lt;AttributeSet&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class AttributeSet : JVMBridgeBase&lt;AttributeSet&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAttributeSet</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -434,7 +436,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_AttributeCount.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.AttributeCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L59">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L124">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_AttributeCount_" data-uid="Javax.Swing.Text.AttributeSet.AttributeCount*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_AttributeCount" data-uid="Javax.Swing.Text.AttributeSet.AttributeCount">AttributeCount</h4>
@@ -465,7 +467,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_AttributeNames.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.AttributeNames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L66">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L131">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_AttributeNames_" data-uid="Javax.Swing.Text.AttributeSet.AttributeNames*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_AttributeNames" data-uid="Javax.Swing.Text.AttributeSet.AttributeNames">AttributeNames</h4>
@@ -474,7 +476,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Enumeration AttributeNames { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Enumeration&lt;object&gt; AttributeNames { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -486,7 +488,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Java.Util.Enumeration.html">Enumeration</a></td>
+        <td><a class="xref" href="Java.Util.Enumeration-1.html">Enumeration</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -529,7 +531,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_CopyAttributes.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.CopyAttributes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L73">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L138">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_CopyAttributes_" data-uid="Javax.Swing.Text.AttributeSet.CopyAttributes*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_CopyAttributes" data-uid="Javax.Swing.Text.AttributeSet.CopyAttributes">CopyAttributes</h4>
@@ -692,7 +694,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_NameAttribute.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.NameAttribute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L108">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_NameAttribute_" data-uid="Javax.Swing.Text.AttributeSet.NameAttribute*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_NameAttribute" data-uid="Javax.Swing.Text.AttributeSet.NameAttribute">NameAttribute</h4>
@@ -723,7 +725,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_ResolveAttribute.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.ResolveAttribute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L47">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L112">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_ResolveAttribute_" data-uid="Javax.Swing.Text.AttributeSet.ResolveAttribute*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_ResolveAttribute" data-uid="Javax.Swing.Text.AttributeSet.ResolveAttribute">ResolveAttribute</h4>
@@ -754,7 +756,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_ResolveParent.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.ResolveParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L80">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L145">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_ResolveParent_" data-uid="Javax.Swing.Text.AttributeSet.ResolveParent*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_ResolveParent" data-uid="Javax.Swing.Text.AttributeSet.ResolveParent">ResolveParent</h4>
@@ -787,7 +789,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_ContainsAttribute_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.ContainsAttribute(System.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L90">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L155">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_ContainsAttribute_" data-uid="Javax.Swing.Text.AttributeSet.ContainsAttribute*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_ContainsAttribute_System_Object_System_Object_" data-uid="Javax.Swing.Text.AttributeSet.ContainsAttribute(System.Object,System.Object)">ContainsAttribute(Object, Object)</h4>
@@ -843,7 +845,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_ContainsAttributes_Javax_Swing_Text_AttributeSet_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.ContainsAttributes(Javax.Swing.Text.AttributeSet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L99">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L164">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_ContainsAttributes_" data-uid="Javax.Swing.Text.AttributeSet.ContainsAttributes*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_ContainsAttributes_Javax_Swing_Text_AttributeSet_" data-uid="Javax.Swing.Text.AttributeSet.ContainsAttributes(Javax.Swing.Text.AttributeSet)">ContainsAttributes(AttributeSet)</h4>
@@ -893,7 +895,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_GetAttribute_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.GetAttribute(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L126">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L191">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_GetAttribute_" data-uid="Javax.Swing.Text.AttributeSet.GetAttribute*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_GetAttribute_System_Object_" data-uid="Javax.Swing.Text.AttributeSet.GetAttribute(System.Object)">GetAttribute(Object)</h4>
@@ -943,7 +945,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_IsDefined_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.IsDefined(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L108">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L173">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_IsDefined_" data-uid="Javax.Swing.Text.AttributeSet.IsDefined*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_IsDefined_System_Object_" data-uid="Javax.Swing.Text.AttributeSet.IsDefined(System.Object)">IsDefined(Object)</h4>
@@ -993,7 +995,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet_IsEqual_Javax_Swing_Text_AttributeSet_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet.IsEqual(Javax.Swing.Text.AttributeSet)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L117">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L182">View Source</a>
   </span>
   <a id="Javax_Swing_Text_AttributeSet_IsEqual_" data-uid="Javax.Swing.Text.AttributeSet.IsEqual*"></a>
   <h4 id="Javax_Swing_Text_AttributeSet_IsEqual_Javax_Swing_Text_AttributeSet_" data-uid="Javax.Swing.Text.AttributeSet.IsEqual(Javax.Swing.Text.AttributeSet)">IsEqual(AttributeSet)</h4>
@@ -1057,9 +1059,12 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Swing.Text.IAttributeSet.html">IAttributeSet</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1072,7 +1077,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_AttributeSet.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.AttributeSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AttributeSet.cs/#L94" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

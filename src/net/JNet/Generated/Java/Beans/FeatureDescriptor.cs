@@ -46,39 +46,11 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#attributeNames()"/> 
-        /// </summary>
-        public Java.Util.Enumeration<string> AttributeNames
-        {
-            get { return IExecute<Java.Util.Enumeration<string>>("attributeNames"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#getDisplayName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setDisplayName(java.lang.String)"/>
         /// </summary>
         public string DisplayName
         {
             get { return IExecute<string>("getDisplayName"); } set { IExecute("setDisplayName", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isExpert()"/> 
-        /// </summary>
-        public bool IsExpert
-        {
-            get { return IExecute<bool>("isExpert"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isHidden()"/> 
-        /// </summary>
-        public bool IsHidden
-        {
-            get { return IExecute<bool>("isHidden"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isPreferred()"/> 
-        /// </summary>
-        public bool IsPreferred
-        {
-            get { return IExecute<bool>("isPreferred"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setName(java.lang.String)"/>
@@ -95,6 +67,33 @@ namespace Java.Beans
             get { return IExecute<string>("getShortDescription"); } set { IExecute("setShortDescription", value); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isExpert()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsExpert()
+        {
+            return IExecute<bool>("isExpert");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isHidden()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsHidden()
+        {
+            return IExecute<bool>("isHidden");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#isPreferred()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPreferred()
+        {
+            return IExecute<bool>("isPreferred");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#getValue(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -102,6 +101,15 @@ namespace Java.Beans
         public object GetValue(string arg0)
         {
             return IExecute("getValue", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#attributeNames()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<string> AttributeNames()
+        {
+            return IExecute<Java.Util.Enumeration<string>>("attributeNames");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html#setExpert(boolean)"/>

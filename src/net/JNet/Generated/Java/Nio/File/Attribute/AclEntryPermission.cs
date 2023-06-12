@@ -110,13 +110,6 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#values()"/> 
-        /// </summary>
-        public static Java.Nio.File.Attribute.AclEntryPermission[] Values
-        {
-            get { return SExecuteArray<Java.Nio.File.Attribute.AclEntryPermission>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -124,6 +117,15 @@ namespace Java.Nio.File.Attribute
         public static Java.Nio.File.Attribute.AclEntryPermission ValueOf(string arg0)
         {
             return SExecute<Java.Nio.File.Attribute.AclEntryPermission>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.File.Attribute.AclEntryPermission"/></returns>
+        public static Java.Nio.File.Attribute.AclEntryPermission[] Values()
+        {
+            return SExecuteArray<Java.Nio.File.Attribute.AclEntryPermission>(LocalBridgeClazz, "values");
         }
 
         #endregion

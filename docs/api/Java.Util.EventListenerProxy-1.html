@@ -83,6 +83,9 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Util.EventListenerProxy-1.html">EventListenerProxy</a>&lt;T&gt;&gt;</div>
     <div class="level4"><span class="xref">EventListenerProxy&lt;T&gt;</span></div>
+      <div class="level5"><a class="xref" href="Java.Awt.EventNs.AWTEventListenerProxy.html">AWTEventListenerProxy</a></div>
+      <div class="level5"><a class="xref" href="Java.Beans.PropertyChangeListenerProxy.html">PropertyChangeListenerProxy</a></div>
+      <div class="level5"><a class="xref" href="Java.Beans.VetoableChangeListenerProxy.html">VetoableChangeListenerProxy</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -373,7 +376,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Util_EventListenerProxy_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EventListenerProxy&lt;T&gt; : JVMBridgeBase&lt;EventListenerProxy&lt;T&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition where T : EventListener</code></pre>
+    <pre><code class="lang-csharp hljs">public class EventListenerProxy&lt;T&gt; : JVMBridgeBase&lt;EventListenerProxy&lt;T&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition where T : IEventListener, new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -386,7 +389,7 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p><a class="xref" href="Java.Util.EventListener.html">EventListener</a></p>
+        <td><p><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></p>
 </td>
       </tr>
     </tbody>
@@ -398,7 +401,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1__ctor.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2039">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2054">View Source</a>
   </span>
   <a id="Java_Util_EventListenerProxy_1__ctor_" data-uid="Java.Util.EventListenerProxy`1.#ctor*"></a>
   <h4 id="Java_Util_EventListenerProxy_1__ctor" data-uid="Java.Util.EventListenerProxy`1.#ctor">EventListenerProxy()</h4>
@@ -414,7 +417,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1__ctor__0_.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.%23ctor(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/EventListenerProxy.cs/#L86">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/EventListenerProxy.cs/#L82">View Source</a>
   </span>
   <a id="Java_Util_EventListenerProxy_1__ctor_" data-uid="Java.Util.EventListenerProxy`1.#ctor*"></a>
   <h4 id="Java_Util_EventListenerProxy_1__ctor__0_" data-uid="Java.Util.EventListenerProxy`1.#ctor(`0)">EventListenerProxy(T)</h4>
@@ -448,7 +451,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2043">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2058">View Source</a>
   </span>
   <a id="Java_Util_EventListenerProxy_1__ctor_" data-uid="Java.Util.EventListenerProxy`1.#ctor*"></a>
   <h4 id="Java_Util_EventListenerProxy_1__ctor_System_Object___" data-uid="Java.Util.EventListenerProxy`1.#ctor(System.Object[])">EventListenerProxy(Object[])</h4>
@@ -483,7 +486,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2050">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2065">View Source</a>
   </span>
   <a id="Java_Util_EventListenerProxy_1_BridgeClassName_" data-uid="Java.Util.EventListenerProxy`1.BridgeClassName*"></a>
   <h4 id="Java_Util_EventListenerProxy_1_BridgeClassName" data-uid="Java.Util.EventListenerProxy`1.BridgeClassName">BridgeClassName</h4>
@@ -516,7 +519,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2054">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2069">View Source</a>
   </span>
   <a id="Java_Util_EventListenerProxy_1_IsBridgeAbstract_" data-uid="Java.Util.EventListenerProxy`1.IsBridgeAbstract*"></a>
   <h4 id="Java_Util_EventListenerProxy_1_IsBridgeAbstract" data-uid="Java.Util.EventListenerProxy`1.IsBridgeAbstract">IsBridgeAbstract</h4>
@@ -549,7 +552,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2058">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2073">View Source</a>
   </span>
   <a id="Java_Util_EventListenerProxy_1_IsBridgeCloseable_" data-uid="Java.Util.EventListenerProxy`1.IsBridgeCloseable*"></a>
   <h4 id="Java_Util_EventListenerProxy_1_IsBridgeCloseable" data-uid="Java.Util.EventListenerProxy`1.IsBridgeCloseable">IsBridgeCloseable</h4>
@@ -582,7 +585,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2062">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2077">View Source</a>
   </span>
   <a id="Java_Util_EventListenerProxy_1_IsBridgeInterface_" data-uid="Java.Util.EventListenerProxy`1.IsBridgeInterface*"></a>
   <h4 id="Java_Util_EventListenerProxy_1_IsBridgeInterface" data-uid="Java.Util.EventListenerProxy`1.IsBridgeInterface">IsBridgeInterface</h4>
@@ -615,7 +618,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2066">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AllPackageClasses.cs/#L2081">View Source</a>
   </span>
   <a id="Java_Util_EventListenerProxy_1_IsBridgeStatic_" data-uid="Java.Util.EventListenerProxy`1.IsBridgeStatic*"></a>
   <h4 id="Java_Util_EventListenerProxy_1_IsBridgeStatic" data-uid="Java.Util.EventListenerProxy`1.IsBridgeStatic">IsBridgeStatic</h4>
@@ -648,7 +651,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1_Listener.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.Listener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/EventListenerProxy.cs/#L117">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/EventListenerProxy.cs/#L109">View Source</a>
   </span>
   <a id="Java_Util_EventListenerProxy_1_Listener_" data-uid="Java.Util.EventListenerProxy`1.Listener*"></a>
   <h4 id="Java_Util_EventListenerProxy_1_Listener" data-uid="Java.Util.EventListenerProxy`1.Listener">Listener</h4>
@@ -678,58 +681,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1_op_Implicit_Java_Util_EventListenerProxy__0___Java_Util_EventListener.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.op_Implicit(Java.Util.EventListenerProxy%7B%600%7D)~Java.Util.EventListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/EventListenerProxy.cs/#L97">View Source</a>
-  </span>
-  <a id="Java_Util_EventListenerProxy_1_op_Implicit_" data-uid="Java.Util.EventListenerProxy`1.op_Implicit*"></a>
-  <h4 id="Java_Util_EventListenerProxy_1_op_Implicit_Java_Util_EventListenerProxy__0___Java_Util_EventListener" data-uid="Java.Util.EventListenerProxy`1.op_Implicit(Java.Util.EventListenerProxy{`0})~Java.Util.EventListener">Implicit(EventListenerProxy&lt;T&gt; to EventListener)</h4>
-  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.EventListenerProxy-1.html">EventListenerProxy&lt;T&gt;</a> to <a class="xref" href="Java.Util.EventListener.html">EventListener</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator EventListener(EventListenerProxy&lt;T&gt; t)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.EventListenerProxy-1.html">EventListenerProxy</a>&lt;T&gt;</td>
-        <td><span class="parametername">t</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.EventListener.html">EventListener</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1_op_Implicit_Java_Util_EventListenerProxy__0___Java_Util_EventListenerProxy.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601.op_Implicit(Java.Util.EventListenerProxy%7B%600%7D)~Java.Util.EventListenerProxy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/EventListenerProxy.cs/#L101">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/EventListenerProxy.cs/#L93">View Source</a>
   </span>
   <a id="Java_Util_EventListenerProxy_1_op_Implicit_" data-uid="Java.Util.EventListenerProxy`1.op_Implicit*"></a>
   <h4 id="Java_Util_EventListenerProxy_1_op_Implicit_Java_Util_EventListenerProxy__0___Java_Util_EventListenerProxy" data-uid="Java.Util.EventListenerProxy`1.op_Implicit(Java.Util.EventListenerProxy{`0})~Java.Util.EventListenerProxy">Implicit(EventListenerProxy&lt;T&gt; to EventListenerProxy)</h4>
@@ -793,7 +748,7 @@
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -806,7 +761,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_EventListenerProxy_1.md&amp;value=---%0Auid%3A%20Java.Util.EventListenerProxy%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/EventListenerProxy.cs/#L79" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/EventListenerProxy.cs/#L75" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

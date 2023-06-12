@@ -78,13 +78,6 @@ namespace Javax.Management
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#classattr()"/> 
-        /// </summary>
-        public static Javax.Management.AttributeValueExp Classattr
-        {
-            get { return SExecute<Javax.Management.AttributeValueExp>(LocalBridgeClazz, "classattr"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#attr(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -102,6 +95,15 @@ namespace Javax.Management
         public static Javax.Management.AttributeValueExp Attr(string arg0)
         {
             return SExecute<Javax.Management.AttributeValueExp>(LocalBridgeClazz, "attr", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#classattr()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Management.AttributeValueExp"/></returns>
+        public static Javax.Management.AttributeValueExp Classattr()
+        {
+            return SExecute<Javax.Management.AttributeValueExp>(LocalBridgeClazz, "classattr");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#and(javax.management.QueryExp,javax.management.QueryExp)"/>

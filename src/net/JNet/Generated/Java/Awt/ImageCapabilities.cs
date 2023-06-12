@@ -54,18 +54,22 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isAccelerated()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isAccelerated()"/>
         /// </summary>
-        public bool IsAccelerated
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAccelerated()
         {
-            get { return IExecute<bool>("isAccelerated"); }
+            return IExecute<bool>("isAccelerated");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isTrueVolatile()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ImageCapabilities.html#isTrueVolatile()"/>
         /// </summary>
-        public bool IsTrueVolatile
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTrueVolatile()
         {
-            get { return IExecute<bool>("isTrueVolatile"); }
+            return IExecute<bool>("isTrueVolatile");
         }
 
         #endregion

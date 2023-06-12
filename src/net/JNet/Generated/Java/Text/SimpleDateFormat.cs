@@ -86,18 +86,22 @@ namespace Java.Text
             get { return IExecute<Java.Util.Date>("get2DigitYearStart"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toLocalizedPattern()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toLocalizedPattern()"/>
         /// </summary>
-        public string ToLocalizedPattern
+
+        /// <returns><see cref="string"/></returns>
+        public string ToLocalizedPattern()
         {
-            get { return IExecute<string>("toLocalizedPattern"); }
+            return IExecute<string>("toLocalizedPattern");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toPattern()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#toPattern()"/>
         /// </summary>
-        public string ToPattern
+
+        /// <returns><see cref="string"/></returns>
+        public string ToPattern()
         {
-            get { return IExecute<string>("toPattern"); }
+            return IExecute<string>("toPattern");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/SimpleDateFormat.html#applyLocalizedPattern(java.lang.String)"/>

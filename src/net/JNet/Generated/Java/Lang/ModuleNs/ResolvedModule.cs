@@ -46,32 +46,40 @@ namespace Java.Lang.ModuleNs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#configuration()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#configuration()"/>
         /// </summary>
-        public Java.Lang.ModuleNs.Configuration Configuration
+
+        /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
+        public Java.Lang.ModuleNs.Configuration Configuration()
         {
-            get { return IExecute<Java.Lang.ModuleNs.Configuration>("configuration"); }
+            return IExecute<Java.Lang.ModuleNs.Configuration>("configuration");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reference()"/>
         /// </summary>
-        public string Name
+
+        /// <returns><see cref="Java.Lang.ModuleNs.ModuleReference"/></returns>
+        public Java.Lang.ModuleNs.ModuleReference Reference()
         {
-            get { return IExecute<string>("name"); }
+            return IExecute<Java.Lang.ModuleNs.ModuleReference>("reference");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reads()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#name()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule> Reads
+
+        /// <returns><see cref="string"/></returns>
+        public string Name()
         {
-            get { return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule>>("reads"); }
+            return IExecute<string>("name");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reference()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolvedModule.html#reads()"/>
         /// </summary>
-        public Java.Lang.ModuleNs.ModuleReference Reference
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule> Reads()
         {
-            get { return IExecute<Java.Lang.ModuleNs.ModuleReference>("reference"); }
+            return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule>>("reads");
         }
 
         #endregion

@@ -75,27 +75,6 @@ namespace Java.Util.Concurrent.Atomic
             get { return IExecute<long>("getAndIncrement"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#decrementAndGet()"/> 
-        /// </summary>
-        public long DecrementAndGet
-        {
-            get { return IExecute<long>("decrementAndGet"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#get()"/> 
-        /// </summary>
-        public long Get
-        {
-            get { return IExecute<long>("get"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#incrementAndGet()"/> 
-        /// </summary>
-        public long IncrementAndGet
-        {
-            get { return IExecute<long>("incrementAndGet"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#getOpaque()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#setOpaque(long)"/>
         /// </summary>
         public long Opaque
@@ -209,6 +188,24 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("compareAndExchangeRelease", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#decrementAndGet()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long DecrementAndGet()
+        {
+            return IExecute<long>("decrementAndGet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#get()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long Get()
+        {
+            return IExecute<long>("get");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndAccumulate(long,java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -244,6 +241,15 @@ namespace Java.Util.Concurrent.Atomic
         public long GetAndUpdate(Java.Util.Function.LongUnaryOperator arg0)
         {
             return IExecute<long>("getAndUpdate", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#incrementAndGet()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long IncrementAndGet()
+        {
+            return IExecute<long>("incrementAndGet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#updateAndGet(java.util.function.LongUnaryOperator)"/>

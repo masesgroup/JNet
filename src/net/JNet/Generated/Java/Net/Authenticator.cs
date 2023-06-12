@@ -157,13 +157,6 @@ namespace Java.Net
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#values()"/> 
-            /// </summary>
-            public static Java.Net.Authenticator.RequestorType[] Values
-            {
-                get { return SExecuteArray<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -171,6 +164,15 @@ namespace Java.Net
             public static Java.Net.Authenticator.RequestorType ValueOf(string arg0)
             {
                 return SExecute<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Net.Authenticator.RequestorType"/></returns>
+            public static Java.Net.Authenticator.RequestorType[] Values()
+            {
+                return SExecuteArray<Java.Net.Authenticator.RequestorType>(LocalBridgeClazz, "values");
             }
 
             #endregion

@@ -64,11 +64,13 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#length()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#length()"/>
         /// </summary>
-        public int Length
+
+        /// <returns><see cref="int"/></returns>
+        public int Length()
         {
-            get { return IExecute<int>("length"); }
+            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#add(java.lang.CharSequence)"/>

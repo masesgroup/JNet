@@ -83,13 +83,6 @@ namespace Javax.Xml.Transform.Sax
             get { return IExecute<Org.Xml.Sax.InputSource>("getInputSource"); } set { IExecute("setInputSource", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#isEmpty()"/> 
-        /// </summary>
-        public bool IsEmpty
-        {
-            get { return IExecute<bool>("isEmpty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#setSystemId(java.lang.String)"/>
         /// </summary>
         public string SystemId
@@ -102,6 +95,15 @@ namespace Javax.Xml.Transform.Sax
         public Org.Xml.Sax.XMLReader XMLReader
         {
             get { return IExecute<Org.Xml.Sax.XMLReader>("getXMLReader"); } set { IExecute("setXMLReader", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXSource.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecute<bool>("isEmpty");
         }
 
         #endregion

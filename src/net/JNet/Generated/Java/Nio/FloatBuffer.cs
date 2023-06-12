@@ -79,27 +79,6 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#asReadOnlyBuffer()"/> 
-        /// </summary>
-        public Java.Nio.FloatBuffer AsReadOnlyBuffer
-        {
-            get { return IExecute<Java.Nio.FloatBuffer>("asReadOnlyBuffer"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#compact()"/> 
-        /// </summary>
-        public Java.Nio.FloatBuffer Compact
-        {
-            get { return IExecute<Java.Nio.FloatBuffer>("compact"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#order()"/> 
-        /// </summary>
-        public Java.Nio.ByteOrder Order
-        {
-            get { return IExecute<Java.Nio.ByteOrder>("order"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#get()"/>
         /// </summary>
 
@@ -116,6 +95,33 @@ namespace Java.Nio
         public float Get(int arg0)
         {
             return IExecute<float>("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#order()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        public Java.Nio.ByteOrder Order()
+        {
+            return IExecute<Java.Nio.ByteOrder>("order");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#asReadOnlyBuffer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        public Java.Nio.FloatBuffer AsReadOnlyBuffer()
+        {
+            return IExecute<Java.Nio.FloatBuffer>("asReadOnlyBuffer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#compact()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
+        public Java.Nio.FloatBuffer Compact()
+        {
+            return IExecute<Java.Nio.FloatBuffer>("compact");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(float)"/>

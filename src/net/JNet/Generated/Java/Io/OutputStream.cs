@@ -50,11 +50,13 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#nullOutputStream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStream.html#nullOutputStream()"/>
         /// </summary>
-        public static Java.Io.OutputStream NullOutputStream
+
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        public static Java.Io.OutputStream NullOutputStream()
         {
-            get { return SExecute<Java.Io.OutputStream>(LocalBridgeClazz, "nullOutputStream"); }
+            return SExecute<Java.Io.OutputStream>(LocalBridgeClazz, "nullOutputStream");
         }
 
         #endregion

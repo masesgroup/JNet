@@ -46,27 +46,6 @@ namespace Javax.Xml.Parsers
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#isNamespaceAware()"/> 
-        /// </summary>
-        public bool IsNamespaceAware
-        {
-            get { return IExecute<bool>("isNamespaceAware"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#isValidating()"/> 
-        /// </summary>
-        public bool IsValidating
-        {
-            get { return IExecute<bool>("isValidating"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#isXIncludeAware()"/> 
-        /// </summary>
-        public bool IsXIncludeAware
-        {
-            get { return IExecute<bool>("isXIncludeAware"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#getSchema()"/> 
         /// </summary>
         public Javax.Xml.Validation.Schema Schema
@@ -79,6 +58,24 @@ namespace Javax.Xml.Parsers
         public Org.Xml.Sax.XMLReader XMLReader
         {
             get { return IExecute<Org.Xml.Sax.XMLReader>("getXMLReader"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#isNamespaceAware()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsNamespaceAware()
+        {
+            return IExecute<bool>("isNamespaceAware");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#isValidating()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsValidating()
+        {
+            return IExecute<bool>("isValidating");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#getProperty(java.lang.String)"/>
@@ -101,6 +98,15 @@ namespace Javax.Xml.Parsers
         public void SetProperty(string arg0, object arg1)
         {
             IExecute("setProperty", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#isXIncludeAware()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsXIncludeAware()
+        {
+            return IExecute<bool>("isXIncludeAware");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParser.html#parse(java.io.File,org.xml.sax.helpers.DefaultHandler)"/>

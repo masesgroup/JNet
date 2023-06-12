@@ -33,10 +33,6 @@ namespace Javax.Lang.Model.Type
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/> 
-        /// </summary>
-        Javax.Lang.Model.Element.Element AsElement { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#getLowerBound()"/> 
         /// </summary>
         Javax.Lang.Model.Type.TypeMirror LowerBound { get; }
@@ -44,6 +40,12 @@ namespace Javax.Lang.Model.Type
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#getUpperBound()"/> 
         /// </summary>
         Javax.Lang.Model.Type.TypeMirror UpperBound { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
+        Javax.Lang.Model.Element.Element AsElement();
 
         #endregion
 
@@ -76,13 +78,6 @@ namespace Javax.Lang.Model.Type
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/> 
-        /// </summary>
-        public Javax.Lang.Model.Element.Element AsElement
-        {
-            get { return IExecute<Javax.Lang.Model.Element.Element>("asElement"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#getLowerBound()"/> 
         /// </summary>
         public Javax.Lang.Model.Type.TypeMirror LowerBound
@@ -95,6 +90,15 @@ namespace Javax.Lang.Model.Type
         public Javax.Lang.Model.Type.TypeMirror UpperBound
         {
             get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("getUpperBound"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVariable.html#asElement()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Lang.Model.Element.Element"/></returns>
+        public Javax.Lang.Model.Element.Element AsElement()
+        {
+            return IExecute<Javax.Lang.Model.Element.Element>("asElement");
         }
 
         #endregion

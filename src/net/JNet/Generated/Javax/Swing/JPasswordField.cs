@@ -88,18 +88,20 @@ namespace Javax.Swing
             get { return IExecute<char>("getEchoChar"); } set { IExecute("setEchoChar", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#echoCharIsSet()"/> 
-        /// </summary>
-        public bool EchoCharIsSet
-        {
-            get { return IExecute<bool>("echoCharIsSet"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#getPassword()"/> 
         /// </summary>
         public char[] Password
         {
             get { return IExecuteArray<char>("getPassword"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#echoCharIsSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool EchoCharIsSet()
+        {
+            return IExecute<bool>("echoCharIsSet");
         }
 
         #endregion

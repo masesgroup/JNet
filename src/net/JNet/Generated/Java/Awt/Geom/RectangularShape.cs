@@ -89,13 +89,6 @@ namespace Java.Awt.Geom
             get { return IExecute<double>("getHeight"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#isEmpty()"/> 
-        /// </summary>
-        public bool IsEmpty
-        {
-            get { return IExecute<bool>("isEmpty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#getMaxX()"/> 
         /// </summary>
         public double MaxX
@@ -143,6 +136,15 @@ namespace Java.Awt.Geom
         public double Y
         {
             get { return IExecute<double>("getY"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RectangularShape.html#setFrame(double,double,double,double)"/>

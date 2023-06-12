@@ -33,9 +33,11 @@ namespace Java.Lang.Annotation
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Target.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Target.html#value()"/>
         /// </summary>
-        Java.Lang.Annotation.ElementType[] Value { get; }
+
+        /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
+        Java.Lang.Annotation.ElementType[] Value();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Java.Lang.Annotation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Target.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Target.html#value()"/>
         /// </summary>
-        public Java.Lang.Annotation.ElementType[] Value
+
+        /// <returns><see cref="Java.Lang.Annotation.ElementType"/></returns>
+        public Java.Lang.Annotation.ElementType[] Value()
         {
-            get { return IExecuteArray<Java.Lang.Annotation.ElementType>("value"); }
+            return IExecuteArray<Java.Lang.Annotation.ElementType>("value");
         }
 
         #endregion

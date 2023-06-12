@@ -83,7 +83,8 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span>&gt;</div>
     <div class="level4"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span></div>
-    <div class="level5"><span class="xref">IIOReadUpdateListener</span></div>
+    <div class="level5"><a class="xref" href="Java.Util.EventListener.html">EventListener</a></div>
+    <div class="level6"><span class="xref">IIOReadUpdateListener</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -93,6 +94,8 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Util.IEventListener.html">IEventListener</a></div>
+    <div><a class="xref" href="Javax.Imageio.Event.IIIOReadUpdateListener.html">IIIOReadUpdateListener</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -398,8 +401,448 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Imageio_Event_IIOReadUpdateListener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class IIOReadUpdateListener : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class IIOReadUpdateListener : EventListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEventListener, IIIOReadUpdateListener</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Event_IIOReadUpdateListener__ctor.md&amp;value=---%0Auid%3A%20Javax.Imageio.Event.IIOReadUpdateListener.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Event/AllPackageClasses.cs/#L55">View Source</a>
+  </span>
+  <a id="Javax_Imageio_Event_IIOReadUpdateListener__ctor_" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.#ctor*"></a>
+  <h4 id="Javax_Imageio_Event_IIOReadUpdateListener__ctor" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.#ctor">IIOReadUpdateListener()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IIOReadUpdateListener()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Event_IIOReadUpdateListener_ImageUpdate_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Javax.Imageio.Event.IIOReadUpdateListener.ImageUpdate(Javax.Imageio.ImageReader%2CJava.Awt.ImageNs.BufferedImage%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Event/IIOReadUpdateListener.cs/#L144">View Source</a>
+  </span>
+  <a id="Javax_Imageio_Event_IIOReadUpdateListener_ImageUpdate_" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.ImageUpdate*"></a>
+  <h4 id="Javax_Imageio_Event_IIOReadUpdateListener_ImageUpdate_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.ImageUpdate(Javax.Imageio.ImageReader,Java.Awt.ImageNs.BufferedImage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[])">ImageUpdate(ImageReader, BufferedImage, Int32, Int32, Int32, Int32, Int32, Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#imageUpdate(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#imageUpdate(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ImageUpdate(ImageReader arg0, BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int[] arg8)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg3</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg4</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg5</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg6</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg7</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td><span class="parametername">arg8</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Event_IIOReadUpdateListener_PassComplete_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_.md&amp;value=---%0Auid%3A%20Javax.Imageio.Event.IIOReadUpdateListener.PassComplete(Javax.Imageio.ImageReader%2CJava.Awt.ImageNs.BufferedImage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Event/IIOReadUpdateListener.cs/#L153">View Source</a>
+  </span>
+  <a id="Javax_Imageio_Event_IIOReadUpdateListener_PassComplete_" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.PassComplete*"></a>
+  <h4 id="Javax_Imageio_Event_IIOReadUpdateListener_PassComplete_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.PassComplete(Javax.Imageio.ImageReader,Java.Awt.ImageNs.BufferedImage)">PassComplete(ImageReader, BufferedImage)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#passComplete(javax.imageio.ImageReader,java.awt.image.BufferedImage)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#passComplete(javax.imageio.ImageReader,java.awt.image.BufferedImage)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PassComplete(ImageReader arg0, BufferedImage arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Event_IIOReadUpdateListener_PassStarted_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Javax.Imageio.Event.IIOReadUpdateListener.PassStarted(Javax.Imageio.ImageReader%2CJava.Awt.ImageNs.BufferedImage%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Event/IIOReadUpdateListener.cs/#L170">View Source</a>
+  </span>
+  <a id="Javax_Imageio_Event_IIOReadUpdateListener_PassStarted_" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.PassStarted*"></a>
+  <h4 id="Javax_Imageio_Event_IIOReadUpdateListener_PassStarted_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.PassStarted(Javax.Imageio.ImageReader,Java.Awt.ImageNs.BufferedImage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[])">PassStarted(ImageReader, BufferedImage, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#passStarted(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#passStarted(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PassStarted(ImageReader arg0, BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int[] arg9)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg3</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg4</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg5</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg6</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg7</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg8</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td><span class="parametername">arg9</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Event_IIOReadUpdateListener_ThumbnailPassComplete_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_.md&amp;value=---%0Auid%3A%20Javax.Imageio.Event.IIOReadUpdateListener.ThumbnailPassComplete(Javax.Imageio.ImageReader%2CJava.Awt.ImageNs.BufferedImage)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Event/IIOReadUpdateListener.cs/#L179">View Source</a>
+  </span>
+  <a id="Javax_Imageio_Event_IIOReadUpdateListener_ThumbnailPassComplete_" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.ThumbnailPassComplete*"></a>
+  <h4 id="Javax_Imageio_Event_IIOReadUpdateListener_ThumbnailPassComplete_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.ThumbnailPassComplete(Javax.Imageio.ImageReader,Java.Awt.ImageNs.BufferedImage)">ThumbnailPassComplete(ImageReader, BufferedImage)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailPassComplete(javax.imageio.ImageReader,java.awt.image.BufferedImage)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailPassComplete(javax.imageio.ImageReader,java.awt.image.BufferedImage)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ThumbnailPassComplete(ImageReader arg0, BufferedImage arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Event_IIOReadUpdateListener_ThumbnailPassStarted_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Javax.Imageio.Event.IIOReadUpdateListener.ThumbnailPassStarted(Javax.Imageio.ImageReader%2CJava.Awt.ImageNs.BufferedImage%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Event/IIOReadUpdateListener.cs/#L196">View Source</a>
+  </span>
+  <a id="Javax_Imageio_Event_IIOReadUpdateListener_ThumbnailPassStarted_" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.ThumbnailPassStarted*"></a>
+  <h4 id="Javax_Imageio_Event_IIOReadUpdateListener_ThumbnailPassStarted_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.ThumbnailPassStarted(Javax.Imageio.ImageReader,Java.Awt.ImageNs.BufferedImage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[])">ThumbnailPassStarted(ImageReader, BufferedImage, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailPassStarted(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailPassStarted(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ThumbnailPassStarted(ImageReader arg0, BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int[] arg9)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg3</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg4</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg5</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg6</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg7</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg8</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td><span class="parametername">arg9</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Event_IIOReadUpdateListener_ThumbnailUpdate_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20Javax.Imageio.Event.IIOReadUpdateListener.ThumbnailUpdate(Javax.Imageio.ImageReader%2CJava.Awt.ImageNs.BufferedImage%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Event/IIOReadUpdateListener.cs/#L212">View Source</a>
+  </span>
+  <a id="Javax_Imageio_Event_IIOReadUpdateListener_ThumbnailUpdate_" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.ThumbnailUpdate*"></a>
+  <h4 id="Javax_Imageio_Event_IIOReadUpdateListener_ThumbnailUpdate_Javax_Imageio_ImageReader_Java_Awt_ImageNs_BufferedImage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32___" data-uid="Javax.Imageio.Event.IIOReadUpdateListener.ThumbnailUpdate(Javax.Imageio.ImageReader,Java.Awt.ImageNs.BufferedImage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32[])">ThumbnailUpdate(ImageReader, BufferedImage, Int32, Int32, Int32, Int32, Int32, Int32, Int32[])</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailUpdate(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailUpdate(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ThumbnailUpdate(ImageReader arg0, BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int[] arg8)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Javax.Imageio.ImageReader.html">ImageReader</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg3</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg4</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg5</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg6</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg7</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td><span class="parametername">arg8</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
@@ -419,9 +862,15 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Util.IEventListener.html">IEventListener</a>
+  </div>
+  <div>
+      <a class="xref" href="Javax.Imageio.Event.IIIOReadUpdateListener.html">IIIOReadUpdateListener</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -434,7 +883,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Imageio_Event_IIOReadUpdateListener.md&amp;value=---%0Auid%3A%20Javax.Imageio.Event.IIOReadUpdateListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Event/AllPackageClasses.cs/#L45" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Imageio/Event/IIOReadUpdateListener.cs/#L113" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

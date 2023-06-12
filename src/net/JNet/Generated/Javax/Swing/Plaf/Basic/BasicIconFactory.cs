@@ -42,13 +42,6 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#createEmptyFrameIcon()"/> 
-        /// </summary>
-        public static Javax.Swing.Icon CreateEmptyFrameIcon
-        {
-            get { return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "createEmptyFrameIcon"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#getCheckBoxIcon()"/> 
         /// </summary>
         public static Javax.Swing.Icon GetCheckBoxIcon
@@ -96,6 +89,15 @@ namespace Javax.Swing.Plaf.Basic
         public static Javax.Swing.Icon GetRadioButtonMenuItemIcon
         {
             get { return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "getRadioButtonMenuItemIcon"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html#createEmptyFrameIcon()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.Icon"/></returns>
+        public static Javax.Swing.Icon CreateEmptyFrameIcon()
+        {
+            return SExecute<Javax.Swing.Icon>(LocalBridgeClazz, "createEmptyFrameIcon");
         }
 
         #endregion

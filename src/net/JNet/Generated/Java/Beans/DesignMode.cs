@@ -33,9 +33,11 @@ namespace Java.Beans
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html#isDesignTime()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html#isDesignTime()"/>
         /// </summary>
-        bool IsDesignTime { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsDesignTime();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html#setDesignTime(boolean)"/>
         /// </summary>
@@ -77,11 +79,13 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html#isDesignTime()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html#isDesignTime()"/>
         /// </summary>
-        public bool IsDesignTime
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDesignTime()
         {
-            get { return IExecute<bool>("isDesignTime"); }
+            return IExecute<bool>("isDesignTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html#setDesignTime(boolean)"/>

@@ -33,10 +33,6 @@ namespace Javax.Sql
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/> 
-        /// </summary>
-        Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#setLoginTimeout(int)"/>
         /// </summary>
         int LoginTimeout { get; set; }
@@ -48,6 +44,13 @@ namespace Javax.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getParentLogger()"/> 
         /// </summary>
         Java.Util.Logging.Logger ParentLogger { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder();
 
         #endregion
 
@@ -80,13 +83,6 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/> 
-        /// </summary>
-        public Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder
-        {
-            get { return IExecute<Java.Sql.ShardingKeyBuilder>("createShardingKeyBuilder"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#setLoginTimeout(int)"/>
         /// </summary>
         public int LoginTimeout
@@ -106,6 +102,16 @@ namespace Javax.Sql
         public Java.Util.Logging.Logger ParentLogger
         {
             get { return IExecute<Java.Util.Logging.Logger>("getParentLogger"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder()
+        {
+            return IExecute<Java.Sql.ShardingKeyBuilder>("createShardingKeyBuilder");
         }
 
         #endregion

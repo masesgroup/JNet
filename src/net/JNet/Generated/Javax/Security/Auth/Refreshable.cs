@@ -33,9 +33,11 @@ namespace Javax.Security.Auth
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#isCurrent()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#isCurrent()"/>
         /// </summary>
-        bool IsCurrent { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsCurrent();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#refresh()"/>
         /// </summary>
@@ -74,11 +76,13 @@ namespace Javax.Security.Auth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#isCurrent()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#isCurrent()"/>
         /// </summary>
-        public bool IsCurrent
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCurrent()
         {
-            get { return IExecute<bool>("isCurrent"); }
+            return IExecute<bool>("isCurrent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#refresh()"/>

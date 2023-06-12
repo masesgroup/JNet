@@ -94,13 +94,6 @@ namespace Java.Security.Cert
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#values()"/> 
-            /// </summary>
-            public static Java.Security.Cert.CertPathValidatorException.BasicReason[] Values
-            {
-                get { return SExecuteArray<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -108,6 +101,15 @@ namespace Java.Security.Cert
             public static Java.Security.Cert.CertPathValidatorException.BasicReason ValueOf(string arg0)
             {
                 return SExecute<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Security.Cert.CertPathValidatorException.BasicReason"/></returns>
+            public static Java.Security.Cert.CertPathValidatorException.BasicReason[] Values()
+            {
+                return SExecuteArray<Java.Security.Cert.CertPathValidatorException.BasicReason>(LocalBridgeClazz, "values");
             }
 
             #endregion

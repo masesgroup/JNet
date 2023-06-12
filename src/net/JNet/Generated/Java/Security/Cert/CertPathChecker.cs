@@ -33,9 +33,11 @@ namespace Java.Security.Cert
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/>
         /// </summary>
-        bool IsForwardCheckingSupported { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsForwardCheckingSupported();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#check(java.security.cert.Certificate)"/>
         /// </summary>
@@ -80,11 +82,13 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#isForwardCheckingSupported()"/>
         /// </summary>
-        public bool IsForwardCheckingSupported
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsForwardCheckingSupported()
         {
-            get { return IExecute<bool>("isForwardCheckingSupported"); }
+            return IExecute<bool>("isForwardCheckingSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathChecker.html#check(java.security.cert.Certificate)"/>

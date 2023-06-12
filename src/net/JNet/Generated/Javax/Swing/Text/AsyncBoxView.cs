@@ -213,13 +213,6 @@ namespace Javax.Swing.Text
                 get { return IExecute<Javax.Swing.Text.View>("getChildView"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#isLayoutValid()"/> 
-            /// </summary>
-            public bool IsLayoutValid
-            {
-                get { return IExecute<bool>("isLayoutValid"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#getMajorOffset()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#setMajorOffset(float)"/>
             /// </summary>
             public float MajorOffset
@@ -246,6 +239,15 @@ namespace Javax.Swing.Text
             public float MinorSpan
             {
                 get { return IExecute<float>("getMinorSpan"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#isLayoutValid()"/>
+            /// </summary>
+
+            /// <returns><see cref="bool"/></returns>
+            public bool IsLayoutValid()
+            {
+                return IExecute<bool>("isLayoutValid");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#preferenceChanged(boolean,boolean)"/>

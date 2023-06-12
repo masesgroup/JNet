@@ -33,21 +33,29 @@ namespace Java.Nio.File.Attribute
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/>
         /// </summary>
-        bool IsArchive { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsArchive();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/>
         /// </summary>
-        bool IsHidden { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsHidden();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/>
         /// </summary>
-        bool IsReadOnly { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsReadOnly();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/>
         /// </summary>
-        bool IsSystem { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsSystem();
 
         #endregion
 
@@ -80,32 +88,40 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/>
         /// </summary>
-        public bool IsArchive
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsArchive()
         {
-            get { return IExecute<bool>("isArchive"); }
+            return IExecute<bool>("isArchive");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/>
         /// </summary>
-        public bool IsHidden
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsHidden()
         {
-            get { return IExecute<bool>("isHidden"); }
+            return IExecute<bool>("isHidden");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/>
         /// </summary>
-        public bool IsReadOnly
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsReadOnly()
         {
-            get { return IExecute<bool>("isReadOnly"); }
+            return IExecute<bool>("isReadOnly");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/>
         /// </summary>
-        public bool IsSystem
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSystem()
         {
-            get { return IExecute<bool>("isSystem"); }
+            return IExecute<bool>("isSystem");
         }
 
         #endregion

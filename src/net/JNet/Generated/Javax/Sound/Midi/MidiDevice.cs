@@ -37,10 +37,6 @@ namespace Javax.Sound.Midi
         /// </summary>
         Javax.Sound.Midi.MidiDevice.Info DeviceInfo { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/> 
-        /// </summary>
-        bool IsOpen { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getMaxReceivers()"/> 
         /// </summary>
         int MaxReceivers { get; }
@@ -68,6 +64,12 @@ namespace Javax.Sound.Midi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getTransmitters()"/> 
         /// </summary>
         Java.Util.List<Javax.Sound.Midi.Transmitter> Transmitters { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsOpen();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#close()"/>
         /// </summary>
@@ -117,13 +119,6 @@ namespace Javax.Sound.Midi
             get { return IExecute<Javax.Sound.Midi.MidiDevice.Info>("getDeviceInfo"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/> 
-        /// </summary>
-        public bool IsOpen
-        {
-            get { return IExecute<bool>("isOpen"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#getMaxReceivers()"/> 
         /// </summary>
         public int MaxReceivers
@@ -171,6 +166,15 @@ namespace Javax.Sound.Midi
         public Java.Util.List<Javax.Sound.Midi.Transmitter> Transmitters
         {
             get { return IExecute<Java.Util.List<Javax.Sound.Midi.Transmitter>>("getTransmitters"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#isOpen()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOpen()
+        {
+            return IExecute<bool>("isOpen");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDevice.html#close()"/>

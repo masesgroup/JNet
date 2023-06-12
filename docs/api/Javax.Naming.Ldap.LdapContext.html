@@ -94,6 +94,9 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Javax.Naming.Ldap.ILdapContext.html">ILdapContext</a></div>
+    <div><a class="xref" href="Javax.Naming.Directory.IDirContext.html">IDirContext</a></div>
+    <div><a class="xref" href="Javax.Naming.IContext.html">IContext</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -591,7 +594,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Javax_Naming_Ldap_LdapContext_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LdapContext : DirContext, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class LdapContext : DirContext, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ILdapContext, IDirContext, IContext</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -684,7 +687,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapContext_ConnectControls.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapContext.ConnectControls%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L105">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapContext_ConnectControls_" data-uid="Javax.Naming.Ldap.LdapContext.ConnectControls*"></a>
   <h4 id="Javax_Naming_Ldap_LdapContext_ConnectControls" data-uid="Javax.Naming.Ldap.LdapContext.ConnectControls">ConnectControls</h4>
@@ -715,7 +718,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapContext_CONTROL_FACTORIES.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapContext.CONTROL_FACTORIES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L93">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapContext_CONTROL_FACTORIES_" data-uid="Javax.Naming.Ldap.LdapContext.CONTROL_FACTORIES*"></a>
   <h4 id="Javax_Naming_Ldap_LdapContext_CONTROL_FACTORIES" data-uid="Javax.Naming.Ldap.LdapContext.CONTROL_FACTORIES">CONTROL_FACTORIES</h4>
@@ -878,7 +881,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapContext_RequestControls.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapContext.RequestControls%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L62">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L112">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapContext_RequestControls_" data-uid="Javax.Naming.Ldap.LdapContext.RequestControls*"></a>
   <h4 id="Javax_Naming_Ldap_LdapContext_RequestControls" data-uid="Javax.Naming.Ldap.LdapContext.RequestControls">RequestControls</h4>
@@ -909,7 +912,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapContext_ResponseControls.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapContext.ResponseControls%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L69">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L119">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapContext_ResponseControls_" data-uid="Javax.Naming.Ldap.LdapContext.ResponseControls*"></a>
   <h4 id="Javax_Naming_Ldap_LdapContext_ResponseControls" data-uid="Javax.Naming.Ldap.LdapContext.ResponseControls">ResponseControls</h4>
@@ -942,7 +945,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapContext_ExtendedOperation_Javax_Naming_Ldap_ExtendedRequest_.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapContext.ExtendedOperation(Javax.Naming.Ldap.ExtendedRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L129">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapContext_ExtendedOperation_" data-uid="Javax.Naming.Ldap.LdapContext.ExtendedOperation*"></a>
   <h4 id="Javax_Naming_Ldap_LdapContext_ExtendedOperation_Javax_Naming_Ldap_ExtendedRequest_" data-uid="Javax.Naming.Ldap.LdapContext.ExtendedOperation(Javax.Naming.Ldap.ExtendedRequest)">ExtendedOperation(ExtendedRequest)</h4>
@@ -1007,7 +1010,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapContext_NewInstance_Javax_Naming_Ldap_Control___.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapContext.NewInstance(Javax.Naming.Ldap.Control%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L89">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L139">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapContext_NewInstance_" data-uid="Javax.Naming.Ldap.LdapContext.NewInstance*"></a>
   <h4 id="Javax_Naming_Ldap_LdapContext_NewInstance_Javax_Naming_Ldap_Control___" data-uid="Javax.Naming.Ldap.LdapContext.NewInstance(Javax.Naming.Ldap.Control[])">NewInstance(Control[])</h4>
@@ -1072,7 +1075,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapContext_Reconnect_Javax_Naming_Ldap_Control___.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapContext.Reconnect(Javax.Naming.Ldap.Control%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L98">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L148">View Source</a>
   </span>
   <a id="Javax_Naming_Ldap_LdapContext_Reconnect_" data-uid="Javax.Naming.Ldap.LdapContext.Reconnect*"></a>
   <h4 id="Javax_Naming_Ldap_LdapContext_Reconnect_Javax_Naming_Ldap_Control___" data-uid="Javax.Naming.Ldap.LdapContext.Reconnect(Javax.Naming.Ldap.Control[])">Reconnect(Control[])</h4>
@@ -1135,9 +1138,18 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Javax.Naming.Ldap.ILdapContext.html">ILdapContext</a>
+  </div>
+  <div>
+      <a class="xref" href="Javax.Naming.Directory.IDirContext.html">IDirContext</a>
+  </div>
+  <div>
+      <a class="xref" href="Javax.Naming.IContext.html">IContext</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+      <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
@@ -1150,7 +1162,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Naming_Ldap_LdapContext.md&amp;value=---%0Auid%3A%20Javax.Naming.Ldap.LdapContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Naming/Ldap/LdapContext.cs/#L79" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
