@@ -50,11 +50,13 @@ namespace Javax.Xml.Crypto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/>
         /// </summary>
-        public Java.Util.Iterator Iterator
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            get { return IExecute<Java.Util.Iterator>("iterator"); }
+            return IExecute<Java.Util.Iterator>("iterator");
         }
 
         #endregion
@@ -75,9 +77,11 @@ namespace Javax.Xml.Crypto
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/>
         /// </summary>
-        Java.Util.Iterator<T> Iterator { get; }
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        Java.Util.Iterator<T> Iterator();
 
         #endregion
 
@@ -118,11 +122,13 @@ namespace Javax.Xml.Crypto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html#iterator()"/>
         /// </summary>
-        public Java.Util.Iterator<T> Iterator
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<T> Iterator()
         {
-            get { return IExecute<Java.Util.Iterator<T>>("iterator"); }
+            return IExecute<Java.Util.Iterator<T>>("iterator");
         }
 
         #endregion

@@ -70,25 +70,11 @@ namespace Javax.Naming.Ldap
             get { return IExecute<Java.Util.Enumeration<string>>("getAll"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#isEmpty()"/> 
-        /// </summary>
-        public bool IsEmpty
-        {
-            get { return IExecute<bool>("isEmpty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#getRdns()"/> 
         /// </summary>
         public Java.Util.List<Javax.Naming.Ldap.Rdn> Rdns
         {
             get { return IExecute<Java.Util.List<Javax.Naming.Ldap.Rdn>>("getRdns"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#size()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecute<int>("size"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#endsWith(java.util.List)"/>
@@ -107,6 +93,15 @@ namespace Javax.Naming.Ldap
         public bool EndsWith(Javax.Naming.Name arg0)
         {
             return IExecute<bool>("endsWith", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecute<bool>("isEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#startsWith(java.util.List)"/>
@@ -134,6 +129,15 @@ namespace Javax.Naming.Ldap
         public int CompareTo(object arg0)
         {
             return IExecute<int>("compareTo", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#size()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
+        {
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#remove(int)"/>

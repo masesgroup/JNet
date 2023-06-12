@@ -49,11 +49,13 @@ namespace Java.Awt.Print
             get { return SExecute<Java.Awt.Print.PrinterJob>(LocalBridgeClazz, "getPrinterJob"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupPrintServices()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupPrintServices()"/>
         /// </summary>
-        public static Javax.Print.PrintService[] LookupPrintServices
+
+        /// <returns><see cref="Javax.Print.PrintService"/></returns>
+        public static Javax.Print.PrintService[] LookupPrintServices()
         {
-            get { return SExecuteArray<Javax.Print.PrintService>(LocalBridgeClazz, "lookupPrintServices"); }
+            return SExecuteArray<Javax.Print.PrintService>(LocalBridgeClazz, "lookupPrintServices");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#lookupStreamPrintServices(java.lang.String)"/>
@@ -76,13 +78,6 @@ namespace Java.Awt.Print
             get { return IExecute<int>("getCopies"); } set { IExecute("setCopies", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#isCancelled()"/> 
-        /// </summary>
-        public bool IsCancelled
-        {
-            get { return IExecute<bool>("isCancelled"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#getJobName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setJobName(java.lang.String)"/>
         /// </summary>
         public string JobName
@@ -102,6 +97,15 @@ namespace Java.Awt.Print
         public string UserName
         {
             get { return IExecute<string>("getUserName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#isCancelled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCancelled()
+        {
+            return IExecute<bool>("isCancelled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#printDialog()"/>

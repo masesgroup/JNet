@@ -54,18 +54,20 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollBarUI.html#isThumbRollover()"/> 
-        /// </summary>
-        public bool IsThumbRollover
-        {
-            get { return IExecute<bool>("isThumbRollover"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollBarUI.html#getSupportsAbsolutePositioning()"/> 
         /// </summary>
         public bool SupportsAbsolutePositioning
         {
             get { return IExecute<bool>("getSupportsAbsolutePositioning"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollBarUI.html#isThumbRollover()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsThumbRollover()
+        {
+            return IExecute<bool>("isThumbRollover");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollBarUI.html#minimumLayoutSize(java.awt.Container)"/>

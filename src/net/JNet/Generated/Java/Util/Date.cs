@@ -82,13 +82,6 @@ namespace Java.Util
             get { return IExecute<long>("getTime"); } set { IExecute("setTime", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#toInstant()"/> 
-        /// </summary>
-        public Java.Time.Instant ToInstant
-        {
-            get { return IExecute<Java.Time.Instant>("toInstant"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#after(java.util.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>
@@ -123,6 +116,15 @@ namespace Java.Util
         public int CompareTo(Java.Util.Date arg0)
         {
             return IExecute<int>("compareTo", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html#toInstant()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant ToInstant()
+        {
+            return IExecute<Java.Time.Instant>("toInstant");
         }
 
         #endregion

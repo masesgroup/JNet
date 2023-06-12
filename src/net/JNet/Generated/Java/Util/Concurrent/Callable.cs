@@ -46,11 +46,14 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
-        public object Call
+
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        public object Call()
         {
-            get { return IExecute("call"); }
+            return IExecute("call");
         }
 
         #endregion
@@ -71,9 +74,12 @@ namespace Java.Util.Concurrent
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
-        V Call { get; }
+
+        /// <returns><typeparamref name="V"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        V Call();
 
         #endregion
 
@@ -110,11 +116,14 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
-        public V Call
+
+        /// <returns><typeparamref name="V"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        public V Call()
         {
-            get { return IExecute<V>("call"); }
+            return IExecute<V>("call");
         }
 
         #endregion

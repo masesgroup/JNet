@@ -55,11 +55,13 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#get()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#get()"/>
         /// </summary>
-        public object Get
+
+        /// <returns><see cref="object"/></returns>
+        public object Get()
         {
-            get { return IExecute("get"); }
+            return IExecute("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#remove()"/>
@@ -123,11 +125,13 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#get()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#get()"/>
         /// </summary>
-        public T Get
+
+        /// <returns><typeparamref name="T"/></returns>
+        public T Get()
         {
-            get { return IExecute<T>("get"); }
+            return IExecute<T>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadLocal.html#remove()"/>

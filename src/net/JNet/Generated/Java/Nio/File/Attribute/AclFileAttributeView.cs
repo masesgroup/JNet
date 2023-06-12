@@ -37,9 +37,11 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         Java.Util.List<Java.Nio.File.Attribute.AclEntry> Acl { get; set; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/>
         /// </summary>
-        string Name { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string Name();
 
         #endregion
 
@@ -79,11 +81,13 @@ namespace Java.Nio.File.Attribute
             get { return IExecute<Java.Util.List<Java.Nio.File.Attribute.AclEntry>>("getAcl"); } set { IExecute("setAcl", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html#name()"/>
         /// </summary>
-        public string Name
+
+        /// <returns><see cref="string"/></returns>
+        public string Name()
         {
-            get { return IExecute<string>("name"); }
+            return IExecute<string>("name");
         }
 
         #endregion

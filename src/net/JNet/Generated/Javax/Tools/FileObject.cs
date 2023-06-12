@@ -33,10 +33,6 @@ namespace Javax.Tools
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#delete()"/> 
-        /// </summary>
-        bool Delete { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#getLastModified()"/> 
         /// </summary>
         long LastModified { get; }
@@ -45,21 +41,25 @@ namespace Javax.Tools
         /// </summary>
         string Name { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openInputStream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#delete()"/>
         /// </summary>
-        Java.Io.InputStream OpenInputStream { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool Delete();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openOutputStream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openInputStream()"/>
         /// </summary>
-        Java.Io.OutputStream OpenOutputStream { get; }
+
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Io.InputStream OpenInputStream();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openWriter()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openOutputStream()"/>
         /// </summary>
-        Java.Io.Writer OpenWriter { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#toUri()"/> 
-        /// </summary>
-        Java.Net.URI ToUri { get; }
+
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Io.OutputStream OpenOutputStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openReader(boolean)"/>
         /// </summary>
@@ -68,12 +68,25 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         Java.Io.Reader OpenReader(bool arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openWriter()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Io.Writer"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Io.Writer OpenWriter();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#getCharContent(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         Java.Lang.CharSequence GetCharContent(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#toUri()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Net.URI"/></returns>
+        Java.Net.URI ToUri();
 
         #endregion
 
@@ -106,13 +119,6 @@ namespace Javax.Tools
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#delete()"/> 
-        /// </summary>
-        public bool Delete
-        {
-            get { return IExecute<bool>("delete"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#getLastModified()"/> 
         /// </summary>
         public long LastModified
@@ -127,32 +133,33 @@ namespace Javax.Tools
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openInputStream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#delete()"/>
         /// </summary>
-        public Java.Io.InputStream OpenInputStream
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Delete()
         {
-            get { return IExecute<Java.Io.InputStream>("openInputStream"); }
+            return IExecute<bool>("delete");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openOutputStream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openInputStream()"/>
         /// </summary>
-        public Java.Io.OutputStream OpenOutputStream
+
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.InputStream OpenInputStream()
         {
-            get { return IExecute<Java.Io.OutputStream>("openOutputStream"); }
+            return IExecute<Java.Io.InputStream>("openInputStream");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openWriter()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openOutputStream()"/>
         /// </summary>
-        public Java.Io.Writer OpenWriter
+
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.OutputStream OpenOutputStream()
         {
-            get { return IExecute<Java.Io.Writer>("openWriter"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#toUri()"/> 
-        /// </summary>
-        public Java.Net.URI ToUri
-        {
-            get { return IExecute<Java.Net.URI>("toUri"); }
+            return IExecute<Java.Io.OutputStream>("openOutputStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openReader(boolean)"/>
@@ -165,6 +172,16 @@ namespace Javax.Tools
             return IExecute<Java.Io.Reader>("openReader", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#openWriter()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Io.Writer"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.Writer OpenWriter()
+        {
+            return IExecute<Java.Io.Writer>("openWriter");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#getCharContent(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -173,6 +190,15 @@ namespace Javax.Tools
         public Java.Lang.CharSequence GetCharContent(bool arg0)
         {
             return IExecute<Java.Lang.CharSequence>("getCharContent", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/FileObject.html#toUri()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Net.URI"/></returns>
+        public Java.Net.URI ToUri()
+        {
+            return IExecute<Java.Net.URI>("toUri");
         }
 
         #endregion

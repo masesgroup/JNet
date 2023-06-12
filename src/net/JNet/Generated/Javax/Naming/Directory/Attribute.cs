@@ -49,14 +49,6 @@ namespace Javax.Naming.Directory
         /// </summary>
         string ID { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#isOrdered()"/> 
-        /// </summary>
-        bool IsOrdered { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#size()"/> 
-        /// </summary>
-        int Size { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -69,11 +61,23 @@ namespace Javax.Naming.Directory
         /// <returns><see cref="bool"/></returns>
         bool Contains(object arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#isOrdered()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsOrdered();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
         bool Remove(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#size()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        int Size();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#get()"/>
         /// </summary>
@@ -183,20 +187,6 @@ namespace Javax.Naming.Directory
             get { return IExecute<string>("getID"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#isOrdered()"/> 
-        /// </summary>
-        public bool IsOrdered
-        {
-            get { return IExecute<bool>("isOrdered"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#size()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecute<int>("size"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -215,6 +205,15 @@ namespace Javax.Naming.Directory
             return IExecute<bool>("contains", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#isOrdered()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOrdered()
+        {
+            return IExecute<bool>("isOrdered");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -222,6 +221,15 @@ namespace Javax.Naming.Directory
         public bool Remove(object arg0)
         {
             return IExecute<bool>("remove", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#size()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
+        {
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attribute.html#get()"/>

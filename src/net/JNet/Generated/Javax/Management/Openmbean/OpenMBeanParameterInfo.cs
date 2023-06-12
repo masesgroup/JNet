@@ -41,22 +41,6 @@ namespace Javax.Management.Openmbean
         /// </summary>
         string Description { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasDefaultValue()"/> 
-        /// </summary>
-        bool HasDefaultValue { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasLegalValues()"/> 
-        /// </summary>
-        bool HasLegalValues { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMaxValue()"/> 
-        /// </summary>
-        bool HasMaxValue { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMinValue()"/> 
-        /// </summary>
-        bool HasMinValue { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getLegalValues()"/> 
         /// </summary>
         Java.Util.Set<object> LegalValues { get; }
@@ -76,6 +60,30 @@ namespace Javax.Management.Openmbean
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getOpenType()"/> 
         /// </summary>
         Javax.Management.Openmbean.OpenType<object> OpenType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasDefaultValue()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool HasDefaultValue();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasLegalValues()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool HasLegalValues();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMaxValue()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool HasMaxValue();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMinValue()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool HasMinValue();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#isValue(java.lang.Object)"/>
         /// </summary>
@@ -128,34 +136,6 @@ namespace Javax.Management.Openmbean
             get { return IExecute<string>("getDescription"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasDefaultValue()"/> 
-        /// </summary>
-        public bool HasDefaultValue
-        {
-            get { return IExecute<bool>("hasDefaultValue"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasLegalValues()"/> 
-        /// </summary>
-        public bool HasLegalValues
-        {
-            get { return IExecute<bool>("hasLegalValues"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMaxValue()"/> 
-        /// </summary>
-        public bool HasMaxValue
-        {
-            get { return IExecute<bool>("hasMaxValue"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMinValue()"/> 
-        /// </summary>
-        public bool HasMinValue
-        {
-            get { return IExecute<bool>("hasMinValue"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#getLegalValues()"/> 
         /// </summary>
         public Java.Util.Set<object> LegalValues
@@ -189,6 +169,42 @@ namespace Javax.Management.Openmbean
         public Javax.Management.Openmbean.OpenType<object> OpenType
         {
             get { return IExecute<Javax.Management.Openmbean.OpenType<object>>("getOpenType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasDefaultValue()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasDefaultValue()
+        {
+            return IExecute<bool>("hasDefaultValue");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasLegalValues()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasLegalValues()
+        {
+            return IExecute<bool>("hasLegalValues");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMaxValue()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasMaxValue()
+        {
+            return IExecute<bool>("hasMaxValue");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#hasMinValue()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasMinValue()
+        {
+            return IExecute<bool>("hasMinValue");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanParameterInfo.html#isValue(java.lang.Object)"/>

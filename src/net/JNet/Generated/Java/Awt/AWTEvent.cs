@@ -142,11 +142,13 @@ namespace Java.Awt
             get { return IExecute<int>("getID"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#paramString()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#paramString()"/>
         /// </summary>
-        public string ParamString
+
+        /// <returns><see cref="string"/></returns>
+        public string ParamString()
         {
-            get { return IExecute<string>("paramString"); }
+            return IExecute<string>("paramString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#setSource(java.lang.Object)"/>

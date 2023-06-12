@@ -46,48 +46,6 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#isEmpty()"/> 
-        /// </summary>
-        public bool IsEmpty
-        {
-            get { return IExecute<bool>("isEmpty"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/> 
-        /// </summary>
-        public Java.Util.Iterator Iterator
-        {
-            get { return IExecute<Java.Util.Iterator>("iterator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#parallelStream()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream ParallelStream
-        {
-            get { return IExecute<Java.Util.Stream.Stream>("parallelStream"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#size()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecute<int>("size"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#spliterator()"/> 
-        /// </summary>
-        public Java.Util.Spliterator Spliterator
-        {
-            get { return IExecute<Java.Util.Spliterator>("spliterator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#stream()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream Stream
-        {
-            get { return IExecute<Java.Util.Stream.Stream>("stream"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray(java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -133,6 +91,15 @@ namespace Java.Util
             return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecute<bool>("isEmpty");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -160,6 +127,15 @@ namespace Java.Util
             return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#size()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
+        {
+            return IExecute<int>("size");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray()"/>
         /// </summary>
 
@@ -167,6 +143,15 @@ namespace Java.Util
         public object[] ToArray()
         {
             return IExecuteArray<object>("toArray");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#clear()"/>
@@ -193,6 +178,33 @@ namespace Java.Util
         {
             return IExecute<bool>("removeIf", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#spliterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator Spliterator()
+        {
+            return IExecute<Java.Util.Spliterator>("spliterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#parallelStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream ParallelStream()
+        {
+            return IExecute<Java.Util.Stream.Stream>("parallelStream");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#stream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Stream()
+        {
+            return IExecute<Java.Util.Stream.Stream>("stream");
+        }
 
         #endregion
 
@@ -211,30 +223,6 @@ namespace Java.Util
     public partial interface ICollection<E>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#isEmpty()"/> 
-        /// </summary>
-        bool IsEmpty { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/> 
-        /// </summary>
-        Java.Util.Iterator<E> Iterator { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#parallelStream()"/> 
-        /// </summary>
-        Java.Util.Stream.Stream<E> ParallelStream { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#size()"/> 
-        /// </summary>
-        int Size { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#spliterator()"/> 
-        /// </summary>
-        Java.Util.Spliterator<E> Spliterator { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#stream()"/> 
-        /// </summary>
-        Java.Util.Stream.Stream<E> Stream { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray(java.lang.Object[])"/>
         /// </summary>
@@ -268,6 +256,12 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         bool ContainsAll(Java.Util.Collection<object> arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsEmpty();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -286,11 +280,23 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         bool RetainAll(Java.Util.Collection<object> arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#size()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        int Size();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray()"/>
         /// </summary>
 
         /// <returns><see cref="object"/></returns>
         object[] ToArray();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        Java.Util.Iterator<E> Iterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#clear()"/>
         /// </summary>
@@ -309,6 +315,24 @@ namespace Java.Util
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
         bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE: E;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#spliterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        Java.Util.Spliterator<E> Spliterator();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#parallelStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        Java.Util.Stream.Stream<E> ParallelStream();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#stream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        Java.Util.Stream.Stream<E> Stream();
 
         #endregion
 
@@ -344,48 +368,6 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#isEmpty()"/> 
-        /// </summary>
-        public bool IsEmpty
-        {
-            get { return IExecute<bool>("isEmpty"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/> 
-        /// </summary>
-        public Java.Util.Iterator<E> Iterator
-        {
-            get { return IExecute<Java.Util.Iterator<E>>("iterator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#parallelStream()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream<E> ParallelStream
-        {
-            get { return IExecute<Java.Util.Stream.Stream<E>>("parallelStream"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#size()"/> 
-        /// </summary>
-        public int Size
-        {
-            get { return IExecute<int>("size"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#spliterator()"/> 
-        /// </summary>
-        public Java.Util.Spliterator<E> Spliterator
-        {
-            get { return IExecute<Java.Util.Spliterator<E>>("spliterator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#stream()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream<E> Stream
-        {
-            get { return IExecute<Java.Util.Stream.Stream<E>>("stream"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray(java.lang.Object[])"/>
         /// </summary>
@@ -434,6 +416,15 @@ namespace Java.Util
             return IExecute<bool>("containsAll", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecute<bool>("isEmpty");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -461,6 +452,15 @@ namespace Java.Util
             return IExecute<bool>("retainAll", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#size()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
+        {
+            return IExecute<int>("size");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#toArray()"/>
         /// </summary>
 
@@ -468,6 +468,15 @@ namespace Java.Util
         public object[] ToArray()
         {
             return IExecuteArray<object>("toArray");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#iterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<E> Iterator()
+        {
+            return IExecute<Java.Util.Iterator<E>>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#clear()"/>
@@ -495,6 +504,33 @@ namespace Java.Util
         public bool RemoveIf<Arg0objectSuperE>(Java.Util.Function.Predicate<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
         {
             return IExecute<bool>("removeIf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#spliterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator<E> Spliterator()
+        {
+            return IExecute<Java.Util.Spliterator<E>>("spliterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#parallelStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<E> ParallelStream()
+        {
+            return IExecute<Java.Util.Stream.Stream<E>>("parallelStream");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collection.html#stream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<E> Stream()
+        {
+            return IExecute<Java.Util.Stream.Stream<E>>("stream");
         }
 
         #endregion

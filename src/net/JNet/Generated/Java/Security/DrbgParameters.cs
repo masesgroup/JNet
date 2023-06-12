@@ -110,13 +110,6 @@ namespace Java.Security
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#values()"/> 
-            /// </summary>
-            public static Java.Security.DrbgParameters.Capability[] Values
-            {
-                get { return SExecuteArray<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -125,23 +118,36 @@ namespace Java.Security
             {
                 return SExecute<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "valueOf", arg0);
             }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Security.DrbgParameters.Capability"/></returns>
+            public static Java.Security.DrbgParameters.Capability[] Values()
+            {
+                return SExecuteArray<Java.Security.DrbgParameters.Capability>(LocalBridgeClazz, "values");
+            }
 
             #endregion
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsPredictionResistance()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsPredictionResistance()"/>
             /// </summary>
-            public bool SupportsPredictionResistance
+
+            /// <returns><see cref="bool"/></returns>
+            public bool SupportsPredictionResistance()
             {
-                get { return IExecute<bool>("supportsPredictionResistance"); }
+                return IExecute<bool>("supportsPredictionResistance");
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsReseeding()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#supportsReseeding()"/>
             /// </summary>
-            public bool SupportsReseeding
+
+            /// <returns><see cref="bool"/></returns>
+            public bool SupportsReseeding()
             {
-                get { return IExecute<bool>("supportsReseeding"); }
+                return IExecute<bool>("supportsReseeding");
             }
 
             #endregion

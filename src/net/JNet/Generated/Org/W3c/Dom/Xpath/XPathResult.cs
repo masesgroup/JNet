@@ -41,10 +41,6 @@ namespace Org.W3c.Dom.Xpath
         /// </summary>
         bool InvalidIteratorState { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/> 
-        /// </summary>
-        Org.W3c.Dom.Node IterateNext { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getNumberValue()"/> 
         /// </summary>
         double NumberValue { get; }
@@ -64,6 +60,14 @@ namespace Org.W3c.Dom.Xpath
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getStringValue()"/> 
         /// </summary>
         string StringValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.Node IterateNext();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#snapshotItem(int)"/>
         /// </summary>
@@ -157,13 +161,6 @@ namespace Org.W3c.Dom.Xpath
             get { return IExecute<bool>("getInvalidIteratorState"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/> 
-        /// </summary>
-        public Org.W3c.Dom.Node IterateNext
-        {
-            get { return IExecute<Org.W3c.Dom.Node>("iterateNext"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#getNumberValue()"/> 
         /// </summary>
         public double NumberValue
@@ -197,6 +194,17 @@ namespace Org.W3c.Dom.Xpath
         public string StringValue
         {
             get { return IExecute<string>("getStringValue"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#iterateNext()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        public Org.W3c.Dom.Node IterateNext()
+        {
+            return IExecute<Org.W3c.Dom.Node>("iterateNext");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathResult.html#snapshotItem(int)"/>

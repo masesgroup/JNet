@@ -95,13 +95,6 @@ namespace Java.Lang
             get { return IExecuteArray<Java.Lang.Package>("getDefinedPackages"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#isRegisteredAsParallelCapable()"/> 
-        /// </summary>
-        public bool IsRegisteredAsParallelCapable
-        {
-            get { return IExecute<bool>("isRegisteredAsParallelCapable"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getName()"/> 
         /// </summary>
         public string Name
@@ -121,6 +114,15 @@ namespace Java.Lang
         public Java.Lang.Module UnnamedModule
         {
             get { return IExecute<Java.Lang.Module>("getUnnamedModule"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#isRegisteredAsParallelCapable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRegisteredAsParallelCapable()
+        {
+            return IExecute<bool>("isRegisteredAsParallelCapable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#getDefinedPackage(java.lang.String)"/>

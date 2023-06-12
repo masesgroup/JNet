@@ -54,13 +54,6 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#values()"/> 
-        /// </summary>
-        public static Java.Nio.File.LinkOption[] Values
-        {
-            get { return SExecuteArray<Java.Nio.File.LinkOption>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -68,6 +61,15 @@ namespace Java.Nio.File
         public static Java.Nio.File.LinkOption ValueOf(string arg0)
         {
             return SExecute<Java.Nio.File.LinkOption>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.File.LinkOption"/></returns>
+        public static Java.Nio.File.LinkOption[] Values()
+        {
+            return SExecuteArray<Java.Nio.File.LinkOption>(LocalBridgeClazz, "values");
         }
 
         #endregion

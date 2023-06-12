@@ -37,18 +37,6 @@ namespace Javax.Xml.Stream.Events
         /// </summary>
         string CharacterEncodingScheme { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#encodingSet()"/> 
-        /// </summary>
-        bool EncodingSet { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#isStandalone()"/> 
-        /// </summary>
-        bool IsStandalone { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#standaloneSet()"/> 
-        /// </summary>
-        bool StandaloneSet { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#getSystemId()"/> 
         /// </summary>
         string SystemId { get; }
@@ -56,6 +44,24 @@ namespace Javax.Xml.Stream.Events
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#getVersion()"/> 
         /// </summary>
         string Version { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#encodingSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool EncodingSet();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#isStandalone()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsStandalone();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#standaloneSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool StandaloneSet();
 
         #endregion
 
@@ -95,27 +101,6 @@ namespace Javax.Xml.Stream.Events
             get { return IExecute<string>("getCharacterEncodingScheme"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#encodingSet()"/> 
-        /// </summary>
-        public bool EncodingSet
-        {
-            get { return IExecute<bool>("encodingSet"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#isStandalone()"/> 
-        /// </summary>
-        public bool IsStandalone
-        {
-            get { return IExecute<bool>("isStandalone"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#standaloneSet()"/> 
-        /// </summary>
-        public bool StandaloneSet
-        {
-            get { return IExecute<bool>("standaloneSet"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#getSystemId()"/> 
         /// </summary>
         public string SystemId
@@ -128,6 +113,33 @@ namespace Javax.Xml.Stream.Events
         public string Version
         {
             get { return IExecute<string>("getVersion"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#encodingSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool EncodingSet()
+        {
+            return IExecute<bool>("encodingSet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#isStandalone()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsStandalone()
+        {
+            return IExecute<bool>("isStandalone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/StartDocument.html#standaloneSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool StandaloneSet()
+        {
+            return IExecute<bool>("standaloneSet");
         }
 
         #endregion

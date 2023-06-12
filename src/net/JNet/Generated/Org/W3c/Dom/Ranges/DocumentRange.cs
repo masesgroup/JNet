@@ -33,9 +33,11 @@ namespace Org.W3c.Dom.Ranges
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html#createRange()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html#createRange()"/>
         /// </summary>
-        Org.W3c.Dom.Ranges.Range CreateRange { get; }
+
+        /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
+        Org.W3c.Dom.Ranges.Range CreateRange();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Org.W3c.Dom.Ranges
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html#createRange()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html#createRange()"/>
         /// </summary>
-        public Org.W3c.Dom.Ranges.Range CreateRange
+
+        /// <returns><see cref="Org.W3c.Dom.Ranges.Range"/></returns>
+        public Org.W3c.Dom.Ranges.Range CreateRange()
         {
-            get { return IExecute<Org.W3c.Dom.Ranges.Range>("createRange"); }
+            return IExecute<Org.W3c.Dom.Ranges.Range>("createRange");
         }
 
         #endregion

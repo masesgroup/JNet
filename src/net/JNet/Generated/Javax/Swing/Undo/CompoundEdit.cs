@@ -46,11 +46,13 @@ namespace Javax.Swing.Undo
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html#isInProgress()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html#isInProgress()"/>
         /// </summary>
-        public bool IsInProgress
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInProgress()
         {
-            get { return IExecute<bool>("isInProgress"); }
+            return IExecute<bool>("isInProgress");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html#end()"/>

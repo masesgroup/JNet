@@ -55,18 +55,20 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#get()"/> 
-        /// </summary>
-        public double Get
-        {
-            get { return IExecute<double>("get"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#getThenReset()"/> 
         /// </summary>
         public double ThenReset
         {
             get { return IExecute<double>("getThenReset"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#get()"/>
+        /// </summary>
+
+        /// <returns><see cref="double"/></returns>
+        public double Get()
+        {
+            return IExecute<double>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#accumulate(double)"/>

@@ -53,13 +53,6 @@ namespace Javax.Swing.Tree
             get { return IExecute<Javax.Swing.Tree.AbstractLayoutCache.NodeDimensions>("getNodeDimensions"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#isRootVisible()"/> 
-        /// </summary>
-        public bool IsRootVisible
-        {
-            get { return IExecute<bool>("isRootVisible"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#setModel(javax.swing.tree.TreeModel)"/>
         /// </summary>
         public Javax.Swing.Tree.TreeModel Model
@@ -223,6 +216,15 @@ namespace Javax.Swing.Tree
         public void TreeStructureChanged(Javax.Swing.Event.TreeModelEvent arg0)
         {
             IExecute("treeStructureChanged", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#isRootVisible()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRootVisible()
+        {
+            return IExecute<bool>("isRootVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/AbstractLayoutCache.html#getPreferredWidth(java.awt.Rectangle)"/>

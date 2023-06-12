@@ -192,13 +192,6 @@ namespace Java.Lang
             get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#desiredAssertionStatus()"/> 
-        /// </summary>
-        public bool DesiredAssertionStatus
-        {
-            get { return IExecute<bool>("desiredAssertionStatus"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnclosingClass()"/> 
         /// </summary>
         public Java.Lang.Class EnclosingClass
@@ -253,69 +246,6 @@ namespace Java.Lang
         public Java.Lang.Class[] Interfaces
         {
             get { return IExecuteArray<Java.Lang.Class>("getInterfaces"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotation()"/> 
-        /// </summary>
-        public bool IsAnnotation
-        {
-            get { return IExecute<bool>("isAnnotation"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnonymousClass()"/> 
-        /// </summary>
-        public bool IsAnonymousClass
-        {
-            get { return IExecute<bool>("isAnonymousClass"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isArray()"/> 
-        /// </summary>
-        public bool IsArray
-        {
-            get { return IExecute<bool>("isArray"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isEnum()"/> 
-        /// </summary>
-        public bool IsEnum
-        {
-            get { return IExecute<bool>("isEnum"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInterface()"/> 
-        /// </summary>
-        public bool IsInterface
-        {
-            get { return IExecute<bool>("isInterface"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isLocalClass()"/> 
-        /// </summary>
-        public bool IsLocalClass
-        {
-            get { return IExecute<bool>("isLocalClass"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isMemberClass()"/> 
-        /// </summary>
-        public bool IsMemberClass
-        {
-            get { return IExecute<bool>("isMemberClass"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isPrimitive()"/> 
-        /// </summary>
-        public bool IsPrimitive
-        {
-            get { return IExecute<bool>("isPrimitive"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isSynthetic()"/> 
-        /// </summary>
-        public bool IsSynthetic
-        {
-            get { return IExecute<bool>("isSynthetic"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethods()"/> 
@@ -402,13 +332,6 @@ namespace Java.Lang
             get { return IExecute<Java.Lang.Class>("getSuperclass"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#toGenericString()"/> 
-        /// </summary>
-        public string ToGenericString
-        {
-            get { return IExecute<string>("toGenericString"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getTypeName()"/> 
         /// </summary>
         public string TypeName
@@ -468,6 +391,24 @@ namespace Java.Lang
             return IExecute<Java.Lang.Class>("asSubclass", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#desiredAssertionStatus()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool DesiredAssertionStatus()
+        {
+            return IExecute<bool>("desiredAssertionStatus");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotation()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAnnotation()
+        {
+            return IExecute<bool>("isAnnotation");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotationPresent(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -477,6 +418,42 @@ namespace Java.Lang
             return IExecute<bool>("isAnnotationPresent", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnonymousClass()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAnonymousClass()
+        {
+            return IExecute<bool>("isAnonymousClass");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isEnum()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEnum()
+        {
+            return IExecute<bool>("isEnum");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isLocalClass()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLocalClass()
+        {
+            return IExecute<bool>("isLocalClass");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isMemberClass()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMemberClass()
+        {
+            return IExecute<bool>("isMemberClass");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isNestmateOf(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -484,6 +461,15 @@ namespace Java.Lang
         public bool IsNestmateOf(Java.Lang.Class arg0)
         {
             return IExecute<bool>("isNestmateOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isSynthetic()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSynthetic()
+        {
+            return IExecute<bool>("isSynthetic");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getResourceAsStream(java.lang.String)"/>
@@ -563,6 +549,15 @@ namespace Java.Lang
             if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#toGenericString()"/>
+        /// </summary>
+
+        /// <returns><see cref="string"/></returns>
+        public string ToGenericString()
+        {
+            return IExecute<string>("toGenericString");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getResource(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -570,6 +565,15 @@ namespace Java.Lang
         public Java.Net.URL GetResource(string arg0)
         {
             return IExecute<Java.Net.URL>("getResource", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isArray()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsArray()
+        {
+            return IExecute<bool>("isArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAssignableFrom(java.lang.Class)"/>
@@ -588,6 +592,24 @@ namespace Java.Lang
         public bool IsInstance(object arg0)
         {
             return IExecute<bool>("isInstance", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInterface()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInterface()
+        {
+            return IExecute<bool>("isInterface");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isPrimitive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPrimitive()
+        {
+            return IExecute<bool>("isPrimitive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#cast(java.lang.Object)"/>
@@ -780,13 +802,6 @@ namespace Java.Lang
             get { return IExecute<Java.Lang.Class>("getDeclaringClass"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#desiredAssertionStatus()"/> 
-        /// </summary>
-        public bool DesiredAssertionStatus
-        {
-            get { return IExecute<bool>("desiredAssertionStatus"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getEnclosingClass()"/> 
         /// </summary>
         public Java.Lang.Class EnclosingClass
@@ -841,69 +856,6 @@ namespace Java.Lang
         public Java.Lang.Class[] Interfaces
         {
             get { return IExecuteArray<Java.Lang.Class>("getInterfaces"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotation()"/> 
-        /// </summary>
-        public bool IsAnnotation
-        {
-            get { return IExecute<bool>("isAnnotation"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnonymousClass()"/> 
-        /// </summary>
-        public bool IsAnonymousClass
-        {
-            get { return IExecute<bool>("isAnonymousClass"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isArray()"/> 
-        /// </summary>
-        public bool IsArray
-        {
-            get { return IExecute<bool>("isArray"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isEnum()"/> 
-        /// </summary>
-        public bool IsEnum
-        {
-            get { return IExecute<bool>("isEnum"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInterface()"/> 
-        /// </summary>
-        public bool IsInterface
-        {
-            get { return IExecute<bool>("isInterface"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isLocalClass()"/> 
-        /// </summary>
-        public bool IsLocalClass
-        {
-            get { return IExecute<bool>("isLocalClass"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isMemberClass()"/> 
-        /// </summary>
-        public bool IsMemberClass
-        {
-            get { return IExecute<bool>("isMemberClass"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isPrimitive()"/> 
-        /// </summary>
-        public bool IsPrimitive
-        {
-            get { return IExecute<bool>("isPrimitive"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isSynthetic()"/> 
-        /// </summary>
-        public bool IsSynthetic
-        {
-            get { return IExecute<bool>("isSynthetic"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethods()"/> 
@@ -990,13 +942,6 @@ namespace Java.Lang
             get { return IExecute<Java.Lang.Class>("getSuperclass"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#toGenericString()"/> 
-        /// </summary>
-        public string ToGenericString
-        {
-            get { return IExecute<string>("toGenericString"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getTypeName()"/> 
         /// </summary>
         public string TypeName
@@ -1062,6 +1007,24 @@ namespace Java.Lang
             return IExecute<Java.Lang.Class>("asSubclass", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#desiredAssertionStatus()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool DesiredAssertionStatus()
+        {
+            return IExecute<bool>("desiredAssertionStatus");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotation()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAnnotation()
+        {
+            return IExecute<bool>("isAnnotation");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnnotationPresent(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -1071,6 +1034,42 @@ namespace Java.Lang
             return IExecute<bool>("isAnnotationPresent", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAnonymousClass()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAnonymousClass()
+        {
+            return IExecute<bool>("isAnonymousClass");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isEnum()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEnum()
+        {
+            return IExecute<bool>("isEnum");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isLocalClass()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLocalClass()
+        {
+            return IExecute<bool>("isLocalClass");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isMemberClass()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMemberClass()
+        {
+            return IExecute<bool>("isMemberClass");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isNestmateOf(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -1078,6 +1077,15 @@ namespace Java.Lang
         public bool IsNestmateOf(Java.Lang.Class arg0)
         {
             return IExecute<bool>("isNestmateOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isSynthetic()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSynthetic()
+        {
+            return IExecute<bool>("isSynthetic");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getResourceAsStream(java.lang.String)"/>
@@ -1157,6 +1165,15 @@ namespace Java.Lang
             if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#toGenericString()"/>
+        /// </summary>
+
+        /// <returns><see cref="string"/></returns>
+        public string ToGenericString()
+        {
+            return IExecute<string>("toGenericString");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getResource(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -1164,6 +1181,15 @@ namespace Java.Lang
         public Java.Net.URL GetResource(string arg0)
         {
             return IExecute<Java.Net.URL>("getResource", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isArray()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsArray()
+        {
+            return IExecute<bool>("isArray");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isAssignableFrom(java.lang.Class)"/>
@@ -1182,6 +1208,24 @@ namespace Java.Lang
         public bool IsInstance(object arg0)
         {
             return IExecute<bool>("isInstance", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isInterface()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInterface()
+        {
+            return IExecute<bool>("isInterface");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#isPrimitive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPrimitive()
+        {
+            return IExecute<bool>("isPrimitive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#cast(java.lang.Object)"/>

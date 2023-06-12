@@ -164,39 +164,11 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#abs()"/> 
-        /// </summary>
-        public Java.Time.Duration Abs
-        {
-            get { return IExecute<Java.Time.Duration>("abs"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#isNegative()"/> 
-        /// </summary>
-        public bool IsNegative
-        {
-            get { return IExecute<bool>("isNegative"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#isZero()"/> 
-        /// </summary>
-        public bool IsZero
-        {
-            get { return IExecute<bool>("isZero"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#getNano()"/> 
         /// </summary>
         public int Nano
         {
             get { return IExecute<int>("getNano"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#negated()"/> 
-        /// </summary>
-        public Java.Time.Duration Negated
-        {
-            get { return IExecute<Java.Time.Duration>("negated"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#getSeconds()"/> 
@@ -206,95 +178,29 @@ namespace Java.Time
             get { return IExecute<long>("getSeconds"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toDays()"/> 
-        /// </summary>
-        public long ToDays
-        {
-            get { return IExecute<long>("toDays"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toDaysPart()"/> 
-        /// </summary>
-        public long ToDaysPart
-        {
-            get { return IExecute<long>("toDaysPart"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toHours()"/> 
-        /// </summary>
-        public long ToHours
-        {
-            get { return IExecute<long>("toHours"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toHoursPart()"/> 
-        /// </summary>
-        public int ToHoursPart
-        {
-            get { return IExecute<int>("toHoursPart"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMillis()"/> 
-        /// </summary>
-        public long ToMillis
-        {
-            get { return IExecute<long>("toMillis"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMillisPart()"/> 
-        /// </summary>
-        public int ToMillisPart
-        {
-            get { return IExecute<int>("toMillisPart"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMinutes()"/> 
-        /// </summary>
-        public long ToMinutes
-        {
-            get { return IExecute<long>("toMinutes"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMinutesPart()"/> 
-        /// </summary>
-        public int ToMinutesPart
-        {
-            get { return IExecute<int>("toMinutesPart"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toNanos()"/> 
-        /// </summary>
-        public long ToNanos
-        {
-            get { return IExecute<long>("toNanos"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toNanosPart()"/> 
-        /// </summary>
-        public int ToNanosPart
-        {
-            get { return IExecute<int>("toNanosPart"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toSeconds()"/> 
-        /// </summary>
-        public long ToSeconds
-        {
-            get { return IExecute<long>("toSeconds"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toSecondsPart()"/> 
-        /// </summary>
-        public int ToSecondsPart
-        {
-            get { return IExecute<int>("toSecondsPart"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#getUnits()"/> 
         /// </summary>
         public Java.Util.List<Java.Time.Temporal.TemporalUnit> Units
         {
             get { return IExecute<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#isNegative()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsNegative()
+        {
+            return IExecute<bool>("isNegative");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#isZero()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsZero()
+        {
+            return IExecute<bool>("isZero");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#compareTo(java.lang.Object)"/>
@@ -313,6 +219,60 @@ namespace Java.Time
         public int CompareTo(Java.Time.Duration arg0)
         {
             return IExecute<int>("compareTo", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toHoursPart()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int ToHoursPart()
+        {
+            return IExecute<int>("toHoursPart");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMillisPart()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int ToMillisPart()
+        {
+            return IExecute<int>("toMillisPart");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMinutesPart()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int ToMinutesPart()
+        {
+            return IExecute<int>("toMinutesPart");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toNanosPart()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int ToNanosPart()
+        {
+            return IExecute<int>("toNanosPart");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toSecondsPart()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int ToSecondsPart()
+        {
+            return IExecute<int>("toSecondsPart");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#abs()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public Java.Time.Duration Abs()
+        {
+            return IExecute<Java.Time.Duration>("abs");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#dividedBy(long)"/>
@@ -404,6 +364,15 @@ namespace Java.Time
         public Java.Time.Duration MultipliedBy(long arg0)
         {
             return IExecute<Java.Time.Duration>("multipliedBy", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#negated()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public Java.Time.Duration Negated()
+        {
+            return IExecute<Java.Time.Duration>("negated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#plus(java.time.Duration)"/>
@@ -540,6 +509,69 @@ namespace Java.Time
         public long Get(Java.Time.Temporal.TemporalUnit arg0)
         {
             return IExecute<long>("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toDays()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToDays()
+        {
+            return IExecute<long>("toDays");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toDaysPart()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToDaysPart()
+        {
+            return IExecute<long>("toDaysPart");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toHours()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToHours()
+        {
+            return IExecute<long>("toHours");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMillis()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToMillis()
+        {
+            return IExecute<long>("toMillis");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toMinutes()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToMinutes()
+        {
+            return IExecute<long>("toMinutes");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toNanos()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToNanos()
+        {
+            return IExecute<long>("toNanos");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Duration.html#toSeconds()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToSeconds()
+        {
+            return IExecute<long>("toSeconds");
         }
 
         #endregion

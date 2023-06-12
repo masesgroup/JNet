@@ -400,20 +400,6 @@ namespace Javax.Swing.Text
                 get { return IExecute<int>("getChildCount"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#children()"/> 
-            /// </summary>
-            public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> Children
-            {
-                get { return IExecute<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("children"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#copyAttributes()"/> 
-            /// </summary>
-            public Javax.Swing.Text.AttributeSet CopyAttributes
-            {
-                get { return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getDocument()"/> 
             /// </summary>
             public Javax.Swing.Text.Document Document
@@ -433,13 +419,6 @@ namespace Javax.Swing.Text
             public int EndOffset
             {
                 get { return IExecute<int>("getEndOffset"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isLeaf()"/> 
-            /// </summary>
-            public bool IsLeaf
-            {
-                get { return IExecute<bool>("isLeaf"); }
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getName()"/> 
@@ -477,6 +456,15 @@ namespace Javax.Swing.Text
                 get { return IExecute<int>("getStartOffset"); }
             }
             /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#isLeaf()"/>
+            /// </summary>
+
+            /// <returns><see cref="bool"/></returns>
+            public bool IsLeaf()
+            {
+                return IExecute<bool>("isLeaf");
+            }
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElementIndex(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -484,6 +472,15 @@ namespace Javax.Swing.Text
             public int GetElementIndex(int arg0)
             {
                 return IExecute<int>("getElementIndex", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#children()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Util.Enumeration"/></returns>
+            public Java.Util.Enumeration<Javax.Swing.Tree.TreeNode> Children()
+            {
+                return IExecute<Java.Util.Enumeration<Javax.Swing.Tree.TreeNode>>("children");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getElement(int)"/>
@@ -548,6 +545,15 @@ namespace Javax.Swing.Text
             public object GetAttribute(object arg0)
             {
                 return IExecute("getAttribute", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#copyAttributes()"/>
+            /// </summary>
+
+            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            public Javax.Swing.Text.AttributeSet CopyAttributes()
+            {
+                return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#getChildAt(int)"/>
@@ -797,11 +803,13 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#length()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#length()"/>
             /// </summary>
-            public int Length
+
+            /// <returns><see cref="int"/></returns>
+            public int Length()
             {
-                get { return IExecute<int>("length"); }
+                return IExecute<int>("length");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getString(int,int)"/>

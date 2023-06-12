@@ -37,10 +37,6 @@ namespace Javax.Script
         /// </summary>
         Javax.Script.ScriptContext Context { get; set; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()"/> 
-        /// </summary>
-        Javax.Script.Bindings CreateBindings { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getFactory()"/> 
         /// </summary>
         Javax.Script.ScriptEngineFactory Factory { get; }
@@ -96,6 +92,12 @@ namespace Javax.Script
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="object"/></returns>
         object Get(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Script.Bindings"/></returns>
+        Javax.Script.Bindings CreateBindings();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getBindings(int)"/>
         /// </summary>
@@ -181,13 +183,6 @@ namespace Javax.Script
             get { return IExecute<Javax.Script.ScriptContext>("getContext"); } set { IExecute("setContext", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()"/> 
-        /// </summary>
-        public Javax.Script.Bindings CreateBindings
-        {
-            get { return IExecute<Javax.Script.Bindings>("createBindings"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getFactory()"/> 
         /// </summary>
         public Javax.Script.ScriptEngineFactory Factory
@@ -266,6 +261,15 @@ namespace Javax.Script
         public object Get(string arg0)
         {
             return IExecute("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Script.Bindings"/></returns>
+        public Javax.Script.Bindings CreateBindings()
+        {
+            return IExecute<Javax.Script.Bindings>("createBindings");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getBindings(int)"/>

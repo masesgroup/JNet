@@ -88,13 +88,6 @@ namespace Javax.Swing.Text.Html
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#values()"/> 
-            /// </summary>
-            public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType[] Values
-            {
-                get { return SExecuteArray<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -102,6 +95,15 @@ namespace Javax.Swing.Text.Html
             public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType ValueOf(string arg0)
             {
                 return SExecute<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Javax.Swing.Text.Html.FormSubmitEvent.MethodType"/></returns>
+            public static Javax.Swing.Text.Html.FormSubmitEvent.MethodType[] Values()
+            {
+                return SExecuteArray<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>(LocalBridgeClazz, "values");
             }
 
             #endregion

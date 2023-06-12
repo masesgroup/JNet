@@ -42,11 +42,13 @@ namespace Javax.Xml.Transform
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newDefaultInstance()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newDefaultInstance()"/>
         /// </summary>
-        public static Javax.Xml.Transform.TransformerFactory NewDefaultInstance
+
+        /// <returns><see cref="Javax.Xml.Transform.TransformerFactory"/></returns>
+        public static Javax.Xml.Transform.TransformerFactory NewDefaultInstance()
         {
-            get { return SExecute<Javax.Xml.Transform.TransformerFactory>(LocalBridgeClazz, "newDefaultInstance"); }
+            return SExecute<Javax.Xml.Transform.TransformerFactory>(LocalBridgeClazz, "newDefaultInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newInstance()"/>

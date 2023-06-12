@@ -222,48 +222,6 @@ namespace Javax.Swing
             get { return IExecute<bool>("getInvokesStopCellEditing"); } set { IExecute("setInvokesStopCellEditing", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditable()"/> 
-        /// </summary>
-        public bool IsEditable
-        {
-            get { return IExecute<bool>("isEditable"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditing()"/> 
-        /// </summary>
-        public bool IsEditing
-        {
-            get { return IExecute<bool>("isEditing"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isFixedRowHeight()"/> 
-        /// </summary>
-        public bool IsFixedRowHeight
-        {
-            get { return IExecute<bool>("isFixedRowHeight"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isLargeModel()"/> 
-        /// </summary>
-        public bool IsLargeModel
-        {
-            get { return IExecute<bool>("isLargeModel"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRootVisible()"/> 
-        /// </summary>
-        public bool IsRootVisible
-        {
-            get { return IExecute<bool>("isRootVisible"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isSelectionEmpty()"/> 
-        /// </summary>
-        public bool IsSelectionEmpty
-        {
-            get { return IExecute<bool>("isSelectionEmpty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getLastSelectedPathComponent()"/> 
         /// </summary>
         public object LastSelectedPathComponent
@@ -390,13 +348,6 @@ namespace Javax.Swing
             get { return IExecute<bool>("getShowsRootHandles"); } set { IExecute("setShowsRootHandles", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#stopEditing()"/> 
-        /// </summary>
-        public bool StopEditing
-        {
-            get { return IExecute<bool>("stopEditing"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getToggleClickCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setToggleClickCount(int)"/>
         /// </summary>
         public int ToggleClickCount
@@ -459,6 +410,24 @@ namespace Javax.Swing
             return IExecute<bool>("isCollapsed", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEditable()
+        {
+            return IExecute<bool>("isEditable");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isEditing()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEditing()
+        {
+            return IExecute<bool>("isEditing");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isExpanded(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -475,6 +444,24 @@ namespace Javax.Swing
         public bool IsExpanded(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("isExpanded", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isFixedRowHeight()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFixedRowHeight()
+        {
+            return IExecute<bool>("isFixedRowHeight");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isLargeModel()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLargeModel()
+        {
+            return IExecute<bool>("isLargeModel");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isPathEditable(javax.swing.tree.TreePath)"/>
@@ -495,6 +482,15 @@ namespace Javax.Swing
             return IExecute<bool>("isPathSelected", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRootVisible()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRootVisible()
+        {
+            return IExecute<bool>("isRootVisible");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isRowSelected(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -504,6 +500,15 @@ namespace Javax.Swing
             return IExecute<bool>("isRowSelected", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isSelectionEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSelectionEmpty()
+        {
+            return IExecute<bool>("isSelectionEmpty");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#isVisible(javax.swing.tree.TreePath)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Tree.TreePath"/></param>
@@ -511,6 +516,15 @@ namespace Javax.Swing
         public bool IsVisible(Javax.Swing.Tree.TreePath arg0)
         {
             return IExecute<bool>("isVisible", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#stopEditing()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool StopEditing()
+        {
+            return IExecute<bool>("stopEditing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getClosestRowForLocation(int,int)"/>

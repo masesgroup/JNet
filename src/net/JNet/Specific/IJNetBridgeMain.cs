@@ -27,7 +27,10 @@ namespace MASES.JNet.Specific
     public interface IJNetBridgeMain
     {
     }
-
+    /// <summary>
+    /// The class implementing <see cref="IJNetBridgeMain"/> usable to create runnable 
+    /// </summary>
+    /// <typeparam name="TClass"></typeparam>
     public abstract class JNetBridgeMain<TClass> : JVMBridgeBase<TClass>, IJNetBridgeMain
         where TClass : JNetBridgeMain<TClass>, new()
     {

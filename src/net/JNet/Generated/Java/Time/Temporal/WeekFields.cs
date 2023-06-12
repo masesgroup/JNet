@@ -77,13 +77,6 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#dayOfWeek()"/> 
-        /// </summary>
-        public Java.Time.Temporal.TemporalField DayOfWeek
-        {
-            get { return IExecute<Java.Time.Temporal.TemporalField>("dayOfWeek"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#getFirstDayOfWeek()"/> 
         /// </summary>
         public Java.Time.DayOfWeek FirstDayOfWeek
@@ -98,32 +91,49 @@ namespace Java.Time.Temporal
             get { return IExecute<int>("getMinimalDaysInFirstWeek"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekBasedYear()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#dayOfWeek()"/>
         /// </summary>
-        public Java.Time.Temporal.TemporalField WeekBasedYear
+
+        /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
+        public Java.Time.Temporal.TemporalField DayOfWeek()
         {
-            get { return IExecute<Java.Time.Temporal.TemporalField>("weekBasedYear"); }
+            return IExecute<Java.Time.Temporal.TemporalField>("dayOfWeek");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfMonth()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekBasedYear()"/>
         /// </summary>
-        public Java.Time.Temporal.TemporalField WeekOfMonth
+
+        /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
+        public Java.Time.Temporal.TemporalField WeekBasedYear()
         {
-            get { return IExecute<Java.Time.Temporal.TemporalField>("weekOfMonth"); }
+            return IExecute<Java.Time.Temporal.TemporalField>("weekBasedYear");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfWeekBasedYear()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfMonth()"/>
         /// </summary>
-        public Java.Time.Temporal.TemporalField WeekOfWeekBasedYear
+
+        /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
+        public Java.Time.Temporal.TemporalField WeekOfMonth()
         {
-            get { return IExecute<Java.Time.Temporal.TemporalField>("weekOfWeekBasedYear"); }
+            return IExecute<Java.Time.Temporal.TemporalField>("weekOfMonth");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfYear()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfWeekBasedYear()"/>
         /// </summary>
-        public Java.Time.Temporal.TemporalField WeekOfYear
+
+        /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
+        public Java.Time.Temporal.TemporalField WeekOfWeekBasedYear()
         {
-            get { return IExecute<Java.Time.Temporal.TemporalField>("weekOfYear"); }
+            return IExecute<Java.Time.Temporal.TemporalField>("weekOfWeekBasedYear");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#weekOfYear()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Temporal.TemporalField"/></returns>
+        public Java.Time.Temporal.TemporalField WeekOfYear()
+        {
+            return IExecute<Java.Time.Temporal.TemporalField>("weekOfYear");
         }
 
         #endregion

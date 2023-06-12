@@ -60,27 +60,6 @@ namespace Java.Util.Concurrent.Locks
             get { return IExecute<Java.Lang.Thread>("getFirstQueuedThread"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasContended()"/> 
-        /// </summary>
-        public bool HasContended
-        {
-            get { return IExecute<bool>("hasContended"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasQueuedPredecessors()"/> 
-        /// </summary>
-        public bool HasQueuedPredecessors
-        {
-            get { return IExecute<bool>("hasQueuedPredecessors"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasQueuedThreads()"/> 
-        /// </summary>
-        public bool HasQueuedThreads
-        {
-            get { return IExecute<bool>("hasQueuedThreads"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#getQueuedThreads()"/> 
         /// </summary>
         public Java.Util.Collection<Java.Lang.Thread> QueuedThreads
@@ -100,6 +79,33 @@ namespace Java.Util.Concurrent.Locks
         public Java.Util.Collection<Java.Lang.Thread> SharedQueuedThreads
         {
             get { return IExecute<Java.Util.Collection<Java.Lang.Thread>>("getSharedQueuedThreads"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasContended()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasContended()
+        {
+            return IExecute<bool>("hasContended");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasQueuedPredecessors()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasQueuedPredecessors()
+        {
+            return IExecute<bool>("hasQueuedPredecessors");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasQueuedThreads()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasQueuedThreads()
+        {
+            return IExecute<bool>("hasQueuedThreads");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html#hasWaiters(java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject)"/>

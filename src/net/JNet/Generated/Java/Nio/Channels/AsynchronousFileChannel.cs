@@ -71,13 +71,6 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#size()"/> 
-        /// </summary>
-        public long Size
-        {
-            get { return IExecute<long>("size"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#lock(long,long,boolean,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -169,6 +162,16 @@ namespace Java.Nio.Channels
         public Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock> Lock(long arg0, long arg1, bool arg2)
         {
             return IExecute<Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock>>("lock", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#size()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public long Size()
+        {
+            return IExecute<long>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html#force(boolean)"/>

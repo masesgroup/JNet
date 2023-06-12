@@ -90,39 +90,47 @@ namespace Javax.Swing.Text
             get { return IExecute<Javax.Swing.Text.GlyphView.GlyphPainter>("getGlyphPainter"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isStrikeThrough()"/> 
-        /// </summary>
-        public bool IsStrikeThrough
-        {
-            get { return IExecute<bool>("isStrikeThrough"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isSubscript()"/> 
-        /// </summary>
-        public bool IsSubscript
-        {
-            get { return IExecute<bool>("isSubscript"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isSuperscript()"/> 
-        /// </summary>
-        public bool IsSuperscript
-        {
-            get { return IExecute<bool>("isSuperscript"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isUnderline()"/> 
-        /// </summary>
-        public bool IsUnderline
-        {
-            get { return IExecute<bool>("isUnderline"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getTabExpander()"/> 
         /// </summary>
         public Javax.Swing.Text.TabExpander TabExpander
         {
             get { return IExecute<Javax.Swing.Text.TabExpander>("getTabExpander"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isStrikeThrough()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsStrikeThrough()
+        {
+            return IExecute<bool>("isStrikeThrough");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isSubscript()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSubscript()
+        {
+            return IExecute<bool>("isSubscript");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isSuperscript()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSuperscript()
+        {
+            return IExecute<bool>("isSuperscript");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#isUnderline()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsUnderline()
+        {
+            return IExecute<bool>("isUnderline");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/GlyphView.html#getPartialSpan(int,int)"/>

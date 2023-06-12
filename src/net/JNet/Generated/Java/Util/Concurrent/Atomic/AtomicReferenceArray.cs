@@ -54,13 +54,6 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#length()"/> 
-        /// </summary>
-        public int Length
-        {
-            get { return IExecute<int>("length"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndSet(int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -237,6 +230,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("updateAndGet", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#length()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Length()
+        {
+            return IExecute<int>("length");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#lazySet(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -332,13 +334,6 @@ namespace Java.Util.Concurrent.Atomic
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#length()"/> 
-        /// </summary>
-        public int Length
-        {
-            get { return IExecute<int>("length"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndSet(int,java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -514,6 +509,15 @@ namespace Java.Util.Concurrent.Atomic
         public E UpdateAndGet(int arg0, Java.Util.Function.UnaryOperator<E> arg1)
         {
             return IExecute<E>("updateAndGet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#length()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Length()
+        {
+            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#lazySet(int,java.lang.Object)"/>

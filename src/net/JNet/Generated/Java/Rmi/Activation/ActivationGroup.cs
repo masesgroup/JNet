@@ -46,13 +46,6 @@ namespace Java.Rmi.Activation
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#currentGroupID()"/> 
-        /// </summary>
-        public static Java.Rmi.Activation.ActivationGroupID CurrentGroupID
-        {
-            get { return SExecute<Java.Rmi.Activation.ActivationGroupID>(LocalBridgeClazz, "currentGroupID"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#getSystem()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#setSystem(java.rmi.activation.ActivationSystem)"/>
         /// </summary>
         public static Java.Rmi.Activation.ActivationSystem System
@@ -70,6 +63,15 @@ namespace Java.Rmi.Activation
         public static Java.Rmi.Activation.ActivationGroup CreateGroup(Java.Rmi.Activation.ActivationGroupID arg0, Java.Rmi.Activation.ActivationGroupDesc arg1, long arg2)
         {
             return SExecute<Java.Rmi.Activation.ActivationGroup>(LocalBridgeClazz, "createGroup", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#currentGroupID()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Rmi.Activation.ActivationGroupID"/></returns>
+        public static Java.Rmi.Activation.ActivationGroupID CurrentGroupID()
+        {
+            return SExecute<Java.Rmi.Activation.ActivationGroupID>(LocalBridgeClazz, "currentGroupID");
         }
 
         #endregion

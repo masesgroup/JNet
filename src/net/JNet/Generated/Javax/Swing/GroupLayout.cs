@@ -76,13 +76,6 @@ namespace Javax.Swing
             get { return IExecute<bool>("getAutoCreateGaps"); } set { IExecute("setAutoCreateGaps", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createSequentialGroup()"/> 
-        /// </summary>
-        public Javax.Swing.GroupLayout.SequentialGroup CreateSequentialGroup
-        {
-            get { return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("createSequentialGroup"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#getHonorsVisibility()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setHonorsVisibility(boolean)"/>
         /// </summary>
         public bool HonorsVisibility
@@ -178,6 +171,15 @@ namespace Javax.Swing
         public Javax.Swing.GroupLayout.ParallelGroup CreateParallelGroup(Javax.Swing.GroupLayout.Alignment arg0)
         {
             return IExecute<Javax.Swing.GroupLayout.ParallelGroup>("createParallelGroup", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#createSequentialGroup()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.GroupLayout.SequentialGroup"/></returns>
+        public Javax.Swing.GroupLayout.SequentialGroup CreateSequentialGroup()
+        {
+            return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("createSequentialGroup");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#addLayoutComponent(java.awt.Component,java.lang.Object)"/>
@@ -309,13 +311,6 @@ namespace Javax.Swing
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#values()"/> 
-            /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment[] Values
-            {
-                get { return SExecuteArray<Javax.Swing.GroupLayout.Alignment>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -323,6 +318,15 @@ namespace Javax.Swing
             public static Javax.Swing.GroupLayout.Alignment ValueOf(string arg0)
             {
                 return SExecute<Javax.Swing.GroupLayout.Alignment>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Javax.Swing.GroupLayout.Alignment"/></returns>
+            public static Javax.Swing.GroupLayout.Alignment[] Values()
+            {
+                return SExecuteArray<Javax.Swing.GroupLayout.Alignment>(LocalBridgeClazz, "values");
             }
 
             #endregion

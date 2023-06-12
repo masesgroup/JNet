@@ -42,13 +42,6 @@ namespace Java.Util.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#empty()"/> 
-        /// </summary>
-        public static Java.Util.Stream.Stream Empty
-        {
-            get { return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "empty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#concat(java.util.stream.Stream,java.util.stream.Stream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Stream.Stream"/></param>
@@ -57,6 +50,15 @@ namespace Java.Util.Stream
         public static Java.Util.Stream.Stream Concat(Java.Util.Stream.Stream arg0, Java.Util.Stream.Stream arg1)
         {
             return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "concat", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#empty()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public static Java.Util.Stream.Stream Empty()
+        {
+            return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#generate(java.util.function.Supplier)"/>
@@ -128,34 +130,6 @@ namespace Java.Util.Stream
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/> 
-        /// </summary>
-        public long Count
-        {
-            get { return IExecute<long>("count"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream Distinct
-        {
-            get { return IExecute<Java.Util.Stream.Stream>("distinct"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/> 
-        /// </summary>
-        public Java.Util.Optional FindAny
-        {
-            get { return IExecute<Java.Util.Optional>("findAny"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/> 
-        /// </summary>
-        public Java.Util.Optional FindFirst
-        {
-            get { return IExecute<Java.Util.Optional>("findFirst"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray(java.util.function.IntFunction)"/>
         /// </summary>
@@ -251,6 +225,24 @@ namespace Java.Util.Stream
             return IExecuteArray<object>("toArray");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional FindAny()
+        {
+            return IExecute<Java.Util.Optional>("findAny");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional FindFirst()
+        {
+            return IExecute<Java.Util.Optional>("findFirst");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#max(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
@@ -332,6 +324,15 @@ namespace Java.Util.Stream
             return IExecute<Java.Util.Stream.LongStream>("mapToLong", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Distinct()
+        {
+            return IExecute<Java.Util.Stream.Stream>("distinct");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#filter(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
@@ -384,6 +385,15 @@ namespace Java.Util.Stream
         public Java.Util.Stream.Stream Sorted(Java.Util.Comparator arg0)
         {
             return IExecute<Java.Util.Stream.Stream>("sorted", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long Count()
+        {
+            return IExecute<long>("count");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.lang.Object,java.util.function.BinaryOperator)"/>
@@ -562,22 +572,6 @@ namespace Java.Util.Stream
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/> 
-        /// </summary>
-        long Count { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/> 
-        /// </summary>
-        Java.Util.Stream.Stream<T> Distinct { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/> 
-        /// </summary>
-        Java.Util.Optional<T> FindAny { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/> 
-        /// </summary>
-        Java.Util.Optional<T> FindFirst { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray(java.util.function.IntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
@@ -660,6 +654,18 @@ namespace Java.Util.Stream
         /// <returns><see cref="object"/></returns>
         object[] ToArray();
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        Java.Util.Optional<T> FindAny();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        Java.Util.Optional<T> FindFirst();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#max(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
@@ -725,6 +731,12 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         Java.Util.Stream.LongStream MapToLong<Arg0objectSuperT>(Java.Util.Function.ToLongFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        Java.Util.Stream.Stream<T> Distinct();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#filter(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
@@ -763,6 +775,12 @@ namespace Java.Util.Stream
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         Java.Util.Stream.Stream<T> Sorted<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        long Count();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
@@ -828,13 +846,6 @@ namespace Java.Util.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#empty()"/> 
-        /// </summary>
-        public static Java.Util.Stream.Stream<T> Empty
-        {
-            get { return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "empty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#concat(java.util.stream.Stream,java.util.stream.Stream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Stream.Stream"/></param>
@@ -845,6 +856,15 @@ namespace Java.Util.Stream
         public static Java.Util.Stream.Stream<T> Concat<Arg0ExtendsT, Arg1ExtendsT>(Java.Util.Stream.Stream<Arg0ExtendsT> arg0, Java.Util.Stream.Stream<Arg1ExtendsT> arg1) where Arg0ExtendsT: T where Arg1ExtendsT: T
         {
             return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "concat", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#empty()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public static Java.Util.Stream.Stream<T> Empty()
+        {
+            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#generate(java.util.function.Supplier)"/>
@@ -918,34 +938,6 @@ namespace Java.Util.Stream
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/> 
-        /// </summary>
-        public long Count
-        {
-            get { return IExecute<long>("count"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream<T> Distinct
-        {
-            get { return IExecute<Java.Util.Stream.Stream<T>>("distinct"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/> 
-        /// </summary>
-        public Java.Util.Optional<T> FindAny
-        {
-            get { return IExecute<Java.Util.Optional<T>>("findAny"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/> 
-        /// </summary>
-        public Java.Util.Optional<T> FindFirst
-        {
-            get { return IExecute<Java.Util.Optional<T>>("findFirst"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#toArray(java.util.function.IntFunction)"/>
         /// </summary>
@@ -1059,6 +1051,24 @@ namespace Java.Util.Stream
             return IExecuteArray<object>("toArray");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findAny()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<T> FindAny()
+        {
+            return IExecute<Java.Util.Optional<T>>("findAny");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#findFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<T> FindFirst()
+        {
+            return IExecute<Java.Util.Optional<T>>("findFirst");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#max(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
@@ -1151,6 +1161,15 @@ namespace Java.Util.Stream
             return IExecute<Java.Util.Stream.LongStream>("mapToLong", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#distinct()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<T> Distinct()
+        {
+            return IExecute<Java.Util.Stream.Stream<T>>("distinct");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#filter(java.util.function.Predicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Predicate"/></param>
@@ -1206,6 +1225,15 @@ namespace Java.Util.Stream
         public Java.Util.Stream.Stream<T> Sorted<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
             return IExecute<Java.Util.Stream.Stream<T>>("sorted", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long Count()
+        {
+            return IExecute<long>("count");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.lang.Object,java.util.function.BinaryOperator)"/>

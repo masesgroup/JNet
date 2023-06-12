@@ -125,13 +125,6 @@ namespace Javax.Sql.Rowset.Spi
             get { return IExecute<Javax.Sql.RowSetWriter>("getRowSetWriter"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#supportsUpdatableView()"/> 
-        /// </summary>
-        public int SupportsUpdatableView
-        {
-            get { return IExecute<int>("supportsUpdatableView"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#getVendor()"/> 
         /// </summary>
         public string Vendor
@@ -144,6 +137,15 @@ namespace Javax.Sql.Rowset.Spi
         public string Version
         {
             get { return IExecute<string>("getVersion"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#supportsUpdatableView()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int SupportsUpdatableView()
+        {
+            return IExecute<int>("supportsUpdatableView");
         }
 
         #endregion

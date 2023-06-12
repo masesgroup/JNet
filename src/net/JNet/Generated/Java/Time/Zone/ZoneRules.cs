@@ -68,13 +68,6 @@ namespace Java.Time.Zone
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isFixedOffset()"/> 
-        /// </summary>
-        public bool IsFixedOffset
-        {
-            get { return IExecute<bool>("isFixedOffset"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#getTransitionRules()"/> 
         /// </summary>
         public Java.Util.List<Java.Time.Zone.ZoneOffsetTransitionRule> TransitionRules
@@ -96,6 +89,15 @@ namespace Java.Time.Zone
         public bool IsDaylightSavings(Java.Time.Instant arg0)
         {
             return IExecute<bool>("isDaylightSavings", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isFixedOffset()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFixedOffset()
+        {
+            return IExecute<bool>("isFixedOffset");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html#isValidOffset(java.time.LocalDateTime,java.time.ZoneOffset)"/>

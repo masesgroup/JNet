@@ -50,11 +50,13 @@ namespace Java.Nio
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#nativeOrder()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html#nativeOrder()"/>
         /// </summary>
-        public static Java.Nio.ByteOrder NativeOrder
+
+        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        public static Java.Nio.ByteOrder NativeOrder()
         {
-            get { return SExecute<Java.Nio.ByteOrder>(LocalBridgeClazz, "nativeOrder"); }
+            return SExecute<Java.Nio.ByteOrder>(LocalBridgeClazz, "nativeOrder");
         }
 
         #endregion

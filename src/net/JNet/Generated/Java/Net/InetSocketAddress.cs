@@ -103,18 +103,20 @@ namespace Java.Net
             get { return IExecute<string>("getHostString"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#isUnresolved()"/> 
-        /// </summary>
-        public bool IsUnresolved
-        {
-            get { return IExecute<bool>("isUnresolved"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#getPort()"/> 
         /// </summary>
         public int Port
         {
             get { return IExecute<int>("getPort"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#isUnresolved()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsUnresolved()
+        {
+            return IExecute<bool>("isUnresolved");
         }
 
         #endregion

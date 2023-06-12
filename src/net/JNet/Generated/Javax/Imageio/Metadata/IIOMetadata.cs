@@ -46,13 +46,6 @@ namespace Javax.Imageio.Metadata
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#activateController()"/> 
-        /// </summary>
-        public bool ActivateController
-        {
-            get { return IExecute<bool>("activateController"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getController()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#setController(javax.imageio.metadata.IIOMetadataController)"/>
         /// </summary>
         public Javax.Imageio.Metadata.IIOMetadataController Controller
@@ -74,27 +67,6 @@ namespace Javax.Imageio.Metadata
             get { return IExecuteArray<string>("getExtraMetadataFormatNames"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#hasController()"/> 
-        /// </summary>
-        public bool HasController
-        {
-            get { return IExecute<bool>("hasController"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isReadOnly()"/> 
-        /// </summary>
-        public bool IsReadOnly
-        {
-            get { return IExecute<bool>("isReadOnly"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isStandardMetadataFormatSupported()"/> 
-        /// </summary>
-        public bool IsStandardMetadataFormatSupported
-        {
-            get { return IExecute<bool>("isStandardMetadataFormatSupported"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormatNames()"/> 
         /// </summary>
         public string[] MetadataFormatNames
@@ -107,6 +79,15 @@ namespace Javax.Imageio.Metadata
         public string NativeMetadataFormatName
         {
             get { return IExecute<string>("getNativeMetadataFormatName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isReadOnly()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsReadOnly()
+        {
+            return IExecute<bool>("isReadOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getAsTree(java.lang.String)"/>
@@ -133,6 +114,33 @@ namespace Javax.Imageio.Metadata
         public void Reset()
         {
             IExecute("reset");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#activateController()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool ActivateController()
+        {
+            return IExecute<bool>("activateController");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#hasController()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasController()
+        {
+            return IExecute<bool>("hasController");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#isStandardMetadataFormatSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsStandardMetadataFormatSupported()
+        {
+            return IExecute<bool>("isStandardMetadataFormatSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#getMetadataFormat(java.lang.String)"/>

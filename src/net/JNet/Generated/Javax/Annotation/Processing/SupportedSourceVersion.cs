@@ -33,9 +33,11 @@ namespace Javax.Annotation.Processing
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html#value()"/>
         /// </summary>
-        Javax.Lang.Model.SourceVersion Value { get; }
+
+        /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
+        Javax.Lang.Model.SourceVersion Value();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Javax.Annotation.Processing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html#value()"/>
         /// </summary>
-        public Javax.Lang.Model.SourceVersion Value
+
+        /// <returns><see cref="Javax.Lang.Model.SourceVersion"/></returns>
+        public Javax.Lang.Model.SourceVersion Value()
         {
-            get { return IExecute<Javax.Lang.Model.SourceVersion>("value"); }
+            return IExecute<Javax.Lang.Model.SourceVersion>("value");
         }
 
         #endregion

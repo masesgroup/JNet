@@ -50,18 +50,22 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/>
         /// </summary>
-        public object Element
+
+        /// <returns><see cref="object"/></returns>
+        public object Element()
         {
-            get { return IExecute("element"); }
+            return IExecute("element");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
         /// </summary>
-        public object Remove
+
+        /// <returns><see cref="object"/></returns>
+        public object Remove()
         {
-            get { return IExecute("remove"); }
+            return IExecute("remove");
         }
 
         #endregion
@@ -103,18 +107,22 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#element()"/>
         /// </summary>
-        public E Element
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E Element()
         {
-            get { return IExecute<E>("element"); }
+            return IExecute<E>("element");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractQueue.html#remove()"/>
         /// </summary>
-        public E Remove
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E Remove()
         {
-            get { return IExecute<E>("remove"); }
+            return IExecute<E>("remove");
         }
 
         #endregion

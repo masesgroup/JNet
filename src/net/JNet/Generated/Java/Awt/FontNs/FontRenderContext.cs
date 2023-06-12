@@ -80,20 +80,6 @@ namespace Java.Awt.FontNs
             get { return IExecute("getFractionalMetricsHint"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isAntiAliased()"/> 
-        /// </summary>
-        public bool IsAntiAliased
-        {
-            get { return IExecute<bool>("isAntiAliased"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isTransformed()"/> 
-        /// </summary>
-        public bool IsTransformed
-        {
-            get { return IExecute<bool>("isTransformed"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#getTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform Transform
@@ -108,11 +94,31 @@ namespace Java.Awt.FontNs
             get { return IExecute<int>("getTransformType"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#usesFractionalMetrics()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isAntiAliased()"/>
         /// </summary>
-        public bool UsesFractionalMetrics
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAntiAliased()
         {
-            get { return IExecute<bool>("usesFractionalMetrics"); }
+            return IExecute<bool>("isAntiAliased");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#isTransformed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTransformed()
+        {
+            return IExecute<bool>("isTransformed");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#usesFractionalMetrics()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool UsesFractionalMetrics()
+        {
+            return IExecute<bool>("usesFractionalMetrics");
         }
 
         #endregion

@@ -53,13 +53,6 @@ namespace Javax.Imageio
             get { return IExecuteArray<Java.Util.Locale>("getAvailableLocales"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#canReadRaster()"/> 
-        /// </summary>
-        public bool CanReadRaster
-        {
-            get { return IExecute<bool>("canReadRaster"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getDefaultReadParam()"/> 
         /// </summary>
         public Javax.Imageio.ImageReadParam DefaultReadParam
@@ -81,20 +74,6 @@ namespace Javax.Imageio
             get { return IExecute("getInput"); } set { IExecute("setInput", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isIgnoringMetadata()"/> 
-        /// </summary>
-        public bool IsIgnoringMetadata
-        {
-            get { return IExecute<bool>("isIgnoringMetadata"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isSeekForwardOnly()"/> 
-        /// </summary>
-        public bool IsSeekForwardOnly
-        {
-            get { return IExecute<bool>("isSeekForwardOnly"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getLocale()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#setLocale(java.util.Locale)"/>
         /// </summary>
         public Java.Util.Locale Locale
@@ -114,13 +93,6 @@ namespace Javax.Imageio
         public Javax.Imageio.Spi.ImageReaderSpi OriginatingProvider
         {
             get { return IExecute<Javax.Imageio.Spi.ImageReaderSpi>("getOriginatingProvider"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readerSupportsThumbnails()"/> 
-        /// </summary>
-        public bool ReaderSupportsThumbnails
-        {
-            get { return IExecute<bool>("readerSupportsThumbnails"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getStreamMetadata()"/> 
@@ -191,6 +163,15 @@ namespace Javax.Imageio
             return IExecute<Javax.Imageio.Metadata.IIOMetadata>("getImageMetadata", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#canReadRaster()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool CanReadRaster()
+        {
+            return IExecute<bool>("canReadRaster");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#hasThumbnails(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -199,6 +180,15 @@ namespace Javax.Imageio
         public bool HasThumbnails(int arg0)
         {
             return IExecute<bool>("hasThumbnails", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isIgnoringMetadata()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsIgnoringMetadata()
+        {
+            return IExecute<bool>("isIgnoringMetadata");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isImageTiled(int)"/>
@@ -219,6 +209,24 @@ namespace Javax.Imageio
         public bool IsRandomAccessEasy(int arg0)
         {
             return IExecute<bool>("isRandomAccessEasy", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#isSeekForwardOnly()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSeekForwardOnly()
+        {
+            return IExecute<bool>("isSeekForwardOnly");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#readerSupportsThumbnails()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool ReaderSupportsThumbnails()
+        {
+            return IExecute<bool>("readerSupportsThumbnails");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReader.html#getAspectRatio(int)"/>

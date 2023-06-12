@@ -71,39 +71,11 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arrive()"/> 
-        /// </summary>
-        public int Arrive
-        {
-            get { return IExecute<int>("arrive"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndAwaitAdvance()"/> 
-        /// </summary>
-        public int ArriveAndAwaitAdvance
-        {
-            get { return IExecute<int>("arriveAndAwaitAdvance"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndDeregister()"/> 
-        /// </summary>
-        public int ArriveAndDeregister
-        {
-            get { return IExecute<int>("arriveAndDeregister"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getArrivedParties()"/> 
         /// </summary>
         public int ArrivedParties
         {
             get { return IExecute<int>("getArrivedParties"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#isTerminated()"/> 
-        /// </summary>
-        public bool IsTerminated
-        {
-            get { return IExecute<bool>("isTerminated"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getParent()"/> 
@@ -118,13 +90,6 @@ namespace Java.Util.Concurrent
         public int Phase
         {
             get { return IExecute<int>("getPhase"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#register()"/> 
-        /// </summary>
-        public int Register
-        {
-            get { return IExecute<int>("register"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#getRegisteredParties()"/> 
@@ -146,6 +111,42 @@ namespace Java.Util.Concurrent
         public int UnarrivedParties
         {
             get { return IExecute<int>("getUnarrivedParties"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#isTerminated()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTerminated()
+        {
+            return IExecute<bool>("isTerminated");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arrive()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Arrive()
+        {
+            return IExecute<int>("arrive");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndAwaitAdvance()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int ArriveAndAwaitAdvance()
+        {
+            return IExecute<int>("arriveAndAwaitAdvance");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#arriveAndDeregister()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int ArriveAndDeregister()
+        {
+            return IExecute<int>("arriveAndDeregister");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvance(int)"/>
@@ -187,6 +188,15 @@ namespace Java.Util.Concurrent
         public int BulkRegister(int arg0)
         {
             return IExecute<int>("bulkRegister", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#register()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Register()
+        {
+            return IExecute<int>("register");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#forceTermination()"/>

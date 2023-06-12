@@ -46,46 +46,31 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
-        public bool IsParallel
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsParallel()
         {
-            get { return IExecute<bool>("isParallel"); }
+            return IExecute<bool>("isParallel");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-        public Java.Util.Iterator Iterator
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            get { return IExecute<Java.Util.Iterator>("iterator"); }
+            return IExecute<Java.Util.Iterator>("iterator");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
-        public Java.Util.Stream.BaseStream Parallel
+
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator Spliterator()
         {
-            get { return IExecute<Java.Util.Stream.BaseStream>("parallel"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/> 
-        /// </summary>
-        public Java.Util.Stream.BaseStream Sequential
-        {
-            get { return IExecute<Java.Util.Stream.BaseStream>("sequential"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/> 
-        /// </summary>
-        public Java.Util.Spliterator Spliterator
-        {
-            get { return IExecute<Java.Util.Spliterator>("spliterator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/> 
-        /// </summary>
-        public Java.Util.Stream.BaseStream Unordered
-        {
-            get { return IExecute<Java.Util.Stream.BaseStream>("unordered"); }
+            return IExecute<Java.Util.Spliterator>("spliterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
@@ -95,6 +80,33 @@ namespace Java.Util.Stream
         public Java.Util.Stream.BaseStream OnClose(Java.Lang.Runnable arg0)
         {
             return IExecute<Java.Util.Stream.BaseStream>("onClose", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream Parallel()
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("parallel");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream Sequential()
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("sequential");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream Unordered()
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("unordered");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#close()"/>
@@ -122,35 +134,47 @@ namespace Java.Util.Stream
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
-        bool IsParallel { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsParallel();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-        Java.Util.Iterator<T> Iterator { get; }
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        Java.Util.Iterator<T> Iterator();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
-        S Parallel { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/> 
-        /// </summary>
-        S Sequential { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/> 
-        /// </summary>
-        Java.Util.Spliterator<T> Spliterator { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/> 
-        /// </summary>
-        S Unordered { get; }
+
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        Java.Util.Spliterator<T> Spliterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><typeparamref name="S"/></returns>
         S OnClose(Java.Lang.Runnable arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="S"/></returns>
+        S Parallel();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="S"/></returns>
+        S Sequential();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="S"/></returns>
+        S Unordered();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#close()"/>
         /// </summary>
@@ -191,46 +215,31 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#isParallel()"/>
         /// </summary>
-        public bool IsParallel
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsParallel()
         {
-            get { return IExecute<bool>("isParallel"); }
+            return IExecute<bool>("isParallel");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-        public Java.Util.Iterator<T> Iterator
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<T> Iterator()
         {
-            get { return IExecute<Java.Util.Iterator<T>>("iterator"); }
+            return IExecute<Java.Util.Iterator<T>>("iterator");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/>
         /// </summary>
-        public S Parallel
+
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator<T> Spliterator()
         {
-            get { return IExecute<S>("parallel"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/> 
-        /// </summary>
-        public S Sequential
-        {
-            get { return IExecute<S>("sequential"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#spliterator()"/> 
-        /// </summary>
-        public Java.Util.Spliterator<T> Spliterator
-        {
-            get { return IExecute<Java.Util.Spliterator<T>>("spliterator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/> 
-        /// </summary>
-        public S Unordered
-        {
-            get { return IExecute<S>("unordered"); }
+            return IExecute<Java.Util.Spliterator<T>>("spliterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#onClose(java.lang.Runnable)"/>
@@ -240,6 +249,33 @@ namespace Java.Util.Stream
         public S OnClose(Java.Lang.Runnable arg0)
         {
             return IExecute<S>("onClose", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#parallel()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="S"/></returns>
+        public S Parallel()
+        {
+            return IExecute<S>("parallel");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#sequential()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="S"/></returns>
+        public S Sequential()
+        {
+            return IExecute<S>("sequential");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#unordered()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="S"/></returns>
+        public S Unordered()
+        {
+            return IExecute<S>("unordered");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/BaseStream.html#close()"/>

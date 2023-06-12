@@ -42,13 +42,6 @@ namespace Java.Lang.Invoke
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#publicLookup()"/> 
-        /// </summary>
-        public static Java.Lang.Invoke.MethodHandles.Lookup PublicLookup
-        {
-            get { return SExecute<Java.Lang.Invoke.MethodHandles.Lookup>(LocalBridgeClazz, "publicLookup"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -431,6 +424,15 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandles.Lookup>(LocalBridgeClazz, "privateLookupIn", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#publicLookup()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
+        public static Java.Lang.Invoke.MethodHandles.Lookup PublicLookup()
+        {
+            return SExecute<Java.Lang.Invoke.MethodHandles.Lookup>(LocalBridgeClazz, "publicLookup");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#arrayElementVarHandle(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -515,25 +517,22 @@ namespace Java.Lang.Invoke
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()"/>
             /// </summary>
-            public bool HasPrivateAccess
+
+            /// <returns><see cref="bool"/></returns>
+            public bool HasPrivateAccess()
             {
-                get { return IExecute<bool>("hasPrivateAccess"); }
+                return IExecute<bool>("hasPrivateAccess");
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupClass()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()"/>
             /// </summary>
-            public Java.Lang.Class LookupClass
+
+            /// <returns><see cref="int"/></returns>
+            public int LookupModes()
             {
-                get { return IExecute<Java.Lang.Class>("lookupClass"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()"/> 
-            /// </summary>
-            public int LookupModes
-            {
-                get { return IExecute<int>("lookupModes"); }
+                return IExecute<int>("lookupModes");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#accessClass(java.lang.Class)"/>
@@ -565,6 +564,15 @@ namespace Java.Lang.Invoke
             public Java.Lang.Class FindClass(string arg0)
             {
                 return IExecute<Java.Lang.Class>("findClass", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupClass()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Lang.Class"/></returns>
+            public Java.Lang.Class LookupClass()
+            {
+                return IExecute<Java.Lang.Class>("lookupClass");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#bind(java.lang.Object,java.lang.String,java.lang.invoke.MethodType)"/>

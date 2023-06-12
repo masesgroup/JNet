@@ -42,41 +42,6 @@ namespace Java.Util.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#counting()"/> 
-        /// </summary>
-        public static Java.Util.Stream.Collector Counting
-        {
-            get { return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "counting"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toList()"/> 
-        /// </summary>
-        public static Java.Util.Stream.Collector ToList
-        {
-            get { return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "toList"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toSet()"/> 
-        /// </summary>
-        public static Java.Util.Stream.Collector ToSet
-        {
-            get { return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "toSet"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableList()"/> 
-        /// </summary>
-        public static Java.Util.Stream.Collector ToUnmodifiableList
-        {
-            get { return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "toUnmodifiableList"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableSet()"/> 
-        /// </summary>
-        public static Java.Util.Stream.Collector ToUnmodifiableSet
-        {
-            get { return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "toUnmodifiableSet"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#collectingAndThen(java.util.stream.Collector,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Stream.Collector"/></param>
@@ -480,6 +445,16 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.Collector<T, object, int?>>(LocalBridgeClazz, "summingInt", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#counting()"/>
+        /// </summary>
+
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
+        public static Java.Util.Stream.Collector<T, object, long?> Counting<T>()
+        {
+            return SExecute<Java.Util.Stream.Collector<T, object, long?>>(LocalBridgeClazz, "counting");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summingLong(java.util.function.ToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.ToLongFunction"/></param>
@@ -511,6 +486,26 @@ namespace Java.Util.Stream
         public static Java.Util.Stream.Collector<T, object, Java.Util.IntSummaryStatistics> SummarizingInt<T, Arg0objectSuperT>(Java.Util.Function.ToIntFunction<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.IntSummaryStatistics>>(LocalBridgeClazz, "summarizingInt", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toList()"/>
+        /// </summary>
+
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
+        public static Java.Util.Stream.Collector<T, object, Java.Util.List<T>> ToList<T>()
+        {
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.List<T>>>(LocalBridgeClazz, "toList");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableList()"/>
+        /// </summary>
+
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
+        public static Java.Util.Stream.Collector<T, object, Java.Util.List<T>> ToUnmodifiableList<T>()
+        {
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.List<T>>>(LocalBridgeClazz, "toUnmodifiableList");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#summarizingLong(java.util.function.ToLongFunction)"/>
@@ -565,6 +560,26 @@ namespace Java.Util.Stream
         public static Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>> Reducing<T>(Java.Util.Function.BinaryOperator<T> arg0)
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Optional<T>>>(LocalBridgeClazz, "reducing", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toSet()"/>
+        /// </summary>
+
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Set<T>> ToSet<T>()
+        {
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Set<T>>>(LocalBridgeClazz, "toSet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableSet()"/>
+        /// </summary>
+
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Set<T>> ToUnmodifiableSet<T>()
+        {
+            return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Set<T>>>(LocalBridgeClazz, "toUnmodifiableSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html#reducing(java.lang.Object,java.util.function.BinaryOperator)"/>

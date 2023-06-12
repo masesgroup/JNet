@@ -37,13 +37,15 @@ namespace Java.Security.Cert
         /// </summary>
         Java.Util.Set<string> CriticalExtensionOIDs { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/> 
-        /// </summary>
-        bool HasUnsupportedCriticalExtension { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs()"/> 
         /// </summary>
         Java.Util.Set<string> NonCriticalExtensionOIDs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool HasUnsupportedCriticalExtension();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getExtensionValue(java.lang.String)"/>
         /// </summary>
@@ -89,18 +91,20 @@ namespace Java.Security.Cert
             get { return IExecute<Java.Util.Set<string>>("getCriticalExtensionOIDs"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/> 
-        /// </summary>
-        public bool HasUnsupportedCriticalExtension
-        {
-            get { return IExecute<bool>("hasUnsupportedCriticalExtension"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs()"/> 
         /// </summary>
         public Java.Util.Set<string> NonCriticalExtensionOIDs
         {
             get { return IExecute<Java.Util.Set<string>>("getNonCriticalExtensionOIDs"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasUnsupportedCriticalExtension()
+        {
+            return IExecute<bool>("hasUnsupportedCriticalExtension");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getExtensionValue(java.lang.String)"/>

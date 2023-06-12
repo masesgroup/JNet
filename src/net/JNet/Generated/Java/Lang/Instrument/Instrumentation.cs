@@ -37,18 +37,6 @@ namespace Java.Lang.Instrument
         /// </summary>
         Java.Lang.Class[] AllLoadedClasses { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()"/> 
-        /// </summary>
-        bool IsNativeMethodPrefixSupported { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()"/> 
-        /// </summary>
-        bool IsRedefineClassesSupported { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()"/> 
-        /// </summary>
-        bool IsRetransformClassesSupported { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -60,6 +48,24 @@ namespace Java.Lang.Instrument
         /// <param name="arg0"><see cref="Java.Lang.Module"/></param>
         /// <returns><see cref="bool"/></returns>
         bool IsModifiableModule(Java.Lang.Module arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsNativeMethodPrefixSupported();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsRedefineClassesSupported();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsRetransformClassesSupported();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#removeTransformer(java.lang.instrument.ClassFileTransformer)"/>
         /// </summary>
@@ -167,27 +173,6 @@ namespace Java.Lang.Instrument
             get { return IExecuteArray<Java.Lang.Class>("getAllLoadedClasses"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()"/> 
-        /// </summary>
-        public bool IsNativeMethodPrefixSupported
-        {
-            get { return IExecute<bool>("isNativeMethodPrefixSupported"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()"/> 
-        /// </summary>
-        public bool IsRedefineClassesSupported
-        {
-            get { return IExecute<bool>("isRedefineClassesSupported"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()"/> 
-        /// </summary>
-        public bool IsRetransformClassesSupported
-        {
-            get { return IExecute<bool>("isRetransformClassesSupported"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -204,6 +189,33 @@ namespace Java.Lang.Instrument
         public bool IsModifiableModule(Java.Lang.Module arg0)
         {
             return IExecute<bool>("isModifiableModule", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsNativeMethodPrefixSupported()
+        {
+            return IExecute<bool>("isNativeMethodPrefixSupported");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRedefineClassesSupported()
+        {
+            return IExecute<bool>("isRedefineClassesSupported");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRetransformClassesSupported()
+        {
+            return IExecute<bool>("isRetransformClassesSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#removeTransformer(java.lang.instrument.ClassFileTransformer)"/>

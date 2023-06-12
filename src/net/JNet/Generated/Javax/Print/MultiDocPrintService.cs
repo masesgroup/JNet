@@ -33,9 +33,11 @@ namespace Javax.Print
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html#createMultiDocPrintJob()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html#createMultiDocPrintJob()"/>
         /// </summary>
-        Javax.Print.MultiDocPrintJob CreateMultiDocPrintJob { get; }
+
+        /// <returns><see cref="Javax.Print.MultiDocPrintJob"/></returns>
+        Javax.Print.MultiDocPrintJob CreateMultiDocPrintJob();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html#createMultiDocPrintJob()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDocPrintService.html#createMultiDocPrintJob()"/>
         /// </summary>
-        public Javax.Print.MultiDocPrintJob CreateMultiDocPrintJob
+
+        /// <returns><see cref="Javax.Print.MultiDocPrintJob"/></returns>
+        public Javax.Print.MultiDocPrintJob CreateMultiDocPrintJob()
         {
-            get { return IExecute<Javax.Print.MultiDocPrintJob>("createMultiDocPrintJob"); }
+            return IExecute<Javax.Print.MultiDocPrintJob>("createMultiDocPrintJob");
         }
 
         #endregion

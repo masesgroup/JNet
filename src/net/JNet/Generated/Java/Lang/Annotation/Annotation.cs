@@ -33,9 +33,12 @@ namespace Java.Lang.Annotation
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html#annotationType()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html#annotationType()"/>
         /// </summary>
-        Java.Lang.Class AnnotationType { get; }
+
+        /// <typeparam name="ReturnExtendsJava_Lang_Annotation_Annotation"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        Java.Lang.Class AnnotationType<ReturnExtendsJava_Lang_Annotation_Annotation>() where ReturnExtendsJava_Lang_Annotation_Annotation: Java.Lang.Annotation.Annotation;
 
         #endregion
 
@@ -68,11 +71,14 @@ namespace Java.Lang.Annotation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html#annotationType()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html#annotationType()"/>
         /// </summary>
-        public Java.Lang.Class AnnotationType
+
+        /// <typeparam name="ReturnExtendsJava_Lang_Annotation_Annotation"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class AnnotationType<ReturnExtendsJava_Lang_Annotation_Annotation>() where ReturnExtendsJava_Lang_Annotation_Annotation: Java.Lang.Annotation.Annotation
         {
-            get { return IExecute<Java.Lang.Class>("annotationType"); }
+            return IExecute<Java.Lang.Class>("annotationType");
         }
 
         #endregion

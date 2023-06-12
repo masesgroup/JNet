@@ -79,27 +79,6 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#asReadOnlyBuffer()"/> 
-        /// </summary>
-        public Java.Nio.DoubleBuffer AsReadOnlyBuffer
-        {
-            get { return IExecute<Java.Nio.DoubleBuffer>("asReadOnlyBuffer"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#compact()"/> 
-        /// </summary>
-        public Java.Nio.DoubleBuffer Compact
-        {
-            get { return IExecute<Java.Nio.DoubleBuffer>("compact"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#order()"/> 
-        /// </summary>
-        public Java.Nio.ByteOrder Order
-        {
-            get { return IExecute<Java.Nio.ByteOrder>("order"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#get()"/>
         /// </summary>
 
@@ -116,6 +95,33 @@ namespace Java.Nio
         public double Get(int arg0)
         {
             return IExecute<double>("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#order()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        public Java.Nio.ByteOrder Order()
+        {
+            return IExecute<Java.Nio.ByteOrder>("order");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#asReadOnlyBuffer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        public Java.Nio.DoubleBuffer AsReadOnlyBuffer()
+        {
+            return IExecute<Java.Nio.DoubleBuffer>("asReadOnlyBuffer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#compact()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        public Java.Nio.DoubleBuffer Compact()
+        {
+            return IExecute<Java.Nio.DoubleBuffer>("compact");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(double)"/>

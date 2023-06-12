@@ -55,11 +55,15 @@ namespace Java.Rmi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#get()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#get()"/>
         /// </summary>
-        public object Get
+
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public object Get()
         {
-            get { return IExecute("get"); }
+            return IExecute("get");
         }
 
         #endregion
@@ -106,11 +110,15 @@ namespace Java.Rmi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#get()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html#get()"/>
         /// </summary>
-        public T Get
+
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        /// <exception cref="Java.Lang.ClassNotFoundException"/>
+        public T Get()
         {
-            get { return IExecute<T>("get"); }
+            return IExecute<T>("get");
         }
 
         #endregion

@@ -45,26 +45,6 @@ namespace Java.Lang.Management
         /// </summary>
         long CollectionUsageThresholdCount { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdExceeded()"/> 
-        /// </summary>
-        bool IsCollectionUsageThresholdExceeded { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdSupported()"/> 
-        /// </summary>
-        bool IsCollectionUsageThresholdSupported { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdExceeded()"/> 
-        /// </summary>
-        bool IsUsageThresholdExceeded { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdSupported()"/> 
-        /// </summary>
-        bool IsUsageThresholdSupported { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isValid()"/> 
-        /// </summary>
-        bool IsValid { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getMemoryManagerNames()"/> 
         /// </summary>
         string[] MemoryManagerNames { get; }
@@ -92,6 +72,36 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getUsageThresholdCount()"/> 
         /// </summary>
         long UsageThresholdCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdExceeded()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsCollectionUsageThresholdExceeded();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsCollectionUsageThresholdSupported();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdExceeded()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsUsageThresholdExceeded();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsUsageThresholdSupported();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isValid()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsValid();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#resetPeakUsage()"/>
         /// </summary>
@@ -149,41 +159,6 @@ namespace Java.Lang.Management
             get { return IExecute<long>("getCollectionUsageThresholdCount"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdExceeded()"/> 
-        /// </summary>
-        public bool IsCollectionUsageThresholdExceeded
-        {
-            get { return IExecute<bool>("isCollectionUsageThresholdExceeded"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdSupported()"/> 
-        /// </summary>
-        public bool IsCollectionUsageThresholdSupported
-        {
-            get { return IExecute<bool>("isCollectionUsageThresholdSupported"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdExceeded()"/> 
-        /// </summary>
-        public bool IsUsageThresholdExceeded
-        {
-            get { return IExecute<bool>("isUsageThresholdExceeded"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdSupported()"/> 
-        /// </summary>
-        public bool IsUsageThresholdSupported
-        {
-            get { return IExecute<bool>("isUsageThresholdSupported"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isValid()"/> 
-        /// </summary>
-        public bool IsValid
-        {
-            get { return IExecute<bool>("isValid"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#getMemoryManagerNames()"/> 
         /// </summary>
         public string[] MemoryManagerNames
@@ -231,6 +206,51 @@ namespace Java.Lang.Management
         public long UsageThresholdCount
         {
             get { return IExecute<long>("getUsageThresholdCount"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdExceeded()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCollectionUsageThresholdExceeded()
+        {
+            return IExecute<bool>("isCollectionUsageThresholdExceeded");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isCollectionUsageThresholdSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCollectionUsageThresholdSupported()
+        {
+            return IExecute<bool>("isCollectionUsageThresholdSupported");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdExceeded()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsUsageThresholdExceeded()
+        {
+            return IExecute<bool>("isUsageThresholdExceeded");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isUsageThresholdSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsUsageThresholdSupported()
+        {
+            return IExecute<bool>("isUsageThresholdSupported");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#isValid()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsValid()
+        {
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryPoolMXBean.html#resetPeakUsage()"/>

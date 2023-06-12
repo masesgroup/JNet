@@ -53,38 +53,6 @@ namespace Javax.Xml.Stream
         /// </summary>
         int EventType { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasName()"/> 
-        /// </summary>
-        bool HasName { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasNext()"/> 
-        /// </summary>
-        bool HasNext { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasText()"/> 
-        /// </summary>
-        bool HasText { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isCharacters()"/> 
-        /// </summary>
-        bool IsCharacters { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isEndElement()"/> 
-        /// </summary>
-        bool IsEndElement { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isStandalone()"/> 
-        /// </summary>
-        bool IsStandalone { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isStartElement()"/> 
-        /// </summary>
-        bool IsStartElement { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isWhiteSpace()"/> 
-        /// </summary>
-        bool IsWhiteSpace { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getLocalName()"/> 
         /// </summary>
         string LocalName { get; }
@@ -109,14 +77,6 @@ namespace Javax.Xml.Stream
         /// </summary>
         string NamespaceURI { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#next()"/> 
-        /// </summary>
-        int Next { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#nextTag()"/> 
-        /// </summary>
-        int NextTag { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getPIData()"/> 
         /// </summary>
         string PIData { get; }
@@ -128,10 +88,6 @@ namespace Javax.Xml.Stream
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getPrefix()"/> 
         /// </summary>
         string Prefix { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#standaloneSet()"/> 
-        /// </summary>
-        bool StandaloneSet { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getText()"/> 
         /// </summary>
@@ -153,11 +109,66 @@ namespace Javax.Xml.Stream
         /// </summary>
         string Version { get; }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasName()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool HasName();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasNext()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        bool HasNext();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasText()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool HasText();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isAttributeSpecified(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
         bool IsAttributeSpecified(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isCharacters()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsCharacters();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isEndElement()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsEndElement();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isStandalone()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsStandalone();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isStartElement()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsStartElement();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isWhiteSpace()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsWhiteSpace();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#standaloneSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool StandaloneSet();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getTextCharacters(int,char[],int,int)"/>
         /// </summary>
@@ -168,6 +179,20 @@ namespace Javax.Xml.Stream
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         int GetTextCharacters(int arg0, char[] arg1, int arg2, int arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#next()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        int Next();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#nextTag()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        int NextTag();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getProperty(java.lang.String)"/>
         /// </summary>
@@ -317,62 +342,6 @@ namespace Javax.Xml.Stream
             get { return IExecute<int>("getEventType"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasName()"/> 
-        /// </summary>
-        public bool HasName
-        {
-            get { return IExecute<bool>("hasName"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasNext()"/> 
-        /// </summary>
-        public bool HasNext
-        {
-            get { return IExecute<bool>("hasNext"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasText()"/> 
-        /// </summary>
-        public bool HasText
-        {
-            get { return IExecute<bool>("hasText"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isCharacters()"/> 
-        /// </summary>
-        public bool IsCharacters
-        {
-            get { return IExecute<bool>("isCharacters"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isEndElement()"/> 
-        /// </summary>
-        public bool IsEndElement
-        {
-            get { return IExecute<bool>("isEndElement"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isStandalone()"/> 
-        /// </summary>
-        public bool IsStandalone
-        {
-            get { return IExecute<bool>("isStandalone"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isStartElement()"/> 
-        /// </summary>
-        public bool IsStartElement
-        {
-            get { return IExecute<bool>("isStartElement"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isWhiteSpace()"/> 
-        /// </summary>
-        public bool IsWhiteSpace
-        {
-            get { return IExecute<bool>("isWhiteSpace"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getLocalName()"/> 
         /// </summary>
         public string LocalName
@@ -415,20 +384,6 @@ namespace Javax.Xml.Stream
             get { return IExecute<string>("getNamespaceURI"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#next()"/> 
-        /// </summary>
-        public int Next
-        {
-            get { return IExecute<int>("next"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#nextTag()"/> 
-        /// </summary>
-        public int NextTag
-        {
-            get { return IExecute<int>("nextTag"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getPIData()"/> 
         /// </summary>
         public string PIData
@@ -448,13 +403,6 @@ namespace Javax.Xml.Stream
         public string Prefix
         {
             get { return IExecute<string>("getPrefix"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#standaloneSet()"/> 
-        /// </summary>
-        public bool StandaloneSet
-        {
-            get { return IExecute<bool>("standaloneSet"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getText()"/> 
@@ -492,6 +440,34 @@ namespace Javax.Xml.Stream
             get { return IExecute<string>("getVersion"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasName()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasName()
+        {
+            return IExecute<bool>("hasName");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasNext()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        public bool HasNext()
+        {
+            return IExecute<bool>("hasNext");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#hasText()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasText()
+        {
+            return IExecute<bool>("hasText");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isAttributeSpecified(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -499,6 +475,60 @@ namespace Javax.Xml.Stream
         public bool IsAttributeSpecified(int arg0)
         {
             return IExecute<bool>("isAttributeSpecified", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isCharacters()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCharacters()
+        {
+            return IExecute<bool>("isCharacters");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isEndElement()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEndElement()
+        {
+            return IExecute<bool>("isEndElement");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isStandalone()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsStandalone()
+        {
+            return IExecute<bool>("isStandalone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isStartElement()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsStartElement()
+        {
+            return IExecute<bool>("isStartElement");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#isWhiteSpace()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWhiteSpace()
+        {
+            return IExecute<bool>("isWhiteSpace");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#standaloneSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool StandaloneSet()
+        {
+            return IExecute<bool>("standaloneSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getTextCharacters(int,char[],int,int)"/>
@@ -512,6 +542,26 @@ namespace Javax.Xml.Stream
         public int GetTextCharacters(int arg0, char[] arg1, int arg2, int arg3)
         {
             return IExecute<int>("getTextCharacters", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#next()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        public int Next()
+        {
+            return IExecute<int>("next");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#nextTag()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        public int NextTag()
+        {
+            return IExecute<int>("nextTag");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamReader.html#getProperty(java.lang.String)"/>

@@ -111,11 +111,13 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBox.html#isBorderPaintedFlat()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBox.html#isBorderPaintedFlat()"/>
         /// </summary>
-        public bool IsBorderPaintedFlat
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBorderPaintedFlat()
         {
-            get { return IExecute<bool>("isBorderPaintedFlat"); }
+            return IExecute<bool>("isBorderPaintedFlat");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBox.html#setBorderPaintedFlat(boolean)"/>

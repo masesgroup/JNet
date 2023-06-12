@@ -79,25 +79,31 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#asReadOnlyBuffer()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#order()"/>
         /// </summary>
-        public Java.Nio.LongBuffer AsReadOnlyBuffer
+
+        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        public Java.Nio.ByteOrder Order()
         {
-            get { return IExecute<Java.Nio.LongBuffer>("asReadOnlyBuffer"); }
+            return IExecute<Java.Nio.ByteOrder>("order");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#compact()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
-        public Java.Nio.LongBuffer Compact
+
+        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        public Java.Nio.LongBuffer AsReadOnlyBuffer()
         {
-            get { return IExecute<Java.Nio.LongBuffer>("compact"); }
+            return IExecute<Java.Nio.LongBuffer>("asReadOnlyBuffer");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#order()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#compact()"/>
         /// </summary>
-        public Java.Nio.ByteOrder Order
+
+        /// <returns><see cref="Java.Nio.LongBuffer"/></returns>
+        public Java.Nio.LongBuffer Compact()
         {
-            get { return IExecute<Java.Nio.ByteOrder>("order"); }
+            return IExecute<Java.Nio.LongBuffer>("compact");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/LongBuffer.html#put(int,long)"/>

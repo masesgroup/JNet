@@ -53,13 +53,6 @@ namespace Java.Security
             get { return IExecute<string>("getInfo"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#isConfigured()"/> 
-        /// </summary>
-        public bool IsConfigured
-        {
-            get { return IExecute<bool>("isConfigured"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#getName()"/> 
         /// </summary>
         public string Name
@@ -79,6 +72,15 @@ namespace Java.Security
         public string VersionStr
         {
             get { return IExecute<string>("getVersionStr"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#isConfigured()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsConfigured()
+        {
+            return IExecute<bool>("isConfigured");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Provider.html#configure(java.lang.String)"/>

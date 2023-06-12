@@ -33,9 +33,11 @@ namespace Java.Nio.File.Attribute
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AttributeView.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AttributeView.html#name()"/>
         /// </summary>
-        string Name { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string Name();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AttributeView.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AttributeView.html#name()"/>
         /// </summary>
-        public string Name
+
+        /// <returns><see cref="string"/></returns>
+        public string Name()
         {
-            get { return IExecute<string>("name"); }
+            return IExecute<string>("name");
         }
 
         #endregion

@@ -37,10 +37,6 @@ namespace Javax.Management.Openmbean
         /// </summary>
         Javax.Management.Openmbean.CompositeType CompositeType { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#values()"/> 
-        /// </summary>
-        Java.Util.Collection<object> Values { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#containsKey(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -64,6 +60,12 @@ namespace Javax.Management.Openmbean
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="object"/></returns>
         object[] GetAll(string[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        Java.Util.Collection<object> Values();
 
         #endregion
 
@@ -103,13 +105,6 @@ namespace Javax.Management.Openmbean
             get { return IExecute<Javax.Management.Openmbean.CompositeType>("getCompositeType"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#values()"/> 
-        /// </summary>
-        public Java.Util.Collection<object> Values
-        {
-            get { return IExecute<Java.Util.Collection<object>>("values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#containsKey(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -144,6 +139,15 @@ namespace Javax.Management.Openmbean
         public object[] GetAll(string[] arg0)
         {
             return IExecuteArray<object>("getAll", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeData.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<object> Values()
+        {
+            return IExecute<Java.Util.Collection<object>>("values");
         }
 
         #endregion

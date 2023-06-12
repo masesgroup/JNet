@@ -45,10 +45,6 @@ namespace Java.Security.Cert
         /// </summary>
         Java.Util.Set<string> ExpectedPolicies { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()"/> 
-        /// </summary>
-        bool IsCritical { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getParent()"/> 
         /// </summary>
         Java.Security.Cert.PolicyNode Parent { get; }
@@ -60,6 +56,12 @@ namespace Java.Security.Cert
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getValidPolicy()"/> 
         /// </summary>
         string ValidPolicy { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsCritical();
 
         #endregion
 
@@ -113,13 +115,6 @@ namespace Java.Security.Cert
             get { return IExecute<Java.Util.Set<string>>("getExpectedPolicies"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()"/> 
-        /// </summary>
-        public bool IsCritical
-        {
-            get { return IExecute<bool>("isCritical"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#getParent()"/> 
         /// </summary>
         public Java.Security.Cert.PolicyNode Parent
@@ -139,6 +134,15 @@ namespace Java.Security.Cert
         public string ValidPolicy
         {
             get { return IExecute<string>("getValidPolicy"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html#isCritical()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCritical()
+        {
+            return IExecute<bool>("isCritical");
         }
 
         #endregion

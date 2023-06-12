@@ -33,9 +33,11 @@ namespace Javax.Swing.Border
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#isBorderOpaque()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#isBorderOpaque()"/>
         /// </summary>
-        bool IsBorderOpaque { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsBorderOpaque();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#getBorderInsets(java.awt.Component)"/>
         /// </summary>
@@ -84,11 +86,13 @@ namespace Javax.Swing.Border
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#isBorderOpaque()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#isBorderOpaque()"/>
         /// </summary>
-        public bool IsBorderOpaque
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBorderOpaque()
         {
-            get { return IExecute<bool>("isBorderOpaque"); }
+            return IExecute<bool>("isBorderOpaque");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/Border.html#getBorderInsets(java.awt.Component)"/>

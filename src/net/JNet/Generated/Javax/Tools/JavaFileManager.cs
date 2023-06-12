@@ -434,25 +434,29 @@ namespace Javax.Tools
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isModuleOrientedLocation()"/> 
-            /// </summary>
-            public bool IsModuleOrientedLocation
-            {
-                get { return IExecute<bool>("isModuleOrientedLocation"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isOutputLocation()"/> 
-            /// </summary>
-            public bool IsOutputLocation
-            {
-                get { return IExecute<bool>("isOutputLocation"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#getName()"/> 
             /// </summary>
             public string Name
             {
                 get { return IExecute<string>("getName"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isOutputLocation()"/>
+            /// </summary>
+
+            /// <returns><see cref="bool"/></returns>
+            public bool IsOutputLocation()
+            {
+                return IExecute<bool>("isOutputLocation");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.Location.html#isModuleOrientedLocation()"/>
+            /// </summary>
+
+            /// <returns><see cref="bool"/></returns>
+            public bool IsModuleOrientedLocation()
+            {
+                return IExecute<bool>("isModuleOrientedLocation");
             }
 
             #endregion

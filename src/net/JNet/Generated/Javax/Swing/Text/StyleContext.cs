@@ -379,13 +379,6 @@ namespace Javax.Swing.Text
                 get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#copyAttributes()"/> 
-            /// </summary>
-            public Javax.Swing.Text.AttributeSet CopyAttributes
-            {
-                get { return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#setName(java.lang.String)"/>
             /// </summary>
             public string Name
@@ -454,6 +447,15 @@ namespace Javax.Swing.Text
             public object GetAttribute(object arg0)
             {
                 return IExecute("getAttribute", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#copyAttributes()"/>
+            /// </summary>
+
+            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            public Javax.Swing.Text.AttributeSet CopyAttributes()
+            {
+                return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#addAttribute(java.lang.Object,java.lang.Object)"/>
@@ -567,13 +569,6 @@ namespace Javax.Swing.Text
                 get { return IExecute<Java.Util.Enumeration<object>>("getAttributeNames"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#copyAttributes()"/> 
-            /// </summary>
-            public Javax.Swing.Text.AttributeSet CopyAttributes
-            {
-                get { return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getResolveParent()"/> 
             /// </summary>
             public Javax.Swing.Text.AttributeSet ResolveParent
@@ -625,6 +620,15 @@ namespace Javax.Swing.Text
             public object GetAttribute(object arg0)
             {
                 return IExecute("getAttribute", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#copyAttributes()"/>
+            /// </summary>
+
+            /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
+            public Javax.Swing.Text.AttributeSet CopyAttributes()
+            {
+                return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes");
             }
 
             #endregion

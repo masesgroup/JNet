@@ -124,13 +124,6 @@ namespace Java.Security.Cert
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#values()"/> 
-            /// </summary>
-            public static Java.Security.Cert.PKIXRevocationChecker.Option[] Values
-            {
-                get { return SExecuteArray<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -138,6 +131,15 @@ namespace Java.Security.Cert
             public static Java.Security.Cert.PKIXRevocationChecker.Option ValueOf(string arg0)
             {
                 return SExecute<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Security.Cert.PKIXRevocationChecker.Option"/></returns>
+            public static Java.Security.Cert.PKIXRevocationChecker.Option[] Values()
+            {
+                return SExecuteArray<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "values");
             }
 
             #endregion

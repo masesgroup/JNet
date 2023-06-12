@@ -33,10 +33,6 @@ namespace Java.Lang.Management
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#isValid()"/> 
-        /// </summary>
-        bool IsValid { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#getMemoryPoolNames()"/> 
         /// </summary>
         string[] MemoryPoolNames { get; }
@@ -44,6 +40,12 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#getName()"/> 
         /// </summary>
         string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#isValid()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsValid();
 
         #endregion
 
@@ -76,13 +78,6 @@ namespace Java.Lang.Management
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#isValid()"/> 
-        /// </summary>
-        public bool IsValid
-        {
-            get { return IExecute<bool>("isValid"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#getMemoryPoolNames()"/> 
         /// </summary>
         public string[] MemoryPoolNames
@@ -95,6 +90,15 @@ namespace Java.Lang.Management
         public string Name
         {
             get { return IExecute<string>("getName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryManagerMXBean.html#isValid()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsValid()
+        {
+            return IExecute<bool>("isValid");
         }
 
         #endregion

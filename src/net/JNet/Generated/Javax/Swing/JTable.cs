@@ -258,13 +258,6 @@ namespace Javax.Swing
             get { return IExecute<Java.Awt.Dimension>("getIntercellSpacing"); } set { IExecute("setIntercellSpacing", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isEditing()"/> 
-        /// </summary>
-        public bool IsEditing
-        {
-            get { return IExecute<bool>("isEditing"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setModel(javax.swing.table.TableModel)"/>
         /// </summary>
         public Javax.Swing.Table.TableModel Model
@@ -474,6 +467,15 @@ namespace Javax.Swing
         public bool IsColumnSelected(int arg0)
         {
             return IExecute<bool>("isColumnSelected", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isEditing()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEditing()
+        {
+            return IExecute<bool>("isEditing");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isRowSelected(int)"/>
@@ -1052,25 +1054,29 @@ namespace Javax.Swing
                 get { return IExecute<int>("getColumn"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html#isInsertColumn()"/> 
-            /// </summary>
-            public bool IsInsertColumn
-            {
-                get { return IExecute<bool>("isInsertColumn"); }
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html#isInsertRow()"/> 
-            /// </summary>
-            public bool IsInsertRow
-            {
-                get { return IExecute<bool>("isInsertRow"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html#getRow()"/> 
             /// </summary>
             public int Row
             {
                 get { return IExecute<int>("getRow"); }
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html#isInsertColumn()"/>
+            /// </summary>
+
+            /// <returns><see cref="bool"/></returns>
+            public bool IsInsertColumn()
+            {
+                return IExecute<bool>("isInsertColumn");
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html#isInsertRow()"/>
+            /// </summary>
+
+            /// <returns><see cref="bool"/></returns>
+            public bool IsInsertRow()
+            {
+                return IExecute<bool>("isInsertRow");
             }
 
             #endregion
@@ -1108,13 +1114,6 @@ namespace Javax.Swing
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#values()"/> 
-            /// </summary>
-            public static Javax.Swing.JTable.PrintMode[] Values
-            {
-                get { return SExecuteArray<Javax.Swing.JTable.PrintMode>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -1122,6 +1121,15 @@ namespace Javax.Swing
             public static Javax.Swing.JTable.PrintMode ValueOf(string arg0)
             {
                 return SExecute<Javax.Swing.JTable.PrintMode>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Javax.Swing.JTable.PrintMode"/></returns>
+            public static Javax.Swing.JTable.PrintMode[] Values()
+            {
+                return SExecuteArray<Javax.Swing.JTable.PrintMode>(LocalBridgeClazz, "values");
             }
 
             #endregion

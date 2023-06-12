@@ -88,13 +88,6 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.ImageCapabilities>("getImageCapabilities"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#isTranslucencyCapable()"/> 
-        /// </summary>
-        public bool IsTranslucencyCapable
-        {
-            get { return IExecute<bool>("isTranslucencyCapable"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#getNormalizingTransform()"/> 
         /// </summary>
         public Java.Awt.Geom.AffineTransform NormalizingTransform
@@ -109,6 +102,15 @@ namespace Java.Awt
         public Java.Awt.ImageNs.ColorModel GetColorModel(int arg0)
         {
             return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#isTranslucencyCapable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTranslucencyCapable()
+        {
+            return IExecute<bool>("isTranslucencyCapable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int,int)"/>

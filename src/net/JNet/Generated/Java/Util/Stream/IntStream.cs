@@ -33,78 +33,6 @@ namespace Java.Util.Stream
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asDoubleStream()"/> 
-        /// </summary>
-        Java.Util.Stream.DoubleStream AsDoubleStream { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asLongStream()"/> 
-        /// </summary>
-        Java.Util.Stream.LongStream AsLongStream { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#average()"/> 
-        /// </summary>
-        Java.Util.OptionalDouble Average { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#boxed()"/> 
-        /// </summary>
-        Java.Util.Stream.Stream<int?> Boxed { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#count()"/> 
-        /// </summary>
-        long Count { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#distinct()"/> 
-        /// </summary>
-        Java.Util.Stream.IntStream Distinct { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findAny()"/> 
-        /// </summary>
-        Java.Util.OptionalInt FindAny { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findFirst()"/> 
-        /// </summary>
-        Java.Util.OptionalInt FindFirst { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#iterator()"/> 
-        /// </summary>
-        Java.Util.Iterator Iterator { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#max()"/> 
-        /// </summary>
-        Java.Util.OptionalInt Max { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#min()"/> 
-        /// </summary>
-        Java.Util.OptionalInt Min { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#parallel()"/> 
-        /// </summary>
-        Java.Util.Stream.BaseStream Parallel { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sequential()"/> 
-        /// </summary>
-        Java.Util.Stream.BaseStream Sequential { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sorted()"/> 
-        /// </summary>
-        Java.Util.Stream.IntStream Sorted { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#spliterator()"/> 
-        /// </summary>
-        Java.Util.Spliterator Spliterator { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sum()"/> 
-        /// </summary>
-        int Sum { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#summaryStatistics()"/> 
-        /// </summary>
-        Java.Util.IntSummaryStatistics SummaryStatistics { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#toArray()"/> 
-        /// </summary>
-        int[] ToArray { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#collect(java.util.function.Supplier,java.util.function.ObjIntConsumer,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
@@ -147,17 +75,77 @@ namespace Java.Util.Stream
         /// <returns><see cref="int"/></returns>
         int Reduce(int arg0, Java.Util.Function.IntBinaryOperator arg1);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sum()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        int Sum();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#toArray()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        int[] ToArray();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#summaryStatistics()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.IntSummaryStatistics"/></returns>
+        Java.Util.IntSummaryStatistics SummaryStatistics();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#average()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        Java.Util.OptionalDouble Average();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findAny()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        Java.Util.OptionalInt FindAny();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        Java.Util.OptionalInt FindFirst();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#max()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        Java.Util.OptionalInt Max();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#min()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        Java.Util.OptionalInt Min();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#reduce(java.util.function.IntBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         Java.Util.OptionalInt Reduce(Java.Util.Function.IntBinaryOperator arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asDoubleStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        Java.Util.Stream.DoubleStream AsDoubleStream();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToDouble(java.util.function.IntToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntToDoubleFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         Java.Util.Stream.DoubleStream MapToDouble(Java.Util.Function.IntToDoubleFunction arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#distinct()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        Java.Util.Stream.IntStream Distinct();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#filter(java.util.function.IntPredicate)"/>
         /// </summary>
@@ -196,11 +184,35 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         Java.Util.Stream.IntStream Skip(long arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sorted()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        Java.Util.Stream.IntStream Sorted();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asLongStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        Java.Util.Stream.LongStream AsLongStream();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToLong(java.util.function.IntToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntToLongFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         Java.Util.Stream.LongStream MapToLong(Java.Util.Function.IntToLongFunction arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#boxed()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        Java.Util.Stream.Stream<int?> Boxed();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#count()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        long Count();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#forEach(java.util.function.IntConsumer)"/>
         /// </summary>
@@ -211,6 +223,30 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         void ForEachOrdered(Java.Util.Function.IntConsumer arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#iterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        Java.Util.Iterator Iterator();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#spliterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        Java.Util.Spliterator Spliterator();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#parallel()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        Java.Util.Stream.BaseStream Parallel();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sequential()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        Java.Util.Stream.BaseStream Sequential();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#dropWhile(java.util.function.IntPredicate)"/>
         /// </summary>
@@ -251,13 +287,6 @@ namespace Java.Util.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#empty()"/> 
-        /// </summary>
-        public static Java.Util.Stream.IntStream Empty
-        {
-            get { return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "empty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#concat(java.util.stream.IntStream,java.util.stream.IntStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Stream.IntStream"/></param>
@@ -266,6 +295,15 @@ namespace Java.Util.Stream
         public static Java.Util.Stream.IntStream Concat(Java.Util.Stream.IntStream arg0, Java.Util.Stream.IntStream arg1)
         {
             return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "concat", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#empty()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public static Java.Util.Stream.IntStream Empty()
+        {
+            return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#generate(java.util.function.IntSupplier)"/>
@@ -349,132 +387,6 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asDoubleStream()"/> 
-        /// </summary>
-        public Java.Util.Stream.DoubleStream AsDoubleStream
-        {
-            get { return IExecute<Java.Util.Stream.DoubleStream>("asDoubleStream"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asLongStream()"/> 
-        /// </summary>
-        public Java.Util.Stream.LongStream AsLongStream
-        {
-            get { return IExecute<Java.Util.Stream.LongStream>("asLongStream"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#average()"/> 
-        /// </summary>
-        public Java.Util.OptionalDouble Average
-        {
-            get { return IExecute<Java.Util.OptionalDouble>("average"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#boxed()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream<int?> Boxed
-        {
-            get { return IExecute<Java.Util.Stream.Stream<int?>>("boxed"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#count()"/> 
-        /// </summary>
-        public long Count
-        {
-            get { return IExecute<long>("count"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#distinct()"/> 
-        /// </summary>
-        public Java.Util.Stream.IntStream Distinct
-        {
-            get { return IExecute<Java.Util.Stream.IntStream>("distinct"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findAny()"/> 
-        /// </summary>
-        public Java.Util.OptionalInt FindAny
-        {
-            get { return IExecute<Java.Util.OptionalInt>("findAny"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findFirst()"/> 
-        /// </summary>
-        public Java.Util.OptionalInt FindFirst
-        {
-            get { return IExecute<Java.Util.OptionalInt>("findFirst"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#iterator()"/> 
-        /// </summary>
-        public Java.Util.Iterator Iterator
-        {
-            get { return IExecute<Java.Util.Iterator>("iterator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#max()"/> 
-        /// </summary>
-        public Java.Util.OptionalInt Max
-        {
-            get { return IExecute<Java.Util.OptionalInt>("max"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#min()"/> 
-        /// </summary>
-        public Java.Util.OptionalInt Min
-        {
-            get { return IExecute<Java.Util.OptionalInt>("min"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#parallel()"/> 
-        /// </summary>
-        public Java.Util.Stream.BaseStream Parallel
-        {
-            get { return IExecute<Java.Util.Stream.BaseStream>("parallel"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sequential()"/> 
-        /// </summary>
-        public Java.Util.Stream.BaseStream Sequential
-        {
-            get { return IExecute<Java.Util.Stream.BaseStream>("sequential"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sorted()"/> 
-        /// </summary>
-        public Java.Util.Stream.IntStream Sorted
-        {
-            get { return IExecute<Java.Util.Stream.IntStream>("sorted"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#spliterator()"/> 
-        /// </summary>
-        public Java.Util.Spliterator Spliterator
-        {
-            get { return IExecute<Java.Util.Spliterator>("spliterator"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sum()"/> 
-        /// </summary>
-        public int Sum
-        {
-            get { return IExecute<int>("sum"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#summaryStatistics()"/> 
-        /// </summary>
-        public Java.Util.IntSummaryStatistics SummaryStatistics
-        {
-            get { return IExecute<Java.Util.IntSummaryStatistics>("summaryStatistics"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#toArray()"/> 
-        /// </summary>
-        public int[] ToArray
-        {
-            get { return IExecuteArray<int>("toArray"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#collect(java.util.function.Supplier,java.util.function.ObjIntConsumer,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
@@ -535,6 +447,78 @@ namespace Java.Util.Stream
             return IExecute<int>("reduce", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sum()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Sum()
+        {
+            return IExecute<int>("sum");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#toArray()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int[] ToArray()
+        {
+            return IExecuteArray<int>("toArray");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#summaryStatistics()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.IntSummaryStatistics"/></returns>
+        public Java.Util.IntSummaryStatistics SummaryStatistics()
+        {
+            return IExecute<Java.Util.IntSummaryStatistics>("summaryStatistics");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#average()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
+        public Java.Util.OptionalDouble Average()
+        {
+            return IExecute<Java.Util.OptionalDouble>("average");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findAny()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        public Java.Util.OptionalInt FindAny()
+        {
+            return IExecute<Java.Util.OptionalInt>("findAny");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#findFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        public Java.Util.OptionalInt FindFirst()
+        {
+            return IExecute<Java.Util.OptionalInt>("findFirst");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#max()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        public Java.Util.OptionalInt Max()
+        {
+            return IExecute<Java.Util.OptionalInt>("max");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#min()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        public Java.Util.OptionalInt Min()
+        {
+            return IExecute<Java.Util.OptionalInt>("min");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#reduce(java.util.function.IntBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
@@ -544,6 +528,15 @@ namespace Java.Util.Stream
             return IExecute<Java.Util.OptionalInt>("reduce", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asDoubleStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+        public Java.Util.Stream.DoubleStream AsDoubleStream()
+        {
+            return IExecute<Java.Util.Stream.DoubleStream>("asDoubleStream");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToDouble(java.util.function.IntToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntToDoubleFunction"/></param>
@@ -551,6 +544,15 @@ namespace Java.Util.Stream
         public Java.Util.Stream.DoubleStream MapToDouble(Java.Util.Function.IntToDoubleFunction arg0)
         {
             return IExecute<Java.Util.Stream.DoubleStream>("mapToDouble", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#distinct()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public Java.Util.Stream.IntStream Distinct()
+        {
+            return IExecute<Java.Util.Stream.IntStream>("distinct");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#filter(java.util.function.IntPredicate)"/>
@@ -608,6 +610,24 @@ namespace Java.Util.Stream
             return IExecute<Java.Util.Stream.IntStream>("skip", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sorted()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public Java.Util.Stream.IntStream Sorted()
+        {
+            return IExecute<Java.Util.Stream.IntStream>("sorted");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#asLongStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        public Java.Util.Stream.LongStream AsLongStream()
+        {
+            return IExecute<Java.Util.Stream.LongStream>("asLongStream");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#mapToLong(java.util.function.IntToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntToLongFunction"/></param>
@@ -615,6 +635,24 @@ namespace Java.Util.Stream
         public Java.Util.Stream.LongStream MapToLong(Java.Util.Function.IntToLongFunction arg0)
         {
             return IExecute<Java.Util.Stream.LongStream>("mapToLong", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#boxed()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<int?> Boxed()
+        {
+            return IExecute<Java.Util.Stream.Stream<int?>>("boxed");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#count()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long Count()
+        {
+            return IExecute<long>("count");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#forEach(java.util.function.IntConsumer)"/>
@@ -631,6 +669,42 @@ namespace Java.Util.Stream
         public void ForEachOrdered(Java.Util.Function.IntConsumer arg0)
         {
             IExecute("forEachOrdered", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#iterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
+        {
+            return IExecute<Java.Util.Iterator>("iterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#spliterator()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Spliterator"/></returns>
+        public Java.Util.Spliterator Spliterator()
+        {
+            return IExecute<Java.Util.Spliterator>("spliterator");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#parallel()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream Parallel()
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("parallel");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#sequential()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
+        public Java.Util.Stream.BaseStream Sequential()
+        {
+            return IExecute<Java.Util.Stream.BaseStream>("sequential");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#dropWhile(java.util.function.IntPredicate)"/>

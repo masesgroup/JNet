@@ -105,20 +105,6 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#highestLayer()"/> 
-        /// </summary>
-        public int HighestLayer
-        {
-            get { return IExecute<int>("highestLayer"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#lowestLayer()"/> 
-        /// </summary>
-        public int LowestLayer
-        {
-            get { return IExecute<int>("lowestLayer"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getComponentCountInLayer(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -153,6 +139,24 @@ namespace Javax.Swing
         public int GetPosition(Java.Awt.Component arg0)
         {
             return IExecute<int>("getPosition", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#highestLayer()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int HighestLayer()
+        {
+            return IExecute<int>("highestLayer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#lowestLayer()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int LowestLayer()
+        {
+            return IExecute<int>("lowestLayer");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayeredPane.html#getComponentsInLayer(int)"/>

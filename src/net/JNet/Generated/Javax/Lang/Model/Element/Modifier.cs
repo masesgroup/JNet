@@ -90,13 +90,6 @@ namespace Javax.Lang.Model.Element
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#values()"/> 
-        /// </summary>
-        public static Javax.Lang.Model.Element.Modifier[] Values
-        {
-            get { return SExecuteArray<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -104,6 +97,15 @@ namespace Javax.Lang.Model.Element
         public static Javax.Lang.Model.Element.Modifier ValueOf(string arg0)
         {
             return SExecute<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Modifier.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Lang.Model.Element.Modifier"/></returns>
+        public static Javax.Lang.Model.Element.Modifier[] Values()
+        {
+            return SExecuteArray<Javax.Lang.Model.Element.Modifier>(LocalBridgeClazz, "values");
         }
 
         #endregion

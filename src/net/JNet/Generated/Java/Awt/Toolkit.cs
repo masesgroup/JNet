@@ -63,13 +63,6 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#areExtraMouseButtonsEnabled()"/> 
-        /// </summary>
-        public bool AreExtraMouseButtonsEnabled
-        {
-            get { return IExecute<bool>("areExtraMouseButtonsEnabled"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getAWTEventListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.AWTEventListener[] AWTEventListeners
@@ -82,20 +75,6 @@ namespace Java.Awt
         public Java.Awt.ImageNs.ColorModel ColorModel
         {
             get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isAlwaysOnTopSupported()"/> 
-        /// </summary>
-        public bool IsAlwaysOnTopSupported
-        {
-            get { return IExecute<bool>("isAlwaysOnTopSupported"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isDynamicLayoutActive()"/> 
-        /// </summary>
-        public bool IsDynamicLayoutActive
-        {
-            get { return IExecute<bool>("isDynamicLayoutActive"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getMaximumCursorColors()"/> 
@@ -301,6 +280,16 @@ namespace Java.Awt
             IExecute("sync");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#areExtraMouseButtonsEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public bool AreExtraMouseButtonsEnabled()
+        {
+            return IExecute<bool>("areExtraMouseButtonsEnabled");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getLockingKeyState(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -309,6 +298,25 @@ namespace Java.Awt
         public bool GetLockingKeyState(int arg0)
         {
             return IExecute<bool>("getLockingKeyState", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isAlwaysOnTopSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAlwaysOnTopSupported()
+        {
+            return IExecute<bool>("isAlwaysOnTopSupported");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isDynamicLayoutActive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Awt.HeadlessException"/>
+        public bool IsDynamicLayoutActive()
+        {
+            return IExecute<bool>("isDynamicLayoutActive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#isFrameStateSupported(int)"/>

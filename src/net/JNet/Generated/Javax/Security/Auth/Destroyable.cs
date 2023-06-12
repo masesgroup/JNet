@@ -33,9 +33,11 @@ namespace Javax.Security.Auth
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/>
         /// </summary>
-        bool IsDestroyed { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsDestroyed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#destroy()"/>
         /// </summary>
@@ -74,11 +76,13 @@ namespace Javax.Security.Auth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/>
         /// </summary>
-        public bool IsDestroyed
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDestroyed()
         {
-            get { return IExecute<bool>("isDestroyed"); }
+            return IExecute<bool>("isDestroyed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Destroyable.html#destroy()"/>

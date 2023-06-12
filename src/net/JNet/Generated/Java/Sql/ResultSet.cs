@@ -49,65 +49,17 @@ namespace Java.Sql
         /// </summary>
         int FetchSize { get; set; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#first()"/> 
-        /// </summary>
-        bool First { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getHoldability()"/> 
         /// </summary>
         int Holdability { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isAfterLast()"/> 
-        /// </summary>
-        bool IsAfterLast { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isBeforeFirst()"/> 
-        /// </summary>
-        bool IsBeforeFirst { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isClosed()"/> 
-        /// </summary>
-        bool IsClosed { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isFirst()"/> 
-        /// </summary>
-        bool IsFirst { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isLast()"/> 
-        /// </summary>
-        bool IsLast { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#last()"/> 
-        /// </summary>
-        bool Last { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getMetaData()"/> 
         /// </summary>
         Java.Sql.ResultSetMetaData MetaData { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#next()"/> 
-        /// </summary>
-        bool Next { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#previous()"/> 
-        /// </summary>
-        bool Previous { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRow()"/> 
         /// </summary>
         int Row { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowDeleted()"/> 
-        /// </summary>
-        bool RowDeleted { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowInserted()"/> 
-        /// </summary>
-        bool RowInserted { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowUpdated()"/> 
-        /// </summary>
-        bool RowUpdated { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getStatement()"/> 
         /// </summary>
@@ -120,10 +72,6 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getWarnings()"/> 
         /// </summary>
         Java.Sql.SQLWarning Warnings { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#wasNull()"/> 
-        /// </summary>
-        bool WasNull { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int,java.lang.Class)"/>
         /// </summary>
@@ -150,6 +98,13 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         bool Absolute(int arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#first()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool First();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBoolean(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -164,12 +119,96 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         bool GetBoolean(string arg0);
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isAfterLast()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool IsAfterLast();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isBeforeFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool IsBeforeFirst();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isClosed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool IsClosed();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool IsFirst();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isLast()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool IsLast();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#last()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool Last();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#next()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool Next();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#previous()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool Previous();
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#relative(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         bool Relative(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowDeleted()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool RowDeleted();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowInserted()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool RowInserted();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowUpdated()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool RowUpdated();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#wasNull()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        bool WasNull();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getByte(int)"/>
         /// </summary>
@@ -1407,60 +1446,11 @@ namespace Java.Sql
             get { return IExecute<int>("getFetchSize"); } set { IExecute("setFetchSize", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#first()"/> 
-        /// </summary>
-        public bool First
-        {
-            get { return IExecute<bool>("first"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getHoldability()"/> 
         /// </summary>
         public int Holdability
         {
             get { return IExecute<int>("getHoldability"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isAfterLast()"/> 
-        /// </summary>
-        public bool IsAfterLast
-        {
-            get { return IExecute<bool>("isAfterLast"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isBeforeFirst()"/> 
-        /// </summary>
-        public bool IsBeforeFirst
-        {
-            get { return IExecute<bool>("isBeforeFirst"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isClosed()"/> 
-        /// </summary>
-        public bool IsClosed
-        {
-            get { return IExecute<bool>("isClosed"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isFirst()"/> 
-        /// </summary>
-        public bool IsFirst
-        {
-            get { return IExecute<bool>("isFirst"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isLast()"/> 
-        /// </summary>
-        public bool IsLast
-        {
-            get { return IExecute<bool>("isLast"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#last()"/> 
-        /// </summary>
-        public bool Last
-        {
-            get { return IExecute<bool>("last"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getMetaData()"/> 
@@ -1470,46 +1460,11 @@ namespace Java.Sql
             get { return IExecute<Java.Sql.ResultSetMetaData>("getMetaData"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#next()"/> 
-        /// </summary>
-        public bool Next
-        {
-            get { return IExecute<bool>("next"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#previous()"/> 
-        /// </summary>
-        public bool Previous
-        {
-            get { return IExecute<bool>("previous"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getRow()"/> 
         /// </summary>
         public int Row
         {
             get { return IExecute<int>("getRow"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowDeleted()"/> 
-        /// </summary>
-        public bool RowDeleted
-        {
-            get { return IExecute<bool>("rowDeleted"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowInserted()"/> 
-        /// </summary>
-        public bool RowInserted
-        {
-            get { return IExecute<bool>("rowInserted"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowUpdated()"/> 
-        /// </summary>
-        public bool RowUpdated
-        {
-            get { return IExecute<bool>("rowUpdated"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getStatement()"/> 
@@ -1531,13 +1486,6 @@ namespace Java.Sql
         public Java.Sql.SQLWarning Warnings
         {
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#wasNull()"/> 
-        /// </summary>
-        public bool WasNull
-        {
-            get { return IExecute<bool>("wasNull"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int,java.lang.Class)"/>
@@ -1574,6 +1522,16 @@ namespace Java.Sql
             return IExecute<bool>("absolute", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#first()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool First()
+        {
+            return IExecute<bool>("first");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getBoolean(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1594,6 +1552,86 @@ namespace Java.Sql
             return IExecute<bool>("getBoolean", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isAfterLast()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool IsAfterLast()
+        {
+            return IExecute<bool>("isAfterLast");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isBeforeFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool IsBeforeFirst()
+        {
+            return IExecute<bool>("isBeforeFirst");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isClosed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool IsClosed()
+        {
+            return IExecute<bool>("isClosed");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool IsFirst()
+        {
+            return IExecute<bool>("isFirst");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#isLast()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool IsLast()
+        {
+            return IExecute<bool>("isLast");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#last()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool Last()
+        {
+            return IExecute<bool>("last");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#next()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool Next()
+        {
+            return IExecute<bool>("next");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#previous()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool Previous()
+        {
+            return IExecute<bool>("previous");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#relative(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1602,6 +1640,46 @@ namespace Java.Sql
         public bool Relative(int arg0)
         {
             return IExecute<bool>("relative", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowDeleted()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool RowDeleted()
+        {
+            return IExecute<bool>("rowDeleted");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowInserted()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool RowInserted()
+        {
+            return IExecute<bool>("rowInserted");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#rowUpdated()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool RowUpdated()
+        {
+            return IExecute<bool>("rowUpdated");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#wasNull()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool WasNull()
+        {
+            return IExecute<bool>("wasNull");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getByte(int)"/>

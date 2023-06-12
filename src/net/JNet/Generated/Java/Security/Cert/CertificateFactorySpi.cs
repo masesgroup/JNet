@@ -46,13 +46,6 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGetCertPathEncodings()"/> 
-        /// </summary>
-        public Java.Util.Iterator<string> EngineGetCertPathEncodings
-        {
-            get { return IExecute<Java.Util.Iterator<string>>("engineGetCertPathEncodings"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGenerateCertificate(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -125,6 +118,15 @@ namespace Java.Security.Cert
         public Java.Security.Cert.CertPath EngineGenerateCertPath<Arg0ExtendsJava_Security_Cert_Certificate>(Java.Util.List<Arg0ExtendsJava_Security_Cert_Certificate> arg0) where Arg0ExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
         {
             return IExecute<Java.Security.Cert.CertPath>("engineGenerateCertPath", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGetCertPathEncodings()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<string> EngineGetCertPathEncodings()
+        {
+            return IExecute<Java.Util.Iterator<string>>("engineGetCertPathEncodings");
         }
 
         #endregion

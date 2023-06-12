@@ -206,27 +206,6 @@ namespace Java.Time
             get { return IExecute<Java.Time.Chrono.Era>("getEra"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isLeapYear()"/> 
-        /// </summary>
-        public bool IsLeapYear
-        {
-            get { return IExecute<bool>("isLeapYear"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#lengthOfMonth()"/> 
-        /// </summary>
-        public int LengthOfMonth
-        {
-            get { return IExecute<int>("lengthOfMonth"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#lengthOfYear()"/> 
-        /// </summary>
-        public int LengthOfYear
-        {
-            get { return IExecute<int>("lengthOfYear"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getMonth()"/> 
         /// </summary>
         public Java.Time.Month Month
@@ -239,13 +218,6 @@ namespace Java.Time
         public int MonthValue
         {
             get { return IExecute<int>("getMonthValue"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#toEpochDay()"/> 
-        /// </summary>
-        public long ToEpochDay
-        {
-            get { return IExecute<long>("toEpochDay"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#getYear()"/> 
@@ -292,6 +264,15 @@ namespace Java.Time
             return IExecute<bool>("isEqual", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isLeapYear()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLeapYear()
+        {
+            return IExecute<bool>("isLeapYear");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
@@ -335,6 +316,24 @@ namespace Java.Time
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<int>("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#lengthOfMonth()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int LengthOfMonth()
+        {
+            return IExecute<int>("lengthOfMonth");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#lengthOfYear()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int LengthOfYear()
+        {
+            return IExecute<int>("lengthOfYear");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#format(java.time.format.DateTimeFormatter)"/>
@@ -576,6 +575,15 @@ namespace Java.Time
         public long GetLong(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<long>("getLong", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#toEpochDay()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToEpochDay()
+        {
+            return IExecute<long>("toEpochDay");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#toEpochSecond(java.time.LocalTime,java.time.ZoneOffset)"/>

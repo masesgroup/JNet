@@ -46,11 +46,13 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#generateKeyPair()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#generateKeyPair()"/>
         /// </summary>
-        public Java.Security.KeyPair GenerateKeyPair
+
+        /// <returns><see cref="Java.Security.KeyPair"/></returns>
+        public Java.Security.KeyPair GenerateKeyPair()
         {
-            get { return IExecute<Java.Security.KeyPair>("generateKeyPair"); }
+            return IExecute<Java.Security.KeyPair>("generateKeyPair");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#initialize(int,java.security.SecureRandom)"/>

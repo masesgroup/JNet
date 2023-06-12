@@ -33,9 +33,11 @@ namespace Java.Lang
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SuppressWarnings.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SuppressWarnings.html#value()"/>
         /// </summary>
-        string[] Value { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string[] Value();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SuppressWarnings.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SuppressWarnings.html#value()"/>
         /// </summary>
-        public string[] Value
+
+        /// <returns><see cref="string"/></returns>
+        public string[] Value()
         {
-            get { return IExecuteArray<string>("value"); }
+            return IExecuteArray<string>("value");
         }
 
         #endregion

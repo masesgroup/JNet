@@ -102,11 +102,14 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#readResolve()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#readResolve()"/>
         /// </summary>
-        public object ReadResolve
+
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Io.ObjectStreamException"/>
+        public object ReadResolve()
         {
-            get { return IExecute("readResolve"); }
+            return IExecute("readResolve");
         }
 
         #endregion
@@ -200,11 +203,14 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#readResolve()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#readResolve()"/>
         /// </summary>
-        public object ReadResolve
+
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Io.ObjectStreamException"/>
+        public object ReadResolve()
         {
-            get { return IExecute("readResolve"); }
+            return IExecute("readResolve");
         }
 
         #endregion

@@ -36,7 +36,7 @@ namespace MASES.JNet.Specific.Extensions
         public static System.Collections.Generic.ICollection<T> ToCollection<T>(this Collection<T> set)
         {
             System.Collections.Generic.List<T> list = new();
-            if (set.IsEmpty) return list;
+            if (set.IsEmpty()) return list;
             foreach (var item in set)
             {
                 list.Add(item);
@@ -52,7 +52,7 @@ namespace MASES.JNet.Specific.Extensions
         public static System.Collections.Generic.List<T> ToList<T>(this Collection<T> set)
         {
             System.Collections.Generic.List<T> list = new();
-            if (set.IsEmpty) return list;
+            if (set.IsEmpty()) return list;
             foreach (var item in set)
             {
                 list.Add(item);
@@ -105,8 +105,8 @@ namespace MASES.JNet.Specific.Extensions
         public static System.Collections.Generic.Dictionary<K, V> ToDictiony<K, V>(this Map<K, V> map)
         {
             System.Collections.Generic.Dictionary<K, V> dictionary = new();
-            if (map.IsEmpty) return dictionary;
-            foreach (var item in map.EntrySet)
+            if (map.IsEmpty()) return dictionary;
+            foreach (var item in map.EntrySet())
             {
                 dictionary.Add(item.Key, item.Value);
             }

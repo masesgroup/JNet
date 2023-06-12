@@ -33,10 +33,6 @@ namespace Javax.Sound.Sampled
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/> 
-        /// </summary>
-        int Available { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getBufferSize()"/> 
         /// </summary>
         int BufferSize { get; }
@@ -49,14 +45,6 @@ namespace Javax.Sound.Sampled
         /// </summary>
         int FramePosition { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/> 
-        /// </summary>
-        bool IsActive { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/> 
-        /// </summary>
-        bool IsRunning { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getLevel()"/> 
         /// </summary>
         float Level { get; }
@@ -68,6 +56,24 @@ namespace Javax.Sound.Sampled
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getMicrosecondPosition()"/> 
         /// </summary>
         long MicrosecondPosition { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsActive();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsRunning();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        int Available();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#drain()"/>
         /// </summary>
@@ -116,13 +122,6 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/> 
-        /// </summary>
-        public int Available
-        {
-            get { return IExecute<int>("available"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getBufferSize()"/> 
         /// </summary>
         public int BufferSize
@@ -144,20 +143,6 @@ namespace Javax.Sound.Sampled
             get { return IExecute<int>("getFramePosition"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/> 
-        /// </summary>
-        public bool IsActive
-        {
-            get { return IExecute<bool>("isActive"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/> 
-        /// </summary>
-        public bool IsRunning
-        {
-            get { return IExecute<bool>("isRunning"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#getLevel()"/> 
         /// </summary>
         public float Level
@@ -177,6 +162,33 @@ namespace Javax.Sound.Sampled
         public long MicrosecondPosition
         {
             get { return IExecute<long>("getMicrosecondPosition"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isActive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsActive()
+        {
+            return IExecute<bool>("isActive");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#isRunning()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRunning()
+        {
+            return IExecute<bool>("isRunning");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#available()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Available()
+        {
+            return IExecute<int>("available");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/DataLine.html#drain()"/>

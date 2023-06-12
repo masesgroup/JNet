@@ -46,11 +46,13 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
-        public object Run
+
+        /// <returns><see cref="object"/></returns>
+        public object Run()
         {
-            get { return IExecute("run"); }
+            return IExecute("run");
         }
 
         #endregion
@@ -71,9 +73,11 @@ namespace Java.Security
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
-        T Run { get; }
+
+        /// <returns><typeparamref name="T"/></returns>
+        T Run();
 
         #endregion
 
@@ -110,11 +114,13 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PrivilegedAction.html#run()"/>
         /// </summary>
-        public T Run
+
+        /// <returns><typeparamref name="T"/></returns>
+        public T Run()
         {
-            get { return IExecute<T>("run"); }
+            return IExecute<T>("run");
         }
 
         #endregion

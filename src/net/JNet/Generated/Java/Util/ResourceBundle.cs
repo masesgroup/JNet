@@ -159,13 +159,6 @@ namespace Java.Util
             get { return IExecute<Java.Util.Enumeration<string>>("getKeys"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#keySet()"/> 
-        /// </summary>
-        public Java.Util.Set<string> KeySet
-        {
-            get { return IExecute<Java.Util.Set<string>>("keySet"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#getLocale()"/> 
         /// </summary>
         public Java.Util.Locale Locale
@@ -207,6 +200,15 @@ namespace Java.Util
         public string[] GetStringArray(string arg0)
         {
             return IExecuteArray<string>("getStringArray", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.html#keySet()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<string> KeySet()
+        {
+            return IExecute<Java.Util.Set<string>>("keySet");
         }
 
         #endregion

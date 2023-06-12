@@ -92,13 +92,6 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#intValue()"/> 
-        /// </summary>
-        public int IntValue
-        {
-            get { return IExecute<int>("intValue"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#getLocalizedName()"/> 
         /// </summary>
         public string LocalizedName
@@ -118,6 +111,15 @@ namespace Java.Util.Logging
         public string ResourceBundleName
         {
             get { return IExecute<string>("getResourceBundleName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#intValue()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int IntValue()
+        {
+            return IExecute<int>("intValue");
         }
 
         #endregion

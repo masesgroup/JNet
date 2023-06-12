@@ -50,13 +50,6 @@ namespace Javax.Swing.Undo
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#canUndoOrRedo()"/> 
-        /// </summary>
-        public bool CanUndoOrRedo
-        {
-            get { return IExecute<bool>("canUndoOrRedo"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#getLimit()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#setLimit(int)"/>
         /// </summary>
         public int Limit
@@ -69,6 +62,15 @@ namespace Javax.Swing.Undo
         public string UndoOrRedoPresentationName
         {
             get { return IExecute<string>("getUndoOrRedoPresentationName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#canUndoOrRedo()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool CanUndoOrRedo()
+        {
+            return IExecute<bool>("canUndoOrRedo");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html#discardAllEdits()"/>

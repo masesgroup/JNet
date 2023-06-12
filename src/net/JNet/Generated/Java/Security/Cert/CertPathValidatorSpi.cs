@@ -46,13 +46,6 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorSpi.html#engineGetRevocationChecker()"/> 
-        /// </summary>
-        public Java.Security.Cert.CertPathChecker EngineGetRevocationChecker
-        {
-            get { return IExecute<Java.Security.Cert.CertPathChecker>("engineGetRevocationChecker"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorSpi.html#engineValidate(java.security.cert.CertPath,java.security.cert.CertPathParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CertPath"/></param>
@@ -63,6 +56,15 @@ namespace Java.Security.Cert
         public Java.Security.Cert.CertPathValidatorResult EngineValidate(Java.Security.Cert.CertPath arg0, Java.Security.Cert.CertPathParameters arg1)
         {
             return IExecute<Java.Security.Cert.CertPathValidatorResult>("engineValidate", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorSpi.html#engineGetRevocationChecker()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Security.Cert.CertPathChecker"/></returns>
+        public Java.Security.Cert.CertPathChecker EngineGetRevocationChecker()
+        {
+            return IExecute<Java.Security.Cert.CertPathChecker>("engineGetRevocationChecker");
         }
 
         #endregion

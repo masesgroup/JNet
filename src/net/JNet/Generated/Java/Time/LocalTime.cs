@@ -222,20 +222,6 @@ namespace Java.Time
             get { return IExecute<int>("getSecond"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#toNanoOfDay()"/> 
-        /// </summary>
-        public long ToNanoOfDay
-        {
-            get { return IExecute<long>("toNanoOfDay"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#toSecondOfDay()"/> 
-        /// </summary>
-        public int ToSecondOfDay
-        {
-            get { return IExecute<int>("toSecondOfDay"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
@@ -307,6 +293,15 @@ namespace Java.Time
         public int Get(Java.Time.Temporal.TemporalField arg0)
         {
             return IExecute<int>("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#toSecondOfDay()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int ToSecondOfDay()
+        {
+            return IExecute<int>("toSecondOfDay");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#format(java.time.format.DateTimeFormatter)"/>
@@ -545,6 +540,15 @@ namespace Java.Time
         public long ToEpochSecond(Java.Time.LocalDate arg0, Java.Time.ZoneOffset arg1)
         {
             return IExecute<long>("toEpochSecond", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#toNanoOfDay()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToNanoOfDay()
+        {
+            return IExecute<long>("toNanoOfDay");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>

@@ -69,18 +69,20 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#isTearOff()"/> 
-        /// </summary>
-        public bool IsTearOff
-        {
-            get { return IExecute<bool>("isTearOff"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#getItemCount()"/> 
         /// </summary>
         public int ItemCount
         {
             get { return IExecute<int>("getItemCount"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#isTearOff()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTearOff()
+        {
+            return IExecute<bool>("isTearOff");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#add(java.awt.MenuItem)"/>

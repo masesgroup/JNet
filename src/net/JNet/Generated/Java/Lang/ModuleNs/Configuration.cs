@@ -42,11 +42,13 @@ namespace Java.Lang.ModuleNs
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#empty()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#empty()"/>
         /// </summary>
-        public static Java.Lang.ModuleNs.Configuration Empty
+
+        /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
+        public static Java.Lang.ModuleNs.Configuration Empty()
         {
-            get { return SExecute<Java.Lang.ModuleNs.Configuration>(LocalBridgeClazz, "empty"); }
+            return SExecute<Java.Lang.ModuleNs.Configuration>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#resolve(java.lang.module.ModuleFinder,java.util.List,java.lang.module.ModuleFinder,java.util.Collection)"/>
@@ -77,20 +79,6 @@ namespace Java.Lang.ModuleNs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#modules()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule> Modules
-        {
-            get { return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule>>("modules"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#parents()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.ModuleNs.Configuration> Parents
-        {
-            get { return IExecute<Java.Util.List<Java.Lang.ModuleNs.Configuration>>("parents"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#resolve(java.lang.module.ModuleFinder,java.lang.module.ModuleFinder,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleFinder"/></param>
@@ -113,6 +101,15 @@ namespace Java.Lang.ModuleNs
             return IExecute<Java.Lang.ModuleNs.Configuration>("resolveAndBind", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#parents()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.ModuleNs.Configuration> Parents()
+        {
+            return IExecute<Java.Util.List<Java.Lang.ModuleNs.Configuration>>("parents");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#findModule(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -120,6 +117,15 @@ namespace Java.Lang.ModuleNs
         public Java.Util.Optional<Java.Lang.ModuleNs.ResolvedModule> FindModule(string arg0)
         {
             return IExecute<Java.Util.Optional<Java.Lang.ModuleNs.ResolvedModule>>("findModule", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#modules()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule> Modules()
+        {
+            return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ResolvedModule>>("modules");
         }
 
         #endregion

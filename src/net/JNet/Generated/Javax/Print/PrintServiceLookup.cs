@@ -42,13 +42,6 @@ namespace Javax.Print
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#lookupDefaultPrintService()"/> 
-        /// </summary>
-        public static Javax.Print.PrintService LookupDefaultPrintService
-        {
-            get { return SExecute<Javax.Print.PrintService>(LocalBridgeClazz, "lookupDefaultPrintService"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#registerService(javax.print.PrintService)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Print.PrintService"/></param>
@@ -75,6 +68,15 @@ namespace Javax.Print
         public static Javax.Print.MultiDocPrintService[] LookupMultiDocPrintServices(Javax.Print.DocFlavor[] arg0, Javax.Print.Attribute.AttributeSet arg1)
         {
             return SExecuteArray<Javax.Print.MultiDocPrintService>(LocalBridgeClazz, "lookupMultiDocPrintServices", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#lookupDefaultPrintService()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Print.PrintService"/></returns>
+        public static Javax.Print.PrintService LookupDefaultPrintService()
+        {
+            return SExecute<Javax.Print.PrintService>(LocalBridgeClazz, "lookupDefaultPrintService");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintServiceLookup.html#lookupPrintServices(javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>

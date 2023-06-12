@@ -42,11 +42,13 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#empty()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#empty()"/>
         /// </summary>
-        public static Java.Util.OptionalLong Empty
+
+        /// <returns><see cref="Java.Util.OptionalLong"/></returns>
+        public static Java.Util.OptionalLong Empty()
         {
-            get { return SExecute<Java.Util.OptionalLong>(LocalBridgeClazz, "empty"); }
+            return SExecute<Java.Util.OptionalLong>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#of(long)"/>
@@ -69,27 +71,6 @@ namespace Java.Util
             get { return IExecute<long>("getAsLong"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isEmpty()"/> 
-        /// </summary>
-        public bool IsEmpty
-        {
-            get { return IExecute<bool>("isEmpty"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isPresent()"/> 
-        /// </summary>
-        public bool IsPresent
-        {
-            get { return IExecute<bool>("isPresent"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#stream()"/> 
-        /// </summary>
-        public Java.Util.Stream.LongStream Stream
-        {
-            get { return IExecute<Java.Util.Stream.LongStream>("stream"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
@@ -100,6 +81,33 @@ namespace Java.Util
         public long OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX: X
         {
             return IExecute<long>("orElseThrow", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecute<bool>("isEmpty");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#isPresent()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPresent()
+        {
+            return IExecute<bool>("isPresent");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#stream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+        public Java.Util.Stream.LongStream Stream()
+        {
+            return IExecute<Java.Util.Stream.LongStream>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalLong.html#orElse(long)"/>

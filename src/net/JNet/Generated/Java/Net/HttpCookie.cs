@@ -102,20 +102,6 @@ namespace Java.Net
             get { return IExecute<string>("getDomain"); } set { IExecute("setDomain", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#hasExpired()"/> 
-        /// </summary>
-        public bool HasExpired
-        {
-            get { return IExecute<bool>("hasExpired"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#isHttpOnly()"/> 
-        /// </summary>
-        public bool IsHttpOnly
-        {
-            get { return IExecute<bool>("isHttpOnly"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#getMaxAge()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setMaxAge(long)"/>
         /// </summary>
         public long MaxAge
@@ -163,6 +149,24 @@ namespace Java.Net
         public int Version
         {
             get { return IExecute<int>("getVersion"); } set { IExecute("setVersion", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#hasExpired()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasExpired()
+        {
+            return IExecute<bool>("hasExpired");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#isHttpOnly()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsHttpOnly()
+        {
+            return IExecute<bool>("isHttpOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#setHttpOnly(boolean)"/>

@@ -54,11 +54,14 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parseDTDMarkup()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parseDTDMarkup()"/>
         /// </summary>
-        public string ParseDTDMarkup
+
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public string ParseDTDMarkup()
         {
-            get { return IExecute<string>("parseDTDMarkup"); }
+            return IExecute<string>("parseDTDMarkup");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Parser.html#parse(java.io.Reader)"/>

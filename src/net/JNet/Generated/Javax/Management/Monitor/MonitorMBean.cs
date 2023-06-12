@@ -37,10 +37,6 @@ namespace Javax.Management.Monitor
         /// </summary>
         long GranularityPeriod { get; set; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/> 
-        /// </summary>
-        bool IsActive { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedAttribute()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#setObservedAttribute(java.lang.String)"/>
         /// </summary>
         string ObservedAttribute { get; set; }
@@ -54,6 +50,12 @@ namespace Javax.Management.Monitor
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <returns><see cref="bool"/></returns>
         bool ContainsObservedObject(Javax.Management.ObjectName arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsActive();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#addObservedObject(javax.management.ObjectName)"/>
         /// </summary>
@@ -112,13 +114,6 @@ namespace Javax.Management.Monitor
             get { return IExecute<long>("getGranularityPeriod"); } set { IExecute("setGranularityPeriod", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/> 
-        /// </summary>
-        public bool IsActive
-        {
-            get { return IExecute<bool>("isActive"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#getObservedAttribute()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#setObservedAttribute(java.lang.String)"/>
         /// </summary>
         public string ObservedAttribute
@@ -140,6 +135,15 @@ namespace Javax.Management.Monitor
         public bool ContainsObservedObject(Javax.Management.ObjectName arg0)
         {
             return IExecute<bool>("containsObservedObject", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#isActive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsActive()
+        {
+            return IExecute<bool>("isActive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorMBean.html#addObservedObject(javax.management.ObjectName)"/>

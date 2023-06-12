@@ -104,13 +104,6 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#isOnKeyRelease()"/> 
-        /// </summary>
-        public bool IsOnKeyRelease
-        {
-            get { return IExecute<bool>("isOnKeyRelease"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getKeyChar()"/> 
         /// </summary>
         public char KeyChar
@@ -137,6 +130,15 @@ namespace Java.Awt
         public int Modifiers
         {
             get { return IExecute<int>("getModifiers"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#isOnKeyRelease()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOnKeyRelease()
+        {
+            return IExecute<bool>("isOnKeyRelease");
         }
 
         #endregion

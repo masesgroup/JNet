@@ -33,17 +33,21 @@ namespace Java.Net.Http
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/> 
-        /// </summary>
-        bool IsInputClosed { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/> 
-        /// </summary>
-        bool IsOutputClosed { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#getSubprotocol()"/> 
         /// </summary>
         string Subprotocol { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsInputClosed();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsOutputClosed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendBinary(java.nio.ByteBuffer,boolean)"/>
         /// </summary>
@@ -122,25 +126,29 @@ namespace Java.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/> 
-        /// </summary>
-        public bool IsInputClosed
-        {
-            get { return IExecute<bool>("isInputClosed"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/> 
-        /// </summary>
-        public bool IsOutputClosed
-        {
-            get { return IExecute<bool>("isOutputClosed"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#getSubprotocol()"/> 
         /// </summary>
         public string Subprotocol
         {
             get { return IExecute<string>("getSubprotocol"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isInputClosed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInputClosed()
+        {
+            return IExecute<bool>("isInputClosed");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#isOutputClosed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOutputClosed()
+        {
+            return IExecute<bool>("isOutputClosed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendBinary(java.nio.ByteBuffer,boolean)"/>

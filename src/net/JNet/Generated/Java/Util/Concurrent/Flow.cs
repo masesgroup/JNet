@@ -42,11 +42,13 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.html#defaultBufferSize()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.html#defaultBufferSize()"/>
         /// </summary>
-        public static int DefaultBufferSize
+
+        /// <returns><see cref="int"/></returns>
+        public static int DefaultBufferSize()
         {
-            get { return SExecute<int>(LocalBridgeClazz, "defaultBufferSize"); }
+            return SExecute<int>(LocalBridgeClazz, "defaultBufferSize");
         }
 
         #endregion

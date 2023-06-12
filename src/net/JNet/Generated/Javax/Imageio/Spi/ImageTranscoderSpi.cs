@@ -55,13 +55,6 @@ namespace Javax.Imageio.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#createTranscoderInstance()"/> 
-        /// </summary>
-        public Javax.Imageio.ImageTranscoder CreateTranscoderInstance
-        {
-            get { return IExecute<Javax.Imageio.ImageTranscoder>("createTranscoderInstance"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#getReaderServiceProviderName()"/> 
         /// </summary>
         public string ReaderServiceProviderName
@@ -74,6 +67,15 @@ namespace Javax.Imageio.Spi
         public string WriterServiceProviderName
         {
             get { return IExecute<string>("getWriterServiceProviderName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageTranscoderSpi.html#createTranscoderInstance()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Imageio.ImageTranscoder"/></returns>
+        public Javax.Imageio.ImageTranscoder CreateTranscoderInstance()
+        {
+            return IExecute<Javax.Imageio.ImageTranscoder>("createTranscoderInstance");
         }
 
         #endregion

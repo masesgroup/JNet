@@ -33,13 +33,11 @@ namespace Java.Nio.File.Attribute
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#name()"/>
         /// </summary>
-        string Name { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()"/> 
-        /// </summary>
-        Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string Name();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setArchive(boolean)"/>
         /// </summary>
@@ -64,6 +62,13 @@ namespace Java.Nio.File.Attribute
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
         void SetSystem(bool arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes();
 
         #endregion
 
@@ -96,18 +101,13 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#name()"/>
         /// </summary>
-        public string Name
+
+        /// <returns><see cref="string"/></returns>
+        public string Name()
         {
-            get { return IExecute<string>("name"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()"/> 
-        /// </summary>
-        public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes
-        {
-            get { return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes"); }
+            return IExecute<string>("name");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#setArchive(boolean)"/>
@@ -144,6 +144,16 @@ namespace Java.Nio.File.Attribute
         public void SetSystem(bool arg0)
         {
             IExecute("setSystem", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.File.Attribute.BasicFileAttributes ReadAttributes()
+        {
+            return IExecute<Java.Nio.File.Attribute.BasicFileAttributes>("readAttributes");
         }
 
         #endregion

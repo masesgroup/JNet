@@ -86,18 +86,20 @@ namespace Javax.Crypto
             get { return IExecute<string>("getAlgorithm"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGenerator.html#generateKey()"/> 
-        /// </summary>
-        public Javax.Crypto.SecretKey GenerateKey
-        {
-            get { return IExecute<Javax.Crypto.SecretKey>("generateKey"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGenerator.html#getProvider()"/> 
         /// </summary>
         public Java.Security.Provider Provider
         {
             get { return IExecute<Java.Security.Provider>("getProvider"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGenerator.html#generateKey()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Crypto.SecretKey"/></returns>
+        public Javax.Crypto.SecretKey GenerateKey()
+        {
+            return IExecute<Javax.Crypto.SecretKey>("generateKey");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGenerator.html#init(int,java.security.SecureRandom)"/>

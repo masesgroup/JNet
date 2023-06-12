@@ -54,11 +54,14 @@ namespace Javax.Xml.Transform.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTemplatesHandler()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTemplatesHandler()"/>
         /// </summary>
-        public Javax.Xml.Transform.Sax.TemplatesHandler NewTemplatesHandler
+
+        /// <returns><see cref="Javax.Xml.Transform.Sax.TemplatesHandler"/></returns>
+        /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
+        public Javax.Xml.Transform.Sax.TemplatesHandler NewTemplatesHandler()
         {
-            get { return IExecute<Javax.Xml.Transform.Sax.TemplatesHandler>("newTemplatesHandler"); }
+            return IExecute<Javax.Xml.Transform.Sax.TemplatesHandler>("newTemplatesHandler");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/SAXTransformerFactory.html#newTransformerHandler()"/>

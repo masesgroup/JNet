@@ -84,11 +84,13 @@ namespace Javax.Security.Sasl
             get { return IExecute<string>("getAuthorizedID"); } set { IExecute("setAuthorizedID", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#isAuthorized()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#isAuthorized()"/>
         /// </summary>
-        public bool IsAuthorized
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAuthorized()
         {
-            get { return IExecute<bool>("isAuthorized"); }
+            return IExecute<bool>("isAuthorized");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html#setAuthorized(boolean)"/>

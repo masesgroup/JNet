@@ -214,41 +214,6 @@ namespace Javax.Swing
             get { return IExecute<int>("getIconTextGap"); } set { IExecute("setIconTextGap", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isBorderPainted()"/> 
-        /// </summary>
-        public bool IsBorderPainted
-        {
-            get { return IExecute<bool>("isBorderPainted"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isContentAreaFilled()"/> 
-        /// </summary>
-        public bool IsContentAreaFilled
-        {
-            get { return IExecute<bool>("isContentAreaFilled"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isFocusPainted()"/> 
-        /// </summary>
-        public bool IsFocusPainted
-        {
-            get { return IExecute<bool>("isFocusPainted"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isRolloverEnabled()"/> 
-        /// </summary>
-        public bool IsRolloverEnabled
-        {
-            get { return IExecute<bool>("isRolloverEnabled"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isSelected()"/> 
-        /// </summary>
-        public bool IsSelected
-        {
-            get { return IExecute<bool>("isSelected"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#getItemListeners()"/> 
         /// </summary>
         public Java.Awt.EventNs.ItemListener[] ItemListeners
@@ -338,6 +303,51 @@ namespace Javax.Swing
         public int VerticalTextPosition
         {
             get { return IExecute<int>("getVerticalTextPosition"); } set { IExecute("setVerticalTextPosition", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isBorderPainted()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBorderPainted()
+        {
+            return IExecute<bool>("isBorderPainted");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isContentAreaFilled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsContentAreaFilled()
+        {
+            return IExecute<bool>("isContentAreaFilled");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isFocusPainted()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFocusPainted()
+        {
+            return IExecute<bool>("isFocusPainted");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isRolloverEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRolloverEnabled()
+        {
+            return IExecute<bool>("isRolloverEnabled");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#isSelected()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSelected()
+        {
+            return IExecute<bool>("isSelected");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/AbstractButton.html#addActionListener(java.awt.event.ActionListener)"/>

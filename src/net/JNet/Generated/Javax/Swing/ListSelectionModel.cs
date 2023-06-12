@@ -37,10 +37,6 @@ namespace Javax.Swing
         /// </summary>
         int AnchorSelectionIndex { get; set; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectionEmpty()"/> 
-        /// </summary>
-        bool IsSelectionEmpty { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getLeadSelectionIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setLeadSelectionIndex(int)"/>
         /// </summary>
         int LeadSelectionIndex { get; set; }
@@ -74,6 +70,12 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
         bool IsSelectedIndex(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectionEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsSelectionEmpty();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>
         /// </summary>
@@ -170,13 +172,6 @@ namespace Javax.Swing
             get { return IExecute<int>("getAnchorSelectionIndex"); } set { IExecute("setAnchorSelectionIndex", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectionEmpty()"/> 
-        /// </summary>
-        public bool IsSelectionEmpty
-        {
-            get { return IExecute<bool>("isSelectionEmpty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#getLeadSelectionIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#setLeadSelectionIndex(int)"/>
         /// </summary>
         public int LeadSelectionIndex
@@ -233,6 +228,15 @@ namespace Javax.Swing
         public bool IsSelectedIndex(int arg0)
         {
             return IExecute<bool>("isSelectedIndex", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#isSelectionEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSelectionEmpty()
+        {
+            return IExecute<bool>("isSelectionEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>

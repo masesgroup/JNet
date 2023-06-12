@@ -156,13 +156,6 @@ namespace Java.Awt.ImageNs
             get { return IExecute<Java.Awt.ImageNs.ColorModel>("getColorModel"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#createGraphics()"/> 
-        /// </summary>
-        public Java.Awt.Graphics2D CreateGraphics
-        {
-            get { return IExecute<Java.Awt.Graphics2D>("createGraphics"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getData()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setData(java.awt.image.Raster)"/>
         /// </summary>
         public Java.Awt.ImageNs.Raster Data
@@ -170,25 +163,11 @@ namespace Java.Awt.ImageNs
             get { return IExecute<Java.Awt.ImageNs.Raster>("getData"); } set { IExecute("setData", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#hasTileWriters()"/> 
-        /// </summary>
-        public bool HasTileWriters
-        {
-            get { return IExecute<bool>("hasTileWriters"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getHeight()"/> 
         /// </summary>
         public int Height
         {
             get { return IExecute<int>("getHeight"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#isAlphaPremultiplied()"/> 
-        /// </summary>
-        public bool IsAlphaPremultiplied
-        {
-            get { return IExecute<bool>("isAlphaPremultiplied"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getMinTileX()"/> 
@@ -317,6 +296,24 @@ namespace Java.Awt.ImageNs
             get { return IExecuteArray<Java.Awt.Point>("getWritableTileIndices"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#hasTileWriters()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasTileWriters()
+        {
+            return IExecute<bool>("hasTileWriters");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#isAlphaPremultiplied()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAlphaPremultiplied()
+        {
+            return IExecute<bool>("isAlphaPremultiplied");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#isTileWritable(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -350,6 +347,15 @@ namespace Java.Awt.ImageNs
         public int[] GetRGB(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, int arg6)
         {
             return IExecuteArray<int>("getRGB", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#createGraphics()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
+        public Java.Awt.Graphics2D CreateGraphics()
+        {
+            return IExecute<Java.Awt.Graphics2D>("createGraphics");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getSubimage(int,int,int,int)"/>

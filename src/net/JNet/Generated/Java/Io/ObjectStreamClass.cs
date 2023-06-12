@@ -75,13 +75,6 @@ namespace Java.Io
             get { return IExecuteArray<Java.Io.ObjectStreamField>("getFields"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#forClass()"/> 
-        /// </summary>
-        public Java.Lang.Class ForClass
-        {
-            get { return IExecute<Java.Lang.Class>("forClass"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#getName()"/> 
         /// </summary>
         public string Name
@@ -103,6 +96,15 @@ namespace Java.Io
         public Java.Io.ObjectStreamField GetField(string arg0)
         {
             return IExecute<Java.Io.ObjectStreamField>("getField", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html#forClass()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class ForClass()
+        {
+            return IExecute<Java.Lang.Class>("forClass");
         }
 
         #endregion

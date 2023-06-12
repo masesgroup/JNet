@@ -898,13 +898,6 @@ namespace Java.Awt.EventNs
             get { return IExecute<int>("getExtendedKeyCode"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#isActionKey()"/> 
-        /// </summary>
-        public bool IsActionKey
-        {
-            get { return IExecute<bool>("isActionKey"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#getKeyChar()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#setKeyChar(char)"/>
         /// </summary>
         public char KeyChar
@@ -924,6 +917,15 @@ namespace Java.Awt.EventNs
         public int KeyLocation
         {
             get { return IExecute<int>("getKeyLocation"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html#isActionKey()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsActionKey()
+        {
+            return IExecute<bool>("isActionKey");
         }
 
         #endregion

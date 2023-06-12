@@ -78,13 +78,6 @@ namespace Javax.Imageio.Spi
             get { return IExecuteArray<string>("getImageReaderSpiNames"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isFormatLossless()"/> 
-        /// </summary>
-        public bool IsFormatLossless
-        {
-            get { return IExecute<bool>("isFormatLossless"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#getOutputTypes()"/> 
         /// </summary>
         public Java.Lang.Class[] OutputTypes
@@ -118,6 +111,15 @@ namespace Javax.Imageio.Spi
         public bool CanEncodeImage(Java.Awt.ImageNs.RenderedImage arg0)
         {
             return IExecute<bool>("canEncodeImage", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isFormatLossless()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFormatLossless()
+        {
+            return IExecute<bool>("isFormatLossless");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageWriterSpi.html#isOwnWriter(javax.imageio.ImageWriter)"/>

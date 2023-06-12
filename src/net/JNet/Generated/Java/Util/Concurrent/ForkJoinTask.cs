@@ -50,13 +50,6 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#inForkJoinPool()"/> 
-        /// </summary>
-        public static bool InForkJoinPool
-        {
-            get { return SExecute<bool>(LocalBridgeClazz, "inForkJoinPool"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getPool()"/> 
         /// </summary>
         public static Java.Util.Concurrent.ForkJoinPool Pool
@@ -106,6 +99,15 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.ForkJoinTask>(LocalBridgeClazz, "adapt", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#inForkJoinPool()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public static bool InForkJoinPool()
+        {
+            return SExecute<bool>(LocalBridgeClazz, "inForkJoinPool");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
@@ -150,13 +152,6 @@ namespace Java.Util.Concurrent
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#fork()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.ForkJoinTask Fork
-        {
-            get { return IExecute<Java.Util.Concurrent.ForkJoinTask>("fork"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getForkJoinTaskTag()"/> 
         /// </summary>
         public short ForkJoinTaskTag
@@ -164,60 +159,11 @@ namespace Java.Util.Concurrent
             get { return IExecute<short>("getForkJoinTaskTag"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invoke()"/> 
-        /// </summary>
-        public object Invoke
-        {
-            get { return IExecute("invoke"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCancelled()"/> 
-        /// </summary>
-        public bool IsCancelled
-        {
-            get { return IExecute<bool>("isCancelled"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedAbnormally()"/> 
-        /// </summary>
-        public bool IsCompletedAbnormally
-        {
-            get { return IExecute<bool>("isCompletedAbnormally"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedNormally()"/> 
-        /// </summary>
-        public bool IsCompletedNormally
-        {
-            get { return IExecute<bool>("isCompletedNormally"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isDone()"/> 
-        /// </summary>
-        public bool IsDone
-        {
-            get { return IExecute<bool>("isDone"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#join()"/> 
-        /// </summary>
-        public object Join
-        {
-            get { return IExecute("join"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getRawResult()"/> 
         /// </summary>
         public object RawResult
         {
             get { return IExecute("getRawResult"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#tryUnfork()"/> 
-        /// </summary>
-        public bool TryUnfork
-        {
-            get { return IExecute<bool>("tryUnfork"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#cancel(boolean)"/>
@@ -229,6 +175,15 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("cancel", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#tryUnfork()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool TryUnfork()
+        {
+            return IExecute<bool>("tryUnfork");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#compareAndSetForkJoinTaskTag(short,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
@@ -237,6 +192,51 @@ namespace Java.Util.Concurrent
         public bool CompareAndSetForkJoinTaskTag(short arg0, short arg1)
         {
             return IExecute<bool>("compareAndSetForkJoinTaskTag", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCancelled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCancelled()
+        {
+            return IExecute<bool>("isCancelled");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedAbnormally()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCompletedAbnormally()
+        {
+            return IExecute<bool>("isCompletedAbnormally");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedNormally()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCompletedNormally()
+        {
+            return IExecute<bool>("isCompletedNormally");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isDone()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDone()
+        {
+            return IExecute<bool>("isDone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#fork()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
+        public Java.Util.Concurrent.ForkJoinTask Fork()
+        {
+            return IExecute<Java.Util.Concurrent.ForkJoinTask>("fork");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#setForkJoinTaskTag(short)"/>
@@ -270,6 +270,24 @@ namespace Java.Util.Concurrent
         public object Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecute("get", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invoke()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object Invoke()
+        {
+            return IExecute("invoke");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#join()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object Join()
+        {
+            return IExecute("join");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyComplete()"/>
@@ -355,13 +373,6 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#inForkJoinPool()"/> 
-        /// </summary>
-        public static bool InForkJoinPool
-        {
-            get { return SExecute<bool>(LocalBridgeClazz, "inForkJoinPool"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getPool()"/> 
         /// </summary>
         public static Java.Util.Concurrent.ForkJoinPool Pool
@@ -415,6 +426,15 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.ForkJoinTask<T>>(LocalBridgeClazz, "adapt", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#inForkJoinPool()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public static bool InForkJoinPool()
+        {
+            return SExecute<bool>(LocalBridgeClazz, "inForkJoinPool");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
@@ -459,13 +479,6 @@ namespace Java.Util.Concurrent
             get { var obj = IExecute<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getException"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Lang.Throwable>(obj); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#fork()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.ForkJoinTask<V> Fork
-        {
-            get { return IExecute<Java.Util.Concurrent.ForkJoinTask<V>>("fork"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getForkJoinTaskTag()"/> 
         /// </summary>
         public short ForkJoinTaskTag
@@ -473,60 +486,11 @@ namespace Java.Util.Concurrent
             get { return IExecute<short>("getForkJoinTaskTag"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invoke()"/> 
-        /// </summary>
-        public V Invoke
-        {
-            get { return IExecute<V>("invoke"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCancelled()"/> 
-        /// </summary>
-        public bool IsCancelled
-        {
-            get { return IExecute<bool>("isCancelled"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedAbnormally()"/> 
-        /// </summary>
-        public bool IsCompletedAbnormally
-        {
-            get { return IExecute<bool>("isCompletedAbnormally"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedNormally()"/> 
-        /// </summary>
-        public bool IsCompletedNormally
-        {
-            get { return IExecute<bool>("isCompletedNormally"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isDone()"/> 
-        /// </summary>
-        public bool IsDone
-        {
-            get { return IExecute<bool>("isDone"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#join()"/> 
-        /// </summary>
-        public V Join
-        {
-            get { return IExecute<V>("join"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#getRawResult()"/> 
         /// </summary>
         public V RawResult
         {
             get { return IExecute<V>("getRawResult"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#tryUnfork()"/> 
-        /// </summary>
-        public bool TryUnfork
-        {
-            get { return IExecute<bool>("tryUnfork"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#cancel(boolean)"/>
@@ -538,6 +502,15 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("cancel", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#tryUnfork()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool TryUnfork()
+        {
+            return IExecute<bool>("tryUnfork");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#compareAndSetForkJoinTaskTag(short,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
@@ -546,6 +519,51 @@ namespace Java.Util.Concurrent
         public bool CompareAndSetForkJoinTaskTag(short arg0, short arg1)
         {
             return IExecute<bool>("compareAndSetForkJoinTaskTag", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCancelled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCancelled()
+        {
+            return IExecute<bool>("isCancelled");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedAbnormally()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCompletedAbnormally()
+        {
+            return IExecute<bool>("isCompletedAbnormally");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCompletedNormally()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCompletedNormally()
+        {
+            return IExecute<bool>("isCompletedNormally");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isDone()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDone()
+        {
+            return IExecute<bool>("isDone");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#fork()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
+        public Java.Util.Concurrent.ForkJoinTask<V> Fork()
+        {
+            return IExecute<Java.Util.Concurrent.ForkJoinTask<V>>("fork");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#setForkJoinTaskTag(short)"/>
@@ -579,6 +597,24 @@ namespace Java.Util.Concurrent
         public V Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecute<V>("get", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invoke()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="V"/></returns>
+        public V Invoke()
+        {
+            return IExecute<V>("invoke");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#join()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="V"/></returns>
+        public V Join()
+        {
+            return IExecute<V>("join");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#quietlyComplete()"/>

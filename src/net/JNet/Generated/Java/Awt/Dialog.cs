@@ -189,32 +189,38 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.Dialog.ModalityType>("getModalityType"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isModal()"/> 
-        /// </summary>
-        public bool IsModal
-        {
-            get { return IExecute<bool>("isModal"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isResizable()"/> 
-        /// </summary>
-        public bool IsResizable
-        {
-            get { return IExecute<bool>("isResizable"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isUndecorated()"/> 
-        /// </summary>
-        public bool IsUndecorated
-        {
-            get { return IExecute<bool>("isUndecorated"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#getTitle()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setTitle(java.lang.String)"/>
         /// </summary>
         public string Title
         {
             get { return IExecute<string>("getTitle"); } set { IExecute("setTitle", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isModal()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsModal()
+        {
+            return IExecute<bool>("isModal");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isResizable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsResizable()
+        {
+            return IExecute<bool>("isResizable");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#isUndecorated()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsUndecorated()
+        {
+            return IExecute<bool>("isUndecorated");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#setModal(boolean)"/>
@@ -281,13 +287,6 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#values()"/> 
-            /// </summary>
-            public static Java.Awt.Dialog.ModalExclusionType[] Values
-            {
-                get { return SExecuteArray<Java.Awt.Dialog.ModalExclusionType>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -295,6 +294,15 @@ namespace Java.Awt
             public static Java.Awt.Dialog.ModalExclusionType ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.Dialog.ModalExclusionType>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Awt.Dialog.ModalExclusionType"/></returns>
+            public static Java.Awt.Dialog.ModalExclusionType[] Values()
+            {
+                return SExecuteArray<Java.Awt.Dialog.ModalExclusionType>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -344,13 +352,6 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#values()"/> 
-            /// </summary>
-            public static Java.Awt.Dialog.ModalityType[] Values
-            {
-                get { return SExecuteArray<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -358,6 +359,15 @@ namespace Java.Awt
             public static Java.Awt.Dialog.ModalityType ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Awt.Dialog.ModalityType"/></returns>
+            public static Java.Awt.Dialog.ModalityType[] Values()
+            {
+                return SExecuteArray<Java.Awt.Dialog.ModalityType>(LocalBridgeClazz, "values");
             }
 
             #endregion

@@ -58,11 +58,13 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#valid()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#valid()"/>
         /// </summary>
-        public bool Valid
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Valid()
         {
-            get { return IExecute<bool>("valid"); }
+            return IExecute<bool>("valid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#sync()"/>

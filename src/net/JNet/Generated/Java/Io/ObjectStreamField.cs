@@ -65,20 +65,6 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isPrimitive()"/> 
-        /// </summary>
-        public bool IsPrimitive
-        {
-            get { return IExecute<bool>("isPrimitive"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isUnshared()"/> 
-        /// </summary>
-        public bool IsUnshared
-        {
-            get { return IExecute<bool>("isUnshared"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#getName()"/> 
         /// </summary>
         public string Name
@@ -112,6 +98,24 @@ namespace Java.Io
         public string TypeString
         {
             get { return IExecute<string>("getTypeString"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isPrimitive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPrimitive()
+        {
+            return IExecute<bool>("isPrimitive");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#isUnshared()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsUnshared()
+        {
+            return IExecute<bool>("isUnshared");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html#compareTo(java.lang.Object)"/>

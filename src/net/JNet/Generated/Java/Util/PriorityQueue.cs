@@ -99,11 +99,13 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#comparator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#comparator()"/>
         /// </summary>
-        public Java.Util.Comparator Comparator
+
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator Comparator()
         {
-            get { return IExecute<Java.Util.Comparator>("comparator"); }
+            return IExecute<Java.Util.Comparator>("comparator");
         }
 
         #endregion
@@ -194,11 +196,14 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#comparator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PriorityQueue.html#comparator()"/>
         /// </summary>
-        public Java.Util.Comparator Comparator
+
+        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
+        /// <returns><see cref="Java.Util.Comparator"/></returns>
+        public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE: E
         {
-            get { return IExecute<Java.Util.Comparator>("comparator"); }
+            return IExecute<Java.Util.Comparator<ReturnobjectSuperE>>("comparator");
         }
 
         #endregion

@@ -62,13 +62,6 @@ namespace Javax.Swing.Tree
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html#isSelectionEmpty()"/> 
-        /// </summary>
-        public bool IsSelectionEmpty
-        {
-            get { return IExecute<bool>("isSelectionEmpty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html#getLeadSelectionPath()"/> 
         /// </summary>
         public Javax.Swing.Tree.TreePath LeadSelectionPath
@@ -179,6 +172,15 @@ namespace Javax.Swing.Tree
         public bool IsRowSelected(int arg0)
         {
             return IExecute<bool>("isRowSelected", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html#isSelectionEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSelectionEmpty()
+        {
+            return IExecute<bool>("isSelectionEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>

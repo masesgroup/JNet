@@ -83,18 +83,22 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#isDefaultButton()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#isDefaultButton()"/>
         /// </summary>
-        public bool IsDefaultButton
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDefaultButton()
         {
-            get { return IExecute<bool>("isDefaultButton"); }
+            return IExecute<bool>("isDefaultButton");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#isDefaultCapable()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#isDefaultCapable()"/>
         /// </summary>
-        public bool IsDefaultCapable
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDefaultCapable()
         {
-            get { return IExecute<bool>("isDefaultCapable"); }
+            return IExecute<bool>("isDefaultCapable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html#setDefaultCapable(boolean)"/>

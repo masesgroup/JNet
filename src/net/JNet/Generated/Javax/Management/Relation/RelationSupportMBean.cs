@@ -33,9 +33,11 @@ namespace Javax.Management.Relation
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
         /// </summary>
-        bool? IsInRelationService { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool? IsInRelationService();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
         /// </summary>
@@ -74,11 +76,13 @@ namespace Javax.Management.Relation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
         /// </summary>
-        public bool? IsInRelationService
+
+        /// <returns><see cref="bool"/></returns>
+        public bool? IsInRelationService()
         {
-            get { return IExecute<bool?>("isInRelationService"); }
+            return IExecute<bool?>("isInRelationService");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>

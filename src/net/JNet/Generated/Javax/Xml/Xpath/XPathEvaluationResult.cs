@@ -46,18 +46,22 @@ namespace Javax.Xml.Xpath
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/>
         /// </summary>
-        public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type
+
+        /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+        public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type()
         {
-            get { return IExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type"); }
+            return IExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
-        public object Value
+
+        /// <returns><see cref="object"/></returns>
+        public object Value()
         {
-            get { return IExecute("value"); }
+            return IExecute("value");
         }
 
         #endregion
@@ -104,13 +108,6 @@ namespace Javax.Xml.Xpath
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#values()"/> 
-            /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType[] Values
-            {
-                get { return SExecuteArray<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#getQNameType(java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -127,6 +124,15 @@ namespace Javax.Xml.Xpath
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType ValueOf(string arg0)
             {
                 return SExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType[] Values()
+            {
+                return SExecuteArray<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -158,13 +164,17 @@ namespace Javax.Xml.Xpath
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/>
         /// </summary>
-        Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type { get; }
+
+        /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+        Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
-        T Value { get; }
+
+        /// <returns><typeparamref name="T"/></returns>
+        T Value();
 
         #endregion
 
@@ -201,18 +211,22 @@ namespace Javax.Xml.Xpath
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#type()"/>
         /// </summary>
-        public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type
+
+        /// <returns><see cref="Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType"/></returns>
+        public Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType Type()
         {
-            get { return IExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type"); }
+            return IExecute<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("type");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.html#value()"/>
         /// </summary>
-        public T Value
+
+        /// <returns><typeparamref name="T"/></returns>
+        public T Value()
         {
-            get { return IExecute<T>("value"); }
+            return IExecute<T>("value");
         }
 
         #endregion

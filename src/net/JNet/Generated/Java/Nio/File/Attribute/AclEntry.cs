@@ -64,32 +64,40 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#flags()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#type()"/>
         /// </summary>
-        public Java.Util.Set<Java.Nio.File.Attribute.AclEntryFlag> Flags
+
+        /// <returns><see cref="Java.Nio.File.Attribute.AclEntryType"/></returns>
+        public Java.Nio.File.Attribute.AclEntryType Type()
         {
-            get { return IExecute<Java.Util.Set<Java.Nio.File.Attribute.AclEntryFlag>>("flags"); }
+            return IExecute<Java.Nio.File.Attribute.AclEntryType>("type");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#permissions()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#principal()"/>
         /// </summary>
-        public Java.Util.Set<Java.Nio.File.Attribute.AclEntryPermission> Permissions
+
+        /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipal"/></returns>
+        public Java.Nio.File.Attribute.UserPrincipal Principal()
         {
-            get { return IExecute<Java.Util.Set<Java.Nio.File.Attribute.AclEntryPermission>>("permissions"); }
+            return IExecute<Java.Nio.File.Attribute.UserPrincipal>("principal");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#principal()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#flags()"/>
         /// </summary>
-        public Java.Nio.File.Attribute.UserPrincipal Principal
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Nio.File.Attribute.AclEntryFlag> Flags()
         {
-            get { return IExecute<Java.Nio.File.Attribute.UserPrincipal>("principal"); }
+            return IExecute<Java.Util.Set<Java.Nio.File.Attribute.AclEntryFlag>>("flags");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#type()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.html#permissions()"/>
         /// </summary>
-        public Java.Nio.File.Attribute.AclEntryType Type
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Nio.File.Attribute.AclEntryPermission> Permissions()
         {
-            get { return IExecute<Java.Nio.File.Attribute.AclEntryType>("type"); }
+            return IExecute<Java.Util.Set<Java.Nio.File.Attribute.AclEntryPermission>>("permissions");
         }
 
         #endregion

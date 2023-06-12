@@ -144,34 +144,6 @@ namespace Java.Net
             get { return IExecute<string>("getHost"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isAbsolute()"/> 
-        /// </summary>
-        public bool IsAbsolute
-        {
-            get { return IExecute<bool>("isAbsolute"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isOpaque()"/> 
-        /// </summary>
-        public bool IsOpaque
-        {
-            get { return IExecute<bool>("isOpaque"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#normalize()"/> 
-        /// </summary>
-        public Java.Net.URI Normalize
-        {
-            get { return IExecute<Java.Net.URI>("normalize"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#parseServerAuthority()"/> 
-        /// </summary>
-        public Java.Net.URI ParseServerAuthority
-        {
-            get { return IExecute<Java.Net.URI>("parseServerAuthority"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getPath()"/> 
         /// </summary>
         public string Path
@@ -249,25 +221,29 @@ namespace Java.Net
             get { return IExecute<string>("getSchemeSpecificPart"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toASCIIString()"/> 
-        /// </summary>
-        public string ToASCIIString
-        {
-            get { return IExecute<string>("toASCIIString"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toURL()"/> 
-        /// </summary>
-        public Java.Net.URL ToURL
-        {
-            get { return IExecute<Java.Net.URL>("toURL"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#getUserInfo()"/> 
         /// </summary>
         public string UserInfo
         {
             get { return IExecute<string>("getUserInfo"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isAbsolute()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAbsolute()
+        {
+            return IExecute<bool>("isAbsolute");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#isOpaque()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOpaque()
+        {
+            return IExecute<bool>("isOpaque");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#compareTo(java.lang.Object)"/>
@@ -286,6 +262,34 @@ namespace Java.Net
         public int CompareTo(Java.Net.URI arg0)
         {
             return IExecute<int>("compareTo", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toASCIIString()"/>
+        /// </summary>
+
+        /// <returns><see cref="string"/></returns>
+        public string ToASCIIString()
+        {
+            return IExecute<string>("toASCIIString");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#normalize()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Net.URI"/></returns>
+        public Java.Net.URI Normalize()
+        {
+            return IExecute<Java.Net.URI>("normalize");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#parseServerAuthority()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Net.URI"/></returns>
+        /// <exception cref="Java.Net.URISyntaxException"/>
+        public Java.Net.URI ParseServerAuthority()
+        {
+            return IExecute<Java.Net.URI>("parseServerAuthority");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#relativize(java.net.URI)"/>
@@ -313,6 +317,16 @@ namespace Java.Net
         public Java.Net.URI Resolve(Java.Net.URI arg0)
         {
             return IExecute<Java.Net.URI>("resolve", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#toURL()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Net.URL"/></returns>
+        /// <exception cref="Java.Net.MalformedURLException"/>
+        public Java.Net.URL ToURL()
+        {
+            return IExecute<Java.Net.URL>("toURL");
         }
 
         #endregion

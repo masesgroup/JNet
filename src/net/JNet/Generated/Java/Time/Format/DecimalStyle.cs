@@ -53,13 +53,6 @@ namespace Java.Time.Format
             get { return SExecute<Java.Util.Set<Java.Util.Locale>>(LocalBridgeClazz, "getAvailableLocales"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#ofDefaultLocale()"/> 
-        /// </summary>
-        public static Java.Time.Format.DecimalStyle OfDefaultLocale
-        {
-            get { return SExecute<Java.Time.Format.DecimalStyle>(LocalBridgeClazz, "ofDefaultLocale"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#of(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
@@ -67,6 +60,15 @@ namespace Java.Time.Format
         public static Java.Time.Format.DecimalStyle Of(Java.Util.Locale arg0)
         {
             return SExecute<Java.Time.Format.DecimalStyle>(LocalBridgeClazz, "of", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html#ofDefaultLocale()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Format.DecimalStyle"/></returns>
+        public static Java.Time.Format.DecimalStyle OfDefaultLocale()
+        {
+            return SExecute<Java.Time.Format.DecimalStyle>(LocalBridgeClazz, "ofDefaultLocale");
         }
 
         #endregion

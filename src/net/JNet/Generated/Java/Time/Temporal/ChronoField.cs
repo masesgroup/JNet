@@ -166,13 +166,6 @@ namespace Java.Time.Temporal
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#values()"/> 
-        /// </summary>
-        public static Java.Time.Temporal.ChronoField[] Values
-        {
-            get { return SExecuteArray<Java.Time.Temporal.ChronoField>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -180,6 +173,15 @@ namespace Java.Time.Temporal
         public static Java.Time.Temporal.ChronoField ValueOf(string arg0)
         {
             return SExecute<Java.Time.Temporal.ChronoField>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Temporal.ChronoField"/></returns>
+        public static Java.Time.Temporal.ChronoField[] Values()
+        {
+            return SExecuteArray<Java.Time.Temporal.ChronoField>(LocalBridgeClazz, "values");
         }
 
         #endregion
@@ -191,27 +193,6 @@ namespace Java.Time.Temporal
         public Java.Time.Temporal.TemporalUnit BaseUnit
         {
             get { return IExecute<Java.Time.Temporal.TemporalUnit>("getBaseUnit"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#isDateBased()"/> 
-        /// </summary>
-        public bool IsDateBased
-        {
-            get { return IExecute<bool>("isDateBased"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#isTimeBased()"/> 
-        /// </summary>
-        public bool IsTimeBased
-        {
-            get { return IExecute<bool>("isTimeBased"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#range()"/> 
-        /// </summary>
-        public Java.Time.Temporal.ValueRange Range
-        {
-            get { return IExecute<Java.Time.Temporal.ValueRange>("range"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#getRangeUnit()"/> 
@@ -232,6 +213,15 @@ namespace Java.Time.Temporal
             return IExecute<R>("adjustInto", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#isDateBased()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDateBased()
+        {
+            return IExecute<bool>("isDateBased");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#isSupportedBy(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
@@ -239,6 +229,15 @@ namespace Java.Time.Temporal
         public bool IsSupportedBy(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return IExecute<bool>("isSupportedBy", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#isTimeBased()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTimeBased()
+        {
+            return IExecute<bool>("isTimeBased");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#checkValidIntValue(long)"/>
@@ -257,6 +256,15 @@ namespace Java.Time.Temporal
         public string GetDisplayName(Java.Util.Locale arg0)
         {
             return IExecute<string>("getDisplayName", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#range()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
+        public Java.Time.Temporal.ValueRange Range()
+        {
+            return IExecute<Java.Time.Temporal.ValueRange>("range");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html#rangeRefinedBy(java.time.temporal.TemporalAccessor)"/>

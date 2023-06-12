@@ -33,41 +33,59 @@ namespace Java.Nio.File.Attribute
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#creationTime()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isDirectory()"/>
         /// </summary>
-        Java.Nio.File.Attribute.FileTime CreationTime { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsDirectory();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#fileKey()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isOther()"/>
         /// </summary>
-        object FileKey { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsOther();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isDirectory()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isRegularFile()"/>
         /// </summary>
-        bool IsDirectory { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsRegularFile();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isOther()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isSymbolicLink()"/>
         /// </summary>
-        bool IsOther { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsSymbolicLink();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isRegularFile()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#fileKey()"/>
         /// </summary>
-        bool IsRegularFile { get; }
+
+        /// <returns><see cref="object"/></returns>
+        object FileKey();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isSymbolicLink()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#creationTime()"/>
         /// </summary>
-        bool IsSymbolicLink { get; }
+
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        Java.Nio.File.Attribute.FileTime CreationTime();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastAccessTime()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastAccessTime()"/>
         /// </summary>
-        Java.Nio.File.Attribute.FileTime LastAccessTime { get; }
+
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        Java.Nio.File.Attribute.FileTime LastAccessTime();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastModifiedTime()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastModifiedTime()"/>
         /// </summary>
-        Java.Nio.File.Attribute.FileTime LastModifiedTime { get; }
+
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        Java.Nio.File.Attribute.FileTime LastModifiedTime();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#size()"/>
         /// </summary>
-        long Size { get; }
+
+        /// <returns><see cref="long"/></returns>
+        long Size();
 
         #endregion
 
@@ -100,67 +118,85 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#creationTime()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isDirectory()"/>
         /// </summary>
-        public Java.Nio.File.Attribute.FileTime CreationTime
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDirectory()
         {
-            get { return IExecute<Java.Nio.File.Attribute.FileTime>("creationTime"); }
+            return IExecute<bool>("isDirectory");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#fileKey()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isOther()"/>
         /// </summary>
-        public object FileKey
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOther()
         {
-            get { return IExecute("fileKey"); }
+            return IExecute<bool>("isOther");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isDirectory()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isRegularFile()"/>
         /// </summary>
-        public bool IsDirectory
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRegularFile()
         {
-            get { return IExecute<bool>("isDirectory"); }
+            return IExecute<bool>("isRegularFile");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isOther()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isSymbolicLink()"/>
         /// </summary>
-        public bool IsOther
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSymbolicLink()
         {
-            get { return IExecute<bool>("isOther"); }
+            return IExecute<bool>("isSymbolicLink");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isRegularFile()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#fileKey()"/>
         /// </summary>
-        public bool IsRegularFile
+
+        /// <returns><see cref="object"/></returns>
+        public object FileKey()
         {
-            get { return IExecute<bool>("isRegularFile"); }
+            return IExecute("fileKey");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#isSymbolicLink()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#creationTime()"/>
         /// </summary>
-        public bool IsSymbolicLink
+
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        public Java.Nio.File.Attribute.FileTime CreationTime()
         {
-            get { return IExecute<bool>("isSymbolicLink"); }
+            return IExecute<Java.Nio.File.Attribute.FileTime>("creationTime");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastAccessTime()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastAccessTime()"/>
         /// </summary>
-        public Java.Nio.File.Attribute.FileTime LastAccessTime
+
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        public Java.Nio.File.Attribute.FileTime LastAccessTime()
         {
-            get { return IExecute<Java.Nio.File.Attribute.FileTime>("lastAccessTime"); }
+            return IExecute<Java.Nio.File.Attribute.FileTime>("lastAccessTime");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastModifiedTime()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastModifiedTime()"/>
         /// </summary>
-        public Java.Nio.File.Attribute.FileTime LastModifiedTime
+
+        /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
+        public Java.Nio.File.Attribute.FileTime LastModifiedTime()
         {
-            get { return IExecute<Java.Nio.File.Attribute.FileTime>("lastModifiedTime"); }
+            return IExecute<Java.Nio.File.Attribute.FileTime>("lastModifiedTime");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html#size()"/>
         /// </summary>
-        public long Size
+
+        /// <returns><see cref="long"/></returns>
+        public long Size()
         {
-            get { return IExecute<long>("size"); }
+            return IExecute<long>("size");
         }
 
         #endregion

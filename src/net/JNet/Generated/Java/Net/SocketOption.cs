@@ -46,18 +46,22 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/>
         /// </summary>
-        public string Name
+
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class Type()
         {
-            get { return IExecute<string>("name"); }
+            return IExecute<Java.Lang.Class>("type");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
         /// </summary>
-        public Java.Lang.Class Type
+
+        /// <returns><see cref="string"/></returns>
+        public string Name()
         {
-            get { return IExecute<Java.Lang.Class>("type"); }
+            return IExecute<string>("name");
         }
 
         #endregion
@@ -78,13 +82,17 @@ namespace Java.Net
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/>
         /// </summary>
-        string Name { get; }
+
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        Java.Lang.Class Type();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
         /// </summary>
-        Java.Lang.Class Type { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string Name();
 
         #endregion
 
@@ -121,18 +129,22 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/>
         /// </summary>
-        public string Name
+
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class Type()
         {
-            get { return IExecute<string>("name"); }
+            return IExecute<Java.Lang.Class>("type");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/>
         /// </summary>
-        public Java.Lang.Class Type
+
+        /// <returns><see cref="string"/></returns>
+        public string Name()
         {
-            get { return IExecute<Java.Lang.Class>("type"); }
+            return IExecute<string>("name");
         }
 
         #endregion

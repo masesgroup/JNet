@@ -70,13 +70,6 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#asList()"/> 
-        /// </summary>
-        public Java.Util.List<Javax.Management.Attribute> AsList
-        {
-            get { return IExecute<Java.Util.List<Javax.Management.Attribute>>("asList"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#addAll(int,javax.management.AttributeList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -94,6 +87,15 @@ namespace Javax.Management
         public bool AddAll(Javax.Management.AttributeList arg0)
         {
             return IExecute<bool>("addAll", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#asList()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Javax.Management.Attribute> AsList()
+        {
+            return IExecute<Java.Util.List<Javax.Management.Attribute>>("asList");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#add(int,javax.management.Attribute)"/>

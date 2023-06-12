@@ -61,13 +61,6 @@ namespace Java.Util.Concurrent.Atomic
             get { return IExecute<bool>("getAcquire"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#get()"/> 
-        /// </summary>
-        public bool Get
-        {
-            get { return IExecute<bool>("get"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getOpaque()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#setOpaque(boolean)"/>
         /// </summary>
         public bool Opaque
@@ -130,6 +123,15 @@ namespace Java.Util.Concurrent.Atomic
         public bool CompareAndSet(bool arg0, bool arg1)
         {
             return IExecute<bool>("compareAndSet", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#get()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Get()
+        {
+            return IExecute<bool>("get");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html#getAndSet(boolean)"/>

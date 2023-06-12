@@ -175,13 +175,6 @@ namespace Java.Awt.ColorNs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#isCS_sRGB()"/> 
-        /// </summary>
-        public bool IsCS_sRGB
-        {
-            get { return IExecute<bool>("isCS_sRGB"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getNumComponents()"/> 
         /// </summary>
         public int NumComponents
@@ -230,6 +223,15 @@ namespace Java.Awt.ColorNs
         public float[] ToRGB(float[] arg0)
         {
             return IExecuteArray<float>("toRGB", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#isCS_sRGB()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCS_sRGB()
+        {
+            return IExecute<bool>("isCS_sRGB");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html#getMaxValue(int)"/>

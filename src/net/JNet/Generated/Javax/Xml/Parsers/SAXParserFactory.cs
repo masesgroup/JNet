@@ -42,11 +42,13 @@ namespace Javax.Xml.Parsers
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newDefaultInstance()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newDefaultInstance()"/>
         /// </summary>
-        public static Javax.Xml.Parsers.SAXParserFactory NewDefaultInstance
+
+        /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
+        public static Javax.Xml.Parsers.SAXParserFactory NewDefaultInstance()
         {
-            get { return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newDefaultInstance"); }
+            return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newDefaultInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newInstance()"/>
@@ -72,34 +74,6 @@ namespace Javax.Xml.Parsers
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#isNamespaceAware()"/> 
-        /// </summary>
-        public bool IsNamespaceAware
-        {
-            get { return IExecute<bool>("isNamespaceAware"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#isValidating()"/> 
-        /// </summary>
-        public bool IsValidating
-        {
-            get { return IExecute<bool>("isValidating"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#isXIncludeAware()"/> 
-        /// </summary>
-        public bool IsXIncludeAware
-        {
-            get { return IExecute<bool>("isXIncludeAware"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newSAXParser()"/> 
-        /// </summary>
-        public Javax.Xml.Parsers.SAXParser NewSAXParser
-        {
-            get { return IExecute<Javax.Xml.Parsers.SAXParser>("newSAXParser"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#getSchema()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#setSchema(javax.xml.validation.Schema)"/>
         /// </summary>
         public Javax.Xml.Validation.Schema Schema
@@ -119,6 +93,17 @@ namespace Javax.Xml.Parsers
             return IExecute<bool>("getFeature", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#newSAXParser()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Parsers.SAXParser"/></returns>
+        /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        public Javax.Xml.Parsers.SAXParser NewSAXParser()
+        {
+            return IExecute<Javax.Xml.Parsers.SAXParser>("newSAXParser");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -129,6 +114,33 @@ namespace Javax.Xml.Parsers
         public void SetFeature(string arg0, bool arg1)
         {
             IExecute("setFeature", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#isNamespaceAware()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsNamespaceAware()
+        {
+            return IExecute<bool>("isNamespaceAware");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#isValidating()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsValidating()
+        {
+            return IExecute<bool>("isValidating");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#isXIncludeAware()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsXIncludeAware()
+        {
+            return IExecute<bool>("isXIncludeAware");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#setNamespaceAware(boolean)"/>

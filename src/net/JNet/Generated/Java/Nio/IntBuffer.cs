@@ -79,27 +79,6 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#asReadOnlyBuffer()"/> 
-        /// </summary>
-        public Java.Nio.IntBuffer AsReadOnlyBuffer
-        {
-            get { return IExecute<Java.Nio.IntBuffer>("asReadOnlyBuffer"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compact()"/> 
-        /// </summary>
-        public Java.Nio.IntBuffer Compact
-        {
-            get { return IExecute<Java.Nio.IntBuffer>("compact"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#order()"/> 
-        /// </summary>
-        public Java.Nio.ByteOrder Order
-        {
-            get { return IExecute<Java.Nio.ByteOrder>("order"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get()"/>
         /// </summary>
 
@@ -116,6 +95,33 @@ namespace Java.Nio
         public int Get(int arg0)
         {
             return IExecute<int>("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#order()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
+        public Java.Nio.ByteOrder Order()
+        {
+            return IExecute<Java.Nio.ByteOrder>("order");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#asReadOnlyBuffer()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        public Java.Nio.IntBuffer AsReadOnlyBuffer()
+        {
+            return IExecute<Java.Nio.IntBuffer>("asReadOnlyBuffer");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compact()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.IntBuffer"/></returns>
+        public Java.Nio.IntBuffer Compact()
+        {
+            return IExecute<Java.Nio.IntBuffer>("compact");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int,int)"/>

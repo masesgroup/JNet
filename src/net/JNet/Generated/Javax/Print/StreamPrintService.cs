@@ -46,13 +46,6 @@ namespace Javax.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#isDisposed()"/> 
-        /// </summary>
-        public bool IsDisposed
-        {
-            get { return IExecute<bool>("isDisposed"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#getOutputFormat()"/> 
         /// </summary>
         public string OutputFormat
@@ -65,6 +58,15 @@ namespace Javax.Print
         public Java.Io.OutputStream OutputStream
         {
             get { return IExecute<Java.Io.OutputStream>("getOutputStream"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#isDisposed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDisposed()
+        {
+            return IExecute<bool>("isDisposed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html#dispose()"/>

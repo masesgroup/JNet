@@ -33,9 +33,11 @@ namespace Java.Net
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImplFactory.html#createSocketImpl()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImplFactory.html#createSocketImpl()"/>
         /// </summary>
-        Java.Net.SocketImpl CreateSocketImpl { get; }
+
+        /// <returns><see cref="Java.Net.SocketImpl"/></returns>
+        Java.Net.SocketImpl CreateSocketImpl();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImplFactory.html#createSocketImpl()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImplFactory.html#createSocketImpl()"/>
         /// </summary>
-        public Java.Net.SocketImpl CreateSocketImpl
+
+        /// <returns><see cref="Java.Net.SocketImpl"/></returns>
+        public Java.Net.SocketImpl CreateSocketImpl()
         {
-            get { return IExecute<Java.Net.SocketImpl>("createSocketImpl"); }
+            return IExecute<Java.Net.SocketImpl>("createSocketImpl");
         }
 
         #endregion

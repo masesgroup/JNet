@@ -33,13 +33,17 @@ namespace Java.Awt
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#enter()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#enter()"/>
         /// </summary>
-        bool Enter { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool Enter();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#exit()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#exit()"/>
         /// </summary>
-        bool Exit { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool Exit();
 
         #endregion
 
@@ -72,18 +76,22 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#enter()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#enter()"/>
         /// </summary>
-        public bool Enter
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Enter()
         {
-            get { return IExecute<bool>("enter"); }
+            return IExecute<bool>("enter");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#exit()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SecondaryLoop.html#exit()"/>
         /// </summary>
-        public bool Exit
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Exit()
         {
-            get { return IExecute<bool>("exit"); }
+            return IExecute<bool>("exit");
         }
 
         #endregion
