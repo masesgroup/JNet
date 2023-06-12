@@ -123,7 +123,7 @@ namespace MASES.JNetReflector
 
         public static void AnalyzeJars()
         {
-            List<string> jarNames = new List<string>(JNetReflectorCore.JarsToAnalyze);
+            List<string> jarNames = new List<string>(JNetReflectorCore.JarsToAnalyze.Select((o) => Path.Combine(JNetReflectorCore.OriginRootPath, o)));
             for (int i = 0; i < jarNames.Count; i++)
             {
                 string javadocUrl = JNetReflectorCore.OriginJavadocUrl;

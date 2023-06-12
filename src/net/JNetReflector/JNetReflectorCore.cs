@@ -60,7 +60,7 @@ namespace MASES.JNetReflector
 
             public IEnumerable<string> ClassesToAnalyze { get; set; }
 
-            public IEnumerable<string> JarsToAnalyze { get; set; }
+            public IEnumerable<string> JarList { get; set; }
 
             public IEnumerable<string> ModulesToParse { get; set; }
 
@@ -321,7 +321,7 @@ namespace MASES.JNetReflector
 
         static IEnumerable<string> _JarsToAddInClassPath;
         static IEnumerable<string> _JarsToAnalyze;
-        public static IEnumerable<string> JarsToAnalyze => _JarsToAnalyze ?? _ConfigurationFromFile.JarsToAnalyze;
+        public static IEnumerable<string> JarsToAnalyze => _JarsToAnalyze ?? _ConfigurationFromFile.JarList;
 
         static IEnumerable<string> _ModulesToParse;
         public static IEnumerable<string> ModulesToParse => _ModulesToParse ?? _ConfigurationFromFile.ModulesToParse;
@@ -419,7 +419,7 @@ namespace MASES.JNetReflector
             if (ParsedArgs.Exist(CLIParam.JarList))
             {
                 var jars = ParsedArgs.Get<string>(CLIParam.JarList).Split(',', ';');
-                foreach (var item in jars.Select((o) => Path.Combine(OriginRootPath, o)))
+                foreach (var item in jars)
                 {
                     if (!jarsToAnaylyze.Contains(item)) jarsToAnaylyze.Add(item);
                 }
