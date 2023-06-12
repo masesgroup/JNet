@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\Common\Common.props" />
   <PropertyGroup>
+	<TargetFrameworks>net6.0</TargetFrameworks>
 	<PackageType>DotnetTool</PackageType>
     <OutputType>Exe</OutputType>
     <AssemblyName>MASES.JNetReflector</AssemblyName>

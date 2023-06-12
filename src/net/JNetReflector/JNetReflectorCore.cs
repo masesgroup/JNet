@@ -21,6 +21,7 @@ using MASES.JNet;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
 
 namespace MASES.JNetReflector
 {
@@ -29,6 +30,79 @@ namespace MASES.JNetReflector
     /// </summary>
     public abstract class JNetReflectorCore<T> : JNetCoreBase<T> where T : JNetReflectorCore<T>
     {
+
+
+        /// <summary>
+        /// Class used to define configuration information
+        /// </summary>
+        public class ConfigurationType
+        {
+            public struct VersionUrl
+            {
+                public VersionUrl(int version, string url)
+                {
+                    Version = version;
+                    Url = url;
+                }
+                public int Version { get; set; }
+                public string Url { get; set; }
+            }
+
+            public string OriginRootPath { get; set; }
+
+            public string OriginJavadocUrl { get; set; }
+
+            public IEnumerable<VersionUrl> OriginJavadocJARVersionAndUrls { get; set; }
+
+            public int JavadocVersion { get; set; }
+
+            public string DestinationRootPath { get; set; }
+
+            public IEnumerable<string> ClassesToAnalyze { get; set; }
+
+            public IEnumerable<string> JarsToAnalyze { get; set; }
+
+            public IEnumerable<string> ModulesToParse { get; set; }
+
+            public IEnumerable<string> ClassesToBeListener { get; set; }
+
+            public IEnumerable<string> NamespacesInConflict { get; set; }
+
+            public IEnumerable<string> ClassesInConflict { get; set; }
+
+            public IEnumerable<string> NamespacesToAvoid { get; set; }
+
+            public IEnumerable<string> ClassesToAvoid { get; set; }
+
+            public IEnumerable<string> ClassesToAvoidInGenerics { get; set; }
+
+            public bool OnlyPropertiesForGetterSetter { get; set; }
+
+            public bool ReflectDeprecated { get; set; }
+
+            public bool AvoidCSharpGenericDefinition { get; set; }
+
+            public bool AvoidCSharpGenericClauseDefinition { get; set; }
+
+            public bool DisableGenericsInNonGenericClasses { get; set; }
+
+            public bool DisableGenerics { get; set; }
+
+            public bool CreateInterfaceInheritance { get; set; }
+
+            public bool DisableInterfaceMethodGeneration { get; set; }
+
+            public bool AvoidParallelBuild { get; set; }
+
+            public bool DryRun { get; set; }
+
+            public bool DoNotCamel { get; set; }
+
+            public int TraceLevel { get; set; }
+
+            public string TraceTo { get; set; }
+        }
+
         #region Initialization
         /// <inheritdoc cref="JNetCoreBase{T}.CommandLineArguments"/>
         public override IEnumerable<IArgumentMetadata> CommandLineArguments
@@ -38,6 +112,12 @@ namespace MASES.JNetReflector
                 var lst = new List<IArgumentMetadata>(base.CommandLineArguments);
                 lst.AddRange(new IArgumentMetadata[]
                 {
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ConfigurationFile,
+                        Type = ArgumentType.Double,
+                        Help = "The path where is stored a JSON file containing the tool configuration properties",
+                    },
                     new ArgumentMetadata<string>()
                     {
                         Name = CLIParam.OriginRootPath,
@@ -219,92 +299,102 @@ namespace MASES.JNetReflector
             JCOBridge.C2JBridge.JCOBridge.RegisterExceptions(typeof(JNetReflectorCore<>).Assembly);
         }
 
+        static ConfigurationType _ConfigurationFromFile;
+
         static string _OriginRootPath;
-        public static string OriginRootPath => _OriginRootPath;
+        public static string OriginRootPath => _OriginRootPath ?? _ConfigurationFromFile.OriginRootPath;
 
         static string _OriginJavadocUrl;
-        public static string OriginJavadocUrl => _OriginJavadocUrl;
+        public static string OriginJavadocUrl => _OriginJavadocUrl ?? _ConfigurationFromFile.OriginJavadocUrl;
 
-        static IEnumerable<(int, string)> _OriginJavadocJARVersionAndUrls;
-        public static IEnumerable<(int, string)> OriginJavadocJARVersionAndUrls => _OriginJavadocJARVersionAndUrls;
+        static IEnumerable<ConfigurationType.VersionUrl> _OriginJavadocJARVersionAndUrls;
+        public static IEnumerable<ConfigurationType.VersionUrl> OriginJavadocJARVersionAndUrls => _OriginJavadocJARVersionAndUrls ?? _ConfigurationFromFile.OriginJavadocJARVersionAndUrls;
 
-        static int _JavadocVersion;
-        public static int JavadocVersion => _JavadocVersion;
+        static int? _JavadocVersion = null;
+        public static int JavadocVersion => _JavadocVersion ?? _ConfigurationFromFile.JavadocVersion;
 
         static string _DestinationRootPath;
-        public static string DestinationRootPath => _DestinationRootPath;
+        public static string DestinationRootPath => _DestinationRootPath ?? _ConfigurationFromFile.DestinationRootPath;
 
         static IEnumerable<string> _ClassesToAnalyze;
-        public static IEnumerable<string> ClassesToAnalyze => _ClassesToAnalyze;
+        public static IEnumerable<string> ClassesToAnalyze => _ClassesToAnalyze ?? _ConfigurationFromFile.ClassesToAnalyze;
 
         static IEnumerable<string> _JarsToAddInClassPath;
         static IEnumerable<string> _JarsToAnalyze;
-        public static IEnumerable<string> JarsToAnalyze => _JarsToAnalyze;
+        public static IEnumerable<string> JarsToAnalyze => _JarsToAnalyze ?? _ConfigurationFromFile.JarsToAnalyze;
 
         static IEnumerable<string> _ModulesToParse;
-        public static IEnumerable<string> ModulesToParse => _ModulesToParse;
+        public static IEnumerable<string> ModulesToParse => _ModulesToParse ?? _ConfigurationFromFile.ModulesToParse;
 
         static IEnumerable<string> _ClassesToBeListener;
-        public static IEnumerable<string> ClassesToBeListener => _ClassesToBeListener;
+        public static IEnumerable<string> ClassesToBeListener => _ClassesToBeListener ?? _ConfigurationFromFile.ClassesToBeListener;
 
         static IEnumerable<string> _NamespacesInConflict;
-        public static IEnumerable<string> NamespacesInConflict => _NamespacesInConflict;
+        public static IEnumerable<string> NamespacesInConflict => _NamespacesInConflict ?? _ConfigurationFromFile.NamespacesInConflict;
 
         static IEnumerable<string> _ClassesInConflict;
-        public static IEnumerable<string> ClassesInConflict => _ClassesInConflict;
+        public static IEnumerable<string> ClassesInConflict => _ClassesInConflict ?? _ConfigurationFromFile.ClassesInConflict;
 
         static IEnumerable<string> _NamespacesToAvoid;
-        public static IEnumerable<string> NamespacesToAvoid => _NamespacesToAvoid;
+        public static IEnumerable<string> NamespacesToAvoid => _NamespacesToAvoid ?? _ConfigurationFromFile.NamespacesToAvoid;
 
         static IEnumerable<string> _ClassesToAvoid;
-        public static IEnumerable<string> ClassesToAvoid => _ClassesToAvoid;
+        public static IEnumerable<string> ClassesToAvoid => _ClassesToAvoid ?? _ConfigurationFromFile.ClassesToAvoid;
 
         static IEnumerable<string> _ClassesToAvoidInGenerics;
-        public static IEnumerable<string> ClassesToAvoidInGenerics => _ClassesToAvoidInGenerics;
+        public static IEnumerable<string> ClassesToAvoidInGenerics => _ClassesToAvoidInGenerics ?? _ConfigurationFromFile.ClassesToAvoidInGenerics;
 
-        static bool _OnlyPropertiesForGetterSetter;
-        public static bool OnlyPropertiesForGetterSetter => _OnlyPropertiesForGetterSetter;
+        static bool? _OnlyPropertiesForGetterSetter;
+        public static bool OnlyPropertiesForGetterSetter => _OnlyPropertiesForGetterSetter ?? _ConfigurationFromFile.OnlyPropertiesForGetterSetter;
 
-        static bool _ReflectDeprecated;
-        public static bool ReflectDeprecated => _ReflectDeprecated;
+        static bool? _ReflectDeprecated;
+        public static bool ReflectDeprecated => _ReflectDeprecated ?? _ConfigurationFromFile.ReflectDeprecated;
 
-        static bool _AvoidCSharpGenericDefinition;
-        public static bool AvoidCSharpGenericDefinition => _AvoidCSharpGenericDefinition;
+        static bool? _AvoidCSharpGenericDefinition;
+        public static bool AvoidCSharpGenericDefinition => _AvoidCSharpGenericDefinition ?? _ConfigurationFromFile.AvoidCSharpGenericDefinition;
 
-        static bool _AvoidCSharpGenericClauseDefinition;
-        public static bool AvoidCSharpGenericClauseDefinition => _AvoidCSharpGenericClauseDefinition;
+        static bool? _AvoidCSharpGenericClauseDefinition;
+        public static bool AvoidCSharpGenericClauseDefinition => _AvoidCSharpGenericClauseDefinition ?? _ConfigurationFromFile.AvoidCSharpGenericClauseDefinition;
 
-        static bool _DisableGenericsInNonGenericClasses;
-        public static bool DisableGenericsInNonGenericClasses => _DisableGenericsInNonGenericClasses;
+        static bool? _DisableGenericsInNonGenericClasses;
+        public static bool DisableGenericsInNonGenericClasses => _DisableGenericsInNonGenericClasses ?? _ConfigurationFromFile.DisableGenericsInNonGenericClasses;
 
-        static bool _DisableGenerics;
-        public static bool DisableGenerics => _DisableGenerics;
+        static bool? _DisableGenerics;
+        public static bool DisableGenerics => _DisableGenerics ?? _ConfigurationFromFile.DisableGenerics;
 
-        static bool _CreateInterfaceInheritance;
-        public static bool CreateInterfaceInheritance => _CreateInterfaceInheritance;
+        static bool? _CreateInterfaceInheritance;
+        public static bool CreateInterfaceInheritance => _CreateInterfaceInheritance ?? _ConfigurationFromFile.CreateInterfaceInheritance;
 
-        static bool _DisableInterfaceMethodGeneration;
-        public static bool DisableInterfaceMethodGeneration => _DisableInterfaceMethodGeneration;
+        static bool? _DisableInterfaceMethodGeneration;
+        public static bool DisableInterfaceMethodGeneration => _DisableInterfaceMethodGeneration ?? _ConfigurationFromFile.DisableInterfaceMethodGeneration;
 
-        static bool _AvoidParallelBuild;
-        public static bool AvoidParallelBuild => _AvoidParallelBuild;
+        static bool? _AvoidParallelBuild;
+        public static bool AvoidParallelBuild => _AvoidParallelBuild ?? _ConfigurationFromFile.AvoidParallelBuild;
 
-        static bool _DryRun;
-        public static bool DryRun => _DryRun;
+        static bool? _DryRun;
+        public static bool DryRun => _DryRun ?? _ConfigurationFromFile.DryRun;
 
-        static bool _UseCamel;
-        public static bool UseCamel => _UseCamel;
+        static bool? _UseCamel;
+        public static bool UseCamel => _UseCamel ?? !_ConfigurationFromFile.DoNotCamel;
 
-        static int _TraceLevel;
-        public static int TraceLevel => _TraceLevel;
+        static int? _TraceLevel;
+        public static int TraceLevel => _TraceLevel ?? _ConfigurationFromFile.TraceLevel;
 
         static string _TraceTo;
-        public static string TraceTo => _TraceTo;
+        public static string TraceTo => _TraceTo ?? _ConfigurationFromFile.TraceTo;
 
         /// <inheritdoc cref="JNetCoreBase{T}.ProcessCommandLine"/>
         protected override string[] ProcessCommandLine()
         {
             var result = base.ProcessCommandLine();
+
+            if (ParsedArgs.Exist(CLIParam.ConfigurationFile))
+            {
+                var filePath = ParsedArgs.Get<string>(CLIParam.ConfigurationFile);
+                filePath = Path.GetFullPath(filePath);
+                var conf = File.ReadAllText(filePath);
+                _ConfigurationFromFile = JsonSerializer.Deserialize<ConfigurationType>(conf);
+            }
 
             List<string> classesToAnalyze = new List<string>();
             if (ParsedArgs.Exist(CLIParam.ClassesToAnalyze))
@@ -347,7 +437,7 @@ namespace MASES.JNetReflector
                 _ModulesToParse = modulesToParse;
             }
 
-            List<(int, string)> jarURLsToAnaylyze = new List<(int, string)>();
+            List<ConfigurationType.VersionUrl> jarURLsToAnaylyze = new List<ConfigurationType.VersionUrl>();
             if (ParsedArgs.Exist(CLIParam.OriginJavadocJARVersionAndUrls))
             {
                 var jarURLs = ParsedArgs.Get<string>(CLIParam.OriginJavadocJARVersionAndUrls).Split(',', ';');
@@ -357,7 +447,7 @@ namespace MASES.JNetReflector
                     if (items.Length < 2) throw new System.InvalidOperationException($"{item} does not conform to expected pattern.");
                     var version = int.Parse(items[0]);
                     var url = string.Join(string.Empty, items.Skip(1));
-                    jarURLsToAnaylyze.Add((version, url));
+                    jarURLsToAnaylyze.Add(new ConfigurationType.VersionUrl(version, url));
                 }
                 _OriginJavadocJARVersionAndUrls = jarURLsToAnaylyze;
                 if (_JarsToAnalyze?.Count() != _OriginJavadocJARVersionAndUrls.Count())
@@ -372,8 +462,8 @@ namespace MASES.JNetReflector
                 {
                     if (!classesToBeListener.Contains(item)) classesToBeListener.Add(item);
                 }
+                _ClassesToBeListener = classesToBeListener;
             }
-            _ClassesToBeListener = classesToBeListener;
 
             List<string> namespacesInConflict = new List<string>();
             if (ParsedArgs.Exist(CLIParam.NamespacesInConflict))
@@ -383,8 +473,9 @@ namespace MASES.JNetReflector
                 {
                     if (!namespacesInConflict.Contains(item)) namespacesInConflict.Add(item);
                 }
+                _NamespacesInConflict = namespacesInConflict;
             }
-            _NamespacesInConflict = namespacesInConflict;
+
 
             List<string> classesInConflict = new List<string>();
             if (ParsedArgs.Exist(CLIParam.ClassesInConflict))
@@ -394,8 +485,8 @@ namespace MASES.JNetReflector
                 {
                     if (!classesInConflict.Contains(item)) classesInConflict.Add(item);
                 }
+                _ClassesInConflict = classesInConflict;
             }
-            _ClassesInConflict = classesInConflict;
 
             List<string> namespacesToAvoid = new List<string>();
             if (ParsedArgs.Exist(CLIParam.NamespacesToAvoid))
@@ -405,8 +496,8 @@ namespace MASES.JNetReflector
                 {
                     if (!namespacesToAvoid.Contains(item)) namespacesToAvoid.Add(item);
                 }
+                _NamespacesToAvoid = namespacesToAvoid;
             }
-            _NamespacesToAvoid = namespacesToAvoid;
 
             List<string> classesToAvoid = new List<string>();
             if (ParsedArgs.Exist(CLIParam.ClassesToAvoid))
@@ -416,8 +507,8 @@ namespace MASES.JNetReflector
                 {
                     if (!classesToAvoid.Contains(item)) classesToAvoid.Add(item);
                 }
+                _ClassesToAvoid = classesToAvoid;
             }
-            _ClassesToAvoid = classesToAvoid;
 
             List<string> classesToAvoidInGenerics = new List<string>();
             if (ParsedArgs.Exist(CLIParam.ClassesToAvoidInGenerics))
@@ -427,8 +518,8 @@ namespace MASES.JNetReflector
                 {
                     if (!classesToAvoidInGenerics.Contains(item)) classesToAvoidInGenerics.Add(item);
                 }
+                _ClassesToAvoidInGenerics = classesToAvoidInGenerics;
             }
-            _ClassesToAvoidInGenerics = classesToAvoidInGenerics;
 
             var destinationFolder = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationRootPath));
             _DestinationRootPath = Path.GetFullPath(destinationFolder);
@@ -436,17 +527,17 @@ namespace MASES.JNetReflector
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
-            _OnlyPropertiesForGetterSetter = ParsedArgs.Exist(CLIParam.OnlyPropertiesForGetterSetter);
-            _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
-            _AvoidCSharpGenericDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition);
-            _AvoidCSharpGenericClauseDefinition = ParsedArgs.Exist(CLIParam.AvoidCSharpGenericClauseDefinition);
-            _DisableGenericsInNonGenericClasses = ParsedArgs.Exist(CLIParam.DisableGenericsInNonGenericClasses);
-            _DisableGenerics = ParsedArgs.Exist(CLIParam.DisableGenerics);
-            _CreateInterfaceInheritance = ParsedArgs.Exist(CLIParam.CreateInterfaceInheritance);
-            _DisableInterfaceMethodGeneration = ParsedArgs.Exist(CLIParam.DisableInterfaceMethodGeneration);
-            _AvoidParallelBuild = ParsedArgs.Exist(CLIParam.AvoidParallelBuild);
-            _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
-            _UseCamel = !ParsedArgs.Exist(CLIParam.DoNotCamel);
+            if (ParsedArgs.Exist(CLIParam.OnlyPropertiesForGetterSetter)) _OnlyPropertiesForGetterSetter = true;
+            if (ParsedArgs.Exist(CLIParam.ReflectDeprecated)) _ReflectDeprecated = true;
+            if (ParsedArgs.Exist(CLIParam.AvoidCSharpGenericDefinition)) _AvoidCSharpGenericDefinition = true;
+            if (ParsedArgs.Exist(CLIParam.AvoidCSharpGenericClauseDefinition)) _AvoidCSharpGenericClauseDefinition = true;
+            if (ParsedArgs.Exist(CLIParam.DisableGenericsInNonGenericClasses)) _DisableGenericsInNonGenericClasses = true;
+            if (ParsedArgs.Exist(CLIParam.DisableGenerics)) _DisableGenerics = true;
+            if (ParsedArgs.Exist(CLIParam.CreateInterfaceInheritance)) _CreateInterfaceInheritance = true;
+            if (ParsedArgs.Exist(CLIParam.DisableInterfaceMethodGeneration)) _DisableInterfaceMethodGeneration = true;
+            if (ParsedArgs.Exist(CLIParam.AvoidParallelBuild)) _AvoidParallelBuild = true;
+            if (ParsedArgs.Exist(CLIParam.DryRun)) _DryRun = true;
+            if (ParsedArgs.Exist(CLIParam.DoNotCamel)) _UseCamel = false;
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
             _TraceTo = ParsedArgs.Get<string>(CLIParam.TraceTo);
 

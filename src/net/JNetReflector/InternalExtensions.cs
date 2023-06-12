@@ -129,7 +129,7 @@ namespace MASES.JNetReflector
             if (typeName.StartsWith(SpecialNames.JavaUtilFunctions)) return true;
             if (typeName.EndsWith(SpecialNames.JavaLangListener)) return true;
             if (typeName.EndsWith(SpecialNames.JavaLangAdapter)) return true;
-            if (JNetReflectorCore.ClassesToBeListener.Any((o) => typeName == o)) return true;
+            if (JNetReflectorCore.ClassesToBeListener != null && JNetReflectorCore.ClassesToBeListener.Any((o) => typeName == o)) return true;
             return false;
         }
 
@@ -152,12 +152,15 @@ namespace MASES.JNetReflector
                 fullName = fullName.Remove(fullName.IndexOf(SpecialNames.ClassExtension));
             }
             var package = fullName.Contains(SpecialNames.NamespaceSeparator) ? fullName.Substring(0, fullName.LastIndexOf(SpecialNames.NamespaceSeparator)) : fullName;
-            foreach (var nsc in JNetReflectorCore.NamespacesInConflict)
+            if (JNetReflectorCore.NamespacesInConflict != null)
             {
-                if (package.StartsWith(nsc))
+                foreach (var nsc in JNetReflectorCore.NamespacesInConflict)
                 {
-                    package = package.Replace(nsc, nsc + SpecialNames.NamespaceSuffix);
-                    break;
+                    if (package.StartsWith(nsc))
+                    {
+                        package = package.Replace(nsc, nsc + SpecialNames.NamespaceSuffix);
+                        break;
+                    }
                 }
             }
             var splitted = package.Split(SpecialNames.NamespaceSeparator);
@@ -234,12 +237,15 @@ namespace MASES.JNetReflector
             {
                 cName = fName;
             }
-            foreach (var cic in JNetReflectorCore.ClassesInConflict)
+            if (JNetReflectorCore.ClassesInConflict != null)
             {
-                if (cName == cic)
+                foreach (var cic in JNetReflectorCore.ClassesInConflict)
                 {
-                    cName += "Class";
-                    break;
+                    if (cName == cic)
+                    {
+                        cName += "Class";
+                        break;
+                    }
                 }
             }
             return string.IsNullOrEmpty(nName) ? cName : nName + SpecialNames.NamespaceSeparator + cName;
@@ -281,7 +287,7 @@ namespace MASES.JNetReflector
         {
             var name = entry.FullName.ToLowerInvariant();
             if (name.Contains(FileNameAndDirectory.METAINF.ToLowerInvariant())
-                || JNetReflectorCore.NamespacesToAvoid.Any((n) => entry.Namespace(false).StartsWith(n)))
+                || (JNetReflectorCore.NamespacesToAvoid != null && JNetReflectorCore.NamespacesToAvoid.Any((n) => entry.Namespace(false).StartsWith(n))))
             {
                 return true;
             }
@@ -438,7 +444,7 @@ namespace MASES.JNetReflector
 
         public static bool IsNamespaceToAvoid(this TypeVariable entry)
         {
-            if (JNetReflectorCore.NamespacesToAvoid.Any((n) => entry.Namespace(false).StartsWith(n))) return true;
+            if (JNetReflectorCore.NamespacesToAvoid != null && JNetReflectorCore.NamespacesToAvoid.Any((n) => entry.Namespace(false).StartsWith(n))) return true;
             return false;
         }
 
@@ -447,7 +453,7 @@ namespace MASES.JNetReflector
             var typeName = entry.Name;
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
             typeName = typeName.Contains("<") ? typeName.Substring(0, typeName.IndexOf("<")) : typeName;
-            if (JNetReflectorCore.ClassesToAvoid.Any((n) => typeName == n)) return true;
+            if (JNetReflectorCore.ClassesToAvoid != null && JNetReflectorCore.ClassesToAvoid.Any((n) => typeName == n)) return true;
             return false;
         }
 
@@ -1419,7 +1425,7 @@ namespace MASES.JNetReflector
 
         public static bool IsNamespaceToAvoid(this string typeName)
         {
-            if (JNetReflectorCore.NamespacesToAvoid.Any((n) => Namespace(typeName, false).StartsWith(n))) return true;
+            if (JNetReflectorCore.NamespacesToAvoid != null && JNetReflectorCore.NamespacesToAvoid.Any((n) => Namespace(typeName, false).StartsWith(n))) return true;
             return false;
         }
 
@@ -1431,7 +1437,7 @@ namespace MASES.JNetReflector
         public static bool IsClassToAvoid(this string typeName)
         {
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
-            if (JNetReflectorCore.ClassesToAvoid.Any((n) => typeName == n)) return true;
+            if (JNetReflectorCore.ClassesToAvoid != null && JNetReflectorCore.ClassesToAvoid.Any((n) => typeName == n)) return true;
             return false;
         }
 
@@ -1444,7 +1450,7 @@ namespace MASES.JNetReflector
         {
             var typeName = entry.TypeName;
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
-            if (JNetReflectorCore.ClassesToAvoidInGenerics.Any((n) => typeName == n)) return true;
+            if (JNetReflectorCore.ClassesToAvoidInGenerics != null && JNetReflectorCore.ClassesToAvoidInGenerics.Any((n) => typeName == n)) return true;
             return false;
         }
 
@@ -1453,7 +1459,7 @@ namespace MASES.JNetReflector
             var typeName = entry.TypeName;
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
             if (typeName.Contains('<')) typeName = typeName.Substring(0, typeName.IndexOf('<'));
-            if (JNetReflectorCore.ClassesToAvoidInGenerics.Any((n) => typeName == n)) return true;
+            if (JNetReflectorCore.ClassesToAvoidInGenerics != null && JNetReflectorCore.ClassesToAvoidInGenerics.Any((n) => typeName == n)) return true;
             return false;
         }
 

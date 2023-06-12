@@ -131,8 +131,8 @@ namespace MASES.JNetReflector
                 if (JNetReflectorCore.OriginJavadocJARVersionAndUrls != null)
                 {
                     var data = JNetReflectorCore.OriginJavadocJARVersionAndUrls.ElementAt(i);
-                    javadocVersion = data.Item1;
-                    javadocUrl = data.Item2;
+                    javadocVersion = data.Version;
+                    javadocUrl = data.Url;
                 }
 
                 AnalyzeJar(jarNames[i], javadocUrl, javadocVersion);
