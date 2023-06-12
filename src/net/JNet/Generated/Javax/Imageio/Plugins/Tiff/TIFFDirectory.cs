@@ -42,10 +42,6 @@ namespace Javax.Imageio.Plugins.Tiff
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Imageio.Plugins.Tiff.TIFFDirectory"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Javax.Imageio.Plugins.Tiff.TIFFDirectory t) => t.Cast<Java.Lang.Cloneable>();
 
         #endregion
 

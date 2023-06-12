@@ -25,8 +25,36 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth
 {
+    #region IRefreshable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html"/>
+    /// </summary>
+    public partial interface IRefreshable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#isCurrent()"/> 
+        /// </summary>
+        bool IsCurrent { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Refreshable.html#refresh()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Security.Auth.RefreshFailedException"/>
+        void Refresh();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Refreshable
-    public partial class Refreshable
+    public partial class Refreshable : Javax.Security.Auth.IRefreshable
     {
         #region Constructors
 

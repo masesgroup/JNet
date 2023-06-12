@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IXECPublicKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPublicKey.html"/>
+    /// </summary>
+    public partial interface IXECPublicKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPublicKey.html#getU()"/> 
+        /// </summary>
+        Java.Math.BigInteger U { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XECPublicKey
-    public partial class XECPublicKey
+    public partial class XECPublicKey : Java.Security.Interfaces.IXECPublicKey
     {
         #region Constructors
 

@@ -89,8 +89,47 @@ namespace Javax.Swing
     }
     #endregion
 
+    #region IMutableComboBoxModel<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html"/>
+    /// </summary>
+    public partial interface IMutableComboBoxModel<E> : Javax.Swing.IComboBoxModel<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#addElement(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        void AddElement(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#insertElementAt(java.lang.Object,int)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        void InsertElementAt(E arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#removeElement(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        void RemoveElement(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#removeElementAt(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        void RemoveElementAt(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MutableComboBoxModel<E>
-    public partial class MutableComboBoxModel<E>
+    public partial class MutableComboBoxModel<E> : Javax.Swing.IMutableComboBoxModel<E>
     {
         #region Constructors
 

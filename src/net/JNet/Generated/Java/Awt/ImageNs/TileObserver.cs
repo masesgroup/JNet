@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
+    #region ITileObserver
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/TileObserver.html"/>
+    /// </summary>
+    public partial interface ITileObserver
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/TileObserver.html#tileUpdate(java.awt.image.WritableRenderedImage,int,int,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.ImageNs.WritableRenderedImage"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        void TileUpdate(Java.Awt.ImageNs.WritableRenderedImage arg0, int arg1, int arg2, bool arg3);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TileObserver
-    public partial class TileObserver
+    public partial class TileObserver : Java.Awt.ImageNs.ITileObserver
     {
         #region Constructors
 

@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLFrameSetElement
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html"/>
+    /// </summary>
+    public partial interface IHTMLFrameSetElement : Org.W3c.Dom.Html.IHTMLElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#getCols()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#setCols(java.lang.String)"/>
+        /// </summary>
+        string Cols { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#getRows()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLFrameSetElement.html#setRows(java.lang.String)"/>
+        /// </summary>
+        string Rows { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLFrameSetElement
-    public partial class HTMLFrameSetElement
+    public partial class HTMLFrameSetElement : Org.W3c.Dom.Html.IHTMLFrameSetElement
     {
         #region Constructors
 

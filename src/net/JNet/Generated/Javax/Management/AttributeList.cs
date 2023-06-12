@@ -41,7 +41,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public AttributeList(Java.Util.List arg0)
+        public AttributeList(Java.Util.List<Javax.Management.Attribute> arg0)
             : base(arg0)
         {
         }

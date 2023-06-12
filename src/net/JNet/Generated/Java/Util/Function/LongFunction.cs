@@ -50,9 +50,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="object"/></returns>
-        public object Apply(long arg0)
+        public virtual object Apply(long arg0)
         {
-            return IExecute("apply", arg0);
+            return default;
         }
 
         #endregion
@@ -65,18 +65,38 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region ILongFunction<R>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html"/>
+    /// </summary>
+    public partial interface ILongFunction<R>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R Apply(long arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LongFunction<R>
-    public partial class LongFunction<R>
+    public partial class LongFunction<R> : Java.Util.Function.ILongFunction<R>
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.LongFunction{R}"/> to <see cref="Java.Util.Function.LongFunction"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.LongFunction(Java.Util.Function.LongFunction<R> t) => t.Cast<Java.Util.Function.LongFunction>();
 
         #endregion
 
@@ -94,9 +114,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><typeparamref name="R"/></returns>
-        public R Apply(long arg0)
+        public virtual R Apply(long arg0)
         {
-            return IExecute<R>("apply", arg0);
+            return default;
         }
 
         #endregion

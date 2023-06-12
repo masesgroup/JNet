@@ -25,8 +25,55 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
+    #region ILayoutManager2
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager2.html"/>
+    /// </summary>
+    public partial interface ILayoutManager2 : Java.Awt.ILayoutManager
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager2.html#getLayoutAlignmentX(java.awt.Container)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="float"/></returns>
+        float GetLayoutAlignmentX(Java.Awt.Container arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager2.html#getLayoutAlignmentY(java.awt.Container)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="float"/></returns>
+        float GetLayoutAlignmentY(Java.Awt.Container arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager2.html#maximumLayoutSize(java.awt.Container)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        /// <returns><see cref="Java.Awt.Dimension"/></returns>
+        Java.Awt.Dimension MaximumLayoutSize(Java.Awt.Container arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager2.html#addLayoutComponent(java.awt.Component,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        void AddLayoutComponent(Java.Awt.Component arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager2.html#invalidateLayout(java.awt.Container)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Container"/></param>
+        void InvalidateLayout(Java.Awt.Container arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LayoutManager2
-    public partial class LayoutManager2
+    public partial class LayoutManager2 : Java.Awt.ILayoutManager2
     {
         #region Constructors
 

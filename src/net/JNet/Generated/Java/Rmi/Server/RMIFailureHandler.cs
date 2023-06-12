@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Server
 {
+    #region IRMIFailureHandler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIFailureHandler.html"/>
+    /// </summary>
+    public partial interface IRMIFailureHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIFailureHandler.html#failure(java.lang.Exception)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Failure(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RMIFailureHandler
-    public partial class RMIFailureHandler
+    public partial class RMIFailureHandler : Java.Rmi.Server.IRMIFailureHandler
     {
         #region Constructors
 
@@ -50,7 +74,7 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Exception"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Failure(Java.Lang.Exception arg0)
+        public bool Failure(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return IExecute<bool>("failure", arg0);
         }

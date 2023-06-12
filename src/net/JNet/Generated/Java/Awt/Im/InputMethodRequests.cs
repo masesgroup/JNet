@@ -25,8 +25,67 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Im
 {
+    #region IInputMethodRequests
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html"/>
+    /// </summary>
+    public partial interface IInputMethodRequests
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getCommittedTextLength()"/> 
+        /// </summary>
+        int CommittedTextLength { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getInsertPositionOffset()"/> 
+        /// </summary>
+        int InsertPositionOffset { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getLocationOffset(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
+        Java.Awt.FontNs.TextHitInfo GetLocationOffset(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getTextLocation(java.awt.font.TextHitInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
+        /// <returns><see cref="Java.Awt.Rectangle"/></returns>
+        Java.Awt.Rectangle GetTextLocation(Java.Awt.FontNs.TextHitInfo arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#cancelLatestCommittedText(java.text.AttributedCharacterIterator.Attribute[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        Java.Text.AttributedCharacterIterator CancelLatestCommittedText(Java.Text.AttributedCharacterIterator.Attribute[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getCommittedText(int,int,java.text.AttributedCharacterIterator.Attribute[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        Java.Text.AttributedCharacterIterator GetCommittedText(int arg0, int arg1, Java.Text.AttributedCharacterIterator.Attribute[] arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html#getSelectedText(java.text.AttributedCharacterIterator.Attribute[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
+        Java.Text.AttributedCharacterIterator GetSelectedText(Java.Text.AttributedCharacterIterator.Attribute[] arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region InputMethodRequests
-    public partial class InputMethodRequests
+    public partial class InputMethodRequests : Java.Awt.Im.IInputMethodRequests
     {
         #region Constructors
 

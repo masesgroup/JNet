@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto
 {
+    #region ISecretKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKey.html"/>
+    /// </summary>
+    public partial interface ISecretKey
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SecretKey
-    public partial class SecretKey
+    public partial class SecretKey : Javax.Crypto.ISecretKey
     {
         #region Constructors
 

@@ -34,7 +34,7 @@ namespace Javax.Management.Remote.Rmi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        public RMIConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map arg1)
+        public RMIConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -43,7 +43,7 @@ namespace Javax.Management.Remote.Rmi
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Remote.Rmi.RMIServer"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        public RMIConnector(Javax.Management.Remote.Rmi.RMIServer arg0, Java.Util.Map arg1)
+        public RMIConnector(Javax.Management.Remote.Rmi.RMIServer arg0, Java.Util.Map<string, object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -119,9 +119,8 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html#connect(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <exception cref="Java.Io.IOException"/>
-        public void Connect<Arg0Extendsobject>(Java.Util.Map<string, Arg0Extendsobject> arg0)
+        public void Connect(Java.Util.Map<string, object> arg0)
         {
             IExecute("connect", arg0);
         }

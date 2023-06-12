@@ -33,10 +33,6 @@ namespace Javax.Swing.Text.Html.Parser
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Html.Parser.DTD"/> to <see cref="Javax.Swing.Text.Html.Parser.DTDConstants"/>
-        /// </summary>
-        public static implicit operator Javax.Swing.Text.Html.Parser.DTDConstants(Javax.Swing.Text.Html.Parser.DTD t) => t.Cast<Javax.Swing.Text.Html.Parser.DTDConstants>();
 
         #endregion
 

@@ -33,7 +33,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/ExcC14NParameterSpec.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public ExcC14NParameterSpec(Java.Util.List arg0)
+        public ExcC14NParameterSpec(Java.Util.List<string> arg0)
             : base(arg0)
         {
         }
@@ -41,10 +41,6 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.ExcC14NParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec(Javax.Xml.Crypto.Dsig.Spec.ExcC14NParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec>();
 
         #endregion
 

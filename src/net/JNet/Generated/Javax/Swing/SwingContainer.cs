@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region ISwingContainer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html"/>
+    /// </summary>
+    public partial interface ISwingContainer : Java.Lang.Annotation.IAnnotation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#delegate()"/> 
+        /// </summary>
+        string Delegate { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html#value()"/> 
+        /// </summary>
+        bool Value { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SwingContainer
-    public partial class SwingContainer
+    public partial class SwingContainer : Javax.Swing.ISwingContainer
     {
         #region Constructors
 

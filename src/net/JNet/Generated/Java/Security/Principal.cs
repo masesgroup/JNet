@@ -25,8 +25,36 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
+    #region IPrincipal
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html"/>
+    /// </summary>
+    public partial interface IPrincipal
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Principal.html#implies(javax.security.auth.Subject)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Implies(Javax.Security.Auth.Subject arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Principal
-    public partial class Principal
+    public partial class Principal : Java.Security.IPrincipal
     {
         #region Constructors
 

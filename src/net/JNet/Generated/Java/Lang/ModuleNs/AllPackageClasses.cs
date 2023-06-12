@@ -104,7 +104,7 @@ namespace Java.Lang.ModuleNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html"/>
     /// </summary>
-    public partial class ModuleDescriptor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ModuleDescriptor>
+    public partial class ModuleDescriptor : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -186,7 +186,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html"/>
         /// </summary>
-        public partial class Exports : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Exports>
+        public partial class Exports : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor.Exports>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -225,7 +225,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html"/>
             /// </summary>
-            public partial class Modifier : Java.Lang.Enum
+            public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>
             {
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -272,7 +272,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html"/>
         /// </summary>
-        public partial class Modifier : Java.Lang.Enum
+        public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -315,7 +315,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.html"/>
         /// </summary>
-        public partial class Opens : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Opens>
+        public partial class Opens : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor.Opens>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -354,7 +354,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html"/>
             /// </summary>
-            public partial class Modifier : Java.Lang.Enum
+            public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>
             {
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -401,7 +401,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Provides.html"/>
         /// </summary>
-        public partial class Provides : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Provides>
+        public partial class Provides : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor.Provides>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -444,7 +444,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html"/>
         /// </summary>
-        public partial class Requires : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Requires>
+        public partial class Requires : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor.Requires>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -483,7 +483,7 @@ namespace Java.Lang.ModuleNs
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html"/>
             /// </summary>
-            public partial class Modifier : Java.Lang.Enum
+            public partial class Modifier : Java.Lang.Enum<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>
             {
                 /// <summary>
                 /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -530,7 +530,7 @@ namespace Java.Lang.ModuleNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Version.html"/>
         /// </summary>
-        public partial class Version : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Version>
+        public partial class Version : Java.Lang.Comparable<Java.Lang.ModuleNs.ModuleDescriptor.Version>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

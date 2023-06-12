@@ -126,8 +126,69 @@ namespace Java.Util
     }
     #endregion
 
+    #region ISortedMap<K, V>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html"/>
+    /// </summary>
+    public partial interface ISortedMap<K, V> : Java.Util.IMap<K, V>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/> 
+        /// </summary>
+        Java.Util.Comparator Comparator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/> 
+        /// </summary>
+        Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#firstKey()"/> 
+        /// </summary>
+        K FirstKey { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#keySet()"/> 
+        /// </summary>
+        Java.Util.Set<K> KeySet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#lastKey()"/> 
+        /// </summary>
+        K LastKey { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#values()"/> 
+        /// </summary>
+        Java.Util.Collection<V> Values { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#headMap(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        Java.Util.SortedMap<K, V> HeadMap(K arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#subMap(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <param name="arg1"><typeparamref name="K"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        Java.Util.SortedMap<K, V> SubMap(K arg0, K arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#tailMap(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="K"/></param>
+        /// <returns><see cref="Java.Util.SortedMap"/></returns>
+        Java.Util.SortedMap<K, V> TailMap(K arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SortedMap<K, V>
-    public partial class SortedMap<K, V>
+    public partial class SortedMap<K, V> : Java.Util.ISortedMap<K, V>
     {
         #region Constructors
 

@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLQuoteElement
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLQuoteElement.html"/>
+    /// </summary>
+    public partial interface IHTMLQuoteElement : Org.W3c.Dom.Html.IHTMLElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLQuoteElement.html#getCite()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLQuoteElement.html#setCite(java.lang.String)"/>
+        /// </summary>
+        string Cite { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLQuoteElement
-    public partial class HTMLQuoteElement
+    public partial class HTMLQuoteElement : Org.W3c.Dom.Html.IHTMLQuoteElement
     {
         #region Constructors
 

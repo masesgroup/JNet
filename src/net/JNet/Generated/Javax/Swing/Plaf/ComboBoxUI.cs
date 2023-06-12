@@ -49,9 +49,8 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#isFocusTraversable(javax.swing.JComboBox)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool IsFocusTraversable<Arg0Extendsobject>(Javax.Swing.JComboBox<Arg0Extendsobject> arg0)
+        public bool IsFocusTraversable(Javax.Swing.JComboBox<object> arg0)
         {
             return IExecute<bool>("isFocusTraversable", arg0);
         }
@@ -59,9 +58,8 @@ namespace Javax.Swing.Plaf
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComboBoxUI.html#isPopupVisible(javax.swing.JComboBox)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool IsPopupVisible<Arg0Extendsobject>(Javax.Swing.JComboBox<Arg0Extendsobject> arg0)
+        public bool IsPopupVisible(Javax.Swing.JComboBox<object> arg0)
         {
             return IExecute<bool>("isPopupVisible", arg0);
         }
@@ -70,8 +68,7 @@ namespace Javax.Swing.Plaf
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public void SetPopupVisible<Arg0Extendsobject>(Javax.Swing.JComboBox<Arg0Extendsobject> arg0, bool arg1)
+        public void SetPopupVisible(Javax.Swing.JComboBox<object> arg0, bool arg1)
         {
             IExecute("setPopupVisible", arg0, arg1);
         }

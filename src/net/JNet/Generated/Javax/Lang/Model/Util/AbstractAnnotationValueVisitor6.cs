@@ -33,10 +33,6 @@ namespace Javax.Lang.Model.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6"/> to <see cref="Javax.Lang.Model.Element.AnnotationValueVisitor"/>
-        /// </summary>
-        public static implicit operator Javax.Lang.Model.Element.AnnotationValueVisitor(Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6 t) => t.Cast<Javax.Lang.Model.Element.AnnotationValueVisitor>();
 
         #endregion
 
@@ -97,10 +93,6 @@ namespace Javax.Lang.Model.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Element.AnnotationValueVisitor{R, P}"/>
-        /// </summary>
-        public static implicit operator Javax.Lang.Model.Element.AnnotationValueVisitor<R, P>(Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6<R, P> t) => t.Cast<Javax.Lang.Model.Element.AnnotationValueVisitor<R, P>>();
         /// <summary>
         /// Converter from <see cref="Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6"/>
         /// </summary>

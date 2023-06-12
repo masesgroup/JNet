@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Dom
 {
+    #region IDOMLocator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMLocator.html"/>
+    /// </summary>
+    public partial interface IDOMLocator : Javax.Xml.Transform.ISourceLocator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMLocator.html#getOriginatingNode()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node OriginatingNode { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DOMLocator
-    public partial class DOMLocator
+    public partial class DOMLocator : Javax.Xml.Transform.Dom.IDOMLocator
     {
         #region Constructors
 

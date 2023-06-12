@@ -29,7 +29,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html"/>
     /// </summary>
-    public partial class AtomicBoolean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicBoolean>
+    public partial class AtomicBoolean : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -115,7 +115,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html"/>
     /// </summary>
-    public partial class AtomicIntegerArray : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicIntegerArray>
+    public partial class AtomicIntegerArray : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -288,7 +288,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLongArray.html"/>
     /// </summary>
-    public partial class AtomicLongArray : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicLongArray>
+    public partial class AtomicLongArray : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -505,7 +505,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html"/>
     /// </summary>
-    public partial class AtomicReference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicReference>
+    public partial class AtomicReference : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -549,7 +549,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReference.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class AtomicReference<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicReference<V>>
+    public partial class AtomicReference<V> : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -592,7 +592,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html"/>
     /// </summary>
-    public partial class AtomicReferenceArray : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicReferenceArray>
+    public partial class AtomicReferenceArray : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -636,7 +636,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
-    public partial class AtomicReferenceArray<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicReferenceArray<E>>
+    public partial class AtomicReferenceArray<E> : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -854,7 +854,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAccumulator.html"/>
     /// </summary>
-    public partial class DoubleAccumulator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DoubleAccumulator>
+    public partial class DoubleAccumulator : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -897,7 +897,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/DoubleAdder.html"/>
     /// </summary>
-    public partial class DoubleAdder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DoubleAdder>
+    public partial class DoubleAdder : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -940,7 +940,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAccumulator.html"/>
     /// </summary>
-    public partial class LongAccumulator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LongAccumulator>
+    public partial class LongAccumulator : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -983,7 +983,7 @@ namespace Java.Util.Concurrent.Atomic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/LongAdder.html"/>
     /// </summary>
-    public partial class LongAdder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LongAdder>
+    public partial class LongAdder : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

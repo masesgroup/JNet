@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
+    #region IWatchable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html"/>
+    /// </summary>
+    public partial interface IWatchable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
+        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind<object>[] arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
+        /// <param name="arg2"><see cref="Java.Nio.File.WatchEvent.Modifier"/></param>
+        /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<object>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Watchable
-    public partial class Watchable
+    public partial class Watchable : Java.Nio.File.IWatchable
     {
         #region Constructors
 
@@ -50,10 +85,9 @@ namespace Java.Nio.File
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.WatchKey Register<Arg1Extendsobject>(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind<Arg1Extendsobject>[] arg1)
+        public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind<object>[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1);
         }
@@ -63,10 +97,9 @@ namespace Java.Nio.File
         /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.WatchEvent.Modifier"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.WatchKey Register<Arg1Extendsobject>(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<Arg1Extendsobject>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
+        public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<object>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
         {
             if (arg2.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1, arg2);
         }

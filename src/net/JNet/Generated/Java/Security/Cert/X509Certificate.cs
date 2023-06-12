@@ -66,9 +66,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerAlternativeNames()"/> 
         /// </summary>
-        public Java.Util.Collection IssuerAlternativeNames
+        public Java.Util.Collection<Java.Util.List<object>> IssuerAlternativeNames
         {
-            get { return IExecute<Java.Util.Collection>("getIssuerAlternativeNames"); }
+            get { return IExecute<Java.Util.Collection<Java.Util.List<object>>>("getIssuerAlternativeNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getIssuerDN()"/> 
@@ -150,9 +150,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectAlternativeNames()"/> 
         /// </summary>
-        public Java.Util.Collection SubjectAlternativeNames
+        public Java.Util.Collection<Java.Util.List<object>> SubjectAlternativeNames
         {
-            get { return IExecute<Java.Util.Collection>("getSubjectAlternativeNames"); }
+            get { return IExecute<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html#getSubjectDN()"/> 

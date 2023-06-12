@@ -25,8 +25,102 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Midi
 {
+    #region ISynthesizer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html"/>
+    /// </summary>
+    public partial interface ISynthesizer : Javax.Sound.Midi.IMidiDevice
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getAvailableInstruments()"/> 
+        /// </summary>
+        Javax.Sound.Midi.Instrument[] AvailableInstruments { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getChannels()"/> 
+        /// </summary>
+        Javax.Sound.Midi.MidiChannel[] Channels { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getDefaultSoundbank()"/> 
+        /// </summary>
+        Javax.Sound.Midi.Soundbank DefaultSoundbank { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getLatency()"/> 
+        /// </summary>
+        long Latency { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getLoadedInstruments()"/> 
+        /// </summary>
+        Javax.Sound.Midi.Instrument[] LoadedInstruments { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getMaxPolyphony()"/> 
+        /// </summary>
+        int MaxPolyphony { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#getVoiceStatus()"/> 
+        /// </summary>
+        Javax.Sound.Midi.VoiceStatus[] VoiceStatus { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#isSoundbankSupported(javax.sound.midi.Soundbank)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsSoundbankSupported(Javax.Sound.Midi.Soundbank arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadAllInstruments(javax.sound.midi.Soundbank)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool LoadAllInstruments(Javax.Sound.Midi.Soundbank arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadInstrument(javax.sound.midi.Instrument)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool LoadInstrument(Javax.Sound.Midi.Instrument arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#loadInstruments(javax.sound.midi.Soundbank,javax.sound.midi.Patch[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Midi.Patch"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool LoadInstruments(Javax.Sound.Midi.Soundbank arg0, Javax.Sound.Midi.Patch[] arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#remapInstrument(javax.sound.midi.Instrument,javax.sound.midi.Instrument)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Midi.Instrument"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool RemapInstrument(Javax.Sound.Midi.Instrument arg0, Javax.Sound.Midi.Instrument arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadAllInstruments(javax.sound.midi.Soundbank)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
+        void UnloadAllInstruments(Javax.Sound.Midi.Soundbank arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadInstrument(javax.sound.midi.Instrument)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Instrument"/></param>
+        void UnloadInstrument(Javax.Sound.Midi.Instrument arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html#unloadInstruments(javax.sound.midi.Soundbank,javax.sound.midi.Patch[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Midi.Soundbank"/></param>
+        /// <param name="arg1"><see cref="Javax.Sound.Midi.Patch"/></param>
+        void UnloadInstruments(Javax.Sound.Midi.Soundbank arg0, Javax.Sound.Midi.Patch[] arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Synthesizer
-    public partial class Synthesizer
+    public partial class Synthesizer : Javax.Sound.Midi.ISynthesizer
     {
         #region Constructors
 

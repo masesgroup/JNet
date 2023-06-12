@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region ILongSupplier
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html"/>
+    /// </summary>
+    public partial interface ILongSupplier
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        long GetAsLong();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LongSupplier
-    public partial class LongSupplier
+    public partial class LongSupplier : Java.Util.Function.ILongSupplier
     {
         #region Constructors
 
@@ -46,11 +70,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>
-        public long AsLong
+
+        /// <returns><see cref="long"/></returns>
+        public virtual long GetAsLong()
         {
-            get { return IExecute<long>("getAsLong"); }
+            return default;
         }
 
         #endregion

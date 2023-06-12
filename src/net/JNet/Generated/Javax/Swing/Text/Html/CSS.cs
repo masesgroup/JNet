@@ -33,10 +33,6 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.Html.CSS"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.CSS t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

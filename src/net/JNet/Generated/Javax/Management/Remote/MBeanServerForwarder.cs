@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
+    #region IMBeanServerForwarder
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/MBeanServerForwarder.html"/>
+    /// </summary>
+    public partial interface IMBeanServerForwarder : Javax.Management.IMBeanServer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/MBeanServerForwarder.html#getMBeanServer()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/MBeanServerForwarder.html#setMBeanServer(javax.management.MBeanServer)"/>
+        /// </summary>
+        Javax.Management.MBeanServer MBeanServer { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MBeanServerForwarder
-    public partial class MBeanServerForwarder
+    public partial class MBeanServerForwarder : Javax.Management.Remote.IMBeanServerForwarder
     {
         #region Constructors
 

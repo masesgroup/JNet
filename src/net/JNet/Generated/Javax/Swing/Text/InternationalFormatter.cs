@@ -63,16 +63,16 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#setMaximum(java.lang.Comparable)"/>
         /// </summary>
-        public Java.Lang.Comparable Maximum
+        public Java.Lang.Comparable<object> Maximum
         {
-            get { return IExecute<Java.Lang.Comparable>("getMaximum"); } set { IExecute("setMaximum", value); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMaximum"); } set { IExecute("setMaximum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getMinimum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#setMinimum(java.lang.Comparable)"/>
         /// </summary>
-        public Java.Lang.Comparable Minimum
+        public Java.Lang.Comparable<object> Minimum
         {
-            get { return IExecute<Java.Lang.Comparable>("getMinimum"); } set { IExecute("setMinimum", value); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMinimum"); } set { IExecute("setMinimum", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/InternationalFormatter.html#getFields(int)"/>

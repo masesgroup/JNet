@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region ILongBinaryOperator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongBinaryOperator.html"/>
+    /// </summary>
+    public partial interface ILongBinaryOperator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see cref="long"/></returns>
+        long ApplyAsLong(long arg0, long arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LongBinaryOperator
-    public partial class LongBinaryOperator
+    public partial class LongBinaryOperator : Java.Util.Function.ILongBinaryOperator
     {
         #region Constructors
 
@@ -51,9 +76,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
-        public long ApplyAsLong(long arg0, long arg1)
+        public virtual long ApplyAsLong(long arg0, long arg1)
         {
-            return IExecute<long>("applyAsLong", arg0, arg1);
+            return default;
         }
 
         #endregion

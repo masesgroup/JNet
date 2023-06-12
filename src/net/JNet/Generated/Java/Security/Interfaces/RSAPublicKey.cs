@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IRSAPublicKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html"/>
+    /// </summary>
+    public partial interface IRSAPublicKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html#getPublicExponent()"/> 
+        /// </summary>
+        Java.Math.BigInteger PublicExponent { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RSAPublicKey
-    public partial class RSAPublicKey
+    public partial class RSAPublicKey : Java.Security.Interfaces.IRSAPublicKey
     {
         #region Constructors
 

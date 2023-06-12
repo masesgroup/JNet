@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
+    #region IAccessibleIcon
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html"/>
+    /// </summary>
+    public partial interface IAccessibleIcon
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconDescription()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#setAccessibleIconDescription(java.lang.String)"/>
+        /// </summary>
+        string AccessibleIconDescription { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconHeight()"/> 
+        /// </summary>
+        int AccessibleIconHeight { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleIcon.html#getAccessibleIconWidth()"/> 
+        /// </summary>
+        int AccessibleIconWidth { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AccessibleIcon
-    public partial class AccessibleIcon
+    public partial class AccessibleIcon : Javax.Accessibility.IAccessibleIcon
     {
         #region Constructors
 

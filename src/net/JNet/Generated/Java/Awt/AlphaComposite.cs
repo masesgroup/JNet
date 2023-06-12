@@ -33,10 +33,6 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.AlphaComposite"/> to <see cref="Java.Awt.Composite"/>
-        /// </summary>
-        public static implicit operator Java.Awt.Composite(Java.Awt.AlphaComposite t) => t.Cast<Java.Awt.Composite>();
 
         #endregion
 

@@ -54,11 +54,10 @@ namespace Java.Rmi.Server
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public static Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0, string arg1, Java.Lang.ClassLoader arg2)
+        public static Java.Lang.Class LoadClass(string arg0, string arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "loadClass", arg0, arg1, arg2);
         }
@@ -67,11 +66,10 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public static Java.Lang.Class LoadClass<ReturnExtendsobject>(string arg0, string arg1)
+        public static Java.Lang.Class LoadClass(string arg0, string arg1)
         {
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "loadClass", arg0, arg1);
         }
@@ -80,11 +78,10 @@ namespace Java.Rmi.Server
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URL"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
-        public static Java.Lang.Class LoadClass<ReturnExtendsobject>(Java.Net.URL arg0, string arg1)
+        public static Java.Lang.Class LoadClass(Java.Net.URL arg0, string arg1)
         {
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "loadClass", arg0, arg1);
         }
@@ -94,11 +91,10 @@ namespace Java.Rmi.Server
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         /// <exception cref="Java.Net.MalformedURLException"/>
-        public static Java.Lang.Class LoadProxyClass<ReturnExtendsobject>(string arg0, string[] arg1, Java.Lang.ClassLoader arg2)
+        public static Java.Lang.Class LoadProxyClass(string arg0, string[] arg1, Java.Lang.ClassLoader arg2)
         {
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "loadProxyClass", arg0, arg1, arg2);
         }

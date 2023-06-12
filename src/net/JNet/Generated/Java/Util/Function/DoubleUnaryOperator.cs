@@ -25,8 +25,44 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IDoubleUnaryOperator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html"/>
+    /// </summary>
+    public partial interface IDoubleUnaryOperator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see cref="double"/></returns>
+        double ApplyAsDouble(double arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
+        Java.Util.Function.DoubleUnaryOperator AndThen(Java.Util.Function.DoubleUnaryOperator arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
+        Java.Util.Function.DoubleUnaryOperator Compose(Java.Util.Function.DoubleUnaryOperator arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DoubleUnaryOperator
-    public partial class DoubleUnaryOperator
+    public partial class DoubleUnaryOperator : Java.Util.Function.IDoubleUnaryOperator
     {
         #region Constructors
 
@@ -41,13 +77,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#identity()"/> 
-        /// </summary>
-        public static Java.Util.Function.DoubleUnaryOperator Identity
-        {
-            get { return SExecute<Java.Util.Function.DoubleUnaryOperator>(LocalBridgeClazz, "identity"); }
-        }
 
         #endregion
 
@@ -57,27 +86,27 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="double"/></returns>
-        public double ApplyAsDouble(double arg0)
+        public virtual double ApplyAsDouble(double arg0)
         {
-            return IExecute<double>("applyAsDouble", arg0);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
-        public Java.Util.Function.DoubleUnaryOperator AndThen(Java.Util.Function.DoubleUnaryOperator arg0)
+        public virtual Java.Util.Function.DoubleUnaryOperator AndThen(Java.Util.Function.DoubleUnaryOperator arg0)
         {
-            return IExecute<Java.Util.Function.DoubleUnaryOperator>("andThen", arg0);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
-        public Java.Util.Function.DoubleUnaryOperator Compose(Java.Util.Function.DoubleUnaryOperator arg0)
+        public virtual Java.Util.Function.DoubleUnaryOperator Compose(Java.Util.Function.DoubleUnaryOperator arg0)
         {
-            return IExecute<Java.Util.Function.DoubleUnaryOperator>("compose", arg0);
+            return default;
         }
 
         #endregion

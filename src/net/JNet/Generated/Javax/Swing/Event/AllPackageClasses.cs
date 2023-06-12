@@ -72,8 +72,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html"/>
     /// </summary>
-    public partial class AncestorListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class AncestorListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AncestorListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -128,8 +133,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html"/>
     /// </summary>
-    public partial class CaretListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class CaretListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CaretListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -141,8 +151,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html"/>
     /// </summary>
-    public partial class CellEditorListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class CellEditorListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CellEditorListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -197,8 +212,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html"/>
     /// </summary>
-    public partial class ChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ChangeListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ChangeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -339,8 +359,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html"/>
     /// </summary>
-    public partial class DocumentListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DocumentListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DocumentListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -352,7 +377,7 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html"/>
     /// </summary>
-    public partial class EventListenerList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventListenerList>
+    public partial class EventListenerList : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -481,8 +506,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html"/>
     /// </summary>
-    public partial class HyperlinkListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class HyperlinkListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HyperlinkListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -496,6 +526,11 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class InternalFrameAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public InternalFrameAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -550,8 +585,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/InternalFrameListener.html"/>
     /// </summary>
-    public partial class InternalFrameListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class InternalFrameListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public InternalFrameListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -606,8 +646,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html"/>
     /// </summary>
-    public partial class ListDataListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ListDataListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ListDataListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -662,8 +707,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionListener.html"/>
     /// </summary>
-    public partial class ListSelectionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ListSelectionListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ListSelectionListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -718,8 +768,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html"/>
     /// </summary>
-    public partial class MenuDragMouseListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class MenuDragMouseListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MenuDragMouseListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -817,8 +872,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html"/>
     /// </summary>
-    public partial class MenuKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class MenuKeyListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MenuKeyListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -830,8 +890,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html"/>
     /// </summary>
-    public partial class MenuListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class MenuListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MenuListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -845,6 +910,11 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class MouseInputAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MouseInputAdapter() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -858,6 +928,11 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class MouseInputListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MouseInputListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -912,8 +987,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html"/>
     /// </summary>
-    public partial class PopupMenuListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class PopupMenuListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PopupMenuListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -964,7 +1044,7 @@ namespace Javax.Swing.Event
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterEvent.Type.html"/>
         /// </summary>
-        public partial class Type : Java.Lang.Enum
+        public partial class Type : Java.Lang.Enum<Javax.Swing.Event.RowSorterEvent.Type>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1011,8 +1091,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterListener.html"/>
     /// </summary>
-    public partial class RowSorterListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class RowSorterListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RowSorterListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1110,8 +1195,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html"/>
     /// </summary>
-    public partial class TableColumnModelListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class TableColumnModelListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TableColumnModelListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1166,8 +1256,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html"/>
     /// </summary>
-    public partial class TableModelListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class TableModelListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TableModelListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1222,8 +1317,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeExpansionListener.html"/>
     /// </summary>
-    public partial class TreeExpansionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class TreeExpansionListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TreeExpansionListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1278,8 +1378,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html"/>
     /// </summary>
-    public partial class TreeModelListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class TreeModelListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TreeModelListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1334,8 +1439,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html"/>
     /// </summary>
-    public partial class TreeSelectionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class TreeSelectionListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TreeSelectionListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1347,8 +1457,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html"/>
     /// </summary>
-    public partial class TreeWillExpandListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class TreeWillExpandListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TreeWillExpandListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1403,8 +1518,13 @@ namespace Javax.Swing.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html"/>
     /// </summary>
-    public partial class UndoableEditListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class UndoableEditListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public UndoableEditListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

@@ -178,19 +178,17 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#getComparator(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator<ReturnExtendsobject> GetComparator<ReturnExtendsobject>(int arg0)
+        public Java.Util.Comparator<object> GetComparator(int arg0)
         {
-            return IExecute<Java.Util.Comparator<ReturnExtendsobject>>("getComparator", arg0);
+            return IExecute<Java.Util.Comparator<object>>("getComparator", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setComparator(int,java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
-        public void SetComparator<Arg1Extendsobject>(int arg0, Java.Util.Comparator<Arg1Extendsobject> arg1)
+        public void SetComparator(int arg0, Java.Util.Comparator<object> arg1)
         {
             IExecute("setComparator", arg0, arg1);
         }

@@ -33,10 +33,6 @@ namespace Javax.Lang.Model.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.AbstractElementVisitor6"/> to <see cref="Javax.Lang.Model.Element.ElementVisitor"/>
-        /// </summary>
-        public static implicit operator Javax.Lang.Model.Element.ElementVisitor(Javax.Lang.Model.Util.AbstractElementVisitor6 t) => t.Cast<Javax.Lang.Model.Element.ElementVisitor>();
 
         #endregion
 
@@ -107,10 +103,6 @@ namespace Javax.Lang.Model.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Lang.Model.Util.AbstractElementVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Element.ElementVisitor{R, P}"/>
-        /// </summary>
-        public static implicit operator Javax.Lang.Model.Element.ElementVisitor<R, P>(Javax.Lang.Model.Util.AbstractElementVisitor6<R, P> t) => t.Cast<Javax.Lang.Model.Element.ElementVisitor<R, P>>();
         /// <summary>
         /// Converter from <see cref="Javax.Lang.Model.Util.AbstractElementVisitor6{R, P}"/> to <see cref="Javax.Lang.Model.Util.AbstractElementVisitor6"/>
         /// </summary>

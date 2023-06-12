@@ -33,10 +33,6 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.MultipleGradientPaint"/> to <see cref="Java.Awt.Paint"/>
-        /// </summary>
-        public static implicit operator Java.Awt.Paint(Java.Awt.MultipleGradientPaint t) => t.Cast<Java.Awt.Paint>();
 
         #endregion
 

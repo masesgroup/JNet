@@ -25,8 +25,66 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
+    #region IJMXConnectorServerMBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html"/>
+    /// </summary>
+    public partial interface IJMXConnectorServerMBean
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getAddress()"/> 
+        /// </summary>
+        Javax.Management.Remote.JMXServiceURL Address { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getAttributes()"/> 
+        /// </summary>
+        Java.Util.Map<string, object> Attributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getConnectionIds()"/> 
+        /// </summary>
+        string[] ConnectionIds { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#isActive()"/> 
+        /// </summary>
+        bool IsActive { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#toJMXConnector(java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<string, object> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Remote.MBeanServerForwarder"/></param>
+        void SetMBeanServerForwarder(Javax.Management.Remote.MBeanServerForwarder arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#start()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Io.IOException"/>
+        void Start();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#stop()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Io.IOException"/>
+        void Stop();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region JMXConnectorServerMBean
-    public partial class JMXConnectorServerMBean
+    public partial class JMXConnectorServerMBean : Javax.Management.Remote.IJMXConnectorServerMBean
     {
         #region Constructors
 
@@ -55,9 +113,9 @@ namespace Javax.Management.Remote
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getAttributes()"/> 
         /// </summary>
-        public Java.Util.Map Attributes
+        public Java.Util.Map<string, object> Attributes
         {
-            get { return IExecute<Java.Util.Map>("getAttributes"); }
+            get { return IExecute<Java.Util.Map<string, object>>("getAttributes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#getConnectionIds()"/> 
@@ -77,10 +135,9 @@ namespace Javax.Management.Remote
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html#toJMXConnector(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Javax.Management.Remote.JMXConnector ToJMXConnector<Arg0Extendsobject>(Java.Util.Map<string, Arg0Extendsobject> arg0)
+        public Javax.Management.Remote.JMXConnector ToJMXConnector(Java.Util.Map<string, object> arg0)
         {
             return IExecute<Javax.Management.Remote.JMXConnector>("toJMXConnector", arg0);
         }

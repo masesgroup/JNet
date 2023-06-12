@@ -25,8 +25,50 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth.Spi
 {
+    #region ILoginModule
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html"/>
+    /// </summary>
+    public partial interface ILoginModule
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#abort()"/> 
+        /// </summary>
+        bool Abort { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#commit()"/> 
+        /// </summary>
+        bool Commit { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#login()"/> 
+        /// </summary>
+        bool Login { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#logout()"/> 
+        /// </summary>
+        bool Logout { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/spi/LoginModule.html#initialize(javax.security.auth.Subject,javax.security.auth.callback.CallbackHandler,java.util.Map,java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
+        /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
+        void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<string, object> arg2, Java.Util.Map<string, object> arg3);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LoginModule
-    public partial class LoginModule
+    public partial class LoginModule : Javax.Security.Auth.Spi.ILoginModule
     {
         #region Constructors
 
@@ -80,9 +122,7 @@ namespace Javax.Security.Auth.Spi
         /// <param name="arg1"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg2Extendsobject"></typeparam>
-        /// <typeparam name="Arg3Extendsobject"></typeparam>
-        public void Initialize<Arg2Extendsobject, Arg3Extendsobject>(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<string, Arg2Extendsobject> arg2, Java.Util.Map<string, Arg3Extendsobject> arg3)
+        public void Initialize(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1, Java.Util.Map<string, object> arg2, Java.Util.Map<string, object> arg3)
         {
             IExecute("initialize", arg0, arg1, arg2, arg3);
         }

@@ -33,10 +33,6 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Number"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Lang.Number t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

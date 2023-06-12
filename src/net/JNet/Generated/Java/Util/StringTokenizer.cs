@@ -60,10 +60,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.StringTokenizer"/> to <see cref="Java.Util.Enumeration"/>
-        /// </summary>
-        public static implicit operator Java.Util.Enumeration(Java.Util.StringTokenizer t) => t.Cast<Java.Util.Enumeration>();
 
         #endregion
 

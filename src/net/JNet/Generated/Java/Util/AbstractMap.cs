@@ -33,10 +33,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractMap"/> to <see cref="Java.Util.Map"/>
-        /// </summary>
-        public static implicit operator Java.Util.Map(Java.Util.AbstractMap t) => t.Cast<Java.Util.Map>();
 
         #endregion
 
@@ -232,7 +228,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#%3Cinit%3E(java.util.Map.Entry)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
-            public SimpleEntry(Java.Util.Map.Entry arg0)
+            public SimpleEntry(Java.Util.Map.Entry<K, V> arg0)
                 : base(arg0)
             {
             }
@@ -386,7 +382,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#%3Cinit%3E(java.util.Map.Entry)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
-            public SimpleImmutableEntry(Java.Util.Map.Entry arg0)
+            public SimpleImmutableEntry(Java.Util.Map.Entry<K, V> arg0)
                 : base(arg0)
             {
             }
@@ -472,10 +468,6 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.AbstractMap{K, V}"/> to <see cref="Java.Util.Map{K, V}"/>
-        /// </summary>
-        public static implicit operator Java.Util.Map<K, V>(Java.Util.AbstractMap<K, V> t) => t.Cast<Java.Util.Map<K, V>>();
         /// <summary>
         /// Converter from <see cref="Java.Util.AbstractMap{K, V}"/> to <see cref="Java.Util.AbstractMap"/>
         /// </summary>

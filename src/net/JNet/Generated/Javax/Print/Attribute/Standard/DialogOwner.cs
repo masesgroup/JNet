@@ -41,10 +41,6 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Print.Attribute.Standard.DialogOwner"/> to <see cref="Javax.Print.Attribute.PrintRequestAttribute"/>
-        /// </summary>
-        public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.DialogOwner t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
 
         #endregion
 

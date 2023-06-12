@@ -115,7 +115,7 @@ namespace Java.Nio.File.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryFlag.html"/>
     /// </summary>
-    public partial class AclEntryFlag : Java.Lang.Enum
+    public partial class AclEntryFlag : Java.Lang.Enum<Java.Nio.File.Attribute.AclEntryFlag>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -158,7 +158,7 @@ namespace Java.Nio.File.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryPermission.html"/>
     /// </summary>
-    public partial class AclEntryPermission : Java.Lang.Enum
+    public partial class AclEntryPermission : Java.Lang.Enum<Java.Nio.File.Attribute.AclEntryPermission>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -201,7 +201,7 @@ namespace Java.Nio.File.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntryType.html"/>
     /// </summary>
-    public partial class AclEntryType : Java.Lang.Enum
+    public partial class AclEntryType : Java.Lang.Enum<Java.Nio.File.Attribute.AclEntryType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -718,7 +718,7 @@ namespace Java.Nio.File.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html"/>
     /// </summary>
-    public partial class FileTime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileTime>
+    public partial class FileTime : Java.Lang.Comparable<Java.Nio.File.Attribute.FileTime>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -890,7 +890,7 @@ namespace Java.Nio.File.Attribute
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html"/>
     /// </summary>
-    public partial class PosixFilePermission : Java.Lang.Enum
+    public partial class PosixFilePermission : Java.Lang.Enum<Java.Nio.File.Attribute.PosixFilePermission>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio.File
 {
+    #region IOpenOption
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/OpenOption.html"/>
+    /// </summary>
+    public partial interface IOpenOption
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region OpenOption
-    public partial class OpenOption
+    public partial class OpenOption : Java.Nio.File.IOpenOption
     {
         #region Constructors
 

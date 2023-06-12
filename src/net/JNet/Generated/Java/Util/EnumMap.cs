@@ -123,7 +123,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.EnumMap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.EnumMap"/></param>
-        public EnumMap(Java.Util.EnumMap arg0)
+        public EnumMap(Java.Util.EnumMap<K, V> arg0)
             : base(arg0)
         {
         }
@@ -131,7 +131,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public EnumMap(Java.Util.Map arg0)
+        public EnumMap(Java.Util.Map<K, V> arg0)
             : base(arg0)
         {
         }

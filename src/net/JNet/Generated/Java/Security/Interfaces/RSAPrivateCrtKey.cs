@@ -25,8 +25,50 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IRSAPrivateCrtKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html"/>
+    /// </summary>
+    public partial interface IRSAPrivateCrtKey : Java.Security.Interfaces.IRSAPrivateKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getCrtCoefficient()"/> 
+        /// </summary>
+        Java.Math.BigInteger CrtCoefficient { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeExponentP()"/> 
+        /// </summary>
+        Java.Math.BigInteger PrimeExponentP { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeExponentQ()"/> 
+        /// </summary>
+        Java.Math.BigInteger PrimeExponentQ { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeP()"/> 
+        /// </summary>
+        Java.Math.BigInteger PrimeP { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPrimeQ()"/> 
+        /// </summary>
+        Java.Math.BigInteger PrimeQ { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html#getPublicExponent()"/> 
+        /// </summary>
+        Java.Math.BigInteger PublicExponent { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RSAPrivateCrtKey
-    public partial class RSAPrivateCrtKey
+    public partial class RSAPrivateCrtKey : Java.Security.Interfaces.IRSAPrivateCrtKey
     {
         #region Constructors
 

@@ -37,7 +37,7 @@ namespace Java.Rmi.Activation
         /// <param name="arg2"><see cref="Java.Rmi.MarshalledObject"/></param>
         /// <param name="arg3"><see cref="Java.Util.Properties"/></param>
         /// <param name="arg4"><see cref="Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment"/></param>
-        public ActivationGroupDesc(string arg0, string arg1, Java.Rmi.MarshalledObject arg2, Java.Util.Properties arg3, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg4)
+        public ActivationGroupDesc(string arg0, string arg1, Java.Rmi.MarshalledObject<object> arg2, Java.Util.Properties arg3, Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
@@ -54,10 +54,6 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Rmi.Activation.ActivationGroupDesc"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationGroupDesc t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 
@@ -80,9 +76,9 @@ namespace Java.Rmi.Activation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getData()"/> 
         /// </summary>
-        public Java.Rmi.MarshalledObject Data
+        public Java.Rmi.MarshalledObject<object> Data
         {
-            get { return IExecute<Java.Rmi.MarshalledObject>("getData"); }
+            get { return IExecute<Java.Rmi.MarshalledObject<object>>("getData"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroupDesc.html#getCommandEnvironment()"/> 
@@ -126,10 +122,6 @@ namespace Java.Rmi.Activation
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment"/> to <see cref="Java.Io.Serializable"/>
-            /// </summary>
-            public static implicit operator Java.Io.Serializable(Java.Rmi.Activation.ActivationGroupDesc.CommandEnvironment t) => t.Cast<Java.Io.Serializable>();
 
             #endregion
 

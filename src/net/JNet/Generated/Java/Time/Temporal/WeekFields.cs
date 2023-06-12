@@ -33,10 +33,6 @@ namespace Java.Time.Temporal
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Time.Temporal.WeekFields"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Time.Temporal.WeekFields t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

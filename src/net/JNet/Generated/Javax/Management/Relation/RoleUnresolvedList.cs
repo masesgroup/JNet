@@ -42,7 +42,7 @@ namespace Javax.Management.Relation
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public RoleUnresolvedList(Java.Util.List arg0)
+        public RoleUnresolvedList(Java.Util.List<Javax.Management.Relation.RoleUnresolved> arg0)
             : base(arg0)
         {
         }

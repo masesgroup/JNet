@@ -41,10 +41,6 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Beans.PropertyEditorSupport"/> to <see cref="Java.Beans.PropertyEditor"/>
-        /// </summary>
-        public static implicit operator Java.Beans.PropertyEditor(Java.Beans.PropertyEditorSupport t) => t.Cast<Java.Beans.PropertyEditor>();
 
         #endregion
 

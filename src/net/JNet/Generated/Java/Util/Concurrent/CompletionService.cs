@@ -102,8 +102,57 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
+    #region ICompletionService<V>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html"/>
+    /// </summary>
+    public partial interface ICompletionService<V>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#take()"/> 
+        /// </summary>
+        Java.Util.Concurrent.Future<V> Take { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        Java.Util.Concurrent.Future<V> Poll();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        Java.Util.Concurrent.Future<V> Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg1"><typeparamref name="V"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        Java.Util.Concurrent.Future<V> Submit(Java.Lang.Runnable arg0, V arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        Java.Util.Concurrent.Future<V> Submit(Java.Util.Concurrent.Callable<V> arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CompletionService<V>
-    public partial class CompletionService<V>
+    public partial class CompletionService<V> : Java.Util.Concurrent.ICompletionService<V>
     {
         #region Constructors
 

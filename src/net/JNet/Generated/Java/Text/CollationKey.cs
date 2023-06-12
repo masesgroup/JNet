@@ -33,10 +33,6 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Text.CollationKey"/> to <see cref="Java.Lang.Comparable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Comparable(Java.Text.CollationKey t) => t.Cast<Java.Lang.Comparable>();
 
         #endregion
 

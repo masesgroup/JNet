@@ -25,8 +25,74 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Text
 {
+    #region IAttributedCharacterIterator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html"/>
+    /// </summary>
+    public partial interface IAttributedCharacterIterator : Java.Text.ICharacterIterator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAllAttributeKeys()"/> 
+        /// </summary>
+        Java.Util.Set<Java.Text.AttributedCharacterIterator.Attribute> AllAttributeKeys { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttributes()"/> 
+        /// </summary>
+        Java.Util.Map<Java.Text.AttributedCharacterIterator.Attribute, object> Attributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit()"/> 
+        /// </summary>
+        int RunLimit { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart()"/> 
+        /// </summary>
+        int RunStart { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.text.AttributedCharacterIterator.Attribute)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <returns><see cref="int"/></returns>
+        int GetRunLimit(Java.Text.AttributedCharacterIterator.Attribute arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunLimit(java.util.Set)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        int GetRunLimit<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.text.AttributedCharacterIterator.Attribute)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <returns><see cref="int"/></returns>
+        int GetRunStart(Java.Text.AttributedCharacterIterator.Attribute arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getRunStart(java.util.Set)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
+        /// <returns><see cref="int"/></returns>
+        int GetRunStart<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Set<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute> arg0) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute: Java.Text.AttributedCharacterIterator.Attribute;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html#getAttribute(java.text.AttributedCharacterIterator.Attribute)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></param>
+        /// <returns><see cref="object"/></returns>
+        object GetAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AttributedCharacterIterator
-    public partial class AttributedCharacterIterator
+    public partial class AttributedCharacterIterator : Java.Text.IAttributedCharacterIterator
     {
         #region Constructors
 
@@ -132,10 +198,6 @@ namespace Java.Text
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Text.AttributedCharacterIterator.Attribute"/> to <see cref="Java.Io.Serializable"/>
-            /// </summary>
-            public static implicit operator Java.Io.Serializable(Java.Text.AttributedCharacterIterator.Attribute t) => t.Cast<Java.Io.Serializable>();
 
             #endregion
 

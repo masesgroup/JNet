@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region INClob
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/NClob.html"/>
+    /// </summary>
+    public partial interface INClob : Java.Sql.IClob
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NClob
-    public partial class NClob
+    public partial class NClob : Java.Sql.INClob
     {
         #region Constructors
 

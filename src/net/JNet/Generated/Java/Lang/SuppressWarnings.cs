@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region ISuppressWarnings
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SuppressWarnings.html"/>
+    /// </summary>
+    public partial interface ISuppressWarnings : Java.Lang.Annotation.IAnnotation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SuppressWarnings.html#value()"/> 
+        /// </summary>
+        string[] Value { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SuppressWarnings
-    public partial class SuppressWarnings
+    public partial class SuppressWarnings : Java.Lang.ISuppressWarnings
     {
         #region Constructors
 

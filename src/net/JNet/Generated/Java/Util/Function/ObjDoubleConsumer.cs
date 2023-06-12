@@ -50,9 +50,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        public void Accept(object arg0, double arg1)
+        public virtual void Accept(object arg0, double arg1)
         {
-            IExecute("accept", arg0, arg1);
+            
         }
 
         #endregion
@@ -65,18 +65,38 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IObjDoubleConsumer<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html"/>
+    /// </summary>
+    public partial interface IObjDoubleConsumer<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjDoubleConsumer.html#accept(java.lang.Object,double)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        void Accept(T arg0, double arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjDoubleConsumer<T>
-    public partial class ObjDoubleConsumer<T>
+    public partial class ObjDoubleConsumer<T> : Java.Util.Function.IObjDoubleConsumer<T>
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.ObjDoubleConsumer{T}"/> to <see cref="Java.Util.Function.ObjDoubleConsumer"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.ObjDoubleConsumer(Java.Util.Function.ObjDoubleConsumer<T> t) => t.Cast<Java.Util.Function.ObjDoubleConsumer>();
 
         #endregion
 
@@ -94,9 +114,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="double"/></param>
-        public void Accept(T arg0, double arg1)
+        public virtual void Accept(T arg0, double arg1)
         {
-            IExecute("accept", arg0, arg1);
+            
         }
 
         #endregion

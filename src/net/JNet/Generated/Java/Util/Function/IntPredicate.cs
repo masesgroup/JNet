@@ -25,8 +25,50 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IIntPredicate
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html"/>
+    /// </summary>
+    public partial interface IIntPredicate
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#test(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Test(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        Java.Util.Function.IntPredicate And(Java.Util.Function.IntPredicate arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        Java.Util.Function.IntPredicate Negate();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IntPredicate
-    public partial class IntPredicate
+    public partial class IntPredicate : Java.Util.Function.IIntPredicate
     {
         #region Constructors
 
@@ -46,38 +88,40 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/> 
-        /// </summary>
-        public Java.Util.Function.IntPredicate Negate
-        {
-            get { return IExecute<Java.Util.Function.IntPredicate>("negate"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#test(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Test(int arg0)
+        public virtual bool Test(int arg0)
         {
-            return IExecute<bool>("test", arg0);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        public Java.Util.Function.IntPredicate And(Java.Util.Function.IntPredicate arg0)
+        public virtual Java.Util.Function.IntPredicate And(Java.Util.Function.IntPredicate arg0)
         {
-            return IExecute<Java.Util.Function.IntPredicate>("and", arg0);
+            return default;
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        public virtual Java.Util.Function.IntPredicate Negate()
+        {
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
-        public Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0)
+        public virtual Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0)
         {
-            return IExecute<Java.Util.Function.IntPredicate>("or", arg0);
+            return default;
         }
 
         #endregion

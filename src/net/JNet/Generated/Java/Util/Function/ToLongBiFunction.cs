@@ -51,9 +51,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="long"/></returns>
-        public long ApplyAsLong(object arg0, object arg1)
+        public virtual long ApplyAsLong(object arg0, object arg1)
         {
-            return IExecute<long>("applyAsLong", arg0, arg1);
+            return default;
         }
 
         #endregion
@@ -66,18 +66,39 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IToLongBiFunction<T, U>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html"/>
+    /// </summary>
+    public partial interface IToLongBiFunction<T, U>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <returns><see cref="long"/></returns>
+        long ApplyAsLong(T arg0, U arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ToLongBiFunction<T, U>
-    public partial class ToLongBiFunction<T, U>
+    public partial class ToLongBiFunction<T, U> : Java.Util.Function.IToLongBiFunction<T, U>
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.ToLongBiFunction{T, U}"/> to <see cref="Java.Util.Function.ToLongBiFunction"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.ToLongBiFunction(Java.Util.Function.ToLongBiFunction<T, U> t) => t.Cast<Java.Util.Function.ToLongBiFunction>();
 
         #endregion
 
@@ -96,9 +117,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
         /// <returns><see cref="long"/></returns>
-        public long ApplyAsLong(T arg0, U arg1)
+        public virtual long ApplyAsLong(T arg0, U arg1)
         {
-            return IExecute<long>("applyAsLong", arg0, arg1);
+            return default;
         }
 
         #endregion

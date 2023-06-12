@@ -69,10 +69,6 @@ namespace Java.Awt.ImageNs.Renderable
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.Renderable.RenderContext"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.Renderable.RenderContext t) => t.Cast<Java.Lang.Cloneable>();
 
         #endregion
 

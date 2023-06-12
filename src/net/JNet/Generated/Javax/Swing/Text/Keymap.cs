@@ -25,8 +25,79 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Text
 {
+    #region IKeymap
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html"/>
+    /// </summary>
+    public partial interface IKeymap
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getBoundActions()"/> 
+        /// </summary>
+        Javax.Swing.Action[] BoundActions { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getBoundKeyStrokes()"/> 
+        /// </summary>
+        Javax.Swing.KeyStroke[] BoundKeyStrokes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getDefaultAction()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#setDefaultAction(javax.swing.Action)"/>
+        /// </summary>
+        Javax.Swing.Action DefaultAction { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getResolveParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#setResolveParent(javax.swing.text.Keymap)"/>
+        /// </summary>
+        Javax.Swing.Text.Keymap ResolveParent { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#isLocallyDefined(javax.swing.KeyStroke)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsLocallyDefined(Javax.Swing.KeyStroke arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getAction(javax.swing.KeyStroke)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <returns><see cref="Javax.Swing.Action"/></returns>
+        Javax.Swing.Action GetAction(Javax.Swing.KeyStroke arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#getKeyStrokesForAction(javax.swing.Action)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Action"/></param>
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
+        Javax.Swing.KeyStroke[] GetKeyStrokesForAction(Javax.Swing.Action arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#addActionForKeyStroke(javax.swing.KeyStroke,javax.swing.Action)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        /// <param name="arg1"><see cref="Javax.Swing.Action"/></param>
+        void AddActionForKeyStroke(Javax.Swing.KeyStroke arg0, Javax.Swing.Action arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeBindings()"/>
+        /// </summary>
+        void RemoveBindings();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeKeyStrokeBinding(javax.swing.KeyStroke)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.KeyStroke"/></param>
+        void RemoveKeyStrokeBinding(Javax.Swing.KeyStroke arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Keymap
-    public partial class Keymap
+    public partial class Keymap : Javax.Swing.Text.IKeymap
     {
         #region Constructors
 

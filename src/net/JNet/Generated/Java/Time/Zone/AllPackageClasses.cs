@@ -72,7 +72,7 @@ namespace Java.Time.Zone
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.html"/>
     /// </summary>
-    public partial class ZoneOffsetTransitionRule : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZoneOffsetTransitionRule>
+    public partial class ZoneOffsetTransitionRule : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -111,7 +111,7 @@ namespace Java.Time.Zone
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html"/>
         /// </summary>
-        public partial class TimeDefinition : Java.Lang.Enum
+        public partial class TimeDefinition : Java.Lang.Enum<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -158,7 +158,7 @@ namespace Java.Time.Zone
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRules.html"/>
     /// </summary>
-    public partial class ZoneRules : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZoneRules>
+    public partial class ZoneRules : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

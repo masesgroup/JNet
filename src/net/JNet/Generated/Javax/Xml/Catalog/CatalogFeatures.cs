@@ -95,11 +95,13 @@ namespace Javax.Xml.Catalog
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#build()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#build()"/>
             /// </summary>
-            public Javax.Xml.Catalog.CatalogFeatures Build
+
+            /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures"/></returns>
+            public Javax.Xml.Catalog.CatalogFeatures Build()
             {
-                get { return IExecute<Javax.Xml.Catalog.CatalogFeatures>("build"); }
+                return IExecute<Javax.Xml.Catalog.CatalogFeatures>("build");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#with(javax.xml.catalog.CatalogFeatures.Feature,java.lang.String)"/>

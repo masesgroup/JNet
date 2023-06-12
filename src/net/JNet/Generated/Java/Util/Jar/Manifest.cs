@@ -50,10 +50,6 @@ namespace Java.Util.Jar
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Jar.Manifest"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Util.Jar.Manifest t) => t.Cast<Java.Lang.Cloneable>();
 
         #endregion
 

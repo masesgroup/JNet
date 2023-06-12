@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IParameterizedType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html"/>
+    /// </summary>
+    public partial interface IParameterizedType : Java.Lang.Reflect.IType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getActualTypeArguments()"/> 
+        /// </summary>
+        Java.Lang.Reflect.Type[] ActualTypeArguments { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getOwnerType()"/> 
+        /// </summary>
+        Java.Lang.Reflect.Type OwnerType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html#getRawType()"/> 
+        /// </summary>
+        Java.Lang.Reflect.Type RawType { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ParameterizedType
-    public partial class ParameterizedType
+    public partial class ParameterizedType : Java.Lang.Reflect.IParameterizedType
     {
         #region Constructors
 

@@ -25,8 +25,48 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region ISingleSelectionModel
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html"/>
+    /// </summary>
+    public partial interface ISingleSelectionModel
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#isSelected()"/> 
+        /// </summary>
+        bool IsSelected { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#setSelectedIndex(int)"/>
+        /// </summary>
+        int SelectedIndex { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        void AddChangeListener(Javax.Swing.Event.ChangeListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#clearSelection()"/>
+        /// </summary>
+        void ClearSelection();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SingleSelectionModel
-    public partial class SingleSelectionModel
+    public partial class SingleSelectionModel : Javax.Swing.ISingleSelectionModel
     {
         #region Constructors
 

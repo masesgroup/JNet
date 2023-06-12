@@ -35,7 +35,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg0"><see cref="Javax.Management.Openmbean.CompositeType"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
-        public CompositeDataSupport(Javax.Management.Openmbean.CompositeType arg0, Java.Util.Map arg1)
+        public CompositeDataSupport(Javax.Management.Openmbean.CompositeType arg0, Java.Util.Map<string, object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -73,9 +73,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#values()"/> 
         /// </summary>
-        public Java.Util.Collection Values
+        public Java.Util.Collection<object> Values
         {
-            get { return IExecute<Java.Util.Collection>("values"); }
+            get { return IExecute<Java.Util.Collection<object>>("values"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataSupport.html#containsKey(java.lang.String)"/>

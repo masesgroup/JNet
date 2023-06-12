@@ -549,10 +549,6 @@ namespace Javax.Swing
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.JComponent.AccessibleJComponent"/> to <see cref="Javax.Accessibility.AccessibleExtendedComponent"/>
-            /// </summary>
-            public static implicit operator Javax.Accessibility.AccessibleExtendedComponent(Javax.Swing.JComponent.AccessibleJComponent t) => t.Cast<Javax.Accessibility.AccessibleExtendedComponent>();
 
             #endregion
 

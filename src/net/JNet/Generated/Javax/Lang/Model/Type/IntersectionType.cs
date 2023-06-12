@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region IIntersectionType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/IntersectionType.html"/>
+    /// </summary>
+    public partial interface IIntersectionType : Javax.Lang.Model.Type.ITypeMirror
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/IntersectionType.html#getBounds()"/> 
+        /// </summary>
+        Java.Util.List Bounds { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IntersectionType
-    public partial class IntersectionType
+    public partial class IntersectionType : Javax.Lang.Model.Type.IIntersectionType
     {
         #region Constructors
 

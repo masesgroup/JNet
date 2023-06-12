@@ -33,10 +33,6 @@ namespace Java.Util.Regex
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Regex.Pattern"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Regex.Pattern t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

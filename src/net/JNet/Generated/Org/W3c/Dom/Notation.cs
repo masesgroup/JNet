@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region INotation
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Notation.html"/>
+    /// </summary>
+    public partial interface INotation : Org.W3c.Dom.INode
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Notation.html#getPublicId()"/> 
+        /// </summary>
+        string PublicId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Notation.html#getSystemId()"/> 
+        /// </summary>
+        string SystemId { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Notation
-    public partial class Notation
+    public partial class Notation : Org.W3c.Dom.INotation
     {
         #region Constructors
 

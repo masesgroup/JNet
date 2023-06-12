@@ -153,8 +153,30 @@ namespace Java.Nio.File
     }
     #endregion
 
+    #region IDirectoryStream<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html"/>
+    /// </summary>
+    public partial interface IDirectoryStream<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/> 
+        /// </summary>
+        Java.Util.Iterator<T> Iterator { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DirectoryStream<T>
-    public partial class DirectoryStream<T>
+    public partial class DirectoryStream<T> : Java.Nio.File.IDirectoryStream<T>
     {
         #region Constructors
 

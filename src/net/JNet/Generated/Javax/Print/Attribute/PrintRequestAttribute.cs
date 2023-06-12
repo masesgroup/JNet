@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
+    #region IPrintRequestAttribute
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintRequestAttribute.html"/>
+    /// </summary>
+    public partial interface IPrintRequestAttribute : Javax.Print.Attribute.IAttribute
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrintRequestAttribute
-    public partial class PrintRequestAttribute
+    public partial class PrintRequestAttribute : Javax.Print.Attribute.IPrintRequestAttribute
     {
         #region Constructors
 

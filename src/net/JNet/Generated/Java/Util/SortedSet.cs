@@ -112,8 +112,61 @@ namespace Java.Util
     }
     #endregion
 
+    #region ISortedSet<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html"/>
+    /// </summary>
+    public partial interface ISortedSet<E> : Java.Util.ISet<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/> 
+        /// </summary>
+        Java.Util.Comparator Comparator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#first()"/> 
+        /// </summary>
+        E First { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#last()"/> 
+        /// </summary>
+        E Last { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#spliterator()"/> 
+        /// </summary>
+        Java.Util.Spliterator<E> Spliterator { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        Java.Util.SortedSet<E> HeadSet(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#subSet(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <param name="arg1"><typeparamref name="E"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        Java.Util.SortedSet<E> SubSet(E arg0, E arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="E"/></param>
+        /// <returns><see cref="Java.Util.SortedSet"/></returns>
+        Java.Util.SortedSet<E> TailSet(E arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SortedSet<E>
-    public partial class SortedSet<E>
+    public partial class SortedSet<E> : Java.Util.ISortedSet<E>
     {
         #region Constructors
 

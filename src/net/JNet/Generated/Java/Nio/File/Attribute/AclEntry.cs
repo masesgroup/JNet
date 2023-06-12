@@ -116,11 +116,13 @@ namespace Java.Nio.File.Attribute
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#build()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#build()"/>
             /// </summary>
-            public Java.Nio.File.Attribute.AclEntry Build
+
+            /// <returns><see cref="Java.Nio.File.Attribute.AclEntry"/></returns>
+            public Java.Nio.File.Attribute.AclEntry Build()
             {
-                get { return IExecute<Java.Nio.File.Attribute.AclEntry>("build"); }
+                return IExecute<Java.Nio.File.Attribute.AclEntry>("build");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setFlags(java.nio.file.attribute.AclEntryFlag[])"/>

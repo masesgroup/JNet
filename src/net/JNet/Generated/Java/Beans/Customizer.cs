@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
+    #region ICustomizer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Customizer.html"/>
+    /// </summary>
+    public partial interface ICustomizer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Customizer.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        void AddPropertyChangeListener(Java.Beans.PropertyChangeListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Customizer.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        void RemovePropertyChangeListener(Java.Beans.PropertyChangeListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Customizer.html#setObject(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        void SetObject(object arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Customizer
-    public partial class Customizer
+    public partial class Customizer : Java.Beans.ICustomizer
     {
         #region Constructors
 

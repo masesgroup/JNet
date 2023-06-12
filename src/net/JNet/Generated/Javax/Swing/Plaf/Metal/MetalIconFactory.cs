@@ -33,10 +33,6 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Plaf.Metal.MetalIconFactory"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

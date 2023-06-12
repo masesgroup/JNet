@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IGenericArrayType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericArrayType.html"/>
+    /// </summary>
+    public partial interface IGenericArrayType : Java.Lang.Reflect.IType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericArrayType.html#getGenericComponentType()"/> 
+        /// </summary>
+        Java.Lang.Reflect.Type GenericComponentType { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region GenericArrayType
-    public partial class GenericArrayType
+    public partial class GenericArrayType : Java.Lang.Reflect.IGenericArrayType
     {
         #region Constructors
 

@@ -25,8 +25,37 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IIntConsumer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html"/>
+    /// </summary>
+    public partial interface IIntConsumer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#accept(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        void Accept(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
+        Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IntConsumer
-    public partial class IntConsumer
+    public partial class IntConsumer : Java.Util.Function.IIntConsumer
     {
         #region Constructors
 
@@ -49,18 +78,18 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        public void Accept(int arg0)
+        public virtual void Accept(int arg0)
         {
-            IExecute("accept", arg0);
+            
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
-        public Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0)
+        public virtual Java.Util.Function.IntConsumer AndThen(Java.Util.Function.IntConsumer arg0)
         {
-            return IExecute<Java.Util.Function.IntConsumer>("andThen", arg0);
+            return default;
         }
 
         #endregion

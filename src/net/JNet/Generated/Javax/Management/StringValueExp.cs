@@ -41,10 +41,6 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.StringValueExp"/> to <see cref="Javax.Management.ValueExp"/>
-        /// </summary>
-        public static implicit operator Javax.Management.ValueExp(Javax.Management.StringValueExp t) => t.Cast<Javax.Management.ValueExp>();
 
         #endregion
 

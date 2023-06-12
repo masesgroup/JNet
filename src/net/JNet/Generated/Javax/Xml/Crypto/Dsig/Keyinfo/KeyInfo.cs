@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
+    #region IKeyInfo
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html"/>
+    /// </summary>
+    public partial interface IKeyInfo : Javax.Xml.Crypto.IXMLStructure
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#getContent()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Crypto.XMLStructure> Content { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#getId()"/> 
+        /// </summary>
+        string Id { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfo.html#marshal(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLStructure"/></param>
+        /// <param name="arg1"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
+        void Marshal(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region KeyInfo
-    public partial class KeyInfo
+    public partial class KeyInfo : Javax.Xml.Crypto.Dsig.Keyinfo.IKeyInfo
     {
         #region Constructors
 

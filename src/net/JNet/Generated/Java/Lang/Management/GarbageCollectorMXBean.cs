@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
+    #region IGarbageCollectorMXBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html"/>
+    /// </summary>
+    public partial interface IGarbageCollectorMXBean : Java.Lang.Management.IMemoryManagerMXBean
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html#getCollectionCount()"/> 
+        /// </summary>
+        long CollectionCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html#getCollectionTime()"/> 
+        /// </summary>
+        long CollectionTime { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region GarbageCollectorMXBean
-    public partial class GarbageCollectorMXBean
+    public partial class GarbageCollectorMXBean : Java.Lang.Management.IGarbageCollectorMXBean
     {
         #region Constructors
 

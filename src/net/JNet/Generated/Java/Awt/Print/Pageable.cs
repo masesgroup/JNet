@@ -25,8 +25,44 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Print
 {
+    #region IPageable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html"/>
+    /// </summary>
+    public partial interface IPageable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getNumberOfPages()"/> 
+        /// </summary>
+        int NumberOfPages { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPageFormat(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.Print.PageFormat"/></returns>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        Java.Awt.Print.PageFormat GetPageFormat(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html#getPrintable(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Awt.Print.Printable"/></returns>
+        /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
+        Java.Awt.Print.Printable GetPrintable(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Pageable
-    public partial class Pageable
+    public partial class Pageable : Java.Awt.Print.IPageable
     {
         #region Constructors
 

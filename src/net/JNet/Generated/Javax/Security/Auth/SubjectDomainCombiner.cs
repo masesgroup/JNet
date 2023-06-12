@@ -41,10 +41,6 @@ namespace Javax.Security.Auth
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.SubjectDomainCombiner"/> to <see cref="Java.Security.DomainCombiner"/>
-        /// </summary>
-        public static implicit operator Java.Security.DomainCombiner(Javax.Security.Auth.SubjectDomainCombiner t) => t.Cast<Java.Security.DomainCombiner>();
 
         #endregion
 

@@ -38,7 +38,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="Java.Util.Hashtable"/></param>
-        public MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Util.Hashtable arg5)
+        public MemoryImageSource(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Util.Hashtable<object, object> arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
@@ -64,7 +64,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Java.Util.Hashtable"/></param>
-        public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5, Java.Util.Hashtable arg6)
+        public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, byte[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
@@ -91,7 +91,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Java.Util.Hashtable"/></param>
-        public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5, Java.Util.Hashtable arg6)
+        public MemoryImageSource(int arg0, int arg1, Java.Awt.ImageNs.ColorModel arg2, int[] arg3, int arg4, int arg5, Java.Util.Hashtable<object, object> arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
@@ -112,10 +112,6 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.MemoryImageSource"/> to <see cref="Java.Awt.ImageNs.ImageProducer"/>
-        /// </summary>
-        public static implicit operator Java.Awt.ImageNs.ImageProducer(Java.Awt.ImageNs.MemoryImageSource t) => t.Cast<Java.Awt.ImageNs.ImageProducer>();
 
         #endregion
 

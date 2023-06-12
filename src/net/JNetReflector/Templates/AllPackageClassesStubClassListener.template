@@ -2,6 +2,11 @@
 ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER
 public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER
 {
+    /// <summary>
+    /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+    /// </summary>
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER() { }
+
 #warning Remember to build the body class for event listener
 
     // TODO: complete the class

@@ -44,7 +44,7 @@ namespace Java.Security.Cert
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
-        public PKIXParameters(Java.Util.Set arg0)
+        public PKIXParameters(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0)
             : base(arg0)
         {
         }
@@ -52,10 +52,6 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.PKIXParameters"/> to <see cref="Java.Security.Cert.CertPathParameters"/>
-        /// </summary>
-        public static implicit operator Java.Security.Cert.CertPathParameters(Java.Security.Cert.PKIXParameters t) => t.Cast<Java.Security.Cert.CertPathParameters>();
 
         #endregion
 

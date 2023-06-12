@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IDSAKeyPairGenerator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html"/>
+    /// </summary>
+    public partial interface IDSAKeyPairGenerator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(int,boolean,java.security.SecureRandom)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidParameterException"/>
+        void Initialize(int arg0, bool arg1, Java.Security.SecureRandom arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html#initialize(java.security.interfaces.DSAParams,java.security.SecureRandom)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Interfaces.DSAParams"/></param>
+        /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
+        /// <exception cref="Java.Security.InvalidParameterException"/>
+        void Initialize(Java.Security.Interfaces.DSAParams arg0, Java.Security.SecureRandom arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DSAKeyPairGenerator
-    public partial class DSAKeyPairGenerator
+    public partial class DSAKeyPairGenerator : Java.Security.Interfaces.IDSAKeyPairGenerator
     {
         #region Constructors
 

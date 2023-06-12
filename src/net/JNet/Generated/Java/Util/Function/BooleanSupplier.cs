@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IBooleanSupplier
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html"/>
+    /// </summary>
+    public partial interface IBooleanSupplier
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool GetAsBoolean();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BooleanSupplier
-    public partial class BooleanSupplier
+    public partial class BooleanSupplier : Java.Util.Function.IBooleanSupplier
     {
         #region Constructors
 
@@ -46,11 +70,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
         /// </summary>
-        public bool AsBoolean
+
+        /// <returns><see cref="bool"/></returns>
+        public virtual bool GetAsBoolean()
         {
-            get { return IExecute<bool>("getAsBoolean"); }
+            return default;
         }
 
         #endregion

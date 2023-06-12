@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Annotation
 {
+    #region INative
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Native.html"/>
+    /// </summary>
+    public partial interface INative : Java.Lang.Annotation.IAnnotation
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Native
-    public partial class Native
+    public partial class Native : Java.Lang.Annotation.INative
     {
         #region Constructors
 

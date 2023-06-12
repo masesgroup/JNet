@@ -158,7 +158,7 @@ namespace Java.Awt.ImageNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BandCombineOp.html"/>
     /// </summary>
-    public partial class BandCombineOp : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BandCombineOp>
+    public partial class BandCombineOp : Java.Awt.ImageNs.RasterOp
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -545,7 +545,7 @@ namespace Java.Awt.ImageNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorModel.html"/>
     /// </summary>
-    public partial class ColorModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ColorModel>
+    public partial class ColorModel : Java.Awt.Transparency
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1104,7 +1104,7 @@ namespace Java.Awt.ImageNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/FilteredImageSource.html"/>
     /// </summary>
-    public partial class FilteredImageSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FilteredImageSource>
+    public partial class FilteredImageSource : Java.Awt.ImageNs.ImageProducer
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1378,7 +1378,7 @@ namespace Java.Awt.ImageNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/Kernel.html"/>
     /// </summary>
-    public partial class Kernel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Kernel>
+    public partial class Kernel : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1507,7 +1507,7 @@ namespace Java.Awt.ImageNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MemoryImageSource.html"/>
     /// </summary>
-    public partial class MemoryImageSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MemoryImageSource>
+    public partial class MemoryImageSource : Java.Awt.ImageNs.ImageProducer
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1679,7 +1679,7 @@ namespace Java.Awt.ImageNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html"/>
     /// </summary>
-    public partial class PixelGrabber : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PixelGrabber>
+    public partial class PixelGrabber : Java.Awt.ImageNs.ImageConsumer
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

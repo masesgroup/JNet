@@ -68,7 +68,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.RequestorType.html"/>
         /// </summary>
-        public partial class RequestorType : Java.Lang.Enum
+        public partial class RequestorType : Java.Lang.Enum<Java.Net.Authenticator.RequestorType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -534,7 +534,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html"/>
     /// </summary>
-    public partial class DatagramSocket : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DatagramSocket>
+    public partial class DatagramSocket : Java.Io.Closeable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -577,7 +577,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocketImpl.html"/>
     /// </summary>
-    public partial class DatagramSocketImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DatagramSocketImpl>
+    public partial class DatagramSocketImpl : Java.Net.SocketOptions
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -706,7 +706,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html"/>
     /// </summary>
-    public partial class HttpCookie : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HttpCookie>
+    public partial class HttpCookie : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -937,7 +937,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetAddress.html"/>
     /// </summary>
-    public partial class InetAddress : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InetAddress>
+    public partial class InetAddress : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1427,7 +1427,7 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Proxy.Type.html"/>
         /// </summary>
-        public partial class Type : Java.Lang.Enum
+        public partial class Type : Java.Lang.Enum<Java.Net.Proxy.Type>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1603,7 +1603,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html"/>
     /// </summary>
-    public partial class ServerSocket : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ServerSocket>
+    public partial class ServerSocket : Java.Io.Closeable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1646,7 +1646,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html"/>
     /// </summary>
-    public partial class Socket : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Socket>
+    public partial class Socket : Java.Io.Closeable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1689,7 +1689,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketAddress.html"/>
     /// </summary>
-    public partial class SocketAddress : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SocketAddress>
+    public partial class SocketAddress : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1748,7 +1748,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImpl.html"/>
     /// </summary>
-    public partial class SocketImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SocketImpl>
+    public partial class SocketImpl : Java.Net.SocketOptions
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2023,7 +2023,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/StandardProtocolFamily.html"/>
     /// </summary>
-    public partial class StandardProtocolFamily : Java.Lang.Enum
+    public partial class StandardProtocolFamily : Java.Lang.Enum<Java.Net.StandardProtocolFamily>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2200,7 +2200,7 @@ namespace Java.Net
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html"/>
     /// </summary>
-    public partial class URL : MASES.JCOBridge.C2JBridge.JVMBridgeBase<URL>
+    public partial class URL : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

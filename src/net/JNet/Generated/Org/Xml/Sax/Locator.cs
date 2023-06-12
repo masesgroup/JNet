@@ -25,8 +25,42 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax
 {
+    #region ILocator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html"/>
+    /// </summary>
+    public partial interface ILocator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getColumnNumber()"/> 
+        /// </summary>
+        int ColumnNumber { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getLineNumber()"/> 
+        /// </summary>
+        int LineNumber { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getPublicId()"/> 
+        /// </summary>
+        string PublicId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Locator.html#getSystemId()"/> 
+        /// </summary>
+        string SystemId { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Locator
-    public partial class Locator
+    public partial class Locator : Org.Xml.Sax.ILocator
     {
         #region Constructors
 

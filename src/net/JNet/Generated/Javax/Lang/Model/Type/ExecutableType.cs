@@ -25,8 +25,46 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region IExecutableType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html"/>
+    /// </summary>
+    public partial interface IExecutableType : Javax.Lang.Model.Type.ITypeMirror
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getParameterTypes()"/> 
+        /// </summary>
+        Java.Util.List ParameterTypes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getReceiverType()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror ReceiverType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getReturnType()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror ReturnType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getThrownTypes()"/> 
+        /// </summary>
+        Java.Util.List ThrownTypes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ExecutableType.html#getTypeVariables()"/> 
+        /// </summary>
+        Java.Util.List TypeVariables { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ExecutableType
-    public partial class ExecutableType
+    public partial class ExecutableType : Javax.Lang.Model.Type.IExecutableType
     {
         #region Constructors
 

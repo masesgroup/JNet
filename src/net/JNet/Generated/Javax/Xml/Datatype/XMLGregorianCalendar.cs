@@ -33,10 +33,6 @@ namespace Javax.Xml.Datatype
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Datatype.XMLGregorianCalendar"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Javax.Xml.Datatype.XMLGregorianCalendar t) => t.Cast<Java.Lang.Cloneable>();
 
         #endregion
 

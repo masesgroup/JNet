@@ -1102,6 +1102,11 @@ namespace Javax.Swing.Plaf.Metal
         /// </summary>
         public partial class MetalPropertyChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public MetalPropertyChangeListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -1246,7 +1251,7 @@ namespace Javax.Swing.Plaf.Metal
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.html"/>
     /// </summary>
-    public partial class MetalIconFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MetalIconFactory>
+    public partial class MetalIconFactory : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

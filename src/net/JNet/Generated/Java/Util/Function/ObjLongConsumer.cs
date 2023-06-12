@@ -50,9 +50,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        public void Accept(object arg0, long arg1)
+        public virtual void Accept(object arg0, long arg1)
         {
-            IExecute("accept", arg0, arg1);
+            
         }
 
         #endregion
@@ -65,18 +65,38 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IObjLongConsumer<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html"/>
+    /// </summary>
+    public partial interface IObjLongConsumer<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        void Accept(T arg0, long arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjLongConsumer<T>
-    public partial class ObjLongConsumer<T>
+    public partial class ObjLongConsumer<T> : Java.Util.Function.IObjLongConsumer<T>
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.ObjLongConsumer{T}"/> to <see cref="Java.Util.Function.ObjLongConsumer"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.ObjLongConsumer(Java.Util.Function.ObjLongConsumer<T> t) => t.Cast<Java.Util.Function.ObjLongConsumer>();
 
         #endregion
 
@@ -94,9 +114,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        public void Accept(T arg0, long arg1)
+        public virtual void Accept(T arg0, long arg1)
         {
-            IExecute("accept", arg0, arg1);
+            
         }
 
         #endregion

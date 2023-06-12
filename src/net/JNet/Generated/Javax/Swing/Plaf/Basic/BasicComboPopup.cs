@@ -33,7 +33,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboPopup.html#%3Cinit%3E(javax.swing.JComboBox)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.JComboBox"/></param>
-        public BasicComboPopup(Javax.Swing.JComboBox arg0)
+        public BasicComboPopup(Javax.Swing.JComboBox<object> arg0)
             : base(arg0)
         {
         }

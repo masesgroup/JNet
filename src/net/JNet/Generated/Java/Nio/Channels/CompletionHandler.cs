@@ -59,7 +59,7 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        public void Failed(Java.Lang.Throwable arg0, object arg1)
+        public void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, object arg1)
         {
             IExecute("failed", arg0, arg1);
         }
@@ -74,8 +74,38 @@ namespace Java.Nio.Channels
     }
     #endregion
 
+    #region ICompletionHandler<V, A>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html"/>
+    /// </summary>
+    public partial interface ICompletionHandler<V, A>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="V"/></param>
+        /// <param name="arg1"><typeparamref name="A"/></param>
+        void Completed(V arg0, A arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
+        /// <param name="arg1"><typeparamref name="A"/></param>
+        void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, A arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CompletionHandler<V, A>
-    public partial class CompletionHandler<V, A>
+    public partial class CompletionHandler<V, A> : Java.Nio.Channels.ICompletionHandler<V, A>
     {
         #region Constructors
 
@@ -112,7 +142,7 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><typeparamref name="A"/></param>
-        public void Failed(Java.Lang.Throwable arg0, A arg1)
+        public void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, A arg1)
         {
             IExecute("failed", arg0, arg1);
         }

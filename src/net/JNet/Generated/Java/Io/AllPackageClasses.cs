@@ -432,7 +432,7 @@ namespace Java.Io
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Console.html"/>
     /// </summary>
-    public partial class Console : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Console>
+    public partial class Console : Java.Io.Flushable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1324,7 +1324,7 @@ namespace Java.Io
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html"/>
     /// </summary>
-    public partial class InputStream : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputStream>
+    public partial class InputStream : Java.Io.Closeable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1733,7 +1733,7 @@ namespace Java.Io
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html"/>
         /// </summary>
-        public partial class Status : Java.Lang.Enum
+        public partial class Status : Java.Lang.Enum<Java.Io.ObjectInputFilter.Status>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2038,7 +2038,7 @@ namespace Java.Io
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamClass.html"/>
     /// </summary>
-    public partial class ObjectStreamClass : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjectStreamClass>
+    public partial class ObjectStreamClass : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2140,7 +2140,7 @@ namespace Java.Io
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamField.html"/>
     /// </summary>
-    public partial class ObjectStreamField : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjectStreamField>
+    public partial class ObjectStreamField : Java.Lang.Comparable<object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

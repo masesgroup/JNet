@@ -25,8 +25,86 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Chrono
 {
+    #region IChronoPeriod
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html"/>
+    /// </summary>
+    public partial interface IChronoPeriod : Java.Time.Temporal.ITemporalAmount
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#getChronology()"/> 
+        /// </summary>
+        Java.Time.Chrono.Chronology Chronology { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isNegative()"/> 
+        /// </summary>
+        bool IsNegative { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#isZero()"/> 
+        /// </summary>
+        bool IsZero { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#negated()"/> 
+        /// </summary>
+        Java.Time.Chrono.ChronoPeriod Negated { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#normalized()"/> 
+        /// </summary>
+        Java.Time.Chrono.ChronoPeriod Normalized { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#getUnits()"/> 
+        /// </summary>
+        Java.Util.List<Java.Time.Temporal.TemporalUnit> Units { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#minus(java.time.temporal.TemporalAmount)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
+        Java.Time.Chrono.ChronoPeriod Minus(Java.Time.Temporal.TemporalAmount arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#multipliedBy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
+        Java.Time.Chrono.ChronoPeriod MultipliedBy(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#plus(java.time.temporal.TemporalAmount)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
+        Java.Time.Chrono.ChronoPeriod Plus(Java.Time.Temporal.TemporalAmount arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#addTo(java.time.temporal.Temporal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal AddTo(Java.Time.Temporal.Temporal arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#subtractFrom(java.time.temporal.Temporal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal SubtractFrom(Java.Time.Temporal.Temporal arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoPeriod.html#get(java.time.temporal.TemporalUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
+        /// <returns><see cref="long"/></returns>
+        long Get(Java.Time.Temporal.TemporalUnit arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ChronoPeriod
-    public partial class ChronoPeriod
+    public partial class ChronoPeriod : Java.Time.Chrono.IChronoPeriod
     {
         #region Constructors
 

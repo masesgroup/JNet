@@ -25,8 +25,54 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region IMBeanServerDelegateMBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html"/>
+    /// </summary>
+    public partial interface IMBeanServerDelegateMBean
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationName()"/> 
+        /// </summary>
+        string ImplementationName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVendor()"/> 
+        /// </summary>
+        string ImplementationVendor { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getImplementationVersion()"/> 
+        /// </summary>
+        string ImplementationVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getMBeanServerId()"/> 
+        /// </summary>
+        string MBeanServerId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationName()"/> 
+        /// </summary>
+        string SpecificationName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVendor()"/> 
+        /// </summary>
+        string SpecificationVendor { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html#getSpecificationVersion()"/> 
+        /// </summary>
+        string SpecificationVersion { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MBeanServerDelegateMBean
-    public partial class MBeanServerDelegateMBean
+    public partial class MBeanServerDelegateMBean : Javax.Management.IMBeanServerDelegateMBean
     {
         #region Constructors
 

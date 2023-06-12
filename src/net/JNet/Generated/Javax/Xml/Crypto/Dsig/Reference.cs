@@ -25,8 +25,61 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region IReference
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html"/>
+    /// </summary>
+    public partial interface IReference
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getCalculatedDigestValue()"/> 
+        /// </summary>
+        byte[] CalculatedDigestValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDereferencedData()"/> 
+        /// </summary>
+        Javax.Xml.Crypto.Data DereferencedData { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestInputStream()"/> 
+        /// </summary>
+        Java.Io.InputStream DigestInputStream { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestMethod()"/> 
+        /// </summary>
+        Javax.Xml.Crypto.Dsig.DigestMethod DigestMethod { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getDigestValue()"/> 
+        /// </summary>
+        byte[] DigestValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getId()"/> 
+        /// </summary>
+        string Id { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#getTransforms()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Crypto.Dsig.Transform> Transforms { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/Reference.html#validate(javax.xml.crypto.dsig.XMLValidateContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.Dsig.XMLValidateContext"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.Dsig.XMLSignatureException"/>
+        bool Validate(Javax.Xml.Crypto.Dsig.XMLValidateContext arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Reference
-    public partial class Reference
+    public partial class Reference : Javax.Xml.Crypto.Dsig.IReference
     {
         #region Constructors
 

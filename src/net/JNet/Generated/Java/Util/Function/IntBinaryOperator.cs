@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IIntBinaryOperator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntBinaryOperator.html"/>
+    /// </summary>
+    public partial interface IIntBinaryOperator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        int ApplyAsInt(int arg0, int arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IntBinaryOperator
-    public partial class IntBinaryOperator
+    public partial class IntBinaryOperator : Java.Util.Function.IIntBinaryOperator
     {
         #region Constructors
 
@@ -51,9 +76,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        public int ApplyAsInt(int arg0, int arg1)
+        public virtual int ApplyAsInt(int arg0, int arg1)
         {
-            return IExecute<int>("applyAsInt", arg0, arg1);
+            return default;
         }
 
         #endregion

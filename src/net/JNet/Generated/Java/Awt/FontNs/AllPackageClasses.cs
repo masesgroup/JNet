@@ -158,7 +158,7 @@ namespace Java.Awt.FontNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html"/>
     /// </summary>
-    public partial class GlyphVector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GlyphVector>
+    public partial class GlyphVector : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -459,7 +459,7 @@ namespace Java.Awt.FontNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html"/>
     /// </summary>
-    public partial class NumericShaper : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NumericShaper>
+    public partial class NumericShaper : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -498,7 +498,7 @@ namespace Java.Awt.FontNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html"/>
         /// </summary>
-        public partial class Range : Java.Lang.Enum
+        public partial class Range : Java.Lang.Enum<Java.Awt.FontNs.NumericShaper.Range>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -717,7 +717,7 @@ namespace Java.Awt.FontNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html"/>
     /// </summary>
-    public partial class TextLayout : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TextLayout>
+    public partial class TextLayout : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -803,7 +803,7 @@ namespace Java.Awt.FontNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html"/>
     /// </summary>
-    public partial class TextMeasurer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TextMeasurer>
+    public partial class TextMeasurer : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -846,7 +846,7 @@ namespace Java.Awt.FontNs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TransformAttribute.html"/>
     /// </summary>
-    public partial class TransformAttribute : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TransformAttribute>
+    public partial class TransformAttribute : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

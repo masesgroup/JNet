@@ -25,8 +25,74 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Traversal
 {
+    #region ITreeWalker
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html"/>
+    /// </summary>
+    public partial interface ITreeWalker
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#getCurrentNode()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#setCurrentNode(org.w3c.dom.Node)"/>
+        /// </summary>
+        Org.W3c.Dom.Node CurrentNode { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#getExpandEntityReferences()"/> 
+        /// </summary>
+        bool ExpandEntityReferences { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#getFilter()"/> 
+        /// </summary>
+        Org.W3c.Dom.Traversal.NodeFilter Filter { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#firstChild()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node FirstChild { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#lastChild()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node LastChild { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#nextNode()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node NextNode { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#nextSibling()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node NextSibling { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#parentNode()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node ParentNode { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#previousNode()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node PreviousNode { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#previousSibling()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node PreviousSibling { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#getRoot()"/> 
+        /// </summary>
+        Org.W3c.Dom.Node Root { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html#getWhatToShow()"/> 
+        /// </summary>
+        int WhatToShow { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TreeWalker
-    public partial class TreeWalker
+    public partial class TreeWalker : Org.W3c.Dom.Traversal.ITreeWalker
     {
         #region Constructors
 

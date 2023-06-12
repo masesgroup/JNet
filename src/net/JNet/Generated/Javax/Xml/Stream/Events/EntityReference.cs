@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Events
 {
+    #region IEntityReference
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityReference.html"/>
+    /// </summary>
+    public partial interface IEntityReference : Javax.Xml.Stream.Events.IXMLEvent
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityReference.html#getDeclaration()"/> 
+        /// </summary>
+        Javax.Xml.Stream.Events.EntityDeclaration Declaration { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityReference.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region EntityReference
-    public partial class EntityReference
+    public partial class EntityReference : Javax.Xml.Stream.Events.IEntityReference
     {
         #region Constructors
 

@@ -33,10 +33,6 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Event.EventListenerList"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Swing.Event.EventListenerList t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 
@@ -67,9 +63,9 @@ namespace Javax.Swing.Event
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/EventListenerList.html#getListeners(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
+        public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.IEventListener, new()
         {
             return IExecuteArray<T>("getListeners", arg0);
         }
@@ -87,8 +83,8 @@ namespace Javax.Swing.Event
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
-        public void Add<T>(Java.Lang.Class arg0, T arg1) where T: Java.Util.EventListener
+        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
+        public void Add<T>(Java.Lang.Class arg0, T arg1) where T: Java.Util.IEventListener, new()
         {
             IExecute("add", arg0, arg1);
         }
@@ -97,8 +93,8 @@ namespace Javax.Swing.Event
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
-        public void Remove<T>(Java.Lang.Class arg0, T arg1) where T: Java.Util.EventListener
+        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
+        public void Remove<T>(Java.Lang.Class arg0, T arg1) where T: Java.Util.IEventListener, new()
         {
             IExecute("remove", arg0, arg1);
         }

@@ -33,10 +33,6 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Module"/> to <see cref="Java.Lang.Reflect.AnnotatedElement"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Module t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
 
         #endregion
 
@@ -109,9 +105,9 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Lang.Annotation.Annotation"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.Annotation
+        public T GetAnnotation<T>(Java.Lang.Class arg0) where T: Java.Lang.Annotation.IAnnotation, new()
         {
             return IExecute<T>("getAnnotation", arg0);
         }

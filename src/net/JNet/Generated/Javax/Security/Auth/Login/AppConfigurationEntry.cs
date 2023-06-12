@@ -35,7 +35,7 @@ namespace Javax.Security.Auth.Login
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag"/></param>
         /// <param name="arg2"><see cref="Java.Util.Map"/></param>
-        public AppConfigurationEntry(string arg0, Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag arg1, Java.Util.Map arg2)
+        public AppConfigurationEntry(string arg0, Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag arg1, Java.Util.Map<string, object> arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -72,9 +72,9 @@ namespace Javax.Security.Auth.Login
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.html#getOptions()"/> 
         /// </summary>
-        public Java.Util.Map Options
+        public Java.Util.Map<string, object> Options
         {
-            get { return IExecute<Java.Util.Map>("getOptions"); }
+            get { return IExecute<Java.Util.Map<string, object>>("getOptions"); }
         }
 
         #endregion

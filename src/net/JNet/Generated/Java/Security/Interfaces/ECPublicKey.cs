@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IECPublicKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPublicKey.html"/>
+    /// </summary>
+    public partial interface IECPublicKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPublicKey.html#getW()"/> 
+        /// </summary>
+        Java.Security.Spec.ECPoint W { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ECPublicKey
-    public partial class ECPublicKey
+    public partial class ECPublicKey : Java.Security.Interfaces.IECPublicKey
     {
         #region Constructors
 

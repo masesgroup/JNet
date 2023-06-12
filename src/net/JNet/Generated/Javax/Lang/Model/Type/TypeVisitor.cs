@@ -195,8 +195,123 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
+    #region ITypeVisitor<R, P>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html"/>
+    /// </summary>
+    public partial interface ITypeVisitor<R, P>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visit(javax.lang.model.type.TypeMirror,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R Visit(Javax.Lang.Model.Type.TypeMirror arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitArray(javax.lang.model.type.ArrayType,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.ArrayType"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitArray(Javax.Lang.Model.Type.ArrayType arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitDeclared(javax.lang.model.type.DeclaredType,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.DeclaredType"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitDeclared(Javax.Lang.Model.Type.DeclaredType arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitError(javax.lang.model.type.ErrorType,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.ErrorType"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitError(Javax.Lang.Model.Type.ErrorType arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitExecutable(javax.lang.model.type.ExecutableType,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.ExecutableType"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitExecutable(Javax.Lang.Model.Type.ExecutableType arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitIntersection(javax.lang.model.type.IntersectionType,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.IntersectionType"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitIntersection(Javax.Lang.Model.Type.IntersectionType arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitNoType(javax.lang.model.type.NoType,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.NoType"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitNoType(Javax.Lang.Model.Type.NoType arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitNull(javax.lang.model.type.NullType,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.NullType"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitNull(Javax.Lang.Model.Type.NullType arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitPrimitive(javax.lang.model.type.PrimitiveType,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.PrimitiveType"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitPrimitive(Javax.Lang.Model.Type.PrimitiveType arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitTypeVariable(javax.lang.model.type.TypeVariable,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeVariable"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitTypeVariable(Javax.Lang.Model.Type.TypeVariable arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitUnion(javax.lang.model.type.UnionType,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.UnionType"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitUnion(Javax.Lang.Model.Type.UnionType arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitUnknown(javax.lang.model.type.TypeMirror,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitUnknown(Javax.Lang.Model.Type.TypeMirror arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitWildcard(javax.lang.model.type.WildcardType,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.WildcardType"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R VisitWildcard(Javax.Lang.Model.Type.WildcardType arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visit(javax.lang.model.type.TypeMirror)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R Visit(Javax.Lang.Model.Type.TypeMirror arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TypeVisitor<R, P>
-    public partial class TypeVisitor<R, P>
+    public partial class TypeVisitor<R, P> : Javax.Lang.Model.Type.ITypeVisitor<R, P>
     {
         #region Constructors
 

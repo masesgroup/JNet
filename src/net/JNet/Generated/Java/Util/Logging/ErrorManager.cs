@@ -75,7 +75,7 @@ namespace Java.Util.Logging
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Exception"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        public void Error(string arg0, Java.Lang.Exception arg1, int arg2)
+        public void Error(string arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1, int arg2)
         {
             IExecute("error", arg0, arg1, arg2);
         }

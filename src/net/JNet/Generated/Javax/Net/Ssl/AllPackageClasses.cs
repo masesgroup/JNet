@@ -29,7 +29,7 @@ namespace Javax.Net.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html"/>
     /// </summary>
-    public partial class CertPathTrustManagerParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathTrustManagerParameters>
+    public partial class CertPathTrustManagerParameters : Javax.Net.Ssl.ManagerFactoryParameters
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -72,7 +72,7 @@ namespace Javax.Net.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html"/>
     /// </summary>
-    public partial class ExtendedSSLSession : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExtendedSSLSession>
+    public partial class ExtendedSSLSession : Javax.Net.Ssl.SSLSession
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -158,8 +158,13 @@ namespace Javax.Net.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html"/>
     /// </summary>
-    public partial class HandshakeCompletedListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class HandshakeCompletedListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HandshakeCompletedListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -386,7 +391,7 @@ namespace Javax.Net.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyStoreBuilderParameters.html"/>
     /// </summary>
-    public partial class KeyStoreBuilderParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyStoreBuilderParameters>
+    public partial class KeyStoreBuilderParameters : Javax.Net.Ssl.ManagerFactoryParameters
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -769,7 +774,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.HandshakeStatus.html"/>
         /// </summary>
-        public partial class HandshakeStatus : Java.Lang.Enum
+        public partial class HandshakeStatus : Java.Lang.Enum<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -812,7 +817,7 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html"/>
         /// </summary>
-        public partial class Status : Java.Lang.Enum
+        public partial class Status : Java.Lang.Enum<Javax.Net.Ssl.SSLEngineResult.Status>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1197,8 +1202,13 @@ namespace Javax.Net.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html"/>
     /// </summary>
-    public partial class SSLSessionBindingListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class SSLSessionBindingListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SSLSessionBindingListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1511,7 +1521,7 @@ namespace Javax.Net.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedKeyManager.html"/>
     /// </summary>
-    public partial class X509ExtendedKeyManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509ExtendedKeyManager>
+    public partial class X509ExtendedKeyManager : Javax.Net.Ssl.X509KeyManager
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1554,7 +1564,7 @@ namespace Javax.Net.Ssl
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedTrustManager.html"/>
     /// </summary>
-    public partial class X509ExtendedTrustManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509ExtendedTrustManager>
+    public partial class X509ExtendedTrustManager : Javax.Net.Ssl.X509TrustManager
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
+    #region IObjectStreamConstants
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectStreamConstants.html"/>
+    /// </summary>
+    public partial interface IObjectStreamConstants
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjectStreamConstants
-    public partial class ObjectStreamConstants
+    public partial class ObjectStreamConstants : Java.Io.IObjectStreamConstants
     {
         #region Constructors
 

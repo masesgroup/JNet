@@ -25,8 +25,54 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans.Beancontext
 {
+    #region IBeanContextChild
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html"/>
+    /// </summary>
+    public partial interface IBeanContextChild
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html#getBeanContext()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html#setBeanContext(java.beans.beancontext.BeanContext)"/>
+        /// </summary>
+        Java.Beans.Beancontext.BeanContext BeanContext { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        void AddPropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html#addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
+        void AddVetoableChangeListener(string arg0, Java.Beans.VetoableChangeListener arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
+        void RemovePropertyChangeListener(string arg0, Java.Beans.PropertyChangeListener arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChild.html#removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
+        void RemoveVetoableChangeListener(string arg0, Java.Beans.VetoableChangeListener arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BeanContextChild
-    public partial class BeanContextChild
+    public partial class BeanContextChild : Java.Beans.Beancontext.IBeanContextChild
     {
         #region Constructors
 

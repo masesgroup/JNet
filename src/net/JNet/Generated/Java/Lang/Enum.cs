@@ -146,8 +146,9 @@ namespace Java.Lang
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="T"/></returns>
-        public static T ValueOf(Java.Lang.Class arg0, string arg1)
+        /// <typeparam name="T"><see cref="Java.Lang.Enum{T}"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public static T ValueOf<T>(Java.Lang.Class arg0, string arg1) where T: Java.Lang.Enum<T>
         {
             return SExecute<T>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }

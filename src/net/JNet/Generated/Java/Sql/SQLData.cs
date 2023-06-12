@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region ISQLData
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html"/>
+    /// </summary>
+    public partial interface ISQLData
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#getSQLTypeName()"/> 
+        /// </summary>
+        string SQLTypeName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#readSQL(java.sql.SQLInput,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.SQLInput"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void ReadSQL(Java.Sql.SQLInput arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Sql.SQLOutput"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void WriteSQL(Java.Sql.SQLOutput arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SQLData
-    public partial class SQLData
+    public partial class SQLData : Java.Sql.ISQLData
     {
         #region Constructors
 

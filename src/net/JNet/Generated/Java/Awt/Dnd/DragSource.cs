@@ -33,10 +33,6 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.Dnd.DragSource"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Awt.Dnd.DragSource t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 
@@ -132,9 +128,9 @@ namespace Java.Awt.Dnd
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#getListeners(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.EventListener
+        public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.IEventListener, new()
         {
             return IExecuteArray<T>("getListeners", arg0);
         }

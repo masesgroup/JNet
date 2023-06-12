@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
+    #region ISerializable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html"/>
+    /// </summary>
+    public partial interface ISerializable
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Serializable
-    public partial class Serializable
+    public partial class Serializable : Java.Io.ISerializable
     {
         #region Constructors
 

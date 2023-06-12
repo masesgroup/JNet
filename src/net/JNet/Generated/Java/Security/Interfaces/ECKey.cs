@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IECKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECKey.html"/>
+    /// </summary>
+    public partial interface IECKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECKey.html#getParams()"/> 
+        /// </summary>
+        Java.Security.Spec.ECParameterSpec Params { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ECKey
-    public partial class ECKey
+    public partial class ECKey : Java.Security.Interfaces.IECKey
     {
         #region Constructors
 

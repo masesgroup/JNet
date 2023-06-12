@@ -29,7 +29,7 @@ namespace Java.Awt.Print
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html"/>
     /// </summary>
-    public partial class Book : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Book>
+    public partial class Book : Java.Awt.Print.Pageable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -115,7 +115,7 @@ namespace Java.Awt.Print
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PageFormat.html"/>
     /// </summary>
-    public partial class PageFormat : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PageFormat>
+    public partial class PageFormat : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -158,7 +158,7 @@ namespace Java.Awt.Print
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html"/>
     /// </summary>
-    public partial class Paper : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Paper>
+    public partial class Paper : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

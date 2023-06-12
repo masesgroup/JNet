@@ -36,7 +36,7 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <param name="arg2"><see cref="Javax.Management.MBeanServer"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map arg1, Javax.Management.MBeanServer arg2)
+        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, object> arg1, Javax.Management.MBeanServer arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -48,7 +48,7 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg2"><see cref="Javax.Management.Remote.Rmi.RMIServerImpl"/></param>
         /// <param name="arg3"><see cref="Javax.Management.MBeanServer"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map arg1, Javax.Management.Remote.Rmi.RMIServerImpl arg2, Javax.Management.MBeanServer arg3)
+        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, object> arg1, Javax.Management.Remote.Rmi.RMIServerImpl arg2, Javax.Management.MBeanServer arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -58,7 +58,7 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map arg1)
+        public RMIConnectorServer(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, object> arg1)
             : base(arg0, arg1)
         {
         }

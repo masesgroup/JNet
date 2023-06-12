@@ -25,8 +25,50 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Activation
 {
+    #region IActivationMonitor
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html"/>
+    /// </summary>
+    public partial interface IActivationMonitor : Java.Rmi.IRemote
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#activeObject(java.rmi.activation.ActivationID,java.rmi.MarshalledObject)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
+        /// <typeparam name="Arg1ExtendsJava_Rmi_Remote"><see cref="Java.Rmi.Remote"/></typeparam>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        void ActiveObject<Arg1ExtendsJava_Rmi_Remote>(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.MarshalledObject<Arg1ExtendsJava_Rmi_Remote> arg1) where Arg1ExtendsJava_Rmi_Remote: Java.Rmi.Remote;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#inactiveGroup(java.rmi.activation.ActivationGroupID,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationGroupID"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <exception cref="Java.Rmi.Activation.UnknownGroupException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        void InactiveGroup(Java.Rmi.Activation.ActivationGroupID arg0, long arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html#inactiveObject(java.rmi.activation.ActivationID)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Activation.ActivationID"/></param>
+        /// <exception cref="Java.Rmi.Activation.UnknownObjectException"/>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        void InactiveObject(Java.Rmi.Activation.ActivationID arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ActivationMonitor
-    public partial class ActivationMonitor
+    public partial class ActivationMonitor : Java.Rmi.Activation.IActivationMonitor
     {
         #region Constructors
 

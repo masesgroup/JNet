@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
+    #region ICertPathParameters
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathParameters.html"/>
+    /// </summary>
+    public partial interface ICertPathParameters : Java.Lang.ICloneable
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CertPathParameters
-    public partial class CertPathParameters
+    public partial class CertPathParameters : Java.Security.Cert.ICertPathParameters
     {
         #region Constructors
 

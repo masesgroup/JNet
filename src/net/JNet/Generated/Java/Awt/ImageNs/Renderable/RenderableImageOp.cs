@@ -42,10 +42,6 @@ namespace Java.Awt.ImageNs.Renderable
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.Renderable.RenderableImageOp"/> to <see cref="Java.Awt.ImageNs.Renderable.RenderableImage"/>
-        /// </summary>
-        public static implicit operator Java.Awt.ImageNs.Renderable.RenderableImage(Java.Awt.ImageNs.Renderable.RenderableImageOp t) => t.Cast<Java.Awt.ImageNs.Renderable.RenderableImage>();
 
         #endregion
 

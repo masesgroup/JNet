@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region IWildcardType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/WildcardType.html"/>
+    /// </summary>
+    public partial interface IWildcardType : Javax.Lang.Model.Type.ITypeMirror
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/WildcardType.html#getExtendsBound()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror ExtendsBound { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/WildcardType.html#getSuperBound()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror SuperBound { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region WildcardType
-    public partial class WildcardType
+    public partial class WildcardType : Javax.Lang.Model.Type.IWildcardType
     {
         #region Constructors
 

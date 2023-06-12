@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
+    #region ICRLSelector
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLSelector.html"/>
+    /// </summary>
+    public partial interface ICRLSelector : Java.Lang.ICloneable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLSelector.html#match(java.security.cert.CRL)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.CRL"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Match(Java.Security.Cert.CRL arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CRLSelector
-    public partial class CRLSelector
+    public partial class CRLSelector : Java.Security.Cert.ICRLSelector
     {
         #region Constructors
 

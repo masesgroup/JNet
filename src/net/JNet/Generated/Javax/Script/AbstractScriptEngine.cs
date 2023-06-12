@@ -41,10 +41,6 @@ namespace Javax.Script
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Script.AbstractScriptEngine"/> to <see cref="Javax.Script.ScriptEngine"/>
-        /// </summary>
-        public static implicit operator Javax.Script.ScriptEngine(Javax.Script.AbstractScriptEngine t) => t.Cast<Javax.Script.ScriptEngine>();
 
         #endregion
 

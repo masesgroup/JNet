@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
+    #region IDelayed
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Delayed.html"/>
+    /// </summary>
+    public partial interface IDelayed : Java.Lang.IComparable<Java.Util.Concurrent.Delayed>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Delayed.html#getDelay(java.util.concurrent.TimeUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
+        /// <returns><see cref="long"/></returns>
+        long GetDelay(Java.Util.Concurrent.TimeUnit arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Delayed
-    public partial class Delayed
+    public partial class Delayed : Java.Util.Concurrent.IDelayed
     {
         #region Constructors
 

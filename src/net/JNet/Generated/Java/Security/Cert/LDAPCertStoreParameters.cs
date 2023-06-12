@@ -50,10 +50,6 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.LDAPCertStoreParameters"/> to <see cref="Java.Security.Cert.CertStoreParameters"/>
-        /// </summary>
-        public static implicit operator Java.Security.Cert.CertStoreParameters(Java.Security.Cert.LDAPCertStoreParameters t) => t.Cast<Java.Security.Cert.CertStoreParameters>();
 
         #endregion
 

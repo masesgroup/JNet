@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
+    #region ITemporalAdjuster
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjuster.html"/>
+    /// </summary>
+    public partial interface ITemporalAdjuster
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjuster.html#adjustInto(java.time.temporal.Temporal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TemporalAdjuster
-    public partial class TemporalAdjuster
+    public partial class TemporalAdjuster : Java.Time.Temporal.ITemporalAdjuster
     {
         #region Constructors
 

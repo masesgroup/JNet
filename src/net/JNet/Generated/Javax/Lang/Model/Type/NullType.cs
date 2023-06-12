@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region INullType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/NullType.html"/>
+    /// </summary>
+    public partial interface INullType : Javax.Lang.Model.Type.IReferenceType
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region NullType
-    public partial class NullType
+    public partial class NullType : Javax.Lang.Model.Type.INullType
     {
         #region Constructors
 

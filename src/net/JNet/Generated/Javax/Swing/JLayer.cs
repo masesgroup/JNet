@@ -308,8 +308,7 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#setUI(javax.swing.plaf.LayerUI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Plaf.LayerUI"/></param>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        public void SetUI<Arg0objectSuperV>(Javax.Swing.Plaf.LayerUI<Arg0objectSuperV> arg0) where Arg0objectSuperV: V
+        public void SetUI(Javax.Swing.Plaf.LayerUI arg0)
         {
             IExecute("setUI", arg0);
         }

@@ -33,10 +33,6 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Io.Console"/> to <see cref="Java.Io.Flushable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Flushable(Java.Io.Console t) => t.Cast<Java.Io.Flushable>();
 
         #endregion
 

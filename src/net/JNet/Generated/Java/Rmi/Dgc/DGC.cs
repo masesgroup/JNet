@@ -25,8 +25,44 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Dgc
 {
+    #region IDGC
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html"/>
+    /// </summary>
+    public partial interface IDGC : Java.Rmi.IRemote
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html#dirty(java.rmi.server.ObjID[],long,java.rmi.dgc.Lease)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Server.ObjID"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.Dgc.Lease"/></param>
+        /// <returns><see cref="Java.Rmi.Dgc.Lease"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        Java.Rmi.Dgc.Lease Dirty(Java.Rmi.Server.ObjID[] arg0, long arg1, Java.Rmi.Dgc.Lease arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html#clean(java.rmi.server.ObjID[],long,java.rmi.dgc.VMID,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Rmi.Server.ObjID"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <param name="arg2"><see cref="Java.Rmi.Dgc.VMID"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        void Clean(Java.Rmi.Server.ObjID[] arg0, long arg1, Java.Rmi.Dgc.VMID arg2, bool arg3);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DGC
-    public partial class DGC
+    public partial class DGC : Java.Rmi.Dgc.IDGC
     {
         #region Constructors
 

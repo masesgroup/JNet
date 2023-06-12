@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
+    #region IURLStreamHandlerFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLStreamHandlerFactory.html"/>
+    /// </summary>
+    public partial interface IURLStreamHandlerFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLStreamHandlerFactory.html#createURLStreamHandler(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Net.URLStreamHandler"/></returns>
+        Java.Net.URLStreamHandler CreateURLStreamHandler(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region URLStreamHandlerFactory
-    public partial class URLStreamHandlerFactory
+    public partial class URLStreamHandlerFactory : Java.Net.IURLStreamHandlerFactory
     {
         #region Constructors
 

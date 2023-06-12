@@ -36,7 +36,7 @@ namespace Javax.Management.Relation
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public RoleUnresolved(string arg0, Java.Util.List arg1, int arg2)
+        public RoleUnresolved(string arg0, Java.Util.List<Javax.Management.ObjectName> arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -44,10 +44,6 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Relation.RoleUnresolved"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Management.Relation.RoleUnresolved t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

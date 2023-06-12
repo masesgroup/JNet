@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region IArrayType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ArrayType.html"/>
+    /// </summary>
+    public partial interface IArrayType : Javax.Lang.Model.Type.IReferenceType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ArrayType.html#getComponentType()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror ComponentType { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ArrayType
-    public partial class ArrayType
+    public partial class ArrayType : Javax.Lang.Model.Type.IArrayType
     {
         #region Constructors
 

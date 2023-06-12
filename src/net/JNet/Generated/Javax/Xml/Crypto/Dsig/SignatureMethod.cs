@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region ISignatureMethod
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html"/>
+    /// </summary>
+    public partial interface ISignatureMethod
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#getParameterSpec()"/> 
+        /// </summary>
+        Java.Security.Spec.AlgorithmParameterSpec ParameterSpec { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SignatureMethod
-    public partial class SignatureMethod
+    public partial class SignatureMethod : Javax.Xml.Crypto.Dsig.ISignatureMethod
     {
         #region Constructors
 

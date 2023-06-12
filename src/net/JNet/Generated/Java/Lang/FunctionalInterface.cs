@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region IFunctionalInterface
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/FunctionalInterface.html"/>
+    /// </summary>
+    public partial interface IFunctionalInterface : Java.Lang.Annotation.IAnnotation
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region FunctionalInterface
-    public partial class FunctionalInterface
+    public partial class FunctionalInterface : Java.Lang.IFunctionalInterface
     {
         #region Constructors
 

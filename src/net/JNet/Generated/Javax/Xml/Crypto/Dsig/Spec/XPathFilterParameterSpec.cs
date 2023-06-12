@@ -34,7 +34,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        public XPathFilterParameterSpec(string arg0, Java.Util.Map arg1)
+        public XPathFilterParameterSpec(string arg0, Java.Util.Map<string, string> arg1)
             : base(arg0, arg1)
         {
         }
@@ -50,10 +50,6 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.XPathFilterParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec(Javax.Xml.Crypto.Dsig.Spec.XPathFilterParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec>();
 
         #endregion
 

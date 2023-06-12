@@ -41,10 +41,6 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Beans.VetoableChangeSupport"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Beans.VetoableChangeSupport t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

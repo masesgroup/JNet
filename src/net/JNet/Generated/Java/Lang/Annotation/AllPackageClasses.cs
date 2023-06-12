@@ -147,7 +147,7 @@ namespace Java.Lang.Annotation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html"/>
     /// </summary>
-    public partial class ElementType : Java.Lang.Enum
+    public partial class ElementType : Java.Lang.Enum<Java.Lang.Annotation.ElementType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -378,7 +378,7 @@ namespace Java.Lang.Annotation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html"/>
     /// </summary>
-    public partial class RetentionPolicy : Java.Lang.Enum
+    public partial class RetentionPolicy : Java.Lang.Enum<Java.Lang.Annotation.RetentionPolicy>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

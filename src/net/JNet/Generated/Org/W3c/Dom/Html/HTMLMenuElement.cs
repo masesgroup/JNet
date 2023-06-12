@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLMenuElement
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMenuElement.html"/>
+    /// </summary>
+    public partial interface IHTMLMenuElement : Org.W3c.Dom.Html.IHTMLElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMenuElement.html#getCompact()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLMenuElement.html#setCompact(boolean)"/>
+        /// </summary>
+        bool Compact { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLMenuElement
-    public partial class HTMLMenuElement
+    public partial class HTMLMenuElement : Org.W3c.Dom.Html.IHTMLMenuElement
     {
         #region Constructors
 

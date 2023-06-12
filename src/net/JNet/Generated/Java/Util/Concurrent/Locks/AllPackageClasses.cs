@@ -29,7 +29,7 @@ namespace Java.Util.Concurrent.Locks
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/AbstractOwnableSynchronizer.html"/>
     /// </summary>
-    public partial class AbstractOwnableSynchronizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractOwnableSynchronizer>
+    public partial class AbstractOwnableSynchronizer : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -588,7 +588,7 @@ namespace Java.Util.Concurrent.Locks
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html"/>
     /// </summary>
-    public partial class StampedLock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StampedLock>
+    public partial class StampedLock : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

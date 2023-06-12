@@ -33,7 +33,7 @@ namespace Java.Security.Cert
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CollectionCertStoreParameters.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public CollectionCertStoreParameters(Java.Util.Collection arg0)
+        public CollectionCertStoreParameters(Java.Util.Collection<object> arg0)
             : base(arg0)
         {
         }
@@ -41,10 +41,6 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.CollectionCertStoreParameters"/> to <see cref="Java.Security.Cert.CertStoreParameters"/>
-        /// </summary>
-        public static implicit operator Java.Security.Cert.CertStoreParameters(Java.Security.Cert.CollectionCertStoreParameters t) => t.Cast<Java.Security.Cert.CertStoreParameters>();
 
         #endregion
 
@@ -60,9 +56,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CollectionCertStoreParameters.html#getCollection()"/> 
         /// </summary>
-        public Java.Util.Collection Collection
+        public Java.Util.Collection<object> Collection
         {
-            get { return IExecute<Java.Util.Collection>("getCollection"); }
+            get { return IExecute<Java.Util.Collection<object>>("getCollection"); }
         }
 
         #endregion

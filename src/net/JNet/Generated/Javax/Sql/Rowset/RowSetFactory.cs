@@ -25,8 +25,46 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset
 {
+    #region IRowSetFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html"/>
+    /// </summary>
+    public partial interface IRowSetFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createCachedRowSet()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.CachedRowSet CreateCachedRowSet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createFilteredRowSet()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.FilteredRowSet CreateFilteredRowSet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createJdbcRowSet()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.JdbcRowSet CreateJdbcRowSet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createJoinRowSet()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.JoinRowSet CreateJoinRowSet { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/RowSetFactory.html#createWebRowSet()"/> 
+        /// </summary>
+        Javax.Sql.Rowset.WebRowSet CreateWebRowSet { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RowSetFactory
-    public partial class RowSetFactory
+    public partial class RowSetFactory : Javax.Sql.Rowset.IRowSetFactory
     {
         #region Constructors
 

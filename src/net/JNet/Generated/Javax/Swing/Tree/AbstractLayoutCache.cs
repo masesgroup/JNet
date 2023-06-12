@@ -33,10 +33,6 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Tree.AbstractLayoutCache"/> to <see cref="Javax.Swing.Tree.RowMapper"/>
-        /// </summary>
-        public static implicit operator Javax.Swing.Tree.RowMapper(Javax.Swing.Tree.AbstractLayoutCache t) => t.Cast<Javax.Swing.Tree.RowMapper>();
 
         #endregion
 

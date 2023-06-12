@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
+    #region IFlavorException
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/FlavorException.html"/>
+    /// </summary>
+    public partial interface IFlavorException
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/FlavorException.html#getUnsupportedFlavors()"/> 
+        /// </summary>
+        Javax.Print.DocFlavor[] UnsupportedFlavors { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region FlavorException
-    public partial class FlavorException
+    public partial class FlavorException : Javax.Print.IFlavorException
     {
         #region Constructors
 

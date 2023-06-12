@@ -50,9 +50,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
-        public int ApplyAsInt(object arg0)
+        public virtual int ApplyAsInt(object arg0)
         {
-            return IExecute<int>("applyAsInt", arg0);
+            return default;
         }
 
         #endregion
@@ -65,18 +65,38 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IToIntFunction<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html"/>
+    /// </summary>
+    public partial interface IToIntFunction<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntFunction.html#applyAsInt(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><see cref="int"/></returns>
+        int ApplyAsInt(T arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ToIntFunction<T>
-    public partial class ToIntFunction<T>
+    public partial class ToIntFunction<T> : Java.Util.Function.IToIntFunction<T>
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.ToIntFunction{T}"/> to <see cref="Java.Util.Function.ToIntFunction"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.ToIntFunction(Java.Util.Function.ToIntFunction<T> t) => t.Cast<Java.Util.Function.ToIntFunction>();
 
         #endregion
 
@@ -94,9 +114,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="int"/></returns>
-        public int ApplyAsInt(T arg0)
+        public virtual int ApplyAsInt(T arg0)
         {
-            return IExecute<int>("applyAsInt", arg0);
+            return default;
         }
 
         #endregion

@@ -25,8 +25,40 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region IShardingKeyBuilder
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html"/>
+    /// </summary>
+    public partial interface IShardingKeyBuilder
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#build()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Sql.ShardingKey"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Sql.ShardingKey Build();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#subkey(java.lang.Object,java.sql.SQLType)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Java.Sql.SQLType"/></param>
+        /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
+        Java.Sql.ShardingKeyBuilder Subkey(object arg0, Java.Sql.SQLType arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ShardingKeyBuilder
-    public partial class ShardingKeyBuilder
+    public partial class ShardingKeyBuilder : Java.Sql.IShardingKeyBuilder
     {
         #region Constructors
 
@@ -46,11 +78,14 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#build()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#build()"/>
         /// </summary>
-        public Java.Sql.ShardingKey Build
+
+        /// <returns><see cref="Java.Sql.ShardingKey"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.ShardingKey Build()
         {
-            get { return IExecute<Java.Sql.ShardingKey>("build"); }
+            return IExecute<Java.Sql.ShardingKey>("build");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ShardingKeyBuilder.html#subkey(java.lang.Object,java.sql.SQLType)"/>

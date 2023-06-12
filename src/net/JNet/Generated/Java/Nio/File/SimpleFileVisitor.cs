@@ -33,10 +33,6 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor"/> to <see cref="Java.Nio.File.FileVisitor"/>
-        /// </summary>
-        public static implicit operator Java.Nio.File.FileVisitor(Java.Nio.File.SimpleFileVisitor t) => t.Cast<Java.Nio.File.FileVisitor>();
 
         #endregion
 
@@ -56,7 +52,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult PostVisitDirectory(object arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult PostVisitDirectory(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
         }
@@ -89,7 +85,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult VisitFileFailed(object arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult VisitFileFailed(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
         }
@@ -113,10 +109,6 @@ namespace Java.Nio.File
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor{T}"/> to <see cref="Java.Nio.File.FileVisitor{T}"/>
-        /// </summary>
-        public static implicit operator Java.Nio.File.FileVisitor<T>(Java.Nio.File.SimpleFileVisitor<T> t) => t.Cast<Java.Nio.File.FileVisitor<T>>();
-        /// <summary>
         /// Converter from <see cref="Java.Nio.File.SimpleFileVisitor{T}"/> to <see cref="Java.Nio.File.SimpleFileVisitor"/>
         /// </summary>
         public static implicit operator Java.Nio.File.SimpleFileVisitor(Java.Nio.File.SimpleFileVisitor<T> t) => t.Cast<Java.Nio.File.SimpleFileVisitor>();
@@ -139,7 +131,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
         }
@@ -172,7 +164,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
         }

@@ -50,10 +50,6 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ExecutorCompletionService"/> to <see cref="Java.Util.Concurrent.CompletionService"/>
-        /// </summary>
-        public static implicit operator Java.Util.Concurrent.CompletionService(Java.Util.Concurrent.ExecutorCompletionService t) => t.Cast<Java.Util.Concurrent.CompletionService>();
 
         #endregion
 
@@ -148,10 +144,6 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.ExecutorCompletionService{V}"/> to <see cref="Java.Util.Concurrent.CompletionService{V}"/>
-        /// </summary>
-        public static implicit operator Java.Util.Concurrent.CompletionService<V>(Java.Util.Concurrent.ExecutorCompletionService<V> t) => t.Cast<Java.Util.Concurrent.CompletionService<V>>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.ExecutorCompletionService{V}"/> to <see cref="Java.Util.Concurrent.ExecutorCompletionService"/>
         /// </summary>

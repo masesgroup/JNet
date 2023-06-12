@@ -18,7 +18,7 @@
 
 using Java.Util;
 using MASES.JNetTest.Common;
-using MASES.JNet.Extensions;
+using MASES.JNet.Specific.Extensions;
 using System.Diagnostics;
 using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
@@ -69,7 +69,7 @@ namespace MASES.JNetTest
             }
             w.Stop();
 
-            await foreach (var item in alist.WithPrefetch())
+            await foreach (var item in ((List<string>)alist).WithPrefetch())
             {
                 if (!int.TryParse(item, out int i))
                 {
@@ -89,7 +89,7 @@ namespace MASES.JNetTest
             }
             w.Stop();
 
-            foreach (var item in alist.WithPrefetch())
+            foreach (var item in ((List<string>)alist).WithPrefetch())
             {
                 if (!int.TryParse(item, out int i))
                 {
@@ -127,7 +127,7 @@ namespace MASES.JNetTest
 
             //var collection = newDict.Values.ToJCollection();
             //var intermediate = collection.ToList<Map.Entry<string, string>>();
-            var list = alist.ToList();
+            var list = ((List<int>)alist).ToList();
         }
     }
 }

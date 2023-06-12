@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
+    #region IPGPData
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html"/>
+    /// </summary>
+    public partial interface IPGPData : Javax.Xml.Crypto.IXMLStructure
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getExternalElements()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Crypto.XMLStructure> ExternalElements { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getKeyId()"/> 
+        /// </summary>
+        byte[] KeyId { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html#getKeyPacket()"/> 
+        /// </summary>
+        byte[] KeyPacket { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PGPData
-    public partial class PGPData
+    public partial class PGPData : Javax.Xml.Crypto.Dsig.Keyinfo.IPGPData
     {
         #region Constructors
 

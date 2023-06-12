@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
+    #region IC14NMethodParameterSpec
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/C14NMethodParameterSpec.html"/>
+    /// </summary>
+    public partial interface IC14NMethodParameterSpec : Javax.Xml.Crypto.Dsig.Spec.ITransformParameterSpec
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region C14NMethodParameterSpec
-    public partial class C14NMethodParameterSpec
+    public partial class C14NMethodParameterSpec : Javax.Xml.Crypto.Dsig.Spec.IC14NMethodParameterSpec
     {
         #region Constructors
 

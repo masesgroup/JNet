@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform
 {
+    #region IURIResolver
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/URIResolver.html"/>
+    /// </summary>
+    public partial interface IURIResolver
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/URIResolver.html#resolve(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
+        /// <exception cref="Javax.Xml.Transform.TransformerException"/>
+        Javax.Xml.Transform.Source Resolve(string arg0, string arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region URIResolver
-    public partial class URIResolver
+    public partial class URIResolver : Javax.Xml.Transform.IURIResolver
     {
         #region Constructors
 

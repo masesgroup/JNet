@@ -245,7 +245,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public TreeSet(Java.Util.Collection arg0)
+        public TreeSet(Java.Util.Collection<E> arg0)
             : base(arg0)
         {
         }
@@ -253,7 +253,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        public TreeSet(Java.Util.Comparator arg0)
+        public TreeSet(Java.Util.Comparator<E> arg0)
             : base(arg0)
         {
         }

@@ -49,10 +49,6 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.ElementIterator"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.ElementIterator t) => t.Cast<Java.Lang.Cloneable>();
 
         #endregion
 

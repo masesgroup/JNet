@@ -25,8 +25,61 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
+    #region IFiler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html"/>
+    /// </summary>
+    public partial interface IFiler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createResource(javax.tools.JavaFileManager.Location,java.lang.CharSequence,java.lang.CharSequence,javax.lang.model.element.Element[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg3"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see cref="Javax.Tools.FileObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Javax.Tools.FileObject CreateResource(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2, params Javax.Lang.Model.Element.Element[] arg3);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#getResource(javax.tools.JavaFileManager.Location,java.lang.CharSequence,java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Tools.JavaFileManager.Location"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg2"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="Javax.Tools.FileObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Javax.Tools.FileObject GetResource(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createClassFile(java.lang.CharSequence,javax.lang.model.element.Element[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see cref="Javax.Tools.JavaFileObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Javax.Tools.JavaFileObject CreateClassFile(Java.Lang.CharSequence arg0, params Javax.Lang.Model.Element.Element[] arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Filer.html#createSourceFile(java.lang.CharSequence,javax.lang.model.element.Element[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
+        /// <returns><see cref="Javax.Tools.JavaFileObject"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Javax.Tools.JavaFileObject CreateSourceFile(Java.Lang.CharSequence arg0, params Javax.Lang.Model.Element.Element[] arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Filer
-    public partial class Filer
+    public partial class Filer : Javax.Annotation.Processing.IFiler
     {
         #region Constructors
 

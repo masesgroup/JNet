@@ -25,8 +25,42 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql
 {
+    #region ICommonDataSource
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html"/>
+    /// </summary>
+    public partial interface ICommonDataSource
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#createShardingKeyBuilder()"/> 
+        /// </summary>
+        Java.Sql.ShardingKeyBuilder CreateShardingKeyBuilder { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getLoginTimeout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#setLoginTimeout(int)"/>
+        /// </summary>
+        int LoginTimeout { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getLogWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#setLogWriter(java.io.PrintWriter)"/>
+        /// </summary>
+        Java.Io.PrintWriter LogWriter { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html#getParentLogger()"/> 
+        /// </summary>
+        Java.Util.Logging.Logger ParentLogger { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CommonDataSource
-    public partial class CommonDataSource
+    public partial class CommonDataSource : Javax.Sql.ICommonDataSource
     {
         #region Constructors
 

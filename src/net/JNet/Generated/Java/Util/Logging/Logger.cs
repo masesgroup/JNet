@@ -319,7 +319,7 @@ namespace Java.Util.Logging
         /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
-        public void Log(Java.Util.Logging.Level arg0, string arg1, Java.Lang.Throwable arg2)
+        public void Log(Java.Util.Logging.Level arg0, string arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
             IExecute("log", arg0, arg1, arg2);
         }
@@ -338,7 +338,7 @@ namespace Java.Util.Logging
         /// <param name="arg0"><see cref="Java.Util.Logging.Level"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg2"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Log(Java.Util.Logging.Level arg0, Java.Lang.Throwable arg1, Java.Util.Function.Supplier<string> arg2)
+        public void Log(Java.Util.Logging.Level arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1, Java.Util.Function.Supplier<string> arg2)
         {
             IExecute("log", arg0, arg1, arg2);
         }
@@ -391,7 +391,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="string"/></param>
         /// <param name="arg4"><see cref="Java.Lang.Throwable"/></param>
-        public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, string arg3, Java.Lang.Throwable arg4)
+        public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, string arg3, MASES.JCOBridge.C2JBridge.JVMBridgeException arg4)
         {
             IExecute("logp", arg0, arg1, arg2, arg3, arg4);
         }
@@ -414,7 +414,7 @@ namespace Java.Util.Logging
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg4"><see cref="Java.Util.Function.Supplier"/></param>
-        public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, Java.Lang.Throwable arg3, Java.Util.Function.Supplier<string> arg4)
+        public void Logp(Java.Util.Logging.Level arg0, string arg1, string arg2, MASES.JCOBridge.C2JBridge.JVMBridgeException arg3, Java.Util.Function.Supplier<string> arg4)
         {
             IExecute("logp", arg0, arg1, arg2, arg3, arg4);
         }
@@ -451,7 +451,7 @@ namespace Java.Util.Logging
         /// <param name="arg3"><see cref="Java.Util.ResourceBundle"/></param>
         /// <param name="arg4"><see cref="string"/></param>
         /// <param name="arg5"><see cref="Java.Lang.Throwable"/></param>
-        public void Logrb(Java.Util.Logging.Level arg0, string arg1, string arg2, Java.Util.ResourceBundle arg3, string arg4, Java.Lang.Throwable arg5)
+        public void Logrb(Java.Util.Logging.Level arg0, string arg1, string arg2, Java.Util.ResourceBundle arg3, string arg4, MASES.JCOBridge.C2JBridge.JVMBridgeException arg5)
         {
             IExecute("logrb", arg0, arg1, arg2, arg3, arg4, arg5);
         }
@@ -473,7 +473,7 @@ namespace Java.Util.Logging
         /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Lang.Throwable"/></param>
-        public void Logrb(Java.Util.Logging.Level arg0, Java.Util.ResourceBundle arg1, string arg2, Java.Lang.Throwable arg3)
+        public void Logrb(Java.Util.Logging.Level arg0, Java.Util.ResourceBundle arg1, string arg2, MASES.JCOBridge.C2JBridge.JVMBridgeException arg3)
         {
             IExecute("logrb", arg0, arg1, arg2, arg3);
         }
@@ -508,7 +508,7 @@ namespace Java.Util.Logging
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
-        public void Throwing(string arg0, string arg1, Java.Lang.Throwable arg2)
+        public void Throwing(string arg0, string arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
         {
             IExecute("throwing", arg0, arg1, arg2);
         }

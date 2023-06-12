@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
+    #region IName
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Name.html"/>
+    /// </summary>
+    public partial interface IName : Java.Lang.ICharSequence
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Name.html#contentEquals(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool ContentEquals(Java.Lang.CharSequence arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Name
-    public partial class Name
+    public partial class Name : Javax.Lang.Model.Element.IName
     {
         #region Constructors
 

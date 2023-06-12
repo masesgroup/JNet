@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
+    #region IMenuContainer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuContainer.html"/>
+    /// </summary>
+    public partial interface IMenuContainer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuContainer.html#getFont()"/> 
+        /// </summary>
+        Java.Awt.Font Font { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuContainer.html#remove(java.awt.MenuComponent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.MenuComponent"/></param>
+        void Remove(Java.Awt.MenuComponent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MenuContainer
-    public partial class MenuContainer
+    public partial class MenuContainer : Java.Awt.IMenuContainer
     {
         #region Constructors
 

@@ -25,8 +25,36 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd.Peer
 {
+    #region IDropTargetPeer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html"/>
+    /// </summary>
+    public partial interface IDropTargetPeer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html#addDropTarget(java.awt.dnd.DropTarget)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTarget"/></param>
+        void AddDropTarget(Java.Awt.Dnd.DropTarget arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html#removeDropTarget(java.awt.dnd.DropTarget)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTarget"/></param>
+        void RemoveDropTarget(Java.Awt.Dnd.DropTarget arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DropTargetPeer
-    public partial class DropTargetPeer
+    public partial class DropTargetPeer : Java.Awt.Dnd.Peer.IDropTargetPeer
     {
         #region Constructors
 

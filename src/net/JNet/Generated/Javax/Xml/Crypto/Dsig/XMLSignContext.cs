@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region IXMLSignContext
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignContext.html"/>
+    /// </summary>
+    public partial interface IXMLSignContext : Javax.Xml.Crypto.IXMLCryptoContext
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLSignContext
-    public partial class XMLSignContext
+    public partial class XMLSignContext : Javax.Xml.Crypto.Dsig.IXMLSignContext
     {
         #region Constructors
 

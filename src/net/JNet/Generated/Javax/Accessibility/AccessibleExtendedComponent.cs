@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
+    #region IAccessibleExtendedComponent
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html"/>
+    /// </summary>
+    public partial interface IAccessibleExtendedComponent : Javax.Accessibility.IAccessibleComponent
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getAccessibleKeyBinding()"/> 
+        /// </summary>
+        Javax.Accessibility.AccessibleKeyBinding AccessibleKeyBinding { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getTitledBorderText()"/> 
+        /// </summary>
+        string TitledBorderText { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedComponent.html#getToolTipText()"/> 
+        /// </summary>
+        string ToolTipText { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AccessibleExtendedComponent
-    public partial class AccessibleExtendedComponent
+    public partial class AccessibleExtendedComponent : Javax.Accessibility.IAccessibleExtendedComponent
     {
         #region Constructors
 

@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IAnnotatedTypeVariable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedTypeVariable.html"/>
+    /// </summary>
+    public partial interface IAnnotatedTypeVariable : Java.Lang.Reflect.IAnnotatedType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedTypeVariable.html#getAnnotatedBounds()"/> 
+        /// </summary>
+        Java.Lang.Reflect.AnnotatedType[] AnnotatedBounds { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedTypeVariable.html#getAnnotatedOwnerType()"/> 
+        /// </summary>
+        Java.Lang.Reflect.AnnotatedType AnnotatedOwnerType { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AnnotatedTypeVariable
-    public partial class AnnotatedTypeVariable
+    public partial class AnnotatedTypeVariable : Java.Lang.Reflect.IAnnotatedTypeVariable
     {
         #region Constructors
 

@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLHtmlElement
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHtmlElement.html"/>
+    /// </summary>
+    public partial interface IHTMLHtmlElement : Org.W3c.Dom.Html.IHTMLElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHtmlElement.html#getVersion()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLHtmlElement.html#setVersion(java.lang.String)"/>
+        /// </summary>
+        string Version { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLHtmlElement
-    public partial class HTMLHtmlElement
+    public partial class HTMLHtmlElement : Org.W3c.Dom.Html.IHTMLHtmlElement
     {
         #region Constructors
 

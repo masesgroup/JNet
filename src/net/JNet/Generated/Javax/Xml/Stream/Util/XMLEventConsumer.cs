@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream.Util
 {
+    #region IXMLEventConsumer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventConsumer.html"/>
+    /// </summary>
+    public partial interface IXMLEventConsumer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventConsumer.html#add(javax.xml.stream.events.XMLEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.Events.XMLEvent"/></param>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        void Add(Javax.Xml.Stream.Events.XMLEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLEventConsumer
-    public partial class XMLEventConsumer
+    public partial class XMLEventConsumer : Javax.Xml.Stream.Util.IXMLEventConsumer
     {
         #region Constructors
 

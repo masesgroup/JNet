@@ -109,7 +109,7 @@ namespace Java.Rmi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html"/>
     /// </summary>
-    public partial class MarshalledObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MarshalledObject>
+    public partial class MarshalledObject : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -153,7 +153,7 @@ namespace Java.Rmi
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/MarshalledObject.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public partial class MarshalledObject<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MarshalledObject<T>>
+    public partial class MarshalledObject<T> : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

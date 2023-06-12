@@ -25,8 +25,57 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
+    #region ICookieStore
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html"/>
+    /// </summary>
+    public partial interface ICookieStore
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getCookies()"/> 
+        /// </summary>
+        Java.Util.List<Java.Net.HttpCookie> Cookies { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#removeAll()"/> 
+        /// </summary>
+        bool RemoveAll { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#getURIs()"/> 
+        /// </summary>
+        Java.Util.List<Java.Net.URI> URIs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#remove(java.net.URI,java.net.HttpCookie)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Remove(Java.Net.URI arg0, Java.Net.HttpCookie arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#get(java.net.URI)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        Java.Util.List<Java.Net.HttpCookie> Get(Java.Net.URI arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookieStore.html#add(java.net.URI,java.net.HttpCookie)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
+        void Add(Java.Net.URI arg0, Java.Net.HttpCookie arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CookieStore
-    public partial class CookieStore
+    public partial class CookieStore : Java.Net.ICookieStore
     {
         #region Constructors
 

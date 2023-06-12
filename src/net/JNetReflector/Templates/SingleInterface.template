@@ -1,0 +1,17 @@
+﻿#region ALLPACKAGE_CLASSES_STUB_INTERFACE_PLACEHOLDER
+/// <summary>
+/// .NET interface for ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER
+/// </summary>
+public partial interface ALLPACKAGE_CLASSES_STUB_INTERFACE_PLACEHOLDERALLPACKAGE_CLASSES_STUB_BASEINTERFACE_PLACEHOLDER
+{
+    #region Instance methods
+// ALLPACKAGE_CLASSES_STUB_METHODS_PLACEHOLDER
+    #endregion
+
+    #region Nested classes
+// ALLPACKAGE_CLASSES_STUB_NESTED_INTERFACES_PLACEHOLDER
+    #endregion
+
+    // TODO: complete the class
+}
+#endregion

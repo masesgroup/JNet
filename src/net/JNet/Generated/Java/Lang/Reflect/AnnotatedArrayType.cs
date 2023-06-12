@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IAnnotatedArrayType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedArrayType.html"/>
+    /// </summary>
+    public partial interface IAnnotatedArrayType : Java.Lang.Reflect.IAnnotatedType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedArrayType.html#getAnnotatedGenericComponentType()"/> 
+        /// </summary>
+        Java.Lang.Reflect.AnnotatedType AnnotatedGenericComponentType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedArrayType.html#getAnnotatedOwnerType()"/> 
+        /// </summary>
+        Java.Lang.Reflect.AnnotatedType AnnotatedOwnerType { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AnnotatedArrayType
-    public partial class AnnotatedArrayType
+    public partial class AnnotatedArrayType : Java.Lang.Reflect.IAnnotatedArrayType
     {
         #region Constructors
 

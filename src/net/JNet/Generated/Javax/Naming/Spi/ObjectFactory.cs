@@ -25,8 +25,36 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
+    #region IObjectFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactory.html"/>
+    /// </summary>
+    public partial interface IObjectFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactory.html#getObjectInstance(java.lang.Object,javax.naming.Name,javax.naming.Context,java.util.Hashtable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjectFactory
-    public partial class ObjectFactory
+    public partial class ObjectFactory : Javax.Naming.Spi.IObjectFactory
     {
         #region Constructors
 
@@ -52,10 +80,9 @@ namespace Javax.Naming.Spi
         /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
-        public object GetObjectInstance<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3)
+        public object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3)
         {
             return IExecute("getObjectInstance", arg0, arg1, arg2, arg3);
         }

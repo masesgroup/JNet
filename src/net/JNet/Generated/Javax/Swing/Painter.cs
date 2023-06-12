@@ -67,8 +67,34 @@ namespace Javax.Swing
     }
     #endregion
 
+    #region IPainter<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html"/>
+    /// </summary>
+    public partial interface IPainter<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Painter.html#paint(java.awt.Graphics2D,java.lang.Object,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Graphics2D"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        void Paint(Java.Awt.Graphics2D arg0, T arg1, int arg2, int arg3);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Painter<T>
-    public partial class Painter<T>
+    public partial class Painter<T> : Javax.Swing.IPainter<T>
     {
         #region Constructors
 

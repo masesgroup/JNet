@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IDSAPublicKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPublicKey.html"/>
+    /// </summary>
+    public partial interface IDSAPublicKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPublicKey.html#getY()"/> 
+        /// </summary>
+        Java.Math.BigInteger Y { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DSAPublicKey
-    public partial class DSAPublicKey
+    public partial class DSAPublicKey : Java.Security.Interfaces.IDSAPublicKey
     {
         #region Constructors
 

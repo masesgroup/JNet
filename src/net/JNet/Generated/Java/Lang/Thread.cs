@@ -109,10 +109,6 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.Thread"/> to <see cref="Java.Lang.Runnable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Runnable(Java.Lang.Thread t) => t.Cast<Java.Lang.Runnable>();
 
         #endregion
 
@@ -479,7 +475,7 @@ namespace Java.Lang
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
             /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
-            public void UncaughtException(Java.Lang.Thread arg0, Java.Lang.Throwable arg1)
+            public void UncaughtException(Java.Lang.Thread arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
                 IExecute("uncaughtException", arg0, arg1);
             }

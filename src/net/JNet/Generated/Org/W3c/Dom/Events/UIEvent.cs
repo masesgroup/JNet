@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
+    #region IUIEvent
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html"/>
+    /// </summary>
+    public partial interface IUIEvent : Org.W3c.Dom.Events.IEvent
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#getDetail()"/> 
+        /// </summary>
+        int Detail { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#getView()"/> 
+        /// </summary>
+        Org.W3c.Dom.Views.AbstractView View { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/UIEvent.html#initUIEvent(java.lang.String,boolean,boolean,org.w3c.dom.views.AbstractView,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        /// <param name="arg3"><see cref="Org.W3c.Dom.Views.AbstractView"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        void InitUIEvent(string arg0, bool arg1, bool arg2, Org.W3c.Dom.Views.AbstractView arg3, int arg4);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region UIEvent
-    public partial class UIEvent
+    public partial class UIEvent : Org.W3c.Dom.Events.IUIEvent
     {
         #region Constructors
 

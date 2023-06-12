@@ -25,8 +25,169 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Chrono
 {
+    #region IChronoLocalDate
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html"/>
+    /// </summary>
+    public partial interface IChronoLocalDate
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#getChronology()"/> 
+        /// </summary>
+        Java.Time.Chrono.Chronology Chronology { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#getEra()"/> 
+        /// </summary>
+        Java.Time.Chrono.Era Era { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isLeapYear()"/> 
+        /// </summary>
+        bool IsLeapYear { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#lengthOfMonth()"/> 
+        /// </summary>
+        int LengthOfMonth { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#lengthOfYear()"/> 
+        /// </summary>
+        int LengthOfYear { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#toEpochDay()"/> 
+        /// </summary>
+        long ToEpochDay { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#until(java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
+        Java.Time.Chrono.ChronoPeriod Until(Java.Time.Chrono.ChronoLocalDate arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
+        /// <returns><see cref="long"/></returns>
+        long Until(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.TemporalUnit arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#query(java.time.temporal.TemporalQuery)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
+        /// <typeparam name="R"></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
+        R Query<R>(Java.Time.Temporal.TemporalQuery<R> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isAfter(java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsAfter(Java.Time.Chrono.ChronoLocalDate arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isBefore(java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsBefore(Java.Time.Chrono.ChronoLocalDate arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isEqual(java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsEqual(Java.Time.Chrono.ChronoLocalDate arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isSupported(java.time.temporal.TemporalField)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsSupported(Java.Time.Temporal.TemporalField arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#isSupported(java.time.temporal.TemporalUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsSupported(Java.Time.Temporal.TemporalUnit arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#compareTo(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="int"/></returns>
+        int CompareTo(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#compareTo(java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="int"/></returns>
+        int CompareTo(Java.Time.Chrono.ChronoLocalDate arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#format(java.time.format.DateTimeFormatter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
+        /// <returns><see cref="string"/></returns>
+        string Format(Java.Time.Format.DateTimeFormatter arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#atTime(java.time.LocalTime)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.LocalTime"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
+        Java.Time.Chrono.ChronoLocalDateTime AtTime(Java.Time.LocalTime arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#adjustInto(java.time.temporal.Temporal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal AdjustInto(Java.Time.Temporal.Temporal arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#minus(java.time.temporal.TemporalAmount)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal Minus(Java.Time.Temporal.TemporalAmount arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#minus(long,java.time.temporal.TemporalUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal Minus(long arg0, Java.Time.Temporal.TemporalUnit arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#plus(java.time.temporal.TemporalAmount)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal Plus(Java.Time.Temporal.TemporalAmount arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#plus(long,java.time.temporal.TemporalUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal Plus(long arg0, Java.Time.Temporal.TemporalUnit arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#with(java.time.temporal.TemporalAdjuster)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAdjuster"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalAdjuster arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#with(java.time.temporal.TemporalField,long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
+        /// <param name="arg1"><see cref="long"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalField arg0, long arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ChronoLocalDate
-    public partial class ChronoLocalDate
+    public partial class ChronoLocalDate : Java.Time.Chrono.IChronoLocalDate
     {
         #region Constructors
 

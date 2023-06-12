@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio
 {
+    #region IIIOParamController
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParamController.html"/>
+    /// </summary>
+    public partial interface IIIOParamController
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParamController.html#activate(javax.imageio.IIOParam)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.IIOParam"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Activate(Javax.Imageio.IIOParam arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IIOParamController
-    public partial class IIOParamController
+    public partial class IIOParamController : Javax.Imageio.IIIOParamController
     {
         #region Constructors
 

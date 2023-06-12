@@ -52,10 +52,6 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Security.Spec.RSAPublicKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
-        /// </summary>
-        public static implicit operator Java.Security.Spec.KeySpec(Java.Security.Spec.RSAPublicKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
 
         #endregion
 

@@ -42,10 +42,6 @@ namespace Javax.Imageio.Spi
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Imageio.Spi.IIOServiceProvider"/> to <see cref="Javax.Imageio.Spi.RegisterableService"/>
-        /// </summary>
-        public static implicit operator Javax.Imageio.Spi.RegisterableService(Javax.Imageio.Spi.IIOServiceProvider t) => t.Cast<Javax.Imageio.Spi.RegisterableService>();
 
         #endregion
 

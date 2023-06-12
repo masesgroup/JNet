@@ -329,7 +329,7 @@ namespace Java.Lang
             /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
             /// <param name="arg2"><see cref="string"/></param>
             /// <param name="arg3"><see cref="Java.Lang.Throwable"/></param>
-            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.ResourceBundle arg1, string arg2, Java.Lang.Throwable arg3)
+            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.ResourceBundle arg1, string arg2, MASES.JCOBridge.C2JBridge.JVMBridgeException arg3)
             {
                 IExecute("log", arg0, arg1, arg2, arg3);
             }
@@ -358,7 +358,7 @@ namespace Java.Lang
             /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
             /// <param name="arg1"><see cref="string"/></param>
             /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
-            public void Log(Java.Lang.System.Logger.Level arg0, string arg1, Java.Lang.Throwable arg2)
+            public void Log(Java.Lang.System.Logger.Level arg0, string arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
             {
                 IExecute("log", arg0, arg1, arg2);
             }
@@ -377,7 +377,7 @@ namespace Java.Lang
             /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
             /// <param name="arg1"><see cref="Java.Util.Function.Supplier"/></param>
             /// <param name="arg2"><see cref="Java.Lang.Throwable"/></param>
-            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier<string> arg1, Java.Lang.Throwable arg2)
+            public void Log(Java.Lang.System.Logger.Level arg0, Java.Util.Function.Supplier<string> arg1, MASES.JCOBridge.C2JBridge.JVMBridgeException arg2)
             {
                 IExecute("log", arg0, arg1, arg2);
             }

@@ -33,10 +33,6 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Net.Ssl.ExtendedSSLSession"/> to <see cref="Javax.Net.Ssl.SSLSession"/>
-        /// </summary>
-        public static implicit operator Javax.Net.Ssl.SSLSession(Javax.Net.Ssl.ExtendedSSLSession t) => t.Cast<Javax.Net.Ssl.SSLSession>();
 
         #endregion
 

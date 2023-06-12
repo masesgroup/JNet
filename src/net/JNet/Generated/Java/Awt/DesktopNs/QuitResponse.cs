@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IQuitResponse
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitResponse.html"/>
+    /// </summary>
+    public partial interface IQuitResponse
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitResponse.html#cancelQuit()"/>
+        /// </summary>
+        void CancelQuit();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/QuitResponse.html#performQuit()"/>
+        /// </summary>
+        void PerformQuit();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region QuitResponse
-    public partial class QuitResponse
+    public partial class QuitResponse : Java.Awt.DesktopNs.IQuitResponse
     {
         #region Constructors
 

@@ -50,10 +50,6 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Semaphore"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Semaphore t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

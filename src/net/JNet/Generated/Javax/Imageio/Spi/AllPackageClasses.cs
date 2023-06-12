@@ -72,7 +72,7 @@ namespace Javax.Imageio.Spi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/IIOServiceProvider.html"/>
     /// </summary>
-    public partial class IIOServiceProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOServiceProvider>
+    public partial class IIOServiceProvider : Javax.Imageio.Spi.RegisterableService
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

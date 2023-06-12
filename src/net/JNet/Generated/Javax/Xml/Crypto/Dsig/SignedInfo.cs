@@ -25,8 +25,46 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig
 {
+    #region ISignedInfo
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html"/>
+    /// </summary>
+    public partial interface ISignedInfo : Javax.Xml.Crypto.IXMLStructure
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getCanonicalizationMethod()"/> 
+        /// </summary>
+        Javax.Xml.Crypto.Dsig.CanonicalizationMethod CanonicalizationMethod { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getCanonicalizedData()"/> 
+        /// </summary>
+        Java.Io.InputStream CanonicalizedData { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getId()"/> 
+        /// </summary>
+        string Id { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getReferences()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Crypto.Dsig.Reference> References { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html#getSignatureMethod()"/> 
+        /// </summary>
+        Javax.Xml.Crypto.Dsig.SignatureMethod SignatureMethod { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SignedInfo
-    public partial class SignedInfo
+    public partial class SignedInfo : Javax.Xml.Crypto.Dsig.ISignedInfo
     {
         #region Constructors
 

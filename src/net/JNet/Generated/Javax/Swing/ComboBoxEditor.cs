@@ -25,8 +25,48 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region IComboBoxEditor
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html"/>
+    /// </summary>
+    public partial interface IComboBoxEditor
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#getEditorComponent()"/> 
+        /// </summary>
+        Java.Awt.Component EditorComponent { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#getItem()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#setItem(java.lang.Object)"/>
+        /// </summary>
+        object Item { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#addActionListener(java.awt.event.ActionListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        void AddActionListener(Java.Awt.EventNs.ActionListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#removeActionListener(java.awt.event.ActionListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>
+        void RemoveActionListener(Java.Awt.EventNs.ActionListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxEditor.html#selectAll()"/>
+        /// </summary>
+        void SelectAll();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ComboBoxEditor
-    public partial class ComboBoxEditor
+    public partial class ComboBoxEditor : Javax.Swing.IComboBoxEditor
     {
         #region Constructors
 

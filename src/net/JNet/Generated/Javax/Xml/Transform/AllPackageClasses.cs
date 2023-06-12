@@ -31,6 +31,11 @@ namespace Javax.Xml.Transform
     /// </summary>
     public partial class ErrorListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ErrorListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

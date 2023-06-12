@@ -29,7 +29,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html"/>
     /// </summary>
-    public partial class Certificate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Certificate>
+    public partial class Certificate : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -254,7 +254,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html"/>
     /// </summary>
-    public partial class CertPath : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPath>
+    public partial class CertPath : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -583,7 +583,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorException.BasicReason.html"/>
         /// </summary>
-        public partial class BasicReason : Java.Lang.Enum
+        public partial class BasicReason : Java.Lang.Enum<Java.Security.Cert.CertPathValidatorException.BasicReason>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -947,7 +947,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CollectionCertStoreParameters.html"/>
     /// </summary>
-    public partial class CollectionCertStoreParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CollectionCertStoreParameters>
+    public partial class CollectionCertStoreParameters : Java.Security.Cert.CertStoreParameters
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1049,7 +1049,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html"/>
     /// </summary>
-    public partial class CRLReason : Java.Lang.Enum
+    public partial class CRLReason : Java.Lang.Enum<Java.Security.Cert.CRLReason>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1178,7 +1178,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/LDAPCertStoreParameters.html"/>
     /// </summary>
-    public partial class LDAPCertStoreParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LDAPCertStoreParameters>
+    public partial class LDAPCertStoreParameters : Java.Security.Cert.CertStoreParameters
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1350,7 +1350,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html"/>
     /// </summary>
-    public partial class PKIXCertPathValidatorResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PKIXCertPathValidatorResult>
+    public partial class PKIXCertPathValidatorResult : Java.Security.Cert.CertPathValidatorResult
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1393,7 +1393,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html"/>
     /// </summary>
-    public partial class PKIXParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PKIXParameters>
+    public partial class PKIXParameters : Java.Security.Cert.CertPathParameters
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1436,7 +1436,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html"/>
     /// </summary>
-    public partial class PKIXReason : Java.Lang.Enum
+    public partial class PKIXReason : Java.Lang.Enum<Java.Security.Cert.PKIXReason>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1518,7 +1518,7 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXRevocationChecker.Option.html"/>
         /// </summary>
-        public partial class Option : Java.Lang.Enum
+        public partial class Option : Java.Lang.Enum<Java.Security.Cert.PKIXRevocationChecker.Option>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1694,7 +1694,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/URICertStoreParameters.html"/>
     /// </summary>
-    public partial class URICertStoreParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<URICertStoreParameters>
+    public partial class URICertStoreParameters : Java.Security.Cert.CertStoreParameters
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1780,7 +1780,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html"/>
     /// </summary>
-    public partial class X509CertSelector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509CertSelector>
+    public partial class X509CertSelector : Java.Security.Cert.CertSelector
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1866,7 +1866,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLEntry.html"/>
     /// </summary>
-    public partial class X509CRLEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509CRLEntry>
+    public partial class X509CRLEntry : Java.Security.Cert.X509Extension
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1909,7 +1909,7 @@ namespace Java.Security.Cert
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html"/>
     /// </summary>
-    public partial class X509CRLSelector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509CRLSelector>
+    public partial class X509CRLSelector : Java.Security.Cert.CRLSelector
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

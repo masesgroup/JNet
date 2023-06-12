@@ -25,8 +25,58 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
+    #region ITypeElement
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html"/>
+    /// </summary>
+    public partial interface ITypeElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getEnclosedElements()"/> 
+        /// </summary>
+        Java.Util.List EnclosedElements { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getEnclosingElement()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Element EnclosingElement { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getInterfaces()"/> 
+        /// </summary>
+        Java.Util.List Interfaces { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getNestingKind()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.NestingKind NestingKind { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getQualifiedName()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Name QualifiedName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getSimpleName()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Name SimpleName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getSuperclass()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeMirror Superclass { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeElement.html#getTypeParameters()"/> 
+        /// </summary>
+        Java.Util.List TypeParameters { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TypeElement
-    public partial class TypeElement
+    public partial class TypeElement : Javax.Lang.Model.Element.ITypeElement
     {
         #region Constructors
 

@@ -33,10 +33,6 @@ namespace Java.Awt.FontNs
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.FontNs.GlyphVector"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Awt.FontNs.GlyphVector t) => t.Cast<Java.Lang.Cloneable>();
 
         #endregion
 

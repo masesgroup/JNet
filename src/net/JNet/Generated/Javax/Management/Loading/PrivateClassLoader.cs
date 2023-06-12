@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Loading
 {
+    #region IPrivateClassLoader
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/PrivateClassLoader.html"/>
+    /// </summary>
+    public partial interface IPrivateClassLoader
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrivateClassLoader
-    public partial class PrivateClassLoader
+    public partial class PrivateClassLoader : Javax.Management.Loading.IPrivateClassLoader
     {
         #region Constructors
 

@@ -25,8 +25,50 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Geom
 {
+    #region IPathIterator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html"/>
+    /// </summary>
+    public partial interface IPathIterator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#isDone()"/> 
+        /// </summary>
+        bool IsDone { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#getWindingRule()"/> 
+        /// </summary>
+        int WindingRule { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#currentSegment(double[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see cref="int"/></returns>
+        int CurrentSegment(double[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#currentSegment(float[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        /// <returns><see cref="int"/></returns>
+        int CurrentSegment(float[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/PathIterator.html#next()"/>
+        /// </summary>
+        void Next();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PathIterator
-    public partial class PathIterator
+    public partial class PathIterator : Java.Awt.Geom.IPathIterator
     {
         #region Constructors
 

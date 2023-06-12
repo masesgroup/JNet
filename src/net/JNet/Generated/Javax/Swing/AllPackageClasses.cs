@@ -290,6 +290,11 @@ namespace Javax.Swing
     /// </summary>
     public partial class Action : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Action() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -301,7 +306,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html"/>
     /// </summary>
-    public partial class ActionMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ActionMap>
+    public partial class ActionMap : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -559,7 +564,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ButtonGroup.html"/>
     /// </summary>
-    public partial class ButtonGroup : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ButtonGroup>
+    public partial class ButtonGroup : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1639,7 +1644,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html"/>
     /// </summary>
-    public partial class DropMode : Java.Lang.Enum
+    public partial class DropMode : Java.Lang.Enum<Javax.Swing.DropMode>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1768,7 +1773,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html"/>
     /// </summary>
-    public partial class GroupLayout : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GroupLayout>
+    public partial class GroupLayout : Java.Awt.LayoutManager2
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1807,7 +1812,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html"/>
         /// </summary>
-        public partial class Alignment : Java.Lang.Enum
+        public partial class Alignment : Java.Lang.Enum<Javax.Swing.GroupLayout.Alignment>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2069,7 +2074,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html"/>
     /// </summary>
-    public partial class InputMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputMap>
+    public partial class InputMap : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2539,7 +2544,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.AccessibleJComponent.html"/>
         /// </summary>
-        public partial class AccessibleJComponent : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AccessibleJComponent>
+        public partial class AccessibleJComponent : Javax.Accessibility.AccessibleExtendedComponent
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2797,7 +2802,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html"/>
         /// </summary>
-        public partial class AbstractFormatter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractFormatter>
+        public partial class AbstractFormatter : Java.Io.Serializable
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4390,7 +4395,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html"/>
         /// </summary>
-        public partial class PrintMode : Java.Lang.Enum
+        public partial class PrintMode : Java.Lang.Enum<Javax.Swing.JTable.PrintMode>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5121,7 +5126,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html"/>
         /// </summary>
-        public partial class ComponentPlacement : Java.Lang.Enum
+        public partial class ComponentPlacement : Java.Lang.Enum<Javax.Swing.LayoutStyle.ComponentPlacement>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5817,7 +5822,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html"/>
     /// </summary>
-    public partial class ProgressMonitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProgressMonitor>
+    public partial class ProgressMonitor : Javax.Accessibility.Accessible
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6071,7 +6076,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html"/>
         /// </summary>
-        public partial class ComparisonType : Java.Lang.Enum
+        public partial class ComparisonType : Java.Lang.Enum<Javax.Swing.RowFilter.ComparisonType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6596,7 +6601,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html"/>
     /// </summary>
-    public partial class SizeRequirements : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SizeRequirements>
+    public partial class SizeRequirements : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6725,7 +6730,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SortOrder.html"/>
     /// </summary>
-    public partial class SortOrder : Java.Lang.Enum
+    public partial class SortOrder : Java.Lang.Enum<Javax.Swing.SortOrder>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6983,7 +6988,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html"/>
     /// </summary>
-    public partial class SpringLayout : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SpringLayout>
+    public partial class SpringLayout : Java.Awt.LayoutManager2
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7155,7 +7160,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html"/>
     /// </summary>
-    public partial class SwingUtilities : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SwingUtilities>
+    public partial class SwingUtilities : Javax.Swing.SwingConstants
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7198,7 +7203,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html"/>
     /// </summary>
-    public partial class SwingWorker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SwingWorker>
+    public partial class SwingWorker : Java.Util.Concurrent.RunnableFuture
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7237,7 +7242,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html"/>
         /// </summary>
-        public partial class StateValue : Java.Lang.Enum
+        public partial class StateValue : Java.Lang.Enum<Javax.Swing.SwingWorker.StateValue>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7286,7 +7291,7 @@ namespace Javax.Swing
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class SwingWorker<T, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SwingWorker<T, V>>
+    public partial class SwingWorker<T, V> : Java.Util.Concurrent.RunnableFuture<T>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7329,7 +7334,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Timer.html"/>
     /// </summary>
-    public partial class Timer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Timer>
+    public partial class Timer : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7372,7 +7377,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html"/>
     /// </summary>
-    public partial class TransferHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TransferHandler>
+    public partial class TransferHandler : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7544,7 +7549,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html"/>
     /// </summary>
-    public partial class UIDefaults : Java.Util.Hashtable
+    public partial class UIDefaults : Java.Util.Hashtable<object, object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7626,7 +7631,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.LazyInputMap.html"/>
         /// </summary>
-        public partial class LazyInputMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LazyInputMap>
+        public partial class LazyInputMap : Javax.Swing.UIDefaults.LazyValue
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7712,7 +7717,7 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html"/>
         /// </summary>
-        public partial class ProxyLazyValue : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProxyLazyValue>
+        public partial class ProxyLazyValue : Javax.Swing.UIDefaults.LazyValue
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -7759,7 +7764,7 @@ namespace Javax.Swing
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIManager.html"/>
     /// </summary>
-    public partial class UIManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UIManager>
+    public partial class UIManager : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

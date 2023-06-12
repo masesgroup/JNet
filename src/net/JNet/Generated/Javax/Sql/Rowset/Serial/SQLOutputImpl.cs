@@ -35,7 +35,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
-        public SQLOutputImpl(Java.Util.Vector arg0, Java.Util.Map arg1)
+        public SQLOutputImpl(Java.Util.Vector<object> arg0, Java.Util.Map<string, object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -43,10 +43,6 @@ namespace Javax.Sql.Rowset.Serial
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Sql.Rowset.Serial.SQLOutputImpl"/> to <see cref="Java.Sql.SQLOutput"/>
-        /// </summary>
-        public static implicit operator Java.Sql.SQLOutput(Javax.Sql.Rowset.Serial.SQLOutputImpl t) => t.Cast<Java.Sql.SQLOutput>();
 
         #endregion
 

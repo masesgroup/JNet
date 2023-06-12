@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IIntSupplier
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html"/>
+    /// </summary>
+    public partial interface IIntSupplier
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        int GetAsInt();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IntSupplier
-    public partial class IntSupplier
+    public partial class IntSupplier : Java.Util.Function.IIntSupplier
     {
         #region Constructors
 
@@ -46,11 +70,13 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>
-        public int AsInt
+
+        /// <returns><see cref="int"/></returns>
+        public virtual int GetAsInt()
         {
-            get { return IExecute<int>("getAsInt"); }
+            return default;
         }
 
         #endregion

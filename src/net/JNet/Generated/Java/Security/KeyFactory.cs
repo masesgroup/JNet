@@ -97,10 +97,10 @@ namespace Java.Security
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Security.Spec.KeySpec"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Security.Spec.IKeySpec"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
-        public T GetKeySpec<T>(Java.Security.Key arg0, Java.Lang.Class arg1) where T: Java.Security.Spec.KeySpec
+        public T GetKeySpec<T>(Java.Security.Key arg0, Java.Lang.Class arg1) where T: Java.Security.Spec.IKeySpec, new()
         {
             return IExecute<T>("getKeySpec", arg0, arg1);
         }

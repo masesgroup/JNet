@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
+    #region ICookiePolicy
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html"/>
+    /// </summary>
+    public partial interface ICookiePolicy
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/CookiePolicy.html#shouldAccept(java.net.URI,java.net.HttpCookie)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        /// <param name="arg1"><see cref="Java.Net.HttpCookie"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool ShouldAccept(Java.Net.URI arg0, Java.Net.HttpCookie arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CookiePolicy
-    public partial class CookiePolicy
+    public partial class CookiePolicy : Java.Net.ICookiePolicy
     {
         #region Constructors
 

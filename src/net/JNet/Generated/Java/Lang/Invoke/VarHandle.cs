@@ -83,9 +83,9 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#coordinateTypes()"/> 
         /// </summary>
-        public Java.Util.List CoordinateTypes
+        public Java.Util.List<Java.Lang.Class> CoordinateTypes
         {
-            get { return IExecute<Java.Util.List>("coordinateTypes"); }
+            get { return IExecute<Java.Util.List<Java.Lang.Class>>("coordinateTypes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#varType()"/> 

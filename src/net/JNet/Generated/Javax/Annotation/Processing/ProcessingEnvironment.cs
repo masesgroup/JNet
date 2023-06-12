@@ -25,8 +25,54 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
+    #region IProcessingEnvironment
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html"/>
+    /// </summary>
+    public partial interface IProcessingEnvironment
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getElementUtils()"/> 
+        /// </summary>
+        Javax.Lang.Model.Util.Elements ElementUtils { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getFiler()"/> 
+        /// </summary>
+        Javax.Annotation.Processing.Filer Filer { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getLocale()"/> 
+        /// </summary>
+        Java.Util.Locale Locale { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getMessager()"/> 
+        /// </summary>
+        Javax.Annotation.Processing.Messager Messager { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getOptions()"/> 
+        /// </summary>
+        Java.Util.Map<string, string> Options { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getSourceVersion()"/> 
+        /// </summary>
+        Javax.Lang.Model.SourceVersion SourceVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html#getTypeUtils()"/> 
+        /// </summary>
+        Javax.Lang.Model.Util.Types TypeUtils { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ProcessingEnvironment
-    public partial class ProcessingEnvironment
+    public partial class ProcessingEnvironment : Javax.Annotation.Processing.IProcessingEnvironment
     {
         #region Constructors
 

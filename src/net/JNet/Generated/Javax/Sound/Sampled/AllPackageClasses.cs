@@ -1061,8 +1061,13 @@ namespace Javax.Sound.Sampled
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html"/>
     /// </summary>
-    public partial class LineListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class LineListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public LineListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

@@ -147,8 +147,13 @@ namespace Java.Util.Prefs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html"/>
     /// </summary>
-    public partial class NodeChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class NodeChangeListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NodeChangeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -203,8 +208,13 @@ namespace Java.Util.Prefs
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html"/>
     /// </summary>
-    public partial class PreferenceChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class PreferenceChangeListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PreferenceChangeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

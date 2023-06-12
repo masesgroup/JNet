@@ -41,10 +41,6 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.ColorModel"/> to <see cref="Java.Awt.Transparency"/>
-        /// </summary>
-        public static implicit operator Java.Awt.Transparency(Java.Awt.ImageNs.ColorModel t) => t.Cast<Java.Awt.Transparency>();
 
         #endregion
 

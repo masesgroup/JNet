@@ -69,10 +69,6 @@ namespace Javax.Naming.Directory
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.Directory.BasicAttribute"/> to <see cref="Javax.Naming.Directory.Attribute"/>
-        /// </summary>
-        public static implicit operator Javax.Naming.Directory.Attribute(Javax.Naming.Directory.BasicAttribute t) => t.Cast<Javax.Naming.Directory.Attribute>();
 
         #endregion
 
@@ -88,9 +84,9 @@ namespace Javax.Naming.Directory
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getAll()"/> 
         /// </summary>
-        public Javax.Naming.NamingEnumeration All
+        public Javax.Naming.NamingEnumeration<object> All
         {
-            get { return IExecute<Javax.Naming.NamingEnumeration>("getAll"); }
+            get { return IExecute<Javax.Naming.NamingEnumeration<object>>("getAll"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#getAttributeDefinition()"/> 

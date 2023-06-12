@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region IDescriptorAccess
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorAccess.html"/>
+    /// </summary>
+    public partial interface IDescriptorAccess : Javax.Management.IDescriptorRead
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DescriptorAccess.html#setDescriptor(javax.management.Descriptor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
+        void SetDescriptor(Javax.Management.Descriptor arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DescriptorAccess
-    public partial class DescriptorAccess
+    public partial class DescriptorAccess : Javax.Management.IDescriptorAccess
     {
         #region Constructors
 

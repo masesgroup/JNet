@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSImportRule
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html"/>
+    /// </summary>
+    public partial interface ICSSImportRule : Org.W3c.Dom.Css.ICSSRule
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getHref()"/> 
+        /// </summary>
+        string Href { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getMedia()"/> 
+        /// </summary>
+        Org.W3c.Dom.Stylesheets.MediaList Media { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSImportRule.html#getStyleSheet()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSStyleSheet StyleSheet { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSImportRule
-    public partial class CSSImportRule
+    public partial class CSSImportRule : Org.W3c.Dom.Css.ICSSImportRule
     {
         #region Constructors
 

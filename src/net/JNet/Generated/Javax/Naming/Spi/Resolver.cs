@@ -25,8 +25,42 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Spi
 {
+    #region IResolver
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html"/>
+    /// </summary>
+    public partial interface IResolver
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html#resolveToClass(java.lang.String,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Naming.Spi.ResolveResult"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        Javax.Naming.Spi.ResolveResult ResolveToClass(string arg0, Java.Lang.Class arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html#resolveToClass(javax.naming.Name,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Name"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <returns><see cref="Javax.Naming.Spi.ResolveResult"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        Javax.Naming.Spi.ResolveResult ResolveToClass(Javax.Naming.Name arg0, Java.Lang.Class arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Resolver
-    public partial class Resolver
+    public partial class Resolver : Javax.Naming.Spi.IResolver
     {
         #region Constructors
 

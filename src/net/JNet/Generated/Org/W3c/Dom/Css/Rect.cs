@@ -25,8 +25,42 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region IRect
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html"/>
+    /// </summary>
+    public partial interface IRect
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getBottom()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSPrimitiveValue Bottom { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getLeft()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSPrimitiveValue Left { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getRight()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSPrimitiveValue Right { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/Rect.html#getTop()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSPrimitiveValue Top { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Rect
-    public partial class Rect
+    public partial class Rect : Org.W3c.Dom.Css.IRect
     {
         #region Constructors
 

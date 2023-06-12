@@ -25,8 +25,53 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Xpath
 {
+    #region IXPathEvaluator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html"/>
+    /// </summary>
+    public partial interface IXPathEvaluator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#evaluate(java.lang.String,org.w3c.dom.Node,org.w3c.dom.xpath.XPathNSResolver,short,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg2"><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></param>
+        /// <param name="arg3"><see cref="short"/></param>
+        /// <param name="arg4"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        object Evaluate(string arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Xpath.XPathNSResolver arg2, short arg3, object arg4);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createExpression(java.lang.String,org.w3c.dom.xpath.XPathNSResolver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Xpath.XPathExpression"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.Xpath.XPathExpression CreateExpression(string arg0, Org.W3c.Dom.Xpath.XPathNSResolver arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html#createNSResolver(org.w3c.dom.Node)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Xpath.XPathNSResolver"/></returns>
+        Org.W3c.Dom.Xpath.XPathNSResolver CreateNSResolver(Org.W3c.Dom.Node arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XPathEvaluator
-    public partial class XPathEvaluator
+    public partial class XPathEvaluator : Org.W3c.Dom.Xpath.IXPathEvaluator
     {
         #region Constructors
 

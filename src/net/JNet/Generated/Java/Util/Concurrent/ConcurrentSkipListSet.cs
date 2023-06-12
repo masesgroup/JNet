@@ -254,7 +254,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public ConcurrentSkipListSet(Java.Util.Collection arg0)
+        public ConcurrentSkipListSet(Java.Util.Collection<E> arg0)
             : base(arg0)
         {
         }
@@ -262,7 +262,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentSkipListSet.html#%3Cinit%3E(java.util.Comparator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        public ConcurrentSkipListSet(Java.Util.Comparator arg0)
+        public ConcurrentSkipListSet(Java.Util.Comparator<E> arg0)
             : base(arg0)
         {
         }

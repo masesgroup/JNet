@@ -25,8 +25,56 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Tree
 {
+    #region IMutableTreeNode
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html"/>
+    /// </summary>
+    public partial interface IMutableTreeNode : Javax.Swing.Tree.ITreeNode
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#insert(javax.swing.tree.MutableTreeNode,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        void Insert(Javax.Swing.Tree.MutableTreeNode arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#remove(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        void Remove(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#remove(javax.swing.tree.MutableTreeNode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
+        void Remove(Javax.Swing.Tree.MutableTreeNode arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#removeFromParent()"/>
+        /// </summary>
+        void RemoveFromParent();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#setParent(javax.swing.tree.MutableTreeNode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Tree.MutableTreeNode"/></param>
+        void SetParent(Javax.Swing.Tree.MutableTreeNode arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html#setUserObject(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        void SetUserObject(object arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MutableTreeNode
-    public partial class MutableTreeNode
+    public partial class MutableTreeNode : Javax.Swing.Tree.IMutableTreeNode
     {
         #region Constructors
 

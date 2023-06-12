@@ -639,10 +639,8 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public static bool Disjoint<Arg0Extendsobject, Arg1Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0, Java.Util.Collection<Arg1Extendsobject> arg1)
+        public static bool Disjoint(Java.Util.Collection<object> arg0, Java.Util.Collection<object> arg1)
         {
             return SExecute<bool>(LocalBridgeClazz, "disjoint", arg0, arg1);
         }
@@ -682,9 +680,8 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="object"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int Frequency<Arg0Extendsobject>(Java.Util.Collection<Arg0Extendsobject> arg0, object arg1)
+        public static int Frequency(Java.Util.Collection<object> arg0, object arg1)
         {
             return SExecute<int>(LocalBridgeClazz, "frequency", arg0, arg1);
         }
@@ -693,10 +690,8 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int IndexOfSubList<Arg0Extendsobject, Arg1Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0, Java.Util.List<Arg1Extendsobject> arg1)
+        public static int IndexOfSubList(Java.Util.List<object> arg0, Java.Util.List<object> arg1)
         {
             return SExecute<int>(LocalBridgeClazz, "indexOfSubList", arg0, arg1);
         }
@@ -705,10 +700,8 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="int"/></returns>
-        public static int LastIndexOfSubList<Arg0Extendsobject, Arg1Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0, Java.Util.List<Arg1Extendsobject> arg1)
+        public static int LastIndexOfSubList(Java.Util.List<object> arg0, Java.Util.List<object> arg1)
         {
             return SExecute<int>(LocalBridgeClazz, "lastIndexOfSubList", arg0, arg1);
         }
@@ -716,8 +709,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverse(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public static void Reverse<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0)
+        public static void Reverse(Java.Util.List<object> arg0)
         {
             SExecute(LocalBridgeClazz, "reverse", arg0);
         }
@@ -726,8 +718,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public static void Rotate<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0, int arg1)
+        public static void Rotate(Java.Util.List<object> arg0, int arg1)
         {
             SExecute(LocalBridgeClazz, "rotate", arg0, arg1);
         }
@@ -736,8 +727,7 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="Java.Util.Random"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public static void Shuffle<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0, Java.Util.Random arg1)
+        public static void Shuffle(Java.Util.List<object> arg0, Java.Util.Random arg1)
         {
             SExecute(LocalBridgeClazz, "shuffle", arg0, arg1);
         }
@@ -745,8 +735,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public static void Shuffle<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0)
+        public static void Shuffle(Java.Util.List<object> arg0)
         {
             SExecute(LocalBridgeClazz, "shuffle", arg0);
         }
@@ -756,8 +745,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public static void Swap<Arg0Extendsobject>(Java.Util.List<Arg0Extendsobject> arg0, int arg1, int arg2)
+        public static void Swap(Java.Util.List<object> arg0, int arg1, int arg2)
         {
             SExecute(LocalBridgeClazz, "swap", arg0, arg1, arg2);
         }

@@ -33,10 +33,6 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Time.Chrono.AbstractChronology"/> to <see cref="Java.Time.Chrono.Chronology"/>
-        /// </summary>
-        public static implicit operator Java.Time.Chrono.Chronology(Java.Time.Chrono.AbstractChronology t) => t.Cast<Java.Time.Chrono.Chronology>();
 
         #endregion
 

@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
+    #region IFileFilter
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileFilter.html"/>
+    /// </summary>
+    public partial interface IFileFilter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileFilter.html#accept(java.io.File)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.File"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool Accept(Java.Io.File arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region FileFilter
-    public partial class FileFilter
+    public partial class FileFilter : Java.Io.IFileFilter
     {
         #region Constructors
 

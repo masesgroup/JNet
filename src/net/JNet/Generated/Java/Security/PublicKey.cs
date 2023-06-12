@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security
 {
+    #region IPublicKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/PublicKey.html"/>
+    /// </summary>
+    public partial interface IPublicKey : Java.Security.IKey
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PublicKey
-    public partial class PublicKey
+    public partial class PublicKey : Java.Security.IPublicKey
     {
         #region Constructors
 

@@ -25,8 +25,47 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sound.Sampled
 {
+    #region ISourceDataLine
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/SourceDataLine.html"/>
+    /// </summary>
+    public partial interface ISourceDataLine : Javax.Sound.Sampled.IDataLine
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/SourceDataLine.html#write(byte[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        int Write(byte[] arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/SourceDataLine.html#open(javax.sound.sampled.AudioFormat,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        void Open(Javax.Sound.Sampled.AudioFormat arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/SourceDataLine.html#open(javax.sound.sampled.AudioFormat)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sound.Sampled.AudioFormat"/></param>
+        /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
+        void Open(Javax.Sound.Sampled.AudioFormat arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SourceDataLine
-    public partial class SourceDataLine
+    public partial class SourceDataLine : Javax.Sound.Sampled.ISourceDataLine
     {
         #region Constructors
 

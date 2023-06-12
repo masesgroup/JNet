@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print.Attribute
 {
+    #region ISupportedValuesAttribute
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SupportedValuesAttribute.html"/>
+    /// </summary>
+    public partial interface ISupportedValuesAttribute : Javax.Print.Attribute.IAttribute
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SupportedValuesAttribute
-    public partial class SupportedValuesAttribute
+    public partial class SupportedValuesAttribute : Javax.Print.Attribute.ISupportedValuesAttribute
     {
         #region Constructors
 

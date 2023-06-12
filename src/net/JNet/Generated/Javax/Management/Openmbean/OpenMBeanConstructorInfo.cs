@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
+    #region IOpenMBeanConstructorInfo
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfo.html"/>
+    /// </summary>
+    public partial interface IOpenMBeanConstructorInfo
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfo.html#getDescription()"/> 
+        /// </summary>
+        string Description { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfo.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfo.html#getSignature()"/> 
+        /// </summary>
+        Javax.Management.MBeanParameterInfo[] Signature { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region OpenMBeanConstructorInfo
-    public partial class OpenMBeanConstructorInfo
+    public partial class OpenMBeanConstructorInfo : Javax.Management.Openmbean.IOpenMBeanConstructorInfo
     {
         #region Constructors
 

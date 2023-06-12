@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Interfaces
 {
+    #region IXECKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECKey.html"/>
+    /// </summary>
+    public partial interface IXECKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECKey.html#getParams()"/> 
+        /// </summary>
+        Java.Security.Spec.AlgorithmParameterSpec Params { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XECKey
-    public partial class XECKey
+    public partial class XECKey : Java.Security.Interfaces.IXECKey
     {
         #region Constructors
 

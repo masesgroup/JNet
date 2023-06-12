@@ -63,7 +63,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public static Java.Util.Concurrent.CompletableFuture FailedFuture(Java.Lang.Throwable arg0)
+        public static Java.Util.Concurrent.CompletableFuture FailedFuture(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "failedFuture", arg0);
         }
@@ -100,7 +100,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public static Java.Util.Concurrent.CompletionStage FailedStage(Java.Lang.Throwable arg0)
+        public static Java.Util.Concurrent.CompletionStage FailedStage(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return SExecute<Java.Util.Concurrent.CompletionStage>(LocalBridgeClazz, "failedStage", arg0);
         }
@@ -259,7 +259,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool CompleteExceptionally(Java.Lang.Throwable arg0)
+        public bool CompleteExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return IExecute<bool>("completeExceptionally", arg0);
         }
@@ -703,7 +703,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#obtrudeException(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        public void ObtrudeException(Java.Lang.Throwable arg0)
+        public void ObtrudeException(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecute("obtrudeException", arg0);
         }
@@ -801,7 +801,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public static Java.Util.Concurrent.CompletableFuture<U> FailedFuture<U>(Java.Lang.Throwable arg0)
+        public static Java.Util.Concurrent.CompletableFuture<U> FailedFuture<U>(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return SExecute<Java.Util.Concurrent.CompletableFuture<U>>(LocalBridgeClazz, "failedFuture", arg0);
         }
@@ -842,7 +842,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public static Java.Util.Concurrent.CompletionStage<U> FailedStage<U>(Java.Lang.Throwable arg0)
+        public static Java.Util.Concurrent.CompletionStage<U> FailedStage<U>(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return SExecute<Java.Util.Concurrent.CompletionStage<U>>(LocalBridgeClazz, "failedStage", arg0);
         }
@@ -850,9 +850,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public static Java.Util.Concurrent.CompletableFuture<object> AnyOfMethod<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
+        public static Java.Util.Concurrent.CompletableFuture<object> AnyOfMethod(params Java.Util.Concurrent.CompletableFuture<object>[] arg0)
         {
             if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<object>>(LocalBridgeClazz, "anyOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<object>>(LocalBridgeClazz, "anyOf", arg0);
         }
@@ -860,9 +859,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> AllOf<Arg0Extendsobject>(params Java.Util.Concurrent.CompletableFuture<Arg0Extendsobject>[] arg0)
+        public static Java.Util.Concurrent.CompletableFuture<Java.Lang.Void> AllOf(params Java.Util.Concurrent.CompletableFuture<object>[] arg0)
         {
             if (arg0.Length == 0) return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "allOf"); else return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "allOf", arg0);
         }
@@ -1003,7 +1001,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool CompleteExceptionally(Java.Lang.Throwable arg0)
+        public bool CompleteExceptionally(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return IExecute<bool>("completeExceptionally", arg0);
         }
@@ -1449,7 +1447,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#obtrudeException(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
-        public void ObtrudeException(Java.Lang.Throwable arg0)
+        public void ObtrudeException(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             IExecute("obtrudeException", arg0);
         }

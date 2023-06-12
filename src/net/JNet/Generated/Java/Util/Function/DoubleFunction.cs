@@ -50,9 +50,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="object"/></returns>
-        public object Apply(double arg0)
+        public virtual object Apply(double arg0)
         {
-            return IExecute("apply", arg0);
+            return default;
         }
 
         #endregion
@@ -65,18 +65,38 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IDoubleFunction<R>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html"/>
+    /// </summary>
+    public partial interface IDoubleFunction<R>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R Apply(double arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DoubleFunction<R>
-    public partial class DoubleFunction<R>
+    public partial class DoubleFunction<R> : Java.Util.Function.IDoubleFunction<R>
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.DoubleFunction{R}"/> to <see cref="Java.Util.Function.DoubleFunction"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.DoubleFunction(Java.Util.Function.DoubleFunction<R> t) => t.Cast<Java.Util.Function.DoubleFunction>();
 
         #endregion
 
@@ -94,9 +114,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><typeparamref name="R"/></returns>
-        public R Apply(double arg0)
+        public virtual R Apply(double arg0)
         {
-            return IExecute<R>("apply", arg0);
+            return default;
         }
 
         #endregion

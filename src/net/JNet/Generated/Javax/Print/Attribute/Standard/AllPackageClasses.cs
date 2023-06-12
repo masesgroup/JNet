@@ -416,7 +416,7 @@ namespace Javax.Print.Attribute.Standard
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/DialogOwner.html"/>
     /// </summary>
-    public partial class DialogOwner : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DialogOwner>
+    public partial class DialogOwner : Javax.Print.Attribute.PrintRequestAttribute
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1405,7 +1405,7 @@ namespace Javax.Print.Attribute.Standard
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobStateReasons.html"/>
     /// </summary>
-    public partial class JobStateReasons : Java.Util.HashSet
+    public partial class JobStateReasons : Java.Util.HashSet<Javax.Print.Attribute.Standard.JobStateReason>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2910,7 +2910,7 @@ namespace Javax.Print.Attribute.Standard
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterStateReasons.html"/>
     /// </summary>
-    public partial class PrinterStateReasons : Java.Util.HashMap
+    public partial class PrinterStateReasons : Java.Util.HashMap<Javax.Print.Attribute.Standard.PrinterStateReason, Javax.Print.Attribute.Standard.Severity>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

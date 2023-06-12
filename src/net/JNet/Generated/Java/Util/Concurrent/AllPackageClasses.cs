@@ -29,7 +29,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/AbstractExecutorService.html"/>
     /// </summary>
-    public partial class AbstractExecutorService : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractExecutorService>
+    public partial class AbstractExecutorService : Java.Util.Concurrent.ExecutorService
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1820,7 +1820,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Delayed.html"/>
     /// </summary>
-    public partial class Delayed : Java.Lang.Comparable
+    public partial class Delayed : Java.Lang.Comparable<Java.Util.Concurrent.Delayed>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1906,8 +1906,8 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html"/>
     /// </summary>
-    /// <typeparam name="E"><see cref="Java.Util.Concurrent.Delayed"/></typeparam>
-    public partial class DelayQueue<E> : Java.Util.AbstractQueue<E> where E: Java.Util.Concurrent.Delayed
+    /// <typeparam name="E"><see cref="Java.Util.Concurrent.IDelayed"/></typeparam>
+    public partial class DelayQueue<E> : Java.Util.AbstractQueue<E> where E: Java.Util.Concurrent.IDelayed, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2096,7 +2096,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html"/>
     /// </summary>
-    public partial class ExecutorCompletionService : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExecutorCompletionService>
+    public partial class ExecutorCompletionService : Java.Util.Concurrent.CompletionService
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2140,7 +2140,7 @@ namespace Java.Util.Concurrent
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class ExecutorCompletionService<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExecutorCompletionService<V>>
+    public partial class ExecutorCompletionService<V> : Java.Util.Concurrent.CompletionService<V>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2963,7 +2963,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/FutureTask.html"/>
     /// </summary>
-    public partial class FutureTask : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FutureTask>
+    public partial class FutureTask : Java.Util.Concurrent.RunnableFuture
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3007,7 +3007,7 @@ namespace Java.Util.Concurrent
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/FutureTask.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class FutureTask<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FutureTask<V>>
+    public partial class FutureTask<V> : Java.Util.Concurrent.RunnableFuture<V>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3441,7 +3441,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RecursiveAction.html"/>
     /// </summary>
-    public partial class RecursiveAction : Java.Util.Concurrent.ForkJoinTask
+    public partial class RecursiveAction : Java.Util.Concurrent.ForkJoinTask<Java.Lang.Void>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3977,7 +3977,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html"/>
     /// </summary>
-    public partial class Semaphore : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Semaphore>
+    public partial class Semaphore : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4319,7 +4319,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.AbortPolicy.html"/>
         /// </summary>
-        public partial class AbortPolicy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbortPolicy>
+        public partial class AbortPolicy : Java.Util.Concurrent.RejectedExecutionHandler
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4362,7 +4362,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html"/>
         /// </summary>
-        public partial class CallerRunsPolicy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CallerRunsPolicy>
+        public partial class CallerRunsPolicy : Java.Util.Concurrent.RejectedExecutionHandler
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4405,7 +4405,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html"/>
         /// </summary>
-        public partial class DiscardOldestPolicy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DiscardOldestPolicy>
+        public partial class DiscardOldestPolicy : Java.Util.Concurrent.RejectedExecutionHandler
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4448,7 +4448,7 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html"/>
         /// </summary>
-        public partial class DiscardPolicy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DiscardPolicy>
+        public partial class DiscardPolicy : Java.Util.Concurrent.RejectedExecutionHandler
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4511,7 +4511,7 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html"/>
     /// </summary>
-    public partial class TimeUnit : Java.Lang.Enum
+    public partial class TimeUnit : Java.Lang.Enum<Java.Util.Concurrent.TimeUnit>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
+    #region ILSLoadEvent
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSLoadEvent.html"/>
+    /// </summary>
+    public partial interface ILSLoadEvent : Org.W3c.Dom.Events.IEvent
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSLoadEvent.html#getInput()"/> 
+        /// </summary>
+        Org.W3c.Dom.Ls.LSInput Input { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSLoadEvent.html#getNewDocument()"/> 
+        /// </summary>
+        Org.W3c.Dom.Document NewDocument { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LSLoadEvent
-    public partial class LSLoadEvent
+    public partial class LSLoadEvent : Org.W3c.Dom.Ls.ILSLoadEvent
     {
         #region Constructors
 

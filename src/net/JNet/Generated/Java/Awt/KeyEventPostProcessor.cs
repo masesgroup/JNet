@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
+    #region IKeyEventPostProcessor
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyEventPostProcessor.html"/>
+    /// </summary>
+    public partial interface IKeyEventPostProcessor
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyEventPostProcessor.html#postProcessKeyEvent(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool PostProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region KeyEventPostProcessor
-    public partial class KeyEventPostProcessor
+    public partial class KeyEventPostProcessor : Java.Awt.IKeyEventPostProcessor
     {
         #region Constructors
 

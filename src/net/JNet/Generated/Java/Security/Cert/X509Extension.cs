@@ -25,8 +25,44 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Security.Cert
 {
+    #region IX509Extension
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html"/>
+    /// </summary>
+    public partial interface IX509Extension
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getCriticalExtensionOIDs()"/> 
+        /// </summary>
+        Java.Util.Set<string> CriticalExtensionOIDs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#hasUnsupportedCriticalExtension()"/> 
+        /// </summary>
+        bool HasUnsupportedCriticalExtension { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getNonCriticalExtensionOIDs()"/> 
+        /// </summary>
+        Java.Util.Set<string> NonCriticalExtensionOIDs { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Extension.html#getExtensionValue(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="byte"/></returns>
+        byte[] GetExtensionValue(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region X509Extension
-    public partial class X509Extension
+    public partial class X509Extension : Java.Security.Cert.IX509Extension
     {
         #region Constructors
 

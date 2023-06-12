@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
+    #region IParameterizable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Parameterizable.html"/>
+    /// </summary>
+    public partial interface IParameterizable : Javax.Lang.Model.Element.IElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Parameterizable.html#getTypeParameters()"/> 
+        /// </summary>
+        Java.Util.List TypeParameters { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Parameterizable
-    public partial class Parameterizable
+    public partial class Parameterizable : Javax.Lang.Model.Element.IParameterizable
     {
         #region Constructors
 

@@ -33,10 +33,6 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Swing.Text.LayeredHighlighter"/> to <see cref="Javax.Swing.Text.Highlighter"/>
-        /// </summary>
-        public static implicit operator Javax.Swing.Text.Highlighter(Javax.Swing.Text.LayeredHighlighter t) => t.Cast<Javax.Swing.Text.Highlighter>();
 
         #endregion
 

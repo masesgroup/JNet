@@ -25,8 +25,36 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Relation
 {
+    #region IRelationSupportMBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html"/>
+    /// </summary>
+    public partial interface IRelationSupportMBean : Javax.Management.Relation.IRelation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/> 
+        /// </summary>
+        bool? IsInRelationService { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        void SetRelationServiceManagementFlag(bool? arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RelationSupportMBean
-    public partial class RelationSupportMBean
+    public partial class RelationSupportMBean : Javax.Management.Relation.IRelationSupportMBean
     {
         #region Constructors
 

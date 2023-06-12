@@ -33,10 +33,6 @@ namespace Java.Util.Regex
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Regex.Matcher"/> to <see cref="Java.Util.Regex.MatchResult"/>
-        /// </summary>
-        public static implicit operator Java.Util.Regex.MatchResult(Java.Util.Regex.Matcher t) => t.Cast<Java.Util.Regex.MatchResult>();
 
         #endregion
 

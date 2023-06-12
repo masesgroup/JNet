@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Annotation.Processing
 {
+    #region ISupportedSourceVersion
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html"/>
+    /// </summary>
+    public partial interface ISupportedSourceVersion : Java.Lang.Annotation.IAnnotation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html#value()"/> 
+        /// </summary>
+        Javax.Lang.Model.SourceVersion Value { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SupportedSourceVersion
-    public partial class SupportedSourceVersion
+    public partial class SupportedSourceVersion : Javax.Annotation.Processing.ISupportedSourceVersion
     {
         #region Constructors
 

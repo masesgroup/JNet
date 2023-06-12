@@ -117,6 +117,11 @@ namespace Javax.Naming.Event
     /// </summary>
     public partial class NamespaceChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NamespaceChangeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -214,8 +219,13 @@ namespace Javax.Naming.Event
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html"/>
     /// </summary>
-    public partial class NamingListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class NamingListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NamingListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -229,6 +239,11 @@ namespace Javax.Naming.Event
     /// </summary>
     public partial class ObjectChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ObjectChangeListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

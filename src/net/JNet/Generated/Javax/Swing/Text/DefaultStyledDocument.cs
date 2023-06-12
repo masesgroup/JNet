@@ -73,9 +73,9 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getStyleNames()"/> 
         /// </summary>
-        public Java.Util.Enumeration StyleNames
+        public Java.Util.Enumeration<object> StyleNames
         {
-            get { return IExecute<Java.Util.Enumeration>("getStyleNames"); }
+            get { return IExecute<Java.Util.Enumeration<object>>("getStyleNames"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getBackground(javax.swing.text.AttributeSet)"/>
@@ -250,10 +250,6 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.DefaultStyledDocument.ElementBuffer"/> to <see cref="Java.Io.Serializable"/>
-            /// </summary>
-            public static implicit operator Java.Io.Serializable(Javax.Swing.Text.DefaultStyledDocument.ElementBuffer t) => t.Cast<Java.Io.Serializable>();
 
             #endregion
 

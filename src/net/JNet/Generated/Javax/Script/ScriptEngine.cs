@@ -25,8 +25,108 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Script
 {
+    #region IScriptEngine
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html"/>
+    /// </summary>
+    public partial interface IScriptEngine
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getContext()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#setContext(javax.script.ScriptContext)"/>
+        /// </summary>
+        Javax.Script.ScriptContext Context { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#createBindings()"/> 
+        /// </summary>
+        Javax.Script.Bindings CreateBindings { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getFactory()"/> 
+        /// </summary>
+        Javax.Script.ScriptEngineFactory Factory { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader,javax.script.Bindings)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg1"><see cref="Javax.Script.Bindings"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        object Eval(Java.Io.Reader arg0, Javax.Script.Bindings arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader,javax.script.ScriptContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <param name="arg1"><see cref="Javax.Script.ScriptContext"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        object Eval(Java.Io.Reader arg0, Javax.Script.ScriptContext arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.io.Reader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        object Eval(Java.Io.Reader arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String,javax.script.Bindings)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Script.Bindings"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        object Eval(string arg0, Javax.Script.Bindings arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String,javax.script.ScriptContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Javax.Script.ScriptContext"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        object Eval(string arg0, Javax.Script.ScriptContext arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#eval(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Script.ScriptException"/>
+        object Eval(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#get(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="object"/></returns>
+        object Get(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#getBindings(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Script.Bindings"/></returns>
+        Javax.Script.Bindings GetBindings(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#put(java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        void Put(string arg0, object arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#setBindings(javax.script.Bindings,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Script.Bindings"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        void SetBindings(Javax.Script.Bindings arg0, int arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ScriptEngine
-    public partial class ScriptEngine
+    public partial class ScriptEngine : Javax.Script.IScriptEngine
     {
         #region Constructors
 

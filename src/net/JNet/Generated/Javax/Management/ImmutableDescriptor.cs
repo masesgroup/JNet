@@ -41,7 +41,7 @@ namespace Javax.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        public ImmutableDescriptor(Java.Util.Map arg0)
+        public ImmutableDescriptor(Java.Util.Map<string, object> arg0)
             : base(arg0)
         {
         }
@@ -49,10 +49,6 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.ImmutableDescriptor"/> to <see cref="Javax.Management.Descriptor"/>
-        /// </summary>
-        public static implicit operator Javax.Management.Descriptor(Javax.Management.ImmutableDescriptor t) => t.Cast<Javax.Management.Descriptor>();
 
         #endregion
 

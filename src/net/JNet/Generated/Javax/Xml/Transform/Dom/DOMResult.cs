@@ -69,10 +69,6 @@ namespace Javax.Xml.Transform.Dom
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Transform.Dom.DOMResult"/> to <see cref="Javax.Xml.Transform.Result"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Transform.Result(Javax.Xml.Transform.Dom.DOMResult t) => t.Cast<Javax.Xml.Transform.Result>();
 
         #endregion
 

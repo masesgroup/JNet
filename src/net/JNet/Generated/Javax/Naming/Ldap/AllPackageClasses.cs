@@ -29,7 +29,7 @@ namespace Javax.Naming.Ldap
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html"/>
     /// </summary>
-    public partial class BasicControl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicControl>
+    public partial class BasicControl : Javax.Naming.Ldap.Control
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -373,7 +373,7 @@ namespace Javax.Naming.Ldap
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html"/>
     /// </summary>
-    public partial class LdapName : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LdapName>
+    public partial class LdapName : Javax.Naming.Name
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -733,7 +733,7 @@ namespace Javax.Naming.Ldap
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html"/>
     /// </summary>
-    public partial class StartTlsRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StartTlsRequest>
+    public partial class StartTlsRequest : Javax.Naming.Ldap.ExtendedRequest
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -776,7 +776,7 @@ namespace Javax.Naming.Ldap
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html"/>
     /// </summary>
-    public partial class StartTlsResponse : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StartTlsResponse>
+    public partial class StartTlsResponse : Javax.Naming.Ldap.ExtendedResponse
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -907,6 +907,11 @@ namespace Javax.Naming.Ldap
     /// </summary>
     public partial class UnsolicitedNotificationListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public UnsolicitedNotificationListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

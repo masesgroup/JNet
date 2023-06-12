@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
+    #region IHasControls
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/HasControls.html"/>
+    /// </summary>
+    public partial interface IHasControls
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/HasControls.html#getControls()"/> 
+        /// </summary>
+        Javax.Naming.Ldap.Control[] Controls { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HasControls
-    public partial class HasControls
+    public partial class HasControls : Javax.Naming.Ldap.IHasControls
     {
         #region Constructors
 

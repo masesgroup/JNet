@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IPrintFilesHandler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PrintFilesHandler.html"/>
+    /// </summary>
+    public partial interface IPrintFilesHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/PrintFilesHandler.html#printFiles(java.awt.desktop.PrintFilesEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.PrintFilesEvent"/></param>
+        void PrintFiles(Java.Awt.DesktopNs.PrintFilesEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrintFilesHandler
-    public partial class PrintFilesHandler
+    public partial class PrintFilesHandler : Java.Awt.DesktopNs.IPrintFilesHandler
     {
         #region Constructors
 

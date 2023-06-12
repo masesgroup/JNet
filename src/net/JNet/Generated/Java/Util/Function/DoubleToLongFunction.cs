@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IDoubleToLongFunction
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToLongFunction.html"/>
+    /// </summary>
+    public partial interface IDoubleToLongFunction
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <returns><see cref="long"/></returns>
+        long ApplyAsLong(double arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DoubleToLongFunction
-    public partial class DoubleToLongFunction
+    public partial class DoubleToLongFunction : Java.Util.Function.IDoubleToLongFunction
     {
         #region Constructors
 
@@ -50,9 +74,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="long"/></returns>
-        public long ApplyAsLong(double arg0)
+        public virtual long ApplyAsLong(double arg0)
         {
-            return IExecute<long>("applyAsLong", arg0);
+            return default;
         }
 
         #endregion

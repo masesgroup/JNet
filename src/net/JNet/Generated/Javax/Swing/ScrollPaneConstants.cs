@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region IScrollPaneConstants
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ScrollPaneConstants.html"/>
+    /// </summary>
+    public partial interface IScrollPaneConstants
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ScrollPaneConstants
-    public partial class ScrollPaneConstants
+    public partial class ScrollPaneConstants : Javax.Swing.IScrollPaneConstants
     {
         #region Constructors
 

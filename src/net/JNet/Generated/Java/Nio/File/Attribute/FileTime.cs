@@ -33,10 +33,6 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Nio.File.Attribute.FileTime"/> to <see cref="Java.Lang.Comparable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Comparable(Java.Nio.File.Attribute.FileTime t) => t.Cast<Java.Lang.Comparable>();
 
         #endregion
 

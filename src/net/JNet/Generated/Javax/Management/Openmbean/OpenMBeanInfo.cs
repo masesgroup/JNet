@@ -25,8 +25,50 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
+    #region IOpenMBeanInfo
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html"/>
+    /// </summary>
+    public partial interface IOpenMBeanInfo
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getAttributes()"/> 
+        /// </summary>
+        Javax.Management.MBeanAttributeInfo[] Attributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getClassName()"/> 
+        /// </summary>
+        string ClassName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getConstructors()"/> 
+        /// </summary>
+        Javax.Management.MBeanConstructorInfo[] Constructors { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getDescription()"/> 
+        /// </summary>
+        string Description { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getNotifications()"/> 
+        /// </summary>
+        Javax.Management.MBeanNotificationInfo[] Notifications { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfo.html#getOperations()"/> 
+        /// </summary>
+        Javax.Management.MBeanOperationInfo[] Operations { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region OpenMBeanInfo
-    public partial class OpenMBeanInfo
+    public partial class OpenMBeanInfo : Javax.Management.Openmbean.IOpenMBeanInfo
     {
         #region Constructors
 

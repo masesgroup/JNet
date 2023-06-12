@@ -25,8 +25,102 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Table
 {
+    #region ITableColumnModel
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html"/>
+    /// </summary>
+    public partial interface ITableColumnModel
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumnCount()"/> 
+        /// </summary>
+        int ColumnCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumnMargin()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#setColumnMargin(int)"/>
+        /// </summary>
+        int ColumnMargin { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumns()"/> 
+        /// </summary>
+        Java.Util.Enumeration<Javax.Swing.Table.TableColumn> Columns { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumnSelectionAllowed()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#setColumnSelectionAllowed(boolean)"/>
+        /// </summary>
+        bool ColumnSelectionAllowed { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getSelectedColumnCount()"/> 
+        /// </summary>
+        int SelectedColumnCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getSelectedColumns()"/> 
+        /// </summary>
+        int[] SelectedColumns { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getSelectionModel()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#setSelectionModel(javax.swing.ListSelectionModel)"/>
+        /// </summary>
+        Javax.Swing.ListSelectionModel SelectionModel { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getTotalColumnWidth()"/> 
+        /// </summary>
+        int TotalColumnWidth { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumnIndex(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="int"/></returns>
+        int GetColumnIndex(object arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumnIndexAtX(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        int GetColumnIndexAtX(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#getColumn(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Javax.Swing.Table.TableColumn"/></returns>
+        Javax.Swing.Table.TableColumn GetColumn(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#addColumn(javax.swing.table.TableColumn)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableColumn"/></param>
+        void AddColumn(Javax.Swing.Table.TableColumn arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#addColumnModelListener(javax.swing.event.TableColumnModelListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelListener"/></param>
+        void AddColumnModelListener(Javax.Swing.Event.TableColumnModelListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#moveColumn(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        void MoveColumn(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#removeColumn(javax.swing.table.TableColumn)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Table.TableColumn"/></param>
+        void RemoveColumn(Javax.Swing.Table.TableColumn arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#removeColumnModelListener(javax.swing.event.TableColumnModelListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.TableColumnModelListener"/></param>
+        void RemoveColumnModelListener(Javax.Swing.Event.TableColumnModelListener arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TableColumnModel
-    public partial class TableColumnModel
+    public partial class TableColumnModel : Javax.Swing.Table.ITableColumnModel
     {
         #region Constructors
 

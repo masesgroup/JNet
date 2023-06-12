@@ -18,7 +18,7 @@
 
 using Javax.Management;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JNet.Extensions;
+using MASES.JNet.Specific.Extensions;
 using MASES.JNetPSCore;
 using MASES.JNetPSCore.Cmdlet;
 using System;

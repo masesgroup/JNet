@@ -25,8 +25,48 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Time.Temporal
 {
+    #region ITemporalAmount
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html"/>
+    /// </summary>
+    public partial interface ITemporalAmount
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#getUnits()"/> 
+        /// </summary>
+        Java.Util.List<Java.Time.Temporal.TemporalUnit> Units { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#addTo(java.time.temporal.Temporal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal AddTo(Java.Time.Temporal.Temporal arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#subtractFrom(java.time.temporal.Temporal)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
+        /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
+        Java.Time.Temporal.Temporal SubtractFrom(Java.Time.Temporal.Temporal arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html#get(java.time.temporal.TemporalUnit)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
+        /// <returns><see cref="long"/></returns>
+        long Get(Java.Time.Temporal.TemporalUnit arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TemporalAmount
-    public partial class TemporalAmount
+    public partial class TemporalAmount : Java.Time.Temporal.ITemporalAmount
     {
         #region Constructors
 

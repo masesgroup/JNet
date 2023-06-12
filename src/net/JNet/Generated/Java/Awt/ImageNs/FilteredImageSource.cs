@@ -42,10 +42,6 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.FilteredImageSource"/> to <see cref="Java.Awt.ImageNs.ImageProducer"/>
-        /// </summary>
-        public static implicit operator Java.Awt.ImageNs.ImageProducer(Java.Awt.ImageNs.FilteredImageSource t) => t.Cast<Java.Awt.ImageNs.ImageProducer>();
 
         #endregion
 

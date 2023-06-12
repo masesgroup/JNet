@@ -33,10 +33,6 @@ namespace Java.Lang.ModuleNs
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor"/> to <see cref="Java.Lang.Comparable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor t) => t.Cast<Java.Lang.Comparable>();
 
         #endregion
 
@@ -277,11 +273,13 @@ namespace Java.Lang.ModuleNs
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#build()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#build()"/>
             /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor Build
+
+            /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor"/></returns>
+            public Java.Lang.ModuleNs.ModuleDescriptor Build()
             {
-                get { return IExecute<Java.Lang.ModuleNs.ModuleDescriptor>("build"); }
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor>("build");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.lang.module.ModuleDescriptor.Exports)"/>
@@ -503,10 +501,6 @@ namespace Java.Lang.ModuleNs
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports"/> to <see cref="Java.Lang.Comparable"/>
-            /// </summary>
-            public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor.Exports t) => t.Cast<Java.Lang.Comparable>();
 
             #endregion
 
@@ -702,10 +696,6 @@ namespace Java.Lang.ModuleNs
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens"/> to <see cref="Java.Lang.Comparable"/>
-            /// </summary>
-            public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor.Opens t) => t.Cast<Java.Lang.Comparable>();
 
             #endregion
 
@@ -838,10 +828,6 @@ namespace Java.Lang.ModuleNs
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor.Provides"/> to <see cref="Java.Lang.Comparable"/>
-            /// </summary>
-            public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor.Provides t) => t.Cast<Java.Lang.Comparable>();
 
             #endregion
 
@@ -905,10 +891,6 @@ namespace Java.Lang.ModuleNs
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires"/> to <see cref="Java.Lang.Comparable"/>
-            /// </summary>
-            public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor.Requires t) => t.Cast<Java.Lang.Comparable>();
 
             #endregion
 
@@ -1049,10 +1031,6 @@ namespace Java.Lang.ModuleNs
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Java.Lang.ModuleNs.ModuleDescriptor.Version"/> to <see cref="Java.Lang.Comparable"/>
-            /// </summary>
-            public static implicit operator Java.Lang.Comparable(Java.Lang.ModuleNs.ModuleDescriptor.Version t) => t.Cast<Java.Lang.Comparable>();
 
             #endregion
 

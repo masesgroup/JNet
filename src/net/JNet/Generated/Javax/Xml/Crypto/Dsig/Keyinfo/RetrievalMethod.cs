@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
+    #region IRetrievalMethod
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html"/>
+    /// </summary>
+    public partial interface IRetrievalMethod
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getTransforms()"/> 
+        /// </summary>
+        Java.Util.List<Javax.Xml.Crypto.Dsig.Transform> Transforms { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#getURI()"/> 
+        /// </summary>
+        string URI { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html#dereference(javax.xml.crypto.XMLCryptoContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Crypto.XMLCryptoContext"/></param>
+        /// <returns><see cref="Javax.Xml.Crypto.Data"/></returns>
+        /// <exception cref="Javax.Xml.Crypto.URIReferenceException"/>
+        Javax.Xml.Crypto.Data Dereference(Javax.Xml.Crypto.XMLCryptoContext arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RetrievalMethod
-    public partial class RetrievalMethod
+    public partial class RetrievalMethod : Javax.Xml.Crypto.Dsig.Keyinfo.IRetrievalMethod
     {
         #region Constructors
 

@@ -33,10 +33,6 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.Ldap.StartTlsResponse"/> to <see cref="Javax.Naming.Ldap.ExtendedResponse"/>
-        /// </summary>
-        public static implicit operator Javax.Naming.Ldap.ExtendedResponse(Javax.Naming.Ldap.StartTlsResponse t) => t.Cast<Javax.Naming.Ldap.ExtendedResponse>();
 
         #endregion
 

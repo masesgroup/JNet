@@ -33,10 +33,6 @@ namespace Javax.Imageio.Stream
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Imageio.Stream.ImageInputStreamImpl"/> to <see cref="Javax.Imageio.Stream.ImageInputStream"/>
-        /// </summary>
-        public static implicit operator Javax.Imageio.Stream.ImageInputStream(Javax.Imageio.Stream.ImageInputStreamImpl t) => t.Cast<Javax.Imageio.Stream.ImageInputStream>();
 
         #endregion
 

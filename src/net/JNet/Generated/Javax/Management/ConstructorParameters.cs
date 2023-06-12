@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region IConstructorParameters
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ConstructorParameters.html"/>
+    /// </summary>
+    public partial interface IConstructorParameters : Java.Lang.Annotation.IAnnotation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ConstructorParameters.html#value()"/> 
+        /// </summary>
+        string[] Value { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ConstructorParameters
-    public partial class ConstructorParameters
+    public partial class ConstructorParameters : Javax.Management.IConstructorParameters
     {
         #region Constructors
 

@@ -58,10 +58,6 @@ namespace Java.Math
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Math.MathContext"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Math.MathContext t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

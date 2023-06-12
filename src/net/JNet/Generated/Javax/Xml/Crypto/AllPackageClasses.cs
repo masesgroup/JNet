@@ -379,7 +379,7 @@ namespace Javax.Xml.Crypto
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html"/>
     /// </summary>
-    public partial class OctetStreamData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OctetStreamData>
+    public partial class OctetStreamData : Javax.Xml.Crypto.Data
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

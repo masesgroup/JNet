@@ -25,8 +25,62 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
+    #region IDocPrintJob
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html"/>
+    /// </summary>
+    public partial interface IDocPrintJob
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#getAttributes()"/> 
+        /// </summary>
+        Javax.Print.Attribute.PrintJobAttributeSet Attributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#getPrintService()"/> 
+        /// </summary>
+        Javax.Print.PrintService PrintService { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#addPrintJobAttributeListener(javax.print.event.PrintJobAttributeListener,javax.print.attribute.PrintJobAttributeSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobAttributeListener"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.Attribute.PrintJobAttributeSet"/></param>
+        void AddPrintJobAttributeListener(Javax.Print.Event.PrintJobAttributeListener arg0, Javax.Print.Attribute.PrintJobAttributeSet arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#addPrintJobListener(javax.print.event.PrintJobListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobListener"/></param>
+        void AddPrintJobListener(Javax.Print.Event.PrintJobListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#print(javax.print.Doc,javax.print.attribute.PrintRequestAttributeSet)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Doc"/></param>
+        /// <param name="arg1"><see cref="Javax.Print.Attribute.PrintRequestAttributeSet"/></param>
+        /// <exception cref="Javax.Print.PrintException"/>
+        void Print(Javax.Print.Doc arg0, Javax.Print.Attribute.PrintRequestAttributeSet arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#removePrintJobAttributeListener(javax.print.event.PrintJobAttributeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobAttributeListener"/></param>
+        void RemovePrintJobAttributeListener(Javax.Print.Event.PrintJobAttributeListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocPrintJob.html#removePrintJobListener(javax.print.event.PrintJobListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Print.Event.PrintJobListener"/></param>
+        void RemovePrintJobListener(Javax.Print.Event.PrintJobListener arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DocPrintJob
-    public partial class DocPrintJob
+    public partial class DocPrintJob : Javax.Print.IDocPrintJob
     {
         #region Constructors
 

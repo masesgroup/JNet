@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
+    #region IDatagramSocketImplFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocketImplFactory.html"/>
+    /// </summary>
+    public partial interface IDatagramSocketImplFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocketImplFactory.html#createDatagramSocketImpl()"/> 
+        /// </summary>
+        Java.Net.DatagramSocketImpl CreateDatagramSocketImpl { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DatagramSocketImplFactory
-    public partial class DatagramSocketImplFactory
+    public partial class DatagramSocketImplFactory : Java.Net.IDatagramSocketImplFactory
     {
         #region Constructors
 

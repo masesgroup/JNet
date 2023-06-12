@@ -25,8 +25,68 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Sql
 {
+    #region ISQLXML
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html"/>
+    /// </summary>
+    public partial interface ISQLXML
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getBinaryStream()"/> 
+        /// </summary>
+        Java.Io.InputStream BinaryStream { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getCharacterStream()"/> 
+        /// </summary>
+        Java.Io.Reader CharacterStream { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/> 
+        /// </summary>
+        Java.Io.OutputStream SetBinaryStream { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/> 
+        /// </summary>
+        Java.Io.Writer SetCharacterStream { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getString()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setString(java.lang.String)"/>
+        /// </summary>
+        string String { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        T GetSource<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.ISource, new();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setResult(java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"><see cref="Javax.Xml.Transform.IResult"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.IResult, new();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>
+        /// </summary>
+
+        /// <exception cref="Java.Sql.SQLException"/>
+        void Free();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SQLXML
-    public partial class SQLXML
+    public partial class SQLXML : Java.Sql.ISQLXML
     {
         #region Constructors
 
@@ -84,10 +144,10 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getSource(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.Source"/></typeparam>
+        /// <typeparam name="T"><see cref="Javax.Xml.Transform.ISource"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public T GetSource<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.Source
+        public T GetSource<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.ISource, new()
         {
             return IExecute<T>("getSource", arg0);
         }
@@ -95,10 +155,10 @@ namespace Java.Sql
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setResult(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Javax.Xml.Transform.Result"/></typeparam>
+        /// <typeparam name="T"><see cref="Javax.Xml.Transform.IResult"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.Result
+        public T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.IResult, new()
         {
             return IExecute<T>("setResult", arg0);
         }

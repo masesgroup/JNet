@@ -37,7 +37,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.CellRendererPane"/></param>
         /// <param name="arg4"><see cref="Javax.Swing.JList"/></param>
-        public MetalComboBoxButton(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, bool arg2, Javax.Swing.CellRendererPane arg3, Javax.Swing.JList arg4)
+        public MetalComboBoxButton(Javax.Swing.JComboBox<object> arg0, Javax.Swing.Icon arg1, bool arg2, Javax.Swing.CellRendererPane arg3, Javax.Swing.JList<object> arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
@@ -48,7 +48,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         /// <param name="arg2"><see cref="Javax.Swing.CellRendererPane"/></param>
         /// <param name="arg3"><see cref="Javax.Swing.JList"/></param>
-        public MetalComboBoxButton(Javax.Swing.JComboBox arg0, Javax.Swing.Icon arg1, Javax.Swing.CellRendererPane arg2, Javax.Swing.JList arg3)
+        public MetalComboBoxButton(Javax.Swing.JComboBox<object> arg0, Javax.Swing.Icon arg1, Javax.Swing.CellRendererPane arg2, Javax.Swing.JList<object> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }

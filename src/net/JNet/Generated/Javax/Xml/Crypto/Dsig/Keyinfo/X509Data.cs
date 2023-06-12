@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
+    #region IX509Data
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html"/>
+    /// </summary>
+    public partial interface IX509Data : Javax.Xml.Crypto.IXMLStructure
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html#getContent()"/> 
+        /// </summary>
+        Java.Util.List<object> Content { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region X509Data
-    public partial class X509Data
+    public partial class X509Data : Javax.Xml.Crypto.Dsig.Keyinfo.IX509Data
     {
         #region Constructors
 
@@ -56,9 +78,9 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html#getContent()"/> 
         /// </summary>
-        public Java.Util.List Content
+        public Java.Util.List<object> Content
         {
-            get { return IExecute<Java.Util.List>("getContent"); }
+            get { return IExecute<Java.Util.List<object>>("getContent"); }
         }
 
         #endregion

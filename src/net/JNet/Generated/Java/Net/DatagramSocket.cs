@@ -61,10 +61,6 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Net.DatagramSocket"/> to <see cref="Java.Io.Closeable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Closeable(Java.Net.DatagramSocket t) => t.Cast<Java.Io.Closeable>();
 
         #endregion
 
@@ -194,9 +190,9 @@ namespace Java.Net
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#supportedOptions()"/> 
         /// </summary>
-        public Java.Util.Set SupportedOptions
+        public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions
         {
-            get { return IExecute<Java.Util.Set>("supportedOptions"); }
+            get { return IExecute<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getTrafficClass()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#setTrafficClass(int)"/>

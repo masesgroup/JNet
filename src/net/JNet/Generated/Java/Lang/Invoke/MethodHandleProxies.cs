@@ -65,9 +65,8 @@ namespace Java.Lang.Invoke
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html#wrapperInstanceType(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        /// <typeparam name="ReturnExtendsobject"></typeparam>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        public static Java.Lang.Class WrapperInstanceType<ReturnExtendsobject>(object arg0)
+        public static Java.Lang.Class WrapperInstanceType(object arg0)
         {
             return SExecute<Java.Lang.Class>(LocalBridgeClazz, "wrapperInstanceType", arg0);
         }

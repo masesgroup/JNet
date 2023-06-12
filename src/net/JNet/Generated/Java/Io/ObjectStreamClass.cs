@@ -33,10 +33,6 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Io.ObjectStreamClass"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Io.ObjectStreamClass t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

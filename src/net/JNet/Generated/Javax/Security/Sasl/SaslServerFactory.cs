@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Sasl
 {
+    #region ISaslServerFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServerFactory.html"/>
+    /// </summary>
+    public partial interface ISaslServerFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServerFactory.html#getMechanismNames(java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <returns><see cref="string"/></returns>
+        string[] GetMechanismNames(Java.Util.Map<string, object> arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServerFactory.html#createSaslServer(java.lang.String,java.lang.String,java.lang.String,java.util.Map,javax.security.auth.callback.CallbackHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="Java.Util.Map"/></param>
+        /// <param name="arg4"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
+        /// <returns><see cref="Javax.Security.Sasl.SaslServer"/></returns>
+        /// <exception cref="Javax.Security.Sasl.SaslException"/>
+        Javax.Security.Sasl.SaslServer CreateSaslServer(string arg0, string arg1, string arg2, Java.Util.Map<string, object> arg3, Javax.Security.Auth.Callback.CallbackHandler arg4);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SaslServerFactory
-    public partial class SaslServerFactory
+    public partial class SaslServerFactory : Javax.Security.Sasl.ISaslServerFactory
     {
         #region Constructors
 
@@ -49,9 +84,8 @@ namespace Javax.Security.Sasl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServerFactory.html#getMechanismNames(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="string"/></returns>
-        public string[] GetMechanismNames<Arg0Extendsobject>(Java.Util.Map<string, Arg0Extendsobject> arg0)
+        public string[] GetMechanismNames(Java.Util.Map<string, object> arg0)
         {
             return IExecuteArray<string>("getMechanismNames", arg0);
         }
@@ -63,10 +97,9 @@ namespace Javax.Security.Sasl
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Util.Map"/></param>
         /// <param name="arg4"><see cref="Javax.Security.Auth.Callback.CallbackHandler"/></param>
-        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Security.Sasl.SaslServer"/></returns>
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        public Javax.Security.Sasl.SaslServer CreateSaslServer<Arg3Extendsobject>(string arg0, string arg1, string arg2, Java.Util.Map<string, Arg3Extendsobject> arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
+        public Javax.Security.Sasl.SaslServer CreateSaslServer(string arg0, string arg1, string arg2, Java.Util.Map<string, object> arg3, Javax.Security.Auth.Callback.CallbackHandler arg4)
         {
             return IExecute<Javax.Security.Sasl.SaslServer>("createSaslServer", arg0, arg1, arg2, arg3, arg4);
         }

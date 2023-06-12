@@ -25,8 +25,33 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Sql.Rowset.Spi
 {
+    #region IXmlReader
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlReader.html"/>
+    /// </summary>
+    public partial interface IXmlReader : Javax.Sql.IRowSetReader
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/XmlReader.html#readXML(javax.sql.rowset.WebRowSet,java.io.Reader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Sql.Rowset.WebRowSet"/></param>
+        /// <param name="arg1"><see cref="Java.Io.Reader"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        void ReadXML(Javax.Sql.Rowset.WebRowSet arg0, Java.Io.Reader arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XmlReader
-    public partial class XmlReader
+    public partial class XmlReader : Javax.Sql.Rowset.Spi.IXmlReader
     {
         #region Constructors
 

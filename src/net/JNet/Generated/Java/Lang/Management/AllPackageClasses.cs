@@ -502,7 +502,7 @@ namespace Java.Lang.Management
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryType.html"/>
     /// </summary>
-    public partial class MemoryType : Java.Lang.Enum
+    public partial class MemoryType : Java.Lang.Enum<Java.Lang.Management.MemoryType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

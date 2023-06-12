@@ -168,7 +168,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
-        public PriorityBlockingQueue(int arg0, Java.Util.Comparator arg1)
+        public PriorityBlockingQueue(int arg0, Java.Util.Comparator<E> arg1)
             : base(arg0, arg1)
         {
         }
@@ -184,7 +184,7 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/PriorityBlockingQueue.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
-        public PriorityBlockingQueue(Java.Util.Collection arg0)
+        public PriorityBlockingQueue(Java.Util.Collection<E> arg0)
             : base(arg0)
         {
         }

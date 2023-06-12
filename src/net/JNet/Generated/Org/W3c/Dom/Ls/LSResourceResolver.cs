@@ -25,8 +25,36 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
+    #region ILSResourceResolver
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSResourceResolver.html"/>
+    /// </summary>
+    public partial interface ILSResourceResolver
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSResourceResolver.html#resolveResource(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <param name="arg4"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Ls.LSInput"/></returns>
+        Org.W3c.Dom.Ls.LSInput ResolveResource(string arg0, string arg1, string arg2, string arg3, string arg4);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LSResourceResolver
-    public partial class LSResourceResolver
+    public partial class LSResourceResolver : Org.W3c.Dom.Ls.ILSResourceResolver
     {
         #region Constructors
 

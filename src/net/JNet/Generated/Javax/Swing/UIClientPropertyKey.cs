@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region IUIClientPropertyKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIClientPropertyKey.html"/>
+    /// </summary>
+    public partial interface IUIClientPropertyKey
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region UIClientPropertyKey
-    public partial class UIClientPropertyKey
+    public partial class UIClientPropertyKey : Javax.Swing.IUIClientPropertyKey
     {
         #region Constructors
 

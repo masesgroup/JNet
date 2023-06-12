@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IAnnotatedWildcardType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html"/>
+    /// </summary>
+    public partial interface IAnnotatedWildcardType : Java.Lang.Reflect.IAnnotatedType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedLowerBounds()"/> 
+        /// </summary>
+        Java.Lang.Reflect.AnnotatedType[] AnnotatedLowerBounds { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedOwnerType()"/> 
+        /// </summary>
+        Java.Lang.Reflect.AnnotatedType AnnotatedOwnerType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html#getAnnotatedUpperBounds()"/> 
+        /// </summary>
+        Java.Lang.Reflect.AnnotatedType[] AnnotatedUpperBounds { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AnnotatedWildcardType
-    public partial class AnnotatedWildcardType
+    public partial class AnnotatedWildcardType : Java.Lang.Reflect.IAnnotatedWildcardType
     {
         #region Constructors
 

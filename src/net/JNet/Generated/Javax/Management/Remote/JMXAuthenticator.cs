@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
+    #region IJMXAuthenticator
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAuthenticator.html"/>
+    /// </summary>
+    public partial interface IJMXAuthenticator
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAuthenticator.html#authenticate(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
+        Javax.Security.Auth.Subject Authenticate(object arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region JMXAuthenticator
-    public partial class JMXAuthenticator
+    public partial class JMXAuthenticator : Javax.Management.Remote.IJMXAuthenticator
     {
         #region Constructors
 

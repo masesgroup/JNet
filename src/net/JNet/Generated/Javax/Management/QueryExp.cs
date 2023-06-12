@@ -25,8 +25,41 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
+    #region IQueryExp
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryExp.html"/>
+    /// </summary>
+    public partial interface IQueryExp : Java.Io.ISerializable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryExp.html#apply(javax.management.ObjectName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Management.BadStringOperationException"/>
+        /// <exception cref="Javax.Management.BadBinaryOpValueExpException"/>
+        /// <exception cref="Javax.Management.BadAttributeValueExpException"/>
+        /// <exception cref="Javax.Management.InvalidApplicationException"/>
+        bool Apply(Javax.Management.ObjectName arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/QueryExp.html#setMBeanServer(javax.management.MBeanServer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Management.MBeanServer"/></param>
+        void SetMBeanServer(Javax.Management.MBeanServer arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region QueryExp
-    public partial class QueryExp
+    public partial class QueryExp : Javax.Management.IQueryExp
     {
         #region Constructors
 

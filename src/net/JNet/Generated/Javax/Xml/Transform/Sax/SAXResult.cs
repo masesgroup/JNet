@@ -41,10 +41,6 @@ namespace Javax.Xml.Transform.Sax
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Transform.Sax.SAXResult"/> to <see cref="Javax.Xml.Transform.Result"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Transform.Result(Javax.Xml.Transform.Sax.SAXResult t) => t.Cast<Javax.Xml.Transform.Result>();
 
         #endregion
 

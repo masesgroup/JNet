@@ -25,8 +25,46 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Ls
 {
+    #region IDOMImplementationLS
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html"/>
+    /// </summary>
+    public partial interface IDOMImplementationLS
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSInput()"/> 
+        /// </summary>
+        Org.W3c.Dom.Ls.LSInput CreateLSInput { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSOutput()"/> 
+        /// </summary>
+        Org.W3c.Dom.Ls.LSOutput CreateLSOutput { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSSerializer()"/> 
+        /// </summary>
+        Org.W3c.Dom.Ls.LSSerializer CreateLSSerializer { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/DOMImplementationLS.html#createLSParser(short,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Ls.LSParser"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        Org.W3c.Dom.Ls.LSParser CreateLSParser(short arg0, string arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DOMImplementationLS
-    public partial class DOMImplementationLS
+    public partial class DOMImplementationLS : Org.W3c.Dom.Ls.IDOMImplementationLS
     {
         #region Constructors
 

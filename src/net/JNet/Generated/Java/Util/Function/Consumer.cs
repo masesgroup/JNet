@@ -49,18 +49,18 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        public void Accept(object arg0)
+        public virtual void Accept(object arg0)
         {
-            IExecute("accept", arg0);
+            
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
-        public Java.Util.Function.Consumer AndThen(Java.Util.Function.Consumer arg0)
+        public virtual Java.Util.Function.Consumer AndThen(Java.Util.Function.Consumer arg0)
         {
-            return IExecute<Java.Util.Function.Consumer>("andThen", arg0);
+            return default;
         }
 
         #endregion
@@ -73,18 +73,44 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IConsumer<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html"/>
+    /// </summary>
+    public partial interface IConsumer<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        void Accept(T arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
+        Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Consumer<T>
-    public partial class Consumer<T>
+    public partial class Consumer<T> : Java.Util.Function.IConsumer<T>
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.Consumer{T}"/> to <see cref="Java.Util.Function.Consumer"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.Consumer(Java.Util.Function.Consumer<T> t) => t.Cast<Java.Util.Function.Consumer>();
 
         #endregion
 
@@ -101,9 +127,9 @@ namespace Java.Util.Function
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
-        public void Accept(T arg0)
+        public virtual void Accept(T arg0)
         {
-            IExecute("accept", arg0);
+            
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
@@ -111,9 +137,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
-        public Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public virtual Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
         {
-            return IExecute<Java.Util.Function.Consumer<T>>("andThen", arg0);
+            return default;
         }
 
         #endregion

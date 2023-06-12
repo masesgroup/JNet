@@ -33,10 +33,6 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.Ldap.StartTlsRequest"/> to <see cref="Javax.Naming.Ldap.ExtendedRequest"/>
-        /// </summary>
-        public static implicit operator Javax.Naming.Ldap.ExtendedRequest(Javax.Naming.Ldap.StartTlsRequest t) => t.Cast<Javax.Naming.Ldap.ExtendedRequest>();
 
         #endregion
 

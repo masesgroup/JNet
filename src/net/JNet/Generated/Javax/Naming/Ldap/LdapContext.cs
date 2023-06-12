@@ -25,8 +25,58 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Naming.Ldap
 {
+    #region ILdapContext
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html"/>
+    /// </summary>
+    public partial interface ILdapContext : Javax.Naming.Directory.IDirContext
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html#getConnectControls()"/> 
+        /// </summary>
+        Javax.Naming.Ldap.Control[] ConnectControls { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html#getRequestControls()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html#setRequestControls(javax.naming.ldap.Control[])"/>
+        /// </summary>
+        Javax.Naming.Ldap.Control[] RequestControls { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html#getResponseControls()"/> 
+        /// </summary>
+        Javax.Naming.Ldap.Control[] ResponseControls { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html#extendedOperation(javax.naming.ldap.ExtendedRequest)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Ldap.ExtendedRequest"/></param>
+        /// <returns><see cref="Javax.Naming.Ldap.ExtendedResponse"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        Javax.Naming.Ldap.ExtendedResponse ExtendedOperation(Javax.Naming.Ldap.ExtendedRequest arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html#newInstance(javax.naming.ldap.Control[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Ldap.Control"/></param>
+        /// <returns><see cref="Javax.Naming.Ldap.LdapContext"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        Javax.Naming.Ldap.LdapContext NewInstance(Javax.Naming.Ldap.Control[] arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html#reconnect(javax.naming.ldap.Control[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Ldap.Control"/></param>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        void Reconnect(Javax.Naming.Ldap.Control[] arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region LdapContext
-    public partial class LdapContext
+    public partial class LdapContext : Javax.Naming.Ldap.ILdapContext
     {
         #region Constructors
 

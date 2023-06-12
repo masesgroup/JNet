@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
+    #region ISocketImplFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImplFactory.html"/>
+    /// </summary>
+    public partial interface ISocketImplFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketImplFactory.html#createSocketImpl()"/> 
+        /// </summary>
+        Java.Net.SocketImpl CreateSocketImpl { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SocketImplFactory
-    public partial class SocketImplFactory
+    public partial class SocketImplFactory : Java.Net.ISocketImplFactory
     {
         #region Constructors
 

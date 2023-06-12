@@ -64,8 +64,26 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
+    #region IScheduledFuture<V>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledFuture.html"/>
+    /// </summary>
+    public partial interface IScheduledFuture<V>
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ScheduledFuture<V>
-    public partial class ScheduledFuture<V>
+    public partial class ScheduledFuture<V> : Java.Util.Concurrent.IScheduledFuture<V>
     {
         #region Constructors
 

@@ -25,8 +25,46 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
+    #region IPackageElement
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html"/>
+    /// </summary>
+    public partial interface IPackageElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#getEnclosedElements()"/> 
+        /// </summary>
+        Java.Util.List EnclosedElements { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#getEnclosingElement()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Element EnclosingElement { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#isUnnamed()"/> 
+        /// </summary>
+        bool IsUnnamed { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#getQualifiedName()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Name QualifiedName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/PackageElement.html#getSimpleName()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Name SimpleName { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PackageElement
-    public partial class PackageElement
+    public partial class PackageElement : Javax.Lang.Model.Element.IPackageElement
     {
         #region Constructors
 

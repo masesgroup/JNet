@@ -461,6 +461,11 @@ namespace Javax.Swing.Plaf.Basic
     /// </summary>
     public partial class BasicButtonListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public BasicButtonListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -898,7 +903,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ComboBoxLayoutManager.html"/>
         /// </summary>
-        public partial class ComboBoxLayoutManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ComboBoxLayoutManager>
+        public partial class ComboBoxLayoutManager : Java.Awt.LayoutManager
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1289,7 +1294,7 @@ namespace Javax.Swing.Plaf.Basic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html"/>
     /// </summary>
-    public partial class BasicDirectoryModel : Javax.Swing.AbstractListModel
+    public partial class BasicDirectoryModel : Javax.Swing.AbstractListModel<object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1547,7 +1552,7 @@ namespace Javax.Swing.Plaf.Basic
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicIconFactory.html"/>
     /// </summary>
-    public partial class BasicIconFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicIconFactory>
+    public partial class BasicIconFactory : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1973,7 +1978,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.TitlePaneLayout.html"/>
         /// </summary>
-        public partial class TitlePaneLayout : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TitlePaneLayout>
+        public partial class TitlePaneLayout : Java.Awt.LayoutManager
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2059,7 +2064,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFrameLayout.html"/>
         /// </summary>
-        public partial class InternalFrameLayout : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InternalFrameLayout>
+        public partial class InternalFrameLayout : Java.Awt.LayoutManager
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2104,6 +2109,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class InternalFramePropertyChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public InternalFramePropertyChangeListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -2676,6 +2686,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class ButtonActionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ButtonActionListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -2687,7 +2702,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html"/>
         /// </summary>
-        public partial class ButtonAreaLayout : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ButtonAreaLayout>
+        public partial class ButtonAreaLayout : Java.Awt.LayoutManager
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3291,6 +3306,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class HSBChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public HSBChangeListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -3390,6 +3410,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class VSBChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public VSBChangeListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -3661,6 +3686,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class ScrollListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ScrollListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -3674,6 +3704,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class TrackListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public TrackListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -3814,7 +3849,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicHorizontalLayoutManager.html"/>
         /// </summary>
-        public partial class BasicHorizontalLayoutManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicHorizontalLayoutManager>
+        public partial class BasicHorizontalLayoutManager : Java.Awt.LayoutManager2
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4244,7 +4279,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabbedPaneLayout.html"/>
         /// </summary>
-        public partial class TabbedPaneLayout : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TabbedPaneLayout>
+        public partial class TabbedPaneLayout : Java.Awt.LayoutManager
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4977,6 +5012,11 @@ namespace Javax.Swing.Plaf.Basic
         /// </summary>
         public partial class DockingListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public DockingListener() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class

@@ -250,10 +250,6 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.Html.StyleSheet.BoxPainter"/> to <see cref="Java.Io.Serializable"/>
-            /// </summary>
-            public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.StyleSheet.BoxPainter t) => t.Cast<Java.Io.Serializable>();
 
             #endregion
 
@@ -308,10 +304,6 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.Text.Html.StyleSheet.ListPainter"/> to <see cref="Java.Io.Serializable"/>
-            /// </summary>
-            public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.StyleSheet.ListPainter t) => t.Cast<Java.Io.Serializable>();
 
             #endregion
 

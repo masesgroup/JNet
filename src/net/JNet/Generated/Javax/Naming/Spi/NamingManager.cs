@@ -59,10 +59,9 @@ namespace Javax.Naming.Spi
         /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
-        public static object GetObjectInstance<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3)
+        public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3)
         {
             return SExecute(LocalBridgeClazz, "getObjectInstance", arg0, arg1, arg2, arg3);
         }
@@ -73,10 +72,9 @@ namespace Javax.Naming.Spi
         /// <param name="arg1"><see cref="Javax.Naming.Name"/></param>
         /// <param name="arg2"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static object GetStateToBind<Arg3Extendsobject>(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<Arg3Extendsobject, Arg3Extendsobject> arg3)
+        public static object GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3)
         {
             return SExecute(LocalBridgeClazz, "getStateToBind", arg0, arg1, arg2, arg3);
         }
@@ -86,7 +84,7 @@ namespace Javax.Naming.Spi
         /// <param name="arg0"><see cref="Javax.Naming.CannotProceedException"/></param>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Context GetContinuationContext(Javax.Naming.CannotProceedException arg0)
+        public static Javax.Naming.Context GetContinuationContext(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
         {
             return SExecute<Javax.Naming.Context>(LocalBridgeClazz, "getContinuationContext", arg0);
         }
@@ -94,10 +92,9 @@ namespace Javax.Naming.Spi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html#getInitialContext(java.util.Hashtable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Hashtable"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Context GetInitialContext<Arg0Extendsobject>(Java.Util.Hashtable<Arg0Extendsobject, Arg0Extendsobject> arg0)
+        public static Javax.Naming.Context GetInitialContext(Java.Util.Hashtable<object, object> arg0)
         {
             return SExecute<Javax.Naming.Context>(LocalBridgeClazz, "getInitialContext", arg0);
         }
@@ -106,10 +103,9 @@ namespace Javax.Naming.Spi
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Naming.Context"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Context GetURLContext<Arg1Extendsobject>(string arg0, Java.Util.Hashtable<Arg1Extendsobject, Arg1Extendsobject> arg1)
+        public static Javax.Naming.Context GetURLContext(string arg0, Java.Util.Hashtable<object, object> arg1)
         {
             return SExecute<Javax.Naming.Context>(LocalBridgeClazz, "getURLContext", arg0, arg1);
         }

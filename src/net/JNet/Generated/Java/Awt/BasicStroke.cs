@@ -75,10 +75,6 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.BasicStroke"/> to <see cref="Java.Awt.Stroke"/>
-        /// </summary>
-        public static implicit operator Java.Awt.Stroke(Java.Awt.BasicStroke t) => t.Cast<Java.Awt.Stroke>();
 
         #endregion
 

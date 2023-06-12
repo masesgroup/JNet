@@ -25,8 +25,48 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSMediaRule
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html"/>
+    /// </summary>
+    public partial interface ICSSMediaRule : Org.W3c.Dom.Css.ICSSRule
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#getCssRules()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSRuleList CssRules { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#getMedia()"/> 
+        /// </summary>
+        Org.W3c.Dom.Stylesheets.MediaList Media { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#insertRule(java.lang.String,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        int InsertRule(string arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSMediaRule.html#deleteRule(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void DeleteRule(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSMediaRule
-    public partial class CSSMediaRule
+    public partial class CSSMediaRule : Org.W3c.Dom.Css.ICSSMediaRule
     {
         #region Constructors
 

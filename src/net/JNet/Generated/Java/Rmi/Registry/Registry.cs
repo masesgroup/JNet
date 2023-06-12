@@ -25,8 +25,64 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Rmi.Registry
 {
+    #region IRegistry
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html"/>
+    /// </summary>
+    public partial interface IRegistry : Java.Rmi.IRemote
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#list()"/> 
+        /// </summary>
+        string[] List { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#lookup(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Rmi.Remote"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.NotBoundException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
+        Java.Rmi.Remote Lookup(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#bind(java.lang.String,java.rmi.Remote)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.AlreadyBoundException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
+        void Bind(string arg0, Java.Rmi.Remote arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#rebind(java.lang.String,java.rmi.Remote)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Java.Rmi.Remote"/></param>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
+        void Rebind(string arg0, Java.Rmi.Remote arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#unbind(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.NotBoundException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
+        void Unbind(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Registry
-    public partial class Registry
+    public partial class Registry : Java.Rmi.Registry.IRegistry
     {
         #region Constructors
 

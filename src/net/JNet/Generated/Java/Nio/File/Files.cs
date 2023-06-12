@@ -47,10 +47,10 @@ namespace Java.Nio.File
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
-        /// <typeparam name="A"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></typeparam>
+        /// <typeparam name="A"><see cref="Java.Nio.File.Attribute.IBasicFileAttributes"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A: Java.Nio.File.Attribute.BasicFileAttributes
+        public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A: Java.Nio.File.Attribute.IBasicFileAttributes, new()
         {
             if (arg2.Length == 0) return SExecute<A>(LocalBridgeClazz, "readAttributes", arg0, arg1); else return SExecute<A>(LocalBridgeClazz, "readAttributes", arg0, arg1, arg2);
         }
@@ -60,9 +60,9 @@ namespace Java.Nio.File
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
-        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.FileAttributeView"/></typeparam>
+        /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.FileAttributeView
+        public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.IFileAttributeView, new()
         {
             if (arg2.Length == 0) return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", arg0, arg1); else return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", arg0, arg1, arg2);
         }
@@ -310,10 +310,9 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
         /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
-        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption, Arg2Extendsobject>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<Arg2Extendsobject>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
+        public static Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0, arg1); else return SExecute<Java.Nio.Channels.SeekableByteChannel>(LocalBridgeClazz, "newByteChannel", arg0, arg1, arg2);
         }
@@ -399,10 +398,9 @@ namespace Java.Nio.File
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path CreateDirectories<Arg1Extendsobject>(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute<Arg1Extendsobject>[] arg1)
+        public static Java.Nio.File.Path CreateDirectories(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute<object>[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectories", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectories", arg0, arg1);
         }
@@ -411,10 +409,9 @@ namespace Java.Nio.File
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path CreateDirectory<Arg1Extendsobject>(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute<Arg1Extendsobject>[] arg1)
+        public static Java.Nio.File.Path CreateDirectory(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute<object>[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectory", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createDirectory", arg0, arg1);
         }
@@ -423,10 +420,9 @@ namespace Java.Nio.File
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path CreateFile<Arg1Extendsobject>(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute<Arg1Extendsobject>[] arg1)
+        public static Java.Nio.File.Path CreateFile(Java.Nio.File.Path arg0, params Java.Nio.File.Attribute.FileAttribute<object>[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createFile", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createFile", arg0, arg1);
         }
@@ -447,10 +443,9 @@ namespace Java.Nio.File
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
-        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path CreateSymbolicLink<Arg2Extendsobject>(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1, params Java.Nio.File.Attribute.FileAttribute<Arg2Extendsobject>[] arg2)
+        public static Java.Nio.File.Path CreateSymbolicLink(Java.Nio.File.Path arg0, Java.Nio.File.Path arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createSymbolicLink", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createSymbolicLink", arg0, arg1, arg2);
         }
@@ -459,10 +454,9 @@ namespace Java.Nio.File
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path CreateTempDirectory<Arg1Extendsobject>(string arg0, params Java.Nio.File.Attribute.FileAttribute<Arg1Extendsobject>[] arg1)
+        public static Java.Nio.File.Path CreateTempDirectory(string arg0, params Java.Nio.File.Attribute.FileAttribute<object>[] arg1)
         {
             if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0, arg1);
         }
@@ -472,10 +466,9 @@ namespace Java.Nio.File
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
-        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path CreateTempDirectory<Arg2Extendsobject>(Java.Nio.File.Path arg0, string arg1, params Java.Nio.File.Attribute.FileAttribute<Arg2Extendsobject>[] arg2)
+        public static Java.Nio.File.Path CreateTempDirectory(Java.Nio.File.Path arg0, string arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempDirectory", arg0, arg1, arg2);
         }
@@ -485,10 +478,9 @@ namespace Java.Nio.File
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
-        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path CreateTempFile<Arg2Extendsobject>(string arg0, string arg1, params Java.Nio.File.Attribute.FileAttribute<Arg2Extendsobject>[] arg2)
+        public static Java.Nio.File.Path CreateTempFile(string arg0, string arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2)
         {
             if (arg2.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2);
         }
@@ -499,10 +491,9 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="string"/></param>
         /// <param name="arg2"><see cref="string"/></param>
         /// <param name="arg3"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
-        /// <typeparam name="Arg3Extendsobject"></typeparam>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.File.Path CreateTempFile<Arg3Extendsobject>(Java.Nio.File.Path arg0, string arg1, string arg2, params Java.Nio.File.Attribute.FileAttribute<Arg3Extendsobject>[] arg3)
+        public static Java.Nio.File.Path CreateTempFile(Java.Nio.File.Path arg0, string arg1, string arg2, params Java.Nio.File.Attribute.FileAttribute<object>[] arg3)
         {
             if (arg3.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2, arg3);
         }

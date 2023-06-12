@@ -36,7 +36,7 @@ namespace Javax.Management.Loading
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <param name="arg2"><see cref="Java.Util.List"/></param>
         /// <param name="arg3"><see cref="Java.Util.List"/></param>
-        public MLetContent(Java.Net.URL arg0, Java.Util.Map arg1, Java.Util.List arg2, Java.Util.List arg3)
+        public MLetContent(Java.Net.URL arg0, Java.Util.Map<string, string> arg1, Java.Util.List<string> arg2, Java.Util.List<string> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }

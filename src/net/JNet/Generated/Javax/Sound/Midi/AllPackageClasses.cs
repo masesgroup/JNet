@@ -29,8 +29,13 @@ namespace Javax.Sound.Midi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html"/>
     /// </summary>
-    public partial class ControllerEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ControllerEventListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ControllerEventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -101,8 +106,13 @@ namespace Javax.Sound.Midi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html"/>
     /// </summary>
-    public partial class MetaEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class MetaEventListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MetaEventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -458,7 +468,7 @@ namespace Javax.Sound.Midi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiMessage.html"/>
     /// </summary>
-    public partial class MidiMessage : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiMessage>
+    public partial class MidiMessage : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

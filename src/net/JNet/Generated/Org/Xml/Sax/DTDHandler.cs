@@ -25,8 +25,43 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.Xml.Sax
 {
+    #region IDTDHandler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/DTDHandler.html"/>
+    /// </summary>
+    public partial interface IDTDHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/DTDHandler.html#notationDecl(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void NotationDecl(string arg0, string arg1, string arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/DTDHandler.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="string"/></param>
+        /// <param name="arg3"><see cref="string"/></param>
+        /// <exception cref="Org.Xml.Sax.SAXException"/>
+        void UnparsedEntityDecl(string arg0, string arg1, string arg2, string arg3);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DTDHandler
-    public partial class DTDHandler
+    public partial class DTDHandler : Org.Xml.Sax.IDTDHandler
     {
         #region Constructors
 

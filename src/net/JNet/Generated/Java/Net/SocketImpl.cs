@@ -33,10 +33,6 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Net.SocketImpl"/> to <see cref="Java.Net.SocketOptions"/>
-        /// </summary>
-        public static implicit operator Java.Net.SocketOptions(Java.Net.SocketImpl t) => t.Cast<Java.Net.SocketOptions>();
 
         #endregion
 

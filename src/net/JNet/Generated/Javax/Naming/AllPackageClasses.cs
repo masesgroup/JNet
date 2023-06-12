@@ -179,7 +179,7 @@ namespace Javax.Naming
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html"/>
     /// </summary>
-    public partial class CompositeName : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompositeName>
+    public partial class CompositeName : Javax.Naming.Name
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -222,7 +222,7 @@ namespace Javax.Naming
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompoundName.html"/>
     /// </summary>
-    public partial class CompoundName : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompoundName>
+    public partial class CompoundName : Javax.Naming.Name
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -340,7 +340,7 @@ namespace Javax.Naming
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html"/>
     /// </summary>
-    public partial class InitialContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InitialContext>
+    public partial class InitialContext : Javax.Naming.Context
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -597,7 +597,7 @@ namespace Javax.Naming
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameClassPair.html"/>
     /// </summary>
-    public partial class NameClassPair : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NameClassPair>
+    public partial class NameClassPair : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -898,7 +898,7 @@ namespace Javax.Naming
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/RefAddr.html"/>
     /// </summary>
-    public partial class RefAddr : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RefAddr>
+    public partial class RefAddr : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

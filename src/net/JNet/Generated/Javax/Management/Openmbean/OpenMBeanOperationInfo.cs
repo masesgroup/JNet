@@ -25,8 +25,50 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Openmbean
 {
+    #region IOpenMBeanOperationInfo
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html"/>
+    /// </summary>
+    public partial interface IOpenMBeanOperationInfo
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getDescription()"/> 
+        /// </summary>
+        string Description { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getImpact()"/> 
+        /// </summary>
+        int Impact { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnOpenType()"/> 
+        /// </summary>
+        Javax.Management.Openmbean.OpenType<object> ReturnOpenType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnType()"/> 
+        /// </summary>
+        string ReturnType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getSignature()"/> 
+        /// </summary>
+        Javax.Management.MBeanParameterInfo[] Signature { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region OpenMBeanOperationInfo
-    public partial class OpenMBeanOperationInfo
+    public partial class OpenMBeanOperationInfo : Javax.Management.Openmbean.IOpenMBeanOperationInfo
     {
         #region Constructors
 
@@ -69,9 +111,9 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnOpenType()"/> 
         /// </summary>
-        public Javax.Management.Openmbean.OpenType ReturnOpenType
+        public Javax.Management.Openmbean.OpenType<object> ReturnOpenType
         {
-            get { return IExecute<Javax.Management.Openmbean.OpenType>("getReturnOpenType"); }
+            get { return IExecute<Javax.Management.Openmbean.OpenType<object>>("getReturnOpenType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanOperationInfo.html#getReturnType()"/> 

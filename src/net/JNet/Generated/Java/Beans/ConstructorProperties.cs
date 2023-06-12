@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Beans
 {
+    #region IConstructorProperties
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ConstructorProperties.html"/>
+    /// </summary>
+    public partial interface IConstructorProperties : Java.Lang.Annotation.IAnnotation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ConstructorProperties.html#value()"/> 
+        /// </summary>
+        string[] Value { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ConstructorProperties
-    public partial class ConstructorProperties
+    public partial class ConstructorProperties : Java.Beans.IConstructorProperties
     {
         #region Constructors
 

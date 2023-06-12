@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IWildcardType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/WildcardType.html"/>
+    /// </summary>
+    public partial interface IWildcardType : Java.Lang.Reflect.IType
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/WildcardType.html#getLowerBounds()"/> 
+        /// </summary>
+        Java.Lang.Reflect.Type[] LowerBounds { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/WildcardType.html#getUpperBounds()"/> 
+        /// </summary>
+        Java.Lang.Reflect.Type[] UpperBounds { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region WildcardType
-    public partial class WildcardType
+    public partial class WildcardType : Java.Lang.Reflect.IWildcardType
     {
         #region Constructors
 

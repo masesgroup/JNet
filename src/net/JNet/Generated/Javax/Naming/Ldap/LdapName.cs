@@ -42,7 +42,7 @@ namespace Javax.Naming.Ldap
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public LdapName(Java.Util.List arg0)
+        public LdapName(Java.Util.List<Javax.Naming.Ldap.Rdn> arg0)
             : base(arg0)
         {
         }
@@ -50,10 +50,6 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.Ldap.LdapName"/> to <see cref="Javax.Naming.Name"/>
-        /// </summary>
-        public static implicit operator Javax.Naming.Name(Javax.Naming.Ldap.LdapName t) => t.Cast<Javax.Naming.Name>();
 
         #endregion
 

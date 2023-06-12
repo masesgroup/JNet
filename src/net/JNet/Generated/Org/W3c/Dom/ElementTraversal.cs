@@ -25,8 +25,46 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom
 {
+    #region IElementTraversal
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html"/>
+    /// </summary>
+    public partial interface IElementTraversal
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getChildElementCount()"/> 
+        /// </summary>
+        int ChildElementCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getFirstElementChild()"/> 
+        /// </summary>
+        Org.W3c.Dom.Element FirstElementChild { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getLastElementChild()"/> 
+        /// </summary>
+        Org.W3c.Dom.Element LastElementChild { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getNextElementSibling()"/> 
+        /// </summary>
+        Org.W3c.Dom.Element NextElementSibling { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html#getPreviousElementSibling()"/> 
+        /// </summary>
+        Org.W3c.Dom.Element PreviousElementSibling { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ElementTraversal
-    public partial class ElementTraversal
+    public partial class ElementTraversal : Org.W3c.Dom.IElementTraversal
     {
         #region Constructors
 

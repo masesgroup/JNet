@@ -36,7 +36,7 @@ namespace Javax.Security.Auth
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
         /// <param name="arg2"><see cref="Java.Util.Set"/></param>
         /// <param name="arg3"><see cref="Java.Util.Set"/></param>
-        public Subject(bool arg0, Java.Util.Set arg1, Java.Util.Set arg2, Java.Util.Set arg3)
+        public Subject(bool arg0, Java.Util.Set arg1, Java.Util.Set<object> arg2, Java.Util.Set<object> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -44,10 +44,6 @@ namespace Javax.Security.Auth
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Security.Auth.Subject"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Subject t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 
@@ -149,9 +145,9 @@ namespace Javax.Security.Auth
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getPrincipals(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Security.Principal"/></typeparam>
+        /// <typeparam name="T"><see cref="Java.Security.IPrincipal"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<T> GetPrincipals<T>(Java.Lang.Class arg0) where T: Java.Security.Principal
+        public Java.Util.Set<T> GetPrincipals<T>(Java.Lang.Class arg0) where T: Java.Security.IPrincipal, new()
         {
             return IExecute<Java.Util.Set<T>>("getPrincipals", arg0);
         }

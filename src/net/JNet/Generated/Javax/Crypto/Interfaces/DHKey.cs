@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Crypto.Interfaces
 {
+    #region IDHKey
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHKey.html"/>
+    /// </summary>
+    public partial interface IDHKey
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/interfaces/DHKey.html#getParams()"/> 
+        /// </summary>
+        Javax.Crypto.Spec.DHParameterSpec Params { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DHKey
-    public partial class DHKey
+    public partial class DHKey : Javax.Crypto.Interfaces.IDHKey
     {
         #region Constructors
 

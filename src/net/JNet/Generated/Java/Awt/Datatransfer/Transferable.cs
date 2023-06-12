@@ -25,8 +25,44 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Datatransfer
 {
+    #region ITransferable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html"/>
+    /// </summary>
+    public partial interface ITransferable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html#getTransferDataFlavors()"/> 
+        /// </summary>
+        Java.Awt.Datatransfer.DataFlavor[] TransferDataFlavors { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html#isDataFlavorSupported(java.awt.datatransfer.DataFlavor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsDataFlavorSupported(Java.Awt.Datatransfer.DataFlavor arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/Transferable.html#getTransferData(java.awt.datatransfer.DataFlavor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Awt.Datatransfer.UnsupportedFlavorException"/>
+        /// <exception cref="Java.Io.IOException"/>
+        object GetTransferData(Java.Awt.Datatransfer.DataFlavor arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Transferable
-    public partial class Transferable
+    public partial class Transferable : Java.Awt.Datatransfer.ITransferable
     {
         #region Constructors
 

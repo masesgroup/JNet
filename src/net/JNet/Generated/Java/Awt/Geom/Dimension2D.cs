@@ -33,10 +33,6 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.Geom.Dimension2D"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.Dimension2D t) => t.Cast<Java.Lang.Cloneable>();
 
         #endregion
 

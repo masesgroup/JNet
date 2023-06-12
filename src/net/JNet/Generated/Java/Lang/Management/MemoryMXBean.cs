@@ -25,8 +25,51 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
+    #region IMemoryMXBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html"/>
+    /// </summary>
+    public partial interface IMemoryMXBean : Java.Lang.Management.IPlatformManagedObject
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage()"/> 
+        /// </summary>
+        Java.Lang.Management.MemoryUsage HeapMemoryUsage { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#isVerbose()"/> 
+        /// </summary>
+        bool IsVerbose { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getNonHeapMemoryUsage()"/> 
+        /// </summary>
+        Java.Lang.Management.MemoryUsage NonHeapMemoryUsage { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#getObjectPendingFinalizationCount()"/> 
+        /// </summary>
+        int ObjectPendingFinalizationCount { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#gc()"/>
+        /// </summary>
+        void Gc();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/MemoryMXBean.html#setVerbose(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        void SetVerbose(bool arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MemoryMXBean
-    public partial class MemoryMXBean
+    public partial class MemoryMXBean : Java.Lang.Management.IMemoryMXBean
     {
         #region Constructors
 

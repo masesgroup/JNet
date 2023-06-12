@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region ITypeMirror
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html"/>
+    /// </summary>
+    public partial interface ITypeMirror : Javax.Lang.Model.IAnnotatedConstruct
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#getKind()"/> 
+        /// </summary>
+        Javax.Lang.Model.Type.TypeKind Kind { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html#accept(javax.lang.model.type.TypeVisitor,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Type.TypeVisitor"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="P"></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
+        R Accept<R, P>(Javax.Lang.Model.Type.TypeVisitor<R, P> arg0, P arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TypeMirror
-    public partial class TypeMirror
+    public partial class TypeMirror : Javax.Lang.Model.Type.ITypeMirror
     {
         #region Constructors
 

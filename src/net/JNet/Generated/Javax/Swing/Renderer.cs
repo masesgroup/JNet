@@ -25,8 +25,36 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region IRenderer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Renderer.html"/>
+    /// </summary>
+    public partial interface IRenderer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Renderer.html#getComponent()"/> 
+        /// </summary>
+        Java.Awt.Component Component { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Renderer.html#setValue(java.lang.Object,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="bool"/></param>
+        void SetValue(object arg0, bool arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Renderer
-    public partial class Renderer
+    public partial class Renderer : Javax.Swing.IRenderer
     {
         #region Constructors
 

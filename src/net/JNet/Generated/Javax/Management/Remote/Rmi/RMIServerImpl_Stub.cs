@@ -41,10 +41,6 @@ namespace Javax.Management.Remote.Rmi
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Remote.Rmi.RMIServerImpl_Stub"/> to <see cref="Javax.Management.Remote.Rmi.RMIServer"/>
-        /// </summary>
-        public static implicit operator Javax.Management.Remote.Rmi.RMIServer(Javax.Management.Remote.Rmi.RMIServerImpl_Stub t) => t.Cast<Javax.Management.Remote.Rmi.RMIServer>();
 
         #endregion
 

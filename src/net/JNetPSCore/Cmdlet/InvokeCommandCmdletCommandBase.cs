@@ -17,6 +17,7 @@
 */
 
 using MASES.JNet;
+using MASES.JNet.Specific;
 using System;
 using System.Management.Automation;
 

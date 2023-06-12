@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
+    #region IQualifiedNameable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/QualifiedNameable.html"/>
+    /// </summary>
+    public partial interface IQualifiedNameable : Javax.Lang.Model.Element.IElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/QualifiedNameable.html#getQualifiedName()"/> 
+        /// </summary>
+        Javax.Lang.Model.Element.Name QualifiedName { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region QualifiedNameable
-    public partial class QualifiedNameable
+    public partial class QualifiedNameable : Javax.Lang.Model.Element.IQualifiedNameable
     {
         #region Constructors
 

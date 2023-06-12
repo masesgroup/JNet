@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Datatransfer
 {
+    #region IClipboardOwner
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/ClipboardOwner.html"/>
+    /// </summary>
+    public partial interface IClipboardOwner
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/ClipboardOwner.html#lostOwnership(java.awt.datatransfer.Clipboard,java.awt.datatransfer.Transferable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.Clipboard"/></param>
+        /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
+        void LostOwnership(Java.Awt.Datatransfer.Clipboard arg0, Java.Awt.Datatransfer.Transferable arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ClipboardOwner
-    public partial class ClipboardOwner
+    public partial class ClipboardOwner : Java.Awt.Datatransfer.IClipboardOwner
     {
         #region Constructors
 

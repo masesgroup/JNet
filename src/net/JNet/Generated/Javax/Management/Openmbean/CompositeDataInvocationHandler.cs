@@ -41,10 +41,6 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Openmbean.CompositeDataInvocationHandler"/> to <see cref="Java.Lang.Reflect.InvocationHandler"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Reflect.InvocationHandler(Javax.Management.Openmbean.CompositeDataInvocationHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
 
         #endregion
 

@@ -25,8 +25,39 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Element
 {
+    #region IAnnotationValue
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValue.html"/>
+    /// </summary>
+    public partial interface IAnnotationValue
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValue.html#getValue()"/> 
+        /// </summary>
+        object Value { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValue.html#accept(javax.lang.model.element.AnnotationValueVisitor,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Lang.Model.Element.AnnotationValueVisitor"/></param>
+        /// <param name="arg1"><typeparamref name="P"/></param>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="P"></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
+        R Accept<R, P>(Javax.Lang.Model.Element.AnnotationValueVisitor<R, P> arg0, P arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AnnotationValue
-    public partial class AnnotationValue
+    public partial class AnnotationValue : Javax.Lang.Model.Element.IAnnotationValue
     {
         #region Constructors
 

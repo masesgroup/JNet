@@ -58,10 +58,6 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.NotificationBroadcasterSupport"/> to <see cref="Javax.Management.NotificationEmitter"/>
-        /// </summary>
-        public static implicit operator Javax.Management.NotificationEmitter(Javax.Management.NotificationBroadcasterSupport t) => t.Cast<Javax.Management.NotificationEmitter>();
 
         #endregion
 

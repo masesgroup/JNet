@@ -25,8 +25,42 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Management
 {
+    #region IBufferPoolMXBean
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html"/>
+    /// </summary>
+    public partial interface IBufferPoolMXBean : Java.Lang.Management.IPlatformManagedObject
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html#getCount()"/> 
+        /// </summary>
+        long Count { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html#getMemoryUsed()"/> 
+        /// </summary>
+        long MemoryUsed { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html#getName()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html#getTotalCapacity()"/> 
+        /// </summary>
+        long TotalCapacity { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region BufferPoolMXBean
-    public partial class BufferPoolMXBean
+    public partial class BufferPoolMXBean : Java.Lang.Management.IBufferPoolMXBean
     {
         #region Constructors
 

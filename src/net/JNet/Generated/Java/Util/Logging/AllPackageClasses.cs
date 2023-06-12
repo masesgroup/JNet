@@ -287,7 +287,7 @@ namespace Java.Util.Logging
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html"/>
     /// </summary>
-    public partial class Level : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Level>
+    public partial class Level : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -459,7 +459,7 @@ namespace Java.Util.Logging
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html"/>
     /// </summary>
-    public partial class LogRecord : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LogRecord>
+    public partial class LogRecord : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

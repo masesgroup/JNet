@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Html
 {
+    #region IHTMLDOMImplementation
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDOMImplementation.html"/>
+    /// </summary>
+    public partial interface IHTMLDOMImplementation : Org.W3c.Dom.IDOMImplementation
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDOMImplementation.html#createHTMLDocument(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Org.W3c.Dom.Html.HTMLDocument"/></returns>
+        Org.W3c.Dom.Html.HTMLDocument CreateHTMLDocument(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region HTMLDOMImplementation
-    public partial class HTMLDOMImplementation
+    public partial class HTMLDOMImplementation : Org.W3c.Dom.Html.IHTMLDOMImplementation
     {
         #region Constructors
 

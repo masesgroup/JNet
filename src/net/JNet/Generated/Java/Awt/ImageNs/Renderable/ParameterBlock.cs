@@ -34,7 +34,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
         /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
-        public ParameterBlock(Java.Util.Vector arg0, Java.Util.Vector arg1)
+        public ParameterBlock(Java.Util.Vector<object> arg0, Java.Util.Vector<object> arg1)
             : base(arg0, arg1)
         {
         }
@@ -42,7 +42,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#%3Cinit%3E(java.util.Vector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Vector"/></param>
-        public ParameterBlock(Java.Util.Vector arg0)
+        public ParameterBlock(Java.Util.Vector<object> arg0)
             : base(arg0)
         {
         }

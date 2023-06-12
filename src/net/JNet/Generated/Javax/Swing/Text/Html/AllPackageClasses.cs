@@ -72,7 +72,7 @@ namespace Javax.Swing.Text.Html
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.html"/>
     /// </summary>
-    public partial class CSS : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CSS>
+    public partial class CSS : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -197,7 +197,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/FormSubmitEvent.MethodType.html"/>
         /// </summary>
-        public partial class MethodType : Java.Lang.Enum
+        public partial class MethodType : Java.Lang.Enum<Javax.Swing.Text.Html.FormSubmitEvent.MethodType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1100,7 +1100,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLFactory.html"/>
         /// </summary>
-        public partial class HTMLFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HTMLFactory>
+        public partial class HTMLFactory : Javax.Swing.Text.ViewFactory
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1620,7 +1620,7 @@ namespace Javax.Swing.Text.Html
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/Option.html"/>
     /// </summary>
-    public partial class Option : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Option>
+    public partial class Option : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1745,7 +1745,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html"/>
         /// </summary>
-        public partial class BoxPainter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BoxPainter>
+        public partial class BoxPainter : Java.Io.Serializable
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1788,7 +1788,7 @@ namespace Javax.Swing.Text.Html
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html"/>
         /// </summary>
-        public partial class ListPainter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ListPainter>
+        public partial class ListPainter : Java.Io.Serializable
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

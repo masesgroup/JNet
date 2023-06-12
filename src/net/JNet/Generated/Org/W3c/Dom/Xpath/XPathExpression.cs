@@ -25,8 +25,36 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Xpath
 {
+    #region IXPathExpression
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathExpression.html"/>
+    /// </summary>
+    public partial interface IXPathExpression
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathExpression.html#evaluate(org.w3c.dom.Node,short,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
+        /// <param name="arg1"><see cref="short"/></param>
+        /// <param name="arg2"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Org.W3c.Dom.Xpath.XPathException"/>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        object Evaluate(Org.W3c.Dom.Node arg0, short arg1, object arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XPathExpression
-    public partial class XPathExpression
+    public partial class XPathExpression : Org.W3c.Dom.Xpath.IXPathExpression
     {
         #region Constructors
 

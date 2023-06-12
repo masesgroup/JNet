@@ -51,9 +51,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="double"/></returns>
-        public double ApplyAsDouble(object arg0, object arg1)
+        public virtual double ApplyAsDouble(object arg0, object arg1)
         {
-            return IExecute<double>("applyAsDouble", arg0, arg1);
+            return default;
         }
 
         #endregion
@@ -66,18 +66,39 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IToDoubleBiFunction<T, U>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html"/>
+    /// </summary>
+    public partial interface IToDoubleBiFunction<T, U>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html#applyAsDouble(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="U"/></param>
+        /// <returns><see cref="double"/></returns>
+        double ApplyAsDouble(T arg0, U arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ToDoubleBiFunction<T, U>
-    public partial class ToDoubleBiFunction<T, U>
+    public partial class ToDoubleBiFunction<T, U> : Java.Util.Function.IToDoubleBiFunction<T, U>
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.ToDoubleBiFunction{T, U}"/> to <see cref="Java.Util.Function.ToDoubleBiFunction"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.ToDoubleBiFunction(Java.Util.Function.ToDoubleBiFunction<T, U> t) => t.Cast<Java.Util.Function.ToDoubleBiFunction>();
 
         #endregion
 
@@ -96,9 +117,9 @@ namespace Java.Util.Function
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
         /// <returns><see cref="double"/></returns>
-        public double ApplyAsDouble(T arg0, U arg1)
+        public virtual double ApplyAsDouble(T arg0, U arg1)
         {
-            return IExecute<double>("applyAsDouble", arg0, arg1);
+            return default;
         }
 
         #endregion

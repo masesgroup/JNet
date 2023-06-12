@@ -33,7 +33,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/XPathFilter2ParameterSpec.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        public XPathFilter2ParameterSpec(Java.Util.List arg0)
+        public XPathFilter2ParameterSpec(Java.Util.List<Javax.Xml.Crypto.Dsig.Spec.XPathType> arg0)
             : base(arg0)
         {
         }
@@ -41,10 +41,6 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Crypto.Dsig.Spec.XPathFilter2ParameterSpec"/> to <see cref="Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec(Javax.Xml.Crypto.Dsig.Spec.XPathFilter2ParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec>();
 
         #endregion
 

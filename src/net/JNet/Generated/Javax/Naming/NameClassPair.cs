@@ -52,10 +52,6 @@ namespace Javax.Naming
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.NameClassPair"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Naming.NameClassPair t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

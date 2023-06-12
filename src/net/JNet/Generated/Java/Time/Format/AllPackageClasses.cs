@@ -174,7 +174,7 @@ namespace Java.Time.Format
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/FormatStyle.html"/>
     /// </summary>
-    public partial class FormatStyle : Java.Lang.Enum
+    public partial class FormatStyle : Java.Lang.Enum<Java.Time.Format.FormatStyle>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -217,7 +217,7 @@ namespace Java.Time.Format
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/ResolverStyle.html"/>
     /// </summary>
-    public partial class ResolverStyle : Java.Lang.Enum
+    public partial class ResolverStyle : Java.Lang.Enum<Java.Time.Format.ResolverStyle>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -260,7 +260,7 @@ namespace Java.Time.Format
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html"/>
     /// </summary>
-    public partial class SignStyle : Java.Lang.Enum
+    public partial class SignStyle : Java.Lang.Enum<Java.Time.Format.SignStyle>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -303,7 +303,7 @@ namespace Java.Time.Format
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html"/>
     /// </summary>
-    public partial class TextStyle : Java.Lang.Enum
+    public partial class TextStyle : Java.Lang.Enum<Java.Time.Format.TextStyle>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

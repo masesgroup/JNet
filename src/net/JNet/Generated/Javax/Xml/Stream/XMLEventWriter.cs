@@ -25,8 +25,74 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Stream
 {
+    #region IXMLEventWriter
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html"/>
+    /// </summary>
+    public partial interface IXMLEventWriter : Javax.Xml.Stream.Util.IXMLEventConsumer
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#getNamespaceContext()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#setNamespaceContext(javax.xml.namespace.NamespaceContext)"/>
+        /// </summary>
+        Javax.Xml.Namespace.NamespaceContext NamespaceContext { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#getPrefix(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        string GetPrefix(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#add(javax.xml.stream.events.XMLEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.Events.XMLEvent"/></param>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        void Add(Javax.Xml.Stream.Events.XMLEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#add(javax.xml.stream.XMLEventReader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLEventReader"/></param>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        void Add(Javax.Xml.Stream.XMLEventReader arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#close()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        void Close();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#flush()"/>
+        /// </summary>
+
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        void Flush();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#setDefaultNamespace(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        void SetDefaultNamespace(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventWriter.html#setPrefix(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
+        void SetPrefix(string arg0, string arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region XMLEventWriter
-    public partial class XMLEventWriter
+    public partial class XMLEventWriter : Javax.Xml.Stream.IXMLEventWriter
     {
         #region Constructors
 

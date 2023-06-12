@@ -41,13 +41,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#identity()"/> 
-        /// </summary>
-        public static Java.Util.Function.Function Identity
-        {
-            get { return SExecute<Java.Util.Function.Function>(LocalBridgeClazz, "identity"); }
-        }
 
         #endregion
 
@@ -57,27 +50,27 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
-        public object Apply(object arg0)
+        public virtual object Apply(object arg0)
         {
-            return IExecute("apply", arg0);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public Java.Util.Function.Function AndThen(Java.Util.Function.Function arg0)
+        public virtual Java.Util.Function.Function AndThen(Java.Util.Function.Function arg0)
         {
-            return IExecute<Java.Util.Function.Function>("andThen", arg0);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public Java.Util.Function.Function Compose(Java.Util.Function.Function arg0)
+        public virtual Java.Util.Function.Function Compose(Java.Util.Function.Function arg0)
         {
-            return IExecute<Java.Util.Function.Function>("compose", arg0);
+            return default;
         }
 
         #endregion
@@ -90,18 +83,56 @@ namespace Java.Util.Function
     }
     #endregion
 
+    #region IFunction<T, R>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html"/>
+    /// </summary>
+    public partial interface IFunction<T, R>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <returns><typeparamref name="R"/></returns>
+        R Apply(T arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"></typeparam>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R;
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg0ExtendsT"></typeparam>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V;
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Function<T, R>
-    public partial class Function<T, R>
+    public partial class Function<T, R> : Java.Util.Function.IFunction<T, R>
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Function.Function{T, R}"/> to <see cref="Java.Util.Function.Function"/>
-        /// </summary>
-        public static implicit operator Java.Util.Function.Function(Java.Util.Function.Function<T, R> t) => t.Cast<Java.Util.Function.Function>();
 
         #endregion
 
@@ -110,13 +141,6 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#identity()"/> 
-        /// </summary>
-        public static Java.Util.Function.Function<T, T> Identity
-        {
-            get { return SExecute<Java.Util.Function.Function<T, T>>(LocalBridgeClazz, "identity"); }
-        }
 
         #endregion
 
@@ -126,9 +150,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><typeparamref name="R"/></returns>
-        public R Apply(T arg0)
+        public virtual R Apply(T arg0)
         {
-            return IExecute<R>("apply", arg0);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
@@ -138,9 +162,9 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"></typeparam>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R
+        public virtual Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R
         {
-            return IExecute<Java.Util.Function.Function<T, V>>("andThen", arg0);
+            return default;
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
@@ -150,9 +174,9 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg0ExtendsT"></typeparam>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V
+        public virtual Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V
         {
-            return IExecute<Java.Util.Function.Function<V, R>>("compose", arg0);
+            return default;
         }
 
         #endregion

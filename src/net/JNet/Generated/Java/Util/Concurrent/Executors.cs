@@ -85,9 +85,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedAction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
-        public static Java.Util.Concurrent.Callable<object> Callable<Arg0Extendsobject>(Java.Security.PrivilegedAction<Arg0Extendsobject> arg0)
+        public static Java.Util.Concurrent.Callable<object> Callable(Java.Security.PrivilegedAction<object> arg0)
         {
             return SExecute<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", arg0);
         }
@@ -95,9 +94,8 @@ namespace Java.Util.Concurrent
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedExceptionAction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
-        public static Java.Util.Concurrent.Callable<object> Callable<Arg0Extendsobject>(Java.Security.PrivilegedExceptionAction<Arg0Extendsobject> arg0)
+        public static Java.Util.Concurrent.Callable<object> Callable(Java.Security.PrivilegedExceptionAction<object> arg0)
         {
             return SExecute<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", arg0);
         }

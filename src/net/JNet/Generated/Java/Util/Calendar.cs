@@ -642,11 +642,13 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#build()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#build()"/>
             /// </summary>
-            public Java.Util.Calendar Build
+
+            /// <returns><see cref="Java.Util.Calendar"/></returns>
+            public Java.Util.Calendar Build()
             {
-                get { return IExecute<Java.Util.Calendar>("build"); }
+                return IExecute<Java.Util.Calendar>("build");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#set(int,int)"/>

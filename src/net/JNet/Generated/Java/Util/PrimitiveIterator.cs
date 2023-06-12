@@ -103,8 +103,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperdouble"></typeparam>
-            public void ForEachRemaining<Arg0objectSuperdouble>(Java.Util.Function.Consumer<Arg0objectSuperdouble> arg0)
+            public void ForEachRemaining(Java.Util.Function.Consumer<double> arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -173,8 +172,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperint"></typeparam>
-            public void ForEachRemaining<Arg0objectSuperint>(Java.Util.Function.Consumer<Arg0objectSuperint> arg0)
+            public void ForEachRemaining(Java.Util.Function.Consumer<int> arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -243,8 +241,7 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            /// <typeparam name="Arg0objectSuperlong"></typeparam>
-            public void ForEachRemaining<Arg0objectSuperlong>(Java.Util.Function.Consumer<Arg0objectSuperlong> arg0)
+            public void ForEachRemaining(Java.Util.Function.Consumer<long> arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -274,8 +271,31 @@ namespace Java.Util
     }
     #endregion
 
+    #region IPrimitiveIterator<T, T_CONS>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html"/>
+    /// </summary>
+    public partial interface IPrimitiveIterator<T, T_CONS>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html#forEachRemaining(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T_CONS"/></param>
+        void ForEachRemaining(T_CONS arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrimitiveIterator<T, T_CONS>
-    public partial class PrimitiveIterator<T, T_CONS>
+    public partial class PrimitiveIterator<T, T_CONS> : Java.Util.IPrimitiveIterator<T, T_CONS>
     {
         #region Constructors
 

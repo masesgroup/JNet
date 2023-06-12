@@ -58,10 +58,9 @@ namespace Javax.Management.Remote
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Javax.Management.Remote.JMXConnector Connect<Arg1Extendsobject>(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, Arg1Extendsobject> arg1)
+        public static Javax.Management.Remote.JMXConnector Connect(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, object> arg1)
         {
             return SExecute<Javax.Management.Remote.JMXConnector>(LocalBridgeClazz, "connect", arg0, arg1);
         }
@@ -80,10 +79,9 @@ namespace Javax.Management.Remote
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Remote.JMXServiceURL"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg1Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Management.Remote.JMXConnector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Javax.Management.Remote.JMXConnector NewJMXConnector<Arg1Extendsobject>(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, Arg1Extendsobject> arg1)
+        public static Javax.Management.Remote.JMXConnector NewJMXConnector(Javax.Management.Remote.JMXServiceURL arg0, Java.Util.Map<string, object> arg1)
         {
             return SExecute<Javax.Management.Remote.JMXConnector>(LocalBridgeClazz, "newJMXConnector", arg0, arg1);
         }

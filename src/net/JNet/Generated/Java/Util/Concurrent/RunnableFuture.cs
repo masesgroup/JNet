@@ -71,8 +71,30 @@ namespace Java.Util.Concurrent
     }
     #endregion
 
+    #region IRunnableFuture<V>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableFuture.html"/>
+    /// </summary>
+    public partial interface IRunnableFuture<V>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableFuture.html#run()"/>
+        /// </summary>
+        void Run();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RunnableFuture<V>
-    public partial class RunnableFuture<V>
+    public partial class RunnableFuture<V> : Java.Util.Concurrent.IRunnableFuture<V>
     {
         #region Constructors
 

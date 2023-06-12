@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.Reflect
 {
+    #region IGenericDeclaration
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericDeclaration.html"/>
+    /// </summary>
+    public partial interface IGenericDeclaration : Java.Lang.Reflect.IAnnotatedElement
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericDeclaration.html#getTypeParameters()"/> 
+        /// </summary>
+        Java.Lang.Reflect.TypeVariable[] TypeParameters { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region GenericDeclaration
-    public partial class GenericDeclaration
+    public partial class GenericDeclaration : Java.Lang.Reflect.IGenericDeclaration
     {
         #region Constructors
 
@@ -48,9 +70,9 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericDeclaration.html#getTypeParameters()"/> 
         /// </summary>
-        public Java.Lang.Reflect.TypeVariable TypeParameters
+        public Java.Lang.Reflect.TypeVariable[] TypeParameters
         {
-            get { return IExecute<Java.Lang.Reflect.TypeVariable>("getTypeParameters"); }
+            get { return IExecuteArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters"); }
         }
 
         #endregion

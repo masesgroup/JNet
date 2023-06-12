@@ -52,7 +52,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult PostVisitDirectory(object arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult PostVisitDirectory(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
         }
@@ -85,7 +85,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult VisitFileFailed(object arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult VisitFileFailed(object arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
         }
@@ -100,8 +100,58 @@ namespace Java.Nio.File
     }
     #endregion
 
+    #region IFileVisitor<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html"/>
+    /// </summary>
+    public partial interface IFileVisitor<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html#postVisitDirectory(java.lang.Object,java.io.IOException)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
+        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html#preVisitDirectory(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
+        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Nio.File.FileVisitResult PreVisitDirectory(T arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html#visitFile(java.lang.Object,java.nio.file.attribute.BasicFileAttributes)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></param>
+        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Nio.File.FileVisitResult VisitFile(T arg0, Java.Nio.File.Attribute.BasicFileAttributes arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html#visitFileFailed(java.lang.Object,java.io.IOException)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
+        /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region FileVisitor<T>
-    public partial class FileVisitor<T>
+    public partial class FileVisitor<T> : Java.Nio.File.IFileVisitor<T>
     {
         #region Constructors
 
@@ -131,7 +181,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult PostVisitDirectory(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("postVisitDirectory", arg0, arg1);
         }
@@ -164,7 +214,7 @@ namespace Java.Nio.File
         /// <param name="arg1"><see cref="Java.Io.IOException"/></param>
         /// <returns><see cref="Java.Nio.File.FileVisitResult"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, Java.Io.IOException arg1)
+        public Java.Nio.File.FileVisitResult VisitFileFailed(T arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
             return IExecute<Java.Nio.File.FileVisitResult>("visitFileFailed", arg0, arg1);
         }

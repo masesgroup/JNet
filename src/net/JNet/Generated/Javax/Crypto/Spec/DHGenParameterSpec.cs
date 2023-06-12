@@ -42,10 +42,6 @@ namespace Javax.Crypto.Spec
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Crypto.Spec.DHGenParameterSpec"/> to <see cref="Java.Security.Spec.AlgorithmParameterSpec"/>
-        /// </summary>
-        public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Javax.Crypto.Spec.DHGenParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
 
         #endregion
 

@@ -41,10 +41,6 @@ namespace Javax.Xml.Stream.Util
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Stream.Util.StreamReaderDelegate"/> to <see cref="Javax.Xml.Stream.XMLStreamReader"/>
-        /// </summary>
-        public static implicit operator Javax.Xml.Stream.XMLStreamReader(Javax.Xml.Stream.Util.StreamReaderDelegate t) => t.Cast<Javax.Xml.Stream.XMLStreamReader>();
 
         #endregion
 

@@ -25,8 +25,67 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSPrimitiveValue
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html"/>
+    /// </summary>
+    public partial interface ICSSPrimitiveValue : Org.W3c.Dom.Css.ICSSValue
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getCounterValue()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.Counter CounterValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getPrimitiveType()"/> 
+        /// </summary>
+        short PrimitiveType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getRectValue()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.Rect RectValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getRGBColorValue()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.RGBColor RGBColorValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getStringValue()"/> 
+        /// </summary>
+        string StringValue { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#getFloatValue(short)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <returns><see cref="float"/></returns>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        float GetFloatValue(short arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#setFloatValue(short,float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="float"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void SetFloatValue(short arg0, float arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#setStringValue(short,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="short"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        void SetStringValue(short arg0, string arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSPrimitiveValue
-    public partial class CSSPrimitiveValue
+    public partial class CSSPrimitiveValue : Org.W3c.Dom.Css.ICSSPrimitiveValue
     {
         #region Constructors
 

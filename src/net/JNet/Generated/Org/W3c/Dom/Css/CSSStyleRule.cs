@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSStyleRule
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleRule.html"/>
+    /// </summary>
+    public partial interface ICSSStyleRule : Org.W3c.Dom.Css.ICSSRule
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleRule.html#getSelectorText()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleRule.html#setSelectorText(java.lang.String)"/>
+        /// </summary>
+        string SelectorText { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSStyleRule.html#getStyle()"/> 
+        /// </summary>
+        Org.W3c.Dom.Css.CSSStyleDeclaration Style { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSStyleRule
-    public partial class CSSStyleRule
+    public partial class CSSStyleRule : Org.W3c.Dom.Css.ICSSStyleRule
     {
         #region Constructors
 

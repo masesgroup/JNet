@@ -32,12 +32,15 @@ _jnr_ accepts the following command-line switch:
 * **ClassesToAvoidInGenerics**: A CSV list of classes to be removed during analysis from the classes which have generics types
 * **ClassesToBeListener**: A CSV list of class names to be treated as Listener
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
+* **ClassesInConflict**: A CSV list of classes in conflict with namespace name: to this one will be added an "Class" at the end
 * **OnlyPropertiesForGetterSetter**: The option forces the tool to convert into properties only getter/setter
 * **ReflectDeprecated**: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated
 * **AvoidCSharpGenericDefinition**: The option forces the tool to reflect generics without create the C# generic definition
 * **AvoidCSharpGenericClauseDefinition**: The option forces the tool to reflect generics without create the clauses of C# generic definition
 * **DisableGenericsInNonGenericClasses**: The option disables generation of generic methods in non generic classes
 * **DisableGenerics**: The option forces the tool to disable any generic type
+* **CreateInterfaceInheritance**: The option forces the tool to create the C# interface inheritance
+* **DisableInterfaceMethodGeneration**: The option disables the generation of the methods in the C# interface
 * **AvoidParallelBuild**: The option forces the tool to disable parallel execution
 * **DryRun**: Execute everything, but do not write anything to disk
 * **DoNotCamel**: Does not use camelized names in methods, class and so on

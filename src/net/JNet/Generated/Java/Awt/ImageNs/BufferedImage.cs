@@ -57,7 +57,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.WritableRaster"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="Java.Util.Hashtable"/></param>
-        public BufferedImage(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.WritableRaster arg1, bool arg2, Java.Util.Hashtable arg3)
+        public BufferedImage(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.WritableRaster arg1, bool arg2, Java.Util.Hashtable<object, object> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }

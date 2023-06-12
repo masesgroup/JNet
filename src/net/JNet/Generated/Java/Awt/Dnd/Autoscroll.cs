@@ -25,8 +25,35 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Dnd
 {
+    #region IAutoscroll
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html"/>
+    /// </summary>
+    public partial interface IAutoscroll
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html#getAutoscrollInsets()"/> 
+        /// </summary>
+        Java.Awt.Insets AutoscrollInsets { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html#autoscroll(java.awt.Point)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Point"/></param>
+        void AutoscrollMethod(Java.Awt.Point arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Autoscroll
-    public partial class Autoscroll
+    public partial class Autoscroll : Java.Awt.Dnd.IAutoscroll
     {
         #region Constructors
 

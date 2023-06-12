@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Io
 {
+    #region IObjectInputFilter
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.html"/>
+    /// </summary>
+    public partial interface IObjectInputFilter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.html#checkInput(java.io.ObjectInputFilter.FilterInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.ObjectInputFilter.FilterInfo"/></param>
+        /// <returns><see cref="Java.Io.ObjectInputFilter.Status"/></returns>
+        Java.Io.ObjectInputFilter.Status CheckInput(Java.Io.ObjectInputFilter.FilterInfo arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ObjectInputFilter
-    public partial class ObjectInputFilter
+    public partial class ObjectInputFilter : Java.Io.IObjectInputFilter
     {
         #region Constructors
 

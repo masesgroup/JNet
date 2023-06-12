@@ -25,8 +25,36 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang.ModuleNs
 {
+    #region IModuleFinder
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html"/>
+    /// </summary>
+    public partial interface IModuleFinder
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/> 
+        /// </summary>
+        Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#find(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ModuleFinder
-    public partial class ModuleFinder
+    public partial class ModuleFinder : Java.Lang.ModuleNs.IModuleFinder
     {
         #region Constructors
 

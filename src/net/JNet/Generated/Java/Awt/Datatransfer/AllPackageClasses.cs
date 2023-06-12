@@ -201,8 +201,13 @@ namespace Java.Awt.Datatransfer
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html"/>
     /// </summary>
-    public partial class FlavorListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class FlavorListener : Java.Util.EventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FlavorListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class

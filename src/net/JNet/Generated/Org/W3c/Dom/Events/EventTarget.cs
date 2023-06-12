@@ -25,8 +25,47 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Events
 {
+    #region IEventTarget
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html"/>
+    /// </summary>
+    public partial interface IEventTarget
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#dispatchEvent(org.w3c.dom.events.Event)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Events.Event"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Org.W3c.Dom.Events.EventException"/>
+        bool DispatchEvent(Org.W3c.Dom.Events.Event arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#addEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Events.EventListener"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        void AddEventListener(string arg0, Org.W3c.Dom.Events.EventListener arg1, bool arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventTarget.html#removeEventListener(java.lang.String,org.w3c.dom.events.EventListener,boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="Org.W3c.Dom.Events.EventListener"/></param>
+        /// <param name="arg2"><see cref="bool"/></param>
+        void RemoveEventListener(string arg0, Org.W3c.Dom.Events.EventListener arg1, bool arg2);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region EventTarget
-    public partial class EventTarget
+    public partial class EventTarget : Org.W3c.Dom.Events.IEventTarget
     {
         #region Constructors
 

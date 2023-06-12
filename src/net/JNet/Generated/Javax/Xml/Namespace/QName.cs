@@ -60,10 +60,6 @@ namespace Javax.Xml.Namespace
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Xml.Namespace.QName"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Javax.Xml.Namespace.QName t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

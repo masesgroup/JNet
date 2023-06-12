@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Org.W3c.Dom.Css
 {
+    #region ICSSCharsetRule
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSCharsetRule.html"/>
+    /// </summary>
+    public partial interface ICSSCharsetRule : Org.W3c.Dom.Css.ICSSRule
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSCharsetRule.html#getEncoding()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSCharsetRule.html#setEncoding(java.lang.String)"/>
+        /// </summary>
+        string Encoding { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region CSSCharsetRule
-    public partial class CSSCharsetRule
+    public partial class CSSCharsetRule : Org.W3c.Dom.Css.ICSSCharsetRule
     {
         #region Constructors
 

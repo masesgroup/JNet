@@ -25,8 +25,40 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Colorchooser
 {
+    #region IColorSelectionModel
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorSelectionModel.html"/>
+    /// </summary>
+    public partial interface IColorSelectionModel
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorSelectionModel.html#getSelectedColor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorSelectionModel.html#setSelectedColor(java.awt.Color)"/>
+        /// </summary>
+        Java.Awt.Color SelectedColor { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        void AddChangeListener(Javax.Swing.Event.ChangeListener arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/ColorSelectionModel.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeListener"/></param>
+        void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ColorSelectionModel
-    public partial class ColorSelectionModel
+    public partial class ColorSelectionModel : Javax.Swing.Colorchooser.IColorSelectionModel
     {
         #region Constructors
 

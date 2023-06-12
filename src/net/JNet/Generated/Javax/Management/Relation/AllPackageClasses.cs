@@ -517,7 +517,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html"/>
     /// </summary>
-    public partial class RelationTypeSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RelationTypeSupport>
+    public partial class RelationTypeSupport : Javax.Management.Relation.RelationType
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -560,7 +560,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html"/>
     /// </summary>
-    public partial class Role : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Role>
+    public partial class Role : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -603,7 +603,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html"/>
     /// </summary>
-    public partial class RoleInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RoleInfo>
+    public partial class RoleInfo : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -662,7 +662,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html"/>
     /// </summary>
-    public partial class RoleList : Java.Util.ArrayList
+    public partial class RoleList : Java.Util.ArrayList<object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -721,7 +721,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleResult.html"/>
     /// </summary>
-    public partial class RoleResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RoleResult>
+    public partial class RoleResult : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -807,7 +807,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html"/>
     /// </summary>
-    public partial class RoleUnresolved : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RoleUnresolved>
+    public partial class RoleUnresolved : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -850,7 +850,7 @@ namespace Javax.Management.Relation
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html"/>
     /// </summary>
-    public partial class RoleUnresolvedList : Java.Util.ArrayList
+    public partial class RoleUnresolvedList : Java.Util.ArrayList<object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -33,10 +33,6 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.ComponentOrientation"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Awt.ComponentOrientation t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 

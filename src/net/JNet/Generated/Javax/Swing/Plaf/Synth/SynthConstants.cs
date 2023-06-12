@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf.Synth
 {
+    #region ISynthConstants
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html"/>
+    /// </summary>
+    public partial interface ISynthConstants
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SynthConstants
-    public partial class SynthConstants
+    public partial class SynthConstants : Javax.Swing.Plaf.Synth.ISynthConstants
     {
         #region Constructors
 

@@ -42,10 +42,6 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.TexturePaint"/> to <see cref="Java.Awt.Paint"/>
-        /// </summary>
-        public static implicit operator Java.Awt.Paint(Java.Awt.TexturePaint t) => t.Cast<Java.Awt.Paint>();
 
         #endregion
 

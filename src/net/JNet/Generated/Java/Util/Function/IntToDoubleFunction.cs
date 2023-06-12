@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Function
 {
+    #region IIntToDoubleFunction
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToDoubleFunction.html"/>
+    /// </summary>
+    public partial interface IIntToDoubleFunction
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="double"/></returns>
+        double ApplyAsDouble(int arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region IntToDoubleFunction
-    public partial class IntToDoubleFunction
+    public partial class IntToDoubleFunction : Java.Util.Function.IIntToDoubleFunction
     {
         #region Constructors
 
@@ -50,9 +74,9 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="double"/></returns>
-        public double ApplyAsDouble(int arg0)
+        public virtual double ApplyAsDouble(int arg0)
         {
-            return IExecute<double>("applyAsDouble", arg0);
+            return default;
         }
 
         #endregion

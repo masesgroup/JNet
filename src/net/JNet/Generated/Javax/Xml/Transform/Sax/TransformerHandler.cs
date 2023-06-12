@@ -25,8 +25,40 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Xml.Transform.Sax
 {
+    #region ITransformerHandler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html"/>
+    /// </summary>
+    public partial interface ITransformerHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#getSystemId()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        string SystemId { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#getTransformer()"/> 
+        /// </summary>
+        Javax.Xml.Transform.Transformer Transformer { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/sax/TransformerHandler.html#setResult(javax.xml.transform.Result)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.Result"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        void SetResult(Javax.Xml.Transform.Result arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region TransformerHandler
-    public partial class TransformerHandler
+    public partial class TransformerHandler : Javax.Xml.Transform.Sax.ITransformerHandler
     {
         #region Constructors
 

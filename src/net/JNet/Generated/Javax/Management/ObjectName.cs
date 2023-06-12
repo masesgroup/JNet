@@ -46,7 +46,7 @@ namespace Javax.Management
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="Java.Util.Hashtable"/></param>
         /// <exception cref="Javax.Management.MalformedObjectNameException"/>
-        public ObjectName(string arg0, Java.Util.Hashtable arg1)
+        public ObjectName(string arg0, Java.Util.Hashtable<string, string> arg1)
             : base(arg0, arg1)
         {
         }

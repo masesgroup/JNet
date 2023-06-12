@@ -33,10 +33,6 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Sound.Midi.MidiMessage"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Javax.Sound.Midi.MidiMessage t) => t.Cast<Java.Lang.Cloneable>();
 
         #endregion
 

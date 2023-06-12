@@ -44,7 +44,7 @@ namespace Javax.Management.Relation
         /// <param name="arg9"><see cref="Java.Util.List"/></param>
         /// <param name="arg10"><see cref="Java.Util.List"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public RelationNotification(string arg0, object arg1, long arg2, long arg3, string arg4, string arg5, string arg6, Javax.Management.ObjectName arg7, string arg8, Java.Util.List arg9, Java.Util.List arg10)
+        public RelationNotification(string arg0, object arg1, long arg2, long arg3, string arg4, string arg5, string arg6, Javax.Management.ObjectName arg7, string arg8, Java.Util.List<Javax.Management.ObjectName> arg9, Java.Util.List<Javax.Management.ObjectName> arg10)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10)
         {
         }
@@ -61,7 +61,7 @@ namespace Javax.Management.Relation
         /// <param name="arg7"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg8"><see cref="Java.Util.List"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public RelationNotification(string arg0, object arg1, long arg2, long arg3, string arg4, string arg5, string arg6, Javax.Management.ObjectName arg7, Java.Util.List arg8)
+        public RelationNotification(string arg0, object arg1, long arg2, long arg3, string arg4, string arg5, string arg6, Javax.Management.ObjectName arg7, Java.Util.List<Javax.Management.ObjectName> arg8)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
         {
         }

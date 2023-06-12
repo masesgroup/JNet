@@ -61,10 +61,6 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Text.StringCharacterIterator"/> to <see cref="Java.Text.CharacterIterator"/>
-        /// </summary>
-        public static implicit operator Java.Text.CharacterIterator(Java.Text.StringCharacterIterator t) => t.Cast<Java.Text.CharacterIterator>();
 
         #endregion
 

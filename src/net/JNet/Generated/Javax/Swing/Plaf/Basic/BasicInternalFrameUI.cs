@@ -108,10 +108,6 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicInternalFrameUI.InternalFrameLayout"/> to <see cref="Java.Awt.LayoutManager"/>
-            /// </summary>
-            public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicInternalFrameUI.InternalFrameLayout t) => t.Cast<Java.Awt.LayoutManager>();
 
             #endregion
 
@@ -166,6 +162,45 @@ namespace Javax.Swing.Plaf.Basic
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecute("removeLayoutComponent", arg0);
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region InternalFramePropertyChangeListener
+        public partial class InternalFramePropertyChangeListener
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFramePropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
+            public virtual void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
+            {
+                
             }
 
             #endregion

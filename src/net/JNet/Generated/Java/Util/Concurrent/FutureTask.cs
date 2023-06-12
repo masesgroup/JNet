@@ -50,10 +50,6 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.FutureTask"/> to <see cref="Java.Util.Concurrent.RunnableFuture"/>
-        /// </summary>
-        public static implicit operator Java.Util.Concurrent.RunnableFuture(Java.Util.Concurrent.FutureTask t) => t.Cast<Java.Util.Concurrent.RunnableFuture>();
 
         #endregion
 
@@ -156,10 +152,6 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.FutureTask{V}"/> to <see cref="Java.Util.Concurrent.RunnableFuture{V}"/>
-        /// </summary>
-        public static implicit operator Java.Util.Concurrent.RunnableFuture<V>(Java.Util.Concurrent.FutureTask<V> t) => t.Cast<Java.Util.Concurrent.RunnableFuture<V>>();
         /// <summary>
         /// Converter from <see cref="Java.Util.Concurrent.FutureTask{V}"/> to <see cref="Java.Util.Concurrent.FutureTask"/>
         /// </summary>

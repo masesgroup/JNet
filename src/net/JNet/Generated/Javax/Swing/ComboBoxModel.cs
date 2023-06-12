@@ -63,8 +63,30 @@ namespace Javax.Swing
     }
     #endregion
 
+    #region IComboBoxModel<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html"/>
+    /// </summary>
+    public partial interface IComboBoxModel<E> : Javax.Swing.IListModel<E>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html#getSelectedItem()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ComboBoxModel.html#setSelectedItem(java.lang.Object)"/>
+        /// </summary>
+        object SelectedItem { get; set; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ComboBoxModel<E>
-    public partial class ComboBoxModel<E>
+    public partial class ComboBoxModel<E> : Javax.Swing.IComboBoxModel<E>
     {
         #region Constructors
 

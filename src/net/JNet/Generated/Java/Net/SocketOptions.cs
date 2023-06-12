@@ -25,8 +25,40 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
+    #region ISocketOptions
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html"/>
+    /// </summary>
+    public partial interface ISocketOptions
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#getOption(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        object GetOption(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#setOption(int,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
+        void SetOption(int arg0, object arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SocketOptions
-    public partial class SocketOptions
+    public partial class SocketOptions : Java.Net.ISocketOptions
     {
         #region Constructors
 

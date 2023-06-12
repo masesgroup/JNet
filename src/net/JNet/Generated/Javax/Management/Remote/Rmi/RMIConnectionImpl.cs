@@ -37,7 +37,7 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg2"><see cref="Java.Lang.ClassLoader"/></param>
         /// <param name="arg3"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <param name="arg4"><see cref="Java.Util.Map"/></param>
-        public RMIConnectionImpl(Javax.Management.Remote.Rmi.RMIServerImpl arg0, string arg1, Java.Lang.ClassLoader arg2, Javax.Security.Auth.Subject arg3, Java.Util.Map arg4)
+        public RMIConnectionImpl(Javax.Management.Remote.Rmi.RMIServerImpl arg0, string arg1, Java.Lang.ClassLoader arg2, Javax.Security.Auth.Subject arg3, Java.Util.Map<string, object> arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }

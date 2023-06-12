@@ -51,10 +51,6 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Naming.Ldap.BasicControl"/> to <see cref="Javax.Naming.Ldap.Control"/>
-        /// </summary>
-        public static implicit operator Javax.Naming.Ldap.Control(Javax.Naming.Ldap.BasicControl t) => t.Cast<Javax.Naming.Ldap.Control>();
 
         #endregion
 

@@ -43,10 +43,6 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Awt.ImageNs.Kernel"/> to <see cref="Java.Lang.Cloneable"/>
-        /// </summary>
-        public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.Kernel t) => t.Cast<Java.Lang.Cloneable>();
 
         #endregion
 

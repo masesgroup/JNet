@@ -44,10 +44,6 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Management.Relation.RelationTypeSupport"/> to <see cref="Javax.Management.Relation.RelationType"/>
-        /// </summary>
-        public static implicit operator Javax.Management.Relation.RelationType(Javax.Management.Relation.RelationTypeSupport t) => t.Cast<Javax.Management.Relation.RelationType>();
 
         #endregion
 

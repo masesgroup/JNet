@@ -25,8 +25,44 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Net.Ssl
 {
+    #region IX509TrustManager
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html"/>
+    /// </summary>
+    public partial interface IX509TrustManager : Javax.Net.Ssl.ITrustManager
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html#getAcceptedIssuers()"/> 
+        /// </summary>
+        Java.Security.Cert.X509Certificate[] AcceptedIssuers { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
+        void CheckClientTrusted(Java.Security.Cert.X509Certificate[] arg0, string arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <exception cref="Java.Security.Cert.CertificateException"/>
+        void CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, string arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region X509TrustManager
-    public partial class X509TrustManager
+    public partial class X509TrustManager : Javax.Net.Ssl.IX509TrustManager
     {
         #region Constructors
 

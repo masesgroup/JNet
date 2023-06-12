@@ -18,7 +18,7 @@
 
 using Java.Util;
 using Javax.Management.Remote;
-using MASES.JNet.Extensions;
+using MASES.JNet.Specific.Extensions;
 using MASES.JNetPSCore.Cmdlet;
 using System.Collections.Generic;
 using System.Management.Automation;

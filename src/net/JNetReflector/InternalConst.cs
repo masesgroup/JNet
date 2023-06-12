@@ -21,7 +21,6 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Reflection;
-using MASES.JCOBridge.C2JBridge;
 
 namespace MASES.JNetReflector
 {
@@ -38,6 +37,7 @@ namespace MASES.JNetReflector
         public const string ModulesToParse = "ModulesToParse";
         public const string ClassesToBeListener = "ClassesToBeListener";
         public const string NamespacesInConflict = "NamespacesInConflict";
+        public const string ClassesInConflict = "ClassesInConflict";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string ClassesToAvoid = "ClassesToAvoid";
         public const string ClassesToAvoidInGenerics = "ClassesToAvoidInGenerics";
@@ -47,6 +47,8 @@ namespace MASES.JNetReflector
         public const string AvoidCSharpGenericClauseDefinition = "AvoidCSharpGenericClauseDefinition";
         public const string DisableGenericsInNonGenericClasses = "DisableGenericsInNonGenericClasses";
         public const string DisableGenerics = "DisableGenerics";
+        public const string CreateInterfaceInheritance = "CreateInterfaceInheritance";
+        public const string DisableInterfaceMethodGeneration = "DisableInterfaceMethodGeneration";
         public const string AvoidParallelBuild = "AvoidParallelBuild";
         public const string DryRun = "DryRun";
         public const string DoNotCamel = "DoNotCamel";
@@ -68,18 +70,24 @@ namespace MASES.JNetReflector
         public const char JNISeparator = '/';
         public const char NamespaceSeparator = '.';
         public const char NestedClassSeparator = '$';
+        public const string NetObject = "object";
         public const string JavaLangClass = "Java.Lang.Class";
         public const string JavaLangVoid = "Java.Lang.Void";
         public const string JavaLangObject = "java.lang.Object";
         public const string JavaLangDeprecated = "java.lang.Deprecated";
         public const string JavaLangIterable = "java.lang.Iterable";
+        public const string JavaUtilIterator = "java.util.Iterator";
         public const string JavaUtilCollection = "java.util.Collection";
+        public const string JavaUtilEventListener = "java.util.EventListener";
+        public const string JavaUtilFunctions = "java.util.function.";
         public const string JavaLangListener = "Listener";
         public const string JavaLangAdapter = "Adapter";
         public const string ArrayTypeTrailer = "[]";
         public const string PropertySuffix = "Property";
         public const string MethodSuffix = "Method";
         public const string NamespaceSuffix = "Ns";
+        public const string MainClassPlaceHolder = ", MASES.JNet.Specific.IJNetBridgeMain";
+        public const string JVMBridgeException = "MASES.JCOBridge.C2JBridge.JVMBridgeException";
 
         public static bool IsJavaLangException(string canonicalName)
         {
@@ -159,6 +167,8 @@ namespace MASES.JNetReflector
         {
             List<string> lst = new List<string>();
             lst.Add("clone");
+            lst.Add("build");
+            lst.Add("create");
             return lst;
         }
 
@@ -170,6 +180,12 @@ namespace MASES.JNetReflector
             lst.Add("in");
             lst.Add("out");
             lst.Add("base");
+            lst.Add("event");
+            lst.Add("interface");
+            lst.Add("class");
+            lst.Add("enum");
+            lst.Add("namespace");
+            lst.Add("where");
             return lst;
         }
 

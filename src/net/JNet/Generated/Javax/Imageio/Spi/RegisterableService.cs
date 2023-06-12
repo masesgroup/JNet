@@ -25,8 +25,38 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Imageio.Spi
 {
+    #region IRegisterableService
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/RegisterableService.html"/>
+    /// </summary>
+    public partial interface IRegisterableService
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/RegisterableService.html#onDeregistration(javax.imageio.spi.ServiceRegistry,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Spi.ServiceRegistry"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        void OnDeregistration(Javax.Imageio.Spi.ServiceRegistry arg0, Java.Lang.Class arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/RegisterableService.html#onRegistration(javax.imageio.spi.ServiceRegistry,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Imageio.Spi.ServiceRegistry"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        void OnRegistration(Javax.Imageio.Spi.ServiceRegistry arg0, Java.Lang.Class arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RegisterableService
-    public partial class RegisterableService
+    public partial class RegisterableService : Javax.Imageio.Spi.IRegisterableService
     {
         #region Constructors
 

@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Spi
 {
+    #region IResourceBundleControlProvider
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ResourceBundleControlProvider.html"/>
+    /// </summary>
+    public partial interface IResourceBundleControlProvider
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ResourceBundleControlProvider.html#getControl(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
+        Java.Util.ResourceBundle.Control GetControl(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ResourceBundleControlProvider
-    public partial class ResourceBundleControlProvider
+    public partial class ResourceBundleControlProvider : Java.Util.Spi.IResourceBundleControlProvider
     {
         #region Constructors
 

@@ -52,10 +52,6 @@ namespace Javax.Crypto.Spec
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Crypto.Spec.DESedeKeySpec"/> to <see cref="Java.Security.Spec.KeySpec"/>
-        /// </summary>
-        public static implicit operator Java.Security.Spec.KeySpec(Javax.Crypto.Spec.DESedeKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
 
         #endregion
 

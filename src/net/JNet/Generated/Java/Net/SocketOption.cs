@@ -70,8 +70,34 @@ namespace Java.Net
     }
     #endregion
 
+    #region ISocketOption<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html"/>
+    /// </summary>
+    public partial interface ISocketOption<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#name()"/> 
+        /// </summary>
+        string Name { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOption.html#type()"/> 
+        /// </summary>
+        Java.Lang.Class Type { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SocketOption<T>
-    public partial class SocketOption<T>
+    public partial class SocketOption<T> : Java.Net.ISocketOption<T>
     {
         #region Constructors
 

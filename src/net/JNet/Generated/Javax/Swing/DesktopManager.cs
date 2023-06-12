@@ -25,8 +25,112 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
+    #region IDesktopManager
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html"/>
+    /// </summary>
+    public partial interface IDesktopManager
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#activateFrame(javax.swing.JInternalFrame)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        void ActivateFrame(Javax.Swing.JInternalFrame arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#beginDraggingFrame(javax.swing.JComponent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        void BeginDraggingFrame(Javax.Swing.JComponent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#beginResizingFrame(javax.swing.JComponent,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        void BeginResizingFrame(Javax.Swing.JComponent arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#closeFrame(javax.swing.JInternalFrame)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        void CloseFrame(Javax.Swing.JInternalFrame arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#deactivateFrame(javax.swing.JInternalFrame)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        void DeactivateFrame(Javax.Swing.JInternalFrame arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#deiconifyFrame(javax.swing.JInternalFrame)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        void DeiconifyFrame(Javax.Swing.JInternalFrame arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#dragFrame(javax.swing.JComponent,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        void DragFrame(Javax.Swing.JComponent arg0, int arg1, int arg2);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#endDraggingFrame(javax.swing.JComponent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        void EndDraggingFrame(Javax.Swing.JComponent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#endResizingFrame(javax.swing.JComponent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        void EndResizingFrame(Javax.Swing.JComponent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#iconifyFrame(javax.swing.JInternalFrame)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        void IconifyFrame(Javax.Swing.JInternalFrame arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#maximizeFrame(javax.swing.JInternalFrame)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        void MaximizeFrame(Javax.Swing.JInternalFrame arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#minimizeFrame(javax.swing.JInternalFrame)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        void MinimizeFrame(Javax.Swing.JInternalFrame arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#openFrame(javax.swing.JInternalFrame)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JInternalFrame"/></param>
+        void OpenFrame(Javax.Swing.JInternalFrame arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#resizeFrame(javax.swing.JComponent,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        void ResizeFrame(Javax.Swing.JComponent arg0, int arg1, int arg2, int arg3, int arg4);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DesktopManager.html#setBoundsForFrame(javax.swing.JComponent,int,int,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Swing.JComponent"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        void SetBoundsForFrame(Javax.Swing.JComponent arg0, int arg1, int arg2, int arg3, int arg4);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region DesktopManager
-    public partial class DesktopManager
+    public partial class DesktopManager : Javax.Swing.IDesktopManager
     {
         #region Constructors
 

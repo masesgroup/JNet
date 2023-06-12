@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region ISafeVarargs
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SafeVarargs.html"/>
+    /// </summary>
+    public partial interface ISafeVarargs : Java.Lang.Annotation.IAnnotation
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region SafeVarargs
-    public partial class SafeVarargs
+    public partial class SafeVarargs : Java.Lang.ISafeVarargs
     {
         #region Constructors
 

@@ -111,7 +111,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html"/>
         /// </summary>
-        public partial class Attribute : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Attribute>
+        public partial class Attribute : Java.Io.Serializable
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -244,7 +244,7 @@ namespace Java.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html"/>
     /// </summary>
-    public partial class BreakIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BreakIterator>
+    public partial class BreakIterator : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -416,7 +416,7 @@ namespace Java.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html"/>
     /// </summary>
-    public partial class CollationKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CollationKey>
+    public partial class CollationKey : Java.Lang.Comparable<Java.Text.CollationKey>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -971,7 +971,7 @@ namespace Java.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.Form.html"/>
         /// </summary>
-        public partial class Form : Java.Lang.Enum
+        public partial class Form : Java.Lang.Enum<Java.Text.Normalizer.Form>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1249,7 +1249,7 @@ namespace Java.Text
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html"/>
     /// </summary>
-    public partial class StringCharacterIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringCharacterIterator>
+    public partial class StringCharacterIterator : Java.Text.CharacterIterator
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

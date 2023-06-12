@@ -46,7 +46,7 @@ namespace Java.Security.Cert
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.CertSelector"/></param>
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
-        public PKIXBuilderParameters(Java.Util.Set arg0, Java.Security.Cert.CertSelector arg1)
+        public PKIXBuilderParameters(Java.Util.Set<Java.Security.Cert.TrustAnchor> arg0, Java.Security.Cert.CertSelector arg1)
             : base(arg0, arg1)
         {
         }

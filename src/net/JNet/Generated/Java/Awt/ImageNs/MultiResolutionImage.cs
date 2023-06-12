@@ -25,8 +25,37 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.ImageNs
 {
+    #region IMultiResolutionImage
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html"/>
+    /// </summary>
+    public partial interface IMultiResolutionImage
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariants()"/> 
+        /// </summary>
+        Java.Util.List<Java.Awt.Image> ResolutionVariants { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/MultiResolutionImage.html#getResolutionVariant(double,double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <returns><see cref="Java.Awt.Image"/></returns>
+        Java.Awt.Image GetResolutionVariant(double arg0, double arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region MultiResolutionImage
-    public partial class MultiResolutionImage
+    public partial class MultiResolutionImage : Java.Awt.ImageNs.IMultiResolutionImage
     {
         #region Constructors
 

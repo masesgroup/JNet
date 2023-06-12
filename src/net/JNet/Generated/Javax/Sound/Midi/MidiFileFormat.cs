@@ -38,7 +38,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <param name="arg5"><see cref="Java.Util.Map"/></param>
-        public MidiFileFormat(int arg0, float arg1, int arg2, int arg3, long arg4, Java.Util.Map arg5)
+        public MidiFileFormat(int arg0, float arg1, int arg2, int arg3, long arg4, Java.Util.Map<string, object> arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }

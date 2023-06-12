@@ -123,10 +123,6 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-            /// <summary>
-            /// Converter from <see cref="Javax.Swing.Plaf.Basic.BasicSplitPaneUI.BasicHorizontalLayoutManager"/> to <see cref="Java.Awt.LayoutManager2"/>
-            /// </summary>
-            public static implicit operator Java.Awt.LayoutManager2(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.BasicHorizontalLayoutManager t) => t.Cast<Java.Awt.LayoutManager2>();
 
             #endregion
 

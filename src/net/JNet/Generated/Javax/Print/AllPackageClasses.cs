@@ -905,7 +905,7 @@ namespace Javax.Print
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/SimpleDoc.html"/>
     /// </summary>
-    public partial class SimpleDoc : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleDoc>
+    public partial class SimpleDoc : Javax.Print.Doc
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -948,7 +948,7 @@ namespace Javax.Print
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/StreamPrintService.html"/>
     /// </summary>
-    public partial class StreamPrintService : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamPrintService>
+    public partial class StreamPrintService : Javax.Print.PrintService
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

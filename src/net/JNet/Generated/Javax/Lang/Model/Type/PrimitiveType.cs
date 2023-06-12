@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Lang.Model.Type
 {
+    #region IPrimitiveType
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/PrimitiveType.html"/>
+    /// </summary>
+    public partial interface IPrimitiveType : Javax.Lang.Model.Type.ITypeMirror
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrimitiveType
-    public partial class PrimitiveType
+    public partial class PrimitiveType : Javax.Lang.Model.Type.IPrimitiveType
     {
         #region Constructors
 

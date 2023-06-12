@@ -33,10 +33,6 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Security.Cert.X509CertSelector"/> to <see cref="Java.Security.Cert.CertSelector"/>
-        /// </summary>
-        public static implicit operator Java.Security.Cert.CertSelector(Java.Security.Cert.X509CertSelector t) => t.Cast<Java.Security.Cert.CertSelector>();
 
         #endregion
 
@@ -129,9 +125,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPathToNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPathToNames(java.util.Collection)"/>
         /// </summary>
-        public Java.Util.Collection PathToNames
+        public Java.Util.Collection<Java.Util.List<object>> PathToNames
         {
-            get { return IExecute<Java.Util.Collection>("getPathToNames"); } set { IExecute("setPathToNames", value); }
+            get { return IExecute<Java.Util.Collection<Java.Util.List<object>>>("getPathToNames"); } set { IExecute("setPathToNames", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getPolicy()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setPolicy(java.util.Set)"/>
@@ -164,9 +160,9 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAlternativeNames()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#setSubjectAlternativeNames(java.util.Collection)"/>
         /// </summary>
-        public Java.Util.Collection SubjectAlternativeNames
+        public Java.Util.Collection<Java.Util.List<object>> SubjectAlternativeNames
         {
-            get { return IExecute<Java.Util.Collection>("getSubjectAlternativeNames"); } set { IExecute("setSubjectAlternativeNames", value); }
+            get { return IExecute<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames"); } set { IExecute("setSubjectAlternativeNames", value); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html#getSubjectAsBytes()"/> 

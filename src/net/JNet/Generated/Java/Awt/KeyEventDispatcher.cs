@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
+    #region IKeyEventDispatcher
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyEventDispatcher.html"/>
+    /// </summary>
+    public partial interface IKeyEventDispatcher
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyEventDispatcher.html#dispatchKeyEvent(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool DispatchKeyEvent(Java.Awt.EventNs.KeyEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region KeyEventDispatcher
-    public partial class KeyEventDispatcher
+    public partial class KeyEventDispatcher : Java.Awt.IKeyEventDispatcher
     {
         #region Constructors
 

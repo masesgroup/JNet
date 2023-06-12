@@ -25,8 +25,51 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Im.Spi
 {
+    #region IInputMethodDescriptor
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html"/>
+    /// </summary>
+    public partial interface IInputMethodDescriptor
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#getAvailableLocales()"/> 
+        /// </summary>
+        Java.Util.Locale[] AvailableLocales { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#createInputMethod()"/> 
+        /// </summary>
+        Java.Awt.Im.Spi.InputMethod CreateInputMethod { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#hasDynamicLocaleList()"/> 
+        /// </summary>
+        bool HasDynamicLocaleList { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#getInputMethodIcon(java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="Java.Awt.Image"/></returns>
+        Java.Awt.Image GetInputMethodIcon(Java.Util.Locale arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodDescriptor.html#getInputMethodDisplayName(java.util.Locale,java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
+        /// <returns><see cref="string"/></returns>
+        string GetInputMethodDisplayName(Java.Util.Locale arg0, Java.Util.Locale arg1);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region InputMethodDescriptor
-    public partial class InputMethodDescriptor
+    public partial class InputMethodDescriptor : Java.Awt.Im.Spi.IInputMethodDescriptor
     {
         #region Constructors
 

@@ -211,8 +211,40 @@ namespace Java.Nio.File
     }
     #endregion
 
+    #region IWatchEvent<T>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html"/>
+    /// </summary>
+    public partial interface IWatchEvent<T>
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/> 
+        /// </summary>
+        T Context { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/> 
+        /// </summary>
+        int Count { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
+        Java.Nio.File.WatchEvent.Kind<T> KindMethod();
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region WatchEvent<T>
-    public partial class WatchEvent<T>
+    public partial class WatchEvent<T> : Java.Nio.File.IWatchEvent<T>
     {
         #region Constructors
 

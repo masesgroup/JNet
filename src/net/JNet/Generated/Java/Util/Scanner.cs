@@ -160,10 +160,6 @@ namespace Java.Util
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Util.Scanner"/> to <see cref="Java.Util.Iterator"/>
-        /// </summary>
-        public static implicit operator Java.Util.Iterator(Java.Util.Scanner t) => t.Cast<Java.Util.Iterator>();
-        /// <summary>
         /// Converter from <see cref="Java.Util.Scanner"/> to <see cref="Java.Io.Closeable"/>
         /// </summary>
         public static implicit operator Java.Io.Closeable(Java.Util.Scanner t) => t.Cast<Java.Io.Closeable>();

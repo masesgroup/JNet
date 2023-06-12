@@ -373,7 +373,7 @@ namespace Java.Awt.Geom
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html"/>
     /// </summary>
-    public partial class Dimension2D : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Dimension2D>
+    public partial class Dimension2D : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -545,7 +545,7 @@ namespace Java.Awt.Geom
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html"/>
     /// </summary>
-    public partial class FlatteningPathIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FlatteningPathIterator>
+    public partial class FlatteningPathIterator : Java.Awt.Geom.PathIterator
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -964,7 +964,7 @@ namespace Java.Awt.Geom
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html"/>
     /// </summary>
-    public partial class Point2D : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Point2D>
+    public partial class Point2D : Java.Lang.Cloneable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

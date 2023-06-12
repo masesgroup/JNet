@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Net
 {
+    #region IContentHandlerFactory
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ContentHandlerFactory.html"/>
+    /// </summary>
+    public partial interface IContentHandlerFactory
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ContentHandlerFactory.html#createContentHandler(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <returns><see cref="Java.Net.ContentHandler"/></returns>
+        Java.Net.ContentHandler CreateContentHandler(string arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region ContentHandlerFactory
-    public partial class ContentHandlerFactory
+    public partial class ContentHandlerFactory : Java.Net.IContentHandlerFactory
     {
         #region Constructors
 

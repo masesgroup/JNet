@@ -42,10 +42,6 @@ namespace Java.Rmi
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Rmi.MarshalledObject"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Rmi.MarshalledObject t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 
@@ -93,10 +89,6 @@ namespace Java.Rmi
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Java.Rmi.MarshalledObject{T}"/> to <see cref="Java.Io.Serializable"/>
-        /// </summary>
-        public static implicit operator Java.Io.Serializable(Java.Rmi.MarshalledObject<T> t) => t.Cast<Java.Io.Serializable>();
         /// <summary>
         /// Converter from <see cref="Java.Rmi.MarshalledObject{T}"/> to <see cref="Java.Rmi.MarshalledObject"/>
         /// </summary>

@@ -68,7 +68,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html"/>
         /// </summary>
-        public partial class Kind : Java.Lang.Enum
+        public partial class Kind : Java.Lang.Enum<Javax.Tools.Diagnostic.Kind>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -248,6 +248,11 @@ namespace Javax.Tools
     /// </summary>
     public partial class DiagnosticListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DiagnosticListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -262,6 +267,11 @@ namespace Javax.Tools
     /// <typeparam name="S"></typeparam>
     public partial class DiagnosticListener<S> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DiagnosticListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -312,7 +322,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html"/>
         /// </summary>
-        public partial class DocumentationTask : Java.Util.Concurrent.Callable
+        public partial class DocumentationTask : Java.Util.Concurrent.Callable<bool?>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -355,7 +365,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html"/>
         /// </summary>
-        public partial class Location : Java.Lang.Enum
+        public partial class Location : Java.Lang.Enum<Javax.Tools.DocumentationTool.Location>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -445,7 +455,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html"/>
     /// </summary>
-    public partial class ForwardingFileObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForwardingFileObject>
+    public partial class ForwardingFileObject : Javax.Tools.FileObject
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -488,8 +498,8 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingFileObject.html"/>
     /// </summary>
-    /// <typeparam name="F"><see cref="Javax.Tools.FileObject"/></typeparam>
-    public partial class ForwardingFileObject<F> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForwardingFileObject<F>> where F: Javax.Tools.FileObject
+    /// <typeparam name="F"><see cref="Javax.Tools.IFileObject"/></typeparam>
+    public partial class ForwardingFileObject<F> : Javax.Tools.FileObject where F: Javax.Tools.IFileObject, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -532,7 +542,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html"/>
     /// </summary>
-    public partial class ForwardingJavaFileManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForwardingJavaFileManager>
+    public partial class ForwardingJavaFileManager : Javax.Tools.JavaFileManager
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -575,8 +585,8 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html"/>
     /// </summary>
-    /// <typeparam name="M"><see cref="Javax.Tools.JavaFileManager"/></typeparam>
-    public partial class ForwardingJavaFileManager<M> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ForwardingJavaFileManager<M>> where M: Javax.Tools.JavaFileManager
+    /// <typeparam name="M"><see cref="Javax.Tools.IJavaFileManager"/></typeparam>
+    public partial class ForwardingJavaFileManager<M> : Javax.Tools.JavaFileManager where M: Javax.Tools.IJavaFileManager, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -662,8 +672,8 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileObject.html"/>
     /// </summary>
-    /// <typeparam name="F"><see cref="Javax.Tools.JavaFileObject"/></typeparam>
-    public partial class ForwardingJavaFileObject<F> : Javax.Tools.ForwardingFileObject<F> where F: Javax.Tools.JavaFileObject
+    /// <typeparam name="F"><see cref="Javax.Tools.IJavaFileObject"/></typeparam>
+    public partial class ForwardingJavaFileObject<F> : Javax.Tools.ForwardingFileObject<F> where F: Javax.Tools.IJavaFileObject, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -745,7 +755,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html"/>
         /// </summary>
-        public partial class CompilationTask : Java.Util.Concurrent.Callable
+        public partial class CompilationTask : Java.Util.Concurrent.Callable<bool?>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -917,7 +927,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html"/>
         /// </summary>
-        public partial class Kind : Java.Lang.Enum
+        public partial class Kind : Java.Lang.Enum<Javax.Tools.JavaFileObject.Kind>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1007,7 +1017,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html"/>
     /// </summary>
-    public partial class SimpleJavaFileObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleJavaFileObject>
+    public partial class SimpleJavaFileObject : Javax.Tools.JavaFileObject
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1136,7 +1146,7 @@ namespace Javax.Tools
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardLocation.html"/>
     /// </summary>
-    public partial class StandardLocation : Java.Lang.Enum
+    public partial class StandardLocation : Java.Lang.Enum<Javax.Tools.StandardLocation>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

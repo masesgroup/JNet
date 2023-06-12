@@ -25,8 +25,32 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Logging
 {
+    #region IFilter
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Filter.html"/>
+    /// </summary>
+    public partial interface IFilter
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Filter.html#isLoggable(java.util.logging.LogRecord)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
+        /// <returns><see cref="bool"/></returns>
+        bool IsLoggable(Java.Util.Logging.LogRecord arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Filter
-    public partial class Filter
+    public partial class Filter : Java.Util.Logging.IFilter
     {
         #region Constructors
 

@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
+    #region IJMXAddressable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAddressable.html"/>
+    /// </summary>
+    public partial interface IJMXAddressable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAddressable.html#getAddress()"/> 
+        /// </summary>
+        Javax.Management.Remote.JMXServiceURL Address { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region JMXAddressable
-    public partial class JMXAddressable
+    public partial class JMXAddressable : Javax.Management.Remote.IJMXAddressable
     {
         #region Constructors
 

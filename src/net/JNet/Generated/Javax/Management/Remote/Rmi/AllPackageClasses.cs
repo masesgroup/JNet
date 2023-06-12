@@ -115,7 +115,7 @@ namespace Javax.Management.Remote.Rmi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html"/>
     /// </summary>
-    public partial class RMIConnectionImpl_Stub : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RMIConnectionImpl_Stub>
+    public partial class RMIConnectionImpl_Stub : Javax.Management.Remote.Rmi.RMIConnection
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -373,7 +373,7 @@ namespace Javax.Management.Remote.Rmi
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html"/>
     /// </summary>
-    public partial class RMIServerImpl_Stub : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RMIServerImpl_Stub>
+    public partial class RMIServerImpl_Stub : Javax.Management.Remote.Rmi.RMIServer
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

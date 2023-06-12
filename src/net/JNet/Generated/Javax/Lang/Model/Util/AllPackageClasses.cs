@@ -29,7 +29,7 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html"/>
     /// </summary>
-    public partial class AbstractAnnotationValueVisitor6 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractAnnotationValueVisitor6>
+    public partial class AbstractAnnotationValueVisitor6 : Javax.Lang.Model.Element.AnnotationValueVisitor
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -74,7 +74,7 @@ namespace Javax.Lang.Model.Util
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class AbstractAnnotationValueVisitor6<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractAnnotationValueVisitor6<R, P>>
+    public partial class AbstractAnnotationValueVisitor6<R, P> : Javax.Lang.Model.Element.AnnotationValueVisitor<R, P>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -381,7 +381,7 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html"/>
     /// </summary>
-    public partial class AbstractElementVisitor6 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractElementVisitor6>
+    public partial class AbstractElementVisitor6 : Javax.Lang.Model.Element.ElementVisitor
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -426,7 +426,7 @@ namespace Javax.Lang.Model.Util
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class AbstractElementVisitor6<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractElementVisitor6<R, P>>
+    public partial class AbstractElementVisitor6<R, P> : Javax.Lang.Model.Element.ElementVisitor<R, P>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -733,7 +733,7 @@ namespace Javax.Lang.Model.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html"/>
     /// </summary>
-    public partial class AbstractTypeVisitor6 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractTypeVisitor6>
+    public partial class AbstractTypeVisitor6 : Javax.Lang.Model.Type.TypeVisitor
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -778,7 +778,7 @@ namespace Javax.Lang.Model.Util
     /// </summary>
     /// <typeparam name="R"></typeparam>
     /// <typeparam name="P"></typeparam>
-    public partial class AbstractTypeVisitor6<R, P> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractTypeVisitor6<R, P>>
+    public partial class AbstractTypeVisitor6<R, P> : Javax.Lang.Model.Type.TypeVisitor<R, P>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1519,7 +1519,7 @@ namespace Javax.Lang.Model.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.Origin.html"/>
         /// </summary>
-        public partial class Origin : Java.Lang.Enum
+        public partial class Origin : Java.Lang.Enum<Javax.Lang.Model.Util.Elements.Origin>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -25,8 +25,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Print
 {
+    #region IAttributeException
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/AttributeException.html"/>
+    /// </summary>
+    public partial interface IAttributeException
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/AttributeException.html#getUnsupportedAttributes()"/> 
+        /// </summary>
+        Java.Lang.Class[] UnsupportedAttributes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/AttributeException.html#getUnsupportedValues()"/> 
+        /// </summary>
+        Javax.Print.Attribute.Attribute[] UnsupportedValues { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AttributeException
-    public partial class AttributeException
+    public partial class AttributeException : Javax.Print.IAttributeException
     {
         #region Constructors
 

@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
+    #region IAccessible
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/Accessible.html"/>
+    /// </summary>
+    public partial interface IAccessible
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/Accessible.html#getAccessibleContext()"/> 
+        /// </summary>
+        Javax.Accessibility.AccessibleContext AccessibleContext { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region Accessible
-    public partial class Accessible
+    public partial class Accessible : Javax.Accessibility.IAccessible
     {
         #region Constructors
 

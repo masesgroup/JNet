@@ -47,10 +47,9 @@ namespace Javax.Naming.Ldap
         /// <param name="arg0"><see cref="Javax.Naming.Ldap.Control"/></param>
         /// <param name="arg1"><see cref="Javax.Naming.Context"/></param>
         /// <param name="arg2"><see cref="Java.Util.Hashtable"/></param>
-        /// <typeparam name="Arg2Extendsobject"></typeparam>
         /// <returns><see cref="Javax.Naming.Ldap.Control"/></returns>
         /// <exception cref="Javax.Naming.NamingException"/>
-        public static Javax.Naming.Ldap.Control GetControlInstance<Arg2Extendsobject>(Javax.Naming.Ldap.Control arg0, Javax.Naming.Context arg1, Java.Util.Hashtable<Arg2Extendsobject, Arg2Extendsobject> arg2)
+        public static Javax.Naming.Ldap.Control GetControlInstance(Javax.Naming.Ldap.Control arg0, Javax.Naming.Context arg1, Java.Util.Hashtable<object, object> arg2)
         {
             return SExecute<Javax.Naming.Ldap.Control>(LocalBridgeClazz, "getControlInstance", arg0, arg1, arg2);
         }

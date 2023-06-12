@@ -25,8 +25,36 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Accessibility
 {
+    #region IAccessibleStreamable
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html"/>
+    /// </summary>
+    public partial interface IAccessibleStreamable
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html#getMimeTypes()"/> 
+        /// </summary>
+        Java.Awt.Datatransfer.DataFlavor[] MimeTypes { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleStreamable.html#getStream(java.awt.datatransfer.DataFlavor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        Java.Io.InputStream GetStream(Java.Awt.Datatransfer.DataFlavor arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region AccessibleStreamable
-    public partial class AccessibleStreamable
+    public partial class AccessibleStreamable : Javax.Accessibility.IAccessibleStreamable
     {
         #region Constructors
 

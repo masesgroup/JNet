@@ -25,8 +25,37 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote.Rmi
 {
+    #region IRMIServer
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServer.html"/>
+    /// </summary>
+    public partial interface IRMIServer : Java.Rmi.IRemote
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServer.html#getVersion()"/> 
+        /// </summary>
+        string Version { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServer.html#newClient(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Javax.Management.Remote.Rmi.RMIConnection"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Javax.Management.Remote.Rmi.RMIConnection NewClient(object arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region RMIServer
-    public partial class RMIServer
+    public partial class RMIServer : Javax.Management.Remote.Rmi.IRMIServer
     {
         #region Constructors
 

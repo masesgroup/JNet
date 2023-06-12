@@ -25,8 +25,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.Print
 {
+    #region IPrinterGraphics
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterGraphics.html"/>
+    /// </summary>
+    public partial interface IPrinterGraphics
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterGraphics.html#getPrinterJob()"/> 
+        /// </summary>
+        Java.Awt.Print.PrinterJob PrinterJob { get; }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region PrinterGraphics
-    public partial class PrinterGraphics
+    public partial class PrinterGraphics : Java.Awt.Print.IPrinterGraphics
     {
         #region Constructors
 

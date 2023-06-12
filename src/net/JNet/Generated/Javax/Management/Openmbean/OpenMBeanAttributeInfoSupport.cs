@@ -47,6 +47,22 @@ namespace Javax.Management.Openmbean
         {
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,java.lang.Object,java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="string"/></param>
+        /// <param name="arg1"><see cref="string"/></param>
+        /// <param name="arg2"><see cref="Javax.Management.Openmbean.OpenType"/></param>
+        /// <param name="arg3"><see cref="bool"/></param>
+        /// <param name="arg4"><see cref="bool"/></param>
+        /// <param name="arg5"><see cref="bool"/></param>
+        /// <param name="arg6"><see cref="object"/></param>
+        /// <param name="arg7"><see cref="object"/></param>
+        /// <exception cref="Javax.Management.Openmbean.OpenDataException"/>
+        public OpenMBeanAttributeInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, object arg6, object[] arg7)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+        {
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.openmbean.OpenType,boolean,boolean,boolean,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -71,7 +87,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg4"><see cref="bool"/></param>
         /// <param name="arg5"><see cref="bool"/></param>
         /// <param name="arg6"><see cref="Javax.Management.Descriptor"/></param>
-        public OpenMBeanAttributeInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
+        public OpenMBeanAttributeInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5, Javax.Management.Descriptor arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
@@ -84,7 +100,7 @@ namespace Javax.Management.Openmbean
         /// <param name="arg3"><see cref="bool"/></param>
         /// <param name="arg4"><see cref="bool"/></param>
         /// <param name="arg5"><see cref="bool"/></param>
-        public OpenMBeanAttributeInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenType arg2, bool arg3, bool arg4, bool arg5)
+        public OpenMBeanAttributeInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenType<object> arg2, bool arg3, bool arg4, bool arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
@@ -146,30 +162,30 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#getLegalValues()"/> 
         /// </summary>
-        public Java.Util.Set LegalValues
+        public Java.Util.Set<object> LegalValues
         {
-            get { return IExecute<Java.Util.Set>("getLegalValues"); }
+            get { return IExecute<Java.Util.Set<object>>("getLegalValues"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#getMaxValue()"/> 
         /// </summary>
-        public Java.Lang.Comparable MaxValue
+        public Java.Lang.Comparable<object> MaxValue
         {
-            get { return IExecute<Java.Lang.Comparable>("getMaxValue"); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMaxValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#getMinValue()"/> 
         /// </summary>
-        public Java.Lang.Comparable MinValue
+        public Java.Lang.Comparable<object> MinValue
         {
-            get { return IExecute<Java.Lang.Comparable>("getMinValue"); }
+            get { return IExecute<Java.Lang.Comparable<object>>("getMinValue"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#getOpenType()"/> 
         /// </summary>
-        public Javax.Management.Openmbean.OpenType OpenType
+        public Javax.Management.Openmbean.OpenType<object> OpenType
         {
-            get { return IExecute<Javax.Management.Openmbean.OpenType>("getOpenType"); }
+            get { return IExecute<Javax.Management.Openmbean.OpenType<object>>("getOpenType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfoSupport.html#isValue(java.lang.Object)"/>

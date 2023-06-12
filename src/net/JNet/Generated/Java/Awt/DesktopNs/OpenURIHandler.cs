@@ -25,8 +25,31 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt.DesktopNs
 {
+    #region IOpenURIHandler
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIHandler.html"/>
+    /// </summary>
+    public partial interface IOpenURIHandler
+    {
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIHandler.html#openURI(java.awt.desktop.OpenURIEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.DesktopNs.OpenURIEvent"/></param>
+        void OpenURI(Java.Awt.DesktopNs.OpenURIEvent arg0);
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region OpenURIHandler
-    public partial class OpenURIHandler
+    public partial class OpenURIHandler : Java.Awt.DesktopNs.IOpenURIHandler
     {
         #region Constructors
 

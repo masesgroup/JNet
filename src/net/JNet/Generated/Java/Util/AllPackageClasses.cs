@@ -203,7 +203,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.html"/>
     /// </summary>
-    public partial class AbstractMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractMap>
+    public partial class AbstractMap : Java.Util.Map
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -424,7 +424,7 @@ namespace Java.Util
     /// </summary>
     /// <typeparam name="K"></typeparam>
     /// <typeparam name="V"></typeparam>
-    public partial class AbstractMap<K, V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractMap<K, V>>
+    public partial class AbstractMap<K, V> : Java.Util.Map<K, V>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1335,6 +1335,11 @@ namespace Java.Util
     /// </summary>
     public partial class Comparator : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Comparator() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1349,6 +1354,11 @@ namespace Java.Util
     /// <typeparam name="T"></typeparam>
     public partial class Comparator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Comparator() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -1376,7 +1386,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Currency.html"/>
     /// </summary>
-    public partial class Currency : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Currency>
+    public partial class Currency : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -1976,6 +1986,11 @@ namespace Java.Util
     /// </summary>
     public partial class EventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public EventListener() { }
+
     #warning Remember to build the body class for event listener
 
         // TODO: complete the class
@@ -2030,8 +2045,8 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html"/>
     /// </summary>
-    /// <typeparam name="T"><see cref="Java.Util.EventListener"/></typeparam>
-    public partial class EventListenerProxy<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventListenerProxy<T>> where T: Java.Util.EventListener
+    /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
+    public partial class EventListenerProxy<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventListenerProxy<T>> where T: Java.Util.IEventListener, new()
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2074,7 +2089,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventObject.html"/>
     /// </summary>
-    public partial class EventObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventObject>
+    public partial class EventObject : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2258,7 +2273,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html"/>
         /// </summary>
-        public partial class BigDecimalLayoutForm : Java.Lang.Enum
+        public partial class BigDecimalLayoutForm : Java.Lang.Enum<Java.Util.Formatter.BigDecimalLayoutForm>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -2898,92 +2913,9 @@ namespace Java.Util
     }
     #endregion
 
-    #region Iterator
-    /// <summary>
-    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
-    /// </summary>
-    public partial class Iterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterator>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Iterator() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Iterator(params object[] args) : base(args) { }
 
-        private static IJavaType LocalBridgeClazz = ClazzOf("java.util.Iterator");
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "java.util.Iterator";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
-        public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
-        public override bool IsBridgeStatic => false;
 
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Iterator<E>
-    /// <summary>
-    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
-    /// </summary>
-    /// <typeparam name="E"></typeparam>
-    public partial class Iterator<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterator<E>>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Iterator() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Iterator(params object[] args) : base(args) { }
-
-        private static IJavaType LocalBridgeClazz = ClazzOf("java.util.Iterator");
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "java.util.Iterator";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
-        public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
-        public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-    
-    }
-    #endregion
 
     #region LinkedHashMap
     /// <summary>
@@ -3550,7 +3482,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html"/>
         /// </summary>
-        public partial class Category : Java.Lang.Enum
+        public partial class Category : Java.Lang.Enum<Java.Util.Locale.Category>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3593,7 +3525,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.FilteringMode.html"/>
         /// </summary>
-        public partial class FilteringMode : Java.Lang.Enum
+        public partial class FilteringMode : Java.Lang.Enum<Java.Util.Locale.FilteringMode>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -3636,7 +3568,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html"/>
         /// </summary>
-        public partial class IsoCountryCode : Java.Lang.Enum
+        public partial class IsoCountryCode : Java.Lang.Enum<Java.Util.Locale.IsoCountryCode>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4482,7 +4414,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html"/>
         /// </summary>
-        public partial class OfDouble : Java.Util.PrimitiveIterator
+        public partial class OfDouble : Java.Util.PrimitiveIterator<double?, Java.Util.Function.DoubleConsumer>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4525,7 +4457,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html"/>
         /// </summary>
-        public partial class OfInt : Java.Util.PrimitiveIterator
+        public partial class OfInt : Java.Util.PrimitiveIterator<int?, Java.Util.Function.IntConsumer>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4568,7 +4500,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html"/>
         /// </summary>
-        public partial class OfLong : Java.Util.PrimitiveIterator
+        public partial class OfLong : Java.Util.PrimitiveIterator<long?, Java.Util.Function.LongConsumer>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4747,7 +4679,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html"/>
     /// </summary>
-    public partial class Properties : Java.Util.Hashtable
+    public partial class Properties : Java.Util.Hashtable<object, object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4963,7 +4895,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Random.html"/>
     /// </summary>
-    public partial class Random : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Random>
+    public partial class Random : Java.Io.Serializable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5135,7 +5067,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html"/>
     /// </summary>
-    public partial class Scanner : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Scanner>
+    public partial class Scanner : Java.Util.Iterator<string>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5235,6 +5167,11 @@ namespace Java.Util
         /// </summary>
         public partial class Provider : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Provider() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -5249,6 +5186,11 @@ namespace Java.Util
         /// <typeparam name="S"></typeparam>
         public partial class Provider<S> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Provider() { }
+
         #warning Remember to build the body class for event listener
 
             // TODO: complete the class
@@ -5652,7 +5594,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html"/>
         /// </summary>
-        public partial class OfDouble : Java.Util.Spliterator.OfPrimitive
+        public partial class OfDouble : Java.Util.Spliterator.OfPrimitive<double?, Java.Util.Function.DoubleConsumer, Java.Util.Spliterator.OfDouble>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5695,7 +5637,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html"/>
         /// </summary>
-        public partial class OfInt : Java.Util.Spliterator.OfPrimitive
+        public partial class OfInt : Java.Util.Spliterator.OfPrimitive<int?, Java.Util.Function.IntConsumer, Java.Util.Spliterator.OfInt>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5738,7 +5680,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html"/>
         /// </summary>
-        public partial class OfLong : Java.Util.Spliterator.OfPrimitive
+        public partial class OfLong : Java.Util.Spliterator.OfPrimitive<long?, Java.Util.Function.LongConsumer, Java.Util.Spliterator.OfLong>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5957,7 +5899,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html"/>
         /// </summary>
-        public partial class AbstractDoubleSpliterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractDoubleSpliterator>
+        public partial class AbstractDoubleSpliterator : Java.Util.Spliterator.OfDouble
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6000,7 +5942,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html"/>
         /// </summary>
-        public partial class AbstractIntSpliterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractIntSpliterator>
+        public partial class AbstractIntSpliterator : Java.Util.Spliterator.OfInt
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6043,7 +5985,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html"/>
         /// </summary>
-        public partial class AbstractLongSpliterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractLongSpliterator>
+        public partial class AbstractLongSpliterator : Java.Util.Spliterator.OfLong
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6086,7 +6028,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html"/>
         /// </summary>
-        public partial class AbstractSpliterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractSpliterator>
+        public partial class AbstractSpliterator : Java.Util.Spliterator
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6130,7 +6072,7 @@ namespace Java.Util
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractSpliterator.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        public partial class AbstractSpliterator<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractSpliterator<T>>
+        public partial class AbstractSpliterator<T> : Java.Util.Spliterator<T>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6350,7 +6292,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringTokenizer.html"/>
     /// </summary>
-    public partial class StringTokenizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringTokenizer>
+    public partial class StringTokenizer : Java.Util.Enumeration<object>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -6436,7 +6378,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html"/>
     /// </summary>
-    public partial class TimerTask : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TimerTask>
+    public partial class TimerTask : Java.Lang.Runnable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

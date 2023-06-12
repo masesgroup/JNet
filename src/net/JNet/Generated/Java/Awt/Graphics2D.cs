@@ -138,8 +138,7 @@ namespace Java.Awt
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#addRenderingHints(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <typeparam name="Arg0Extendsobject"></typeparam>
-        public void AddRenderingHints<Arg0Extendsobject>(Java.Util.Map<Arg0Extendsobject, Arg0Extendsobject> arg0)
+        public void AddRenderingHints(Java.Util.Map<object, object> arg0)
         {
             IExecute("addRenderingHints", arg0);
         }

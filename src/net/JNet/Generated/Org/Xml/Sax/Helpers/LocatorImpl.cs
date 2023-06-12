@@ -41,10 +41,6 @@ namespace Org.Xml.Sax.Helpers
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Org.Xml.Sax.Helpers.LocatorImpl"/> to <see cref="Org.Xml.Sax.Locator"/>
-        /// </summary>
-        public static implicit operator Org.Xml.Sax.Locator(Org.Xml.Sax.Helpers.LocatorImpl t) => t.Cast<Org.Xml.Sax.Locator>();
 
         #endregion
 

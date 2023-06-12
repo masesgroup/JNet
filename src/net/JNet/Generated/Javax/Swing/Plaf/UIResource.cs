@@ -25,8 +25,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing.Plaf
 {
+    #region IUIResource
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/UIResource.html"/>
+    /// </summary>
+    public partial interface IUIResource
+    {
+        #region Instance methods
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
     #region UIResource
-    public partial class UIResource
+    public partial class UIResource : Javax.Swing.Plaf.IUIResource
     {
         #region Constructors
 
