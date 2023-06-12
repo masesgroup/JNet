@@ -361,13 +361,15 @@ namespace MASES.JNetReflector
 
         #region TypeVariable[] extension
 
-        public static void GetGenerics(this Java.Lang.Reflect.TypeVariable[] entries, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool reportNative, bool usedInGenerics, bool camel)
+        public static void GetGenerics(this Java.Lang.Reflect.TypeVariable[] entries, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool reportNative, bool usedInGenerics, bool camel, out bool mustBeAvoided)
         {
+            mustBeAvoided = false;
             foreach (var entry in entries)
             {
                 List<string> genArgumentsLocal = new List<string>();
                 List<KeyValuePair<string, string>> genClauseLocal = new List<KeyValuePair<string, string>>();
-                entry.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, usedInGenerics, camel);
+                entry.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, usedInGenerics, camel, out var localMustBeAvoided);
+                mustBeAvoided |= localMustBeAvoided;
                 foreach (var item in genArgumentsLocal)
                 {
                     if (genArguments != null && !genArguments.Contains(item))
@@ -393,7 +395,7 @@ namespace MASES.JNetReflector
         static string ApplyGenerics(this TypeVariable[] entries, IList<KeyValuePair<string, string>> genClause, string prefix, string name, bool usedInGenerics, bool camel)
         {
             List<string> genArguments = new List<string>();
-            entries.GetGenerics(genArguments, genClause, prefix, true, usedInGenerics, camel);
+            entries.GetGenerics(genArguments, genClause, prefix, true, usedInGenerics, camel, out bool _);
             var parameters = genArguments.ConvertGenerics();
             if (!string.IsNullOrEmpty(parameters))
             {
@@ -453,13 +455,32 @@ namespace MASES.JNetReflector
 
         #region Type extension
 
-        public static bool MustBeAvoided(this Java.Lang.Reflect.Type type)
+        public static bool TypeNameMustBeAvoided(this string typeName)
         {
-            if (type == null) return false;
-            var tName = type.TypeName;
-            tName = tName.Contains("<") ? tName.Substring(0, tName.IndexOf("<")) : tName;
-            var tClass = tName.JVMClass();
-            return tClass == null || tClass.MustBeAvoided();
+            bool toBeAvoided = false;
+            if (typeName.Contains("<"))
+            {
+                var clsName = typeName.Substring(0, typeName.IndexOf("<"));
+                clsName = clsName.Contains(SpecialNames.ArrayTypeTrailer) ? clsName.Substring(0, clsName.IndexOf(SpecialNames.ArrayTypeTrailer)) : clsName;
+                toBeAvoided = clsName.ClassTypeNameMustBeAvoided();
+                if (!toBeAvoided)
+                {
+                    var genTypes = typeName.Substring(typeName.IndexOf("<") + 1);
+                    genTypes = genTypes.Substring(0, genTypes.LastIndexOf(">"));
+                    var types = genTypes.Split(',', ' ');
+                    foreach (var type in types)
+                    {
+                        if (string.IsNullOrEmpty(type) || type == "?" || type == "extends" || type == "super") continue;
+                        toBeAvoided |= TypeNameMustBeAvoided(type.Trim());
+                    }
+                }
+            }
+            else
+            {
+                var clsName = typeName.Contains(SpecialNames.ArrayTypeTrailer) ? typeName.Substring(0, typeName.IndexOf(SpecialNames.ArrayTypeTrailer)) : typeName;
+                toBeAvoided = clsName.ClassTypeNameMustBeAvoided();
+            }
+            return toBeAvoided;
         }
 
         public static int JVMNestingLevels(this Java.Lang.Reflect.Type type)
@@ -468,16 +489,16 @@ namespace MASES.JNetReflector
             return result.Length - 1;
         }
 
-        public static string JVMInterfaceName(this Java.Lang.Reflect.Type type, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool camel)
+        public static string JVMInterfaceName(this Java.Lang.Reflect.Type type, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, bool camel, out bool mustBeAvoided)
         {
-            var tName = type.GetGenerics(null, genClause, string.Empty, true, usedInGenerics, camel);
+            var tName = type.GetGenerics(null, genClause, string.Empty, true, usedInGenerics, camel, out mustBeAvoided);
             string genName = null;
             string nsName = null;
             string cName = tName;
             if (tName.Contains("<"))
             {
                 genName = tName.Substring(tName.IndexOf("<"));
-                cName = tName.Substring(0, tName.IndexOf("<")); 
+                cName = tName.Substring(0, tName.IndexOf("<"));
             }
             if (cName.Contains(SpecialNames.NamespaceSeparator))
             {
@@ -496,7 +517,7 @@ namespace MASES.JNetReflector
 
         public static string Type(this Java.Lang.Reflect.Type type, Class clazz, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool usedInGenerics, bool camel)
         {
-            var retString = type.GetGenerics(genArguments, genClauses, prefix, true, usedInGenerics, camel);
+            var retString = type.GetGenerics(genArguments, genClauses, prefix, true, usedInGenerics, camel, out bool _);
             if (clazz.IsJVMGenericClass() && genClauses != null)
             {
                 List<string> classArguments = new List<string>();
@@ -568,7 +589,7 @@ namespace MASES.JNetReflector
 
         static string ApplyGenerics(this Java.Lang.Reflect.Type entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel)
         {
-            var retClass = entry.GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel);
+            var retClass = entry.GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel, out bool _);
             return retClass;
         }
 
@@ -576,7 +597,7 @@ namespace MASES.JNetReflector
         {
             List<string> genArguments = new List<string>();
             List<KeyValuePair<string, string>> genClause = new List<KeyValuePair<string, string>>();
-            entries.GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel);
+            entries.GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel, out bool _);
             var parameters = genArguments.ConvertGenerics();
             if (!string.IsNullOrEmpty(parameters))
             {
@@ -630,11 +651,13 @@ namespace MASES.JNetReflector
             return parameters;
         }
 
-        static void GetGenerics(this Java.Lang.Reflect.Type[] entries, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel)
+        static void GetGenerics(this Java.Lang.Reflect.Type[] entries, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel, out bool mustBeAvoided)
         {
+            mustBeAvoided = false;
             foreach (var entry in entries)
             {
-                entry.GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel);
+                entry.GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel, out var localMustBeAvoided);
+                mustBeAvoided |= localMustBeAvoided;
             }
         }
 
@@ -653,24 +676,25 @@ namespace MASES.JNetReflector
             return result;
         }
 
-        static string GetGenerics(this Java.Lang.Reflect.Type entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel)
+        static string GetGenerics(this Java.Lang.Reflect.Type entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel, out bool mustBeAvoided)
         {
             if (entry.IsInstanceOf<TypeVariable>())
             {
-                return entry.CastTo<TypeVariable>().GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel);
+                return entry.CastTo<TypeVariable>().GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel, out mustBeAvoided);
             }
             else if (entry.IsInstanceOf<ParameterizedType>())
             {
-                return entry.CastTo<ParameterizedType>().GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel);
+                return entry.CastTo<ParameterizedType>().GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel, out mustBeAvoided);
             }
             else if (entry.IsInstanceOf<GenericArrayType>())
             {
-                return entry.CastTo<GenericArrayType>().GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel);
+                return entry.CastTo<GenericArrayType>().GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel, out mustBeAvoided);
             }
             else if (entry.IsInstanceOf<WildcardType>())
             {
-                return entry.CastTo<WildcardType>().GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel);
+                return entry.CastTo<WildcardType>().GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel, out mustBeAvoided);
             }
+            mustBeAvoided = entry.TypeName.TypeNameMustBeAvoided();
             string retVal = string.Empty;
             if (reportNative)
             {
@@ -686,11 +710,11 @@ namespace MASES.JNetReflector
             return retVal;
         }
 
-        static string GetGenerics(this GenericArrayType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool reportNative, bool usedInGenerics, bool camel)
+        static string GetGenerics(this GenericArrayType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClauses, string prefix, bool reportNative, bool usedInGenerics, bool camel, out bool mustBeAvoided)
         {
             List<string> genArgumentsLocal = new List<string>();
             List<KeyValuePair<string, string>> genClauseLocal = new List<KeyValuePair<string, string>>();
-            var result = entry.GenericComponentType.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, usedInGenerics, camel);
+            var result = entry.GenericComponentType.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, usedInGenerics, camel, out mustBeAvoided);
             foreach (var item in genArgumentsLocal)
             {
                 if (genArguments != null && !genArguments.Contains(item))
@@ -713,7 +737,7 @@ namespace MASES.JNetReflector
             return result.EndsWith(SpecialNames.ArrayTypeTrailer) ? result : result + SpecialNames.ArrayTypeTrailer;
         }
 
-        static string GetGenerics(this ParameterizedType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel)
+        static string GetGenerics(this ParameterizedType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel, out bool mustBeAvoided)
         {
             List<string> types = new List<string>();
             List<string> genArgumentsLocal = new List<string>();
@@ -722,12 +746,14 @@ namespace MASES.JNetReflector
             var cName = entry.TypeName;
             cName = cName.Contains("<") ? cName.Substring(0, cName.IndexOf("<")) : cName;
             var cEntry = cName.JVMClass();
+            mustBeAvoided = cEntry.MustBeAvoided();
             for (int i = 0; i < entry.ActualTypeArguments.Length; i++)
             {
                 var actualType = entry.ActualTypeArguments[i];
                 var actualTypeName = actualType.TypeName;
                 var expectedType = cEntry.TypeParameters[i];
-                var resType = actualType.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, usedInGenerics, camel);
+                var resType = actualType.GetGenerics(genArgumentsLocal, genClauseLocal, prefix, reportNative, usedInGenerics, camel, out var localMustBeAvoided);
+                mustBeAvoided |= localMustBeAvoided;
                 foreach (var bound in expectedType.Bounds)
                 {
                     string result = bound.GetBound(usedInGenerics, camel);
@@ -757,8 +783,9 @@ namespace MASES.JNetReflector
             return type.StartsWith(SpecialNames.JavaLangClass) ? type : entry.ToNetType(camel) + types?.ApplyGenerics();
         }
 
-        static string GetGenerics(this TypeVariable entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel)
+        static string GetGenerics(this TypeVariable entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel, out bool mustBeAvoided)
         {
+            mustBeAvoided = false;
             genArguments?.Add(entry.Name);
             List<string> bounds = null;
             /*** this piece of code crashes the JVM
@@ -794,8 +821,9 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
-        static string GetGenerics(this WildcardType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel)
+        static string GetGenerics(this WildcardType entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel, out bool mustBeAvoided)
         {
+            mustBeAvoided = false;
             string retVal = string.Empty;
             if (entry.LowerBounds.Length == 0)
             {
@@ -803,8 +831,8 @@ namespace MASES.JNetReflector
                 {
                     List<string> innerGenArguments = new List<string>();
                     List<KeyValuePair<string, string>> innerGenClauses = new List<KeyValuePair<string, string>>();
-                    var upper = GetGenerics(entry.UpperBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, usedInGenerics, camel);
-
+                    var upper = GetGenerics(entry.UpperBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, usedInGenerics, camel, out var localMustBeAvoided);
+                    mustBeAvoided |= localMustBeAvoided;
                     if (IsNetNativeType(upper))
                     {
                         retVal = upper;
@@ -870,9 +898,11 @@ namespace MASES.JNetReflector
                 {
                     List<string> innerGenArguments = new List<string>();
                     List<KeyValuePair<string, string>> innerGenClauses = new List<KeyValuePair<string, string>>();
-                    var upper = GetGenerics(entry.UpperBounds[i], null, null, prefix, reportNative, usedInGenerics, camel);
+                    var upper = GetGenerics(entry.UpperBounds[i], null, null, prefix, reportNative, usedInGenerics, camel, out var upperMustBeAvoided);
+                    mustBeAvoided |= upperMustBeAvoided;
                     upper = upper.EndsWith("?") ? upper.Substring(0, upper.LastIndexOf("?")) : upper;
-                    var lower = GetGenerics(entry.LowerBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, usedInGenerics, camel);
+                    var lower = GetGenerics(entry.LowerBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, usedInGenerics, camel, out var lowerMustBeAvoided);
+                    mustBeAvoided |= lowerMustBeAvoided;
                     lower = lower.EndsWith("?") ? lower.Substring(0, lower.LastIndexOf("?")) : lower;
 
                     if (IsNetNativeType(lower))
@@ -1024,7 +1054,7 @@ namespace MASES.JNetReflector
         public static void GetGenerics(this Class entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool usedInGenerics, bool camel)
         {
             if (!entry.IsJVMGenericClass()) return;
-            entry.TypeParameters.GetGenerics(genArguments, genClause, prefix, true, usedInGenerics, camel);
+            entry.TypeParameters.GetGenerics(genArguments, genClause, prefix, true, usedInGenerics, camel, out bool _);
         }
 
         static string ApplyGenerics(this Class entry, IList<KeyValuePair<string, string>> genClause, bool usedInGenerics, string name)
@@ -1230,7 +1260,7 @@ namespace MASES.JNetReflector
                                 if (genInterface.IsIterable())
                                 {
                                     List<string> genArguments = new List<string>();
-                                    var genInt = genInterface.GetGenerics(genArguments, null, string.Empty, true, usedInGenerics, camel);
+                                    var genInt = genInterface.GetGenerics(genArguments, null, string.Empty, true, usedInGenerics, camel, out bool _);
                                     innerName = genInt.Substring(genInt.IndexOf("<"));
                                     break;
                                 }
@@ -1248,7 +1278,7 @@ namespace MASES.JNetReflector
                                 if (genInterface.IsIterator())
                                 {
                                     List<string> genArguments = new List<string>();
-                                    var genInt = genInterface.GetGenerics(genArguments, null, string.Empty, true, usedInGenerics, camel);
+                                    var genInt = genInterface.GetGenerics(genArguments, null, string.Empty, true, usedInGenerics, camel, out bool _);
                                     innerName = genInt.Substring(genInt.IndexOf("<"));
                                     break;
                                 }
@@ -1317,7 +1347,7 @@ namespace MASES.JNetReflector
             else return cName;
         }
 
-        public static IEnumerable<Class> JVMInterfaces(this Class entry)
+        public static IEnumerable<Class> JVMInterfaces(this Class entry, bool usedInGenerics)
         {
             List<Class> filteredInterfaces = new List<Class>();
 
@@ -1350,16 +1380,17 @@ namespace MASES.JNetReflector
             return filteredInterfaces;
         }
 
-        public static IEnumerable<Java.Lang.Reflect.Type> JVMGenericInterfaces(this Class entry)
+        public static IEnumerable<string> JVMGenericInterfaces(this Class entry, bool usedInGenerics, bool camel)
         {
-            List<Java.Lang.Reflect.Type> filteredInterfaces = new List<Java.Lang.Reflect.Type>();
+            List<string> filteredInterfaces = new List<string>();
 
-            bool isInterface = entry.IsInterface();
             if (entry.GenericInterfaces.Length != 1) // a single interface will be the base class
             {
                 foreach (var implementedInterface in entry.GenericInterfaces)
                 {
-                    if (implementedInterface.MustBeAvoided()) continue;
+                    if (implementedInterface.JVMNestingLevels() != 0) continue;
+                    var str = implementedInterface.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, camel, out var mustBeAvoided);
+                    if (mustBeAvoided) continue;
                     var superCls = entry.SuperClass;
                     if (superCls == null
                         || !superCls.IsPublic()
@@ -1367,7 +1398,7 @@ namespace MASES.JNetReflector
                         || superCls.MustBeAvoided()
                         || superCls.TypeName == SpecialNames.JavaLangObject)
                     {
-                        filteredInterfaces.Add(implementedInterface);
+                        filteredInterfaces.Add(str);
                     }
                     else
                     {
@@ -1379,25 +1410,34 @@ namespace MASES.JNetReflector
                                 foundInSuperClass = true; break;
                             }
                         }
-                        if (!foundInSuperClass) filteredInterfaces.Add(implementedInterface);
+                        if (!foundInSuperClass) filteredInterfaces.Add(str);
                     }
                 }
             }
             return filteredInterfaces;
         }
 
+        public static bool IsNamespaceToAvoid(this string typeName)
+        {
+            if (JNetReflectorCore.NamespacesToAvoid.Any((n) => Namespace(typeName, false).StartsWith(n))) return true;
+            return false;
+        }
+
         public static bool IsNamespaceToAvoid(this Class entry)
         {
-            if (JNetReflectorCore.NamespacesToAvoid.Any((n) => entry.Namespace(false).StartsWith(n))) return true;
+            return entry.TypeName.IsNamespaceToAvoid();
+        }
+
+        public static bool IsClassToAvoid(this string typeName)
+        {
+            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
+            if (JNetReflectorCore.ClassesToAvoid.Any((n) => typeName == n)) return true;
             return false;
         }
 
         public static bool IsClassToAvoid(this Class entry)
         {
-            var typeName = entry.TypeName;
-            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
-            if (JNetReflectorCore.ClassesToAvoid.Any((n) => typeName == n)) return true;
-            return false;
+            return IsClassToAvoid(entry.TypeName);
         }
 
         public static bool IsClassToAvoidInGenerics(this Class entry)
@@ -1627,29 +1667,40 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        public static bool ClassTypeNameMustBeAvoided(this string typeName)
+        {
+            bool toBeAvoided = false;
+            if (typeName == null) toBeAvoided = false;
+            if (IsJVMNativeType(typeName)) toBeAvoided = false;
+            if (typeName.Contains(SpecialNames.NamespaceSeparator))
+            {
+                if (typeName.IsNamespaceToAvoid()) toBeAvoided = true;
+                if (typeName.IsClassToAvoid()) toBeAvoided = true;
+            }
+
+            return toBeAvoided;
+        }
+
         public static bool MustBeAvoided(this Class entry)
         {
             bool toBeAvoided = false;
             if (entry == null) toBeAvoided = false;
-            if (entry.IsJVMNativeType()) toBeAvoided = false;
             if (!entry.IsPublic()) toBeAvoided = true;
             if (!JNetReflectorCore.ReflectDeprecated && entry.IsDeprecated()) toBeAvoided = true;
-            if (entry.TypeName.Contains(SpecialNames.NamespaceSeparator))
-            {
-                if (entry.IsNamespaceToAvoid()) toBeAvoided = true;
-                if (entry.IsClassToAvoid()) toBeAvoided = true;
-            }
-
-            if (toBeAvoided && !entry.IsJVMGenericClass()) // test inner types
+            if (!toBeAvoided) toBeAvoided |= entry.TypeName.ClassTypeNameMustBeAvoided();
+            if (!toBeAvoided && entry.IsJVMGenericClass()) // test inner types
             {
                 foreach (var item in entry.TypeParameters)
                 {
-                    if (item.Name.Contains(SpecialNames.NamespaceSeparator))
-                    {
-                        if (item.IsNamespaceToAvoid()) toBeAvoided = true;
-                        if (item.IsClassToAvoid()) toBeAvoided = true;
-                        if (toBeAvoided) break;
-                    }
+                    item.GetGenerics(null, null, string.Empty, true, true, false, out bool localMustBeAvoided);
+                    toBeAvoided |= localMustBeAvoided;
+
+                    //if (item.Name.Contains(SpecialNames.NamespaceSeparator))
+                    //{
+                    //    if (item.IsNamespaceToAvoid()) toBeAvoided = true;
+                    //    if (item.IsClassToAvoid()) toBeAvoided = true;
+                    //    if (toBeAvoided) break;
+                    //}
                 }
             }
 
@@ -2057,9 +2108,9 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static void GetGenerics(this Method entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel)
+        public static void GetGenerics(this Method entry, IList<string> genArguments, IList<KeyValuePair<string, string>> genClause, string prefix, bool reportNative, bool usedInGenerics, bool camel, out bool mustBeAvoided)
         {
-            entry.GenericParameterTypes.GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel);
+            entry.GenericParameterTypes.GetGenerics(genArguments, genClause, prefix, reportNative, usedInGenerics, camel, out mustBeAvoided);
         }
 
         public static string WhereClauses(this Method entry, bool usedInGenerics, bool camel)
@@ -2085,7 +2136,7 @@ namespace MASES.JNetReflector
             }
             if (usedInGenerics)
             {
-                entry.GetGenerics(genArguments, genClause, prefix, false, usedInGenerics, camel);
+                entry.GetGenerics(genArguments, genClause, prefix, false, usedInGenerics, camel, out bool _);
                 methodName += genArguments.ApplyGenerics();
             }
             return camel ? Camel(methodName) : methodName;
@@ -2213,6 +2264,13 @@ namespace MASES.JNetReflector
             }
 
             return false;
+        }
+
+        public static bool MustBeAvoided(this Method entry, bool usedInGenerics)
+        {
+            bool mustBeAvoided = entry.ReturnType.MustBeAvoided();
+            if (!mustBeAvoided) entry.GenericReturnType.GetGenerics(null, null, string.Empty, true, usedInGenerics, false, out mustBeAvoided);
+            return mustBeAvoided;
         }
 
         public static string JavadocUrl(this Method entry, bool camel)
@@ -2418,7 +2476,7 @@ namespace MASES.JNetReflector
                 var entryType = entry.Type.ToNetType(camel);
                 if (entry.ParameterizedType.IsGenerics() && (entryType == SpecialNames.NetObject || entryType == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)))
                 {
-                    var retVal = entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, usedInGenerics, camel);
+                    var retVal = entry.ParameterizedType.GetGenerics(genArguments, genClauses, prefix, true, usedInGenerics, camel, out bool _);
                     //var retVal = genArguments.ConvertGenerics();
                     return retVal;
                 }
@@ -2442,6 +2500,13 @@ namespace MASES.JNetReflector
             cName = cName.Contains("<") ? cName.Substring(0, cName.IndexOf("<")) : cName;
             var cEntry = cName.JVMClass();
             return cEntry.IsJVMException();
+        }
+
+        public static bool MustBeAvoided(this Parameter entry, bool usedInGenerics)
+        {
+            bool mustBeAvoided = entry.Type.MustBeAvoided();
+            if (!mustBeAvoided) entry.ParameterizedType.GetGenerics(null, null, string.Empty, true, usedInGenerics, false, out mustBeAvoided);
+            return mustBeAvoided;
         }
 
         #endregion

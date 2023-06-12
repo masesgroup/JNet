@@ -393,12 +393,12 @@ namespace MASES.JNetReflector
                     if (mainClassDone) throw new InvalidOperationException("Too many main class");
                     if (!JNetReflectorCore.ReflectDeprecated && entry.IsDeprecated())
                     {
-                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated main class {0}", jClass.GenericString);
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated main class {0}", entry.GenericString);
                         return string.Empty;
                     }
                     if (JNetReflectorCore.DisableGenerics && entry.IsOrInheritFromJVMGenericClass())
                     {
-                        ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", jClass.GenericString);
+                        ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", entry.GenericString);
                         return string.Empty;
                     }
                     mainClassDone = true;
@@ -628,7 +628,7 @@ namespace MASES.JNetReflector
                 createInterfaceData = false;
             }
 
-            IList<Method> methodPrefilter = jClass.PrefilterMethods(out isMainClass);
+            IList<Method> methodPrefilter = jClass.PrefilterMethods(out isMainClass, isGeneric);
 
             ReportTrace(ReflectionTraceLevel.Debug, "Preparing nested class {0}", jClass.GenericString);
 
@@ -733,12 +733,9 @@ namespace MASES.JNetReflector
                 if (!(jClass.IsJVMGenericClass() && isGeneric == false))
                 {
                     StringBuilder sbInterfaces = new StringBuilder();
-                    foreach (var item in jClass.JVMGenericInterfaces())
+                    foreach (var item in jClass.JVMGenericInterfaces(isGeneric, JNetReflectorCore.UseCamel))
                     {
-                        if (item.JVMNestingLevels() == 0)
-                        {
-                            sbInterfaces.AppendFormat("{0}, ", item.JVMInterfaceName(new List<KeyValuePair<string, string>>(), isGeneric, JNetReflectorCore.UseCamel));
-                        }
+                        sbInterfaces.AppendFormat("{0}, ", item);
                     }
 
                     extraInterfaces = sbInterfaces.ToString();
@@ -823,7 +820,7 @@ namespace MASES.JNetReflector
                     List<string> genArgumentsLocal = new List<string>();
                     List<KeyValuePair<string, string>> genClauseLocal = new List<KeyValuePair<string, string>>();
                     if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
-                    if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
+                    if (parameter.MustBeAvoided(isGeneric)) { bypass = true; break; }
                     if (parameter.Type(genArgumentsLocal, genClauseLocal, isGeneric ? null : string.Empty, isGeneric, JNetReflectorCore.UseCamel) == "object[]") { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
@@ -968,7 +965,7 @@ namespace MASES.JNetReflector
                 List<KeyValuePair<string, string>> classClauses = new List<KeyValuePair<string, string>>();
                 classDefinition.GetGenerics(classGenerics, classClauses, string.Empty, isGeneric, JNetReflectorCore.UseCamel);
 
-                IEnumerable<Class> filteredInterfaces = classDefinition.JVMInterfaces();
+                IEnumerable<Class> filteredInterfaces = classDefinition.JVMInterfaces(isGeneric);
                 foreach (var implementedInterface in filteredInterfaces)
                 {
                     if (implementedInterface.IsIterable() || implementedInterface.IsIterator())
@@ -1039,7 +1036,7 @@ namespace MASES.JNetReflector
             return subOperatorBlock.ToString();
         }
 
-        static IList<Method> PrefilterMethods(this Class classDefinition, out bool isMainClass)
+        static IList<Method> PrefilterMethods(this Class classDefinition, out bool isMainClass, bool isGeneric)
         {
             isMainClass = false;
             ReportTrace(ReflectionTraceLevel.Info, "******************* Prefilter Methods of {0} *******************", classDefinition.GenericString);
@@ -1106,7 +1103,7 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded IsOrInheritFromJVMGenericClass method {0}", genString);
                     continue; // avoid generics till now
                 }
-                if (method.ReturnType.MustBeAvoided())
+                if (method.MustBeAvoided(isGeneric))
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded MustBeAvoided method for ReturnType {0}", genString);
                     continue;
@@ -1396,7 +1393,7 @@ namespace MASES.JNetReflector
                 foreach (var parameter in method.Parameters)
                 {
                     if (JNetReflectorCore.DisableGenerics && parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
-                    if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
+                    if (parameter.MustBeAvoided(isGeneric)) { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
                         parameters.Add(parameter);
