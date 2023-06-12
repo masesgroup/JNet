@@ -42,18 +42,20 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadless()"/> 
-        /// </summary>
-        public static bool IsHeadless
-        {
-            get { return SExecute<bool>(LocalBridgeClazz, "isHeadless"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getLocalGraphicsEnvironment()"/> 
         /// </summary>
         public static Java.Awt.GraphicsEnvironment LocalGraphicsEnvironment
         {
             get { return SExecute<Java.Awt.GraphicsEnvironment>(LocalBridgeClazz, "getLocalGraphicsEnvironment"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadless()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public static bool IsHeadless()
+        {
+            return SExecute<bool>(LocalBridgeClazz, "isHeadless");
         }
 
         #endregion
@@ -88,13 +90,6 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.GraphicsDevice>("getDefaultScreenDevice"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadlessInstance()"/> 
-        /// </summary>
-        public bool IsHeadlessInstance
-        {
-            get { return IExecute<bool>("isHeadlessInstance"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#getMaximumWindowBounds()"/> 
         /// </summary>
         public Java.Awt.Rectangle MaximumWindowBounds
@@ -125,6 +120,15 @@ namespace Java.Awt
         public string[] GetAvailableFontFamilyNames(Java.Util.Locale arg0)
         {
             return IExecuteArray<string>("getAvailableFontFamilyNames", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#isHeadlessInstance()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsHeadlessInstance()
+        {
+            return IExecute<bool>("isHeadlessInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsEnvironment.html#registerFont(java.awt.Font)"/>

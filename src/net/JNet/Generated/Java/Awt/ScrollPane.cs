@@ -85,20 +85,6 @@ namespace Java.Awt
             get { return IExecute<int>("getHScrollbarHeight"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#isWheelScrollingEnabled()"/> 
-        /// </summary>
-        public bool IsWheelScrollingEnabled
-        {
-            get { return IExecute<bool>("isWheelScrollingEnabled"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#paramString()"/> 
-        /// </summary>
-        public string ParamString
-        {
-            get { return IExecute<string>("paramString"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#getScrollbarDisplayPolicy()"/> 
         /// </summary>
         public int ScrollbarDisplayPolicy
@@ -132,6 +118,24 @@ namespace Java.Awt
         public int VScrollbarWidth
         {
             get { return IExecute<int>("getVScrollbarWidth"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#isWheelScrollingEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWheelScrollingEnabled()
+        {
+            return IExecute<bool>("isWheelScrollingEnabled");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#paramString()"/>
+        /// </summary>
+
+        /// <returns><see cref="string"/></returns>
+        public string ParamString()
+        {
+            return IExecute<string>("paramString");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#setScrollPosition(int,int)"/>

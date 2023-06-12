@@ -62,11 +62,13 @@ namespace Java.Awt
             get { return IExecute<int>("getAutoDelay"); } set { IExecute("setAutoDelay", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#isAutoWaitForIdle()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#isAutoWaitForIdle()"/>
         /// </summary>
-        public bool IsAutoWaitForIdle
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAutoWaitForIdle()
         {
-            get { return IExecute<bool>("isAutoWaitForIdle"); }
+            return IExecute<bool>("isAutoWaitForIdle");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#getPixelColor(int,int)"/>

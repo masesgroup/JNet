@@ -33,16 +33,18 @@ namespace Javax.Xml.Stream.Util
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#newInstance()"/> 
-        /// </summary>
-        Javax.Xml.Stream.Util.XMLEventAllocator NewInstance { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#allocate(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
         /// <returns><see cref="Javax.Xml.Stream.Events.XMLEvent"/></returns>
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         Javax.Xml.Stream.Events.XMLEvent Allocate(Javax.Xml.Stream.XMLStreamReader arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#newInstance()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Stream.Util.XMLEventAllocator"/></returns>
+        Javax.Xml.Stream.Util.XMLEventAllocator NewInstance();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#allocate(javax.xml.stream.XMLStreamReader,javax.xml.stream.util.XMLEventConsumer)"/>
         /// </summary>
@@ -82,13 +84,6 @@ namespace Javax.Xml.Stream.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#newInstance()"/> 
-        /// </summary>
-        public Javax.Xml.Stream.Util.XMLEventAllocator NewInstance
-        {
-            get { return IExecute<Javax.Xml.Stream.Util.XMLEventAllocator>("newInstance"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#allocate(javax.xml.stream.XMLStreamReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Stream.XMLStreamReader"/></param>
@@ -97,6 +92,15 @@ namespace Javax.Xml.Stream.Util
         public Javax.Xml.Stream.Events.XMLEvent Allocate(Javax.Xml.Stream.XMLStreamReader arg0)
         {
             return IExecute<Javax.Xml.Stream.Events.XMLEvent>("allocate", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#newInstance()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Stream.Util.XMLEventAllocator"/></returns>
+        public Javax.Xml.Stream.Util.XMLEventAllocator NewInstance()
+        {
+            return IExecute<Javax.Xml.Stream.Util.XMLEventAllocator>("newInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html#allocate(javax.xml.stream.XMLStreamReader,javax.xml.stream.util.XMLEventConsumer)"/>

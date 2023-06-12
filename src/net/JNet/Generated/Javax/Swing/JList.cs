@@ -138,13 +138,6 @@ namespace Javax.Swing
             get { return IExecute<Javax.Swing.JList.DropLocation>("getDropLocation"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/> 
-        /// </summary>
-        public bool IsSelectionEmpty
-        {
-            get { return IExecute<bool>("isSelectionEmpty"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLastVisibleIndex()"/> 
         /// </summary>
         public int LastVisibleIndex
@@ -299,6 +292,15 @@ namespace Javax.Swing
         public bool IsSelectedIndex(int arg0)
         {
             return IExecute<bool>("isSelectedIndex", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSelectionEmpty()
+        {
+            return IExecute<bool>("isSelectionEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
@@ -484,11 +486,13 @@ namespace Javax.Swing
                 get { return IExecute<int>("getIndex"); }
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.DropLocation.html#isInsert()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.DropLocation.html#isInsert()"/>
             /// </summary>
-            public bool IsInsert
+
+            /// <returns><see cref="bool"/></returns>
+            public bool IsInsert()
             {
-                get { return IExecute<bool>("isInsert"); }
+                return IExecute<bool>("isInsert");
             }
 
             #endregion
@@ -631,13 +635,6 @@ namespace Javax.Swing
         public Javax.Swing.JList.DropLocation GetDropLocation
         {
             get { return IExecute<Javax.Swing.JList.DropLocation>("getDropLocation"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/> 
-        /// </summary>
-        public bool IsSelectionEmpty
-        {
-            get { return IExecute<bool>("isSelectionEmpty"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getLastVisibleIndex()"/> 
@@ -794,6 +791,15 @@ namespace Javax.Swing
         public bool IsSelectedIndex(int arg0)
         {
             return IExecute<bool>("isSelectedIndex", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#isSelectionEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSelectionEmpty()
+        {
+            return IExecute<bool>("isSelectionEmpty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>

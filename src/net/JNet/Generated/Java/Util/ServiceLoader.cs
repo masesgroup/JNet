@@ -84,25 +84,31 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#findFirst()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#iterator()"/>
         /// </summary>
-        public Java.Util.Optional FindFirst
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            get { return IExecute<Java.Util.Optional>("findFirst"); }
+            return IExecute<Java.Util.Iterator>("iterator");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#findFirst()"/>
         /// </summary>
-        public Java.Util.Iterator Iterator
+
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional FindFirst()
         {
-            get { return IExecute<Java.Util.Iterator>("iterator"); }
+            return IExecute<Java.Util.Optional>("findFirst");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#stream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#stream()"/>
         /// </summary>
-        public Java.Util.Stream.Stream Stream
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream Stream()
         {
-            get { return IExecute<Java.Util.Stream.Stream>("stream"); }
+            return IExecute<Java.Util.Stream.Stream>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#reload()"/>
@@ -284,25 +290,31 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#findFirst()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#iterator()"/>
         /// </summary>
-        public Java.Util.Optional<S> FindFirst
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<S> Iterator()
         {
-            get { return IExecute<Java.Util.Optional<S>>("findFirst"); }
+            return IExecute<Java.Util.Iterator<S>>("iterator");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#findFirst()"/>
         /// </summary>
-        public Java.Util.Iterator<S> Iterator
+
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<S> FindFirst()
         {
-            get { return IExecute<Java.Util.Iterator<S>>("iterator"); }
+            return IExecute<Java.Util.Optional<S>>("findFirst");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#stream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#stream()"/>
         /// </summary>
-        public Java.Util.Stream.Stream<Java.Util.ServiceLoader.Provider<S>> Stream
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<Java.Util.ServiceLoader.Provider<S>> Stream()
         {
-            get { return IExecute<Java.Util.Stream.Stream<Java.Util.ServiceLoader.Provider<S>>>("stream"); }
+            return IExecute<Java.Util.Stream.Stream<Java.Util.ServiceLoader.Provider<S>>>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#reload()"/>

@@ -42,34 +42,6 @@ namespace Javax.Swing
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredBevelBorder()"/> 
-        /// </summary>
-        public static Javax.Swing.Border.Border CreateLoweredBevelBorder
-        {
-            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createLoweredBevelBorder"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredSoftBevelBorder()"/> 
-        /// </summary>
-        public static Javax.Swing.Border.Border CreateLoweredSoftBevelBorder
-        {
-            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createLoweredSoftBevelBorder"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedBevelBorder()"/> 
-        /// </summary>
-        public static Javax.Swing.Border.Border CreateRaisedBevelBorder
-        {
-            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createRaisedBevelBorder"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedSoftBevelBorder()"/> 
-        /// </summary>
-        public static Javax.Swing.Border.Border CreateRaisedSoftBevelBorder
-        {
-            get { return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createRaisedSoftBevelBorder"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createBevelBorder(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -224,6 +196,42 @@ namespace Javax.Swing
         public static Javax.Swing.Border.Border CreateLineBorder(Java.Awt.Color arg0)
         {
             return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createLineBorder", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredBevelBorder()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        public static Javax.Swing.Border.Border CreateLoweredBevelBorder()
+        {
+            return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createLoweredBevelBorder");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createLoweredSoftBevelBorder()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        public static Javax.Swing.Border.Border CreateLoweredSoftBevelBorder()
+        {
+            return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createLoweredSoftBevelBorder");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedBevelBorder()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        public static Javax.Swing.Border.Border CreateRaisedBevelBorder()
+        {
+            return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createRaisedBevelBorder");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createRaisedSoftBevelBorder()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
+        public static Javax.Swing.Border.Border CreateRaisedSoftBevelBorder()
+        {
+            return SExecute<Javax.Swing.Border.Border>(LocalBridgeClazz, "createRaisedSoftBevelBorder");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BorderFactory.html#createSoftBevelBorder(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)"/>

@@ -74,13 +74,6 @@ namespace Java.Security.Cert
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#values()"/> 
-        /// </summary>
-        public static Java.Security.Cert.PKIXReason[] Values
-        {
-            get { return SExecuteArray<Java.Security.Cert.PKIXReason>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -88,6 +81,15 @@ namespace Java.Security.Cert
         public static Java.Security.Cert.PKIXReason ValueOf(string arg0)
         {
             return SExecute<Java.Security.Cert.PKIXReason>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Security.Cert.PKIXReason"/></returns>
+        public static Java.Security.Cert.PKIXReason[] Values()
+        {
+            return SExecuteArray<Java.Security.Cert.PKIXReason>(LocalBridgeClazz, "values");
         }
 
         #endregion

@@ -81,34 +81,6 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.Insets>("getInsets"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusCycleRoot()"/> 
-        /// </summary>
-        public bool IsFocusCycleRoot
-        {
-            get { return IExecute<bool>("isFocusCycleRoot"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusTraversalPolicyProvider()"/> 
-        /// </summary>
-        public bool IsFocusTraversalPolicyProvider
-        {
-            get { return IExecute<bool>("isFocusTraversalPolicyProvider"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusTraversalPolicySet()"/> 
-        /// </summary>
-        public bool IsFocusTraversalPolicySet
-        {
-            get { return IExecute<bool>("isFocusTraversalPolicySet"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isValidateRoot()"/> 
-        /// </summary>
-        public bool IsValidateRoot
-        {
-            get { return IExecute<bool>("isValidateRoot"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#getLayout()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#setLayout(java.awt.LayoutManager)"/>
         /// </summary>
         public Java.Awt.LayoutManager Layout
@@ -123,6 +95,42 @@ namespace Java.Awt
         public bool IsAncestorOf(Java.Awt.Component arg0)
         {
             return IExecute<bool>("isAncestorOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusCycleRoot()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFocusCycleRoot()
+        {
+            return IExecute<bool>("isFocusCycleRoot");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusTraversalPolicySet()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFocusTraversalPolicySet()
+        {
+            return IExecute<bool>("isFocusTraversalPolicySet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isValidateRoot()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsValidateRoot()
+        {
+            return IExecute<bool>("isValidateRoot");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#isFocusTraversalPolicyProvider()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFocusTraversalPolicyProvider()
+        {
+            return IExecute<bool>("isFocusTraversalPolicyProvider");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#setFocusTraversalPolicyProvider(boolean)"/>

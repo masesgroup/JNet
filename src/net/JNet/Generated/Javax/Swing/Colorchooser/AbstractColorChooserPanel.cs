@@ -71,13 +71,6 @@ namespace Javax.Swing.Colorchooser
             get { return IExecute<string>("getDisplayName"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#isColorTransparencySelectionEnabled()"/> 
-        /// </summary>
-        public bool IsColorTransparencySelectionEnabled
-        {
-            get { return IExecute<bool>("isColorTransparencySelectionEnabled"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#getLargeDisplayIcon()"/> 
         /// </summary>
         public Javax.Swing.Icon LargeDisplayIcon
@@ -104,6 +97,15 @@ namespace Javax.Swing.Colorchooser
         public void UpdateChooser()
         {
             IExecute("updateChooser");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#isColorTransparencySelectionEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsColorTransparencySelectionEnabled()
+        {
+            return IExecute<bool>("isColorTransparencySelectionEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/colorchooser/AbstractColorChooserPanel.html#installChooserPanel(javax.swing.JColorChooser)"/>

@@ -33,13 +33,17 @@ namespace Java.Util.Concurrent.Locks
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/>
         /// </summary>
-        Java.Util.Concurrent.Locks.Lock ReadLock { get; }
+
+        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
+        Java.Util.Concurrent.Locks.Lock ReadLock();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/>
         /// </summary>
-        Java.Util.Concurrent.Locks.Lock WriteLock { get; }
+
+        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
+        Java.Util.Concurrent.Locks.Lock WriteLock();
 
         #endregion
 
@@ -72,18 +76,22 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#readLock()"/>
         /// </summary>
-        public Java.Util.Concurrent.Locks.Lock ReadLock
+
+        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
+        public Java.Util.Concurrent.Locks.Lock ReadLock()
         {
-            get { return IExecute<Java.Util.Concurrent.Locks.Lock>("readLock"); }
+            return IExecute<Java.Util.Concurrent.Locks.Lock>("readLock");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html#writeLock()"/>
         /// </summary>
-        public Java.Util.Concurrent.Locks.Lock WriteLock
+
+        /// <returns><see cref="Java.Util.Concurrent.Locks.Lock"/></returns>
+        public Java.Util.Concurrent.Locks.Lock WriteLock()
         {
-            get { return IExecute<Java.Util.Concurrent.Locks.Lock>("writeLock"); }
+            return IExecute<Java.Util.Concurrent.Locks.Lock>("writeLock");
         }
 
         #endregion

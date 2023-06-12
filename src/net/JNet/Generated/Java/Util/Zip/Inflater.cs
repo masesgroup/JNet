@@ -75,27 +75,6 @@ namespace Java.Util.Zip
             get { return IExecute<long>("getBytesWritten"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#finished()"/> 
-        /// </summary>
-        public bool Finished
-        {
-            get { return IExecute<bool>("finished"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#needsDictionary()"/> 
-        /// </summary>
-        public bool NeedsDictionary
-        {
-            get { return IExecute<bool>("needsDictionary"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#needsInput()"/> 
-        /// </summary>
-        public bool NeedsInput
-        {
-            get { return IExecute<bool>("needsInput"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#getRemaining()"/> 
         /// </summary>
         public int Remaining
@@ -115,6 +94,33 @@ namespace Java.Util.Zip
         public int TotalOut
         {
             get { return IExecute<int>("getTotalOut"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#finished()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Finished()
+        {
+            return IExecute<bool>("finished");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#needsDictionary()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool NeedsDictionary()
+        {
+            return IExecute<bool>("needsDictionary");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#needsInput()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool NeedsInput()
+        {
+            return IExecute<bool>("needsInput");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#inflate(byte[],int,int)"/>

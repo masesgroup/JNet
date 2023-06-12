@@ -49,10 +49,6 @@ namespace Javax.Net.Ssl
         /// </summary>
         byte[] Id { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#isValid()"/> 
-        /// </summary>
-        bool IsValid { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getLastAccessedTime()"/> 
         /// </summary>
         long LastAccessedTime { get; }
@@ -96,6 +92,12 @@ namespace Javax.Net.Ssl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getValueNames()"/> 
         /// </summary>
         string[] ValueNames { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#isValid()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsValid();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getValue(java.lang.String)"/>
         /// </summary>
@@ -177,13 +179,6 @@ namespace Javax.Net.Ssl
             get { return IExecuteArray<byte>("getId"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#isValid()"/> 
-        /// </summary>
-        public bool IsValid
-        {
-            get { return IExecute<bool>("isValid"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getLastAccessedTime()"/> 
         /// </summary>
         public long LastAccessedTime
@@ -259,6 +254,15 @@ namespace Javax.Net.Ssl
         public string[] ValueNames
         {
             get { return IExecuteArray<string>("getValueNames"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#isValid()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsValid()
+        {
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html#getValue(java.lang.String)"/>

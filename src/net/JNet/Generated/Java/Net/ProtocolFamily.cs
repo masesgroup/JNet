@@ -33,9 +33,11 @@ namespace Java.Net
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProtocolFamily.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProtocolFamily.html#name()"/>
         /// </summary>
-        string Name { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string Name();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProtocolFamily.html#name()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ProtocolFamily.html#name()"/>
         /// </summary>
-        public string Name
+
+        /// <returns><see cref="string"/></returns>
+        public string Name()
         {
-            get { return IExecute<string>("name"); }
+            return IExecute<string>("name");
         }
 
         #endregion

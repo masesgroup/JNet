@@ -61,13 +61,6 @@ namespace Javax.Swing.Plaf.Basic
             get { return IExecute<Javax.Swing.JComponent>("getEastPane"); } set { IExecute("setEastPane", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#isKeyBindingActive()"/> 
-        /// </summary>
-        public bool IsKeyBindingActive
-        {
-            get { return IExecute<bool>("isKeyBindingActive"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#getNorthPane()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#setNorthPane(javax.swing.JComponent)"/>
         /// </summary>
         public Javax.Swing.JComponent NorthPane
@@ -87,6 +80,15 @@ namespace Javax.Swing.Plaf.Basic
         public Javax.Swing.JComponent WestPane
         {
             get { return IExecute<Javax.Swing.JComponent>("getWestPane"); } set { IExecute("setWestPane", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.html#isKeyBindingActive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsKeyBindingActive()
+        {
+            return IExecute<bool>("isKeyBindingActive");
         }
 
         #endregion

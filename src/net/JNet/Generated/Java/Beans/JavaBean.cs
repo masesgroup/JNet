@@ -33,17 +33,23 @@ namespace Java.Beans
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultEventSet()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultEventSet()"/>
         /// </summary>
-        string DefaultEventSet { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string DefaultEventSet();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()"/>
         /// </summary>
-        string DefaultProperty { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string DefaultProperty();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()"/>
         /// </summary>
-        string Description { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string Description();
 
         #endregion
 
@@ -76,25 +82,31 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultEventSet()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultEventSet()"/>
         /// </summary>
-        public string DefaultEventSet
+
+        /// <returns><see cref="string"/></returns>
+        public string DefaultEventSet()
         {
-            get { return IExecute<string>("defaultEventSet"); }
+            return IExecute<string>("defaultEventSet");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#defaultProperty()"/>
         /// </summary>
-        public string DefaultProperty
+
+        /// <returns><see cref="string"/></returns>
+        public string DefaultProperty()
         {
-            get { return IExecute<string>("defaultProperty"); }
+            return IExecute<string>("defaultProperty");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html#description()"/>
         /// </summary>
-        public string Description
+
+        /// <returns><see cref="string"/></returns>
+        public string Description()
         {
-            get { return IExecute<string>("description"); }
+            return IExecute<string>("description");
         }
 
         #endregion

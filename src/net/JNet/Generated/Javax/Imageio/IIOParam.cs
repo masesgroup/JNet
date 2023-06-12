@@ -46,13 +46,6 @@ namespace Javax.Imageio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#activateController()"/> 
-        /// </summary>
-        public bool ActivateController
-        {
-            get { return IExecute<bool>("activateController"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getController()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#setController(javax.imageio.IIOParamController)"/>
         /// </summary>
         public Javax.Imageio.IIOParamController Controller
@@ -79,13 +72,6 @@ namespace Javax.Imageio
         public Javax.Imageio.ImageTypeSpecifier DestinationType
         {
             get { return IExecute<Javax.Imageio.ImageTypeSpecifier>("getDestinationType"); } set { IExecute("setDestinationType", value); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#hasController()"/> 
-        /// </summary>
-        public bool HasController
-        {
-            get { return IExecute<bool>("hasController"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#getSourceBands()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#setSourceBands(int[])"/>
@@ -128,6 +114,24 @@ namespace Javax.Imageio
         public int SubsamplingYOffset
         {
             get { return IExecute<int>("getSubsamplingYOffset"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#activateController()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool ActivateController()
+        {
+            return IExecute<bool>("activateController");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#hasController()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasController()
+        {
+            return IExecute<bool>("hasController");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/IIOParam.html#setSourceSubsampling(int,int,int,int)"/>

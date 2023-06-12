@@ -61,13 +61,6 @@ namespace Javax.Imageio.Plugins.Jpeg
             get { return IExecuteArray<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("getACHuffmanTables"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#areTablesSet()"/> 
-        /// </summary>
-        public bool AreTablesSet
-        {
-            get { return IExecute<bool>("areTablesSet"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#getDCHuffmanTables()"/> 
         /// </summary>
         public Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] DCHuffmanTables
@@ -87,6 +80,15 @@ namespace Javax.Imageio.Plugins.Jpeg
         public Javax.Imageio.Plugins.Jpeg.JPEGQTable[] QTables
         {
             get { return IExecuteArray<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("getQTables"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#areTablesSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool AreTablesSet()
+        {
+            return IExecute<bool>("areTablesSet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#setEncodeTables(javax.imageio.plugins.jpeg.JPEGQTable[],javax.imageio.plugins.jpeg.JPEGHuffmanTable[],javax.imageio.plugins.jpeg.JPEGHuffmanTable[])"/>

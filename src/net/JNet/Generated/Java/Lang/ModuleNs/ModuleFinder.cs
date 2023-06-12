@@ -33,15 +33,17 @@ namespace Java.Lang.ModuleNs
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/> 
-        /// </summary>
-        Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#find(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="Java.Util.Optional"/></returns>
         Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll();
 
         #endregion
 
@@ -70,13 +72,6 @@ namespace Java.Lang.ModuleNs
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#ofSystem()"/> 
-        /// </summary>
-        public static Java.Lang.ModuleNs.ModuleFinder OfSystem
-        {
-            get { return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "ofSystem"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#compose(java.lang.module.ModuleFinder[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleFinder"/></param>
@@ -94,17 +89,19 @@ namespace Java.Lang.ModuleNs
         {
             if (arg0.Length == 0) return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "of"); else return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "of", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#ofSystem()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
+        public static Java.Lang.ModuleNs.ModuleFinder OfSystem()
+        {
+            return SExecute<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "ofSystem");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll
-        {
-            get { return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ModuleReference>>("findAll"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#find(java.lang.String)"/>
         /// </summary>
@@ -113,6 +110,15 @@ namespace Java.Lang.ModuleNs
         public Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference> Find(string arg0)
         {
             return IExecute<Java.Util.Optional<Java.Lang.ModuleNs.ModuleReference>>("find", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#findAll()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.ModuleNs.ModuleReference> FindAll()
+        {
+            return IExecute<Java.Util.Set<Java.Lang.ModuleNs.ModuleReference>>("findAll");
         }
 
         #endregion

@@ -33,13 +33,15 @@ namespace Javax.Swing
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#isSelected()"/> 
-        /// </summary>
-        bool IsSelected { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#setSelectedIndex(int)"/>
         /// </summary>
         int SelectedIndex { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#isSelected()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsSelected();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>
         /// </summary>
@@ -86,18 +88,20 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#isSelected()"/> 
-        /// </summary>
-        public bool IsSelected
-        {
-            get { return IExecute<bool>("isSelected"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#setSelectedIndex(int)"/>
         /// </summary>
         public int SelectedIndex
         {
             get { return IExecute<int>("getSelectedIndex"); } set { IExecute("setSelectedIndex", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#isSelected()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSelected()
+        {
+            return IExecute<bool>("isSelected");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SingleSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>

@@ -58,13 +58,6 @@ namespace Javax.Lang.Model.Element
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#values()"/> 
-        /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind[] Values
-        {
-            get { return SExecuteArray<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -73,16 +66,27 @@ namespace Javax.Lang.Model.Element
         {
             return SExecute<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "valueOf", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Lang.Model.Element.NestingKind"/></returns>
+        public static Javax.Lang.Model.Element.NestingKind[] Values()
+        {
+            return SExecuteArray<Javax.Lang.Model.Element.NestingKind>(LocalBridgeClazz, "values");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#isNested()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#isNested()"/>
         /// </summary>
-        public bool IsNested
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsNested()
         {
-            get { return IExecute<bool>("isNested"); }
+            return IExecute<bool>("isNested");
         }
 
         #endregion

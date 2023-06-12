@@ -130,25 +130,11 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#activeCount()"/> 
-        /// </summary>
-        public static int ActiveCount
-        {
-            get { return SExecute<int>(LocalBridgeClazz, "activeCount"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getAllStackTraces()"/> 
         /// </summary>
         public static Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]> AllStackTraces
         {
             get { return SExecute<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>(LocalBridgeClazz, "getAllStackTraces"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#currentThread()"/> 
-        /// </summary>
-        public static Java.Lang.Thread CurrentThread
-        {
-            get { return SExecute<Java.Lang.Thread>(LocalBridgeClazz, "currentThread"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getDefaultUncaughtExceptionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDefaultUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler)"/>
@@ -158,11 +144,22 @@ namespace Java.Lang
             get { return SExecute<Java.Lang.Thread.UncaughtExceptionHandler>(LocalBridgeClazz, "getDefaultUncaughtExceptionHandler"); } set { SExecute(LocalBridgeClazz, "setDefaultUncaughtExceptionHandler", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupted()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupted()"/>
         /// </summary>
-        public static bool Interrupted
+
+        /// <returns><see cref="bool"/></returns>
+        public static bool Interrupted()
         {
-            get { return SExecute<bool>(LocalBridgeClazz, "interrupted"); }
+            return SExecute<bool>(LocalBridgeClazz, "interrupted");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#activeCount()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public static int ActiveCount()
+        {
+            return SExecute<int>(LocalBridgeClazz, "activeCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#enumerate(java.lang.Thread[])"/>
@@ -181,6 +178,15 @@ namespace Java.Lang
         public static bool HoldsLock(object arg0)
         {
             return SExecute<bool>(LocalBridgeClazz, "holdsLock", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#currentThread()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Lang.Thread"/></returns>
+        public static Java.Lang.Thread CurrentThread()
+        {
+            return SExecute<Java.Lang.Thread>(LocalBridgeClazz, "currentThread");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long)"/>
@@ -255,27 +261,6 @@ namespace Java.Lang
             get { return IExecute<long>("getId"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isAlive()"/> 
-        /// </summary>
-        public bool IsAlive
-        {
-            get { return IExecute<bool>("isAlive"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isDaemon()"/> 
-        /// </summary>
-        public bool IsDaemon
-        {
-            get { return IExecute<bool>("isDaemon"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isInterrupted()"/> 
-        /// </summary>
-        public bool IsInterrupted
-        {
-            get { return IExecute<bool>("isInterrupted"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getName()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setName(java.lang.String)"/>
         /// </summary>
         public string Name
@@ -302,6 +287,33 @@ namespace Java.Lang
         public Java.Lang.ThreadGroup ThreadGroup
         {
             get { return IExecute<Java.Lang.ThreadGroup>("getThreadGroup"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isInterrupted()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInterrupted()
+        {
+            return IExecute<bool>("isInterrupted");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isDaemon()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDaemon()
+        {
+            return IExecute<bool>("isDaemon");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#isAlive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAlive()
+        {
+            return IExecute<bool>("isAlive");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long,int)"/>
@@ -420,13 +432,6 @@ namespace Java.Lang
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#values()"/> 
-            /// </summary>
-            public static Java.Lang.Thread.State[] Values
-            {
-                get { return SExecuteArray<Java.Lang.Thread.State>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -434,6 +439,15 @@ namespace Java.Lang
             public static Java.Lang.Thread.State ValueOf(string arg0)
             {
                 return SExecute<Java.Lang.Thread.State>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Lang.Thread.State"/></returns>
+            public static Java.Lang.Thread.State[] Values()
+            {
+                return SExecuteArray<Java.Lang.Thread.State>(LocalBridgeClazz, "values");
             }
 
             #endregion

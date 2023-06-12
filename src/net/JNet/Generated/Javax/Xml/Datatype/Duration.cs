@@ -74,13 +74,6 @@ namespace Javax.Xml.Datatype
             get { return IExecute<int>("getMonths"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#negate()"/> 
-        /// </summary>
-        public Javax.Xml.Datatype.Duration Negate
-        {
-            get { return IExecute<Javax.Xml.Datatype.Duration>("negate"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#getSeconds()"/> 
         /// </summary>
         public int Seconds
@@ -152,6 +145,15 @@ namespace Javax.Xml.Datatype
         public Javax.Xml.Datatype.Duration Multiply(Java.Math.BigDecimal arg0)
         {
             return IExecute<Javax.Xml.Datatype.Duration>("multiply", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#negate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Xml.Datatype.Duration"/></returns>
+        public Javax.Xml.Datatype.Duration Negate()
+        {
+            return IExecute<Javax.Xml.Datatype.Duration>("negate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html#normalizeWith(java.util.Calendar)"/>

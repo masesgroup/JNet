@@ -42,18 +42,22 @@ namespace Java.Beans
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isDesignTime()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isDesignTime()"/>
         /// </summary>
-        public static bool IsDesignTime
+
+        /// <returns><see cref="bool"/></returns>
+        public static bool IsDesignTime()
         {
-            get { return SExecute<bool>(LocalBridgeClazz, "isDesignTime"); }
+            return SExecute<bool>(LocalBridgeClazz, "isDesignTime");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isGuiAvailable()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isGuiAvailable()"/>
         /// </summary>
-        public static bool IsGuiAvailable
+
+        /// <returns><see cref="bool"/></returns>
+        public static bool IsGuiAvailable()
         {
-            get { return SExecute<bool>(LocalBridgeClazz, "isGuiAvailable"); }
+            return SExecute<bool>(LocalBridgeClazz, "isGuiAvailable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#isInstanceOf(java.lang.Object,java.lang.Class)"/>

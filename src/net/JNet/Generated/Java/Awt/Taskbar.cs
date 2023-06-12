@@ -49,11 +49,13 @@ namespace Java.Awt
             get { return SExecute<Java.Awt.Taskbar>(LocalBridgeClazz, "getTaskbar"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#isTaskbarSupported()"/>
         /// </summary>
-        public static bool IsTaskbarSupported
+
+        /// <returns><see cref="bool"/></returns>
+        public static bool IsTaskbarSupported()
         {
-            get { return SExecute<bool>(LocalBridgeClazz, "isTaskbarSupported"); }
+            return SExecute<bool>(LocalBridgeClazz, "isTaskbarSupported");
         }
 
         #endregion
@@ -203,13 +205,6 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#values()"/> 
-            /// </summary>
-            public static Java.Awt.Taskbar.Feature[] Values
-            {
-                get { return SExecuteArray<Java.Awt.Taskbar.Feature>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -217,6 +212,15 @@ namespace Java.Awt
             public static Java.Awt.Taskbar.Feature ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.Taskbar.Feature>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Awt.Taskbar.Feature"/></returns>
+            public static Java.Awt.Taskbar.Feature[] Values()
+            {
+                return SExecuteArray<Java.Awt.Taskbar.Feature>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -270,13 +274,6 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()"/> 
-            /// </summary>
-            public static Java.Awt.Taskbar.State[] Values
-            {
-                get { return SExecuteArray<Java.Awt.Taskbar.State>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -284,6 +281,15 @@ namespace Java.Awt
             public static Java.Awt.Taskbar.State ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.Taskbar.State>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Awt.Taskbar.State"/></returns>
+            public static Java.Awt.Taskbar.State[] Values()
+            {
+                return SExecuteArray<Java.Awt.Taskbar.State>(LocalBridgeClazz, "values");
             }
 
             #endregion

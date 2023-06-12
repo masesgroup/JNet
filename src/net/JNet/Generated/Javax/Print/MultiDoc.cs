@@ -37,9 +37,12 @@ namespace Javax.Print
         /// </summary>
         Javax.Print.Doc Doc { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#next()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#next()"/>
         /// </summary>
-        Javax.Print.MultiDoc Next { get; }
+
+        /// <returns><see cref="Javax.Print.MultiDoc"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        Javax.Print.MultiDoc Next();
 
         #endregion
 
@@ -79,11 +82,14 @@ namespace Javax.Print
             get { return IExecute<Javax.Print.Doc>("getDoc"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#next()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/MultiDoc.html#next()"/>
         /// </summary>
-        public Javax.Print.MultiDoc Next
+
+        /// <returns><see cref="Javax.Print.MultiDoc"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Javax.Print.MultiDoc Next()
         {
-            get { return IExecute<Javax.Print.MultiDoc>("next"); }
+            return IExecute<Javax.Print.MultiDoc>("next");
         }
 
         #endregion

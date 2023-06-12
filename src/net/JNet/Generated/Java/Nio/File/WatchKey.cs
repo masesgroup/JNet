@@ -33,21 +33,29 @@ namespace Java.Nio.File
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#isValid()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#isValid()"/>
         /// </summary>
-        bool IsValid { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsValid();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#reset()"/>
         /// </summary>
-        Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool Reset();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#reset()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#watchable()"/>
         /// </summary>
-        bool Reset { get; }
+
+        /// <returns><see cref="Java.Nio.File.Watchable"/></returns>
+        Java.Nio.File.Watchable Watchable();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#watchable()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/>
         /// </summary>
-        Java.Nio.File.Watchable Watchable { get; }
+
+        /// <returns><see cref="Java.Util.List"/></returns>
+        Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#cancel()"/>
         /// </summary>
@@ -84,32 +92,40 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#isValid()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#isValid()"/>
         /// </summary>
-        public bool IsValid
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsValid()
         {
-            get { return IExecute<bool>("isValid"); }
+            return IExecute<bool>("isValid");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#reset()"/>
         /// </summary>
-        public Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Reset()
         {
-            get { return IExecute<Java.Util.List<Java.Nio.File.WatchEvent<object>>>("pollEvents"); }
+            return IExecute<bool>("reset");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#reset()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#watchable()"/>
         /// </summary>
-        public bool Reset
+
+        /// <returns><see cref="Java.Nio.File.Watchable"/></returns>
+        public Java.Nio.File.Watchable Watchable()
         {
-            get { return IExecute<bool>("reset"); }
+            return IExecute<Java.Nio.File.Watchable>("watchable");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#watchable()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#pollEvents()"/>
         /// </summary>
-        public Java.Nio.File.Watchable Watchable
+
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Nio.File.WatchEvent<object>> PollEvents()
         {
-            get { return IExecute<Java.Nio.File.Watchable>("watchable"); }
+            return IExecute<Java.Util.List<Java.Nio.File.WatchEvent<object>>>("pollEvents");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html#cancel()"/>

@@ -182,13 +182,6 @@ namespace Java.Awt.FontNs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#isContextual()"/> 
-        /// </summary>
-        public bool IsContextual
-        {
-            get { return IExecute<bool>("isContextual"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#getRanges()"/> 
         /// </summary>
         public int Ranges
@@ -201,6 +194,15 @@ namespace Java.Awt.FontNs
         public Java.Util.Set<Java.Awt.FontNs.NumericShaper.Range> RangeSet
         {
             get { return IExecute<Java.Util.Set<Java.Awt.FontNs.NumericShaper.Range>>("getRangeSet"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#isContextual()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsContextual()
+        {
+            return IExecute<bool>("isContextual");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.html#shape(char[],int,int,int)"/>
@@ -403,13 +405,6 @@ namespace Java.Awt.FontNs
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#values()"/> 
-            /// </summary>
-            public static Java.Awt.FontNs.NumericShaper.Range[] Values
-            {
-                get { return SExecuteArray<Java.Awt.FontNs.NumericShaper.Range>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -417,6 +412,15 @@ namespace Java.Awt.FontNs
             public static Java.Awt.FontNs.NumericShaper.Range ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.FontNs.NumericShaper.Range>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/NumericShaper.Range.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Awt.FontNs.NumericShaper.Range"/></returns>
+            public static Java.Awt.FontNs.NumericShaper.Range[] Values()
+            {
+                return SExecuteArray<Java.Awt.FontNs.NumericShaper.Range>(LocalBridgeClazz, "values");
             }
 
             #endregion

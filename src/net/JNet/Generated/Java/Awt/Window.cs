@@ -124,55 +124,6 @@ namespace Java.Awt
             get { return IExecute<Java.Util.List<Java.Awt.Image>>("getIconImages"); } set { IExecute("setIconImages", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isActive()"/> 
-        /// </summary>
-        public bool IsActive
-        {
-            get { return IExecute<bool>("isActive"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTop()"/> 
-        /// </summary>
-        public bool IsAlwaysOnTop
-        {
-            get { return IExecute<bool>("isAlwaysOnTop"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTopSupported()"/> 
-        /// </summary>
-        public bool IsAlwaysOnTopSupported
-        {
-            get { return IExecute<bool>("isAlwaysOnTopSupported"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAutoRequestFocus()"/> 
-        /// </summary>
-        public bool IsAutoRequestFocus
-        {
-            get { return IExecute<bool>("isAutoRequestFocus"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocusableWindow()"/> 
-        /// </summary>
-        public bool IsFocusableWindow
-        {
-            get { return IExecute<bool>("isFocusableWindow"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocused()"/> 
-        /// </summary>
-        public bool IsFocused
-        {
-            get { return IExecute<bool>("isFocused"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isLocationByPlatform()"/> 
-        /// </summary>
-        public bool IsLocationByPlatform
-        {
-            get { return IExecute<bool>("isLocationByPlatform"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#getModalExclusionType()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setModalExclusionType(java.awt.Dialog.ModalExclusionType)"/>
         /// </summary>
         public Java.Awt.Dialog.ModalExclusionType ModalExclusionType
@@ -241,6 +192,69 @@ namespace Java.Awt
         public Java.Awt.EventNs.WindowStateListener[] WindowStateListeners
         {
             get { return IExecuteArray<Java.Awt.EventNs.WindowStateListener>("getWindowStateListeners"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isActive()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsActive()
+        {
+            return IExecute<bool>("isActive");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTopSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAlwaysOnTopSupported()
+        {
+            return IExecute<bool>("isAlwaysOnTopSupported");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAutoRequestFocus()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAutoRequestFocus()
+        {
+            return IExecute<bool>("isAutoRequestFocus");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocused()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFocused()
+        {
+            return IExecute<bool>("isFocused");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isLocationByPlatform()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLocationByPlatform()
+        {
+            return IExecute<bool>("isLocationByPlatform");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isAlwaysOnTop()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAlwaysOnTop()
+        {
+            return IExecute<bool>("isAlwaysOnTop");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#isFocusableWindow()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFocusableWindow()
+        {
+            return IExecute<bool>("isFocusableWindow");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#setAlwaysOnTop(boolean)"/>
@@ -418,13 +432,6 @@ namespace Java.Awt
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#values()"/> 
-            /// </summary>
-            public static Java.Awt.Window.Type[] Values
-            {
-                get { return SExecuteArray<Java.Awt.Window.Type>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -432,6 +439,15 @@ namespace Java.Awt
             public static Java.Awt.Window.Type ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.Window.Type>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Awt.Window.Type"/></returns>
+            public static Java.Awt.Window.Type[] Values()
+            {
+                return SExecuteArray<Java.Awt.Window.Type>(LocalBridgeClazz, "values");
             }
 
             #endregion

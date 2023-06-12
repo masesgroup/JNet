@@ -53,39 +53,38 @@ namespace Javax.Xml.Parsers
             get { return IExecute<Org.W3c.Dom.DOMImplementation>("getDOMImplementation"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isNamespaceAware()"/> 
-        /// </summary>
-        public bool IsNamespaceAware
-        {
-            get { return IExecute<bool>("isNamespaceAware"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isValidating()"/> 
-        /// </summary>
-        public bool IsValidating
-        {
-            get { return IExecute<bool>("isValidating"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isXIncludeAware()"/> 
-        /// </summary>
-        public bool IsXIncludeAware
-        {
-            get { return IExecute<bool>("isXIncludeAware"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#newDocument()"/> 
-        /// </summary>
-        public Org.W3c.Dom.Document NewDocument
-        {
-            get { return IExecute<Org.W3c.Dom.Document>("newDocument"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#getSchema()"/> 
         /// </summary>
         public Javax.Xml.Validation.Schema Schema
         {
             get { return IExecute<Javax.Xml.Validation.Schema>("getSchema"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isNamespaceAware()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsNamespaceAware()
+        {
+            return IExecute<bool>("isNamespaceAware");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isValidating()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsValidating()
+        {
+            return IExecute<bool>("isValidating");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#newDocument()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.W3c.Dom.Document"/></returns>
+        public Org.W3c.Dom.Document NewDocument()
+        {
+            return IExecute<Org.W3c.Dom.Document>("newDocument");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(org.xml.sax.InputSource)"/>
@@ -113,6 +112,15 @@ namespace Javax.Xml.Parsers
         public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
         {
             IExecute("setErrorHandler", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#isXIncludeAware()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsXIncludeAware()
+        {
+            return IExecute<bool>("isXIncludeAware");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.File)"/>

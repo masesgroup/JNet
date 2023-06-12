@@ -46,25 +46,31 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#force()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#isLoaded()"/>
         /// </summary>
-        public Java.Nio.MappedByteBuffer Force
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLoaded()
         {
-            get { return IExecute<Java.Nio.MappedByteBuffer>("force"); }
+            return IExecute<bool>("isLoaded");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#isLoaded()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#force()"/>
         /// </summary>
-        public bool IsLoaded
+
+        /// <returns><see cref="Java.Nio.MappedByteBuffer"/></returns>
+        public Java.Nio.MappedByteBuffer Force()
         {
-            get { return IExecute<bool>("isLoaded"); }
+            return IExecute<Java.Nio.MappedByteBuffer>("force");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#load()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html#load()"/>
         /// </summary>
-        public Java.Nio.MappedByteBuffer Load
+
+        /// <returns><see cref="Java.Nio.MappedByteBuffer"/></returns>
+        public Java.Nio.MappedByteBuffer Load()
         {
-            get { return IExecute<Java.Nio.MappedByteBuffer>("load"); }
+            return IExecute<Java.Nio.MappedByteBuffer>("load");
         }
 
         #endregion

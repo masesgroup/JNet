@@ -130,13 +130,6 @@ namespace Java.Util
             get { return IExecute<Java.Util.Date>("getGregorianChange"); } set { IExecute("setGregorianChange", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#toZonedDateTime()"/> 
-        /// </summary>
-        public Java.Time.ZonedDateTime ToZonedDateTime
-        {
-            get { return IExecute<Java.Time.ZonedDateTime>("toZonedDateTime"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#isLeapYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -144,6 +137,15 @@ namespace Java.Util
         public bool IsLeapYear(int arg0)
         {
             return IExecute<bool>("isLeapYear", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#toZonedDateTime()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
+        public Java.Time.ZonedDateTime ToZonedDateTime()
+        {
+            return IExecute<Java.Time.ZonedDateTime>("toZonedDateTime");
         }
 
         #endregion

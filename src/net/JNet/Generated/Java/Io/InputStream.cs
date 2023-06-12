@@ -42,37 +42,18 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#nullInputStream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#nullInputStream()"/>
         /// </summary>
-        public static Java.Io.InputStream NullInputStream
+
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        public static Java.Io.InputStream NullInputStream()
         {
-            get { return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "nullInputStream"); }
+            return SExecute<Java.Io.InputStream>(LocalBridgeClazz, "nullInputStream");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#available()"/> 
-        /// </summary>
-        public int Available
-        {
-            get { return IExecute<int>("available"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#markSupported()"/> 
-        /// </summary>
-        public bool MarkSupported
-        {
-            get { return IExecute<bool>("markSupported"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readAllBytes()"/> 
-        /// </summary>
-        public byte[] ReadAllBytes
-        {
-            get { return IExecuteArray<byte>("readAllBytes"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#read()"/>
         /// </summary>
@@ -84,6 +65,25 @@ namespace Java.Io
             return IExecute<int>("read");
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#markSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool MarkSupported()
+        {
+            return IExecute<bool>("markSupported");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readAllBytes()"/>
+        /// </summary>
+
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public byte[] ReadAllBytes()
+        {
+            return IExecuteArray<byte>("readAllBytes");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#readNBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -92,6 +92,16 @@ namespace Java.Io
         public byte[] ReadNBytes(int arg0)
         {
             return IExecuteArray<byte>("readNBytes", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#available()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public int Available()
+        {
+            return IExecute<int>("available");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStream.html#read(byte[],int,int)"/>

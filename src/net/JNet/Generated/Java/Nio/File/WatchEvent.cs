@@ -46,18 +46,13 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/>
         /// </summary>
-        public object Context
+
+        /// <returns><see cref="int"/></returns>
+        public int Count()
         {
-            get { return IExecute("context"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/> 
-        /// </summary>
-        public int Count
-        {
-            get { return IExecute<int>("count"); }
+            return IExecute<int>("count");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
@@ -67,6 +62,15 @@ namespace Java.Nio.File
         public Java.Nio.File.WatchEvent.Kind KindMethod()
         {
             return IExecute<Java.Nio.File.WatchEvent.Kind>("kind");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object Context()
+        {
+            return IExecute("context");
         }
 
         #endregion
@@ -93,18 +97,22 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#type()"/>
             /// </summary>
-            public string Name
+
+            /// <returns><see cref="Java.Lang.Class"/></returns>
+            public Java.Lang.Class Type()
             {
-                get { return IExecute<string>("name"); }
+                return IExecute<Java.Lang.Class>("type");
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#type()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()"/>
             /// </summary>
-            public Java.Lang.Class Type
+
+            /// <returns><see cref="string"/></returns>
+            public string Name()
             {
-                get { return IExecute<Java.Lang.Class>("type"); }
+                return IExecute<string>("name");
             }
 
             #endregion
@@ -142,18 +150,22 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#type()"/>
             /// </summary>
-            public string Name
+
+            /// <returns><see cref="Java.Lang.Class"/></returns>
+            public Java.Lang.Class Type()
             {
-                get { return IExecute<string>("name"); }
+                return IExecute<Java.Lang.Class>("type");
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#type()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()"/>
             /// </summary>
-            public Java.Lang.Class Type
+
+            /// <returns><see cref="string"/></returns>
+            public string Name()
             {
-                get { return IExecute<Java.Lang.Class>("type"); }
+                return IExecute<string>("name");
             }
 
             #endregion
@@ -187,11 +199,13 @@ namespace Java.Nio.File
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Modifier.html#name()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Modifier.html#name()"/>
             /// </summary>
-            public string Name
+
+            /// <returns><see cref="string"/></returns>
+            public string Name()
             {
-                get { return IExecute<string>("name"); }
+                return IExecute<string>("name");
             }
 
             #endregion
@@ -219,19 +233,23 @@ namespace Java.Nio.File
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/>
         /// </summary>
-        T Context { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/> 
-        /// </summary>
-        int Count { get; }
+
+        /// <returns><see cref="int"/></returns>
+        int Count();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
         /// </summary>
 
         /// <returns><see cref="Java.Nio.File.WatchEvent.Kind"/></returns>
         Java.Nio.File.WatchEvent.Kind<T> KindMethod();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="T"/></returns>
+        T Context();
 
         #endregion
 
@@ -268,18 +286,13 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/>
         /// </summary>
-        public T Context
+
+        /// <returns><see cref="int"/></returns>
+        public int Count()
         {
-            get { return IExecute<T>("context"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#count()"/> 
-        /// </summary>
-        public int Count
-        {
-            get { return IExecute<int>("count"); }
+            return IExecute<int>("count");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#kind()"/>
@@ -289,6 +302,15 @@ namespace Java.Nio.File
         public Java.Nio.File.WatchEvent.Kind<T> KindMethod()
         {
             return IExecute<Java.Nio.File.WatchEvent.Kind<T>>("kind");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.html#context()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="T"/></returns>
+        public T Context()
+        {
+            return IExecute<T>("context");
         }
 
         #endregion

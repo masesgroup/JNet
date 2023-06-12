@@ -118,69 +118,6 @@ namespace Javax.Security.Auth.Kerberos
             get { return IExecuteArray<bool>("getFlags"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isCurrent()"/> 
-        /// </summary>
-        public bool IsCurrent
-        {
-            get { return IExecute<bool>("isCurrent"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isDestroyed()"/> 
-        /// </summary>
-        public bool IsDestroyed
-        {
-            get { return IExecute<bool>("isDestroyed"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isForwardable()"/> 
-        /// </summary>
-        public bool IsForwardable
-        {
-            get { return IExecute<bool>("isForwardable"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isForwarded()"/> 
-        /// </summary>
-        public bool IsForwarded
-        {
-            get { return IExecute<bool>("isForwarded"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isInitial()"/> 
-        /// </summary>
-        public bool IsInitial
-        {
-            get { return IExecute<bool>("isInitial"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isPostdated()"/> 
-        /// </summary>
-        public bool IsPostdated
-        {
-            get { return IExecute<bool>("isPostdated"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isProxiable()"/> 
-        /// </summary>
-        public bool IsProxiable
-        {
-            get { return IExecute<bool>("isProxiable"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isProxy()"/> 
-        /// </summary>
-        public bool IsProxy
-        {
-            get { return IExecute<bool>("isProxy"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isRenewable()"/> 
-        /// </summary>
-        public bool IsRenewable
-        {
-            get { return IExecute<bool>("isRenewable"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#getRenewTill()"/> 
         /// </summary>
         public Java.Util.Date RenewTill
@@ -214,6 +151,87 @@ namespace Javax.Security.Auth.Kerberos
         public Java.Util.Date StartTime
         {
             get { return IExecute<Java.Util.Date>("getStartTime"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isCurrent()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCurrent()
+        {
+            return IExecute<bool>("isCurrent");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isDestroyed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDestroyed()
+        {
+            return IExecute<bool>("isDestroyed");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isForwardable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsForwardable()
+        {
+            return IExecute<bool>("isForwardable");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isForwarded()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsForwarded()
+        {
+            return IExecute<bool>("isForwarded");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isInitial()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInitial()
+        {
+            return IExecute<bool>("isInitial");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isPostdated()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPostdated()
+        {
+            return IExecute<bool>("isPostdated");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isProxiable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsProxiable()
+        {
+            return IExecute<bool>("isProxiable");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isProxy()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsProxy()
+        {
+            return IExecute<bool>("isProxy");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#isRenewable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRenewable()
+        {
+            return IExecute<bool>("isRenewable");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosTicket.html#destroy()"/>

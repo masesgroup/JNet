@@ -46,34 +46,6 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/> 
-        /// </summary>
-        public object Element
-        {
-            get { return IExecute("element"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/> 
-        /// </summary>
-        public object Peek
-        {
-            get { return IExecute("peek"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/> 
-        /// </summary>
-        public object Poll
-        {
-            get { return IExecute("poll"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/> 
-        /// </summary>
-        public object Remove
-        {
-            get { return IExecute("remove"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -90,6 +62,42 @@ namespace Java.Util
         public bool Offer(object arg0)
         {
             return IExecute<bool>("offer", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object Element()
+        {
+            return IExecute("element");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object Peek()
+        {
+            return IExecute("peek");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object Poll()
+        {
+            return IExecute("poll");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object Remove()
+        {
+            return IExecute("remove");
         }
 
         #endregion
@@ -110,22 +118,6 @@ namespace Java.Util
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/> 
-        /// </summary>
-        E Element { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/> 
-        /// </summary>
-        E Peek { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/> 
-        /// </summary>
-        E Poll { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/> 
-        /// </summary>
-        E Remove { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
@@ -137,6 +129,30 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
         bool Offer(E arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        E Element();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        E Peek();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        E Poll();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        E Remove();
 
         #endregion
 
@@ -173,34 +189,6 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/> 
-        /// </summary>
-        public E Element
-        {
-            get { return IExecute<E>("element"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/> 
-        /// </summary>
-        public E Peek
-        {
-            get { return IExecute<E>("peek"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/> 
-        /// </summary>
-        public E Poll
-        {
-            get { return IExecute<E>("poll"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/> 
-        /// </summary>
-        public E Remove
-        {
-            get { return IExecute<E>("remove"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
@@ -217,6 +205,42 @@ namespace Java.Util
         public bool Offer(E arg0)
         {
             return IExecute<bool>("offer", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#element()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E Element()
+        {
+            return IExecute<E>("element");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#peek()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E Peek()
+        {
+            return IExecute<E>("peek");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#poll()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E Poll()
+        {
+            return IExecute<E>("poll");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Queue.html#remove()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E Remove()
+        {
+            return IExecute<E>("remove");
         }
 
         #endregion

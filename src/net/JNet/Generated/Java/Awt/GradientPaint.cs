@@ -110,13 +110,6 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.Color>("getColor2"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#isCyclic()"/> 
-        /// </summary>
-        public bool IsCyclic
-        {
-            get { return IExecute<bool>("isCyclic"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#getPoint1()"/> 
         /// </summary>
         public Java.Awt.Geom.Point2D Point1
@@ -136,6 +129,15 @@ namespace Java.Awt
         public int Transparency
         {
             get { return IExecute<int>("getTransparency"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#isCyclic()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCyclic()
+        {
+            return IExecute<bool>("isCyclic");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GradientPaint.html#createContext(java.awt.image.ColorModel,java.awt.Rectangle,java.awt.geom.Rectangle2D,java.awt.geom.AffineTransform,java.awt.RenderingHints)"/>

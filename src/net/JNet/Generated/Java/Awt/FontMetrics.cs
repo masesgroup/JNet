@@ -74,13 +74,6 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.FontNs.FontRenderContext>("getFontRenderContext"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()"/> 
-        /// </summary>
-        public bool HasUniformLineMetrics
-        {
-            get { return IExecute<bool>("hasUniformLineMetrics"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#getHeight()"/> 
         /// </summary>
         public int Height
@@ -121,6 +114,15 @@ namespace Java.Awt
         public int[] Widths
         {
             get { return IExecuteArray<int>("getWidths"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#hasUniformLineMetrics()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasUniformLineMetrics()
+        {
+            return IExecute<bool>("hasUniformLineMetrics");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FontMetrics.html#bytesWidth(byte[],int,int)"/>

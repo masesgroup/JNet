@@ -46,23 +46,19 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#open()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#open()"/>
         /// </summary>
-        public static Java.Nio.Channels.ServerSocketChannel Open
+
+        /// <returns><see cref="Java.Nio.Channels.ServerSocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static Java.Nio.Channels.ServerSocketChannel Open()
         {
-            get { return SExecute<Java.Nio.Channels.ServerSocketChannel>(LocalBridgeClazz, "open"); }
+            return SExecute<Java.Nio.Channels.ServerSocketChannel>(LocalBridgeClazz, "open");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#accept()"/> 
-        /// </summary>
-        public Java.Nio.Channels.SocketChannel Accept
-        {
-            get { return IExecute<Java.Nio.Channels.SocketChannel>("accept"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#getLocalAddress()"/> 
         /// </summary>
@@ -71,11 +67,13 @@ namespace Java.Nio.Channels
             get { return IExecute<Java.Net.SocketAddress>("getLocalAddress"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#socket()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#socket()"/>
         /// </summary>
-        public Java.Net.ServerSocket Socket
+
+        /// <returns><see cref="Java.Net.ServerSocket"/></returns>
+        public Java.Net.ServerSocket Socket()
         {
-            get { return IExecute<Java.Net.ServerSocket>("socket"); }
+            return IExecute<Java.Net.ServerSocket>("socket");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#bind(java.net.SocketAddress,int)"/>
@@ -87,6 +85,16 @@ namespace Java.Nio.Channels
         public Java.Nio.Channels.ServerSocketChannel Bind(Java.Net.SocketAddress arg0, int arg1)
         {
             return IExecute<Java.Nio.Channels.ServerSocketChannel>("bind", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#accept()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.Channels.SocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Nio.Channels.SocketChannel Accept()
+        {
+            return IExecute<Java.Nio.Channels.SocketChannel>("accept");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#bind(java.net.SocketAddress)"/>

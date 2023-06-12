@@ -46,20 +46,6 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/> 
-        /// </summary>
-        public bool IsCancelled
-        {
-            get { return IExecute<bool>("isCancelled"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/> 
-        /// </summary>
-        public bool IsDone
-        {
-            get { return IExecute<bool>("isDone"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getProgress()"/> 
         /// </summary>
         public int Progress
@@ -88,6 +74,24 @@ namespace Javax.Swing
         public bool Cancel(bool arg0)
         {
             return IExecute<bool>("cancel", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCancelled()
+        {
+            return IExecute<bool>("isCancelled");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDone()
+        {
+            return IExecute<bool>("isDone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>
@@ -186,13 +190,6 @@ namespace Javax.Swing
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#values()"/> 
-            /// </summary>
-            public static Javax.Swing.SwingWorker.StateValue[] Values
-            {
-                get { return SExecuteArray<Javax.Swing.SwingWorker.StateValue>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -200,6 +197,15 @@ namespace Javax.Swing
             public static Javax.Swing.SwingWorker.StateValue ValueOf(string arg0)
             {
                 return SExecute<Javax.Swing.SwingWorker.StateValue>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Javax.Swing.SwingWorker.StateValue"/></returns>
+            public static Javax.Swing.SwingWorker.StateValue[] Values()
+            {
+                return SExecuteArray<Javax.Swing.SwingWorker.StateValue>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -248,20 +254,6 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/> 
-        /// </summary>
-        public bool IsCancelled
-        {
-            get { return IExecute<bool>("isCancelled"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/> 
-        /// </summary>
-        public bool IsDone
-        {
-            get { return IExecute<bool>("isDone"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#getProgress()"/> 
         /// </summary>
         public int Progress
@@ -290,6 +282,24 @@ namespace Javax.Swing
         public bool Cancel(bool arg0)
         {
             return IExecute<bool>("cancel", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isCancelled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCancelled()
+        {
+            return IExecute<bool>("isCancelled");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#isDone()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDone()
+        {
+            return IExecute<bool>("isDone");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.html#get()"/>

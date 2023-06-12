@@ -54,20 +54,6 @@ namespace Java.Util.Prefs
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#systemRoot()"/> 
-        /// </summary>
-        public static Java.Util.Prefs.Preferences SystemRoot
-        {
-            get { return SExecute<Java.Util.Prefs.Preferences>(LocalBridgeClazz, "systemRoot"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#userRoot()"/> 
-        /// </summary>
-        public static Java.Util.Prefs.Preferences UserRoot
-        {
-            get { return SExecute<Java.Util.Prefs.Preferences>(LocalBridgeClazz, "userRoot"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#systemNodeForPackage(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -77,6 +63,15 @@ namespace Java.Util.Prefs
             return SExecute<Java.Util.Prefs.Preferences>(LocalBridgeClazz, "systemNodeForPackage", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#systemRoot()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        public static Java.Util.Prefs.Preferences SystemRoot()
+        {
+            return SExecute<Java.Util.Prefs.Preferences>(LocalBridgeClazz, "systemRoot");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#userNodeForPackage(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -84,6 +79,15 @@ namespace Java.Util.Prefs
         public static Java.Util.Prefs.Preferences UserNodeForPackage(Java.Lang.Class arg0)
         {
             return SExecute<Java.Util.Prefs.Preferences>(LocalBridgeClazz, "userNodeForPackage", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#userRoot()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        public static Java.Util.Prefs.Preferences UserRoot()
+        {
+            return SExecute<Java.Util.Prefs.Preferences>(LocalBridgeClazz, "userRoot");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#importPreferences(java.io.InputStream)"/>
@@ -100,48 +104,6 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#absolutePath()"/> 
-        /// </summary>
-        public string AbsolutePath
-        {
-            get { return IExecute<string>("absolutePath"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#childrenNames()"/> 
-        /// </summary>
-        public string[] ChildrenNames
-        {
-            get { return IExecuteArray<string>("childrenNames"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#isUserNode()"/> 
-        /// </summary>
-        public bool IsUserNode
-        {
-            get { return IExecute<bool>("isUserNode"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#keys()"/> 
-        /// </summary>
-        public string[] Keys
-        {
-            get { return IExecuteArray<string>("keys"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#name()"/> 
-        /// </summary>
-        public string Name
-        {
-            get { return IExecute<string>("name"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#parent()"/> 
-        /// </summary>
-        public Java.Util.Prefs.Preferences Parent
-        {
-            get { return IExecute<Java.Util.Prefs.Preferences>("parent"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getBoolean(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -150,6 +112,15 @@ namespace Java.Util.Prefs
         public bool GetBoolean(string arg0, bool arg1)
         {
             return IExecute<bool>("getBoolean", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#isUserNode()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsUserNode()
+        {
+            return IExecute<bool>("isUserNode");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#nodeExists(java.lang.String)"/>
@@ -202,6 +173,15 @@ namespace Java.Util.Prefs
             return IExecute<int>("getInt", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#absolutePath()"/>
+        /// </summary>
+
+        /// <returns><see cref="string"/></returns>
+        public string AbsolutePath()
+        {
+            return IExecute<string>("absolutePath");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#get(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -212,6 +192,35 @@ namespace Java.Util.Prefs
             return IExecute<string>("get", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#name()"/>
+        /// </summary>
+
+        /// <returns><see cref="string"/></returns>
+        public string Name()
+        {
+            return IExecute<string>("name");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#childrenNames()"/>
+        /// </summary>
+
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
+        public string[] ChildrenNames()
+        {
+            return IExecuteArray<string>("childrenNames");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#keys()"/>
+        /// </summary>
+
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Util.Prefs.BackingStoreException"/>
+        public string[] Keys()
+        {
+            return IExecuteArray<string>("keys");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#node(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -219,6 +228,15 @@ namespace Java.Util.Prefs
         public Java.Util.Prefs.Preferences Node(string arg0)
         {
             return IExecute<Java.Util.Prefs.Preferences>("node", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#parent()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        public Java.Util.Prefs.Preferences Parent()
+        {
+            return IExecute<Java.Util.Prefs.Preferences>("parent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getLong(java.lang.String,long)"/>

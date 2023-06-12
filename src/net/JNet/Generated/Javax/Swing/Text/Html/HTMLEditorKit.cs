@@ -116,13 +116,6 @@ namespace Javax.Swing.Text.Html
             get { return IExecute<Java.Awt.Cursor>("getDefaultCursor"); } set { IExecute("setDefaultCursor", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#isAutoFormSubmission()"/> 
-        /// </summary>
-        public bool IsAutoFormSubmission
-        {
-            get { return IExecute<bool>("isAutoFormSubmission"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#getLinkCursor()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#setLinkCursor(java.awt.Cursor)"/>
         /// </summary>
         public Java.Awt.Cursor LinkCursor
@@ -135,6 +128,15 @@ namespace Javax.Swing.Text.Html
         public Javax.Swing.Text.Html.StyleSheet StyleSheet
         {
             get { return IExecute<Javax.Swing.Text.Html.StyleSheet>("getStyleSheet"); } set { IExecute("setStyleSheet", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#isAutoFormSubmission()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAutoFormSubmission()
+        {
+            return IExecute<bool>("isAutoFormSubmission");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#insertHTML(javax.swing.text.html.HTMLDocument,int,java.lang.String,int,int,javax.swing.text.html.HTML.Tag)"/>

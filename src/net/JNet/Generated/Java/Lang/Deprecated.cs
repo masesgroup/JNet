@@ -33,13 +33,17 @@ namespace Java.Lang
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/>
         /// </summary>
-        bool ForRemoval { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool ForRemoval();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/>
         /// </summary>
-        string Since { get; }
+
+        /// <returns><see cref="string"/></returns>
+        string Since();
 
         #endregion
 
@@ -72,18 +76,22 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#forRemoval()"/>
         /// </summary>
-        public bool ForRemoval
+
+        /// <returns><see cref="bool"/></returns>
+        public bool ForRemoval()
         {
-            get { return IExecute<bool>("forRemoval"); }
+            return IExecute<bool>("forRemoval");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html#since()"/>
         /// </summary>
-        public string Since
+
+        /// <returns><see cref="string"/></returns>
+        public string Since()
         {
-            get { return IExecute<string>("since"); }
+            return IExecute<string>("since");
         }
 
         #endregion

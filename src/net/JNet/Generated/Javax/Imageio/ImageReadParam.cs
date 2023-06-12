@@ -46,13 +46,6 @@ namespace Javax.Imageio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#canSetSourceRenderSize()"/> 
-        /// </summary>
-        public bool CanSetSourceRenderSize
-        {
-            get { return IExecute<bool>("canSetSourceRenderSize"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#getDestination()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setDestination(java.awt.image.BufferedImage)"/>
         /// </summary>
         public Java.Awt.ImageNs.BufferedImage Destination
@@ -93,6 +86,15 @@ namespace Javax.Imageio
         public Java.Awt.Dimension SourceRenderSize
         {
             get { return IExecute<Java.Awt.Dimension>("getSourceRenderSize"); } set { IExecute("setSourceRenderSize", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#canSetSourceRenderSize()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool CanSetSourceRenderSize()
+        {
+            return IExecute<bool>("canSetSourceRenderSize");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageReadParam.html#setSourceProgressivePasses(int,int)"/>

@@ -33,9 +33,11 @@ namespace Javax.Management
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html#value()"/>
         /// </summary>
-        bool Value { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool Value();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html#value()"/>
         /// </summary>
-        public bool Value
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Value()
         {
-            get { return IExecute<bool>("value"); }
+            return IExecute<bool>("value");
         }
 
         #endregion

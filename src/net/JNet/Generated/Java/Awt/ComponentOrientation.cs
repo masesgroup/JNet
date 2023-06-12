@@ -67,18 +67,22 @@ namespace Java.Awt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isHorizontal()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isHorizontal()"/>
         /// </summary>
-        public bool IsHorizontal
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsHorizontal()
         {
-            get { return IExecute<bool>("isHorizontal"); }
+            return IExecute<bool>("isHorizontal");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isLeftToRight()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ComponentOrientation.html#isLeftToRight()"/>
         /// </summary>
-        public bool IsLeftToRight
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLeftToRight()
         {
-            get { return IExecute<bool>("isLeftToRight"); }
+            return IExecute<bool>("isLeftToRight");
         }
 
         #endregion

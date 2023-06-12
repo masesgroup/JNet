@@ -41,9 +41,11 @@ namespace Javax.Naming.Ldap
         /// </summary>
         string ID { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#isCritical()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#isCritical()"/>
         /// </summary>
-        bool IsCritical { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsCritical();
 
         #endregion
 
@@ -98,11 +100,13 @@ namespace Javax.Naming.Ldap
             get { return IExecute<string>("getID"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#isCritical()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html#isCritical()"/>
         /// </summary>
-        public bool IsCritical
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCritical()
         {
-            get { return IExecute<bool>("isCritical"); }
+            return IExecute<bool>("isCritical");
         }
 
         #endregion

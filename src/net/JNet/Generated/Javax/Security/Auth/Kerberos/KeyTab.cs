@@ -97,25 +97,29 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#exists()"/> 
-        /// </summary>
-        public bool Exists
-        {
-            get { return IExecute<bool>("exists"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#isBound()"/> 
-        /// </summary>
-        public bool IsBound
-        {
-            get { return IExecute<bool>("isBound"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getPrincipal()"/> 
         /// </summary>
         public Javax.Security.Auth.Kerberos.KerberosPrincipal Principal
         {
             get { return IExecute<Javax.Security.Auth.Kerberos.KerberosPrincipal>("getPrincipal"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#exists()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Exists()
+        {
+            return IExecute<bool>("exists");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#isBound()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBound()
+        {
+            return IExecute<bool>("isBound");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getKeys(javax.security.auth.kerberos.KerberosPrincipal)"/>

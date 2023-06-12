@@ -83,11 +83,13 @@ namespace Javax.Swing.Plaf.Metal
             get { return IExecute<Javax.Swing.Icon>("getComboIcon"); } set { IExecute("setComboIcon", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#isIconOnly()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#isIconOnly()"/>
         /// </summary>
-        public bool IsIconOnly
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsIconOnly()
         {
-            get { return IExecute<bool>("isIconOnly"); }
+            return IExecute<bool>("isIconOnly");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxButton.html#setIconOnly(boolean)"/>

@@ -54,11 +54,13 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
-        public bool IsPeriodic
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPeriodic()
         {
-            get { return IExecute<bool>("isPeriodic"); }
+            return IExecute<bool>("isPeriodic");
         }
 
         #endregion
@@ -79,9 +81,11 @@ namespace Java.Util.Concurrent
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
-        bool IsPeriodic { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsPeriodic();
 
         #endregion
 
@@ -126,11 +130,13 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/RunnableScheduledFuture.html#isPeriodic()"/>
         /// </summary>
-        public bool IsPeriodic
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPeriodic()
         {
-            get { return IExecute<bool>("isPeriodic"); }
+            return IExecute<bool>("isPeriodic");
         }
 
         #endregion

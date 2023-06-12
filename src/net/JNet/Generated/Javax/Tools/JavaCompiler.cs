@@ -146,13 +146,6 @@ namespace Javax.Tools
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#call()"/> 
-            /// </summary>
-            public object Call
-            {
-                get { return IExecute("call"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#addModules(java.lang.Iterable)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
@@ -176,6 +169,16 @@ namespace Javax.Tools
             public void SetProcessors<Arg0ExtendsJavax_Annotation_Processing_Processor>(Java.Lang.Iterable<Arg0ExtendsJavax_Annotation_Processing_Processor> arg0) where Arg0ExtendsJavax_Annotation_Processing_Processor: Javax.Annotation.Processing.Processor
             {
                 IExecute("setProcessors", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html#call()"/>
+            /// </summary>
+
+            /// <returns><see cref="object"/></returns>
+            /// <exception cref="Java.Lang.Exception"/>
+            public object Call()
+            {
+                return IExecute("call");
             }
 
             #endregion

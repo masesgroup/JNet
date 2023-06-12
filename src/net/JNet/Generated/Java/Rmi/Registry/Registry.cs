@@ -33,9 +33,13 @@ namespace Java.Rmi.Registry
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#list()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#list()"/>
         /// </summary>
-        string[] List { get; }
+
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
+        string[] List();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#lookup(java.lang.String)"/>
         /// </summary>
@@ -106,11 +110,15 @@ namespace Java.Rmi.Registry
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#list()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#list()"/>
         /// </summary>
-        public string[] List
+
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Rmi.RemoteException"/>
+        /// <exception cref="Java.Rmi.AccessException"/>
+        public string[] List()
         {
-            get { return IExecuteArray<string>("list"); }
+            return IExecuteArray<string>("list");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#lookup(java.lang.String)"/>

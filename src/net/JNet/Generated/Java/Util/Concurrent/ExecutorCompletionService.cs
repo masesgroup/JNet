@@ -63,13 +63,6 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#take()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.Future Take
-        {
-            get { return IExecute<Java.Util.Concurrent.Future>("take"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#poll()"/>
         /// </summary>
 
@@ -107,6 +100,16 @@ namespace Java.Util.Concurrent
         public Java.Util.Concurrent.Future Submit(Java.Util.Concurrent.Callable arg0)
         {
             return IExecute<Java.Util.Concurrent.Future>("submit", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#take()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Util.Concurrent.Future Take()
+        {
+            return IExecute<Java.Util.Concurrent.Future>("take");
         }
 
         #endregion
@@ -161,13 +164,6 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#take()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.Future<V> Take
-        {
-            get { return IExecute<Java.Util.Concurrent.Future<V>>("take"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#poll()"/>
         /// </summary>
 
@@ -205,6 +201,16 @@ namespace Java.Util.Concurrent
         public Java.Util.Concurrent.Future<V> Submit(Java.Util.Concurrent.Callable<V> arg0)
         {
             return IExecute<Java.Util.Concurrent.Future<V>>("submit", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ExecutorCompletionService.html#take()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
+        /// <exception cref="Java.Lang.InterruptedException"/>
+        public Java.Util.Concurrent.Future<V> Take()
+        {
+            return IExecute<Java.Util.Concurrent.Future<V>>("take");
         }
 
         #endregion

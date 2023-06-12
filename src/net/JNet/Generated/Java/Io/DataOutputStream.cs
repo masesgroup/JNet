@@ -58,11 +58,13 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#size()"/>
         /// </summary>
-        public int Size
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
         {
-            get { return IExecute<int>("size"); }
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/DataOutputStream.html#writeBoolean(boolean)"/>

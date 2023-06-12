@@ -54,18 +54,22 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#toCharArray()"/>
         /// </summary>
-        public int Size
+
+        /// <returns><see cref="char"/></returns>
+        public char[] ToCharArray()
         {
-            get { return IExecute<int>("size"); }
+            return IExecuteArray<char>("toCharArray");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#toCharArray()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#size()"/>
         /// </summary>
-        public char[] ToCharArray
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
         {
-            get { return IExecuteArray<char>("toCharArray"); }
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/CharArrayWriter.html#reset()"/>

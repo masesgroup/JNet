@@ -61,13 +61,6 @@ namespace Javax.Swing
             get { return IExecuteArray<Javax.Swing.Event.ChangeListener>("getChangeListeners"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#isSelected()"/> 
-        /// </summary>
-        public bool IsSelected
-        {
-            get { return IExecute<bool>("isSelected"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#getSelectedIndex()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#setSelectedIndex(int)"/>
         /// </summary>
         public int SelectedIndex
@@ -83,6 +76,15 @@ namespace Javax.Swing
         public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.IEventListener, new()
         {
             return IExecuteArray<T>("getListeners", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#isSelected()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSelected()
+        {
+            return IExecute<bool>("isSelected");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultSingleSelectionModel.html#addChangeListener(javax.swing.event.ChangeListener)"/>

@@ -53,13 +53,6 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.Graphics>("getGraphics"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#lastPageFirst()"/> 
-        /// </summary>
-        public bool LastPageFirst
-        {
-            get { return IExecute<bool>("lastPageFirst"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#getPageDimension()"/> 
         /// </summary>
         public Java.Awt.Dimension PageDimension
@@ -72,6 +65,15 @@ namespace Java.Awt
         public int PageResolution
         {
             get { return IExecute<int>("getPageResolution"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#lastPageFirst()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool LastPageFirst()
+        {
+            return IExecute<bool>("lastPageFirst");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PrintJob.html#end()"/>

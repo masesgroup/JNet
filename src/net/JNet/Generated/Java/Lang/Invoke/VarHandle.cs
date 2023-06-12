@@ -81,20 +81,6 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#coordinateTypes()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.Class> CoordinateTypes
-        {
-            get { return IExecute<Java.Util.List<Java.Lang.Class>>("coordinateTypes"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#varType()"/> 
-        /// </summary>
-        public Java.Lang.Class VarType
-        {
-            get { return IExecute<Java.Lang.Class>("varType"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#isAccessModeSupported(java.lang.invoke.VarHandle.AccessMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
@@ -102,6 +88,15 @@ namespace Java.Lang.Invoke
         public bool IsAccessModeSupported(Java.Lang.Invoke.VarHandle.AccessMode arg0)
         {
             return IExecute<bool>("isAccessModeSupported", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#varType()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class VarType()
+        {
+            return IExecute<Java.Lang.Class>("varType");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#toMethodHandle(java.lang.invoke.VarHandle.AccessMode)"/>
@@ -120,6 +115,15 @@ namespace Java.Lang.Invoke
         public Java.Lang.Invoke.MethodType AccessModeType(Java.Lang.Invoke.VarHandle.AccessMode arg0)
         {
             return IExecute<Java.Lang.Invoke.MethodType>("accessModeType", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#coordinateTypes()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Class> CoordinateTypes()
+        {
+            return IExecute<Java.Util.List<Java.Lang.Class>>("coordinateTypes");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.html#compareAndSet(java.lang.Object[])"/>
@@ -541,13 +545,6 @@ namespace Java.Lang.Invoke
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#values()"/> 
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode[] Values
-            {
-                get { return SExecuteArray<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#valueFromMethodName(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -565,16 +562,27 @@ namespace Java.Lang.Invoke
             {
                 return SExecute<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "valueOf", arg0);
             }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></returns>
+            public static Java.Lang.Invoke.VarHandle.AccessMode[] Values()
+            {
+                return SExecuteArray<Java.Lang.Invoke.VarHandle.AccessMode>(LocalBridgeClazz, "values");
+            }
 
             #endregion
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#methodName()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#methodName()"/>
             /// </summary>
-            public string MethodName
+
+            /// <returns><see cref="string"/></returns>
+            public string MethodName()
             {
-                get { return IExecute<string>("methodName"); }
+                return IExecute<string>("methodName");
             }
 
             #endregion

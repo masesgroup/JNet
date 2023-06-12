@@ -63,13 +63,6 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#isBroken()"/> 
-        /// </summary>
-        public bool IsBroken
-        {
-            get { return IExecute<bool>("isBroken"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#getNumberWaiting()"/> 
         /// </summary>
         public int NumberWaiting
@@ -82,6 +75,15 @@ namespace Java.Util.Concurrent
         public int Parties
         {
             get { return IExecute<int>("getParties"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#isBroken()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBroken()
+        {
+            return IExecute<bool>("isBroken");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CyclicBarrier.html#await()"/>

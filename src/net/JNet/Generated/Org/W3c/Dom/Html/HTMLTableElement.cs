@@ -57,18 +57,6 @@ namespace Org.W3c.Dom.Html
         /// </summary>
         string CellSpacing { get; set; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createCaption()"/> 
-        /// </summary>
-        Org.W3c.Dom.Html.HTMLElement CreateCaption { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTFoot()"/> 
-        /// </summary>
-        Org.W3c.Dom.Html.HTMLElement CreateTFoot { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTHead()"/> 
-        /// </summary>
-        Org.W3c.Dom.Html.HTMLElement CreateTHead { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getFrame()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setFrame(java.lang.String)"/>
         /// </summary>
         string Frame { get; set; }
@@ -100,6 +88,24 @@ namespace Org.W3c.Dom.Html
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getWidth()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setWidth(java.lang.String)"/>
         /// </summary>
         string Width { get; set; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createCaption()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        Org.W3c.Dom.Html.HTMLElement CreateCaption();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTFoot()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        Org.W3c.Dom.Html.HTMLElement CreateTFoot();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTHead()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        Org.W3c.Dom.Html.HTMLElement CreateTHead();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#insertRow(int)"/>
         /// </summary>
@@ -199,27 +205,6 @@ namespace Org.W3c.Dom.Html
             get { return IExecute<string>("getCellSpacing"); } set { IExecute("setCellSpacing", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createCaption()"/> 
-        /// </summary>
-        public Org.W3c.Dom.Html.HTMLElement CreateCaption
-        {
-            get { return IExecute<Org.W3c.Dom.Html.HTMLElement>("createCaption"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTFoot()"/> 
-        /// </summary>
-        public Org.W3c.Dom.Html.HTMLElement CreateTFoot
-        {
-            get { return IExecute<Org.W3c.Dom.Html.HTMLElement>("createTFoot"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTHead()"/> 
-        /// </summary>
-        public Org.W3c.Dom.Html.HTMLElement CreateTHead
-        {
-            get { return IExecute<Org.W3c.Dom.Html.HTMLElement>("createTHead"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#getFrame()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#setFrame(java.lang.String)"/>
         /// </summary>
         public string Frame
@@ -274,6 +259,33 @@ namespace Org.W3c.Dom.Html
         public string Width
         {
             get { return IExecute<string>("getWidth"); } set { IExecute("setWidth", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createCaption()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        public Org.W3c.Dom.Html.HTMLElement CreateCaption()
+        {
+            return IExecute<Org.W3c.Dom.Html.HTMLElement>("createCaption");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTFoot()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        public Org.W3c.Dom.Html.HTMLElement CreateTFoot()
+        {
+            return IExecute<Org.W3c.Dom.Html.HTMLElement>("createTFoot");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#createTHead()"/>
+        /// </summary>
+
+        /// <returns><see cref="Org.W3c.Dom.Html.HTMLElement"/></returns>
+        public Org.W3c.Dom.Html.HTMLElement CreateTHead()
+        {
+            return IExecute<Org.W3c.Dom.Html.HTMLElement>("createTHead");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLTableElement.html#insertRow(int)"/>

@@ -37,18 +37,6 @@ namespace Java.Time.Temporal
         /// </summary>
         Java.Time.Duration Duration { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/> 
-        /// </summary>
-        bool IsDateBased { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/> 
-        /// </summary>
-        bool IsDurationEstimated { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/> 
-        /// </summary>
-        bool IsTimeBased { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#addTo(java.time.temporal.Temporal,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="R"/></param>
@@ -56,6 +44,24 @@ namespace Java.Time.Temporal
         /// <typeparam name="R"><see cref="Java.Time.Temporal.ITemporal"/></typeparam>
         /// <returns><typeparamref name="R"/></returns>
         R AddTo<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsDateBased();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsDurationEstimated();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsTimeBased();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>
         /// </summary>
@@ -108,27 +114,6 @@ namespace Java.Time.Temporal
             get { return IExecute<Java.Time.Duration>("getDuration"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/> 
-        /// </summary>
-        public bool IsDateBased
-        {
-            get { return IExecute<bool>("isDateBased"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/> 
-        /// </summary>
-        public bool IsDurationEstimated
-        {
-            get { return IExecute<bool>("isDurationEstimated"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/> 
-        /// </summary>
-        public bool IsTimeBased
-        {
-            get { return IExecute<bool>("isTimeBased"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#addTo(java.time.temporal.Temporal,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="R"/></param>
@@ -138,6 +123,33 @@ namespace Java.Time.Temporal
         public R AddTo<R>(R arg0, long arg1) where R: Java.Time.Temporal.ITemporal, new()
         {
             return IExecute<R>("addTo", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDateBased()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDateBased()
+        {
+            return IExecute<bool>("isDateBased");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isDurationEstimated()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDurationEstimated()
+        {
+            return IExecute<bool>("isDurationEstimated");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#isTimeBased()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTimeBased()
+        {
+            return IExecute<bool>("isTimeBased");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalUnit.html#between(java.time.temporal.Temporal,java.time.temporal.Temporal)"/>

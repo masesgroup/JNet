@@ -46,18 +46,24 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
         /// </summary>
-        public bool HasMore
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public bool HasMore()
         {
-            get { return IExecute<bool>("hasMore"); }
+            return IExecute<bool>("hasMore");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
         /// </summary>
-        public object Next
+
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public object Next()
         {
-            get { return IExecute("next"); }
+            return IExecute("next");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
@@ -87,13 +93,19 @@ namespace Javax.Naming
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
         /// </summary>
-        bool HasMore { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        bool HasMore();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
         /// </summary>
-        T Next { get; }
+
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        T Next();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>
         /// </summary>
@@ -136,18 +148,24 @@ namespace Javax.Naming
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#hasMore()"/>
         /// </summary>
-        public bool HasMore
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public bool HasMore()
         {
-            get { return IExecute<bool>("hasMore"); }
+            return IExecute<bool>("hasMore");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#next()"/>
         /// </summary>
-        public T Next
+
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Javax.Naming.NamingException"/>
+        public T Next()
         {
-            get { return IExecute<T>("next"); }
+            return IExecute<T>("next");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html#close()"/>

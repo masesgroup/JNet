@@ -202,13 +202,6 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#values()"/> 
-        /// </summary>
-        public static Java.Sql.JDBCType[] Values
-        {
-            get { return SExecuteArray<Java.Sql.JDBCType>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#valueOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -225,6 +218,15 @@ namespace Java.Sql
         public static Java.Sql.JDBCType ValueOf(string arg0)
         {
             return SExecute<Java.Sql.JDBCType>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/JDBCType.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Sql.JDBCType"/></returns>
+        public static Java.Sql.JDBCType[] Values()
+        {
+            return SExecuteArray<Java.Sql.JDBCType>(LocalBridgeClazz, "values");
         }
 
         #endregion

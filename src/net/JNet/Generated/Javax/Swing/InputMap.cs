@@ -46,20 +46,6 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#allKeys()"/> 
-        /// </summary>
-        public Javax.Swing.KeyStroke[] AllKeys
-        {
-            get { return IExecuteArray<Javax.Swing.KeyStroke>("allKeys"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#keys()"/> 
-        /// </summary>
-        public Javax.Swing.KeyStroke[] Keys
-        {
-            get { return IExecuteArray<Javax.Swing.KeyStroke>("keys"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#getParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#setParent(javax.swing.InputMap)"/>
         /// </summary>
         public Javax.Swing.InputMap Parent
@@ -67,11 +53,13 @@ namespace Javax.Swing
             get { return IExecute<Javax.Swing.InputMap>("getParent"); } set { IExecute("setParent", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#size()"/>
         /// </summary>
-        public int Size
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
         {
-            get { return IExecute<int>("size"); }
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#get(javax.swing.KeyStroke)"/>
@@ -81,6 +69,24 @@ namespace Javax.Swing
         public object Get(Javax.Swing.KeyStroke arg0)
         {
             return IExecute("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#allKeys()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
+        public Javax.Swing.KeyStroke[] AllKeys()
+        {
+            return IExecuteArray<Javax.Swing.KeyStroke>("allKeys");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#keys()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
+        public Javax.Swing.KeyStroke[] Keys()
+        {
+            return IExecuteArray<Javax.Swing.KeyStroke>("keys");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputMap.html#clear()"/>

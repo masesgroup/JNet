@@ -129,41 +129,6 @@ namespace Java.Net
             get { return IExecute<Java.Io.InputStream>("getInputStream"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isBound()"/> 
-        /// </summary>
-        public bool IsBound
-        {
-            get { return IExecute<bool>("isBound"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isClosed()"/> 
-        /// </summary>
-        public bool IsClosed
-        {
-            get { return IExecute<bool>("isClosed"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isConnected()"/> 
-        /// </summary>
-        public bool IsConnected
-        {
-            get { return IExecute<bool>("isConnected"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isInputShutdown()"/> 
-        /// </summary>
-        public bool IsInputShutdown
-        {
-            get { return IExecute<bool>("isInputShutdown"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isOutputShutdown()"/> 
-        /// </summary>
-        public bool IsOutputShutdown
-        {
-            get { return IExecute<bool>("isOutputShutdown"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getKeepAlive()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setKeepAlive(boolean)"/>
         /// </summary>
         public bool KeepAlive
@@ -255,13 +220,6 @@ namespace Java.Net
             get { return IExecute<int>("getSoTimeout"); } set { IExecute("setSoTimeout", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#supportedOptions()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions
-        {
-            get { return IExecute<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getTcpNoDelay()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setTcpNoDelay(boolean)"/>
         /// </summary>
         public bool TcpNoDelay
@@ -297,6 +255,60 @@ namespace Java.Net
         public T GetOption<T>(Java.Net.SocketOption<T> arg0)
         {
             return IExecute<T>("getOption", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isBound()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBound()
+        {
+            return IExecute<bool>("isBound");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isClosed()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsClosed()
+        {
+            return IExecute<bool>("isClosed");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isConnected()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsConnected()
+        {
+            return IExecute<bool>("isConnected");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isInputShutdown()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInputShutdown()
+        {
+            return IExecute<bool>("isInputShutdown");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#isOutputShutdown()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOutputShutdown()
+        {
+            return IExecute<bool>("isOutputShutdown");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#supportedOptions()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Net.SocketOption<object>> SupportedOptions()
+        {
+            return IExecute<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#close()"/>

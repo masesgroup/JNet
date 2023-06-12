@@ -120,13 +120,6 @@ namespace Javax.Swing.Text
             get { return IExecute<Java.Awt.Graphics>("getGraphics"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#isVisible()"/> 
-        /// </summary>
-        public bool IsVisible
-        {
-            get { return IExecute<bool>("isVisible"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getParent()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#setParent(javax.swing.text.View)"/>
         /// </summary>
         public Javax.Swing.Text.View Parent
@@ -195,6 +188,15 @@ namespace Javax.Swing.Text
         public void Paint(Java.Awt.Graphics arg0, Java.Awt.Shape arg1)
         {
             IExecute("paint", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#isVisible()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsVisible()
+        {
+            return IExecute<bool>("isVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#getAlignment(int)"/>

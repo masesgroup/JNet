@@ -65,13 +65,6 @@ namespace Javax.Swing
             get { return IExecute<Javax.Accessibility.AccessibleContext>("getAccessibleContext"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#isCanceled()"/> 
-        /// </summary>
-        public bool IsCanceled
-        {
-            get { return IExecute<bool>("isCanceled"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#getMaximum()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#setMaximum(int)"/>
         /// </summary>
         public int Maximum
@@ -105,6 +98,15 @@ namespace Javax.Swing
         public string Note
         {
             get { return IExecute<string>("getNote"); } set { IExecute("setNote", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#isCanceled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCanceled()
+        {
+            return IExecute<bool>("isCanceled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ProgressMonitor.html#close()"/>

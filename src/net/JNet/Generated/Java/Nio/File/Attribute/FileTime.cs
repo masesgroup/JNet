@@ -74,20 +74,6 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toInstant()"/> 
-        /// </summary>
-        public Java.Time.Instant ToInstant
-        {
-            get { return IExecute<Java.Time.Instant>("toInstant"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toMillis()"/> 
-        /// </summary>
-        public long ToMillis
-        {
-            get { return IExecute<long>("toMillis"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -106,6 +92,15 @@ namespace Java.Nio.File.Attribute
             return IExecute<int>("compareTo", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toInstant()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant ToInstant()
+        {
+            return IExecute<Java.Time.Instant>("toInstant");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#to(java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -113,6 +108,15 @@ namespace Java.Nio.File.Attribute
         public long To(Java.Util.Concurrent.TimeUnit arg0)
         {
             return IExecute<long>("to", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileTime.html#toMillis()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToMillis()
+        {
+            return IExecute<long>("toMillis");
         }
 
         #endregion

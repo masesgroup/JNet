@@ -107,30 +107,27 @@ namespace Java.Util.Jar
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#baseVersion()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#baseVersion()"/>
         /// </summary>
-        public static Java.Lang.Runtime.Version BaseVersion
+
+        /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
+        public static Java.Lang.Runtime.Version BaseVersion()
         {
-            get { return SExecute<Java.Lang.Runtime.Version>(LocalBridgeClazz, "baseVersion"); }
+            return SExecute<Java.Lang.Runtime.Version>(LocalBridgeClazz, "baseVersion");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#runtimeVersion()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#runtimeVersion()"/>
         /// </summary>
-        public static Java.Lang.Runtime.Version RuntimeVersion
+
+        /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
+        public static Java.Lang.Runtime.Version RuntimeVersion()
         {
-            get { return SExecute<Java.Lang.Runtime.Version>(LocalBridgeClazz, "runtimeVersion"); }
+            return SExecute<Java.Lang.Runtime.Version>(LocalBridgeClazz, "runtimeVersion");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#isMultiRelease()"/> 
-        /// </summary>
-        public bool IsMultiRelease
-        {
-            get { return IExecute<bool>("isMultiRelease"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#getManifest()"/> 
         /// </summary>
@@ -146,11 +143,13 @@ namespace Java.Util.Jar
             get { return IExecute<Java.Lang.Runtime.Version>("getVersion"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#versionedStream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#isMultiRelease()"/>
         /// </summary>
-        public Java.Util.Stream.Stream<Java.Util.Jar.JarEntry> VersionedStream
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMultiRelease()
         {
-            get { return IExecute<Java.Util.Stream.Stream<Java.Util.Jar.JarEntry>>("versionedStream"); }
+            return IExecute<bool>("isMultiRelease");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#getJarEntry(java.lang.String)"/>
@@ -160,6 +159,15 @@ namespace Java.Util.Jar
         public Java.Util.Jar.JarEntry GetJarEntry(string arg0)
         {
             return IExecute<Java.Util.Jar.JarEntry>("getJarEntry", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#versionedStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<Java.Util.Jar.JarEntry> VersionedStream()
+        {
+            return IExecute<Java.Util.Stream.Stream<Java.Util.Jar.JarEntry>>("versionedStream");
         }
 
         #endregion

@@ -33,17 +33,21 @@ namespace Javax.Security.Sasl
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#hasInitialResponse()"/> 
-        /// </summary>
-        bool HasInitialResponse { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#isComplete()"/> 
-        /// </summary>
-        bool IsComplete { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#getMechanismName()"/> 
         /// </summary>
         string MechanismName { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#hasInitialResponse()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool HasInitialResponse();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#isComplete()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsComplete();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#evaluateChallenge(byte[])"/>
         /// </summary>
@@ -113,25 +117,29 @@ namespace Javax.Security.Sasl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#hasInitialResponse()"/> 
-        /// </summary>
-        public bool HasInitialResponse
-        {
-            get { return IExecute<bool>("hasInitialResponse"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#isComplete()"/> 
-        /// </summary>
-        public bool IsComplete
-        {
-            get { return IExecute<bool>("isComplete"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#getMechanismName()"/> 
         /// </summary>
         public string MechanismName
         {
             get { return IExecute<string>("getMechanismName"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#hasInitialResponse()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasInitialResponse()
+        {
+            return IExecute<bool>("hasInitialResponse");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#isComplete()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsComplete()
+        {
+            return IExecute<bool>("isComplete");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#evaluateChallenge(byte[])"/>

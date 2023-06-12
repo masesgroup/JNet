@@ -87,25 +87,11 @@ namespace Javax.Swing.Text
             get { return IExecute<int>("getBeginIndex"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#current()"/> 
-        /// </summary>
-        public char Current
-        {
-            get { return IExecute<char>("current"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#getEndIndex()"/> 
         /// </summary>
         public int EndIndex
         {
             get { return IExecute<int>("getEndIndex"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#first()"/> 
-        /// </summary>
-        public char First
-        {
-            get { return IExecute<char>("first"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#getIndex()"/> 
@@ -115,39 +101,13 @@ namespace Javax.Swing.Text
             get { return IExecute<int>("getIndex"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#isPartialReturn()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#isPartialReturn()"/>
         /// </summary>
-        public bool IsPartialReturn
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPartialReturn()
         {
-            get { return IExecute<bool>("isPartialReturn"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#last()"/> 
-        /// </summary>
-        public char Last
-        {
-            get { return IExecute<char>("last"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#length()"/> 
-        /// </summary>
-        public int Length
-        {
-            get { return IExecute<int>("length"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#next()"/> 
-        /// </summary>
-        public char Next
-        {
-            get { return IExecute<char>("next"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#previous()"/> 
-        /// </summary>
-        public char Previous
-        {
-            get { return IExecute<char>("previous"); }
+            return IExecute<bool>("isPartialReturn");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#charAt(int)"/>
@@ -159,6 +119,51 @@ namespace Javax.Swing.Text
             return IExecute<char>("charAt", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#current()"/>
+        /// </summary>
+
+        /// <returns><see cref="char"/></returns>
+        public char Current()
+        {
+            return IExecute<char>("current");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#first()"/>
+        /// </summary>
+
+        /// <returns><see cref="char"/></returns>
+        public char First()
+        {
+            return IExecute<char>("first");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#last()"/>
+        /// </summary>
+
+        /// <returns><see cref="char"/></returns>
+        public char Last()
+        {
+            return IExecute<char>("last");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#next()"/>
+        /// </summary>
+
+        /// <returns><see cref="char"/></returns>
+        public char Next()
+        {
+            return IExecute<char>("next");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#previous()"/>
+        /// </summary>
+
+        /// <returns><see cref="char"/></returns>
+        public char Previous()
+        {
+            return IExecute<char>("previous");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#setIndex(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -166,6 +171,15 @@ namespace Javax.Swing.Text
         public char SetIndex(int arg0)
         {
             return IExecute<char>("setIndex", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#length()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Length()
+        {
+            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#subSequence(int,int)"/>

@@ -33,17 +33,23 @@ namespace Javax.Management.Openmbean
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()"/>
         /// </summary>
-        bool IsIs { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsIs();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/>
         /// </summary>
-        bool IsReadable { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsReadable();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/>
         /// </summary>
-        bool IsWritable { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsWritable();
 
         #endregion
 
@@ -76,25 +82,31 @@ namespace Javax.Management.Openmbean
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isIs()"/>
         /// </summary>
-        public bool IsIs
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsIs()
         {
-            get { return IExecute<bool>("isIs"); }
+            return IExecute<bool>("isIs");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isReadable()"/>
         /// </summary>
-        public bool IsReadable
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsReadable()
         {
-            get { return IExecute<bool>("isReadable"); }
+            return IExecute<bool>("isReadable");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanAttributeInfo.html#isWritable()"/>
         /// </summary>
-        public bool IsWritable
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsWritable()
         {
-            get { return IExecute<bool>("isWritable"); }
+            return IExecute<bool>("isWritable");
         }
 
         #endregion

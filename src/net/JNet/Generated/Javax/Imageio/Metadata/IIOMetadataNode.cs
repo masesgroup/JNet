@@ -90,20 +90,6 @@ namespace Javax.Imageio.Metadata
             get { return IExecute<Org.W3c.Dom.Node>("getFirstChild"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasAttributes()"/> 
-        /// </summary>
-        public bool HasAttributes
-        {
-            get { return IExecute<bool>("hasAttributes"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasChildNodes()"/> 
-        /// </summary>
-        public bool HasChildNodes
-        {
-            get { return IExecute<bool>("hasChildNodes"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#getLastChild()"/> 
         /// </summary>
         public Org.W3c.Dom.Node LastChild
@@ -233,6 +219,24 @@ namespace Javax.Imageio.Metadata
         public bool HasAttributeNS(string arg0, string arg1)
         {
             return IExecute<bool>("hasAttributeNS", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasAttributes()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasAttributes()
+        {
+            return IExecute<bool>("hasAttributes");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#hasChildNodes()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasChildNodes()
+        {
+            return IExecute<bool>("hasChildNodes");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html#isDefaultNamespace(java.lang.String)"/>

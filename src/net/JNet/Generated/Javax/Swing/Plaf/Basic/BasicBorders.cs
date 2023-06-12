@@ -405,11 +405,13 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#isBorderOpaque()"/> 
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#isBorderOpaque()"/>
             /// </summary>
-            public bool IsBorderOpaque
+
+            /// <returns><see cref="bool"/></returns>
+            public bool IsBorderOpaque()
             {
-                get { return IExecute<bool>("isBorderOpaque"); }
+                return IExecute<bool>("isBorderOpaque");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#getBorderInsets(java.awt.Component)"/>

@@ -107,27 +107,6 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#elements()"/> 
-        /// </summary>
-        public Java.Util.Enumeration Elements
-        {
-            get { return IExecute<Java.Util.Enumeration>("elements"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#keys()"/> 
-        /// </summary>
-        public Java.Util.Enumeration Keys
-        {
-            get { return IExecute<Java.Util.Enumeration>("keys"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#mappingCount()"/> 
-        /// </summary>
-        public long MappingCount
-        {
-            get { return IExecute<long>("mappingCount"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduce(long,java.util.function.BiFunction,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -366,6 +345,24 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView>("keySet", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#keys()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Keys()
+        {
+            return IExecute<Java.Util.Enumeration>("keys");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#elements()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration Elements()
+        {
+            return IExecute<Java.Util.Enumeration>("elements");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntries(long,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -384,6 +381,15 @@ namespace Java.Util.Concurrent
         public object ReduceKeys(long arg0, Java.Util.Function.BiFunction arg1)
         {
             return IExecute("reduceKeys", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#mappingCount()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long MappingCount()
+        {
+            return IExecute<long>("mappingCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntriesToLong(long,java.util.function.ToLongFunction,long,java.util.function.LongBinaryOperator)"/>
@@ -671,27 +677,6 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#elements()"/> 
-        /// </summary>
-        public Java.Util.Enumeration<V> Elements
-        {
-            get { return IExecute<Java.Util.Enumeration<V>>("elements"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#keys()"/> 
-        /// </summary>
-        public Java.Util.Enumeration<K> Keys
-        {
-            get { return IExecute<Java.Util.Enumeration<K>>("keys"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#mappingCount()"/> 
-        /// </summary>
-        public long MappingCount
-        {
-            get { return IExecute<long>("mappingCount"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduce(long,java.util.function.BiFunction,java.util.function.BiFunction)"/>
         /// </summary>
@@ -987,6 +972,24 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, V>>("keySet", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#keys()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<K> Keys()
+        {
+            return IExecute<Java.Util.Enumeration<K>>("keys");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#elements()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<V> Elements()
+        {
+            return IExecute<Java.Util.Enumeration<V>>("elements");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntries(long,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -1008,6 +1011,15 @@ namespace Java.Util.Concurrent
         public K ReduceKeys<Arg1objectSuperK, Arg1ExtendsK>(long arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperK, Arg1ExtendsK> arg1) where Arg1objectSuperK: K where Arg1ExtendsK: K
         {
             return IExecute<K>("reduceKeys", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#mappingCount()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long MappingCount()
+        {
+            return IExecute<long>("mappingCount");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#reduceEntriesToLong(long,java.util.function.ToLongFunction,long,java.util.function.LongBinaryOperator)"/>

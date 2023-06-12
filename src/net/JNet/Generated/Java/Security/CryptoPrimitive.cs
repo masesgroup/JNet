@@ -82,13 +82,6 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#values()"/> 
-        /// </summary>
-        public static Java.Security.CryptoPrimitive[] Values
-        {
-            get { return SExecuteArray<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -96,6 +89,15 @@ namespace Java.Security
         public static Java.Security.CryptoPrimitive ValueOf(string arg0)
         {
             return SExecute<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/CryptoPrimitive.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Security.CryptoPrimitive"/></returns>
+        public static Java.Security.CryptoPrimitive[] Values()
+        {
+            return SExecuteArray<Java.Security.CryptoPrimitive>(LocalBridgeClazz, "values");
         }
 
         #endregion

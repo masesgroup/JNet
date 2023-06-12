@@ -42,11 +42,13 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#empty()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#empty()"/>
         /// </summary>
-        public static Java.Util.OptionalInt Empty
+
+        /// <returns><see cref="Java.Util.OptionalInt"/></returns>
+        public static Java.Util.OptionalInt Empty()
         {
-            get { return SExecute<Java.Util.OptionalInt>(LocalBridgeClazz, "empty"); }
+            return SExecute<Java.Util.OptionalInt>(LocalBridgeClazz, "empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#of(int)"/>
@@ -69,27 +71,6 @@ namespace Java.Util
             get { return IExecute<int>("getAsInt"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isEmpty()"/> 
-        /// </summary>
-        public bool IsEmpty
-        {
-            get { return IExecute<bool>("isEmpty"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isPresent()"/> 
-        /// </summary>
-        public bool IsPresent
-        {
-            get { return IExecute<bool>("isPresent"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#stream()"/> 
-        /// </summary>
-        public Java.Util.Stream.IntStream Stream
-        {
-            get { return IExecute<Java.Util.Stream.IntStream>("stream"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElseThrow(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
@@ -100,6 +81,24 @@ namespace Java.Util
         public int OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX: X
         {
             return IExecute<int>("orElseThrow", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isEmpty()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecute<bool>("isEmpty");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#isPresent()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPresent()
+        {
+            return IExecute<bool>("isPresent");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#orElse(int)"/>
@@ -127,6 +126,15 @@ namespace Java.Util
         public int OrElseThrow()
         {
             return IExecute<int>("orElseThrow");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#stream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public Java.Util.Stream.IntStream Stream()
+        {
+            return IExecute<Java.Util.Stream.IntStream>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/OptionalInt.html#ifPresent(java.util.function.IntConsumer)"/>

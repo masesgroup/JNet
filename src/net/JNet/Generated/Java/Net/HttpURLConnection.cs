@@ -228,11 +228,13 @@ namespace Java.Net
             get { return IExecute<string>("getResponseMessage"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#usingProxy()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#usingProxy()"/>
         /// </summary>
-        public bool UsingProxy
+
+        /// <returns><see cref="bool"/></returns>
+        public bool UsingProxy()
         {
-            get { return IExecute<bool>("usingProxy"); }
+            return IExecute<bool>("usingProxy");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#disconnect()"/>

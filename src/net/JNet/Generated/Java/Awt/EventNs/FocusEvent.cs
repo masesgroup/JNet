@@ -111,18 +111,20 @@ namespace Java.Awt.EventNs
             get { return IExecute<Java.Awt.EventNs.FocusEvent.Cause>("getCause"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#isTemporary()"/> 
-        /// </summary>
-        public bool IsTemporary
-        {
-            get { return IExecute<bool>("isTemporary"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#getOppositeComponent()"/> 
         /// </summary>
         public Java.Awt.Component OppositeComponent
         {
             get { return IExecute<Java.Awt.Component>("getOppositeComponent"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.html#isTemporary()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsTemporary()
+        {
+            return IExecute<bool>("isTemporary");
         }
 
         #endregion
@@ -189,13 +191,6 @@ namespace Java.Awt.EventNs
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#values()"/> 
-            /// </summary>
-            public static Java.Awt.EventNs.FocusEvent.Cause[] Values
-            {
-                get { return SExecuteArray<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -203,6 +198,15 @@ namespace Java.Awt.EventNs
             public static Java.Awt.EventNs.FocusEvent.Cause ValueOf(string arg0)
             {
                 return SExecute<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusEvent.Cause.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Awt.EventNs.FocusEvent.Cause"/></returns>
+            public static Java.Awt.EventNs.FocusEvent.Cause[] Values()
+            {
+                return SExecuteArray<Java.Awt.EventNs.FocusEvent.Cause>(LocalBridgeClazz, "values");
             }
 
             #endregion

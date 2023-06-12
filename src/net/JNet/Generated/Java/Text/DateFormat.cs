@@ -239,13 +239,6 @@ namespace Java.Text
             get { return IExecute<Java.Util.Calendar>("getCalendar"); } set { IExecute("setCalendar", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#isLenient()"/> 
-        /// </summary>
-        public bool IsLenient
-        {
-            get { return IExecute<bool>("isLenient"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#getNumberFormat()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#setNumberFormat(java.text.NumberFormat)"/>
         /// </summary>
         public Java.Text.NumberFormat NumberFormat
@@ -279,6 +272,15 @@ namespace Java.Text
         public Java.Util.Date Parse(string arg0, Java.Text.ParsePosition arg1)
         {
             return IExecute<Java.Util.Date>("parse", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#isLenient()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLenient()
+        {
+            return IExecute<bool>("isLenient");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/DateFormat.html#format(java.util.Date)"/>

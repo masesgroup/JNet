@@ -110,20 +110,6 @@ namespace Java.Lang.Reflect
             get { return IExecuteArray<Java.Lang.Reflect.Type>("getGenericParameterTypes"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isSynthetic()"/> 
-        /// </summary>
-        public bool IsSynthetic
-        {
-            get { return IExecute<bool>("isSynthetic"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isVarArgs()"/> 
-        /// </summary>
-        public bool IsVarArgs
-        {
-            get { return IExecute<bool>("isVarArgs"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getModifiers()"/> 
         /// </summary>
         public int Modifiers
@@ -166,18 +152,38 @@ namespace Java.Lang.Reflect
             get { return IExecuteArray<Java.Lang.Class>("getParameterTypes"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#toGenericString()"/> 
-        /// </summary>
-        public string ToGenericString
-        {
-            get { return IExecute<string>("toGenericString"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#getTypeParameters()"/> 
         /// </summary>
         public Java.Lang.Reflect.TypeVariable[] TypeParameters
         {
             get { return IExecuteArray<Java.Lang.Reflect.TypeVariable>("getTypeParameters"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#toGenericString()"/>
+        /// </summary>
+
+        /// <returns><see cref="string"/></returns>
+        public string ToGenericString()
+        {
+            return IExecute<string>("toGenericString");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isSynthetic()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsSynthetic()
+        {
+            return IExecute<bool>("isSynthetic");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Executable.html#isVarArgs()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsVarArgs()
+        {
+            return IExecute<bool>("isVarArgs");
         }
 
         #endregion

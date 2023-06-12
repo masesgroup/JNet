@@ -33,13 +33,17 @@ namespace Javax.Xml.Xpath
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#size()"/>
         /// </summary>
-        Java.Util.Iterator<Org.W3c.Dom.Node> Iterator { get; }
+
+        /// <returns><see cref="int"/></returns>
+        int Size();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#iterator()"/>
         /// </summary>
-        int Size { get; }
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        Java.Util.Iterator<Org.W3c.Dom.Node> Iterator();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#get(int)"/>
         /// </summary>
@@ -79,18 +83,22 @@ namespace Javax.Xml.Xpath
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#size()"/>
         /// </summary>
-        public Java.Util.Iterator<Org.W3c.Dom.Node> Iterator
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
         {
-            get { return IExecute<Java.Util.Iterator<Org.W3c.Dom.Node>>("iterator"); }
+            return IExecute<int>("size");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#iterator()"/>
         /// </summary>
-        public int Size
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<Org.W3c.Dom.Node> Iterator()
         {
-            get { return IExecute<int>("size"); }
+            return IExecute<Java.Util.Iterator<Org.W3c.Dom.Node>>("iterator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathNodes.html#get(int)"/>

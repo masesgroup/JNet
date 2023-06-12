@@ -41,14 +41,6 @@ namespace Java.Sql
         /// </summary>
         Java.Io.Reader CharacterStream { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/> 
-        /// </summary>
-        Java.Io.OutputStream SetBinaryStream { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/> 
-        /// </summary>
-        Java.Io.Writer SetCharacterStream { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getString()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setString(java.lang.String)"/>
         /// </summary>
         string String { get; set; }
@@ -68,6 +60,20 @@ namespace Java.Sql
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
         T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.IResult, new();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Io.OutputStream SetBinaryStream();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Io.Writer"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        Java.Io.Writer SetCharacterStream();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>
         /// </summary>
@@ -120,20 +126,6 @@ namespace Java.Sql
             get { return IExecute<Java.Io.Reader>("getCharacterStream"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/> 
-        /// </summary>
-        public Java.Io.OutputStream SetBinaryStream
-        {
-            get { return IExecute<Java.Io.OutputStream>("setBinaryStream"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/> 
-        /// </summary>
-        public Java.Io.Writer SetCharacterStream
-        {
-            get { return IExecute<Java.Io.Writer>("setCharacterStream"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#getString()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setString(java.lang.String)"/>
         /// </summary>
         public string String
@@ -161,6 +153,26 @@ namespace Java.Sql
         public T SetResult<T>(Java.Lang.Class arg0) where T: Javax.Xml.Transform.IResult, new()
         {
             return IExecute<T>("setResult", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setBinaryStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.OutputStream SetBinaryStream()
+        {
+            return IExecute<Java.Io.OutputStream>("setBinaryStream");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#setCharacterStream()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Io.Writer"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.Writer SetCharacterStream()
+        {
+            return IExecute<Java.Io.Writer>("setCharacterStream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLXML.html#free()"/>

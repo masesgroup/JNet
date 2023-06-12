@@ -56,20 +56,6 @@ namespace Javax.Imageio.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#canUseCacheFile()"/> 
-        /// </summary>
-        public bool CanUseCacheFile
-        {
-            get { return IExecute<bool>("canUseCacheFile"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#needsCacheFile()"/> 
-        /// </summary>
-        public bool NeedsCacheFile
-        {
-            get { return IExecute<bool>("needsCacheFile"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#getOutputClass()"/> 
         /// </summary>
         public Java.Lang.Class OutputClass
@@ -87,6 +73,24 @@ namespace Javax.Imageio.Spi
         public Javax.Imageio.Stream.ImageOutputStream CreateOutputStreamInstance(object arg0, bool arg1, Java.Io.File arg2)
         {
             return IExecute<Javax.Imageio.Stream.ImageOutputStream>("createOutputStreamInstance", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#canUseCacheFile()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool CanUseCacheFile()
+        {
+            return IExecute<bool>("canUseCacheFile");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#needsCacheFile()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool NeedsCacheFile()
+        {
+            return IExecute<bool>("needsCacheFile");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/ImageOutputStreamSpi.html#createOutputStreamInstance(java.lang.Object)"/>

@@ -33,14 +33,6 @@ namespace Javax.Sound.Midi
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRecording()"/> 
-        /// </summary>
-        bool IsRecording { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRunning()"/> 
-        /// </summary>
-        bool IsRunning { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getLoopCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setLoopCount(int)"/>
         /// </summary>
         int LoopCount { get; set; }
@@ -118,6 +110,18 @@ namespace Javax.Sound.Midi
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
         bool GetTrackSolo(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRecording()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsRecording();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRunning()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsRunning();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#addControllerEventListener(javax.sound.midi.ControllerEventListener,int[])"/>
         /// </summary>
@@ -224,20 +228,6 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRecording()"/> 
-        /// </summary>
-        public bool IsRecording
-        {
-            get { return IExecute<bool>("isRecording"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRunning()"/> 
-        /// </summary>
-        public bool IsRunning
-        {
-            get { return IExecute<bool>("isRunning"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#getLoopCount()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setLoopCount(int)"/>
         /// </summary>
@@ -369,6 +359,24 @@ namespace Javax.Sound.Midi
         public bool GetTrackSolo(int arg0)
         {
             return IExecute<bool>("getTrackSolo", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRecording()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRecording()
+        {
+            return IExecute<bool>("isRecording");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#isRunning()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRunning()
+        {
+            return IExecute<bool>("isRunning");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#addControllerEventListener(javax.sound.midi.ControllerEventListener,int[])"/>

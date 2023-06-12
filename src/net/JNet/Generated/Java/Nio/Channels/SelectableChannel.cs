@@ -46,39 +46,40 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#blockingLock()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#isBlocking()"/>
         /// </summary>
-        public object BlockingLock
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBlocking()
         {
-            get { return IExecute("blockingLock"); }
+            return IExecute<bool>("isBlocking");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#isBlocking()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#isRegistered()"/>
         /// </summary>
-        public bool IsBlocking
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRegistered()
         {
-            get { return IExecute<bool>("isBlocking"); }
+            return IExecute<bool>("isRegistered");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#isRegistered()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#validOps()"/>
         /// </summary>
-        public bool IsRegistered
+
+        /// <returns><see cref="int"/></returns>
+        public int ValidOps()
         {
-            get { return IExecute<bool>("isRegistered"); }
+            return IExecute<int>("validOps");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#provider()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#blockingLock()"/>
         /// </summary>
-        public Java.Nio.Channels.Spi.SelectorProvider Provider
+
+        /// <returns><see cref="object"/></returns>
+        public object BlockingLock()
         {
-            get { return IExecute<Java.Nio.Channels.Spi.SelectorProvider>("provider"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#validOps()"/> 
-        /// </summary>
-        public int ValidOps
-        {
-            get { return IExecute<int>("validOps"); }
+            return IExecute("blockingLock");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#configureBlocking(boolean)"/>
@@ -110,6 +111,15 @@ namespace Java.Nio.Channels
         public Java.Nio.Channels.SelectionKey Register(Java.Nio.Channels.Selector arg0, int arg1, object arg2)
         {
             return IExecute<Java.Nio.Channels.SelectionKey>("register", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#provider()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Nio.Channels.Spi.SelectorProvider"/></returns>
+        public Java.Nio.Channels.Spi.SelectorProvider Provider()
+        {
+            return IExecute<Java.Nio.Channels.Spi.SelectorProvider>("provider");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectableChannel.html#register(java.nio.channels.Selector,int)"/>

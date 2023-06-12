@@ -55,25 +55,11 @@ namespace Java.Awt.ImageNs.Renderable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html#createDefaultRendering()"/> 
-        /// </summary>
-        public Java.Awt.ImageNs.RenderedImage CreateDefaultRendering
-        {
-            get { return IExecute<Java.Awt.ImageNs.RenderedImage>("createDefaultRendering"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html#getHeight()"/> 
         /// </summary>
         public float Height
         {
             get { return IExecute<float>("getHeight"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html#isDynamic()"/> 
-        /// </summary>
-        public bool IsDynamic
-        {
-            get { return IExecute<bool>("isDynamic"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html#getMinX()"/> 
@@ -118,6 +104,15 @@ namespace Java.Awt.ImageNs.Renderable
             get { return IExecute<float>("getWidth"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html#isDynamic()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDynamic()
+        {
+            return IExecute<bool>("isDynamic");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html#setParameterBlock(java.awt.image.renderable.ParameterBlock)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></param>
@@ -125,6 +120,15 @@ namespace Java.Awt.ImageNs.Renderable
         public Java.Awt.ImageNs.Renderable.ParameterBlock SetParameterBlock(Java.Awt.ImageNs.Renderable.ParameterBlock arg0)
         {
             return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("setParameterBlock", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html#createDefaultRendering()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
+        public Java.Awt.ImageNs.RenderedImage CreateDefaultRendering()
+        {
+            return IExecute<Java.Awt.ImageNs.RenderedImage>("createDefaultRendering");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImageOp.html#createRendering(java.awt.image.renderable.RenderContext)"/>

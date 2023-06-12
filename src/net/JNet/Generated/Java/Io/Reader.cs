@@ -50,30 +50,18 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#nullReader()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#nullReader()"/>
         /// </summary>
-        public static Java.Io.Reader NullReader
+
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        public static Java.Io.Reader NullReader()
         {
-            get { return SExecute<Java.Io.Reader>(LocalBridgeClazz, "nullReader"); }
+            return SExecute<Java.Io.Reader>(LocalBridgeClazz, "nullReader");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#markSupported()"/> 
-        /// </summary>
-        public bool MarkSupported
-        {
-            get { return IExecute<bool>("markSupported"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#ready()"/> 
-        /// </summary>
-        public bool Ready
-        {
-            get { return IExecute<bool>("ready"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read(char[],int,int)"/>
         /// </summary>
@@ -94,6 +82,25 @@ namespace Java.Io
         public void Close()
         {
             IExecute("close");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#markSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool MarkSupported()
+        {
+            return IExecute<bool>("markSupported");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#ready()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public bool Ready()
+        {
+            return IExecute<bool>("ready");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#read()"/>

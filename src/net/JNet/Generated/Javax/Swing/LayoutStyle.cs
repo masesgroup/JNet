@@ -109,13 +109,6 @@ namespace Javax.Swing
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#values()"/> 
-            /// </summary>
-            public static Javax.Swing.LayoutStyle.ComponentPlacement[] Values
-            {
-                get { return SExecuteArray<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -123,6 +116,15 @@ namespace Javax.Swing
             public static Javax.Swing.LayoutStyle.ComponentPlacement ValueOf(string arg0)
             {
                 return SExecute<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Javax.Swing.LayoutStyle.ComponentPlacement"/></returns>
+            public static Javax.Swing.LayoutStyle.ComponentPlacement[] Values()
+            {
+                return SExecuteArray<Javax.Swing.LayoutStyle.ComponentPlacement>(LocalBridgeClazz, "values");
             }
 
             #endregion

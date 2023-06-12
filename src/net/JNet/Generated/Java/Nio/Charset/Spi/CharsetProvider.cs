@@ -46,13 +46,6 @@ namespace Java.Nio.Charset.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/spi/CharsetProvider.html#charsets()"/> 
-        /// </summary>
-        public Java.Util.Iterator<Java.Nio.Charset.Charset> Charsets
-        {
-            get { return IExecute<Java.Util.Iterator<Java.Nio.Charset.Charset>>("charsets"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/spi/CharsetProvider.html#charsetForName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -60,6 +53,15 @@ namespace Java.Nio.Charset.Spi
         public Java.Nio.Charset.Charset CharsetForName(string arg0)
         {
             return IExecute<Java.Nio.Charset.Charset>("charsetForName", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/spi/CharsetProvider.html#charsets()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<Java.Nio.Charset.Charset> Charsets()
+        {
+            return IExecute<Java.Util.Iterator<Java.Nio.Charset.Charset>>("charsets");
         }
 
         #endregion

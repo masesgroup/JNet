@@ -60,13 +60,6 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.Rectangle>("getBounds"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#createGraphics()"/> 
-        /// </summary>
-        public Java.Awt.Graphics2D CreateGraphics
-        {
-            get { return IExecute<Java.Awt.Graphics2D>("createGraphics"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getImageURL()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#setImageURL(java.net.URL)"/>
         /// </summary>
         public Java.Net.URL ImageURL
@@ -74,18 +67,30 @@ namespace Java.Awt
             get { return IExecute<Java.Net.URL>("getImageURL"); } set { IExecute("setImageURL", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#isVisible()"/> 
-        /// </summary>
-        public bool IsVisible
-        {
-            get { return IExecute<bool>("isVisible"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#getSize()"/> 
         /// </summary>
         public Java.Awt.Dimension Size
         {
             get { return IExecute<Java.Awt.Dimension>("getSize"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#isVisible()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsVisible()
+        {
+            return IExecute<bool>("isVisible");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#createGraphics()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        public Java.Awt.Graphics2D CreateGraphics()
+        {
+            return IExecute<Java.Awt.Graphics2D>("createGraphics");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/SplashScreen.html#close()"/>

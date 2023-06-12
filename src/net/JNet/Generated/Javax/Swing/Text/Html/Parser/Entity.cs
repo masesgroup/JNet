@@ -84,20 +84,6 @@ namespace Javax.Swing.Text.Html.Parser
             get { return IExecuteArray<char>("getData"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#isGeneral()"/> 
-        /// </summary>
-        public bool IsGeneral
-        {
-            get { return IExecute<bool>("isGeneral"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#isParameter()"/> 
-        /// </summary>
-        public bool IsParameter
-        {
-            get { return IExecute<bool>("isParameter"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#getName()"/> 
         /// </summary>
         public string Name
@@ -117,6 +103,24 @@ namespace Javax.Swing.Text.Html.Parser
         public int Type
         {
             get { return IExecute<int>("getType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#isGeneral()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsGeneral()
+        {
+            return IExecute<bool>("isGeneral");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#isParameter()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsParameter()
+        {
+            return IExecute<bool>("isParameter");
         }
 
         #endregion

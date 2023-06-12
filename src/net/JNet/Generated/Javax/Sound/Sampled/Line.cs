@@ -37,10 +37,6 @@ namespace Javax.Sound.Sampled
         /// </summary>
         Javax.Sound.Sampled.Control[] Controls { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/> 
-        /// </summary>
-        bool IsOpen { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getLineInfo()"/> 
         /// </summary>
         Javax.Sound.Sampled.Line.Info LineInfo { get; }
@@ -50,6 +46,12 @@ namespace Javax.Sound.Sampled
         /// <param name="arg0"><see cref="Javax.Sound.Sampled.Control.Type"/></param>
         /// <returns><see cref="bool"/></returns>
         bool IsControlSupported(Javax.Sound.Sampled.Control.Type arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsOpen();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getControl(javax.sound.sampled.Control.Type)"/>
         /// </summary>
@@ -115,13 +117,6 @@ namespace Javax.Sound.Sampled
             get { return IExecuteArray<Javax.Sound.Sampled.Control>("getControls"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/> 
-        /// </summary>
-        public bool IsOpen
-        {
-            get { return IExecute<bool>("isOpen"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getLineInfo()"/> 
         /// </summary>
         public Javax.Sound.Sampled.Line.Info LineInfo
@@ -136,6 +131,15 @@ namespace Javax.Sound.Sampled
         public bool IsControlSupported(Javax.Sound.Sampled.Control.Type arg0)
         {
             return IExecute<bool>("isControlSupported", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#isOpen()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsOpen()
+        {
+            return IExecute<bool>("isOpen");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Line.html#getControl(javax.sound.sampled.Control.Type)"/>

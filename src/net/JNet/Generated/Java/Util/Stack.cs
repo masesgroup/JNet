@@ -46,25 +46,13 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#empty()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#empty()"/>
         /// </summary>
-        public bool Empty
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Empty()
         {
-            get { return IExecute<bool>("empty"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#peek()"/> 
-        /// </summary>
-        public object Peek
-        {
-            get { return IExecute("peek"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#pop()"/> 
-        /// </summary>
-        public object Pop
-        {
-            get { return IExecute("pop"); }
+            return IExecute<bool>("empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#push(java.lang.Object)"/>
@@ -74,6 +62,24 @@ namespace Java.Util
         public object Push(object arg0)
         {
             return IExecute("push", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#peek()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object Peek()
+        {
+            return IExecute("peek");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#pop()"/>
+        /// </summary>
+
+        /// <returns><see cref="object"/></returns>
+        public object Pop()
+        {
+            return IExecute("pop");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#search(java.lang.Object)"/>
@@ -120,25 +126,13 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#empty()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#empty()"/>
         /// </summary>
-        public bool Empty
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Empty()
         {
-            get { return IExecute<bool>("empty"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#peek()"/> 
-        /// </summary>
-        public E Peek
-        {
-            get { return IExecute<E>("peek"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#pop()"/> 
-        /// </summary>
-        public E Pop
-        {
-            get { return IExecute<E>("pop"); }
+            return IExecute<bool>("empty");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#push(java.lang.Object)"/>
@@ -148,6 +142,24 @@ namespace Java.Util
         public E Push(E arg0)
         {
             return IExecute<E>("push", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#peek()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E Peek()
+        {
+            return IExecute<E>("peek");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#pop()"/>
+        /// </summary>
+
+        /// <returns><typeparamref name="E"/></returns>
+        public E Pop()
+        {
+            return IExecute<E>("pop");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Stack.html#search(java.lang.Object)"/>

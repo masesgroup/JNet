@@ -37,14 +37,6 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         Javax.Lang.Model.Element.AnnotationValue DefaultValue { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()"/> 
-        /// </summary>
-        bool IsDefault { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isVarArgs()"/> 
-        /// </summary>
-        bool IsVarArgs { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getParameters()"/> 
         /// </summary>
         Java.Util.List Parameters { get; }
@@ -68,6 +60,18 @@ namespace Javax.Lang.Model.Element
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getTypeParameters()"/> 
         /// </summary>
         Java.Util.List TypeParameters { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsDefault();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isVarArgs()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsVarArgs();
 
         #endregion
 
@@ -115,20 +119,6 @@ namespace Javax.Lang.Model.Element
             get { return IExecute<Javax.Lang.Model.Element.AnnotationValue>("getDefaultValue"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()"/> 
-        /// </summary>
-        public bool IsDefault
-        {
-            get { return IExecute<bool>("isDefault"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isVarArgs()"/> 
-        /// </summary>
-        public bool IsVarArgs
-        {
-            get { return IExecute<bool>("isVarArgs"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#getParameters()"/> 
         /// </summary>
         public Java.Util.List Parameters
@@ -169,6 +159,24 @@ namespace Javax.Lang.Model.Element
         public Java.Util.List TypeParameters
         {
             get { return IExecute<Java.Util.List>("getTypeParameters"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isDefault()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDefault()
+        {
+            return IExecute<bool>("isDefault");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ExecutableElement.html#isVarArgs()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsVarArgs()
+        {
+            return IExecute<bool>("isVarArgs");
         }
 
         #endregion

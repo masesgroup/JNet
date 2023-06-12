@@ -63,25 +63,11 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#breaksFlow()"/> 
-        /// </summary>
-        public bool BreaksFlow
-        {
-            get { return IExecute<bool>("breaksFlow"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#getElement()"/> 
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element Element
         {
             get { return IExecute<Javax.Swing.Text.Html.Parser.Element>("getElement"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#fictional()"/> 
-        /// </summary>
-        public bool Fictional
-        {
-            get { return IExecute<bool>("fictional"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#getHTMLTag()"/> 
@@ -91,11 +77,31 @@ namespace Javax.Swing.Text.Html.Parser
             get { return IExecute<Javax.Swing.Text.Html.HTML.Tag>("getHTMLTag"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#isPreformatted()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#breaksFlow()"/>
         /// </summary>
-        public bool IsPreformatted
+
+        /// <returns><see cref="bool"/></returns>
+        public bool BreaksFlow()
         {
-            get { return IExecute<bool>("isPreformatted"); }
+            return IExecute<bool>("breaksFlow");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#fictional()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Fictional()
+        {
+            return IExecute<bool>("fictional");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/TagElement.html#isPreformatted()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPreformatted()
+        {
+            return IExecute<bool>("isPreformatted");
         }
 
         #endregion

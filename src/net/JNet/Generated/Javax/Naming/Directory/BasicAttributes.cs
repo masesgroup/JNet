@@ -87,18 +87,22 @@ namespace Javax.Naming.Directory
             get { return IExecute<Javax.Naming.NamingEnumeration<string>>("getIDs"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#isCaseIgnored()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#isCaseIgnored()"/>
         /// </summary>
-        public bool IsCaseIgnored
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCaseIgnored()
         {
-            get { return IExecute<bool>("isCaseIgnored"); }
+            return IExecute<bool>("isCaseIgnored");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#size()"/>
         /// </summary>
-        public int Size
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
         {
-            get { return IExecute<int>("size"); }
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#get(java.lang.String)"/>

@@ -54,18 +54,20 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#isForwardCheckingSupported()"/> 
-        /// </summary>
-        public bool IsForwardCheckingSupported
-        {
-            get { return IExecute<bool>("isForwardCheckingSupported"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#getSupportedExtensions()"/> 
         /// </summary>
         public Java.Util.Set<string> SupportedExtensions
         {
             get { return IExecute<Java.Util.Set<string>>("getSupportedExtensions"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#isForwardCheckingSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsForwardCheckingSupported()
+        {
+            return IExecute<bool>("isForwardCheckingSupported");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate,java.util.Collection)"/>

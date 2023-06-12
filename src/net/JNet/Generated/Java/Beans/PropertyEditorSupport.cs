@@ -68,13 +68,6 @@ namespace Java.Beans
             get { return IExecute<Java.Awt.Component>("getCustomEditor"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#isPaintable()"/> 
-        /// </summary>
-        public bool IsPaintable
-        {
-            get { return IExecute<bool>("isPaintable"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#getJavaInitializationString()"/> 
         /// </summary>
         public string JavaInitializationString
@@ -89,13 +82,6 @@ namespace Java.Beans
             get { return IExecute("getSource"); } set { IExecute("setSource", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#supportsCustomEditor()"/> 
-        /// </summary>
-        public bool SupportsCustomEditor
-        {
-            get { return IExecute<bool>("supportsCustomEditor"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#getTags()"/> 
         /// </summary>
         public string[] Tags
@@ -108,6 +94,24 @@ namespace Java.Beans
         public object Value
         {
             get { return IExecute("getValue"); } set { IExecute("setValue", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#isPaintable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPaintable()
+        {
+            return IExecute<bool>("isPaintable");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#supportsCustomEditor()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool SupportsCustomEditor()
+        {
+            return IExecute<bool>("supportsCustomEditor");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorSupport.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>

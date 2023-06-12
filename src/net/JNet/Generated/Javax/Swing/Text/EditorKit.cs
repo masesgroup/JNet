@@ -68,25 +68,29 @@ namespace Javax.Swing.Text
             get { return IExecute<string>("getContentType"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#createCaret()"/> 
-        /// </summary>
-        public Javax.Swing.Text.Caret CreateCaret
-        {
-            get { return IExecute<Javax.Swing.Text.Caret>("createCaret"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#createDefaultDocument()"/> 
-        /// </summary>
-        public Javax.Swing.Text.Document CreateDefaultDocument
-        {
-            get { return IExecute<Javax.Swing.Text.Document>("createDefaultDocument"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#getViewFactory()"/> 
         /// </summary>
         public Javax.Swing.Text.ViewFactory ViewFactory
         {
             get { return IExecute<Javax.Swing.Text.ViewFactory>("getViewFactory"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#createCaret()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.Text.Caret"/></returns>
+        public Javax.Swing.Text.Caret CreateCaret()
+        {
+            return IExecute<Javax.Swing.Text.Caret>("createCaret");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#createDefaultDocument()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Swing.Text.Document"/></returns>
+        public Javax.Swing.Text.Document CreateDefaultDocument()
+        {
+            return IExecute<Javax.Swing.Text.Document>("createDefaultDocument");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/EditorKit.html#read(java.io.InputStream,javax.swing.text.Document,int)"/>

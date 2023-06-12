@@ -33,13 +33,15 @@ namespace Org.W3c.Dom
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#isElementContentWhitespace()"/> 
-        /// </summary>
-        bool IsElementContentWhitespace { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#getWholeText()"/> 
         /// </summary>
         string WholeText { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#isElementContentWhitespace()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsElementContentWhitespace();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#replaceWholeText(java.lang.String)"/>
         /// </summary>
@@ -86,18 +88,20 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#isElementContentWhitespace()"/> 
-        /// </summary>
-        public bool IsElementContentWhitespace
-        {
-            get { return IExecute<bool>("isElementContentWhitespace"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#getWholeText()"/> 
         /// </summary>
         public string WholeText
         {
             get { return IExecute<string>("getWholeText"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#isElementContentWhitespace()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsElementContentWhitespace()
+        {
+            return IExecute<bool>("isElementContentWhitespace");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html#replaceWholeText(java.lang.String)"/>

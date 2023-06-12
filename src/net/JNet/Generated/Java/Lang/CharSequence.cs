@@ -33,23 +33,17 @@ namespace Java.Lang
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#chars()"/> 
-        /// </summary>
-        Java.Util.Stream.IntStream Chars { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#codePoints()"/> 
-        /// </summary>
-        Java.Util.Stream.IntStream CodePoints { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#length()"/> 
-        /// </summary>
-        int Length { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#charAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="char"/></returns>
         char CharAt(int arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#length()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        int Length();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#subSequence(int,int)"/>
         /// </summary>
@@ -57,6 +51,18 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         Java.Lang.CharSequence SubSequence(int arg0, int arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#chars()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        Java.Util.Stream.IntStream Chars();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#codePoints()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        Java.Util.Stream.IntStream CodePoints();
 
         #endregion
 
@@ -99,27 +105,6 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#chars()"/> 
-        /// </summary>
-        public Java.Util.Stream.IntStream Chars
-        {
-            get { return IExecute<Java.Util.Stream.IntStream>("chars"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#codePoints()"/> 
-        /// </summary>
-        public Java.Util.Stream.IntStream CodePoints
-        {
-            get { return IExecute<Java.Util.Stream.IntStream>("codePoints"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#length()"/> 
-        /// </summary>
-        public int Length
-        {
-            get { return IExecute<int>("length"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#charAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -127,6 +112,15 @@ namespace Java.Lang
         public char CharAt(int arg0)
         {
             return IExecute<char>("charAt", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#length()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int Length()
+        {
+            return IExecute<int>("length");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#subSequence(int,int)"/>
@@ -137,6 +131,24 @@ namespace Java.Lang
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
             return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#chars()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public Java.Util.Stream.IntStream Chars()
+        {
+            return IExecute<Java.Util.Stream.IntStream>("chars");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#codePoints()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+        public Java.Util.Stream.IntStream CodePoints()
+        {
+            return IExecute<Java.Util.Stream.IntStream>("codePoints");
         }
 
         #endregion

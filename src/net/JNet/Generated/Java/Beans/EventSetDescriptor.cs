@@ -141,20 +141,6 @@ namespace Java.Beans
             get { return IExecute<Java.Lang.Reflect.Method>("getGetListenerMethod"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#isInDefaultEventSet()"/> 
-        /// </summary>
-        public bool IsInDefaultEventSet
-        {
-            get { return IExecute<bool>("isInDefaultEventSet"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#isUnicast()"/> 
-        /// </summary>
-        public bool IsUnicast
-        {
-            get { return IExecute<bool>("isUnicast"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#getListenerMethodDescriptors()"/> 
         /// </summary>
         public Java.Beans.MethodDescriptor[] ListenerMethodDescriptors
@@ -181,6 +167,24 @@ namespace Java.Beans
         public Java.Lang.Reflect.Method RemoveListenerMethod
         {
             get { return IExecute<Java.Lang.Reflect.Method>("getRemoveListenerMethod"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#isInDefaultEventSet()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsInDefaultEventSet()
+        {
+            return IExecute<bool>("isInDefaultEventSet");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#isUnicast()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsUnicast()
+        {
+            return IExecute<bool>("isUnicast");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html#setInDefaultEventSet(boolean)"/>

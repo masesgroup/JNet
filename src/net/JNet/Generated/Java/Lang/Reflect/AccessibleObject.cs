@@ -69,13 +69,6 @@ namespace Java.Lang.Reflect
             get { return IExecuteArray<Java.Lang.Annotation.Annotation>("getDeclaredAnnotations"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#trySetAccessible()"/> 
-        /// </summary>
-        public bool TrySetAccessible
-        {
-            get { return IExecute<bool>("trySetAccessible"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#getAnnotation(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -132,6 +125,15 @@ namespace Java.Lang.Reflect
         public bool CanAccess(object arg0)
         {
             return IExecute<bool>("canAccess", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#trySetAccessible()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool TrySetAccessible()
+        {
+            return IExecute<bool>("trySetAccessible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AccessibleObject.html#setAccessible(boolean)"/>

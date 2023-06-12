@@ -58,13 +58,6 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#values()"/> 
-        /// </summary>
-        public static Java.Sql.PseudoColumnUsage[] Values
-        {
-            get { return SExecuteArray<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -72,6 +65,15 @@ namespace Java.Sql
         public static Java.Sql.PseudoColumnUsage ValueOf(string arg0)
         {
             return SExecute<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/PseudoColumnUsage.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Sql.PseudoColumnUsage"/></returns>
+        public static Java.Sql.PseudoColumnUsage[] Values()
+        {
+            return SExecuteArray<Java.Sql.PseudoColumnUsage>(LocalBridgeClazz, "values");
         }
 
         #endregion

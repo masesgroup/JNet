@@ -96,13 +96,6 @@ namespace Javax.Sound.Midi
             get { return IExecute<long>("getMicrosecondLength"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#properties()"/> 
-        /// </summary>
-        public Java.Util.Map<string, object> Properties
-        {
-            get { return IExecute<Java.Util.Map<string, object>>("properties"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#getResolution()"/> 
         /// </summary>
         public int Resolution
@@ -124,6 +117,15 @@ namespace Javax.Sound.Midi
         public object GetProperty(string arg0)
         {
             return IExecute("getProperty", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html#properties()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<string, object> Properties()
+        {
+            return IExecute<Java.Util.Map<string, object>>("properties");
         }
 
         #endregion

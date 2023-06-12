@@ -63,39 +63,20 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#availablePermits()"/> 
-        /// </summary>
-        public int AvailablePermits
-        {
-            get { return IExecute<int>("availablePermits"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#drainPermits()"/> 
-        /// </summary>
-        public int DrainPermits
-        {
-            get { return IExecute<int>("drainPermits"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#hasQueuedThreads()"/> 
-        /// </summary>
-        public bool HasQueuedThreads
-        {
-            get { return IExecute<bool>("hasQueuedThreads"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#isFair()"/> 
-        /// </summary>
-        public bool IsFair
-        {
-            get { return IExecute<bool>("isFair"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#getQueueLength()"/> 
         /// </summary>
         public int QueueLength
         {
             get { return IExecute<int>("getQueueLength"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#isFair()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsFair()
+        {
+            return IExecute<bool>("isFair");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#tryAcquire()"/>
@@ -137,6 +118,33 @@ namespace Java.Util.Concurrent
         public bool TryAcquire(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
             return IExecute<bool>("tryAcquire", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#hasQueuedThreads()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool HasQueuedThreads()
+        {
+            return IExecute<bool>("hasQueuedThreads");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#availablePermits()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int AvailablePermits()
+        {
+            return IExecute<int>("availablePermits");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#drainPermits()"/>
+        /// </summary>
+
+        /// <returns><see cref="int"/></returns>
+        public int DrainPermits()
+        {
+            return IExecute<int>("drainPermits");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Semaphore.html#acquire()"/>

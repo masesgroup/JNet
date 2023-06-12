@@ -128,20 +128,6 @@ namespace Java.Util.Zip
             get { return IExecute<long>("getBytesWritten"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#finished()"/> 
-        /// </summary>
-        public bool Finished
-        {
-            get { return IExecute<bool>("finished"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#needsInput()"/> 
-        /// </summary>
-        public bool NeedsInput
-        {
-            get { return IExecute<bool>("needsInput"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#getTotalIn()"/> 
         /// </summary>
         public int TotalIn
@@ -154,6 +140,24 @@ namespace Java.Util.Zip
         public int TotalOut
         {
             get { return IExecute<int>("getTotalOut"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#finished()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool Finished()
+        {
+            return IExecute<bool>("finished");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#needsInput()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool NeedsInput()
+        {
+            return IExecute<bool>("needsInput");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(byte[],int,int,int)"/>

@@ -50,11 +50,13 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
-        public Java.Util.Iterator Iterator
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator Iterator()
         {
-            get { return IExecute<Java.Util.Iterator>("iterator"); }
+            return IExecute<Java.Util.Iterator>("iterator");
         }
 
         #endregion
@@ -161,9 +163,11 @@ namespace Java.Nio.File
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
-        Java.Util.Iterator<T> Iterator { get; }
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        Java.Util.Iterator<T> Iterator();
 
         #endregion
 
@@ -204,11 +208,13 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html#iterator()"/>
         /// </summary>
-        public Java.Util.Iterator<T> Iterator
+
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<T> Iterator()
         {
-            get { return IExecute<Java.Util.Iterator<T>>("iterator"); }
+            return IExecute<Java.Util.Iterator<T>>("iterator");
         }
 
         #endregion

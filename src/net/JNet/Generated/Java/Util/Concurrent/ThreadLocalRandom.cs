@@ -42,11 +42,13 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#current()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#current()"/>
         /// </summary>
-        public static Java.Util.Concurrent.ThreadLocalRandom Current
+
+        /// <returns><see cref="Java.Util.Concurrent.ThreadLocalRandom"/></returns>
+        public static Java.Util.Concurrent.ThreadLocalRandom Current()
         {
-            get { return SExecute<Java.Util.Concurrent.ThreadLocalRandom>(LocalBridgeClazz, "current"); }
+            return SExecute<Java.Util.Concurrent.ThreadLocalRandom>(LocalBridgeClazz, "current");
         }
 
         #endregion

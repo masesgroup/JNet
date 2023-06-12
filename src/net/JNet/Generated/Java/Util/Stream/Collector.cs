@@ -71,32 +71,40 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
-        public Java.Util.Function.BiConsumer Accumulator
+
+        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        public Java.Util.Function.BiConsumer Accumulator()
         {
-            get { return IExecute<Java.Util.Function.BiConsumer>("accumulator"); }
+            return IExecute<Java.Util.Function.BiConsumer>("accumulator");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
-        public Java.Util.Function.BinaryOperator Combiner
+
+        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
+        public Java.Util.Function.BinaryOperator Combiner()
         {
-            get { return IExecute<Java.Util.Function.BinaryOperator>("combiner"); }
+            return IExecute<Java.Util.Function.BinaryOperator>("combiner");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
-        public Java.Util.Function.Function Finisher
+
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        public Java.Util.Function.Function Finisher()
         {
-            get { return IExecute<Java.Util.Function.Function>("finisher"); }
+            return IExecute<Java.Util.Function.Function>("finisher");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
-        public Java.Util.Function.Supplier Supplier
+
+        /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
+        public Java.Util.Function.Supplier Supplier()
         {
-            get { return IExecute<Java.Util.Function.Supplier>("supplier"); }
+            return IExecute<Java.Util.Function.Supplier>("supplier");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
@@ -140,13 +148,6 @@ namespace Java.Util.Stream
 
             #region Static methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#values()"/> 
-            /// </summary>
-            public static Java.Util.Stream.Collector.Characteristics[] Values
-            {
-                get { return SExecuteArray<Java.Util.Stream.Collector.Characteristics>(LocalBridgeClazz, "values"); }
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="string"/></param>
@@ -154,6 +155,15 @@ namespace Java.Util.Stream
             public static Java.Util.Stream.Collector.Characteristics ValueOf(string arg0)
             {
                 return SExecute<Java.Util.Stream.Collector.Characteristics>(LocalBridgeClazz, "valueOf", arg0);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#values()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Util.Stream.Collector.Characteristics"/></returns>
+            public static Java.Util.Stream.Collector.Characteristics[] Values()
+            {
+                return SExecuteArray<Java.Util.Stream.Collector.Characteristics>(LocalBridgeClazz, "values");
             }
 
             #endregion
@@ -185,21 +195,29 @@ namespace Java.Util.Stream
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
-        Java.Util.Function.BiConsumer<A, T> Accumulator { get; }
+
+        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        Java.Util.Function.BiConsumer<A, T> Accumulator();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
-        Java.Util.Function.BinaryOperator<A> Combiner { get; }
+
+        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
+        Java.Util.Function.BinaryOperator<A> Combiner();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
-        Java.Util.Function.Function<A, R> Finisher { get; }
+
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        Java.Util.Function.Function<A, R> Finisher();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
-        Java.Util.Function.Supplier<A> Supplier { get; }
+
+        /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
+        Java.Util.Function.Supplier<A> Supplier();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>
         /// </summary>
@@ -267,32 +285,40 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#accumulator()"/>
         /// </summary>
-        public Java.Util.Function.BiConsumer<A, T> Accumulator
+
+        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        public Java.Util.Function.BiConsumer<A, T> Accumulator()
         {
-            get { return IExecute<Java.Util.Function.BiConsumer<A, T>>("accumulator"); }
+            return IExecute<Java.Util.Function.BiConsumer<A, T>>("accumulator");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
-        public Java.Util.Function.BinaryOperator<A> Combiner
+
+        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
+        public Java.Util.Function.BinaryOperator<A> Combiner()
         {
-            get { return IExecute<Java.Util.Function.BinaryOperator<A>>("combiner"); }
+            return IExecute<Java.Util.Function.BinaryOperator<A>>("combiner");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#finisher()"/>
         /// </summary>
-        public Java.Util.Function.Function<A, R> Finisher
+
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        public Java.Util.Function.Function<A, R> Finisher()
         {
-            get { return IExecute<Java.Util.Function.Function<A, R>>("finisher"); }
+            return IExecute<Java.Util.Function.Function<A, R>>("finisher");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
-        public Java.Util.Function.Supplier<A> Supplier
+
+        /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
+        public Java.Util.Function.Supplier<A> Supplier()
         {
-            get { return IExecute<Java.Util.Function.Supplier<A>>("supplier"); }
+            return IExecute<Java.Util.Function.Supplier<A>>("supplier");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#characteristics()"/>

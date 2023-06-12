@@ -33,21 +33,28 @@ namespace Org.Ietf.Jgss
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/> 
-        /// </summary>
-        byte[] Export { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/> 
-        /// </summary>
-        bool IsAnonymous { get; }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/> 
-        /// </summary>
-        bool IsMN { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#getStringNameType()"/> 
         /// </summary>
         Org.Ietf.Jgss.Oid StringNameType { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsAnonymous();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsMN();
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/>
+        /// </summary>
+
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        byte[] Export();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#canonicalize(org.ietf.jgss.Oid)"/>
         /// </summary>
@@ -111,32 +118,39 @@ namespace Org.Ietf.Jgss
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/> 
-        /// </summary>
-        public byte[] Export
-        {
-            get { return IExecuteArray<byte>("export"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/> 
-        /// </summary>
-        public bool IsAnonymous
-        {
-            get { return IExecute<bool>("isAnonymous"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/> 
-        /// </summary>
-        public bool IsMN
-        {
-            get { return IExecute<bool>("isMN"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#getStringNameType()"/> 
         /// </summary>
         public Org.Ietf.Jgss.Oid StringNameType
         {
             get { return IExecute<Org.Ietf.Jgss.Oid>("getStringNameType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isAnonymous()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAnonymous()
+        {
+            return IExecute<bool>("isAnonymous");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#isMN()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsMN()
+        {
+            return IExecute<bool>("isMN");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#export()"/>
+        /// </summary>
+
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Org.Ietf.Jgss.GSSException"/>
+        public byte[] Export()
+        {
+            return IExecuteArray<byte>("export");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#canonicalize(org.ietf.jgss.Oid)"/>

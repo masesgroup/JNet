@@ -125,13 +125,6 @@ namespace Java.Util.Zip
             get { return IExecute<string>("getComment"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#entries()"/> 
-        /// </summary>
-        public Java.Util.Enumeration Entries
-        {
-            get { return IExecute<Java.Util.Enumeration>("entries"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getName()"/> 
         /// </summary>
         public string Name
@@ -139,18 +132,13 @@ namespace Java.Util.Zip
             get { return IExecute<string>("getName"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#size()"/>
         /// </summary>
-        public int Size
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
         {
-            get { return IExecute<int>("size"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#stream()"/> 
-        /// </summary>
-        public Java.Util.Stream.Stream Stream
-        {
-            get { return IExecute<Java.Util.Stream.Stream>("stream"); }
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getInputStream(java.util.zip.ZipEntry)"/>
@@ -161,6 +149,26 @@ namespace Java.Util.Zip
         public Java.Io.InputStream GetInputStream(Java.Util.Zip.ZipEntry arg0)
         {
             return IExecute<Java.Io.InputStream>("getInputStream", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#entries()"/>
+        /// </summary>
+
+        /// <typeparam name="ReturnExtendsJava_Util_Zip_ZipEntry"><see cref="Java.Util.Zip.ZipEntry"/></typeparam>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry> Entries<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry: Java.Util.Zip.ZipEntry
+        {
+            return IExecute<Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry>>("entries");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#stream()"/>
+        /// </summary>
+
+        /// <typeparam name="ReturnExtendsJava_Util_Zip_ZipEntry"><see cref="Java.Util.Zip.ZipEntry"/></typeparam>
+        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
+        public Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry> Stream<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry: Java.Util.Zip.ZipEntry
+        {
+            return IExecute<Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry>>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#getEntry(java.lang.String)"/>

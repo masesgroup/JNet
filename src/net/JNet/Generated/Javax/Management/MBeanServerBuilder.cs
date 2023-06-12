@@ -46,13 +46,6 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerBuilder.html#newMBeanServerDelegate()"/> 
-        /// </summary>
-        public Javax.Management.MBeanServerDelegate NewMBeanServerDelegate
-        {
-            get { return IExecute<Javax.Management.MBeanServerDelegate>("newMBeanServerDelegate"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerBuilder.html#newMBeanServer(java.lang.String,javax.management.MBeanServer,javax.management.MBeanServerDelegate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
@@ -62,6 +55,15 @@ namespace Javax.Management
         public Javax.Management.MBeanServer NewMBeanServer(string arg0, Javax.Management.MBeanServer arg1, Javax.Management.MBeanServerDelegate arg2)
         {
             return IExecute<Javax.Management.MBeanServer>("newMBeanServer", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerBuilder.html#newMBeanServerDelegate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Management.MBeanServerDelegate"/></returns>
+        public Javax.Management.MBeanServerDelegate NewMBeanServerDelegate()
+        {
+            return IExecute<Javax.Management.MBeanServerDelegate>("newMBeanServerDelegate");
         }
 
         #endregion

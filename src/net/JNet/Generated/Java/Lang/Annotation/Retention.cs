@@ -33,9 +33,11 @@ namespace Java.Lang.Annotation
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Retention.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Retention.html#value()"/>
         /// </summary>
-        Java.Lang.Annotation.RetentionPolicy Value { get; }
+
+        /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
+        Java.Lang.Annotation.RetentionPolicy Value();
 
         #endregion
 
@@ -68,11 +70,13 @@ namespace Java.Lang.Annotation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Retention.html#value()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Retention.html#value()"/>
         /// </summary>
-        public Java.Lang.Annotation.RetentionPolicy Value
+
+        /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
+        public Java.Lang.Annotation.RetentionPolicy Value()
         {
-            get { return IExecute<Java.Lang.Annotation.RetentionPolicy>("value"); }
+            return IExecute<Java.Lang.Annotation.RetentionPolicy>("value");
         }
 
         #endregion

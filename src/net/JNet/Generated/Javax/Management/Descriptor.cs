@@ -41,9 +41,12 @@ namespace Javax.Management
         /// </summary>
         string[] Fields { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#isValid()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#isValid()"/>
         /// </summary>
-        bool IsValid { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        bool IsValid();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValue(java.lang.String)"/>
         /// </summary>
@@ -130,11 +133,14 @@ namespace Javax.Management
             get { return IExecuteArray<string>("getFields"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#isValid()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#isValid()"/>
         /// </summary>
-        public bool IsValid
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Javax.Management.RuntimeOperationsException"/>
+        public bool IsValid()
         {
-            get { return IExecute<bool>("isValid"); }
+            return IExecute<bool>("isValid");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValue(java.lang.String)"/>

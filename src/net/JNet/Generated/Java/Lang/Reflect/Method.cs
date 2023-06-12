@@ -60,25 +60,29 @@ namespace Java.Lang.Reflect
             get { return IExecute<Java.Lang.Reflect.Type>("getGenericReturnType"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#isBridge()"/> 
-        /// </summary>
-        public bool IsBridge
-        {
-            get { return IExecute<bool>("isBridge"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#isDefault()"/> 
-        /// </summary>
-        public bool IsDefault
-        {
-            get { return IExecute<bool>("isDefault"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#getReturnType()"/> 
         /// </summary>
         public Java.Lang.Class ReturnType
         {
             get { return IExecute<Java.Lang.Class>("getReturnType"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#isBridge()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBridge()
+        {
+            return IExecute<bool>("isBridge");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#isDefault()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsDefault()
+        {
+            return IExecute<bool>("isDefault");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html#invoke(java.lang.Object,java.lang.Object[])"/>

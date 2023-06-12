@@ -50,11 +50,13 @@ namespace Javax.Xml.Datatype
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDefaultInstance()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newDefaultInstance()"/>
         /// </summary>
-        public static Javax.Xml.Datatype.DatatypeFactory NewDefaultInstance
+
+        /// <returns><see cref="Javax.Xml.Datatype.DatatypeFactory"/></returns>
+        public static Javax.Xml.Datatype.DatatypeFactory NewDefaultInstance()
         {
-            get { return SExecute<Javax.Xml.Datatype.DatatypeFactory>(LocalBridgeClazz, "newDefaultInstance"); }
+            return SExecute<Javax.Xml.Datatype.DatatypeFactory>(LocalBridgeClazz, "newDefaultInstance");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#newInstance()"/>

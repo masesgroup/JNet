@@ -37,10 +37,6 @@ namespace Javax.Lang.Model.Element
         /// </summary>
         Java.Util.List AnnotationMirrors { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/> 
-        /// </summary>
-        Javax.Lang.Model.Type.TypeMirror AsType { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getEnclosedElements()"/> 
         /// </summary>
         Java.Util.List EnclosedElements { get; }
@@ -76,6 +72,12 @@ namespace Javax.Lang.Model.Element
         /// <typeparam name="P"></typeparam>
         /// <returns><typeparamref name="R"/></returns>
         R Accept<R, P>(Javax.Lang.Model.Element.ElementVisitor<R, P> arg0, P arg1);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
+        Javax.Lang.Model.Type.TypeMirror AsType();
 
         #endregion
 
@@ -113,13 +115,6 @@ namespace Javax.Lang.Model.Element
         public Java.Util.List AnnotationMirrors
         {
             get { return IExecute<Java.Util.List>("getAnnotationMirrors"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/> 
-        /// </summary>
-        public Javax.Lang.Model.Type.TypeMirror AsType
-        {
-            get { return IExecute<Javax.Lang.Model.Type.TypeMirror>("asType"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#getEnclosedElements()"/> 
@@ -177,6 +172,15 @@ namespace Javax.Lang.Model.Element
         public R Accept<R, P>(Javax.Lang.Model.Element.ElementVisitor<R, P> arg0, P arg1)
         {
             return IExecute<R>("accept", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/Element.html#asType()"/>
+        /// </summary>
+
+        /// <returns><see cref="Javax.Lang.Model.Type.TypeMirror"/></returns>
+        public Javax.Lang.Model.Type.TypeMirror AsType()
+        {
+            return IExecute<Javax.Lang.Model.Type.TypeMirror>("asType");
         }
 
         #endregion

@@ -113,27 +113,6 @@ namespace Javax.Swing
             get { return IExecute<Javax.Swing.JComboBox.KeySelectionManager>("getKeySelectionManager"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isEditable()"/> 
-        /// </summary>
-        public bool IsEditable
-        {
-            get { return IExecute<bool>("isEditable"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isLightWeightPopupEnabled()"/> 
-        /// </summary>
-        public bool IsLightWeightPopupEnabled
-        {
-            get { return IExecute<bool>("isLightWeightPopupEnabled"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isPopupVisible()"/> 
-        /// </summary>
-        public bool IsPopupVisible
-        {
-            get { return IExecute<bool>("isPopupVisible"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getItemCount()"/> 
         /// </summary>
         public int ItemCount
@@ -202,6 +181,33 @@ namespace Javax.Swing
         public object[] SelectedObjects
         {
             get { return IExecuteArray<object>("getSelectedObjects"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isEditable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEditable()
+        {
+            return IExecute<bool>("isEditable");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isLightWeightPopupEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLightWeightPopupEnabled()
+        {
+            return IExecute<bool>("isLightWeightPopupEnabled");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isPopupVisible()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPopupVisible()
+        {
+            return IExecute<bool>("isPopupVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#selectWithKeyChar(char)"/>
@@ -585,27 +591,6 @@ namespace Javax.Swing
             get { return IExecute<Javax.Swing.JComboBox.KeySelectionManager>("getKeySelectionManager"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isEditable()"/> 
-        /// </summary>
-        public bool IsEditable
-        {
-            get { return IExecute<bool>("isEditable"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isLightWeightPopupEnabled()"/> 
-        /// </summary>
-        public bool IsLightWeightPopupEnabled
-        {
-            get { return IExecute<bool>("isLightWeightPopupEnabled"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isPopupVisible()"/> 
-        /// </summary>
-        public bool IsPopupVisible
-        {
-            get { return IExecute<bool>("isPopupVisible"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#getItemCount()"/> 
         /// </summary>
         public int ItemCount
@@ -674,6 +659,33 @@ namespace Javax.Swing
         public object[] SelectedObjects
         {
             get { return IExecuteArray<object>("getSelectedObjects"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isEditable()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEditable()
+        {
+            return IExecute<bool>("isEditable");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isLightWeightPopupEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsLightWeightPopupEnabled()
+        {
+            return IExecute<bool>("isLightWeightPopupEnabled");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#isPopupVisible()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPopupVisible()
+        {
+            return IExecute<bool>("isPopupVisible");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html#selectWithKeyChar(char)"/>

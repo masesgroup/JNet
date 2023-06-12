@@ -147,46 +147,11 @@ namespace Java.Time
             get { return IExecute<int>("getDays"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#isNegative()"/> 
-        /// </summary>
-        public bool IsNegative
-        {
-            get { return IExecute<bool>("isNegative"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#isZero()"/> 
-        /// </summary>
-        public bool IsZero
-        {
-            get { return IExecute<bool>("isZero"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#getMonths()"/> 
         /// </summary>
         public int Months
         {
             get { return IExecute<int>("getMonths"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#negated()"/> 
-        /// </summary>
-        public Java.Time.Chrono.ChronoPeriod Negated
-        {
-            get { return IExecute<Java.Time.Chrono.ChronoPeriod>("negated"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#normalized()"/> 
-        /// </summary>
-        public Java.Time.Chrono.ChronoPeriod Normalized
-        {
-            get { return IExecute<Java.Time.Chrono.ChronoPeriod>("normalized"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#toTotalMonths()"/> 
-        /// </summary>
-        public long ToTotalMonths
-        {
-            get { return IExecute<long>("toTotalMonths"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#getUnits()"/> 
@@ -201,6 +166,24 @@ namespace Java.Time
         public int Years
         {
             get { return IExecute<int>("getYears"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#isNegative()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsNegative()
+        {
+            return IExecute<bool>("isNegative");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#isZero()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsZero()
+        {
+            return IExecute<bool>("isZero");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#minus(java.time.temporal.TemporalAmount)"/>
@@ -219,6 +202,24 @@ namespace Java.Time
         public Java.Time.Chrono.ChronoPeriod MultipliedBy(int arg0)
         {
             return IExecute<Java.Time.Chrono.ChronoPeriod>("multipliedBy", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#negated()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
+        public Java.Time.Chrono.ChronoPeriod Negated()
+        {
+            return IExecute<Java.Time.Chrono.ChronoPeriod>("negated");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#normalized()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
+        public Java.Time.Chrono.ChronoPeriod Normalized()
+        {
+            return IExecute<Java.Time.Chrono.ChronoPeriod>("normalized");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#plus(java.time.temporal.TemporalAmount)"/>
@@ -336,6 +337,15 @@ namespace Java.Time
         public long Get(Java.Time.Temporal.TemporalUnit arg0)
         {
             return IExecute<long>("get", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Period.html#toTotalMonths()"/>
+        /// </summary>
+
+        /// <returns><see cref="long"/></returns>
+        public long ToTotalMonths()
+        {
+            return IExecute<long>("toTotalMonths");
         }
 
         #endregion

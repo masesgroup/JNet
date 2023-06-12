@@ -69,20 +69,6 @@ namespace Java.Awt.ImageNs
             get { return IExecute<Java.Awt.ImageCapabilities>("getCapabilities"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#contentsLost()"/> 
-        /// </summary>
-        public bool ContentsLost
-        {
-            get { return IExecute<bool>("contentsLost"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#createGraphics()"/> 
-        /// </summary>
-        public Java.Awt.Graphics2D CreateGraphics
-        {
-            get { return IExecute<Java.Awt.Graphics2D>("createGraphics"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#getHeight()"/> 
         /// </summary>
         public int Height
@@ -111,6 +97,15 @@ namespace Java.Awt.ImageNs
             get { return IExecute<int>("getWidth"); }
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#contentsLost()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool ContentsLost()
+        {
+            return IExecute<bool>("contentsLost");
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#validate(java.awt.GraphicsConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.GraphicsConfiguration"/></param>
@@ -118,6 +113,15 @@ namespace Java.Awt.ImageNs
         public int Validate(Java.Awt.GraphicsConfiguration arg0)
         {
             return IExecute<int>("validate", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#createGraphics()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Awt.Graphics2D"/></returns>
+        public Java.Awt.Graphics2D CreateGraphics()
+        {
+            return IExecute<Java.Awt.Graphics2D>("createGraphics");
         }
 
         #endregion

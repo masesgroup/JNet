@@ -93,34 +93,6 @@ namespace Java.Security.Cert
             get { return IExecute<Java.Util.Set<string>>("getInitialPolicies"); } set { IExecute("setInitialPolicies", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isAnyPolicyInhibited()"/> 
-        /// </summary>
-        public bool IsAnyPolicyInhibited
-        {
-            get { return IExecute<bool>("isAnyPolicyInhibited"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isExplicitPolicyRequired()"/> 
-        /// </summary>
-        public bool IsExplicitPolicyRequired
-        {
-            get { return IExecute<bool>("isExplicitPolicyRequired"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isPolicyMappingInhibited()"/> 
-        /// </summary>
-        public bool IsPolicyMappingInhibited
-        {
-            get { return IExecute<bool>("isPolicyMappingInhibited"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isRevocationEnabled()"/> 
-        /// </summary>
-        public bool IsRevocationEnabled
-        {
-            get { return IExecute<bool>("isRevocationEnabled"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#getPolicyQualifiersRejected()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#setPolicyQualifiersRejected(boolean)"/>
         /// </summary>
         public bool PolicyQualifiersRejected
@@ -147,6 +119,42 @@ namespace Java.Security.Cert
         public Java.Util.Set<Java.Security.Cert.TrustAnchor> TrustAnchors
         {
             get { return IExecute<Java.Util.Set<Java.Security.Cert.TrustAnchor>>("getTrustAnchors"); } set { IExecute("setTrustAnchors", value); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isAnyPolicyInhibited()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsAnyPolicyInhibited()
+        {
+            return IExecute<bool>("isAnyPolicyInhibited");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isExplicitPolicyRequired()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsExplicitPolicyRequired()
+        {
+            return IExecute<bool>("isExplicitPolicyRequired");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isPolicyMappingInhibited()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsPolicyMappingInhibited()
+        {
+            return IExecute<bool>("isPolicyMappingInhibited");
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#isRevocationEnabled()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsRevocationEnabled()
+        {
+            return IExecute<bool>("isRevocationEnabled");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html#addCertPathChecker(java.security.cert.PKIXCertPathChecker)"/>

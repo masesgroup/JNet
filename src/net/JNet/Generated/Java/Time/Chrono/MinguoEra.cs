@@ -54,13 +54,6 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#values()"/> 
-        /// </summary>
-        public static Java.Time.Chrono.MinguoEra[] Values
-        {
-            get { return SExecuteArray<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "values"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -77,6 +70,15 @@ namespace Java.Time.Chrono
         public static Java.Time.Chrono.MinguoEra ValueOf(string arg0)
         {
             return SExecute<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "valueOf", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/MinguoEra.html#values()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Chrono.MinguoEra"/></returns>
+        public static Java.Time.Chrono.MinguoEra[] Values()
+        {
+            return SExecuteArray<Java.Time.Chrono.MinguoEra>(LocalBridgeClazz, "values");
         }
 
         #endregion

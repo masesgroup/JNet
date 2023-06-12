@@ -41,13 +41,17 @@ namespace Javax.Naming.Directory
         /// </summary>
         Javax.Naming.NamingEnumeration<string> IDs { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#isCaseIgnored()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#isCaseIgnored()"/>
         /// </summary>
-        bool IsCaseIgnored { get; }
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsCaseIgnored();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#size()"/>
         /// </summary>
-        int Size { get; }
+
+        /// <returns><see cref="int"/></returns>
+        int Size();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#get(java.lang.String)"/>
         /// </summary>
@@ -127,18 +131,22 @@ namespace Javax.Naming.Directory
             get { return IExecute<Javax.Naming.NamingEnumeration<string>>("getIDs"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#isCaseIgnored()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#isCaseIgnored()"/>
         /// </summary>
-        public bool IsCaseIgnored
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsCaseIgnored()
         {
-            get { return IExecute<bool>("isCaseIgnored"); }
+            return IExecute<bool>("isCaseIgnored");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#size()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#size()"/>
         /// </summary>
-        public int Size
+
+        /// <returns><see cref="int"/></returns>
+        public int Size()
         {
-            get { return IExecute<int>("size"); }
+            return IExecute<int>("size");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#get(java.lang.String)"/>

@@ -45,10 +45,6 @@ namespace Java.Lang.Management
         /// </summary>
         Java.Util.List<string> InputArguments { get; }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/> 
-        /// </summary>
-        bool IsBootClassPathSupported { get; }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getLibraryPath()"/> 
         /// </summary>
         string LibraryPath { get; }
@@ -100,6 +96,12 @@ namespace Java.Lang.Management
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getVmVersion()"/> 
         /// </summary>
         string VmVersion { get; }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        bool IsBootClassPathSupported();
 
         #endregion
 
@@ -151,13 +153,6 @@ namespace Java.Lang.Management
         public Java.Util.List<string> InputArguments
         {
             get { return IExecute<Java.Util.List<string>>("getInputArguments"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/> 
-        /// </summary>
-        public bool IsBootClassPathSupported
-        {
-            get { return IExecute<bool>("isBootClassPathSupported"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#getLibraryPath()"/> 
@@ -249,6 +244,15 @@ namespace Java.Lang.Management
         public string VmVersion
         {
             get { return IExecute<string>("getVmVersion"); }
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/RuntimeMXBean.html#isBootClassPathSupported()"/>
+        /// </summary>
+
+        /// <returns><see cref="bool"/></returns>
+        public bool IsBootClassPathSupported()
+        {
+            return IExecute<bool>("isBootClassPathSupported");
         }
 
         #endregion

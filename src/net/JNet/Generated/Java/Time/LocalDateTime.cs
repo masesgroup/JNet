@@ -294,20 +294,6 @@ namespace Java.Time
             get { return IExecute<int>("getSecond"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#toLocalDate()"/> 
-        /// </summary>
-        public Java.Time.Chrono.ChronoLocalDate ToLocalDate
-        {
-            get { return IExecute<Java.Time.Chrono.ChronoLocalDate>("toLocalDate"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#toLocalTime()"/> 
-        /// </summary>
-        public Java.Time.LocalTime ToLocalTime
-        {
-            get { return IExecute<Java.Time.LocalTime>("toLocalTime"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#getYear()"/> 
         /// </summary>
         public int Year
@@ -404,6 +390,15 @@ namespace Java.Time
         public string Format(Java.Time.Format.DateTimeFormatter arg0)
         {
             return IExecute<string>("format", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#toLocalDate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
+        public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
+        {
+            return IExecute<Java.Time.Chrono.ChronoLocalDate>("toLocalDate");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#atZone(java.time.ZoneId)"/>
@@ -638,6 +633,15 @@ namespace Java.Time
         public Java.Time.LocalDateTime WithYear(int arg0)
         {
             return IExecute<Java.Time.LocalDateTime>("withYear", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#toLocalTime()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Time.LocalTime"/></returns>
+        public Java.Time.LocalTime ToLocalTime()
+        {
+            return IExecute<Java.Time.LocalTime>("toLocalTime");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html#atOffset(java.time.ZoneOffset)"/>

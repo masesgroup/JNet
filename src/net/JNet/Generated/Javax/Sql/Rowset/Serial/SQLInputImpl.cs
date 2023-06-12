@@ -46,193 +46,274 @@ namespace Javax.Sql.Rowset.Serial
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readArray()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBoolean()"/>
         /// </summary>
-        public Java.Sql.Array ReadArray
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool ReadBoolean()
         {
-            get { return IExecute<Java.Sql.Array>("readArray"); }
+            return IExecute<bool>("readBoolean");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readAsciiStream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#wasNull()"/>
         /// </summary>
-        public Java.Io.InputStream ReadAsciiStream
+
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool WasNull()
         {
-            get { return IExecute<Java.Io.InputStream>("readAsciiStream"); }
+            return IExecute<bool>("wasNull");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBigDecimal()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readByte()"/>
         /// </summary>
-        public Java.Math.BigDecimal ReadBigDecimal
+
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public byte ReadByte()
         {
-            get { return IExecute<Java.Math.BigDecimal>("readBigDecimal"); }
+            return IExecute<byte>("readByte");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBinaryStream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBytes()"/>
         /// </summary>
-        public Java.Io.InputStream ReadBinaryStream
+
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public byte[] ReadBytes()
         {
-            get { return IExecute<Java.Io.InputStream>("readBinaryStream"); }
+            return IExecuteArray<byte>("readBytes");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBlob()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readDouble()"/>
         /// </summary>
-        public Java.Sql.Blob ReadBlob
+
+        /// <returns><see cref="double"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public double ReadDouble()
         {
-            get { return IExecute<Java.Sql.Blob>("readBlob"); }
+            return IExecute<double>("readDouble");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBoolean()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readFloat()"/>
         /// </summary>
-        public bool ReadBoolean
+
+        /// <returns><see cref="float"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public float ReadFloat()
         {
-            get { return IExecute<bool>("readBoolean"); }
+            return IExecute<float>("readFloat");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readByte()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readInt()"/>
         /// </summary>
-        public byte ReadByte
+
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int ReadInt()
         {
-            get { return IExecute<byte>("readByte"); }
+            return IExecute<int>("readInt");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBytes()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readAsciiStream()"/>
         /// </summary>
-        public byte[] ReadBytes
+
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.InputStream ReadAsciiStream()
         {
-            get { return IExecuteArray<byte>("readBytes"); }
+            return IExecute<Java.Io.InputStream>("readAsciiStream");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readCharacterStream()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBinaryStream()"/>
         /// </summary>
-        public Java.Io.Reader ReadCharacterStream
+
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.InputStream ReadBinaryStream()
         {
-            get { return IExecute<Java.Io.Reader>("readCharacterStream"); }
+            return IExecute<Java.Io.InputStream>("readBinaryStream");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readClob()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readCharacterStream()"/>
         /// </summary>
-        public Java.Sql.Clob ReadClob
+
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.Reader ReadCharacterStream()
         {
-            get { return IExecute<Java.Sql.Clob>("readClob"); }
+            return IExecute<Java.Io.Reader>("readCharacterStream");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readDate()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readObject()"/>
         /// </summary>
-        public Java.Sql.Date ReadDate
+
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public object ReadObject()
         {
-            get { return IExecute<Java.Sql.Date>("readDate"); }
+            return IExecute("readObject");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readDouble()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readNString()"/>
         /// </summary>
-        public double ReadDouble
+
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public string ReadNString()
         {
-            get { return IExecute<double>("readDouble"); }
+            return IExecute<string>("readNString");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readFloat()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readString()"/>
         /// </summary>
-        public float ReadFloat
+
+        /// <returns><see cref="string"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public string ReadString()
         {
-            get { return IExecute<float>("readFloat"); }
+            return IExecute<string>("readString");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readInt()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBigDecimal()"/>
         /// </summary>
-        public int ReadInt
+
+        /// <returns><see cref="Java.Math.BigDecimal"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Math.BigDecimal ReadBigDecimal()
         {
-            get { return IExecute<int>("readInt"); }
+            return IExecute<Java.Math.BigDecimal>("readBigDecimal");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readLong()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readURL()"/>
         /// </summary>
-        public long ReadLong
+
+        /// <returns><see cref="Java.Net.URL"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Net.URL ReadURL()
         {
-            get { return IExecute<long>("readLong"); }
+            return IExecute<Java.Net.URL>("readURL");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readNClob()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readArray()"/>
         /// </summary>
-        public Java.Sql.NClob ReadNClob
+
+        /// <returns><see cref="Java.Sql.Array"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Array ReadArray()
         {
-            get { return IExecute<Java.Sql.NClob>("readNClob"); }
+            return IExecute<Java.Sql.Array>("readArray");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readNString()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readBlob()"/>
         /// </summary>
-        public string ReadNString
+
+        /// <returns><see cref="Java.Sql.Blob"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Blob ReadBlob()
         {
-            get { return IExecute<string>("readNString"); }
+            return IExecute<Java.Sql.Blob>("readBlob");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readObject()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readClob()"/>
         /// </summary>
-        public object ReadObject
+
+        /// <returns><see cref="Java.Sql.Clob"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Clob ReadClob()
         {
-            get { return IExecute("readObject"); }
+            return IExecute<Java.Sql.Clob>("readClob");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readRef()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readDate()"/>
         /// </summary>
-        public Java.Sql.Ref ReadRef
+
+        /// <returns><see cref="Java.Sql.Date"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Date ReadDate()
         {
-            get { return IExecute<Java.Sql.Ref>("readRef"); }
+            return IExecute<Java.Sql.Date>("readDate");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readRowId()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readNClob()"/>
         /// </summary>
-        public Java.Sql.RowId ReadRowId
+
+        /// <returns><see cref="Java.Sql.NClob"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.NClob ReadNClob()
         {
-            get { return IExecute<Java.Sql.RowId>("readRowId"); }
+            return IExecute<Java.Sql.NClob>("readNClob");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readShort()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readRef()"/>
         /// </summary>
-        public short ReadShort
+
+        /// <returns><see cref="Java.Sql.Ref"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Ref ReadRef()
         {
-            get { return IExecute<short>("readShort"); }
+            return IExecute<Java.Sql.Ref>("readRef");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readSQLXML()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readRowId()"/>
         /// </summary>
-        public Java.Sql.SQLXML ReadSQLXML
+
+        /// <returns><see cref="Java.Sql.RowId"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.RowId ReadRowId()
         {
-            get { return IExecute<Java.Sql.SQLXML>("readSQLXML"); }
+            return IExecute<Java.Sql.RowId>("readRowId");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readString()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readSQLXML()"/>
         /// </summary>
-        public string ReadString
+
+        /// <returns><see cref="Java.Sql.SQLXML"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.SQLXML ReadSQLXML()
         {
-            get { return IExecute<string>("readString"); }
+            return IExecute<Java.Sql.SQLXML>("readSQLXML");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readTime()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readTime()"/>
         /// </summary>
-        public Java.Sql.Time ReadTime
+
+        /// <returns><see cref="Java.Sql.Time"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Time ReadTime()
         {
-            get { return IExecute<Java.Sql.Time>("readTime"); }
+            return IExecute<Java.Sql.Time>("readTime");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readTimestamp()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readTimestamp()"/>
         /// </summary>
-        public Java.Sql.Timestamp ReadTimestamp
+
+        /// <returns><see cref="Java.Sql.Timestamp"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Timestamp ReadTimestamp()
         {
-            get { return IExecute<Java.Sql.Timestamp>("readTimestamp"); }
+            return IExecute<Java.Sql.Timestamp>("readTimestamp");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readURL()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readLong()"/>
         /// </summary>
-        public Java.Net.URL ReadURL
+
+        /// <returns><see cref="long"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public long ReadLong()
         {
-            get { return IExecute<Java.Net.URL>("readURL"); }
+            return IExecute<long>("readLong");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#wasNull()"/> 
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SQLInputImpl.html#readShort()"/>
         /// </summary>
-        public bool WasNull
+
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public short ReadShort()
         {
-            get { return IExecute<bool>("wasNull"); }
+            return IExecute<short>("readShort");
         }
 
         #endregion
