@@ -86,6 +86,7 @@
 <h2 id="command-switches-available">Command switches available</h2>
 <p><em>jnr</em> accepts the following command-line switch:</p>
 <ul>
+<li><strong>ConfigurationFile</strong>: The path where is stored a JSON file containing the tool configuration properties; the JSON items shall be written using the same command-line property names</li>
 <li><strong>OriginRootPath</strong>: The origin path where Jars to be analyzed, and dependencies, are stored</li>
 <li><strong>OriginJavadocUrl</strong>: The base URL of the Javadoc to be associated to the classes</li>
 <li><strong>JavadocVersion</strong>: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used</li>
@@ -116,15 +117,69 @@
 </ul>
 <h2 id="jnet-reflected-classes">JNet reflected classes</h2>
 <p>Many JNet classes are generated using JNetReflector. The JVM used to build the classes is the Temurin version 11 which is the minimum JVM version supported from JCOBridge.
-The command line interface used is:</p>
+The command line interface uses the following command line:</p>
 <blockquote>
-<p>jnetreflector -ModulesToParse org.<em>,java.</em> -DestinationRootPath .\src\net\JNet\Generated -OriginJavadocUrl &quot;https://docs.oracle.com/en/java/javase/11/docs/api/&quot; -JavadocVersion 11 <br>
--ClassesToBeListener java.util.Comparator,java.util.ServiceLoader$Provider,java.util.stream.DoubleStream$Builder,java.util.stream.IntStream$Builder,java.util.stream.LongStream$Builder,java.util.stream.Stream$Builder,javax.swing.Action,javax.management.NotificationFilter <br>
--ClassesToAvoid java.time.chrono.Chronology,javax.swing.ToolTipManager,javax.swing.text.html.HTMLEditorKit$LinkController,javax.swing.plaf.basic.BasicTreeUI$MouseHandler,javax.swing.plaf.basic.BasicDesktopIconUI$MouseInputHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$FocusHandler,javax.swing.plaf.basic.BasicComboBoxUI$KeyHandler,javax.swing.plaf.basic.BasicSliderUI$ComponentHandler,javax.swing.plaf.basic.BasicComboPopup$InvocationKeyHandler,javax.swing.plaf.basic.BasicTreeUI$KeyHandler,javax.swing.plaf.basic.BasicTreeUI$ComponentHandler,javax.swing.plaf.basic.BasicSplitPaneUI$FocusHandler,javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler <br>
--NamespacesToAvoid org.jcp.xml.dsig.internal,com.oracle,com.sun,org.mases,org.junit,org.hamcrest,org.burningwave,org.graalvm,org.slf4j,java.awt.peer <br>
--NamespacesInConflict java.lang.module,java.awt.color,java.awt.desktop,java.awt.image,java.awt.event,java.awt.font <br>
--ClassesToAvoidInGenerics java.time.chrono.ChronoLocalDateTime,java.time.chrono.ChronoZonedDateTime</p>
+<p>jnetreflector -TraceLevel 0 -DestinationRootPath .\src\net\JNet\Generated -ConfigurationFile .\src\net\JNet\Generated\configuration.json</p>
 </blockquote>
+<p>The options used are:</p>
+<pre><code class="lang-json">{
+  &quot;OnlyPropertiesForGetterSetter&quot;: true,
+  &quot;ModulesToParse&quot;: [
+    &quot;org.*&quot;,
+    &quot;java.*&quot;
+  ],
+  &quot;OriginJavadocUrl&quot;: &quot;https://docs.oracle.com/en/java/javase/11/docs/api/&quot;,
+  &quot;JavadocVersion&quot;: 11,
+  &quot;NamespacesToAvoid&quot;: [
+    &quot;org.jcp.xml.dsig.internal&quot;,
+    &quot;com.oracle&quot;,
+    &quot;com.sun&quot;,
+    &quot;org.mases&quot;,
+    &quot;org.junit&quot;,
+    &quot;org.hamcrest&quot;,
+    &quot;org.burningwave&quot;,
+    &quot;org.graalvm&quot;,
+    &quot;org.slf4j&quot;,
+    &quot;java.awt.peer&quot;
+  ],
+  &quot;ClassesToBeListener&quot;: [
+    &quot;java.util.Comparator&quot;,
+    &quot;java.util.ServiceLoader$Provider&quot;,
+    &quot;java.util.stream.DoubleStream$Builder&quot;,
+    &quot;java.util.stream.IntStream$Builder&quot;,
+    &quot;java.util.stream.LongStream$Builder&quot;,
+    &quot;java.util.stream.Stream$Builder&quot;,
+    &quot;javax.swing.Action&quot;,
+    &quot;javax.management.NotificationFilter&quot;
+  ],
+  &quot;ClassesToAvoid&quot;: [
+    &quot;javax.swing.ToolTipManager&quot;,
+    &quot;javax.swing.text.html.HTMLEditorKit$LinkController&quot;,
+    &quot;javax.swing.plaf.basic.BasicTreeUI$MouseHandler&quot;,
+    &quot;javax.swing.plaf.basic.BasicDesktopIconUI$MouseInputHandler&quot;,
+    &quot;javax.swing.plaf.basic.BasicTabbedPaneUI$FocusHandler&quot;,
+    &quot;javax.swing.plaf.basic.BasicComboBoxUI$KeyHandler&quot;,
+    &quot;javax.swing.plaf.basic.BasicSliderUI$ComponentHandler&quot;,
+    &quot;javax.swing.plaf.basic.BasicComboPopup$InvocationKeyHandler&quot;,
+    &quot;javax.swing.plaf.basic.BasicTreeUI$KeyHandler&quot;,
+    &quot;javax.swing.plaf.basic.BasicTreeUI$ComponentHandler&quot;,
+    &quot;javax.swing.plaf.basic.BasicSplitPaneUI$FocusHandler&quot;,
+    &quot;javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler&quot;
+  ],
+  &quot;NamespacesInConflict&quot;: [
+    &quot;java.lang.module&quot;,
+    &quot;java.awt.color&quot;,
+    &quot;java.awt.desktop&quot;,
+    &quot;java.awt.image&quot;,
+    &quot;java.awt.event&quot;,
+    &quot;java.awt.font&quot;
+  ],
+  &quot;ClassesToAvoidInGenerics&quot;: [
+    &quot;java.time.chrono.ChronoLocalDateTime&quot;,
+    &quot;java.time.chrono.ChronoZonedDateTime&quot;
+  ]
+}
+</code></pre>
 <h3 id="running-environment-for-powershell-users">Running environment for PowerShell users</h3>
 <p>The command above fails in PowerShell because the nested class separator ($) is used from PowerShell to substitute variable values.
 The previous command runs without problems in a Windows Command Prompt</p>
