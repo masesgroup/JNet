@@ -1,18 +1,3 @@
-## Generated classes
-
-This folder contains the Java classes generated using JNetReflector at the same version of JNet.
-
-The command used to build the classes is the following:
-
-```cmd
-dotnet build .\src\net\JNetReflector\JNetReflector.csproj
-cd binReflector\net6.0
-MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\src\net\JNet\Generated -ConfigurationFile ..\..\src\net\JNet\Generated\configuration.json
-```
-
-The configuration is:
-
-```json
 {
   "OnlyPropertiesForGetterSetter": true,
   "ModulesToParse": [
@@ -70,4 +55,3 @@ The configuration is:
     "java.time.chrono.ChronoZonedDateTime"
   ]
 }
-```

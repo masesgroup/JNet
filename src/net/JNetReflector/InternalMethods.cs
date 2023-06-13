@@ -123,7 +123,7 @@ namespace MASES.JNetReflector
 
         public static void AnalyzeJars()
         {
-            List<string> jarNames = new List<string>(JNetReflectorCore.JarsToAnalyze);
+            List<string> jarNames = new List<string>(JNetReflectorCore.JarsToAnalyze.Select((o) => Path.Combine(JNetReflectorCore.OriginRootPath, o)));
             for (int i = 0; i < jarNames.Count; i++)
             {
                 string javadocUrl = JNetReflectorCore.OriginJavadocUrl;
@@ -131,8 +131,8 @@ namespace MASES.JNetReflector
                 if (JNetReflectorCore.OriginJavadocJARVersionAndUrls != null)
                 {
                     var data = JNetReflectorCore.OriginJavadocJARVersionAndUrls.ElementAt(i);
-                    javadocVersion = data.Item1;
-                    javadocUrl = data.Item2;
+                    javadocVersion = data.Version;
+                    javadocUrl = data.Url;
                 }
 
                 AnalyzeJar(jarNames[i], javadocUrl, javadocVersion);

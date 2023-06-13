@@ -27,6 +27,7 @@ namespace MASES.JNetReflector
     class CLIParam : MASES.JNet.CLIParam
     {
         // ReflectorArgs
+        public const string ConfigurationFile = "ConfigurationFile";
         public const string OriginRootPath = "OriginRootPath";
         public const string OriginJavadocUrl = "OriginJavadocUrl";
         public const string JavadocVersion = "JavadocVersion";
