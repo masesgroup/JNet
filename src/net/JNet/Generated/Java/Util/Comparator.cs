@@ -45,6 +45,33 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("compare", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(CompareEventHandler)); OnCompare = Compare;
+            AddEventHandler("thenComparing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(ThenComparingEventHandler)); OnThenComparing = ThenComparing;
+            AddEventHandler("thenComparing1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(ThenComparing1EventHandler)); OnThenComparing = ThenComparing;
+            AddEventHandler("reversed", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ReversedEventHandler)); OnReversed = Reversed;
+            AddEventHandler("thenComparing1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Comparator>>>(ThenComparing1EventHandler)); OnThenComparing = ThenComparing;
+            AddEventHandler("thenComparingDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.ToDoubleFunction>>>(ThenComparingDoubleEventHandler)); OnThenComparingDouble = ThenComparingDouble;
+            AddEventHandler("thenComparingInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.ToIntFunction>>>(ThenComparingIntEventHandler)); OnThenComparingInt = ThenComparingInt;
+            AddEventHandler("thenComparingLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.ToLongFunction>>>(ThenComparingLongEventHandler)); OnThenComparingLong = ThenComparingLong;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        public System.Func<object, object, int> OnCompare { get; set; }
+
+        void CompareEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnCompare != null)
+            {
+                var executionResult = OnCompare.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -55,6 +82,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function,java.util.Comparator)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Function, Java.Util.Comparator, Java.Util.Comparator> OnThenComparing { get; set; }
+
+        void ThenComparingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
+        {
+            if (OnThenComparing != null)
+            {
+                var executionResult = OnThenComparing.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Util.Comparator>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function,java.util.Comparator)"/>
         /// </summary>
@@ -65,6 +107,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Function, Java.Util.Comparator> OnThenComparing1 { get; set; }
+
+        void ThenComparing1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
+        {
+            if (OnThenComparing1 != null)
+            {
+                var executionResult = OnThenComparing1.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function)"/>
         /// </summary>
@@ -74,6 +131,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#reversed()"/>
+        /// </summary>
+        public System.Func<Java.Util.Comparator> OnReversed { get; set; }
+
+        void ReversedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnReversed != null)
+            {
+                var executionResult = OnReversed.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#reversed()"/>
         /// </summary>
@@ -83,6 +155,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.Comparator)"/>
+        /// </summary>
+        public System.Func<Java.Util.Comparator, Java.Util.Comparator> OnThenComparing1 { get; set; }
+
+        void ThenComparing1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Comparator>> data)
+        {
+            if (OnThenComparing1 != null)
+            {
+                var executionResult = OnThenComparing1.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.Comparator)"/>
         /// </summary>
@@ -92,6 +179,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingDouble(java.util.function.ToDoubleFunction)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.ToDoubleFunction, Java.Util.Comparator> OnThenComparingDouble { get; set; }
+
+        void ThenComparingDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.ToDoubleFunction>> data)
+        {
+            if (OnThenComparingDouble != null)
+            {
+                var executionResult = OnThenComparingDouble.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingDouble(java.util.function.ToDoubleFunction)"/>
         /// </summary>
@@ -101,6 +203,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingInt(java.util.function.ToIntFunction)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.ToIntFunction, Java.Util.Comparator> OnThenComparingInt { get; set; }
+
+        void ThenComparingIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.ToIntFunction>> data)
+        {
+            if (OnThenComparingInt != null)
+            {
+                var executionResult = OnThenComparingInt.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingInt(java.util.function.ToIntFunction)"/>
         /// </summary>
@@ -110,6 +227,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingLong(java.util.function.ToLongFunction)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.ToLongFunction, Java.Util.Comparator> OnThenComparingLong { get; set; }
+
+        void ThenComparingLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.ToLongFunction>> data)
+        {
+            if (OnThenComparingLong != null)
+            {
+                var executionResult = OnThenComparingLong.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingLong(java.util.function.ToLongFunction)"/>
         /// </summary>
@@ -132,11 +264,23 @@ namespace Java.Util
 
     #region IComparator<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.Comparator implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html"/>
     /// </summary>
     public partial interface IComparator<T>
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("compare", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(CompareEventHandler)); OnCompare = Compare;
+            AddEventHandler("thenComparing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU>>>>(ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU>EventHandler)); OnThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU> = ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU>;
+            AddEventHandler("thenComparing1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU>>>>(ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U>1EventHandler)); OnThenComparing<Arg0objectSuperT, Arg0ExtendsU, U> = ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U>;
+            AddEventHandler("reversed", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ReversedEventHandler)); OnReversed = Reversed;
+            AddEventHandler("thenComparing1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Comparator<Arg0objectSuperT>>>>(ThenComparing<Arg0objectSuperT>1EventHandler)); OnThenComparing<Arg0objectSuperT> = ThenComparing<Arg0objectSuperT>;
+            AddEventHandler("thenComparingDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.ToDoubleFunction<Arg0objectSuperT>>>>(ThenComparingDouble<Arg0objectSuperT>EventHandler)); OnThenComparingDouble<Arg0objectSuperT> = ThenComparingDouble<Arg0objectSuperT>;
+            AddEventHandler("thenComparingInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.ToIntFunction<Arg0objectSuperT>>>>(ThenComparingInt<Arg0objectSuperT>EventHandler)); OnThenComparingInt<Arg0objectSuperT> = ThenComparingInt<Arg0objectSuperT>;
+            AddEventHandler("thenComparingLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.ToLongFunction<Arg0objectSuperT>>>>(ThenComparingLong<Arg0objectSuperT>EventHandler)); OnThenComparingLong<Arg0objectSuperT> = ThenComparingLong<Arg0objectSuperT>;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -229,6 +373,33 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("compare", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(CompareEventHandler)); OnCompare = Compare;
+            AddEventHandler("thenComparing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU>>>>(ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU>EventHandler)); OnThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU> = ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU>;
+            AddEventHandler("thenComparing1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU>>>>(ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U>1EventHandler)); OnThenComparing<Arg0objectSuperT, Arg0ExtendsU, U> = ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U>;
+            AddEventHandler("reversed", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ReversedEventHandler)); OnReversed = Reversed;
+            AddEventHandler("thenComparing1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Comparator<Arg0objectSuperT>>>>(ThenComparing<Arg0objectSuperT>1EventHandler)); OnThenComparing<Arg0objectSuperT> = ThenComparing<Arg0objectSuperT>;
+            AddEventHandler("thenComparingDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.ToDoubleFunction<Arg0objectSuperT>>>>(ThenComparingDouble<Arg0objectSuperT>EventHandler)); OnThenComparingDouble<Arg0objectSuperT> = ThenComparingDouble<Arg0objectSuperT>;
+            AddEventHandler("thenComparingInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.ToIntFunction<Arg0objectSuperT>>>>(ThenComparingInt<Arg0objectSuperT>EventHandler)); OnThenComparingInt<Arg0objectSuperT> = ThenComparingInt<Arg0objectSuperT>;
+            AddEventHandler("thenComparingLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.ToLongFunction<Arg0objectSuperT>>>>(ThenComparingLong<Arg0objectSuperT>EventHandler)); OnThenComparingLong<Arg0objectSuperT> = ThenComparingLong<Arg0objectSuperT>;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        public System.Func<T, T, int> OnCompare { get; set; }
+
+        void CompareEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        {
+            if (OnCompare != null)
+            {
+                var executionResult = OnCompare.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<T>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -239,6 +410,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function,java.util.Comparator)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU>, Java.Util.Comparator<Arg1objectSuperU>, Java.Util.Comparator<T>> OnThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU> { get; set; }
+
+        void ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU>>> data)
+        {
+            if (OnThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU> != null)
+            {
+                var executionResult = OnThenComparing<Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU>.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Util.Comparator<Arg1objectSuperU>>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function,java.util.Comparator)"/>
         /// </summary>
@@ -253,6 +439,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU>, Java.Util.Comparator<T>> OnThenComparing<Arg0objectSuperT, Arg0ExtendsU, U>1 { get; set; }
+
+        void ThenComparing<Arg0objectSuperT, Arg0ExtendsU, U>1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU>>> data)
+        {
+            if (OnThenComparing<Arg0objectSuperT, Arg0ExtendsU, U>1 != null)
+            {
+                var executionResult = OnThenComparing<Arg0objectSuperT, Arg0ExtendsU, U>1.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.function.Function)"/>
         /// </summary>
@@ -265,6 +466,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#reversed()"/>
+        /// </summary>
+        public System.Func<Java.Util.Comparator<T>> OnReversed { get; set; }
+
+        void ReversedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnReversed != null)
+            {
+                var executionResult = OnReversed.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#reversed()"/>
         /// </summary>
@@ -274,6 +490,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.Comparator)"/>
+        /// </summary>
+        public System.Func<Java.Util.Comparator<Arg0objectSuperT>, Java.Util.Comparator<T>> OnThenComparing<Arg0objectSuperT>1 { get; set; }
+
+        void ThenComparing<Arg0objectSuperT>1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Comparator<Arg0objectSuperT>>> data)
+        {
+            if (OnThenComparing<Arg0objectSuperT>1 != null)
+            {
+                var executionResult = OnThenComparing<Arg0objectSuperT>1.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparing(java.util.Comparator)"/>
         /// </summary>
@@ -284,6 +515,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingDouble(java.util.function.ToDoubleFunction)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.ToDoubleFunction<Arg0objectSuperT>, Java.Util.Comparator<T>> OnThenComparingDouble<Arg0objectSuperT> { get; set; }
+
+        void ThenComparingDouble<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.ToDoubleFunction<Arg0objectSuperT>>> data)
+        {
+            if (OnThenComparingDouble<Arg0objectSuperT> != null)
+            {
+                var executionResult = OnThenComparingDouble<Arg0objectSuperT>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingDouble(java.util.function.ToDoubleFunction)"/>
         /// </summary>
@@ -294,6 +540,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingInt(java.util.function.ToIntFunction)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.ToIntFunction<Arg0objectSuperT>, Java.Util.Comparator<T>> OnThenComparingInt<Arg0objectSuperT> { get; set; }
+
+        void ThenComparingInt<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.ToIntFunction<Arg0objectSuperT>>> data)
+        {
+            if (OnThenComparingInt<Arg0objectSuperT> != null)
+            {
+                var executionResult = OnThenComparingInt<Arg0objectSuperT>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingInt(java.util.function.ToIntFunction)"/>
         /// </summary>
@@ -304,6 +565,21 @@ namespace Java.Util
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingLong(java.util.function.ToLongFunction)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.ToLongFunction<Arg0objectSuperT>, Java.Util.Comparator<T>> OnThenComparingLong<Arg0objectSuperT> { get; set; }
+
+        void ThenComparingLong<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.ToLongFunction<Arg0objectSuperT>>> data)
+        {
+            if (OnThenComparingLong<Arg0objectSuperT> != null)
+            {
+                var executionResult = OnThenComparingLong<Arg0objectSuperT>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#thenComparingLong(java.util.function.ToLongFunction)"/>
         /// </summary>

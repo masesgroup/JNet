@@ -27,11 +27,17 @@ namespace Java.Awt.DesktopNs
 {
     #region IScreenSleepListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.desktop.ScreenSleepListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html"/>
     /// </summary>
     public partial interface IScreenSleepListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("screenAboutToSleep", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAboutToSleepEventHandler)); OnScreenAboutToSleep = ScreenAboutToSleep;
+            AddEventHandler("screenAwoke", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAwokeEventHandler)); OnScreenAwoke = ScreenAwoke;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAboutToSleep(java.awt.desktop.ScreenSleepEvent)"/>
         /// </summary>
@@ -73,6 +79,23 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("screenAboutToSleep", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAboutToSleepEventHandler)); OnScreenAboutToSleep = ScreenAboutToSleep;
+            AddEventHandler("screenAwoke", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAwokeEventHandler)); OnScreenAwoke = ScreenAwoke;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAboutToSleep(java.awt.desktop.ScreenSleepEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.DesktopNs.ScreenSleepEvent> OnScreenAboutToSleep { get; set; }
+
+        void ScreenAboutToSleepEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>> data)
+        {
+            if (OnScreenAboutToSleep != null) OnScreenAboutToSleep.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAboutToSleep(java.awt.desktop.ScreenSleepEvent)"/>
         /// </summary>
@@ -81,6 +104,17 @@ namespace Java.Awt.DesktopNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAwoke(java.awt.desktop.ScreenSleepEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.DesktopNs.ScreenSleepEvent> OnScreenAwoke { get; set; }
+
+        void ScreenAwokeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>> data)
+        {
+            if (OnScreenAwoke != null) OnScreenAwoke.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/ScreenSleepListener.html#screenAwoke(java.awt.desktop.ScreenSleepEvent)"/>
         /// </summary>

@@ -27,11 +27,16 @@ namespace Java.Util.Function
 {
     #region IIntToLongFunction
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToLongFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.IntToLongFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToLongFunction.html"/>
     /// </summary>
     public partial interface IIntToLongFunction
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToLongFunction.html#applyAsLong(int)"/>
         /// </summary>
@@ -69,6 +74,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToLongFunction.html#applyAsLong(int)"/>
+        /// </summary>
+        public System.Func<int, long> OnApplyAsLong { get; set; }
+
+        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+        {
+            if (OnApplyAsLong != null)
+            {
+                var executionResult = OnApplyAsLong.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToLongFunction.html#applyAsLong(int)"/>
         /// </summary>

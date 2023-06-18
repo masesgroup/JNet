@@ -27,7 +27,7 @@ namespace Org.Xml.Sax
 {
     #region IXMLFilter
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLFilter.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IXMLFilter : Org.Xml.Sax.IXMLReader
     {

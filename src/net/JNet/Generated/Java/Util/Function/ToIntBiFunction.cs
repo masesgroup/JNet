@@ -45,6 +45,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        public System.Func<object, object, int> OnApplyAsInt { get; set; }
+
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnApplyAsInt != null)
+            {
+                var executionResult = OnApplyAsInt.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -68,11 +88,16 @@ namespace Java.Util.Function
 
     #region IToIntBiFunction<T, U>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.ToIntBiFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html"/>
     /// </summary>
     public partial interface IToIntBiFunction<T, U>
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -111,6 +136,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        public System.Func<T, U, int> OnApplyAsInt { get; set; }
+
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        {
+            if (OnApplyAsInt != null)
+            {
+                var executionResult = OnApplyAsInt.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToIntBiFunction.html#applyAsInt(java.lang.Object,java.lang.Object)"/>
         /// </summary>

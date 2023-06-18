@@ -27,11 +27,18 @@ namespace Javax.Swing.Event
 {
     #region IDocumentListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.DocumentListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html"/>
     /// </summary>
     public partial interface IDocumentListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("changedUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(ChangedUpdateEventHandler)); OnChangedUpdate = ChangedUpdate;
+            AddEventHandler("insertUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(InsertUpdateEventHandler)); OnInsertUpdate = InsertUpdate;
+            AddEventHandler("removeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(RemoveUpdateEventHandler)); OnRemoveUpdate = RemoveUpdate;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#changedUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>
@@ -78,6 +85,24 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("changedUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(ChangedUpdateEventHandler)); OnChangedUpdate = ChangedUpdate;
+            AddEventHandler("insertUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(InsertUpdateEventHandler)); OnInsertUpdate = InsertUpdate;
+            AddEventHandler("removeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(RemoveUpdateEventHandler)); OnRemoveUpdate = RemoveUpdate;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#changedUpdate(javax.swing.event.DocumentEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.DocumentEvent> OnChangedUpdate { get; set; }
+
+        void ChangedUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
+        {
+            if (OnChangedUpdate != null) OnChangedUpdate.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#changedUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>
@@ -86,6 +111,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#insertUpdate(javax.swing.event.DocumentEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.DocumentEvent> OnInsertUpdate { get; set; }
+
+        void InsertUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
+        {
+            if (OnInsertUpdate != null) OnInsertUpdate.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#insertUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>
@@ -94,6 +130,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#removeUpdate(javax.swing.event.DocumentEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.DocumentEvent> OnRemoveUpdate { get; set; }
+
+        void RemoveUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
+        {
+            if (OnRemoveUpdate != null) OnRemoveUpdate.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#removeUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>

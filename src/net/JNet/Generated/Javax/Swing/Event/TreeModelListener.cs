@@ -27,11 +27,19 @@ namespace Javax.Swing.Event
 {
     #region ITreeModelListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.TreeModelListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html"/>
     /// </summary>
     public partial interface ITreeModelListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("treeNodesChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesChangedEventHandler)); OnTreeNodesChanged = TreeNodesChanged;
+            AddEventHandler("treeNodesInserted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesInsertedEventHandler)); OnTreeNodesInserted = TreeNodesInserted;
+            AddEventHandler("treeNodesRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesRemovedEventHandler)); OnTreeNodesRemoved = TreeNodesRemoved;
+            AddEventHandler("treeStructureChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeStructureChangedEventHandler)); OnTreeStructureChanged = TreeStructureChanged;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesChanged(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
@@ -83,6 +91,25 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("treeNodesChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesChangedEventHandler)); OnTreeNodesChanged = TreeNodesChanged;
+            AddEventHandler("treeNodesInserted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesInsertedEventHandler)); OnTreeNodesInserted = TreeNodesInserted;
+            AddEventHandler("treeNodesRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesRemovedEventHandler)); OnTreeNodesRemoved = TreeNodesRemoved;
+            AddEventHandler("treeStructureChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeStructureChangedEventHandler)); OnTreeStructureChanged = TreeStructureChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesChanged(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesChanged { get; set; }
+
+        void TreeNodesChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
+        {
+            if (OnTreeNodesChanged != null) OnTreeNodesChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesChanged(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
@@ -91,6 +118,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesInserted(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesInserted { get; set; }
+
+        void TreeNodesInsertedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
+        {
+            if (OnTreeNodesInserted != null) OnTreeNodesInserted.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesInserted(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
@@ -99,6 +137,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeNodesRemoved { get; set; }
+
+        void TreeNodesRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
+        {
+            if (OnTreeNodesRemoved != null) OnTreeNodesRemoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeNodesRemoved(javax.swing.event.TreeModelEvent)"/>
         /// </summary>
@@ -107,6 +156,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeStructureChanged(javax.swing.event.TreeModelEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.TreeModelEvent> OnTreeStructureChanged { get; set; }
+
+        void TreeStructureChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
+        {
+            if (OnTreeStructureChanged != null) OnTreeStructureChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeModelListener.html#treeStructureChanged(javax.swing.event.TreeModelEvent)"/>
         /// </summary>

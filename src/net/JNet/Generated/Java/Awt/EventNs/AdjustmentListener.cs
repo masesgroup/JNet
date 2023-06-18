@@ -27,11 +27,16 @@ namespace Java.Awt.EventNs
 {
     #region IAdjustmentListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.AdjustmentListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html"/>
     /// </summary>
     public partial interface IAdjustmentListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("adjustmentValueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.AdjustmentEvent>>>(AdjustmentValueChangedEventHandler)); OnAdjustmentValueChanged = AdjustmentValueChanged;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
         /// </summary>
@@ -68,6 +73,22 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("adjustmentValueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.AdjustmentEvent>>>(AdjustmentValueChangedEventHandler)); OnAdjustmentValueChanged = AdjustmentValueChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.AdjustmentEvent> OnAdjustmentValueChanged { get; set; }
+
+        void AdjustmentValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.AdjustmentEvent>> data)
+        {
+            if (OnAdjustmentValueChanged != null) OnAdjustmentValueChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
         /// </summary>

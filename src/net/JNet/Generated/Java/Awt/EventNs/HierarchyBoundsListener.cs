@@ -27,11 +27,17 @@ namespace Java.Awt.EventNs
 {
     #region IHierarchyBoundsListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.HierarchyBoundsListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html"/>
     /// </summary>
     public partial interface IHierarchyBoundsListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorMovedEventHandler)); OnAncestorMoved = AncestorMoved;
+            AddEventHandler("ancestorResized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorResizedEventHandler)); OnAncestorResized = AncestorResized;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
         /// </summary>
@@ -73,6 +79,23 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorMovedEventHandler)); OnAncestorMoved = AncestorMoved;
+            AddEventHandler("ancestorResized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorResizedEventHandler)); OnAncestorResized = AncestorResized;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.HierarchyEvent> OnAncestorMoved { get; set; }
+
+        void AncestorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
+        {
+            if (OnAncestorMoved != null) OnAncestorMoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
         /// </summary>
@@ -81,6 +104,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.HierarchyEvent> OnAncestorResized { get; set; }
+
+        void AncestorResizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
+        {
+            if (OnAncestorResized != null) OnAncestorResized.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsListener.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
         /// </summary>

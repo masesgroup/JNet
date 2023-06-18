@@ -27,11 +27,17 @@ namespace Java.Beans.Beancontext
 {
     #region IBeanContextMembershipListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.beans.beancontext.BeanContextMembershipListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html"/>
     /// </summary>
     public partial interface IBeanContextMembershipListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("childrenAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenAddedEventHandler)); OnChildrenAdded = ChildrenAdded;
+            AddEventHandler("childrenRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenRemovedEventHandler)); OnChildrenRemoved = ChildrenRemoved;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
@@ -73,6 +79,23 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("childrenAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenAddedEventHandler)); OnChildrenAdded = ChildrenAdded;
+            AddEventHandler("childrenRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenRemovedEventHandler)); OnChildrenRemoved = ChildrenRemoved;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)"/>
+        /// </summary>
+        public System.Action<Java.Beans.Beancontext.BeanContextMembershipEvent> OnChildrenAdded { get; set; }
+
+        void ChildrenAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>> data)
+        {
+            if (OnChildrenAdded != null) OnChildrenAdded.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
@@ -81,6 +104,17 @@ namespace Java.Beans.Beancontext
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)"/>
+        /// </summary>
+        public System.Action<Java.Beans.Beancontext.BeanContextMembershipEvent> OnChildrenRemoved { get; set; }
+
+        void ChildrenRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>> data)
+        {
+            if (OnChildrenRemoved != null) OnChildrenRemoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenRemoved(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>

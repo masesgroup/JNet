@@ -27,7 +27,7 @@ namespace Javax.Swing
 {
     #region ISwingContainer
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingContainer.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface ISwingContainer : Java.Lang.Annotation.IAnnotation
     {

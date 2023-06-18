@@ -45,6 +45,23 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("focusGained", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusGainedEventHandler)); OnFocusGained = FocusGained;
+            AddEventHandler("focusLost", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusLostEventHandler)); OnFocusLost = FocusLost;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html#focusGained(java.awt.event.FocusEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.FocusEvent> OnFocusGained { get; set; }
+
+        void FocusGainedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>> data)
+        {
+            if (OnFocusGained != null) OnFocusGained.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
@@ -53,6 +70,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html#focusLost(java.awt.event.FocusEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.FocusEvent> OnFocusLost { get; set; }
+
+        void FocusLostEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>> data)
+        {
+            if (OnFocusLost != null) OnFocusLost.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusAdapter.html#focusLost(java.awt.event.FocusEvent)"/>
         /// </summary>

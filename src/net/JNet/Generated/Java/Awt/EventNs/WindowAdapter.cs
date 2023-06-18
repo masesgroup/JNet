@@ -45,6 +45,31 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("windowActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowActivatedEventHandler)); OnWindowActivated = WindowActivated;
+            AddEventHandler("windowClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowClosedEventHandler)); OnWindowClosed = WindowClosed;
+            AddEventHandler("windowClosing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowClosingEventHandler)); OnWindowClosing = WindowClosing;
+            AddEventHandler("windowDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowDeactivatedEventHandler)); OnWindowDeactivated = WindowDeactivated;
+            AddEventHandler("windowDeiconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowDeiconifiedEventHandler)); OnWindowDeiconified = WindowDeiconified;
+            AddEventHandler("windowGainedFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowGainedFocusEventHandler)); OnWindowGainedFocus = WindowGainedFocus;
+            AddEventHandler("windowIconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowIconifiedEventHandler)); OnWindowIconified = WindowIconified;
+            AddEventHandler("windowLostFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowLostFocusEventHandler)); OnWindowLostFocus = WindowLostFocus;
+            AddEventHandler("windowOpened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowOpenedEventHandler)); OnWindowOpened = WindowOpened;
+            AddEventHandler("windowStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowStateChangedEventHandler)); OnWindowStateChanged = WindowStateChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowActivated(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowActivated { get; set; }
+
+        void WindowActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowActivated != null) OnWindowActivated.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowActivated(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -53,6 +78,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosed(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowClosed { get; set; }
+
+        void WindowClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowClosed != null) OnWindowClosed.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosed(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -61,6 +97,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosing(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowClosing { get; set; }
+
+        void WindowClosingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowClosing != null) OnWindowClosing.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosing(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -69,6 +116,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeactivated(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowDeactivated { get; set; }
+
+        void WindowDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowDeactivated != null) OnWindowDeactivated.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeactivated(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -77,6 +135,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeiconified(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowDeiconified { get; set; }
+
+        void WindowDeiconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowDeiconified != null) OnWindowDeiconified.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeiconified(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -85,6 +154,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowGainedFocus { get; set; }
+
+        void WindowGainedFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowGainedFocus != null) OnWindowGainedFocus.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -93,6 +173,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowIconified(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowIconified { get; set; }
+
+        void WindowIconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowIconified != null) OnWindowIconified.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowIconified(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -101,6 +192,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowLostFocus(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowLostFocus { get; set; }
+
+        void WindowLostFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowLostFocus != null) OnWindowLostFocus.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -109,6 +211,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowOpened(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowOpened { get; set; }
+
+        void WindowOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowOpened != null) OnWindowOpened.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowOpened(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -117,6 +230,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowStateChanged(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowStateChanged { get; set; }
+
+        void WindowStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowStateChanged != null) OnWindowStateChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>

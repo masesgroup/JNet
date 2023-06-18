@@ -27,11 +27,17 @@ namespace Javax.Sql
 {
     #region IStatementEventListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.sql.StatementEventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html"/>
     /// </summary>
     public partial interface IStatementEventListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("statementClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler)); OnStatementClosed = StatementClosed;
+            AddEventHandler("statementErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementErrorOccurredEventHandler)); OnStatementErrorOccurred = StatementErrorOccurred;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
         /// </summary>
@@ -73,6 +79,23 @@ namespace Javax.Sql
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("statementClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler)); OnStatementClosed = StatementClosed;
+            AddEventHandler("statementErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementErrorOccurredEventHandler)); OnStatementErrorOccurred = StatementErrorOccurred;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Sql.StatementEvent> OnStatementClosed { get; set; }
+
+        void StatementClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
+        {
+            if (OnStatementClosed != null) OnStatementClosed.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
         /// </summary>
@@ -81,6 +104,17 @@ namespace Javax.Sql
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Sql.StatementEvent> OnStatementErrorOccurred { get; set; }
+
+        void StatementErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
+        {
+            if (OnStatementErrorOccurred != null) OnStatementErrorOccurred.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
         /// </summary>

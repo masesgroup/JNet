@@ -27,11 +27,16 @@ namespace Java.Awt.EventNs
 {
     #region IWindowStateListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.WindowStateListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html"/>
     /// </summary>
     public partial interface IWindowStateListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("windowStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowStateChangedEventHandler)); OnWindowStateChanged = WindowStateChanged;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -68,6 +73,22 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("windowStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowStateChangedEventHandler)); OnWindowStateChanged = WindowStateChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowStateChanged { get; set; }
+
+        void WindowStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowStateChanged != null) OnWindowStateChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>

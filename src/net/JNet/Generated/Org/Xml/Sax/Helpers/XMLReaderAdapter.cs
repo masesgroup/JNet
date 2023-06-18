@@ -45,6 +45,38 @@ namespace Org.Xml.Sax.Helpers
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("characters", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler)); OnCharacters = Characters;
+            AddEventHandler("endDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler)); OnEndDocument = EndDocument;
+            AddEventHandler("endElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndElementEventHandler)); OnEndElement = EndElement;
+            AddEventHandler("endPrefixMapping", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndPrefixMappingEventHandler)); OnEndPrefixMapping = EndPrefixMapping;
+            AddEventHandler("ignorableWhitespace", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler)); OnIgnorableWhitespace = IgnorableWhitespace;
+            AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ParseEventHandler)); OnParse = Parse;
+            AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler)); OnParse = Parse;
+            AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ProcessingInstructionEventHandler)); OnProcessingInstruction = ProcessingInstruction;
+            AddEventHandler("setDocumentLocator", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler)); OnSetDocumentLocator = SetDocumentLocator;
+            AddEventHandler("setDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler)); OnSetDTDHandler = SetDTDHandler;
+            AddEventHandler("setEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler)); OnSetEntityResolver = SetEntityResolver;
+            AddEventHandler("setErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler)); OnSetErrorHandler = SetErrorHandler;
+            AddEventHandler("setLocale", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Locale>>>(SetLocaleEventHandler)); OnSetLocale = SetLocale;
+            AddEventHandler("skippedEntity", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(SkippedEntityEventHandler)); OnSkippedEntity = SkippedEntity;
+            AddEventHandler("startDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler)); OnStartDocument = StartDocument;
+            AddEventHandler("startElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(StartElementEventHandler)); OnStartElement = StartElement;
+            AddEventHandler("startPrefixMapping", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(StartPrefixMappingEventHandler)); OnStartPrefixMapping = StartPrefixMapping;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#characters(char[],int,int)"/>
+        /// </summary>
+        public System.Action<char[], int, int> OnCharacters { get; set; }
+
+        void CharactersEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
+        {
+            if (OnCharacters != null) OnCharacters.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#characters(char[],int,int)"/>
         /// </summary>
@@ -56,6 +88,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endDocument()"/>
+        /// </summary>
+        public System.Action OnEndDocument { get; set; }
+
+        void EndDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnEndDocument != null) OnEndDocument.Invoke();
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endDocument()"/>
         /// </summary>
@@ -65,6 +108,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// </summary>
+        public System.Action<string, string, string> OnEndElement { get; set; }
+
+        void EndElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        {
+            if (OnEndElement != null) OnEndElement.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0), data.EventData.GetAt<string>(1));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
@@ -76,6 +130,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endPrefixMapping(java.lang.String)"/>
+        /// </summary>
+        public System.Action<string> OnEndPrefixMapping { get; set; }
+
+        void EndPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        {
+            if (OnEndPrefixMapping != null) OnEndPrefixMapping.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#endPrefixMapping(java.lang.String)"/>
         /// </summary>
@@ -84,6 +149,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#ignorableWhitespace(char[],int,int)"/>
+        /// </summary>
+        public System.Action<char[], int, int> OnIgnorableWhitespace { get; set; }
+
+        void IgnorableWhitespaceEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
+        {
+            if (OnIgnorableWhitespace != null) OnIgnorableWhitespace.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
@@ -95,6 +171,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(java.lang.String)"/>
+        /// </summary>
+        public System.Action<string> OnParse { get; set; }
+
+        void ParseEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        {
+            if (OnParse != null) OnParse.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(java.lang.String)"/>
         /// </summary>
@@ -105,6 +192,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(org.xml.sax.InputSource)"/>
+        /// </summary>
+        public System.Action<Org.Xml.Sax.InputSource> OnParse1 { get; set; }
+
+        void Parse1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>> data)
+        {
+            if (OnParse1 != null) OnParse1.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
@@ -115,6 +213,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        public System.Action<string, string> OnProcessingInstruction { get; set; }
+
+        void ProcessingInstructionEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        {
+            if (OnProcessingInstruction != null) OnProcessingInstruction.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
@@ -125,6 +234,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
+        /// </summary>
+        public System.Action<Org.Xml.Sax.Locator> OnSetDocumentLocator { get; set; }
+
+        void SetDocumentLocatorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>> data)
+        {
+            if (OnSetDocumentLocator != null) OnSetDocumentLocator.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
@@ -133,6 +253,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
+        /// </summary>
+        public System.Action<Org.Xml.Sax.DTDHandler> OnSetDTDHandler { get; set; }
+
+        void SetDTDHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>> data)
+        {
+            if (OnSetDTDHandler != null) OnSetDTDHandler.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
         /// </summary>
@@ -141,6 +272,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
+        /// </summary>
+        public System.Action<Org.Xml.Sax.EntityResolver> OnSetEntityResolver { get; set; }
+
+        void SetEntityResolverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>> data)
+        {
+            if (OnSetEntityResolver != null) OnSetEntityResolver.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
@@ -149,6 +291,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// </summary>
+        public System.Action<Org.Xml.Sax.ErrorHandler> OnSetErrorHandler { get; set; }
+
+        void SetErrorHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>> data)
+        {
+            if (OnSetErrorHandler != null) OnSetErrorHandler.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
@@ -157,6 +310,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setLocale(java.util.Locale)"/>
+        /// </summary>
+        public System.Action<Java.Util.Locale> OnSetLocale { get; set; }
+
+        void SetLocaleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Locale>> data)
+        {
+            if (OnSetLocale != null) OnSetLocale.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#setLocale(java.util.Locale)"/>
         /// </summary>
@@ -166,6 +330,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#skippedEntity(java.lang.String)"/>
+        /// </summary>
+        public System.Action<string> OnSkippedEntity { get; set; }
+
+        void SkippedEntityEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        {
+            if (OnSkippedEntity != null) OnSkippedEntity.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#skippedEntity(java.lang.String)"/>
         /// </summary>
@@ -175,6 +350,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startDocument()"/>
+        /// </summary>
+        public System.Action OnStartDocument { get; set; }
+
+        void StartDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnStartDocument != null) OnStartDocument.Invoke();
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startDocument()"/>
         /// </summary>
@@ -184,6 +370,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
+        /// </summary>
+        public System.Action<string, string, string, Org.Xml.Sax.Attributes> OnStartElement { get; set; }
+
+        void StartElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        {
+            if (OnStartElement != null) OnStartElement.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0), data.EventData.GetAt<string>(1), data.EventData.GetAt<Org.Xml.Sax.Attributes>(2));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
         /// </summary>
@@ -196,6 +393,17 @@ namespace Org.Xml.Sax.Helpers
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
+        /// </summary>
+        public System.Action<string, string> OnStartPrefixMapping { get; set; }
+
+        void StartPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        {
+            if (OnStartPrefixMapping != null) OnStartPrefixMapping.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
         /// </summary>

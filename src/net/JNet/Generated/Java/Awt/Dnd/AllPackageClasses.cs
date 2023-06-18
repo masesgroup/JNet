@@ -163,10 +163,14 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DragGestureListener() { }
+        public DragGestureListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.dnd.DragGestureListener";
 
+    
         // TODO: complete the class
 
     }
@@ -267,10 +271,14 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DragSourceAdapter() { }
+        public DragSourceAdapter() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.dnd.DragSourceAdapter";
 
+    
         // TODO: complete the class
 
     }
@@ -457,10 +465,14 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DragSourceListener() { }
+        public DragSourceListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.dnd.DragSourceListener";
 
+    
         // TODO: complete the class
 
     }
@@ -475,10 +487,14 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DragSourceMotionListener() { }
+        public DragSourceMotionListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.dnd.DragSourceMotionListener";
 
+    
         // TODO: complete the class
 
     }
@@ -536,10 +552,14 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DropTargetAdapter() { }
+        public DropTargetAdapter() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.dnd.DropTargetAdapter";
 
+    
         // TODO: complete the class
 
     }
@@ -726,10 +746,14 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DropTargetListener() { }
+        public DropTargetListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.dnd.DropTargetListener";
 
+    
         // TODO: complete the class
 
     }

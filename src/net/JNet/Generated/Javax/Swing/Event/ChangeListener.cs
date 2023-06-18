@@ -27,11 +27,16 @@ namespace Javax.Swing.Event
 {
     #region IChangeListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.ChangeListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html"/>
     /// </summary>
     public partial interface IChangeListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("stateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(StateChangedEventHandler)); OnStateChanged = StateChanged;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>
@@ -68,6 +73,22 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("stateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(StateChangedEventHandler)); OnStateChanged = StateChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.ChangeEvent> OnStateChanged { get; set; }
+
+        void StateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
+        {
+            if (OnStateChanged != null) OnStateChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html#stateChanged(javax.swing.event.ChangeEvent)"/>
         /// </summary>

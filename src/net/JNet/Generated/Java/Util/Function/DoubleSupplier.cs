@@ -27,11 +27,16 @@ namespace Java.Util.Function
 {
     #region IDoubleSupplier
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.DoubleSupplier implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html"/>
     /// </summary>
     public partial interface IDoubleSupplier
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("getAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler)); OnGetAsDouble = GetAsDouble;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/>
         /// </summary>
@@ -69,6 +74,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("getAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler)); OnGetAsDouble = GetAsDouble;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/>
+        /// </summary>
+        public System.Func<double> OnGetAsDouble { get; set; }
+
+        void GetAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnGetAsDouble != null)
+            {
+                var executionResult = OnGetAsDouble.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/>
         /// </summary>

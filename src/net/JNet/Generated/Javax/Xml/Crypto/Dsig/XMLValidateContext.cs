@@ -27,7 +27,7 @@ namespace Javax.Xml.Crypto.Dsig
 {
     #region IXMLValidateContext
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLValidateContext.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IXMLValidateContext : Javax.Xml.Crypto.IXMLCryptoContext
     {

@@ -27,11 +27,16 @@ namespace Java.Util.Function
 {
     #region IIntToDoubleFunction
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToDoubleFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.IntToDoubleFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToDoubleFunction.html"/>
     /// </summary>
     public partial interface IIntToDoubleFunction
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
         /// </summary>
@@ -69,6 +74,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
+        /// </summary>
+        public System.Func<int, double> OnApplyAsDouble { get; set; }
+
+        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+        {
+            if (OnApplyAsDouble != null)
+            {
+                var executionResult = OnApplyAsDouble.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntToDoubleFunction.html#applyAsDouble(int)"/>
         /// </summary>

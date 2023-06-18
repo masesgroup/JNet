@@ -27,11 +27,18 @@ namespace Javax.Swing.Event
 {
     #region IListDataListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.ListDataListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html"/>
     /// </summary>
     public partial interface IListDataListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("contentsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(ContentsChangedEventHandler)); OnContentsChanged = ContentsChanged;
+            AddEventHandler("intervalAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalAddedEventHandler)); OnIntervalAdded = IntervalAdded;
+            AddEventHandler("intervalRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalRemovedEventHandler)); OnIntervalRemoved = IntervalRemoved;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
         /// </summary>
@@ -78,6 +85,24 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("contentsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(ContentsChangedEventHandler)); OnContentsChanged = ContentsChanged;
+            AddEventHandler("intervalAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalAddedEventHandler)); OnIntervalAdded = IntervalAdded;
+            AddEventHandler("intervalRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalRemovedEventHandler)); OnIntervalRemoved = IntervalRemoved;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.ListDataEvent> OnContentsChanged { get; set; }
+
+        void ContentsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
+        {
+            if (OnContentsChanged != null) OnContentsChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
         /// </summary>
@@ -86,6 +111,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.ListDataEvent> OnIntervalAdded { get; set; }
+
+        void IntervalAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
+        {
+            if (OnIntervalAdded != null) OnIntervalAdded.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalAdded(javax.swing.event.ListDataEvent)"/>
         /// </summary>
@@ -94,6 +130,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.ListDataEvent> OnIntervalRemoved { get; set; }
+
+        void IntervalRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
+        {
+            if (OnIntervalRemoved != null) OnIntervalRemoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#intervalRemoved(javax.swing.event.ListDataEvent)"/>
         /// </summary>

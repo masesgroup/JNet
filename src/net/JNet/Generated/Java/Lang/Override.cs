@@ -27,7 +27,7 @@ namespace Java.Lang
 {
     #region IOverride
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Override.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IOverride : Java.Lang.Annotation.IAnnotation
     {

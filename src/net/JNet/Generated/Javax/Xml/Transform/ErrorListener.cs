@@ -27,11 +27,18 @@ namespace Javax.Xml.Transform
 {
     #region IErrorListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.xml.transform.ErrorListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html"/>
     /// </summary>
     public partial interface IErrorListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("error", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler)); OnError = Error;
+            AddEventHandler("fatalError", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(FatalErrorEventHandler)); OnFatalError = FatalError;
+            AddEventHandler("warning", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(WarningEventHandler)); OnWarning = Warning;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
         /// </summary>
@@ -81,6 +88,24 @@ namespace Javax.Xml.Transform
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("error", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler)); OnError = Error;
+            AddEventHandler("fatalError", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(FatalErrorEventHandler)); OnFatalError = FatalError;
+            AddEventHandler("warning", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(WarningEventHandler)); OnWarning = Warning;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnError { get; set; }
+
+        void ErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnError != null) OnError.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
         /// </summary>
@@ -90,6 +115,17 @@ namespace Javax.Xml.Transform
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnFatalError { get; set; }
+
+        void FatalErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnFatalError != null) OnFatalError.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
         /// </summary>
@@ -99,6 +135,17 @@ namespace Javax.Xml.Transform
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
+        /// </summary>
+        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnWarning { get; set; }
+
+        void WarningEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnWarning != null) OnWarning.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
         /// </summary>

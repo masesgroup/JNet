@@ -27,11 +27,15 @@ namespace Java.Util
 {
     #region IEventListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.EventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListener.html"/>
     /// </summary>
     public partial interface IEventListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+
+        }
 
         #endregion
 
@@ -63,6 +67,10 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+
+        }
 
         #endregion
 

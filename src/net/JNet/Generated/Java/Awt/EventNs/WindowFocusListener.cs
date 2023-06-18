@@ -27,11 +27,17 @@ namespace Java.Awt.EventNs
 {
     #region IWindowFocusListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.WindowFocusListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html"/>
     /// </summary>
     public partial interface IWindowFocusListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("windowGainedFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowGainedFocusEventHandler)); OnWindowGainedFocus = WindowGainedFocus;
+            AddEventHandler("windowLostFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowLostFocusEventHandler)); OnWindowLostFocus = WindowLostFocus;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -73,6 +79,23 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("windowGainedFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowGainedFocusEventHandler)); OnWindowGainedFocus = WindowGainedFocus;
+            AddEventHandler("windowLostFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowLostFocusEventHandler)); OnWindowLostFocus = WindowLostFocus;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowGainedFocus { get; set; }
+
+        void WindowGainedFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowGainedFocus != null) OnWindowGainedFocus.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -81,6 +104,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowLostFocus(java.awt.event.WindowEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowLostFocus { get; set; }
+
+        void WindowLostFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
+        {
+            if (OnWindowLostFocus != null) OnWindowLostFocus.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>

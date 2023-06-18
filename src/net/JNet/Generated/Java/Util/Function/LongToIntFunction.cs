@@ -27,11 +27,16 @@ namespace Java.Util.Function
 {
     #region ILongToIntFunction
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToIntFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.LongToIntFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToIntFunction.html"/>
     /// </summary>
     public partial interface ILongToIntFunction
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
         /// </summary>
@@ -69,6 +74,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
+        /// </summary>
+        public System.Func<long, int> OnApplyAsInt { get; set; }
+
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        {
+            if (OnApplyAsInt != null)
+            {
+                var executionResult = OnApplyAsInt.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
         /// </summary>

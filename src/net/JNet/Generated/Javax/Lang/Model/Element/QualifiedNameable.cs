@@ -27,7 +27,7 @@ namespace Javax.Lang.Model.Element
 {
     #region IQualifiedNameable
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/QualifiedNameable.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IQualifiedNameable : Javax.Lang.Model.Element.IElement
     {

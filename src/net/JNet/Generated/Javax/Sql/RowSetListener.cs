@@ -27,11 +27,18 @@ namespace Javax.Sql
 {
     #region IRowSetListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.sql.RowSetListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html"/>
     /// </summary>
     public partial interface IRowSetListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("cursorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(CursorMovedEventHandler)); OnCursorMoved = CursorMoved;
+            AddEventHandler("rowChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowChangedEventHandler)); OnRowChanged = RowChanged;
+            AddEventHandler("rowSetChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowSetChangedEventHandler)); OnRowSetChanged = RowSetChanged;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
         /// </summary>
@@ -78,6 +85,24 @@ namespace Javax.Sql
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("cursorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(CursorMovedEventHandler)); OnCursorMoved = CursorMoved;
+            AddEventHandler("rowChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowChangedEventHandler)); OnRowChanged = RowChanged;
+            AddEventHandler("rowSetChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowSetChangedEventHandler)); OnRowSetChanged = RowSetChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Sql.RowSetEvent> OnCursorMoved { get; set; }
+
+        void CursorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
+        {
+            if (OnCursorMoved != null) OnCursorMoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
         /// </summary>
@@ -86,6 +111,17 @@ namespace Javax.Sql
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Sql.RowSetEvent> OnRowChanged { get; set; }
+
+        void RowChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
+        {
+            if (OnRowChanged != null) OnRowChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
@@ -94,6 +130,17 @@ namespace Javax.Sql
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Sql.RowSetEvent> OnRowSetChanged { get; set; }
+
+        void RowSetChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
+        {
+            if (OnRowSetChanged != null) OnRowSetChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
         /// </summary>

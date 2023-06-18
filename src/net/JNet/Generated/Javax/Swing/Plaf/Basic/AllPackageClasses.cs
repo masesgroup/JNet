@@ -455,24 +455,6 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicButtonListener
-    /// <summary>
-    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicButtonListener.html"/>
-    /// </summary>
-    public partial class BasicButtonListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public BasicButtonListener() { }
-
-    #warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region BasicButtonUI
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicButtonUI.html"/>
@@ -2112,10 +2094,14 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public InternalFramePropertyChangeListener() { }
+            public InternalFramePropertyChangeListener() { InitializeHandlers(); }
 
-        #warning Remember to build the body class for event listener
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.jnet.generated.javax.swing.plaf.basic.InternalFramePropertyChangeListener";
 
+        
             // TODO: complete the class
 
         }
@@ -2689,10 +2675,14 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public ButtonActionListener() { }
+            public ButtonActionListener() { InitializeHandlers(); }
 
-        #warning Remember to build the body class for event listener
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.jnet.generated.javax.swing.plaf.basic.ButtonActionListener";
 
+        
             // TODO: complete the class
 
         }
@@ -3309,10 +3299,14 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public HSBChangeListener() { }
+            public HSBChangeListener() { InitializeHandlers(); }
 
-        #warning Remember to build the body class for event listener
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.jnet.generated.javax.swing.plaf.basic.HSBChangeListener";
 
+        
             // TODO: complete the class
 
         }
@@ -3413,10 +3407,14 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public VSBChangeListener() { }
+            public VSBChangeListener() { InitializeHandlers(); }
 
-        #warning Remember to build the body class for event listener
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.jnet.generated.javax.swing.plaf.basic.VSBChangeListener";
 
+        
             // TODO: complete the class
 
         }
@@ -3689,10 +3687,14 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public ScrollListener() { }
+            public ScrollListener() { InitializeHandlers(); }
 
-        #warning Remember to build the body class for event listener
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.jnet.generated.javax.swing.plaf.basic.ScrollListener";
 
+        
             // TODO: complete the class
 
         }
@@ -3707,10 +3709,14 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public TrackListener() { }
+            public TrackListener() { InitializeHandlers(); }
 
-        #warning Remember to build the body class for event listener
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.jnet.generated.javax.swing.plaf.basic.TrackListener";
 
+        
             // TODO: complete the class
 
         }
@@ -5015,10 +5021,14 @@ namespace Javax.Swing.Plaf.Basic
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public DockingListener() { }
+            public DockingListener() { InitializeHandlers(); }
 
-        #warning Remember to build the body class for event listener
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => "org.mases.jnet.generated.javax.swing.plaf.basic.DockingListener";
 
+        
             // TODO: complete the class
 
         }

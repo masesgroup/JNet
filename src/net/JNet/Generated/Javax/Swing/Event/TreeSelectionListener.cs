@@ -27,11 +27,16 @@ namespace Javax.Swing.Event
 {
     #region ITreeSelectionListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.TreeSelectionListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html"/>
     /// </summary>
     public partial interface ITreeSelectionListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("valueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeSelectionEvent>>>(ValueChangedEventHandler)); OnValueChanged = ValueChanged;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html#valueChanged(javax.swing.event.TreeSelectionEvent)"/>
         /// </summary>
@@ -68,6 +73,22 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("valueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeSelectionEvent>>>(ValueChangedEventHandler)); OnValueChanged = ValueChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html#valueChanged(javax.swing.event.TreeSelectionEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.TreeSelectionEvent> OnValueChanged { get; set; }
+
+        void ValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeSelectionEvent>> data)
+        {
+            if (OnValueChanged != null) OnValueChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html#valueChanged(javax.swing.event.TreeSelectionEvent)"/>
         /// </summary>

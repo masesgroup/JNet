@@ -45,6 +45,27 @@ namespace Javax.Print.Event
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("printDataTransferCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintDataTransferCompletedEventHandler)); OnPrintDataTransferCompleted = PrintDataTransferCompleted;
+            AddEventHandler("printJobCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobCanceledEventHandler)); OnPrintJobCanceled = PrintJobCanceled;
+            AddEventHandler("printJobCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobCompletedEventHandler)); OnPrintJobCompleted = PrintJobCompleted;
+            AddEventHandler("printJobFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobFailedEventHandler)); OnPrintJobFailed = PrintJobFailed;
+            AddEventHandler("printJobNoMoreEvents", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobNoMoreEventsEventHandler)); OnPrintJobNoMoreEvents = PrintJobNoMoreEvents;
+            AddEventHandler("printJobRequiresAttention", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobRequiresAttentionEventHandler)); OnPrintJobRequiresAttention = PrintJobRequiresAttention;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printDataTransferCompleted(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintDataTransferCompleted { get; set; }
+
+        void PrintDataTransferCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        {
+            if (OnPrintDataTransferCompleted != null) OnPrintDataTransferCompleted.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printDataTransferCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
@@ -53,6 +74,17 @@ namespace Javax.Print.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobCanceled(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobCanceled { get; set; }
+
+        void PrintJobCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        {
+            if (OnPrintJobCanceled != null) OnPrintJobCanceled.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobCanceled(javax.print.event.PrintJobEvent)"/>
         /// </summary>
@@ -61,6 +93,17 @@ namespace Javax.Print.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobCompleted(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobCompleted { get; set; }
+
+        void PrintJobCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        {
+            if (OnPrintJobCompleted != null) OnPrintJobCompleted.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
@@ -69,6 +112,17 @@ namespace Javax.Print.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobFailed(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobFailed { get; set; }
+
+        void PrintJobFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        {
+            if (OnPrintJobFailed != null) OnPrintJobFailed.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobFailed(javax.print.event.PrintJobEvent)"/>
         /// </summary>
@@ -77,6 +131,17 @@ namespace Javax.Print.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobNoMoreEvents(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobNoMoreEvents { get; set; }
+
+        void PrintJobNoMoreEventsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        {
+            if (OnPrintJobNoMoreEvents != null) OnPrintJobNoMoreEvents.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobNoMoreEvents(javax.print.event.PrintJobEvent)"/>
         /// </summary>
@@ -85,6 +150,17 @@ namespace Javax.Print.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobRequiresAttention(javax.print.event.PrintJobEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobRequiresAttention { get; set; }
+
+        void PrintJobRequiresAttentionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
+        {
+            if (OnPrintJobRequiresAttention != null) OnPrintJobRequiresAttention.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobRequiresAttention(javax.print.event.PrintJobEvent)"/>
         /// </summary>

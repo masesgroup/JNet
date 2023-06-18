@@ -27,11 +27,17 @@ namespace Javax.Net.Ssl
 {
     #region ISSLSessionBindingListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.net.ssl.SSLSessionBindingListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html"/>
     /// </summary>
     public partial interface ISSLSessionBindingListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("valueBound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueBoundEventHandler)); OnValueBound = ValueBound;
+            AddEventHandler("valueUnbound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueUnboundEventHandler)); OnValueUnbound = ValueUnbound;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
@@ -73,6 +79,23 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("valueBound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueBoundEventHandler)); OnValueBound = ValueBound;
+            AddEventHandler("valueUnbound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueUnboundEventHandler)); OnValueUnbound = ValueUnbound;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueBound { get; set; }
+
+        void ValueBoundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>> data)
+        {
+            if (OnValueBound != null) OnValueBound.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
@@ -81,6 +104,17 @@ namespace Javax.Net.Ssl
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueUnbound { get; set; }
+
+        void ValueUnboundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>> data)
+        {
+            if (OnValueUnbound != null) OnValueUnbound.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>

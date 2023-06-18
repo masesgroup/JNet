@@ -407,6 +407,24 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("actionPerformed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler)); OnActionPerformed = ActionPerformed;
+                AddEventHandler("setDirection", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(SetDirectionEventHandler)); OnSetDirection = SetDirection;
+                AddEventHandler("setScrollByBlock", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(SetScrollByBlockEventHandler)); OnSetScrollByBlock = SetScrollByBlock;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ScrollListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
+            /// </summary>
+            public System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; }
+
+            void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>> data)
+            {
+                if (OnActionPerformed != null) OnActionPerformed.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ScrollListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
             /// </summary>
@@ -415,6 +433,17 @@ namespace Javax.Swing.Plaf.Basic
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ScrollListener.html#setDirection(int)"/>
+            /// </summary>
+            public System.Action<int> OnSetDirection { get; set; }
+
+            void SetDirectionEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                if (OnSetDirection != null) OnSetDirection.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ScrollListener.html#setDirection(int)"/>
             /// </summary>
@@ -423,6 +452,17 @@ namespace Javax.Swing.Plaf.Basic
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ScrollListener.html#setScrollByBlock(boolean)"/>
+            /// </summary>
+            public System.Action<bool> OnSetScrollByBlock { get; set; }
+
+            void SetScrollByBlockEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
+            {
+                if (OnSetScrollByBlock != null) OnSetScrollByBlock.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ScrollListener.html#setScrollByBlock(boolean)"/>
             /// </summary>
@@ -462,6 +502,26 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("shouldScroll", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ShouldScrollEventHandler)); OnShouldScroll = ShouldScroll;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html#shouldScroll(int)"/>
+            /// </summary>
+            public System.Func<int, bool> OnShouldScroll { get; set; }
+
+            void ShouldScrollEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                if (OnShouldScroll != null)
+                {
+                    var executionResult = OnShouldScroll.Invoke(data.EventData.TypedEventData);
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html#shouldScroll(int)"/>
             /// </summary>

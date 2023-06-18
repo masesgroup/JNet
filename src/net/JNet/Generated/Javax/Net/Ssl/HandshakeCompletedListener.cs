@@ -27,11 +27,16 @@ namespace Javax.Net.Ssl
 {
     #region IHandshakeCompletedListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.net.ssl.HandshakeCompletedListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html"/>
     /// </summary>
     public partial interface IHandshakeCompletedListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("handshakeCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>>>(HandshakeCompletedEventHandler)); OnHandshakeCompleted = HandshakeCompleted;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
         /// </summary>
@@ -68,6 +73,22 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("handshakeCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>>>(HandshakeCompletedEventHandler)); OnHandshakeCompleted = HandshakeCompleted;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Net.Ssl.HandshakeCompletedEvent> OnHandshakeCompleted { get; set; }
+
+        void HandshakeCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>> data)
+        {
+            if (OnHandshakeCompleted != null) OnHandshakeCompleted.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
         /// </summary>

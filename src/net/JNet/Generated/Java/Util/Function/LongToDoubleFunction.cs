@@ -27,11 +27,16 @@ namespace Java.Util.Function
 {
     #region ILongToDoubleFunction
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToDoubleFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.LongToDoubleFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToDoubleFunction.html"/>
     /// </summary>
     public partial interface ILongToDoubleFunction
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToDoubleFunction.html#applyAsDouble(long)"/>
         /// </summary>
@@ -69,6 +74,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToDoubleFunction.html#applyAsDouble(long)"/>
+        /// </summary>
+        public System.Func<long, double> OnApplyAsDouble { get; set; }
+
+        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        {
+            if (OnApplyAsDouble != null)
+            {
+                var executionResult = OnApplyAsDouble.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToDoubleFunction.html#applyAsDouble(long)"/>
         /// </summary>

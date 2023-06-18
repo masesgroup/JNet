@@ -149,6 +149,28 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Instance methods
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("mouseClicked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseClickedEventHandler)); OnMouseClicked = MouseClicked;
+                AddEventHandler("mouseDragged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseDraggedEventHandler)); OnMouseDragged = MouseDragged;
+                AddEventHandler("mouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseEnteredEventHandler)); OnMouseEntered = MouseEntered;
+                AddEventHandler("mouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseExitedEventHandler)); OnMouseExited = MouseExited;
+                AddEventHandler("mouseMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseMovedEventHandler)); OnMouseMoved = MouseMoved;
+                AddEventHandler("mousePressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MousePressedEventHandler)); OnMousePressed = MousePressed;
+                AddEventHandler("mouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseReleasedEventHandler)); OnMouseReleased = MouseReleased;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
+            /// </summary>
+            public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseClicked { get; set; }
+
+            void MouseClickedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+            {
+                if (OnMouseClicked != null) OnMouseClicked.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
             /// </summary>
@@ -157,6 +179,17 @@ namespace Javax.Swing.Plaf.Basic
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseDragged(java.awt.event.MouseEvent)"/>
+            /// </summary>
+            public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseDragged { get; set; }
+
+            void MouseDraggedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+            {
+                if (OnMouseDragged != null) OnMouseDragged.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseDragged(java.awt.event.MouseEvent)"/>
             /// </summary>
@@ -165,6 +198,17 @@ namespace Javax.Swing.Plaf.Basic
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseEntered(java.awt.event.MouseEvent)"/>
+            /// </summary>
+            public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseEntered { get; set; }
+
+            void MouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+            {
+                if (OnMouseEntered != null) OnMouseEntered.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseEntered(java.awt.event.MouseEvent)"/>
             /// </summary>
@@ -173,6 +217,17 @@ namespace Javax.Swing.Plaf.Basic
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseExited(java.awt.event.MouseEvent)"/>
+            /// </summary>
+            public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseExited { get; set; }
+
+            void MouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+            {
+                if (OnMouseExited != null) OnMouseExited.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseExited(java.awt.event.MouseEvent)"/>
             /// </summary>
@@ -181,6 +236,17 @@ namespace Javax.Swing.Plaf.Basic
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseMoved(java.awt.event.MouseEvent)"/>
+            /// </summary>
+            public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseMoved { get; set; }
+
+            void MouseMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+            {
+                if (OnMouseMoved != null) OnMouseMoved.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseMoved(java.awt.event.MouseEvent)"/>
             /// </summary>
@@ -189,6 +255,17 @@ namespace Javax.Swing.Plaf.Basic
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mousePressed(java.awt.event.MouseEvent)"/>
+            /// </summary>
+            public System.Action<Java.Awt.EventNs.MouseEvent> OnMousePressed { get; set; }
+
+            void MousePressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+            {
+                if (OnMousePressed != null) OnMousePressed.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mousePressed(java.awt.event.MouseEvent)"/>
             /// </summary>
@@ -197,6 +274,17 @@ namespace Javax.Swing.Plaf.Basic
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseReleased(java.awt.event.MouseEvent)"/>
+            /// </summary>
+            public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseReleased { get; set; }
+
+            void MouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+            {
+                if (OnMouseReleased != null) OnMouseReleased.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html#mouseReleased(java.awt.event.MouseEvent)"/>
             /// </summary>

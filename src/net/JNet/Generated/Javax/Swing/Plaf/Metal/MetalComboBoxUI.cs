@@ -148,6 +148,10 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Instance methods
+            protected virtual void InitializeHandlers()
+            {
+
+            }
 
             #endregion
 

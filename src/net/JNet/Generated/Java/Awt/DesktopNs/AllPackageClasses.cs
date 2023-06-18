@@ -206,10 +206,14 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AppForegroundListener() { }
+        public AppForegroundListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.AppForegroundListener";
 
+    
         // TODO: complete the class
 
     }
@@ -267,10 +271,14 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AppHiddenListener() { }
+        public AppHiddenListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.AppHiddenListener";
 
+    
         // TODO: complete the class
 
     }
@@ -328,10 +336,14 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AppReopenedListener() { }
+        public AppReopenedListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.AppReopenedListener";
 
+    
         // TODO: complete the class
 
     }
@@ -948,10 +960,14 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ScreenSleepListener() { }
+        public ScreenSleepListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.ScreenSleepListener";
 
+    
         // TODO: complete the class
 
     }
@@ -966,10 +982,14 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SystemEventListener() { }
+        public SystemEventListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.SystemEventListener";
 
+    
         // TODO: complete the class
 
     }
@@ -1027,10 +1047,14 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SystemSleepListener() { }
+        public SystemSleepListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.SystemSleepListener";
 
+    
         // TODO: complete the class
 
     }
@@ -1131,10 +1155,14 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public UserSessionListener() { }
+        public UserSessionListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.desktop.UserSessionListener";
 
+    
         // TODO: complete the class
 
     }

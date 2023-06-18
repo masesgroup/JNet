@@ -45,6 +45,22 @@ namespace Javax.Tools
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("report", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Tools.Diagnostic>>>(ReportEventHandler)); OnReport = Report;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html#report(javax.tools.Diagnostic)"/>
+        /// </summary>
+        public System.Action<Javax.Tools.Diagnostic> OnReport { get; set; }
+
+        void ReportEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Tools.Diagnostic>> data)
+        {
+            if (OnReport != null) OnReport.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html#report(javax.tools.Diagnostic)"/>
         /// </summary>
@@ -66,11 +82,16 @@ namespace Javax.Tools
 
     #region IDiagnosticListener<S>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.tools.DiagnosticListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html"/>
     /// </summary>
     public partial interface IDiagnosticListener<S>
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("report", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Tools.Diagnostic<Arg0ExtendsS>>>>(Report<Arg0ExtendsS>EventHandler)); OnReport<Arg0ExtendsS> = Report<Arg0ExtendsS>;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html#report(javax.tools.Diagnostic)"/>
         /// </summary>
@@ -108,6 +129,22 @@ namespace Javax.Tools
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("report", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Tools.Diagnostic<Arg0ExtendsS>>>>(Report<Arg0ExtendsS>EventHandler)); OnReport<Arg0ExtendsS> = Report<Arg0ExtendsS>;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html#report(javax.tools.Diagnostic)"/>
+        /// </summary>
+        public System.Action<Javax.Tools.Diagnostic<Arg0ExtendsS>> OnReport<Arg0ExtendsS> { get; set; }
+
+        void Report<Arg0ExtendsS>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Tools.Diagnostic<Arg0ExtendsS>>> data)
+        {
+            if (OnReport<Arg0ExtendsS> != null) OnReport<Arg0ExtendsS>.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html#report(javax.tools.Diagnostic)"/>
         /// </summary>

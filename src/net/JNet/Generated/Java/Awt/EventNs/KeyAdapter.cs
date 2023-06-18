@@ -45,6 +45,24 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("keyPressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyPressedEventHandler)); OnKeyPressed = KeyPressed;
+            AddEventHandler("keyReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyReleasedEventHandler)); OnKeyReleased = KeyReleased;
+            AddEventHandler("keyTyped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyTypedEventHandler)); OnKeyTyped = KeyTyped;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html#keyPressed(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.KeyEvent> OnKeyPressed { get; set; }
+
+        void KeyPressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>> data)
+        {
+            if (OnKeyPressed != null) OnKeyPressed.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html#keyPressed(java.awt.event.KeyEvent)"/>
         /// </summary>
@@ -53,6 +71,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html#keyReleased(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.KeyEvent> OnKeyReleased { get; set; }
+
+        void KeyReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>> data)
+        {
+            if (OnKeyReleased != null) OnKeyReleased.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html#keyReleased(java.awt.event.KeyEvent)"/>
         /// </summary>
@@ -61,6 +90,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html#keyTyped(java.awt.event.KeyEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.KeyEvent> OnKeyTyped { get; set; }
+
+        void KeyTypedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>> data)
+        {
+            if (OnKeyTyped != null) OnKeyTyped.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyAdapter.html#keyTyped(java.awt.event.KeyEvent)"/>
         /// </summary>

@@ -27,11 +27,16 @@ namespace Java.Beans.Beancontext
 {
     #region IBeanContextServicesListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.beans.beancontext.BeanContextServicesListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html"/>
     /// </summary>
     public partial interface IBeanContextServicesListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("serviceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>>>(ServiceAvailableEventHandler)); OnServiceAvailable = ServiceAvailable;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>
@@ -68,6 +73,22 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("serviceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>>>(ServiceAvailableEventHandler)); OnServiceAvailable = ServiceAvailable;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
+        /// </summary>
+        public System.Action<Java.Beans.Beancontext.BeanContextServiceAvailableEvent> OnServiceAvailable { get; set; }
+
+        void ServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>> data)
+        {
+            if (OnServiceAvailable != null) OnServiceAvailable.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>

@@ -27,11 +27,16 @@ namespace Javax.Management
 {
     #region INotificationFilter
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.management.NotificationFilter implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html"/>
     /// </summary>
     public partial interface INotificationFilter
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("isNotificationEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(IsNotificationEnabledEventHandler)); OnIsNotificationEnabled = IsNotificationEnabled;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
         /// </summary>
@@ -69,6 +74,26 @@ namespace Javax.Management
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("isNotificationEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(IsNotificationEnabledEventHandler)); OnIsNotificationEnabled = IsNotificationEnabled;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
+        /// </summary>
+        public System.Func<Javax.Management.Notification, bool> OnIsNotificationEnabled { get; set; }
+
+        void IsNotificationEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Management.Notification>> data)
+        {
+            if (OnIsNotificationEnabled != null)
+            {
+                var executionResult = OnIsNotificationEnabled.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
         /// </summary>

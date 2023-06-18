@@ -45,6 +45,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyEventHandler)); OnApply = Apply;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
+        /// </summary>
+        public System.Func<double, object> OnApply { get; set; }
+
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        {
+            if (OnApply != null)
+            {
+                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>
@@ -67,11 +87,16 @@ namespace Java.Util.Function
 
     #region IDoubleFunction<R>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.DoubleFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html"/>
     /// </summary>
     public partial interface IDoubleFunction<R>
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyEventHandler)); OnApply = Apply;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>
@@ -109,6 +134,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyEventHandler)); OnApply = Apply;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
+        /// </summary>
+        public System.Func<double, R> OnApply { get; set; }
+
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        {
+            if (OnApply != null)
+            {
+                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>

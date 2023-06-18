@@ -25,13 +25,16 @@ _jnr_ accepts the following command-line switch:
 * **JavadocVersion**: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used
 * **OriginJavadocJARVersionAndUrls**: A CSV list of keypair of JavadocVersion and OriginJavadocUrl, separated by |, associated to the JARs to be analyzed
 * **DestinationRootPath**: The destination root path where reflected classes will be stored
+* **DestinationJavaListenerPath**: The destination root path where Java listener classes will be stored
+* **JavaListenerBasePackage**: The base package name to use when a Java listener class is created
 * **ClassesToAnalyze**: A CSV list of full qualified class names to be analyzed
 * **JarList**: A CSV list of JAR to be analyzed or folders containing the JARs
 * **ModulesToParse**: A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath
 * **NamespacesToAvoid**: A CSV list of namespaces to be removed from analysis
 * **ClassesToAvoid**: A CSV list of classes to be removed during analysis
 * **ClassesToAvoidInGenerics**: A CSV list of classes to be removed during analysis from the classes which have generics types
-* **ClassesToBeListener**: A CSV list of class names to be treated as Listener
+* **ClassesToBeListener**: A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with "Listener" or "Adapter" as Listener
+* **ClassesToAvoidJavaListener**: A CSV list of class names to be avoided during generation of Java listener classes
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
 * **ClassesInConflict**: A CSV list of classes in conflict with namespace name: to this one will be added an "Class" at the end
 * **OnlyPropertiesForGetterSetter**: The option forces the tool to convert into properties only getter/setter

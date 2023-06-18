@@ -45,6 +45,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
+        /// </summary>
+        public System.Func<object> OnGet { get; set; }
+
+        void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnGet != null)
+            {
+                var executionResult = OnGet.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
@@ -67,11 +87,16 @@ namespace Java.Util.Function
 
     #region ISupplier<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.Supplier implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html"/>
     /// </summary>
     public partial interface ISupplier<T>
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
@@ -109,6 +134,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
+        /// </summary>
+        public System.Func<T> OnGet { get; set; }
+
+        void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnGet != null)
+            {
+                var executionResult = OnGet.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>

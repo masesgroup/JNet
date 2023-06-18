@@ -27,11 +27,16 @@ namespace Java.Awt.EventNs
 {
     #region IAWTEventListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.AWTEventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html"/>
     /// </summary>
     public partial interface IAWTEventListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("eventDispatched", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>>>(EventDispatchedEventHandler)); OnEventDispatched = EventDispatched;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
         /// </summary>
@@ -68,6 +73,22 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("eventDispatched", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>>>(EventDispatchedEventHandler)); OnEventDispatched = EventDispatched;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.AWTEvent> OnEventDispatched { get; set; }
+
+        void EventDispatchedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>> data)
+        {
+            if (OnEventDispatched != null) OnEventDispatched.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
         /// </summary>

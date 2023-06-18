@@ -27,11 +27,19 @@ namespace Java.Util.Function
 {
     #region IDoublePredicate
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.DoublePredicate implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html"/>
     /// </summary>
     public partial interface IDoublePredicate
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(TestEventHandler)); OnTest = Test;
+            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>>>(AndEventHandler)); OnAnd = And;
+            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
+            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>>>(OrEventHandler)); OnOr = Or;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
@@ -87,6 +95,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(TestEventHandler)); OnTest = Test;
+            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>>>(AndEventHandler)); OnAnd = And;
+            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
+            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>>>(OrEventHandler)); OnOr = Or;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
+        /// </summary>
+        public System.Func<double, bool> OnTest { get; set; }
+
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        {
+            if (OnTest != null)
+            {
+                var executionResult = OnTest.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
@@ -96,6 +127,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnAnd { get; set; }
+
+        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>> data)
+        {
+            if (OnAnd != null)
+            {
+                var executionResult = OnAnd.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
@@ -105,6 +151,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.DoublePredicate> OnNegate { get; set; }
+
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnNegate != null)
+            {
+                var executionResult = OnNegate.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
@@ -114,6 +175,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnOr { get; set; }
+
+        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>> data)
+        {
+            if (OnOr != null)
+            {
+                var executionResult = OnOr.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>

@@ -27,11 +27,16 @@ namespace Javax.Management
 {
     #region INotificationListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.management.NotificationListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html"/>
     /// </summary>
     public partial interface INotificationListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("handleNotification", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(HandleNotificationEventHandler)); OnHandleNotification = HandleNotification;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
         /// </summary>
@@ -69,6 +74,22 @@ namespace Javax.Management
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("handleNotification", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(HandleNotificationEventHandler)); OnHandleNotification = HandleNotification;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
+        /// </summary>
+        public System.Action<Javax.Management.Notification, object> OnHandleNotification { get; set; }
+
+        void HandleNotificationEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Management.Notification>> data)
+        {
+            if (OnHandleNotification != null) OnHandleNotification.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
         /// </summary>

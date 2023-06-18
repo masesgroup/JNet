@@ -141,6 +141,27 @@ namespace Java.Util
             #endregion
 
             #region Instance methods
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("type", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(TypeEventHandler)); OnType = Type;
+                AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#type()"/>
+            /// </summary>
+            public System.Func<Java.Lang.Class> OnType { get; set; }
+
+            void TypeEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnType != null)
+                {
+                    var executionResult = OnType.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#type()"/>
             /// </summary>
@@ -150,6 +171,21 @@ namespace Java.Util
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#get()"/>
+            /// </summary>
+            public System.Func<object> OnGet { get; set; }
+
+            void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnGet != null)
+                {
+                    var executionResult = OnGet.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#get()"/>
             /// </summary>
@@ -190,6 +226,27 @@ namespace Java.Util
             #endregion
 
             #region Instance methods
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("type", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(Type<ReturnExtendsS>EventHandler)); OnType<ReturnExtendsS> = Type<ReturnExtendsS>;
+                AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#type()"/>
+            /// </summary>
+            public System.Func<Java.Lang.Class> OnType<ReturnExtendsS> { get; set; }
+
+            void Type<ReturnExtendsS>EventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnType<ReturnExtendsS> != null)
+                {
+                    var executionResult = OnType<ReturnExtendsS>.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#type()"/>
             /// </summary>
@@ -200,6 +257,21 @@ namespace Java.Util
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#get()"/>
+            /// </summary>
+            public System.Func<S> OnGet { get; set; }
+
+            void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnGet != null)
+                {
+                    var executionResult = OnGet.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#get()"/>
             /// </summary>

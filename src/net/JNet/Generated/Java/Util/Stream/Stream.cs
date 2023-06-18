@@ -463,6 +463,28 @@ namespace Java.Util.Stream
             #endregion
 
             #region Instance methods
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("build", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(BuildEventHandler)); OnBuild = Build;
+                AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler)); OnAccept = Accept;
+                AddEventHandler("add", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AddEventHandler)); OnAdd = Add;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#build()"/>
+            /// </summary>
+            public System.Func<Java.Util.Stream.Stream> OnBuild { get; set; }
+
+            void BuildEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnBuild != null)
+                {
+                    var executionResult = OnBuild.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#build()"/>
             /// </summary>
@@ -472,6 +494,17 @@ namespace Java.Util.Stream
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#accept(java.lang.Object)"/>
+            /// </summary>
+            public System.Action<object> OnAccept { get; set; }
+
+            void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+            {
+                if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#accept(java.lang.Object)"/>
             /// </summary>
@@ -480,6 +513,21 @@ namespace Java.Util.Stream
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#add(java.lang.Object)"/>
+            /// </summary>
+            public System.Func<object, Java.Util.Stream.Stream.Builder> OnAdd { get; set; }
+
+            void AddEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+            {
+                if (OnAdd != null)
+                {
+                    var executionResult = OnAdd.Invoke(data.EventData.TypedEventData);
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#add(java.lang.Object)"/>
             /// </summary>
@@ -520,6 +568,28 @@ namespace Java.Util.Stream
             #endregion
 
             #region Instance methods
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("build", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(BuildEventHandler)); OnBuild = Build;
+                AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler)); OnAccept = Accept;
+                AddEventHandler("add", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AddEventHandler)); OnAdd = Add;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#build()"/>
+            /// </summary>
+            public System.Func<Java.Util.Stream.Stream<T>> OnBuild { get; set; }
+
+            void BuildEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnBuild != null)
+                {
+                    var executionResult = OnBuild.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#build()"/>
             /// </summary>
@@ -529,6 +599,17 @@ namespace Java.Util.Stream
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#accept(java.lang.Object)"/>
+            /// </summary>
+            public System.Action<T> OnAccept { get; set; }
+
+            void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+            {
+                if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#accept(java.lang.Object)"/>
             /// </summary>
@@ -537,6 +618,21 @@ namespace Java.Util.Stream
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#add(java.lang.Object)"/>
+            /// </summary>
+            public System.Func<T, Java.Util.Stream.Stream.Builder<T>> OnAdd { get; set; }
+
+            void AddEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+            {
+                if (OnAdd != null)
+                {
+                    var executionResult = OnAdd.Invoke(data.EventData.TypedEventData);
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#add(java.lang.Object)"/>
             /// </summary>
@@ -566,7 +662,7 @@ namespace Java.Util.Stream
 
     #region IStream<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IStream<T> : Java.Util.Stream.IBaseStream<T, Java.Util.Stream.Stream<T>>
     {

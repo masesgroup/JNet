@@ -27,11 +27,17 @@ namespace Java.Util.Prefs
 {
     #region INodeChangeListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.prefs.NodeChangeListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html"/>
     /// </summary>
     public partial interface INodeChangeListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("childAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildAddedEventHandler)); OnChildAdded = ChildAdded;
+            AddEventHandler("childRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildRemovedEventHandler)); OnChildRemoved = ChildRemoved;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
@@ -73,6 +79,23 @@ namespace Java.Util.Prefs
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("childAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildAddedEventHandler)); OnChildAdded = ChildAdded;
+            AddEventHandler("childRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildRemovedEventHandler)); OnChildRemoved = ChildRemoved;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
+        /// </summary>
+        public System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildAdded { get; set; }
+
+        void ChildAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>> data)
+        {
+            if (OnChildAdded != null) OnChildAdded.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
@@ -81,6 +104,17 @@ namespace Java.Util.Prefs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
+        /// </summary>
+        public System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildRemoved { get; set; }
+
+        void ChildRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>> data)
+        {
+            if (OnChildRemoved != null) OnChildRemoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>

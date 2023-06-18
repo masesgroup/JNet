@@ -27,7 +27,7 @@ namespace Java.Awt.ImageNs
 {
     #region IBufferedImageOp
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImageOp.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IBufferedImageOp
     {

@@ -27,11 +27,16 @@ namespace Javax.Print.Event
 {
     #region IPrintJobAttributeListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.print.event.PrintJobAttributeListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html"/>
     /// </summary>
     public partial interface IPrintJobAttributeListener
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("attributeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobAttributeEvent>>>(AttributeUpdateEventHandler)); OnAttributeUpdate = AttributeUpdate;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html#attributeUpdate(javax.print.event.PrintJobAttributeEvent)"/>
         /// </summary>
@@ -68,6 +73,22 @@ namespace Javax.Print.Event
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("attributeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobAttributeEvent>>>(AttributeUpdateEventHandler)); OnAttributeUpdate = AttributeUpdate;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html#attributeUpdate(javax.print.event.PrintJobAttributeEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Print.Event.PrintJobAttributeEvent> OnAttributeUpdate { get; set; }
+
+        void AttributeUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobAttributeEvent>> data)
+        {
+            if (OnAttributeUpdate != null) OnAttributeUpdate.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html#attributeUpdate(javax.print.event.PrintJobAttributeEvent)"/>
         /// </summary>

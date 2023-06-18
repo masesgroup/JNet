@@ -27,11 +27,16 @@ namespace Java.Util.Function
 {
     #region ILongSupplier
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.LongSupplier implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html"/>
     /// </summary>
     public partial interface ILongSupplier
     {
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("getAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler)); OnGetAsLong = GetAsLong;
+
+        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>
@@ -69,6 +74,26 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("getAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler)); OnGetAsLong = GetAsLong;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
+        /// </summary>
+        public System.Func<long> OnGetAsLong { get; set; }
+
+        void GetAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnGetAsLong != null)
+            {
+                var executionResult = OnGetAsLong.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>

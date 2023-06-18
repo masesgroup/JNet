@@ -45,6 +45,10 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        protected virtual void InitializeHandlers()
+        {
+
+        }
 
         #endregion
 
