@@ -13,10 +13,12 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageTags>jnet cli reflection utility dotnet clr netcore net6 java jvm</PackageTags>
     <PackageId>MASES.JNetReflector</PackageId>
-	<DefineConstants>$(DefineConstants)TRACE;JNETREFLECTOR</DefineConstants>
+    <DefineConstants>$(DefineConstants)TRACE;JNETREFLECTOR</DefineConstants>
+    <PackageReadmeFile>usageReflector.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <jnetreflector_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
+    <None Include="..\Documentation\articles\usageReflector.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
     <Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(OutDir)\jars" />
@@ -38,6 +40,9 @@
     <None Remove="Templates\SingleInterface.template" />
     <None Remove="Templates\SingleInterfaceMethod.template" />
     <None Remove="Templates\SingleInterfaceProperty.template" />
+    <None Remove="Templates\SingleListenerJavaFile.template" />
+    <None Remove="Templates\SingleListenerJavaMethod.template" />
+    <None Remove="Templates\SingleListenerMethod.template" />
     <None Remove="Templates\SingleMethod.template" />
     <None Remove="Templates\SingleProperty.template" />
   </ItemGroup>
@@ -128,12 +133,15 @@
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
+    <EmbeddedResource Include="Templates\SingleListenerJavaFile.template" />
     <EmbeddedResource Include="Templates\SingleInterface.template" />
     <EmbeddedResource Include="Templates\SingleClassFile.template" />
     <EmbeddedResource Include="Templates\SingleConstructor.template" />
     <EmbeddedResource Include="Templates\SingleField.template" />
     <EmbeddedResource Include="Templates\SingleInterfaceProperty.template" />
     <EmbeddedResource Include="Templates\SingleInterfaceMethod.template" />
+    <EmbeddedResource Include="Templates\SingleListenerMethod.template" />
+    <EmbeddedResource Include="Templates\SingleListenerJavaMethod.template" />
     <EmbeddedResource Include="Templates\SingleProperty.template" />
     <EmbeddedResource Include="Templates\SingleMethod.template" />
     <EmbeddedResource Include="Templates\SingleClass.template" />
