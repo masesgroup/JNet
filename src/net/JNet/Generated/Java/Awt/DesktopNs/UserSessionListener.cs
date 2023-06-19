@@ -32,12 +32,6 @@ namespace Java.Awt.DesktopNs
     public partial interface IUserSessionListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("userSessionActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionActivatedEventHandler)); OnUserSessionActivated = UserSessionActivated;
-            AddEventHandler("userSessionDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionDeactivatedEventHandler)); OnUserSessionDeactivated = UserSessionDeactivated;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionActivated(java.awt.desktop.UserSessionEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="UserSessionListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("userSessionActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionActivatedEventHandler)); OnUserSessionActivated = UserSessionActivated;

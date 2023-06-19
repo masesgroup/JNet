@@ -32,13 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IListDataListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("contentsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(ContentsChangedEventHandler)); OnContentsChanged = ContentsChanged;
-            AddEventHandler("intervalAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalAddedEventHandler)); OnIntervalAdded = IntervalAdded;
-            AddEventHandler("intervalRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalRemovedEventHandler)); OnIntervalRemoved = IntervalRemoved;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListDataListener.html#contentsChanged(javax.swing.event.ListDataEvent)"/>
         /// </summary>
@@ -85,6 +78,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ListDataListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("contentsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(ContentsChangedEventHandler)); OnContentsChanged = ContentsChanged;

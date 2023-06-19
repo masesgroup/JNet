@@ -32,12 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IInputMethodListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("caretPositionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(CaretPositionChangedEventHandler)); OnCaretPositionChanged = CaretPositionChanged;
-            AddEventHandler("inputMethodTextChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(InputMethodTextChangedEventHandler)); OnInputMethodTextChanged = InputMethodTextChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="InputMethodListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("caretPositionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(CaretPositionChangedEventHandler)); OnCaretPositionChanged = CaretPositionChanged;

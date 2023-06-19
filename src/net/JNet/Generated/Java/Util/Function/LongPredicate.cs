@@ -32,14 +32,6 @@ namespace Java.Util.Function
     public partial interface ILongPredicate
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(TestEventHandler)); OnTest = Test;
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(AndEventHandler)); OnAnd = And;
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(OrEventHandler)); OnOr = Or;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#test(long)"/>
         /// </summary>
@@ -95,6 +87,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="LongPredicate"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(TestEventHandler)); OnTest = Test;

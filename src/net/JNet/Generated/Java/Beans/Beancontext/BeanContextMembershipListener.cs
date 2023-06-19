@@ -32,12 +32,6 @@ namespace Java.Beans.Beancontext
     public partial interface IBeanContextMembershipListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("childrenAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenAddedEventHandler)); OnChildrenAdded = ChildrenAdded;
-            AddEventHandler("childrenRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenRemovedEventHandler)); OnChildrenRemoved = ChildrenRemoved;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextMembershipListener.html#childrenAdded(java.beans.beancontext.BeanContextMembershipEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BeanContextMembershipListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("childrenAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenAddedEventHandler)); OnChildrenAdded = ChildrenAdded;

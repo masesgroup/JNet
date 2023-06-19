@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface IDoubleSupplier
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("getAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler)); OnGetAsDouble = GetAsDouble;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="DoubleSupplier"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("getAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler)); OnGetAsDouble = GetAsDouble;

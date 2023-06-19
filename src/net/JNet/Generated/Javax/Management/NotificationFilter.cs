@@ -32,11 +32,6 @@ namespace Javax.Management
     public partial interface INotificationFilter
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("isNotificationEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(IsNotificationEnabledEventHandler)); OnIsNotificationEnabled = IsNotificationEnabled;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Javax.Management
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="NotificationFilter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("isNotificationEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(IsNotificationEnabledEventHandler)); OnIsNotificationEnabled = IsNotificationEnabled;

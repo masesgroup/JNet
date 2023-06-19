@@ -32,13 +32,6 @@ namespace Java.Util.Function
     public partial interface IDoubleUnaryOperator
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>>>(AndThenEventHandler)); OnAndThen = AndThen;
-            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>>>(ComposeEventHandler)); OnCompose = Compose;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)"/>
         /// </summary>
@@ -88,6 +81,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="DoubleUnaryOperator"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;

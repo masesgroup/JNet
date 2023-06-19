@@ -32,11 +32,6 @@ namespace Java.Beans
     public partial interface IVetoableChangeListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("vetoableChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(VetoableChangeEventHandler)); OnVetoableChange = VetoableChange;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Java.Beans
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="VetoableChangeListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("vetoableChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(VetoableChangeEventHandler)); OnVetoableChange = VetoableChange;

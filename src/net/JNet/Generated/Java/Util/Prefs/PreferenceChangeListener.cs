@@ -32,11 +32,6 @@ namespace Java.Util.Prefs
     public partial interface IPreferenceChangeListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("preferenceChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>>>(PreferenceChangeEventHandler)); OnPreferenceChange = PreferenceChange;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Util.Prefs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="PreferenceChangeListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("preferenceChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>>>(PreferenceChangeEventHandler)); OnPreferenceChange = PreferenceChange;

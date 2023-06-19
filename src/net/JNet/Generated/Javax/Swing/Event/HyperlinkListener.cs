@@ -32,11 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IHyperlinkListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("hyperlinkUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.HyperlinkEvent>>>(HyperlinkUpdateEventHandler)); OnHyperlinkUpdate = HyperlinkUpdate;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="HyperlinkListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("hyperlinkUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.HyperlinkEvent>>>(HyperlinkUpdateEventHandler)); OnHyperlinkUpdate = HyperlinkUpdate;

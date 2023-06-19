@@ -32,11 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IListSelectionListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("valueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>>>(ValueChangedEventHandler)); OnValueChanged = ValueChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionListener.html#valueChanged(javax.swing.event.ListSelectionEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ListSelectionListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("valueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>>>(ValueChangedEventHandler)); OnValueChanged = ValueChanged;

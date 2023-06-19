@@ -45,6 +45,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="KeyAdapter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("keyPressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyPressedEventHandler)); OnKeyPressed = KeyPressed;

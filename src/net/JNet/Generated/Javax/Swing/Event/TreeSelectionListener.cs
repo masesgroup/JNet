@@ -32,11 +32,6 @@ namespace Javax.Swing.Event
     public partial interface ITreeSelectionListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("valueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeSelectionEvent>>>(ValueChangedEventHandler)); OnValueChanged = ValueChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionListener.html#valueChanged(javax.swing.event.TreeSelectionEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="TreeSelectionListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("valueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeSelectionEvent>>>(ValueChangedEventHandler)); OnValueChanged = ValueChanged;

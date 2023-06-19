@@ -32,11 +32,6 @@ namespace Javax.Naming.Ldap
     public partial interface IUnsolicitedNotificationListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("notificationReceived", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>>>(NotificationReceivedEventHandler)); OnNotificationReceived = NotificationReceived;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html#notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="UnsolicitedNotificationListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("notificationReceived", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>>>(NotificationReceivedEventHandler)); OnNotificationReceived = NotificationReceived;

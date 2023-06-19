@@ -32,12 +32,6 @@ namespace Java.Awt.DesktopNs
     public partial interface IAppHiddenListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("appHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppHiddenEventHandler)); OnAppHidden = AppHidden;
-            AddEventHandler("appUnhidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppUnhiddenEventHandler)); OnAppUnhidden = AppUnhidden;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appHidden(java.awt.desktop.AppHiddenEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="AppHiddenListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("appHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppHiddenEventHandler)); OnAppHidden = AppHidden;

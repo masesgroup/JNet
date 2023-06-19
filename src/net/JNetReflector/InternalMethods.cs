@@ -1842,9 +1842,9 @@ namespace MASES.JNetReflector
 
             var returnStr = subClassBlock.ToString();
 
-            if (forListener)
+            if (forListener && !forInterface)
             {
-                var listenerBlock = string.Format(AllPackageClasses.ClassStub.MethodStub.BLOCK_LISTENER_HANDLER_FORMAT, subListenerHandlerBlock.ToString());
+                var listenerBlock = string.Format(AllPackageClasses.ClassStub.MethodStub.BLOCK_LISTENER_HANDLER_FORMAT, classDefinition.JVMClassName(null, false), subListenerHandlerBlock.ToString());
                 returnStr = listenerBlock + returnStr;
             }
 

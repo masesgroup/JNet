@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="Predicate"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler)); OnTest = Test;
@@ -167,14 +170,6 @@ namespace Java.Util.Function
     public partial interface IPredicate<T>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler)); OnTest = Test;
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>>>(And<Arg0objectSuperT>EventHandler)); OnAnd<Arg0objectSuperT> = And<Arg0objectSuperT>;
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>>>(Or<Arg0objectSuperT>EventHandler)); OnOr<Arg0objectSuperT> = Or<Arg0objectSuperT>;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
@@ -232,6 +227,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="Predicate"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler)); OnTest = Test;

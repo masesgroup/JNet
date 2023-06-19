@@ -33,35 +33,6 @@ namespace Javax.Management
     /// </summary>
     public partial class NotificationListener : INotificationListener
     {
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_IsInterface.htm"/>
-        public override bool IsBridgeInterface => true;
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        public override string BridgeClassName => "org.mases.jnet.management.JNetNotificationListener";
 
-        readonly Action<Notification, object> handleNotificationFunction = null;
-        /// <summary>
-        /// The <see cref="Action{T1, T2}"/> to be executed on HandleNotification
-        /// </summary>
-        public virtual Action<Notification, object> OnHandleNotification { get { return handleNotificationFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="NotificationListener"/>
-        /// </summary>
-        /// <param name="handleNotification">The <see cref="Action{T1, T2}"/> to be executed on HandleNotification</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public NotificationListener(Action<Notification, object> handleNotification = null, bool attachEventHandler = true)
-        {
-            if (handleNotification != null) handleNotificationFunction = handleNotification;
-            else handleNotificationFunction = HandleNotification;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("handleNotification", new EventHandler<CLRListenerEventArgs<CLREventData<Notification>>>(EventHandlerHandleNotification));
-            }
-        }
-
-        void EventHandlerHandleNotification(object sender, CLRListenerEventArgs<CLREventData<Notification>> data)
-        {
-            OnHandleNotification(data.EventData.TypedEventData, data.EventData.To<object>(0));
-        }
     }
 }

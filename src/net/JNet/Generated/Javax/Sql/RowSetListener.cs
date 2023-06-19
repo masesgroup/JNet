@@ -32,13 +32,6 @@ namespace Javax.Sql
     public partial interface IRowSetListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("cursorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(CursorMovedEventHandler)); OnCursorMoved = CursorMoved;
-            AddEventHandler("rowChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowChangedEventHandler)); OnRowChanged = RowChanged;
-            AddEventHandler("rowSetChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowSetChangedEventHandler)); OnRowSetChanged = RowSetChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
         /// </summary>
@@ -85,6 +78,9 @@ namespace Javax.Sql
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="RowSetListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("cursorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(CursorMovedEventHandler)); OnCursorMoved = CursorMoved;

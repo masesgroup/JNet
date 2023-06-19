@@ -45,6 +45,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ComponentAdapter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("componentHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentHiddenEventHandler)); OnComponentHidden = ComponentHidden;

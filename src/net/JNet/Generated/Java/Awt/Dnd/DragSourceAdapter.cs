@@ -45,6 +45,9 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="DragSourceAdapter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("dragDropEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDropEvent>>>(DragDropEndEventHandler)); OnDragDropEnd = DragDropEnd;

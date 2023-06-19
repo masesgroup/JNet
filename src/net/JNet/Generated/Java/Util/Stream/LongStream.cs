@@ -733,6 +733,9 @@ namespace Java.Util.Stream
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see cref="Builder"/>
+            /// </summary>
             protected virtual void InitializeHandlers()
             {
                 AddEventHandler("build", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(BuildEventHandler)); OnBuild = Build;

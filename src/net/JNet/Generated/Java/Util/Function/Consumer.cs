@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="Consumer"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler)); OnAccept = Accept;
@@ -112,12 +115,6 @@ namespace Java.Util.Function
     public partial interface IConsumer<T>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler)); OnAccept = Accept;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer<Arg0objectSuperT>>>>(AndThen<Arg0objectSuperT>EventHandler)); OnAndThen<Arg0objectSuperT> = AndThen<Arg0objectSuperT>;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
@@ -161,6 +158,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="Consumer"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler)); OnAccept = Accept;

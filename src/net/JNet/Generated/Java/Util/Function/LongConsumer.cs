@@ -32,12 +32,6 @@ namespace Java.Util.Function
     public partial interface ILongConsumer
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(AcceptEventHandler)); OnAccept = Accept;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongConsumer>>>(AndThenEventHandler)); OnAndThen = AndThen;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#accept(long)"/>
         /// </summary>
@@ -80,6 +74,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="LongConsumer"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(AcceptEventHandler)); OnAccept = Accept;

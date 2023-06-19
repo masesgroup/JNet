@@ -32,11 +32,6 @@ namespace Javax.Sound.Sampled
     public partial interface ILineListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("update", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Sampled.LineEvent>>>(UpdateEventHandler)); OnUpdate = Update;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="LineListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("update", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Sampled.LineEvent>>>(UpdateEventHandler)); OnUpdate = Update;

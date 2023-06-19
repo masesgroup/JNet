@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface ILongSupplier
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("getAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler)); OnGetAsLong = GetAsLong;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="LongSupplier"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("getAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler)); OnGetAsLong = GetAsLong;

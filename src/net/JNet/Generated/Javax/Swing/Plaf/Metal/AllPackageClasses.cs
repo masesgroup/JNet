@@ -1096,28 +1096,6 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
-        #region MetalPropertyChangeListener
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.MetalPropertyChangeListener.html"/>
-        /// </summary>
-        public partial class MetalPropertyChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public MetalPropertyChangeListener() { InitializeHandlers(); }
-
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-            /// </summary>
-            public override string BridgeClassName => "org.mases.jnet.generated.javax.swing.plaf.metal.MetalPropertyChangeListener";
-
-        
-            // TODO: complete the class
-
-        }
-        #endregion
-
     
     }
     #endregion

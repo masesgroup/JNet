@@ -45,6 +45,9 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="DropTargetAdapter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("dragEnter", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>>>(DragEnterEventHandler)); OnDragEnter = DragEnter;

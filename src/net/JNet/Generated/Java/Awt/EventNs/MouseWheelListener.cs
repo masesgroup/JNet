@@ -32,11 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IMouseWheelListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("mouseWheelMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseWheelEvent>>>(MouseWheelMovedEventHandler)); OnMouseWheelMoved = MouseWheelMoved;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelListener.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="MouseWheelListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("mouseWheelMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseWheelEvent>>>(MouseWheelMovedEventHandler)); OnMouseWheelMoved = MouseWheelMoved;

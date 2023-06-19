@@ -32,11 +32,6 @@ namespace Javax.Naming.Event
     public partial interface INamingListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler)); OnNamingExceptionThrown = NamingExceptionThrown;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Naming.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="NamingListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler)); OnNamingExceptionThrown = NamingExceptionThrown;

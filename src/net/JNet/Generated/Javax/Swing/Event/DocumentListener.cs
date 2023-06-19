@@ -32,13 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IDocumentListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("changedUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(ChangedUpdateEventHandler)); OnChangedUpdate = ChangedUpdate;
-            AddEventHandler("insertUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(InsertUpdateEventHandler)); OnInsertUpdate = InsertUpdate;
-            AddEventHandler("removeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(RemoveUpdateEventHandler)); OnRemoveUpdate = RemoveUpdate;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#changedUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>
@@ -85,6 +78,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="DocumentListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("changedUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(ChangedUpdateEventHandler)); OnChangedUpdate = ChangedUpdate;

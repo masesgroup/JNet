@@ -32,11 +32,6 @@ namespace Java.Awt.Datatransfer
     public partial interface IFlavorListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("flavorsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>>>(FlavorsChangedEventHandler)); OnFlavorsChanged = FlavorsChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Awt.Datatransfer
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="FlavorListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("flavorsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>>>(FlavorsChangedEventHandler)); OnFlavorsChanged = FlavorsChanged;

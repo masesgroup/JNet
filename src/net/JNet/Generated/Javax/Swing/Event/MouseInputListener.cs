@@ -32,10 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IMouseInputListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-
-        }
 
         #endregion
 
@@ -67,6 +63,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="MouseInputListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
 

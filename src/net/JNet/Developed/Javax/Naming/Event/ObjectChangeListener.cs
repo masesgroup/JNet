@@ -35,35 +35,6 @@ namespace Javax.Naming.Event
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ObjectChangeListener : IObjectChangeListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.naming.event.JNetObjectChangeListener";
 
-        readonly Action<NamingEvent> ObjectChangedFunction = null;
-        /// <summary>
-        /// The <see cref="Action{NamingEvent}"/> to be executed on ObjectChanged
-        /// </summary>
-        public virtual Action<NamingEvent> OnObjectChanged { get { return ObjectChangedFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="ObjectChangeListener"/>
-        /// </summary>
-        /// <param name="objectChanged">The <see cref="Action{NamingEvent}"/> to be executed on ObjectChanged</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public ObjectChangeListener(Action<NamingEvent> objectChanged = null, bool attachEventHandler = true)
-        {
-            if (objectChanged != null) ObjectChangedFunction = objectChanged;
-            else ObjectChangedFunction = ObjectChanged;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("namingExceptionThrown", new EventHandler<CLRListenerEventArgs<CLREventData<NamingEvent>>>(EventHandlerObjectChanged));
-            }
-        }
-
-        void EventHandlerObjectChanged(object sender, CLRListenerEventArgs<CLREventData<NamingEvent>> data)
-        {
-            OnObjectChanged(data.EventData.TypedEventData);
-        }
     }
 }

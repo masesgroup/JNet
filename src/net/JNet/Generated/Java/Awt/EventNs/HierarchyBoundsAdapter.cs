@@ -45,6 +45,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="HierarchyBoundsAdapter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorMovedEventHandler)); OnAncestorMoved = AncestorMoved;

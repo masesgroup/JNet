@@ -32,11 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IRowSorterListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("sorterChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.RowSorterEvent>>>(SorterChangedEventHandler)); OnSorterChanged = SorterChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/RowSorterListener.html#sorterChanged(javax.swing.event.RowSorterEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="RowSorterListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("sorterChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.RowSorterEvent>>>(SorterChangedEventHandler)); OnSorterChanged = SorterChanged;

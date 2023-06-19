@@ -32,11 +32,6 @@ namespace Javax.Management
     public partial interface INotificationListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("handleNotification", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(HandleNotificationEventHandler)); OnHandleNotification = HandleNotification;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Javax.Management
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="NotificationListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("handleNotification", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(HandleNotificationEventHandler)); OnHandleNotification = HandleNotification;

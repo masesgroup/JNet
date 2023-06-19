@@ -32,13 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IMenuListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("menuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuCanceledEventHandler)); OnMenuCanceled = MenuCanceled;
-            AddEventHandler("menuDeselected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuDeselectedEventHandler)); OnMenuDeselected = MenuDeselected;
-            AddEventHandler("menuSelected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuSelectedEventHandler)); OnMenuSelected = MenuSelected;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuCanceled(javax.swing.event.MenuEvent)"/>
         /// </summary>
@@ -85,6 +78,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="MenuListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("menuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuCanceledEventHandler)); OnMenuCanceled = MenuCanceled;

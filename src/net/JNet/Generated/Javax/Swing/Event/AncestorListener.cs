@@ -32,13 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IAncestorListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("ancestorAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorAddedEventHandler)); OnAncestorAdded = AncestorAdded;
-            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorMovedEventHandler)); OnAncestorMoved = AncestorMoved;
-            AddEventHandler("ancestorRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorRemovedEventHandler)); OnAncestorRemoved = AncestorRemoved;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorAdded(javax.swing.event.AncestorEvent)"/>
         /// </summary>
@@ -85,6 +78,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="AncestorListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("ancestorAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorAddedEventHandler)); OnAncestorAdded = AncestorAdded;

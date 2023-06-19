@@ -32,12 +32,6 @@ namespace Javax.Swing.Event
     public partial interface ICellEditorListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("editingCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingCanceledEventHandler)); OnEditingCanceled = EditingCanceled;
-            AddEventHandler("editingStopped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingStoppedEventHandler)); OnEditingStopped = EditingStopped;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingCanceled(javax.swing.event.ChangeEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="CellEditorListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("editingCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingCanceledEventHandler)); OnEditingCanceled = EditingCanceled;

@@ -55,15 +55,6 @@ namespace Java.Util
             return IExecute<Java.Util.Collection>("values");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator Comparator()
-        {
-            return IExecute<Java.Util.Comparator>("comparator");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>
         /// </summary>
 
@@ -152,13 +143,6 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         Java.Util.Collection<V> Values();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
-        /// </summary>
-
-        /// <typeparam name="ReturnobjectSuperK"><typeparamref name="K"/></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        Java.Util.Comparator<ReturnobjectSuperK> Comparator<ReturnobjectSuperK>() where ReturnobjectSuperK: K;
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>
         /// </summary>
 
@@ -244,16 +228,6 @@ namespace Java.Util
         public Java.Util.Collection<V> Values()
         {
             return IExecute<Java.Util.Collection<V>>("values");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#comparator()"/>
-        /// </summary>
-
-        /// <typeparam name="ReturnobjectSuperK"><typeparamref name="K"/></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator<ReturnobjectSuperK> Comparator<ReturnobjectSuperK>() where ReturnobjectSuperK: K
-        {
-            return IExecute<Java.Util.Comparator<ReturnobjectSuperK>>("comparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedMap.html#entrySet()"/>

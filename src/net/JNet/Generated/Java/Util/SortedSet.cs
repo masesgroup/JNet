@@ -64,15 +64,6 @@ namespace Java.Util
             return IExecute("last");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator Comparator()
-        {
-            return IExecute<Java.Util.Comparator>("comparator");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -139,13 +130,6 @@ namespace Java.Util
 
         /// <returns><typeparamref name="E"/></returns>
         E Last();
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/>
-        /// </summary>
-
-        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE: E;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>
         /// </summary>
@@ -223,16 +207,6 @@ namespace Java.Util
         public E Last()
         {
             return IExecute<E>("last");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#comparator()"/>
-        /// </summary>
-
-        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE: E
-        {
-            return IExecute<Java.Util.Comparator<ReturnobjectSuperE>>("comparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#headSet(java.lang.Object)"/>

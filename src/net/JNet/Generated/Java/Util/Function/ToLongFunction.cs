@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ToLongFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
@@ -92,11 +95,6 @@ namespace Java.Util.Function
     public partial interface IToLongFunction<T>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongFunction.html#applyAsLong(java.lang.Object)"/>
         /// </summary>
@@ -134,6 +132,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ToLongFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;

@@ -32,11 +32,6 @@ namespace Java.Awt.DesktopNs
     public partial interface IAppReopenedListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("appReopened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppReopenedEvent>>>(AppReopenedEventHandler)); OnAppReopened = AppReopened;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html#appReopened(java.awt.desktop.AppReopenedEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="AppReopenedListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("appReopened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppReopenedEvent>>>(AppReopenedEventHandler)); OnAppReopened = AppReopened;

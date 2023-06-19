@@ -128,41 +128,6 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
-        #region MetalPropertyChangeListener
-        public partial class MetalPropertyChangeListener
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            protected virtual void InitializeHandlers()
-            {
-
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
     
         #endregion
 

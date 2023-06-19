@@ -221,9 +221,12 @@ namespace MASES.JNetReflector.Templates
                                                                                      + "        data.SetReturnValue(executionResult);" + Environment.NewLine
                                                                                      + "    }";
 
-                public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "protected virtual void InitializeHandlers()" + Environment.NewLine
+                public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "/// <summary>" + Environment.NewLine
+                                                                            + "/// <see cref=\"{0}\"/>" + Environment.NewLine
+                                                                            + "/// </summary>" + Environment.NewLine
+                                                                            + "protected virtual void InitializeHandlers()" + Environment.NewLine
                                                                             + "{{" + Environment.NewLine
-                                                                            + "{0}" + Environment.NewLine
+                                                                            + "{1}" + Environment.NewLine
                                                                             + "}}" + Environment.NewLine;
 
                 public const string VOID_LISTENER_EXECUTION_FORMAT = "raiseEvent(\"{0}\"{1});";

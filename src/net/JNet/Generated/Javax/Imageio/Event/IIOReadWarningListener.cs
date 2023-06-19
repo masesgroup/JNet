@@ -32,11 +32,6 @@ namespace Javax.Imageio.Event
     public partial interface IIIOReadWarningListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("warningOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(WarningOccurredEventHandler)); OnWarningOccurred = WarningOccurred;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Javax.Imageio.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IIOReadWarningListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("warningOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(WarningOccurredEventHandler)); OnWarningOccurred = WarningOccurred;

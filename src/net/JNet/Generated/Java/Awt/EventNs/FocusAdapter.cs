@@ -45,6 +45,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="FocusAdapter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("focusGained", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusGainedEventHandler)); OnFocusGained = FocusGained;

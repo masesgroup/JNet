@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface ILongToIntFunction
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="LongToIntFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;

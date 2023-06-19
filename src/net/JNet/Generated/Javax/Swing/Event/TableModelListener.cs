@@ -32,11 +32,6 @@ namespace Javax.Swing.Event
     public partial interface ITableModelListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("tableChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>>>(TableChangedEventHandler)); OnTableChanged = TableChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="TableModelListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("tableChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>>>(TableChangedEventHandler)); OnTableChanged = TableChanged;

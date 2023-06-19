@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BiPredicate"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler)); OnTest = Test;
@@ -168,14 +171,6 @@ namespace Java.Util.Function
     public partial interface IBiPredicate<T, U>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler)); OnTest = Test;
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(And<Arg0objectSuperT, Arg0objectSuperU>EventHandler)); OnAnd<Arg0objectSuperT, Arg0objectSuperU> = And<Arg0objectSuperT, Arg0objectSuperU>;
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler)); OnOr<Arg0objectSuperT, Arg0objectSuperU> = Or<Arg0objectSuperT, Arg0objectSuperU>;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -236,6 +231,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BiPredicate"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler)); OnTest = Test;

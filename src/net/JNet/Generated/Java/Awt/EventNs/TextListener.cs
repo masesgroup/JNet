@@ -32,11 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface ITextListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("textValueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.TextEvent>>>(TextValueChangedEventHandler)); OnTextValueChanged = TextValueChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="TextListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("textValueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.TextEvent>>>(TextValueChangedEventHandler)); OnTextValueChanged = TextValueChanged;

@@ -32,17 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IWindowListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("windowActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowActivatedEventHandler)); OnWindowActivated = WindowActivated;
-            AddEventHandler("windowClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowClosedEventHandler)); OnWindowClosed = WindowClosed;
-            AddEventHandler("windowClosing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowClosingEventHandler)); OnWindowClosing = WindowClosing;
-            AddEventHandler("windowDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowDeactivatedEventHandler)); OnWindowDeactivated = WindowDeactivated;
-            AddEventHandler("windowDeiconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowDeiconifiedEventHandler)); OnWindowDeiconified = WindowDeiconified;
-            AddEventHandler("windowIconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowIconifiedEventHandler)); OnWindowIconified = WindowIconified;
-            AddEventHandler("windowOpened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowOpenedEventHandler)); OnWindowOpened = WindowOpened;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowListener.html#windowActivated(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -109,6 +98,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="WindowListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("windowActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowActivatedEventHandler)); OnWindowActivated = WindowActivated;

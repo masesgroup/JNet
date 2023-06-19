@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface IIntSupplier
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("getAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsIntEventHandler)); OnGetAsInt = GetAsInt;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IntSupplier"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("getAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsIntEventHandler)); OnGetAsInt = GetAsInt;

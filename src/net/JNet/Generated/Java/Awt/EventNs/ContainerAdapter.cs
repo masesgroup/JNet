@@ -45,6 +45,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ContainerAdapter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("componentAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentAddedEventHandler)); OnComponentAdded = ComponentAdded;

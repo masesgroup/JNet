@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IntFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler)); OnApply = Apply;
@@ -92,11 +95,6 @@ namespace Java.Util.Function
     public partial interface IIntFunction<R>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler)); OnApply = Apply;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
@@ -134,6 +132,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IntFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler)); OnApply = Apply;

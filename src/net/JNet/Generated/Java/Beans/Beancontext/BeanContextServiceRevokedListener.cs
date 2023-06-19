@@ -32,11 +32,6 @@ namespace Java.Beans.Beancontext
     public partial interface IBeanContextServiceRevokedListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("serviceRevoked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler)); OnServiceRevoked = ServiceRevoked;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BeanContextServiceRevokedListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("serviceRevoked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler)); OnServiceRevoked = ServiceRevoked;

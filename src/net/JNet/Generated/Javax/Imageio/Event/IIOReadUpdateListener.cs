@@ -32,16 +32,6 @@ namespace Javax.Imageio.Event
     public partial interface IIIOReadUpdateListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("imageUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageUpdateEventHandler)); OnImageUpdate = ImageUpdate;
-            AddEventHandler("passComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(PassCompleteEventHandler)); OnPassComplete = PassComplete;
-            AddEventHandler("passStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(PassStartedEventHandler)); OnPassStarted = PassStarted;
-            AddEventHandler("thumbnailPassComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailPassCompleteEventHandler)); OnThumbnailPassComplete = ThumbnailPassComplete;
-            AddEventHandler("thumbnailPassStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailPassStartedEventHandler)); OnThumbnailPassStarted = ThumbnailPassStarted;
-            AddEventHandler("thumbnailUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailUpdateEventHandler)); OnThumbnailUpdate = ThumbnailUpdate;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#imageUpdate(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int[])"/>
         /// </summary>
@@ -139,6 +129,9 @@ namespace Javax.Imageio.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IIOReadUpdateListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("imageUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageUpdateEventHandler)); OnImageUpdate = ImageUpdate;

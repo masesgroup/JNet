@@ -45,6 +45,9 @@ namespace Org.Xml.Sax.Helpers
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="XMLReaderAdapter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("characters", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler)); OnCharacters = Characters;

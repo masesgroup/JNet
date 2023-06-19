@@ -32,11 +32,6 @@ namespace Javax.Imageio.Event
     public partial interface IIIOWriteWarningListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("warningOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WarningOccurredEventHandler)); OnWarningOccurred = WarningOccurred;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteWarningListener.html#warningOccurred(javax.imageio.ImageWriter,int,java.lang.String)"/>
         /// </summary>
@@ -75,6 +70,9 @@ namespace Javax.Imageio.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IIOWriteWarningListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("warningOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WarningOccurredEventHandler)); OnWarningOccurred = WarningOccurred;

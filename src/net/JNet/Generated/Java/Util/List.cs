@@ -432,14 +432,6 @@ namespace Java.Util
         {
             IExecute("replaceAll", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#sort(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        public void Sort(Java.Util.Comparator arg0)
-        {
-            IExecute("sort", arg0);
-        }
 
         #endregion
 
@@ -611,12 +603,6 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         void ReplaceAll(Java.Util.Function.UnaryOperator<E> arg0);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#sort(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
-        void Sort<Arg0objectSuperE>(Java.Util.Comparator<Arg0objectSuperE> arg0) where Arg0objectSuperE: E;
 
         #endregion
 
@@ -1042,15 +1028,6 @@ namespace Java.Util
         public void ReplaceAll(Java.Util.Function.UnaryOperator<E> arg0)
         {
             IExecute("replaceAll", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html#sort(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
-        public void Sort<Arg0objectSuperE>(Java.Util.Comparator<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
-        {
-            IExecute("sort", arg0);
         }
 
         #endregion

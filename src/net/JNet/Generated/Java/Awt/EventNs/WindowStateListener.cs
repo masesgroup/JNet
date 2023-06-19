@@ -32,11 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IWindowStateListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("windowStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowStateChangedEventHandler)); OnWindowStateChanged = WindowStateChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="WindowStateListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("windowStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowStateChangedEventHandler)); OnWindowStateChanged = WindowStateChanged;

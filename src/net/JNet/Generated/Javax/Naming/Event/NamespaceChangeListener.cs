@@ -32,13 +32,6 @@ namespace Javax.Naming.Event
     public partial interface INamespaceChangeListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("objectAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectAddedEventHandler)); OnObjectAdded = ObjectAdded;
-            AddEventHandler("objectRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectRemovedEventHandler)); OnObjectRemoved = ObjectRemoved;
-            AddEventHandler("objectRenamed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectRenamedEventHandler)); OnObjectRenamed = ObjectRenamed;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectAdded(javax.naming.event.NamingEvent)"/>
         /// </summary>
@@ -85,6 +78,9 @@ namespace Javax.Naming.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="NamespaceChangeListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("objectAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectAddedEventHandler)); OnObjectAdded = ObjectAdded;

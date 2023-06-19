@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="UnaryOperator"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
 
@@ -67,10 +70,6 @@ namespace Java.Util.Function
     public partial interface IUnaryOperator<T>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-
-        }
 
         #endregion
 
@@ -102,6 +101,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="UnaryOperator"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
 

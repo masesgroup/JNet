@@ -32,11 +32,6 @@ namespace Javax.Naming.Event
     public partial interface IObjectChangeListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("objectChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectChangedEventHandler)); OnObjectChanged = ObjectChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Naming.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ObjectChangeListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("objectChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectChangedEventHandler)); OnObjectChanged = ObjectChanged;

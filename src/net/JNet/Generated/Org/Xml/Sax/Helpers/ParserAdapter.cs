@@ -45,6 +45,9 @@ namespace Org.Xml.Sax.Helpers
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ParserAdapter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("getFeature", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(GetFeatureEventHandler)); OnGetFeature = GetFeature;

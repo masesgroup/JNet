@@ -32,12 +32,6 @@ namespace Javax.Sql
     public partial interface IStatementEventListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("statementClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler)); OnStatementClosed = StatementClosed;
-            AddEventHandler("statementErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementErrorOccurredEventHandler)); OnStatementErrorOccurred = StatementErrorOccurred;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Javax.Sql
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="StatementEventListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("statementClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler)); OnStatementClosed = StatementClosed;

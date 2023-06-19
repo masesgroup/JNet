@@ -32,14 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IComponentListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("componentHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentHiddenEventHandler)); OnComponentHidden = ComponentHidden;
-            AddEventHandler("componentMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentMovedEventHandler)); OnComponentMoved = ComponentMoved;
-            AddEventHandler("componentResized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentResizedEventHandler)); OnComponentResized = ComponentResized;
-            AddEventHandler("componentShown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentShownEventHandler)); OnComponentShown = ComponentShown;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html#componentHidden(java.awt.event.ComponentEvent)"/>
         /// </summary>
@@ -91,6 +83,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ComponentListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("componentHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentHiddenEventHandler)); OnComponentHidden = ComponentHidden;

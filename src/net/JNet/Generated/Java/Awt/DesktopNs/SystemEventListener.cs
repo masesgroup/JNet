@@ -32,10 +32,6 @@ namespace Java.Awt.DesktopNs
     public partial interface ISystemEventListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-
-        }
 
         #endregion
 
@@ -67,6 +63,9 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="SystemEventListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
 

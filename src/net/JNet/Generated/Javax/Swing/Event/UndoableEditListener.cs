@@ -32,11 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IUndoableEditListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("undoableEditHappened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>>>(UndoableEditHappenedEventHandler)); OnUndoableEditHappened = UndoableEditHappened;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="UndoableEditListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("undoableEditHappened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>>>(UndoableEditHappenedEventHandler)); OnUndoableEditHappened = UndoableEditHappened;

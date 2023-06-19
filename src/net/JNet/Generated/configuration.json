@@ -20,8 +20,6 @@
     "java.awt.peer"
   ],
   "ClassesToBeListener": [
-    "java.util.Comparator",
-    "java.util.ServiceLoader$Provider",
     "java.util.stream.DoubleStream$Builder",
     "java.util.stream.IntStream$Builder",
     "java.util.stream.LongStream$Builder",
@@ -30,6 +28,9 @@
     "javax.management.NotificationFilter"
   ],
   "ClassesToAvoid": [
+    "java.util.Comparator",
+    "java.util.EventListener",
+    "java.util.ServiceLoader$Provider",
     "javax.swing.ToolTipManager",
     "javax.swing.text.html.HTMLEditorKit$LinkController",
     "javax.swing.plaf.basic.BasicButtonListener",
@@ -50,7 +51,8 @@
     "javax.swing.plaf.basic.BasicSliderUI$ScrollListener",
     "javax.swing.plaf.basic.BasicSliderUI$TrackListener",
     "javax.swing.plaf.basic.BasicScrollPaneUI$VSBChangeListener",
-    "javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener"
+    "javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener",
+    "javax.tools.DiagnosticListener"
   ],
   "NamespacesInConflict": [
     "java.lang.module",

@@ -32,15 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IMouseListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("mouseClicked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseClickedEventHandler)); OnMouseClicked = MouseClicked;
-            AddEventHandler("mouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseEnteredEventHandler)); OnMouseEntered = MouseEntered;
-            AddEventHandler("mouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseExitedEventHandler)); OnMouseExited = MouseExited;
-            AddEventHandler("mousePressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MousePressedEventHandler)); OnMousePressed = MousePressed;
-            AddEventHandler("mouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseReleasedEventHandler)); OnMouseReleased = MouseReleased;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
@@ -97,6 +88,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="MouseListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("mouseClicked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseClickedEventHandler)); OnMouseClicked = MouseClicked;

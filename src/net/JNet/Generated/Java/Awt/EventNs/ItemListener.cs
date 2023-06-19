@@ -32,11 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IItemListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("itemStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ItemEvent>>>(ItemStateChangedEventHandler)); OnItemStateChanged = ItemStateChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ItemListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("itemStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ItemEvent>>>(ItemStateChangedEventHandler)); OnItemStateChanged = ItemStateChanged;

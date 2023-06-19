@@ -32,17 +32,6 @@ namespace Javax.Imageio.Event
     public partial interface IIIOWriteProgressListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageCompleteEventHandler)); OnImageComplete = ImageComplete;
-            AddEventHandler("imageProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageProgressEventHandler)); OnImageProgress = ImageProgress;
-            AddEventHandler("imageStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageStartedEventHandler)); OnImageStarted = ImageStarted;
-            AddEventHandler("thumbnailComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailCompleteEventHandler)); OnThumbnailComplete = ThumbnailComplete;
-            AddEventHandler("thumbnailProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailProgressEventHandler)); OnThumbnailProgress = ThumbnailProgress;
-            AddEventHandler("thumbnailStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailStartedEventHandler)); OnThumbnailStarted = ThumbnailStarted;
-            AddEventHandler("writeAborted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WriteAbortedEventHandler)); OnWriteAborted = WriteAborted;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
@@ -114,6 +103,9 @@ namespace Javax.Imageio.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IIOWriteProgressListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageCompleteEventHandler)); OnImageComplete = ImageComplete;

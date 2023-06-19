@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="Function"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler)); OnApply = Apply;
@@ -142,13 +145,6 @@ namespace Java.Util.Function
     public partial interface IFunction<T, R>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler)); OnApply = Apply;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler)); OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = AndThen<V, Arg0objectSuperR, Arg0ExtendsV>;
-            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>>>(Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler)); OnCompose<V, Arg0objectSuperV, Arg0ExtendsT> = Compose<V, Arg0objectSuperV, Arg0ExtendsT>;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
@@ -204,6 +200,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="Function"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler)); OnApply = Apply;

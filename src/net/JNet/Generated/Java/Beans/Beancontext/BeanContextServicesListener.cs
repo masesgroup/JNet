@@ -32,11 +32,6 @@ namespace Java.Beans.Beancontext
     public partial interface IBeanContextServicesListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("serviceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>>>(ServiceAvailableEventHandler)); OnServiceAvailable = ServiceAvailable;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BeanContextServicesListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("serviceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>>>(ServiceAvailableEventHandler)); OnServiceAvailable = ServiceAvailable;

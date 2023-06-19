@@ -32,11 +32,6 @@ namespace Javax.Sound.Midi
     public partial interface IControllerEventListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("controlChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>>>(ControlChangeEventHandler)); OnControlChange = ControlChange;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ControllerEventListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("controlChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>>>(ControlChangeEventHandler)); OnControlChange = ControlChange;

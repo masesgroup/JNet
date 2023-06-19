@@ -32,13 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IMenuKeyListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("menuKeyPressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyPressedEventHandler)); OnMenuKeyPressed = MenuKeyPressed;
-            AddEventHandler("menuKeyReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyReleasedEventHandler)); OnMenuKeyReleased = MenuKeyReleased;
-            AddEventHandler("menuKeyTyped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyTypedEventHandler)); OnMenuKeyTyped = MenuKeyTyped;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyPressed(javax.swing.event.MenuKeyEvent)"/>
         /// </summary>
@@ -85,6 +78,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="MenuKeyListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("menuKeyPressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyPressedEventHandler)); OnMenuKeyPressed = MenuKeyPressed;

@@ -32,19 +32,6 @@ namespace Javax.Imageio.Event
     public partial interface IIIOReadProgressListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageCompleteEventHandler)); OnImageComplete = ImageComplete;
-            AddEventHandler("imageProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageProgressEventHandler)); OnImageProgress = ImageProgress;
-            AddEventHandler("imageStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageStartedEventHandler)); OnImageStarted = ImageStarted;
-            AddEventHandler("readAborted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ReadAbortedEventHandler)); OnReadAborted = ReadAborted;
-            AddEventHandler("sequenceComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(SequenceCompleteEventHandler)); OnSequenceComplete = SequenceComplete;
-            AddEventHandler("sequenceStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(SequenceStartedEventHandler)); OnSequenceStarted = SequenceStarted;
-            AddEventHandler("thumbnailComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailCompleteEventHandler)); OnThumbnailComplete = ThumbnailComplete;
-            AddEventHandler("thumbnailProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailProgressEventHandler)); OnThumbnailProgress = ThumbnailProgress;
-            AddEventHandler("thumbnailStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailStartedEventHandler)); OnThumbnailStarted = ThumbnailStarted;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageComplete(javax.imageio.ImageReader)"/>
         /// </summary>
@@ -127,6 +114,9 @@ namespace Javax.Imageio.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IIOReadProgressListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageCompleteEventHandler)); OnImageComplete = ImageComplete;

@@ -32,12 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IWindowFocusListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("windowGainedFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowGainedFocusEventHandler)); OnWindowGainedFocus = WindowGainedFocus;
-            AddEventHandler("windowLostFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowLostFocusEventHandler)); OnWindowLostFocus = WindowLostFocus;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="WindowFocusListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("windowGainedFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowGainedFocusEventHandler)); OnWindowGainedFocus = WindowGainedFocus;

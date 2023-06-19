@@ -32,11 +32,6 @@ namespace Javax.Print.Event
     public partial interface IPrintServiceAttributeListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("attributeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintServiceAttributeEvent>>>(AttributeUpdateEventHandler)); OnAttributeUpdate = AttributeUpdate;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Print.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="PrintServiceAttributeListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("attributeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintServiceAttributeEvent>>>(AttributeUpdateEventHandler)); OnAttributeUpdate = AttributeUpdate;

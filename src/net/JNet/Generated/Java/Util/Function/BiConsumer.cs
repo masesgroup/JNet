@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BiConsumer"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler)); OnAccept = Accept;
@@ -113,12 +116,6 @@ namespace Java.Util.Function
     public partial interface IBiConsumer<T, U>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler)); OnAccept = Accept;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>>>(AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler)); OnAndThen<Arg0objectSuperT, Arg0objectSuperU> = AndThen<Arg0objectSuperT, Arg0objectSuperU>;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -164,6 +161,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BiConsumer"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler)); OnAccept = Accept;

@@ -32,15 +32,6 @@ namespace Javax.Swing.Event
     public partial interface ITableColumnModelListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("columnAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnAddedEventHandler)); OnColumnAdded = ColumnAdded;
-            AddEventHandler("columnMarginChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(ColumnMarginChangedEventHandler)); OnColumnMarginChanged = ColumnMarginChanged;
-            AddEventHandler("columnMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnMovedEventHandler)); OnColumnMoved = ColumnMoved;
-            AddEventHandler("columnRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnRemovedEventHandler)); OnColumnRemoved = ColumnRemoved;
-            AddEventHandler("columnSelectionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>>>(ColumnSelectionChangedEventHandler)); OnColumnSelectionChanged = ColumnSelectionChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableColumnModelListener.html#columnAdded(javax.swing.event.TableColumnModelEvent)"/>
         /// </summary>
@@ -97,6 +88,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="TableColumnModelListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("columnAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnAddedEventHandler)); OnColumnAdded = ColumnAdded;

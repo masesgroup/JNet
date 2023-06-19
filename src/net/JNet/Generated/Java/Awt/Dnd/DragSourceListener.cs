@@ -32,15 +32,6 @@ namespace Java.Awt.Dnd
     public partial interface IDragSourceListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("dragDropEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDropEvent>>>(DragDropEndEventHandler)); OnDragDropEnd = DragDropEnd;
-            AddEventHandler("dragEnter", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragEnterEventHandler)); OnDragEnter = DragEnter;
-            AddEventHandler("dragExit", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceEvent>>>(DragExitEventHandler)); OnDragExit = DragExit;
-            AddEventHandler("dragOver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragOverEventHandler)); OnDragOver = DragOver;
-            AddEventHandler("dropActionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DropActionChangedEventHandler)); OnDropActionChanged = DropActionChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
         /// </summary>
@@ -97,6 +88,9 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="DragSourceListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("dragDropEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDropEvent>>>(DragDropEndEventHandler)); OnDragDropEnd = DragDropEnd;

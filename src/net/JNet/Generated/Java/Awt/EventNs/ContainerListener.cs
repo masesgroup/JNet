@@ -32,12 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IContainerListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("componentAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentAddedEventHandler)); OnComponentAdded = ComponentAdded;
-            AddEventHandler("componentRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentRemovedEventHandler)); OnComponentRemoved = ComponentRemoved;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerListener.html#componentAdded(java.awt.event.ContainerEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ContainerListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("componentAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentAddedEventHandler)); OnComponentAdded = ComponentAdded;

@@ -242,51 +242,6 @@ namespace Javax.Tools
     }
     #endregion
 
-    #region DiagnosticListener
-    /// <summary>
-    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html"/>
-    /// </summary>
-    public partial class DiagnosticListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DiagnosticListener() { InitializeHandlers(); }
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.javax.tools.DiagnosticListener";
-
-    
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DiagnosticListener<S>
-    /// <summary>
-    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DiagnosticListener.html"/>
-    /// </summary>
-    /// <typeparam name="S"></typeparam>
-    public partial class DiagnosticListener<S> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DiagnosticListener() { InitializeHandlers(); }
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.generated.javax.tools.DiagnosticListener";
-
-    
-        // TODO: complete the class
-    
-    }
-    #endregion
-
     #region DocumentationTool
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.html"/>

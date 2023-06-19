@@ -307,6 +307,9 @@ namespace Java.Net.Http
             #endregion
 
             #region Instance methods
+            /// <summary>
+            /// <see cref="Listener"/>
+            /// </summary>
             protected virtual void InitializeHandlers()
             {
                 AddEventHandler("onBinary", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnBinaryEventHandler)); OnOnBinary = OnBinary;

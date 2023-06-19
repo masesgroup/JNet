@@ -32,17 +32,6 @@ namespace Javax.Swing
     public partial interface IAction
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler)); OnIsEnabled = IsEnabled;
-            AddEventHandler("getValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(GetValueEventHandler)); OnGetValue = GetValue;
-            AddEventHandler("addPropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(AddPropertyChangeListenerEventHandler)); OnAddPropertyChangeListener = AddPropertyChangeListener;
-            AddEventHandler("putValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(PutValueEventHandler)); OnPutValue = PutValue;
-            AddEventHandler("removePropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(RemovePropertyChangeListenerEventHandler)); OnRemovePropertyChangeListener = RemovePropertyChangeListener;
-            AddEventHandler("setEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(SetEnabledEventHandler)); OnSetEnabled = SetEnabled;
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler)); OnAccept = Accept;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#isEnabled()"/>
         /// </summary>
@@ -113,6 +102,9 @@ namespace Javax.Swing
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="Action"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler)); OnIsEnabled = IsEnabled;

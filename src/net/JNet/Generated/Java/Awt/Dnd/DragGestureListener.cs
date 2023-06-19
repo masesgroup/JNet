@@ -32,11 +32,6 @@ namespace Java.Awt.Dnd
     public partial interface IDragGestureListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("dragGestureRecognized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>>>(DragGestureRecognizedEventHandler)); OnDragGestureRecognized = DragGestureRecognized;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="DragGestureListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("dragGestureRecognized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>>>(DragGestureRecognizedEventHandler)); OnDragGestureRecognized = DragGestureRecognized;

@@ -32,11 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IHierarchyListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("hierarchyChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(HierarchyChangedEventHandler)); OnHierarchyChanged = HierarchyChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="HierarchyListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("hierarchyChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(HierarchyChangedEventHandler)); OnHierarchyChanged = HierarchyChanged;

@@ -32,11 +32,6 @@ namespace Java.Beans
     public partial interface IExceptionListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("exceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ExceptionThrownEventHandler)); OnExceptionThrown = ExceptionThrown;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html#exceptionThrown(java.lang.Exception)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Beans
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ExceptionListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("exceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ExceptionThrownEventHandler)); OnExceptionThrown = ExceptionThrown;

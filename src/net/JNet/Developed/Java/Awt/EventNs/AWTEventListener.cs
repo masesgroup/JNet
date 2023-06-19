@@ -35,35 +35,6 @@ namespace Java.Awt.EventNs
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class AWTEventListener : IAWTEventListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetAWTEventListener";
 
-        readonly Action<AWTEvent> eventDispatchedFunction = null;
-        /// <summary>
-        /// The <see cref="Action{AWTEvent}"/> to be executed on EventDispatched
-        /// </summary>
-        public virtual Action<AWTEvent> OnEventDispatched { get { return eventDispatchedFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="AWTEventListener"/>
-        /// </summary>
-        /// <param name="eventDispatched">The <see cref="Action{AWTEvent}"/> to be executed on EventDispatched</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public AWTEventListener(Action<AWTEvent> eventDispatched = null, bool attachEventHandler = true)
-        {
-            if (eventDispatched != null) eventDispatchedFunction = eventDispatched;
-            else eventDispatchedFunction = EventDispatched;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("eventDispatched", new EventHandler<CLRListenerEventArgs<CLREventData<AWTEvent>>>(EventHandlerEventDispatched));
-            }
-        }
-
-        void EventHandlerEventDispatched(object sender, CLRListenerEventArgs<CLREventData<AWTEvent>> data)
-        {
-            OnEventDispatched(data.EventData.TypedEventData);
-        }
     }
 }

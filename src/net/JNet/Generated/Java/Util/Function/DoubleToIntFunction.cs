@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface IDoubleToIntFunction
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToIntFunction.html#applyAsInt(double)"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="DoubleToIntFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;

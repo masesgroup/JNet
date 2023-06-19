@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="Supplier"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;
@@ -92,11 +95,6 @@ namespace Java.Util.Function
     public partial interface ISupplier<T>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
@@ -134,6 +132,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="Supplier"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;

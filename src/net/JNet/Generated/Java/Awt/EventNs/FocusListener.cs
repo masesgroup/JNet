@@ -32,12 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IFocusListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("focusGained", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusGainedEventHandler)); OnFocusGained = FocusGained;
-            AddEventHandler("focusLost", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusLostEventHandler)); OnFocusLost = FocusLost;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html#focusGained(java.awt.event.FocusEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="FocusListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("focusGained", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusGainedEventHandler)); OnFocusGained = FocusGained;

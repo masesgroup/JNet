@@ -32,11 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IAdjustmentListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("adjustmentValueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.AdjustmentEvent>>>(AdjustmentValueChangedEventHandler)); OnAdjustmentValueChanged = AdjustmentValueChanged;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentListener.html#adjustmentValueChanged(java.awt.event.AdjustmentEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="AdjustmentListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("adjustmentValueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.AdjustmentEvent>>>(AdjustmentValueChangedEventHandler)); OnAdjustmentValueChanged = AdjustmentValueChanged;

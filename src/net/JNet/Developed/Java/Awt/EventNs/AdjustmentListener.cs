@@ -35,35 +35,6 @@ namespace Java.Awt.EventNs
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class AdjustmentListener : IAdjustmentListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetAdjustmentListener";
 
-        readonly Action<AdjustmentEvent> adjustmentValueChangedFunction = null;
-        /// <summary>
-        /// The <see cref="Action{AdjustmentEvent}"/> to be executed on AdjustmentValueChanged
-        /// </summary>
-        public virtual Action<AdjustmentEvent> OnAdjustmentValueChanged { get { return adjustmentValueChangedFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="AdjustmentListener"/>
-        /// </summary>
-        /// <param name="actionPerformed">The <see cref="Action{AdjustmentEvent}"/> to be executed on AdjustmentValueChanged</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public AdjustmentListener(Action<AdjustmentEvent> actionPerformed = null, bool attachEventHandler = true)
-        {
-            if (actionPerformed != null) adjustmentValueChangedFunction = actionPerformed;
-            else adjustmentValueChangedFunction = AdjustmentValueChanged;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("adjustmentValueChanged", new EventHandler<CLRListenerEventArgs<CLREventData<AdjustmentEvent>>>(EventHandlerAdjustmentValueChanged));
-            }
-        }
-
-        void EventHandlerAdjustmentValueChanged(object sender, CLRListenerEventArgs<CLREventData<AdjustmentEvent>> data)
-        {
-            OnAdjustmentValueChanged(data.EventData.TypedEventData);
-        }
     }
 }

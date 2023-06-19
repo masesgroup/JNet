@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface IBooleanSupplier
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("getAsBoolean", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsBooleanEventHandler)); OnGetAsBoolean = GetAsBoolean;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BooleanSupplier"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("getAsBoolean", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsBooleanEventHandler)); OnGetAsBoolean = GetAsBoolean;

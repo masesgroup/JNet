@@ -32,12 +32,6 @@ namespace Javax.Sql
     public partial interface IConnectionEventListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("connectionClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionClosedEventHandler)); OnConnectionClosed = ConnectionClosed;
-            AddEventHandler("connectionErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionErrorOccurredEventHandler)); OnConnectionErrorOccurred = ConnectionErrorOccurred;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Javax.Sql
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ConnectionEventListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("connectionClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionClosedEventHandler)); OnConnectionClosed = ConnectionClosed;

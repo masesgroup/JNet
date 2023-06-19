@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="LongFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler)); OnApply = Apply;
@@ -92,11 +95,6 @@ namespace Java.Util.Function
     public partial interface ILongFunction<R>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler)); OnApply = Apply;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
@@ -134,6 +132,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="LongFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler)); OnApply = Apply;

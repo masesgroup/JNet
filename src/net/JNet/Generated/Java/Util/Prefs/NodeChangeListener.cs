@@ -32,12 +32,6 @@ namespace Java.Util.Prefs
     public partial interface INodeChangeListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("childAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildAddedEventHandler)); OnChildAdded = ChildAdded;
-            AddEventHandler("childRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildRemovedEventHandler)); OnChildRemoved = ChildRemoved;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Java.Util.Prefs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="NodeChangeListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("childAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildAddedEventHandler)); OnChildAdded = ChildAdded;

@@ -32,12 +32,6 @@ namespace Java.Awt.DesktopNs
     public partial interface IAppForegroundListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("appMovedToBackground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppMovedToBackgroundEventHandler)); OnAppMovedToBackground = AppMovedToBackground;
-            AddEventHandler("appRaisedToForeground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppRaisedToForegroundEventHandler)); OnAppRaisedToForeground = AppRaisedToForeground;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appMovedToBackground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>
@@ -79,6 +73,9 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="AppForegroundListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("appMovedToBackground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppMovedToBackgroundEventHandler)); OnAppMovedToBackground = AppMovedToBackground;

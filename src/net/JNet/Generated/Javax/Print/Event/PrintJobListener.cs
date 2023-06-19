@@ -32,16 +32,6 @@ namespace Javax.Print.Event
     public partial interface IPrintJobListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("printDataTransferCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintDataTransferCompletedEventHandler)); OnPrintDataTransferCompleted = PrintDataTransferCompleted;
-            AddEventHandler("printJobCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobCanceledEventHandler)); OnPrintJobCanceled = PrintJobCanceled;
-            AddEventHandler("printJobCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobCompletedEventHandler)); OnPrintJobCompleted = PrintJobCompleted;
-            AddEventHandler("printJobFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobFailedEventHandler)); OnPrintJobFailed = PrintJobFailed;
-            AddEventHandler("printJobNoMoreEvents", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobNoMoreEventsEventHandler)); OnPrintJobNoMoreEvents = PrintJobNoMoreEvents;
-            AddEventHandler("printJobRequiresAttention", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobRequiresAttentionEventHandler)); OnPrintJobRequiresAttention = PrintJobRequiresAttention;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobListener.html#printDataTransferCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
@@ -103,6 +93,9 @@ namespace Javax.Print.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="PrintJobListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("printDataTransferCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintDataTransferCompletedEventHandler)); OnPrintDataTransferCompleted = PrintDataTransferCompleted;

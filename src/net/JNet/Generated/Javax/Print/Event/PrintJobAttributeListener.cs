@@ -32,11 +32,6 @@ namespace Javax.Print.Event
     public partial interface IPrintJobAttributeListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("attributeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobAttributeEvent>>>(AttributeUpdateEventHandler)); OnAttributeUpdate = AttributeUpdate;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAttributeListener.html#attributeUpdate(javax.print.event.PrintJobAttributeEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Javax.Print.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="PrintJobAttributeListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("attributeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobAttributeEvent>>>(AttributeUpdateEventHandler)); OnAttributeUpdate = AttributeUpdate;

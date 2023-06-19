@@ -32,12 +32,6 @@ namespace Javax.Swing.Event
     public partial interface ITreeWillExpandListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("treeWillCollapse", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillCollapseEventHandler)); OnTreeWillCollapse = TreeWillCollapse;
-            AddEventHandler("treeWillExpand", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillExpandEventHandler)); OnTreeWillExpand = TreeWillExpand;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
@@ -81,6 +75,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="TreeWillExpandListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("treeWillCollapse", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillCollapseEventHandler)); OnTreeWillCollapse = TreeWillCollapse;

@@ -25,8 +25,10 @@ namespace Java.Util
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html"/>
     /// </summary>
-    public partial class Comparator
+    public partial class Comparator : JVMBridgeListener
     {
+        public override string BridgeClassName => "org.mases.jnet.util.JNetComparator";
+
         /// <summary>
         /// Accepts a function that extracts a Comparable sort key from a type T, and returns a <see cref="Comparator"/> that compares by that sort key.
         /// </summary>
@@ -72,7 +74,13 @@ namespace Java.Util
     /// <typeparam name="T">The comparator type</typeparam>
     public partial interface IComparator<T> : IJVMBridgeBase
     {
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html#compare(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><typeparamref name="T"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <returns><see cref="int"/></returns>
+        int Compare(T arg0, T arg1);
     }
 
     /// <summary>
@@ -112,5 +120,7 @@ namespace Java.Util
             var retVal = OnCompare(data.EventData.TypedEventData, data.EventData.GetAt<T>(0));
             data.SetReturnValue(retVal);
         }
+
+        public int Compare(T arg0, T arg1) { return default; }
     }
 }

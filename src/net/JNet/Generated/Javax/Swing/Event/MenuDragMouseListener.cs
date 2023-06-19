@@ -32,14 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IMenuDragMouseListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("menuDragMouseDragged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseDraggedEventHandler)); OnMenuDragMouseDragged = MenuDragMouseDragged;
-            AddEventHandler("menuDragMouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseEnteredEventHandler)); OnMenuDragMouseEntered = MenuDragMouseEntered;
-            AddEventHandler("menuDragMouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseExitedEventHandler)); OnMenuDragMouseExited = MenuDragMouseExited;
-            AddEventHandler("menuDragMouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseReleasedEventHandler)); OnMenuDragMouseReleased = MenuDragMouseReleased;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseDragged(javax.swing.event.MenuDragMouseEvent)"/>
         /// </summary>
@@ -91,6 +83,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="MenuDragMouseListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("menuDragMouseDragged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseDraggedEventHandler)); OnMenuDragMouseDragged = MenuDragMouseDragged;

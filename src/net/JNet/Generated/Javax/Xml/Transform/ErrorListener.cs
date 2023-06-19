@@ -32,13 +32,6 @@ namespace Javax.Xml.Transform
     public partial interface IErrorListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("error", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler)); OnError = Error;
-            AddEventHandler("fatalError", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(FatalErrorEventHandler)); OnFatalError = FatalError;
-            AddEventHandler("warning", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(WarningEventHandler)); OnWarning = Warning;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
         /// </summary>
@@ -88,6 +81,9 @@ namespace Javax.Xml.Transform
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ErrorListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("error", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler)); OnError = Error;

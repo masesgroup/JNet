@@ -45,6 +45,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ToDoubleBiFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
@@ -93,11 +96,6 @@ namespace Java.Util.Function
     public partial interface IToDoubleBiFunction<T, U>
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleBiFunction.html#applyAsDouble(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -136,6 +134,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ToDoubleBiFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;

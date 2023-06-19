@@ -32,13 +32,6 @@ namespace Javax.Swing.Event
     public partial interface IPopupMenuListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("popupMenuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuCanceledEventHandler)); OnPopupMenuCanceled = PopupMenuCanceled;
-            AddEventHandler("popupMenuWillBecomeInvisible", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeInvisibleEventHandler)); OnPopupMenuWillBecomeInvisible = PopupMenuWillBecomeInvisible;
-            AddEventHandler("popupMenuWillBecomeVisible", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeVisibleEventHandler)); OnPopupMenuWillBecomeVisible = PopupMenuWillBecomeVisible;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
@@ -85,6 +78,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="PopupMenuListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("popupMenuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuCanceledEventHandler)); OnPopupMenuCanceled = PopupMenuCanceled;

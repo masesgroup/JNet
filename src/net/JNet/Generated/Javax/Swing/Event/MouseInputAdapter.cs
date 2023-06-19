@@ -45,6 +45,9 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="MouseInputAdapter"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
 

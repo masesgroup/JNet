@@ -32,11 +32,6 @@ namespace Java.Util.Function
     public partial interface IDoubleToLongFunction
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
         /// </summary>
@@ -74,6 +69,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="DoubleToLongFunction"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;

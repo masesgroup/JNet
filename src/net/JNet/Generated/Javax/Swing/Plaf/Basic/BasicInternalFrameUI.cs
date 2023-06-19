@@ -176,61 +176,6 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region InternalFramePropertyChangeListener
-        public partial class InternalFramePropertyChangeListener
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            protected virtual void InitializeHandlers()
-            {
-                AddEventHandler("propertyChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(PropertyChangeEventHandler)); OnPropertyChange = PropertyChange;
-
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFramePropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
-            /// </summary>
-            public System.Action<Java.Beans.PropertyChangeEvent> OnPropertyChange { get; set; }
-
-            void PropertyChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>> data)
-            {
-                if (OnPropertyChange != null) OnPropertyChange.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFramePropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
-            public virtual void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
-            {
-                
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
     
         #endregion
 

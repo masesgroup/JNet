@@ -67,10 +67,10 @@ namespace Javax.Swing.Event
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class MouseInputAdapter : IMouseInputAdapter
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetMouseInputAdapter";
+        ///// <summary>
+        ///// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        ///// </summary>
+        //public override string BridgeClassName => "org.mases.jnet.awt.event.JNetMouseInputAdapter";
 
         readonly Action<MouseEvent> MouseClickedFunction = null;
         readonly Action<MouseEvent> MouseEnteredFunction = null;

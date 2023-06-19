@@ -32,12 +32,6 @@ namespace Java.Util.Function
     public partial interface IIntConsumer
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(AcceptEventHandler)); OnAccept = Accept;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntConsumer>>>(AndThenEventHandler)); OnAndThen = AndThen;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
@@ -80,6 +74,9 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IntConsumer"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(AcceptEventHandler)); OnAccept = Accept;

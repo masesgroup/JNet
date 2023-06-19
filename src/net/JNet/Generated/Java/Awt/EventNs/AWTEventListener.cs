@@ -32,11 +32,6 @@ namespace Java.Awt.EventNs
     public partial interface IAWTEventListener
     {
         #region Instance methods
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("eventDispatched", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>>>(EventDispatchedEventHandler)); OnEventDispatched = EventDispatched;
-
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html#eventDispatched(java.awt.AWTEvent)"/>
         /// </summary>
@@ -73,6 +68,9 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="AWTEventListener"/>
+        /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("eventDispatched", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>>>(EventDispatchedEventHandler)); OnEventDispatched = EventDispatched;
