@@ -222,7 +222,7 @@ namespace MASES.JNetReflector.Templates
                                                                                      + "    }";
 
                 public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "/// <summary>" + Environment.NewLine
-                                                                            + "/// <see cref=\"{0}\"/>" + Environment.NewLine
+                                                                            + "/// Handlers initializer for <see cref=\"{0}\"/>" + Environment.NewLine
                                                                             + "/// </summary>" + Environment.NewLine
                                                                             + "protected virtual void InitializeHandlers()" + Environment.NewLine
                                                                             + "{{" + Environment.NewLine
