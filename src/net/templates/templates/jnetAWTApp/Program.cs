@@ -57,7 +57,7 @@ namespace MASES.JNetTemplate.JNetAWTApp
             {
                 // the example uses the implicit cast to dynamic to access methods of the Java Object without an implementation in the .NET class
 
-                var listener = new ActionListener(ActionDone);
+                var listener = new ActionListener() { OnActionPerformed = ActionDone };
 
                 dynamic frame = new Frame("My First GUI");
                 frame.setSize(300, 300);
@@ -85,7 +85,7 @@ namespace MASES.JNetTemplate.JNetAWTApp
 
             public void Execute()
             {
-                using (var listener = new ActionListener(ActionDone))
+                using (var listener = new ActionListener() { OnActionPerformed = ActionDone })
                 {
                     var frame = new Frame("My First GUI");
                     frame.SetSize(300, 300);
