@@ -27,7 +27,7 @@ namespace Javax.Sql.Rowset
 {
     #region IFilteredRowSet
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/FilteredRowSet.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IFilteredRowSet : Javax.Sql.Rowset.IWebRowSet
     {

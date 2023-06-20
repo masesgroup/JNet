@@ -87,7 +87,7 @@ namespace Javax.Naming
 
     #region INamingEnumeration<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface INamingEnumeration<T> : Java.Util.IEnumeration<T>
     {

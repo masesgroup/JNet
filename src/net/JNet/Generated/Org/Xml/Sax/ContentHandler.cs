@@ -27,7 +27,7 @@ namespace Org.Xml.Sax
 {
     #region IContentHandler
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IContentHandler
     {

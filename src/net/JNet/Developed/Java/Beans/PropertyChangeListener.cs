@@ -35,35 +35,6 @@ namespace Java.Beans
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class PropertyChangeListener : IPropertyChangeListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.beans.JNetPropertyChangeListener";
 
-        readonly Action<PropertyChangeEvent> PropertyChangeFunction = null;
-        /// <summary>
-        /// The <see cref="Action{PropertyChangeEvent}"/> to be executed on PropertyChange
-        /// </summary>
-        public virtual Action<PropertyChangeEvent> OnPropertyChange { get { return PropertyChangeFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="PropertyChangeListener"/>
-        /// </summary>
-        /// <param name="propertyChange">The <see cref="Action{PropertyChangeEvent}"/> to be executed on PropertyChange</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public PropertyChangeListener(Action<PropertyChangeEvent> propertyChange = null, bool attachEventHandler = true)
-        {
-            if (propertyChange != null) PropertyChangeFunction = propertyChange;
-            else PropertyChangeFunction = PropertyChange;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("propertyChange", new EventHandler<CLRListenerEventArgs<CLREventData<PropertyChangeEvent>>>(EventHandlerPropertyChange));
-            }
-        }
-
-        void EventHandlerPropertyChange(object sender, CLRListenerEventArgs<CLREventData<PropertyChangeEvent>> data)
-        {
-            OnPropertyChange(data.EventData.TypedEventData);
-        }
     }
 }

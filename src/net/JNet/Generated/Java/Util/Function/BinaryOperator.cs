@@ -45,6 +45,13 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BinaryOperator"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+
+        }
 
         #endregion
 
@@ -58,7 +65,7 @@ namespace Java.Util.Function
 
     #region IBinaryOperator<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.BinaryOperator implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BinaryOperator.html"/>
     /// </summary>
     public partial interface IBinaryOperator<T>
     {
@@ -94,6 +101,13 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BinaryOperator"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+
+        }
 
         #endregion
 

@@ -46,6 +46,26 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="BiConsumer"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler)); OnAccept = Accept;
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer>>>(AndThenEventHandler)); OnAndThen = AndThen;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        public System.Action<object, object> OnAccept { get; set; }
+
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -54,6 +74,21 @@ namespace Java.Util.Function
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.BiConsumer, Java.Util.Function.BiConsumer> OnAndThen { get; set; }
+
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer>> data)
+        {
+            if (OnAndThen != null)
+            {
+                var executionResult = OnAndThen.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>
@@ -76,7 +111,7 @@ namespace Java.Util.Function
 
     #region IBiConsumer<T, U>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.BiConsumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html"/>
     /// </summary>
     public partial interface IBiConsumer<T, U>
     {
@@ -127,6 +162,26 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="BiConsumer"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler)); OnAccept = Accept;
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>>>(AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler)); OnAndThen<Arg0objectSuperT, Arg0objectSuperU> = AndThen<Arg0objectSuperT, Arg0objectSuperU>;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        public System.Action<T, U> OnAccept { get; set; }
+
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        {
+            if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#accept(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -135,6 +190,21 @@ namespace Java.Util.Function
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiConsumer<T, U>> OnAndThen<Arg0objectSuperT, Arg0objectSuperU> { get; set; }
+
+        void AndThen<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU>>> data)
+        {
+            if (OnAndThen<Arg0objectSuperT, Arg0objectSuperU> != null)
+            {
+                var executionResult = OnAndThen<Arg0objectSuperT, Arg0objectSuperU>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
         /// </summary>

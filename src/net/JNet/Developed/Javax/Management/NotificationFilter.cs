@@ -33,36 +33,6 @@ namespace Javax.Management
     /// </summary>
     public partial class NotificationFilter : INotificationFilter
     {
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_IsInterface.htm"/>
-        public override bool IsBridgeInterface => true;
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        public override string BridgeClassName => "org.mases.jnet.management.JNetNotificationFilter";
 
-        readonly Func<Notification, bool> isNotificationEnabledFunction = null;
-        /// <summary>
-        /// The <see cref="Func{T, TResult}"/> to be executed on IsNotificationEnabled
-        /// </summary>
-        public virtual Func<Notification, bool> OnIsNotificationEnabled { get { return isNotificationEnabledFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="NotificationFilter"/>
-        /// </summary>
-        /// <param name="isNotificationEnabled">The <see cref="Func{T, TResult}"/> to be executed on IsNotificationEnabled</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public NotificationFilter(Func<Notification, bool> isNotificationEnabled = null, bool attachEventHandler = true)
-        {
-            if (isNotificationEnabled != null) isNotificationEnabledFunction = isNotificationEnabled;
-            else isNotificationEnabledFunction = IsNotificationEnabled;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("isNotificationEnabled", new EventHandler<CLRListenerEventArgs<CLREventData<Notification>>>(EventHandlerIsNotificationEnabled));
-            }
-        }
-
-        void EventHandlerIsNotificationEnabled(object sender, CLRListenerEventArgs<CLREventData<Notification>> data)
-        {
-            bool result = OnIsNotificationEnabled(data.EventData.TypedEventData);
-            data.SetReturnValue(result);
-        }
     }
 }

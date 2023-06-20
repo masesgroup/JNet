@@ -27,7 +27,7 @@ namespace Java.Awt
 {
     #region ILayoutManager
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LayoutManager.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface ILayoutManager
     {

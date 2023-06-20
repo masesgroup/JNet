@@ -5,9 +5,9 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     /// <summary>
     /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
     /// </summary>
-    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER() { }
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER() { InitializeHandlers(); }
 
-#warning Remember to build the body class for event listener
+ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER
 
     // TODO: complete the class
 // ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER

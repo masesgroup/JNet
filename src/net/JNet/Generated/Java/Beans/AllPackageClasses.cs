@@ -507,10 +507,14 @@ namespace Java.Beans
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ExceptionListener() { }
+        public ExceptionListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.beans.ExceptionListener";
 
+    
         // TODO: complete the class
 
     }
@@ -971,10 +975,14 @@ namespace Java.Beans
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PropertyChangeListener() { }
+        public PropertyChangeListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.beans.PropertyChangeListener";
 
+    
         // TODO: complete the class
 
     }
@@ -1392,10 +1400,14 @@ namespace Java.Beans
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public VetoableChangeListener() { }
+        public VetoableChangeListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.beans.VetoableChangeListener";
 
+    
         // TODO: complete the class
 
     }

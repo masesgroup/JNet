@@ -27,7 +27,7 @@ namespace Javax.Naming.Ldap
 {
     #region IUnsolicitedNotificationListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.naming.ldap.UnsolicitedNotificationListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html"/>
     /// </summary>
     public partial interface IUnsolicitedNotificationListener
     {
@@ -68,6 +68,25 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="UnsolicitedNotificationListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("notificationReceived", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>>>(NotificationReceivedEventHandler)); OnNotificationReceived = NotificationReceived;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html#notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Naming.Ldap.UnsolicitedNotificationEvent> OnNotificationReceived { get; set; }
+
+        void NotificationReceivedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>> data)
+        {
+            if (OnNotificationReceived != null) OnNotificationReceived.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html#notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)"/>
         /// </summary>

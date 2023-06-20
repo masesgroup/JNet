@@ -27,7 +27,7 @@ namespace Java.Awt.EventNs
 {
     #region IMouseWheelListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.MouseWheelListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelListener.html"/>
     /// </summary>
     public partial interface IMouseWheelListener
     {
@@ -68,6 +68,25 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="MouseWheelListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("mouseWheelMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseWheelEvent>>>(MouseWheelMovedEventHandler)); OnMouseWheelMoved = MouseWheelMoved;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelListener.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.MouseWheelEvent> OnMouseWheelMoved { get; set; }
+
+        void MouseWheelMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseWheelEvent>> data)
+        {
+            if (OnMouseWheelMoved != null) OnMouseWheelMoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseWheelListener.html#mouseWheelMoved(java.awt.event.MouseWheelEvent)"/>
         /// </summary>

@@ -27,7 +27,7 @@ namespace Java.Awt.EventNs
 {
     #region IActionListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.ActionListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html"/>
     /// </summary>
     public partial interface IActionListener
     {
@@ -68,6 +68,25 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ActionListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("actionPerformed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler)); OnActionPerformed = ActionPerformed;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; }
+
+        void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>> data)
+        {
+            if (OnActionPerformed != null) OnActionPerformed.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
         /// </summary>

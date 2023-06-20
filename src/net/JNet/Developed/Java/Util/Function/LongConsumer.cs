@@ -37,9 +37,5 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetLongConsumer";
-
-        /// <inheritdoc cref="Consumer{Int64}"/>
-        /// <param name="action">The <see cref="Action{Int64}"/> to be executed</param>
-        public LongConsumer(Action<long> action = null) : base(action) { }
     }
 }

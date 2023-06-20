@@ -27,7 +27,7 @@ namespace Java.Beans.Beancontext
 {
     #region IBeanContextServiceRevokedListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.beans.beancontext.BeanContextServiceRevokedListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html"/>
     /// </summary>
     public partial interface IBeanContextServiceRevokedListener
     {
@@ -68,6 +68,25 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="BeanContextServiceRevokedListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("serviceRevoked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler)); OnServiceRevoked = ServiceRevoked;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
+        /// </summary>
+        public System.Action<Java.Beans.Beancontext.BeanContextServiceRevokedEvent> OnServiceRevoked { get; set; }
+
+        void ServiceRevokedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>> data)
+        {
+            if (OnServiceRevoked != null) OnServiceRevoked.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
         /// </summary>

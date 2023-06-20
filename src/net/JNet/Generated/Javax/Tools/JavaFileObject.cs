@@ -27,7 +27,7 @@ namespace Javax.Tools
 {
     #region IJavaFileObject
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IJavaFileObject : Javax.Tools.IFileObject
     {

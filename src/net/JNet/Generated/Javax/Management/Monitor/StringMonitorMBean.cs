@@ -27,7 +27,7 @@ namespace Javax.Management.Monitor
 {
     #region IStringMonitorMBean
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/StringMonitorMBean.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IStringMonitorMBean : Javax.Management.Monitor.IMonitorMBean
     {

@@ -35,35 +35,6 @@ namespace Javax.Swing.Event
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class CaretListener : ICaretListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.swing.event.JNetCaretListener";
 
-        readonly Action<CaretEvent> CaretUpdateFunction = null;
-        /// <summary>
-        /// The <see cref="Action{CaretEvent}"/> to be executed on CaretUpdate
-        /// </summary>
-        public virtual Action<CaretEvent> OnCaretUpdate { get { return CaretUpdateFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="CaretListener"/>
-        /// </summary>
-        /// <param name="caretUpdate">The <see cref="Action{CaretEvent}"/> to be executed on CaretUpdate</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public CaretListener(Action<CaretEvent> caretUpdate = null, bool attachEventHandler = true)
-        {
-            if (caretUpdate != null) CaretUpdateFunction = caretUpdate;
-            else CaretUpdateFunction = CaretUpdate;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("caretUpdate", new EventHandler<CLRListenerEventArgs<CLREventData<CaretEvent>>>(EventHandlerCaretUpdate));
-            }
-        }
-
-        void EventHandlerCaretUpdate(object sender, CLRListenerEventArgs<CLREventData<CaretEvent>> data)
-        {
-            OnCaretUpdate(data.EventData.TypedEventData);
-        }
     }
 }

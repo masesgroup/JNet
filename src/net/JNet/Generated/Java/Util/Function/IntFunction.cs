@@ -46,6 +46,29 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="IntFunction"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler)); OnApply = Apply;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
+        /// </summary>
+        public System.Func<int, object> OnApply { get; set; }
+
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+        {
+            if (OnApply != null)
+            {
+                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -67,7 +90,7 @@ namespace Java.Util.Function
 
     #region IIntFunction<R>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.IntFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html"/>
     /// </summary>
     public partial interface IIntFunction<R>
     {
@@ -109,6 +132,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IntFunction"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler)); OnApply = Apply;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
+        /// </summary>
+        public System.Func<int, R> OnApply { get; set; }
+
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+        {
+            if (OnApply != null)
+            {
+                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>

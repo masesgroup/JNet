@@ -27,7 +27,7 @@ namespace Javax.Sound.Midi
 {
     #region IControllerEventListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.sound.midi.ControllerEventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html"/>
     /// </summary>
     public partial interface IControllerEventListener
     {
@@ -68,6 +68,25 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ControllerEventListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("controlChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>>>(ControlChangeEventHandler)); OnControlChange = ControlChange;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage)"/>
+        /// </summary>
+        public System.Action<Javax.Sound.Midi.ShortMessage> OnControlChange { get; set; }
+
+        void ControlChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>> data)
+        {
+            if (OnControlChange != null) OnControlChange.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html#controlChange(javax.sound.midi.ShortMessage)"/>
         /// </summary>

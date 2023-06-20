@@ -27,7 +27,7 @@ namespace Java.Beans
 {
     #region IExceptionListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.beans.ExceptionListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html"/>
     /// </summary>
     public partial interface IExceptionListener
     {
@@ -68,6 +68,25 @@ namespace Java.Beans
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ExceptionListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("exceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ExceptionThrownEventHandler)); OnExceptionThrown = ExceptionThrown;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html#exceptionThrown(java.lang.Exception)"/>
+        /// </summary>
+        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnExceptionThrown { get; set; }
+
+        void ExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnExceptionThrown != null) OnExceptionThrown.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html#exceptionThrown(java.lang.Exception)"/>
         /// </summary>

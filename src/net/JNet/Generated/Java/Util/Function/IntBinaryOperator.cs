@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IIntBinaryOperator
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntBinaryOperator.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.IntBinaryOperator implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntBinaryOperator.html"/>
     /// </summary>
     public partial interface IIntBinaryOperator
     {
@@ -70,6 +70,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IntBinaryOperator"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
+        /// </summary>
+        public System.Func<int, int, int> OnApplyAsInt { get; set; }
+
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+        {
+            if (OnApplyAsInt != null)
+            {
+                var executionResult = OnApplyAsInt.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
         /// </summary>

@@ -27,7 +27,7 @@ namespace Java.Lang.ModuleNs
 {
     #region IModuleReader
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleReader.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IModuleReader : Java.Io.ICloseable
     {

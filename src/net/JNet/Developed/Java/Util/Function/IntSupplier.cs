@@ -43,28 +43,19 @@ namespace Java.Util.Function
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetIntSupplier";
 
-        Func<int> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{Int32}"/> to be executed
         /// </summary>
-        public virtual Func<int> OnGetAsInt { get { return executionFunction; } }
+        public virtual Func<int> OnGetAsInt { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="IntSupplier"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{Int32}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public IntSupplier(Func<int> func = null, bool attachEventHandler = true)
+        public IntSupplier()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = GetAsInt;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("getAsInt", new EventHandler<CLRListenerEventArgs<CLREventData>>(EventHandler));
-            }
+            AddEventHandler("getAsInt", new EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsIntEventHandler)); OnGetAsInt = GetAsInt;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        void GetAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
             var retVal = OnGetAsInt();
             data.SetReturnValue(retVal);

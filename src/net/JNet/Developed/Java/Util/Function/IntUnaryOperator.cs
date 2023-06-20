@@ -44,28 +44,19 @@ namespace Java.Util.Function
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetIntUnaryOperator";
 
-        Func<int, int> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{Int32, Int32}"/> to be executed
         /// </summary>
-        public virtual Func<int, int> OnApplyAsInt { get { return executionFunction; } }
+        public virtual Func<int, int> OnApplyAsInt { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="IntUnaryOperator"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{Int32, Int32}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public IntUnaryOperator(Func<int, int> func = null, bool attachEventHandler = true)
+        public IntUnaryOperator()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = ApplyAsInt;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("applyAsInt", new EventHandler<CLRListenerEventArgs<CLREventData<int>>>(EventHandler));
-            }
+            AddEventHandler("applyAsInt", new EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
             var retVal = OnApplyAsInt(data.EventData.TypedEventData);
             data.SetReturnValue(retVal);

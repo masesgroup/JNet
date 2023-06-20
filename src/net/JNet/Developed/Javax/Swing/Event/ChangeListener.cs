@@ -35,35 +35,6 @@ namespace Javax.Swing.Event
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ChangeListener : IChangeListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.swing.event.JNetChangeListener";
 
-        readonly Action<ChangeEvent> StateChangedFunction = null;
-        /// <summary>
-        /// The <see cref="Action{ChangeEvent}"/> to be executed on StateChanged
-        /// </summary>
-        public virtual Action<ChangeEvent> OnStateChanged { get { return StateChangedFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="ChangeListener"/>
-        /// </summary>
-        /// <param name="stateChanged">The <see cref="Action{ChangeEvent}"/> to be executed on StateChanged</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public ChangeListener(Action<ChangeEvent> stateChanged = null, bool attachEventHandler = true)
-        {
-            if (stateChanged != null) StateChangedFunction = stateChanged;
-            else StateChangedFunction = StateChanged;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("stateChanged", new EventHandler<CLRListenerEventArgs<CLREventData<ChangeEvent>>>(EventHandlerStateChanged));
-            }
-        }
-
-        void EventHandlerStateChanged(object sender, CLRListenerEventArgs<CLREventData<ChangeEvent>> data)
-        {
-            OnStateChanged(data.EventData.TypedEventData);
-        }
     }
 }

@@ -44,28 +44,19 @@ namespace Java.Util.Function
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetLongToIntFunction";
 
-        Func<long, int> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{Int32, Int64}"/> to be executed
         /// </summary>
-        public virtual Func<long, int> OnApplyAsInt { get { return executionFunction; } }
+        public virtual Func<long, int> OnApplyAsInt { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="LongToIntFunction"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{Int32, Int64}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public LongToIntFunction(Func<long, int> func = null, bool attachEventHandler = true)
+        public LongToIntFunction()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = ApplyAsInt;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("applyAsInt", new EventHandler<CLRListenerEventArgs<CLREventData<long>>>(EventHandler));
-            }
+            AddEventHandler("applyAsInt", new EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
             var retVal = OnApplyAsInt(data.EventData.TypedEventData);
             data.SetReturnValue(retVal);

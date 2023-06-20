@@ -27,7 +27,7 @@ namespace Java.Awt.DesktopNs
 {
     #region ISystemEventListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemEventListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.desktop.SystemEventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemEventListener.html"/>
     /// </summary>
     public partial interface ISystemEventListener
     {
@@ -63,6 +63,13 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="SystemEventListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+
+        }
 
         #endregion
 

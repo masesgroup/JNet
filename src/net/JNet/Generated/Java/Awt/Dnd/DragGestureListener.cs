@@ -27,7 +27,7 @@ namespace Java.Awt.Dnd
 {
     #region IDragGestureListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.dnd.DragGestureListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html"/>
     /// </summary>
     public partial interface IDragGestureListener
     {
@@ -68,6 +68,25 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="DragGestureListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("dragGestureRecognized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>>>(DragGestureRecognizedEventHandler)); OnDragGestureRecognized = DragGestureRecognized;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.Dnd.DragGestureEvent> OnDragGestureRecognized { get; set; }
+
+        void DragGestureRecognizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>> data)
+        {
+            if (OnDragGestureRecognized != null) OnDragGestureRecognized.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent)"/>
         /// </summary>

@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region IUndoableEditListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.UndoableEditListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html"/>
     /// </summary>
     public partial interface IUndoableEditListener
     {
@@ -68,6 +68,25 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="UndoableEditListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("undoableEditHappened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>>>(UndoableEditHappenedEventHandler)); OnUndoableEditHappened = UndoableEditHappened;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.UndoableEditEvent> OnUndoableEditHappened { get; set; }
+
+        void UndoableEditHappenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>> data)
+        {
+            if (OnUndoableEditHappened != null) OnUndoableEditHappened.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/UndoableEditListener.html#undoableEditHappened(javax.swing.event.UndoableEditEvent)"/>
         /// </summary>

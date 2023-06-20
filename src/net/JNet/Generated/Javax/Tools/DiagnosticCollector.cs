@@ -33,10 +33,6 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Tools.DiagnosticCollector"/> to <see cref="Javax.Tools.DiagnosticListener"/>
-        /// </summary>
-        public static implicit operator Javax.Tools.DiagnosticListener(Javax.Tools.DiagnosticCollector t) => t.Cast<Javax.Tools.DiagnosticListener>();
 
         #endregion
 
@@ -83,10 +79,6 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Javax.Tools.DiagnosticCollector{S}"/> to <see cref="Javax.Tools.DiagnosticListener{S}"/>
-        /// </summary>
-        public static implicit operator Javax.Tools.DiagnosticListener<S>(Javax.Tools.DiagnosticCollector<S> t) => t.Cast<Javax.Tools.DiagnosticListener<S>>();
         /// <summary>
         /// Converter from <see cref="Javax.Tools.DiagnosticCollector{S}"/> to <see cref="Javax.Tools.DiagnosticCollector"/>
         /// </summary>

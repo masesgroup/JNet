@@ -27,7 +27,7 @@ namespace Javax.Sql
 {
     #region IConnectionEventListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.sql.ConnectionEventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html"/>
     /// </summary>
     public partial interface IConnectionEventListener
     {
@@ -74,6 +74,26 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
+        /// <see cref="ConnectionEventListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("connectionClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionClosedEventHandler)); OnConnectionClosed = ConnectionClosed;
+            AddEventHandler("connectionErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionErrorOccurredEventHandler)); OnConnectionErrorOccurred = ConnectionErrorOccurred;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Sql.ConnectionEvent> OnConnectionClosed { get; set; }
+
+        void ConnectionClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
+        {
+            if (OnConnectionClosed != null) OnConnectionClosed.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.ConnectionEvent"/></param>
@@ -81,6 +101,17 @@ namespace Javax.Sql
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Sql.ConnectionEvent> OnConnectionErrorOccurred { get; set; }
+
+        void ConnectionErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
+        {
+            if (OnConnectionErrorOccurred != null) OnConnectionErrorOccurred.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
         /// </summary>

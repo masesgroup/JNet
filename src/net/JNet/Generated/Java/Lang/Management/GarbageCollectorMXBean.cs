@@ -27,7 +27,7 @@ namespace Java.Lang.Management
 {
     #region IGarbageCollectorMXBean
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/GarbageCollectorMXBean.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IGarbageCollectorMXBean : Java.Lang.Management.IMemoryManagerMXBean
     {

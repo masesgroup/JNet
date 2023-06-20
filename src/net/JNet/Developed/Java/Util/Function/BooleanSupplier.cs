@@ -43,28 +43,19 @@ namespace Java.Util.Function
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetBooleanSupplier";
 
-        Func<bool> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{Boolean}"/> to be executed
         /// </summary>
-        public virtual Func<bool> OnGetAsBoolean { get { return executionFunction; } }
+        public virtual Func<bool> OnGetAsBoolean { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="BooleanSupplier"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{Boolean}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public BooleanSupplier(Func<bool> func = null, bool attachEventHandler = true)
+        public BooleanSupplier()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = GetAsBoolean;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("getAsBoolean", new EventHandler<CLRListenerEventArgs<CLREventData>>(EventHandler));
-            }
+            AddEventHandler("getAsBoolean", new EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsBooleanEventHandler)); OnGetAsBoolean = GetAsBoolean;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        void GetAsBooleanEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
             var retVal = OnGetAsBoolean();
             data.SetReturnValue(retVal);

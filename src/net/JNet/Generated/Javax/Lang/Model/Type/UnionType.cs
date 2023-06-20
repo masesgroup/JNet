@@ -27,7 +27,7 @@ namespace Javax.Lang.Model.Type
 {
     #region IUnionType
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/UnionType.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IUnionType : Javax.Lang.Model.Type.ITypeMirror
     {

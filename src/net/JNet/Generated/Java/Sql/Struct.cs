@@ -27,7 +27,7 @@ namespace Java.Sql
 {
     #region IStruct
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Struct.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IStruct
     {

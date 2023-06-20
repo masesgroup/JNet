@@ -35,35 +35,6 @@ namespace Java.Awt.Dnd
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class DragGestureListener : IDragGestureListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.awt.dnd.JNetDragGestureListener";
 
-        readonly Action<DragGestureEvent> DragGestureRecognizedFunction = null;
-        /// <summary>
-        /// The <see cref="Action{DragGestureEvent}"/> to be executed on DragGestureRecognized
-        /// </summary>
-        public virtual Action<DragGestureEvent> OnDragGestureRecognized { get { return DragGestureRecognizedFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="DragGestureListener"/>
-        /// </summary>
-        /// <param name="dragGestureRecognized">The <see cref="Action{DragGestureEvent}"/> to be executed on DragGestureRecognized</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public DragGestureListener(Action<DragGestureEvent> dragGestureRecognized = null, bool attachEventHandler = true)
-        {
-            if (dragGestureRecognized != null) DragGestureRecognizedFunction = dragGestureRecognized;
-            else DragGestureRecognizedFunction = DragGestureRecognized;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("dragGestureRecognized", new EventHandler<CLRListenerEventArgs<CLREventData<DragGestureEvent>>>(EventHandlerDragGestureRecognized));
-            }
-        }
-
-        void EventHandlerDragGestureRecognized(object sender, CLRListenerEventArgs<CLREventData<DragGestureEvent>> data)
-        {
-            OnDragGestureRecognized(data.EventData.TypedEventData);
-        }
     }
 }

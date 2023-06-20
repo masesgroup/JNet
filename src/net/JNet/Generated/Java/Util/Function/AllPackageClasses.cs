@@ -34,10 +34,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BiConsumer() { }
+        public BiConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.BiConsumer";
 
+    
         // TODO: complete the class
 
     }
@@ -54,10 +58,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BiConsumer() { }
+        public BiConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.BiConsumer";
 
+    
         // TODO: complete the class
     
     }
@@ -72,10 +80,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BiFunction() { }
+        public BiFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.BiFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -93,10 +105,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BiFunction() { }
+        public BiFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.BiFunction";
 
+    
         // TODO: complete the class
     
     }
@@ -111,10 +127,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BinaryOperator() { }
+        public BinaryOperator() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.BinaryOperator";
 
+    
         // TODO: complete the class
 
     }
@@ -130,10 +150,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BinaryOperator() { }
+        public BinaryOperator() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.BinaryOperator";
 
+    
         // TODO: complete the class
     
     }
@@ -148,10 +172,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BiPredicate() { }
+        public BiPredicate() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.BiPredicate";
 
+    
         // TODO: complete the class
 
     }
@@ -168,10 +196,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BiPredicate() { }
+        public BiPredicate() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.BiPredicate";
 
+    
         // TODO: complete the class
     
     }
@@ -186,10 +218,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BooleanSupplier() { }
+        public BooleanSupplier() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.BooleanSupplier";
 
+    
         // TODO: complete the class
 
     }
@@ -204,10 +240,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Consumer() { }
+        public Consumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.Consumer";
 
+    
         // TODO: complete the class
 
     }
@@ -223,10 +263,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Consumer() { }
+        public Consumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.Consumer";
 
+    
         // TODO: complete the class
     
     }
@@ -241,10 +285,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DoubleBinaryOperator() { }
+        public DoubleBinaryOperator() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.DoubleBinaryOperator";
 
+    
         // TODO: complete the class
 
     }
@@ -259,10 +307,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DoubleConsumer() { }
+        public DoubleConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.DoubleConsumer";
 
+    
         // TODO: complete the class
 
     }
@@ -277,10 +329,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DoubleFunction() { }
+        public DoubleFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.DoubleFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -296,10 +352,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DoubleFunction() { }
+        public DoubleFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.DoubleFunction";
 
+    
         // TODO: complete the class
     
     }
@@ -314,10 +374,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DoublePredicate() { }
+        public DoublePredicate() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.DoublePredicate";
 
+    
         // TODO: complete the class
 
     }
@@ -332,10 +396,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DoubleSupplier() { }
+        public DoubleSupplier() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.DoubleSupplier";
 
+    
         // TODO: complete the class
 
     }
@@ -350,10 +418,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DoubleToIntFunction() { }
+        public DoubleToIntFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.DoubleToIntFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -368,10 +440,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DoubleToLongFunction() { }
+        public DoubleToLongFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.DoubleToLongFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -386,10 +462,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DoubleUnaryOperator() { }
+        public DoubleUnaryOperator() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.DoubleUnaryOperator";
 
+    
         // TODO: complete the class
 
     }
@@ -404,10 +484,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Function() { }
+        public Function() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.Function";
 
+    
         // TODO: complete the class
 
     }
@@ -424,10 +508,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Function() { }
+        public Function() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.Function";
 
+    
         // TODO: complete the class
     
     }
@@ -442,10 +530,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IntBinaryOperator() { }
+        public IntBinaryOperator() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.IntBinaryOperator";
 
+    
         // TODO: complete the class
 
     }
@@ -460,10 +552,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IntConsumer() { }
+        public IntConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.IntConsumer";
 
+    
         // TODO: complete the class
 
     }
@@ -478,10 +574,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IntFunction() { }
+        public IntFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.IntFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -497,10 +597,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IntFunction() { }
+        public IntFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.IntFunction";
 
+    
         // TODO: complete the class
     
     }
@@ -515,10 +619,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IntPredicate() { }
+        public IntPredicate() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.IntPredicate";
 
+    
         // TODO: complete the class
 
     }
@@ -533,10 +641,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IntSupplier() { }
+        public IntSupplier() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.IntSupplier";
 
+    
         // TODO: complete the class
 
     }
@@ -551,10 +663,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IntToDoubleFunction() { }
+        public IntToDoubleFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.IntToDoubleFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -569,10 +685,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IntToLongFunction() { }
+        public IntToLongFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.IntToLongFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -587,10 +707,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IntUnaryOperator() { }
+        public IntUnaryOperator() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.IntUnaryOperator";
 
+    
         // TODO: complete the class
 
     }
@@ -605,10 +729,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LongBinaryOperator() { }
+        public LongBinaryOperator() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.LongBinaryOperator";
 
+    
         // TODO: complete the class
 
     }
@@ -623,10 +751,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LongConsumer() { }
+        public LongConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.LongConsumer";
 
+    
         // TODO: complete the class
 
     }
@@ -641,10 +773,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LongFunction() { }
+        public LongFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.LongFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -660,10 +796,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LongFunction() { }
+        public LongFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.LongFunction";
 
+    
         // TODO: complete the class
     
     }
@@ -678,10 +818,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LongPredicate() { }
+        public LongPredicate() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.LongPredicate";
 
+    
         // TODO: complete the class
 
     }
@@ -696,10 +840,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LongSupplier() { }
+        public LongSupplier() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.LongSupplier";
 
+    
         // TODO: complete the class
 
     }
@@ -714,10 +862,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LongToDoubleFunction() { }
+        public LongToDoubleFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.LongToDoubleFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -732,10 +884,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LongToIntFunction() { }
+        public LongToIntFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.LongToIntFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -750,10 +906,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LongUnaryOperator() { }
+        public LongUnaryOperator() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.LongUnaryOperator";
 
+    
         // TODO: complete the class
 
     }
@@ -768,10 +928,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ObjDoubleConsumer() { }
+        public ObjDoubleConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ObjDoubleConsumer";
 
+    
         // TODO: complete the class
 
     }
@@ -787,10 +951,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ObjDoubleConsumer() { }
+        public ObjDoubleConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ObjDoubleConsumer";
 
+    
         // TODO: complete the class
     
     }
@@ -805,10 +973,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ObjIntConsumer() { }
+        public ObjIntConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ObjIntConsumer";
 
+    
         // TODO: complete the class
 
     }
@@ -824,10 +996,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ObjIntConsumer() { }
+        public ObjIntConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ObjIntConsumer";
 
+    
         // TODO: complete the class
     
     }
@@ -842,10 +1018,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ObjLongConsumer() { }
+        public ObjLongConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ObjLongConsumer";
 
+    
         // TODO: complete the class
 
     }
@@ -861,10 +1041,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ObjLongConsumer() { }
+        public ObjLongConsumer() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ObjLongConsumer";
 
+    
         // TODO: complete the class
     
     }
@@ -879,10 +1063,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Predicate() { }
+        public Predicate() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.Predicate";
 
+    
         // TODO: complete the class
 
     }
@@ -898,10 +1086,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Predicate() { }
+        public Predicate() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.Predicate";
 
+    
         // TODO: complete the class
     
     }
@@ -916,10 +1108,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Supplier() { }
+        public Supplier() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.Supplier";
 
+    
         // TODO: complete the class
 
     }
@@ -935,10 +1131,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Supplier() { }
+        public Supplier() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.Supplier";
 
+    
         // TODO: complete the class
     
     }
@@ -953,10 +1153,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToDoubleBiFunction() { }
+        public ToDoubleBiFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToDoubleBiFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -973,10 +1177,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToDoubleBiFunction() { }
+        public ToDoubleBiFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToDoubleBiFunction";
 
+    
         // TODO: complete the class
     
     }
@@ -991,10 +1199,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToDoubleFunction() { }
+        public ToDoubleFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToDoubleFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -1010,10 +1222,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToDoubleFunction() { }
+        public ToDoubleFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToDoubleFunction";
 
+    
         // TODO: complete the class
     
     }
@@ -1028,10 +1244,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToIntBiFunction() { }
+        public ToIntBiFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToIntBiFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -1048,10 +1268,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToIntBiFunction() { }
+        public ToIntBiFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToIntBiFunction";
 
+    
         // TODO: complete the class
     
     }
@@ -1066,10 +1290,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToIntFunction() { }
+        public ToIntFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToIntFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -1085,10 +1313,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToIntFunction() { }
+        public ToIntFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToIntFunction";
 
+    
         // TODO: complete the class
     
     }
@@ -1103,10 +1335,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToLongBiFunction() { }
+        public ToLongBiFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToLongBiFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -1123,10 +1359,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToLongBiFunction() { }
+        public ToLongBiFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToLongBiFunction";
 
+    
         // TODO: complete the class
     
     }
@@ -1141,10 +1381,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToLongFunction() { }
+        public ToLongFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToLongFunction";
 
+    
         // TODO: complete the class
 
     }
@@ -1160,10 +1404,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToLongFunction() { }
+        public ToLongFunction() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.ToLongFunction";
 
+    
         // TODO: complete the class
     
     }
@@ -1178,10 +1426,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public UnaryOperator() { }
+        public UnaryOperator() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.UnaryOperator";
 
+    
         // TODO: complete the class
 
     }
@@ -1197,10 +1449,14 @@ namespace Java.Util.Function
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public UnaryOperator() { }
+        public UnaryOperator() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.util.function.UnaryOperator";
 
+    
         // TODO: complete the class
     
     }

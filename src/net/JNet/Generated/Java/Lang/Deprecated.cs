@@ -27,7 +27,7 @@ namespace Java.Lang
 {
     #region IDeprecated
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Deprecated.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IDeprecated : Java.Lang.Annotation.IAnnotation
     {

@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region IMouseInputListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.MouseInputListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputListener.html"/>
     /// </summary>
     public partial interface IMouseInputListener
     {
@@ -63,6 +63,13 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="MouseInputListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+
+        }
 
         #endregion
 

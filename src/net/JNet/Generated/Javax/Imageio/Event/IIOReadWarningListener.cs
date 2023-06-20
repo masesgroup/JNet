@@ -27,7 +27,7 @@ namespace Javax.Imageio.Event
 {
     #region IIIOReadWarningListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.imageio.event.IIOReadWarningListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html"/>
     /// </summary>
     public partial interface IIIOReadWarningListener
     {
@@ -69,6 +69,25 @@ namespace Javax.Imageio.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="IIOReadWarningListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("warningOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(WarningOccurredEventHandler)); OnWarningOccurred = WarningOccurred;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageReader, string> OnWarningOccurred { get; set; }
+
+        void WarningOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        {
+            if (OnWarningOccurred != null) OnWarningOccurred.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadWarningListener.html#warningOccurred(javax.imageio.ImageReader,java.lang.String)"/>
         /// </summary>

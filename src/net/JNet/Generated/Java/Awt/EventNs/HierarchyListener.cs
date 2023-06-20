@@ -27,7 +27,7 @@ namespace Java.Awt.EventNs
 {
     #region IHierarchyListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.HierarchyListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html"/>
     /// </summary>
     public partial interface IHierarchyListener
     {
@@ -68,6 +68,25 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="HierarchyListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("hierarchyChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(HierarchyChangedEventHandler)); OnHierarchyChanged = HierarchyChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.HierarchyEvent> OnHierarchyChanged { get; set; }
+
+        void HierarchyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
+        {
+            if (OnHierarchyChanged != null) OnHierarchyChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
         /// </summary>

@@ -27,7 +27,7 @@ namespace Java.Nio.Channels
 {
     #region IMulticastChannel
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IMulticastChannel : Java.Nio.Channels.INetworkChannel
     {

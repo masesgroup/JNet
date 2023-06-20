@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region IPopupMenuListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.PopupMenuListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html"/>
     /// </summary>
     public partial interface IPopupMenuListener
     {
@@ -79,6 +79,27 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
+        /// <see cref="PopupMenuListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("popupMenuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuCanceledEventHandler)); OnPopupMenuCanceled = PopupMenuCanceled;
+            AddEventHandler("popupMenuWillBecomeInvisible", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeInvisibleEventHandler)); OnPopupMenuWillBecomeInvisible = PopupMenuWillBecomeInvisible;
+            AddEventHandler("popupMenuWillBecomeVisible", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeVisibleEventHandler)); OnPopupMenuWillBecomeVisible = PopupMenuWillBecomeVisible;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuCanceled { get; set; }
+
+        void PopupMenuCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
+        {
+            if (OnPopupMenuCanceled != null) OnPopupMenuCanceled.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuCanceled(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Event.PopupMenuEvent"/></param>
@@ -86,6 +107,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuWillBecomeInvisible { get; set; }
+
+        void PopupMenuWillBecomeInvisibleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
+        {
+            if (OnPopupMenuWillBecomeInvisible != null) OnPopupMenuWillBecomeInvisible.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>
@@ -94,6 +126,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.PopupMenuEvent> OnPopupMenuWillBecomeVisible { get; set; }
+
+        void PopupMenuWillBecomeVisibleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
+        {
+            if (OnPopupMenuWillBecomeVisible != null) OnPopupMenuWillBecomeVisible.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/PopupMenuListener.html#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)"/>
         /// </summary>

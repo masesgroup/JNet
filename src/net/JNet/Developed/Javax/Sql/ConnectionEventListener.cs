@@ -35,49 +35,6 @@ namespace Javax.Sql
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ConnectionEventListener : IConnectionEventListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.sql.JNetConnectionEventListener";
 
-        readonly Action<ConnectionEvent> ConnectionClosedFunction = null;
-        readonly Action<ConnectionEvent> ConnectionErrorOccurredFunction = null;
-        /// <summary>
-        /// The <see cref="Action{ConnectionEvent}"/> to be executed on ConnectionClosed
-        /// </summary>
-        public virtual Action<ConnectionEvent> OnConnectionClosed { get { return ConnectionClosedFunction; } }
-        /// <summary>
-        /// The <see cref="Action{ConnectionEvent}"/> to be executed on ConnectionErrorOccurred
-        /// </summary>
-        public virtual Action<ConnectionEvent> OnConnectionErrorOccurred { get { return ConnectionErrorOccurredFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="ConnectionEventListener"/>
-        /// </summary>
-        /// <param name="connectionClosed">The <see cref="Action{ConnectionEvent}"/> to be executed on ConnectionClosed</param>
-        /// <param name="connectionErrorOccurred">The <see cref="Action{ConnectionEvent}"/> to be executed on ConnectionErrorOccurred</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public ConnectionEventListener(Action<ConnectionEvent> connectionClosed = null, Action<ConnectionEvent> connectionErrorOccurred = null, bool attachEventHandler = true)
-        {
-            if (connectionClosed != null) ConnectionClosedFunction = connectionClosed;
-            else ConnectionClosedFunction = ConnectionClosed;
-            if (connectionErrorOccurred != null) ConnectionErrorOccurredFunction = connectionErrorOccurred;
-            else ConnectionErrorOccurredFunction = ConnectionErrorOccurred;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("connectionClosed", new EventHandler<CLRListenerEventArgs<CLREventData<ConnectionEvent>>>(EventHandlerConnectionClosed));
-                AddEventHandler("connectionErrorOccurred", new EventHandler<CLRListenerEventArgs<CLREventData<ConnectionEvent>>>(EventHandlerConnectionErrorOccurred));
-            }
-        }
-
-        void EventHandlerConnectionClosed(object sender, CLRListenerEventArgs<CLREventData<ConnectionEvent>> data)
-        {
-            OnConnectionClosed(data.EventData.TypedEventData);
-        }
-
-        void EventHandlerConnectionErrorOccurred(object sender, CLRListenerEventArgs<CLREventData<ConnectionEvent>> data)
-        {
-            OnConnectionErrorOccurred(data.EventData.TypedEventData);
-        }
     }
 }

@@ -27,7 +27,7 @@ namespace Java.Awt.EventNs
 {
     #region IMouseListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.MouseListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html"/>
     /// </summary>
     public partial interface IMouseListener
     {
@@ -89,6 +89,29 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
+        /// <see cref="MouseListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("mouseClicked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseClickedEventHandler)); OnMouseClicked = MouseClicked;
+            AddEventHandler("mouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseEnteredEventHandler)); OnMouseEntered = MouseEntered;
+            AddEventHandler("mouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseExitedEventHandler)); OnMouseExited = MouseExited;
+            AddEventHandler("mousePressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MousePressedEventHandler)); OnMousePressed = MousePressed;
+            AddEventHandler("mouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseReleasedEventHandler)); OnMouseReleased = MouseReleased;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseClicked { get; set; }
+
+        void MouseClickedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        {
+            if (OnMouseClicked != null) OnMouseClicked.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseClicked(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
@@ -96,6 +119,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseEntered(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseEntered { get; set; }
+
+        void MouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        {
+            if (OnMouseEntered != null) OnMouseEntered.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseEntered(java.awt.event.MouseEvent)"/>
         /// </summary>
@@ -104,6 +138,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseExited(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseExited { get; set; }
+
+        void MouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        {
+            if (OnMouseExited != null) OnMouseExited.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseExited(java.awt.event.MouseEvent)"/>
         /// </summary>
@@ -112,6 +157,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mousePressed(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.MouseEvent> OnMousePressed { get; set; }
+
+        void MousePressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        {
+            if (OnMousePressed != null) OnMousePressed.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mousePressed(java.awt.event.MouseEvent)"/>
         /// </summary>
@@ -120,6 +176,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseReleased(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseReleased { get; set; }
+
+        void MouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        {
+            if (OnMouseReleased != null) OnMouseReleased.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseListener.html#mouseReleased(java.awt.event.MouseEvent)"/>
         /// </summary>
