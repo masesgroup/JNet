@@ -92,13 +92,16 @@
 <li><strong>JavadocVersion</strong>: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used</li>
 <li><strong>OriginJavadocJARVersionAndUrls</strong>: A CSV list of keypair of JavadocVersion and OriginJavadocUrl, separated by |, associated to the JARs to be analyzed</li>
 <li><strong>DestinationRootPath</strong>: The destination root path where reflected classes will be stored</li>
+<li><strong>DestinationJavaListenerPath</strong>: The destination root path where Java listener classes will be stored</li>
+<li><strong>JavaListenerBasePackage</strong>: The base package name to use when a Java listener class is created</li>
 <li><strong>ClassesToAnalyze</strong>: A CSV list of full qualified class names to be analyzed</li>
 <li><strong>JarList</strong>: A CSV list of JAR to be analyzed or folders containing the JARs</li>
 <li><strong>ModulesToParse</strong>: A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath</li>
 <li><strong>NamespacesToAvoid</strong>: A CSV list of namespaces to be removed from analysis</li>
 <li><strong>ClassesToAvoid</strong>: A CSV list of classes to be removed during analysis</li>
 <li><strong>ClassesToAvoidInGenerics</strong>: A CSV list of classes to be removed during analysis from the classes which have generics types</li>
-<li><strong>ClassesToBeListener</strong>: A CSV list of class names to be treated as Listener</li>
+<li><strong>ClassesToBeListener</strong>: A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with &quot;Listener&quot; or &quot;Adapter&quot; as Listener</li>
+<li><strong>ClassesToAvoidJavaListener</strong>: A CSV list of class names to be avoided during generation of Java listener classes</li>
 <li><strong>NamespacesInConflict</strong>: A CSV list of namespaces in conflict with class name: to this one will be added an &quot;Ns&quot; at the end</li>
 <li><strong>ClassesInConflict</strong>: A CSV list of classes in conflict with namespace name: to this one will be added an &quot;Class&quot; at the end</li>
 <li><strong>OnlyPropertiesForGetterSetter</strong>: The option forces the tool to convert into properties only getter/setter</li>
