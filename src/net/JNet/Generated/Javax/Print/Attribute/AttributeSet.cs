@@ -27,7 +27,7 @@ namespace Javax.Print.Attribute
 {
     #region IAttributeSet
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSet.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IAttributeSet
     {

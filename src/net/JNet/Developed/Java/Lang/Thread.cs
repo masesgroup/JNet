@@ -274,27 +274,19 @@ namespace Java.Lang
             /// </summary>
             public override string BridgeClassName => "org.mases.jnet.lang.JNetUncaughtExceptionHandler";
 
-            readonly Action<Thread, JVMBridgeException> executionFunction = null;
             /// <summary>
             /// The <see cref="Action{Thread, JVMBridgeException}"/> to be executed
             /// </summary>
-            public virtual Action<Thread, JVMBridgeException> OnUncaughtException { get { return executionFunction; } }
+            public virtual Action<Thread, JVMBridgeException> OnUncaughtException { get; set; }
             /// <summary>
             /// Initialize a new instance of <see cref="UncaughtExceptionHandler"/>
             /// </summary>
-            /// <param name="action">The <see cref="Action{Thread, JVMBridgeException}"/> to be executed</param>
-            /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-            public UncaughtExceptionHandler(Action<Thread, JVMBridgeException> action = null, bool attachEventHandler = true)
+            public UncaughtExceptionHandler()
             {
-                if (action != null) executionFunction = action;
-                else executionFunction = UncaughtException;
-                if (attachEventHandler)
-                {
-                    AddEventHandler("uncaughtException", new EventHandler<CLRListenerEventArgs<CLREventData<Thread>>>(EventHandler));
-                }
+                AddEventHandler("uncaughtException", new EventHandler<CLRListenerEventArgs<CLREventData<Thread>>>(UncaughtExceptionEventHandler)); OnUncaughtException = UncaughtException;
             }
 
-            void EventHandler(object sender, CLRListenerEventArgs<CLREventData<Thread>> data)
+            void UncaughtExceptionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Thread>> data)
             {
                 OnUncaughtException(data.EventData.TypedEventData, JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
             }

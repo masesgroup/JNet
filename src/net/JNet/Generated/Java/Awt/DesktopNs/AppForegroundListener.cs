@@ -27,7 +27,7 @@ namespace Java.Awt.DesktopNs
 {
     #region IAppForegroundListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.desktop.AppForegroundListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html"/>
     /// </summary>
     public partial interface IAppForegroundListener
     {
@@ -74,6 +74,26 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
+        /// <see cref="AppForegroundListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("appMovedToBackground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppMovedToBackgroundEventHandler)); OnAppMovedToBackground = AppMovedToBackground;
+            AddEventHandler("appRaisedToForeground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppRaisedToForegroundEventHandler)); OnAppRaisedToForeground = AppRaisedToForeground;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appMovedToBackground(java.awt.desktop.AppForegroundEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.DesktopNs.AppForegroundEvent> OnAppMovedToBackground { get; set; }
+
+        void AppMovedToBackgroundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>> data)
+        {
+            if (OnAppMovedToBackground != null) OnAppMovedToBackground.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appMovedToBackground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppForegroundEvent"/></param>
@@ -81,6 +101,17 @@ namespace Java.Awt.DesktopNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appRaisedToForeground(java.awt.desktop.AppForegroundEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.DesktopNs.AppForegroundEvent> OnAppRaisedToForeground { get; set; }
+
+        void AppRaisedToForegroundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>> data)
+        {
+            if (OnAppRaisedToForeground != null) OnAppRaisedToForeground.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppForegroundListener.html#appRaisedToForeground(java.awt.desktop.AppForegroundEvent)"/>
         /// </summary>

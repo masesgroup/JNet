@@ -27,7 +27,7 @@ namespace Javax.Xml.Stream.Events
 {
     #region IEntityDeclaration
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EntityDeclaration.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IEntityDeclaration : Javax.Xml.Stream.Events.IXMLEvent
     {

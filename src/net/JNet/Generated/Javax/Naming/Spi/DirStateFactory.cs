@@ -27,7 +27,7 @@ namespace Javax.Naming.Spi
 {
     #region IDirStateFactory
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirStateFactory.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IDirStateFactory : Javax.Naming.Spi.IStateFactory
     {

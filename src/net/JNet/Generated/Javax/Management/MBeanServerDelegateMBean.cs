@@ -27,7 +27,7 @@ namespace Javax.Management
 {
     #region IMBeanServerDelegateMBean
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerDelegateMBean.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IMBeanServerDelegateMBean
     {

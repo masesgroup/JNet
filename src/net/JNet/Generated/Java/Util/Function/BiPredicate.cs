@@ -46,6 +46,32 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="BiPredicate"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler)); OnTest = Test;
+            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(AndEventHandler)); OnAnd = And;
+            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
+            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(OrEventHandler)); OnOr = Or;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        public System.Func<object, object, bool> OnTest { get; set; }
+
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnTest != null)
+            {
+                var executionResult = OnTest.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -55,6 +81,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnAnd { get; set; }
+
+        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>> data)
+        {
+            if (OnAnd != null)
+            {
+                var executionResult = OnAnd.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
@@ -64,6 +105,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.BiPredicate> OnNegate { get; set; }
+
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnNegate != null)
+            {
+                var executionResult = OnNegate.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
@@ -73,6 +129,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnOr { get; set; }
+
+        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>> data)
+        {
+            if (OnOr != null)
+            {
+                var executionResult = OnOr.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
@@ -95,7 +166,7 @@ namespace Java.Util.Function
 
     #region IBiPredicate<T, U>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.BiPredicate implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html"/>
     /// </summary>
     public partial interface IBiPredicate<T, U>
     {
@@ -161,6 +232,32 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="BiPredicate"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler)); OnTest = Test;
+            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(And<Arg0objectSuperT, Arg0objectSuperU>EventHandler)); OnAnd<Arg0objectSuperT, Arg0objectSuperU> = And<Arg0objectSuperT, Arg0objectSuperU>;
+            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
+            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler)); OnOr<Arg0objectSuperT, Arg0objectSuperU> = Or<Arg0objectSuperT, Arg0objectSuperU>;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        public System.Func<T, U, bool> OnTest { get; set; }
+
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        {
+            if (OnTest != null)
+            {
+                var executionResult = OnTest.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -170,6 +267,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnAnd<Arg0objectSuperT, Arg0objectSuperU> { get; set; }
+
+        void And<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>> data)
+        {
+            if (OnAnd<Arg0objectSuperT, Arg0objectSuperU> != null)
+            {
+                var executionResult = OnAnd<Arg0objectSuperT, Arg0objectSuperU>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
@@ -181,6 +293,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.BiPredicate<T, U>> OnNegate { get; set; }
+
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnNegate != null)
+            {
+                var executionResult = OnNegate.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
@@ -190,6 +317,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnOr<Arg0objectSuperT, Arg0objectSuperU> { get; set; }
+
+        void Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>> data)
+        {
+            if (OnOr<Arg0objectSuperT, Arg0objectSuperU> != null)
+            {
+                var executionResult = OnOr<Arg0objectSuperT, Arg0objectSuperU>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>

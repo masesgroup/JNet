@@ -46,6 +46,26 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
+        /// <see cref="ContainerAdapter"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("componentAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentAddedEventHandler)); OnComponentAdded = ComponentAdded;
+            AddEventHandler("componentRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentRemovedEventHandler)); OnComponentRemoved = ComponentRemoved;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerAdapter.html#componentAdded(java.awt.event.ContainerEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.ContainerEvent> OnComponentAdded { get; set; }
+
+        void ComponentAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>> data)
+        {
+            if (OnComponentAdded != null) OnComponentAdded.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerAdapter.html#componentAdded(java.awt.event.ContainerEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ContainerEvent"/></param>
@@ -53,6 +73,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerAdapter.html#componentRemoved(java.awt.event.ContainerEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.ContainerEvent> OnComponentRemoved { get; set; }
+
+        void ComponentRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>> data)
+        {
+            if (OnComponentRemoved != null) OnComponentRemoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerAdapter.html#componentRemoved(java.awt.event.ContainerEvent)"/>
         /// </summary>

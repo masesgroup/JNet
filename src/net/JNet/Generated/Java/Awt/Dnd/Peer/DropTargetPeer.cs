@@ -27,7 +27,7 @@ namespace Java.Awt.Dnd.Peer
 {
     #region IDropTargetPeer
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IDropTargetPeer
     {

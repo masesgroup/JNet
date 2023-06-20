@@ -78,13 +78,6 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()"/> 
-        /// </summary>
-        public Java.Util.Comparator Comparator
-        {
-            get { return IExecute<Java.Util.Comparator>("getComparator"); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()"/> 
         /// </summary>
         public long ExactSizeIfKnown
@@ -548,15 +541,11 @@ namespace Java.Util
 
     #region ISpliterator<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface ISpliterator<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()"/> 
-        /// </summary>
-        Java.Util.Comparator Comparator { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()"/> 
         /// </summary>
@@ -665,13 +654,6 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getComparator()"/> 
-        /// </summary>
-        public Java.Util.Comparator Comparator
-        {
-            get { return IExecute<Java.Util.Comparator>("getComparator"); }
-        }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#getExactSizeIfKnown()"/> 
         /// </summary>

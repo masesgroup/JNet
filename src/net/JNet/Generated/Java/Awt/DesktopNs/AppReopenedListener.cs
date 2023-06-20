@@ -27,7 +27,7 @@ namespace Java.Awt.DesktopNs
 {
     #region IAppReopenedListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.desktop.AppReopenedListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html"/>
     /// </summary>
     public partial interface IAppReopenedListener
     {
@@ -68,6 +68,25 @@ namespace Java.Awt.DesktopNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="AppReopenedListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("appReopened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppReopenedEvent>>>(AppReopenedEventHandler)); OnAppReopened = AppReopened;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html#appReopened(java.awt.desktop.AppReopenedEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.DesktopNs.AppReopenedEvent> OnAppReopened { get; set; }
+
+        void AppReopenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppReopenedEvent>> data)
+        {
+            if (OnAppReopened != null) OnAppReopened.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html#appReopened(java.awt.desktop.AppReopenedEvent)"/>
         /// </summary>

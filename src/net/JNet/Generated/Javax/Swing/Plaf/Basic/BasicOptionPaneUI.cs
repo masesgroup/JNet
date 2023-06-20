@@ -64,45 +64,6 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region ButtonActionListener
-        public partial class ButtonActionListener
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
-            public virtual void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
-            {
-                
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ButtonAreaLayout
         public partial class ButtonAreaLayout
         {

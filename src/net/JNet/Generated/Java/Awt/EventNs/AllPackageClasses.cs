@@ -77,10 +77,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ActionListener() { }
+        public ActionListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.ActionListener";
 
+    
         // TODO: complete the class
 
     }
@@ -138,10 +142,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AdjustmentListener() { }
+        public AdjustmentListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.AdjustmentListener";
 
+    
         // TODO: complete the class
 
     }
@@ -156,10 +164,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AWTEventListener() { }
+        public AWTEventListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.AWTEventListener";
 
+    
         // TODO: complete the class
 
     }
@@ -217,10 +229,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ComponentAdapter() { }
+        public ComponentAdapter() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.ComponentAdapter";
 
+    
         // TODO: complete the class
 
     }
@@ -278,10 +294,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ComponentListener() { }
+        public ComponentListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.ComponentListener";
 
+    
         // TODO: complete the class
 
     }
@@ -296,10 +316,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ContainerAdapter() { }
+        public ContainerAdapter() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.ContainerAdapter";
 
+    
         // TODO: complete the class
 
     }
@@ -357,10 +381,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ContainerListener() { }
+        public ContainerListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.ContainerListener";
 
+    
         // TODO: complete the class
 
     }
@@ -375,10 +403,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FocusAdapter() { }
+        public FocusAdapter() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.FocusAdapter";
 
+    
         // TODO: complete the class
 
     }
@@ -479,10 +511,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FocusListener() { }
+        public FocusListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.FocusListener";
 
+    
         // TODO: complete the class
 
     }
@@ -497,10 +533,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HierarchyBoundsAdapter() { }
+        public HierarchyBoundsAdapter() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.HierarchyBoundsAdapter";
 
+    
         // TODO: complete the class
 
     }
@@ -515,10 +555,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HierarchyBoundsListener() { }
+        public HierarchyBoundsListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.HierarchyBoundsListener";
 
+    
         // TODO: complete the class
 
     }
@@ -576,10 +620,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HierarchyListener() { }
+        public HierarchyListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.HierarchyListener";
 
+    
         // TODO: complete the class
 
     }
@@ -680,10 +728,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InputMethodListener() { }
+        public InputMethodListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.InputMethodListener";
 
+    
         // TODO: complete the class
 
     }
@@ -784,10 +836,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ItemListener() { }
+        public ItemListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.ItemListener";
 
+    
         // TODO: complete the class
 
     }
@@ -802,10 +858,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public KeyAdapter() { }
+        public KeyAdapter() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.KeyAdapter";
 
+    
         // TODO: complete the class
 
     }
@@ -863,10 +923,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public KeyListener() { }
+        public KeyListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.KeyListener";
 
+    
         // TODO: complete the class
 
     }
@@ -881,10 +945,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseAdapter() { }
+        public MouseAdapter() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.MouseAdapter";
 
+    
         // TODO: complete the class
 
     }
@@ -942,10 +1010,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseListener() { }
+        public MouseListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.MouseListener";
 
+    
         // TODO: complete the class
 
     }
@@ -960,10 +1032,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseMotionAdapter() { }
+        public MouseMotionAdapter() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.MouseMotionAdapter";
 
+    
         // TODO: complete the class
 
     }
@@ -978,10 +1054,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseMotionListener() { }
+        public MouseMotionListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.MouseMotionListener";
 
+    
         // TODO: complete the class
 
     }
@@ -1039,10 +1119,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MouseWheelListener() { }
+        public MouseWheelListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.MouseWheelListener";
 
+    
         // TODO: complete the class
 
     }
@@ -1143,10 +1227,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TextListener() { }
+        public TextListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.TextListener";
 
+    
         // TODO: complete the class
 
     }
@@ -1161,10 +1249,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WindowAdapter() { }
+        public WindowAdapter() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.WindowAdapter";
 
+    
         // TODO: complete the class
 
     }
@@ -1222,10 +1314,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WindowFocusListener() { }
+        public WindowFocusListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.WindowFocusListener";
 
+    
         // TODO: complete the class
 
     }
@@ -1240,10 +1336,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WindowListener() { }
+        public WindowListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.WindowListener";
 
+    
         // TODO: complete the class
 
     }
@@ -1258,10 +1358,14 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WindowStateListener() { }
+        public WindowStateListener() { InitializeHandlers(); }
 
-    #warning Remember to build the body class for event listener
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.generated.java.awt.event.WindowStateListener";
 
+    
         // TODO: complete the class
 
     }

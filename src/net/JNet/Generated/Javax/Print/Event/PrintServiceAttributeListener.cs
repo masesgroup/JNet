@@ -27,7 +27,7 @@ namespace Javax.Print.Event
 {
     #region IPrintServiceAttributeListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.print.event.PrintServiceAttributeListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html"/>
     /// </summary>
     public partial interface IPrintServiceAttributeListener
     {
@@ -68,6 +68,25 @@ namespace Javax.Print.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="PrintServiceAttributeListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("attributeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintServiceAttributeEvent>>>(AttributeUpdateEventHandler)); OnAttributeUpdate = AttributeUpdate;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Print.Event.PrintServiceAttributeEvent> OnAttributeUpdate { get; set; }
+
+        void AttributeUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintServiceAttributeEvent>> data)
+        {
+            if (OnAttributeUpdate != null) OnAttributeUpdate.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent)"/>
         /// </summary>

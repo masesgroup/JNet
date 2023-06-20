@@ -27,7 +27,7 @@ namespace Java.Util.Stream
 {
     #region ILongStream
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface ILongStream : Java.Util.Stream.IBaseStream<long?, Java.Util.Stream.LongStream>
     {
@@ -734,6 +734,31 @@ namespace Java.Util.Stream
 
             #region Instance methods
             /// <summary>
+            /// <see cref="Builder"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("build", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(BuildEventHandler)); OnBuild = Build;
+                AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(AcceptEventHandler)); OnAccept = Accept;
+                AddEventHandler("add", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(AddEventHandler)); OnAdd = Add;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#build()"/>
+            /// </summary>
+            public System.Func<Java.Util.Stream.LongStream> OnBuild { get; set; }
+
+            void BuildEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnBuild != null)
+                {
+                    var executionResult = OnBuild.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#build()"/>
             /// </summary>
 
@@ -742,6 +767,17 @@ namespace Java.Util.Stream
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#accept(long)"/>
+            /// </summary>
+            public System.Action<long> OnAccept { get; set; }
+
+            void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+            {
+                if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#accept(long)"/>
             /// </summary>
@@ -750,6 +786,21 @@ namespace Java.Util.Stream
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#add(long)"/>
+            /// </summary>
+            public System.Func<long, Java.Util.Stream.LongStream.Builder> OnAdd { get; set; }
+
+            void AddEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+            {
+                if (OnAdd != null)
+                {
+                    var executionResult = OnAdd.Invoke(data.EventData.TypedEventData);
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#add(long)"/>
             /// </summary>

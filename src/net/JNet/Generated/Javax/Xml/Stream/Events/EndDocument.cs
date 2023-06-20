@@ -27,7 +27,7 @@ namespace Javax.Xml.Stream.Events
 {
     #region IEndDocument
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/EndDocument.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IEndDocument : Javax.Xml.Stream.Events.IXMLEvent
     {

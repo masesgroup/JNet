@@ -67,101 +67,56 @@ namespace Javax.Swing.Event
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class MouseInputAdapter : IMouseInputAdapter
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetMouseInputAdapter";
+        ///// <summary>
+        ///// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        ///// </summary>
+        //public override string BridgeClassName => "org.mases.jnet.awt.event.JNetMouseInputAdapter";
 
-        readonly Action<MouseEvent> MouseClickedFunction = null;
-        readonly Action<MouseEvent> MouseEnteredFunction = null;
-        readonly Action<MouseEvent> MouseExitedFunction = null;
-        readonly Action<MouseEvent> MousePressedFunction = null;
-        readonly Action<MouseEvent> MouseReleasedFunction = null;
-        readonly Action<MouseEvent> MouseDraggedFunction = null;
-        readonly Action<MouseEvent> MouseMovedFunction = null;
-        readonly Action<MouseWheelEvent> MouseWheelMovedFunction = null;
         /// <summary>
         /// The <see cref="Action{MouseEvent}"/> to be executed on MouseClicked
         /// </summary>
-        public virtual Action<MouseEvent> OnMouseClicked { get { return MouseClickedFunction; } }
+        public virtual Action<MouseEvent> OnMouseClicked { get; set; }
         /// <summary>
         /// The <see cref="Action{MouseEvent}"/> to be executed on MouseEntered
         /// </summary>
-        public virtual Action<MouseEvent> OnMouseEntered { get { return MouseEnteredFunction; } }
+        public virtual Action<MouseEvent> OnMouseEntered { get; set; }
         /// <summary>
         /// The <see cref="Action{MouseEvent}"/> to be executed on MouseExited
         /// </summary>
-        public virtual Action<MouseEvent> OnMouseExited { get { return MouseExitedFunction; } }
+        public virtual Action<MouseEvent> OnMouseExited { get; set; }
         /// <summary>
         /// The <see cref="Action{MouseEvent}"/> to be executed on MousePressed
         /// </summary>
-        public virtual Action<MouseEvent> OnMousePressed { get { return MousePressedFunction; } }
+        public virtual Action<MouseEvent> OnMousePressed { get; set; }
         /// <summary>
         /// The <see cref="Action{MouseEvent}"/> to be executed on MouseReleased
         /// </summary>
-        public virtual Action<MouseEvent> OnMouseReleased { get { return MouseReleasedFunction; } }
+        public virtual Action<MouseEvent> OnMouseReleased { get; set; }
         /// <summary>
         /// The <see cref="Action{MouseEvent}"/> to be executed on MouseDragged
         /// </summary>
-        public virtual Action<MouseEvent> OnMouseDragged { get { return MouseDraggedFunction; } }
+        public virtual Action<MouseEvent> OnMouseDragged { get; set; }
         /// <summary>
         /// The <see cref="Action{MouseEvent}"/> to be executed on MouseMoved
         /// </summary>
-        public virtual Action<MouseEvent> OnMouseMoved { get { return MouseMovedFunction; } }
+        public virtual Action<MouseEvent> OnMouseMoved { get; set; }
         /// <summary>
         /// The <see cref="Action{MouseWheelEvent}"/> to be executed on MouseWheelMoved
         /// </summary>
-        public virtual Action<MouseWheelEvent> OnMouseWheelMoved { get { return MouseWheelMovedFunction; } }
+        public virtual Action<MouseWheelEvent> OnMouseWheelMoved { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="MouseInputAdapter"/>
         /// </summary>
-        /// <param name="mouseClicked">The <see cref="Action{MouseEvent}"/> to be executed on MouseClicked</param>
-        /// <param name="mouseEntered">The <see cref="Action{MouseEvent}"/> to be executed on MouseEntered</param>
-        /// <param name="mouseExited">The <see cref="Action{MouseEvent}"/> to be executed on MouseExited</param>
-        /// <param name="mousePressed">The <see cref="Action{MouseEvent}"/> to be executed on MousePressed</param>
-        /// <param name="mouseReleased">The <see cref="Action{MouseEvent}"/> to be executed on MouseReleased</param>
-        /// <param name="mouseDragged">The <see cref="Action{MouseEvent}"/> to be executed on MouseDragged</param>
-        /// <param name="mouseMoved">The <see cref="Action{MouseEvent}"/> to be executed on MouseMoved</param>
-        /// <param name="mouseWheelMoved">The <see cref="Action{MouseEvent}"/> to be executed on MouseWheelMoved</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public MouseInputAdapter(Action<MouseEvent> mouseClicked = null,
-                                 Action<MouseEvent> mouseEntered = null,
-                                 Action<MouseEvent> mouseExited = null,
-                                 Action<MouseEvent> mousePressed = null,
-                                 Action<MouseEvent> mouseReleased = null,
-                                 Action<MouseEvent> mouseDragged = null,
-                                 Action<MouseEvent> mouseMoved = null,
-                                 Action<MouseWheelEvent> mouseWheelMoved = null,
-                                 bool attachEventHandler = true)
+        public MouseInputAdapter(bool isManualVersion) // put it here for compilation: JNetReflector miss generation of methods of this class
         {
-            if (mouseClicked != null) MouseClickedFunction = mouseClicked;
-            else MouseClickedFunction = MouseClicked;
-            if (mouseEntered != null) MouseEnteredFunction = mouseEntered;
-            else MouseEnteredFunction = MouseEntered;
-            if (mouseExited != null) MouseExitedFunction = mouseExited;
-            else MouseExitedFunction = MouseExited;
-            if (mousePressed != null) MousePressedFunction = mousePressed;
-            else MousePressedFunction = MousePressed;
-            if (mouseReleased != null) MouseReleasedFunction = mouseReleased;
-            else MouseReleasedFunction = MouseReleased;
-            if (mouseDragged != null) MouseDraggedFunction = mouseDragged;
-            else MouseDraggedFunction = MouseDragged;
-            if (mouseMoved != null) MouseMovedFunction = mouseMoved;
-            else MouseMovedFunction = MouseMoved;
-            if (mouseWheelMoved != null) MouseWheelMovedFunction = mouseWheelMoved;
-            else MouseWheelMovedFunction = MouseWheelMoved;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("mouseClicked", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseClicked));
-                AddEventHandler("mouseEntered", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseEntered));
-                AddEventHandler("mouseExited", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseExited));
-                AddEventHandler("mousePressed", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMousePressed));
-                AddEventHandler("mouseReleased", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseReleased));
-                AddEventHandler("mouseDragged", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseDragged));
-                AddEventHandler("mouseMoved", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseMoved));
-                AddEventHandler("mouseWheelMoved", new EventHandler<CLRListenerEventArgs<CLREventData<MouseWheelEvent>>>(EventHandlerMouseWheelMoved));
-            }
+            AddEventHandler("mouseClicked", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseClicked)); OnMouseClicked = MouseClicked;
+            AddEventHandler("mouseEntered", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseEntered)); OnMouseEntered = MouseEntered;
+            AddEventHandler("mouseExited", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseExited)); OnMouseExited = MouseExited;
+            AddEventHandler("mousePressed", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMousePressed)); OnMousePressed = MousePressed;
+            AddEventHandler("mouseReleased", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseReleased)); OnMouseReleased = MouseReleased;
+            AddEventHandler("mouseDragged", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseDragged)); OnMouseDragged = MouseDragged;
+            AddEventHandler("mouseMoved", new EventHandler<CLRListenerEventArgs<CLREventData<MouseEvent>>>(EventHandlerMouseMoved)); OnMouseMoved = MouseMoved;
+            AddEventHandler("mouseWheelMoved", new EventHandler<CLRListenerEventArgs<CLREventData<MouseWheelEvent>>>(EventHandlerMouseWheelMoved)); OnMouseWheelMoved = MouseWheelMoved;
         }
 
         void EventHandlerMouseClicked(object sender, CLRListenerEventArgs<CLREventData<MouseEvent>> data)

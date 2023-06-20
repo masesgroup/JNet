@@ -27,7 +27,7 @@ namespace Java.Awt.DesktopNs
 {
     #region IUserSessionListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.desktop.UserSessionListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html"/>
     /// </summary>
     public partial interface IUserSessionListener
     {
@@ -74,6 +74,26 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
+        /// <see cref="UserSessionListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("userSessionActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionActivatedEventHandler)); OnUserSessionActivated = UserSessionActivated;
+            AddEventHandler("userSessionDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionDeactivatedEventHandler)); OnUserSessionDeactivated = UserSessionDeactivated;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionActivated(java.awt.desktop.UserSessionEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionActivated { get; set; }
+
+        void UserSessionActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>> data)
+        {
+            if (OnUserSessionActivated != null) OnUserSessionActivated.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionActivated(java.awt.desktop.UserSessionEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.UserSessionEvent"/></param>
@@ -81,6 +101,17 @@ namespace Java.Awt.DesktopNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionDeactivated(java.awt.desktop.UserSessionEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionDeactivated { get; set; }
+
+        void UserSessionDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>> data)
+        {
+            if (OnUserSessionDeactivated != null) OnUserSessionDeactivated.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionDeactivated(java.awt.desktop.UserSessionEvent)"/>
         /// </summary>

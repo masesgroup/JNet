@@ -46,6 +46,29 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="LongFunction"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler)); OnApply = Apply;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// </summary>
+        public System.Func<long, object> OnApply { get; set; }
+
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        {
+            if (OnApply != null)
+            {
+                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -67,7 +90,7 @@ namespace Java.Util.Function
 
     #region ILongFunction<R>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.LongFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html"/>
     /// </summary>
     public partial interface ILongFunction<R>
     {
@@ -109,6 +132,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="LongFunction"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyEventHandler)); OnApply = Apply;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
+        /// </summary>
+        public System.Func<long, R> OnApply { get; set; }
+
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        {
+            if (OnApply != null)
+            {
+                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongFunction.html#apply(long)"/>
         /// </summary>

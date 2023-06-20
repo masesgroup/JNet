@@ -46,6 +46,29 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="ToLongBiFunction"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        public System.Func<object, object, long> OnApplyAsLong { get; set; }
+
+        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnApplyAsLong != null)
+            {
+                var executionResult = OnApplyAsLong.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -68,7 +91,7 @@ namespace Java.Util.Function
 
     #region IToLongBiFunction<T, U>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.ToLongBiFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html"/>
     /// </summary>
     public partial interface IToLongBiFunction<T, U>
     {
@@ -111,6 +134,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ToLongBiFunction"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        public System.Func<T, U, long> OnApplyAsLong { get; set; }
+
+        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        {
+            if (OnApplyAsLong != null)
+            {
+                var executionResult = OnApplyAsLong.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>

@@ -46,6 +46,29 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="ToDoubleFunction"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleFunction.html#applyAsDouble(java.lang.Object)"/>
+        /// </summary>
+        public System.Func<object, double> OnApplyAsDouble { get; set; }
+
+        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnApplyAsDouble != null)
+            {
+                var executionResult = OnApplyAsDouble.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleFunction.html#applyAsDouble(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -67,7 +90,7 @@ namespace Java.Util.Function
 
     #region IToDoubleFunction<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.ToDoubleFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleFunction.html"/>
     /// </summary>
     public partial interface IToDoubleFunction<T>
     {
@@ -109,6 +132,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="ToDoubleFunction"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleFunction.html#applyAsDouble(java.lang.Object)"/>
+        /// </summary>
+        public System.Func<T, double> OnApplyAsDouble { get; set; }
+
+        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        {
+            if (OnApplyAsDouble != null)
+            {
+                var executionResult = OnApplyAsDouble.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ToDoubleFunction.html#applyAsDouble(java.lang.Object)"/>
         /// </summary>

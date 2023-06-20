@@ -35,35 +35,6 @@ namespace Java.Awt.EventNs
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class TextListener : ITextListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetTextListener";
 
-        readonly Action<TextEvent> textValueChangedFunction = null;
-        /// <summary>
-        /// The <see cref="Action{TextEvent}"/> to be executed on TextValueChanged
-        /// </summary>
-        public virtual Action<TextEvent> OnTextValueChanged { get { return textValueChangedFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="TextListener"/>
-        /// </summary>
-        /// <param name="textValueChanged">The <see cref="Action{TextEvent}"/> to be executed on TextValueChanged</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public TextListener(Action<TextEvent> textValueChanged = null, bool attachEventHandler = true)
-        {
-            if (textValueChanged != null) textValueChangedFunction = textValueChanged;
-            else textValueChangedFunction = TextValueChanged;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("textValueChanged", new EventHandler<CLRListenerEventArgs<CLREventData<TextEvent>>>(EventHandlerTextValueChanged));
-            }
-        }
-
-        void EventHandlerTextValueChanged(object sender, CLRListenerEventArgs<CLREventData<TextEvent>> data)
-        {
-            OnTextValueChanged(data.EventData.TypedEventData);
-        }
     }
 }

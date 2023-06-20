@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region ILongPredicate
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.LongPredicate implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html"/>
     /// </summary>
     public partial interface ILongPredicate
     {
@@ -88,6 +88,32 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="LongPredicate"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(TestEventHandler)); OnTest = Test;
+            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(AndEventHandler)); OnAnd = And;
+            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
+            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>>>(OrEventHandler)); OnOr = Or;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#test(long)"/>
+        /// </summary>
+        public System.Func<long, bool> OnTest { get; set; }
+
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        {
+            if (OnTest != null)
+            {
+                var executionResult = OnTest.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#test(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -96,6 +122,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnAnd { get; set; }
+
+        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>> data)
+        {
+            if (OnAnd != null)
+            {
+                var executionResult = OnAnd.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
         /// </summary>
@@ -105,6 +146,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.LongPredicate> OnNegate { get; set; }
+
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnNegate != null)
+            {
+                var executionResult = OnNegate.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
         /// </summary>
@@ -114,6 +170,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.LongPredicate, Java.Util.Function.LongPredicate> OnOr { get; set; }
+
+        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongPredicate>> data)
+        {
+            if (OnOr != null)
+            {
+                var executionResult = OnOr.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
         /// </summary>

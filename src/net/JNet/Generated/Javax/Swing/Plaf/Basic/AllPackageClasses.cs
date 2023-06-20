@@ -455,24 +455,6 @@ namespace Javax.Swing.Plaf.Basic
     }
     #endregion
 
-    #region BasicButtonListener
-    /// <summary>
-    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicButtonListener.html"/>
-    /// </summary>
-    public partial class BasicButtonListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public BasicButtonListener() { }
-
-    #warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region BasicButtonUI
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicButtonUI.html"/>
@@ -2103,24 +2085,6 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region InternalFramePropertyChangeListener
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameUI.InternalFramePropertyChangeListener.html"/>
-        /// </summary>
-        public partial class InternalFramePropertyChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public InternalFramePropertyChangeListener() { }
-
-        #warning Remember to build the body class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
     
     }
     #endregion
@@ -2680,24 +2644,6 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region ButtonActionListener
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonActionListener.html"/>
-        /// </summary>
-        public partial class ButtonActionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ButtonActionListener() { }
-
-        #warning Remember to build the body class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
         #region ButtonAreaLayout
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.ButtonAreaLayout.html"/>
@@ -3300,24 +3246,6 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region HSBChangeListener
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.HSBChangeListener.html"/>
-        /// </summary>
-        public partial class HSBChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public HSBChangeListener() { }
-
-        #warning Remember to build the body class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
         #region PropertyChangeHandler
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.PropertyChangeHandler.html"/>
@@ -3398,24 +3326,6 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-        #region VSBChangeListener
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.VSBChangeListener.html"/>
-        /// </summary>
-        public partial class VSBChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public VSBChangeListener() { }
-
-        #warning Remember to build the body class for event listener
 
             // TODO: complete the class
 
@@ -3674,42 +3584,6 @@ namespace Javax.Swing.Plaf.Basic
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => false;
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-        #region ScrollListener
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ScrollListener.html"/>
-        /// </summary>
-        public partial class ScrollListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ScrollListener() { }
-
-        #warning Remember to build the body class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-        #region TrackListener
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.TrackListener.html"/>
-        /// </summary>
-        public partial class TrackListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TrackListener() { }
-
-        #warning Remember to build the body class for event listener
 
             // TODO: complete the class
 
@@ -5006,25 +4880,7 @@ namespace Javax.Swing.Plaf.Basic
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region DockingListener
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicToolBarUI.DockingListener.html"/>
-        /// </summary>
-        public partial class DockingListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public DockingListener() { }
 
-        #warning Remember to build the body class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-    
     }
     #endregion
 

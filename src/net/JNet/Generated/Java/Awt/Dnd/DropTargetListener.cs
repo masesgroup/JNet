@@ -27,7 +27,7 @@ namespace Java.Awt.Dnd
 {
     #region IDropTargetListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.dnd.DropTargetListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html"/>
     /// </summary>
     public partial interface IDropTargetListener
     {
@@ -89,6 +89,29 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
+        /// <see cref="DropTargetListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("dragEnter", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>>>(DragEnterEventHandler)); OnDragEnter = DragEnter;
+            AddEventHandler("dragExit", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetEvent>>>(DragExitEventHandler)); OnDragExit = DragExit;
+            AddEventHandler("dragOver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>>>(DragOverEventHandler)); OnDragOver = DragOver;
+            AddEventHandler("drop", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDropEvent>>>(DropEventHandler)); OnDrop = Drop;
+            AddEventHandler("dropActionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>>>(DropActionChangedEventHandler)); OnDropActionChanged = DropActionChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragEnter(java.awt.dnd.DropTargetDragEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.Dnd.DropTargetDragEvent> OnDragEnter { get; set; }
+
+        void DragEnterEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>> data)
+        {
+            if (OnDragEnter != null) OnDragEnter.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragEnter(java.awt.dnd.DropTargetDragEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDragEvent"/></param>
@@ -96,6 +119,17 @@ namespace Java.Awt.Dnd
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragExit(java.awt.dnd.DropTargetEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.Dnd.DropTargetEvent> OnDragExit { get; set; }
+
+        void DragExitEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetEvent>> data)
+        {
+            if (OnDragExit != null) OnDragExit.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragExit(java.awt.dnd.DropTargetEvent)"/>
         /// </summary>
@@ -104,6 +138,17 @@ namespace Java.Awt.Dnd
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragOver(java.awt.dnd.DropTargetDragEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.Dnd.DropTargetDragEvent> OnDragOver { get; set; }
+
+        void DragOverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>> data)
+        {
+            if (OnDragOver != null) OnDragOver.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dragOver(java.awt.dnd.DropTargetDragEvent)"/>
         /// </summary>
@@ -112,6 +157,17 @@ namespace Java.Awt.Dnd
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#drop(java.awt.dnd.DropTargetDropEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.Dnd.DropTargetDropEvent> OnDrop { get; set; }
+
+        void DropEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDropEvent>> data)
+        {
+            if (OnDrop != null) OnDrop.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#drop(java.awt.dnd.DropTargetDropEvent)"/>
         /// </summary>
@@ -120,6 +176,17 @@ namespace Java.Awt.Dnd
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dropActionChanged(java.awt.dnd.DropTargetDragEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.Dnd.DropTargetDragEvent> OnDropActionChanged { get; set; }
+
+        void DropActionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>> data)
+        {
+            if (OnDropActionChanged != null) OnDropActionChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#dropActionChanged(java.awt.dnd.DropTargetDragEvent)"/>
         /// </summary>

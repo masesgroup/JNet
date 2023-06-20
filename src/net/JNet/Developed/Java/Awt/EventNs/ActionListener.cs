@@ -34,35 +34,6 @@ namespace Java.Awt.EventNs
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ActionListener : IActionListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetActionListener";
 
-        readonly Action<ActionEvent> actionPerformedFunction = null;
-        /// <summary>
-        /// The <see cref="Action{ActionEvent}"/> to be executed on ActionPerformed
-        /// </summary>
-        public virtual Action<ActionEvent> OnActionPerformed { get { return actionPerformedFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="ActionListener"/>
-        /// </summary>
-        /// <param name="actionPerformed">The <see cref="Action{ActionEvent}"/> to be executed on ActionPerformed</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public ActionListener(Action<ActionEvent> actionPerformed = null, bool attachEventHandler = true)
-        {
-            if (actionPerformed != null) actionPerformedFunction = actionPerformed;
-            else actionPerformedFunction = ActionPerformed;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("actionPerformed", new EventHandler<CLRListenerEventArgs<CLREventData<ActionEvent>>>(EventHandlerActionPerformed));
-            }
-        }
-
-        void EventHandlerActionPerformed(object sender, CLRListenerEventArgs<CLREventData<ActionEvent>> data)
-        {
-            OnActionPerformed(data.EventData.TypedEventData);
-        }
     }
 }

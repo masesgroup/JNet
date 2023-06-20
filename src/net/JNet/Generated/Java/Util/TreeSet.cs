@@ -38,14 +38,6 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        public TreeSet(Java.Util.Comparator arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.SortedSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.SortedSet"/></param>
@@ -154,15 +146,6 @@ namespace Java.Util
             return IExecute("pollLast");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#comparator()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator Comparator()
-        {
-            return IExecute<Java.Util.Comparator>("comparator");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/>
         /// </summary>
 
@@ -260,14 +243,6 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public TreeSet(Java.Util.Collection<E> arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#%3Cinit%3E(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        public TreeSet(Java.Util.Comparator<E> arg0)
             : base(arg0)
         {
         }
@@ -382,16 +357,6 @@ namespace Java.Util
         public E PollLast()
         {
             return IExecute<E>("pollLast");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#comparator()"/>
-        /// </summary>
-
-        /// <typeparam name="ReturnobjectSuperE"><typeparamref name="E"/></typeparam>
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public Java.Util.Comparator<ReturnobjectSuperE> Comparator<ReturnobjectSuperE>() where ReturnobjectSuperE: E
-        {
-            return IExecute<Java.Util.Comparator<ReturnobjectSuperE>>("comparator");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeSet.html#descendingIterator()"/>

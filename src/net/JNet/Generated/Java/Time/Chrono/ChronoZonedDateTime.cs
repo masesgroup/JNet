@@ -58,15 +58,6 @@ namespace Java.Time.Chrono
         {
             return SExecute<Java.Time.Chrono.ChronoZonedDateTime>(LocalBridgeClazz, "from", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoZonedDateTime.html#timeLineOrder()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public static Java.Util.Comparator TimeLineOrder()
-        {
-            return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "timeLineOrder");
-        }
 
         #endregion
 

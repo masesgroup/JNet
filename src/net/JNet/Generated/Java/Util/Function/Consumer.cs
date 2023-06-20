@@ -46,6 +46,26 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="Consumer"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler)); OnAccept = Accept;
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer>>>(AndThenEventHandler)); OnAndThen = AndThen;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// </summary>
+        public System.Action<object> OnAccept { get; set; }
+
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -53,6 +73,21 @@ namespace Java.Util.Function
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Consumer, Java.Util.Function.Consumer> OnAndThen { get; set; }
+
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer>> data)
+        {
+            if (OnAndThen != null)
+            {
+                var executionResult = OnAndThen.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
@@ -75,7 +110,7 @@ namespace Java.Util.Function
 
     #region IConsumer<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.Consumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html"/>
     /// </summary>
     public partial interface IConsumer<T>
     {
@@ -124,6 +159,26 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="Consumer"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler)); OnAccept = Accept;
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer<Arg0objectSuperT>>>>(AndThen<Arg0objectSuperT>EventHandler)); OnAndThen<Arg0objectSuperT> = AndThen<Arg0objectSuperT>;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// </summary>
+        public System.Action<T> OnAccept { get; set; }
+
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        {
+            if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -131,6 +186,21 @@ namespace Java.Util.Function
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Consumer<Arg0objectSuperT>, Java.Util.Function.Consumer<T>> OnAndThen<Arg0objectSuperT> { get; set; }
+
+        void AndThen<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer<Arg0objectSuperT>>> data)
+        {
+            if (OnAndThen<Arg0objectSuperT> != null)
+            {
+                var executionResult = OnAndThen<Arg0objectSuperT>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>

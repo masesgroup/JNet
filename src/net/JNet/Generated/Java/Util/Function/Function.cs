@@ -46,6 +46,31 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="Function"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler)); OnApply = Apply;
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler)); OnAndThen = AndThen;
+            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(ComposeEventHandler)); OnCompose = Compose;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// </summary>
+        public System.Func<object, object> OnApply { get; set; }
+
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnApply != null)
+            {
+                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -54,6 +79,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnAndThen { get; set; }
+
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
+        {
+            if (OnAndThen != null)
+            {
+                var executionResult = OnAndThen.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
@@ -63,6 +103,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnCompose { get; set; }
+
+        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
+        {
+            if (OnCompose != null)
+            {
+                var executionResult = OnCompose.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
@@ -85,7 +140,7 @@ namespace Java.Util.Function
 
     #region IFunction<T, R>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.Function implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html"/>
     /// </summary>
     public partial interface IFunction<T, R>
     {
@@ -146,6 +201,31 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="Function"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler)); OnApply = Apply;
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler)); OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = AndThen<V, Arg0objectSuperR, Arg0ExtendsV>;
+            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>>>(Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler)); OnCompose<V, Arg0objectSuperV, Arg0ExtendsT> = Compose<V, Arg0objectSuperV, Arg0ExtendsT>;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// </summary>
+        public System.Func<T, R> OnApply { get; set; }
+
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        {
+            if (OnApply != null)
+            {
+                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -154,6 +234,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.Function<T, V>> OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> { get; set; }
+
+        void AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>> data)
+        {
+            if (OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> != null)
+            {
+                var executionResult = OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
@@ -166,6 +261,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>, Java.Util.Function.Function<V, R>> OnCompose<V, Arg0objectSuperV, Arg0ExtendsT> { get; set; }
+
+        void Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>> data)
+        {
+            if (OnCompose<V, Arg0objectSuperV, Arg0ExtendsT> != null)
+            {
+                var executionResult = OnCompose<V, Arg0objectSuperV, Arg0ExtendsT>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>

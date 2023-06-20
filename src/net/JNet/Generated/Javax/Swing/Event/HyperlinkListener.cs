@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region IHyperlinkListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.HyperlinkListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html"/>
     /// </summary>
     public partial interface IHyperlinkListener
     {
@@ -68,6 +68,25 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="HyperlinkListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("hyperlinkUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.HyperlinkEvent>>>(HyperlinkUpdateEventHandler)); OnHyperlinkUpdate = HyperlinkUpdate;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.HyperlinkEvent> OnHyperlinkUpdate { get; set; }
+
+        void HyperlinkUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.HyperlinkEvent>> data)
+        {
+            if (OnHyperlinkUpdate != null) OnHyperlinkUpdate.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
         /// </summary>

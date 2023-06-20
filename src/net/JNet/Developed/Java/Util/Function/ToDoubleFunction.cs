@@ -52,28 +52,19 @@ namespace Java.Util.Function
     /// <typeparam name="T">The data type associated to the event</typeparam>
     public class ToDoubleFunction<T> : ToDoubleFunction, IToDoubleFunction<T>
     {
-        Func<T, double> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{T, Double}"/> to be executed
         /// </summary>
-        public virtual Func<T, double> OnApplyAsDouble { get { return executionFunction; } }
+        public virtual Func<T, double> OnApplyAsDouble { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="ToDoubleFunction{T}"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{T, Double}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public ToDoubleFunction(Func<T, double> func = null, bool attachEventHandler = true)
+        public ToDoubleFunction()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = ApplyAsDouble;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("applyAsDouble", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(EventHandler));
-            }
+            AddEventHandler("applyAsDouble", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
             var retVal = OnApplyAsDouble(data.EventData.TypedEventData);
             data.SetReturnValue(retVal);

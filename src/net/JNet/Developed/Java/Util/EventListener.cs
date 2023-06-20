@@ -20,8 +20,26 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    public partial class EventListener
+    #region IEventListener
+    /// <summary>
+    /// .NET interface for org.mases.jnet.util.EventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListener.html"/>
+    /// </summary>
+    public partial interface IEventListener
     {
-        // can be extended with methods not reflected or not available in Java;
+
     }
+    #endregion
+
+    #region EventListener
+    /// <summary>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListener.html"/>
+    /// </summary>
+    public partial class EventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener, Java.Util.IEventListener
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => "org.mases.jnet.util.JNetEventListener";
+    }
+    #endregion
 }

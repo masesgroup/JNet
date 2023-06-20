@@ -46,6 +46,32 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="Predicate"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler)); OnTest = Test;
+            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>>>(AndEventHandler)); OnAnd = And;
+            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
+            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>>>(OrEventHandler)); OnOr = Or;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
+        /// </summary>
+        public System.Func<object, bool> OnTest { get; set; }
+
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnTest != null)
+            {
+                var executionResult = OnTest.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -54,6 +80,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnAnd { get; set; }
+
+        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>> data)
+        {
+            if (OnAnd != null)
+            {
+                var executionResult = OnAnd.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
@@ -63,6 +104,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Predicate> OnNegate { get; set; }
+
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnNegate != null)
+            {
+                var executionResult = OnNegate.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
@@ -72,6 +128,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Predicate, Java.Util.Function.Predicate> OnOr { get; set; }
+
+        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate>> data)
+        {
+            if (OnOr != null)
+            {
+                var executionResult = OnOr.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>
@@ -94,7 +165,7 @@ namespace Java.Util.Function
 
     #region IPredicate<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.Predicate implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html"/>
     /// </summary>
     public partial interface IPredicate<T>
     {
@@ -157,6 +228,32 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// <see cref="Predicate"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler)); OnTest = Test;
+            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>>>(And<Arg0objectSuperT>EventHandler)); OnAnd<Arg0objectSuperT> = And<Arg0objectSuperT>;
+            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
+            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>>>(Or<Arg0objectSuperT>EventHandler)); OnOr<Arg0objectSuperT> = Or<Arg0objectSuperT>;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
+        /// </summary>
+        public System.Func<T, bool> OnTest { get; set; }
+
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        {
+            if (OnTest != null)
+            {
+                var executionResult = OnTest.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#test(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
@@ -165,6 +262,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnAnd<Arg0objectSuperT> { get; set; }
+
+        void And<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>> data)
+        {
+            if (OnAnd<Arg0objectSuperT> != null)
+            {
+                var executionResult = OnAnd<Arg0objectSuperT>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#and(java.util.function.Predicate)"/>
         /// </summary>
@@ -175,6 +287,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Predicate<T>> OnNegate { get; set; }
+
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnNegate != null)
+            {
+                var executionResult = OnNegate.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#negate()"/>
         /// </summary>
@@ -184,6 +311,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.Predicate<Arg0objectSuperT>, Java.Util.Function.Predicate<T>> OnOr<Arg0objectSuperT> { get; set; }
+
+        void Or<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Predicate<Arg0objectSuperT>>> data)
+        {
+            if (OnOr<Arg0objectSuperT> != null)
+            {
+                var executionResult = OnOr<Arg0objectSuperT>.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html#or(java.util.function.Predicate)"/>
         /// </summary>

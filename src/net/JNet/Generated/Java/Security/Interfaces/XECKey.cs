@@ -27,7 +27,7 @@ namespace Java.Security.Interfaces
 {
     #region IXECKey
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECKey.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IXECKey
     {

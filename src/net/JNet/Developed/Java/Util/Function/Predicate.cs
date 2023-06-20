@@ -52,28 +52,19 @@ namespace Java.Util.Function
     /// <typeparam name="TObject">The data type associated to the event</typeparam>
     public class Predicate<TObject> : Predicate, IPredicate<TObject>
     {
-        Func<TObject, bool> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{TObject, Boolean}"/> to be executed
         /// </summary>
-        public virtual Func<TObject, bool> OnTest { get { return executionFunction; } }
+        public virtual Func<TObject, bool> OnTest { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="Predicate{TObject}"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{TObject, Boolean}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public Predicate(Func<TObject, bool> func = null, bool attachEventHandler = true)
+        public Predicate()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = Test;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<TObject>>>(EventHandler));
-            }
+            AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<TObject>>>(TestEventHandler)); OnTest = Test;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<TObject>> data)
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<TObject>> data)
         {
             var retVal = OnTest(data.EventData.TypedEventData);
             data.SetReturnValue(retVal);

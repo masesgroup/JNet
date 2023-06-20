@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region ICaretListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.CaretListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html"/>
     /// </summary>
     public partial interface ICaretListener
     {
@@ -68,6 +68,25 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="CaretListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("caretUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.CaretEvent>>>(CaretUpdateEventHandler)); OnCaretUpdate = CaretUpdate;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.CaretEvent> OnCaretUpdate { get; set; }
+
+        void CaretUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.CaretEvent>> data)
+        {
+            if (OnCaretUpdate != null) OnCaretUpdate.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html#caretUpdate(javax.swing.event.CaretEvent)"/>
         /// </summary>

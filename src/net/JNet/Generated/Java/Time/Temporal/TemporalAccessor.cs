@@ -27,7 +27,7 @@ namespace Java.Time.Temporal
 {
     #region ITemporalAccessor
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAccessor.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface ITemporalAccessor
     {

@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region ICellEditorListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.CellEditorListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html"/>
     /// </summary>
     public partial interface ICellEditorListener
     {
@@ -74,6 +74,26 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
+        /// <see cref="CellEditorListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("editingCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingCanceledEventHandler)); OnEditingCanceled = EditingCanceled;
+            AddEventHandler("editingStopped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingStoppedEventHandler)); OnEditingStopped = EditingStopped;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingCanceled(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.ChangeEvent> OnEditingCanceled { get; set; }
+
+        void EditingCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
+        {
+            if (OnEditingCanceled != null) OnEditingCanceled.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingCanceled(javax.swing.event.ChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Event.ChangeEvent"/></param>
@@ -81,6 +101,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingStopped(javax.swing.event.ChangeEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.ChangeEvent> OnEditingStopped { get; set; }
+
+        void EditingStoppedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
+        {
+            if (OnEditingStopped != null) OnEditingStopped.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingStopped(javax.swing.event.ChangeEvent)"/>
         /// </summary>

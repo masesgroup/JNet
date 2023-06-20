@@ -27,7 +27,7 @@ namespace Java.Awt.Datatransfer
 {
     #region IFlavorListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.datatransfer.FlavorListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html"/>
     /// </summary>
     public partial interface IFlavorListener
     {
@@ -68,6 +68,25 @@ namespace Java.Awt.Datatransfer
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="FlavorListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("flavorsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>>>(FlavorsChangedEventHandler)); OnFlavorsChanged = FlavorsChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.Datatransfer.FlavorEvent> OnFlavorsChanged { get; set; }
+
+        void FlavorsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>> data)
+        {
+            if (OnFlavorsChanged != null) OnFlavorsChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
         /// </summary>

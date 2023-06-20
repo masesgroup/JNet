@@ -27,7 +27,7 @@ namespace Java.Nio.File.Attribute
 {
     #region IBasicFileAttributes
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/BasicFileAttributes.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IBasicFileAttributes
     {

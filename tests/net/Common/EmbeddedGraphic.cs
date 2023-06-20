@@ -45,7 +45,7 @@ namespace MASES.JNetTest.GraphicCommon
         {
             try
             {
-                _Listener = new ActionListener(handler);
+                _Listener = new ActionListener() { OnActionPerformed = handler };
                 CommonContainer = new Panel();
                 dynamic container = CommonContainer;
                 dynamic layout = new GridLayout(2, 1);
@@ -83,7 +83,7 @@ namespace MASES.JNetTest.GraphicCommon
         {
             try
             {
-                _Listener = new ActionListener(handler);
+                _Listener = new ActionListener() { OnActionPerformed = handler };
                 var panel = new Panel();
                 var layout = new GridLayout(2, 1);
                 panel.Layout = layout;

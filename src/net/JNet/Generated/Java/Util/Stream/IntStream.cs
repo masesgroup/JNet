@@ -27,7 +27,7 @@ namespace Java.Util.Stream
 {
     #region IIntStream
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IIntStream : Java.Util.Stream.IBaseStream<int?, Java.Util.Stream.IntStream>
     {
@@ -749,6 +749,31 @@ namespace Java.Util.Stream
 
             #region Instance methods
             /// <summary>
+            /// <see cref="Builder"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("build", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(BuildEventHandler)); OnBuild = Build;
+                AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(AcceptEventHandler)); OnAccept = Accept;
+                AddEventHandler("add", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(AddEventHandler)); OnAdd = Add;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#build()"/>
+            /// </summary>
+            public System.Func<Java.Util.Stream.IntStream> OnBuild { get; set; }
+
+            void BuildEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnBuild != null)
+                {
+                    var executionResult = OnBuild.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#build()"/>
             /// </summary>
 
@@ -757,6 +782,17 @@ namespace Java.Util.Stream
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#accept(int)"/>
+            /// </summary>
+            public System.Action<int> OnAccept { get; set; }
+
+            void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#accept(int)"/>
             /// </summary>
@@ -765,6 +801,21 @@ namespace Java.Util.Stream
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#add(int)"/>
+            /// </summary>
+            public System.Func<int, Java.Util.Stream.IntStream.Builder> OnAdd { get; set; }
+
+            void AddEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                if (OnAdd != null)
+                {
+                    var executionResult = OnAdd.Invoke(data.EventData.TypedEventData);
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#add(int)"/>
             /// </summary>

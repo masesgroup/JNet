@@ -27,7 +27,7 @@ namespace Org.W3c.Dom.Css
 {
     #region ICSSRuleList
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSRuleList.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface ICSSRuleList
     {

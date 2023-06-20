@@ -45,28 +45,19 @@ namespace Java.Util.Function
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoubleBinaryOperator";
 
-        Func<double, double, double> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{Double, Double, Double}"/> to be executed
         /// </summary>
-        public virtual Func<double, double, double> OnApplyAsDouble { get { return executionFunction; } }
+        public virtual Func<double, double, double> OnApplyAsDouble { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="DoubleBinaryOperator"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{Double, Double, Double}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public DoubleBinaryOperator(Func<double, double, double> func = null, bool attachEventHandler = true)
+        public DoubleBinaryOperator()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = ApplyAsDouble;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("applyAsDouble", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(EventHandler));
-            }
+            AddEventHandler("applyAsDouble", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
             var retVal = OnApplyAsDouble(data.EventData.TypedEventData, data.EventData.To<double>(0));
             data.SetReturnValue(retVal);

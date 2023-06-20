@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region ITreeWillExpandListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.TreeWillExpandListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html"/>
     /// </summary>
     public partial interface ITreeWillExpandListener
     {
@@ -76,6 +76,26 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
+        /// <see cref="TreeWillExpandListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("treeWillCollapse", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillCollapseEventHandler)); OnTreeWillCollapse = TreeWillCollapse;
+            AddEventHandler("treeWillExpand", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeWillExpandEventHandler)); OnTreeWillExpand = TreeWillExpand;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillCollapse { get; set; }
+
+        void TreeWillCollapseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
+        {
+            if (OnTreeWillCollapse != null) OnTreeWillCollapse.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Event.TreeExpansionEvent"/></param>
@@ -84,6 +104,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillExpand { get; set; }
+
+        void TreeWillExpandEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
+        {
+            if (OnTreeWillExpand != null) OnTreeWillExpand.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>

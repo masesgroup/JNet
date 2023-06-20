@@ -27,7 +27,7 @@ namespace Javax.Sound.Midi
 {
     #region IMetaEventListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.sound.midi.MetaEventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html"/>
     /// </summary>
     public partial interface IMetaEventListener
     {
@@ -68,6 +68,25 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see cref="MetaEventListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("meta", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.MetaMessage>>>(MetaEventHandler)); OnMeta = Meta;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html#meta(javax.sound.midi.MetaMessage)"/>
+        /// </summary>
+        public System.Action<Javax.Sound.Midi.MetaMessage> OnMeta { get; set; }
+
+        void MetaEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.MetaMessage>> data)
+        {
+            if (OnMeta != null) OnMeta.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html#meta(javax.sound.midi.MetaMessage)"/>
         /// </summary>
