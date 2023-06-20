@@ -52,28 +52,19 @@ namespace Java.Util.Function
     /// <typeparam name="T">The data type associated to the event</typeparam>
     public class ToIntFunction<T> : ToIntFunction, IToIntFunction<T>
     {
-        Func<T, int> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{T, Int32}"/> to be executed
         /// </summary>
-        public virtual Func<T, int> OnApplyAsInt { get { return executionFunction; } }
+        public virtual Func<T, int> OnApplyAsInt { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="ToIntFunction{T}"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{T, Int32}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public ToIntFunction(Func<T, int> func = null, bool attachEventHandler = true)
+        public ToIntFunction()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = ApplyAsInt;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("applyAsInt", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(EventHandler));
-            }
+            AddEventHandler("applyAsInt", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
             var retVal = OnApplyAsInt(data.EventData.TypedEventData);
             data.SetReturnValue(retVal);

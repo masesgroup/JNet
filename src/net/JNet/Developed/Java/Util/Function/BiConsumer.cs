@@ -54,28 +54,19 @@ namespace Java.Util.Function
     /// <typeparam name="U">The data associated to the event</typeparam> 
     public class BiConsumer<T, U> : BiConsumer, IBiConsumer<T, U>
     {
-        Action<T, U> executionFunction = null;
         /// <summary>
         /// The <see cref="Action{T, U}"/> to be executed
         /// </summary>
-        public virtual Action<T, U> OnAccept { get { return executionFunction; } }
+        public virtual Action<T, U> OnAccept { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="BiConsumer{T, U}"/>
         /// </summary>
-        /// <param name="action">The <see cref="Action{T, U}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public BiConsumer(Action<T, U> action = null, bool attachEventHandler = true)
+        public BiConsumer()
         {
-            if (action != null) executionFunction = action;
-            else executionFunction = Accept;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("accept", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(EventHandler));
-            }
+            AddEventHandler("accept", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler)); OnAccept = Accept;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
             OnAccept(data.EventData.TypedEventData, data.EventData.To<U>(0));
         }

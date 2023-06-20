@@ -54,28 +54,19 @@ namespace Java.Util.Function
     /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
     public class Function<TObject, TReturn> : Function, IFunction<TObject, TReturn>
     {
-        Func<TObject, TReturn> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{TObject, TReturn}"/> to be executed
         /// </summary>
-        public virtual Func<TObject, TReturn> OnApply { get { return executionFunction; } }
+        public virtual Func<TObject, TReturn> OnApply { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="Function{TObject, TReturn}"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{TObject, TReturn}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public Function(Func<TObject, TReturn> func = null, bool attachEventHandler = true)
+        public Function()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = Apply;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("apply", new EventHandler<CLRListenerEventArgs<CLREventData<TObject>>>(EventHandler));
-            }
+            AddEventHandler("apply", new EventHandler<CLRListenerEventArgs<CLREventData<TObject>>>(ApplyEventHandler)); OnApply = Apply;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<TObject>> data)
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<TObject>> data)
         {
             var retVal = OnApply(data.EventData.TypedEventData);
             data.SetReturnValue(retVal);

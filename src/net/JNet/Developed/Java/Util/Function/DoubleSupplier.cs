@@ -43,28 +43,19 @@ namespace Java.Util.Function
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoubleSupplier";
 
-        Func<double> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{Double}"/> to be executed
         /// </summary>
-        public virtual Func<double> OnGetAsDouble { get { return executionFunction; } }
+        public virtual Func<double> OnGetAsDouble { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="DoubleSupplier"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{Double}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public DoubleSupplier(Func<double> func = null, bool attachEventHandler = true)
+        public DoubleSupplier()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = GetAsDouble;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("getAsDouble", new EventHandler<CLRListenerEventArgs<CLREventData>>(EventHandler));
-            }
+            AddEventHandler("getAsDouble", new EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler)); OnGetAsDouble = GetAsDouble;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        void GetAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
             var retVal = OnGetAsDouble();
             data.SetReturnValue(retVal);

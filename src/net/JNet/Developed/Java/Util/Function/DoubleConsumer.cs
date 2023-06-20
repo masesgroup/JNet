@@ -43,28 +43,19 @@ namespace Java.Util.Function
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoubleConsumer";
 
-        Action<double> executionFunction = null;
         /// <summary>
         /// The <see cref="Action{Double}"/> to be executed
         /// </summary>
-        public virtual Action<double> OnAccept { get { return executionFunction; } }
+        public virtual Action<double> OnAccept { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="DoubleConsumer"/>
         /// </summary>
-        /// <param name="action">The <see cref="Action{Double}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public DoubleConsumer(Action<double> action = null, bool attachEventHandler = true)
+        public DoubleConsumer()
         {
-            if (action != null) executionFunction = action;
-            else executionFunction = Accept;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("accept", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(EventHandler));
-            }
+            AddEventHandler("accept", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(AcceptEventHandler)); OnAccept = Accept;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
             OnAccept(data.EventData.TypedEventData);
         }

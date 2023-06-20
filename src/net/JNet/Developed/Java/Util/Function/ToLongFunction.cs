@@ -52,28 +52,19 @@ namespace Java.Util.Function
     /// <typeparam name="T">The data type associated to the event</typeparam>
     public class ToLongFunction<T> : ToLongFunction, IToLongFunction<T>
     {
-        Func<T, long> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{T, Int64}"/> to be executed
         /// </summary>
-        public virtual Func<T, long> OnApplyAsLong { get { return executionFunction; } }
+        public virtual Func<T, long> OnApplyAsLong { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="ToLongFunction{T}"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{T, Int64}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public ToLongFunction(Func<T, long> func = null, bool attachEventHandler = true)
+        public ToLongFunction()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = ApplyAsLong;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("applyAsLong", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(EventHandler));
-            }
+            AddEventHandler("applyAsLong", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
             var retVal = OnApplyAsLong(data.EventData.TypedEventData);
             data.SetReturnValue(retVal);

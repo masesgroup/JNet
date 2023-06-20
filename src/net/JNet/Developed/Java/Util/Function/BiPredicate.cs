@@ -55,28 +55,19 @@ namespace Java.Util.Function
     /// <typeparam name="U">The data associated to the event</typeparam> 
     public class BiPredicate<T, U> : BiPredicate, IBiPredicate<T, U>
     {
-        Func<T, U, bool> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{T, U, Boolean}"/> to be executed
         /// </summary>
-        public virtual Func<T, U, bool> OnTest { get { return executionFunction; } }
+        public virtual Func<T, U, bool> OnTest { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="BiPredicate{T, U}"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{T, U, Boolean}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public BiPredicate(Func<T, U, bool> func = null, bool attachEventHandler = true)
+        public BiPredicate()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = Test;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(EventHandler));
-            }
+            AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler)); OnTest = Test;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
             var retVal = OnTest(data.EventData.TypedEventData, data.EventData.To<U>(0));
             data.SetReturnValue(retVal);
