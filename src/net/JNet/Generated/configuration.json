@@ -20,14 +20,14 @@
     "java.awt.peer"
   ],
   "ClassesToBeListener": [
-    "java.util.stream.DoubleStream$Builder",
-    "java.util.stream.IntStream$Builder",
-    "java.util.stream.LongStream$Builder",
-    "java.util.stream.Stream$Builder",
     "javax.swing.Action",
     "javax.management.NotificationFilter"
   ],
   "ClassesToAvoid": [
+    "java.util.stream.DoubleStream$Builder",
+    "java.util.stream.IntStream$Builder",
+    "java.util.stream.LongStream$Builder",
+    "java.util.stream.Stream$Builder",
     "java.util.Comparator",
     "java.util.EventListener",
     "java.util.ServiceLoader$Provider",

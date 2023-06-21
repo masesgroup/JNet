@@ -46,7 +46,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="ToDoubleFunction"/>
+        /// Handlers initializer for <see cref="ToDoubleFunction"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
@@ -133,7 +133,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="ToDoubleFunction"/>
+        /// Handlers initializer for <see cref="ToDoubleFunction"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

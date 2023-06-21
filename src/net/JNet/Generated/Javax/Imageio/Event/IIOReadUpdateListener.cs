@@ -130,7 +130,7 @@ namespace Javax.Imageio.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="IIOReadUpdateListener"/>
+        /// Handlers initializer for <see cref="IIOReadUpdateListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

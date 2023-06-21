@@ -74,7 +74,7 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see cref="ConnectionEventListener"/>
+        /// Handlers initializer for <see cref="ConnectionEventListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

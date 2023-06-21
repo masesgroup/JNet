@@ -46,7 +46,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="BiConsumer"/>
+        /// Handlers initializer for <see cref="BiConsumer"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
@@ -162,7 +162,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="BiConsumer"/>
+        /// Handlers initializer for <see cref="BiConsumer"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

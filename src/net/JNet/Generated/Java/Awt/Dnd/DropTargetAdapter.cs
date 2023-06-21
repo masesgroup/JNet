@@ -46,15 +46,35 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// <see cref="DropTargetAdapter"/>
+        /// Handlers initializer for <see cref="DropTargetAdapter"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
+            AddEventHandler("drop", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDropEvent>>>(DropEventHandler)); OnDrop = Drop;
             AddEventHandler("dragEnter", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>>>(DragEnterEventHandler)); OnDragEnter = DragEnter;
             AddEventHandler("dragExit", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetEvent>>>(DragExitEventHandler)); OnDragExit = DragExit;
             AddEventHandler("dragOver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>>>(DragOverEventHandler)); OnDragOver = DragOver;
             AddEventHandler("dropActionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDragEvent>>>(DropActionChangedEventHandler)); OnDropActionChanged = DropActionChanged;
 
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#drop(java.awt.dnd.DropTargetDropEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.Dnd.DropTargetDropEvent> OnDrop { get; set; }
+
+        void DropEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DropTargetDropEvent>> data)
+        {
+            if (OnDrop != null) OnDrop.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html#drop(java.awt.dnd.DropTargetDropEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDropEvent"/></param>
+        public virtual void Drop(Java.Awt.Dnd.DropTargetDropEvent arg0)
+        {
+            
         }
 
         /// <summary>

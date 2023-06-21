@@ -70,7 +70,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="BooleanSupplier"/>
+        /// Handlers initializer for <see cref="BooleanSupplier"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

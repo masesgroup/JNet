@@ -69,7 +69,7 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// <see cref="AppReopenedListener"/>
+        /// Handlers initializer for <see cref="AppReopenedListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

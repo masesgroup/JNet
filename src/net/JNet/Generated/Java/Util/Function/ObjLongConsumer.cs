@@ -46,7 +46,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="ObjLongConsumer"/>
+        /// Handlers initializer for <see cref="ObjLongConsumer"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
@@ -129,7 +129,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="ObjLongConsumer"/>
+        /// Handlers initializer for <see cref="ObjLongConsumer"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

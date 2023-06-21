@@ -69,7 +69,7 @@ namespace Javax.Naming.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="NamingListener"/>
+        /// Handlers initializer for <see cref="NamingListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

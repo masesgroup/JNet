@@ -76,7 +76,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="TreeWillExpandListener"/>
+        /// Handlers initializer for <see cref="TreeWillExpandListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

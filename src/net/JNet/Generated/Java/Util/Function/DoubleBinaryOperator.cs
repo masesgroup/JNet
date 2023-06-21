@@ -71,7 +71,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="DoubleBinaryOperator"/>
+        /// Handlers initializer for <see cref="DoubleBinaryOperator"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

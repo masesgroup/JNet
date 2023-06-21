@@ -79,7 +79,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="PopupMenuListener"/>
+        /// Handlers initializer for <see cref="PopupMenuListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

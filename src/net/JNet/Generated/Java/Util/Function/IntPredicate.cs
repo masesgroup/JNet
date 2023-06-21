@@ -88,7 +88,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="IntPredicate"/>
+        /// Handlers initializer for <see cref="IntPredicate"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
