@@ -19,16 +19,14 @@
     "java.awt.peer"
   ],
   "ClassesToBeListener": [
-    "java.util.Comparator",
-    "java.util.ServiceLoader$Provider",
-    "java.util.stream.DoubleStream$Builder",
-    "java.util.stream.IntStream$Builder",
-    "java.util.stream.LongStream$Builder",
-    "java.util.stream.Stream$Builder",
     "javax.swing.Action",
     "javax.management.NotificationFilter"
   ],
   "ClassesToAvoid": [
+    "java.util.stream.DoubleStream$Builder",
+    "java.util.stream.IntStream$Builder",
+    "java.util.stream.LongStream$Builder",
+    "java.util.stream.Stream$Builder",
     "javax.swing.ToolTipManager",
     "javax.swing.text.html.HTMLEditorKit$LinkController",
     "javax.swing.plaf.basic.BasicTreeUI$MouseHandler",

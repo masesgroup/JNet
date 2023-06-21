@@ -327,25 +327,6 @@ namespace Java.Util.Stream
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.Builder.html"/>
-        /// </summary>
-        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Builder() { }
-
-        #warning Remember to build the body class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-    
     }
     #endregion
 
@@ -388,25 +369,7 @@ namespace Java.Util.Stream
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html"/>
-        /// </summary>
-        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Builder() { }
 
-        #warning Remember to build the body class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-    
     }
     #endregion
 
@@ -449,24 +412,6 @@ namespace Java.Util.Stream
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html"/>
-        /// </summary>
-        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Builder() { }
-
-        #warning Remember to build the body class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
     
     }
     #endregion
@@ -510,43 +455,6 @@ namespace Java.Util.Stream
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Builder
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html"/>
-        /// </summary>
-        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Builder() { }
-
-        #warning Remember to build the body class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-        #region Builder<T>
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html"/>
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        public partial class Builder<T> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Builder() { }
-
-        #warning Remember to build the body class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
     
     }
     #endregion
