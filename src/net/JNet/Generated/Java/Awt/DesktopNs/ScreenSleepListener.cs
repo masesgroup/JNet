@@ -74,7 +74,7 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// <see cref="ScreenSleepListener"/>
+        /// Handlers initializer for <see cref="ScreenSleepListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

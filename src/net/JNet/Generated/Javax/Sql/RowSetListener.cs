@@ -79,7 +79,7 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see cref="RowSetListener"/>
+        /// Handlers initializer for <see cref="RowSetListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

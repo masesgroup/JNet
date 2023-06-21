@@ -74,7 +74,7 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// <see cref="FocusListener"/>
+        /// Handlers initializer for <see cref="FocusListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

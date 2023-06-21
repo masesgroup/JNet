@@ -115,7 +115,7 @@ namespace Javax.Imageio.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="IIOReadProgressListener"/>
+        /// Handlers initializer for <see cref="IIOReadProgressListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

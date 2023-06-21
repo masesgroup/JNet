@@ -70,7 +70,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="DoubleSupplier"/>
+        /// Handlers initializer for <see cref="DoubleSupplier"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

@@ -7,13 +7,14 @@ The command used to build the classes is the following:
 ```cmd
 dotnet build .\src\net\JNetReflector\JNetReflector.csproj
 cd binReflector\net6.0
-MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\src\net\JNet\Generated -ConfigurationFile ..\..\src\net\JNet\Generated\configuration.json
+MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\src\net\JNet\Generated -DestinationJavaListenerPath ..\..\src\java\jnet\src\main\java -ConfigurationFile ..\..\src\net\JNet\Generated\configuration.json
 ```
 
 The configuration is:
 
 ```json
 {
+  "JavaListenerBasePackage": "org.mases.jnet.generated",
   "OnlyPropertiesForGetterSetter": true,
   "ModulesToParse": [
     "org.*",
@@ -34,18 +35,20 @@ The configuration is:
     "java.awt.peer"
   ],
   "ClassesToBeListener": [
-    "java.util.Comparator",
-    "java.util.ServiceLoader$Provider",
-    "java.util.stream.DoubleStream$Builder",
-    "java.util.stream.IntStream$Builder",
-    "java.util.stream.LongStream$Builder",
-    "java.util.stream.Stream$Builder",
     "javax.swing.Action",
     "javax.management.NotificationFilter"
   ],
   "ClassesToAvoid": [
+    "java.util.stream.DoubleStream$Builder",
+    "java.util.stream.IntStream$Builder",
+    "java.util.stream.LongStream$Builder",
+    "java.util.stream.Stream$Builder",
+    "java.util.Comparator",
+    "java.util.EventListener",
+    "java.util.ServiceLoader$Provider",
     "javax.swing.ToolTipManager",
     "javax.swing.text.html.HTMLEditorKit$LinkController",
+    "javax.swing.plaf.basic.BasicButtonListener",
     "javax.swing.plaf.basic.BasicTreeUI$MouseHandler",
     "javax.swing.plaf.basic.BasicDesktopIconUI$MouseInputHandler",
     "javax.swing.plaf.basic.BasicTabbedPaneUI$FocusHandler",
@@ -55,7 +58,16 @@ The configuration is:
     "javax.swing.plaf.basic.BasicTreeUI$KeyHandler",
     "javax.swing.plaf.basic.BasicTreeUI$ComponentHandler",
     "javax.swing.plaf.basic.BasicSplitPaneUI$FocusHandler",
-    "javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler"
+    "javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler",
+    "javax.swing.plaf.basic.BasicOptionPaneUI$ButtonActionListener",
+    "javax.swing.plaf.basic.BasicToolBarUI$DockingListener",
+    "javax.swing.plaf.basic.BasicScrollPaneUI$HSBChangeListener",
+    "javax.swing.plaf.basic.BasicInternalFrameUI$InternalFramePropertyChangeListener",
+    "javax.swing.plaf.basic.BasicSliderUI$ScrollListener",
+    "javax.swing.plaf.basic.BasicSliderUI$TrackListener",
+    "javax.swing.plaf.basic.BasicScrollPaneUI$VSBChangeListener",
+    "javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener",
+    "javax.tools.DiagnosticListener"
   ],
   "NamespacesInConflict": [
     "java.lang.module",

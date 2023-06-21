@@ -46,7 +46,7 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// <see cref="DragSourceAdapter"/>
+        /// Handlers initializer for <see cref="DragSourceAdapter"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

@@ -46,7 +46,7 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// <see cref="ComponentAdapter"/>
+        /// Handlers initializer for <see cref="ComponentAdapter"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

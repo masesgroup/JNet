@@ -74,7 +74,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="CellEditorListener"/>
+        /// Handlers initializer for <see cref="CellEditorListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

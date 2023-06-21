@@ -69,7 +69,7 @@ namespace Java.Awt.Dnd
 
         #region Instance methods
         /// <summary>
-        /// <see cref="DragGestureListener"/>
+        /// Handlers initializer for <see cref="DragGestureListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

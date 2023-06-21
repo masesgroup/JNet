@@ -71,7 +71,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="LongBinaryOperator"/>
+        /// Handlers initializer for <see cref="LongBinaryOperator"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

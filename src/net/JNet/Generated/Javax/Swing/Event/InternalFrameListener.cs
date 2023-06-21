@@ -99,7 +99,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="InternalFrameListener"/>
+        /// Handlers initializer for <see cref="InternalFrameListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

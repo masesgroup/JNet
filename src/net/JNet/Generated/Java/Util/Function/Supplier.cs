@@ -46,7 +46,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="Supplier"/>
+        /// Handlers initializer for <see cref="Supplier"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
@@ -133,7 +133,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="Supplier"/>
+        /// Handlers initializer for <see cref="Supplier"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

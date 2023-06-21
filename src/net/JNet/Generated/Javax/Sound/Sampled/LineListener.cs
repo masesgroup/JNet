@@ -69,7 +69,7 @@ namespace Javax.Sound.Sampled
 
         #region Instance methods
         /// <summary>
-        /// <see cref="LineListener"/>
+        /// Handlers initializer for <see cref="LineListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

@@ -46,7 +46,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="InternalFrameAdapter"/>
+        /// Handlers initializer for <see cref="InternalFrameAdapter"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

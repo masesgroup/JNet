@@ -70,7 +70,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="IntToLongFunction"/>
+        /// Handlers initializer for <see cref="IntToLongFunction"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
