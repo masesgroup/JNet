@@ -27,7 +27,7 @@ namespace Javax.Imageio.Event
 {
     #region IIIOReadProgressListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.imageio.event.IIOReadProgressListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html"/>
     /// </summary>
     public partial interface IIIOReadProgressListener
     {
@@ -115,6 +115,33 @@ namespace Javax.Imageio.Event
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="IIOReadProgressListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageCompleteEventHandler)); OnImageComplete = ImageComplete;
+            AddEventHandler("imageProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageProgressEventHandler)); OnImageProgress = ImageProgress;
+            AddEventHandler("imageStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageStartedEventHandler)); OnImageStarted = ImageStarted;
+            AddEventHandler("readAborted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ReadAbortedEventHandler)); OnReadAborted = ReadAborted;
+            AddEventHandler("sequenceComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(SequenceCompleteEventHandler)); OnSequenceComplete = SequenceComplete;
+            AddEventHandler("sequenceStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(SequenceStartedEventHandler)); OnSequenceStarted = SequenceStarted;
+            AddEventHandler("thumbnailComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailCompleteEventHandler)); OnThumbnailComplete = ThumbnailComplete;
+            AddEventHandler("thumbnailProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailProgressEventHandler)); OnThumbnailProgress = ThumbnailProgress;
+            AddEventHandler("thumbnailStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailStartedEventHandler)); OnThumbnailStarted = ThumbnailStarted;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageComplete(javax.imageio.ImageReader)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageReader> OnImageComplete { get; set; }
+
+        void ImageCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        {
+            if (OnImageComplete != null) OnImageComplete.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageComplete(javax.imageio.ImageReader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.ImageReader"/></param>
@@ -122,6 +149,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageProgress(javax.imageio.ImageReader,float)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageReader, float> OnImageProgress { get; set; }
+
+        void ImageProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        {
+            if (OnImageProgress != null) OnImageProgress.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageProgress(javax.imageio.ImageReader,float)"/>
         /// </summary>
@@ -131,6 +169,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageStarted(javax.imageio.ImageReader,int)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageReader, int> OnImageStarted { get; set; }
+
+        void ImageStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        {
+            if (OnImageStarted != null) OnImageStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageStarted(javax.imageio.ImageReader,int)"/>
         /// </summary>
@@ -140,6 +189,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#readAborted(javax.imageio.ImageReader)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageReader> OnReadAborted { get; set; }
+
+        void ReadAbortedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        {
+            if (OnReadAborted != null) OnReadAborted.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#readAborted(javax.imageio.ImageReader)"/>
         /// </summary>
@@ -148,6 +208,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#sequenceComplete(javax.imageio.ImageReader)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageReader> OnSequenceComplete { get; set; }
+
+        void SequenceCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        {
+            if (OnSequenceComplete != null) OnSequenceComplete.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#sequenceComplete(javax.imageio.ImageReader)"/>
         /// </summary>
@@ -156,6 +227,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#sequenceStarted(javax.imageio.ImageReader,int)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageReader, int> OnSequenceStarted { get; set; }
+
+        void SequenceStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        {
+            if (OnSequenceStarted != null) OnSequenceStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#sequenceStarted(javax.imageio.ImageReader,int)"/>
         /// </summary>
@@ -165,6 +247,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailComplete(javax.imageio.ImageReader)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageReader> OnThumbnailComplete { get; set; }
+
+        void ThumbnailCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        {
+            if (OnThumbnailComplete != null) OnThumbnailComplete.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailComplete(javax.imageio.ImageReader)"/>
         /// </summary>
@@ -173,6 +266,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailProgress(javax.imageio.ImageReader,float)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageReader, float> OnThumbnailProgress { get; set; }
+
+        void ThumbnailProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        {
+            if (OnThumbnailProgress != null) OnThumbnailProgress.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailProgress(javax.imageio.ImageReader,float)"/>
         /// </summary>
@@ -182,6 +286,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailStarted(javax.imageio.ImageReader,int,int)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageReader, int, int> OnThumbnailStarted { get; set; }
+
+        void ThumbnailStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
+        {
+            if (OnThumbnailStarted != null) OnThumbnailStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailStarted(javax.imageio.ImageReader,int,int)"/>
         /// </summary>

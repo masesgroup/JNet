@@ -27,7 +27,7 @@ namespace Javax.Sound.Sampled
 {
     #region ILineListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.sound.sampled.LineListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html"/>
     /// </summary>
     public partial interface ILineListener
     {
@@ -68,6 +68,25 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="LineListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("update", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Sampled.LineEvent>>>(UpdateEventHandler)); OnUpdate = Update;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Sound.Sampled.LineEvent> OnUpdate { get; set; }
+
+        void UpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Sampled.LineEvent>> data)
+        {
+            if (OnUpdate != null) OnUpdate.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent)"/>
         /// </summary>

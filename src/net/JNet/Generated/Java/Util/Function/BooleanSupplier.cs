@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IBooleanSupplier
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.BooleanSupplier implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html"/>
     /// </summary>
     public partial interface IBooleanSupplier
     {
@@ -69,6 +69,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="BooleanSupplier"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("getAsBoolean", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsBooleanEventHandler)); OnGetAsBoolean = GetAsBoolean;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
+        /// </summary>
+        public System.Func<bool> OnGetAsBoolean { get; set; }
+
+        void GetAsBooleanEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnGetAsBoolean != null)
+            {
+                var executionResult = OnGetAsBoolean.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BooleanSupplier.html#getAsBoolean()"/>
         /// </summary>

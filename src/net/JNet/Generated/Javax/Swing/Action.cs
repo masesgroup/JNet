@@ -27,7 +27,7 @@ namespace Javax.Swing
 {
     #region IAction
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.Action implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html"/>
     /// </summary>
     public partial interface IAction
     {
@@ -44,6 +44,11 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="string"/></param>
         /// <returns><see cref="object"/></returns>
         object GetValue(string arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
+        void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
@@ -103,6 +108,36 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="Action"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler)); OnIsEnabled = IsEnabled;
+            AddEventHandler("getValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(GetValueEventHandler)); OnGetValue = GetValue;
+            AddEventHandler("actionPerformed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler)); OnActionPerformed = ActionPerformed;
+            AddEventHandler("addPropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(AddPropertyChangeListenerEventHandler)); OnAddPropertyChangeListener = AddPropertyChangeListener;
+            AddEventHandler("putValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(PutValueEventHandler)); OnPutValue = PutValue;
+            AddEventHandler("removePropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(RemovePropertyChangeListenerEventHandler)); OnRemovePropertyChangeListener = RemovePropertyChangeListener;
+            AddEventHandler("setEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(SetEnabledEventHandler)); OnSetEnabled = SetEnabled;
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler)); OnAccept = Accept;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#isEnabled()"/>
+        /// </summary>
+        public System.Func<bool> OnIsEnabled { get; set; }
+
+        void IsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnIsEnabled != null)
+            {
+                var executionResult = OnIsEnabled.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#isEnabled()"/>
         /// </summary>
 
@@ -111,6 +146,21 @@ namespace Javax.Swing
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#getValue(java.lang.String)"/>
+        /// </summary>
+        public System.Func<string, object> OnGetValue { get; set; }
+
+        void GetValueEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        {
+            if (OnGetValue != null)
+            {
+                var executionResult = OnGetValue.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#getValue(java.lang.String)"/>
         /// </summary>
@@ -120,6 +170,36 @@ namespace Javax.Swing
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; }
+
+        void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>> data)
+        {
+            if (OnActionPerformed != null) OnActionPerformed.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
+        public virtual void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
+        {
+            
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        public System.Action<Java.Beans.PropertyChangeListener> OnAddPropertyChangeListener { get; set; }
+
+        void AddPropertyChangeListenerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>> data)
+        {
+            if (OnAddPropertyChangeListener != null) OnAddPropertyChangeListener.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
@@ -128,6 +208,17 @@ namespace Javax.Swing
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#putValue(java.lang.String,java.lang.Object)"/>
+        /// </summary>
+        public System.Action<string, object> OnPutValue { get; set; }
+
+        void PutValueEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
+        {
+            if (OnPutValue != null) OnPutValue.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#putValue(java.lang.String,java.lang.Object)"/>
         /// </summary>
@@ -137,6 +228,17 @@ namespace Javax.Swing
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
+        /// </summary>
+        public System.Action<Java.Beans.PropertyChangeListener> OnRemovePropertyChangeListener { get; set; }
+
+        void RemovePropertyChangeListenerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>> data)
+        {
+            if (OnRemovePropertyChangeListener != null) OnRemovePropertyChangeListener.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
@@ -145,6 +247,17 @@ namespace Javax.Swing
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#setEnabled(boolean)"/>
+        /// </summary>
+        public System.Action<bool> OnSetEnabled { get; set; }
+
+        void SetEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
+        {
+            if (OnSetEnabled != null) OnSetEnabled.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#setEnabled(boolean)"/>
         /// </summary>
@@ -153,6 +266,21 @@ namespace Javax.Swing
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
+        /// </summary>
+        public System.Func<object, bool> OnAccept { get; set; }
+
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnAccept != null)
+            {
+                var executionResult = OnAccept.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
         /// </summary>

@@ -27,7 +27,7 @@ namespace Java.Awt.Dnd
 {
     #region IDragSourceMotionListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.dnd.DragSourceMotionListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html"/>
     /// </summary>
     public partial interface IDragSourceMotionListener
     {
@@ -68,6 +68,25 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="DragSourceMotionListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("dragMouseMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragMouseMovedEventHandler)); OnDragMouseMoved = DragMouseMoved;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragMouseMoved { get; set; }
+
+        void DragMouseMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
+        {
+            if (OnDragMouseMoved != null) OnDragMouseMoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html#dragMouseMoved(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>

@@ -27,7 +27,7 @@ namespace Java.Net.Http
 {
     #region IWebSocket
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IWebSocket
     {
@@ -308,6 +308,35 @@ namespace Java.Net.Http
 
             #region Instance methods
             /// <summary>
+            /// Handlers initializer for <see cref="Listener"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("onBinary", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnBinaryEventHandler)); OnOnBinary = OnBinary;
+                AddEventHandler("onClose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnCloseEventHandler)); OnOnClose = OnClose;
+                AddEventHandler("onPing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPingEventHandler)); OnOnPing = OnPing;
+                AddEventHandler("onPong", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPongEventHandler)); OnOnPong = OnPong;
+                AddEventHandler("onText", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnTextEventHandler)); OnOnText = OnText;
+                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnErrorEventHandler)); OnOnError = OnError;
+                AddEventHandler("onOpen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnOpenEventHandler)); OnOnOpen = OnOpen;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)"/>
+            /// </summary>
+            public System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, bool, Java.Util.Concurrent.CompletionStage<object>> OnOnBinary { get; set; }
+
+            void OnBinaryEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            {
+                if (OnOnBinary != null)
+                {
+                    var executionResult = OnOnBinary.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0), data.EventData.GetAt<bool>(1));
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
+            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
@@ -318,6 +347,21 @@ namespace Java.Net.Http
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
+            /// </summary>
+            public System.Func<Java.Net.Http.WebSocket, int, string, Java.Util.Concurrent.CompletionStage<object>> OnOnClose { get; set; }
+
+            void OnCloseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            {
+                if (OnOnClose != null)
+                {
+                    var executionResult = OnOnClose.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<string>(1));
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
             /// </summary>
@@ -329,6 +373,21 @@ namespace Java.Net.Http
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPing(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
+            /// </summary>
+            public System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage<object>> OnOnPing { get; set; }
+
+            void OnPingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            {
+                if (OnOnPing != null)
+                {
+                    var executionResult = OnOnPing.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0));
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPing(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
@@ -339,6 +398,21 @@ namespace Java.Net.Http
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPong(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
+            /// </summary>
+            public System.Func<Java.Net.Http.WebSocket, Java.Nio.ByteBuffer, Java.Util.Concurrent.CompletionStage<object>> OnOnPong { get; set; }
+
+            void OnPongEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            {
+                if (OnOnPong != null)
+                {
+                    var executionResult = OnOnPong.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0));
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPong(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
             /// </summary>
@@ -349,6 +423,21 @@ namespace Java.Net.Http
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)"/>
+            /// </summary>
+            public System.Func<Java.Net.Http.WebSocket, Java.Lang.CharSequence, bool, Java.Util.Concurrent.CompletionStage<object>> OnOnText { get; set; }
+
+            void OnTextEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            {
+                if (OnOnText != null)
+                {
+                    var executionResult = OnOnText.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.CharSequence>(0), data.EventData.GetAt<bool>(1));
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)"/>
             /// </summary>
@@ -360,6 +449,17 @@ namespace Java.Net.Http
             {
                 return default;
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onError(java.net.http.WebSocket,java.lang.Throwable)"/>
+            /// </summary>
+            public System.Action<Java.Net.Http.WebSocket, MASES.JCOBridge.C2JBridge.JVMBridgeException> OnOnError { get; set; }
+
+            void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            {
+                if (OnOnError != null) OnOnError.Invoke(data.EventData.TypedEventData, JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onError(java.net.http.WebSocket,java.lang.Throwable)"/>
             /// </summary>
@@ -369,6 +469,17 @@ namespace Java.Net.Http
             {
                 
             }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>
+            /// </summary>
+            public System.Action<Java.Net.Http.WebSocket> OnOnOpen { get; set; }
+
+            void OnOpenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
+            {
+                if (OnOnOpen != null) OnOnOpen.Invoke(data.EventData.TypedEventData);
+            }
+
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>
             /// </summary>

@@ -27,7 +27,7 @@ namespace Javax.Naming.Event
 {
     #region INamespaceChangeListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.naming.event.NamespaceChangeListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html"/>
     /// </summary>
     public partial interface INamespaceChangeListener
     {
@@ -47,6 +47,11 @@ namespace Javax.Naming.Event
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
         void ObjectRenamed(Javax.Naming.Event.NamingEvent arg0);
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0);
 
         #endregion
 
@@ -79,6 +84,28 @@ namespace Javax.Naming.Event
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="NamespaceChangeListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("objectAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectAddedEventHandler)); OnObjectAdded = ObjectAdded;
+            AddEventHandler("objectRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectRemovedEventHandler)); OnObjectRemoved = ObjectRemoved;
+            AddEventHandler("objectRenamed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectRenamedEventHandler)); OnObjectRenamed = ObjectRenamed;
+            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler)); OnNamingExceptionThrown = NamingExceptionThrown;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectAdded(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Naming.Event.NamingEvent> OnObjectAdded { get; set; }
+
+        void ObjectAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>> data)
+        {
+            if (OnObjectAdded != null) OnObjectAdded.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectAdded(javax.naming.event.NamingEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
@@ -86,6 +113,17 @@ namespace Javax.Naming.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRemoved(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Naming.Event.NamingEvent> OnObjectRemoved { get; set; }
+
+        void ObjectRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>> data)
+        {
+            if (OnObjectRemoved != null) OnObjectRemoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRemoved(javax.naming.event.NamingEvent)"/>
         /// </summary>
@@ -94,11 +132,41 @@ namespace Javax.Naming.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRenamed(javax.naming.event.NamingEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Naming.Event.NamingEvent> OnObjectRenamed { get; set; }
+
+        void ObjectRenamedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>> data)
+        {
+            if (OnObjectRenamed != null) OnObjectRenamed.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html#objectRenamed(javax.naming.event.NamingEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
         public virtual void ObjectRenamed(Javax.Naming.Event.NamingEvent arg0)
+        {
+            
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Naming.Event.NamingExceptionEvent> OnNamingExceptionThrown { get; set; }
+
+        void NamingExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>> data)
+        {
+            if (OnNamingExceptionThrown != null) OnNamingExceptionThrown.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
+        public virtual void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
         {
             
         }

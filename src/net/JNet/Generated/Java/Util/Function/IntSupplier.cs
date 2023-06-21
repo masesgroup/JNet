@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IIntSupplier
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.IntSupplier implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html"/>
     /// </summary>
     public partial interface IIntSupplier
     {
@@ -69,6 +69,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="IntSupplier"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("getAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsIntEventHandler)); OnGetAsInt = GetAsInt;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
+        /// </summary>
+        public System.Func<int> OnGetAsInt { get; set; }
+
+        void GetAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnGetAsInt != null)
+            {
+                var executionResult = OnGetAsInt.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>

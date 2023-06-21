@@ -27,7 +27,7 @@ namespace Java.Util.Stream
 {
     #region IIntStream
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IIntStream : Java.Util.Stream.IBaseStream<int?, Java.Util.Stream.IntStream>
     {
@@ -372,15 +372,6 @@ namespace Java.Util.Stream
         public static Java.Util.Stream.IntStream RangeClosed(int arg0, int arg1)
         {
             return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "rangeClosed", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#builder()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Stream.IntStream.Builder"/></returns>
-        public static Java.Util.Stream.IntStream.Builder BuilderMethod()
-        {
-            return SExecute<Java.Util.Stream.IntStream.Builder>(LocalBridgeClazz, "builder");
         }
 
         #endregion
@@ -728,64 +719,7 @@ namespace Java.Util.Stream
         #endregion
 
         #region Nested classes
-        #region Builder
-        public partial class Builder
-        {
-            #region Constructors
 
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#build()"/>
-            /// </summary>
-
-            /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-            public virtual Java.Util.Stream.IntStream Build()
-            {
-                return default;
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#accept(int)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            public virtual void Accept(int arg0)
-            {
-                
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#add(int)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="int"/></param>
-            /// <returns><see cref="Java.Util.Stream.IntStream.Builder"/></returns>
-            public virtual Java.Util.Stream.IntStream.Builder Add(int arg0)
-            {
-                return default;
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-    
         #endregion
 
         // TODO: complete the class

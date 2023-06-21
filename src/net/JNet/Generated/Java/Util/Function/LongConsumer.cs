@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region ILongConsumer
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.LongConsumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html"/>
     /// </summary>
     public partial interface ILongConsumer
     {
@@ -75,6 +75,26 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="LongConsumer"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(AcceptEventHandler)); OnAccept = Accept;
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.LongConsumer>>>(AndThenEventHandler)); OnAndThen = AndThen;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#accept(long)"/>
+        /// </summary>
+        public System.Action<long> OnAccept { get; set; }
+
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        {
+            if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#accept(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -82,6 +102,21 @@ namespace Java.Util.Function
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.LongConsumer, Java.Util.Function.LongConsumer> OnAndThen { get; set; }
+
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.LongConsumer>> data)
+        {
+            if (OnAndThen != null)
+            {
+                var executionResult = OnAndThen.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
         /// </summary>

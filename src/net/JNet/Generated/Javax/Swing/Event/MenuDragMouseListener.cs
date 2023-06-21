@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region IMenuDragMouseListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.MenuDragMouseListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html"/>
     /// </summary>
     public partial interface IMenuDragMouseListener
     {
@@ -84,6 +84,28 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="MenuDragMouseListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("menuDragMouseDragged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseDraggedEventHandler)); OnMenuDragMouseDragged = MenuDragMouseDragged;
+            AddEventHandler("menuDragMouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseEnteredEventHandler)); OnMenuDragMouseEntered = MenuDragMouseEntered;
+            AddEventHandler("menuDragMouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseExitedEventHandler)); OnMenuDragMouseExited = MenuDragMouseExited;
+            AddEventHandler("menuDragMouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseReleasedEventHandler)); OnMenuDragMouseReleased = MenuDragMouseReleased;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseDragged(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseDragged { get; set; }
+
+        void MenuDragMouseDraggedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
+        {
+            if (OnMenuDragMouseDragged != null) OnMenuDragMouseDragged.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseDragged(javax.swing.event.MenuDragMouseEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuDragMouseEvent"/></param>
@@ -91,6 +113,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseEntered(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseEntered { get; set; }
+
+        void MenuDragMouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
+        {
+            if (OnMenuDragMouseEntered != null) OnMenuDragMouseEntered.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseEntered(javax.swing.event.MenuDragMouseEvent)"/>
         /// </summary>
@@ -99,6 +132,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseExited(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseExited { get; set; }
+
+        void MenuDragMouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
+        {
+            if (OnMenuDragMouseExited != null) OnMenuDragMouseExited.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseExited(javax.swing.event.MenuDragMouseEvent)"/>
         /// </summary>
@@ -107,6 +151,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseReleased(javax.swing.event.MenuDragMouseEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.MenuDragMouseEvent> OnMenuDragMouseReleased { get; set; }
+
+        void MenuDragMouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
+        {
+            if (OnMenuDragMouseReleased != null) OnMenuDragMouseReleased.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuDragMouseListener.html#menuDragMouseReleased(javax.swing.event.MenuDragMouseEvent)"/>
         /// </summary>

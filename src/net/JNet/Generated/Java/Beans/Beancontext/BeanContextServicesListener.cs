@@ -27,11 +27,16 @@ namespace Java.Beans.Beancontext
 {
     #region IBeanContextServicesListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.beans.beancontext.BeanContextServicesListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html"/>
     /// </summary>
     public partial interface IBeanContextServicesListener
     {
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>
@@ -68,6 +73,45 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="BeanContextServicesListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("serviceRevoked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler)); OnServiceRevoked = ServiceRevoked;
+            AddEventHandler("serviceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>>>(ServiceAvailableEventHandler)); OnServiceAvailable = ServiceAvailable;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
+        /// </summary>
+        public System.Action<Java.Beans.Beancontext.BeanContextServiceRevokedEvent> OnServiceRevoked { get; set; }
+
+        void ServiceRevokedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>> data)
+        {
+            if (OnServiceRevoked != null) OnServiceRevoked.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceRevokedListener.html#serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Beans.Beancontext.BeanContextServiceRevokedEvent"/></param>
+        public virtual void ServiceRevoked(Java.Beans.Beancontext.BeanContextServiceRevokedEvent arg0)
+        {
+            
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
+        /// </summary>
+        public System.Action<Java.Beans.Beancontext.BeanContextServiceAvailableEvent> OnServiceAvailable { get; set; }
+
+        void ServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>> data)
+        {
+            if (OnServiceAvailable != null) OnServiceAvailable.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesListener.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>
         /// </summary>

@@ -27,7 +27,7 @@ namespace Javax.Imageio.Event
 {
     #region IIIOWriteProgressListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.imageio.event.IIOWriteProgressListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html"/>
     /// </summary>
     public partial interface IIIOWriteProgressListener
     {
@@ -104,6 +104,31 @@ namespace Javax.Imageio.Event
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="IIOWriteProgressListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageCompleteEventHandler)); OnImageComplete = ImageComplete;
+            AddEventHandler("imageProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageProgressEventHandler)); OnImageProgress = ImageProgress;
+            AddEventHandler("imageStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageStartedEventHandler)); OnImageStarted = ImageStarted;
+            AddEventHandler("thumbnailComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailCompleteEventHandler)); OnThumbnailComplete = ThumbnailComplete;
+            AddEventHandler("thumbnailProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailProgressEventHandler)); OnThumbnailProgress = ThumbnailProgress;
+            AddEventHandler("thumbnailStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailStartedEventHandler)); OnThumbnailStarted = ThumbnailStarted;
+            AddEventHandler("writeAborted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WriteAbortedEventHandler)); OnWriteAborted = WriteAborted;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageComplete(javax.imageio.ImageWriter)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageWriter> OnImageComplete { get; set; }
+
+        void ImageCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        {
+            if (OnImageComplete != null) OnImageComplete.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Imageio.ImageWriter"/></param>
@@ -111,6 +136,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageProgress(javax.imageio.ImageWriter,float)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageWriter, float> OnImageProgress { get; set; }
+
+        void ImageProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        {
+            if (OnImageProgress != null) OnImageProgress.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageProgress(javax.imageio.ImageWriter,float)"/>
         /// </summary>
@@ -120,6 +156,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageStarted(javax.imageio.ImageWriter,int)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageWriter, int> OnImageStarted { get; set; }
+
+        void ImageStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        {
+            if (OnImageStarted != null) OnImageStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageStarted(javax.imageio.ImageWriter,int)"/>
         /// </summary>
@@ -129,6 +176,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailComplete(javax.imageio.ImageWriter)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageWriter> OnThumbnailComplete { get; set; }
+
+        void ThumbnailCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        {
+            if (OnThumbnailComplete != null) OnThumbnailComplete.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailComplete(javax.imageio.ImageWriter)"/>
         /// </summary>
@@ -137,6 +195,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailProgress(javax.imageio.ImageWriter,float)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageWriter, float> OnThumbnailProgress { get; set; }
+
+        void ThumbnailProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        {
+            if (OnThumbnailProgress != null) OnThumbnailProgress.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailProgress(javax.imageio.ImageWriter,float)"/>
         /// </summary>
@@ -146,6 +215,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailStarted(javax.imageio.ImageWriter,int,int)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageWriter, int, int> OnThumbnailStarted { get; set; }
+
+        void ThumbnailStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        {
+            if (OnThumbnailStarted != null) OnThumbnailStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailStarted(javax.imageio.ImageWriter,int,int)"/>
         /// </summary>
@@ -156,6 +236,17 @@ namespace Javax.Imageio.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#writeAborted(javax.imageio.ImageWriter)"/>
+        /// </summary>
+        public System.Action<Javax.Imageio.ImageWriter> OnWriteAborted { get; set; }
+
+        void WriteAbortedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
+        {
+            if (OnWriteAborted != null) OnWriteAborted.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#writeAborted(javax.imageio.ImageWriter)"/>
         /// </summary>

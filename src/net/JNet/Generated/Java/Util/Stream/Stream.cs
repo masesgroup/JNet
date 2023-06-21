@@ -117,15 +117,6 @@ namespace Java.Util.Stream
         {
             return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "ofNullable", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#builder()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Stream.Stream.Builder"/></returns>
-        public static Java.Util.Stream.Stream.Builder BuilderMethod()
-        {
-            return SExecute<Java.Util.Stream.Stream.Builder>(LocalBridgeClazz, "builder");
-        }
 
         #endregion
 
@@ -241,24 +232,6 @@ namespace Java.Util.Stream
         public Java.Util.Optional FindFirst()
         {
             return IExecute<Java.Util.Optional>("findFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#max(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional Max(Java.Util.Comparator arg0)
-        {
-            return IExecute<Java.Util.Optional>("max", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#min(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional Min(Java.Util.Comparator arg0)
-        {
-            return IExecute<Java.Util.Optional>("min", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.util.function.BinaryOperator)"/>
@@ -378,15 +351,6 @@ namespace Java.Util.Stream
             return IExecute<Java.Util.Stream.Stream>("sorted");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream Sorted(Java.Util.Comparator arg0)
-        {
-            return IExecute<Java.Util.Stream.Stream>("sorted", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
         /// </summary>
 
@@ -443,121 +407,7 @@ namespace Java.Util.Stream
         #endregion
 
         #region Nested classes
-        #region Builder
-        public partial class Builder
-        {
-            #region Constructors
 
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#build()"/>
-            /// </summary>
-
-            /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-            public virtual Java.Util.Stream.Stream Build()
-            {
-                return default;
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#accept(java.lang.Object)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            public virtual void Accept(object arg0)
-            {
-                
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#add(java.lang.Object)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="object"/></param>
-            /// <returns><see cref="Java.Util.Stream.Stream.Builder"/></returns>
-            public virtual Java.Util.Stream.Stream.Builder Add(object arg0)
-            {
-                return default;
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Builder<T>
-        public partial class Builder<T>
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#build()"/>
-            /// </summary>
-
-            /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-            public virtual Java.Util.Stream.Stream<T> Build()
-            {
-                return default;
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#accept(java.lang.Object)"/>
-            /// </summary>
-            /// <param name="arg0"><typeparamref name="T"/></param>
-            public virtual void Accept(T arg0)
-            {
-                
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.Builder.html#add(java.lang.Object)"/>
-            /// </summary>
-            /// <param name="arg0"><typeparamref name="T"/></param>
-            /// <returns><see cref="Java.Util.Stream.Stream.Builder"/></returns>
-            public virtual Java.Util.Stream.Stream.Builder<T> Add(T arg0)
-            {
-                return default;
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-    
         #endregion
 
         // TODO: complete the class
@@ -566,7 +416,7 @@ namespace Java.Util.Stream
 
     #region IStream<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IStream<T> : Java.Util.Stream.IBaseStream<T, Java.Util.Stream.Stream<T>>
     {
@@ -666,20 +516,6 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Optional"/></returns>
         Java.Util.Optional<T> FindFirst();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#max(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        Java.Util.Optional<T> Max<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#min(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        Java.Util.Optional<T> Min<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BinaryOperator"/></param>
@@ -768,13 +604,6 @@ namespace Java.Util.Stream
 
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         Java.Util.Stream.Stream<T> Sorted();
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<T> Sorted<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>
         /// </summary>
@@ -925,15 +754,6 @@ namespace Java.Util.Stream
         {
             return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "ofNullable", arg0);
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#builder()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Stream.Stream.Builder"/></returns>
-        public static Java.Util.Stream.Stream.Builder<T> BuilderMethod()
-        {
-            return SExecute<Java.Util.Stream.Stream.Builder<T>>(LocalBridgeClazz, "builder");
-        }
 
         #endregion
 
@@ -1069,26 +889,6 @@ namespace Java.Util.Stream
             return IExecute<Java.Util.Optional<T>>("findFirst");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#max(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<T> Max<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
-        {
-            return IExecute<Java.Util.Optional<T>>("max", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#min(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<T> Min<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
-        {
-            return IExecute<Java.Util.Optional<T>>("min", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BinaryOperator"/></param>
@@ -1215,16 +1015,6 @@ namespace Java.Util.Stream
         public Java.Util.Stream.Stream<T> Sorted()
         {
             return IExecute<Java.Util.Stream.Stream<T>>("sorted");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#sorted(java.util.Comparator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Comparator"/></param>
-        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<T> Sorted<Arg0objectSuperT>(Java.Util.Comparator<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
-        {
-            return IExecute<Java.Util.Stream.Stream<T>>("sorted", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#count()"/>

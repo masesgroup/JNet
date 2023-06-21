@@ -110,17 +110,6 @@ namespace Java.Awt
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#getListeners(java.util.EventListener,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.EventListener"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T[] GetListeners<T>(Java.Util.EventListener arg0, Java.Lang.Class arg1) where T: Java.Util.IEventListener, new()
-        {
-            return SExecuteArray<T>(LocalBridgeClazz, "getListeners", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEventMulticaster.html#add(java.awt.event.ActionListener,java.awt.event.ActionListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionListener"/></param>

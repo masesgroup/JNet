@@ -46,6 +46,25 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="ObjLongConsumer"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler)); OnAccept = Accept;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// </summary>
+        public System.Action<object, long> OnAccept { get; set; }
+
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
+        {
+            if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<long>(0));
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -67,7 +86,7 @@ namespace Java.Util.Function
 
     #region IObjLongConsumer<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.ObjLongConsumer implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html"/>
     /// </summary>
     public partial interface IObjLongConsumer<T>
     {
@@ -109,6 +128,25 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="ObjLongConsumer"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler)); OnAccept = Accept;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
+        /// </summary>
+        public System.Action<T, long> OnAccept { get; set; }
+
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        {
+            if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<long>(0));
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/ObjLongConsumer.html#accept(java.lang.Object,long)"/>
         /// </summary>

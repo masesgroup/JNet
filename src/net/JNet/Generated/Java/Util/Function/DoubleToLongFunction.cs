@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IDoubleToLongFunction
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToLongFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.DoubleToLongFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToLongFunction.html"/>
     /// </summary>
     public partial interface IDoubleToLongFunction
     {
@@ -69,6 +69,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="DoubleToLongFunction"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
+        /// </summary>
+        public System.Func<double, long> OnApplyAsLong { get; set; }
+
+        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        {
+            if (OnApplyAsLong != null)
+            {
+                var executionResult = OnApplyAsLong.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToLongFunction.html#applyAsLong(double)"/>
         /// </summary>

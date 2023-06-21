@@ -27,7 +27,7 @@ namespace Java.Awt.EventNs
 {
     #region IMouseMotionListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.MouseMotionListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html"/>
     /// </summary>
     public partial interface IMouseMotionListener
     {
@@ -74,6 +74,26 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="MouseMotionListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("mouseDragged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseDraggedEventHandler)); OnMouseDragged = MouseDragged;
+            AddEventHandler("mouseMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseMovedEventHandler)); OnMouseMoved = MouseMoved;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html#mouseDragged(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseDragged { get; set; }
+
+        void MouseDraggedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        {
+            if (OnMouseDragged != null) OnMouseDragged.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.MouseEvent"/></param>
@@ -81,6 +101,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html#mouseMoved(java.awt.event.MouseEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseMoved { get; set; }
+
+        void MouseMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
+        {
+            if (OnMouseMoved != null) OnMouseMoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionListener.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>

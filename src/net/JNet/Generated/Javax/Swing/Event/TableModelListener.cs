@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region ITableModelListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.TableModelListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html"/>
     /// </summary>
     public partial interface ITableModelListener
     {
@@ -68,6 +68,25 @@ namespace Javax.Swing.Event
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="TableModelListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("tableChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>>>(TableChangedEventHandler)); OnTableChanged = TableChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.TableModelEvent> OnTableChanged { get; set; }
+
+        void TableChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>> data)
+        {
+            if (OnTableChanged != null) OnTableChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
         /// </summary>

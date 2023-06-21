@@ -27,7 +27,7 @@ namespace Java.Awt.DesktopNs
 {
     #region IAppHiddenListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.desktop.AppHiddenListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html"/>
     /// </summary>
     public partial interface IAppHiddenListener
     {
@@ -74,6 +74,26 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="AppHiddenListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("appHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppHiddenEventHandler)); OnAppHidden = AppHidden;
+            AddEventHandler("appUnhidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppUnhiddenEventHandler)); OnAppUnhidden = AppUnhidden;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appHidden(java.awt.desktop.AppHiddenEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.DesktopNs.AppHiddenEvent> OnAppHidden { get; set; }
+
+        void AppHiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>> data)
+        {
+            if (OnAppHidden != null) OnAppHidden.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appHidden(java.awt.desktop.AppHiddenEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.DesktopNs.AppHiddenEvent"/></param>
@@ -81,6 +101,17 @@ namespace Java.Awt.DesktopNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appUnhidden(java.awt.desktop.AppHiddenEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.DesktopNs.AppHiddenEvent> OnAppUnhidden { get; set; }
+
+        void AppUnhiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>> data)
+        {
+            if (OnAppUnhidden != null) OnAppUnhidden.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppHiddenListener.html#appUnhidden(java.awt.desktop.AppHiddenEvent)"/>
         /// </summary>

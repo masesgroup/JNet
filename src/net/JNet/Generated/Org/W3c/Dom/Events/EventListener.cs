@@ -27,7 +27,7 @@ namespace Org.W3c.Dom.Events
 {
     #region IEventListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.org.w3c.dom.events.EventListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html"/>
     /// </summary>
     public partial interface IEventListener
     {
@@ -68,6 +68,25 @@ namespace Org.W3c.Dom.Events
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="EventListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("handleEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.W3c.Dom.Events.Event>>>(HandleEventEventHandler)); OnHandleEvent = HandleEvent;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html#handleEvent(org.w3c.dom.events.Event)"/>
+        /// </summary>
+        public System.Action<Org.W3c.Dom.Events.Event> OnHandleEvent { get; set; }
+
+        void HandleEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.W3c.Dom.Events.Event>> data)
+        {
+            if (OnHandleEvent != null) OnHandleEvent.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html#handleEvent(org.w3c.dom.events.Event)"/>
         /// </summary>

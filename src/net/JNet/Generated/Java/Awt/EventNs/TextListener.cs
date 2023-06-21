@@ -27,7 +27,7 @@ namespace Java.Awt.EventNs
 {
     #region ITextListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.TextListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html"/>
     /// </summary>
     public partial interface ITextListener
     {
@@ -68,6 +68,25 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="TextListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("textValueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.TextEvent>>>(TextValueChangedEventHandler)); OnTextValueChanged = TextValueChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.TextEvent> OnTextValueChanged { get; set; }
+
+        void TextValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.TextEvent>> data)
+        {
+            if (OnTextValueChanged != null) OnTextValueChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
         /// </summary>

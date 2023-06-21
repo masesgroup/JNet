@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IDoubleUnaryOperator
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.DoubleUnaryOperator implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html"/>
     /// </summary>
     public partial interface IDoubleUnaryOperator
     {
@@ -82,6 +82,31 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="DoubleUnaryOperator"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>>>(AndThenEventHandler)); OnAndThen = AndThen;
+            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>>>(ComposeEventHandler)); OnCompose = Compose;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)"/>
+        /// </summary>
+        public System.Func<double, double> OnApplyAsDouble { get; set; }
+
+        void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        {
+            if (OnApplyAsDouble != null)
+            {
+                var executionResult = OnApplyAsDouble.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
@@ -90,6 +115,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.DoubleUnaryOperator, Java.Util.Function.DoubleUnaryOperator> OnAndThen { get; set; }
+
+        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>> data)
+        {
+            if (OnAndThen != null)
+            {
+                var executionResult = OnAndThen.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
@@ -99,6 +139,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.DoubleUnaryOperator, Java.Util.Function.DoubleUnaryOperator> OnCompose { get; set; }
+
+        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>> data)
+        {
+            if (OnCompose != null)
+            {
+                var executionResult = OnCompose.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>

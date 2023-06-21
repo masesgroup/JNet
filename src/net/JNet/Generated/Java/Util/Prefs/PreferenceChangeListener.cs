@@ -27,7 +27,7 @@ namespace Java.Util.Prefs
 {
     #region IPreferenceChangeListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.prefs.PreferenceChangeListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html"/>
     /// </summary>
     public partial interface IPreferenceChangeListener
     {
@@ -68,6 +68,25 @@ namespace Java.Util.Prefs
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="PreferenceChangeListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("preferenceChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>>>(PreferenceChangeEventHandler)); OnPreferenceChange = PreferenceChange;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
+        /// </summary>
+        public System.Action<Java.Util.Prefs.PreferenceChangeEvent> OnPreferenceChange { get; set; }
+
+        void PreferenceChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>> data)
+        {
+            if (OnPreferenceChange != null) OnPreferenceChange.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html#preferenceChange(java.util.prefs.PreferenceChangeEvent)"/>
         /// </summary>

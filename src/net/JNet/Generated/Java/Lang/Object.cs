@@ -45,41 +45,6 @@ namespace Java.Lang
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#getClass()"/> 
-        /// </summary>
-        public Java.Lang.Class Class
-        {
-            get { return IExecute<Java.Lang.Class>("getClass"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public void Wait(long arg0)
-        {
-            IExecute("wait", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait()"/>
-        /// </summary>
-
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public void Wait()
-        {
-            IExecute("wait");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#wait(long,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <exception cref="Java.Lang.InterruptedException"/>
-        public void Wait(long arg0, int arg1)
-        {
-            IExecute("wait", arg0, arg1);
-        }
 
         #endregion
 

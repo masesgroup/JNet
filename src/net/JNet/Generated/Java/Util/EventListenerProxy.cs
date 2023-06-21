@@ -29,14 +29,6 @@ namespace Java.Util
     public partial class EventListenerProxy
     {
         #region Constructors
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html#%3Cinit%3E(java.util.EventListener)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.EventListener"/></param>
-        public EventListenerProxy(Java.Util.EventListener arg0)
-            : base(arg0)
-        {
-        }
 
         #endregion
 
@@ -53,13 +45,6 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html#getListener()"/> 
-        /// </summary>
-        public Java.Util.EventListener Listener
-        {
-            get { return IExecute<Java.Util.EventListener>("getListener"); }
-        }
 
         #endregion
 
@@ -75,14 +60,6 @@ namespace Java.Util
     public partial class EventListenerProxy<T>
     {
         #region Constructors
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html#%3Cinit%3E(java.util.EventListener)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        public EventListenerProxy(T arg0)
-            : base(arg0)
-        {
-        }
 
         #endregion
 
@@ -103,13 +80,6 @@ namespace Java.Util
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EventListenerProxy.html#getListener()"/> 
-        /// </summary>
-        public T Listener
-        {
-            get { return IExecute<T>("getListener"); }
-        }
 
         #endregion
 

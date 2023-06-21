@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region IAncestorListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.AncestorListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html"/>
     /// </summary>
     public partial interface IAncestorListener
     {
@@ -79,6 +79,27 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="AncestorListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("ancestorAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorAddedEventHandler)); OnAncestorAdded = AncestorAdded;
+            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorMovedEventHandler)); OnAncestorMoved = AncestorMoved;
+            AddEventHandler("ancestorRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorRemovedEventHandler)); OnAncestorRemoved = AncestorRemoved;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorAdded(javax.swing.event.AncestorEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorAdded { get; set; }
+
+        void AncestorAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
+        {
+            if (OnAncestorAdded != null) OnAncestorAdded.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorAdded(javax.swing.event.AncestorEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Event.AncestorEvent"/></param>
@@ -86,6 +107,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorMoved(javax.swing.event.AncestorEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorMoved { get; set; }
+
+        void AncestorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
+        {
+            if (OnAncestorMoved != null) OnAncestorMoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorMoved(javax.swing.event.AncestorEvent)"/>
         /// </summary>
@@ -94,6 +126,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorRemoved(javax.swing.event.AncestorEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorRemoved { get; set; }
+
+        void AncestorRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
+        {
+            if (OnAncestorRemoved != null) OnAncestorRemoved.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorRemoved(javax.swing.event.AncestorEvent)"/>
         /// </summary>

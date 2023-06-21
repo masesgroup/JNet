@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region ILongBinaryOperator
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongBinaryOperator.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.LongBinaryOperator implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongBinaryOperator.html"/>
     /// </summary>
     public partial interface ILongBinaryOperator
     {
@@ -70,6 +70,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="LongBinaryOperator"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
+        /// </summary>
+        public System.Func<long, long, long> OnApplyAsLong { get; set; }
+
+        void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+        {
+            if (OnApplyAsLong != null)
+            {
+                var executionResult = OnApplyAsLong.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<long>(0));
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
         /// </summary>

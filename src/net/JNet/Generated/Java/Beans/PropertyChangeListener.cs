@@ -27,7 +27,7 @@ namespace Java.Beans
 {
     #region IPropertyChangeListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.beans.PropertyChangeListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html"/>
     /// </summary>
     public partial interface IPropertyChangeListener
     {
@@ -68,6 +68,25 @@ namespace Java.Beans
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="PropertyChangeListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("propertyChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(PropertyChangeEventHandler)); OnPropertyChange = PropertyChange;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
+        /// </summary>
+        public System.Action<Java.Beans.PropertyChangeEvent> OnPropertyChange { get; set; }
+
+        void PropertyChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>> data)
+        {
+            if (OnPropertyChange != null) OnPropertyChange.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>

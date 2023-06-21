@@ -27,7 +27,7 @@ namespace Javax.Swing.Event
 {
     #region IMenuKeyListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.javax.swing.event.MenuKeyListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html"/>
     /// </summary>
     public partial interface IMenuKeyListener
     {
@@ -79,6 +79,27 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="MenuKeyListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("menuKeyPressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyPressedEventHandler)); OnMenuKeyPressed = MenuKeyPressed;
+            AddEventHandler("menuKeyReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyReleasedEventHandler)); OnMenuKeyReleased = MenuKeyReleased;
+            AddEventHandler("menuKeyTyped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyTypedEventHandler)); OnMenuKeyTyped = MenuKeyTyped;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyPressed(javax.swing.event.MenuKeyEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyPressed { get; set; }
+
+        void MenuKeyPressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
+        {
+            if (OnMenuKeyPressed != null) OnMenuKeyPressed.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyPressed(javax.swing.event.MenuKeyEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.Event.MenuKeyEvent"/></param>
@@ -86,6 +107,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyReleased(javax.swing.event.MenuKeyEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyReleased { get; set; }
+
+        void MenuKeyReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
+        {
+            if (OnMenuKeyReleased != null) OnMenuKeyReleased.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyReleased(javax.swing.event.MenuKeyEvent)"/>
         /// </summary>
@@ -94,6 +126,17 @@ namespace Javax.Swing.Event
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyTyped(javax.swing.event.MenuKeyEvent)"/>
+        /// </summary>
+        public System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyTyped { get; set; }
+
+        void MenuKeyTypedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
+        {
+            if (OnMenuKeyTyped != null) OnMenuKeyTyped.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyTyped(javax.swing.event.MenuKeyEvent)"/>
         /// </summary>

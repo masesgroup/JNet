@@ -46,6 +46,26 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="HierarchyBoundsAdapter"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorMovedEventHandler)); OnAncestorMoved = AncestorMoved;
+            AddEventHandler("ancestorResized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorResizedEventHandler)); OnAncestorResized = AncestorResized;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.HierarchyEvent> OnAncestorMoved { get; set; }
+
+        void AncestorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
+        {
+            if (OnAncestorMoved != null) OnAncestorMoved.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html#ancestorMoved(java.awt.event.HierarchyEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.HierarchyEvent"/></param>
@@ -53,6 +73,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.HierarchyEvent> OnAncestorResized { get; set; }
+
+        void AncestorResizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
+        {
+            if (OnAncestorResized != null) OnAncestorResized.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyBoundsAdapter.html#ancestorResized(java.awt.event.HierarchyEvent)"/>
         /// </summary>

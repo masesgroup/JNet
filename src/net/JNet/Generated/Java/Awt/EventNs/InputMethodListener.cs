@@ -27,7 +27,7 @@ namespace Java.Awt.EventNs
 {
     #region IInputMethodListener
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.awt.event.InputMethodListener implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html"/>
     /// </summary>
     public partial interface IInputMethodListener
     {
@@ -74,6 +74,26 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="InputMethodListener"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("caretPositionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(CaretPositionChangedEventHandler)); OnCaretPositionChanged = CaretPositionChanged;
+            AddEventHandler("inputMethodTextChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(InputMethodTextChangedEventHandler)); OnInputMethodTextChanged = InputMethodTextChanged;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.InputMethodEvent> OnCaretPositionChanged { get; set; }
+
+        void CaretPositionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>> data)
+        {
+            if (OnCaretPositionChanged != null) OnCaretPositionChanged.Invoke(data.EventData.TypedEventData);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.EventNs.InputMethodEvent"/></param>
@@ -81,6 +101,17 @@ namespace Java.Awt.EventNs
         {
             
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
+        /// </summary>
+        public System.Action<Java.Awt.EventNs.InputMethodEvent> OnInputMethodTextChanged { get; set; }
+
+        void InputMethodTextChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>> data)
+        {
+            if (OnInputMethodTextChanged != null) OnInputMethodTextChanged.Invoke(data.EventData.TypedEventData);
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>

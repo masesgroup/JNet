@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IIntPredicate
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.IntPredicate implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html"/>
     /// </summary>
     public partial interface IIntPredicate
     {
@@ -88,6 +88,32 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="IntPredicate"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(TestEventHandler)); OnTest = Test;
+            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>>>(AndEventHandler)); OnAnd = And;
+            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
+            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>>>(OrEventHandler)); OnOr = Or;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#test(int)"/>
+        /// </summary>
+        public System.Func<int, bool> OnTest { get; set; }
+
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+        {
+            if (OnTest != null)
+            {
+                var executionResult = OnTest.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#test(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -96,6 +122,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.IntPredicate, Java.Util.Function.IntPredicate> OnAnd { get; set; }
+
+        void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>> data)
+        {
+            if (OnAnd != null)
+            {
+                var executionResult = OnAnd.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
         /// </summary>
@@ -105,6 +146,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.IntPredicate> OnNegate { get; set; }
+
+        void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            if (OnNegate != null)
+            {
+                var executionResult = OnNegate.Invoke();
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
         /// </summary>
@@ -114,6 +170,21 @@ namespace Java.Util.Function
         {
             return default;
         }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
+        /// </summary>
+        public System.Func<Java.Util.Function.IntPredicate, Java.Util.Function.IntPredicate> OnOr { get; set; }
+
+        void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntPredicate>> data)
+        {
+            if (OnOr != null)
+            {
+                var executionResult = OnOr.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
         /// </summary>

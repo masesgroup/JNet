@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IDoubleToIntFunction
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToIntFunction.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.function.DoubleToIntFunction implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToIntFunction.html"/>
     /// </summary>
     public partial interface IDoubleToIntFunction
     {
@@ -69,6 +69,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// Handlers initializer for <see cref="DoubleToIntFunction"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToIntFunction.html#applyAsInt(double)"/>
+        /// </summary>
+        public System.Func<double, int> OnApplyAsInt { get; set; }
+
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        {
+            if (OnApplyAsInt != null)
+            {
+                var executionResult = OnApplyAsInt.Invoke(data.EventData.TypedEventData);
+                data.SetReturnValue(executionResult);
+            }
+        }
+
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleToIntFunction.html#applyAsInt(double)"/>
         /// </summary>
