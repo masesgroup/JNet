@@ -34,10 +34,6 @@ namespace Java.Text
 
         #region Class/Interface conversion operators
         /// <summary>
-        /// Converter from <see cref="Java.Text.Collator"/> to <see cref="Java.Util.Comparator"/>
-        /// </summary>
-        public static implicit operator Java.Util.Comparator(Java.Text.Collator t) => t.Cast<Java.Util.Comparator>();
-        /// <summary>
         /// Converter from <see cref="Java.Text.Collator"/> to <see cref="Java.Lang.Cloneable"/>
         /// </summary>
         public static implicit operator Java.Lang.Cloneable(Java.Text.Collator t) => t.Cast<Java.Lang.Cloneable>();

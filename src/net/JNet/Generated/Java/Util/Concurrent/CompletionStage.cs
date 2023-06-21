@@ -430,7 +430,7 @@ namespace Java.Util.Concurrent
 
     #region ICompletionStage<T>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletionStage.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface ICompletionStage<T>
     {

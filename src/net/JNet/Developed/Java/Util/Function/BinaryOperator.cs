@@ -53,28 +53,19 @@ namespace Java.Util.Function
     /// <typeparam name="T">The data type associated to the event</typeparam>
     public class BinaryOperator<T> : BinaryOperator, IBinaryOperator<T>
     {
-        Func<T, T, T> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{TObject, TReturn}"/> to be executed
         /// </summary>
-        public virtual Func<T, T, T> OnApply { get { return executionFunction; } }
+        public virtual Func<T, T, T> OnApply { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="BinaryOperator{T}"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{T,T,T}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public BinaryOperator(Func<T, T, T> func = null, bool attachEventHandler = true)
+        public BinaryOperator()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = Apply;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("apply", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(EventHandler));
-            }
+            AddEventHandler("apply", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler)); OnApply = Apply;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
             var retVal = OnApply(data.EventData.TypedEventData, data.EventData.To<T>(0));
             data.SetReturnValue(retVal);

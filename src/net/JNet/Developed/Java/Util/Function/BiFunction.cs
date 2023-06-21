@@ -57,28 +57,19 @@ namespace Java.Util.Function
     /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
     public class BiFunction<T, U, TReturn> : BiFunction, IBiFunction<T, U, TReturn>
     {
-        Func<T, U, TReturn> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{T, U, TReturn}"/> to be executed
         /// </summary>
-        public virtual Func<T, U, TReturn> OnApply { get { return executionFunction; } }
+        public virtual Func<T, U, TReturn> OnApply { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="BiFunction{T, U, TReturn}"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{T, U, TReturn}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public BiFunction(Func<T, U, TReturn> func = null, bool attachEventHandler = true)
+        public BiFunction()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = Apply;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("apply", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(EventHandler));
-            }
+            AddEventHandler("apply", new EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler)); OnApply = Apply;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
+        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
             var retVal = OnApply(data.EventData.TypedEventData, data.EventData.To<U>(0));
             data.SetReturnValue(retVal);

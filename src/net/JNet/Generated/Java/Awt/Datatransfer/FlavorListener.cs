@@ -69,7 +69,7 @@ namespace Java.Awt.Datatransfer
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="FlavorListener"/>
+        /// <see cref="FlavorListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

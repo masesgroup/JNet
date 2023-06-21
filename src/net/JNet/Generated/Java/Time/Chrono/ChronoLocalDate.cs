@@ -27,7 +27,7 @@ namespace Java.Time.Chrono
 {
     #region IChronoLocalDate
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IChronoLocalDate
     {
@@ -230,15 +230,6 @@ namespace Java.Time.Chrono
         public static Java.Time.Chrono.ChronoLocalDate From(Java.Time.Temporal.TemporalAccessor arg0)
         {
             return SExecute<Java.Time.Chrono.ChronoLocalDate>(LocalBridgeClazz, "from", arg0);
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ChronoLocalDate.html#timeLineOrder()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Comparator"/></returns>
-        public static Java.Util.Comparator<Java.Time.Chrono.ChronoLocalDate> TimeLineOrder()
-        {
-            return SExecute<Java.Util.Comparator<Java.Time.Chrono.ChronoLocalDate>>(LocalBridgeClazz, "timeLineOrder");
         }
 
         #endregion

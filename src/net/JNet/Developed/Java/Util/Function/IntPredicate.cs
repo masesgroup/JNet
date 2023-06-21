@@ -37,8 +37,5 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetIntPredicate";
-
-        /// <inheritdoc cref="Predicate{Int32}"/>
-        public IntPredicate(Func<int, bool> func = null) : base(func) { }
     }
 }

@@ -74,7 +74,7 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="NodeChangeListener"/>
+        /// <see cref="NodeChangeListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

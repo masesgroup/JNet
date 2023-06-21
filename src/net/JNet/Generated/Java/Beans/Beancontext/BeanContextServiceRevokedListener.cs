@@ -69,7 +69,7 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="BeanContextServiceRevokedListener"/>
+        /// <see cref="BeanContextServiceRevokedListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

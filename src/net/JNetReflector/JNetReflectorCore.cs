@@ -37,6 +37,11 @@ namespace MASES.JNetReflector
         /// </summary>
         public class ConfigurationType
         {
+            public ConfigurationType()
+            {
+                JavaListenerBasePackage = string.Empty;
+            }
+
             public struct VersionUrl
             {
                 public VersionUrl(int version, string url)
@@ -58,6 +63,10 @@ namespace MASES.JNetReflector
 
             public string DestinationRootPath { get; set; }
 
+            public string DestinationJavaListenerPath { get; set; }
+
+            public string JavaListenerBasePackage { get; set; }
+
             public IEnumerable<string> ClassesToAnalyze { get; set; }
 
             public IEnumerable<string> JarList { get; set; }
@@ -65,6 +74,8 @@ namespace MASES.JNetReflector
             public IEnumerable<string> ModulesToParse { get; set; }
 
             public IEnumerable<string> ClassesToBeListener { get; set; }
+
+            public IEnumerable<string> ClassesToAvoidJavaListener { get; set; }
 
             public IEnumerable<string> NamespacesInConflict { get; set; }
 
@@ -154,6 +165,20 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
+                        Name = CLIParam.DestinationJavaListenerPath,
+                        Type = ArgumentType.Double,
+                        Default = SpecialNames.JNetReflectorGeneratedFolder,
+                        Help = "The destination root path where Java listener classes will be stored",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.JavaListenerBasePackage,
+                        Type = ArgumentType.Double,
+                        Default = string.Empty,
+                        Help = "The base package name to use when a Java listener class is created",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
                         Name = CLIParam.ClassesToAnalyze,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of full qualified class names to be analyzed",
@@ -174,7 +199,13 @@ namespace MASES.JNetReflector
                     {
                         Name = CLIParam.ClassesToBeListener,
                         Type = ArgumentType.Double,
-                        Help = "A CSV list of class names to be treated as Listener",
+                        Help = "A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with \"Listener\" or \"Adapter\" as Listener",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassesToAvoidJavaListener,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of class names to be avoided during generation of Java listener classes",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -316,6 +347,12 @@ namespace MASES.JNetReflector
         static string _DestinationRootPath;
         public static string DestinationRootPath => _DestinationRootPath ?? _ConfigurationFromFile.DestinationRootPath;
 
+        static string _DestinationJavaListenerPath;
+        public static string DestinationJavaListenerPath => _DestinationJavaListenerPath ?? _ConfigurationFromFile.DestinationJavaListenerPath;
+
+        static string _JavaListenerBasePackage;
+        public static string JavaListenerBasePackage => _JavaListenerBasePackage ?? _ConfigurationFromFile.JavaListenerBasePackage;
+
         static IEnumerable<string> _ClassesToAnalyze;
         public static IEnumerable<string> ClassesToAnalyze => _ClassesToAnalyze ?? _ConfigurationFromFile.ClassesToAnalyze;
 
@@ -328,6 +365,9 @@ namespace MASES.JNetReflector
 
         static IEnumerable<string> _ClassesToBeListener;
         public static IEnumerable<string> ClassesToBeListener => _ClassesToBeListener ?? _ConfigurationFromFile.ClassesToBeListener;
+
+        static IEnumerable<string> _ClassesToAvoidJavaListener;
+        public static IEnumerable<string> ClassesToAvoidJavaListener => _ClassesToAvoidJavaListener ?? _ConfigurationFromFile.ClassesToAvoidJavaListener;
 
         static IEnumerable<string> _NamespacesInConflict;
         public static IEnumerable<string> NamespacesInConflict => _NamespacesInConflict ?? _ConfigurationFromFile.NamespacesInConflict;
@@ -395,6 +435,7 @@ namespace MASES.JNetReflector
                 var conf = File.ReadAllText(filePath);
                 _ConfigurationFromFile = JsonSerializer.Deserialize<ConfigurationType>(conf);
             }
+            else _ConfigurationFromFile = new ConfigurationType();
 
             List<string> classesToAnalyze = new List<string>();
             if (ParsedArgs.Exist(CLIParam.ClassesToAnalyze))
@@ -465,6 +506,17 @@ namespace MASES.JNetReflector
                 _ClassesToBeListener = classesToBeListener;
             }
 
+            List<string> classesToAvoidJavaListener = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToAvoidJavaListener))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToAvoidJavaListener).Split(',', ';');
+                foreach (var item in classes)
+                {
+                    if (!classesToAvoidJavaListener.Contains(item)) classesToAvoidJavaListener.Add(item);
+                }
+                _ClassesToAvoidJavaListener = classesToAvoidJavaListener;
+            }
+
             List<string> namespacesInConflict = new List<string>();
             if (ParsedArgs.Exist(CLIParam.NamespacesInConflict))
             {
@@ -521,8 +573,9 @@ namespace MASES.JNetReflector
                 _ClassesToAvoidInGenerics = classesToAvoidInGenerics;
             }
 
-            var destinationFolder = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationRootPath));
-            _DestinationRootPath = Path.GetFullPath(destinationFolder);
+            _DestinationRootPath = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationRootPath));
+            _DestinationJavaListenerPath = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationJavaListenerPath));
+            if (ParsedArgs.Exist(CLIParam.JavaListenerBasePackage)) _JavaListenerBasePackage = ParsedArgs.Get<string>(CLIParam.JavaListenerBasePackage);
 
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);

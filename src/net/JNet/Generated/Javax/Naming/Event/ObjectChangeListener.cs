@@ -33,11 +33,6 @@ namespace Javax.Naming.Event
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
-        void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0);
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html#objectChanged(javax.naming.event.NamingEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingEvent"/></param>
@@ -74,32 +69,12 @@ namespace Javax.Naming.Event
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="ObjectChangeListener"/>
+        /// <see cref="ObjectChangeListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler)); OnNamingExceptionThrown = NamingExceptionThrown;
             AddEventHandler("objectChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectChangedEventHandler)); OnObjectChanged = ObjectChanged;
 
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
-        /// </summary>
-        public System.Action<Javax.Naming.Event.NamingExceptionEvent> OnNamingExceptionThrown { get; set; }
-
-        void NamingExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>> data)
-        {
-            if (OnNamingExceptionThrown != null) OnNamingExceptionThrown.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
-        public virtual void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
-        {
-            
         }
 
         /// <summary>

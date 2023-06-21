@@ -44,28 +44,19 @@ namespace Java.Util.Function
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoubleToIntFunction";
 
-        Func<double, int> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{Double, Int32}"/> to be executed
         /// </summary>
-        public virtual Func<double, int> OnApplyAsInt { get { return executionFunction; } }
+        public virtual Func<double, int> OnApplyAsInt { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="DoubleToIntFunction"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{Double, Int32}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public DoubleToIntFunction(Func<double, int> func = null, bool attachEventHandler = true)
+        public DoubleToIntFunction()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = ApplyAsInt;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("applyAsInt", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(EventHandler));
-            }
+            AddEventHandler("applyAsInt", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
             var retVal = OnApplyAsInt(data.EventData.TypedEventData);
             data.SetReturnValue(retVal);

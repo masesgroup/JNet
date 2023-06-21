@@ -1,4 +1,5 @@
 {
+  "JavaListenerBasePackage": "org.mases.jnet.generated",
   "OnlyPropertiesForGetterSetter": true,
   "ModulesToParse": [
     "org.*",
@@ -27,8 +28,12 @@
     "java.util.stream.IntStream$Builder",
     "java.util.stream.LongStream$Builder",
     "java.util.stream.Stream$Builder",
+    "java.util.Comparator",
+    "java.util.EventListener",
+    "java.util.ServiceLoader$Provider",
     "javax.swing.ToolTipManager",
     "javax.swing.text.html.HTMLEditorKit$LinkController",
+    "javax.swing.plaf.basic.BasicButtonListener",
     "javax.swing.plaf.basic.BasicTreeUI$MouseHandler",
     "javax.swing.plaf.basic.BasicDesktopIconUI$MouseInputHandler",
     "javax.swing.plaf.basic.BasicTabbedPaneUI$FocusHandler",
@@ -38,7 +43,16 @@
     "javax.swing.plaf.basic.BasicTreeUI$KeyHandler",
     "javax.swing.plaf.basic.BasicTreeUI$ComponentHandler",
     "javax.swing.plaf.basic.BasicSplitPaneUI$FocusHandler",
-    "javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler"
+    "javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler",
+    "javax.swing.plaf.basic.BasicOptionPaneUI$ButtonActionListener",
+    "javax.swing.plaf.basic.BasicToolBarUI$DockingListener",
+    "javax.swing.plaf.basic.BasicScrollPaneUI$HSBChangeListener",
+    "javax.swing.plaf.basic.BasicInternalFrameUI$InternalFramePropertyChangeListener",
+    "javax.swing.plaf.basic.BasicSliderUI$ScrollListener",
+    "javax.swing.plaf.basic.BasicSliderUI$TrackListener",
+    "javax.swing.plaf.basic.BasicScrollPaneUI$VSBChangeListener",
+    "javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener",
+    "javax.tools.DiagnosticListener"
   ],
   "NamespacesInConflict": [
     "java.lang.module",

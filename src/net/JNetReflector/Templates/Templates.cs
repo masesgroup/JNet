@@ -41,8 +41,12 @@ namespace MASES.JNetReflector.Templates
             SingleFieldTemplate,
             SingleMethodTemplate,
             SingleInterfaceMethodTemplate,
+            SingleListenerMethodTemplate,
+            SingleListenerJavaMethodTemplate,
             SinglePropertyTemplate,
             SingleInterfacePropertyTemplate,
+
+            SingleListenerJavaFileTemplate,
         };
 
         static Template()
@@ -85,8 +89,12 @@ namespace MASES.JNetReflector.Templates
         public const string SingleFieldTemplate = "SingleField.template";
         public const string SingleMethodTemplate = "SingleMethod.template";
         public const string SingleInterfaceMethodTemplate = "SingleInterfaceMethod.template";
+        public const string SingleListenerMethodTemplate = "SingleListenerMethod.template";
+        public const string SingleListenerJavaMethodTemplate = "SingleListenerJavaMethod.template";
         public const string SinglePropertyTemplate = "SingleProperty.template";
         public const string SingleInterfacePropertyTemplate = "SingleInterfaceProperty.template";
+
+        public const string SingleListenerJavaFileTemplate = "SingleListenerJavaFile.template";
     }
 
     public class AllPackageClasses
@@ -95,6 +103,7 @@ namespace MASES.JNetReflector.Templates
         public const string JAR = "ALLPACKAGE_JAR_PLACEHOLDER";
         public const string NAMESPACE = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";
         public const string CLASSES = "// ALLPACKAGE_CLASSES_PLACEHOLDER";
+        public const string PACKAGE = "ALLPACKAGE_PACKAGE_PLACEHOLDER";
 
         public static string DocTemplate(string jdocUrl) => jdocUrl != null ? HREF_URL : CREF_URL;
 
@@ -107,6 +116,7 @@ namespace MASES.JNetReflector.Templates
             public const string HELP = "ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER";
             public const string SIMPLECLASS = "ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER";
             public const string CLASS = "ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
+            public const string LISTENER_CLASS = "ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER";
             public const string INTERFACE = "ALLPACKAGE_CLASSES_STUB_INTERFACE_PLACEHOLDER";
             public const string INTERFACE_CONSTRAINT = "ALLPACKAGE_CLASSES_STUB_CLASS_INTERFACE_PLACEHOLDER";
             public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
@@ -118,6 +128,7 @@ namespace MASES.JNetReflector.Templates
             public const string FIELDS = "// ALLPACKAGE_CLASSES_STUB_FIELDS_PLACEHOLDER";
             public const string STATICMETHODS = "// ALLPACKAGE_CLASSES_STUB_STATIC_METHODS_PLACEHOLDER";
             public const string METHODS = "// ALLPACKAGE_CLASSES_STUB_METHODS_PLACEHOLDER";
+            public const string LISTENER_METHODS = "// ALLPACKAGE_CLASSES_STUB_LISTENER_METHODS_PLACEHOLDER";
             public const string NESTED_CLASSES = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER";
             public const string NESTED_INTERFACES = "// ALLPACKAGE_CLASSES_STUB_NESTED_INTERFACES_PLACEHOLDER";
 
@@ -133,6 +144,13 @@ namespace MASES.JNetReflector.Templates
                                                     + "/// ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER" + Environment.NewLine
                                                     + "/// </summary>";
             public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
+
+            public const string LISTENER_CLASS_WARNING = "#warning Remember to build the Java class for event listener";
+
+            public static string LISTENER_CLASS_BLOCK = "    /// <summary>" + Environment.NewLine
+                                                      + "    /// <see href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm\"/>" + Environment.NewLine
+                                                      + "    /// </summary>" + Environment.NewLine
+                                                      + "    public override string BridgeClassName => \"ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER\";" + Environment.NewLine;
 
             public class ConstructorStub
             {
@@ -157,8 +175,8 @@ namespace MASES.JNetReflector.Templates
             {
                 public const string IMPLICIT_EXECUTION_FORMAT = "public static implicit operator {0}({1} t) => t.Cast<{0}>();";
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
-                                                                   + "/// Converter from <see cref=\"{1}\"/> to <see cref=\"{0}\"/>" + Environment.NewLine
-                                                                   + "/// </summary>";
+                                                                 + "/// Converter from <see cref=\"{1}\"/> to <see cref=\"{0}\"/>" + Environment.NewLine
+                                                                 + "/// </summary>";
             }
 
             public class MethodStub
@@ -171,6 +189,12 @@ namespace MASES.JNetReflector.Templates
                 public const string PARAMETERS = "METHOD_STUB_PARAMETERS_PLACEHOLDER";
                 public const string WHERECLAUSES = "METHOD_STUB_WHERECLAUSES_PLACEHOLDER";
                 public const string EXECUTION = "METHOD_STUB_EXECUTION_PLACEHOLDER";
+                public const string LISTENER_EXECUTION_TYPE = "METHOD_STUB_LISTENER_EXECUTION_TYPE_PLACEHOLDER";
+                public const string LISTENER_EXECUTION = "METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER";
+                public const string LISTENER_HANDLER_EXECUTION = "METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER";
+                public const string LISTENER_HANDLER_NAME = "METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER";
+                public const string LISTENER_FIRST_PARAMETER = "METHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER";
+                public const string SINGLE_LISTENER_HANDLER_FORMAT = "    AddEventHandler(\"{0}\", new System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler)); OnMETHOD_STUB_METHOD_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4});";
                 public const string SINGLE_ARRAY_EXECUTION_FORMAT = "new object[] {{ {0} }}";
                 public const string STATIC_EXECUTION_FORMAT = "{0}{1}{2}(LocalBridgeClazz, \"{3}\"{4});";
@@ -179,16 +203,34 @@ namespace MASES.JNetReflector.Templates
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// METHOD_STUB_METHOD_HELP_PLACEHOLDER" + Environment.NewLine
                                                                  + "/// </summary>";
-                public static readonly string HELP_PARAM_DECORATION = "/// <param name=\"{0}\">{1}</param>";
-                public static readonly string HELP_PARAM_SEE_DECORATION = "<see cref=\"{0}\"/>";
-                public static readonly string HELP_PARAM_TYPEPARAMREF_DECORATION = "<typeparamref name=\"{0}\"/>";
-                public static readonly string HELP_TYPEPARAM_DECORATION = "/// <typeparam name=\"{0}\">{1}</typeparam>";
-                public static readonly string HELP_RETURN_DECORATION = "/// <returns>{0}</returns>";
-                public static readonly string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
+                public const string HELP_PARAM_DECORATION = "/// <param name=\"{0}\">{1}</param>";
+                public const string HELP_PARAM_SEE_DECORATION = "<see cref=\"{0}\"/>";
+                public const string HELP_PARAM_TYPEPARAMREF_DECORATION = "<typeparamref name=\"{0}\"/>";
+                public const string HELP_TYPEPARAM_DECORATION = "/// <typeparam name=\"{0}\">{1}</typeparam>";
+                public const string HELP_RETURN_DECORATION = "/// <returns>{0}</returns>";
+                public const string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
 
                 public const string STATIC_EXECUTE = "SExecute";
                 public const string INSTANCE_EXECUTE = "IExecute";
+
+                public static readonly string ACTION_LISTENER_EXECUTION_HANDLER_FORMAT = "    if (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);";
+                public static readonly string FUNC_LISTENER_EXECUTION_HANDLER_FORMAT = "    if (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null)" + Environment.NewLine
+                                                                                     + "    {" + Environment.NewLine
+                                                                                     + "        var executionResult = OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
+                                                                                     + "        data.SetReturnValue(executionResult);" + Environment.NewLine
+                                                                                     + "    }";
+
+                public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "/// <summary>" + Environment.NewLine
+                                                                            + "/// Handlers initializer for <see cref=\"{0}\"/>" + Environment.NewLine
+                                                                            + "/// </summary>" + Environment.NewLine
+                                                                            + "protected virtual void InitializeHandlers()" + Environment.NewLine
+                                                                            + "{{" + Environment.NewLine
+                                                                            + "{1}" + Environment.NewLine
+                                                                            + "}}" + Environment.NewLine;
+
+                public const string VOID_LISTENER_EXECUTION_FORMAT = "raiseEvent(\"{0}\"{1});";
+                public static string TYPED_LISTENER_EXECUTION_FORMAT = "raiseEvent(\"{0}\"{1}); Object retVal = getReturnData(); return ({2})retVal;";
             }
 
             public class PropertyStub

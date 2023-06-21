@@ -69,7 +69,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="UndoableEditListener"/>
+        /// <see cref="UndoableEditListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

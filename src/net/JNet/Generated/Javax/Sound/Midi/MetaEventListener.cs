@@ -69,7 +69,7 @@ namespace Javax.Sound.Midi
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="MetaEventListener"/>
+        /// <see cref="MetaEventListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

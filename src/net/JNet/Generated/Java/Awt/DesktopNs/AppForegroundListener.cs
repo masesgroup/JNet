@@ -74,7 +74,7 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="AppForegroundListener"/>
+        /// <see cref="AppForegroundListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

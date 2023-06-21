@@ -367,6 +367,15 @@ namespace Java.Util.Stream
         {
             return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "rangeClosed", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#builder()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.LongStream.Builder"/></returns>
+        public static Java.Util.Stream.LongStream.Builder BuilderMethod()
+        {
+            return SExecute<Java.Util.Stream.LongStream.Builder>(LocalBridgeClazz, "builder");
+        }
 
         #endregion
 
@@ -704,7 +713,115 @@ namespace Java.Util.Stream
         #endregion
 
         #region Nested classes
+        #region Builder
+        public partial class Builder
+        {
+            #region Constructors
 
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see cref="Builder"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("build", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(BuildEventHandler)); OnBuild = Build;
+                AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(AcceptEventHandler)); OnAccept = Accept;
+                AddEventHandler("add", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(AddEventHandler)); OnAdd = Add;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#build()"/>
+            /// </summary>
+            public System.Func<Java.Util.Stream.LongStream> OnBuild { get; set; }
+
+            void BuildEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnBuild != null)
+                {
+                    var executionResult = OnBuild.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#build()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
+            public virtual Java.Util.Stream.LongStream Build()
+            {
+                return default;
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#accept(long)"/>
+            /// </summary>
+            public System.Action<long> OnAccept { get; set; }
+
+            void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+            {
+                if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#accept(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            public virtual void Accept(long arg0)
+            {
+                
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#add(long)"/>
+            /// </summary>
+            public System.Func<long, Java.Util.Stream.LongStream.Builder> OnAdd { get; set; }
+
+            void AddEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
+            {
+                if (OnAdd != null)
+                {
+                    var executionResult = OnAdd.Invoke(data.EventData.TypedEventData);
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.Builder.html#add(long)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="long"/></param>
+            /// <returns><see cref="Java.Util.Stream.LongStream.Builder"/></returns>
+            public virtual Java.Util.Stream.LongStream.Builder Add(long arg0)
+            {
+                return default;
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+    
         #endregion
 
         // TODO: complete the class

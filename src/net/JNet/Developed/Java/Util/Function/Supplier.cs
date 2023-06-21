@@ -51,28 +51,19 @@ namespace Java.Util.Function
     /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
     public class Supplier<TReturn> : Supplier, ISupplier<TReturn>
     {
-        Func<TReturn> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{TReturn}"/> to be executed
         /// </summary>
-        public virtual Func<TReturn> OnGet { get { return executionFunction; } }
+        public virtual Func<TReturn> OnGet { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="Supplier{TReturn}"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{TReturn}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public Supplier(Func<TReturn> func = null, bool attachEventHandler = true)
+        public Supplier()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = Get;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("get", new EventHandler<CLRListenerEventArgs<CLREventData>>(EventHandler));
-            }
+            AddEventHandler("get", new EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
             var retVal = OnGet();
             data.SetReturnValue(retVal);

@@ -69,7 +69,7 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="ExceptionListener"/>
+        /// <see cref="ExceptionListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

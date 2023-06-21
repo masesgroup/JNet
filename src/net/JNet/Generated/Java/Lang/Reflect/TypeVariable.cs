@@ -94,7 +94,7 @@ namespace Java.Lang.Reflect
 
     #region ITypeVariable<D>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface ITypeVariable<D>
     {

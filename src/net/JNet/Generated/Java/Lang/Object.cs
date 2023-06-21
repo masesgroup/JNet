@@ -45,6 +45,13 @@ namespace Java.Lang
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#getClass()"/> 
+        /// </summary>
+        public Java.Lang.Class Class
+        {
+            get { return IExecute<Java.Lang.Class>("getClass"); }
+        }
 
         #endregion
 

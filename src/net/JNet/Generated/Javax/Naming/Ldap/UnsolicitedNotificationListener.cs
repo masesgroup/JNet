@@ -33,11 +33,6 @@ namespace Javax.Naming.Ldap
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
-        void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0);
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html#notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Naming.Ldap.UnsolicitedNotificationEvent"/></param>
@@ -74,32 +69,12 @@ namespace Javax.Naming.Ldap
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="UnsolicitedNotificationListener"/>
+        /// <see cref="UnsolicitedNotificationListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler)); OnNamingExceptionThrown = NamingExceptionThrown;
             AddEventHandler("notificationReceived", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>>>(NotificationReceivedEventHandler)); OnNotificationReceived = NotificationReceived;
 
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
-        /// </summary>
-        public System.Action<Javax.Naming.Event.NamingExceptionEvent> OnNamingExceptionThrown { get; set; }
-
-        void NamingExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>> data)
-        {
-            if (OnNamingExceptionThrown != null) OnNamingExceptionThrown.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingListener.html#namingExceptionThrown(javax.naming.event.NamingExceptionEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
-        public virtual void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
-        {
-            
         }
 
         /// <summary>

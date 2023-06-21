@@ -69,7 +69,7 @@ namespace Org.W3c.Dom.Events
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="EventListener"/>
+        /// <see cref="EventListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

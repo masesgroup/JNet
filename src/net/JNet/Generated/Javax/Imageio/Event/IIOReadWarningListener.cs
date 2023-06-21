@@ -70,7 +70,7 @@ namespace Javax.Imageio.Event
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="IIOReadWarningListener"/>
+        /// <see cref="IIOReadWarningListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

@@ -35,35 +35,6 @@ namespace Javax.Naming.Event
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class NamingListener : INamingListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.naming.event.JNetNamingListener";
 
-        readonly Action<NamingExceptionEvent> NamingExceptionThrownFunction = null;
-        /// <summary>
-        /// The <see cref="Action{NamingExceptionEvent}"/> to be executed on NamingExceptionThrown
-        /// </summary>
-        public virtual Action<NamingExceptionEvent> OnNamingExceptionThrown { get { return NamingExceptionThrownFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="NamingListener"/>
-        /// </summary>
-        /// <param name="namingExceptionThrown">The <see cref="Action{NamingExceptionEvent}"/> to be executed on NamingExceptionThrown</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public NamingListener(Action<NamingExceptionEvent> namingExceptionThrown = null, bool attachEventHandler = true)
-        {
-            if (namingExceptionThrown != null) NamingExceptionThrownFunction = namingExceptionThrown;
-            else NamingExceptionThrownFunction = NamingExceptionThrown;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("namingExceptionThrown", new EventHandler<CLRListenerEventArgs<CLREventData<NamingExceptionEvent>>>(EventHandlerNamingExceptionThrown));
-            }
-        }
-
-        void EventHandlerNamingExceptionThrown(object sender, CLRListenerEventArgs<CLREventData<NamingExceptionEvent>> data)
-        {
-            OnNamingExceptionThrown(data.EventData.TypedEventData);
-        }
     }
 }

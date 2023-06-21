@@ -71,7 +71,7 @@ namespace Javax.Swing
 
     #region IListCellRenderer<E>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListCellRenderer.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IListCellRenderer<E>
     {

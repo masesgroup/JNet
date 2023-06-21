@@ -84,7 +84,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="MenuDragMouseListener"/>
+        /// <see cref="MenuDragMouseListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

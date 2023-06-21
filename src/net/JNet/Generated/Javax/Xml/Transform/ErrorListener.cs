@@ -82,7 +82,7 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="ErrorListener"/>
+        /// <see cref="ErrorListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

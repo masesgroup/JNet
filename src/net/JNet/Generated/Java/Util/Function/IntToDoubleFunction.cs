@@ -70,7 +70,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="IntToDoubleFunction"/>
+        /// <see cref="IntToDoubleFunction"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

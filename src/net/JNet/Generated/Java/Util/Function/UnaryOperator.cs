@@ -46,86 +46,11 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="UnaryOperator"/>
+        /// <see cref="UnaryOperator"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler)); OnApply = Apply;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler)); OnAndThen = AndThen;
-            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(ComposeEventHandler)); OnCompose = Compose;
 
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
-        /// </summary>
-        public System.Func<object, object> OnApply { get; set; }
-
-        void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
-        {
-            if (OnApply != null)
-            {
-                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="object"/></param>
-        /// <returns><see cref="object"/></returns>
-        public virtual object Apply(object arg0)
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
-        /// </summary>
-        public System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnAndThen { get; set; }
-
-        void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
-        {
-            if (OnAndThen != null)
-            {
-                var executionResult = OnAndThen.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public virtual Java.Util.Function.Function AndThen(Java.Util.Function.Function arg0)
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
-        /// </summary>
-        public System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnCompose { get; set; }
-
-        void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
-        {
-            if (OnCompose != null)
-            {
-                var executionResult = OnCompose.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public virtual Java.Util.Function.Function Compose(Java.Util.Function.Function arg0)
-        {
-            return default;
         }
 
         #endregion
@@ -145,33 +70,6 @@ namespace Java.Util.Function
     public partial interface IUnaryOperator<T>
     {
         #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <typeparam name="R"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        R Apply<R>(T arg0);
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
-        /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R;
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="V"></typeparam>
-        /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsT"></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        Java.Util.Function.Function<V, R> Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V;
 
         #endregion
 
@@ -204,95 +102,11 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="UnaryOperator"/>
+        /// <see cref="UnaryOperator"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(Apply<R>EventHandler)); OnApply<R> = Apply<R>;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler)); OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> = AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>;
-            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>>>(Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>EventHandler)); OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> = Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>;
 
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
-        /// </summary>
-        public System.Func<T, R> OnApply<R> { get; set; }
-
-        void Apply<R>EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
-        {
-            if (OnApply<R> != null)
-            {
-                var executionResult = OnApply<R>.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <typeparam name="R"></typeparam>
-        /// <returns><typeparamref name="R"/></returns>
-        public virtual R Apply<R>(T arg0)
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
-        /// </summary>
-        public System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.Function<T, V>> OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> { get; set; }
-
-        void AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>> data)
-        {
-            if (OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> != null)
-            {
-                var executionResult = OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="V"></typeparam>
-        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
-        /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public virtual Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
-        /// </summary>
-        public System.Func<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>, Java.Util.Function.Function<V, R>> OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> { get; set; }
-
-        void Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>> data)
-        {
-            if (OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> != null)
-            {
-                var executionResult = OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT>.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <typeparam name="V"></typeparam>
-        /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        /// <typeparam name="Arg0ExtendsT"></typeparam>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public virtual Java.Util.Function.Function<V, R> Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V
-        {
-            return default;
         }
 
         #endregion

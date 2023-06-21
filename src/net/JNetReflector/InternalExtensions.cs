@@ -124,6 +124,12 @@ namespace MASES.JNetReflector
             }
         }
 
+        static bool IsJVMListenerClassAvoidJavaFile(this string typeName)
+        {
+            if (JNetReflectorCore.ClassesToAvoidJavaListener != null && JNetReflectorCore.ClassesToAvoidJavaListener.Any((o) => typeName == o)) return true;
+            return false;
+        }
+
         static bool IsJVMListenerClass(this string typeName)
         {
             if (typeName.StartsWith(SpecialNames.JavaUtilFunctions)) return true;
@@ -982,6 +988,11 @@ namespace MASES.JNetReflector
         #endregion
 
         #region Class extension
+
+        public static bool IsJVMListenerClassAvoidJavaFile(this Class entry)
+        {
+            return entry.TypeName.IsJVMListenerClassAvoidJavaFile();
+        }
 
         public static bool IsJVMListenerClass(this Class entry)
         {
@@ -2394,7 +2405,7 @@ namespace MASES.JNetReflector
         public static bool IsObjectReturnType(this Field entry, bool camel)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
-            return entry.Type.ToNetType(camel) == SpecialNames.NetObject;
+            return entry.GenericType.ToNetType(camel) == SpecialNames.NetObject;
         }
 
         public static string JavadocUrl(this Field entry, bool camel)

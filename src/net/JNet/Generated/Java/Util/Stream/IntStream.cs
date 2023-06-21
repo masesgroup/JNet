@@ -373,6 +373,15 @@ namespace Java.Util.Stream
         {
             return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "rangeClosed", arg0, arg1);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#builder()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.IntStream.Builder"/></returns>
+        public static Java.Util.Stream.IntStream.Builder BuilderMethod()
+        {
+            return SExecute<Java.Util.Stream.IntStream.Builder>(LocalBridgeClazz, "builder");
+        }
 
         #endregion
 
@@ -719,7 +728,115 @@ namespace Java.Util.Stream
         #endregion
 
         #region Nested classes
+        #region Builder
+        public partial class Builder
+        {
+            #region Constructors
 
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see cref="Builder"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("build", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(BuildEventHandler)); OnBuild = Build;
+                AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(AcceptEventHandler)); OnAccept = Accept;
+                AddEventHandler("add", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(AddEventHandler)); OnAdd = Add;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#build()"/>
+            /// </summary>
+            public System.Func<Java.Util.Stream.IntStream> OnBuild { get; set; }
+
+            void BuildEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnBuild != null)
+                {
+                    var executionResult = OnBuild.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#build()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
+            public virtual Java.Util.Stream.IntStream Build()
+            {
+                return default;
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#accept(int)"/>
+            /// </summary>
+            public System.Action<int> OnAccept { get; set; }
+
+            void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#accept(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public virtual void Accept(int arg0)
+            {
+                
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#add(int)"/>
+            /// </summary>
+            public System.Func<int, Java.Util.Stream.IntStream.Builder> OnAdd { get; set; }
+
+            void AddEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
+            {
+                if (OnAdd != null)
+                {
+                    var executionResult = OnAdd.Invoke(data.EventData.TypedEventData);
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.Builder.html#add(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            /// <returns><see cref="Java.Util.Stream.IntStream.Builder"/></returns>
+            public virtual Java.Util.Stream.IntStream.Builder Add(int arg0)
+            {
+                return default;
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+    
         #endregion
 
         // TODO: complete the class

@@ -43,11 +43,10 @@ namespace Java.Util.Function
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetLongSupplier";
 
-        Func<long> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{Int64}"/> to be executed
         /// </summary>
-        public virtual Func<long> OnGetAsLong { get { return executionFunction; } }
+        public virtual Func<long> OnGetAsLong { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="LongSupplier"/>
         /// </summary>
@@ -55,16 +54,10 @@ namespace Java.Util.Function
         /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
         public LongSupplier(Func<long> func = null, bool attachEventHandler = true)
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = GetAsLong;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("getAsLong", new EventHandler<CLRListenerEventArgs<CLREventData>>(EventHandler));
-            }
+            AddEventHandler("getAsLong", new EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler)); OnGetAsLong = GetAsLong;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        void GetAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
             var retVal = OnGetAsLong();
             data.SetReturnValue(retVal);

@@ -35,51 +35,6 @@ namespace Java.Awt.EventNs
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class FocusListener : IFocusListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetFocusListener";
 
-        readonly Action<FocusEvent> focusGainedFunction = null;
-        readonly Action<FocusEvent> focusLostFunction = null;
-        /// <summary>
-        /// The <see cref="Action{FocusEvent}"/> to be executed on ComponentResized
-        /// </summary>
-        public virtual Action<FocusEvent> OnFocusGained { get { return focusGainedFunction; } }
-        /// <summary>
-        /// The <see cref="Action{FocusEvent}"/> to be executed on ComponentMoved
-        /// </summary>
-        public virtual Action<FocusEvent> OnFocusLost { get { return focusLostFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="FocusListener"/>
-        /// </summary>
-        /// <param name="focusGained">The <see cref="Action{FocusEvent}"/> to be executed on FocusGained</param>
-        /// <param name="focusLost">The <see cref="Action{FocusEvent}"/> to be executed on FocusLost</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public FocusListener(Action<FocusEvent> focusGained = null,
-                             Action<FocusEvent> focusLost = null,
-                             bool attachEventHandler = true)
-        {
-            if (focusGained != null) focusGainedFunction = focusGained;
-            else focusGainedFunction = FocusGained;
-            if (focusLost != null) focusLostFunction = focusLost;
-            else focusLostFunction = FocusLost;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("focusGained", new EventHandler<CLRListenerEventArgs<CLREventData<FocusEvent>>>(EventHandlerFocusGained));
-                AddEventHandler("focusLost", new EventHandler<CLRListenerEventArgs<CLREventData<FocusEvent>>>(EventHandlerFocusLost));
-            }
-        }
-
-        void EventHandlerFocusGained(object sender, CLRListenerEventArgs<CLREventData<FocusEvent>> data)
-        {
-            OnFocusGained(data.EventData.TypedEventData);
-        }
-
-        void EventHandlerFocusLost(object sender, CLRListenerEventArgs<CLREventData<FocusEvent>> data)
-        {
-            OnFocusLost(data.EventData.TypedEventData);
-        }
     }
 }

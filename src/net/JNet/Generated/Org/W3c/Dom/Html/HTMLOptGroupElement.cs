@@ -27,7 +27,7 @@ namespace Org.W3c.Dom.Html
 {
     #region IHTMLOptGroupElement
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLOptGroupElement.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IHTMLOptGroupElement : Org.W3c.Dom.Html.IHTMLElement
     {

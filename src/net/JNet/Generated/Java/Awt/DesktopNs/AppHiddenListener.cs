@@ -74,7 +74,7 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="AppHiddenListener"/>
+        /// <see cref="AppHiddenListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

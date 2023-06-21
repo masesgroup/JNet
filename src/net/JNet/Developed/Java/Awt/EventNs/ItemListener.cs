@@ -35,35 +35,6 @@ namespace Java.Awt.EventNs
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ItemListener : IItemListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetItemListener";
 
-        readonly Action<ItemEvent> itemStateChangedFunction = null;
-        /// <summary>
-        /// The <see cref="Action{ItemEvent}"/> to be executed on ItemStateChanged
-        /// </summary>
-        public virtual Action<ItemEvent> OnItemStateChanged { get { return itemStateChangedFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="ItemListener"/>
-        /// </summary>
-        /// <param name="itemStateChanged">The <see cref="Action{ItemEvent}"/> to be executed on ItemStateChanged</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public ItemListener(Action<ItemEvent> itemStateChanged = null, bool attachEventHandler = true)
-        {
-            if (itemStateChanged != null) itemStateChangedFunction = itemStateChanged;
-            else itemStateChangedFunction = ItemStateChanged;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("itemStateChanged", new EventHandler<CLRListenerEventArgs<CLREventData<ItemEvent>>>(EventHandlerItemStateChanged));
-            }
-        }
-
-        void EventHandlerItemStateChanged(object sender, CLRListenerEventArgs<CLREventData<ItemEvent>> data)
-        {
-            OnItemStateChanged(data.EventData.TypedEventData);
-        }
     }
 }

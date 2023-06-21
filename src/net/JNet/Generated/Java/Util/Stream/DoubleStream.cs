@@ -341,6 +341,15 @@ namespace Java.Util.Stream
         {
             return SExecute<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "of", arg0);
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#builder()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Stream.DoubleStream.Builder"/></returns>
+        public static Java.Util.Stream.DoubleStream.Builder BuilderMethod()
+        {
+            return SExecute<Java.Util.Stream.DoubleStream.Builder>(LocalBridgeClazz, "builder");
+        }
 
         #endregion
 
@@ -669,7 +678,115 @@ namespace Java.Util.Stream
         #endregion
 
         #region Nested classes
+        #region Builder
+        public partial class Builder
+        {
+            #region Constructors
 
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// <see cref="Builder"/>
+            /// </summary>
+            protected virtual void InitializeHandlers()
+            {
+                AddEventHandler("build", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(BuildEventHandler)); OnBuild = Build;
+                AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(AcceptEventHandler)); OnAccept = Accept;
+                AddEventHandler("add", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(AddEventHandler)); OnAdd = Add;
+
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.Builder.html#build()"/>
+            /// </summary>
+            public System.Func<Java.Util.Stream.DoubleStream> OnBuild { get; set; }
+
+            void BuildEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+            {
+                if (OnBuild != null)
+                {
+                    var executionResult = OnBuild.Invoke();
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.Builder.html#build()"/>
+            /// </summary>
+
+            /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
+            public virtual Java.Util.Stream.DoubleStream Build()
+            {
+                return default;
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.Builder.html#accept(double)"/>
+            /// </summary>
+            public System.Action<double> OnAccept { get; set; }
+
+            void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+            {
+                if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+            }
+
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.Builder.html#accept(double)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="double"/></param>
+            public virtual void Accept(double arg0)
+            {
+                
+            }
+
+            /// <summary>
+            /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.Builder.html#add(double)"/>
+            /// </summary>
+            public System.Func<double, Java.Util.Stream.DoubleStream.Builder> OnAdd { get; set; }
+
+            void AddEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+            {
+                if (OnAdd != null)
+                {
+                    var executionResult = OnAdd.Invoke(data.EventData.TypedEventData);
+                    data.SetReturnValue(executionResult);
+                }
+            }
+
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.Builder.html#add(double)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="double"/></param>
+            /// <returns><see cref="Java.Util.Stream.DoubleStream.Builder"/></returns>
+            public virtual Java.Util.Stream.DoubleStream.Builder Add(double arg0)
+            {
+                return default;
+            }
+
+            #endregion
+
+            #region Nested classes
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+    
         #endregion
 
         // TODO: complete the class

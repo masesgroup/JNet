@@ -35,51 +35,6 @@ namespace Java.Awt.EventNs
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class InputMethodListener : IInputMethodListener
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "org.mases.jnet.awt.event.JNetInputMethodListener";
 
-        readonly Action<InputMethodEvent> inputMethodTextChangedFunction = null;
-        readonly Action<InputMethodEvent> caretPositionChangedFunction = null;
-        /// <summary>
-        /// The <see cref="Action{InputMethodEvent}"/> to be executed on InputMethodTextChanged
-        /// </summary>
-        public virtual Action<InputMethodEvent> OnInputMethodTextChanged { get { return inputMethodTextChangedFunction; } }
-        /// <summary>
-        /// The <see cref="Action{InputMethodEvent}"/> to be executed on CaretPositionChanged
-        /// </summary>
-        public virtual Action<InputMethodEvent> OnCaretPositionChanged { get { return caretPositionChangedFunction; } }
-        /// <summary>
-        /// Initialize a new instance of <see cref="InputMethodListener"/>
-        /// </summary>
-        /// <param name="inputMethodTextChanged">The <see cref="Action{InputMethodEvent}"/> to be executed on InputMethodTextChanged</param>
-        /// <param name="caretPositionChanged">The <see cref="Action{InputMethodEvent}"/> to be executed on CaretPositionChanged</param>
-        /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>
-        public InputMethodListener(Action<InputMethodEvent> inputMethodTextChanged = null,
-                                   Action<InputMethodEvent> caretPositionChanged = null,
-                                   bool attachEventHandler = true)
-        {
-            if (inputMethodTextChanged != null) inputMethodTextChangedFunction = inputMethodTextChanged;
-            else inputMethodTextChangedFunction = InputMethodTextChanged;
-            if (caretPositionChanged != null) caretPositionChangedFunction = caretPositionChanged;
-            else caretPositionChangedFunction = CaretPositionChanged;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("inputMethodTextChanged", new EventHandler<CLRListenerEventArgs<CLREventData<InputMethodEvent>>>(EventHandlerInputMethodTextChanged));
-                AddEventHandler("caretPositionChanged", new EventHandler<CLRListenerEventArgs<CLREventData<InputMethodEvent>>>(EventHandlerCaretPositionChanged));
-            }
-        }
-
-        void EventHandlerInputMethodTextChanged(object sender, CLRListenerEventArgs<CLREventData<InputMethodEvent>> data)
-        {
-            OnInputMethodTextChanged(data.EventData.TypedEventData);
-        }
-
-        void EventHandlerCaretPositionChanged(object sender, CLRListenerEventArgs<CLREventData<InputMethodEvent>> data)
-        {
-            OnCaretPositionChanged(data.EventData.TypedEventData);
-        }
     }
 }

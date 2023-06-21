@@ -27,7 +27,7 @@ namespace Org.W3c.Dom
 {
     #region IDOMError
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface IDOMError
     {

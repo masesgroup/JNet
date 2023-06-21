@@ -253,7 +253,7 @@ namespace Java.Util
 
     #region INavigableMap<K, V>
     /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html"/>
+    /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
     public partial interface INavigableMap<K, V> : Java.Util.ISortedMap<K, V>
     {

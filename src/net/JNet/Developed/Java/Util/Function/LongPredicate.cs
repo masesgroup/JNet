@@ -37,9 +37,5 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetLongPredicate";
-
-        /// <inheritdoc cref="Predicate{Int64}"/>
-        /// <param name="func">The <see cref="Func{Int64, Boolean}"/> to be executed</param>
-        public LongPredicate(Func<long, bool> func = null) : base(func) { }
     }
 }

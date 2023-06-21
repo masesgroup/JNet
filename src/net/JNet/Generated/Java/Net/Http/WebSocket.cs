@@ -308,7 +308,7 @@ namespace Java.Net.Http
 
             #region Instance methods
             /// <summary>
-            /// Handlers initializer for <see cref="Listener"/>
+            /// <see cref="Listener"/>
             /// </summary>
             protected virtual void InitializeHandlers()
             {

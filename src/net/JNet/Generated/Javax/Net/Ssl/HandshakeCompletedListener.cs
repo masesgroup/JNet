@@ -69,7 +69,7 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="HandshakeCompletedListener"/>
+        /// <see cref="HandshakeCompletedListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

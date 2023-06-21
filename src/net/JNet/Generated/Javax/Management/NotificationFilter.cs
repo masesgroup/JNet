@@ -70,7 +70,7 @@ namespace Javax.Management
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="NotificationFilter"/>
+        /// <see cref="NotificationFilter"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

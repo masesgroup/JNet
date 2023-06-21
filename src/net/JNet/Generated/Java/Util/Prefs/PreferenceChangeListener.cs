@@ -69,7 +69,7 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="PreferenceChangeListener"/>
+        /// <see cref="PreferenceChangeListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

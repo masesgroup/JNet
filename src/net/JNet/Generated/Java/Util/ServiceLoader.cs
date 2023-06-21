@@ -102,15 +102,6 @@ namespace Java.Util
             return IExecute<Java.Util.Optional>("findFirst");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#stream()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream Stream()
-        {
-            return IExecute<Java.Util.Stream.Stream>("stream");
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#reload()"/>
         /// </summary>
         public void Reload()
@@ -121,106 +112,7 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region Provider
-        public partial class Provider
-        {
-            #region Constructors
 
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#type()"/>
-            /// </summary>
-
-            /// <returns><see cref="Java.Lang.Class"/></returns>
-            public virtual Java.Lang.Class Type()
-            {
-                return default;
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#get()"/>
-            /// </summary>
-
-            /// <returns><see cref="object"/></returns>
-            public virtual object Get()
-            {
-                return default;
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Provider<S>
-        public partial class Provider<S>
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#type()"/>
-            /// </summary>
-
-            /// <typeparam name="ReturnExtendsS"><typeparamref name="S"/></typeparam>
-            /// <returns><see cref="Java.Lang.Class"/></returns>
-            public virtual Java.Lang.Class Type<ReturnExtendsS>() where ReturnExtendsS: S
-            {
-                return default;
-            }
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.Provider.html#get()"/>
-            /// </summary>
-
-            /// <returns><typeparamref name="S"/></returns>
-            public virtual S Get()
-            {
-                return default;
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-    
         #endregion
 
         // TODO: complete the class
@@ -306,15 +198,6 @@ namespace Java.Util
         public Java.Util.Optional<S> FindFirst()
         {
             return IExecute<Java.Util.Optional<S>>("findFirst");
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#stream()"/>
-        /// </summary>
-
-        /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<Java.Util.ServiceLoader.Provider<S>> Stream()
-        {
-            return IExecute<Java.Util.Stream.Stream<Java.Util.ServiceLoader.Provider<S>>>("stream");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#reload()"/>

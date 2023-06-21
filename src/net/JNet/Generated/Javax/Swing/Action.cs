@@ -45,11 +45,6 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         object GetValue(string arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
-        void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0);
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#addPropertyChangeListener(java.beans.PropertyChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeListener"/></param>
@@ -108,13 +103,12 @@ namespace Javax.Swing
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="Action"/>
+        /// <see cref="Action"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
             AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler)); OnIsEnabled = IsEnabled;
             AddEventHandler("getValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(GetValueEventHandler)); OnGetValue = GetValue;
-            AddEventHandler("actionPerformed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler)); OnActionPerformed = ActionPerformed;
             AddEventHandler("addPropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(AddPropertyChangeListenerEventHandler)); OnAddPropertyChangeListener = AddPropertyChangeListener;
             AddEventHandler("putValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(PutValueEventHandler)); OnPutValue = PutValue;
             AddEventHandler("removePropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(RemovePropertyChangeListenerEventHandler)); OnRemovePropertyChangeListener = RemovePropertyChangeListener;
@@ -169,25 +163,6 @@ namespace Javax.Swing
         public virtual object GetValue(string arg0)
         {
             return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
-        /// </summary>
-        public System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; }
-
-        void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>> data)
-        {
-            if (OnActionPerformed != null) OnActionPerformed.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Awt.EventNs.ActionEvent"/></param>
-        public virtual void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
-        {
-            
         }
 
         /// <summary>

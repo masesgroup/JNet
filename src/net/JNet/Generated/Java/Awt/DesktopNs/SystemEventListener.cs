@@ -64,7 +64,7 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="SystemEventListener"/>
+        /// <see cref="SystemEventListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

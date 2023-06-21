@@ -46,7 +46,7 @@ namespace Javax.Print.Event
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="PrintJobAdapter"/>
+        /// <see cref="PrintJobAdapter"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

@@ -51,28 +51,19 @@ namespace Java.Util.Function
     /// <typeparam name="TObject">The data type associated to the event</typeparam>
     public class Consumer<TObject> : Consumer, IConsumer<TObject>
     {
-        Action<TObject> executionFunction = null;
         /// <summary>
         /// The <see cref="Action{TObject}"/> to be executed
         /// </summary>
-        public virtual Action<TObject> OnAccept { get { return executionFunction; } }
+        public virtual Action<TObject> OnAccept { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="Consumer{TObject}"/>
         /// </summary>
-        /// <param name="action">The <see cref="Action{TObject}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public Consumer(Action<TObject> action = null, bool attachEventHandler = true)
+        public Consumer()
         {
-            if (action != null) executionFunction = action;
-            else executionFunction = Accept;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("accept", new EventHandler<CLRListenerEventArgs<CLREventData<TObject>>>(EventHandler));
-            }
+            AddEventHandler("accept", new EventHandler<CLRListenerEventArgs<CLREventData<TObject>>>(AcceptEventHandler)); OnAccept = Accept;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<TObject>> data)
+        void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<TObject>> data)
         {
             OnAccept(data.EventData.TypedEventData);
         }

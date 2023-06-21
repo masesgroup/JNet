@@ -44,28 +44,19 @@ namespace Java.Util.Function
         /// </summary>
         public override string BridgeClassName => "org.mases.jnet.util.function.JNetDoublePredicate";
 
-        Func<double, bool> executionFunction = null;
         /// <summary>
         /// The <see cref="Func{TObject, Boolean}"/> to be executed
         /// </summary>
-        public virtual Func<double, bool> OnTest { get { return executionFunction; } }
+        public virtual Func<double, bool> OnTest { get; set; }
         /// <summary>
         /// Initialize a new instance of <see cref="DoublePredicate"/>
         /// </summary>
-        /// <param name="func">The <see cref="Func{TObject, Boolean}"/> to be executed</param>
-        /// <param name="attachEventHandler">Set to <see langword="false" /> to disable invocation of <see cref="JVMBridgeListener.AddEventHandler(string, System.EventHandler)"/>: the call can be done in the derived class</param>
-        public DoublePredicate(Func<double, bool> func = null, bool attachEventHandler = true)
+        public DoublePredicate()
         {
-            if (func != null) executionFunction = func;
-            else executionFunction = Test;
-
-            if (attachEventHandler)
-            {
-                AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(EventHandler));
-            }
+            AddEventHandler("test", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(TestEventHandler)); OnTest = Test;
         }
 
-        void EventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
+        void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
             var retVal = OnTest(data.EventData.TypedEventData);
             data.SetReturnValue(retVal);

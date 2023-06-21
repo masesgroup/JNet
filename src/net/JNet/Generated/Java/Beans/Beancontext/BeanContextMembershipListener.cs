@@ -74,7 +74,7 @@ namespace Java.Beans.Beancontext
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="BeanContextMembershipListener"/>
+        /// <see cref="BeanContextMembershipListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

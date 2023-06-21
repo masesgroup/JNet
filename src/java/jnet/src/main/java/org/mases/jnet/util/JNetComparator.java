@@ -21,6 +21,10 @@ package org.mases.jnet.util;
 import org.mases.jcobridge.*;
 
 import java.util.Comparator;
+import java.util.function.Function;
+import java.util.function.ToDoubleFunction;
+import java.util.function.ToIntFunction;
+import java.util.function.ToLongFunction;
 
 /**
  * The {@link JNetComparator} class represents a generic implementation
@@ -35,5 +39,12 @@ public class JNetComparator extends JCListener implements Comparator {
         raiseEvent("compare", o1, o2);
         Object returnVal = getReturnData();
         return (int) returnVal;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        raiseEvent("equals", obj);
+        Object returnVal = getReturnData();
+        return (boolean) returnVal;
     }
 }
