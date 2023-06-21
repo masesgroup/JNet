@@ -46,7 +46,7 @@ namespace Org.Xml.Sax.Helpers
 
         #region Instance methods
         /// <summary>
-        /// <see cref="ParserAdapter"/>
+        /// Handlers initializer for <see cref="ParserAdapter"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

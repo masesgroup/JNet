@@ -69,7 +69,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="CaretListener"/>
+        /// Handlers initializer for <see cref="CaretListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

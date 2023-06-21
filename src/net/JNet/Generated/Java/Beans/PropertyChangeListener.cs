@@ -69,7 +69,7 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see cref="PropertyChangeListener"/>
+        /// Handlers initializer for <see cref="PropertyChangeListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

@@ -82,7 +82,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="LongUnaryOperator"/>
+        /// Handlers initializer for <see cref="LongUnaryOperator"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

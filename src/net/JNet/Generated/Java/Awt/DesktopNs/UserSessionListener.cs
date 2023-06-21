@@ -74,7 +74,7 @@ namespace Java.Awt.DesktopNs
 
         #region Instance methods
         /// <summary>
-        /// <see cref="UserSessionListener"/>
+        /// Handlers initializer for <see cref="UserSessionListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

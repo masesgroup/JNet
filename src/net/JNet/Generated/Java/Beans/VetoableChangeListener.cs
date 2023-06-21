@@ -70,7 +70,7 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see cref="VetoableChangeListener"/>
+        /// Handlers initializer for <see cref="VetoableChangeListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

@@ -75,7 +75,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see cref="DoubleConsumer"/>
+        /// Handlers initializer for <see cref="DoubleConsumer"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

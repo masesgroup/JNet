@@ -97,16 +97,6 @@ namespace Java.Awt
             get { return IExecute<Java.Awt.MenuShortcut>("getShortcut"); } set { IExecute("setShortcut", value); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#getListeners(java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T[] GetListeners<T>(Java.Lang.Class arg0) where T: Java.Util.IEventListener, new()
-        {
-            return IExecuteArray<T>("getListeners", arg0);
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuItem.html#isEnabled()"/>
         /// </summary>
 

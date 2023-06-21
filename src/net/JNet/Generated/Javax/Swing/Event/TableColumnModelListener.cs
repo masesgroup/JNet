@@ -89,7 +89,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="TableColumnModelListener"/>
+        /// Handlers initializer for <see cref="TableColumnModelListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

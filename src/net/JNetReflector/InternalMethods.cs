@@ -90,17 +90,17 @@ namespace MASES.JNetReflector
         {
             namespaces = classes = 0;
             Stopwatch w = Stopwatch.StartNew();
-            if (JNetReflectorCore.JarsToAnalyze != null)
+            if (JNetReflectorCore.ClassesToAnalyze != null)
+            {
+                AnalyzeClasses();
+            }
+            else if (JNetReflectorCore.JarsToAnalyze != null)
             {
                 AnalyzeJars();
             }
             else if (JNetReflectorCore.ModulesToParse != null)
             {
                 AnalyzeNamespaces();
-            }
-            else if (JNetReflectorCore.ClassesToAnalyze != null)
-            {
-                AnalyzeClasses();
             }
             else throw new ArgumentException("At least one of ClassesToAnaylyze, NamespacesToParse or OriginRootPath must be set");
             w.Stop();
@@ -636,7 +636,7 @@ namespace MASES.JNetReflector
                 createInterfaceData = false;
             }
 
-            IList<Method> methodPrefilter = jClass.PrefilterMethods(out isMainClass, isGeneric);
+            IList<Method> methodPrefilter = jClass.PrefilterMethods(out isMainClass, isGeneric, jClassIsListener);
 
             ReportTrace(ReflectionTraceLevel.Debug, "Preparing nested class {0}", jClass.GenericString);
 
@@ -1085,13 +1085,13 @@ namespace MASES.JNetReflector
             return subOperatorBlock.ToString();
         }
 
-        static IList<Method> PrefilterMethods(this Class classDefinition, out bool isMainClass, bool isGeneric)
+        static IList<Method> PrefilterMethods(this Class classDefinition, out bool isMainClass, bool isGeneric, bool isListener)
         {
             isMainClass = false;
             ReportTrace(ReflectionTraceLevel.Info, "******************* Prefilter Methods of {0} *******************", classDefinition.GenericString);
 
             List<Method> prefilteredMethods = new List<Method>();
-            foreach (var method in classDefinition.DeclaredMethods)
+            foreach (var method in isListener ? classDefinition.Methods : classDefinition.DeclaredMethods)
             {
                 var genString = method.GenericString;
                 var paramCount = method.ParameterCount;
@@ -1109,7 +1109,7 @@ namespace MASES.JNetReflector
                 }
 
                 if (paramCount == 0 && !method.IsVoid() &&
-                    (methodNameOrigin == "toString" || methodNameOrigin == "hashCode")
+                    (methodNameOrigin == "toString" || methodNameOrigin == "hashCode" || methodNameOrigin == "getClass")
                    ) continue; // special methods managed from JCOBridge
 
                 if (paramCount == 0 && method.IsVoid() &&

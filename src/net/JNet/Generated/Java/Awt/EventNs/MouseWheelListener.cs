@@ -69,7 +69,7 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// <see cref="MouseWheelListener"/>
+        /// Handlers initializer for <see cref="MouseWheelListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

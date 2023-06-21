@@ -69,7 +69,7 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// <see cref="TextListener"/>
+        /// Handlers initializer for <see cref="TextListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

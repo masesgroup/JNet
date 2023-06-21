@@ -69,7 +69,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="RowSorterListener"/>
+        /// Handlers initializer for <see cref="RowSorterListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

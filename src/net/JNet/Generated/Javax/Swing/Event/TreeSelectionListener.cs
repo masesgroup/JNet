@@ -69,7 +69,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="TreeSelectionListener"/>
+        /// Handlers initializer for <see cref="TreeSelectionListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

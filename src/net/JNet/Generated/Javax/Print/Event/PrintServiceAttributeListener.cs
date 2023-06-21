@@ -69,7 +69,7 @@ namespace Javax.Print.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="PrintServiceAttributeListener"/>
+        /// Handlers initializer for <see cref="PrintServiceAttributeListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

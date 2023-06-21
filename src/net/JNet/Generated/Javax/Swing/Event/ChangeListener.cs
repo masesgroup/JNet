@@ -69,7 +69,7 @@ namespace Javax.Swing.Event
 
         #region Instance methods
         /// <summary>
-        /// <see cref="ChangeListener"/>
+        /// Handlers initializer for <see cref="ChangeListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

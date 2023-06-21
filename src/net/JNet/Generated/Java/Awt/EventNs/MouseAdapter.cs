@@ -46,7 +46,7 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// <see cref="MouseAdapter"/>
+        /// Handlers initializer for <see cref="MouseAdapter"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

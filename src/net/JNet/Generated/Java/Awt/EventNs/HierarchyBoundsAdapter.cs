@@ -46,7 +46,7 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// <see cref="HierarchyBoundsAdapter"/>
+        /// Handlers initializer for <see cref="HierarchyBoundsAdapter"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

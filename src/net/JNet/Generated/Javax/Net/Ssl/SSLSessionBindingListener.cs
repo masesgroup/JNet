@@ -74,7 +74,7 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see cref="SSLSessionBindingListener"/>
+        /// Handlers initializer for <see cref="SSLSessionBindingListener"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {

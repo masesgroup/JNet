@@ -46,7 +46,7 @@ namespace Java.Awt.EventNs
 
         #region Instance methods
         /// <summary>
-        /// <see cref="WindowAdapter"/>
+        /// Handlers initializer for <see cref="WindowAdapter"/>
         /// </summary>
         protected virtual void InitializeHandlers()
         {
