@@ -11,7 +11,7 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     /// </summary>
     public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(params object[] args) : base(args) { }
 
-    private static IJavaType LocalBridgeClazz = ClazzOf("ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER");
+    private static readonly IJavaType LocalBridgeClazz = ClazzOf("ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER");
 
     /// <summary>
     /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
