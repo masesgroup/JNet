@@ -20,6 +20,10 @@ namespace Java.Util
 {
     public partial class Set<E>
     {
-
+        /// <summary>
+        /// Explicitly convert <see cref="Set{E}"/> to <see cref="Collection{E}"/>
+        /// </summary>
+        /// <returns><see cref="Collection{E}"/></returns>
+        public Collection<E> ToCollection() => this.CastTo<Collection<E>>();
     }
 }

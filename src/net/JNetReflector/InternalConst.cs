@@ -90,7 +90,7 @@ namespace MASES.JNetReflector
         public const string PropertySuffix = "Property";
         public const string MethodSuffix = "Method";
         public const string NamespaceSuffix = "Ns";
-        public const string MainClassPlaceHolder = ", MASES.JNet.Specific.IJNetBridgeMain";
+        public const string MainClassPlaceHolder = ", MASES.JCOBridge.C2JBridge.IJVMBridgeMain";
         public const string JVMBridgeException = "MASES.JCOBridge.C2JBridge.JVMBridgeException";
 
         public static bool IsJavaLangException(string canonicalName)

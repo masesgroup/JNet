@@ -276,32 +276,6 @@ namespace MASES.JNet
             return GlobalInstance.JVM.New(className, args);
         }
 
-        /// <summary>
-        /// Launch the <typeparamref name="TClass"/> with the <paramref name="args"/> arguments
-        /// </summary>
-        /// <typeparam name="TClass">A type which is defined as Main-Class</typeparam>
-        /// <param name="args">The arguments of the main method</param>
-        public static void Launch<TClass>(params string[] args)
-            where TClass : IJNetBridgeMain
-        {
-            Launch(typeof(TClass), args);
-        }
-
-        /// <summary>
-        /// Launch the <paramref name="type"/> with the <paramref name="args"/> arguments
-        /// </summary>
-        /// <param name="type">The <see cref="Type"/> extending <see cref="IJNetBridgeMain"/></param>
-        /// <param name="args">The arguments of the main method</param>
-        public static void Launch(Type type, params string[] args)
-        {
-            if (type == null) throw new ArgumentNullException("type");
-            if (!typeof(IJNetBridgeMain).IsAssignableFrom(type)) throw new ArgumentException($"{type} does not define IJNetBridgeMain interface", "type");
-
-            MethodInfo method = type.GetMethod("Main", BindingFlags.Static | BindingFlags.Public);
-            if (method == null) throw new ArgumentException($"Not found method Main with supplied arguments.");
-            method.Invoke(null, args);
-        }
-
         #endregion
     }
 }

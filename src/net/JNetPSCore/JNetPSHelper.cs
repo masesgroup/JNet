@@ -474,6 +474,13 @@ namespace MASES.JNetPSCore
             }
         }
         /// <summary>
+        /// Invokes <see cref="SetupJVMWrapper.Launch(Type, string[])"/> to start a Main-Class
+        /// </summary>
+        public static void Launch(Type type, params string[] args)
+        {
+            _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper), nameof(SetupJVMWrapper.Launch), type, args);
+        }
+        /// <summary>
         /// Creates a new class instance
         /// </summary>
         /// <param name="className">The class to be created</param>
