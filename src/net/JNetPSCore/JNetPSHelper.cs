@@ -237,11 +237,11 @@ namespace MASES.JNetPSCore
                     Console.CancelKeyPress += Console_CancelKeyPress;
                     proc.StartInfo = psInfo;
                     proc.ErrorDataReceived += Proc_ErrorDataReceived;
-                    proc.BeginErrorReadLine();
                     proc.OutputDataReceived += Proc_OutputDataReceived;
-                    proc.BeginOutputReadLine();
                     proc.Exited += Proc_Exited;
                     proc.Start();
+                    proc.BeginErrorReadLine();
+                    proc.BeginOutputReadLine();
                     while (!proc.HasExited)
                     {
                         if (Console.KeyAvailable)
@@ -250,9 +250,10 @@ namespace MASES.JNetPSCore
                             if (!processExited)
                             {
                                 proc.StandardInput.Write(key.KeyChar);
+                                if (key.Key == ConsoleKey.Enter) { Console.WriteLine(); }
                             }
                         }
-                        else Thread.Yield();
+                        else Thread.Sleep(1);
 
                         if (cancelKeyRaised)
                         {
@@ -265,7 +266,7 @@ namespace MASES.JNetPSCore
                     proc.ErrorDataReceived -= Proc_ErrorDataReceived;
                     proc.OutputDataReceived -= Proc_OutputDataReceived;
                     Console.CancelKeyPress -= Console_CancelKeyPress;
-                    proc.Exited += Proc_Exited;
+                    proc.Exited -= Proc_Exited;
                 }
                 cmdlet.WriteVerbose($"Return code is: {proc.ExitCode}");
             }
