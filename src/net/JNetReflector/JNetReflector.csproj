@@ -127,7 +127,6 @@
     <Compile Include="..\JNet\Developed\Java\Util\Iterator.cs" Link="Java\Util\Iterator.cs" />
     <Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
     <Compile Include="..\JNet\Specific\AsyncEnumerable.cs" Link="Specific\AsyncEnumerable.cs" />
-    <Compile Include="..\JNet\Specific\IJNetBridgeMain.cs" Link="Specific\IJNetBridgeMain.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
@@ -150,7 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MASES.CLIParser" Version="3.1.2" />
-	<PackageReference Include="MASES.JCOBridge" Version="2.5.7">
+	<PackageReference Include="MASES.JCOBridge" Version="2.5.8">
 		<IncludeAssets>All</IncludeAssets>
 		<PrivateAssets>None</PrivateAssets>
 	</PackageReference>
