@@ -91,6 +91,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
     <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeMain</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -98,10 +99,10 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeMain&lt;MASES.JNet.Specific.GenericCommand&gt;.Execute&lt;T&gt;(T[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeMain&lt;MASES.JNet.Specific.GenericCommand&gt;.DynClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeMain&lt;MASES.JNet.Specific.GenericCommand&gt;.DynBridgeClazz</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeMain&lt;MASES.JNet.Specific.GenericCommand&gt;.Clazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeMain&lt;MASES.JNet.Specific.GenericCommand&gt;.BridgeClazz</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeMain&lt;MASES.JNet.Specific.GenericCommand&gt;.BridgeClassName</span>
@@ -291,7 +292,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="MASES_JNet_Specific_GenericCommand_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GenericCommand : JVMBridgeMain&lt;GenericCommand&gt;, IDynamicMetaObjectProvider, IJVMBridgeBase, IJVMBridgeDefinition, IJVMBridgeCore, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class GenericCommand : JVMBridgeMain&lt;GenericCommand&gt;, IDynamicMetaObjectProvider, IJVMBridgeBase, IJVMBridgeDefinition, IJVMBridgeCore, IDisposable, IJVMBridgeMain</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -370,6 +371,9 @@
   </div>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeMain</span>
   </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
