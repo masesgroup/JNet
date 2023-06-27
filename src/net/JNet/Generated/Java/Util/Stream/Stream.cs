@@ -443,19 +443,19 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_"></typeparam>
-        /// <typeparam name="Arg0ExtendsR"><see cref="Java.Util.Stream.Stream{Arg0ExtendsR}"/></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_"><see cref="Java.Util.Stream.Stream{Arg0ExtendsR}"/></typeparam>
+        /// <typeparam name="Arg0ExtendsR"><typeparamref name="R"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<R> FlatMap<R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_> arg0) where Arg0objectSuperT: T where Arg0ExtendsR: Java.Util.Stream.Stream<Arg0ExtendsR>;
+        Java.Util.Stream.Stream<R> FlatMap<R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_: Java.Util.Stream.Stream<Arg0ExtendsR> where Arg0ExtendsR: R;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#map(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsR"></typeparam>
+        /// <typeparam name="Arg0ExtendsR"><typeparamref name="R"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<R> Map<R, Arg0objectSuperT, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsR> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.Stream<R> Map<R, Arg0objectSuperT, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsR> arg0) where Arg0objectSuperT: T where Arg0ExtendsR: R;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BiConsumer)"/>
         /// </summary>
@@ -526,9 +526,9 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref="Java.Util.Stream.DoubleStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        Java.Util.Stream.DoubleStream FlatMapToDouble<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.DoubleStream FlatMapToDouble<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_DoubleStream: Java.Util.Stream.DoubleStream;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToDouble(java.util.function.ToDoubleFunction)"/>
         /// </summary>
@@ -541,9 +541,9 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_IntStream"></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_IntStream"><see cref="Java.Util.Stream.IntStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        Java.Util.Stream.IntStream FlatMapToInt<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.IntStream FlatMapToInt<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_IntStream: Java.Util.Stream.IntStream;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToInt(java.util.function.ToIntFunction)"/>
         /// </summary>
@@ -556,9 +556,9 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_LongStream"></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_LongStream"><see cref="Java.Util.Stream.LongStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        Java.Util.Stream.LongStream FlatMapToLong<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0objectSuperT: T;
+        Java.Util.Stream.LongStream FlatMapToLong<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_LongStream: Java.Util.Stream.LongStream;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#mapToLong(java.util.function.ToLongFunction)"/>
         /// </summary>
@@ -786,10 +786,10 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_"></typeparam>
-        /// <typeparam name="Arg0ExtendsR"><see cref="Java.Util.Stream.Stream{Arg0ExtendsR}"/></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_"><see cref="Java.Util.Stream.Stream{Arg0ExtendsR}"/></typeparam>
+        /// <typeparam name="Arg0ExtendsR"><typeparamref name="R"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<R> FlatMap<R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_> arg0) where Arg0objectSuperT: T where Arg0ExtendsR: Java.Util.Stream.Stream<Arg0ExtendsR>
+        public Java.Util.Stream.Stream<R> FlatMap<R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_: Java.Util.Stream.Stream<Arg0ExtendsR> where Arg0ExtendsR: R
         {
             return IExecute<Java.Util.Stream.Stream<R>>("flatMap", arg0);
         }
@@ -799,9 +799,9 @@ namespace Java.Util.Stream
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsR"></typeparam>
+        /// <typeparam name="Arg0ExtendsR"><typeparamref name="R"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<R> Map<R, Arg0objectSuperT, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsR> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.Stream<R> Map<R, Arg0objectSuperT, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsR> arg0) where Arg0objectSuperT: T where Arg0ExtendsR: R
         {
             return IExecute<Java.Util.Stream.Stream<R>>("map", arg0);
         }
@@ -902,9 +902,9 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_DoubleStream"><see cref="Java.Util.Stream.DoubleStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
-        public Java.Util.Stream.DoubleStream FlatMapToDouble<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.DoubleStream FlatMapToDouble<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_DoubleStream: Java.Util.Stream.DoubleStream
         {
             return IExecute<Java.Util.Stream.DoubleStream>("flatMapToDouble", arg0);
         }
@@ -923,9 +923,9 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_IntStream"></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_IntStream"><see cref="Java.Util.Stream.IntStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream FlatMapToInt<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.IntStream FlatMapToInt<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_IntStream: Java.Util.Stream.IntStream
         {
             return IExecute<Java.Util.Stream.IntStream>("flatMapToInt", arg0);
         }
@@ -944,9 +944,9 @@ namespace Java.Util.Stream
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_LongStream"></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_LongStream"><see cref="Java.Util.Stream.LongStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
-        public Java.Util.Stream.LongStream FlatMapToLong<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0objectSuperT: T
+        public Java.Util.Stream.LongStream FlatMapToLong<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_LongStream: Java.Util.Stream.LongStream
         {
             return IExecute<Java.Util.Stream.LongStream>("flatMapToLong", arg0);
         }

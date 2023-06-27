@@ -266,10 +266,10 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_"></typeparam>
-        /// <typeparam name="Arg0ExtendsU"><see cref="Java.Util.Optional{Arg0ExtendsU}"/></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_"><see cref="Java.Util.Optional{Arg0ExtendsU}"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<U> FlatMap<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_> arg0) where Arg0objectSuperT: T where Arg0ExtendsU: Java.Util.Optional<Arg0ExtendsU>
+        public Java.Util.Optional<U> FlatMap<U, Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_> arg0) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_: Java.Util.Optional<Arg0ExtendsU> where Arg0ExtendsU: U
         {
             return IExecute<Java.Util.Optional<U>>("flatMap", arg0);
         }
@@ -279,9 +279,9 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsU"></typeparam>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<U> Map<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT: T
+        public Java.Util.Optional<U> Map<U, Arg0objectSuperT, Arg0ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0) where Arg0objectSuperT: T where Arg0ExtendsU: U
         {
             return IExecute<Java.Util.Optional<U>>("map", arg0);
         }

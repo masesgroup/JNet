@@ -138,9 +138,9 @@ namespace Java.Util.Function
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R;
+        Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V;
 
         #endregion
 
@@ -231,9 +231,9 @@ namespace Java.Util.Function
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
         /// <typeparam name="R"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R
+        public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<U, V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
         {
             return default;
         }

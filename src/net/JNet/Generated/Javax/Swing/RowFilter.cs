@@ -359,9 +359,9 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_"><see cref="Javax.Swing.RowFilter{Arg0objectSuperM, Arg0objectSuperI}"/></typeparam>
         /// <typeparam name="Arg0objectSuperM"><typeparamref name="M"/></typeparam>
-        /// <typeparam name="Arg0objectSuperI"></typeparam>
+        /// <typeparam name="Arg0objectSuperI"><typeparamref name="I"/></typeparam>
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
-        public static Javax.Swing.RowFilter<M, I> AndFilterMethod<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_, Arg0objectSuperM, Arg0objectSuperI>(Java.Lang.Iterable<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_> arg0) where Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_: Javax.Swing.RowFilter<Arg0objectSuperM, Arg0objectSuperI> where Arg0objectSuperM: M
+        public static Javax.Swing.RowFilter<M, I> AndFilterMethod<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_, Arg0objectSuperM, Arg0objectSuperI>(Java.Lang.Iterable<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_> arg0) where Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_: Javax.Swing.RowFilter<Arg0objectSuperM, Arg0objectSuperI> where Arg0objectSuperM: M where Arg0objectSuperI: I
         {
             return SExecute<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "andFilter", arg0);
         }
@@ -402,9 +402,9 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Lang.Iterable"/></param>
         /// <typeparam name="Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_"><see cref="Javax.Swing.RowFilter{Arg0objectSuperM, Arg0objectSuperI}"/></typeparam>
         /// <typeparam name="Arg0objectSuperM"><typeparamref name="M"/></typeparam>
-        /// <typeparam name="Arg0objectSuperI"></typeparam>
+        /// <typeparam name="Arg0objectSuperI"><typeparamref name="I"/></typeparam>
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
-        public static Javax.Swing.RowFilter<M, I> OrFilterMethod<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_, Arg0objectSuperM, Arg0objectSuperI>(Java.Lang.Iterable<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_> arg0) where Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_: Javax.Swing.RowFilter<Arg0objectSuperM, Arg0objectSuperI> where Arg0objectSuperM: M
+        public static Javax.Swing.RowFilter<M, I> OrFilterMethod<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_, Arg0objectSuperM, Arg0objectSuperI>(Java.Lang.Iterable<Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_> arg0) where Arg0ExtendsJavax_Swing_RowFilter_Arg0objectSuperM_Arg0objectSuperI_: Javax.Swing.RowFilter<Arg0objectSuperM, Arg0objectSuperI> where Arg0objectSuperM: M where Arg0objectSuperI: I
         {
             return SExecute<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "orFilter", arg0);
         }
