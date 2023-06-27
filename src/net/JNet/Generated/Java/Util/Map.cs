@@ -709,29 +709,29 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"></typeparam>
-        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K;
+        V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsV: V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK: K;
+        V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1ExtendsV: V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"></typeparam>
-        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K;
+        V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsV: V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -768,16 +768,16 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"></typeparam>
-        void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK: K;
+        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
+        void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK: K where Arg0objectSuperV: V;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"></typeparam>
-        void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK: K;
+        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
+        void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK: K where Arg0objectSuperV: V where Arg0ExtendsV: V;
 
         #endregion
 
@@ -1179,10 +1179,10 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"></typeparam>
-        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K
+        public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsV: V
         {
             return IExecute<V>("compute", arg0, arg1);
         }
@@ -1192,9 +1192,9 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK: K
+        public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1ExtendsV: V
         {
             return IExecute<V>("computeIfAbsent", arg0, arg1);
         }
@@ -1204,10 +1204,10 @@ namespace Java.Util
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperV"></typeparam>
-        /// <typeparam name="Arg1ExtendsV"></typeparam>
+        /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K
+        public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsV: V
         {
             return IExecute<V>("computeIfPresent", arg0, arg1);
         }
@@ -1259,8 +1259,8 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"></typeparam>
-        public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK: K
+        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
+        public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK: K where Arg0objectSuperV: V
         {
             IExecute("forEach", arg0);
         }
@@ -1269,9 +1269,9 @@ namespace Java.Util
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg0objectSuperV"></typeparam>
-        /// <typeparam name="Arg0ExtendsV"></typeparam>
-        public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK: K
+        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
+        public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK: K where Arg0objectSuperV: V where Arg0ExtendsV: V
         {
             IExecute("replaceAll", arg0);
         }

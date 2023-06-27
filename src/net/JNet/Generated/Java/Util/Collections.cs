@@ -530,8 +530,8 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="T"></typeparam>
-        /// <typeparam name="Arg1ExtendsT"></typeparam>
-        public static void Copy<Arg0objectSuperT, T, Arg1ExtendsT>(Java.Util.List<Arg0objectSuperT> arg0, Java.Util.List<Arg1ExtendsT> arg1) where Arg0objectSuperT: T
+        /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
+        public static void Copy<Arg0objectSuperT, T, Arg1ExtendsT>(Java.Util.List<Arg0objectSuperT> arg0, Java.Util.List<Arg1ExtendsT> arg1) where Arg0objectSuperT: T where Arg1ExtendsT: T
         {
             SExecute(LocalBridgeClazz, "copy", arg0, arg1);
         }

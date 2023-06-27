@@ -63,10 +63,10 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, R> Filtering<T, R, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, R> arg1) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, R> Filtering<T, R, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, R> arg1) where Arg0objectSuperT: T where Arg1objectSuperT: T
         {
             return SExecute<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "filtering", arg0, arg1);
         }
@@ -89,10 +89,10 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="D"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<bool?, D>> PartitioningBy<T, D, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<bool?, D>> PartitioningBy<T, D, Arg0objectSuperT, Arg1objectSuperT, A>(Java.Util.Function.Predicate<Arg0objectSuperT> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T where Arg1objectSuperT: T
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<bool?, D>>>(LocalBridgeClazz, "partitioningBy", arg0, arg1);
         }
@@ -105,13 +105,13 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="M"><see cref="Java.Util.Concurrent.ConcurrentMap{K, D}"/></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="K"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg2objectSuperT"><see cref="Java.Util.Concurrent.ConcurrentMap{K, D}"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="D"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, M> GroupingByConcurrent<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M: Java.Util.Concurrent.ConcurrentMap<K, D> where Arg0objectSuperT: T where Arg2objectSuperT: Java.Util.Concurrent.ConcurrentMap<K, D>
+        public static Java.Util.Stream.Collector<T, object, M> GroupingByConcurrent<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M: Java.Util.Concurrent.ConcurrentMap<K, D> where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg2objectSuperT: T
         {
             return SExecute<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "groupingByConcurrent", arg0, arg1, arg2);
         }
@@ -124,11 +124,11 @@ namespace Java.Util.Stream
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="D"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, D>> GroupingByConcurrent<T, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, D>> GroupingByConcurrent<T, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg1objectSuperT: T
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, D>>>(LocalBridgeClazz, "groupingByConcurrent", arg0, arg1);
         }
@@ -141,11 +141,11 @@ namespace Java.Util.Stream
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="D"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, D>> GroupingBy<T, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, D>> GroupingBy<T, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, A, D> arg1) where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg1objectSuperT: T
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, D>>>(LocalBridgeClazz, "groupingBy", arg0, arg1);
         }
@@ -158,13 +158,13 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="M"><see cref="Java.Util.Map{K, D}"/></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="K"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg2objectSuperT"><see cref="Java.Util.Map{K, D}"/></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="Arg2objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="D"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, M> GroupingBy<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M: Java.Util.Map<K, D> where Arg0objectSuperT: T where Arg2objectSuperT: Java.Util.Map<K, D>
+        public static Java.Util.Stream.Collector<T, object, M> GroupingBy<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Supplier<M> arg1, Java.Util.Stream.Collector<Arg2objectSuperT, A, D> arg2) where M: Java.Util.Map<K, D> where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg2objectSuperT: T
         {
             return SExecute<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "groupingBy", arg0, arg1, arg2);
         }
@@ -178,13 +178,13 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="M"><see cref="Java.Util.Concurrent.ConcurrentMap{K, U}"/></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="K"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
-        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, M> ToConcurrentMap<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M: Java.Util.Concurrent.ConcurrentMap<K, U> where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, M> ToConcurrentMap<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M: Java.Util.Concurrent.ConcurrentMap<K, U> where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg1objectSuperT: T where Arg1ExtendsU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "toConcurrentMap", arg0, arg1, arg2, arg3);
         }
@@ -198,13 +198,13 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="M"><see cref="Java.Util.Map{K, U}"/></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="K"><typeparamref name="K"/></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
-        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="K"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, M> ToMap<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M: Java.Util.Map<K, U> where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, M> ToMap<T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2, Java.Util.Function.Supplier<M> arg3) where M: Java.Util.Map<K, U> where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg1objectSuperT: T where Arg1ExtendsU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, M>>(LocalBridgeClazz, "toMap", arg0, arg1, arg2, arg3);
         }
@@ -218,11 +218,11 @@ namespace Java.Util.Stream
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
-        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg1objectSuperT: T where Arg1ExtendsU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>>>(LocalBridgeClazz, "toConcurrentMap", arg0, arg1, arg2);
         }
@@ -235,11 +235,11 @@ namespace Java.Util.Stream
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
-        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>> ToConcurrentMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg1objectSuperT: T where Arg1ExtendsU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, U>>>(LocalBridgeClazz, "toConcurrentMap", arg0, arg1);
         }
@@ -253,11 +253,11 @@ namespace Java.Util.Stream
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
-        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg1objectSuperT: T where Arg1ExtendsU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toMap", arg0, arg1, arg2);
         }
@@ -270,11 +270,11 @@ namespace Java.Util.Stream
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
-        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg1objectSuperT: T where Arg1ExtendsU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toMap", arg0, arg1);
         }
@@ -288,11 +288,11 @@ namespace Java.Util.Stream
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
-        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToUnmodifiableMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToUnmodifiableMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg1objectSuperT: T where Arg1ExtendsU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toUnmodifiableMap", arg0, arg1, arg2);
         }
@@ -305,11 +305,11 @@ namespace Java.Util.Stream
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
-        /// <typeparam name="Arg1objectSuperT"></typeparam>
-        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToUnmodifiableMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>> ToUnmodifiableMap<T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg0objectSuperT: T where Arg0ExtendsK: K where Arg1objectSuperT: T where Arg1ExtendsU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, U>>>(LocalBridgeClazz, "toUnmodifiableMap", arg0, arg1);
         }
@@ -320,9 +320,9 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>> GroupingByConcurrent<T, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>> GroupingByConcurrent<T, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT: T where Arg0ExtendsK: K
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Concurrent.ConcurrentMap<K, Java.Util.List<T>>>>(LocalBridgeClazz, "groupingByConcurrent", arg0);
         }
@@ -333,9 +333,9 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="K"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsK"></typeparam>
+        /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, Java.Util.List<T>>> GroupingBy<T, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, Java.Util.Map<K, Java.Util.List<T>>> GroupingBy<T, K, Arg0objectSuperT, Arg0ExtendsK>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsK> arg0) where Arg0objectSuperT: T where Arg0ExtendsK: K
         {
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, Java.Util.List<T>>>>(LocalBridgeClazz, "groupingBy", arg0);
         }
@@ -347,13 +347,13 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_"></typeparam>
-        /// <typeparam name="Arg0ExtendsU"><see cref="Java.Util.Stream.Stream{Arg0ExtendsU}"/></typeparam>
-        /// <typeparam name="U"><typeparamref name="U"/></typeparam>
-        /// <typeparam name="Arg1objectSuperU"></typeparam>
+        /// <typeparam name="Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_"><see cref="Java.Util.Stream.Stream{Arg0ExtendsU}"/></typeparam>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg1objectSuperU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, R> FlatMapping<T, R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT: T where Arg0ExtendsU: Java.Util.Stream.Stream<Arg0ExtendsU>
+        public static Java.Util.Stream.Collector<T, object, R> FlatMapping<T, R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT: T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_: Java.Util.Stream.Stream<Arg0ExtendsU> where Arg0ExtendsU: U where Arg1objectSuperU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "flatMapping", arg0, arg1);
         }
@@ -365,12 +365,12 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg0ExtendsU"></typeparam>
-        /// <typeparam name="U"><typeparamref name="U"/></typeparam>
-        /// <typeparam name="Arg1objectSuperU"></typeparam>
+        /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
+        /// <typeparam name="U"></typeparam>
+        /// <typeparam name="Arg1objectSuperU"><typeparamref name="U"/></typeparam>
         /// <typeparam name="A"></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, R> Mapping<T, R, Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, R> Mapping<T, R, Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU, A>(Java.Util.Function.Function<Arg0objectSuperT, Arg0ExtendsU> arg0, Java.Util.Stream.Collector<Arg1objectSuperU, A, R> arg1) where Arg0objectSuperT: T where Arg0ExtendsU: U where Arg1objectSuperU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "mapping", arg0, arg1);
         }
@@ -383,9 +383,9 @@ namespace Java.Util.Stream
         /// <typeparam name="T"></typeparam>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
-        /// <typeparam name="Arg1ExtendsU"></typeparam>
+        /// <typeparam name="Arg1ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
-        public static Java.Util.Stream.Collector<T, object, U> Reducing<T, U, Arg1objectSuperT, Arg1ExtendsU>(U arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT: T
+        public static Java.Util.Stream.Collector<T, object, U> Reducing<T, U, Arg1objectSuperT, Arg1ExtendsU>(U arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT: T where Arg1ExtendsU: U
         {
             return SExecute<Java.Util.Stream.Collector<T, object, U>>(LocalBridgeClazz, "reducing", arg0, arg1, arg2);
         }
