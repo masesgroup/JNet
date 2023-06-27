@@ -895,7 +895,7 @@ namespace MASES.JNetReflector
                             }
                             foreach (var item in innerGenClauses)
                             {
-                                if (item.Key != upper && genClause != null && !genClause.Contains(item))
+                                if (item.Key != upper && genClause != null && !genClause.ContainsClause(item))
                                 {
                                     genClause?.Add(item);
                                 }
@@ -972,7 +972,7 @@ namespace MASES.JNetReflector
                             }
                             foreach (var item in innerGenClauses)
                             {
-                                if (item.Key != upper && genClause != null && !genClause.Contains(item))
+                                if (item.Key != upper && genClause != null && !genClause.ContainsClause(item))
                                 {
                                     genClause?.Add(item);
                                 }
@@ -983,6 +983,19 @@ namespace MASES.JNetReflector
             }
             else throw new NotImplementedException($"Condition for {entry.TypeName} not implemented yet.");
             return retVal;
+        }
+
+        static bool ContainsClause(this IList<KeyValuePair<string, string>> lst, KeyValuePair<string, string> matcher)
+        {
+            foreach (var item in lst)
+            {
+                if (item.Key == matcher.Key)
+                {
+                    if (string.IsNullOrWhiteSpace(item.Value) && string.IsNullOrWhiteSpace(matcher.Value)) return true;
+                    return item.Value == matcher.Value;
+                }
+            }
+            return false;
         }
 
         #endregion
