@@ -724,7 +724,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Optional&lt;U&gt; FlatMap&lt;U, Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_&gt; arg0)
-    where Arg0objectSuperT : T where Arg0ExtendsU : Optional&lt;Arg0ExtendsU&gt;</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_ : Optional&lt;Arg0ExtendsU&gt; where Arg0ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -780,11 +780,12 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsJava_Util_Optional_Arg0ExtendsU_</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Util.Optional-1.html">Optional&lt;T&gt;</a></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsU</span></td>
-        <td><p><a class="xref" href="Java.Util.Optional-1.html">Optional&lt;T&gt;</a></p>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
 </td>
       </tr>
     </tbody>
@@ -1008,7 +1009,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Optional&lt;U&gt; Map&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1064,7 +1065,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>

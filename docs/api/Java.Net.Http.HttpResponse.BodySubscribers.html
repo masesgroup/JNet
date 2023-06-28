@@ -763,7 +763,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static HttpResponse.BodySubscriber&lt;T&gt; FromLineSubscriber&lt;T, S, Arg1objectSuperS, Arg1ExtendsT&gt;(S arg0, Function&lt;Arg1objectSuperS, Arg1ExtendsT&gt; arg1, Charset arg2, string arg3)
-    where Arg1objectSuperS : S</code></pre>
+    where Arg1objectSuperS : S where Arg1ExtendsT : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -841,7 +841,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -927,7 +928,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static HttpResponse.BodySubscriber&lt;T&gt; FromSubscriber&lt;T, S, Arg1objectSuperS, Arg1ExtendsT&gt;(S arg0, Function&lt;Arg1objectSuperS, Arg1ExtendsT&gt; arg1)
-    where Arg1objectSuperS : S</code></pre>
+    where Arg1objectSuperS : S where Arg1ExtendsT : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -993,7 +994,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1012,7 +1014,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static HttpResponse.BodySubscriber&lt;U&gt; Mapping&lt;U, T, Arg1objectSuperT, Arg1ExtendsU&gt;(HttpResponse.BodySubscriber&lt;T&gt; arg0, Function&lt;Arg1objectSuperT, Arg1ExtendsU&gt; arg1)
-    where Arg1objectSuperT : T</code></pre>
+    where Arg1objectSuperT : T where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1078,7 +1080,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>

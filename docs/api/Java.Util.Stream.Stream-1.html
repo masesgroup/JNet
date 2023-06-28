@@ -1336,7 +1336,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Stream&lt;R&gt; FlatMap&lt;R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_, Arg0ExtendsR&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_&gt; arg0)
-    where Arg0objectSuperT : T where Arg0ExtendsR : Stream&lt;Arg0ExtendsR&gt;</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_ : Stream&lt;Arg0ExtendsR&gt; where Arg0ExtendsR : R</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1392,11 +1392,12 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsR_</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Util.Stream.Stream-1.html">Stream&lt;T&gt;</a></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsR</span></td>
-        <td><p><a class="xref" href="Java.Util.Stream.Stream-1.html">Stream&lt;T&gt;</a></p>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
 </td>
       </tr>
     </tbody>
@@ -1416,7 +1417,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public DoubleStream FlatMapToDouble&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_DoubleStream&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_DoubleStream : DoubleStream</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1468,7 +1469,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsJava_Util_Stream_DoubleStream</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1487,7 +1489,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public IntStream FlatMapToInt&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_IntStream&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_IntStream : IntStream</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1539,7 +1541,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsJava_Util_Stream_IntStream</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1558,7 +1561,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public LongStream FlatMapToLong&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_LongStream&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_LongStream : LongStream</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1610,7 +1613,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsJava_Util_Stream_LongStream</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Util.Stream.LongStream.html">LongStream</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1983,7 +1987,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Stream&lt;R&gt; Map&lt;R, Arg0objectSuperT, Arg0ExtendsR&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsR&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsR : R</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2039,7 +2043,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsR</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
+</td>
       </tr>
     </tbody>
   </table>

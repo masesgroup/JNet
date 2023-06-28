@@ -953,7 +953,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, R&gt; Filtering&lt;T, R, Arg0objectSuperT, Arg1objectSuperT, A&gt;(Predicate&lt;Arg0objectSuperT&gt; arg0, Collector&lt;Arg1objectSuperT, A, R&gt; arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg1objectSuperT : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1019,7 +1019,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">A</span></td>
@@ -1042,7 +1043,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, R&gt; FlatMapping&lt;T, R, Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_, Arg0ExtendsU, U, Arg1objectSuperU, A&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_&gt; arg0, Collector&lt;Arg1objectSuperU, A, R&gt; arg1)
-    where Arg0objectSuperT : T where Arg0ExtendsU : Stream&lt;Arg0ExtendsU&gt;</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_ : Stream&lt;Arg0ExtendsU&gt; where Arg0ExtendsU : U where Arg1objectSuperU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1108,21 +1109,22 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsJava_Util_Stream_Stream_Arg0ExtendsU_</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">Arg0ExtendsU</span></td>
         <td><p><a class="xref" href="Java.Util.Stream.Stream-1.html">Stream&lt;T&gt;</a></p>
 </td>
       </tr>
       <tr>
-        <td><span class="parametername">U</span></td>
+        <td><span class="parametername">Arg0ExtendsU</span></td>
         <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
 </td>
       </tr>
       <tr>
-        <td><span class="parametername">Arg1objectSuperU</span></td>
+        <td><span class="parametername">U</span></td>
         <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">Arg1objectSuperU</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">A</span></td>
@@ -1145,7 +1147,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, Map&lt;K, List&lt;T&gt;&gt;&gt; GroupingBy&lt;T, K, Arg0objectSuperT, Arg0ExtendsK&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsK : K</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1205,7 +1207,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1224,7 +1227,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, Map&lt;K, D&gt;&gt; GroupingBy&lt;T, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Collector&lt;Arg1objectSuperT, A, D&gt; arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1294,11 +1297,13 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">A</span></td>
@@ -1321,7 +1326,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, M&gt; GroupingBy&lt;T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Supplier&lt;M&gt; arg1, Collector&lt;Arg2objectSuperT, A, D&gt; arg2)
-    where M : Map&lt;K, D&gt; where Arg0objectSuperT : T where Arg2objectSuperT : Map&lt;K, D&gt;</code></pre>
+    where M : Map&lt;K, D&gt; where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg2objectSuperT : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1394,16 +1399,16 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">K</span></td>
         <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
 </td>
       </tr>
       <tr>
+        <td><span class="parametername">K</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><span class="parametername">Arg2objectSuperT</span></td>
-        <td><p><a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a></p>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
 </td>
       </tr>
       <tr>
@@ -1431,7 +1436,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, ConcurrentMap&lt;K, List&lt;T&gt;&gt;&gt; GroupingByConcurrent&lt;T, K, Arg0objectSuperT, Arg0ExtendsK&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsK : K</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1491,7 +1496,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1510,7 +1516,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, ConcurrentMap&lt;K, D&gt;&gt; GroupingByConcurrent&lt;T, K, D, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, A&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Collector&lt;Arg1objectSuperT, A, D&gt; arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1580,11 +1586,13 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">A</span></td>
@@ -1607,7 +1615,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, M&gt; GroupingByConcurrent&lt;T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg2objectSuperT, A, D&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Supplier&lt;M&gt; arg1, Collector&lt;Arg2objectSuperT, A, D&gt; arg2)
-    where M : ConcurrentMap&lt;K, D&gt; where Arg0objectSuperT : T where Arg2objectSuperT : ConcurrentMap&lt;K, D&gt;</code></pre>
+    where M : ConcurrentMap&lt;K, D&gt; where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg2objectSuperT : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1680,16 +1688,16 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">K</span></td>
         <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
 </td>
       </tr>
       <tr>
+        <td><span class="parametername">K</span></td>
+        <td></td>
+      </tr>
+      <tr>
         <td><span class="parametername">Arg2objectSuperT</span></td>
-        <td><p><a class="xref" href="Java.Util.Concurrent.ConcurrentMap-2.html">ConcurrentMap&lt;K, V&gt;</a></p>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
 </td>
       </tr>
       <tr>
@@ -1861,7 +1869,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, R&gt; Mapping&lt;T, R, Arg0objectSuperT, Arg0ExtendsU, U, Arg1objectSuperU, A&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt; arg0, Collector&lt;Arg1objectSuperU, A, R&gt; arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsU : U where Arg1objectSuperU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1927,16 +1935,17 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsU</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">U</span></td>
         <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
 </td>
       </tr>
       <tr>
-        <td><span class="parametername">Arg1objectSuperU</span></td>
+        <td><span class="parametername">U</span></td>
         <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">Arg1objectSuperU</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">A</span></td>
@@ -2030,7 +2039,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, Map&lt;bool?, D&gt;&gt; PartitioningBy&lt;T, D, Arg0objectSuperT, Arg1objectSuperT, A&gt;(Predicate&lt;Arg0objectSuperT&gt; arg0, Collector&lt;Arg1objectSuperT, A, D&gt; arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg1objectSuperT : T</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2096,7 +2105,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">A</span></td>
@@ -2255,7 +2265,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, U&gt; Reducing&lt;T, U, Arg1objectSuperT, Arg1ExtendsU&gt;(U arg0, Function&lt;Arg1objectSuperT, Arg1ExtendsU&gt; arg1, BinaryOperator&lt;U&gt; arg2)
-    where Arg1objectSuperT : T</code></pre>
+    where Arg1objectSuperT : T where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2327,7 +2337,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2843,7 +2854,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, ConcurrentMap&lt;K, U&gt;&gt; ToConcurrentMap&lt;T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Function&lt;Arg1objectSuperT, Arg1ExtendsU&gt; arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2913,15 +2924,18 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2940,7 +2954,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, ConcurrentMap&lt;K, U&gt;&gt; ToConcurrentMap&lt;T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Function&lt;Arg1objectSuperT, Arg1ExtendsU&gt; arg1, BinaryOperator&lt;U&gt; arg2)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3016,15 +3030,18 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3043,7 +3060,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, M&gt; ToConcurrentMap&lt;T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Function&lt;Arg1objectSuperT, Arg1ExtendsU&gt; arg1, BinaryOperator&lt;U&gt; arg2, Supplier&lt;M&gt; arg3)
-    where M : ConcurrentMap&lt;K, U&gt; where Arg0objectSuperT : T</code></pre>
+    where M : ConcurrentMap&lt;K, U&gt; where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3122,20 +3139,22 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">K</span></td>
         <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
 </td>
       </tr>
       <tr>
-        <td><span class="parametername">Arg1objectSuperT</span></td>
+        <td><span class="parametername">K</span></td>
         <td></td>
       </tr>
       <tr>
+        <td><span class="parametername">Arg1objectSuperT</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
+      </tr>
+      <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">U</span></td>
@@ -3205,7 +3224,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, Map&lt;K, U&gt;&gt; ToMap&lt;T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Function&lt;Arg1objectSuperT, Arg1ExtendsU&gt; arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3275,15 +3294,18 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3302,7 +3324,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, Map&lt;K, U&gt;&gt; ToMap&lt;T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Function&lt;Arg1objectSuperT, Arg1ExtendsU&gt; arg1, BinaryOperator&lt;U&gt; arg2)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3378,15 +3400,18 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3405,7 +3430,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, M&gt; ToMap&lt;T, M, Arg0objectSuperT, Arg0ExtendsK, K, Arg1objectSuperT, Arg1ExtendsU, U&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Function&lt;Arg1objectSuperT, Arg1ExtendsU&gt; arg1, BinaryOperator&lt;U&gt; arg2, Supplier&lt;M&gt; arg3)
-    where M : Map&lt;K, U&gt; where Arg0objectSuperT : T</code></pre>
+    where M : Map&lt;K, U&gt; where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3484,20 +3509,22 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">K</span></td>
         <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
 </td>
       </tr>
       <tr>
-        <td><span class="parametername">Arg1objectSuperT</span></td>
+        <td><span class="parametername">K</span></td>
         <td></td>
       </tr>
       <tr>
+        <td><span class="parametername">Arg1objectSuperT</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
+      </tr>
+      <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">U</span></td>
@@ -3614,7 +3641,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, Map&lt;K, U&gt;&gt; ToUnmodifiableMap&lt;T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Function&lt;Arg1objectSuperT, Arg1ExtendsU&gt; arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3684,15 +3711,18 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3711,7 +3741,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Collector&lt;T, object, Map&lt;K, U&gt;&gt; ToUnmodifiableMap&lt;T, K, U, Arg0objectSuperT, Arg0ExtendsK, Arg1objectSuperT, Arg1ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsK&gt; arg0, Function&lt;Arg1objectSuperT, Arg1ExtendsU&gt; arg1, BinaryOperator&lt;U&gt; arg2)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsK : K where Arg1objectSuperT : T where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3787,15 +3817,18 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsK</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperT</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">T</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>

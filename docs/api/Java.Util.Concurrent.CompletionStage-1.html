@@ -1185,7 +1185,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; Handle&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(BiFunction&lt;Arg0objectSuperT, Throwable, Arg0ExtendsU&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1241,7 +1241,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1260,7 +1261,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; HandleAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(BiFunction&lt;Arg0objectSuperT, Throwable, Arg0ExtendsU&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1316,7 +1317,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1335,7 +1337,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; HandleAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(BiFunction&lt;Arg0objectSuperT, Throwable, Arg0ExtendsU&gt; arg0, Executor arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1397,7 +1399,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1971,7 +1974,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenAcceptBoth&lt;Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiConsumer&lt;Arg1objectSuperT, Arg1objectSuperU&gt; arg1)
-    where Arg0ExtendsU : U where Arg1objectSuperT : T</code></pre>
+    where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2038,7 +2041,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2057,7 +2061,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenAcceptBothAsync&lt;Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiConsumer&lt;Arg1objectSuperT, Arg1objectSuperU&gt; arg1)
-    where Arg0ExtendsU : U where Arg1objectSuperT : T</code></pre>
+    where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2124,7 +2128,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2143,7 +2148,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;Void&gt; ThenAcceptBothAsync&lt;Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiConsumer&lt;Arg1objectSuperT, Arg1objectSuperU&gt; arg1, Executor arg2)
-    where Arg0ExtendsU : U where Arg1objectSuperT : T</code></pre>
+    where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2216,7 +2221,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2235,7 +2241,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenApply&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2291,7 +2297,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2310,7 +2317,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenApplyAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2366,7 +2373,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2385,7 +2393,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenApplyAsync&lt;U, Arg0objectSuperT, Arg0ExtendsU&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsU&gt; arg0, Executor arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2447,7 +2455,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2466,7 +2475,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;V&gt; ThenCombine&lt;V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiFunction&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt; arg1)
-    where Arg0ExtendsU : U where Arg1objectSuperT : T</code></pre>
+    where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U where Arg1ExtendsV : V</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2537,11 +2546,13 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsV</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">V</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2560,7 +2571,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;V&gt; ThenCombineAsync&lt;V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiFunction&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt; arg1)
-    where Arg0ExtendsU : U where Arg1objectSuperT : T</code></pre>
+    where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U where Arg1ExtendsV : V</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2631,11 +2642,13 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsV</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">V</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2654,7 +2667,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;V&gt; ThenCombineAsync&lt;V, Arg0ExtendsU, U, Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt;(CompletionStage&lt;Arg0ExtendsU&gt; arg0, BiFunction&lt;Arg1objectSuperT, Arg1objectSuperU, Arg1ExtendsV&gt; arg1, Executor arg2)
-    where Arg0ExtendsU : U where Arg1objectSuperT : T</code></pre>
+    where Arg0ExtendsU : U where Arg1objectSuperT : T where Arg1objectSuperU : U where Arg1ExtendsV : V</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2731,11 +2744,13 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsV</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">V</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2754,7 +2769,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenCompose&lt;U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_ : CompletionStage&lt;U&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2810,7 +2825,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2829,7 +2845,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenComposeAsync&lt;U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_ : CompletionStage&lt;U&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2885,7 +2901,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2904,7 +2921,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;U&gt; ThenComposeAsync&lt;U, Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt;(Function&lt;Arg0objectSuperT, Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_&gt; arg0, Executor arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_ : CompletionStage&lt;U&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2966,7 +2983,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0ExtendsJava_Util_Concurrent_CompletionStage_U_</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Util.Concurrent.CompletionStage-1.html">CompletionStage&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3173,7 +3191,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; WhenComplete&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;(BiConsumer&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0objectSuperJava_Lang_Throwable : Throwable</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3225,7 +3243,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0objectSuperJava_Lang_Throwable</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3244,7 +3263,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; WhenCompleteAsync&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;(BiConsumer&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt; arg0)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0objectSuperJava_Lang_Throwable : Throwable</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3296,7 +3315,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0objectSuperJava_Lang_Throwable</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3315,7 +3335,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public CompletionStage&lt;T&gt; WhenCompleteAsync&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt;(BiConsumer&lt;Arg0objectSuperT, Arg0objectSuperJava_Lang_Throwable&gt; arg0, Executor arg1)
-    where Arg0objectSuperT : T</code></pre>
+    where Arg0objectSuperT : T where Arg0objectSuperJava_Lang_Throwable : Throwable</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3373,7 +3393,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg0objectSuperJava_Lang_Throwable</span></td>
-        <td></td>
+        <td><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</td>
       </tr>
     </tbody>
   </table>

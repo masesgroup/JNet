@@ -1051,7 +1051,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ForEach&lt;Arg1objectSuperK, Arg1objectSuperV&gt;(long arg0, BiConsumer&lt;Arg1objectSuperK, Arg1objectSuperV&gt; arg1)
-    where Arg1objectSuperK : K</code></pre>
+    where Arg1objectSuperK : K where Arg1objectSuperV : V</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1093,7 +1093,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperV</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">V</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1112,7 +1113,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ForEach&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU, U, Arg2objectSuperU&gt;(long arg0, BiFunction&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU&gt; arg1, Consumer&lt;Arg2objectSuperU&gt; arg2)
-    where Arg1objectSuperK : K where Arg2objectSuperU : U</code></pre>
+    where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsU : U where Arg2objectSuperU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1160,11 +1161,13 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperV</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">V</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">U</span></td>
@@ -1378,7 +1381,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ForEachKey&lt;Arg1objectSuperK, Arg1ExtendsU, U, Arg2objectSuperU&gt;(long arg0, Function&lt;Arg1objectSuperK, Arg1ExtendsU&gt; arg1, Consumer&lt;Arg2objectSuperU&gt; arg2)
-    where Arg1objectSuperK : K</code></pre>
+    where Arg1objectSuperK : K where Arg1ExtendsU : U where Arg2objectSuperU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1426,16 +1429,17 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">U</span></td>
         <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
 </td>
       </tr>
       <tr>
-        <td><span class="parametername">Arg2objectSuperU</span></td>
+        <td><span class="parametername">U</span></td>
         <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">Arg2objectSuperU</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1511,7 +1515,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void ForEachValue&lt;Arg1objectSuperV, Arg1ExtendsU, U, Arg2objectSuperU&gt;(long arg0, Function&lt;Arg1objectSuperV, Arg1ExtendsU&gt; arg1, Consumer&lt;Arg2objectSuperU&gt; arg2)
-    where Arg1objectSuperV : V</code></pre>
+    where Arg1objectSuperV : V where Arg1ExtendsU : U where Arg2objectSuperU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1559,16 +1563,17 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">U</span></td>
         <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
 </td>
       </tr>
       <tr>
-        <td><span class="parametername">Arg2objectSuperU</span></td>
+        <td><span class="parametername">U</span></td>
         <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">Arg2objectSuperU</span></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1783,7 +1788,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public U Reduce&lt;U, Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU&gt;(long arg0, BiFunction&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU&gt; arg1, BiFunction&lt;Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU&gt; arg2)
-    where Arg1objectSuperK : K where Arg2objectSuperU : U</code></pre>
+    where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsU : U where Arg2objectSuperU : U where Arg2ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1851,11 +1856,13 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperV</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">V</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg2objectSuperU</span></td>
@@ -1864,7 +1871,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg2ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2331,7 +2339,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public U ReduceKeys&lt;U, Arg1objectSuperK, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU&gt;(long arg0, Function&lt;Arg1objectSuperK, Arg1ExtendsU&gt; arg1, BiFunction&lt;Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU&gt; arg2)
-    where Arg1objectSuperK : K</code></pre>
+    where Arg1objectSuperK : K where Arg1ExtendsU : U where Arg2objectSuperU : U where Arg2ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2399,15 +2407,18 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg2objectSuperU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg2ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2681,7 +2692,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public double ReduceToDouble&lt;Arg1objectSuperK, Arg1objectSuperV&gt;(long arg0, ToDoubleBiFunction&lt;Arg1objectSuperK, Arg1objectSuperV&gt; arg1, double arg2, DoubleBinaryOperator arg3)
-    where Arg1objectSuperK : K</code></pre>
+    where Arg1objectSuperK : K where Arg1objectSuperV : V</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2751,7 +2762,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperV</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">V</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2770,7 +2782,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int ReduceToInt&lt;Arg1objectSuperK, Arg1objectSuperV&gt;(long arg0, ToIntBiFunction&lt;Arg1objectSuperK, Arg1objectSuperV&gt; arg1, int arg2, IntBinaryOperator arg3)
-    where Arg1objectSuperK : K</code></pre>
+    where Arg1objectSuperK : K where Arg1objectSuperV : V</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2840,7 +2852,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperV</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">V</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2859,7 +2872,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public long ReduceToLong&lt;Arg1objectSuperK, Arg1objectSuperV&gt;(long arg0, ToLongBiFunction&lt;Arg1objectSuperK, Arg1objectSuperV&gt; arg1, long arg2, LongBinaryOperator arg3)
-    where Arg1objectSuperK : K</code></pre>
+    where Arg1objectSuperK : K where Arg1objectSuperV : V</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2929,7 +2942,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperV</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">V</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3026,7 +3040,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public U ReduceValues&lt;U, Arg1objectSuperV, Arg1ExtendsU, Arg2objectSuperU, Arg2ExtendsU&gt;(long arg0, Function&lt;Arg1objectSuperV, Arg1ExtendsU&gt; arg1, BiFunction&lt;Arg2objectSuperU, Arg2objectSuperU, Arg2ExtendsU&gt; arg2)
-    where Arg1objectSuperV : V</code></pre>
+    where Arg1objectSuperV : V where Arg1ExtendsU : U where Arg2objectSuperU : U where Arg2ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3094,15 +3108,18 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg2objectSuperU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg2ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3376,7 +3393,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public U Search&lt;U, Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU&gt;(long arg0, BiFunction&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsU&gt; arg1)
-    where Arg1objectSuperK : K</code></pre>
+    where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3438,11 +3455,13 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1objectSuperV</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">V</code></p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3538,7 +3557,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public U SearchKeys&lt;U, Arg1objectSuperK, Arg1ExtendsU&gt;(long arg0, Function&lt;Arg1objectSuperK, Arg1ExtendsU&gt; arg1)
-    where Arg1objectSuperK : K</code></pre>
+    where Arg1objectSuperK : K where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3600,7 +3619,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -3619,7 +3639,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public U SearchValues&lt;U, Arg1objectSuperV, Arg1ExtendsU&gt;(long arg0, Function&lt;Arg1objectSuperV, Arg1ExtendsU&gt; arg1)
-    where Arg1objectSuperV : V</code></pre>
+    where Arg1objectSuperV : V where Arg1ExtendsU : U</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3681,7 +3701,8 @@
       </tr>
       <tr>
         <td><span class="parametername">Arg1ExtendsU</span></td>
-        <td></td>
+        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">U</code></p>
+</td>
       </tr>
     </tbody>
   </table>
