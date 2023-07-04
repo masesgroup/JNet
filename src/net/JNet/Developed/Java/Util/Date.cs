@@ -17,11 +17,20 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using System;
 
 namespace Java.Util
 {
     public partial class Date
     {
         // can be extended with methods not reflected or not available in Java;
+        /// <summary>
+        /// Converter from <see cref="Date"/> to <see cref="DateTime"/>
+        /// </summary>
+        public static implicit operator DateTime(Date b) => DateTimeOffset.FromUnixTimeMilliseconds(b.Time).DateTime;
+        /// <summary>
+        /// Converter from <see cref="DateTime"/> to <see cref="Date"/>
+        /// </summary>
+        public static implicit operator Date(DateTime b) => new Date(new DateTimeOffset(b).ToUnixTimeMilliseconds());
     }
 }

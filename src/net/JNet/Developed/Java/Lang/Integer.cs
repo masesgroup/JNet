@@ -20,20 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html"/>
-    /// </summary>
     public partial class Integer : Number
     {
-        ///// <summary>
-        ///// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        ///// </summary>
-        //public override string BridgeClassName => "java.lang.Integer";
-        ///// <summary>
-        ///// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        ///// </summary>
-        //public override bool IsBridgeAbstract => false;
-
         /// <summary>
         /// Converter from <see cref="Integer"/> to <see cref="int"/>
         /// </summary>

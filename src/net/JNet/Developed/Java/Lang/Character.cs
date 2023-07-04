@@ -20,15 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html"/>
-    /// </summary>
-    public partial class Character //: JVMBridgeBase<Character>
+    public partial class Character
     {
-        ///// <summary>
-        ///// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        ///// </summary>
-        //public override string BridgeClassName => "java.lang.Character";
         /// <summary>
         /// Converter from <see cref="Character"/> to <see cref="char"/>
         /// </summary>
@@ -37,64 +30,5 @@ namespace Java.Lang
         /// Converter from <see cref="char"/> to <see cref="Character"/>
         /// </summary>
         public static implicit operator Character(char b) => ValueOf(b);
-        ///// <summary>
-        ///// Do not use: it is intended for internal use.
-        ///// </summary>
-        //public Character()
-        //{
-        //}
-        ///// <summary>
-        ///// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        ///// </summary>
-        //public Character(params object[] args) : base(args) { }
-        ///// <summary>
-        ///// Constructs a newly allocated <see cref="Character"/> object that represents the specified char value.
-        ///// </summary>
-        ///// <param name="value">The value to be represented by the <see cref="Character"/> object.</param>
-        //public Character(char value)
-        //    : base(value)
-        //{
-        //}
-
-        ///// <summary>
-        ///// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.Subset.html"/>
-        ///// </summary>
-        //public class Subset : JVMBridgeBase<Subset>
-        //{
-        //    /// <summary>
-        //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        //    /// </summary>
-        //    public override string BridgeClassName => "java.lang.Character.Subset";
-        //    /// <summary>
-        //    /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        //    /// </summary>
-        //    public Subset() { }
-        //    /// <summary>
-        //    /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        //    /// </summary>
-        //    public Subset(params object[] args) : base(args) { }
-        //}
-        ///// <summary>
-        ///// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.UnicodeBlock.html"/>
-        ///// </summary>
-        //public class UnicodeBlock : JVMBridgeBase<UnicodeBlock>
-        //{
-        //    /// <summary>
-        //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        //    /// </summary>
-        //    public override string BridgeClassName => "java.lang.Character.UnicodeBlock";
-        //    /// <summary>
-        //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        //    /// </summary>
-        //    public override bool IsBridgeStatic => true;
-        //    /// <summary>
-        //    /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        //    /// </summary>
-        //    public UnicodeBlock() { }
-        //    /// <summary>
-        //    /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        //    /// </summary>
-        //    public UnicodeBlock(params object[] args) : base(args) { }
-        //}
     }
 }
