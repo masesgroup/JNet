@@ -9,6 +9,8 @@
 		<Product>JNetPS</Product>
 		<OutputPath>..\..\..\MASES.JNetPS\</OutputPath>
 		<TargetFrameworks>net462;net6.0</TargetFrameworks>
+		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
 
 	<ItemGroup Condition="True">

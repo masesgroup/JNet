@@ -12,6 +12,8 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageTags>jnet cli dotnet clr netcore net6</PackageTags>
     <PackageId>MASES.JNetCLI</PackageId>
+    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\JNet\JNet.csproj">

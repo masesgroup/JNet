@@ -10,6 +10,8 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageTags>jnet cli powershell dotnet clr jvm dotnetcore netcore dotnet6 net6 java bridge gateway</PackageTags>
 		<PackageId>MASES.JNetPSCore</PackageId>
+		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\JNet\JNet.csproj">
