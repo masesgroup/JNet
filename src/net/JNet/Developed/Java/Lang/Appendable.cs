@@ -20,34 +20,34 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html"/>
-    /// </summary>
-    public class Appendable : JVMBridgeBase<Appendable>
-    {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "java.lang.Appendable";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// Closes this resource, relinquishing any underlying resources.
-        /// </summary>
-        public void Close() => IExecute("close");
-        /// <summary>
-        /// Appends the specified character to this <see cref="Appendable"/>.
-        /// </summary>
-        public Appendable Append(char c) => IExecute<Appendable>("append", c);
-        /// <summary>
-        /// Appends a subsequence of the specified character sequence to this <see cref="Appendable"/>.
-        /// </summary>
-        public Appendable Append(CharSequence csq) => IExecute<Appendable>("append", csq);
-        /// <summary>
-        /// Appends the specified character sequence to this <see cref="Appendable"/>.
-        /// </summary>
-        public Appendable Append(CharSequence csq, int start, int end) => IExecute<Appendable>("append", csq, start, end);
-    }
+    ///// <summary>
+    ///// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html"/>
+    ///// </summary>
+    //public partial class Appendable : JVMBridgeBase<Appendable>
+    //{
+    //    ///// <summary>
+    //    ///// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+    //    ///// </summary>
+    //    //public override string BridgeClassName => "java.lang.Appendable";
+    //    ///// <summary>
+    //    ///// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+    //    ///// </summary>
+    //    //public override bool IsBridgeInterface => true;
+    //    ///// <summary>
+    //    ///// Closes this resource, relinquishing any underlying resources.
+    //    ///// </summary>
+    //    //public void Close() => IExecute("close");
+    //    ///// <summary>
+    //    ///// Appends the specified character to this <see cref="Appendable"/>.
+    //    ///// </summary>
+    //    //public Appendable Append(char c) => IExecute<Appendable>("append", c);
+    //    ///// <summary>
+    //    ///// Appends a subsequence of the specified character sequence to this <see cref="Appendable"/>.
+    //    ///// </summary>
+    //    //public Appendable Append(CharSequence csq) => IExecute<Appendable>("append", csq);
+    //    ///// <summary>
+    //    ///// Appends the specified character sequence to this <see cref="Appendable"/>.
+    //    ///// </summary>
+    //    //public Appendable Append(CharSequence csq, int start, int end) => IExecute<Appendable>("append", csq, start, end);
+    //}
 }

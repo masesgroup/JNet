@@ -20,72 +20,72 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region IComparable<T>
-    /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/>
-    /// </summary>
-    public partial interface IComparable<T>
-    {
-        #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
-        /// </summary>
-        /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <returns><see cref="int"/></returns>
-        int CompareTo(T arg0);
+    //#region IComparable<T>
+    ///// <summary>
+    ///// .NET interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/>
+    ///// </summary>
+    //public partial interface IComparable<T>
+    //{
+    //    #region Instance methods
+    //    /// <summary>
+    //    /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
+    //    /// </summary>
+    //    /// <param name="arg0"><typeparamref name="T"/></param>
+    //    /// <returns><see cref="int"/></returns>
+    //    int CompareTo(T arg0);
 
-        #endregion
+    //    #endregion
 
-        #region Nested classes
+    //    #region Nested classes
 
-        #endregion
+    //    #endregion
 
-        // TODO: complete the class
-    }
-    #endregion
+    //    // TODO: complete the class
+    //}
+    //#endregion
 
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/>
-    /// </summary>
-    public class Comparable : JVMBridgeBase<Comparable>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Comparable() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Comparable(params object[] args) : base(args) { }
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "java.lang.Comparable";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => true;
-    }
+    ///// <summary>
+    ///// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/>
+    ///// </summary>
+    //public class Comparable : JVMBridgeBase<Comparable>
+    //{
+    //    /// <summary>
+    //    /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+    //    /// </summary>
+    //    public Comparable() { }
+    //    /// <summary>
+    //    /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+    //    /// </summary>
+    //    public Comparable(params object[] args) : base(args) { }
+    //    /// <summary>
+    //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+    //    /// </summary>
+    //    public override string BridgeClassName => "java.lang.Comparable";
+    //    /// <summary>
+    //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+    //    /// </summary>
+    //    public override bool IsBridgeInterface => true;
+    //}
 
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/>
-    /// </summary>
-    /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/></typeparam>
-    public class Comparable<T> : Comparable, IComparable<T>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Comparable() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Comparable(params object[] args) : base(args) { }
-        /// <summary>
-        /// Compares this object with the specified object for order. Returns a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object. 
-        /// </summary>
-        /// <param name="o">The object to be compared.</param>
-        /// <returns>A negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.</returns>
-        public int CompareTo(T o) => IExecute<int>("compareTo", o);
-    }
+    ///// <summary>
+    ///// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/>
+    ///// </summary>
+    ///// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/></typeparam>
+    //public class Comparable<T> : Comparable, IComparable<T>
+    //{
+    //    /// <summary>
+    //    /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+    //    /// </summary>
+    //    public Comparable() { }
+    //    /// <summary>
+    //    /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+    //    /// </summary>
+    //    public Comparable(params object[] args) : base(args) { }
+    //    /// <summary>
+    //    /// Compares this object with the specified object for order. Returns a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object. 
+    //    /// </summary>
+    //    /// <param name="o">The object to be compared.</param>
+    //    /// <returns>A negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.</returns>
+    //    public int CompareTo(T o) => IExecute<int>("compareTo", o);
+    //}
 }

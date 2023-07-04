@@ -15,10 +15,10 @@
 *
 *  Refer to LICENSE for more information.
 */
-#if !JNETREFLECTOR
-using Java.Io;
-using Java.Util;
-#endif
+
+#if JNETREFLECTOR
+//using Java.Io;
+//using Java.Util;
 using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
@@ -119,3 +119,4 @@ namespace Java.Lang
         public bool IsOpen​(string pn, Module other) => IExecute<bool>("isOpen​​​​​​​", pn, other);
     }
 }
+#endif

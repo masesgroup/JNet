@@ -20,14 +20,14 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Process.html"/>
-    /// </summary>
-    public sealed class Process : JVMBridgeBase<Process>
-    {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "java.lang.Process";
-    }
+    ///// <summary>
+    ///// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Process.html"/>
+    ///// </summary>
+    //public sealed class Process : JVMBridgeBase<Process>
+    //{
+    //    /// <summary>
+    //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+    //    /// </summary>
+    //    public override string BridgeClassName => "java.lang.Process";
+    //}
 }

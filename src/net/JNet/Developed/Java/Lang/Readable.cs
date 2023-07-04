@@ -21,22 +21,22 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/11/docs/api/java.base/java/lang/Readable.html"/>
-    /// </summary>
-    public class Readable : JVMBridgeBase<Readable>
-    {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "java.lang.Readable";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// Attempts to read characters into the specified character buffer.
-        /// </summary>
-        public int Read​(CharBuffer cb) => IExecute<int>("read​", cb);
-    }
+    ///// <summary>
+    ///// .NET implementations of <see href="https://docs.oracle.com/javase/11/docs/api/java.base/java/lang/Readable.html"/>
+    ///// </summary>
+    //public class Readable : JVMBridgeBase<Readable>
+    //{
+    //    /// <summary>
+    //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+    //    /// </summary>
+    //    public override string BridgeClassName => "java.lang.Readable";
+    //    /// <summary>
+    //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+    //    /// </summary>
+    //    public override bool IsBridgeInterface => true;
+    //    /// <summary>
+    //    /// Attempts to read characters into the specified character buffer.
+    //    /// </summary>
+    //    public int Read​(CharBuffer cb) => IExecute<int>("read​", cb);
+    //}
 }

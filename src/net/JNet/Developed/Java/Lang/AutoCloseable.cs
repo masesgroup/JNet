@@ -20,54 +20,30 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region IAutoCloseable
-    /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html"/>
-    /// </summary>
-    public partial interface IAutoCloseable
-    {
-        #region Instance methods
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html#close()"/>
-        /// </summary>
-
-        /// <exception cref="Java.Lang.Exception"/>
-        void Close();
-
-        #endregion
-
-        #region Nested classes
-
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html"/>
-    /// </summary>
-    public class AutoCloseable : JVMBridgeBase<AutoCloseable>, IAutoCloseable
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AutoCloseable() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AutoCloseable(params object[] args) : base(args) { }
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "java.lang.AutoCloseable";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// Closes this resource, relinquishing any underlying resources.
-        /// </summary>
-        public void Close() => IExecute("close");
-    }
+    ///// <summary>
+    ///// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html"/>
+    ///// </summary>
+    //public partial class AutoCloseable //: JVMBridgeBase<AutoCloseable>, IAutoCloseable
+    //{
+    //    ///// <summary>
+    //    ///// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+    //    ///// </summary>
+    //    //public AutoCloseable() { }
+    //    ///// <summary>
+    //    ///// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+    //    ///// </summary>
+    //    //public AutoCloseable(params object[] args) : base(args) { }
+    //    ///// <summary>
+    //    ///// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+    //    ///// </summary>
+    //    //public override string BridgeClassName => "java.lang.AutoCloseable";
+    //    ///// <summary>
+    //    ///// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+    //    ///// </summary>
+    //    //public override bool IsBridgeInterface => true;
+    //    ///// <summary>
+    //    ///// Closes this resource, relinquishing any underlying resources.
+    //    ///// </summary>
+    //    //public void Close() => IExecute("close");
+    //}
 }

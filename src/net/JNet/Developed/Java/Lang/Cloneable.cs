@@ -20,44 +20,44 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    #region ICloneable
-    /// <summary>
-    /// .NET interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.html"/>
-    /// </summary>
-    public partial interface ICloneable
-    {
-        #region Instance methods
+    //#region ICloneable
+    ///// <summary>
+    ///// .NET interface for <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.html"/>
+    ///// </summary>
+    //public partial interface ICloneable
+    //{
+    //    #region Instance methods
 
-        #endregion
+    //    #endregion
 
-        #region Nested classes
+    //    #region Nested classes
 
-        #endregion
+    //    #endregion
 
-        // TODO: complete the class
-    }
-    #endregion
+    //    // TODO: complete the class
+    //}
+    //#endregion
 
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.html"/>
-    /// </summary>
-    public class Cloneable : JVMBridgeBase<Cloneable>, ICloneable
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Cloneable() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Cloneable(params object[] args) : base(args) { }
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "java.lang.Cloneable";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => true;
-    }
+    ///// <summary>
+    ///// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Cloneable.html"/>
+    ///// </summary>
+    //public class Cloneable : JVMBridgeBase<Cloneable>, ICloneable
+    //{
+    //    /// <summary>
+    //    /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+    //    /// </summary>
+    //    public Cloneable() { }
+    //    /// <summary>
+    //    /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+    //    /// </summary>
+    //    public Cloneable(params object[] args) : base(args) { }
+    //    /// <summary>
+    //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+    //    /// </summary>
+    //    public override string BridgeClassName => "java.lang.Cloneable";
+    //    /// <summary>
+    //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+    //    /// </summary>
+    //    public override bool IsBridgeInterface => true;
+    //}
 }

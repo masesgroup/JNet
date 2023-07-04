@@ -20,50 +20,50 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html"/>
-    /// </summary>
-    public class Number : JVMBridgeBase<Number>
-    {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "java.lang.Number";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => true;
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Number() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Number(params object[] args) : base(args) { }
-        /// <summary>
-        /// Returns the value of the specified number as a <see cref="byte"/>, which may involve rounding or truncation.
-        /// </summary>
-        public byte ByteValue => IExecute<byte>("byteValue");
-        /// <summary>
-        /// Returns the value of the specified number as a <see cref="double"/>, which may involve rounding.
-        /// </summary>
-        public double DoubleValue => IExecute<byte>("doubleValue");
-        /// <summary>
-        /// Returns the value of the specified number as a <see cref="float"/>, which may involve rounding.
-        /// </summary>
-        public float FloatValue => IExecute<float>("floatValue");
-        /// <summary>
-        /// Returns the value of the specified number as an <see cref="int"/>, which may involve rounding or truncation.
-        /// </summary>
-        public int IntValue => IExecute<int>("intValue");
-        /// <summary>
-        /// Returns the value of the specified number as a <see cref="long"/>, which may involve rounding or truncation.
-        /// </summary>
-        public long LongValue => IExecute<long>("longValue");
-        /// <summary>
-        /// Returns the value of the specified number as a short, which may involve rounding or truncation.
-        /// </summary>
-        public short ShortValue => IExecute<short>("shortValue");
-    }
+    ///// <summary>
+    ///// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Number.html"/>
+    ///// </summary>
+    //public class Number : JVMBridgeBase<Number>
+    //{
+    //    /// <summary>
+    //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+    //    /// </summary>
+    //    public override string BridgeClassName => "java.lang.Number";
+    //    /// <summary>
+    //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+    //    /// </summary>
+    //    public override bool IsBridgeAbstract => true;
+    //    /// <summary>
+    //    /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+    //    /// </summary>
+    //    public Number() { }
+    //    /// <summary>
+    //    /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+    //    /// </summary>
+    //    public Number(params object[] args) : base(args) { }
+    //    /// <summary>
+    //    /// Returns the value of the specified number as a <see cref="byte"/>, which may involve rounding or truncation.
+    //    /// </summary>
+    //    public byte ByteValue => IExecute<byte>("byteValue");
+    //    /// <summary>
+    //    /// Returns the value of the specified number as a <see cref="double"/>, which may involve rounding.
+    //    /// </summary>
+    //    public double DoubleValue => IExecute<byte>("doubleValue");
+    //    /// <summary>
+    //    /// Returns the value of the specified number as a <see cref="float"/>, which may involve rounding.
+    //    /// </summary>
+    //    public float FloatValue => IExecute<float>("floatValue");
+    //    /// <summary>
+    //    /// Returns the value of the specified number as an <see cref="int"/>, which may involve rounding or truncation.
+    //    /// </summary>
+    //    public int IntValue => IExecute<int>("intValue");
+    //    /// <summary>
+    //    /// Returns the value of the specified number as a <see cref="long"/>, which may involve rounding or truncation.
+    //    /// </summary>
+    //    public long LongValue => IExecute<long>("longValue");
+    //    /// <summary>
+    //    /// Returns the value of the specified number as a short, which may involve rounding or truncation.
+    //    /// </summary>
+    //    public short ShortValue => IExecute<short>("shortValue");
+    //}
 }

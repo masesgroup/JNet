@@ -20,17 +20,17 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html"/>
-    /// </summary>
-    public sealed class ModuleLayer : JVMBridgeBase<ModuleLayer>
-    {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "java.lang.ModuleLayer";
+    ///// <summary>
+    ///// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html"/>
+    ///// </summary>
+    //public sealed class ModuleLayer : JVMBridgeBase<ModuleLayer>
+    //{
+    //    /// <summary>
+    //    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+    //    /// </summary>
+    //    public override string BridgeClassName => "java.lang.ModuleLayer";
         
         
-        // to be completed
-    }
+    //    // to be completed
+    //}
 }

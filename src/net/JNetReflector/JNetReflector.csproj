@@ -60,9 +60,7 @@
     <Compile Include="..\JNet\Developed\Java\Lang\ClassFormatError.cs" Link="Java\Lang\ClassFormatError.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\ClassLoader.cs" Link="Java\Lang\ClassLoader.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\ClassNotFoundException.cs" Link="Java\Lang\ClassNotFoundException.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\ClassValue.cs" Link="Java\Lang\ClassValue.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\CloneNotSupportedException.cs" Link="Java\Lang\CloneNotSupportedException.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Enum.cs" Link="Java\Lang\Enum.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\EnumConstantNotPresentException.cs" Link="Java\Lang\EnumConstantNotPresentException.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Error.cs" Link="Java\Lang\Error.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Exception.cs" Link="Java\Lang\Exception.cs" />
