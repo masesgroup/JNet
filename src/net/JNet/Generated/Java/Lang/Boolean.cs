@@ -48,11 +48,11 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#FALSE"/>
         /// </summary>
-        public static bool? FALSE { get { return SGetField<bool?>(LocalBridgeClazz, "FALSE"); } }
+        public static Java.Lang.Boolean FALSE { get { return SGetField<Java.Lang.Boolean>(LocalBridgeClazz, "FALSE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#TRUE"/>
         /// </summary>
-        public static bool? TRUE { get { return SGetField<bool?>(LocalBridgeClazz, "TRUE"); } }
+        public static Java.Lang.Boolean TRUE { get { return SGetField<Java.Lang.Boolean>(LocalBridgeClazz, "TRUE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#TYPE"/>
         /// </summary>
@@ -132,19 +132,19 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#valueOf(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public static bool? ValueOf(bool arg0)
+        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        public static Java.Lang.Boolean ValueOf(bool arg0)
         {
-            return SExecute<bool?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Boolean>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public static bool? ValueOf(string arg0)
+        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        public static Java.Lang.Boolean ValueOf(string arg0)
         {
-            return SExecute<bool?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Boolean>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#toString(boolean)"/>
@@ -171,9 +171,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#compareTo(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
         /// <returns><see cref="int"/></returns>
-        public int CompareTo(bool? arg0)
+        public int CompareTo(Java.Lang.Boolean arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

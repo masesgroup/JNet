@@ -1043,10 +1043,10 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#valueOf(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
-        /// <returns><see cref="char"/></returns>
-        public static char? ValueOf(char arg0)
+        /// <returns><see cref="Java.Lang.Character"/></returns>
+        public static Java.Lang.Character ValueOf(char arg0)
         {
-            return SExecute<char?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Character>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getName(int)"/>
@@ -1091,9 +1091,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#compareTo(java.lang.Character)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Character"/></param>
         /// <returns><see cref="int"/></returns>
-        public int CompareTo(char? arg0)
+        public int CompareTo(Java.Lang.Character arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

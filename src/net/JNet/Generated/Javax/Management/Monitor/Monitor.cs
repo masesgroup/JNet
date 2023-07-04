@@ -144,8 +144,8 @@ namespace Javax.Management.Monitor
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/Monitor.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        public void PostRegister(bool? arg0)
+        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
+        public void PostRegister(Java.Lang.Boolean arg0)
         {
             IExecute("postRegister", arg0);
         }

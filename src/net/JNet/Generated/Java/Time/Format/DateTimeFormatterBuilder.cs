@@ -241,7 +241,7 @@ namespace Java.Time.Format
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Time.Format.DateTimeFormatterBuilder"/></returns>
-        public Java.Time.Format.DateTimeFormatterBuilder AppendText(Java.Time.Temporal.TemporalField arg0, Java.Util.Map<long?, string> arg1)
+        public Java.Time.Format.DateTimeFormatterBuilder AppendText(Java.Time.Temporal.TemporalField arg0, Java.Util.Map<Java.Lang.Long, string> arg1)
         {
             return IExecute<Java.Time.Format.DateTimeFormatterBuilder>("appendText", arg0, arg1);
         }

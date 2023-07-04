@@ -106,9 +106,9 @@ namespace Java.Time.Format
         /// </summary>
 
         /// <returns><see cref="Java.Time.Temporal.TemporalQuery"/></returns>
-        public static Java.Time.Temporal.TemporalQuery<bool?> ParsedLeapSecond()
+        public static Java.Time.Temporal.TemporalQuery<Java.Lang.Boolean> ParsedLeapSecond()
         {
-            return SExecute<Java.Time.Temporal.TemporalQuery<bool?>>(LocalBridgeClazz, "parsedLeapSecond");
+            return SExecute<Java.Time.Temporal.TemporalQuery<Java.Lang.Boolean>>(LocalBridgeClazz, "parsedLeapSecond");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#parsedExcessDays()"/>

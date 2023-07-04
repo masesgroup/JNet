@@ -29,7 +29,7 @@ namespace Java.Util.Stream
     /// <summary>
     /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
-    public partial interface ILongStream : Java.Util.Stream.IBaseStream<long?, Java.Util.Stream.LongStream>
+    public partial interface ILongStream : Java.Util.Stream.IBaseStream<Java.Lang.Long, Java.Util.Stream.LongStream>
     {
         #region Instance methods
         /// <summary>
@@ -181,7 +181,7 @@ namespace Java.Util.Stream
         /// </summary>
 
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<long?> Boxed();
+        Java.Util.Stream.Stream<Java.Lang.Long> Boxed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#count()"/>
         /// </summary>
@@ -589,9 +589,9 @@ namespace Java.Util.Stream
         /// </summary>
 
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<long?> Boxed()
+        public Java.Util.Stream.Stream<Java.Lang.Long> Boxed()
         {
-            return IExecute<Java.Util.Stream.Stream<long?>>("boxed");
+            return IExecute<Java.Util.Stream.Stream<Java.Lang.Long>>("boxed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#count()"/>

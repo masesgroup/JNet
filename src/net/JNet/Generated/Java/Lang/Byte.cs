@@ -128,41 +128,41 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#decode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="byte"/></returns>
+        /// <returns><see cref="Java.Lang.Byte"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static byte? Decode(string arg0)
+        public static Java.Lang.Byte Decode(string arg0)
         {
-            return SExecute<byte?>(LocalBridgeClazz, "decode", arg0);
+            return SExecute<Java.Lang.Byte>(LocalBridgeClazz, "decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="byte"/></returns>
-        public static byte? ValueOf(byte arg0)
+        /// <returns><see cref="Java.Lang.Byte"/></returns>
+        public static Java.Lang.Byte ValueOf(byte arg0)
         {
-            return SExecute<byte?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="byte"/></returns>
+        /// <returns><see cref="Java.Lang.Byte"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static byte? ValueOf(string arg0, int arg1)
+        public static Java.Lang.Byte ValueOf(string arg0, int arg1)
         {
-            return SExecute<byte?>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecute<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="byte"/></returns>
+        /// <returns><see cref="Java.Lang.Byte"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static byte? ValueOf(string arg0)
+        public static Java.Lang.Byte ValueOf(string arg0)
         {
-            return SExecute<byte?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toString(byte)"/>
@@ -189,9 +189,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Byte"/></param>
         /// <returns><see cref="int"/></returns>
-        public int CompareTo(byte? arg0)
+        public int CompareTo(Java.Lang.Byte arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

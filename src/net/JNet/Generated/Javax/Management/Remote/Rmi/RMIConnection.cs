@@ -58,19 +58,19 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanCount(javax.security.auth.Subject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        int? GetMBeanCount(Javax.Security.Auth.Subject arg0);
+        Java.Lang.Integer GetMBeanCount(Javax.Security.Auth.Subject arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
-        int[] AddNotificationListeners(Javax.Management.ObjectName[] arg0, Java.Rmi.MarshalledObject[] arg1, Javax.Security.Auth.Subject[] arg2);
+        Java.Lang.Integer[] AddNotificationListeners(Javax.Management.ObjectName[] arg0, Java.Rmi.MarshalledObject[] arg1, Javax.Security.Auth.Subject[] arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
         /// </summary>
@@ -288,12 +288,12 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Integer"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
-        void RemoveNotificationListeners(Javax.Management.ObjectName arg0, int[] arg1, Javax.Security.Auth.Subject arg2);
+        void RemoveNotificationListeners(Javax.Management.ObjectName arg0, Java.Lang.Integer[] arg1, Javax.Security.Auth.Subject arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttribute(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)"/>
         /// </summary>
@@ -390,11 +390,11 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanCount(javax.security.auth.Subject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public int? GetMBeanCount(Javax.Security.Auth.Subject arg0)
+        public Java.Lang.Integer GetMBeanCount(Javax.Security.Auth.Subject arg0)
         {
-            return IExecute<int?>("getMBeanCount", arg0);
+            return IExecute<Java.Lang.Integer>("getMBeanCount", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])"/>
@@ -402,12 +402,12 @@ namespace Javax.Management.Remote.Rmi
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
         /// <param name="arg1"><see cref="Java.Rmi.MarshalledObject"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public int[] AddNotificationListeners(Javax.Management.ObjectName[] arg0, Java.Rmi.MarshalledObject[] arg1, Javax.Security.Auth.Subject[] arg2)
+        public Java.Lang.Integer[] AddNotificationListeners(Javax.Management.ObjectName[] arg0, Java.Rmi.MarshalledObject[] arg1, Javax.Security.Auth.Subject[] arg2)
         {
-            return IExecuteArray<int>("addNotificationListeners", arg0, arg1, arg2);
+            return IExecuteArray<Java.Lang.Integer>("addNotificationListeners", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)"/>
@@ -683,12 +683,12 @@ namespace Javax.Management.Remote.Rmi
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.ObjectName"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Integer"/></param>
         /// <param name="arg2"><see cref="Javax.Security.Auth.Subject"/></param>
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         /// <exception cref="Java.Io.IOException"/>
-        public void RemoveNotificationListeners(Javax.Management.ObjectName arg0, int[] arg1, Javax.Security.Auth.Subject arg2)
+        public void RemoveNotificationListeners(Javax.Management.ObjectName arg0, Java.Lang.Integer[] arg1, Javax.Security.Auth.Subject arg2)
         {
             IExecute("removeNotificationListeners", arg0, arg1, arg2);
         }

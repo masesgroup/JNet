@@ -292,7 +292,7 @@ namespace Java.Util.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html"/>
     /// </summary>
-    public partial class DoubleStream : Java.Util.Stream.BaseStream<double?, Java.Util.Stream.DoubleStream>
+    public partial class DoubleStream : Java.Util.Stream.BaseStream<Java.Lang.Double, Java.Util.Stream.DoubleStream>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -335,7 +335,7 @@ namespace Java.Util.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html"/>
     /// </summary>
-    public partial class IntStream : Java.Util.Stream.BaseStream<int?, Java.Util.Stream.IntStream>
+    public partial class IntStream : Java.Util.Stream.BaseStream<Java.Lang.Integer, Java.Util.Stream.IntStream>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -378,7 +378,7 @@ namespace Java.Util.Stream
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html"/>
     /// </summary>
-    public partial class LongStream : Java.Util.Stream.BaseStream<long?, Java.Util.Stream.LongStream>
+    public partial class LongStream : Java.Util.Stream.BaseStream<Java.Lang.Long, Java.Util.Stream.LongStream>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

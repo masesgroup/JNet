@@ -109,7 +109,7 @@ namespace Java.Nio.Channels
         /// <param name="arg4"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg4objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Read<A, Arg4objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<int?, Arg4objectSuperA> arg4) where Arg4objectSuperA: A
+        public void Read<A, Arg4objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg4objectSuperA> arg4) where Arg4objectSuperA: A
         {
             IExecute("read", arg0, arg1, arg2, arg3, arg4);
         }
@@ -125,7 +125,7 @@ namespace Java.Nio.Channels
         /// <param name="arg6"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg6objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Read<A, Arg6objectSuperA>(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<long?, Arg6objectSuperA> arg6) where Arg6objectSuperA: A
+        public void Read<A, Arg6objectSuperA>(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<Java.Lang.Long, Arg6objectSuperA> arg6) where Arg6objectSuperA: A
         {
             IExecute("read", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -139,7 +139,7 @@ namespace Java.Nio.Channels
         /// <param name="arg4"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg4objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Write<A, Arg4objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<int?, Arg4objectSuperA> arg4) where Arg4objectSuperA: A
+        public void Write<A, Arg4objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, A arg3, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg4objectSuperA> arg4) where Arg4objectSuperA: A
         {
             IExecute("write", arg0, arg1, arg2, arg3, arg4);
         }
@@ -155,7 +155,7 @@ namespace Java.Nio.Channels
         /// <param name="arg6"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg6objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Write<A, Arg6objectSuperA>(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<long?, Arg6objectSuperA> arg6) where Arg6objectSuperA: A
+        public void Write<A, Arg6objectSuperA>(Java.Nio.ByteBuffer[] arg0, int arg1, int arg2, long arg3, Java.Util.Concurrent.TimeUnit arg4, A arg5, Java.Nio.Channels.CompletionHandler<Java.Lang.Long, Arg6objectSuperA> arg6) where Arg6objectSuperA: A
         {
             IExecute("write", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
@@ -184,18 +184,18 @@ namespace Java.Nio.Channels
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<int?> Read(Java.Nio.ByteBuffer arg0)
+        public Java.Util.Concurrent.Future<Java.Lang.Integer> Read(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<Java.Util.Concurrent.Future<int?>>("read", arg0);
+            return IExecute<Java.Util.Concurrent.Future<Java.Lang.Integer>>("read", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
-        public Java.Util.Concurrent.Future<int?> Write(Java.Nio.ByteBuffer arg0)
+        public Java.Util.Concurrent.Future<Java.Lang.Integer> Write(Java.Nio.ByteBuffer arg0)
         {
-            return IExecute<Java.Util.Concurrent.Future<int?>>("write", arg0);
+            return IExecute<Java.Util.Concurrent.Future<Java.Lang.Integer>>("write", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html#connect(java.net.SocketAddress)"/>
@@ -214,7 +214,7 @@ namespace Java.Nio.Channels
         /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<int?, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
+        public void Read<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
         {
             IExecute("read", arg0, arg1, arg2);
         }
@@ -226,7 +226,7 @@ namespace Java.Nio.Channels
         /// <param name="arg2"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg2objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<int?, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
+        public void Write<A, Arg2objectSuperA>(Java.Nio.ByteBuffer arg0, A arg1, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg2objectSuperA> arg2) where Arg2objectSuperA: A
         {
             IExecute("write", arg0, arg1, arg2);
         }

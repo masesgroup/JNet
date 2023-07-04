@@ -308,70 +308,70 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#decode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static int? Decode(string arg0)
+        public static Java.Lang.Integer Decode(string arg0)
         {
-            return SExecute<int?>(LocalBridgeClazz, "decode", arg0);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#getInteger(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        public static int? GetInteger(string arg0, int arg1)
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
+        public static Java.Lang.Integer GetInteger(string arg0, int arg1)
         {
-            return SExecute<int?>(LocalBridgeClazz, "getInteger", arg0, arg1);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#getInteger(java.lang.String,java.lang.Integer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        public static int? GetInteger(string arg0, int? arg1)
+        /// <param name="arg1"><see cref="Java.Lang.Integer"/></param>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
+        public static Java.Lang.Integer GetInteger(string arg0, Java.Lang.Integer arg1)
         {
-            return SExecute<int?>(LocalBridgeClazz, "getInteger", arg0, arg1);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#getInteger(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="int"/></returns>
-        public static int? GetInteger(string arg0)
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
+        public static Java.Lang.Integer GetInteger(string arg0)
         {
-            return SExecute<int?>(LocalBridgeClazz, "getInteger", arg0);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "getInteger", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        public static int? ValueOf(int arg0)
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
+        public static Java.Lang.Integer ValueOf(int arg0)
         {
-            return SExecute<int?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static int? ValueOf(string arg0, int arg1)
+        public static Java.Lang.Integer ValueOf(string arg0, int arg1)
         {
-            return SExecute<int?>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static int? ValueOf(string arg0)
+        public static Java.Lang.Integer ValueOf(string arg0)
         {
-            return SExecute<int?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Integer>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toBinaryString(int)"/>
@@ -454,9 +454,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#compareTo(java.lang.Integer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
         /// <returns><see cref="int"/></returns>
-        public int CompareTo(int? arg0)
+        public int CompareTo(Java.Lang.Integer arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

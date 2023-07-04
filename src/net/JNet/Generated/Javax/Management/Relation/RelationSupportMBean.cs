@@ -36,14 +36,14 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
         /// </summary>
 
-        /// <returns><see cref="bool"/></returns>
-        bool? IsInRelationService();
+        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        Java.Lang.Boolean IsInRelationService();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        void SetRelationServiceManagementFlag(bool? arg0);
+        void SetRelationServiceManagementFlag(Java.Lang.Boolean arg0);
 
         #endregion
 
@@ -79,17 +79,17 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()"/>
         /// </summary>
 
-        /// <returns><see cref="bool"/></returns>
-        public bool? IsInRelationService()
+        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        public Java.Lang.Boolean IsInRelationService()
         {
-            return IExecute<bool?>("isInRelationService");
+            return IExecute<Java.Lang.Boolean>("isInRelationService");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public void SetRelationServiceManagementFlag(bool? arg0)
+        public void SetRelationServiceManagementFlag(Java.Lang.Boolean arg0)
         {
             IExecute("setRelationServiceManagementFlag", arg0);
         }

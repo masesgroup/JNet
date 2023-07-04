@@ -74,10 +74,10 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(java.lang.Character,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Character"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Javax.Swing.KeyStroke"/></returns>
-        public static Javax.Swing.KeyStroke GetKeyStroke(char? arg0, int arg1)
+        public static Javax.Swing.KeyStroke GetKeyStroke(Java.Lang.Character arg0, int arg1)
         {
             return SExecute<Javax.Swing.KeyStroke>(LocalBridgeClazz, "getKeyStroke", arg0, arg1);
         }

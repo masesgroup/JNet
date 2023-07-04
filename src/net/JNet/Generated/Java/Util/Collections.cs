@@ -124,7 +124,7 @@ namespace Java.Util
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="E"></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public static Java.Util.Set<E> NewSetFromMap<E>(Java.Util.Map<E, bool?> arg0)
+        public static Java.Util.Set<E> NewSetFromMap<E>(Java.Util.Map<E, Java.Lang.Boolean> arg0)
         {
             return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "newSetFromMap", arg0);
         }

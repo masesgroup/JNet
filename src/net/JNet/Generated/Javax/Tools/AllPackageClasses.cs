@@ -285,7 +285,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html"/>
         /// </summary>
-        public partial class DocumentationTask : Java.Util.Concurrent.Callable<bool?>
+        public partial class DocumentationTask : Java.Util.Concurrent.Callable<Java.Lang.Boolean>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -718,7 +718,7 @@ namespace Javax.Tools
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaCompiler.CompilationTask.html"/>
         /// </summary>
-        public partial class CompilationTask : Java.Util.Concurrent.Callable<bool?>
+        public partial class CompilationTask : Java.Util.Concurrent.Callable<Java.Lang.Boolean>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

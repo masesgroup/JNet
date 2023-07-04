@@ -92,7 +92,7 @@ namespace Java.Time.Chrono
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.ResolverStyle"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
-        Java.Time.Chrono.ChronoLocalDate ResolveDate(Java.Util.Map<Java.Time.Temporal.TemporalField, long?> arg0, Java.Time.Format.ResolverStyle arg1);
+        Java.Time.Chrono.ChronoLocalDate ResolveDate(Java.Util.Map<Java.Time.Temporal.TemporalField, Java.Lang.Long> arg0, Java.Time.Format.ResolverStyle arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/Chronology.html#eraOf(int)"/>
         /// </summary>
@@ -363,7 +363,7 @@ namespace Java.Time.Chrono
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.ResolverStyle"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
-        public Java.Time.Chrono.ChronoLocalDate ResolveDate(Java.Util.Map<Java.Time.Temporal.TemporalField, long?> arg0, Java.Time.Format.ResolverStyle arg1)
+        public Java.Time.Chrono.ChronoLocalDate ResolveDate(Java.Util.Map<Java.Time.Temporal.TemporalField, Java.Lang.Long> arg0, Java.Time.Format.ResolverStyle arg1)
         {
             return IExecute<Java.Time.Chrono.ChronoLocalDate>("resolveDate", arg0, arg1);
         }
