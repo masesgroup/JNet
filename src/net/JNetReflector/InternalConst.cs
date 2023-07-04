@@ -38,6 +38,7 @@ namespace MASES.JNetReflector
         public const string ClassesToAnalyze = "ClassesToAnalyze";
         public const string JarList = "JarList";
         public const string ModulesToParse = "ModulesToParse";
+        public const string ClassesManuallyDeveloped = "ClassesManuallyDeveloped";
         public const string ClassesToBeListener = "ClassesToBeListener";
         public const string ClassesToAvoidJavaListener = "ClassesToAvoidJavaListener";
         public const string NamespacesInConflict = "NamespacesInConflict";

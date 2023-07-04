@@ -591,7 +591,7 @@ namespace MASES.JNetReflector
 
         static void PrepareSingleClass(this Class jClass, IEnumerable<Class> classDefinitions, bool isGeneric, out string allPackagesClassBlock, out string singleClassStr, out string singleInterfaceStr)
         {
-            if (jClass.IsJNetInternal())
+            if (jClass.IsJNetInternalOrManuallyDeveloped())
             {
                 allPackagesClassBlock = singleClassStr = singleInterfaceStr = string.Empty;
                 return;

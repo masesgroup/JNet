@@ -30,8 +30,6 @@ namespace MASES.JNetReflector
     /// </summary>
     public abstract class JNetReflectorCore<T> : JNetCoreBase<T> where T : JNetReflectorCore<T>
     {
-
-
         /// <summary>
         /// Class used to define configuration information
         /// </summary>
@@ -72,6 +70,8 @@ namespace MASES.JNetReflector
             public IEnumerable<string> JarList { get; set; }
 
             public IEnumerable<string> ModulesToParse { get; set; }
+
+            public IEnumerable<string> ClassesManuallyDeveloped { get; set; }
 
             public IEnumerable<string> ClassesToBeListener { get; set; }
 
@@ -194,6 +194,12 @@ namespace MASES.JNetReflector
                         Name = CLIParam.ModulesToParse,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassesManuallyDeveloped,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of class names will be manually developed",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -363,6 +369,9 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ModulesToParse;
         public static IEnumerable<string> ModulesToParse => _ModulesToParse ?? _ConfigurationFromFile.ModulesToParse;
 
+        static IEnumerable<string> _ClassesManuallyDeveloped;
+        public static IEnumerable<string> ClassesManuallyDeveloped => _ClassesManuallyDeveloped ?? _ConfigurationFromFile.ClassesManuallyDeveloped;
+
         static IEnumerable<string> _ClassesToBeListener;
         public static IEnumerable<string> ClassesToBeListener => _ClassesToBeListener ?? _ConfigurationFromFile.ClassesToBeListener;
 
@@ -493,6 +502,17 @@ namespace MASES.JNetReflector
                 _OriginJavadocJARVersionAndUrls = jarURLsToAnaylyze;
                 if (_JarsToAnalyze?.Count() != _OriginJavadocJARVersionAndUrls.Count())
                     throw new System.InvalidOperationException("Number of entries in OriginJavadocJARVersionAndUrls shall be equal to the number of JarList");
+            }
+
+            List<string> classesManuallyDeveloped = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesManuallyDeveloped))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesManuallyDeveloped).Split(',', ';');
+                foreach (var item in classes)
+                {
+                    if (!classesManuallyDeveloped.Contains(item)) classesManuallyDeveloped.Add(item);
+                }
+                _ClassesManuallyDeveloped = classesManuallyDeveloped;
             }
 
             List<string> classesToBeListener = new List<string>();

@@ -1689,10 +1689,14 @@ namespace MASES.JNetReflector
             return IsOrInheritFromJVMGenericClass(entry.SuperClass);
         }
 
-        public static bool IsJNetInternal(this Class entry)
+        public static bool IsJNetInternalOrManuallyDeveloped(this Class entry)
         {
-            if (entry.TypeName == SpecialNames.JavaLangIterable
-                || entry.TypeName == SpecialNames.JavaUtilIterator) return true;
+            string tName = entry.TypeName;
+
+            if (tName == SpecialNames.JavaLangIterable
+                || tName == SpecialNames.JavaUtilIterator) return true;
+
+            if (JNetReflectorCore.ClassesManuallyDeveloped != null && JNetReflectorCore.ClassesManuallyDeveloped.Any((o) => tName == o)) return true;
 
             return false;
         }
