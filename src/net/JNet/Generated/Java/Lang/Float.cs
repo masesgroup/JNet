@@ -188,20 +188,20 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
-        /// <returns><see cref="float"/></returns>
-        public static float? ValueOf(float arg0)
+        /// <returns><see cref="Java.Lang.Float"/></returns>
+        public static Java.Lang.Float ValueOf(float arg0)
         {
-            return SExecute<float?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Float>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="float"/></returns>
+        /// <returns><see cref="Java.Lang.Float"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static float? ValueOf(string arg0)
+        public static Java.Lang.Float ValueOf(string arg0)
         {
-            return SExecute<float?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Float>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toHexString(float)"/>
@@ -264,9 +264,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compareTo(java.lang.Float)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="float"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Float"/></param>
         /// <returns><see cref="int"/></returns>
-        public int CompareTo(float? arg0)
+        public int CompareTo(Java.Lang.Float arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

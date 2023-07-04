@@ -30,8 +30,6 @@ namespace MASES.JNetReflector
     /// </summary>
     public abstract class JNetReflectorCore<T> : JNetCoreBase<T> where T : JNetReflectorCore<T>
     {
-
-
         /// <summary>
         /// Class used to define configuration information
         /// </summary>
@@ -73,6 +71,8 @@ namespace MASES.JNetReflector
 
             public IEnumerable<string> ModulesToParse { get; set; }
 
+            public IEnumerable<string> ClassesManuallyDeveloped { get; set; }
+
             public IEnumerable<string> ClassesToBeListener { get; set; }
 
             public IEnumerable<string> ClassesToAvoidJavaListener { get; set; }
@@ -102,6 +102,8 @@ namespace MASES.JNetReflector
             public bool CreateInterfaceInheritance { get; set; }
 
             public bool DisableInterfaceMethodGeneration { get; set; }
+
+            public bool UseDotNetNullable { get; set; }
 
             public bool AvoidParallelBuild { get; set; }
 
@@ -197,6 +199,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
+                        Name = CLIParam.ClassesManuallyDeveloped,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of class names will be manually developed",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
                         Name = CLIParam.ClassesToBeListener,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with \"Listener\" or \"Adapter\" as Listener",
@@ -287,6 +295,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.UseDotNetNullable,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to use .NET nullable instead of Java types for native types",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.AvoidParallelBuild,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to disable parallel execution",
@@ -363,6 +377,9 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ModulesToParse;
         public static IEnumerable<string> ModulesToParse => _ModulesToParse ?? _ConfigurationFromFile.ModulesToParse;
 
+        static IEnumerable<string> _ClassesManuallyDeveloped;
+        public static IEnumerable<string> ClassesManuallyDeveloped => _ClassesManuallyDeveloped ?? _ConfigurationFromFile.ClassesManuallyDeveloped;
+
         static IEnumerable<string> _ClassesToBeListener;
         public static IEnumerable<string> ClassesToBeListener => _ClassesToBeListener ?? _ConfigurationFromFile.ClassesToBeListener;
 
@@ -407,6 +424,9 @@ namespace MASES.JNetReflector
 
         static bool? _DisableInterfaceMethodGeneration;
         public static bool DisableInterfaceMethodGeneration => _DisableInterfaceMethodGeneration ?? _ConfigurationFromFile.DisableInterfaceMethodGeneration;
+
+        static bool? _UseDotNetNullable;
+        public static bool UseDotNetNullable => _UseDotNetNullable ?? _ConfigurationFromFile.UseDotNetNullable;
 
         static bool? _AvoidParallelBuild;
         public static bool AvoidParallelBuild => _AvoidParallelBuild ?? _ConfigurationFromFile.AvoidParallelBuild;
@@ -493,6 +513,17 @@ namespace MASES.JNetReflector
                 _OriginJavadocJARVersionAndUrls = jarURLsToAnaylyze;
                 if (_JarsToAnalyze?.Count() != _OriginJavadocJARVersionAndUrls.Count())
                     throw new System.InvalidOperationException("Number of entries in OriginJavadocJARVersionAndUrls shall be equal to the number of JarList");
+            }
+
+            List<string> classesManuallyDeveloped = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesManuallyDeveloped))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesManuallyDeveloped).Split(',', ';');
+                foreach (var item in classes)
+                {
+                    if (!classesManuallyDeveloped.Contains(item)) classesManuallyDeveloped.Add(item);
+                }
+                _ClassesManuallyDeveloped = classesManuallyDeveloped;
             }
 
             List<string> classesToBeListener = new List<string>();
@@ -588,6 +619,7 @@ namespace MASES.JNetReflector
             if (ParsedArgs.Exist(CLIParam.DisableGenerics)) _DisableGenerics = true;
             if (ParsedArgs.Exist(CLIParam.CreateInterfaceInheritance)) _CreateInterfaceInheritance = true;
             if (ParsedArgs.Exist(CLIParam.DisableInterfaceMethodGeneration)) _DisableInterfaceMethodGeneration = true;
+            if (ParsedArgs.Exist(CLIParam.UseDotNetNullable)) _UseDotNetNullable = true;
             if (ParsedArgs.Exist(CLIParam.AvoidParallelBuild)) _AvoidParallelBuild = true;
             if (ParsedArgs.Exist(CLIParam.DryRun)) _DryRun = true;
             if (ParsedArgs.Exist(CLIParam.DoNotCamel)) _UseCamel = false;

@@ -63,9 +63,9 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTagNumbers()"/> 
         /// </summary>
-        public Java.Util.SortedSet<int?> TagNumbers
+        public Java.Util.SortedSet<Java.Lang.Integer> TagNumbers
         {
-            get { return IExecute<Java.Util.SortedSet<int?>>("getTagNumbers"); }
+            get { return IExecute<Java.Util.SortedSet<Java.Lang.Integer>>("getTagNumbers"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html#getTag(int)"/>

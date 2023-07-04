@@ -20,6 +20,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+#if JNETREFLECTOR
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html"/>
     /// </summary>
@@ -30,4 +31,5 @@ namespace Java.Lang
         /// </summary>
         public override string BridgeClassName => "java.lang.Object";
     }
+#endif
 }

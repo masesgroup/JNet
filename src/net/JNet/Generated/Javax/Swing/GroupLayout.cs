@@ -253,8 +253,8 @@ namespace Javax.Swing
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setHonorsVisibility(java.awt.Component,java.lang.Boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        public void SetHonorsVisibility(Java.Awt.Component arg0, bool? arg1)
+        /// <param name="arg1"><see cref="Java.Lang.Boolean"/></param>
+        public void SetHonorsVisibility(Java.Awt.Component arg0, Java.Lang.Boolean arg1)
         {
             IExecute("setHonorsVisibility", arg0, arg1);
         }

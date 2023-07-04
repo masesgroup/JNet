@@ -141,35 +141,35 @@ namespace Javax.Management.Openmbean
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BOOLEAN"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<bool?> BOOLEAN { get { return SGetField<Javax.Management.Openmbean.SimpleType<bool?>>(LocalBridgeClazz, "BOOLEAN"); } }
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Boolean> BOOLEAN { get { return SGetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Boolean>>(LocalBridgeClazz, "BOOLEAN"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BYTE"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<byte?> BYTE { get { return SGetField<Javax.Management.Openmbean.SimpleType<byte?>>(LocalBridgeClazz, "BYTE"); } }
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Byte> BYTE { get { return SGetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Byte>>(LocalBridgeClazz, "BYTE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#CHARACTER"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<char?> CHARACTER { get { return SGetField<Javax.Management.Openmbean.SimpleType<char?>>(LocalBridgeClazz, "CHARACTER"); } }
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Character> CHARACTER { get { return SGetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Character>>(LocalBridgeClazz, "CHARACTER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#DOUBLE"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<double?> DOUBLE { get { return SGetField<Javax.Management.Openmbean.SimpleType<double?>>(LocalBridgeClazz, "DOUBLE"); } }
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Double> DOUBLE { get { return SGetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Double>>(LocalBridgeClazz, "DOUBLE"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#FLOAT"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<float?> FLOAT { get { return SGetField<Javax.Management.Openmbean.SimpleType<float?>>(LocalBridgeClazz, "FLOAT"); } }
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Float> FLOAT { get { return SGetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Float>>(LocalBridgeClazz, "FLOAT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#INTEGER"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<int?> INTEGER { get { return SGetField<Javax.Management.Openmbean.SimpleType<int?>>(LocalBridgeClazz, "INTEGER"); } }
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Integer> INTEGER { get { return SGetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Integer>>(LocalBridgeClazz, "INTEGER"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#LONG"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<long?> LONG { get { return SGetField<Javax.Management.Openmbean.SimpleType<long?>>(LocalBridgeClazz, "LONG"); } }
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Long> LONG { get { return SGetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Long>>(LocalBridgeClazz, "LONG"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#SHORT"/>
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType<short?> SHORT { get { return SGetField<Javax.Management.Openmbean.SimpleType<short?>>(LocalBridgeClazz, "SHORT"); } }
+        public static Javax.Management.Openmbean.SimpleType<Java.Lang.Short> SHORT { get { return SGetField<Javax.Management.Openmbean.SimpleType<Java.Lang.Short>>(LocalBridgeClazz, "SHORT"); } }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#STRING"/>
         /// </summary>

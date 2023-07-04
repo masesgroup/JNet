@@ -4359,7 +4359,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html"/>
         /// </summary>
-        public partial class OfDouble : Java.Util.PrimitiveIterator<double?, Java.Util.Function.DoubleConsumer>
+        public partial class OfDouble : Java.Util.PrimitiveIterator<Java.Lang.Double, Java.Util.Function.DoubleConsumer>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4402,7 +4402,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html"/>
         /// </summary>
-        public partial class OfInt : Java.Util.PrimitiveIterator<int?, Java.Util.Function.IntConsumer>
+        public partial class OfInt : Java.Util.PrimitiveIterator<Java.Lang.Integer, Java.Util.Function.IntConsumer>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -4445,7 +4445,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html"/>
         /// </summary>
-        public partial class OfLong : Java.Util.PrimitiveIterator<long?, Java.Util.Function.LongConsumer>
+        public partial class OfLong : Java.Util.PrimitiveIterator<Java.Lang.Long, Java.Util.Function.LongConsumer>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5502,7 +5502,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html"/>
         /// </summary>
-        public partial class OfDouble : Java.Util.Spliterator.OfPrimitive<double?, Java.Util.Function.DoubleConsumer, Java.Util.Spliterator.OfDouble>
+        public partial class OfDouble : Java.Util.Spliterator.OfPrimitive<Java.Lang.Double, Java.Util.Function.DoubleConsumer, Java.Util.Spliterator.OfDouble>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5545,7 +5545,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html"/>
         /// </summary>
-        public partial class OfInt : Java.Util.Spliterator.OfPrimitive<int?, Java.Util.Function.IntConsumer, Java.Util.Spliterator.OfInt>
+        public partial class OfInt : Java.Util.Spliterator.OfPrimitive<Java.Lang.Integer, Java.Util.Function.IntConsumer, Java.Util.Spliterator.OfInt>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -5588,7 +5588,7 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfLong.html"/>
         /// </summary>
-        public partial class OfLong : Java.Util.Spliterator.OfPrimitive<long?, Java.Util.Function.LongConsumer, Java.Util.Spliterator.OfLong>
+        public partial class OfLong : Java.Util.Spliterator.OfPrimitive<Java.Lang.Long, Java.Util.Function.LongConsumer, Java.Util.Spliterator.OfLong>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

@@ -137,13 +137,6 @@ namespace Java.Lang
             get { return SExecute<Java.Util.Map<Java.Lang.Thread, Java.Lang.StackTraceElement[]>>(LocalBridgeClazz, "getAllStackTraces"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getDefaultUncaughtExceptionHandler()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setDefaultUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler)"/>
-        /// </summary>
-        public static Java.Lang.Thread.UncaughtExceptionHandler DefaultUncaughtExceptionHandler
-        {
-            get { return SExecute<Java.Lang.Thread.UncaughtExceptionHandler>(LocalBridgeClazz, "getDefaultUncaughtExceptionHandler"); } set { SExecute(LocalBridgeClazz, "setDefaultUncaughtExceptionHandler", value); }
-        }
-        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#interrupted()"/>
         /// </summary>
 
@@ -245,13 +238,6 @@ namespace Java.Lang
         public Java.Lang.Thread.State GetState
         {
             get { return IExecute<Java.Lang.Thread.State>("getState"); }
-        }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getUncaughtExceptionHandler()"/> 
-        /// </summary>
-        public Java.Lang.Thread.UncaughtExceptionHandler GetUncaughtExceptionHandler
-        {
-            get { return IExecute<Java.Lang.Thread.UncaughtExceptionHandler>("getUncaughtExceptionHandler"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#getId()"/> 
@@ -379,14 +365,6 @@ namespace Java.Lang
         {
             IExecute("run");
         }
-        /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#setUncaughtExceptionHandler(java.lang.Thread.UncaughtExceptionHandler)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Thread.UncaughtExceptionHandler"/></param>
-        public void SetUncaughtExceptionHandler(Java.Lang.Thread.UncaughtExceptionHandler arg0)
-        {
-            IExecute("setUncaughtExceptionHandler", arg0);
-        }
 
         #endregion
 
@@ -453,46 +431,6 @@ namespace Java.Lang
             #endregion
 
             #region Instance methods
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region UncaughtExceptionHandler
-        public partial class UncaughtExceptionHandler
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html#uncaughtException(java.lang.Thread,java.lang.Throwable)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
-            /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
-            public void UncaughtException(Java.Lang.Thread arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
-            {
-                IExecute("uncaughtException", arg0, arg1);
-            }
 
             #endregion
 

@@ -33,6 +33,7 @@ _jnr_ accepts the following command-line switch:
 * **NamespacesToAvoid**: A CSV list of namespaces to be removed from analysis
 * **ClassesToAvoid**: A CSV list of classes to be removed during analysis
 * **ClassesToAvoidInGenerics**: A CSV list of classes to be removed during analysis from the classes which have generics types
+* **ClassesManuallyDeveloped**: A CSV list of class names will be manually developed
 * **ClassesToBeListener**: A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with "Listener" or "Adapter" as Listener
 * **ClassesToAvoidJavaListener**: A CSV list of class names to be avoided during generation of Java listener classes
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
@@ -45,6 +46,7 @@ _jnr_ accepts the following command-line switch:
 * **DisableGenerics**: The option forces the tool to disable any generic type
 * **CreateInterfaceInheritance**: The option forces the tool to create the C# interface inheritance
 * **DisableInterfaceMethodGeneration**: The option disables the generation of the methods in the C# interface
+* **UseDotNetNullable**: The option forces the tool to use .NET nullable instead of Java types for native types
 * **AvoidParallelBuild**: The option forces the tool to disable parallel execution
 * **DryRun**: Execute everything, but do not write anything to disk
 * **DoNotCamel**: Does not use camelized names in methods, class and so on

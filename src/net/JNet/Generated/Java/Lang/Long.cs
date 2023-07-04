@@ -134,70 +134,70 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#decode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref="Java.Lang.Long"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static long? Decode(string arg0)
+        public static Java.Lang.Long Decode(string arg0)
         {
-            return SExecute<long?>(LocalBridgeClazz, "decode", arg0);
+            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "decode", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,java.lang.Long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        public static long? GetLong(string arg0, long? arg1)
+        /// <param name="arg1"><see cref="Java.Lang.Long"/></param>
+        /// <returns><see cref="Java.Lang.Long"/></returns>
+        public static Java.Lang.Long GetLong(string arg0, Java.Lang.Long arg1)
         {
-            return SExecute<long?>(LocalBridgeClazz, "getLong", arg0, arg1);
+            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "getLong", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        public static long? GetLong(string arg0, long arg1)
+        /// <returns><see cref="Java.Lang.Long"/></returns>
+        public static Java.Lang.Long GetLong(string arg0, long arg1)
         {
-            return SExecute<long?>(LocalBridgeClazz, "getLong", arg0, arg1);
+            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "getLong", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="long"/></returns>
-        public static long? GetLong(string arg0)
+        /// <returns><see cref="Java.Lang.Long"/></returns>
+        public static Java.Lang.Long GetLong(string arg0)
         {
-            return SExecute<long?>(LocalBridgeClazz, "getLong", arg0);
+            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "getLong", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref="Java.Lang.Long"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static long? ValueOf(string arg0, int arg1)
+        public static Java.Lang.Long ValueOf(string arg0, int arg1)
         {
-            return SExecute<long?>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "valueOf", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="long"/></returns>
+        /// <returns><see cref="Java.Lang.Long"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static long? ValueOf(string arg0)
+        public static Java.Lang.Long ValueOf(string arg0)
         {
-            return SExecute<long?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="long"/></returns>
-        public static long? ValueOf(long arg0)
+        /// <returns><see cref="Java.Lang.Long"/></returns>
+        public static Java.Lang.Long ValueOf(long arg0)
         {
-            return SExecute<long?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Long>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toBinaryString(long)"/>
@@ -445,9 +445,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareTo(java.lang.Long)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Long"/></param>
         /// <returns><see cref="int"/></returns>
-        public int CompareTo(long? arg0)
+        public int CompareTo(Java.Lang.Long arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

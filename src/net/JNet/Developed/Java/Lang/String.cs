@@ -20,14 +20,15 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html"/>
-    /// </summary>
-    public sealed class String : JVMBridgeBase<String>
+    public partial class String : JVMBridgeBase<String>
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// Converter from <see cref="String"/> to <see cref="string"/>
         /// </summary>
-        public override string BridgeClassName => "java.lang.String";
+        public static implicit operator string(String b) => b.ToString();
+        /// <summary>
+        /// Converter from <see cref="string"/> to <see cref="String"/>
+        /// </summary>
+        public static implicit operator String(string b) => ValueOf(b);
     }
 }

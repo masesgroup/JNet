@@ -20,18 +20,15 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html"/>
-    /// </summary>
-    public sealed class Long : Number
+    public partial class Long : Number
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// Converter from <see cref="Long"/> to <see cref="long"/>
         /// </summary>
-        public override string BridgeClassName => "java.lang.Long";
+        public static implicit operator long(Long b) => b.LongValue();
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// Converter from <see cref="long"/> to <see cref="Long"/>
         /// </summary>
-        public override bool IsBridgeAbstract => false;
+        public static implicit operator Long(long b) => ValueOf(b);
     }
 }

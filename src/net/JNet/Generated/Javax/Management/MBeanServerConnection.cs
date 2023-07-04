@@ -43,7 +43,7 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getMBeanCount()"/> 
         /// </summary>
-        int? MBeanCount { get; }
+        Java.Lang.Integer MBeanCount { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String)"/>
         /// </summary>
@@ -327,9 +327,9 @@ namespace Javax.Management
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getMBeanCount()"/> 
         /// </summary>
-        public int? MBeanCount
+        public Java.Lang.Integer MBeanCount
         {
-            get { return IExecute<int?>("getMBeanCount"); }
+            get { return IExecute<Java.Lang.Integer>("getMBeanCount"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String)"/>

@@ -43,7 +43,7 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getVendorTypeNumber()"/> 
         /// </summary>
-        int? VendorTypeNumber { get; }
+        Java.Lang.Integer VendorTypeNumber { get; }
 
         #endregion
 
@@ -92,9 +92,9 @@ namespace Java.Sql
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLType.html#getVendorTypeNumber()"/> 
         /// </summary>
-        public int? VendorTypeNumber
+        public Java.Lang.Integer VendorTypeNumber
         {
-            get { return IExecute<int?>("getVendorTypeNumber"); }
+            get { return IExecute<Java.Lang.Integer>("getVendorTypeNumber"); }
         }
 
         #endregion

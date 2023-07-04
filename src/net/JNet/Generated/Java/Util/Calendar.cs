@@ -583,9 +583,9 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
-        public Java.Util.Map<string, int?> GetDisplayNames(int arg0, int arg1, Java.Util.Locale arg2)
+        public Java.Util.Map<string, Java.Lang.Integer> GetDisplayNames(int arg0, int arg1, Java.Util.Locale arg2)
         {
-            return IExecute<Java.Util.Map<string, int?>>("getDisplayNames", arg0, arg1, arg2);
+            return IExecute<Java.Util.Map<string, Java.Lang.Integer>>("getDisplayNames", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.html#roll(int,int)"/>

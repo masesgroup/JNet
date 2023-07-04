@@ -179,20 +179,20 @@ namespace Java.Lang
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#valueOf(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        /// <returns><see cref="double"/></returns>
-        public static double? ValueOf(double arg0)
+        /// <returns><see cref="Java.Lang.Double"/></returns>
+        public static Java.Lang.Double ValueOf(double arg0)
         {
-            return SExecute<double?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Double>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="double"/></returns>
+        /// <returns><see cref="Java.Lang.Double"/></returns>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        public static double? ValueOf(string arg0)
+        public static Java.Lang.Double ValueOf(string arg0)
         {
-            return SExecute<double?>(LocalBridgeClazz, "valueOf", arg0);
+            return SExecute<Java.Lang.Double>(LocalBridgeClazz, "valueOf", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#toHexString(double)"/>
@@ -264,9 +264,9 @@ namespace Java.Lang
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#compareTo(java.lang.Double)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="double"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Double"/></param>
         /// <returns><see cref="int"/></returns>
-        public int CompareTo(double? arg0)
+        public int CompareTo(Java.Lang.Double arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

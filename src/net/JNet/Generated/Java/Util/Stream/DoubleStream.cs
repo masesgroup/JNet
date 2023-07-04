@@ -29,7 +29,7 @@ namespace Java.Util.Stream
     /// <summary>
     /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
-    public partial interface IDoubleStream : Java.Util.Stream.IBaseStream<double?, Java.Util.Stream.DoubleStream>
+    public partial interface IDoubleStream : Java.Util.Stream.IBaseStream<Java.Lang.Double, Java.Util.Stream.DoubleStream>
     {
         #region Instance methods
         /// <summary>
@@ -194,7 +194,7 @@ namespace Java.Util.Stream
         /// </summary>
 
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<double?> Boxed();
+        Java.Util.Stream.Stream<Java.Lang.Double> Boxed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#count()"/>
         /// </summary>
@@ -582,9 +582,9 @@ namespace Java.Util.Stream
         /// </summary>
 
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<double?> Boxed()
+        public Java.Util.Stream.Stream<Java.Lang.Double> Boxed()
         {
-            return IExecute<Java.Util.Stream.Stream<double?>>("boxed");
+            return IExecute<Java.Util.Stream.Stream<Java.Lang.Double>>("boxed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#count()"/>

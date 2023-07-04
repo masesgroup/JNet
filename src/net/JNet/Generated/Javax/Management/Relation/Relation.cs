@@ -56,10 +56,10 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoleCardinality(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
-        int? GetRoleCardinality(string arg0);
+        Java.Lang.Integer GetRoleCardinality(string arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRole(java.lang.String)"/>
         /// </summary>
@@ -186,12 +186,12 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoleCardinality(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
-        public int? GetRoleCardinality(string arg0)
+        public Java.Lang.Integer GetRoleCardinality(string arg0)
         {
-            return IExecute<int?>("getRoleCardinality", arg0);
+            return IExecute<Java.Lang.Integer>("getRoleCardinality", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRole(java.lang.String)"/>

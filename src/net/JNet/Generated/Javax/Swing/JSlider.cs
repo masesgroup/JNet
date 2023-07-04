@@ -217,18 +217,18 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Hashtable"/></returns>
-        public Java.Util.Hashtable<int?, Javax.Swing.JComponent> CreateStandardLabels(int arg0, int arg1)
+        public Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent> CreateStandardLabels(int arg0, int arg1)
         {
-            return IExecute<Java.Util.Hashtable<int?, Javax.Swing.JComponent>>("createStandardLabels", arg0, arg1);
+            return IExecute<Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent>>("createStandardLabels", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#createStandardLabels(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Hashtable"/></returns>
-        public Java.Util.Hashtable<int?, Javax.Swing.JComponent> CreateStandardLabels(int arg0)
+        public Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent> CreateStandardLabels(int arg0)
         {
-            return IExecute<Java.Util.Hashtable<int?, Javax.Swing.JComponent>>("createStandardLabels", arg0);
+            return IExecute<Java.Util.Hashtable<Java.Lang.Integer, Javax.Swing.JComponent>>("createStandardLabels", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#addChangeListener(javax.swing.event.ChangeListener)"/>

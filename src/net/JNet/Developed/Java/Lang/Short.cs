@@ -20,18 +20,15 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html"/>
-    /// </summary>
-    public sealed class Short : Number
+    public partial class Short : Number
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// Converter from <see cref="Short"/> to <see cref="short"/>
         /// </summary>
-        public override string BridgeClassName => "java.lang.Short";
+        public static implicit operator short(Short b) => b.ShortValue();
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// Converter from <see cref="short"/> to <see cref="Short"/>
         /// </summary>
-        public override bool IsBridgeAbstract => false;
+        public static implicit operator Short(short b) => ValueOf(b);
     }
 }

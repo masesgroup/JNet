@@ -20,18 +20,15 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html"/>
-    /// </summary>
-    public sealed class Double : Number
+    public partial class Double //: Number
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// Converter from <see cref="Double"/> to <see cref="double"/>
         /// </summary>
-        public override string BridgeClassName => "java.lang.Double";
+        public static implicit operator double(Double b) => b.DoubleValue();
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// Converter from <see cref="double"/> to <see cref="Boolean"/>
         /// </summary>
-        public override bool IsBridgeAbstract => false;
+        public static implicit operator Double(double b) => ValueOf(b);
     }
 }

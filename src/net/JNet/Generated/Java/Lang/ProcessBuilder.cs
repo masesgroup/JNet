@@ -307,15 +307,6 @@ namespace Java.Lang
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#type()"/>
-            /// </summary>
-
-            /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect.Type"/></returns>
-            public Java.Lang.ProcessBuilder.Redirect.Type Type()
-            {
-                return IExecute<Java.Lang.ProcessBuilder.Redirect.Type>("type");
-            }
-            /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#file()"/>
             /// </summary>
 
@@ -340,48 +331,10 @@ namespace Java.Lang
                 #endregion
 
                 #region Fields
-                /// <summary>
-                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#APPEND"/>
-                /// </summary>
-                public static Java.Lang.ProcessBuilder.Redirect.Type APPEND { get { return SGetField<Java.Lang.ProcessBuilder.Redirect.Type>(LocalBridgeClazz, "APPEND"); } }
-                /// <summary>
-                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#INHERIT"/>
-                /// </summary>
-                public static Java.Lang.ProcessBuilder.Redirect.Type INHERIT { get { return SGetField<Java.Lang.ProcessBuilder.Redirect.Type>(LocalBridgeClazz, "INHERIT"); } }
-                /// <summary>
-                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#PIPE"/>
-                /// </summary>
-                public static Java.Lang.ProcessBuilder.Redirect.Type PIPE { get { return SGetField<Java.Lang.ProcessBuilder.Redirect.Type>(LocalBridgeClazz, "PIPE"); } }
-                /// <summary>
-                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#READ"/>
-                /// </summary>
-                public static Java.Lang.ProcessBuilder.Redirect.Type READ { get { return SGetField<Java.Lang.ProcessBuilder.Redirect.Type>(LocalBridgeClazz, "READ"); } }
-                /// <summary>
-                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#WRITE"/>
-                /// </summary>
-                public static Java.Lang.ProcessBuilder.Redirect.Type WRITE { get { return SGetField<Java.Lang.ProcessBuilder.Redirect.Type>(LocalBridgeClazz, "WRITE"); } }
 
                 #endregion
 
                 #region Static methods
-                /// <summary>
-                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#valueOf(java.lang.String)"/>
-                /// </summary>
-                /// <param name="arg0"><see cref="string"/></param>
-                /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect.Type"/></returns>
-                public static Java.Lang.ProcessBuilder.Redirect.Type ValueOf(string arg0)
-                {
-                    return SExecute<Java.Lang.ProcessBuilder.Redirect.Type>(LocalBridgeClazz, "valueOf", arg0);
-                }
-                /// <summary>
-                /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html#values()"/>
-                /// </summary>
-
-                /// <returns><see cref="Java.Lang.ProcessBuilder.Redirect.Type"/></returns>
-                public static Java.Lang.ProcessBuilder.Redirect.Type[] Values()
-                {
-                    return SExecuteArray<Java.Lang.ProcessBuilder.Redirect.Type>(LocalBridgeClazz, "values");
-                }
 
                 #endregion
 

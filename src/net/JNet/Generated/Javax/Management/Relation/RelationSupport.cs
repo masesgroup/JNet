@@ -119,21 +119,21 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#isInRelationService()"/>
         /// </summary>
 
-        /// <returns><see cref="bool"/></returns>
-        public bool? IsInRelationService()
+        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        public Java.Lang.Boolean IsInRelationService()
         {
-            return IExecute<bool?>("isInRelationService");
+            return IExecute<Java.Lang.Boolean>("isInRelationService");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRoleCardinality(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
-        public int? GetRoleCardinality(string arg0)
+        public Java.Lang.Integer GetRoleCardinality(string arg0)
         {
-            return IExecute<int?>("getRoleCardinality", arg0);
+            return IExecute<Java.Lang.Integer>("getRoleCardinality", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRole(java.lang.String)"/>
@@ -216,8 +216,8 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#postRegister(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        public void PostRegister(bool? arg0)
+        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
+        public void PostRegister(Java.Lang.Boolean arg0)
         {
             IExecute("postRegister", arg0);
         }
@@ -233,9 +233,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#setRelationServiceManagementFlag(java.lang.Boolean)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Boolean"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public void SetRelationServiceManagementFlag(bool? arg0)
+        public void SetRelationServiceManagementFlag(Java.Lang.Boolean arg0)
         {
             IExecute("setRelationServiceManagementFlag", arg0);
         }

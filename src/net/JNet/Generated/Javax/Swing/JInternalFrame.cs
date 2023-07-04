@@ -438,8 +438,8 @@ namespace Javax.Swing
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setLayer(java.lang.Integer)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        public void SetLayer(int? arg0)
+        /// <param name="arg0"><see cref="Java.Lang.Integer"/></param>
+        public void SetLayer(Java.Lang.Integer arg0)
         {
             IExecute("setLayer", arg0);
         }

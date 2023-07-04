@@ -15,6 +15,8 @@
     <PackageId>MASES.JNetReflector</PackageId>
     <DefineConstants>$(DefineConstants)TRACE;JNETREFLECTOR</DefineConstants>
     <PackageReadmeFile>usageReflector.md</PackageReadmeFile>
+    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
   </PropertyGroup>
   <ItemGroup>
     <jnetreflector_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
@@ -60,9 +62,7 @@
     <Compile Include="..\JNet\Developed\Java\Lang\ClassFormatError.cs" Link="Java\Lang\ClassFormatError.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\ClassLoader.cs" Link="Java\Lang\ClassLoader.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\ClassNotFoundException.cs" Link="Java\Lang\ClassNotFoundException.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\ClassValue.cs" Link="Java\Lang\ClassValue.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\CloneNotSupportedException.cs" Link="Java\Lang\CloneNotSupportedException.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Enum.cs" Link="Java\Lang\Enum.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\EnumConstantNotPresentException.cs" Link="Java\Lang\EnumConstantNotPresentException.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Error.cs" Link="Java\Lang\Error.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Exception.cs" Link="Java\Lang\Exception.cs" />
@@ -113,7 +113,6 @@
     <Compile Include="..\JNet\Developed\Java\Lang\SecurityException.cs" Link="Java\Lang\SecurityException.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\SecurityManager.cs" Link="Java\Lang\SecurityManager.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\StackOverflowError.cs" Link="Java\Lang\StackOverflowError.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\StackTraceElement.cs" Link="Java\Lang\StackTraceElement.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\StringIndexOutOfBoundsException.cs" Link="Java\Lang\StringIndexOutOfBoundsException.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Throwable.cs" Link="Java\Lang\Throwable.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\TypeNotPresentException.cs" Link="Java\Lang\TypeNotPresentException.cs" />

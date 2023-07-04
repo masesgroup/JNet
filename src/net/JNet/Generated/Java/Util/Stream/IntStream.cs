@@ -29,7 +29,7 @@ namespace Java.Util.Stream
     /// <summary>
     /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
-    public partial interface IIntStream : Java.Util.Stream.IBaseStream<int?, Java.Util.Stream.IntStream>
+    public partial interface IIntStream : Java.Util.Stream.IBaseStream<Java.Lang.Integer, Java.Util.Stream.IntStream>
     {
         #region Instance methods
         /// <summary>
@@ -206,7 +206,7 @@ namespace Java.Util.Stream
         /// </summary>
 
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        Java.Util.Stream.Stream<int?> Boxed();
+        Java.Util.Stream.Stream<Java.Lang.Integer> Boxed();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#count()"/>
         /// </summary>
@@ -632,9 +632,9 @@ namespace Java.Util.Stream
         /// </summary>
 
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<int?> Boxed()
+        public Java.Util.Stream.Stream<Java.Lang.Integer> Boxed()
         {
-            return IExecute<Java.Util.Stream.Stream<int?>>("boxed");
+            return IExecute<Java.Util.Stream.Stream<Java.Lang.Integer>>("boxed");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#count()"/>

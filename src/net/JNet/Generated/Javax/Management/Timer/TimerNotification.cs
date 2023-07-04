@@ -37,8 +37,8 @@ namespace Javax.Management.Timer
         /// <param name="arg2"><see cref="long"/></param>
         /// <param name="arg3"><see cref="long"/></param>
         /// <param name="arg4"><see cref="string"/></param>
-        /// <param name="arg5"><see cref="int"/></param>
-        public TimerNotification(string arg0, object arg1, long arg2, long arg3, string arg4, int? arg5)
+        /// <param name="arg5"><see cref="Java.Lang.Integer"/></param>
+        public TimerNotification(string arg0, object arg1, long arg2, long arg3, string arg4, Java.Lang.Integer arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
@@ -61,9 +61,9 @@ namespace Javax.Management.Timer
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerNotification.html#getNotificationID()"/> 
         /// </summary>
-        public int? NotificationID
+        public Java.Lang.Integer NotificationID
         {
-            get { return IExecute<int?>("getNotificationID"); }
+            get { return IExecute<Java.Lang.Integer>("getNotificationID"); }
         }
 
         #endregion

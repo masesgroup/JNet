@@ -43,7 +43,7 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getScopes()"/> 
         /// </summary>
-        Java.Util.List<int?> Scopes { get; }
+        Java.Util.List<Java.Lang.Integer> Scopes { get; }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setWriter(java.io.Writer)"/>
         /// </summary>
@@ -149,9 +149,9 @@ namespace Javax.Script
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getScopes()"/> 
         /// </summary>
-        public Java.Util.List<int?> Scopes
+        public Java.Util.List<Java.Lang.Integer> Scopes
         {
-            get { return IExecute<Java.Util.List<int?>>("getScopes"); }
+            get { return IExecute<Java.Util.List<Java.Lang.Integer>>("getScopes"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#getWriter()"/> <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html#setWriter(java.io.Writer)"/>

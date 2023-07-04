@@ -20,6 +20,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+#if JNETREFLECTOR
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Package.html"/>
     /// </summary>
@@ -101,11 +102,6 @@ namespace Java.Lang
         /// Returns true if this package is sealed.
         /// </summary>
         public bool IsSealed() => IExecute<bool>("isSealed");
-#if !JNETREFLECTOR
-        /// <summary>
-        /// Returns true if this package is sealed with respect to the specified code source url.
-        /// </summary>
-        public bool IsSealed(Net.URL url) => IExecute<bool>("isSealed", url);
-#endif
     }
+#endif
 }

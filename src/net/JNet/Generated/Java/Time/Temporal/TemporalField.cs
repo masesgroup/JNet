@@ -97,7 +97,7 @@ namespace Java.Time.Temporal
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <param name="arg2"><see cref="Java.Time.Format.ResolverStyle"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
-        Java.Time.Temporal.TemporalAccessor Resolve(Java.Util.Map<Java.Time.Temporal.TemporalField, long?> arg0, Java.Time.Temporal.TemporalAccessor arg1, Java.Time.Format.ResolverStyle arg2);
+        Java.Time.Temporal.TemporalAccessor Resolve(Java.Util.Map<Java.Time.Temporal.TemporalField, Java.Lang.Long> arg0, Java.Time.Temporal.TemporalAccessor arg1, Java.Time.Format.ResolverStyle arg2);
 
         #endregion
 
@@ -224,7 +224,7 @@ namespace Java.Time.Temporal
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <param name="arg2"><see cref="Java.Time.Format.ResolverStyle"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAccessor"/></returns>
-        public Java.Time.Temporal.TemporalAccessor Resolve(Java.Util.Map<Java.Time.Temporal.TemporalField, long?> arg0, Java.Time.Temporal.TemporalAccessor arg1, Java.Time.Format.ResolverStyle arg2)
+        public Java.Time.Temporal.TemporalAccessor Resolve(Java.Util.Map<Java.Time.Temporal.TemporalField, Java.Lang.Long> arg0, Java.Time.Temporal.TemporalAccessor arg1, Java.Time.Format.ResolverStyle arg2)
         {
             return IExecute<Java.Time.Temporal.TemporalAccessor>("resolve", arg0, arg1, arg2);
         }

@@ -15,11 +15,10 @@
 *
 *  Refer to LICENSE for more information.
 */
-#if !JNETREFLECTOR
-using Java.Io;
-using Java.Net;
+#if JNETREFLECTOR
+//using Java.Io;
+//using Java.Net;
 using Java.Util;
-#endif
 using MASES.JCOBridge.C2JBridge;
 using System.Xml.Linq;
 
@@ -100,3 +99,4 @@ namespace Java.Lang
 #endif
     }
 }
+#endif

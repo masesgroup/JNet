@@ -20,18 +20,15 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html"/>
-    /// </summary>
-    public sealed class Float : Number
+    public partial class Float : Number
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// Converter from <see cref="Float"/> to <see cref="float"/>
         /// </summary>
-        public override string BridgeClassName => "java.lang.Float";
+        public static implicit operator float(Float b) => b.FloatValue();
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// Converter from <see cref="float"/> to <see cref="Float"/>
         /// </summary>
-        public override bool IsBridgeAbstract => false;
+        public static implicit operator Float(float b) => ValueOf(b);
     }
 }

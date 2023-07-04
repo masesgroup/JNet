@@ -16,12 +16,14 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Lang.Annotation;
 using Java.Lang.Reflect;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
 
 namespace Java.Lang
 {
+#if JNETREFLECTOR
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"/>
     /// </summary>
@@ -312,4 +314,38 @@ namespace Java.Lang
         /// <returns>A newly allocated instance of the class represented by this object.</returns>
         public T NewInstance() => IExecute<T>("newInstance");
     }
+#else
+    public partial class Class : IGenericDeclaration
+    {
+        /// <summary>
+        /// Returns the <see cref="Class"/> object associated with the class or interface with the given string name.
+        /// </summary>
+        /// <typeparam name="T">The type implementing <see cref="IJVMBridgeBase"/></typeparam>
+        /// <returns>The <see cref="Class{T}"/> object for the class with the specified name.</returns>
+        public static Class<T> Of<T>() where T : IJVMBridgeBase, new()
+        {
+            return SExecute<Class<T>>("forName", ClassNameOf<T>());
+        }
+
+        public T GetAnnotation<T>(Class arg0) where T : IAnnotation, new()
+        {
+            throw new global::System.NotImplementedException();
+        }
+
+        public T[] GetAnnotationsByType<T>(Class arg0) where T : IAnnotation, new()
+        {
+            throw new global::System.NotImplementedException();
+        }
+
+        public T GetDeclaredAnnotation<T>(Class arg0) where T : IAnnotation, new()
+        {
+            throw new global::System.NotImplementedException();
+        }
+
+        public T[] GetDeclaredAnnotationsByType<T>(Class arg0) where T : IAnnotation, new()
+        {
+            throw new global::System.NotImplementedException();
+        }
+    }
+#endif
 }

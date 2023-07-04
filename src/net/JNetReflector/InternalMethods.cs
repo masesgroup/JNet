@@ -591,7 +591,7 @@ namespace MASES.JNetReflector
 
         static void PrepareSingleClass(this Class jClass, IEnumerable<Class> classDefinitions, bool isGeneric, out string allPackagesClassBlock, out string singleClassStr, out string singleInterfaceStr)
         {
-            if (jClass.IsJNetInternal())
+            if (jClass.IsJNetInternalOrManuallyDeveloped())
             {
                 allPackagesClassBlock = singleClassStr = singleInterfaceStr = string.Empty;
                 return;
@@ -1930,7 +1930,7 @@ namespace MASES.JNetReflector
                 {
                     returnType = SpecialNames.JavaLangObject;
                 }
-                returnType = returnType.Contains("<") ? returnType.Substring(0, returnType.IndexOf("<")) : returnType;
+                returnType = returnType.Contains(SpecialNames.BeginGenericDeclaration) ? returnType.Substring(0, returnType.IndexOf(SpecialNames.BeginGenericDeclaration)) : returnType;
                 returnType = returnType.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
 
                 bool hasVarArg = false;
@@ -1966,7 +1966,7 @@ namespace MASES.JNetReflector
                     {
                         typeStr = SpecialNames.JavaLangObject;
                     }
-                    typeStr = typeStr.Contains("<") ? typeStr.Substring(0, typeStr.IndexOf("<")) : typeStr;
+                    typeStr = typeStr.Contains(SpecialNames.BeginGenericDeclaration) ? typeStr.Substring(0, typeStr.IndexOf(SpecialNames.BeginGenericDeclaration)) : typeStr;
                     typeStr = typeStr.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
 
                     methodParamsBuilder.AppendFormat($"{typeStr} {parameter.Name()}, ");

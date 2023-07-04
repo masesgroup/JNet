@@ -48,38 +48,38 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#hasRelation(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref="Java.Lang.Boolean"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        bool? HasRelation(string arg0);
+        Java.Lang.Boolean HasRelation(string arg0);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#checkRoleReading(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
-        int? CheckRoleReading(string arg0, string arg1);
+        Java.Lang.Integer CheckRoleReading(string arg0, string arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#checkRoleWriting(javax.management.relation.Role,java.lang.String,java.lang.Boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Relation.Role"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg2"><see cref="Java.Lang.Boolean"/></param>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
-        int? CheckRoleWriting(Javax.Management.Relation.Role arg0, string arg1, bool? arg2);
+        Java.Lang.Integer CheckRoleWriting(Javax.Management.Relation.Role arg0, string arg1, Java.Lang.Boolean arg2);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#getRoleCardinality(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
-        int? GetRoleCardinality(string arg0, string arg1);
+        Java.Lang.Integer GetRoleCardinality(string arg0, string arg1);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#getRelationTypeName(java.lang.String)"/>
         /// </summary>
@@ -367,49 +367,49 @@ namespace Javax.Management.Relation
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#hasRelation(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
-        /// <returns><see cref="bool"/></returns>
+        /// <returns><see cref="Java.Lang.Boolean"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        public bool? HasRelation(string arg0)
+        public Java.Lang.Boolean HasRelation(string arg0)
         {
-            return IExecute<bool?>("hasRelation", arg0);
+            return IExecute<Java.Lang.Boolean>("hasRelation", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#checkRoleReading(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
-        public int? CheckRoleReading(string arg0, string arg1)
+        public Java.Lang.Integer CheckRoleReading(string arg0, string arg1)
         {
-            return IExecute<int?>("checkRoleReading", arg0, arg1);
+            return IExecute<Java.Lang.Integer>("checkRoleReading", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#checkRoleWriting(javax.management.relation.Role,java.lang.String,java.lang.Boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Relation.Role"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <param name="arg2"><see cref="bool"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <param name="arg2"><see cref="Java.Lang.Boolean"/></param>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationTypeNotFoundException"/>
-        public int? CheckRoleWriting(Javax.Management.Relation.Role arg0, string arg1, bool? arg2)
+        public Java.Lang.Integer CheckRoleWriting(Javax.Management.Relation.Role arg0, string arg1, Java.Lang.Boolean arg2)
         {
-            return IExecute<int?>("checkRoleWriting", arg0, arg1, arg2);
+            return IExecute<Java.Lang.Integer>("checkRoleWriting", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#getRoleCardinality(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="string"/></param>
         /// <param name="arg1"><see cref="string"/></param>
-        /// <returns><see cref="int"/></returns>
+        /// <returns><see cref="Java.Lang.Integer"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         /// <exception cref="Javax.Management.Relation.RoleNotFoundException"/>
-        public int? GetRoleCardinality(string arg0, string arg1)
+        public Java.Lang.Integer GetRoleCardinality(string arg0, string arg1)
         {
-            return IExecute<int?>("getRoleCardinality", arg0, arg1);
+            return IExecute<Java.Lang.Integer>("getRoleCardinality", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html#getRelationTypeName(java.lang.String)"/>

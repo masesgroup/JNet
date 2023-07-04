@@ -336,18 +336,18 @@ namespace Java.Lang
             /// </summary>
 
             /// <returns><see cref="Java.Util.List"/></returns>
-            public Java.Util.List<int?> VersionMethod()
+            public Java.Util.List<Java.Lang.Integer> VersionMethod()
             {
-                return IExecute<Java.Util.List<int?>>("version");
+                return IExecute<Java.Util.List<Java.Lang.Integer>>("version");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#build()"/>
             /// </summary>
 
             /// <returns><see cref="Java.Util.Optional"/></returns>
-            public Java.Util.Optional<int?> Build()
+            public Java.Util.Optional<Java.Lang.Integer> Build()
             {
-                return IExecute<Java.Util.Optional<int?>>("build");
+                return IExecute<Java.Util.Optional<Java.Lang.Integer>>("build");
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.Version.html#optional()"/>

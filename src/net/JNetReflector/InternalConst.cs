@@ -38,6 +38,7 @@ namespace MASES.JNetReflector
         public const string ClassesToAnalyze = "ClassesToAnalyze";
         public const string JarList = "JarList";
         public const string ModulesToParse = "ModulesToParse";
+        public const string ClassesManuallyDeveloped = "ClassesManuallyDeveloped";
         public const string ClassesToBeListener = "ClassesToBeListener";
         public const string ClassesToAvoidJavaListener = "ClassesToAvoidJavaListener";
         public const string NamespacesInConflict = "NamespacesInConflict";
@@ -53,6 +54,7 @@ namespace MASES.JNetReflector
         public const string DisableGenerics = "DisableGenerics";
         public const string CreateInterfaceInheritance = "CreateInterfaceInheritance";
         public const string DisableInterfaceMethodGeneration = "DisableInterfaceMethodGeneration";
+        public const string UseDotNetNullable = "UseDotNetNullable";
         public const string AvoidParallelBuild = "AvoidParallelBuild";
         public const string DryRun = "DryRun";
         public const string DoNotCamel = "DoNotCamel";
@@ -73,8 +75,11 @@ namespace MASES.JNetReflector
         public const string ClassExtension = ".class";
         public const char JNISeparator = '/';
         public const char NamespaceSeparator = '.';
-        public const char NestedClassSeparator = '$';
+        public const char NestedClassSeparator = '$'; 
+        public const string BeginGenericDeclaration = "<";
+        public const string EndGenericDeclaration = ">";
         public const string NetObject = "object";
+        public const string JavaLangAnyType = "?";
         public const string JavaLangClass = "Java.Lang.Class";
         public const string JavaLangVoid = "Java.Lang.Void";
         public const string JavaLangObject = "java.lang.Object";

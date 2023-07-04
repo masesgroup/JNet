@@ -107,7 +107,8 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            public void ForEachRemaining(Java.Util.Function.Consumer<double> arg0)
+            /// <typeparam name="Arg0objectSuperJava_Lang_Double"><see cref="Java.Lang.Double"/></typeparam>
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double: Java.Lang.Double
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -180,7 +181,8 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            public void ForEachRemaining(Java.Util.Function.Consumer<int> arg0)
+            /// <typeparam name="Arg0objectSuperJava_Lang_Integer"><see cref="Java.Lang.Integer"/></typeparam>
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer: Java.Lang.Integer
             {
                 IExecute("forEachRemaining", arg0);
             }
@@ -253,7 +255,8 @@ namespace Java.Util
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
-            public void ForEachRemaining(Java.Util.Function.Consumer<long> arg0)
+            /// <typeparam name="Arg0objectSuperJava_Lang_Long"><see cref="Java.Lang.Long"/></typeparam>
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long: Java.Lang.Long
             {
                 IExecute("forEachRemaining", arg0);
             }

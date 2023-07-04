@@ -74,10 +74,10 @@ namespace Java.Awt
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(java.lang.Character,int)"/>
         /// </summary>
-        /// <param name="arg0"><see cref="char"/></param>
+        /// <param name="arg0"><see cref="Java.Lang.Character"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Awt.AWTKeyStroke"/></returns>
-        public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(char? arg0, int arg1)
+        public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(Java.Lang.Character arg0, int arg1)
         {
             return SExecute<Java.Awt.AWTKeyStroke>(LocalBridgeClazz, "getAWTKeyStroke", arg0, arg1);
         }

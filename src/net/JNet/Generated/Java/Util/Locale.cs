@@ -347,9 +347,9 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getExtensionKeys()"/> 
         /// </summary>
-        public Java.Util.Set<char?> ExtensionKeys
+        public Java.Util.Set<Java.Lang.Character> ExtensionKeys
         {
-            get { return IExecute<Java.Util.Set<char?>>("getExtensionKeys"); }
+            get { return IExecute<Java.Util.Set<Java.Lang.Character>>("getExtensionKeys"); }
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#getISO3Country()"/> 

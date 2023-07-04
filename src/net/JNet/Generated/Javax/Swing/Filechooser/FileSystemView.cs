@@ -234,10 +234,10 @@ namespace Javax.Swing.Filechooser
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#isTraversable(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public bool? IsTraversable(Java.Io.File arg0)
+        /// <returns><see cref="Java.Lang.Boolean"/></returns>
+        public Java.Lang.Boolean IsTraversable(Java.Io.File arg0)
         {
-            return IExecute<bool?>("isTraversable", arg0);
+            return IExecute<Java.Lang.Boolean>("isTraversable", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileSystemView.html#getSystemDisplayName(java.io.File)"/>

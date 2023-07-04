@@ -660,18 +660,18 @@ namespace Java.Util.Concurrent
         /// </summary>
 
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
-        public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, bool?> NewKeySet()
+        public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean> NewKeySet()
         {
-            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, bool?>>(LocalBridgeClazz, "newKeySet");
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean>>(LocalBridgeClazz, "newKeySet");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html#newKeySet(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Concurrent.ConcurrentHashMap.KeySetView"/></returns>
-        public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, bool?> NewKeySet(int arg0)
+        public static Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean> NewKeySet(int arg0)
         {
-            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, bool?>>(LocalBridgeClazz, "newKeySet", arg0);
+            return SExecute<Java.Util.Concurrent.ConcurrentHashMap.KeySetView<K, Java.Lang.Boolean>>(LocalBridgeClazz, "newKeySet", arg0);
         }
 
         #endregion

@@ -63,7 +63,7 @@ namespace MASES.JNetReflector
 
         public static bool IsReservedName(this string entry)
         {
-            var testName = entry.Contains('<') ? entry.Substring(0, entry.IndexOf('<')) : entry;
+            var testName = entry.Contains(SpecialNames.BeginGenericDeclaration) ? entry.Substring(0, entry.IndexOf(SpecialNames.BeginGenericDeclaration)) : entry;
             if (SpecialNames.ReservedLanguageNames.Any((n) => testName.Equals(n))) return true;
             if (SpecialNames.ReservedJNetNames.Any((n) => testName.Equals(n))) return true;
             if (SpecialNames.NumberStartNames.Any((n) => testName.StartsWith(n))) return true;
@@ -102,7 +102,7 @@ namespace MASES.JNetReflector
                 if (methodToCheck.GenericString == method.GenericString) continue; // bypass this method
 
                 var testName = method.MethodName(classDefinitions, false, camel);
-                testName = testName.Contains('<') ? testName.Substring(0, testName.IndexOf('<')) : testName;
+                testName = testName.Contains(SpecialNames.BeginGenericDeclaration) ? testName.Substring(0, testName.IndexOf(SpecialNames.BeginGenericDeclaration)) : testName;
                 if (entry == testName)
                 {
                     return true;
@@ -198,9 +198,9 @@ namespace MASES.JNetReflector
         {
             string nsStr = string.Empty;
             string className = string.Empty;
-            if (canonicalName.Contains("<"))
+            if (canonicalName.Contains(SpecialNames.BeginGenericDeclaration))
             {
-                var generic = canonicalName.Substring(canonicalName.IndexOf("<"));
+                var generic = canonicalName.Substring(canonicalName.IndexOf(SpecialNames.BeginGenericDeclaration));
                 var baseClass = canonicalName.Substring(0, canonicalName.IndexOf(generic));
                 if (baseClass.Contains(SpecialNames.NamespaceSeparator))
                 {
@@ -279,10 +279,10 @@ namespace MASES.JNetReflector
 
         public static string ConvertToJavadoc(this string result)
         {
-            if (result.EndsWith("?")) result = result.Substring(0, result.IndexOf("?"));
+            if (result.EndsWith(SpecialNames.JavaLangAnyType)) result = result.Substring(0, result.IndexOf(SpecialNames.JavaLangAnyType));
             if (result.EndsWith(", new()")) result = result.Substring(0, result.IndexOf(", new()"));
             if (result.Contains(SpecialNames.ArrayTypeTrailer)) result = result.Substring(0, result.IndexOf(SpecialNames.ArrayTypeTrailer));
-            return result.Replace('<', '{').Replace('>', '}');
+            return result.Replace(SpecialNames.BeginGenericDeclaration, "{").Replace(SpecialNames.EndGenericDeclaration, "}");
         }
 
         #endregion
@@ -444,7 +444,7 @@ namespace MASES.JNetReflector
         public static string Namespace(this TypeVariable entry, bool camel)
         {
             var typeName = entry.Name;
-            typeName = typeName.Contains("<") ? typeName.Substring(0, typeName.IndexOf("<")) : typeName;
+            typeName = typeName.Contains(SpecialNames.BeginGenericDeclaration) ? typeName.Substring(0, typeName.IndexOf(SpecialNames.BeginGenericDeclaration)) : typeName;
             return Namespace(typeName, camel);
         }
 
@@ -458,7 +458,7 @@ namespace MASES.JNetReflector
         {
             var typeName = entry.Name;
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
-            typeName = typeName.Contains("<") ? typeName.Substring(0, typeName.IndexOf("<")) : typeName;
+            typeName = typeName.Contains(SpecialNames.BeginGenericDeclaration) ? typeName.Substring(0, typeName.IndexOf(SpecialNames.BeginGenericDeclaration)) : typeName;
             if (JNetReflectorCore.ClassesToAvoid != null && JNetReflectorCore.ClassesToAvoid.Any((n) => typeName == n)) return true;
             return false;
         }
@@ -470,19 +470,19 @@ namespace MASES.JNetReflector
         public static bool TypeNameMustBeAvoided(this string typeName)
         {
             bool toBeAvoided = false;
-            if (typeName.Contains("<"))
+            if (typeName.Contains(SpecialNames.BeginGenericDeclaration))
             {
-                var clsName = typeName.Substring(0, typeName.IndexOf("<"));
+                var clsName = typeName.Substring(0, typeName.IndexOf(SpecialNames.BeginGenericDeclaration));
                 clsName = clsName.Contains(SpecialNames.ArrayTypeTrailer) ? clsName.Substring(0, clsName.IndexOf(SpecialNames.ArrayTypeTrailer)) : clsName;
                 toBeAvoided = clsName.ClassTypeNameMustBeAvoided();
                 if (!toBeAvoided)
                 {
-                    var genTypes = typeName.Substring(typeName.IndexOf("<") + 1);
-                    genTypes = genTypes.Substring(0, genTypes.LastIndexOf(">"));
+                    var genTypes = typeName.Substring(typeName.IndexOf(SpecialNames.BeginGenericDeclaration) + 1);
+                    genTypes = genTypes.Substring(0, genTypes.LastIndexOf(SpecialNames.EndGenericDeclaration));
                     var types = genTypes.Split(',', ' ');
                     foreach (var type in types)
                     {
-                        if (string.IsNullOrEmpty(type) || type == "?" || type == "extends" || type == "super") continue;
+                        if (string.IsNullOrEmpty(type) || type == SpecialNames.JavaLangAnyType || type == "extends" || type == "super") continue;
                         toBeAvoided |= TypeNameMustBeAvoided(type.Trim());
                     }
                 }
@@ -507,10 +507,10 @@ namespace MASES.JNetReflector
             string genName = null;
             string nsName = null;
             string cName = tName;
-            if (tName.Contains("<"))
+            if (tName.Contains(SpecialNames.BeginGenericDeclaration))
             {
-                genName = tName.Substring(tName.IndexOf("<"));
-                cName = tName.Substring(0, tName.IndexOf("<"));
+                genName = tName.Substring(tName.IndexOf(SpecialNames.BeginGenericDeclaration));
+                cName = tName.Substring(0, tName.IndexOf(SpecialNames.BeginGenericDeclaration));
             }
             if (cName.Contains(SpecialNames.NamespaceSeparator))
             {
@@ -571,7 +571,7 @@ namespace MASES.JNetReflector
                     {
                         genArguments.Clear();
                         genClauses.Clear();
-                        return retString.Contains('<') ? retString.Substring(0, retString.IndexOf('<')) : retString;
+                        return retString.Contains(SpecialNames.BeginGenericDeclaration) ? retString.Substring(0, retString.IndexOf(SpecialNames.BeginGenericDeclaration)) : retString;
                     }
                 }
             }
@@ -756,7 +756,7 @@ namespace MASES.JNetReflector
             List<KeyValuePair<string, string>> genClauseLocal = new List<KeyValuePair<string, string>>();
             bool constraintMismatch = false;
             var cName = entry.TypeName;
-            cName = cName.Contains("<") ? cName.Substring(0, cName.IndexOf("<")) : cName;
+            cName = cName.Contains(SpecialNames.BeginGenericDeclaration) ? cName.Substring(0, cName.IndexOf(SpecialNames.BeginGenericDeclaration)) : cName;
             var cEntry = cName.JVMClass();
             mustBeAvoided = cEntry.MustBeAvoided();
             for (int i = 0; i < entry.ActualTypeArguments.Length; i++)
@@ -769,8 +769,8 @@ namespace MASES.JNetReflector
                 foreach (var bound in expectedType.Bounds)
                 {
                     string result = bound.GetBound(usedInGenerics, camel);
-                    if (actualTypeName == "?" && !(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
-                                                  || result.Contains("?"))) // type used in Java to define any-type
+                    if (actualTypeName == SpecialNames.JavaLangAnyType && !(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
+                                                  || result.Contains(SpecialNames.JavaLangAnyType))) // type used in Java to define any-type
                     {
                         constraintMismatch = true;
                     }
@@ -822,7 +822,7 @@ namespace MASES.JNetReflector
                 {
                     string result = bound.GetBound(usedInGenerics, camel);
                     if (!(result == SpecialNames.NetObject || result == (SpecialNames.NetObject + SpecialNames.ArrayTypeTrailer)
-                        || result.Contains("?"))) // type used in Java to define any-type
+                        || result.Contains(SpecialNames.JavaLangAnyType))) // type used in Java to define any-type
                     {
                         bounds.Add(result);
                     }
@@ -851,13 +851,13 @@ namespace MASES.JNetReflector
                     }
                     else
                     {
-                        upper = upper.EndsWith("?") ? upper.Substring(0, upper.LastIndexOf("?")) : upper;
+                        upper = upper.EndsWith(SpecialNames.JavaLangAnyType) ? upper.Substring(0, upper.LastIndexOf(SpecialNames.JavaLangAnyType)) : upper;
                         var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_')
                                                   .Replace(", ", "_")
                                                   .Replace(",", "_")
-                                                  .Replace('<', '_')
-                                                  .Replace('>', '_')
-                                                  .Replace('?', '_');
+                                                  .Replace(SpecialNames.BeginGenericDeclaration, "_")
+                                                  .Replace(SpecialNames.EndGenericDeclaration, "_")
+                                                  .Replace(SpecialNames.JavaLangAnyType, "_");
                         if (prefix == null)
                         {
                             retVal = upperConverted;
@@ -912,10 +912,10 @@ namespace MASES.JNetReflector
                     List<KeyValuePair<string, string>> innerGenClauses = new List<KeyValuePair<string, string>>();
                     var upper = GetGenerics(entry.UpperBounds[i], null, null, prefix, reportNative, usedInGenerics, camel, out var upperMustBeAvoided);
                     mustBeAvoided |= upperMustBeAvoided;
-                    upper = upper.EndsWith("?") ? upper.Substring(0, upper.LastIndexOf("?")) : upper;
+                    upper = upper.EndsWith(SpecialNames.JavaLangAnyType) ? upper.Substring(0, upper.LastIndexOf(SpecialNames.JavaLangAnyType)) : upper;
                     var lower = GetGenerics(entry.LowerBounds[i], innerGenArguments, innerGenClauses, prefix, reportNative, usedInGenerics, camel, out var lowerMustBeAvoided);
                     mustBeAvoided |= lowerMustBeAvoided;
-                    lower = lower.EndsWith("?") ? lower.Substring(0, lower.LastIndexOf("?")) : lower;
+                    lower = lower.EndsWith(SpecialNames.JavaLangAnyType) ? lower.Substring(0, lower.LastIndexOf(SpecialNames.JavaLangAnyType)) : lower;
 
                     if (IsNetNativeType(lower))
                     {
@@ -926,15 +926,15 @@ namespace MASES.JNetReflector
                         var upperConverted = upper.Replace(SpecialNames.NamespaceSeparator, '_')
                                               .Replace(", ", "_")
                                               .Replace(",", "_")
-                                              .Replace('<', '_')
-                                              .Replace('>', '_')
-                                              .Replace('?', '_');
+                                              .Replace(SpecialNames.BeginGenericDeclaration, "_")
+                                              .Replace(SpecialNames.EndGenericDeclaration, "_")
+                                              .Replace(SpecialNames.JavaLangAnyType, "_");
                         var lowerConverted = lower.Replace(SpecialNames.NamespaceSeparator, '_')
                                                   .Replace(", ", "_")
                                                   .Replace(",", "_")
-                                                  .Replace('<', '_')
-                                                  .Replace('>', '_')
-                                                  .Replace('?', '_');
+                                                  .Replace(SpecialNames.BeginGenericDeclaration, "_")
+                                                  .Replace(SpecialNames.EndGenericDeclaration, "_")
+                                                  .Replace(SpecialNames.JavaLangAnyType, "_");
                         if (prefix == null)
                         {
                             retVal = lowerConverted;
@@ -1291,7 +1291,7 @@ namespace MASES.JNetReflector
                                 {
                                     List<string> genArguments = new List<string>();
                                     var genInt = genInterface.GetGenerics(genArguments, null, string.Empty, true, usedInGenerics, camel, out bool _);
-                                    innerName = genInt.Substring(genInt.IndexOf("<"));
+                                    innerName = genInt.Substring(genInt.IndexOf(SpecialNames.BeginGenericDeclaration));
                                     break;
                                 }
                             }
@@ -1309,7 +1309,7 @@ namespace MASES.JNetReflector
                                 {
                                     List<string> genArguments = new List<string>();
                                     var genInt = genInterface.GetGenerics(genArguments, null, string.Empty, true, usedInGenerics, camel, out bool _);
-                                    innerName = genInt.Substring(genInt.IndexOf("<"));
+                                    innerName = genInt.Substring(genInt.IndexOf(SpecialNames.BeginGenericDeclaration));
                                     break;
                                 }
                             }
@@ -1482,7 +1482,7 @@ namespace MASES.JNetReflector
         {
             var typeName = entry.TypeName;
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) typeName = typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer));
-            if (typeName.Contains('<')) typeName = typeName.Substring(0, typeName.IndexOf('<'));
+            if (typeName.Contains(SpecialNames.BeginGenericDeclaration)) typeName = typeName.Substring(0, typeName.IndexOf(SpecialNames.BeginGenericDeclaration));
             if (JNetReflectorCore.ClassesToAvoidInGenerics != null && JNetReflectorCore.ClassesToAvoidInGenerics.Any((n) => typeName == n)) return true;
             return false;
         }
@@ -1689,10 +1689,14 @@ namespace MASES.JNetReflector
             return IsOrInheritFromJVMGenericClass(entry.SuperClass);
         }
 
-        public static bool IsJNetInternal(this Class entry)
+        public static bool IsJNetInternalOrManuallyDeveloped(this Class entry)
         {
-            if (entry.TypeName == SpecialNames.JavaLangIterable
-                || entry.TypeName == SpecialNames.JavaUtilIterator) return true;
+            string tName = entry.TypeName;
+
+            if (tName == SpecialNames.JavaLangIterable
+                || tName == SpecialNames.JavaUtilIterator) return true;
+
+            if (JNetReflectorCore.ClassesManuallyDeveloped != null && JNetReflectorCore.ClassesManuallyDeveloped.Any((o) => tName == o)) return true;
 
             return false;
         }
@@ -1836,7 +1840,7 @@ namespace MASES.JNetReflector
         {
             if (type == null) throw new ArgumentNullException(nameof(type));
             var cName = type.TypeName;
-            cName = cName.Contains('<') ? cName.Substring(0, cName.IndexOf('<')) : cName;
+            cName = cName.Contains(SpecialNames.BeginGenericDeclaration) ? cName.Substring(0, cName.IndexOf(SpecialNames.BeginGenericDeclaration)) : cName;
             cName = ToNetType(cName, false, camel);
             return cName;
         }
@@ -1845,7 +1849,7 @@ namespace MASES.JNetReflector
         {
             if (type == null) throw new ArgumentNullException(nameof(type));
             var cName = type.TypeName;
-            cName = cName.Contains('<') ? cName.Substring(0, cName.IndexOf('<')) : cName;
+            cName = cName.Contains(SpecialNames.BeginGenericDeclaration) ? cName.Substring(0, cName.IndexOf(SpecialNames.BeginGenericDeclaration)) : cName;
             cName = ToNetType(cName, false, camel);
             return cName;
         }
@@ -1854,52 +1858,89 @@ namespace MASES.JNetReflector
         {
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) return ToNetType(typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer)), true, camel) + SpecialNames.ArrayTypeTrailer;
 
-            switch (typeName)
+            if (JNetReflectorCore.UseDotNetNullable)
             {
-                case "void":
-                case "java.lang.Void":
-                    return "void";
-                case "boolean":
-                    return "bool";
-                case "java.lang.Boolean":
-                    return isFromArray ? "bool" : "bool?";
-                case "byte":
-                    return "byte";
-                case "java.lang.Byte":
-                    return isFromArray ? "byte" : "byte?";
-                case "char":
-                    return "char";
-                case "java.lang.Character":
-                    return isFromArray ? "char" : "char?";
-                case "short":
-                    return "short";
-                case "java.lang.Short":
-                    return isFromArray ? "short" : "short?";
-                case "int":
-                    return "int";
-                case "java.lang.Integer":
-                    return isFromArray ? "int" : "int?";
-                case "long":
-                    return "long";
-                case "java.lang.Long":
-                    return isFromArray ? "long" : "long?";
-                case "float":
-                    return "float";
-                case "java.lang.Float":
-                    return isFromArray ? "float" : "float?";
-                case "double":
-                    return "double";
-                case "java.lang.Double":
-                    return isFromArray ? "double" : "double?";
-                case "java.lang.String":
-                    return "string";
-                case "java.lang.Object":
-                    return "object";
-                default:
-                    {
-                        var fName = ToFullQualifiedClassName(typeName, camel);
-                        return fName.ConvertClassesInConflict();
-                    }
+                switch (typeName)
+                {
+                    case "void":
+                    case "java.lang.Void":
+                        return "void";
+                    case "boolean":
+                        return "bool";
+                    case "java.lang.Boolean":
+                        return isFromArray ? "bool" : "bool?";
+                    case "byte":
+                        return "byte";
+                    case "java.lang.Byte":
+                        return isFromArray ? "byte" : "byte?";
+                    case "char":
+                        return "char";
+                    case "java.lang.Character":
+                        return isFromArray ? "char" : "char?";
+                    case "short":
+                        return "short";
+                    case "java.lang.Short":
+                        return isFromArray ? "short" : "short?";
+                    case "int":
+                        return "int";
+                    case "java.lang.Integer":
+                        return isFromArray ? "int" : "int?";
+                    case "long":
+                        return "long";
+                    case "java.lang.Long":
+                        return isFromArray ? "long" : "long?";
+                    case "float":
+                        return "float";
+                    case "java.lang.Float":
+                        return isFromArray ? "float" : "float?";
+                    case "double":
+                        return "double";
+                    case "java.lang.Double":
+                        return isFromArray ? "double" : "double?";
+                    case "java.lang.String":
+                        return "string";
+                    case "java.lang.Object":
+                        return "object";
+                    default:
+                        {
+                            var fName = ToFullQualifiedClassName(typeName, camel);
+                            return fName.ConvertClassesInConflict();
+                        }
+                }
+            }
+            else
+            {
+                switch (typeName)
+                {
+                    case "void":
+                    case "java.lang.Void":
+                        return "void";
+                    case "boolean":
+                        return "bool";
+                    case "byte":
+                        return "byte";
+                    case "char":
+                        return "char";
+                    case "short":
+                        return "short";
+                    case "int":
+                        return "int";
+                    case "long":
+                        return "long";
+                    case "float":
+                        return "float";
+                    case "double":
+                        return "double";
+                    case "java.lang.String":
+                        return "string";
+                    case "java.lang.Object":
+                        return "object";
+                    default:
+                        {
+                            var fName = ToFullQualifiedClassName(typeName, camel);
+                            return fName.ConvertClassesInConflict();
+                        }
+                }
             }
         }
 
@@ -1946,7 +1987,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Class entry, bool camel)
         {
-            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace(SpecialNames.BeginGenericDeclaration, "%3C").Replace(SpecialNames.EndGenericDeclaration, "%3E"));
         }
 
         #endregion
@@ -2014,7 +2055,7 @@ namespace MASES.JNetReflector
                 foreach (var item in entry.Parameters)
                 {
                     var typeName = item.Type.TypeName;
-                    typeName = typeName.Contains('<') ? typeName.Substring(0, typeName.IndexOf('<')) : typeName;
+                    typeName = typeName.Contains(SpecialNames.BeginGenericDeclaration) ? typeName.Substring(0, typeName.IndexOf(SpecialNames.BeginGenericDeclaration)) : typeName;
                     typeName = typeName.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
                     genString += typeName + ",";
                 }
@@ -2046,7 +2087,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Constructor entry, bool camel)
         {
-            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace(SpecialNames.BeginGenericDeclaration, "%3C").Replace(SpecialNames.EndGenericDeclaration, "%3E"));
         }
 
         #endregion
@@ -2314,7 +2355,7 @@ namespace MASES.JNetReflector
                 foreach (var item in entry.Parameters)
                 {
                     var typeName = item.Type.TypeName;
-                    typeName = typeName.Contains('<') ? typeName.Substring(0, typeName.IndexOf('<')) : typeName;
+                    typeName = typeName.Contains(SpecialNames.BeginGenericDeclaration) ? typeName.Substring(0, typeName.IndexOf(SpecialNames.BeginGenericDeclaration)) : typeName;
                     typeName = typeName.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
                     genString += typeName + ",";
                 }
@@ -2340,7 +2381,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Method entry, bool camel)
         {
-            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace(SpecialNames.BeginGenericDeclaration, "%3C").Replace(SpecialNames.EndGenericDeclaration, "%3E"));
         }
 
         #endregion
@@ -2436,7 +2477,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Field entry, bool camel)
         {
-            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace("<", "%3C").Replace(">", "%3E"));
+            return string.Format(AllPackageClasses.DocTemplate(_CurrentJavadocBaseUrl), JavadocUrl(entry, camel).Replace(SpecialNames.BeginGenericDeclaration, "%3C").Replace(SpecialNames.EndGenericDeclaration, "%3E"));
         }
 
         #endregion
@@ -2527,7 +2568,7 @@ namespace MASES.JNetReflector
         {
             if (entry == null || entry.ParameterizedType == null || entry.ParameterizedType.TypeName == null) return false;
             var cName = entry.ParameterizedType.TypeName;
-            cName = cName.Contains("<") ? cName.Substring(0, cName.IndexOf("<")) : cName;
+            cName = cName.Contains(SpecialNames.BeginGenericDeclaration) ? cName.Substring(0, cName.IndexOf(SpecialNames.BeginGenericDeclaration)) : cName;
             var cEntry = cName.JVMClass();
             return cEntry.IsJVMException();
         }
