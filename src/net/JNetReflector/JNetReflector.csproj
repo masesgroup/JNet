@@ -111,7 +111,6 @@
     <Compile Include="..\JNet\Developed\Java\Lang\SecurityException.cs" Link="Java\Lang\SecurityException.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\SecurityManager.cs" Link="Java\Lang\SecurityManager.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\StackOverflowError.cs" Link="Java\Lang\StackOverflowError.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\StackTraceElement.cs" Link="Java\Lang\StackTraceElement.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\StringIndexOutOfBoundsException.cs" Link="Java\Lang\StringIndexOutOfBoundsException.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Throwable.cs" Link="Java\Lang\Throwable.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\TypeNotPresentException.cs" Link="Java\Lang\TypeNotPresentException.cs" />
