@@ -103,6 +103,8 @@ namespace MASES.JNetReflector
 
             public bool DisableInterfaceMethodGeneration { get; set; }
 
+            public bool UseDotNetNullable { get; set; }
+
             public bool AvoidParallelBuild { get; set; }
 
             public bool DryRun { get; set; }
@@ -293,6 +295,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.UseDotNetNullable,
+                        Type = ArgumentType.Single,
+                        Help = "The option forces the tool to use .NET nullable instead of Java types for native types",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.AvoidParallelBuild,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to disable parallel execution",
@@ -416,6 +424,9 @@ namespace MASES.JNetReflector
 
         static bool? _DisableInterfaceMethodGeneration;
         public static bool DisableInterfaceMethodGeneration => _DisableInterfaceMethodGeneration ?? _ConfigurationFromFile.DisableInterfaceMethodGeneration;
+
+        static bool? _UseDotNetNullable;
+        public static bool UseDotNetNullable => _UseDotNetNullable ?? _ConfigurationFromFile.UseDotNetNullable;
 
         static bool? _AvoidParallelBuild;
         public static bool AvoidParallelBuild => _AvoidParallelBuild ?? _ConfigurationFromFile.AvoidParallelBuild;
@@ -608,6 +619,7 @@ namespace MASES.JNetReflector
             if (ParsedArgs.Exist(CLIParam.DisableGenerics)) _DisableGenerics = true;
             if (ParsedArgs.Exist(CLIParam.CreateInterfaceInheritance)) _CreateInterfaceInheritance = true;
             if (ParsedArgs.Exist(CLIParam.DisableInterfaceMethodGeneration)) _DisableInterfaceMethodGeneration = true;
+            if (ParsedArgs.Exist(CLIParam.UseDotNetNullable)) _UseDotNetNullable = true;
             if (ParsedArgs.Exist(CLIParam.AvoidParallelBuild)) _AvoidParallelBuild = true;
             if (ParsedArgs.Exist(CLIParam.DryRun)) _DryRun = true;
             if (ParsedArgs.Exist(CLIParam.DoNotCamel)) _UseCamel = false;

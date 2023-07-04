@@ -46,6 +46,7 @@ _jnr_ accepts the following command-line switch:
 * **DisableGenerics**: The option forces the tool to disable any generic type
 * **CreateInterfaceInheritance**: The option forces the tool to create the C# interface inheritance
 * **DisableInterfaceMethodGeneration**: The option disables the generation of the methods in the C# interface
+* **UseDotNetNullable**: The option forces the tool to use .NET nullable instead of Java types for native types
 * **AvoidParallelBuild**: The option forces the tool to disable parallel execution
 * **DryRun**: Execute everything, but do not write anything to disk
 * **DoNotCamel**: Does not use camelized names in methods, class and so on

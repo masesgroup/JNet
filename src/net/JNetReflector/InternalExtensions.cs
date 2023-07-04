@@ -1858,52 +1858,89 @@ namespace MASES.JNetReflector
         {
             if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) return ToNetType(typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer)), true, camel) + SpecialNames.ArrayTypeTrailer;
 
-            switch (typeName)
+            if (JNetReflectorCore.UseDotNetNullable)
             {
-                case "void":
-                case "java.lang.Void":
-                    return "void";
-                case "boolean":
-                    return "bool";
-                case "java.lang.Boolean":
-                    return isFromArray ? "bool" : "bool?";
-                case "byte":
-                    return "byte";
-                case "java.lang.Byte":
-                    return isFromArray ? "byte" : "byte?";
-                case "char":
-                    return "char";
-                case "java.lang.Character":
-                    return isFromArray ? "char" : "char?";
-                case "short":
-                    return "short";
-                case "java.lang.Short":
-                    return isFromArray ? "short" : "short?";
-                case "int":
-                    return "int";
-                case "java.lang.Integer":
-                    return isFromArray ? "int" : "int?";
-                case "long":
-                    return "long";
-                case "java.lang.Long":
-                    return isFromArray ? "long" : "long?";
-                case "float":
-                    return "float";
-                case "java.lang.Float":
-                    return isFromArray ? "float" : "float?";
-                case "double":
-                    return "double";
-                case "java.lang.Double":
-                    return isFromArray ? "double" : "double?";
-                case "java.lang.String":
-                    return "string";
-                case "java.lang.Object":
-                    return "object";
-                default:
-                    {
-                        var fName = ToFullQualifiedClassName(typeName, camel);
-                        return fName.ConvertClassesInConflict();
-                    }
+                switch (typeName)
+                {
+                    case "void":
+                    case "java.lang.Void":
+                        return "void";
+                    case "boolean":
+                        return "bool";
+                    case "java.lang.Boolean":
+                        return isFromArray ? "bool" : "bool?";
+                    case "byte":
+                        return "byte";
+                    case "java.lang.Byte":
+                        return isFromArray ? "byte" : "byte?";
+                    case "char":
+                        return "char";
+                    case "java.lang.Character":
+                        return isFromArray ? "char" : "char?";
+                    case "short":
+                        return "short";
+                    case "java.lang.Short":
+                        return isFromArray ? "short" : "short?";
+                    case "int":
+                        return "int";
+                    case "java.lang.Integer":
+                        return isFromArray ? "int" : "int?";
+                    case "long":
+                        return "long";
+                    case "java.lang.Long":
+                        return isFromArray ? "long" : "long?";
+                    case "float":
+                        return "float";
+                    case "java.lang.Float":
+                        return isFromArray ? "float" : "float?";
+                    case "double":
+                        return "double";
+                    case "java.lang.Double":
+                        return isFromArray ? "double" : "double?";
+                    case "java.lang.String":
+                        return "string";
+                    case "java.lang.Object":
+                        return "object";
+                    default:
+                        {
+                            var fName = ToFullQualifiedClassName(typeName, camel);
+                            return fName.ConvertClassesInConflict();
+                        }
+                }
+            }
+            else
+            {
+                switch (typeName)
+                {
+                    case "void":
+                    case "java.lang.Void":
+                        return "void";
+                    case "boolean":
+                        return "bool";
+                    case "byte":
+                        return "byte";
+                    case "char":
+                        return "char";
+                    case "short":
+                        return "short";
+                    case "int":
+                        return "int";
+                    case "long":
+                        return "long";
+                    case "float":
+                        return "float";
+                    case "double":
+                        return "double";
+                    case "java.lang.String":
+                        return "string";
+                    case "java.lang.Object":
+                        return "object";
+                    default:
+                        {
+                            var fName = ToFullQualifiedClassName(typeName, camel);
+                            return fName.ConvertClassesInConflict();
+                        }
+                }
             }
         }
 

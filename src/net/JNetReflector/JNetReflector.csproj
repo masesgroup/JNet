@@ -15,6 +15,8 @@
     <PackageId>MASES.JNetReflector</PackageId>
     <DefineConstants>$(DefineConstants)TRACE;JNETREFLECTOR</DefineConstants>
     <PackageReadmeFile>usageReflector.md</PackageReadmeFile>
+    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
   </PropertyGroup>
   <ItemGroup>
     <jnetreflector_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
