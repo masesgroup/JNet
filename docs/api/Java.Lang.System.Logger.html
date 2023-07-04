@@ -73,7 +73,7 @@
   
   <h1 id="Java_Lang_System_Logger" data-uid="Java.Lang.System.Logger" class="text-break">Class System.Logger
   </h1>
-  <div class="markdown level0 summary"><p>.NET implementations of <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html</a></p>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -312,15 +312,6 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.BridgeInstance</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeAbstract</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeStatic</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeCloseable</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
@@ -382,8 +373,59 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Lang_System_Logger_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class Logger : JVMBridgeBase&lt;System.Logger&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Logger : JVMBridgeBase&lt;System.Logger&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger__ctor.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L2611">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger__ctor_" data-uid="Java.Lang.System.Logger.#ctor*"></a>
+  <h4 id="Java_Lang_System_Logger__ctor" data-uid="Java.Lang.System.Logger.#ctor">Logger()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Logger()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L2615">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger__ctor_" data-uid="Java.Lang.System.Logger.#ctor*"></a>
+  <h4 id="Java_Lang_System_Logger__ctor_System_Object___" data-uid="Java.Lang.System.Logger.#ctor(System.Object[])">Logger(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Logger(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -391,11 +433,12 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/System.cs/#L162">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L2622">View Source</a>
   </span>
   <a id="Java_Lang_System_Logger_BridgeClassName_" data-uid="Java.Lang.System.Logger.BridgeClassName*"></a>
   <h4 id="Java_Lang_System_Logger_BridgeClassName" data-uid="Java.Lang.System.Logger.BridgeClassName">BridgeClassName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -420,14 +463,80 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.BridgeClassName</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L2626">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_IsBridgeAbstract_" data-uid="Java.Lang.System.Logger.IsBridgeAbstract*"></a>
+  <h4 id="Java_Lang_System_Logger_IsBridgeAbstract" data-uid="Java.Lang.System.Logger.IsBridgeAbstract">IsBridgeAbstract</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeAbstract</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L2630">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_IsBridgeCloseable_" data-uid="Java.Lang.System.Logger.IsBridgeCloseable*"></a>
+  <h4 id="Java_Lang_System_Logger_IsBridgeCloseable" data-uid="Java.Lang.System.Logger.IsBridgeCloseable">IsBridgeCloseable</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeCloseable</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/System.cs/#L160">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L2634">View Source</a>
   </span>
   <a id="Java_Lang_System_Logger_IsBridgeInterface_" data-uid="Java.Lang.System.Logger.IsBridgeInterface*"></a>
   <h4 id="Java_Lang_System_Logger_IsBridgeInterface" data-uid="Java.Lang.System.Logger.IsBridgeInterface">IsBridgeInterface</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -451,6 +560,484 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeInterface</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L2638">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_IsBridgeStatic_" data-uid="Java.Lang.System.Logger.IsBridgeStatic*"></a>
+  <h4 id="Java_Lang_System_Logger_IsBridgeStatic" data-uid="Java.Lang.System.Logger.IsBridgeStatic">IsBridgeStatic</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeStatic</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_Name.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L312">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_Name_" data-uid="Java.Lang.System.Logger.Name*"></a>
+  <h4 id="Java_Lang_System_Logger_Name" data-uid="Java.Lang.System.Logger.Name">Name</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#getName()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#getName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_IsLoggable_Java_Lang_System_Logger_Level_.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.IsLoggable(Java.Lang.System.Logger.Level)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L321">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_IsLoggable_" data-uid="Java.Lang.System.Logger.IsLoggable*"></a>
+  <h4 id="Java_Lang_System_Logger_IsLoggable_Java_Lang_System_Logger_Level_" data-uid="Java.Lang.System.Logger.IsLoggable(Java.Lang.System.Logger.Level)">IsLoggable(System.Logger.Level)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#isLoggable(java.lang.System.Logger.Level)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#isLoggable(java.lang.System.Logger.Level)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLoggable(System.Logger.Level arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_Java_Util_Function_Supplier_System_String__.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level%2CJava.Util.Function.Supplier%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L400">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_Log_" data-uid="Java.Lang.System.Logger.Log*"></a>
+  <h4 id="Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_Java_Util_Function_Supplier_System_String__" data-uid="Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level,Java.Util.Function.Supplier{System.String})">Log(System.Logger.Level, Supplier&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.function.Supplier)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.function.Supplier)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(System.Logger.Level arg0, Supplier&lt;string&gt; arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.Supplier-1.html">Supplier</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.Supplier.html">Supplier</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_Java_Util_Function_Supplier_System_String__MASES_JCOBridge_C2JBridge_JVMBridgeException_.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level%2CJava.Util.Function.Supplier%7BSystem.String%7D%2CMASES.JCOBridge.C2JBridge.JVMBridgeException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L391">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_Log_" data-uid="Java.Lang.System.Logger.Log*"></a>
+  <h4 id="Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_Java_Util_Function_Supplier_System_String__MASES_JCOBridge_C2JBridge_JVMBridgeException_" data-uid="Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level,Java.Util.Function.Supplier{System.String},MASES.JCOBridge.C2JBridge.JVMBridgeException)">Log(System.Logger.Level, Supplier&lt;String&gt;, JVMBridgeException)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.function.Supplier,java.lang.Throwable)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.function.Supplier,java.lang.Throwable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(System.Logger.Level arg0, Supplier&lt;string&gt; arg1, JVMBridgeException arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.Supplier-1.html">Supplier</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.Supplier.html">Supplier</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException</span></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_Java_Util_ResourceBundle_System_String_MASES_JCOBridge_C2JBridge_JVMBridgeException_.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level%2CJava.Util.ResourceBundle%2CSystem.String%2CMASES.JCOBridge.C2JBridge.JVMBridgeException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L343">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_Log_" data-uid="Java.Lang.System.Logger.Log*"></a>
+  <h4 id="Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_Java_Util_ResourceBundle_System_String_MASES_JCOBridge_C2JBridge_JVMBridgeException_" data-uid="Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level,Java.Util.ResourceBundle,System.String,MASES.JCOBridge.C2JBridge.JVMBridgeException)">Log(System.Logger.Level, ResourceBundle, String, JVMBridgeException)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.ResourceBundle,java.lang.String,java.lang.Throwable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(System.Logger.Level arg0, ResourceBundle arg1, string arg2, JVMBridgeException arg3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.ResourceBundle.html">ResourceBundle</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.ResourceBundle.html">ResourceBundle</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException</span></td>
+        <td><span class="parametername">arg3</span></td>
+        <td><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_Java_Util_ResourceBundle_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level%2CJava.Util.ResourceBundle%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L332">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_Log_" data-uid="Java.Lang.System.Logger.Log*"></a>
+  <h4 id="Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_Java_Util_ResourceBundle_System_String_System_Object___" data-uid="Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level,Java.Util.ResourceBundle,System.String,System.Object[])">Log(System.Logger.Level, ResourceBundle, String, Object[])</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.ResourceBundle,java.lang.String,java.lang.Object[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.ResourceBundle,java.lang.String,java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(System.Logger.Level arg0, ResourceBundle arg1, string arg2, params object[] arg3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.ResourceBundle.html">ResourceBundle</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.ResourceBundle.html">ResourceBundle</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">arg3</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_System_Object_.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L352">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_Log_" data-uid="Java.Lang.System.Logger.Log*"></a>
+  <h4 id="Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_System_Object_" data-uid="Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level,System.Object)">Log(System.Logger.Level, Object)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(System.Logger.Level arg0, object arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L381">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_Log_" data-uid="Java.Lang.System.Logger.Log*"></a>
+  <h4 id="Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_System_String_" data-uid="Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level,System.String)">Log(System.Logger.Level, String)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(System.Logger.Level arg0, string arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_System_String_MASES_JCOBridge_C2JBridge_JVMBridgeException_.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level%2CSystem.String%2CMASES.JCOBridge.C2JBridge.JVMBridgeException)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L372">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_Log_" data-uid="Java.Lang.System.Logger.Log*"></a>
+  <h4 id="Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_System_String_MASES_JCOBridge_C2JBridge_JVMBridgeException_" data-uid="Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level,System.String,MASES.JCOBridge.C2JBridge.JVMBridgeException)">Log(System.Logger.Level, String, JVMBridgeException)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String,java.lang.Throwable)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String,java.lang.Throwable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(System.Logger.Level arg0, string arg1, JVMBridgeException arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException</span></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_System_String_System_Object___.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level%2CSystem.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L362">View Source</a>
+  </span>
+  <a id="Java_Lang_System_Logger_Log_" data-uid="Java.Lang.System.Logger.Log*"></a>
+  <h4 id="Java_Lang_System_Logger_Log_Java_Lang_System_Logger_Level_System_String_System_Object___" data-uid="Java.Lang.System.Logger.Log(Java.Lang.System.Logger.Level,System.String,System.Object[])">Log(System.Logger.Level, String, Object[])</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String,java.lang.Object[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String,java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Log(System.Logger.Level arg0, string arg1, params object[] arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.System.Logger.Level.html">System.Logger.Level</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
@@ -485,7 +1072,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_System_Logger.md&amp;value=---%0Auid%3A%20Java.Lang.System.Logger%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/System.cs/#L155" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/System.cs/#L290" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

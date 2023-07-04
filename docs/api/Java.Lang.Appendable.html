@@ -73,7 +73,7 @@
   
   <h1 id="Java_Lang_Appendable" data-uid="Java.Lang.Appendable" class="text-break">Class Appendable
   </h1>
-  <div class="markdown level0 summary"><p>.NET implementations of <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html">https://docs.oracle.com/javase/8/docs/api/java/lang/Appendable.html</a></p>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -92,6 +92,7 @@
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+    <div><a class="xref" href="Java.Lang.IAppendable.html">IAppendable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -312,15 +313,6 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.BridgeInstance</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeAbstract</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeStatic</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeCloseable</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
@@ -382,8 +374,59 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Lang_Appendable_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Appendable : JVMBridgeBase&lt;Appendable&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Appendable : JVMBridgeBase&lt;Appendable&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAppendable</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable__ctor.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L37">View Source</a>
+  </span>
+  <a id="Java_Lang_Appendable__ctor_" data-uid="Java.Lang.Appendable.#ctor*"></a>
+  <h4 id="Java_Lang_Appendable__ctor" data-uid="Java.Lang.Appendable.#ctor">Appendable()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Appendable()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L41">View Source</a>
+  </span>
+  <a id="Java_Lang_Appendable__ctor_" data-uid="Java.Lang.Appendable.#ctor*"></a>
+  <h4 id="Java_Lang_Appendable__ctor_System_Object___" data-uid="Java.Lang.Appendable.#ctor(System.Object[])">Appendable(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Appendable(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -391,7 +434,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Appendable.cs/#L31">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L48">View Source</a>
   </span>
   <a id="Java_Lang_Appendable_BridgeClassName_" data-uid="Java.Lang.Appendable.BridgeClassName*"></a>
   <h4 id="Java_Lang_Appendable_BridgeClassName" data-uid="Java.Lang.Appendable.BridgeClassName">BridgeClassName</h4>
@@ -421,10 +464,76 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.BridgeClassName</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L52">View Source</a>
+  </span>
+  <a id="Java_Lang_Appendable_IsBridgeAbstract_" data-uid="Java.Lang.Appendable.IsBridgeAbstract*"></a>
+  <h4 id="Java_Lang_Appendable_IsBridgeAbstract" data-uid="Java.Lang.Appendable.IsBridgeAbstract">IsBridgeAbstract</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeAbstract</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L56">View Source</a>
+  </span>
+  <a id="Java_Lang_Appendable_IsBridgeCloseable_" data-uid="Java.Lang.Appendable.IsBridgeCloseable*"></a>
+  <h4 id="Java_Lang_Appendable_IsBridgeCloseable" data-uid="Java.Lang.Appendable.IsBridgeCloseable">IsBridgeCloseable</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeCloseable</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Appendable.cs/#L35">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L60">View Source</a>
   </span>
   <a id="Java_Lang_Appendable_IsBridgeInterface_" data-uid="Java.Lang.Appendable.IsBridgeInterface*"></a>
   <h4 id="Java_Lang_Appendable_IsBridgeInterface" data-uid="Java.Lang.Appendable.IsBridgeInterface">IsBridgeInterface</h4>
@@ -452,6 +561,39 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeInterface</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L64">View Source</a>
+  </span>
+  <a id="Java_Lang_Appendable_IsBridgeStatic_" data-uid="Java.Lang.Appendable.IsBridgeStatic*"></a>
+  <h4 id="Java_Lang_Appendable_IsBridgeStatic" data-uid="Java.Lang.Appendable.IsBridgeStatic">IsBridgeStatic</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeStatic</span></div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -459,16 +601,16 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable_Append_Java_Lang_CharSequence_.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.Append(Java.Lang.CharSequence)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Appendable.cs/#L47">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Appendable.cs/#L117">View Source</a>
   </span>
   <a id="Java_Lang_Appendable_Append_" data-uid="Java.Lang.Appendable.Append*"></a>
   <h4 id="Java_Lang_Appendable_Append_Java_Lang_CharSequence_" data-uid="Java.Lang.Appendable.Append(Java.Lang.CharSequence)">Append(CharSequence)</h4>
-  <div class="markdown level1 summary"><p>Appends a subsequence of the specified character sequence to this <a class="xref" href="Java.Lang.Appendable.html">Appendable</a>.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html#append(java.lang.CharSequence)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html#append(java.lang.CharSequence)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Appendable Append(CharSequence csq)</code></pre>
+    <pre><code class="lang-csharp hljs">public Appendable Append(CharSequence arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -482,8 +624,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></td>
-        <td><span class="parametername">csq</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -498,6 +641,22 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.Appendable.html">Appendable</a></td>
+        <td><p><a class="xref" href="Java.Lang.Appendable.html">Appendable</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -507,16 +666,16 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable_Append_Java_Lang_CharSequence_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.Append(Java.Lang.CharSequence%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Appendable.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Appendable.cs/#L107">View Source</a>
   </span>
   <a id="Java_Lang_Appendable_Append_" data-uid="Java.Lang.Appendable.Append*"></a>
   <h4 id="Java_Lang_Appendable_Append_Java_Lang_CharSequence_System_Int32_System_Int32_" data-uid="Java.Lang.Appendable.Append(Java.Lang.CharSequence,System.Int32,System.Int32)">Append(CharSequence, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Appends the specified character sequence to this <a class="xref" href="Java.Lang.Appendable.html">Appendable</a>.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html#append(java.lang.CharSequence,int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html#append(java.lang.CharSequence,int,int)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Appendable Append(CharSequence csq, int start, int end)</code></pre>
+    <pre><code class="lang-csharp hljs">public Appendable Append(CharSequence arg0, int arg1, int arg2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -530,18 +689,21 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></td>
-        <td><span class="parametername">csq</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">start</span></td>
-        <td></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">end</span></td>
-        <td></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -556,6 +718,22 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.Appendable.html">Appendable</a></td>
+        <td><p><a class="xref" href="Java.Lang.Appendable.html">Appendable</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -565,16 +743,16 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable_Append_System_Char_.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.Append(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Appendable.cs/#L43">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Appendable.cs/#L95">View Source</a>
   </span>
   <a id="Java_Lang_Appendable_Append_" data-uid="Java.Lang.Appendable.Append*"></a>
   <h4 id="Java_Lang_Appendable_Append_System_Char_" data-uid="Java.Lang.Appendable.Append(System.Char)">Append(Char)</h4>
-  <div class="markdown level1 summary"><p>Appends the specified character to this <a class="xref" href="Java.Lang.Appendable.html">Appendable</a>.</p>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html#append(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Appendable.html#append(char)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Appendable Append(char c)</code></pre>
+    <pre><code class="lang-csharp hljs">public Appendable Append(char arg0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -588,8 +766,9 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">Char</a></td>
-        <td><span class="parametername">c</span></td>
-        <td></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">Char</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -604,26 +783,26 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.Appendable.html">Appendable</a></td>
+        <td><p><a class="xref" href="Java.Lang.Appendable.html">Appendable</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable_Close.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Appendable.cs/#L39">View Source</a>
-  </span>
-  <a id="Java_Lang_Appendable_Close_" data-uid="Java.Lang.Appendable.Close*"></a>
-  <h4 id="Java_Lang_Appendable_Close" data-uid="Java.Lang.Appendable.Close">Close()</h4>
-  <div class="markdown level1 summary"><p>Closes this resource, relinquishing any underlying resources.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
-  </div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
@@ -643,6 +822,9 @@
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
   </div>
+  <div>
+      <a class="xref" href="Java.Lang.IAppendable.html">IAppendable</a>
+  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="MASES.JNet.Specific.Extensions.JNetCoreExtensions.html#MASES_JNet_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
@@ -658,7 +840,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Appendable.md&amp;value=---%0Auid%3A%20Java.Lang.Appendable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Appendable.cs/#L26" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Appendable.cs/#L70" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

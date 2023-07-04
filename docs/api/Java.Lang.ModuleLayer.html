@@ -73,7 +73,7 @@
   
   <h1 id="Java_Lang_ModuleLayer" data-uid="Java.Lang.ModuleLayer" class="text-break">Class ModuleLayer
   </h1>
-  <div class="markdown level0 summary"><p>.NET implementations of <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html</a></p>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -312,18 +312,6 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.BridgeInstance</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeInterface</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeAbstract</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeStatic</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeCloseable</span>
-    </div>
-    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeListener</span>
     </div>
     <div>
@@ -385,8 +373,59 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Lang_ModuleLayer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class ModuleLayer : JVMBridgeBase&lt;ModuleLayer&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class ModuleLayer : JVMBridgeBase&lt;ModuleLayer&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer__ctor.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L1325">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer__ctor_" data-uid="Java.Lang.ModuleLayer.#ctor*"></a>
+  <h4 id="Java_Lang_ModuleLayer__ctor" data-uid="Java.Lang.ModuleLayer.#ctor">ModuleLayer()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleLayer()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L1329">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer__ctor_" data-uid="Java.Lang.ModuleLayer.#ctor*"></a>
+  <h4 id="Java_Lang_ModuleLayer__ctor_System_Object___" data-uid="Java.Lang.ModuleLayer.#ctor(System.Object[])">ModuleLayer(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleLayer(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -394,7 +433,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/ModuleLayer.cs/#L31">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L1336">View Source</a>
   </span>
   <a id="Java_Lang_ModuleLayer_BridgeClassName_" data-uid="Java.Lang.ModuleLayer.BridgeClassName*"></a>
   <h4 id="Java_Lang_ModuleLayer_BridgeClassName" data-uid="Java.Lang.ModuleLayer.BridgeClassName">BridgeClassName</h4>
@@ -422,6 +461,754 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.BridgeClassName</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_IsBridgeAbstract.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.IsBridgeAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L1340">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_IsBridgeAbstract_" data-uid="Java.Lang.ModuleLayer.IsBridgeAbstract*"></a>
+  <h4 id="Java_Lang_ModuleLayer_IsBridgeAbstract" data-uid="Java.Lang.ModuleLayer.IsBridgeAbstract">IsBridgeAbstract</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeAbstract</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_IsBridgeCloseable.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.IsBridgeCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L1344">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_IsBridgeCloseable_" data-uid="Java.Lang.ModuleLayer.IsBridgeCloseable*"></a>
+  <h4 id="Java_Lang_ModuleLayer_IsBridgeCloseable" data-uid="Java.Lang.ModuleLayer.IsBridgeCloseable">IsBridgeCloseable</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeCloseable</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_IsBridgeInterface.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.IsBridgeInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L1348">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_IsBridgeInterface_" data-uid="Java.Lang.ModuleLayer.IsBridgeInterface*"></a>
+  <h4 id="Java_Lang_ModuleLayer_IsBridgeInterface" data-uid="Java.Lang.ModuleLayer.IsBridgeInterface">IsBridgeInterface</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeInterface</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_IsBridgeStatic.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.IsBridgeStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/AllPackageClasses.cs/#L1352">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_IsBridgeStatic_" data-uid="Java.Lang.ModuleLayer.IsBridgeStatic*"></a>
+  <h4 id="Java_Lang_ModuleLayer_IsBridgeStatic" data-uid="Java.Lang.ModuleLayer.IsBridgeStatic">IsBridgeStatic</h4>
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsBridgeStatic</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_Boot.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.Boot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L49">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_Boot_" data-uid="Java.Lang.ModuleLayer.Boot*"></a>
+  <h4 id="Java_Lang_ModuleLayer_Boot" data-uid="Java.Lang.ModuleLayer.Boot">Boot()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#boot()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#boot()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleLayer Boot()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_Configuration.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.Configuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L113">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_Configuration_" data-uid="Java.Lang.ModuleLayer.Configuration*"></a>
+  <h4 id="Java_Lang_ModuleLayer_Configuration" data-uid="Java.Lang.ModuleLayer.Configuration">Configuration()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#configuration()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#configuration()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Configuration Configuration()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_DefineModules_Java_Lang_ModuleNs_Configuration_Java_Util_Function_Function_System_String_Java_Lang_ClassLoader__.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.DefineModules(Java.Lang.ModuleNs.Configuration%2CJava.Util.Function.Function%7BSystem.String%2CJava.Lang.ClassLoader%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L123">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_DefineModules_" data-uid="Java.Lang.ModuleLayer.DefineModules*"></a>
+  <h4 id="Java_Lang_ModuleLayer_DefineModules_Java_Lang_ModuleNs_Configuration_Java_Util_Function_Function_System_String_Java_Lang_ClassLoader__" data-uid="Java.Lang.ModuleLayer.DefineModules(Java.Lang.ModuleNs.Configuration,Java.Util.Function.Function{System.String,Java.Lang.ClassLoader})">DefineModules(Configuration, Function&lt;String, ClassLoader&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.function.Function)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleLayer DefineModules(Configuration arg0, Function&lt;string, ClassLoader&gt; arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a>&gt;</td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_DefineModules_Java_Lang_ModuleNs_Configuration_Java_Util_List_Java_Lang_ModuleLayer__Java_Util_Function_Function_System_String_Java_Lang_ClassLoader__.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.DefineModules(Java.Lang.ModuleNs.Configuration%2CJava.Util.List%7BJava.Lang.ModuleLayer%7D%2CJava.Util.Function.Function%7BSystem.String%2CJava.Lang.ClassLoader%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L69">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_DefineModules_" data-uid="Java.Lang.ModuleLayer.DefineModules*"></a>
+  <h4 id="Java_Lang_ModuleLayer_DefineModules_Java_Lang_ModuleNs_Configuration_Java_Util_List_Java_Lang_ModuleLayer__Java_Util_Function_Function_System_String_Java_Lang_ClassLoader__" data-uid="Java.Lang.ModuleLayer.DefineModules(Java.Lang.ModuleNs.Configuration,Java.Util.List{Java.Lang.ModuleLayer},Java.Util.Function.Function{System.String,Java.Lang.ClassLoader})">DefineModules(Configuration, List&lt;ModuleLayer&gt;, Function&lt;String, ClassLoader&gt;)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.List,java.util.function.Function)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModules(java.lang.module.Configuration,java.util.List,java.util.function.Function)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleLayer.Controller DefineModules(Configuration arg0, List&lt;ModuleLayer&gt; arg1, Function&lt;string, ClassLoader&gt; arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a>&gt;</td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Function.Function-2.html">Function</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a>&gt;</td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="Java.Util.Function.Function.html">Function</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleLayer.Controller.html">ModuleLayer.Controller</a></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleLayer.Controller.html">ModuleLayer.Controller</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_DefineModulesWithManyLoaders_Java_Lang_ModuleNs_Configuration_Java_Lang_ClassLoader_.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration%2CJava.Lang.ClassLoader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L133">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_DefineModulesWithManyLoaders_" data-uid="Java.Lang.ModuleLayer.DefineModulesWithManyLoaders*"></a>
+  <h4 id="Java_Lang_ModuleLayer_DefineModulesWithManyLoaders_Java_Lang_ModuleNs_Configuration_Java_Lang_ClassLoader_" data-uid="Java.Lang.ModuleLayer.DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration,Java.Lang.ClassLoader)">DefineModulesWithManyLoaders(Configuration, ClassLoader)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.lang.ClassLoader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.lang.ClassLoader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleLayer DefineModulesWithManyLoaders(Configuration arg0, ClassLoader arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_DefineModulesWithManyLoaders_Java_Lang_ModuleNs_Configuration_Java_Util_List_Java_Lang_ModuleLayer__Java_Lang_ClassLoader_.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration%2CJava.Util.List%7BJava.Lang.ModuleLayer%7D%2CJava.Lang.ClassLoader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L80">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_DefineModulesWithManyLoaders_" data-uid="Java.Lang.ModuleLayer.DefineModulesWithManyLoaders*"></a>
+  <h4 id="Java_Lang_ModuleLayer_DefineModulesWithManyLoaders_Java_Lang_ModuleNs_Configuration_Java_Util_List_Java_Lang_ModuleLayer__Java_Lang_ClassLoader_" data-uid="Java.Lang.ModuleLayer.DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration,Java.Util.List{Java.Lang.ModuleLayer},Java.Lang.ClassLoader)">DefineModulesWithManyLoaders(Configuration, List&lt;ModuleLayer&gt;, ClassLoader)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.util.List,java.lang.ClassLoader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.util.List,java.lang.ClassLoader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleLayer.Controller DefineModulesWithManyLoaders(Configuration arg0, List&lt;ModuleLayer&gt; arg1, ClassLoader arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a>&gt;</td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleLayer.Controller.html">ModuleLayer.Controller</a></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleLayer.Controller.html">ModuleLayer.Controller</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_DefineModulesWithOneLoader_Java_Lang_ModuleNs_Configuration_Java_Lang_ClassLoader_.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration%2CJava.Lang.ClassLoader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L143">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_DefineModulesWithOneLoader_" data-uid="Java.Lang.ModuleLayer.DefineModulesWithOneLoader*"></a>
+  <h4 id="Java_Lang_ModuleLayer_DefineModulesWithOneLoader_Java_Lang_ModuleNs_Configuration_Java_Lang_ClassLoader_" data-uid="Java.Lang.ModuleLayer.DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration,Java.Lang.ClassLoader)">DefineModulesWithOneLoader(Configuration, ClassLoader)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithOneLoader(java.lang.module.Configuration,java.lang.ClassLoader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithOneLoader(java.lang.module.Configuration,java.lang.ClassLoader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ModuleLayer DefineModulesWithOneLoader(Configuration arg0, ClassLoader arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_DefineModulesWithOneLoader_Java_Lang_ModuleNs_Configuration_Java_Util_List_Java_Lang_ModuleLayer__Java_Lang_ClassLoader_.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration%2CJava.Util.List%7BJava.Lang.ModuleLayer%7D%2CJava.Lang.ClassLoader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L91">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_DefineModulesWithOneLoader_" data-uid="Java.Lang.ModuleLayer.DefineModulesWithOneLoader*"></a>
+  <h4 id="Java_Lang_ModuleLayer_DefineModulesWithOneLoader_Java_Lang_ModuleNs_Configuration_Java_Util_List_Java_Lang_ModuleLayer__Java_Lang_ClassLoader_" data-uid="Java.Lang.ModuleLayer.DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration,Java.Util.List{Java.Lang.ModuleLayer},Java.Lang.ClassLoader)">DefineModulesWithOneLoader(Configuration, List&lt;ModuleLayer&gt;, ClassLoader)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithOneLoader(java.lang.module.Configuration,java.util.List,java.lang.ClassLoader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithOneLoader(java.lang.module.Configuration,java.util.List,java.lang.ClassLoader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleLayer.Controller DefineModulesWithOneLoader(Configuration arg0, List&lt;ModuleLayer&gt; arg1, ClassLoader arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleNs.Configuration.html">Configuration</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a>&gt;</td>
+        <td><span class="parametername">arg1</span></td>
+        <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleLayer.Controller.html">ModuleLayer.Controller</a></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleLayer.Controller.html">ModuleLayer.Controller</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_Empty.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.Empty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L58">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_Empty_" data-uid="Java.Lang.ModuleLayer.Empty*"></a>
+  <h4 id="Java_Lang_ModuleLayer_Empty" data-uid="Java.Lang.ModuleLayer.Empty">Empty()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#empty()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#empty()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ModuleLayer Empty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></td>
+        <td><p><a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_FindLoader_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.FindLoader(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L104">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_FindLoader_" data-uid="Java.Lang.ModuleLayer.FindLoader*"></a>
+  <h4 id="Java_Lang_ModuleLayer_FindLoader_System_String_" data-uid="Java.Lang.ModuleLayer.FindLoader(System.String)">FindLoader(String)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findLoader(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findLoader(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClassLoader FindLoader(string arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
+        <td><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_FindModule_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.FindModule(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L161">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_FindModule_" data-uid="Java.Lang.ModuleLayer.FindModule*"></a>
+  <h4 id="Java_Lang_ModuleLayer_FindModule_System_String_" data-uid="Java.Lang.ModuleLayer.FindModule(System.String)">FindModule(String)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findModule(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#findModule(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Optional&lt;Module&gt; FindModule(string arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Optional-1.html">Optional</a>&lt;<a class="xref" href="Java.Lang.Module.html">Module</a>&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Optional.html">Optional</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_Modules.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.Modules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L170">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_Modules_" data-uid="Java.Lang.ModuleLayer.Modules*"></a>
+  <h4 id="Java_Lang_ModuleLayer_Modules" data-uid="Java.Lang.ModuleLayer.Modules">Modules()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#modules()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#modules()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Set&lt;Module&gt; Modules()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Module.html">Module</a>&gt;</td>
+        <td><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer_Parents.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer.Parents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L152">View Source</a>
+  </span>
+  <a id="Java_Lang_ModuleLayer_Parents_" data-uid="Java.Lang.ModuleLayer.Parents*"></a>
+  <h4 id="Java_Lang_ModuleLayer_Parents" data-uid="Java.Lang.ModuleLayer.Parents">Parents()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#parents()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#parents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ModuleLayer&gt; Parents()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.ModuleLayer.html">ModuleLayer</a>&gt;</td>
+        <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
@@ -456,7 +1243,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ModuleLayer.md&amp;value=---%0Auid%3A%20Java.Lang.ModuleLayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/ModuleLayer.cs/#L26" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/ModuleLayer.cs/#L29" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
