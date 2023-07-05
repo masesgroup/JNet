@@ -326,25 +326,33 @@ namespace Java.Lang
         {
             return SExecute<Class<T>>("forName", ClassNameOf<T>());
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getAnnotation(java.lang.Class)"/>
+        /// </summary>
         public T GetAnnotation<T>(Class arg0) where T : IAnnotation, new()
         {
-            throw new global::System.NotImplementedException();
+            return IExecute<T>("getAnnotation", arg0);
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getAnnotationsByType(java.lang.Class)"/>
+        /// </summary>
         public T[] GetAnnotationsByType<T>(Class arg0) where T : IAnnotation, new()
         {
-            throw new global::System.NotImplementedException();
+            return IExecuteArray<T>("getAnnotationsByType", arg0);
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getDeclaredAnnotation(java.lang.Class)"/>
+        /// </summary>
         public T GetDeclaredAnnotation<T>(Class arg0) where T : IAnnotation, new()
         {
-            throw new global::System.NotImplementedException();
+            return IExecute<T>("getDeclaredAnnotation", arg0);
         }
-
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedElement.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
+        /// </summary>
         public T[] GetDeclaredAnnotationsByType<T>(Class arg0) where T : IAnnotation, new()
         {
-            throw new global::System.NotImplementedException();
+            return IExecuteArray<T>("getDeclaredAnnotationsByType", arg0);
         }
     }
 #endif
