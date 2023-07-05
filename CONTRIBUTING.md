@@ -18,6 +18,10 @@ The project is organized in this folder structure:
 		* **jnet**: contains the JVM side implementation of some classes managed from .NET side; it is structured as a complete Maven project
 	* **net**
 		* **JNet**: The folder containing the source and project of the files ported on .NET
+		* **JNetCLI**: The folder containing the source and project of the command line interface of JNet
+		* **JNetPS**: The folder containing the source and project of the PowerShell module for JNet
+		* **JNetPSCore**: The folder containing the source and project of the PowerShell core library, used from JNetPS and other
+		* **JNetReflector**: The folder containing the source and project of the JVM class reflector, the tool to generate .NET classes to interact with JVM counterpart
 		* **templates**: The folder containing the source and project to generate the NuGet template package
 * **tests**
 	* **JNetTest**: The folder containing the source and project of the JNet test

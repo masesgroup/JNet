@@ -57,7 +57,10 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
   * JNetPS: a PowerShell module to use JNet within a PowerShell shell.
 * V1.5.2+: strong improvement of JNetReflector; it is used to generate almost all Java 11 classes available in the corresponding JNet version
 * V1.5.3+: JNetReflector manages generics and almost all classes of Java SE 11 are covered: see [JNet Reflector usage](src/net/Documentation/articles/usageReflector.md)
-
+* V2.0.0+: the most notable changes in this version are in:
+  * JNet: complete review of all classes based on automatic generation done using JNetReflector
+  * JNetReflector: improvements in many areas from generation of .NET interfaces to generics and where clauses, full story in https://github.com/masesgroup/JNet/issues/178
+  
 ---
 
 ## Runtime engine
@@ -79,8 +82,6 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
 
 Have a look at the following JCOBridge resources:
 - [Release notes](https://www.jcobridge.com/release-notes/)
-- ~~[Non Profit or University](https://www.jcobridge.com/pricing/)~~
-- ~~[Commercial info: Professional or Enterprise](https://www.jcobridge.com/pricing/)~~
 - [Community Edition](https://www.jcobridge.com/pricing-25/)
 - [Commercial Edition](https://www.jcobridge.com/pricing-25/)
 - Latest release: [![JCOBridge nuget](https://img.shields.io/nuget/v/MASES.JCOBridge)](https://www.nuget.org/packages/MASES.JCOBridge)
