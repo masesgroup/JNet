@@ -17,7 +17,7 @@
   <ItemGroup>
     <None Include="mases.jnet.targets" Pack="true" PackagePath="build" />
     <None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
-    <None Include="..\Documentation\articles\usage.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\Documentation\articles\usage.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Generated\Java\Util\Function\**" />
