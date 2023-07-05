@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/a/JNet/JNet/src/net/Documentation",
+  "source_base_path": "D:/a/JNet/JNet/src/documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -8421,7 +8421,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Lang.Class.html",
-          "hash": "eOErFSDat/p58LEHWH+c7nQ2TduaJDUFFIN0D6qTj8M="
+          "hash": "5X0qsECVt6tm+7VpBl8THx8WTN7zp4JHhCjGQ6EPyfw="
         }
       },
       "is_incremental": false,
@@ -63273,7 +63273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "5NJhYPI3XkKsUuXaNWpH0mgxUWc/lNDgBD6dATglPnE="
+          "hash": "WI1482LRqqWrSd9hT0hvBbOSdMt/cLD6w7ZmKz3QsV8="
         }
       },
       "is_incremental": false,
@@ -63297,7 +63297,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/API_extensibility.html",
-          "hash": "EtobtDSu8g/bKDeq28li49teEsWicq+7+Rg233Ir9lo="
+          "hash": "r/aig7vilW5LtA9O55jaXG7688jHCxjvX/eczqda+oM="
         }
       },
       "is_incremental": false,
@@ -63309,7 +63309,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/actualstate.html",
-          "hash": "YhSIZyO7xONWY3ri4kE2rL/8nctlKnlT+re8POx2Go4="
+          "hash": "4DeyQd95WBLXys/+bejxh9BwJRw/vUK4WAkheRLYcEI="
         }
       },
       "is_incremental": false,
@@ -63321,7 +63321,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/commandlineswitch.html",
-          "hash": "1pRv5uca/TuQ/ig3sT8u9tZOpHOOVPtxBaBZuOC/fPY="
+          "hash": "XPkh0TKHOTcfvsx8WP9e+24yyO8QvnED4Ru0HkIo5Ns="
         }
       },
       "is_incremental": false,
@@ -63336,7 +63336,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "IO17pOOw8Sh26axU2uYWMaImPnFfq0RTSBfqnebJRG8="
+          "hash": "kZ4x1BtVX7uhmcPzwYSw1aw4sXARbsKNPhPZlvhs+GI="
         }
       },
       "is_incremental": false,
@@ -63348,7 +63348,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/jvm_callbacks.html",
-          "hash": "CjGhWSSForWuAKRGPkFlnct7XupQIxY0Gnwsy1pucgM="
+          "hash": "UjH/FmGNoAvEduZc1VcFPrFBO/NfVDcOwLUpJGZCO6A="
         }
       },
       "is_incremental": false,
@@ -63360,7 +63360,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/roadmap.html",
-          "hash": "zQdtUp2naXdxYxY9vRA63ZMEJpg8j7LB3fXpm89Yaws="
+          "hash": "V+mslY4AdHcnVO5Bih/VaAcxhOldmD+A/311NWBM3Yo="
         }
       },
       "is_incremental": false,
@@ -63384,7 +63384,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/usage.html",
-          "hash": "LEQNlM4sURABhqw6ZwCq13IQ0tiktxebEo4Xh5YFpyo="
+          "hash": "1keo81AGnIB06pspoHlWxRGooYftvW/QYWUATG6xX6o="
         }
       },
       "is_incremental": false,
@@ -63396,7 +63396,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/usageCLI.html",
-          "hash": "g0DehWgJ+P0ELKHuIYG7uYbbDwCYxlCqXHp286aWzwo="
+          "hash": "EevvAakLIpoSq6aG3ujsaCXIkT8i2nfUYhP9jeS16Y8="
         }
       },
       "is_incremental": false,
@@ -63408,7 +63408,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/usagePS.html",
-          "hash": "K3lvxUb5oqeqdvhwNCbgIJl6zIHe4AebycMa6I0DjJU="
+          "hash": "DukKmfm4q+lLVmhOeiH31SqRpmstUCU4LrMtbfjZFWY="
         }
       },
       "is_incremental": false,
@@ -63420,7 +63420,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/usageReflector.html",
-          "hash": "NOUzF+wh52oOr6WIkoxoVE0SNTClCRnh+aw6KA6H4YM="
+          "hash": "1SG4KWU3LVZ4rBBalVyRmXyLDP+htCUdcTaNKtoriq8="
         }
       },
       "is_incremental": false,
@@ -63446,7 +63446,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "+oaSYLvxY1mrD4pToh5ssAk1knFt9zckXes+ReMemJs="
+          "hash": "r53LB2+oqrpDEIr24U5XL9zclcywjinteXpp2ISIozc="
         }
       },
       "is_incremental": false,
