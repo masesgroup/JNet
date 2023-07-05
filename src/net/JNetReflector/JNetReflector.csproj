@@ -20,7 +20,7 @@
   </PropertyGroup>
   <ItemGroup>
     <jnetreflector_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
-    <None Include="..\..\Documentation\articles\usageReflector.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\documentation\articles\usageReflector.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
     <Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(OutDir)\jars" />
