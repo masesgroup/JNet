@@ -15,7 +15,7 @@ JNet is a comprehensive suite of libraries and tools to use Java/JVM APIs (Java,
 This project aims to create a set of libraries and tools to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of [JCOReflector](https://github.com/masesgroup/JCOReflector).
 
 There are many client libraries written to manage communication with Java. Conversely, this project use directly the Java packages giving more than one benefit:
-* all implemented features are availables at no extra implementation costs, see [JNet usage](src/net/Documentation/articles/usage.md);
+* all implemented features are availables at no extra implementation costs, see [JNet usage](articles/usage.md);
 * avoids any third party communication protocol implementation;
 * access all features made available from Java platform.
 
@@ -25,7 +25,7 @@ So, for example, do you want an `ArrayList`? Just write in C# a line of code lik
 Java.Util.ArrayList<string> alist = new Java.Util.ArrayList<string>();
 ```
 
-See [JNet usage](src/net/Documentation/articles/usage.md) for a comprehensive example.
+See [JNet usage](articles/usage.md) for a comprehensive example.
 
 ### Community and Contribution
 
@@ -41,13 +41,13 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 
 ## Summary
 
-* [Roadmap](src/net/Documentation/articles/roadmap.md)
-* [Actual state](src/net/Documentation/articles/actualstate.md)
-* [JNet usage](src/net/Documentation/articles/usage.md)
-* [JNet APIs extensibility](src/net/Documentation/articles/API_extensibility.md)
-* [JNet CLI usage](src/net/Documentation/articles/usageCLI.md)
-* [JNet Reflector usage](src/net/Documentation/articles/usageReflector.md)
-* [JNet PowerShell usage](src/net/Documentation/articles/usagePS.md)
+* [Roadmap](articles/roadmap.md)
+* [Actual state](articles/actualstate.md)
+* [JNet usage](articles/usage.md)
+* [JNet APIs extensibility](articles/API_extensibility.md)
+* [JNet CLI usage](articles/usageCLI.md)
+* [JNet Reflector usage](articles/usageReflector.md)
+* [JNet PowerShell usage](articles/usagePS.md)
 
 ### News
 
@@ -56,7 +56,7 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
   * JNetPSCore: the core library for PowerShell development, it can be extended in other projects based on JNet;
   * JNetPS: a PowerShell module to use JNet within a PowerShell shell.
 * V1.5.2+: strong improvement of JNetReflector; it is used to generate almost all Java 11 classes available in the corresponding JNet version
-* V1.5.3+: JNetReflector manages generics and almost all classes of Java SE 11 are covered: see [JNet Reflector usage](src/net/Documentation/articles/usageReflector.md)
+* V1.5.3+: JNetReflector manages generics and almost all classes of Java SE 11 are covered: see [JNet Reflector usage](articles/usageReflector.md)
 * V2.0.0+: the most notable changes in this version are in:
   * JNet: complete review of all classes based on automatic generation done using JNetReflector
   * JNetReflector: improvements in many areas from generation of .NET interfaces to generics and where clauses, full story in https://github.com/masesgroup/JNet/issues/178
@@ -76,7 +76,7 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
   * No need to learn new APIs: we try to expose the same APIs in C# style;
   * No extra validation cycle on protocol and functionality: bug fix, improvements, new features are immediately available;
   * Documentation is shared;
-* **Dynamic code**: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this [simple example](https://www.jcobridge.com/net-examples/dotnet-examples/) and [JNet APIs extensibility](src/net/Documentation/articles/API_extensibility.md).
+* **Dynamic code**: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this [simple example](https://www.jcobridge.com/net-examples/dotnet-examples/) and [JNet APIs extensibility](articles/API_extensibility.md).
 
 ### JCOBridge resources
 
