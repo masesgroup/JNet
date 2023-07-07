@@ -21,7 +21,7 @@ JNet is a comprehensive suite of libraries and tools to use Java/JVM APIs (Java,
 This project aims to create a set of libraries and tools to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of [JCOReflector](https://github.com/masesgroup/JCOReflector).
 
 There are many client libraries written to manage communication with Java. Conversely, this project use directly the Java packages giving more than one benefit:
-* all implemented features are availables at no extra implementation costs, see [JNet usage](src/net/Documentation/articles/usage.md);
+* all implemented features are availables at no extra implementation costs, see [JNet usage](src/documentation/articles/usage.md);
 * avoids any third party communication protocol implementation;
 * access all features made available from Java platform.
 
@@ -31,7 +31,7 @@ So, for example, do you want an `ArrayList`? Just write in C# a line of code lik
 Java.Util.ArrayList<string> alist = new Java.Util.ArrayList<string>();
 ```
 
-See [JNet usage](src/net/Documentation/articles/usage.md) for a comprehensive example.
+See [JNet usage](src/documentation/articles/usage.md) for a comprehensive example.
 
 ### Community and Contribution
 
