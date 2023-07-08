@@ -39,6 +39,8 @@ The configuration is:
     "javax.management.NotificationFilter"
   ],
   "ClassesToAvoid": [
+    "java.lang.ProcessBuilder$Redirect$Type",
+    "java.lang.Thread$UncaughtExceptionHandler",
     "java.util.stream.DoubleStream$Builder",
     "java.util.stream.IntStream$Builder",
     "java.util.stream.LongStream$Builder",
