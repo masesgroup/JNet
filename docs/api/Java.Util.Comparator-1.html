@@ -83,7 +83,8 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span>&gt;</div>
     <div class="level4"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener</span></div>
-    <div class="level5"><span class="xref">Comparator&lt;T&gt;</span></div>
+    <div class="level5"><a class="xref" href="Java.Util.Comparator.html">Comparator</a></div>
+    <div class="level6"><span class="xref">Comparator&lt;T&gt;</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -97,6 +98,9 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Java.Util.Comparator.html#Java_Util_Comparator_BridgeClassName">Comparator.BridgeClassName</a>
+    </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener.AddEventHandler(System.String, System.EventHandler)</span>
     </div>
@@ -396,7 +400,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Util_Comparator_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Comparator&lt;T&gt; : JVMBridgeListener, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IComparator&lt;T&gt;, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Comparator&lt;T&gt; : Comparator, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IComparator&lt;T&gt;, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -409,7 +413,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The comparator type</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -423,7 +428,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1__ctor.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L55">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L60">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1__ctor_" data-uid="Java.Util.Comparator`1.#ctor*"></a>
   <h4 id="Java_Util_Comparator_1__ctor" data-uid="Java.Util.Comparator`1.#ctor">Comparator()</h4>
@@ -438,43 +443,10 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_BridgeClassName.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.BridgeClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L51">View Source</a>
-  </span>
-  <a id="Java_Util_Comparator_1_BridgeClassName_" data-uid="Java.Util.Comparator`1.BridgeClassName*"></a>
-  <h4 id="Java_Util_Comparator_1_BridgeClassName" data-uid="Java.Util.Comparator`1.BridgeClassName">BridgeClassName</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeListener.BridgeClassName</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_OnCompare.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.OnCompare%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L103">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L108">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1_OnCompare_" data-uid="Java.Util.Comparator`1.OnCompare*"></a>
   <h4 id="Java_Util_Comparator_1_OnCompare" data-uid="Java.Util.Comparator`1.OnCompare">OnCompare</h4>
@@ -505,7 +477,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_OnEquals.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.OnEquals%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L128">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L133">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1_OnEquals_" data-uid="Java.Util.Comparator`1.OnEquals*"></a>
   <h4 id="Java_Util_Comparator_1_OnEquals" data-uid="Java.Util.Comparator`1.OnEquals">OnEquals</h4>
@@ -538,7 +510,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_Compare__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.Compare(%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L120">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L125">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1_Compare_" data-uid="Java.Util.Comparator`1.Compare*"></a>
   <h4 id="Java_Util_Comparator_1_Compare__0__0_" data-uid="Java.Util.Comparator`1.Compare(`0,`0)">Compare(T, T)</h4>
@@ -594,7 +566,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_Comparing__2_Java_Util_Function_Function___0___1__.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.Comparing%60%602(Java.Util.Function.Function%7B%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L68">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L73">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1_Comparing_" data-uid="Java.Util.Comparator`1.Comparing*"></a>
   <h4 id="Java_Util_Comparator_1_Comparing__2_Java_Util_Function_Function___0___1__" data-uid="Java.Util.Comparator`1.Comparing``2(Java.Util.Function.Function{``0,``1})">Comparing&lt;SuperT, SuperU&gt;(Function&lt;SuperT, SuperU&gt;)</h4>
@@ -661,7 +633,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_Comparing__2_Java_Util_Function_Function___0___1__Java_Util_Comparator___1__.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.Comparing%60%602(Java.Util.Function.Function%7B%60%600%2C%60%601%7D%2CJava.Util.Comparator%7B%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L72">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L77">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1_Comparing_" data-uid="Java.Util.Comparator`1.Comparing*"></a>
   <h4 id="Java_Util_Comparator_1_Comparing__2_Java_Util_Function_Function___0___1__Java_Util_Comparator___1__" data-uid="Java.Util.Comparator`1.Comparing``2(Java.Util.Function.Function{``0,``1},Java.Util.Comparator{``1})">Comparing&lt;SuperT, SuperU&gt;(Function&lt;SuperT, SuperU&gt;, Comparator&lt;SuperU&gt;)</h4>
@@ -733,7 +705,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_ComparingDouble__1_Java_Util_Function_ToDoubleFunction___0__.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.ComparingDouble%60%601(Java.Util.Function.ToDoubleFunction%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L79">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L84">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1_ComparingDouble_" data-uid="Java.Util.Comparator`1.ComparingDouble*"></a>
   <h4 id="Java_Util_Comparator_1_ComparingDouble__1_Java_Util_Function_ToDoubleFunction___0__" data-uid="Java.Util.Comparator`1.ComparingDouble``1(Java.Util.Function.ToDoubleFunction{``0})">ComparingDouble&lt;SuperT&gt;(ToDoubleFunction&lt;SuperT&gt;)</h4>
@@ -796,7 +768,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_ComparingInt__1_Java_Util_Function_ToIntFunction___0__.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.ComparingInt%60%601(Java.Util.Function.ToIntFunction%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L83">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L88">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1_ComparingInt_" data-uid="Java.Util.Comparator`1.ComparingInt*"></a>
   <h4 id="Java_Util_Comparator_1_ComparingInt__1_Java_Util_Function_ToIntFunction___0__" data-uid="Java.Util.Comparator`1.ComparingInt``1(Java.Util.Function.ToIntFunction{``0})">ComparingInt&lt;SuperT&gt;(ToIntFunction&lt;SuperT&gt;)</h4>
@@ -859,7 +831,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_ComparingLong__1_Java_Util_Function_ToLongFunction___0__.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.ComparingLong%60%601(Java.Util.Function.ToLongFunction%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L90">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L95">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1_ComparingLong_" data-uid="Java.Util.Comparator`1.ComparingLong*"></a>
   <h4 id="Java_Util_Comparator_1_ComparingLong__1_Java_Util_Function_ToLongFunction___0__" data-uid="Java.Util.Comparator`1.ComparingLong``1(Java.Util.Function.ToLongFunction{``0})">ComparingLong&lt;SuperT&gt;(ToLongFunction&lt;SuperT&gt;)</h4>
@@ -922,7 +894,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_NullsFirst__1_Java_Util_Comparator___0__.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.NullsFirst%60%601(Java.Util.Comparator%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L94">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L99">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1_NullsFirst_" data-uid="Java.Util.Comparator`1.NullsFirst*"></a>
   <h4 id="Java_Util_Comparator_1_NullsFirst__1_Java_Util_Comparator___0__" data-uid="Java.Util.Comparator`1.NullsFirst``1(Java.Util.Comparator{``0})">NullsFirst&lt;SuperT&gt;(Comparator&lt;SuperT&gt;)</h4>
@@ -985,7 +957,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1_NullsLast__1_Java_Util_Comparator___0__.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601.NullsLast%60%601(Java.Util.Comparator%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L98">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L103">View Source</a>
   </span>
   <a id="Java_Util_Comparator_1_NullsLast_" data-uid="Java.Util.Comparator`1.NullsLast*"></a>
   <h4 id="Java_Util_Comparator_1_NullsLast__1_Java_Util_Comparator___0__" data-uid="Java.Util.Comparator`1.NullsLast``1(Java.Util.Comparator{``0})">NullsLast&lt;SuperT&gt;(Comparator&lt;SuperT&gt;)</h4>
@@ -1080,7 +1052,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Comparator_1.md&amp;value=---%0Auid%3A%20Java.Util.Comparator%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L46" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Util/Comparator.cs/#L55" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

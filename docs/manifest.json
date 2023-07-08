@@ -22173,7 +22173,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Comparator-1.html",
-          "hash": "kXOI0ixOU0ddmracOoP5X1l6WfQ7vrQ8b0UlpQ74+20="
+          "hash": "nNuUEV1KxdVlec0KGQD3Y/Bejhs9uBA0yjfEJlU6cj0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Comparator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Comparator.html",
+          "hash": "u1YGp3GBpD0AtygsmRpTwIByTCsfGJlri32bZydNcNA="
         }
       },
       "is_incremental": false,
@@ -28701,7 +28713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.html",
-          "hash": "JIFI8wOYukqo8aZh8+fN1k0yiK9sPAvyB0pKly6qhCI="
+          "hash": "Cd8WBtfdZUZirfs/O+wMb8UvtpRNmIWJGeh6yJi42QQ="
         }
       },
       "is_incremental": false,
@@ -63285,7 +63297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "201cA2kBUeAMixXVc9O/JTjt70xG9Q7wxouQRRMyQb4="
+          "hash": "M6YRMylh4nmSXKcQ/7jldEf0ochpkA4F91G/rJAGw+0="
         }
       },
       "is_incremental": false,
@@ -63485,7 +63497,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5272,
+          "total_file_count": 5273,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
