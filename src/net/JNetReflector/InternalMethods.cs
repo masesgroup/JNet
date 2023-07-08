@@ -939,7 +939,7 @@ namespace MASES.JNetReflector
                         helpFormat = AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_TYPEPARAMREF_DECORATION;
                     }
                     var content = string.Format(helpFormat, typeStrForDoc.ConvertToJavadoc());
-                    constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, item.Name, content));
+                    constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, item.Name(), content));
                     if (item.IsVarArgs)
                     {
                         constructorParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");
@@ -1533,7 +1533,7 @@ namespace MASES.JNetReflector
                         helpFormat = AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_TYPEPARAMREF_DECORATION;
                     }
                     var content = string.Format(helpFormat, typeStrForDoc.ConvertToJavadoc());
-                    methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, parameter.Name, content));
+                    methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, parameter.Name(), content));
                     if (parameter.IsVarArgs)
                     {
                         if (!typeStr.EndsWith(SpecialNames.ArrayTypeTrailer)) typeStr += SpecialNames.ArrayTypeTrailer;
