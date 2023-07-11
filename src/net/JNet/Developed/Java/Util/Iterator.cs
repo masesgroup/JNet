@@ -16,6 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+using System.Collections;
+using System.Collections.Generic;
+
 namespace Java.Util
 {
     #region Iterator
@@ -105,7 +109,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html"/>
     /// </summary>
-    public partial class Iterator<E> : MASES.JNet.Specific.JNetAsyncEnumerable<Iterator<E>, E>, IIterator<E>
+    public partial class Iterator<E> : JVMBridgeBase<Iterator<E>>, IIterator<E>
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -123,7 +127,14 @@ namespace Java.Util
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public Iterator(params object[] args) : base(args) { }
-
+        /// <summary>
+        /// Converts an <see cref="Iterator{E}"/> to a <see cref="JVMBridgeBaseEnumerator{E}"/>
+        /// </summary>
+        public static implicit operator JVMBridgeBaseEnumerator<E>(Iterator<E> it) => new JVMBridgeBaseEnumerator<E>(it.BridgeInstance);
+        /// <summary>
+        /// Converts an <see cref="Iterator{E}"/> to a <see cref="IEnumerator{E}"/>
+        /// </summary>
+        public IEnumerator<E> ToIEnumerator() => new JVMBridgeBaseEnumerator<E>(this.BridgeInstance);
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Iterator.html#hasNext()"/> 
         /// </summary>
