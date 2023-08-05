@@ -304,7 +304,7 @@ namespace MASES.JNetReflector
                 }
             }
 
-            var path = Path.Combine(JNetReflectorCore.DestinationRootPath, package.Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), "AllPackageClasses.cs");
+            var path = Path.Combine(JNetReflectorCore.DestinationCSharpClassPath, package.Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), "AllPackageClasses.cs");
             if (JNetReflectorCore.JarsToAnalyze != null)
             {
                 sb.AppendLine(AllPackageClasses.CLASSES);
@@ -484,7 +484,7 @@ namespace MASES.JNetReflector
                                                          .Replace(AllPackageClasses.CLASSES, singleFileBlockStr);
 
                 var clsName = jClass.JVMClassName(null, false);
-                var classPath = Path.Combine(JNetReflectorCore.DestinationRootPath, jClass.Namespace(JNetReflectorCore.UseCamel).Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{clsName}.cs");
+                var classPath = Path.Combine(JNetReflectorCore.DestinationCSharpClassPath, jClass.Namespace(JNetReflectorCore.UseCamel).Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{clsName}.cs");
                 WriteFile(classPath, fileContent);
             }
 

@@ -1,7 +1,5 @@
 ## Generated classes
 
-This folder contains the Java classes generated using JNetReflector at the same version of JNet.
-
 The command used to build the classes is the following:
 
 ```cmd
