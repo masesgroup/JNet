@@ -61,7 +61,13 @@ namespace MASES.JNetReflector
 
             public string DestinationRootPath { get; set; }
 
+            public string DestinationCSharpClassPath { get; set; }
+
+            public string RelativeDestinationCSharpClassPath { get; set; }
+
             public string DestinationJavaListenerPath { get; set; }
+
+            public string RelativeDestinationJavaListenerPath { get; set; }
 
             public string JavaListenerBasePackage { get; set; }
 
@@ -167,10 +173,27 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
+                        Name = CLIParam.DestinationCSharpClassPath,
+                        Type = ArgumentType.Double,
+                        Help = "The destination root path where C# reflected classes will be stored",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.RelativeDestinationCSharpClassPath,
+                        Type = ArgumentType.Double,
+                        Help = "The relative destination root path, respect to DestinationRootPath, where C# reflected classes will be stored",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
                         Name = CLIParam.DestinationJavaListenerPath,
                         Type = ArgumentType.Double,
-                        Default = SpecialNames.JNetReflectorGeneratedFolder,
                         Help = "The destination root path where Java listener classes will be stored",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.RelativeDestinationJavaListenerPath,
+                        Type = ArgumentType.Double,
+                        Help = "The destination root path, respect to DestinationRootPath, where Java listener classes will be stored",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -361,8 +384,17 @@ namespace MASES.JNetReflector
         static string _DestinationRootPath;
         public static string DestinationRootPath => _DestinationRootPath ?? _ConfigurationFromFile.DestinationRootPath;
 
+        static string _DestinationCSharpClassPath;
+        public static string DestinationCSharpClassPath => _DestinationCSharpClassPath ?? _ConfigurationFromFile.DestinationCSharpClassPath ?? Path.Combine(DestinationRootPath, RelativeDestinationCSharpClassPath);
+
+        static string _RelativeDestinationCSharpClassPath;
+        public static string RelativeDestinationCSharpClassPath => _RelativeDestinationCSharpClassPath ?? _ConfigurationFromFile.RelativeDestinationCSharpClassPath;
+
         static string _DestinationJavaListenerPath;
-        public static string DestinationJavaListenerPath => _DestinationJavaListenerPath ?? _ConfigurationFromFile.DestinationJavaListenerPath;
+        public static string DestinationJavaListenerPath => _DestinationJavaListenerPath ?? _ConfigurationFromFile.DestinationJavaListenerPath ?? Path.Combine(DestinationRootPath, RelativeDestinationJavaListenerPath);
+
+        static string _RelativeDestinationJavaListenerPath;
+        public static string RelativeDestinationJavaListenerPath => _RelativeDestinationJavaListenerPath ?? _ConfigurationFromFile.RelativeDestinationJavaListenerPath;
 
         static string _JavaListenerBasePackage;
         public static string JavaListenerBasePackage => _JavaListenerBasePackage ?? _ConfigurationFromFile.JavaListenerBasePackage;
@@ -605,7 +637,10 @@ namespace MASES.JNetReflector
             }
 
             _DestinationRootPath = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationRootPath));
-            _DestinationJavaListenerPath = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationJavaListenerPath));
+            if (ParsedArgs.Exist(CLIParam.DestinationCSharpClassPath)) _DestinationCSharpClassPath = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationCSharpClassPath));
+            _RelativeDestinationCSharpClassPath = ParsedArgs.Get<string>(CLIParam.RelativeDestinationCSharpClassPath);
+            if (ParsedArgs.Exist(CLIParam.DestinationJavaListenerPath)) _DestinationJavaListenerPath = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationJavaListenerPath));
+            _RelativeDestinationJavaListenerPath = ParsedArgs.Get<string>(CLIParam.RelativeDestinationJavaListenerPath);
             if (ParsedArgs.Exist(CLIParam.JavaListenerBasePackage)) _JavaListenerBasePackage = ParsedArgs.Get<string>(CLIParam.JavaListenerBasePackage);
 
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);

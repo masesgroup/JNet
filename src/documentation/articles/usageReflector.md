@@ -25,7 +25,10 @@ _jnr_ accepts the following command-line switch:
 * **JavadocVersion**: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used
 * **OriginJavadocJARVersionAndUrls**: A CSV list of keypair of JavadocVersion and OriginJavadocUrl, separated by |, associated to the JARs to be analyzed
 * **DestinationRootPath**: The destination root path where reflected classes will be stored
+* **DestinationCSharpClassPath**: The destination root path where C# reflected classes will be stored
+* **RelativeDestinationCSharpClassPath**: The relative destination root path, respect to DestinationRootPath, where C# reflected classes will be stored
 * **DestinationJavaListenerPath**: The destination root path where Java listener classes will be stored
+* **RelativeDestinationJavaListenerPath**: The destination root path, respect to DestinationRootPath, where Java listener classes will be stored
 * **JavaListenerBasePackage**: The base package name to use when a Java listener class is created
 * **ClassesToAnalyze**: A CSV list of full qualified class names to be analyzed
 * **JarList**: A CSV list of JAR to be analyzed or folders containing the JARs
@@ -58,12 +61,15 @@ _jnr_ accepts the following command-line switch:
 Many JNet classes are generated using JNetReflector. The JVM used to build the classes is the Temurin version 11 which is the minimum JVM version supported from JCOBridge.
 The command line interface uses the following command line:
 
-> jnetreflector -TraceLevel 0 -DestinationRootPath .\src\net\JNet\Generated -ConfigurationFile .\src\net\JNet\Generated\configuration.json
+> jnetreflector -TraceLevel 0 -DestinationRootPath .\src\ -ConfigurationFile .\src\configuration.json
 
 The options used are:
 
 ```json
 {
+  "RelativeDestinationCSharpClassPath": "net\\JNet\\Generated",
+  "RelativeDestinationJavaListenerPath": "java\\jnet\\src\\main\\java",
+  "JavaListenerBasePackage": "org.mases.jnet.generated",
   "OnlyPropertiesForGetterSetter": true,
   "ModulesToParse": [
     "org.*",
@@ -84,18 +90,22 @@ The options used are:
     "java.awt.peer"
   ],
   "ClassesToBeListener": [
-    "java.util.Comparator",
-    "java.util.ServiceLoader$Provider",
-    "java.util.stream.DoubleStream$Builder",
-    "java.util.stream.IntStream$Builder",
-    "java.util.stream.LongStream$Builder",
-    "java.util.stream.Stream$Builder",
     "javax.swing.Action",
     "javax.management.NotificationFilter"
   ],
   "ClassesToAvoid": [
+    "java.lang.ProcessBuilder$Redirect$Type",
+    "java.lang.Thread$UncaughtExceptionHandler",
+    "java.util.stream.DoubleStream$Builder",
+    "java.util.stream.IntStream$Builder",
+    "java.util.stream.LongStream$Builder",
+    "java.util.stream.Stream$Builder",
+    "java.util.Comparator",
+    "java.util.EventListener",
+    "java.util.ServiceLoader$Provider",
     "javax.swing.ToolTipManager",
     "javax.swing.text.html.HTMLEditorKit$LinkController",
+    "javax.swing.plaf.basic.BasicButtonListener",
     "javax.swing.plaf.basic.BasicTreeUI$MouseHandler",
     "javax.swing.plaf.basic.BasicDesktopIconUI$MouseInputHandler",
     "javax.swing.plaf.basic.BasicTabbedPaneUI$FocusHandler",
@@ -105,7 +115,16 @@ The options used are:
     "javax.swing.plaf.basic.BasicTreeUI$KeyHandler",
     "javax.swing.plaf.basic.BasicTreeUI$ComponentHandler",
     "javax.swing.plaf.basic.BasicSplitPaneUI$FocusHandler",
-    "javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler"
+    "javax.swing.plaf.basic.BasicTabbedPaneUI$MouseHandler",
+    "javax.swing.plaf.basic.BasicOptionPaneUI$ButtonActionListener",
+    "javax.swing.plaf.basic.BasicToolBarUI$DockingListener",
+    "javax.swing.plaf.basic.BasicScrollPaneUI$HSBChangeListener",
+    "javax.swing.plaf.basic.BasicInternalFrameUI$InternalFramePropertyChangeListener",
+    "javax.swing.plaf.basic.BasicSliderUI$ScrollListener",
+    "javax.swing.plaf.basic.BasicSliderUI$TrackListener",
+    "javax.swing.plaf.basic.BasicScrollPaneUI$VSBChangeListener",
+    "javax.swing.plaf.metal.MetalComboBoxUI$MetalPropertyChangeListener",
+    "javax.tools.DiagnosticListener"
   ],
   "NamespacesInConflict": [
     "java.lang.module",

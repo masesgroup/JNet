@@ -33,7 +33,10 @@ namespace MASES.JNetReflector
         public const string JavadocVersion = "JavadocVersion";
         public const string OriginJavadocJARVersionAndUrls = "OriginJavadocJARVersionAndUrls";
         public const string DestinationRootPath = "DestinationRootPath";
+        public const string DestinationCSharpClassPath = "DestinationCSharpClassPath";
+        public const string RelativeDestinationCSharpClassPath = "RelativeDestinationCSharpClassPath";
         public const string DestinationJavaListenerPath = "DestinationJavaListenerPath";
+        public const string RelativeDestinationJavaListenerPath = "RelativeDestinationJavaListenerPath";
         public const string JavaListenerBasePackage = "JavaListenerBasePackage";
         public const string ClassesToAnalyze = "ClassesToAnalyze";
         public const string JarList = "JarList";
