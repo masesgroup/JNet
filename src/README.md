@@ -1,4 +1,21 @@
+## Generated classes
+
+This folder contains the Java classes generated using JNetReflector at the same version of JNet.
+
+The command used to build the classes is the following:
+
+```cmd
+dotnet build .\src\net\JNetReflector\JNetReflector.csproj
+cd binReflector\net6.0
+MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\src\ -ConfigurationFile ..\..\src\configuration.json
+```
+
+The configuration is:
+
+```json
 {
+  "RelativeDestinationCSharpClassPath": "net\\JNet\\Generated",
+  "RelativeDestinationJavaListenerPath": "java\\jnet\\src\\main\\java",
   "JavaListenerBasePackage": "org.mases.jnet.generated",
   "OnlyPropertiesForGetterSetter": true,
   "ModulesToParse": [
@@ -69,3 +86,4 @@
     "java.time.chrono.ChronoZonedDateTime"
   ]
 }
+```
