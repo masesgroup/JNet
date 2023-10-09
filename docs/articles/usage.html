@@ -138,6 +138,28 @@ If a developer is using JNet within its own product it is possible to override t
         }
     }
 </code></pre>
+<p><strong>IMPORTANT NOTE</strong>: <code>pathToJVM</code> shall be escaped</p>
+<ol>
+<li><code>string pathToJVM = &quot;C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.18.10-hotspot\\bin\\server\\jvm.dll&quot;;</code></li>
+<li><code>string pathToJVM = @&quot;C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\bin\server\jvm.dll&quot;;</code></li>
+</ol>
+<h3 id="special-initialization-conditions">Special initialization conditions</h3>
+<p><a href="https://www.jcobridge.com/">JCOBridge</a> try to identify a suitable JRE/JDK installation within the system using some standard mechanism of JRE/JDK: <code>JAVA_HOME</code> environment variable or Windows registry if available.
+However it is possible, on Windows operating systems, that the library raises an <strong>InvalidOperationException: Missing Java Key in registry: Couldn't find Java installed on the machine</strong>.
+This means that neither <code>JAVA_HOME</code> nor Windows registry contains information about a default installed JRE/JDK: some vendors may not setup them.
+If the developer/user encounter this condition can do the following steps:</p>
+<ol>
+<li>On a command prompt execute <code>set | findstr JAVA_HOME</code> and verify the result;</li>
+<li>If something was reported maybe the <code>JAVA_HOME</code> environment variable is not set at system level, but at a different level like user level which is not visible from the JNet process that raised the exception;</li>
+<li>Try to set <code>JAVA_HOME</code> at system level e.g. <code>JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\</code>;</li>
+<li>Try to set <code>JCOBRIDGE_JVMPath</code> at system level e.g. <code>JCOBRIDGE_JVMPath=C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\</code>.</li>
+</ol>
+<p><strong>IMPORTANT NOTES</strong>:</p>
+<ul>
+<li>One of <code>JCOBRIDGE_JVMPath</code> or <code>JAVA_HOME</code> environment variables or Windows registry (on Windows OSes) shall be available</li>
+<li><code>JCOBRIDGE_JVMPath</code> environment variable takes precedence over <code>JAVA_HOME</code> and Windows registry: you can set <code>JCOBRIDGE_JVMPath</code> to <code>C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\bin\server\jvm.dll</code> and avoid to override <code>JVMPath</code> in your code</li>
+<li>After first initialization steps, <code>JVMPath</code> takes precedence over <code>JCOBRIDGE_JVMPath</code>/<code>JAVA_HOME</code> environment variables or Windows registry</li>
+</ul>
 </article>
           </div>
           
