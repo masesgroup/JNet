@@ -71,56 +71,6 @@
 
 <p>To use JNet classes the developer can write code in .NET using the same classes available in the official Java packages.
 If classes or methods are not available yet it is possible to use the approach synthetized in <a href="API_extensibility.html">What to do if an API was not yet implemented</a></p>
-<h2 id="basic-example">Basic example</h2>
-<p>Below a basic example which demonstrates how to create a program based on JNet and some other features available like generics and exception handling.
-Within the program the comments try to explain how the code works.</p>
-<pre><code class="lang-c#">using Java.Util;
-using MASES.JNet.Extensions;
-using System.Diagnostics;
-using Java.Lang;
-
-namespace MASES.JNetExample
-{
-    // this class defines a concrete implementation of JNetCore&lt;&gt;
-    class MyJNetCore : JNetCore&lt;MyJNetCore&gt;
-    { 
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // the first step is mandatory: 
-            // it invokes the method CreateGlobalInstance to allocate the JVM and prepares the environment
-            MyJNetCore.CreateGlobalInstance();
-            // at the end of initialization the arguments in the command line not used from JNet (and JCOBridge) 
-            // are available to be used like any developer does with the args in the Main 
-            var appArgs = MyJNetCore.FilteredArgs;
-
-            // now we go into .NET/JVM interaction based on generics
-            try
-            {
-                // in the first step the code allocates a java.util.Set&lt;String&gt; within the JVM using the java.util.Collections class
-                // and returns a Java.Util.Set&lt;string&gt; in .NET
-                var set = Collections.Singleton(&quot;test&quot;);
-                // then the code tries to Add a new value if it is available in command-line, 
-                // but we expect the JVM raises an exception
-                if (appArgs.Length != 0) set.Add(appArgs[0]);
-            }
-            // if the Add is invoked the operation on java.util.Set&lt;String&gt; cannot be performed 
-            // because Collections.Singleton returns an immutable java.util.Set&lt;String&gt;
-            // see https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(T))
-            catch (UnsupportedOperationException) 
-            {
-                // so we enter here because the engine translates the Java exception in an equivalent exception managed from C#
-                System.Console.WriteLine(&quot;Operation not supported as expected&quot;);
-            }
-            // this piece of code is for any convenience because we want a clean close of the application
-            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
-        }
-    }
-}
-</code></pre>
 <h2 id="environment-setup">Environment setup</h2>
 <p>JNet accepts many command-line switches to customize its behavior. The full list is available at <a href="commandlineswitch.html">Command line switch</a> page.</p>
 <h3 id="jvm-identification">JVM identification</h3>
@@ -160,6 +110,188 @@ If the developer/user encounter this condition can do the following steps:</p>
 <li><code>JCOBRIDGE_JVMPath</code> environment variable takes precedence over <code>JAVA_HOME</code> and Windows registry: you can set <code>JCOBRIDGE_JVMPath</code> to <code>C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\bin\server\jvm.dll</code> and avoid to override <code>JVMPath</code> in your code</li>
 <li>After first initialization steps, <code>JVMPath</code> takes precedence over <code>JCOBRIDGE_JVMPath</code>/<code>JAVA_HOME</code> environment variables or Windows registry</li>
 </ul>
+<h2 id="basic-example">Basic example</h2>
+<p>Below a basic example which demonstrates how to create a program based on JNet and some other features available like generics and exception handling.
+Within the program the comments try to explain how the code works.</p>
+<pre><code class="lang-c#">using Java.Util;
+using MASES.JNet.Extensions;
+using System.Diagnostics;
+using Java.Lang;
+
+namespace MASES.JNetExample
+{
+    // this class defines a concrete implementation of JNetCore&lt;&gt;
+    class MyJNetCore : JNetCore&lt;MyJNetCore&gt;
+    { 
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // the first step is mandatory: 
+            // it invokes the method CreateGlobalInstance to allocate the JVM and prepares the environment
+            MyJNetCore.CreateGlobalInstance();
+            // at the end of initialization the arguments in the command line not used from JNet (and JCOBridge) 
+            // are available to be used like any developer does with the args in the Main 
+            var appArgs = MyJNetCore.FilteredArgs;
+
+            // now we go into .NET/JVM interaction based on generics
+            try
+            {
+                // in the first step the code allocates a java.util.Set&lt;String&gt; within the JVM using the java.util.Collections class
+                // and returns a Java.Util.Set&lt;string&gt; in .NET
+                Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;);
+
+                // then the code tries to Add a new value if it is available in command-line, 
+                // but we expect the JVM raises an exception
+                if (appArgs.Length != 0) set.Add(appArgs[0]);
+            }
+            // if the Add is invoked the operation on java.util.Set&lt;String&gt; cannot be performed 
+            // because Collections.Singleton returns an immutable java.util.Set&lt;String&gt;
+            // see https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singleton(T))
+            catch (UnsupportedOperationException) 
+            {
+                // so we enter here because the engine translates the Java exception in an equivalent exception managed from C#
+                System.Console.WriteLine(&quot;Operation not supported as expected&quot;);
+            }
+            // this piece of code is for any convenience because we want a clean close of the application
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+        }
+    }
+}
+</code></pre>
+<h2 id="avoid-javalangnullpointerexception-writing-a-good-code">Avoid <code>Java.Lang.NullPointerException</code> writing a good code</h2>
+<p>Sometime during execution a <code>Java.Lang.NullPointerException</code> can be raised and seems there isn't neither a real problem in the .NET code you wrote nor a specific pattern or time when it is raised.
+The problem is behind the scene and it is correlated on how Garbage Collector and code optimizer works.
+In the code of the previous chapter the <code>Collections.Singleton(&quot;test&quot;)</code> creates an object which is used from <code>set.Add(appArgs[0])</code> and in this case the Garbage Collector does not retires the object.
+Considering the following code snippet:</p>
+<pre><code class="lang-c#">using Java.Util;
+using MASES.JNet.Extensions;
+using System.Diagnostics;
+using Java.Lang;
+
+namespace MASES.JNetExample
+{
+    class MyJNetCore : JNetCore&lt;MyJNetCore&gt; { }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MyJNetCore.CreateGlobalInstance();
+            try
+            {
+                Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;);
+                ArrayList&lt;string&gt; arrayList = new();
+                arrayList.AddAll(0, set); // this point can raise Java.Lang.NullPointerException
+            }
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+        }
+    }
+}
+</code></pre>
+<p>the <code>Collections.Singleton(&quot;test&quot;)</code> ends its life, from .NET point of view, when <code>arrayList.AddAll(0, set)</code> is invoked:</p>
+<ul>
+<li><code>Java.Util.Set&lt;string&gt;</code> is a .NET container for JVM <code>java.util.Set&lt;String&gt;</code></li>
+<li><code>arrayList.AddAll(0, set)</code> receives the <code>Java.Util.Set&lt;string&gt;</code> instance and sends to JVM the reference to <code>java.util.Set&lt;String&gt;</code> of JVM</li>
+<li>from .NET point of view <code>Java.Util.Set&lt;string&gt;</code> has ended its life and can be retired because does not have any other root referencing it</li>
+<li>.NET Garbage Collector activates arbitrarily when some conditions meet: <a href="https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/">https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/</a></li>
+</ul>
+<p>Most of the time the code above works without problem, but sometimes the JVM can raise a <code>Java.Lang.NullPointerException</code> because <code>Java.Util.Set&lt;string&gt;</code> was retired from .NET GC.</p>
+<p>To solve the issue, and force the GC to not retire the instance, there are some possible code snippet a developer can follows:</p>
+<h3 id="using-or-try-finally-with-dispose-patterns"><code>using</code> or <code>try-finally</code> with <code>Dispose</code> patterns</h3>
+<p>All classes implements <code>IDisposable</code> interface, the code snippet becomes:</p>
+<pre><code class="lang-c#">using Java.Util;
+using MASES.JNet.Extensions;
+using System.Diagnostics;
+using Java.Lang;
+
+namespace MASES.JNetExample
+{
+    class MyJNetCore : JNetCore&lt;MyJNetCore&gt; { }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MyJNetCore.CreateGlobalInstance();
+            try
+            {
+                using (Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;))
+                {
+                    ArrayList&lt;string&gt; arrayList = new();
+                    arrayList.AddAll(0, set);
+                }
+            }
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+        }
+    }
+}
+</code></pre>
+<p>or</p>
+<pre><code class="lang-c#">using Java.Util;
+using MASES.JNet.Extensions;
+using System.Diagnostics;
+using Java.Lang;
+
+namespace MASES.JNetExample
+{
+    class MyJNetCore : JNetCore&lt;MyJNetCore&gt; { }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MyJNetCore.CreateGlobalInstance();
+            try
+            {
+                Java.Util.Set&lt;string&gt; set = null;
+                try
+                {
+                    set = Collections.Singleton(&quot;test&quot;);
+                    ArrayList&lt;string&gt; arrayList = new();
+                    arrayList.AddAll(0, set);
+                }
+                finally { set?.Dispose(); }
+            }
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+        }
+    }
+}
+</code></pre>
+<h3 id="suppressfinalizereregisterforfinalize-pattern"><code>SuppressFinalize</code>/<code>ReRegisterForFinalize</code> pattern</h3>
+<p>Over every .NET object can be invoke the <code>SuppressFinalize</code>, the code snippet becomes:</p>
+<pre><code class="lang-c#">using Java.Util;
+using MASES.JNet.Extensions;
+using System.Diagnostics;
+using Java.Lang;
+
+namespace MASES.JNetExample
+{
+    class MyJNetCore : JNetCore&lt;MyJNetCore&gt; { }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MyJNetCore.CreateGlobalInstance();
+            try
+            {
+                Java.Util.Set&lt;string&gt; set = Collections.Singleton(&quot;test&quot;);
+                try
+                {
+                    System.GC.SuppressFinalize(set);
+                    ArrayList&lt;string&gt; arrayList = new();
+                    arrayList.AddAll(0, set);
+                }
+                finally { System.GC.ReRegisterForFinalize(set); }
+            }
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+        }
+    }
+}
+</code></pre>
 </article>
           </div>
           
