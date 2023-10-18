@@ -61,7 +61,7 @@ namespace Org.Xml.Sax.Helpers
             AddEventHandler("endElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndElementEventHandler)); OnEndElement = EndElement;
             AddEventHandler("ignorableWhitespace", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler)); OnIgnorableWhitespace = IgnorableWhitespace;
             AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ParseEventHandler)); OnParse = Parse;
-            AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler)); OnParse = Parse;
+            AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler)); OnParse1 = Parse;
             AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ProcessingInstructionEventHandler)); OnProcessingInstruction = ProcessingInstruction;
             AddEventHandler("setContentHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ContentHandler>>>(SetContentHandlerEventHandler)); OnSetContentHandler = SetContentHandler;
             AddEventHandler("setDocumentLocator", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler)); OnSetDocumentLocator = SetDocumentLocator;
