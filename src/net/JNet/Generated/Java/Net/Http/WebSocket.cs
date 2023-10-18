@@ -312,13 +312,13 @@ namespace Java.Net.Http
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onBinary", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnBinaryEventHandler)); OnOnBinary = OnBinary;
-                AddEventHandler("onClose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnCloseEventHandler)); OnOnClose = OnClose;
-                AddEventHandler("onPing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPingEventHandler)); OnOnPing = OnPing;
-                AddEventHandler("onPong", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPongEventHandler)); OnOnPong = OnPong;
-                AddEventHandler("onText", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnTextEventHandler)); OnOnText = OnText;
-                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnErrorEventHandler)); OnOnError = OnError;
-                AddEventHandler("onOpen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnOpenEventHandler)); OnOnOpen = OnOpen;
+                AddEventHandler("onBinary", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnBinaryEventHandler));
+                AddEventHandler("onClose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnCloseEventHandler));
+                AddEventHandler("onPing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPingEventHandler));
+                AddEventHandler("onPong", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnPongEventHandler));
+                AddEventHandler("onText", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnTextEventHandler));
+                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnErrorEventHandler));
+                AddEventHandler("onOpen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnOpenEventHandler));
 
             }
 
@@ -329,11 +329,9 @@ namespace Java.Net.Http
 
             void OnBinaryEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
-                if (OnOnBinary != null)
-                {
-                    var executionResult = OnOnBinary.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0), data.EventData.GetAt<bool>(1));
-                    data.SetReturnValue(executionResult);
-                }
+                var methodToExecute = (OnOnBinary != null) ? OnOnBinary : OnBinary;
+                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0), data.EventData.GetAt<bool>(1));
+                data.SetReturnValue(executionResult);
             }
 
             /// <summary>
@@ -355,11 +353,9 @@ namespace Java.Net.Http
 
             void OnCloseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
-                if (OnOnClose != null)
-                {
-                    var executionResult = OnOnClose.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<string>(1));
-                    data.SetReturnValue(executionResult);
-                }
+                var methodToExecute = (OnOnClose != null) ? OnOnClose : OnClose;
+                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<string>(1));
+                data.SetReturnValue(executionResult);
             }
 
             /// <summary>
@@ -381,11 +377,9 @@ namespace Java.Net.Http
 
             void OnPingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
-                if (OnOnPing != null)
-                {
-                    var executionResult = OnOnPing.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0));
-                    data.SetReturnValue(executionResult);
-                }
+                var methodToExecute = (OnOnPing != null) ? OnOnPing : OnPing;
+                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0));
+                data.SetReturnValue(executionResult);
             }
 
             /// <summary>
@@ -406,11 +400,9 @@ namespace Java.Net.Http
 
             void OnPongEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
-                if (OnOnPong != null)
-                {
-                    var executionResult = OnOnPong.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0));
-                    data.SetReturnValue(executionResult);
-                }
+                var methodToExecute = (OnOnPong != null) ? OnOnPong : OnPong;
+                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Nio.ByteBuffer>(0));
+                data.SetReturnValue(executionResult);
             }
 
             /// <summary>
@@ -431,11 +423,9 @@ namespace Java.Net.Http
 
             void OnTextEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
-                if (OnOnText != null)
-                {
-                    var executionResult = OnOnText.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.CharSequence>(0), data.EventData.GetAt<bool>(1));
-                    data.SetReturnValue(executionResult);
-                }
+                var methodToExecute = (OnOnText != null) ? OnOnText : OnText;
+                var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.CharSequence>(0), data.EventData.GetAt<bool>(1));
+                data.SetReturnValue(executionResult);
             }
 
             /// <summary>
@@ -457,7 +447,8 @@ namespace Java.Net.Http
 
             void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
-                if (OnOnError != null) OnOnError.Invoke(data.EventData.TypedEventData, JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+                var methodToExecute = (OnOnError != null) ? OnOnError : OnError;
+                methodToExecute.Invoke(data.EventData.TypedEventData, JVMBridgeException.New(data.EventData.ExtraData.Get(0) as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
             }
 
             /// <summary>
@@ -477,7 +468,8 @@ namespace Java.Net.Http
 
             void OnOpenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>> data)
             {
-                if (OnOnOpen != null) OnOnOpen.Invoke(data.EventData.TypedEventData);
+                var methodToExecute = (OnOnOpen != null) ? OnOnOpen : OnOpen;
+                methodToExecute.Invoke(data.EventData.TypedEventData);
             }
 
             /// <summary>

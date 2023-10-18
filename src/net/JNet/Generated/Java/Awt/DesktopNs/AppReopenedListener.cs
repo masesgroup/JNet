@@ -73,7 +73,7 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("appReopened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppReopenedEvent>>>(AppReopenedEventHandler)); OnAppReopened = AppReopened;
+            AddEventHandler("appReopened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppReopenedEvent>>>(AppReopenedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Awt.DesktopNs
 
         void AppReopenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppReopenedEvent>> data)
         {
-            if (OnAppReopened != null) OnAppReopened.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAppReopened != null) ? OnAppReopened : AppReopened;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

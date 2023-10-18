@@ -74,7 +74,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler)); OnGetAsDouble = GetAsDouble;
+            AddEventHandler("getAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler));
 
         }
 
@@ -85,11 +85,9 @@ namespace Java.Util.Function
 
         void GetAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnGetAsDouble != null)
-            {
-                var executionResult = OnGetAsDouble.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetAsDouble != null) ? OnGetAsDouble : GetAsDouble;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

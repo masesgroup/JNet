@@ -78,8 +78,8 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("treeCollapsed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeCollapsedEventHandler)); OnTreeCollapsed = TreeCollapsed;
-            AddEventHandler("treeExpanded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeExpandedEventHandler)); OnTreeExpanded = TreeExpanded;
+            AddEventHandler("treeCollapsed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeCollapsedEventHandler));
+            AddEventHandler("treeExpanded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>>>(TreeExpandedEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Javax.Swing.Event
 
         void TreeCollapsedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
         {
-            if (OnTreeCollapsed != null) OnTreeCollapsed.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnTreeCollapsed != null) ? OnTreeCollapsed : TreeCollapsed;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Javax.Swing.Event
 
         void TreeExpandedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
         {
-            if (OnTreeExpanded != null) OnTreeExpanded.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnTreeExpanded != null) ? OnTreeExpanded : TreeExpanded;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

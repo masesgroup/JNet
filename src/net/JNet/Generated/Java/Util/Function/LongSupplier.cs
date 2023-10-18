@@ -74,7 +74,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler)); OnGetAsLong = GetAsLong;
+            AddEventHandler("getAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler));
 
         }
 
@@ -85,11 +85,9 @@ namespace Java.Util.Function
 
         void GetAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnGetAsLong != null)
-            {
-                var executionResult = OnGetAsLong.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetAsLong != null) ? OnGetAsLong : GetAsLong;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

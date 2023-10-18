@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("valueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>>>(ValueChangedEventHandler)); OnValueChanged = ValueChanged;
+            AddEventHandler("valueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>>>(ValueChangedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Swing.Event
 
         void ValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>> data)
         {
-            if (OnValueChanged != null) OnValueChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnValueChanged != null) ? OnValueChanged : ValueChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

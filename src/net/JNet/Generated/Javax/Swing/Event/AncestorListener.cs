@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("ancestorAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorAddedEventHandler)); OnAncestorAdded = AncestorAdded;
-            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorMovedEventHandler)); OnAncestorMoved = AncestorMoved;
-            AddEventHandler("ancestorRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorRemovedEventHandler)); OnAncestorRemoved = AncestorRemoved;
+            AddEventHandler("ancestorAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorAddedEventHandler));
+            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorMovedEventHandler));
+            AddEventHandler("ancestorRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>>>(AncestorRemovedEventHandler));
 
         }
 
@@ -96,7 +96,8 @@ namespace Javax.Swing.Event
 
         void AncestorAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
         {
-            if (OnAncestorAdded != null) OnAncestorAdded.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAncestorAdded != null) ? OnAncestorAdded : AncestorAdded;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -115,7 +116,8 @@ namespace Javax.Swing.Event
 
         void AncestorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
         {
-            if (OnAncestorMoved != null) OnAncestorMoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAncestorMoved != null) ? OnAncestorMoved : AncestorMoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -134,7 +136,8 @@ namespace Javax.Swing.Event
 
         void AncestorRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
         {
-            if (OnAncestorRemoved != null) OnAncestorRemoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAncestorRemoved != null) ? OnAncestorRemoved : AncestorRemoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

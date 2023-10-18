@@ -93,11 +93,11 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("columnAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnAddedEventHandler)); OnColumnAdded = ColumnAdded;
-            AddEventHandler("columnMarginChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(ColumnMarginChangedEventHandler)); OnColumnMarginChanged = ColumnMarginChanged;
-            AddEventHandler("columnMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnMovedEventHandler)); OnColumnMoved = ColumnMoved;
-            AddEventHandler("columnRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnRemovedEventHandler)); OnColumnRemoved = ColumnRemoved;
-            AddEventHandler("columnSelectionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>>>(ColumnSelectionChangedEventHandler)); OnColumnSelectionChanged = ColumnSelectionChanged;
+            AddEventHandler("columnAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnAddedEventHandler));
+            AddEventHandler("columnMarginChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(ColumnMarginChangedEventHandler));
+            AddEventHandler("columnMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnMovedEventHandler));
+            AddEventHandler("columnRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>>>(ColumnRemovedEventHandler));
+            AddEventHandler("columnSelectionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>>>(ColumnSelectionChangedEventHandler));
 
         }
 
@@ -108,7 +108,8 @@ namespace Javax.Swing.Event
 
         void ColumnAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>> data)
         {
-            if (OnColumnAdded != null) OnColumnAdded.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnColumnAdded != null) ? OnColumnAdded : ColumnAdded;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -127,7 +128,8 @@ namespace Javax.Swing.Event
 
         void ColumnMarginChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
         {
-            if (OnColumnMarginChanged != null) OnColumnMarginChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnColumnMarginChanged != null) ? OnColumnMarginChanged : ColumnMarginChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -146,7 +148,8 @@ namespace Javax.Swing.Event
 
         void ColumnMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>> data)
         {
-            if (OnColumnMoved != null) OnColumnMoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnColumnMoved != null) ? OnColumnMoved : ColumnMoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -165,7 +168,8 @@ namespace Javax.Swing.Event
 
         void ColumnRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableColumnModelEvent>> data)
         {
-            if (OnColumnRemoved != null) OnColumnRemoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnColumnRemoved != null) ? OnColumnRemoved : ColumnRemoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -184,7 +188,8 @@ namespace Javax.Swing.Event
 
         void ColumnSelectionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>> data)
         {
-            if (OnColumnSelectionChanged != null) OnColumnSelectionChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnColumnSelectionChanged != null) ? OnColumnSelectionChanged : ColumnSelectionChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

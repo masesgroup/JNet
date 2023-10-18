@@ -134,12 +134,12 @@ namespace Javax.Imageio.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("imageUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageUpdateEventHandler)); OnImageUpdate = ImageUpdate;
-            AddEventHandler("passComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(PassCompleteEventHandler)); OnPassComplete = PassComplete;
-            AddEventHandler("passStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(PassStartedEventHandler)); OnPassStarted = PassStarted;
-            AddEventHandler("thumbnailPassComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailPassCompleteEventHandler)); OnThumbnailPassComplete = ThumbnailPassComplete;
-            AddEventHandler("thumbnailPassStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailPassStartedEventHandler)); OnThumbnailPassStarted = ThumbnailPassStarted;
-            AddEventHandler("thumbnailUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailUpdateEventHandler)); OnThumbnailUpdate = ThumbnailUpdate;
+            AddEventHandler("imageUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageUpdateEventHandler));
+            AddEventHandler("passComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(PassCompleteEventHandler));
+            AddEventHandler("passStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(PassStartedEventHandler));
+            AddEventHandler("thumbnailPassComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailPassCompleteEventHandler));
+            AddEventHandler("thumbnailPassStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailPassStartedEventHandler));
+            AddEventHandler("thumbnailUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailUpdateEventHandler));
 
         }
 
@@ -150,7 +150,8 @@ namespace Javax.Imageio.Event
 
         void ImageUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnImageUpdate != null) OnImageUpdate.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int[]>(7));
+            var methodToExecute = (OnImageUpdate != null) ? OnImageUpdate : ImageUpdate;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int[]>(7));
         }
 
         /// <summary>
@@ -177,7 +178,8 @@ namespace Javax.Imageio.Event
 
         void PassCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnPassComplete != null) OnPassComplete.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0));
+            var methodToExecute = (OnPassComplete != null) ? OnPassComplete : PassComplete;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0));
         }
 
         /// <summary>
@@ -197,7 +199,8 @@ namespace Javax.Imageio.Event
 
         void PassStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnPassStarted != null) OnPassStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int[]>(8));
+            var methodToExecute = (OnPassStarted != null) ? OnPassStarted : PassStarted;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int[]>(8));
         }
 
         /// <summary>
@@ -225,7 +228,8 @@ namespace Javax.Imageio.Event
 
         void ThumbnailPassCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnThumbnailPassComplete != null) OnThumbnailPassComplete.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0));
+            var methodToExecute = (OnThumbnailPassComplete != null) ? OnThumbnailPassComplete : ThumbnailPassComplete;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0));
         }
 
         /// <summary>
@@ -245,7 +249,8 @@ namespace Javax.Imageio.Event
 
         void ThumbnailPassStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnThumbnailPassStarted != null) OnThumbnailPassStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int[]>(8));
+            var methodToExecute = (OnThumbnailPassStarted != null) ? OnThumbnailPassStarted : ThumbnailPassStarted;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int>(7), data.EventData.GetAt<int[]>(8));
         }
 
         /// <summary>
@@ -273,7 +278,8 @@ namespace Javax.Imageio.Event
 
         void ThumbnailUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnThumbnailUpdate != null) OnThumbnailUpdate.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int[]>(7));
+            var methodToExecute = (OnThumbnailUpdate != null) ? OnThumbnailUpdate : ThumbnailUpdate;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Awt.ImageNs.BufferedImage>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3), data.EventData.GetAt<int>(4), data.EventData.GetAt<int>(5), data.EventData.GetAt<int>(6), data.EventData.GetAt<int[]>(7));
         }
 
         /// <summary>

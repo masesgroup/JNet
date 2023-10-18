@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("hyperlinkUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.HyperlinkEvent>>>(HyperlinkUpdateEventHandler)); OnHyperlinkUpdate = HyperlinkUpdate;
+            AddEventHandler("hyperlinkUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.HyperlinkEvent>>>(HyperlinkUpdateEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Swing.Event
 
         void HyperlinkUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.HyperlinkEvent>> data)
         {
-            if (OnHyperlinkUpdate != null) OnHyperlinkUpdate.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnHyperlinkUpdate != null) ? OnHyperlinkUpdate : HyperlinkUpdate;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

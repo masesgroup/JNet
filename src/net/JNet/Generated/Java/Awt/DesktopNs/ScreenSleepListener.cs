@@ -78,8 +78,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("screenAboutToSleep", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAboutToSleepEventHandler)); OnScreenAboutToSleep = ScreenAboutToSleep;
-            AddEventHandler("screenAwoke", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAwokeEventHandler)); OnScreenAwoke = ScreenAwoke;
+            AddEventHandler("screenAboutToSleep", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAboutToSleepEventHandler));
+            AddEventHandler("screenAwoke", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>>>(ScreenAwokeEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Awt.DesktopNs
 
         void ScreenAboutToSleepEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>> data)
         {
-            if (OnScreenAboutToSleep != null) OnScreenAboutToSleep.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnScreenAboutToSleep != null) ? OnScreenAboutToSleep : ScreenAboutToSleep;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Awt.DesktopNs
 
         void ScreenAwokeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.ScreenSleepEvent>> data)
         {
-            if (OnScreenAwoke != null) OnScreenAwoke.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnScreenAwoke != null) ? OnScreenAwoke : ScreenAwoke;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

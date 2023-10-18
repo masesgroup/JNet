@@ -78,8 +78,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("userSessionActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionActivatedEventHandler)); OnUserSessionActivated = UserSessionActivated;
-            AddEventHandler("userSessionDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionDeactivatedEventHandler)); OnUserSessionDeactivated = UserSessionDeactivated;
+            AddEventHandler("userSessionActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionActivatedEventHandler));
+            AddEventHandler("userSessionDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>>>(UserSessionDeactivatedEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Awt.DesktopNs
 
         void UserSessionActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>> data)
         {
-            if (OnUserSessionActivated != null) OnUserSessionActivated.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnUserSessionActivated != null) ? OnUserSessionActivated : UserSessionActivated;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Awt.DesktopNs
 
         void UserSessionDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>> data)
         {
-            if (OnUserSessionDeactivated != null) OnUserSessionDeactivated.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnUserSessionDeactivated != null) ? OnUserSessionDeactivated : UserSessionDeactivated;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

@@ -78,8 +78,8 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("editingCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingCanceledEventHandler)); OnEditingCanceled = EditingCanceled;
-            AddEventHandler("editingStopped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingStoppedEventHandler)); OnEditingStopped = EditingStopped;
+            AddEventHandler("editingCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingCanceledEventHandler));
+            AddEventHandler("editingStopped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>>>(EditingStoppedEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Javax.Swing.Event
 
         void EditingCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
         {
-            if (OnEditingCanceled != null) OnEditingCanceled.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnEditingCanceled != null) ? OnEditingCanceled : EditingCanceled;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Javax.Swing.Event
 
         void EditingStoppedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
         {
-            if (OnEditingStopped != null) OnEditingStopped.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnEditingStopped != null) ? OnEditingStopped : EditingStopped;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

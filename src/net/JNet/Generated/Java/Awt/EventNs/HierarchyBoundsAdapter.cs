@@ -50,8 +50,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorMovedEventHandler)); OnAncestorMoved = AncestorMoved;
-            AddEventHandler("ancestorResized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorResizedEventHandler)); OnAncestorResized = AncestorResized;
+            AddEventHandler("ancestorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorMovedEventHandler));
+            AddEventHandler("ancestorResized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(AncestorResizedEventHandler));
 
         }
 
@@ -62,7 +62,8 @@ namespace Java.Awt.EventNs
 
         void AncestorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
         {
-            if (OnAncestorMoved != null) OnAncestorMoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAncestorMoved != null) ? OnAncestorMoved : AncestorMoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -81,7 +82,8 @@ namespace Java.Awt.EventNs
 
         void AncestorResizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
         {
-            if (OnAncestorResized != null) OnAncestorResized.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAncestorResized != null) ? OnAncestorResized : AncestorResized;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

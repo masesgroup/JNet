@@ -93,11 +93,11 @@ namespace Java.Awt.Dnd
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("dragDropEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDropEvent>>>(DragDropEndEventHandler)); OnDragDropEnd = DragDropEnd;
-            AddEventHandler("dragEnter", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragEnterEventHandler)); OnDragEnter = DragEnter;
-            AddEventHandler("dragExit", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceEvent>>>(DragExitEventHandler)); OnDragExit = DragExit;
-            AddEventHandler("dragOver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragOverEventHandler)); OnDragOver = DragOver;
-            AddEventHandler("dropActionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DropActionChangedEventHandler)); OnDropActionChanged = DropActionChanged;
+            AddEventHandler("dragDropEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDropEvent>>>(DragDropEndEventHandler));
+            AddEventHandler("dragEnter", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragEnterEventHandler));
+            AddEventHandler("dragExit", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceEvent>>>(DragExitEventHandler));
+            AddEventHandler("dragOver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragOverEventHandler));
+            AddEventHandler("dropActionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DropActionChangedEventHandler));
 
         }
 
@@ -108,7 +108,8 @@ namespace Java.Awt.Dnd
 
         void DragDropEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDropEvent>> data)
         {
-            if (OnDragDropEnd != null) OnDragDropEnd.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnDragDropEnd != null) ? OnDragDropEnd : DragDropEnd;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -127,7 +128,8 @@ namespace Java.Awt.Dnd
 
         void DragEnterEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {
-            if (OnDragEnter != null) OnDragEnter.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnDragEnter != null) ? OnDragEnter : DragEnter;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -146,7 +148,8 @@ namespace Java.Awt.Dnd
 
         void DragExitEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceEvent>> data)
         {
-            if (OnDragExit != null) OnDragExit.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnDragExit != null) ? OnDragExit : DragExit;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -165,7 +168,8 @@ namespace Java.Awt.Dnd
 
         void DragOverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {
-            if (OnDragOver != null) OnDragOver.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnDragOver != null) ? OnDragOver : DragOver;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -184,7 +188,8 @@ namespace Java.Awt.Dnd
 
         void DropActionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {
-            if (OnDropActionChanged != null) OnDropActionChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnDropActionChanged != null) ? OnDropActionChanged : DropActionChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

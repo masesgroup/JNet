@@ -88,10 +88,10 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("treeNodesChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesChangedEventHandler)); OnTreeNodesChanged = TreeNodesChanged;
-            AddEventHandler("treeNodesInserted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesInsertedEventHandler)); OnTreeNodesInserted = TreeNodesInserted;
-            AddEventHandler("treeNodesRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesRemovedEventHandler)); OnTreeNodesRemoved = TreeNodesRemoved;
-            AddEventHandler("treeStructureChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeStructureChangedEventHandler)); OnTreeStructureChanged = TreeStructureChanged;
+            AddEventHandler("treeNodesChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesChangedEventHandler));
+            AddEventHandler("treeNodesInserted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesInsertedEventHandler));
+            AddEventHandler("treeNodesRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeNodesRemovedEventHandler));
+            AddEventHandler("treeStructureChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>>>(TreeStructureChangedEventHandler));
 
         }
 
@@ -102,7 +102,8 @@ namespace Javax.Swing.Event
 
         void TreeNodesChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
         {
-            if (OnTreeNodesChanged != null) OnTreeNodesChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnTreeNodesChanged != null) ? OnTreeNodesChanged : TreeNodesChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -121,7 +122,8 @@ namespace Javax.Swing.Event
 
         void TreeNodesInsertedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
         {
-            if (OnTreeNodesInserted != null) OnTreeNodesInserted.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnTreeNodesInserted != null) ? OnTreeNodesInserted : TreeNodesInserted;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -140,7 +142,8 @@ namespace Javax.Swing.Event
 
         void TreeNodesRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
         {
-            if (OnTreeNodesRemoved != null) OnTreeNodesRemoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnTreeNodesRemoved != null) ? OnTreeNodesRemoved : TreeNodesRemoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -159,7 +162,8 @@ namespace Javax.Swing.Event
 
         void TreeStructureChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeModelEvent>> data)
         {
-            if (OnTreeStructureChanged != null) OnTreeStructureChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnTreeStructureChanged != null) ? OnTreeStructureChanged : TreeStructureChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

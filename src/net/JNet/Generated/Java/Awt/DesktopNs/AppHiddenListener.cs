@@ -78,8 +78,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("appHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppHiddenEventHandler)); OnAppHidden = AppHidden;
-            AddEventHandler("appUnhidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppUnhiddenEventHandler)); OnAppUnhidden = AppUnhidden;
+            AddEventHandler("appHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppHiddenEventHandler));
+            AddEventHandler("appUnhidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>>>(AppUnhiddenEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Awt.DesktopNs
 
         void AppHiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>> data)
         {
-            if (OnAppHidden != null) OnAppHidden.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAppHidden != null) ? OnAppHidden : AppHidden;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Awt.DesktopNs
 
         void AppUnhiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppHiddenEvent>> data)
         {
-            if (OnAppUnhidden != null) OnAppUnhidden.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAppUnhidden != null) ? OnAppUnhidden : AppUnhidden;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

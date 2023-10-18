@@ -103,13 +103,13 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("internalFrameActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameActivatedEventHandler)); OnInternalFrameActivated = InternalFrameActivated;
-            AddEventHandler("internalFrameClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameClosedEventHandler)); OnInternalFrameClosed = InternalFrameClosed;
-            AddEventHandler("internalFrameClosing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameClosingEventHandler)); OnInternalFrameClosing = InternalFrameClosing;
-            AddEventHandler("internalFrameDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameDeactivatedEventHandler)); OnInternalFrameDeactivated = InternalFrameDeactivated;
-            AddEventHandler("internalFrameDeiconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameDeiconifiedEventHandler)); OnInternalFrameDeiconified = InternalFrameDeiconified;
-            AddEventHandler("internalFrameIconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameIconifiedEventHandler)); OnInternalFrameIconified = InternalFrameIconified;
-            AddEventHandler("internalFrameOpened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameOpenedEventHandler)); OnInternalFrameOpened = InternalFrameOpened;
+            AddEventHandler("internalFrameActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameActivatedEventHandler));
+            AddEventHandler("internalFrameClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameClosedEventHandler));
+            AddEventHandler("internalFrameClosing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameClosingEventHandler));
+            AddEventHandler("internalFrameDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameDeactivatedEventHandler));
+            AddEventHandler("internalFrameDeiconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameDeiconifiedEventHandler));
+            AddEventHandler("internalFrameIconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameIconifiedEventHandler));
+            AddEventHandler("internalFrameOpened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>>>(InternalFrameOpenedEventHandler));
 
         }
 
@@ -120,7 +120,8 @@ namespace Javax.Swing.Event
 
         void InternalFrameActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
-            if (OnInternalFrameActivated != null) OnInternalFrameActivated.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnInternalFrameActivated != null) ? OnInternalFrameActivated : InternalFrameActivated;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -139,7 +140,8 @@ namespace Javax.Swing.Event
 
         void InternalFrameClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
-            if (OnInternalFrameClosed != null) OnInternalFrameClosed.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnInternalFrameClosed != null) ? OnInternalFrameClosed : InternalFrameClosed;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -158,7 +160,8 @@ namespace Javax.Swing.Event
 
         void InternalFrameClosingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
-            if (OnInternalFrameClosing != null) OnInternalFrameClosing.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnInternalFrameClosing != null) ? OnInternalFrameClosing : InternalFrameClosing;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -177,7 +180,8 @@ namespace Javax.Swing.Event
 
         void InternalFrameDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
-            if (OnInternalFrameDeactivated != null) OnInternalFrameDeactivated.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnInternalFrameDeactivated != null) ? OnInternalFrameDeactivated : InternalFrameDeactivated;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -196,7 +200,8 @@ namespace Javax.Swing.Event
 
         void InternalFrameDeiconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
-            if (OnInternalFrameDeiconified != null) OnInternalFrameDeiconified.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnInternalFrameDeiconified != null) ? OnInternalFrameDeiconified : InternalFrameDeiconified;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -215,7 +220,8 @@ namespace Javax.Swing.Event
 
         void InternalFrameIconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
-            if (OnInternalFrameIconified != null) OnInternalFrameIconified.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnInternalFrameIconified != null) ? OnInternalFrameIconified : InternalFrameIconified;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -234,7 +240,8 @@ namespace Javax.Swing.Event
 
         void InternalFrameOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.InternalFrameEvent>> data)
         {
-            if (OnInternalFrameOpened != null) OnInternalFrameOpened.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnInternalFrameOpened != null) ? OnInternalFrameOpened : InternalFrameOpened;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

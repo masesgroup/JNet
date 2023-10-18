@@ -73,7 +73,7 @@ namespace Org.W3c.Dom.Events
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("handleEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.W3c.Dom.Events.Event>>>(HandleEventEventHandler)); OnHandleEvent = HandleEvent;
+            AddEventHandler("handleEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.W3c.Dom.Events.Event>>>(HandleEventEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Org.W3c.Dom.Events
 
         void HandleEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.W3c.Dom.Events.Event>> data)
         {
-            if (OnHandleEvent != null) OnHandleEvent.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnHandleEvent != null) ? OnHandleEvent : HandleEvent;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

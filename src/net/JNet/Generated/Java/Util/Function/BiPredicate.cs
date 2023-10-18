@@ -50,10 +50,10 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler)); OnTest = Test;
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(AndEventHandler)); OnAnd = And;
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(OrEventHandler)); OnOr = Or;
+            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler));
+            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(AndEventHandler));
+            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(OrEventHandler));
 
         }
 
@@ -64,11 +64,9 @@ namespace Java.Util.Function
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
-            if (OnTest != null)
-            {
-                var executionResult = OnTest.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnTest != null) ? OnTest : Test;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -89,11 +87,9 @@ namespace Java.Util.Function
 
         void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>> data)
         {
-            if (OnAnd != null)
-            {
-                var executionResult = OnAnd.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnAnd != null) ? OnAnd : And;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -113,11 +109,9 @@ namespace Java.Util.Function
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnNegate != null)
-            {
-                var executionResult = OnNegate.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnNegate != null) ? OnNegate : Negate;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -137,11 +131,9 @@ namespace Java.Util.Function
 
         void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>> data)
         {
-            if (OnOr != null)
-            {
-                var executionResult = OnOr.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnOr != null) ? OnOr : Or;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -236,10 +228,10 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler)); OnTest = Test;
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(And<Arg0objectSuperT, Arg0objectSuperU>EventHandler)); OnAnd<Arg0objectSuperT, Arg0objectSuperU> = And<Arg0objectSuperT, Arg0objectSuperU>;
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler)); OnNegate = Negate;
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler)); OnOr<Arg0objectSuperT, Arg0objectSuperU> = Or<Arg0objectSuperT, Arg0objectSuperU>;
+            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler));
+            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(And<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
+            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
 
         }
 
@@ -250,11 +242,9 @@ namespace Java.Util.Function
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
-            if (OnTest != null)
-            {
-                var executionResult = OnTest.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnTest != null) ? OnTest : Test;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -275,11 +265,9 @@ namespace Java.Util.Function
 
         void And<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>> data)
         {
-            if (OnAnd<Arg0objectSuperT, Arg0objectSuperU> != null)
-            {
-                var executionResult = OnAnd<Arg0objectSuperT, Arg0objectSuperU>.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnAnd<Arg0objectSuperT, Arg0objectSuperU> != null) ? OnAnd<Arg0objectSuperT, Arg0objectSuperU> : And<Arg0objectSuperT, Arg0objectSuperU>;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -301,11 +289,9 @@ namespace Java.Util.Function
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnNegate != null)
-            {
-                var executionResult = OnNegate.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnNegate != null) ? OnNegate : Negate;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -325,11 +311,9 @@ namespace Java.Util.Function
 
         void Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>> data)
         {
-            if (OnOr<Arg0objectSuperT, Arg0objectSuperU> != null)
-            {
-                var executionResult = OnOr<Arg0objectSuperT, Arg0objectSuperU>.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnOr<Arg0objectSuperT, Arg0objectSuperU> != null) ? OnOr<Arg0objectSuperT, Arg0objectSuperU> : Or<Arg0objectSuperT, Arg0objectSuperU>;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

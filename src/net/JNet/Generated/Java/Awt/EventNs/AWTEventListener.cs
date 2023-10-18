@@ -73,7 +73,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("eventDispatched", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>>>(EventDispatchedEventHandler)); OnEventDispatched = EventDispatched;
+            AddEventHandler("eventDispatched", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>>>(EventDispatchedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Awt.EventNs
 
         void EventDispatchedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.AWTEvent>> data)
         {
-            if (OnEventDispatched != null) OnEventDispatched.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnEventDispatched != null) ? OnEventDispatched : EventDispatched;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

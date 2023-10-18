@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("menuKeyPressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyPressedEventHandler)); OnMenuKeyPressed = MenuKeyPressed;
-            AddEventHandler("menuKeyReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyReleasedEventHandler)); OnMenuKeyReleased = MenuKeyReleased;
-            AddEventHandler("menuKeyTyped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyTypedEventHandler)); OnMenuKeyTyped = MenuKeyTyped;
+            AddEventHandler("menuKeyPressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyPressedEventHandler));
+            AddEventHandler("menuKeyReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyReleasedEventHandler));
+            AddEventHandler("menuKeyTyped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>>>(MenuKeyTypedEventHandler));
 
         }
 
@@ -96,7 +96,8 @@ namespace Javax.Swing.Event
 
         void MenuKeyPressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
         {
-            if (OnMenuKeyPressed != null) OnMenuKeyPressed.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMenuKeyPressed != null) ? OnMenuKeyPressed : MenuKeyPressed;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -115,7 +116,8 @@ namespace Javax.Swing.Event
 
         void MenuKeyReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
         {
-            if (OnMenuKeyReleased != null) OnMenuKeyReleased.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMenuKeyReleased != null) ? OnMenuKeyReleased : MenuKeyReleased;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -134,7 +136,8 @@ namespace Javax.Swing.Event
 
         void MenuKeyTypedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
         {
-            if (OnMenuKeyTyped != null) OnMenuKeyTyped.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMenuKeyTyped != null) ? OnMenuKeyTyped : MenuKeyTyped;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

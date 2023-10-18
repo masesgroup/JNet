@@ -112,14 +112,14 @@ namespace Javax.Swing
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler)); OnIsEnabled = IsEnabled;
-            AddEventHandler("getValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(GetValueEventHandler)); OnGetValue = GetValue;
-            AddEventHandler("actionPerformed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler)); OnActionPerformed = ActionPerformed;
-            AddEventHandler("addPropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(AddPropertyChangeListenerEventHandler)); OnAddPropertyChangeListener = AddPropertyChangeListener;
-            AddEventHandler("putValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(PutValueEventHandler)); OnPutValue = PutValue;
-            AddEventHandler("removePropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(RemovePropertyChangeListenerEventHandler)); OnRemovePropertyChangeListener = RemovePropertyChangeListener;
-            AddEventHandler("setEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(SetEnabledEventHandler)); OnSetEnabled = SetEnabled;
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler)); OnAccept = Accept;
+            AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler));
+            AddEventHandler("getValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(GetValueEventHandler));
+            AddEventHandler("actionPerformed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>>>(ActionPerformedEventHandler));
+            AddEventHandler("addPropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(AddPropertyChangeListenerEventHandler));
+            AddEventHandler("putValue", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(PutValueEventHandler));
+            AddEventHandler("removePropertyChangeListener", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>>>(RemovePropertyChangeListenerEventHandler));
+            AddEventHandler("setEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(SetEnabledEventHandler));
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
 
         }
 
@@ -130,11 +130,9 @@ namespace Javax.Swing
 
         void IsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnIsEnabled != null)
-            {
-                var executionResult = OnIsEnabled.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnIsEnabled != null) ? OnIsEnabled : IsEnabled;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -154,11 +152,9 @@ namespace Javax.Swing
 
         void GetValueEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnGetValue != null)
-            {
-                var executionResult = OnGetValue.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetValue != null) ? OnGetValue : GetValue;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -178,7 +174,8 @@ namespace Javax.Swing
 
         void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>> data)
         {
-            if (OnActionPerformed != null) OnActionPerformed.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnActionPerformed != null) ? OnActionPerformed : ActionPerformed;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -197,7 +194,8 @@ namespace Javax.Swing
 
         void AddPropertyChangeListenerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>> data)
         {
-            if (OnAddPropertyChangeListener != null) OnAddPropertyChangeListener.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAddPropertyChangeListener != null) ? OnAddPropertyChangeListener : AddPropertyChangeListener;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -216,7 +214,8 @@ namespace Javax.Swing
 
         void PutValueEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnPutValue != null) OnPutValue.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+            var methodToExecute = (OnPutValue != null) ? OnPutValue : PutValue;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
         }
 
         /// <summary>
@@ -236,7 +235,8 @@ namespace Javax.Swing
 
         void RemovePropertyChangeListenerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeListener>> data)
         {
-            if (OnRemovePropertyChangeListener != null) OnRemovePropertyChangeListener.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnRemovePropertyChangeListener != null) ? OnRemovePropertyChangeListener : RemovePropertyChangeListener;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -255,7 +255,8 @@ namespace Javax.Swing
 
         void SetEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
         {
-            if (OnSetEnabled != null) OnSetEnabled.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetEnabled != null) ? OnSetEnabled : SetEnabled;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -274,11 +275,9 @@ namespace Javax.Swing
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
-            if (OnAccept != null)
-            {
-                var executionResult = OnAccept.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnAccept != null) ? OnAccept : Accept;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

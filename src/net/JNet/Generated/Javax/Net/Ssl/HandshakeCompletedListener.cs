@@ -73,7 +73,7 @@ namespace Javax.Net.Ssl
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("handshakeCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>>>(HandshakeCompletedEventHandler)); OnHandshakeCompleted = HandshakeCompleted;
+            AddEventHandler("handshakeCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>>>(HandshakeCompletedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Net.Ssl
 
         void HandshakeCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>> data)
         {
-            if (OnHandshakeCompleted != null) OnHandshakeCompleted.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnHandshakeCompleted != null) ? OnHandshakeCompleted : HandshakeCompleted;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

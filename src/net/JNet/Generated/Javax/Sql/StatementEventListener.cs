@@ -78,8 +78,8 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("statementClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler)); OnStatementClosed = StatementClosed;
-            AddEventHandler("statementErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementErrorOccurredEventHandler)); OnStatementErrorOccurred = StatementErrorOccurred;
+            AddEventHandler("statementClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementClosedEventHandler));
+            AddEventHandler("statementErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>>>(StatementErrorOccurredEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Javax.Sql
 
         void StatementClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
         {
-            if (OnStatementClosed != null) OnStatementClosed.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnStatementClosed != null) ? OnStatementClosed : StatementClosed;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Javax.Sql
 
         void StatementErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
         {
-            if (OnStatementErrorOccurred != null) OnStatementErrorOccurred.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnStatementErrorOccurred != null) ? OnStatementErrorOccurred : StatementErrorOccurred;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

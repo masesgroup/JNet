@@ -78,8 +78,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("focusGained", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusGainedEventHandler)); OnFocusGained = FocusGained;
-            AddEventHandler("focusLost", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusLostEventHandler)); OnFocusLost = FocusLost;
+            AddEventHandler("focusGained", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusGainedEventHandler));
+            AddEventHandler("focusLost", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>>>(FocusLostEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Awt.EventNs
 
         void FocusGainedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>> data)
         {
-            if (OnFocusGained != null) OnFocusGained.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnFocusGained != null) ? OnFocusGained : FocusGained;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Awt.EventNs
 
         void FocusLostEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.FocusEvent>> data)
         {
-            if (OnFocusLost != null) OnFocusLost.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnFocusLost != null) ? OnFocusLost : FocusLost;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

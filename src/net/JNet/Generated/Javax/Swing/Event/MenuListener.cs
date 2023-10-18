@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("menuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuCanceledEventHandler)); OnMenuCanceled = MenuCanceled;
-            AddEventHandler("menuDeselected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuDeselectedEventHandler)); OnMenuDeselected = MenuDeselected;
-            AddEventHandler("menuSelected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuSelectedEventHandler)); OnMenuSelected = MenuSelected;
+            AddEventHandler("menuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuCanceledEventHandler));
+            AddEventHandler("menuDeselected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuDeselectedEventHandler));
+            AddEventHandler("menuSelected", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>>>(MenuSelectedEventHandler));
 
         }
 
@@ -96,7 +96,8 @@ namespace Javax.Swing.Event
 
         void MenuCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
         {
-            if (OnMenuCanceled != null) OnMenuCanceled.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMenuCanceled != null) ? OnMenuCanceled : MenuCanceled;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -115,7 +116,8 @@ namespace Javax.Swing.Event
 
         void MenuDeselectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
         {
-            if (OnMenuDeselected != null) OnMenuDeselected.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMenuDeselected != null) ? OnMenuDeselected : MenuDeselected;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -134,7 +136,8 @@ namespace Javax.Swing.Event
 
         void MenuSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
         {
-            if (OnMenuSelected != null) OnMenuSelected.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMenuSelected != null) ? OnMenuSelected : MenuSelected;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

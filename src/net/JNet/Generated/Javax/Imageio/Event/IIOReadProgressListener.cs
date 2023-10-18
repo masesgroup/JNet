@@ -119,15 +119,15 @@ namespace Javax.Imageio.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageCompleteEventHandler)); OnImageComplete = ImageComplete;
-            AddEventHandler("imageProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageProgressEventHandler)); OnImageProgress = ImageProgress;
-            AddEventHandler("imageStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageStartedEventHandler)); OnImageStarted = ImageStarted;
-            AddEventHandler("readAborted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ReadAbortedEventHandler)); OnReadAborted = ReadAborted;
-            AddEventHandler("sequenceComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(SequenceCompleteEventHandler)); OnSequenceComplete = SequenceComplete;
-            AddEventHandler("sequenceStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(SequenceStartedEventHandler)); OnSequenceStarted = SequenceStarted;
-            AddEventHandler("thumbnailComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailCompleteEventHandler)); OnThumbnailComplete = ThumbnailComplete;
-            AddEventHandler("thumbnailProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailProgressEventHandler)); OnThumbnailProgress = ThumbnailProgress;
-            AddEventHandler("thumbnailStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailStartedEventHandler)); OnThumbnailStarted = ThumbnailStarted;
+            AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageCompleteEventHandler));
+            AddEventHandler("imageProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageProgressEventHandler));
+            AddEventHandler("imageStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ImageStartedEventHandler));
+            AddEventHandler("readAborted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ReadAbortedEventHandler));
+            AddEventHandler("sequenceComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(SequenceCompleteEventHandler));
+            AddEventHandler("sequenceStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(SequenceStartedEventHandler));
+            AddEventHandler("thumbnailComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailCompleteEventHandler));
+            AddEventHandler("thumbnailProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailProgressEventHandler));
+            AddEventHandler("thumbnailStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>>>(ThumbnailStartedEventHandler));
 
         }
 
@@ -138,7 +138,8 @@ namespace Javax.Imageio.Event
 
         void ImageCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnImageComplete != null) OnImageComplete.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnImageComplete != null) ? OnImageComplete : ImageComplete;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -157,7 +158,8 @@ namespace Javax.Imageio.Event
 
         void ImageProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnImageProgress != null) OnImageProgress.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
+            var methodToExecute = (OnImageProgress != null) ? OnImageProgress : ImageProgress;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
         }
 
         /// <summary>
@@ -177,7 +179,8 @@ namespace Javax.Imageio.Event
 
         void ImageStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnImageStarted != null) OnImageStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
+            var methodToExecute = (OnImageStarted != null) ? OnImageStarted : ImageStarted;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
         }
 
         /// <summary>
@@ -197,7 +200,8 @@ namespace Javax.Imageio.Event
 
         void ReadAbortedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnReadAborted != null) OnReadAborted.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnReadAborted != null) ? OnReadAborted : ReadAborted;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -216,7 +220,8 @@ namespace Javax.Imageio.Event
 
         void SequenceCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnSequenceComplete != null) OnSequenceComplete.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSequenceComplete != null) ? OnSequenceComplete : SequenceComplete;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -235,7 +240,8 @@ namespace Javax.Imageio.Event
 
         void SequenceStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnSequenceStarted != null) OnSequenceStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
+            var methodToExecute = (OnSequenceStarted != null) ? OnSequenceStarted : SequenceStarted;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
         }
 
         /// <summary>
@@ -255,7 +261,8 @@ namespace Javax.Imageio.Event
 
         void ThumbnailCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnThumbnailComplete != null) OnThumbnailComplete.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnThumbnailComplete != null) ? OnThumbnailComplete : ThumbnailComplete;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -274,7 +281,8 @@ namespace Javax.Imageio.Event
 
         void ThumbnailProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnThumbnailProgress != null) OnThumbnailProgress.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
+            var methodToExecute = (OnThumbnailProgress != null) ? OnThumbnailProgress : ThumbnailProgress;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
         }
 
         /// <summary>
@@ -294,7 +302,8 @@ namespace Javax.Imageio.Event
 
         void ThumbnailStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
-            if (OnThumbnailStarted != null) OnThumbnailStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+            var methodToExecute = (OnThumbnailStarted != null) ? OnThumbnailStarted : ThumbnailStarted;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
         }
 
         /// <summary>

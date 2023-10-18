@@ -74,7 +74,7 @@ namespace Java.Beans
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("vetoableChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(VetoableChangeEventHandler)); OnVetoableChange = VetoableChange;
+            AddEventHandler("vetoableChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(VetoableChangeEventHandler));
 
         }
 
@@ -85,7 +85,8 @@ namespace Java.Beans
 
         void VetoableChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>> data)
         {
-            if (OnVetoableChange != null) OnVetoableChange.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnVetoableChange != null) ? OnVetoableChange : VetoableChange;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

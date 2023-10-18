@@ -73,7 +73,7 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("flavorsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>>>(FlavorsChangedEventHandler)); OnFlavorsChanged = FlavorsChanged;
+            AddEventHandler("flavorsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>>>(FlavorsChangedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Awt.Datatransfer
 
         void FlavorsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>> data)
         {
-            if (OnFlavorsChanged != null) OnFlavorsChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnFlavorsChanged != null) ? OnFlavorsChanged : FlavorsChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

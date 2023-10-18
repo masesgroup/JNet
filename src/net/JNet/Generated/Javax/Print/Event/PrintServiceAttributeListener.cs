@@ -73,7 +73,7 @@ namespace Javax.Print.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("attributeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintServiceAttributeEvent>>>(AttributeUpdateEventHandler)); OnAttributeUpdate = AttributeUpdate;
+            AddEventHandler("attributeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintServiceAttributeEvent>>>(AttributeUpdateEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Print.Event
 
         void AttributeUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintServiceAttributeEvent>> data)
         {
-            if (OnAttributeUpdate != null) OnAttributeUpdate.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAttributeUpdate != null) ? OnAttributeUpdate : AttributeUpdate;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

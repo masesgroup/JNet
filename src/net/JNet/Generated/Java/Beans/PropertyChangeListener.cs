@@ -73,7 +73,7 @@ namespace Java.Beans
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("propertyChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(PropertyChangeEventHandler)); OnPropertyChange = PropertyChange;
+            AddEventHandler("propertyChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(PropertyChangeEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Beans
 
         void PropertyChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>> data)
         {
-            if (OnPropertyChange != null) OnPropertyChange.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPropertyChange != null) ? OnPropertyChange : PropertyChange;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

@@ -50,8 +50,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("componentAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentAddedEventHandler)); OnComponentAdded = ComponentAdded;
-            AddEventHandler("componentRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentRemovedEventHandler)); OnComponentRemoved = ComponentRemoved;
+            AddEventHandler("componentAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentAddedEventHandler));
+            AddEventHandler("componentRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>>>(ComponentRemovedEventHandler));
 
         }
 
@@ -62,7 +62,8 @@ namespace Java.Awt.EventNs
 
         void ComponentAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>> data)
         {
-            if (OnComponentAdded != null) OnComponentAdded.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnComponentAdded != null) ? OnComponentAdded : ComponentAdded;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -81,7 +82,8 @@ namespace Java.Awt.EventNs
 
         void ComponentRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>> data)
         {
-            if (OnComponentRemoved != null) OnComponentRemoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnComponentRemoved != null) ? OnComponentRemoved : ComponentRemoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

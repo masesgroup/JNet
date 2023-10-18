@@ -78,8 +78,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("appMovedToBackground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppMovedToBackgroundEventHandler)); OnAppMovedToBackground = AppMovedToBackground;
-            AddEventHandler("appRaisedToForeground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppRaisedToForegroundEventHandler)); OnAppRaisedToForeground = AppRaisedToForeground;
+            AddEventHandler("appMovedToBackground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppMovedToBackgroundEventHandler));
+            AddEventHandler("appRaisedToForeground", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>>>(AppRaisedToForegroundEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Awt.DesktopNs
 
         void AppMovedToBackgroundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>> data)
         {
-            if (OnAppMovedToBackground != null) OnAppMovedToBackground.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAppMovedToBackground != null) ? OnAppMovedToBackground : AppMovedToBackground;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Awt.DesktopNs
 
         void AppRaisedToForegroundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppForegroundEvent>> data)
         {
-            if (OnAppRaisedToForeground != null) OnAppRaisedToForeground.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAppRaisedToForeground != null) ? OnAppRaisedToForeground : AppRaisedToForeground;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

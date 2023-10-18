@@ -50,7 +50,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler)); OnApply = Apply;
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler));
 
         }
 
@@ -61,11 +61,9 @@ namespace Java.Util.Function
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
-            if (OnApply != null)
-            {
-                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApply != null) ? OnApply : Apply;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -137,7 +135,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler)); OnApply = Apply;
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler));
 
         }
 
@@ -148,11 +146,9 @@ namespace Java.Util.Function
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
-            if (OnApply != null)
-            {
-                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApply != null) ? OnApply : Apply;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

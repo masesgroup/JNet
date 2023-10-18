@@ -73,7 +73,7 @@ namespace Java.Util.Prefs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("preferenceChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>>>(PreferenceChangeEventHandler)); OnPreferenceChange = PreferenceChange;
+            AddEventHandler("preferenceChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>>>(PreferenceChangeEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Util.Prefs
 
         void PreferenceChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.PreferenceChangeEvent>> data)
         {
-            if (OnPreferenceChange != null) OnPreferenceChange.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPreferenceChange != null) ? OnPreferenceChange : PreferenceChange;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
