@@ -42,7 +42,7 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 ## Summary
 
 * [Roadmap](articles/roadmap.md)
-* [Actual state](articles/actualstate.md)
+* [Current state](articles/currentstate.md)
 * [JNet usage](articles/usage.md)
 * [JNet APIs extensibility](articles/API_extensibility.md)
 * [JNet CLI usage](articles/usageCLI.md)

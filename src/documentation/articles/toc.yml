@@ -2,8 +2,8 @@
   href: intro.md
 - name: Roadmap
   href: roadmap.md
-- name: Actual state
-  href: actualstate.md
+- name: Current state
+  href: currentstate.md
 - name: APIs extendibility
   href: API_extensibility.md
 - name: JVM callbacks
