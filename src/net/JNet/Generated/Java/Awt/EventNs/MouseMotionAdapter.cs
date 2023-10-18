@@ -58,7 +58,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html#mouseDragged(java.awt.event.MouseEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseDragged { get; set; }
+        /// <remarks>If <see cref="OnMouseDragged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseDragged { get; set; } = null;
 
         void MouseDraggedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {
@@ -78,7 +79,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseMotionAdapter.html#mouseMoved(java.awt.event.MouseEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseMoved { get; set; }
+        /// <remarks>If <see cref="OnMouseMoved"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.MouseEvent> OnMouseMoved { get; set; } = null;
 
         void MouseMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {

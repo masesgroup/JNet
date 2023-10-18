@@ -80,7 +80,8 @@ namespace Javax.Print.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintServiceAttributeListener.html#attributeUpdate(javax.print.event.PrintServiceAttributeEvent)"/>
         /// </summary>
-        public System.Action<Javax.Print.Event.PrintServiceAttributeEvent> OnAttributeUpdate { get; set; }
+        /// <remarks>If <see cref="OnAttributeUpdate"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Print.Event.PrintServiceAttributeEvent> OnAttributeUpdate { get; set; } = null;
 
         void AttributeUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintServiceAttributeEvent>> data)
         {

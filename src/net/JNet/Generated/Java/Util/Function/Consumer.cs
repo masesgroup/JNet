@@ -58,7 +58,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
-        public System.Action<object> OnAccept { get; set; }
+        /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<object> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -78,7 +79,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
-        public System.Func<Java.Util.Function.Consumer, Java.Util.Function.Consumer> OnAndThen { get; set; }
+        /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.Consumer, Java.Util.Function.Consumer> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer>> data)
         {
@@ -170,7 +172,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
-        public System.Action<T> OnAccept { get; set; }
+        /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<T> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -190,7 +193,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
-        public System.Func<Java.Util.Function.Consumer<Arg0objectSuperT>, Java.Util.Function.Consumer<T>> OnAndThen<Arg0objectSuperT> { get; set; }
+        /// <remarks>If <see cref="OnAndThen<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.Consumer<Arg0objectSuperT>, Java.Util.Function.Consumer<T>> OnAndThen<Arg0objectSuperT> { get; set; } = null;
 
         void AndThen<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer<Arg0objectSuperT>>> data)
         {

@@ -102,7 +102,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
-        public System.Func<double, bool> OnTest { get; set; }
+        /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<double, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
@@ -124,7 +125,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
-        public System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnAnd { get; set; }
+        /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnAnd { get; set; } = null;
 
         void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>> data)
         {
@@ -146,7 +148,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
-        public System.Func<Java.Util.Function.DoublePredicate> OnNegate { get; set; }
+        /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.DoublePredicate> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -168,7 +171,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
-        public System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnOr { get; set; }
+        /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnOr { get; set; } = null;
 
         void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>> data)
         {

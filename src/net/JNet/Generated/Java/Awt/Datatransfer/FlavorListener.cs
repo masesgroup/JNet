@@ -80,7 +80,8 @@ namespace Java.Awt.Datatransfer
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorListener.html#flavorsChanged(java.awt.datatransfer.FlavorEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.Datatransfer.FlavorEvent> OnFlavorsChanged { get; set; }
+        /// <remarks>If <see cref="OnFlavorsChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.Datatransfer.FlavorEvent> OnFlavorsChanged { get; set; } = null;
 
         void FlavorsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Datatransfer.FlavorEvent>> data)
         {

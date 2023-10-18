@@ -62,7 +62,8 @@ namespace Javax.Print.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printDataTransferCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintDataTransferCompleted { get; set; }
+        /// <remarks>If <see cref="OnPrintDataTransferCompleted"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintDataTransferCompleted { get; set; } = null;
 
         void PrintDataTransferCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
@@ -82,7 +83,8 @@ namespace Javax.Print.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobCanceled(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobCanceled { get; set; }
+        /// <remarks>If <see cref="OnPrintJobCanceled"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobCanceled { get; set; } = null;
 
         void PrintJobCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
@@ -102,7 +104,8 @@ namespace Javax.Print.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobCompleted(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobCompleted { get; set; }
+        /// <remarks>If <see cref="OnPrintJobCompleted"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobCompleted { get; set; } = null;
 
         void PrintJobCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
@@ -122,7 +125,8 @@ namespace Javax.Print.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobFailed(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobFailed { get; set; }
+        /// <remarks>If <see cref="OnPrintJobFailed"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobFailed { get; set; } = null;
 
         void PrintJobFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
@@ -142,7 +146,8 @@ namespace Javax.Print.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobNoMoreEvents(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobNoMoreEvents { get; set; }
+        /// <remarks>If <see cref="OnPrintJobNoMoreEvents"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobNoMoreEvents { get; set; } = null;
 
         void PrintJobNoMoreEventsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
@@ -162,7 +167,8 @@ namespace Javax.Print.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/event/PrintJobAdapter.html#printJobRequiresAttention(javax.print.event.PrintJobEvent)"/>
         /// </summary>
-        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobRequiresAttention { get; set; }
+        /// <remarks>If <see cref="OnPrintJobRequiresAttention"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Print.Event.PrintJobEvent> OnPrintJobRequiresAttention { get; set; } = null;
 
         void PrintJobRequiresAttentionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {

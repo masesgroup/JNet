@@ -57,7 +57,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>
-        public System.Func<double, object> OnApply { get; set; }
+        /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<double, object> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
@@ -142,7 +143,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleFunction.html#apply(double)"/>
         /// </summary>
-        public System.Func<double, R> OnApply { get; set; }
+        /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<double, R> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {

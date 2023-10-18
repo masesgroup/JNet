@@ -86,7 +86,8 @@ namespace Javax.Sql
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementClosed(javax.sql.StatementEvent)"/>
         /// </summary>
-        public System.Action<Javax.Sql.StatementEvent> OnStatementClosed { get; set; }
+        /// <remarks>If <see cref="OnStatementClosed"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Sql.StatementEvent> OnStatementClosed { get; set; } = null;
 
         void StatementClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
         {
@@ -106,7 +107,8 @@ namespace Javax.Sql
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html#statementErrorOccurred(javax.sql.StatementEvent)"/>
         /// </summary>
-        public System.Action<Javax.Sql.StatementEvent> OnStatementErrorOccurred { get; set; }
+        /// <remarks>If <see cref="OnStatementErrorOccurred"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Sql.StatementEvent> OnStatementErrorOccurred { get; set; } = null;
 
         void StatementErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.StatementEvent>> data)
         {

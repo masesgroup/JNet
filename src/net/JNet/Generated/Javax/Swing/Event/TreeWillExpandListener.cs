@@ -88,7 +88,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillCollapse(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillCollapse { get; set; }
+        /// <remarks>If <see cref="OnTreeWillCollapse"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillCollapse { get; set; } = null;
 
         void TreeWillCollapseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
         {
@@ -109,7 +110,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeWillExpandListener.html#treeWillExpand(javax.swing.event.TreeExpansionEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillExpand { get; set; }
+        /// <remarks>If <see cref="OnTreeWillExpand"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.TreeExpansionEvent> OnTreeWillExpand { get; set; } = null;
 
         void TreeWillExpandEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TreeExpansionEvent>> data)
         {

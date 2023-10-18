@@ -80,7 +80,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html#dragGestureRecognized(java.awt.dnd.DragGestureEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.Dnd.DragGestureEvent> OnDragGestureRecognized { get; set; }
+        /// <remarks>If <see cref="OnDragGestureRecognized"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.Dnd.DragGestureEvent> OnDragGestureRecognized { get; set; } = null;
 
         void DragGestureRecognizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>> data)
         {

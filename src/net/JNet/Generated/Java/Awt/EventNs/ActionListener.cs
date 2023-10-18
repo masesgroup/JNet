@@ -80,7 +80,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; }
+        /// <remarks>If <see cref="OnActionPerformed"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.ActionEvent> OnActionPerformed { get; set; } = null;
 
         void ActionPerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ActionEvent>> data)
         {

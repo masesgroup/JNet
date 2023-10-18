@@ -146,7 +146,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#imageUpdate(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int[])"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int[]> OnImageUpdate { get; set; }
+        /// <remarks>If <see cref="OnImageUpdate"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int[]> OnImageUpdate { get; set; } = null;
 
         void ImageUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -174,7 +175,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#passComplete(javax.imageio.ImageReader,java.awt.image.BufferedImage)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage> OnPassComplete { get; set; }
+        /// <remarks>If <see cref="OnPassComplete"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage> OnPassComplete { get; set; } = null;
 
         void PassCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -195,7 +197,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#passStarted(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int, int[]> OnPassStarted { get; set; }
+        /// <remarks>If <see cref="OnPassStarted"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int, int[]> OnPassStarted { get; set; } = null;
 
         void PassStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -224,7 +227,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailPassComplete(javax.imageio.ImageReader,java.awt.image.BufferedImage)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage> OnThumbnailPassComplete { get; set; }
+        /// <remarks>If <see cref="OnThumbnailPassComplete"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage> OnThumbnailPassComplete { get; set; } = null;
 
         void ThumbnailPassCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -245,7 +249,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailPassStarted(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int, int[]> OnThumbnailPassStarted { get; set; }
+        /// <remarks>If <see cref="OnThumbnailPassStarted"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int, int[]> OnThumbnailPassStarted { get; set; } = null;
 
         void ThumbnailPassStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -274,7 +279,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailUpdate(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int[])"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int[]> OnThumbnailUpdate { get; set; }
+        /// <remarks>If <see cref="OnThumbnailUpdate"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, Java.Awt.ImageNs.BufferedImage, int, int, int, int, int, int, int[]> OnThumbnailUpdate { get; set; } = null;
 
         void ThumbnailUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {

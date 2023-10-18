@@ -92,7 +92,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuCanceled(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.MenuEvent> OnMenuCanceled { get; set; }
+        /// <remarks>If <see cref="OnMenuCanceled"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.MenuEvent> OnMenuCanceled { get; set; } = null;
 
         void MenuCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
         {
@@ -112,7 +113,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuDeselected(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.MenuEvent> OnMenuDeselected { get; set; }
+        /// <remarks>If <see cref="OnMenuDeselected"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.MenuEvent> OnMenuDeselected { get; set; } = null;
 
         void MenuDeselectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
         {
@@ -132,7 +134,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuListener.html#menuSelected(javax.swing.event.MenuEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.MenuEvent> OnMenuSelected { get; set; }
+        /// <remarks>If <see cref="OnMenuSelected"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.MenuEvent> OnMenuSelected { get; set; } = null;
 
         void MenuSelectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuEvent>> data)
         {

@@ -86,7 +86,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#caretPositionChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.InputMethodEvent> OnCaretPositionChanged { get; set; }
+        /// <remarks>If <see cref="OnCaretPositionChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.InputMethodEvent> OnCaretPositionChanged { get; set; } = null;
 
         void CaretPositionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>> data)
         {
@@ -106,7 +107,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html#inputMethodTextChanged(java.awt.event.InputMethodEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.InputMethodEvent> OnInputMethodTextChanged { get; set; }
+        /// <remarks>If <see cref="OnInputMethodTextChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.InputMethodEvent> OnInputMethodTextChanged { get; set; } = null;
 
         void InputMethodTextChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>> data)
         {

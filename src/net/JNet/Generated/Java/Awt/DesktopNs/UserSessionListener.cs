@@ -86,7 +86,8 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionActivated(java.awt.desktop.UserSessionEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionActivated { get; set; }
+        /// <remarks>If <see cref="OnUserSessionActivated"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionActivated { get; set; } = null;
 
         void UserSessionActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>> data)
         {
@@ -106,7 +107,8 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionListener.html#userSessionDeactivated(java.awt.desktop.UserSessionEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionDeactivated { get; set; }
+        /// <remarks>If <see cref="OnUserSessionDeactivated"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.DesktopNs.UserSessionEvent> OnUserSessionDeactivated { get; set; } = null;
 
         void UserSessionDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.UserSessionEvent>> data)
         {

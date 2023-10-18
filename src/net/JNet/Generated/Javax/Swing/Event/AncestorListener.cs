@@ -92,7 +92,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorAdded(javax.swing.event.AncestorEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorAdded { get; set; }
+        /// <remarks>If <see cref="OnAncestorAdded"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorAdded { get; set; } = null;
 
         void AncestorAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
         {
@@ -112,7 +113,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorMoved(javax.swing.event.AncestorEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorMoved { get; set; }
+        /// <remarks>If <see cref="OnAncestorMoved"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorMoved { get; set; } = null;
 
         void AncestorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
         {
@@ -132,7 +134,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorListener.html#ancestorRemoved(javax.swing.event.AncestorEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorRemoved { get; set; }
+        /// <remarks>If <see cref="OnAncestorRemoved"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.AncestorEvent> OnAncestorRemoved { get; set; } = null;
 
         void AncestorRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.AncestorEvent>> data)
         {

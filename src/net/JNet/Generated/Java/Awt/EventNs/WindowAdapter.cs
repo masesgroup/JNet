@@ -66,7 +66,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowActivated(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowActivated { get; set; }
+        /// <remarks>If <see cref="OnWindowActivated"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowActivated { get; set; } = null;
 
         void WindowActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
@@ -86,7 +87,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosed(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowClosed { get; set; }
+        /// <remarks>If <see cref="OnWindowClosed"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowClosed { get; set; } = null;
 
         void WindowClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
@@ -106,7 +108,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowClosing(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowClosing { get; set; }
+        /// <remarks>If <see cref="OnWindowClosing"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowClosing { get; set; } = null;
 
         void WindowClosingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
@@ -126,7 +129,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeactivated(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowDeactivated { get; set; }
+        /// <remarks>If <see cref="OnWindowDeactivated"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowDeactivated { get; set; } = null;
 
         void WindowDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
@@ -146,7 +150,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowDeiconified(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowDeiconified { get; set; }
+        /// <remarks>If <see cref="OnWindowDeiconified"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowDeiconified { get; set; } = null;
 
         void WindowDeiconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
@@ -166,7 +171,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowGainedFocus { get; set; }
+        /// <remarks>If <see cref="OnWindowGainedFocus"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowGainedFocus { get; set; } = null;
 
         void WindowGainedFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
@@ -186,7 +192,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowIconified(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowIconified { get; set; }
+        /// <remarks>If <see cref="OnWindowIconified"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowIconified { get; set; } = null;
 
         void WindowIconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
@@ -206,7 +213,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowLostFocus { get; set; }
+        /// <remarks>If <see cref="OnWindowLostFocus"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowLostFocus { get; set; } = null;
 
         void WindowLostFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
@@ -226,7 +234,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowOpened(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowOpened { get; set; }
+        /// <remarks>If <see cref="OnWindowOpened"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowOpened { get; set; } = null;
 
         void WindowOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
@@ -246,7 +255,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowStateChanged { get; set; }
+        /// <remarks>If <see cref="OnWindowStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowStateChanged { get; set; } = null;
 
         void WindowStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {

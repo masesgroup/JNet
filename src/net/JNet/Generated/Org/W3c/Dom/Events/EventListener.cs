@@ -80,7 +80,8 @@ namespace Org.W3c.Dom.Events
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html#handleEvent(org.w3c.dom.events.Event)"/>
         /// </summary>
-        public System.Action<Org.W3c.Dom.Events.Event> OnHandleEvent { get; set; }
+        /// <remarks>If <see cref="OnHandleEvent"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Org.W3c.Dom.Events.Event> OnHandleEvent { get; set; } = null;
 
         void HandleEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.W3c.Dom.Events.Event>> data)
         {

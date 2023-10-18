@@ -80,7 +80,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkListener.html#hyperlinkUpdate(javax.swing.event.HyperlinkEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.HyperlinkEvent> OnHyperlinkUpdate { get; set; }
+        /// <remarks>If <see cref="OnHyperlinkUpdate"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.HyperlinkEvent> OnHyperlinkUpdate { get; set; } = null;
 
         void HyperlinkUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.HyperlinkEvent>> data)
         {

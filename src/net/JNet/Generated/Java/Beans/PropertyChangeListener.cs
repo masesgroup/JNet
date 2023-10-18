@@ -80,7 +80,8 @@ namespace Java.Beans
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        public System.Action<Java.Beans.PropertyChangeEvent> OnPropertyChange { get; set; }
+        /// <remarks>If <see cref="OnPropertyChange"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Beans.PropertyChangeEvent> OnPropertyChange { get; set; } = null;
 
         void PropertyChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>> data)
         {

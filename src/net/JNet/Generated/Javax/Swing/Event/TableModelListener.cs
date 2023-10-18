@@ -80,7 +80,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelListener.html#tableChanged(javax.swing.event.TableModelEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.TableModelEvent> OnTableChanged { get; set; }
+        /// <remarks>If <see cref="OnTableChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.TableModelEvent> OnTableChanged { get; set; } = null;
 
         void TableChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>> data)
         {

@@ -86,7 +86,8 @@ namespace Javax.Sql
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionClosed(javax.sql.ConnectionEvent)"/>
         /// </summary>
-        public System.Action<Javax.Sql.ConnectionEvent> OnConnectionClosed { get; set; }
+        /// <remarks>If <see cref="OnConnectionClosed"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Sql.ConnectionEvent> OnConnectionClosed { get; set; } = null;
 
         void ConnectionClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
         {
@@ -106,7 +107,8 @@ namespace Javax.Sql
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html#connectionErrorOccurred(javax.sql.ConnectionEvent)"/>
         /// </summary>
-        public System.Action<Javax.Sql.ConnectionEvent> OnConnectionErrorOccurred { get; set; }
+        /// <remarks>If <see cref="OnConnectionErrorOccurred"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Sql.ConnectionEvent> OnConnectionErrorOccurred { get; set; } = null;
 
         void ConnectionErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
         {

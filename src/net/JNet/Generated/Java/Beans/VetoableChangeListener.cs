@@ -81,7 +81,8 @@ namespace Java.Beans
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html#vetoableChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
-        public System.Action<Java.Beans.PropertyChangeEvent> OnVetoableChange { get; set; }
+        /// <remarks>If <see cref="OnVetoableChange"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Beans.PropertyChangeEvent> OnVetoableChange { get; set; } = null;
 
         void VetoableChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>> data)
         {

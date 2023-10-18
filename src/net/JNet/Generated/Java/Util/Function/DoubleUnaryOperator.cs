@@ -95,7 +95,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)"/>
         /// </summary>
-        public System.Func<double, double> OnApplyAsDouble { get; set; }
+        /// <remarks>If <see cref="OnApplyAsDouble"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<double, double> OnApplyAsDouble { get; set; } = null;
 
         void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
@@ -117,7 +118,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#andThen(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
-        public System.Func<Java.Util.Function.DoubleUnaryOperator, Java.Util.Function.DoubleUnaryOperator> OnAndThen { get; set; }
+        /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.DoubleUnaryOperator, Java.Util.Function.DoubleUnaryOperator> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>> data)
         {
@@ -139,7 +141,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#compose(java.util.function.DoubleUnaryOperator)"/>
         /// </summary>
-        public System.Func<Java.Util.Function.DoubleUnaryOperator, Java.Util.Function.DoubleUnaryOperator> OnCompose { get; set; }
+        /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.DoubleUnaryOperator, Java.Util.Function.DoubleUnaryOperator> OnCompose { get; set; } = null;
 
         void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleUnaryOperator>> data)
         {

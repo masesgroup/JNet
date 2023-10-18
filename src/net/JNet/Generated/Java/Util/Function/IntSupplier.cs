@@ -81,7 +81,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>
-        public System.Func<int> OnGetAsInt { get; set; }
+        /// <remarks>If <see cref="OnGetAsInt"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<int> OnGetAsInt { get; set; } = null;
 
         void GetAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

@@ -86,7 +86,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowGainedFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowGainedFocus { get; set; }
+        /// <remarks>If <see cref="OnWindowGainedFocus"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowGainedFocus { get; set; } = null;
 
         void WindowGainedFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
@@ -106,7 +107,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowFocusListener.html#windowLostFocus(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowLostFocus { get; set; }
+        /// <remarks>If <see cref="OnWindowLostFocus"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowLostFocus { get; set; } = null;
 
         void WindowLostFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
