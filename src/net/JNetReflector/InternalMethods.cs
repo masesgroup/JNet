@@ -29,6 +29,7 @@ using Org.Mases.Jnet;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace MASES.JNetReflector
 {
@@ -1426,7 +1427,7 @@ namespace MASES.JNetReflector
                 else
                 {
                     methodCounter[methodNameOrigin] = ++methodIndexer;
-                    eventHandlerName += paramCount;
+                    eventHandlerName = methodIndexer == 0 ? eventHandlerName : (methodIndexer == 1 ? eventHandlerName + paramCount : eventHandlerName + paramCount + $"_{methodIndexer}");
                 }
 
                 List<string> genericArguments = new List<string>();
@@ -1780,7 +1781,7 @@ namespace MASES.JNetReflector
                 string CLRListenerEventArgsType = string.Empty;
                 string executionPropertyParams = string.Empty;
                 string listenerHandlerType = string.Empty;
-                string baseHandlerName = methodIndexer == 0 ? methodName : methodName + paramCount;
+                string baseHandlerName = methodIndexer == 0 ? methodName : (methodIndexer == 1 ? methodName + paramCount : methodName + paramCount + $"_{methodIndexer}");
                 if (forListener)
                 {
                     executionStub = isVoidMethod ? string.Empty : "return default;";
@@ -1922,7 +1923,7 @@ namespace MASES.JNetReflector
                 else
                 {
                     methodCounter[methodNameOrigin] = ++methodIndexer;
-                    eventHandlerName += paramCount;
+                    eventHandlerName = methodIndexer == 0 ? eventHandlerName : (methodIndexer == 1 ? eventHandlerName + paramCount : eventHandlerName + paramCount + $"_{methodIndexer}");
                 }
 
                 string returnType = method.GenericReturnType.TypeName;
