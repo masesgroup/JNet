@@ -73,7 +73,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("mouseWheelMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseWheelEvent>>>(MouseWheelMovedEventHandler)); OnMouseWheelMoved = MouseWheelMoved;
+            AddEventHandler("mouseWheelMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseWheelEvent>>>(MouseWheelMovedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Awt.EventNs
 
         void MouseWheelMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseWheelEvent>> data)
         {
-            if (OnMouseWheelMoved != null) OnMouseWheelMoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMouseWheelMoved != null) ? OnMouseWheelMoved : MouseWheelMoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

@@ -50,7 +50,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsIntEventHandler));
 
         }
 
@@ -61,11 +61,9 @@ namespace Java.Util.Function
 
         void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
-            if (OnApplyAsInt != null)
-            {
-                var executionResult = OnApplyAsInt.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApplyAsInt != null) ? OnApplyAsInt : ApplyAsInt;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -139,7 +137,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsIntEventHandler)); OnApplyAsInt = ApplyAsInt;
+            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsIntEventHandler));
 
         }
 
@@ -150,11 +148,9 @@ namespace Java.Util.Function
 
         void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
-            if (OnApplyAsInt != null)
-            {
-                var executionResult = OnApplyAsInt.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApplyAsInt != null) ? OnApplyAsInt : ApplyAsInt;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

@@ -73,7 +73,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("hierarchyChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(HierarchyChangedEventHandler)); OnHierarchyChanged = HierarchyChanged;
+            AddEventHandler("hierarchyChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>>>(HierarchyChangedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Awt.EventNs
 
         void HierarchyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
         {
-            if (OnHierarchyChanged != null) OnHierarchyChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnHierarchyChanged != null) ? OnHierarchyChanged : HierarchyChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

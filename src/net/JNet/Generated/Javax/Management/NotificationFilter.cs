@@ -74,7 +74,7 @@ namespace Javax.Management
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("isNotificationEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(IsNotificationEnabledEventHandler)); OnIsNotificationEnabled = IsNotificationEnabled;
+            AddEventHandler("isNotificationEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(IsNotificationEnabledEventHandler));
 
         }
 
@@ -85,11 +85,9 @@ namespace Javax.Management
 
         void IsNotificationEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Management.Notification>> data)
         {
-            if (OnIsNotificationEnabled != null)
-            {
-                var executionResult = OnIsNotificationEnabled.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnIsNotificationEnabled != null) ? OnIsNotificationEnabled : IsNotificationEnabled;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

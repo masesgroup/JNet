@@ -194,7 +194,7 @@ namespace MASES.JNetReflector.Templates
                 public const string LISTENER_HANDLER_EXECUTION = "METHOD_STUB_LISTENER_HANDLER_EXECUTION_PLACEHOLDER";
                 public const string LISTENER_HANDLER_NAME = "METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER";
                 public const string LISTENER_FIRST_PARAMETER = "METHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER";
-                public const string SINGLE_LISTENER_HANDLER_FORMAT = "    AddEventHandler(\"{0}\", new System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler)); OnMETHOD_STUB_METHOD_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
+                public const string SINGLE_LISTENER_HANDLER_FORMAT = "    AddEventHandler(\"{0}\", new System.EventHandler<CLRListenerEventArgs<CLREventDataMETHOD_STUB_LISTENER_FIRST_PARAMETER_PLACEHOLDER>>(METHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDEREventHandler));"; // removed OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER = METHOD_STUB_METHOD_NAME_PLACEHOLDER;";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4});";
                 public const string SINGLE_ARRAY_EXECUTION_FORMAT = "new object[] {{ {0} }}";
                 public const string STATIC_EXECUTION_FORMAT = "{0}{1}{2}(LocalBridgeClazz, \"{3}\"{4});";
@@ -214,12 +214,11 @@ namespace MASES.JNetReflector.Templates
                 public const string STATIC_EXECUTE = "SExecute";
                 public const string INSTANCE_EXECUTE = "IExecute";
 
-                public static readonly string ACTION_LISTENER_EXECUTION_HANDLER_FORMAT = "    if (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);";
-                public static readonly string FUNC_LISTENER_EXECUTION_HANDLER_FORMAT = "    if (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null)" + Environment.NewLine
-                                                                                     + "    {" + Environment.NewLine
-                                                                                     + "        var executionResult = OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
-                                                                                     + "        data.SetReturnValue(executionResult);" + Environment.NewLine
-                                                                                     + "    }";
+                public static readonly string ACTION_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
+                                                                                       + "    methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);";
+                public static readonly string FUNC_LISTENER_EXECUTION_HANDLER_FORMAT = "    var methodToExecute = (OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER != null) ? OnMETHOD_STUB_LISTENER_HANDLER_NAME_PLACEHOLDER : METHOD_STUB_METHOD_NAME_PLACEHOLDER;" + Environment.NewLine
+                                                                                     + "    var executionResult = methodToExecute.Invoke(METHOD_STUB_LISTENER_EXECUTION_PLACEHOLDER);" + Environment.NewLine
+                                                                                     + "    data.SetReturnValue(executionResult);";
 
                 public static readonly string BLOCK_LISTENER_HANDLER_FORMAT = "/// <summary>" + Environment.NewLine
                                                                             + "/// Handlers initializer for <see cref=\"{0}\"/>" + Environment.NewLine

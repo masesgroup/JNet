@@ -108,13 +108,13 @@ namespace Javax.Imageio.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageCompleteEventHandler)); OnImageComplete = ImageComplete;
-            AddEventHandler("imageProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageProgressEventHandler)); OnImageProgress = ImageProgress;
-            AddEventHandler("imageStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageStartedEventHandler)); OnImageStarted = ImageStarted;
-            AddEventHandler("thumbnailComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailCompleteEventHandler)); OnThumbnailComplete = ThumbnailComplete;
-            AddEventHandler("thumbnailProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailProgressEventHandler)); OnThumbnailProgress = ThumbnailProgress;
-            AddEventHandler("thumbnailStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailStartedEventHandler)); OnThumbnailStarted = ThumbnailStarted;
-            AddEventHandler("writeAborted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WriteAbortedEventHandler)); OnWriteAborted = WriteAborted;
+            AddEventHandler("imageComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageCompleteEventHandler));
+            AddEventHandler("imageProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageProgressEventHandler));
+            AddEventHandler("imageStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ImageStartedEventHandler));
+            AddEventHandler("thumbnailComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailCompleteEventHandler));
+            AddEventHandler("thumbnailProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailProgressEventHandler));
+            AddEventHandler("thumbnailStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(ThumbnailStartedEventHandler));
+            AddEventHandler("writeAborted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WriteAbortedEventHandler));
 
         }
 
@@ -125,7 +125,8 @@ namespace Javax.Imageio.Event
 
         void ImageCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
-            if (OnImageComplete != null) OnImageComplete.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnImageComplete != null) ? OnImageComplete : ImageComplete;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -144,7 +145,8 @@ namespace Javax.Imageio.Event
 
         void ImageProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
-            if (OnImageProgress != null) OnImageProgress.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
+            var methodToExecute = (OnImageProgress != null) ? OnImageProgress : ImageProgress;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
         }
 
         /// <summary>
@@ -164,7 +166,8 @@ namespace Javax.Imageio.Event
 
         void ImageStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
-            if (OnImageStarted != null) OnImageStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
+            var methodToExecute = (OnImageStarted != null) ? OnImageStarted : ImageStarted;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
         }
 
         /// <summary>
@@ -184,7 +187,8 @@ namespace Javax.Imageio.Event
 
         void ThumbnailCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
-            if (OnThumbnailComplete != null) OnThumbnailComplete.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnThumbnailComplete != null) ? OnThumbnailComplete : ThumbnailComplete;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -203,7 +207,8 @@ namespace Javax.Imageio.Event
 
         void ThumbnailProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
-            if (OnThumbnailProgress != null) OnThumbnailProgress.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
+            var methodToExecute = (OnThumbnailProgress != null) ? OnThumbnailProgress : ThumbnailProgress;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<float>(0));
         }
 
         /// <summary>
@@ -223,7 +228,8 @@ namespace Javax.Imageio.Event
 
         void ThumbnailStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
-            if (OnThumbnailStarted != null) OnThumbnailStarted.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+            var methodToExecute = (OnThumbnailStarted != null) ? OnThumbnailStarted : ThumbnailStarted;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
         }
 
         /// <summary>
@@ -244,7 +250,8 @@ namespace Javax.Imageio.Event
 
         void WriteAbortedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
-            if (OnWriteAborted != null) OnWriteAborted.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWriteAborted != null) ? OnWriteAborted : WriteAborted;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

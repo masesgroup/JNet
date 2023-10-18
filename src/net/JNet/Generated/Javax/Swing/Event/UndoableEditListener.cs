@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("undoableEditHappened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>>>(UndoableEditHappenedEventHandler)); OnUndoableEditHappened = UndoableEditHappened;
+            AddEventHandler("undoableEditHappened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>>>(UndoableEditHappenedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Swing.Event
 
         void UndoableEditHappenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.UndoableEditEvent>> data)
         {
-            if (OnUndoableEditHappened != null) OnUndoableEditHappened.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnUndoableEditHappened != null) ? OnUndoableEditHappened : UndoableEditHappened;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

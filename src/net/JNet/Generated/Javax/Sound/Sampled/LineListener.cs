@@ -73,7 +73,7 @@ namespace Javax.Sound.Sampled
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("update", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Sampled.LineEvent>>>(UpdateEventHandler)); OnUpdate = Update;
+            AddEventHandler("update", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Sampled.LineEvent>>>(UpdateEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Sound.Sampled
 
         void UpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Sampled.LineEvent>> data)
         {
-            if (OnUpdate != null) OnUpdate.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnUpdate != null) ? OnUpdate : Update;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

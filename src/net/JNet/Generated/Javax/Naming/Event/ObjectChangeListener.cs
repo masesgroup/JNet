@@ -78,8 +78,8 @@ namespace Javax.Naming.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler)); OnNamingExceptionThrown = NamingExceptionThrown;
-            AddEventHandler("objectChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectChangedEventHandler)); OnObjectChanged = ObjectChanged;
+            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler));
+            AddEventHandler("objectChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>>>(ObjectChangedEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Javax.Naming.Event
 
         void NamingExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>> data)
         {
-            if (OnNamingExceptionThrown != null) OnNamingExceptionThrown.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnNamingExceptionThrown != null) ? OnNamingExceptionThrown : NamingExceptionThrown;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Javax.Naming.Event
 
         void ObjectChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingEvent>> data)
         {
-            if (OnObjectChanged != null) OnObjectChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnObjectChanged != null) ? OnObjectChanged : ObjectChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

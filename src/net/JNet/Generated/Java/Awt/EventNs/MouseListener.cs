@@ -93,11 +93,11 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("mouseClicked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseClickedEventHandler)); OnMouseClicked = MouseClicked;
-            AddEventHandler("mouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseEnteredEventHandler)); OnMouseEntered = MouseEntered;
-            AddEventHandler("mouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseExitedEventHandler)); OnMouseExited = MouseExited;
-            AddEventHandler("mousePressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MousePressedEventHandler)); OnMousePressed = MousePressed;
-            AddEventHandler("mouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseReleasedEventHandler)); OnMouseReleased = MouseReleased;
+            AddEventHandler("mouseClicked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseClickedEventHandler));
+            AddEventHandler("mouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseEnteredEventHandler));
+            AddEventHandler("mouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseExitedEventHandler));
+            AddEventHandler("mousePressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MousePressedEventHandler));
+            AddEventHandler("mouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>>>(MouseReleasedEventHandler));
 
         }
 
@@ -108,7 +108,8 @@ namespace Java.Awt.EventNs
 
         void MouseClickedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {
-            if (OnMouseClicked != null) OnMouseClicked.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMouseClicked != null) ? OnMouseClicked : MouseClicked;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -127,7 +128,8 @@ namespace Java.Awt.EventNs
 
         void MouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {
-            if (OnMouseEntered != null) OnMouseEntered.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMouseEntered != null) ? OnMouseEntered : MouseEntered;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -146,7 +148,8 @@ namespace Java.Awt.EventNs
 
         void MouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {
-            if (OnMouseExited != null) OnMouseExited.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMouseExited != null) ? OnMouseExited : MouseExited;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -165,7 +168,8 @@ namespace Java.Awt.EventNs
 
         void MousePressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {
-            if (OnMousePressed != null) OnMousePressed.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMousePressed != null) ? OnMousePressed : MousePressed;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -184,7 +188,8 @@ namespace Java.Awt.EventNs
 
         void MouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.MouseEvent>> data)
         {
-            if (OnMouseReleased != null) OnMouseReleased.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMouseReleased != null) ? OnMouseReleased : MouseReleased;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

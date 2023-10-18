@@ -78,8 +78,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("caretPositionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(CaretPositionChangedEventHandler)); OnCaretPositionChanged = CaretPositionChanged;
-            AddEventHandler("inputMethodTextChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(InputMethodTextChangedEventHandler)); OnInputMethodTextChanged = InputMethodTextChanged;
+            AddEventHandler("caretPositionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(CaretPositionChangedEventHandler));
+            AddEventHandler("inputMethodTextChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>>>(InputMethodTextChangedEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Awt.EventNs
 
         void CaretPositionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>> data)
         {
-            if (OnCaretPositionChanged != null) OnCaretPositionChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnCaretPositionChanged != null) ? OnCaretPositionChanged : CaretPositionChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Awt.EventNs
 
         void InputMethodTextChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.InputMethodEvent>> data)
         {
-            if (OnInputMethodTextChanged != null) OnInputMethodTextChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnInputMethodTextChanged != null) ? OnInputMethodTextChanged : InputMethodTextChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

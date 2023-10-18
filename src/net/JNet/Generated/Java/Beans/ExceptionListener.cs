@@ -73,7 +73,7 @@ namespace Java.Beans
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("exceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ExceptionThrownEventHandler)); OnExceptionThrown = ExceptionThrown;
+            AddEventHandler("exceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ExceptionThrownEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Beans
 
         void ExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnExceptionThrown != null) OnExceptionThrown.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            var methodToExecute = (OnExceptionThrown != null) ? OnExceptionThrown : ExceptionThrown;
+            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
         }
 
         /// <summary>

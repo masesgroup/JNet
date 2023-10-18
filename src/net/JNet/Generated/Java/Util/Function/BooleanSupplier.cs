@@ -74,7 +74,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsBoolean", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsBooleanEventHandler)); OnGetAsBoolean = GetAsBoolean;
+            AddEventHandler("getAsBoolean", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsBooleanEventHandler));
 
         }
 
@@ -85,11 +85,9 @@ namespace Java.Util.Function
 
         void GetAsBooleanEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnGetAsBoolean != null)
-            {
-                var executionResult = OnGetAsBoolean.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetAsBoolean != null) ? OnGetAsBoolean : GetAsBoolean;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

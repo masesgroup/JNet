@@ -50,8 +50,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler)); OnAccept = Accept;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer>>>(AndThenEventHandler)); OnAndThen = AndThen;
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer>>>(AndThenEventHandler));
 
         }
 
@@ -62,7 +62,8 @@ namespace Java.Util.Function
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
-            if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAccept != null) ? OnAccept : Accept;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -81,11 +82,9 @@ namespace Java.Util.Function
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer>> data)
         {
-            if (OnAndThen != null)
-            {
-                var executionResult = OnAndThen.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -163,8 +162,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler)); OnAccept = Accept;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer<Arg0objectSuperT>>>>(AndThen<Arg0objectSuperT>EventHandler)); OnAndThen<Arg0objectSuperT> = AndThen<Arg0objectSuperT>;
+            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer<Arg0objectSuperT>>>>(AndThen<Arg0objectSuperT>EventHandler));
 
         }
 
@@ -175,7 +174,8 @@ namespace Java.Util.Function
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
-            if (OnAccept != null) OnAccept.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAccept != null) ? OnAccept : Accept;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -194,11 +194,9 @@ namespace Java.Util.Function
 
         void AndThen<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer<Arg0objectSuperT>>> data)
         {
-            if (OnAndThen<Arg0objectSuperT> != null)
-            {
-                var executionResult = OnAndThen<Arg0objectSuperT>.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnAndThen<Arg0objectSuperT> != null) ? OnAndThen<Arg0objectSuperT> : AndThen<Arg0objectSuperT>;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

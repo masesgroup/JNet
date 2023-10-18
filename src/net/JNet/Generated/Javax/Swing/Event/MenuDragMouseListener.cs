@@ -88,10 +88,10 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("menuDragMouseDragged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseDraggedEventHandler)); OnMenuDragMouseDragged = MenuDragMouseDragged;
-            AddEventHandler("menuDragMouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseEnteredEventHandler)); OnMenuDragMouseEntered = MenuDragMouseEntered;
-            AddEventHandler("menuDragMouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseExitedEventHandler)); OnMenuDragMouseExited = MenuDragMouseExited;
-            AddEventHandler("menuDragMouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseReleasedEventHandler)); OnMenuDragMouseReleased = MenuDragMouseReleased;
+            AddEventHandler("menuDragMouseDragged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseDraggedEventHandler));
+            AddEventHandler("menuDragMouseEntered", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseEnteredEventHandler));
+            AddEventHandler("menuDragMouseExited", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseExitedEventHandler));
+            AddEventHandler("menuDragMouseReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>>>(MenuDragMouseReleasedEventHandler));
 
         }
 
@@ -102,7 +102,8 @@ namespace Javax.Swing.Event
 
         void MenuDragMouseDraggedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
         {
-            if (OnMenuDragMouseDragged != null) OnMenuDragMouseDragged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMenuDragMouseDragged != null) ? OnMenuDragMouseDragged : MenuDragMouseDragged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -121,7 +122,8 @@ namespace Javax.Swing.Event
 
         void MenuDragMouseEnteredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
         {
-            if (OnMenuDragMouseEntered != null) OnMenuDragMouseEntered.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMenuDragMouseEntered != null) ? OnMenuDragMouseEntered : MenuDragMouseEntered;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -140,7 +142,8 @@ namespace Javax.Swing.Event
 
         void MenuDragMouseExitedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
         {
-            if (OnMenuDragMouseExited != null) OnMenuDragMouseExited.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMenuDragMouseExited != null) ? OnMenuDragMouseExited : MenuDragMouseExited;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -159,7 +162,8 @@ namespace Javax.Swing.Event
 
         void MenuDragMouseReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuDragMouseEvent>> data)
         {
-            if (OnMenuDragMouseReleased != null) OnMenuDragMouseReleased.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMenuDragMouseReleased != null) ? OnMenuDragMouseReleased : MenuDragMouseReleased;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

@@ -86,9 +86,9 @@ namespace Javax.Xml.Transform
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("error", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler)); OnError = Error;
-            AddEventHandler("fatalError", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(FatalErrorEventHandler)); OnFatalError = FatalError;
-            AddEventHandler("warning", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(WarningEventHandler)); OnWarning = Warning;
+            AddEventHandler("error", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler));
+            AddEventHandler("fatalError", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(FatalErrorEventHandler));
+            AddEventHandler("warning", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(WarningEventHandler));
 
         }
 
@@ -99,7 +99,8 @@ namespace Javax.Xml.Transform
 
         void ErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnError != null) OnError.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            var methodToExecute = (OnError != null) ? OnError : Error;
+            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
         }
 
         /// <summary>
@@ -119,7 +120,8 @@ namespace Javax.Xml.Transform
 
         void FatalErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnFatalError != null) OnFatalError.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            var methodToExecute = (OnFatalError != null) ? OnFatalError : FatalError;
+            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
         }
 
         /// <summary>
@@ -139,7 +141,8 @@ namespace Javax.Xml.Transform
 
         void WarningEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnWarning != null) OnWarning.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
+            var methodToExecute = (OnWarning != null) ? OnWarning : Warning;
+            methodToExecute.Invoke(JVMBridgeException.New(data.EventData.EventData as MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject));
         }
 
         /// <summary>

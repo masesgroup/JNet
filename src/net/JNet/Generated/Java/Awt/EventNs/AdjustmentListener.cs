@@ -73,7 +73,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("adjustmentValueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.AdjustmentEvent>>>(AdjustmentValueChangedEventHandler)); OnAdjustmentValueChanged = AdjustmentValueChanged;
+            AddEventHandler("adjustmentValueChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.AdjustmentEvent>>>(AdjustmentValueChangedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Awt.EventNs
 
         void AdjustmentValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.AdjustmentEvent>> data)
         {
-            if (OnAdjustmentValueChanged != null) OnAdjustmentValueChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnAdjustmentValueChanged != null) ? OnAdjustmentValueChanged : AdjustmentValueChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

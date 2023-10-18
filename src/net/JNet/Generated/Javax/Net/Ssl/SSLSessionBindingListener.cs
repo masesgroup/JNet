@@ -78,8 +78,8 @@ namespace Javax.Net.Ssl
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("valueBound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueBoundEventHandler)); OnValueBound = ValueBound;
-            AddEventHandler("valueUnbound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueUnboundEventHandler)); OnValueUnbound = ValueUnbound;
+            AddEventHandler("valueBound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueBoundEventHandler));
+            AddEventHandler("valueUnbound", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>>>(ValueUnboundEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Javax.Net.Ssl
 
         void ValueBoundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>> data)
         {
-            if (OnValueBound != null) OnValueBound.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnValueBound != null) ? OnValueBound : ValueBound;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Javax.Net.Ssl
 
         void ValueUnboundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>> data)
         {
-            if (OnValueUnbound != null) OnValueUnbound.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnValueUnbound != null) ? OnValueUnbound : ValueUnbound;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

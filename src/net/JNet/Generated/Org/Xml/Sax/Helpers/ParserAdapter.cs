@@ -50,27 +50,27 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getFeature", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(GetFeatureEventHandler)); OnGetFeature = GetFeature;
-            AddEventHandler("getProperty", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(GetPropertyEventHandler)); OnGetProperty = GetProperty;
-            AddEventHandler("getContentHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetContentHandlerEventHandler)); OnGetContentHandler = GetContentHandler;
-            AddEventHandler("getDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetDTDHandlerEventHandler)); OnGetDTDHandler = GetDTDHandler;
-            AddEventHandler("getEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEntityResolverEventHandler)); OnGetEntityResolver = GetEntityResolver;
-            AddEventHandler("getErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetErrorHandlerEventHandler)); OnGetErrorHandler = GetErrorHandler;
-            AddEventHandler("characters", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler)); OnCharacters = Characters;
-            AddEventHandler("endDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler)); OnEndDocument = EndDocument;
-            AddEventHandler("endElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndElementEventHandler)); OnEndElement = EndElement;
-            AddEventHandler("ignorableWhitespace", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler)); OnIgnorableWhitespace = IgnorableWhitespace;
-            AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ParseEventHandler)); OnParse = Parse;
-            AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler)); OnParse = Parse;
-            AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ProcessingInstructionEventHandler)); OnProcessingInstruction = ProcessingInstruction;
-            AddEventHandler("setContentHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ContentHandler>>>(SetContentHandlerEventHandler)); OnSetContentHandler = SetContentHandler;
-            AddEventHandler("setDocumentLocator", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler)); OnSetDocumentLocator = SetDocumentLocator;
-            AddEventHandler("setDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler)); OnSetDTDHandler = SetDTDHandler;
-            AddEventHandler("setEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler)); OnSetEntityResolver = SetEntityResolver;
-            AddEventHandler("setErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler)); OnSetErrorHandler = SetErrorHandler;
-            AddEventHandler("setFeature", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(SetFeatureEventHandler)); OnSetFeature = SetFeature;
-            AddEventHandler("setProperty", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(SetPropertyEventHandler)); OnSetProperty = SetProperty;
-            AddEventHandler("startDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler)); OnStartDocument = StartDocument;
+            AddEventHandler("getFeature", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(GetFeatureEventHandler));
+            AddEventHandler("getProperty", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(GetPropertyEventHandler));
+            AddEventHandler("getContentHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetContentHandlerEventHandler));
+            AddEventHandler("getDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetDTDHandlerEventHandler));
+            AddEventHandler("getEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEntityResolverEventHandler));
+            AddEventHandler("getErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetErrorHandlerEventHandler));
+            AddEventHandler("characters", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler));
+            AddEventHandler("endDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler));
+            AddEventHandler("endElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndElementEventHandler));
+            AddEventHandler("ignorableWhitespace", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler));
+            AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ParseEventHandler));
+            AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler));
+            AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ProcessingInstructionEventHandler));
+            AddEventHandler("setContentHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ContentHandler>>>(SetContentHandlerEventHandler));
+            AddEventHandler("setDocumentLocator", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler));
+            AddEventHandler("setDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler));
+            AddEventHandler("setEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler));
+            AddEventHandler("setErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler));
+            AddEventHandler("setFeature", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(SetFeatureEventHandler));
+            AddEventHandler("setProperty", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(SetPropertyEventHandler));
+            AddEventHandler("startDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler));
 
         }
 
@@ -81,11 +81,9 @@ namespace Org.Xml.Sax.Helpers
 
         void GetFeatureEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnGetFeature != null)
-            {
-                var executionResult = OnGetFeature.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetFeature != null) ? OnGetFeature : GetFeature;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -107,11 +105,9 @@ namespace Org.Xml.Sax.Helpers
 
         void GetPropertyEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnGetProperty != null)
-            {
-                var executionResult = OnGetProperty.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetProperty != null) ? OnGetProperty : GetProperty;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -133,11 +129,9 @@ namespace Org.Xml.Sax.Helpers
 
         void GetContentHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnGetContentHandler != null)
-            {
-                var executionResult = OnGetContentHandler.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetContentHandler != null) ? OnGetContentHandler : GetContentHandler;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -157,11 +151,9 @@ namespace Org.Xml.Sax.Helpers
 
         void GetDTDHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnGetDTDHandler != null)
-            {
-                var executionResult = OnGetDTDHandler.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetDTDHandler != null) ? OnGetDTDHandler : GetDTDHandler;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -181,11 +173,9 @@ namespace Org.Xml.Sax.Helpers
 
         void GetEntityResolverEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnGetEntityResolver != null)
-            {
-                var executionResult = OnGetEntityResolver.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetEntityResolver != null) ? OnGetEntityResolver : GetEntityResolver;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -205,11 +195,9 @@ namespace Org.Xml.Sax.Helpers
 
         void GetErrorHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnGetErrorHandler != null)
-            {
-                var executionResult = OnGetErrorHandler.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetErrorHandler != null) ? OnGetErrorHandler : GetErrorHandler;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -229,7 +217,8 @@ namespace Org.Xml.Sax.Helpers
 
         void CharactersEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
         {
-            if (OnCharacters != null) OnCharacters.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+            var methodToExecute = (OnCharacters != null) ? OnCharacters : Characters;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
         }
 
         /// <summary>
@@ -251,7 +240,8 @@ namespace Org.Xml.Sax.Helpers
 
         void EndDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnEndDocument != null) OnEndDocument.Invoke();
+            var methodToExecute = (OnEndDocument != null) ? OnEndDocument : EndDocument;
+            methodToExecute.Invoke();
         }
 
         /// <summary>
@@ -271,7 +261,8 @@ namespace Org.Xml.Sax.Helpers
 
         void EndElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnEndElement != null) OnEndElement.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnEndElement != null) ? OnEndElement : EndElement;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -291,7 +282,8 @@ namespace Org.Xml.Sax.Helpers
 
         void IgnorableWhitespaceEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
         {
-            if (OnIgnorableWhitespace != null) OnIgnorableWhitespace.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+            var methodToExecute = (OnIgnorableWhitespace != null) ? OnIgnorableWhitespace : IgnorableWhitespace;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
         }
 
         /// <summary>
@@ -313,7 +305,8 @@ namespace Org.Xml.Sax.Helpers
 
         void ParseEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnParse != null) OnParse.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnParse != null) ? OnParse : Parse;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -334,7 +327,8 @@ namespace Org.Xml.Sax.Helpers
 
         void Parse1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>> data)
         {
-            if (OnParse1 != null) OnParse1.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnParse1 != null) ? OnParse1 : Parse;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -355,7 +349,8 @@ namespace Org.Xml.Sax.Helpers
 
         void ProcessingInstructionEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnProcessingInstruction != null) OnProcessingInstruction.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
+            var methodToExecute = (OnProcessingInstruction != null) ? OnProcessingInstruction : ProcessingInstruction;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
         }
 
         /// <summary>
@@ -376,7 +371,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetContentHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ContentHandler>> data)
         {
-            if (OnSetContentHandler != null) OnSetContentHandler.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetContentHandler != null) ? OnSetContentHandler : SetContentHandler;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -395,7 +391,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetDocumentLocatorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>> data)
         {
-            if (OnSetDocumentLocator != null) OnSetDocumentLocator.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetDocumentLocator != null) ? OnSetDocumentLocator : SetDocumentLocator;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -414,7 +411,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetDTDHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>> data)
         {
-            if (OnSetDTDHandler != null) OnSetDTDHandler.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetDTDHandler != null) ? OnSetDTDHandler : SetDTDHandler;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -433,7 +431,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetEntityResolverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>> data)
         {
-            if (OnSetEntityResolver != null) OnSetEntityResolver.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetEntityResolver != null) ? OnSetEntityResolver : SetEntityResolver;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -452,7 +451,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetErrorHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>> data)
         {
-            if (OnSetErrorHandler != null) OnSetErrorHandler.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetErrorHandler != null) ? OnSetErrorHandler : SetErrorHandler;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -471,7 +471,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetFeatureEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnSetFeature != null) OnSetFeature.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<bool>(0));
+            var methodToExecute = (OnSetFeature != null) ? OnSetFeature : SetFeature;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<bool>(0));
         }
 
         /// <summary>
@@ -493,7 +494,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetPropertyEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnSetProperty != null) OnSetProperty.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+            var methodToExecute = (OnSetProperty != null) ? OnSetProperty : SetProperty;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
         }
 
         /// <summary>
@@ -515,7 +517,8 @@ namespace Org.Xml.Sax.Helpers
 
         void StartDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnStartDocument != null) OnStartDocument.Invoke();
+            var methodToExecute = (OnStartDocument != null) ? OnStartDocument : StartDocument;
+            methodToExecute.Invoke();
         }
 
         /// <summary>

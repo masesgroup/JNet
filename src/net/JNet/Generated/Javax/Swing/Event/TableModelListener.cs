@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("tableChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>>>(TableChangedEventHandler)); OnTableChanged = TableChanged;
+            AddEventHandler("tableChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>>>(TableChangedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Swing.Event
 
         void TableChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.TableModelEvent>> data)
         {
-            if (OnTableChanged != null) OnTableChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnTableChanged != null) ? OnTableChanged : TableChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

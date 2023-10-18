@@ -78,8 +78,8 @@ namespace Java.Awt.DesktopNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("systemAboutToSleep", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>>>(SystemAboutToSleepEventHandler)); OnSystemAboutToSleep = SystemAboutToSleep;
-            AddEventHandler("systemAwoke", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>>>(SystemAwokeEventHandler)); OnSystemAwoke = SystemAwoke;
+            AddEventHandler("systemAboutToSleep", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>>>(SystemAboutToSleepEventHandler));
+            AddEventHandler("systemAwoke", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>>>(SystemAwokeEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Awt.DesktopNs
 
         void SystemAboutToSleepEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>> data)
         {
-            if (OnSystemAboutToSleep != null) OnSystemAboutToSleep.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSystemAboutToSleep != null) ? OnSystemAboutToSleep : SystemAboutToSleep;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Awt.DesktopNs
 
         void SystemAwokeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>> data)
         {
-            if (OnSystemAwoke != null) OnSystemAwoke.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSystemAwoke != null) ? OnSystemAwoke : SystemAwoke;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("sorterChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.RowSorterEvent>>>(SorterChangedEventHandler)); OnSorterChanged = SorterChanged;
+            AddEventHandler("sorterChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.RowSorterEvent>>>(SorterChangedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Swing.Event
 
         void SorterChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.RowSorterEvent>> data)
         {
-            if (OnSorterChanged != null) OnSorterChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSorterChanged != null) ? OnSorterChanged : SorterChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

@@ -103,13 +103,13 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("windowActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowActivatedEventHandler)); OnWindowActivated = WindowActivated;
-            AddEventHandler("windowClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowClosedEventHandler)); OnWindowClosed = WindowClosed;
-            AddEventHandler("windowClosing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowClosingEventHandler)); OnWindowClosing = WindowClosing;
-            AddEventHandler("windowDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowDeactivatedEventHandler)); OnWindowDeactivated = WindowDeactivated;
-            AddEventHandler("windowDeiconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowDeiconifiedEventHandler)); OnWindowDeiconified = WindowDeiconified;
-            AddEventHandler("windowIconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowIconifiedEventHandler)); OnWindowIconified = WindowIconified;
-            AddEventHandler("windowOpened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowOpenedEventHandler)); OnWindowOpened = WindowOpened;
+            AddEventHandler("windowActivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowActivatedEventHandler));
+            AddEventHandler("windowClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowClosedEventHandler));
+            AddEventHandler("windowClosing", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowClosingEventHandler));
+            AddEventHandler("windowDeactivated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowDeactivatedEventHandler));
+            AddEventHandler("windowDeiconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowDeiconifiedEventHandler));
+            AddEventHandler("windowIconified", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowIconifiedEventHandler));
+            AddEventHandler("windowOpened", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowOpenedEventHandler));
 
         }
 
@@ -120,7 +120,8 @@ namespace Java.Awt.EventNs
 
         void WindowActivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
-            if (OnWindowActivated != null) OnWindowActivated.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWindowActivated != null) ? OnWindowActivated : WindowActivated;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -139,7 +140,8 @@ namespace Java.Awt.EventNs
 
         void WindowClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
-            if (OnWindowClosed != null) OnWindowClosed.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWindowClosed != null) ? OnWindowClosed : WindowClosed;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -158,7 +160,8 @@ namespace Java.Awt.EventNs
 
         void WindowClosingEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
-            if (OnWindowClosing != null) OnWindowClosing.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWindowClosing != null) ? OnWindowClosing : WindowClosing;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -177,7 +180,8 @@ namespace Java.Awt.EventNs
 
         void WindowDeactivatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
-            if (OnWindowDeactivated != null) OnWindowDeactivated.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWindowDeactivated != null) ? OnWindowDeactivated : WindowDeactivated;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -196,7 +200,8 @@ namespace Java.Awt.EventNs
 
         void WindowDeiconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
-            if (OnWindowDeiconified != null) OnWindowDeiconified.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWindowDeiconified != null) ? OnWindowDeiconified : WindowDeiconified;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -215,7 +220,8 @@ namespace Java.Awt.EventNs
 
         void WindowIconifiedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
-            if (OnWindowIconified != null) OnWindowIconified.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWindowIconified != null) ? OnWindowIconified : WindowIconified;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -234,7 +240,8 @@ namespace Java.Awt.EventNs
 
         void WindowOpenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
-            if (OnWindowOpened != null) OnWindowOpened.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWindowOpened != null) ? OnWindowOpened : WindowOpened;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

@@ -73,7 +73,7 @@ namespace Java.Awt.Dnd
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("dragGestureRecognized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>>>(DragGestureRecognizedEventHandler)); OnDragGestureRecognized = DragGestureRecognized;
+            AddEventHandler("dragGestureRecognized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>>>(DragGestureRecognizedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Awt.Dnd
 
         void DragGestureRecognizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragGestureEvent>> data)
         {
-            if (OnDragGestureRecognized != null) OnDragGestureRecognized.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnDragGestureRecognized != null) ? OnDragGestureRecognized : DragGestureRecognized;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

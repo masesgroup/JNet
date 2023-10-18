@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("controlChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>>>(ControlChangeEventHandler)); OnControlChange = ControlChange;
+            AddEventHandler("controlChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>>>(ControlChangeEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Sound.Midi
 
         void ControlChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.ShortMessage>> data)
         {
-            if (OnControlChange != null) OnControlChange.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnControlChange != null) ? OnControlChange : ControlChange;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

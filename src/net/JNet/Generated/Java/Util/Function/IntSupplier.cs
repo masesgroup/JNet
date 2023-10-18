@@ -74,7 +74,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsIntEventHandler)); OnGetAsInt = GetAsInt;
+            AddEventHandler("getAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsIntEventHandler));
 
         }
 
@@ -85,11 +85,9 @@ namespace Java.Util.Function
 
         void GetAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnGetAsInt != null)
-            {
-                var executionResult = OnGetAsInt.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGetAsInt != null) ? OnGetAsInt : GetAsInt;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

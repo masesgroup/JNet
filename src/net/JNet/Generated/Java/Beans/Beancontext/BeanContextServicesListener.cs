@@ -78,8 +78,8 @@ namespace Java.Beans.Beancontext
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("serviceRevoked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler)); OnServiceRevoked = ServiceRevoked;
-            AddEventHandler("serviceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>>>(ServiceAvailableEventHandler)); OnServiceAvailable = ServiceAvailable;
+            AddEventHandler("serviceRevoked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler));
+            AddEventHandler("serviceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>>>(ServiceAvailableEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Beans.Beancontext
 
         void ServiceRevokedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>> data)
         {
-            if (OnServiceRevoked != null) OnServiceRevoked.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnServiceRevoked != null) ? OnServiceRevoked : ServiceRevoked;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Beans.Beancontext
 
         void ServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceAvailableEvent>> data)
         {
-            if (OnServiceAvailable != null) OnServiceAvailable.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnServiceAvailable != null) ? OnServiceAvailable : ServiceAvailable;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

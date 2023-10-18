@@ -75,7 +75,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
+            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsLongEventHandler));
 
         }
 
@@ -86,11 +86,9 @@ namespace Java.Util.Function
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
-            if (OnApplyAsLong != null)
-            {
-                var executionResult = OnApplyAsLong.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<long>(0));
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApplyAsLong != null) ? OnApplyAsLong : ApplyAsLong;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<long>(0));
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

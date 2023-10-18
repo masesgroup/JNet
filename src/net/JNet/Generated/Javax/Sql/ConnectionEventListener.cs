@@ -78,8 +78,8 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("connectionClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionClosedEventHandler)); OnConnectionClosed = ConnectionClosed;
-            AddEventHandler("connectionErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionErrorOccurredEventHandler)); OnConnectionErrorOccurred = ConnectionErrorOccurred;
+            AddEventHandler("connectionClosed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionClosedEventHandler));
+            AddEventHandler("connectionErrorOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>>>(ConnectionErrorOccurredEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Javax.Sql
 
         void ConnectionClosedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
         {
-            if (OnConnectionClosed != null) OnConnectionClosed.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnConnectionClosed != null) ? OnConnectionClosed : ConnectionClosed;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Javax.Sql
 
         void ConnectionErrorOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.ConnectionEvent>> data)
         {
-            if (OnConnectionErrorOccurred != null) OnConnectionErrorOccurred.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnConnectionErrorOccurred != null) ? OnConnectionErrorOccurred : ConnectionErrorOccurred;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

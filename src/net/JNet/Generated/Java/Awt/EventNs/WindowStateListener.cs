@@ -73,7 +73,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("windowStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowStateChangedEventHandler)); OnWindowStateChanged = WindowStateChanged;
+            AddEventHandler("windowStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowStateChangedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Awt.EventNs
 
         void WindowStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
-            if (OnWindowStateChanged != null) OnWindowStateChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWindowStateChanged != null) ? OnWindowStateChanged : WindowStateChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

@@ -50,23 +50,23 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("characters", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler)); OnCharacters = Characters;
-            AddEventHandler("endDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler)); OnEndDocument = EndDocument;
-            AddEventHandler("endElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndElementEventHandler)); OnEndElement = EndElement;
-            AddEventHandler("endPrefixMapping", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndPrefixMappingEventHandler)); OnEndPrefixMapping = EndPrefixMapping;
-            AddEventHandler("ignorableWhitespace", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler)); OnIgnorableWhitespace = IgnorableWhitespace;
-            AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ParseEventHandler)); OnParse = Parse;
-            AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler)); OnParse = Parse;
-            AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ProcessingInstructionEventHandler)); OnProcessingInstruction = ProcessingInstruction;
-            AddEventHandler("setDocumentLocator", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler)); OnSetDocumentLocator = SetDocumentLocator;
-            AddEventHandler("setDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler)); OnSetDTDHandler = SetDTDHandler;
-            AddEventHandler("setEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler)); OnSetEntityResolver = SetEntityResolver;
-            AddEventHandler("setErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler)); OnSetErrorHandler = SetErrorHandler;
-            AddEventHandler("setLocale", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Locale>>>(SetLocaleEventHandler)); OnSetLocale = SetLocale;
-            AddEventHandler("skippedEntity", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(SkippedEntityEventHandler)); OnSkippedEntity = SkippedEntity;
-            AddEventHandler("startDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler)); OnStartDocument = StartDocument;
-            AddEventHandler("startElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(StartElementEventHandler)); OnStartElement = StartElement;
-            AddEventHandler("startPrefixMapping", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(StartPrefixMappingEventHandler)); OnStartPrefixMapping = StartPrefixMapping;
+            AddEventHandler("characters", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler));
+            AddEventHandler("endDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler));
+            AddEventHandler("endElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndElementEventHandler));
+            AddEventHandler("endPrefixMapping", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(EndPrefixMappingEventHandler));
+            AddEventHandler("ignorableWhitespace", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler));
+            AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ParseEventHandler));
+            AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler));
+            AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(ProcessingInstructionEventHandler));
+            AddEventHandler("setDocumentLocator", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler));
+            AddEventHandler("setDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler));
+            AddEventHandler("setEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler));
+            AddEventHandler("setErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler));
+            AddEventHandler("setLocale", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Locale>>>(SetLocaleEventHandler));
+            AddEventHandler("skippedEntity", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(SkippedEntityEventHandler));
+            AddEventHandler("startDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler));
+            AddEventHandler("startElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(StartElementEventHandler));
+            AddEventHandler("startPrefixMapping", new System.EventHandler<CLRListenerEventArgs<CLREventData<string>>>(StartPrefixMappingEventHandler));
 
         }
 
@@ -77,7 +77,8 @@ namespace Org.Xml.Sax.Helpers
 
         void CharactersEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
         {
-            if (OnCharacters != null) OnCharacters.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+            var methodToExecute = (OnCharacters != null) ? OnCharacters : Characters;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
         }
 
         /// <summary>
@@ -99,7 +100,8 @@ namespace Org.Xml.Sax.Helpers
 
         void EndDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnEndDocument != null) OnEndDocument.Invoke();
+            var methodToExecute = (OnEndDocument != null) ? OnEndDocument : EndDocument;
+            methodToExecute.Invoke();
         }
 
         /// <summary>
@@ -119,7 +121,8 @@ namespace Org.Xml.Sax.Helpers
 
         void EndElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnEndElement != null) OnEndElement.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0), data.EventData.GetAt<string>(1));
+            var methodToExecute = (OnEndElement != null) ? OnEndElement : EndElement;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0), data.EventData.GetAt<string>(1));
         }
 
         /// <summary>
@@ -141,7 +144,8 @@ namespace Org.Xml.Sax.Helpers
 
         void EndPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnEndPrefixMapping != null) OnEndPrefixMapping.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnEndPrefixMapping != null) ? OnEndPrefixMapping : EndPrefixMapping;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -160,7 +164,8 @@ namespace Org.Xml.Sax.Helpers
 
         void IgnorableWhitespaceEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
         {
-            if (OnIgnorableWhitespace != null) OnIgnorableWhitespace.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
+            var methodToExecute = (OnIgnorableWhitespace != null) ? OnIgnorableWhitespace : IgnorableWhitespace;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<int>(1));
         }
 
         /// <summary>
@@ -182,7 +187,8 @@ namespace Org.Xml.Sax.Helpers
 
         void ParseEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnParse != null) OnParse.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnParse != null) ? OnParse : Parse;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -203,7 +209,8 @@ namespace Org.Xml.Sax.Helpers
 
         void Parse1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>> data)
         {
-            if (OnParse1 != null) OnParse1.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnParse1 != null) ? OnParse1 : Parse;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -224,7 +231,8 @@ namespace Org.Xml.Sax.Helpers
 
         void ProcessingInstructionEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnProcessingInstruction != null) OnProcessingInstruction.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
+            var methodToExecute = (OnProcessingInstruction != null) ? OnProcessingInstruction : ProcessingInstruction;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
         }
 
         /// <summary>
@@ -245,7 +253,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetDocumentLocatorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>> data)
         {
-            if (OnSetDocumentLocator != null) OnSetDocumentLocator.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetDocumentLocator != null) ? OnSetDocumentLocator : SetDocumentLocator;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -264,7 +273,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetDTDHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>> data)
         {
-            if (OnSetDTDHandler != null) OnSetDTDHandler.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetDTDHandler != null) ? OnSetDTDHandler : SetDTDHandler;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -283,7 +293,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetEntityResolverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>> data)
         {
-            if (OnSetEntityResolver != null) OnSetEntityResolver.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetEntityResolver != null) ? OnSetEntityResolver : SetEntityResolver;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -302,7 +313,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetErrorHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>> data)
         {
-            if (OnSetErrorHandler != null) OnSetErrorHandler.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetErrorHandler != null) ? OnSetErrorHandler : SetErrorHandler;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -321,7 +333,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SetLocaleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Locale>> data)
         {
-            if (OnSetLocale != null) OnSetLocale.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSetLocale != null) ? OnSetLocale : SetLocale;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -341,7 +354,8 @@ namespace Org.Xml.Sax.Helpers
 
         void SkippedEntityEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnSkippedEntity != null) OnSkippedEntity.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnSkippedEntity != null) ? OnSkippedEntity : SkippedEntity;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -361,7 +375,8 @@ namespace Org.Xml.Sax.Helpers
 
         void StartDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnStartDocument != null) OnStartDocument.Invoke();
+            var methodToExecute = (OnStartDocument != null) ? OnStartDocument : StartDocument;
+            methodToExecute.Invoke();
         }
 
         /// <summary>
@@ -381,7 +396,8 @@ namespace Org.Xml.Sax.Helpers
 
         void StartElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnStartElement != null) OnStartElement.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0), data.EventData.GetAt<string>(1), data.EventData.GetAt<Org.Xml.Sax.Attributes>(2));
+            var methodToExecute = (OnStartElement != null) ? OnStartElement : StartElement;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0), data.EventData.GetAt<string>(1), data.EventData.GetAt<Org.Xml.Sax.Attributes>(2));
         }
 
         /// <summary>
@@ -404,7 +420,8 @@ namespace Org.Xml.Sax.Helpers
 
         void StartPrefixMappingEventHandler(object sender, CLRListenerEventArgs<CLREventData<string>> data)
         {
-            if (OnStartPrefixMapping != null) OnStartPrefixMapping.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
+            var methodToExecute = (OnStartPrefixMapping != null) ? OnStartPrefixMapping : StartPrefixMapping;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<string>(0));
         }
 
         /// <summary>

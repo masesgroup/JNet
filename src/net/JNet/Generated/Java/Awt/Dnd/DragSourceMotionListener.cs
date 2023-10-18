@@ -73,7 +73,7 @@ namespace Java.Awt.Dnd
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("dragMouseMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragMouseMovedEventHandler)); OnDragMouseMoved = DragMouseMoved;
+            AddEventHandler("dragMouseMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>>>(DragMouseMovedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Awt.Dnd
 
         void DragMouseMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {
-            if (OnDragMouseMoved != null) OnDragMouseMoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnDragMouseMoved != null) ? OnDragMouseMoved : DragMouseMoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

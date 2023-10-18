@@ -98,12 +98,12 @@ namespace Javax.Print.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("printDataTransferCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintDataTransferCompletedEventHandler)); OnPrintDataTransferCompleted = PrintDataTransferCompleted;
-            AddEventHandler("printJobCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobCanceledEventHandler)); OnPrintJobCanceled = PrintJobCanceled;
-            AddEventHandler("printJobCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobCompletedEventHandler)); OnPrintJobCompleted = PrintJobCompleted;
-            AddEventHandler("printJobFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobFailedEventHandler)); OnPrintJobFailed = PrintJobFailed;
-            AddEventHandler("printJobNoMoreEvents", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobNoMoreEventsEventHandler)); OnPrintJobNoMoreEvents = PrintJobNoMoreEvents;
-            AddEventHandler("printJobRequiresAttention", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobRequiresAttentionEventHandler)); OnPrintJobRequiresAttention = PrintJobRequiresAttention;
+            AddEventHandler("printDataTransferCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintDataTransferCompletedEventHandler));
+            AddEventHandler("printJobCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobCanceledEventHandler));
+            AddEventHandler("printJobCompleted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobCompletedEventHandler));
+            AddEventHandler("printJobFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobFailedEventHandler));
+            AddEventHandler("printJobNoMoreEvents", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobNoMoreEventsEventHandler));
+            AddEventHandler("printJobRequiresAttention", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>>>(PrintJobRequiresAttentionEventHandler));
 
         }
 
@@ -114,7 +114,8 @@ namespace Javax.Print.Event
 
         void PrintDataTransferCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
-            if (OnPrintDataTransferCompleted != null) OnPrintDataTransferCompleted.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPrintDataTransferCompleted != null) ? OnPrintDataTransferCompleted : PrintDataTransferCompleted;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -133,7 +134,8 @@ namespace Javax.Print.Event
 
         void PrintJobCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
-            if (OnPrintJobCanceled != null) OnPrintJobCanceled.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPrintJobCanceled != null) ? OnPrintJobCanceled : PrintJobCanceled;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -152,7 +154,8 @@ namespace Javax.Print.Event
 
         void PrintJobCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
-            if (OnPrintJobCompleted != null) OnPrintJobCompleted.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPrintJobCompleted != null) ? OnPrintJobCompleted : PrintJobCompleted;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -171,7 +174,8 @@ namespace Javax.Print.Event
 
         void PrintJobFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
-            if (OnPrintJobFailed != null) OnPrintJobFailed.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPrintJobFailed != null) ? OnPrintJobFailed : PrintJobFailed;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -190,7 +194,8 @@ namespace Javax.Print.Event
 
         void PrintJobNoMoreEventsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
-            if (OnPrintJobNoMoreEvents != null) OnPrintJobNoMoreEvents.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPrintJobNoMoreEvents != null) ? OnPrintJobNoMoreEvents : PrintJobNoMoreEvents;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -209,7 +214,8 @@ namespace Javax.Print.Event
 
         void PrintJobRequiresAttentionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Print.Event.PrintJobEvent>> data)
         {
-            if (OnPrintJobRequiresAttention != null) OnPrintJobRequiresAttention.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPrintJobRequiresAttention != null) ? OnPrintJobRequiresAttention : PrintJobRequiresAttention;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

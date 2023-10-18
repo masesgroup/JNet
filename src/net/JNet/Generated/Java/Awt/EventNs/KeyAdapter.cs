@@ -50,9 +50,9 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("keyPressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyPressedEventHandler)); OnKeyPressed = KeyPressed;
-            AddEventHandler("keyReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyReleasedEventHandler)); OnKeyReleased = KeyReleased;
-            AddEventHandler("keyTyped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyTypedEventHandler)); OnKeyTyped = KeyTyped;
+            AddEventHandler("keyPressed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyPressedEventHandler));
+            AddEventHandler("keyReleased", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyReleasedEventHandler));
+            AddEventHandler("keyTyped", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>>>(KeyTypedEventHandler));
 
         }
 
@@ -63,7 +63,8 @@ namespace Java.Awt.EventNs
 
         void KeyPressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>> data)
         {
-            if (OnKeyPressed != null) OnKeyPressed.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnKeyPressed != null) ? OnKeyPressed : KeyPressed;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -82,7 +83,8 @@ namespace Java.Awt.EventNs
 
         void KeyReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>> data)
         {
-            if (OnKeyReleased != null) OnKeyReleased.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnKeyReleased != null) ? OnKeyReleased : KeyReleased;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -101,7 +103,8 @@ namespace Java.Awt.EventNs
 
         void KeyTypedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.KeyEvent>> data)
         {
-            if (OnKeyTyped != null) OnKeyTyped.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnKeyTyped != null) ? OnKeyTyped : KeyTyped;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

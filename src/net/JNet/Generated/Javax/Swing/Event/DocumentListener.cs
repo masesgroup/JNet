@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("changedUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(ChangedUpdateEventHandler)); OnChangedUpdate = ChangedUpdate;
-            AddEventHandler("insertUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(InsertUpdateEventHandler)); OnInsertUpdate = InsertUpdate;
-            AddEventHandler("removeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(RemoveUpdateEventHandler)); OnRemoveUpdate = RemoveUpdate;
+            AddEventHandler("changedUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(ChangedUpdateEventHandler));
+            AddEventHandler("insertUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(InsertUpdateEventHandler));
+            AddEventHandler("removeUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>>>(RemoveUpdateEventHandler));
 
         }
 
@@ -96,7 +96,8 @@ namespace Javax.Swing.Event
 
         void ChangedUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
         {
-            if (OnChangedUpdate != null) OnChangedUpdate.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnChangedUpdate != null) ? OnChangedUpdate : ChangedUpdate;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -115,7 +116,8 @@ namespace Javax.Swing.Event
 
         void InsertUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
         {
-            if (OnInsertUpdate != null) OnInsertUpdate.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnInsertUpdate != null) ? OnInsertUpdate : InsertUpdate;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -134,7 +136,8 @@ namespace Javax.Swing.Event
 
         void RemoveUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
         {
-            if (OnRemoveUpdate != null) OnRemoveUpdate.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnRemoveUpdate != null) ? OnRemoveUpdate : RemoveUpdate;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

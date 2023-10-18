@@ -78,8 +78,8 @@ namespace Javax.Naming.Ldap
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler)); OnNamingExceptionThrown = NamingExceptionThrown;
-            AddEventHandler("notificationReceived", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>>>(NotificationReceivedEventHandler)); OnNotificationReceived = NotificationReceived;
+            AddEventHandler("namingExceptionThrown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>>>(NamingExceptionThrownEventHandler));
+            AddEventHandler("notificationReceived", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>>>(NotificationReceivedEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Javax.Naming.Ldap
 
         void NamingExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Event.NamingExceptionEvent>> data)
         {
-            if (OnNamingExceptionThrown != null) OnNamingExceptionThrown.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnNamingExceptionThrown != null) ? OnNamingExceptionThrown : NamingExceptionThrown;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Javax.Naming.Ldap
 
         void NotificationReceivedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Naming.Ldap.UnsolicitedNotificationEvent>> data)
         {
-            if (OnNotificationReceived != null) OnNotificationReceived.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnNotificationReceived != null) ? OnNotificationReceived : NotificationReceived;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

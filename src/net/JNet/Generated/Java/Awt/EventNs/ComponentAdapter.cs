@@ -50,10 +50,10 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("componentHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentHiddenEventHandler)); OnComponentHidden = ComponentHidden;
-            AddEventHandler("componentMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentMovedEventHandler)); OnComponentMoved = ComponentMoved;
-            AddEventHandler("componentResized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentResizedEventHandler)); OnComponentResized = ComponentResized;
-            AddEventHandler("componentShown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentShownEventHandler)); OnComponentShown = ComponentShown;
+            AddEventHandler("componentHidden", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentHiddenEventHandler));
+            AddEventHandler("componentMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentMovedEventHandler));
+            AddEventHandler("componentResized", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentResizedEventHandler));
+            AddEventHandler("componentShown", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>>>(ComponentShownEventHandler));
 
         }
 
@@ -64,7 +64,8 @@ namespace Java.Awt.EventNs
 
         void ComponentHiddenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
         {
-            if (OnComponentHidden != null) OnComponentHidden.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnComponentHidden != null) ? OnComponentHidden : ComponentHidden;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -83,7 +84,8 @@ namespace Java.Awt.EventNs
 
         void ComponentMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
         {
-            if (OnComponentMoved != null) OnComponentMoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnComponentMoved != null) ? OnComponentMoved : ComponentMoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -102,7 +104,8 @@ namespace Java.Awt.EventNs
 
         void ComponentResizedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
         {
-            if (OnComponentResized != null) OnComponentResized.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnComponentResized != null) ? OnComponentResized : ComponentResized;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -121,7 +124,8 @@ namespace Java.Awt.EventNs
 
         void ComponentShownEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ComponentEvent>> data)
         {
-            if (OnComponentShown != null) OnComponentShown.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnComponentShown != null) ? OnComponentShown : ComponentShown;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

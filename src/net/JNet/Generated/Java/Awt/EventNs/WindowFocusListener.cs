@@ -78,8 +78,8 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("windowGainedFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowGainedFocusEventHandler)); OnWindowGainedFocus = WindowGainedFocus;
-            AddEventHandler("windowLostFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowLostFocusEventHandler)); OnWindowLostFocus = WindowLostFocus;
+            AddEventHandler("windowGainedFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowGainedFocusEventHandler));
+            AddEventHandler("windowLostFocus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>>>(WindowLostFocusEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Awt.EventNs
 
         void WindowGainedFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
-            if (OnWindowGainedFocus != null) OnWindowGainedFocus.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWindowGainedFocus != null) ? OnWindowGainedFocus : WindowGainedFocus;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Awt.EventNs
 
         void WindowLostFocusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {
-            if (OnWindowLostFocus != null) OnWindowLostFocus.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnWindowLostFocus != null) ? OnWindowLostFocus : WindowLostFocus;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

@@ -74,7 +74,7 @@ namespace Javax.Management
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("handleNotification", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(HandleNotificationEventHandler)); OnHandleNotification = HandleNotification;
+            AddEventHandler("handleNotification", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Management.Notification>>>(HandleNotificationEventHandler));
 
         }
 
@@ -85,7 +85,8 @@ namespace Javax.Management
 
         void HandleNotificationEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Management.Notification>> data)
         {
-            if (OnHandleNotification != null) OnHandleNotification.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+            var methodToExecute = (OnHandleNotification != null) ? OnHandleNotification : HandleNotification;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
         }
 
         /// <summary>

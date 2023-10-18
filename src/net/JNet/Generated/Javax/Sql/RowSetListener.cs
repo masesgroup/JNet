@@ -83,9 +83,9 @@ namespace Javax.Sql
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("cursorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(CursorMovedEventHandler)); OnCursorMoved = CursorMoved;
-            AddEventHandler("rowChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowChangedEventHandler)); OnRowChanged = RowChanged;
-            AddEventHandler("rowSetChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowSetChangedEventHandler)); OnRowSetChanged = RowSetChanged;
+            AddEventHandler("cursorMoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(CursorMovedEventHandler));
+            AddEventHandler("rowChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowChangedEventHandler));
+            AddEventHandler("rowSetChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>>>(RowSetChangedEventHandler));
 
         }
 
@@ -96,7 +96,8 @@ namespace Javax.Sql
 
         void CursorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
         {
-            if (OnCursorMoved != null) OnCursorMoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnCursorMoved != null) ? OnCursorMoved : CursorMoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -115,7 +116,8 @@ namespace Javax.Sql
 
         void RowChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
         {
-            if (OnRowChanged != null) OnRowChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnRowChanged != null) ? OnRowChanged : RowChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -134,7 +136,8 @@ namespace Javax.Sql
 
         void RowSetChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
         {
-            if (OnRowSetChanged != null) OnRowSetChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnRowSetChanged != null) ? OnRowSetChanged : RowSetChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

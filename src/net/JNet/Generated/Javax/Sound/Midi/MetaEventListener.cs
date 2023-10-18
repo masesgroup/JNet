@@ -73,7 +73,7 @@ namespace Javax.Sound.Midi
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("meta", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.MetaMessage>>>(MetaEventHandler)); OnMeta = Meta;
+            AddEventHandler("meta", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.MetaMessage>>>(MetaEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Sound.Midi
 
         void MetaEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Midi.MetaMessage>> data)
         {
-            if (OnMeta != null) OnMeta.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnMeta != null) ? OnMeta : Meta;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

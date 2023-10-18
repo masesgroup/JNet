@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("contentsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(ContentsChangedEventHandler)); OnContentsChanged = ContentsChanged;
-            AddEventHandler("intervalAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalAddedEventHandler)); OnIntervalAdded = IntervalAdded;
-            AddEventHandler("intervalRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalRemovedEventHandler)); OnIntervalRemoved = IntervalRemoved;
+            AddEventHandler("contentsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(ContentsChangedEventHandler));
+            AddEventHandler("intervalAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalAddedEventHandler));
+            AddEventHandler("intervalRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>>>(IntervalRemovedEventHandler));
 
         }
 
@@ -96,7 +96,8 @@ namespace Javax.Swing.Event
 
         void ContentsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
         {
-            if (OnContentsChanged != null) OnContentsChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnContentsChanged != null) ? OnContentsChanged : ContentsChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -115,7 +116,8 @@ namespace Javax.Swing.Event
 
         void IntervalAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
         {
-            if (OnIntervalAdded != null) OnIntervalAdded.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnIntervalAdded != null) ? OnIntervalAdded : IntervalAdded;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -134,7 +136,8 @@ namespace Javax.Swing.Event
 
         void IntervalRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListDataEvent>> data)
         {
-            if (OnIntervalRemoved != null) OnIntervalRemoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnIntervalRemoved != null) ? OnIntervalRemoved : IntervalRemoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

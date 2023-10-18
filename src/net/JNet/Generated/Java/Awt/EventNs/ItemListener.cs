@@ -73,7 +73,7 @@ namespace Java.Awt.EventNs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("itemStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ItemEvent>>>(ItemStateChangedEventHandler)); OnItemStateChanged = ItemStateChanged;
+            AddEventHandler("itemStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ItemEvent>>>(ItemStateChangedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Awt.EventNs
 
         void ItemStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ItemEvent>> data)
         {
-            if (OnItemStateChanged != null) OnItemStateChanged.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnItemStateChanged != null) ? OnItemStateChanged : ItemStateChanged;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

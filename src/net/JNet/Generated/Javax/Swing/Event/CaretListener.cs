@@ -73,7 +73,7 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("caretUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.CaretEvent>>>(CaretUpdateEventHandler)); OnCaretUpdate = CaretUpdate;
+            AddEventHandler("caretUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.CaretEvent>>>(CaretUpdateEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Javax.Swing.Event
 
         void CaretUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.CaretEvent>> data)
         {
-            if (OnCaretUpdate != null) OnCaretUpdate.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnCaretUpdate != null) ? OnCaretUpdate : CaretUpdate;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

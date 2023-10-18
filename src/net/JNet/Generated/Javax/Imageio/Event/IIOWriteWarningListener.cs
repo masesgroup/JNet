@@ -75,7 +75,7 @@ namespace Javax.Imageio.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("warningOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WarningOccurredEventHandler)); OnWarningOccurred = WarningOccurred;
+            AddEventHandler("warningOccurred", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>>>(WarningOccurredEventHandler));
 
         }
 
@@ -86,7 +86,8 @@ namespace Javax.Imageio.Event
 
         void WarningOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {
-            if (OnWarningOccurred != null) OnWarningOccurred.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<string>(1));
+            var methodToExecute = (OnWarningOccurred != null) ? OnWarningOccurred : WarningOccurred;
+            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<string>(1));
         }
 
         /// <summary>

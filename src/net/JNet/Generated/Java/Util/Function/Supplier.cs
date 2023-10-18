@@ -50,7 +50,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;
+            AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler));
 
         }
 
@@ -61,11 +61,9 @@ namespace Java.Util.Function
 
         void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnGet != null)
-            {
-                var executionResult = OnGet.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGet != null) ? OnGet : Get;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -137,7 +135,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler)); OnGet = Get;
+            AddEventHandler("get", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEventHandler));
 
         }
 
@@ -148,11 +146,9 @@ namespace Java.Util.Function
 
         void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
-            if (OnGet != null)
-            {
-                var executionResult = OnGet.Invoke();
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnGet != null) ? OnGet : Get;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

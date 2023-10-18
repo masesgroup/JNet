@@ -50,7 +50,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
+            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsLongEventHandler));
 
         }
 
@@ -61,11 +61,9 @@ namespace Java.Util.Function
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
-            if (OnApplyAsLong != null)
-            {
-                var executionResult = OnApplyAsLong.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApplyAsLong != null) ? OnApplyAsLong : ApplyAsLong;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -137,7 +135,7 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler)); OnApplyAsLong = ApplyAsLong;
+            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler));
 
         }
 
@@ -148,11 +146,9 @@ namespace Java.Util.Function
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
-            if (OnApplyAsLong != null)
-            {
-                var executionResult = OnApplyAsLong.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApplyAsLong != null) ? OnApplyAsLong : ApplyAsLong;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

@@ -83,9 +83,9 @@ namespace Javax.Swing.Event
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("popupMenuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuCanceledEventHandler)); OnPopupMenuCanceled = PopupMenuCanceled;
-            AddEventHandler("popupMenuWillBecomeInvisible", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeInvisibleEventHandler)); OnPopupMenuWillBecomeInvisible = PopupMenuWillBecomeInvisible;
-            AddEventHandler("popupMenuWillBecomeVisible", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeVisibleEventHandler)); OnPopupMenuWillBecomeVisible = PopupMenuWillBecomeVisible;
+            AddEventHandler("popupMenuCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuCanceledEventHandler));
+            AddEventHandler("popupMenuWillBecomeInvisible", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeInvisibleEventHandler));
+            AddEventHandler("popupMenuWillBecomeVisible", new System.EventHandler<CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>>>(PopupMenuWillBecomeVisibleEventHandler));
 
         }
 
@@ -96,7 +96,8 @@ namespace Javax.Swing.Event
 
         void PopupMenuCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
         {
-            if (OnPopupMenuCanceled != null) OnPopupMenuCanceled.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPopupMenuCanceled != null) ? OnPopupMenuCanceled : PopupMenuCanceled;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -115,7 +116,8 @@ namespace Javax.Swing.Event
 
         void PopupMenuWillBecomeInvisibleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
         {
-            if (OnPopupMenuWillBecomeInvisible != null) OnPopupMenuWillBecomeInvisible.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPopupMenuWillBecomeInvisible != null) ? OnPopupMenuWillBecomeInvisible : PopupMenuWillBecomeInvisible;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -134,7 +136,8 @@ namespace Javax.Swing.Event
 
         void PopupMenuWillBecomeVisibleEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.PopupMenuEvent>> data)
         {
-            if (OnPopupMenuWillBecomeVisible != null) OnPopupMenuWillBecomeVisible.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnPopupMenuWillBecomeVisible != null) ? OnPopupMenuWillBecomeVisible : PopupMenuWillBecomeVisible;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

@@ -78,8 +78,8 @@ namespace Java.Util.Prefs
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("childAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildAddedEventHandler)); OnChildAdded = ChildAdded;
-            AddEventHandler("childRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildRemovedEventHandler)); OnChildRemoved = ChildRemoved;
+            AddEventHandler("childAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildAddedEventHandler));
+            AddEventHandler("childRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>>>(ChildRemovedEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Util.Prefs
 
         void ChildAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>> data)
         {
-            if (OnChildAdded != null) OnChildAdded.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnChildAdded != null) ? OnChildAdded : ChildAdded;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Util.Prefs
 
         void ChildRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>> data)
         {
-            if (OnChildRemoved != null) OnChildRemoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnChildRemoved != null) ? OnChildRemoved : ChildRemoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

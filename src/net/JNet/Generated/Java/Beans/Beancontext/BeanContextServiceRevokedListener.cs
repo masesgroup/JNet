@@ -73,7 +73,7 @@ namespace Java.Beans.Beancontext
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("serviceRevoked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler)); OnServiceRevoked = ServiceRevoked;
+            AddEventHandler("serviceRevoked", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>>>(ServiceRevokedEventHandler));
 
         }
 
@@ -84,7 +84,8 @@ namespace Java.Beans.Beancontext
 
         void ServiceRevokedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextServiceRevokedEvent>> data)
         {
-            if (OnServiceRevoked != null) OnServiceRevoked.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnServiceRevoked != null) ? OnServiceRevoked : ServiceRevoked;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>

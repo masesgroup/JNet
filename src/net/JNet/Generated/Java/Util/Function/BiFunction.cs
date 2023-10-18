@@ -50,8 +50,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler)); OnApply = Apply;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler)); OnAndThen = AndThen;
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler));
 
         }
 
@@ -62,11 +62,9 @@ namespace Java.Util.Function
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
-            if (OnApply != null)
-            {
-                var executionResult = OnApply.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApply != null) ? OnApply : Apply;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -87,11 +85,9 @@ namespace Java.Util.Function
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
         {
-            if (OnAndThen != null)
-            {
-                var executionResult = OnAndThen.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -173,8 +169,8 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler)); OnApply = Apply;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler)); OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> = AndThen<V, Arg0objectSuperR, Arg0ExtendsV>;
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler));
 
         }
 
@@ -185,11 +181,9 @@ namespace Java.Util.Function
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
-            if (OnApply != null)
-            {
-                var executionResult = OnApply.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApply != null) ? OnApply : Apply;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<U>(0));
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -210,11 +204,9 @@ namespace Java.Util.Function
 
         void AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>> data)
         {
-            if (OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> != null)
-            {
-                var executionResult = OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV>.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> != null) ? OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> : AndThen<V, Arg0objectSuperR, Arg0ExtendsV>;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

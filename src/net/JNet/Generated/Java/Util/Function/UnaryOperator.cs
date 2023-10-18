@@ -50,9 +50,9 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler)); OnApply = Apply;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler)); OnAndThen = AndThen;
-            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(ComposeEventHandler)); OnCompose = Compose;
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler));
+            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(ComposeEventHandler));
 
         }
 
@@ -63,11 +63,9 @@ namespace Java.Util.Function
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
-            if (OnApply != null)
-            {
-                var executionResult = OnApply.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApply != null) ? OnApply : Apply;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -87,11 +85,9 @@ namespace Java.Util.Function
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
         {
-            if (OnAndThen != null)
-            {
-                var executionResult = OnAndThen.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnAndThen != null) ? OnAndThen : AndThen;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -111,11 +107,9 @@ namespace Java.Util.Function
 
         void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
         {
-            if (OnCompose != null)
-            {
-                var executionResult = OnCompose.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnCompose != null) ? OnCompose : Compose;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -208,9 +202,9 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(Apply<R>EventHandler)); OnApply<R> = Apply<R>;
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler)); OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> = AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>;
-            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>>>(Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>EventHandler)); OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> = Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>;
+            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(Apply<R>EventHandler));
+            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler));
+            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>>>(Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>EventHandler));
 
         }
 
@@ -221,11 +215,9 @@ namespace Java.Util.Function
 
         void Apply<R>EventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
-            if (OnApply<R> != null)
-            {
-                var executionResult = OnApply<R>.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnApply<R> != null) ? OnApply<R> : Apply<R>;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -246,11 +238,9 @@ namespace Java.Util.Function
 
         void AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>> data)
         {
-            if (OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> != null)
-            {
-                var executionResult = OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> != null) ? OnAndThen<V, Arg0objectSuperR, R, Arg0ExtendsV> : AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>
@@ -274,11 +264,9 @@ namespace Java.Util.Function
 
         void Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>> data)
         {
-            if (OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> != null)
-            {
-                var executionResult = OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT>.Invoke(data.EventData.TypedEventData);
-                data.SetReturnValue(executionResult);
-            }
+            var methodToExecute = (OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> != null) ? OnCompose<V, R, Arg0objectSuperV, Arg0ExtendsT> : Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>;
+            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
+            data.SetReturnValue(executionResult);
         }
 
         /// <summary>

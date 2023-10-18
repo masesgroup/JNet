@@ -78,8 +78,8 @@ namespace Java.Beans.Beancontext
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("childrenAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenAddedEventHandler)); OnChildrenAdded = ChildrenAdded;
-            AddEventHandler("childrenRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenRemovedEventHandler)); OnChildrenRemoved = ChildrenRemoved;
+            AddEventHandler("childrenAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenAddedEventHandler));
+            AddEventHandler("childrenRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>>>(ChildrenRemovedEventHandler));
 
         }
 
@@ -90,7 +90,8 @@ namespace Java.Beans.Beancontext
 
         void ChildrenAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>> data)
         {
-            if (OnChildrenAdded != null) OnChildrenAdded.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnChildrenAdded != null) ? OnChildrenAdded : ChildrenAdded;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
@@ -109,7 +110,8 @@ namespace Java.Beans.Beancontext
 
         void ChildrenRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.Beancontext.BeanContextMembershipEvent>> data)
         {
-            if (OnChildrenRemoved != null) OnChildrenRemoved.Invoke(data.EventData.TypedEventData);
+            var methodToExecute = (OnChildrenRemoved != null) ? OnChildrenRemoved : ChildrenRemoved;
+            methodToExecute.Invoke(data.EventData.TypedEventData);
         }
 
         /// <summary>
