@@ -80,7 +80,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowStateListener.html#windowStateChanged(java.awt.event.WindowEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowStateChanged { get; set; }
+        /// <remarks>If <see cref="OnWindowStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.WindowEvent> OnWindowStateChanged { get; set; } = null;
 
         void WindowStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.WindowEvent>> data)
         {

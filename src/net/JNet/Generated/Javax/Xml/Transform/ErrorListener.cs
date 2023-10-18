@@ -95,7 +95,8 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
         /// </summary>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnError { get; set; }
+        /// <remarks>If <see cref="OnError"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnError { get; set; } = null;
 
         void ErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -116,7 +117,8 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
         /// </summary>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnFatalError { get; set; }
+        /// <remarks>If <see cref="OnFatalError"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnFatalError { get; set; } = null;
 
         void FatalErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -137,7 +139,8 @@ namespace Javax.Xml.Transform
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
         /// </summary>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnWarning { get; set; }
+        /// <remarks>If <see cref="OnWarning"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnWarning { get; set; } = null;
 
         void WarningEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

@@ -80,7 +80,8 @@ namespace Java.Beans
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html#exceptionThrown(java.lang.Exception)"/>
         /// </summary>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnExceptionThrown { get; set; }
+        /// <remarks>If <see cref="OnExceptionThrown"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnExceptionThrown { get; set; } = null;
 
         void ExceptionThrownEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

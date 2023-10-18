@@ -86,7 +86,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingCanceled(javax.swing.event.ChangeEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.ChangeEvent> OnEditingCanceled { get; set; }
+        /// <remarks>If <see cref="OnEditingCanceled"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.ChangeEvent> OnEditingCanceled { get; set; } = null;
 
         void EditingCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
         {
@@ -106,7 +107,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CellEditorListener.html#editingStopped(javax.swing.event.ChangeEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.ChangeEvent> OnEditingStopped { get; set; }
+        /// <remarks>If <see cref="OnEditingStopped"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.ChangeEvent> OnEditingStopped { get; set; } = null;
 
         void EditingStoppedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ChangeEvent>> data)
         {

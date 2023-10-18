@@ -80,7 +80,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyListener.html#hierarchyChanged(java.awt.event.HierarchyEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.HierarchyEvent> OnHierarchyChanged { get; set; }
+        /// <remarks>If <see cref="OnHierarchyChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.HierarchyEvent> OnHierarchyChanged { get; set; } = null;
 
         void HierarchyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.HierarchyEvent>> data)
         {

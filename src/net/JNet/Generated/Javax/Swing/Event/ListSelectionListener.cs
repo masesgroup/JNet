@@ -80,7 +80,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ListSelectionListener.html#valueChanged(javax.swing.event.ListSelectionEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.ListSelectionEvent> OnValueChanged { get; set; }
+        /// <remarks>If <see cref="OnValueChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.ListSelectionEvent> OnValueChanged { get; set; } = null;
 
         void ValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.ListSelectionEvent>> data)
         {

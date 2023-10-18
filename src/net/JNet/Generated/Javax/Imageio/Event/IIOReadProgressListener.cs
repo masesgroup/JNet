@@ -134,7 +134,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageComplete(javax.imageio.ImageReader)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader> OnImageComplete { get; set; }
+        /// <remarks>If <see cref="OnImageComplete"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader> OnImageComplete { get; set; } = null;
 
         void ImageCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -154,7 +155,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageProgress(javax.imageio.ImageReader,float)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, float> OnImageProgress { get; set; }
+        /// <remarks>If <see cref="OnImageProgress"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, float> OnImageProgress { get; set; } = null;
 
         void ImageProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -175,7 +177,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageStarted(javax.imageio.ImageReader,int)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, int> OnImageStarted { get; set; }
+        /// <remarks>If <see cref="OnImageStarted"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, int> OnImageStarted { get; set; } = null;
 
         void ImageStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -196,7 +199,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#readAborted(javax.imageio.ImageReader)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader> OnReadAborted { get; set; }
+        /// <remarks>If <see cref="OnReadAborted"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader> OnReadAborted { get; set; } = null;
 
         void ReadAbortedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -216,7 +220,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#sequenceComplete(javax.imageio.ImageReader)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader> OnSequenceComplete { get; set; }
+        /// <remarks>If <see cref="OnSequenceComplete"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader> OnSequenceComplete { get; set; } = null;
 
         void SequenceCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -236,7 +241,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#sequenceStarted(javax.imageio.ImageReader,int)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, int> OnSequenceStarted { get; set; }
+        /// <remarks>If <see cref="OnSequenceStarted"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, int> OnSequenceStarted { get; set; } = null;
 
         void SequenceStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -257,7 +263,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailComplete(javax.imageio.ImageReader)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader> OnThumbnailComplete { get; set; }
+        /// <remarks>If <see cref="OnThumbnailComplete"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader> OnThumbnailComplete { get; set; } = null;
 
         void ThumbnailCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -277,7 +284,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailProgress(javax.imageio.ImageReader,float)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, float> OnThumbnailProgress { get; set; }
+        /// <remarks>If <see cref="OnThumbnailProgress"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, float> OnThumbnailProgress { get; set; } = null;
 
         void ThumbnailProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {
@@ -298,7 +306,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailStarted(javax.imageio.ImageReader,int,int)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageReader, int, int> OnThumbnailStarted { get; set; }
+        /// <remarks>If <see cref="OnThumbnailStarted"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageReader, int, int> OnThumbnailStarted { get; set; } = null;
 
         void ThumbnailStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageReader>> data)
         {

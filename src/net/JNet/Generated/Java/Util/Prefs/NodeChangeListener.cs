@@ -86,7 +86,8 @@ namespace Java.Util.Prefs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childAdded(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
-        public System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildAdded { get; set; }
+        /// <remarks>If <see cref="OnChildAdded"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildAdded { get; set; } = null;
 
         void ChildAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>> data)
         {
@@ -106,7 +107,8 @@ namespace Java.Util.Prefs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html#childRemoved(java.util.prefs.NodeChangeEvent)"/>
         /// </summary>
-        public System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildRemoved { get; set; }
+        /// <remarks>If <see cref="OnChildRemoved"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Util.Prefs.NodeChangeEvent> OnChildRemoved { get; set; } = null;
 
         void ChildRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Prefs.NodeChangeEvent>> data)
         {

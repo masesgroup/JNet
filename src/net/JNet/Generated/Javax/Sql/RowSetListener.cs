@@ -92,7 +92,8 @@ namespace Javax.Sql
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#cursorMoved(javax.sql.RowSetEvent)"/>
         /// </summary>
-        public System.Action<Javax.Sql.RowSetEvent> OnCursorMoved { get; set; }
+        /// <remarks>If <see cref="OnCursorMoved"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Sql.RowSetEvent> OnCursorMoved { get; set; } = null;
 
         void CursorMovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
         {
@@ -112,7 +113,8 @@ namespace Javax.Sql
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
-        public System.Action<Javax.Sql.RowSetEvent> OnRowChanged { get; set; }
+        /// <remarks>If <see cref="OnRowChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Sql.RowSetEvent> OnRowChanged { get; set; } = null;
 
         void RowChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
         {
@@ -132,7 +134,8 @@ namespace Javax.Sql
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html#rowSetChanged(javax.sql.RowSetEvent)"/>
         /// </summary>
-        public System.Action<Javax.Sql.RowSetEvent> OnRowSetChanged { get; set; }
+        /// <remarks>If <see cref="OnRowSetChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Sql.RowSetEvent> OnRowSetChanged { get; set; } = null;
 
         void RowSetChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sql.RowSetEvent>> data)
         {

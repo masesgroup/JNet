@@ -86,7 +86,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueBound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
-        public System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueBound { get; set; }
+        /// <remarks>If <see cref="OnValueBound"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueBound { get; set; } = null;
 
         void ValueBoundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>> data)
         {
@@ -106,7 +107,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html#valueUnbound(javax.net.ssl.SSLSessionBindingEvent)"/>
         /// </summary>
-        public System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueUnbound { get; set; }
+        /// <remarks>If <see cref="OnValueUnbound"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Net.Ssl.SSLSessionBindingEvent> OnValueUnbound { get; set; } = null;
 
         void ValueUnboundEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.SSLSessionBindingEvent>> data)
         {

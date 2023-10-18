@@ -86,7 +86,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerListener.html#componentAdded(java.awt.event.ContainerEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.ContainerEvent> OnComponentAdded { get; set; }
+        /// <remarks>If <see cref="OnComponentAdded"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.ContainerEvent> OnComponentAdded { get; set; } = null;
 
         void ComponentAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>> data)
         {
@@ -106,7 +107,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerListener.html#componentRemoved(java.awt.event.ContainerEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.ContainerEvent> OnComponentRemoved { get; set; }
+        /// <remarks>If <see cref="OnComponentRemoved"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.ContainerEvent> OnComponentRemoved { get; set; } = null;
 
         void ComponentRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ContainerEvent>> data)
         {

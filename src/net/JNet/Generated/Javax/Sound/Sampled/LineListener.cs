@@ -80,7 +80,8 @@ namespace Javax.Sound.Sampled
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineListener.html#update(javax.sound.sampled.LineEvent)"/>
         /// </summary>
-        public System.Action<Javax.Sound.Sampled.LineEvent> OnUpdate { get; set; }
+        /// <remarks>If <see cref="OnUpdate"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Sound.Sampled.LineEvent> OnUpdate { get; set; } = null;
 
         void UpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Sound.Sampled.LineEvent>> data)
         {

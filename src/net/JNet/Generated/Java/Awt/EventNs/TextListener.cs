@@ -80,7 +80,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html#textValueChanged(java.awt.event.TextEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.TextEvent> OnTextValueChanged { get; set; }
+        /// <remarks>If <see cref="OnTextValueChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.TextEvent> OnTextValueChanged { get; set; } = null;
 
         void TextValueChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.TextEvent>> data)
         {

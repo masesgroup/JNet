@@ -81,7 +81,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>
-        public System.Func<long> OnGetAsLong { get; set; }
+        /// <remarks>If <see cref="OnGetAsLong"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<long> OnGetAsLong { get; set; } = null;
 
         void GetAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {

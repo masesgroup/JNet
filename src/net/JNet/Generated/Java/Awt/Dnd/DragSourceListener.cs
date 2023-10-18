@@ -104,7 +104,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragDropEnd(java.awt.dnd.DragSourceDropEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.Dnd.DragSourceDropEvent> OnDragDropEnd { get; set; }
+        /// <remarks>If <see cref="OnDragDropEnd"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.Dnd.DragSourceDropEvent> OnDragDropEnd { get; set; } = null;
 
         void DragDropEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDropEvent>> data)
         {
@@ -124,7 +125,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragEnter(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragEnter { get; set; }
+        /// <remarks>If <see cref="OnDragEnter"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragEnter { get; set; } = null;
 
         void DragEnterEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {
@@ -144,7 +146,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragExit(java.awt.dnd.DragSourceEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.Dnd.DragSourceEvent> OnDragExit { get; set; }
+        /// <remarks>If <see cref="OnDragExit"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.Dnd.DragSourceEvent> OnDragExit { get; set; } = null;
 
         void DragExitEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceEvent>> data)
         {
@@ -164,7 +167,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dragOver(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragOver { get; set; }
+        /// <remarks>If <see cref="OnDragOver"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDragOver { get; set; } = null;
 
         void DragOverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {
@@ -184,7 +188,8 @@ namespace Java.Awt.Dnd
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html#dropActionChanged(java.awt.dnd.DragSourceDragEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDropActionChanged { get; set; }
+        /// <remarks>If <see cref="OnDropActionChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.Dnd.DragSourceDragEvent> OnDropActionChanged { get; set; } = null;
 
         void DropActionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.Dnd.DragSourceDragEvent>> data)
         {

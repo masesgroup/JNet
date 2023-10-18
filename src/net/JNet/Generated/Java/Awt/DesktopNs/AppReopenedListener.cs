@@ -80,7 +80,8 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/AppReopenedListener.html#appReopened(java.awt.desktop.AppReopenedEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.DesktopNs.AppReopenedEvent> OnAppReopened { get; set; }
+        /// <remarks>If <see cref="OnAppReopened"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.DesktopNs.AppReopenedEvent> OnAppReopened { get; set; } = null;
 
         void AppReopenedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.AppReopenedEvent>> data)
         {

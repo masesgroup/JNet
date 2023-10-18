@@ -86,7 +86,8 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAboutToSleep(java.awt.desktop.SystemSleepEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.DesktopNs.SystemSleepEvent> OnSystemAboutToSleep { get; set; }
+        /// <remarks>If <see cref="OnSystemAboutToSleep"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.DesktopNs.SystemSleepEvent> OnSystemAboutToSleep { get; set; } = null;
 
         void SystemAboutToSleepEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>> data)
         {
@@ -106,7 +107,8 @@ namespace Java.Awt.DesktopNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/SystemSleepListener.html#systemAwoke(java.awt.desktop.SystemSleepEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.DesktopNs.SystemSleepEvent> OnSystemAwoke { get; set; }
+        /// <remarks>If <see cref="OnSystemAwoke"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.DesktopNs.SystemSleepEvent> OnSystemAwoke { get; set; } = null;
 
         void SystemAwokeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.DesktopNs.SystemSleepEvent>> data)
         {

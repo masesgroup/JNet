@@ -81,7 +81,8 @@ namespace Javax.Management
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationListener.html#handleNotification(javax.management.Notification,java.lang.Object)"/>
         /// </summary>
-        public System.Action<Javax.Management.Notification, object> OnHandleNotification { get; set; }
+        /// <remarks>If <see cref="OnHandleNotification"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Management.Notification, object> OnHandleNotification { get; set; } = null;
 
         void HandleNotificationEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Management.Notification>> data)
         {

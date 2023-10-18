@@ -80,7 +80,8 @@ namespace Java.Awt.EventNs
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html#itemStateChanged(java.awt.event.ItemEvent)"/>
         /// </summary>
-        public System.Action<Java.Awt.EventNs.ItemEvent> OnItemStateChanged { get; set; }
+        /// <remarks>If <see cref="OnItemStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Java.Awt.EventNs.ItemEvent> OnItemStateChanged { get; set; } = null;
 
         void ItemStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Awt.EventNs.ItemEvent>> data)
         {

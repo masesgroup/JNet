@@ -80,7 +80,8 @@ namespace Javax.Net.Ssl
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html#handshakeCompleted(javax.net.ssl.HandshakeCompletedEvent)"/>
         /// </summary>
-        public System.Action<Javax.Net.Ssl.HandshakeCompletedEvent> OnHandshakeCompleted { get; set; }
+        /// <remarks>If <see cref="OnHandshakeCompleted"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Net.Ssl.HandshakeCompletedEvent> OnHandshakeCompleted { get; set; } = null;
 
         void HandshakeCompletedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Net.Ssl.HandshakeCompletedEvent>> data)
         {

@@ -82,7 +82,8 @@ namespace Javax.Imageio.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteWarningListener.html#warningOccurred(javax.imageio.ImageWriter,int,java.lang.String)"/>
         /// </summary>
-        public System.Action<Javax.Imageio.ImageWriter, int, string> OnWarningOccurred { get; set; }
+        /// <remarks>If <see cref="OnWarningOccurred"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Imageio.ImageWriter, int, string> OnWarningOccurred { get; set; } = null;
 
         void WarningOccurredEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Imageio.ImageWriter>> data)
         {

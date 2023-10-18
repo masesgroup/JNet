@@ -81,7 +81,8 @@ namespace Javax.Management
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationFilter.html#isNotificationEnabled(javax.management.Notification)"/>
         /// </summary>
-        public System.Func<Javax.Management.Notification, bool> OnIsNotificationEnabled { get; set; }
+        /// <remarks>If <see cref="OnIsNotificationEnabled"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Javax.Management.Notification, bool> OnIsNotificationEnabled { get; set; } = null;
 
         void IsNotificationEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Management.Notification>> data)
         {

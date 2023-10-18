@@ -92,7 +92,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyPressed(javax.swing.event.MenuKeyEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyPressed { get; set; }
+        /// <remarks>If <see cref="OnMenuKeyPressed"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyPressed { get; set; } = null;
 
         void MenuKeyPressedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
         {
@@ -112,7 +113,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyReleased(javax.swing.event.MenuKeyEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyReleased { get; set; }
+        /// <remarks>If <see cref="OnMenuKeyReleased"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyReleased { get; set; } = null;
 
         void MenuKeyReleasedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
         {
@@ -132,7 +134,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MenuKeyListener.html#menuKeyTyped(javax.swing.event.MenuKeyEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyTyped { get; set; }
+        /// <remarks>If <see cref="OnMenuKeyTyped"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.MenuKeyEvent> OnMenuKeyTyped { get; set; } = null;
 
         void MenuKeyTypedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.MenuKeyEvent>> data)
         {

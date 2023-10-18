@@ -92,7 +92,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#changedUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.DocumentEvent> OnChangedUpdate { get; set; }
+        /// <remarks>If <see cref="OnChangedUpdate"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.DocumentEvent> OnChangedUpdate { get; set; } = null;
 
         void ChangedUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
         {
@@ -112,7 +113,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#insertUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.DocumentEvent> OnInsertUpdate { get; set; }
+        /// <remarks>If <see cref="OnInsertUpdate"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.DocumentEvent> OnInsertUpdate { get; set; } = null;
 
         void InsertUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
         {
@@ -132,7 +134,8 @@ namespace Javax.Swing.Event
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentListener.html#removeUpdate(javax.swing.event.DocumentEvent)"/>
         /// </summary>
-        public System.Action<Javax.Swing.Event.DocumentEvent> OnRemoveUpdate { get; set; }
+        /// <remarks>If <see cref="OnRemoveUpdate"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Action<Javax.Swing.Event.DocumentEvent> OnRemoveUpdate { get; set; } = null;
 
         void RemoveUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Javax.Swing.Event.DocumentEvent>> data)
         {

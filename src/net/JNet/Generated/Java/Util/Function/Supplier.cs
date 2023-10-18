@@ -57,7 +57,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
-        public System.Func<object> OnGet { get; set; }
+        /// <remarks>If <see cref="OnGet"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<object> OnGet { get; set; } = null;
 
         void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -142,7 +143,8 @@ namespace Java.Util.Function
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Supplier.html#get()"/>
         /// </summary>
-        public System.Func<T> OnGet { get; set; }
+        /// <remarks>If <see cref="OnGet"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<T> OnGet { get; set; } = null;
 
         void GetEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
