@@ -14,7 +14,7 @@ JNet is a comprehensive suite of libraries and tools to use Java/JVM APIs (Java,
 [![CodeQL](https://github.com/masesgroup/JNet/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/masesgroup/JNet/actions/workflows/codeql-analysis.yml)
 [![CI_RELEASE](https://github.com/masesgroup/JNet/actions/workflows/release.yaml/badge.svg)](https://github.com/masesgroup/JNet/actions/workflows/release.yaml) 
 
-### Disclaimer
+### Project disclaimer
 
 JNet is a suite, curated by MASES Group, can be supported by the open-source community.
 
