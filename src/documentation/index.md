@@ -12,7 +12,7 @@ JNet is a comprehensive suite of libraries and tools to use Java/JVM APIs (Java,
 
 <em>
  <p>
-JNet is a suite curated by MASES Group and can be supported by the open-source community. 
+JNet is a suite, curated by MASES Group, can be supported by the open-source community.
 Its primary scope is to support other, public or internal, MASES Group projects: Open-source community can use and support this project, moreover there is a dedicated community subscription plan.
 </p>
 <p>
