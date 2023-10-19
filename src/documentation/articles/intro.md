@@ -14,6 +14,17 @@ JNet is a comprehensive suite of libraries and tools to use Java/JVM APIs (Java,
 [![CodeQL](https://github.com/masesgroup/JNet/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/masesgroup/JNet/actions/workflows/codeql-analysis.yml)
 [![CI_RELEASE](https://github.com/masesgroup/JNet/actions/workflows/release.yaml/badge.svg)](https://github.com/masesgroup/JNet/actions/workflows/release.yaml) 
 
+### Disclaimer
+
+<em>
+JNet is a suite curated by MASES Group and can be supported by the open-source community. 
+Its primary scope is to supports other, public or internal, MASES Group projects: Open-source community can use and supports this project accessing the community subscription plan.
+</p>
+The release cycle depends from critical discovered issues and/or enhancement requested on this or other projects.
+</p>
+Looking for the help of experts? MASES Group can help you design, build, deploy, and manage applications mixing .NET and JVM enabled languages.
+</em>
+
 ---
 
 ## Scope of the project
