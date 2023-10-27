@@ -13,3 +13,8 @@ updates:
     directory: "/src/java/jnet"
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: weekly
