@@ -182,6 +182,11 @@ jobs:
       - name: Recompile to create nuget packages
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030" src\net\JNet.sln
 
+      - uses: actions/upload-artifact@v3
+        with:
+          name: JNet
+          path: .\bin\*nupkg
+
       - name: Clear documentation folder 
         run: Remove-Item .\docs\* -Recurse -Force -Exclude _config.yml
 
@@ -192,26 +197,21 @@ jobs:
           cd src\documentation
           docfx
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: JNet
-          path: .\bin\*nupkg
+      - name: Extract commit SHA
+        run: |
+          echo "GITHUB_COMMIT_MESSAGE=$(echo $GITHUB_SHA | cut -c 1-7)" >> $GITHUB_ENV
+        shell: bash
 
       - name: Request a PR to commit changes
         if: ${{ github.repository_owner == 'masesgroup'}} #do not push any changes outside main repo
         uses: peter-evans/create-pull-request@v5
         with:
-          committer: 41898282+github-actions[bot]@users.noreply.github.com
           branch-suffix: short-commit-hash
-          path: '.\docs\*.*'
+          add-paths: docs/*.*
+          commit-message: Update documentation after commit ${{ env.GITHUB_COMMIT_MESSAGE }}
           title: Changes by GitHub action
           body: Automated changes by GitHub action
 
-     # - name: Extract commit SHA
-     #   run: |
-     #     echo "GITHUB_COMMIT_MESSAGE=$(echo $GITHUB_SHA | cut -c 1-7)" >> $GITHUB_ENV
-     #   shell: bash
-     #
      # - name: Commit changes
      #   if: ${{ github.repository_owner == 'masesgroup'}} #do not push any changes outside main repo
      #   uses: EndBug/add-and-commit@v9
