@@ -1,83 +1,124 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface INavigableMap&lt;K, V&gt;
-   | JNet website </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface INavigableMap&lt;K, V&gt;
-   | JNet website ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Interface INavigableMap&lt;K, V&gt;
+ | MASES Group website - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface INavigableMap&lt;K, V&gt;
+ | MASES Group website - JNet ">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Java.Util.INavigableMap`2">
-  
-  
-  <h1 id="Java_Util_INavigableMap_2" data-uid="Java.Util.INavigableMap`2" class="text-break">Interface INavigableMap&lt;K, V&gt;
+
+        <article data-uid="Java.Util.INavigableMap`2">
+
+
+
+  <h1 id="Java_Util_INavigableMap_2" data-uid="Java.Util.INavigableMap`2" class="text-break">
+    Interface INavigableMap&lt;K, V&gt;
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h1>
-  <div class="markdown level0 summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Util.html">Util</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface INavigableMap&lt;K, V&gt; : ISortedMap&lt;K, V&gt;, IMap&lt;K, V&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>K</code></dt>
+    <dd></dd>
+    <dt><code>V</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="Java.Util.ISortedMap-2.html#Java_Util_ISortedMap_2_Values">ISortedMap&lt;K, V&gt;.Values()</a>
     </div>
@@ -103,10 +144,10 @@
       <a class="xref" href="Java.Util.ISortedMap-2.html#Java_Util_ISortedMap_2_LastKey">ISortedMap&lt;K, V&gt;.LastKey()</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_ContainsKey_System_Object_">IMap&lt;K, V&gt;.ContainsKey(Object)</a>
+      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_ContainsKey_System_Object_">IMap&lt;K, V&gt;.ContainsKey(object)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_ContainsValue_System_Object_">IMap&lt;K, V&gt;.ContainsValue(Object)</a>
+      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_ContainsValue_System_Object_">IMap&lt;K, V&gt;.ContainsValue(object)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_IsEmpty">IMap&lt;K, V&gt;.IsEmpty()</a>
@@ -124,13 +165,13 @@
       <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_KeySet">IMap&lt;K, V&gt;.KeySet()</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_Get_System_Object_">IMap&lt;K, V&gt;.Get(Object)</a>
+      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_Get_System_Object_">IMap&lt;K, V&gt;.Get(object)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_Put__0__1_">IMap&lt;K, V&gt;.Put(K, V)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_Remove_System_Object_">IMap&lt;K, V&gt;.Remove(Object)</a>
+      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_Remove_System_Object_">IMap&lt;K, V&gt;.Remove(object)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_Clear">IMap&lt;K, V&gt;.Clear()</a>
@@ -139,7 +180,7 @@
       <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_PutAll__2_Java_Util_Map___0___1__">IMap&lt;K, V&gt;.PutAll&lt;Arg0ExtendsK, Arg0ExtendsV&gt;(Map&lt;Arg0ExtendsK, Arg0ExtendsV&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_Remove_System_Object_System_Object_">IMap&lt;K, V&gt;.Remove(Object, Object)</a>
+      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_Remove_System_Object_System_Object_">IMap&lt;K, V&gt;.Remove(object, object)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_Replace__0__1__1_">IMap&lt;K, V&gt;.Replace(K, V, V)</a>
@@ -154,7 +195,7 @@
       <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_ComputeIfPresent__3__0_Java_Util_Function_BiFunction___0___1___2__">IMap&lt;K, V&gt;.ComputeIfPresent&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV&gt;(K, BiFunction&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV&gt;)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_GetOrDefault_System_Object__1_">IMap&lt;K, V&gt;.GetOrDefault(Object, V)</a>
+      <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_GetOrDefault_System_Object__1_">IMap&lt;K, V&gt;.GetOrDefault(object, V)</a>
     </div>
     <div>
       <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_Merge__2__0__1_Java_Util_Function_BiFunction___0___0___1__">IMap&lt;K, V&gt;.Merge&lt;Arg2objectSuperV, Arg2ExtendsV&gt;(K, V, BiFunction&lt;Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV&gt;)</a>
@@ -171,1034 +212,834 @@
     <div>
       <a class="xref" href="Java.Util.IMap-2.html#Java_Util_IMap_2_ReplaceAll__3_Java_Util_Function_BiFunction___0___1___2__">IMap&lt;K, V&gt;.ReplaceAll&lt;Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV&gt;(BiFunction&lt;Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV&gt;)</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Java.Util.html">Java.Util</a></h6>
-  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
-  <h5 id="Java_Util_INavigableMap_2_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface INavigableMap&lt;K, V&gt; : ISortedMap&lt;K, V&gt;, IMap&lt;K, V&gt;</code></pre>
-  </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">K</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">V</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_CeilingEntry__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.CeilingEntry(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L266">View Source</a>
-  </span>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="Java_Util_INavigableMap_2_CeilingEntry_" data-uid="Java.Util.INavigableMap`2.CeilingEntry*"></a>
-  <h4 id="Java_Util_INavigableMap_2_CeilingEntry__0_" data-uid="Java.Util.INavigableMap`2.CeilingEntry(`0)">CeilingEntry(K)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_CeilingEntry__0_" data-uid="Java.Util.INavigableMap`2.CeilingEntry(`0)">
+  CeilingEntry(K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#ceilingEntry(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#ceilingEntry(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Map.Entry&lt;K, V&gt; CeilingEntry(K arg0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_CeilingKey__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.CeilingKey(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L374">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map.html">Map</a>.<a class="xref" href="Java.Util.Map.Entry-2.html">Entry</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_CeilingKey_" data-uid="Java.Util.INavigableMap`2.CeilingKey*"></a>
-  <h4 id="Java_Util_INavigableMap_2_CeilingKey__0_" data-uid="Java.Util.INavigableMap`2.CeilingKey(`0)">CeilingKey(K)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_CeilingKey__0_" data-uid="Java.Util.INavigableMap`2.CeilingKey(`0)">
+  CeilingKey(K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#ceilingKey(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#ceilingKey(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">K CeilingKey(K arg0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_DescendingKeySet.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.DescendingKeySet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L343">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_DescendingKeySet_" data-uid="Java.Util.INavigableMap`2.DescendingKeySet*"></a>
-  <h4 id="Java_Util_INavigableMap_2_DescendingKeySet" data-uid="Java.Util.INavigableMap`2.DescendingKeySet">DescendingKeySet()</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_DescendingKeySet" data-uid="Java.Util.INavigableMap`2.DescendingKeySet">
+  DescendingKeySet()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#descendingKeySet()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#descendingKeySet()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">NavigableSet&lt;K&gt; DescendingKeySet()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.NavigableSet-1.html">NavigableSet</a>&lt;K&gt;</td>
-        <td><p><a class="xref" href="Java.Util.NavigableSet.html">NavigableSet</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_DescendingMap.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.DescendingMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L314">View Source</a>
-  </span>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.NavigableSet-1.html">NavigableSet</a>&lt;K&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.NavigableSet.html">NavigableSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_DescendingMap_" data-uid="Java.Util.INavigableMap`2.DescendingMap*"></a>
-  <h4 id="Java_Util_INavigableMap_2_DescendingMap" data-uid="Java.Util.INavigableMap`2.DescendingMap">DescendingMap()</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_DescendingMap" data-uid="Java.Util.INavigableMap`2.DescendingMap">
+  DescendingMap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#descendingMap()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#descendingMap()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">NavigableMap&lt;K, V&gt; DescendingMap()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.NavigableMap-2.html">NavigableMap</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.NavigableMap.html">NavigableMap</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_FirstEntry.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.FirstEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L272">View Source</a>
-  </span>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.NavigableMap-2.html">NavigableMap</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.NavigableMap.html">NavigableMap</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_FirstEntry_" data-uid="Java.Util.INavigableMap`2.FirstEntry*"></a>
-  <h4 id="Java_Util_INavigableMap_2_FirstEntry" data-uid="Java.Util.INavigableMap`2.FirstEntry">FirstEntry()</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_FirstEntry" data-uid="Java.Util.INavigableMap`2.FirstEntry">
+  FirstEntry()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#firstEntry()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#firstEntry()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Map.Entry&lt;K, V&gt; FirstEntry()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_FloorEntry__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.FloorEntry(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L278">View Source</a>
-  </span>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map.html">Map</a>.<a class="xref" href="Java.Util.Map.Entry-2.html">Entry</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_FloorEntry_" data-uid="Java.Util.INavigableMap`2.FloorEntry*"></a>
-  <h4 id="Java_Util_INavigableMap_2_FloorEntry__0_" data-uid="Java.Util.INavigableMap`2.FloorEntry(`0)">FloorEntry(K)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_FloorEntry__0_" data-uid="Java.Util.INavigableMap`2.FloorEntry(`0)">
+  FloorEntry(K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#floorEntry(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#floorEntry(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Map.Entry&lt;K, V&gt; FloorEntry(K arg0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_FloorKey__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.FloorKey(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L380">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map.html">Map</a>.<a class="xref" href="Java.Util.Map.Entry-2.html">Entry</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_FloorKey_" data-uid="Java.Util.INavigableMap`2.FloorKey*"></a>
-  <h4 id="Java_Util_INavigableMap_2_FloorKey__0_" data-uid="Java.Util.INavigableMap`2.FloorKey(`0)">FloorKey(K)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_FloorKey__0_" data-uid="Java.Util.INavigableMap`2.FloorKey(`0)">
+  FloorKey(K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#floorKey(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#floorKey(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">K FloorKey(K arg0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_HeadMap__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.HeadMap(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L355">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_HeadMap_" data-uid="Java.Util.INavigableMap`2.HeadMap*"></a>
-  <h4 id="Java_Util_INavigableMap_2_HeadMap__0_" data-uid="Java.Util.INavigableMap`2.HeadMap(`0)">HeadMap(K)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_HeadMap__0_" data-uid="Java.Util.INavigableMap`2.HeadMap(`0)">
+  HeadMap(K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#headMap(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#headMap(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">SortedMap&lt;K, V&gt; HeadMap(K arg0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.SortedMap-2.html">SortedMap</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.SortedMap.html">SortedMap</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_HeadMap__0_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.HeadMap(%600%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L321">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.SortedMap-2.html">SortedMap</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.SortedMap.html">SortedMap</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_HeadMap_" data-uid="Java.Util.INavigableMap`2.HeadMap*"></a>
-  <h4 id="Java_Util_INavigableMap_2_HeadMap__0_System_Boolean_" data-uid="Java.Util.INavigableMap`2.HeadMap(`0,System.Boolean)">HeadMap(K, Boolean)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_HeadMap__0_System_Boolean_" data-uid="Java.Util.INavigableMap`2.HeadMap(`0,System.Boolean)">
+  HeadMap(K, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#headMap(java.lang.Object,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#headMap(java.lang.Object,boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">NavigableMap&lt;K, V&gt; HeadMap(K arg0, bool arg1)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.NavigableMap-2.html">NavigableMap</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.NavigableMap.html">NavigableMap</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_HigherEntry__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.HigherEntry(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L284">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.NavigableMap-2.html">NavigableMap</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.NavigableMap.html">NavigableMap</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_HigherEntry_" data-uid="Java.Util.INavigableMap`2.HigherEntry*"></a>
-  <h4 id="Java_Util_INavigableMap_2_HigherEntry__0_" data-uid="Java.Util.INavigableMap`2.HigherEntry(`0)">HigherEntry(K)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_HigherEntry__0_" data-uid="Java.Util.INavigableMap`2.HigherEntry(`0)">
+  HigherEntry(K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#higherEntry(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#higherEntry(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Map.Entry&lt;K, V&gt; HigherEntry(K arg0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_HigherKey__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.HigherKey(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L386">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map.html">Map</a>.<a class="xref" href="Java.Util.Map.Entry-2.html">Entry</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_HigherKey_" data-uid="Java.Util.INavigableMap`2.HigherKey*"></a>
-  <h4 id="Java_Util_INavigableMap_2_HigherKey__0_" data-uid="Java.Util.INavigableMap`2.HigherKey(`0)">HigherKey(K)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_HigherKey__0_" data-uid="Java.Util.INavigableMap`2.HigherKey(`0)">
+  HigherKey(K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#higherKey(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#higherKey(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">K HigherKey(K arg0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_LastEntry.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.LastEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L290">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_LastEntry_" data-uid="Java.Util.INavigableMap`2.LastEntry*"></a>
-  <h4 id="Java_Util_INavigableMap_2_LastEntry" data-uid="Java.Util.INavigableMap`2.LastEntry">LastEntry()</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_LastEntry" data-uid="Java.Util.INavigableMap`2.LastEntry">
+  LastEntry()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#lastEntry()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#lastEntry()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Map.Entry&lt;K, V&gt; LastEntry()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_LowerEntry__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.LowerEntry(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L296">View Source</a>
-  </span>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map.html">Map</a>.<a class="xref" href="Java.Util.Map.Entry-2.html">Entry</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_LowerEntry_" data-uid="Java.Util.INavigableMap`2.LowerEntry*"></a>
-  <h4 id="Java_Util_INavigableMap_2_LowerEntry__0_" data-uid="Java.Util.INavigableMap`2.LowerEntry(`0)">LowerEntry(K)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_LowerEntry__0_" data-uid="Java.Util.INavigableMap`2.LowerEntry(`0)">
+  LowerEntry(K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#lowerEntry(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#lowerEntry(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Map.Entry&lt;K, V&gt; LowerEntry(K arg0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_LowerKey__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.LowerKey(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L392">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map.html">Map</a>.<a class="xref" href="Java.Util.Map.Entry-2.html">Entry</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_LowerKey_" data-uid="Java.Util.INavigableMap`2.LowerKey*"></a>
-  <h4 id="Java_Util_INavigableMap_2_LowerKey__0_" data-uid="Java.Util.INavigableMap`2.LowerKey(`0)">LowerKey(K)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_LowerKey__0_" data-uid="Java.Util.INavigableMap`2.LowerKey(`0)">
+  LowerKey(K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#lowerKey(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#lowerKey(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">K LowerKey(K arg0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_NavigableKeySet.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.NavigableKeySet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L349">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_NavigableKeySet_" data-uid="Java.Util.INavigableMap`2.NavigableKeySet*"></a>
-  <h4 id="Java_Util_INavigableMap_2_NavigableKeySet" data-uid="Java.Util.INavigableMap`2.NavigableKeySet">NavigableKeySet()</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_NavigableKeySet" data-uid="Java.Util.INavigableMap`2.NavigableKeySet">
+  NavigableKeySet()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#navigableKeySet()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#navigableKeySet()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">NavigableSet&lt;K&gt; NavigableKeySet()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.NavigableSet-1.html">NavigableSet</a>&lt;K&gt;</td>
-        <td><p><a class="xref" href="Java.Util.NavigableSet.html">NavigableSet</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_PollFirstEntry.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.PollFirstEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L302">View Source</a>
-  </span>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.NavigableSet-1.html">NavigableSet</a>&lt;K&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.NavigableSet.html">NavigableSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_PollFirstEntry_" data-uid="Java.Util.INavigableMap`2.PollFirstEntry*"></a>
-  <h4 id="Java_Util_INavigableMap_2_PollFirstEntry" data-uid="Java.Util.INavigableMap`2.PollFirstEntry">PollFirstEntry()</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_PollFirstEntry" data-uid="Java.Util.INavigableMap`2.PollFirstEntry">
+  PollFirstEntry()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#pollFirstEntry()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#pollFirstEntry()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Map.Entry&lt;K, V&gt; PollFirstEntry()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_PollLastEntry.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.PollLastEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L308">View Source</a>
-  </span>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map.html">Map</a>.<a class="xref" href="Java.Util.Map.Entry-2.html">Entry</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_PollLastEntry_" data-uid="Java.Util.INavigableMap`2.PollLastEntry*"></a>
-  <h4 id="Java_Util_INavigableMap_2_PollLastEntry" data-uid="Java.Util.INavigableMap`2.PollLastEntry">PollLastEntry()</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_PollLastEntry" data-uid="Java.Util.INavigableMap`2.PollLastEntry">
+  PollLastEntry()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#pollLastEntry()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#pollLastEntry()</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">Map.Entry&lt;K, V&gt; PollLastEntry()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map.Entry-2.html">Map.Entry</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_SubMap__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.SubMap(%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L362">View Source</a>
-  </span>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map.html">Map</a>.<a class="xref" href="Java.Util.Map.Entry-2.html">Entry</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.Entry.html">Map.Entry</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_SubMap_" data-uid="Java.Util.INavigableMap`2.SubMap*"></a>
-  <h4 id="Java_Util_INavigableMap_2_SubMap__0__0_" data-uid="Java.Util.INavigableMap`2.SubMap(`0,`0)">SubMap(K, K)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#subMap(java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#subMap(java.lang.Object,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">SortedMap&lt;K, V&gt; SubMap(K arg0, K arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.SortedMap-2.html">SortedMap</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.SortedMap.html">SortedMap</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_SubMap__0_System_Boolean__0_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.SubMap(%600%2CSystem.Boolean%2C%600%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L330">View Source</a>
-  </span>
-  <a id="Java_Util_INavigableMap_2_SubMap_" data-uid="Java.Util.INavigableMap`2.SubMap*"></a>
-  <h4 id="Java_Util_INavigableMap_2_SubMap__0_System_Boolean__0_System_Boolean_" data-uid="Java.Util.INavigableMap`2.SubMap(`0,System.Boolean,`0,System.Boolean)">SubMap(K, Boolean, K, Boolean)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_SubMap__0_System_Boolean__0_System_Boolean_" data-uid="Java.Util.INavigableMap`2.SubMap(`0,System.Boolean,`0,System.Boolean)">
+  SubMap(K, bool, K, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#subMap(java.lang.Object,boolean,java.lang.Object,boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">NavigableMap&lt;K, V&gt; SubMap(K arg0, bool arg1, K arg2, bool arg3)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.NavigableMap-2.html">NavigableMap</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.NavigableMap.html">NavigableMap</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_TailMap__0_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.TailMap(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L368">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg2</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.NavigableMap-2.html">NavigableMap</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.NavigableMap.html">NavigableMap</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_INavigableMap_2_SubMap_" data-uid="Java.Util.INavigableMap`2.SubMap*"></a>
+
+  <h3 id="Java_Util_INavigableMap_2_SubMap__0__0_" data-uid="Java.Util.INavigableMap`2.SubMap(`0,`0)">
+  SubMap(K, K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#subMap(java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#subMap(java.lang.Object,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SortedMap&lt;K, V&gt; SubMap(K arg0, K arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.SortedMap-2.html">SortedMap</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.SortedMap.html">SortedMap</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_TailMap_" data-uid="Java.Util.INavigableMap`2.TailMap*"></a>
-  <h4 id="Java_Util_INavigableMap_2_TailMap__0_" data-uid="Java.Util.INavigableMap`2.TailMap(`0)">TailMap(K)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_TailMap__0_" data-uid="Java.Util.INavigableMap`2.TailMap(`0)">
+  TailMap(K)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#tailMap(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#tailMap(java.lang.Object)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">SortedMap&lt;K, V&gt; TailMap(K arg0)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.SortedMap-2.html">SortedMap</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.SortedMap.html">SortedMap</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2_TailMap__0_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602.TailMap(%600%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L337">View Source</a>
-  </span>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.SortedMap-2.html">SortedMap</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.SortedMap.html">SortedMap</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Util_INavigableMap_2_TailMap_" data-uid="Java.Util.INavigableMap`2.TailMap*"></a>
-  <h4 id="Java_Util_INavigableMap_2_TailMap__0_System_Boolean_" data-uid="Java.Util.INavigableMap`2.TailMap(`0,System.Boolean)">TailMap(K, Boolean)</h4>
+
+  <h3 id="Java_Util_INavigableMap_2_TailMap__0_System_Boolean_" data-uid="Java.Util.INavigableMap`2.TailMap(`0,System.Boolean)">
+  TailMap(K, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#tailMap(java.lang.Object,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableMap.html#tailMap(java.lang.Object,boolean)</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">NavigableMap&lt;K, V&gt; TailMap(K arg0, bool arg1)</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">K</span></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">K</code></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.NavigableMap-2.html">NavigableMap</a>&lt;K, V&gt;</td>
-        <td><p><a class="xref" href="Java.Util.NavigableMap.html">NavigableMap</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">K</span></dt>
+    <dd><p><code class="typeparamref">K</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.NavigableMap-2.html">NavigableMap</a>&lt;K, V&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.NavigableMap.html">NavigableMap</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_INavigableMap_2.md&amp;value=---%0Auid%3A%20Java.Util.INavigableMap%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/NavigableMap.cs/#L258" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Util\NavigableMap.cs/#L258" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © 2023 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</span>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

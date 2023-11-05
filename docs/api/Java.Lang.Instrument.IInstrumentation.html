@@ -1,856 +1,773 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IInstrumentation
-   | JNet website </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IInstrumentation
-   | JNet website ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Interface IInstrumentation
+ | MASES Group website - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IInstrumentation
+ | MASES Group website - JNet ">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
-              </a>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Java.Lang.Instrument.IInstrumentation">
-  
-  
-  <h1 id="Java_Lang_Instrument_IInstrumentation" data-uid="Java.Lang.Instrument.IInstrumentation" class="text-break">Interface IInstrumentation
-  </h1>
-  <div class="markdown level0 summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Java.Lang.Instrument.html">Java.Lang.Instrument</a></h6>
-  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
-  <h5 id="Java_Lang_Instrument_IInstrumentation_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IInstrumentation</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_AllLoadedClasses.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.AllLoadedClasses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L38">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_AllLoadedClasses_" data-uid="Java.Lang.Instrument.IInstrumentation.AllLoadedClasses*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_AllLoadedClasses" data-uid="Java.Lang.Instrument.IInstrumentation.AllLoadedClasses">AllLoadedClasses</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getAllLoadedClasses()">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getAllLoadedClasses()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Class[] AllLoadedClasses { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Class.html">Class</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_AddTransformer_Java_Lang_Instrument_ClassFileTransformer_.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.AddTransformer(Java.Lang.Instrument.ClassFileTransformer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L97">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_AddTransformer_" data-uid="Java.Lang.Instrument.IInstrumentation.AddTransformer*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_AddTransformer_Java_Lang_Instrument_ClassFileTransformer_" data-uid="Java.Lang.Instrument.IInstrumentation.AddTransformer(Java.Lang.Instrument.ClassFileTransformer)">AddTransformer(ClassFileTransformer)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void AddTransformer(ClassFileTransformer arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_AddTransformer_Java_Lang_Instrument_ClassFileTransformer_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.AddTransformer(Java.Lang.Instrument.ClassFileTransformer%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L92">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_AddTransformer_" data-uid="Java.Lang.Instrument.IInstrumentation.AddTransformer*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_AddTransformer_Java_Lang_Instrument_ClassFileTransformer_System_Boolean_" data-uid="Java.Lang.Instrument.IInstrumentation.AddTransformer(Java.Lang.Instrument.ClassFileTransformer,System.Boolean)">AddTransformer(ClassFileTransformer, Boolean)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer,boolean)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void AddTransformer(ClassFileTransformer arg0, bool arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_AppendToBootstrapClassLoaderSearch_Java_Util_Jar_JarFile_.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.AppendToBootstrapClassLoaderSearch(Java.Util.Jar.JarFile)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L102">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_AppendToBootstrapClassLoaderSearch_" data-uid="Java.Lang.Instrument.IInstrumentation.AppendToBootstrapClassLoaderSearch*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_AppendToBootstrapClassLoaderSearch_Java_Util_Jar_JarFile_" data-uid="Java.Lang.Instrument.IInstrumentation.AppendToBootstrapClassLoaderSearch(Java.Util.Jar.JarFile)">AppendToBootstrapClassLoaderSearch(JarFile)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToBootstrapClassLoaderSearch(java.util.jar.JarFile)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToBootstrapClassLoaderSearch(java.util.jar.JarFile)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void AppendToBootstrapClassLoaderSearch(JarFile arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Jar.JarFile.html">JarFile</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Util.Jar.JarFile.html">JarFile</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_AppendToSystemClassLoaderSearch_Java_Util_Jar_JarFile_.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.AppendToSystemClassLoaderSearch(Java.Util.Jar.JarFile)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L107">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_AppendToSystemClassLoaderSearch_" data-uid="Java.Lang.Instrument.IInstrumentation.AppendToSystemClassLoaderSearch*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_AppendToSystemClassLoaderSearch_Java_Util_Jar_JarFile_" data-uid="Java.Lang.Instrument.IInstrumentation.AppendToSystemClassLoaderSearch(Java.Util.Jar.JarFile)">AppendToSystemClassLoaderSearch(JarFile)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToSystemClassLoaderSearch(java.util.jar.JarFile)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToSystemClassLoaderSearch(java.util.jar.JarFile)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void AppendToSystemClassLoaderSearch(JarFile arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Jar.JarFile.html">JarFile</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Util.Jar.JarFile.html">JarFile</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_GetInitiatedClasses_Java_Lang_ClassLoader_.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.GetInitiatedClasses(Java.Lang.ClassLoader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L80">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_GetInitiatedClasses_" data-uid="Java.Lang.Instrument.IInstrumentation.GetInitiatedClasses*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_GetInitiatedClasses_Java_Lang_ClassLoader_" data-uid="Java.Lang.Instrument.IInstrumentation.GetInitiatedClasses(Java.Lang.ClassLoader)">GetInitiatedClasses(ClassLoader)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getInitiatedClasses(java.lang.ClassLoader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getInitiatedClasses(java.lang.ClassLoader)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Class[] GetInitiatedClasses(ClassLoader arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Class.html">Class</a>[]</td>
-        <td><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_GetObjectSize_System_Object_.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.GetObjectSize(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L86">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_GetObjectSize_" data-uid="Java.Lang.Instrument.IInstrumentation.GetObjectSize*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_GetObjectSize_System_Object_" data-uid="Java.Lang.Instrument.IInstrumentation.GetObjectSize(System.Object)">GetObjectSize(Object)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getObjectSize(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getObjectSize(java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">long GetObjectSize(object arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_IsModifiableClass_Java_Lang_Class_.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.IsModifiableClass(Java.Lang.Class)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L44">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_IsModifiableClass_" data-uid="Java.Lang.Instrument.IInstrumentation.IsModifiableClass*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_IsModifiableClass_Java_Lang_Class_" data-uid="Java.Lang.Instrument.IInstrumentation.IsModifiableClass(Java.Lang.Class)">IsModifiableClass(Class)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsModifiableClass(Class arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Class.html">Class</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_IsModifiableModule_Java_Lang_Module_.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.IsModifiableModule(Java.Lang.Module)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L50">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_IsModifiableModule_" data-uid="Java.Lang.Instrument.IInstrumentation.IsModifiableModule*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_IsModifiableModule_Java_Lang_Module_" data-uid="Java.Lang.Instrument.IInstrumentation.IsModifiableModule(Java.Lang.Module)">IsModifiableModule(Module)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableModule(java.lang.Module)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableModule(java.lang.Module)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsModifiableModule(Module arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Module.html">Module</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_IsNativeMethodPrefixSupported.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.IsNativeMethodPrefixSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L56">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_IsNativeMethodPrefixSupported_" data-uid="Java.Lang.Instrument.IInstrumentation.IsNativeMethodPrefixSupported*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_IsNativeMethodPrefixSupported" data-uid="Java.Lang.Instrument.IInstrumentation.IsNativeMethodPrefixSupported">IsNativeMethodPrefixSupported()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsNativeMethodPrefixSupported()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_IsRedefineClassesSupported.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.IsRedefineClassesSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L62">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_IsRedefineClassesSupported_" data-uid="Java.Lang.Instrument.IInstrumentation.IsRedefineClassesSupported*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_IsRedefineClassesSupported" data-uid="Java.Lang.Instrument.IInstrumentation.IsRedefineClassesSupported">IsRedefineClassesSupported()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsRedefineClassesSupported()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_IsRetransformClassesSupported.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.IsRetransformClassesSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L68">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_IsRetransformClassesSupported_" data-uid="Java.Lang.Instrument.IInstrumentation.IsRetransformClassesSupported*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_IsRetransformClassesSupported" data-uid="Java.Lang.Instrument.IInstrumentation.IsRetransformClassesSupported">IsRetransformClassesSupported()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsRetransformClassesSupported()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_RedefineClasses_Java_Lang_Instrument_ClassDefinition___.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.RedefineClasses(Java.Lang.Instrument.ClassDefinition%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L114">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_RedefineClasses_" data-uid="Java.Lang.Instrument.IInstrumentation.RedefineClasses*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_RedefineClasses_Java_Lang_Instrument_ClassDefinition___" data-uid="Java.Lang.Instrument.IInstrumentation.RedefineClasses(Java.Lang.Instrument.ClassDefinition[])">RedefineClasses(ClassDefinition[])</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition[])</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RedefineClasses(params ClassDefinition[] arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Instrument.ClassDefinition.html">ClassDefinition</a>[]</td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Lang.Instrument.ClassDefinition.html">ClassDefinition</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.ClassNotFoundException.html">ClassNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Instrument.UnmodifiableClassException.html">UnmodifiableClassException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_RedefineModule_Java_Lang_Module_Java_Util_Set_Java_Lang_Module__Java_Util_Map_System_String_Java_Util_Set_Java_Lang_Module___Java_Util_Map_System_String_Java_Util_Set_Java_Lang_Module___Java_Util_Set_Java_Lang_Class__Java_Util_Map_Java_Lang_Class_Java_Util_List_Java_Lang_Class___.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.RedefineModule(Java.Lang.Module%2CJava.Util.Set%7BJava.Lang.Module%7D%2CJava.Util.Map%7BSystem.String%2CJava.Util.Set%7BJava.Lang.Module%7D%7D%2CJava.Util.Map%7BSystem.String%2CJava.Util.Set%7BJava.Lang.Module%7D%7D%2CJava.Util.Set%7BJava.Lang.Class%7D%2CJava.Util.Map%7BJava.Lang.Class%2CJava.Util.List%7BJava.Lang.Class%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L124">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_RedefineModule_" data-uid="Java.Lang.Instrument.IInstrumentation.RedefineModule*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_RedefineModule_Java_Lang_Module_Java_Util_Set_Java_Lang_Module__Java_Util_Map_System_String_Java_Util_Set_Java_Lang_Module___Java_Util_Map_System_String_Java_Util_Set_Java_Lang_Module___Java_Util_Set_Java_Lang_Class__Java_Util_Map_Java_Lang_Class_Java_Util_List_Java_Lang_Class___" data-uid="Java.Lang.Instrument.IInstrumentation.RedefineModule(Java.Lang.Module,Java.Util.Set{Java.Lang.Module},Java.Util.Map{System.String,Java.Util.Set{Java.Lang.Module}},Java.Util.Map{System.String,Java.Util.Set{Java.Lang.Module}},Java.Util.Set{Java.Lang.Class},Java.Util.Map{Java.Lang.Class,Java.Util.List{Java.Lang.Class}})">RedefineModule(Module, Set&lt;Module&gt;, Map&lt;String, Set&lt;Module&gt;&gt;, Map&lt;String, Set&lt;Module&gt;&gt;, Set&lt;Class&gt;, Map&lt;Class, List&lt;Class&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineModule(java.lang.Module,java.util.Set,java.util.Map,java.util.Map,java.util.Set,java.util.Map)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineModule(java.lang.Module,java.util.Set,java.util.Map,java.util.Map,java.util.Set,java.util.Map)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RedefineModule(Module arg0, Set&lt;Module&gt; arg1, Map&lt;string, Set&lt;Module&gt;&gt; arg2, Map&lt;string, Set&lt;Module&gt;&gt; arg3, Set&lt;Class&gt; arg4, Map&lt;Class, List&lt;Class&gt;&gt; arg5)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Module.html">Module</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Module.html">Module</a>&gt;</td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Module.html">Module</a>&gt;&gt;</td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Module.html">Module</a>&gt;&gt;</td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>&gt;</td>
-        <td><span class="parametername">arg4</span></td>
-        <td><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>, <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>&gt;&gt;</td>
-        <td><span class="parametername">arg5</span></td>
-        <td><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_RemoveTransformer_Java_Lang_Instrument_ClassFileTransformer_.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.RemoveTransformer(Java.Lang.Instrument.ClassFileTransformer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L74">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_RemoveTransformer_" data-uid="Java.Lang.Instrument.IInstrumentation.RemoveTransformer*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_RemoveTransformer_Java_Lang_Instrument_ClassFileTransformer_" data-uid="Java.Lang.Instrument.IInstrumentation.RemoveTransformer(Java.Lang.Instrument.ClassFileTransformer)">RemoveTransformer(ClassFileTransformer)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#removeTransformer(java.lang.instrument.ClassFileTransformer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#removeTransformer(java.lang.instrument.ClassFileTransformer)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool RemoveTransformer(ClassFileTransformer arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_RetransformClasses_Java_Lang_Class___.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.RetransformClasses(Java.Lang.Class%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L130">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_RetransformClasses_" data-uid="Java.Lang.Instrument.IInstrumentation.RetransformClasses*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_RetransformClasses_Java_Lang_Class___" data-uid="Java.Lang.Instrument.IInstrumentation.RetransformClasses(Java.Lang.Class[])">RetransformClasses(Class[])</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[])</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RetransformClasses(params Class[] arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Class.html">Class</a>[]</td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Instrument.UnmodifiableClassException.html">UnmodifiableClassException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation_SetNativeMethodPrefix_Java_Lang_Instrument_ClassFileTransformer_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation.SetNativeMethodPrefix(Java.Lang.Instrument.ClassFileTransformer%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L136">View Source</a>
-  </span>
-  <a id="Java_Lang_Instrument_IInstrumentation_SetNativeMethodPrefix_" data-uid="Java.Lang.Instrument.IInstrumentation.SetNativeMethodPrefix*"></a>
-  <h4 id="Java_Lang_Instrument_IInstrumentation_SetNativeMethodPrefix_Java_Lang_Instrument_ClassFileTransformer_System_String_" data-uid="Java.Lang.Instrument.IInstrumentation.SetNativeMethodPrefix(Java.Lang.Instrument.ClassFileTransformer,System.String)">SetNativeMethodPrefix(ClassFileTransformer, String)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer,java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetNativeMethodPrefix(ClassFileTransformer arg0, string arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Instrument_IInstrumentation.md&amp;value=---%0Auid%3A%20Java.Lang.Instrument.IInstrumentation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Instrument/Instrumentation.cs/#L32" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
-            
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="Java.Lang.Instrument.IInstrumentation">
+
+
+
+  <h1 id="Java_Lang_Instrument_IInstrumentation" data-uid="Java.Lang.Instrument.IInstrumentation" class="text-break">
+    Interface IInstrumentation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Lang.html">Lang</a>.<a class="xref" href="Java.Lang.Instrument.html">Instrument</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IInstrumentation</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_AllLoadedClasses_" data-uid="Java.Lang.Instrument.IInstrumentation.AllLoadedClasses*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_AllLoadedClasses" data-uid="Java.Lang.Instrument.IInstrumentation.AllLoadedClasses">
+  AllLoadedClasses
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getAllLoadedClasses()">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getAllLoadedClasses()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Class[] AllLoadedClasses { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_AddTransformer_" data-uid="Java.Lang.Instrument.IInstrumentation.AddTransformer*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_AddTransformer_Java_Lang_Instrument_ClassFileTransformer_" data-uid="Java.Lang.Instrument.IInstrumentation.AddTransformer(Java.Lang.Instrument.ClassFileTransformer)">
+  AddTransformer(ClassFileTransformer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddTransformer(ClassFileTransformer arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_AddTransformer_" data-uid="Java.Lang.Instrument.IInstrumentation.AddTransformer*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_AddTransformer_Java_Lang_Instrument_ClassFileTransformer_System_Boolean_" data-uid="Java.Lang.Instrument.IInstrumentation.AddTransformer(Java.Lang.Instrument.ClassFileTransformer,System.Boolean)">
+  AddTransformer(ClassFileTransformer, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddTransformer(ClassFileTransformer arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_AppendToBootstrapClassLoaderSearch_" data-uid="Java.Lang.Instrument.IInstrumentation.AppendToBootstrapClassLoaderSearch*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_AppendToBootstrapClassLoaderSearch_Java_Util_Jar_JarFile_" data-uid="Java.Lang.Instrument.IInstrumentation.AppendToBootstrapClassLoaderSearch(Java.Util.Jar.JarFile)">
+  AppendToBootstrapClassLoaderSearch(JarFile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToBootstrapClassLoaderSearch(java.util.jar.JarFile)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToBootstrapClassLoaderSearch(java.util.jar.JarFile)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AppendToBootstrapClassLoaderSearch(JarFile arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Jar.JarFile.html">JarFile</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Jar.JarFile.html">JarFile</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_AppendToSystemClassLoaderSearch_" data-uid="Java.Lang.Instrument.IInstrumentation.AppendToSystemClassLoaderSearch*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_AppendToSystemClassLoaderSearch_Java_Util_Jar_JarFile_" data-uid="Java.Lang.Instrument.IInstrumentation.AppendToSystemClassLoaderSearch(Java.Util.Jar.JarFile)">
+  AppendToSystemClassLoaderSearch(JarFile)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToSystemClassLoaderSearch(java.util.jar.JarFile)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#appendToSystemClassLoaderSearch(java.util.jar.JarFile)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AppendToSystemClassLoaderSearch(JarFile arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Jar.JarFile.html">JarFile</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Jar.JarFile.html">JarFile</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_GetInitiatedClasses_" data-uid="Java.Lang.Instrument.IInstrumentation.GetInitiatedClasses*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_GetInitiatedClasses_Java_Lang_ClassLoader_" data-uid="Java.Lang.Instrument.IInstrumentation.GetInitiatedClasses(Java.Lang.ClassLoader)">
+  GetInitiatedClasses(ClassLoader)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getInitiatedClasses(java.lang.ClassLoader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getInitiatedClasses(java.lang.ClassLoader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Class[] GetInitiatedClasses(ClassLoader arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_GetObjectSize_" data-uid="Java.Lang.Instrument.IInstrumentation.GetObjectSize*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_GetObjectSize_System_Object_" data-uid="Java.Lang.Instrument.IInstrumentation.GetObjectSize(System.Object)">
+  GetObjectSize(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getObjectSize(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#getObjectSize(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long GetObjectSize(object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_IsModifiableClass_" data-uid="Java.Lang.Instrument.IInstrumentation.IsModifiableClass*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_IsModifiableClass_Java_Lang_Class_" data-uid="Java.Lang.Instrument.IInstrumentation.IsModifiableClass(Java.Lang.Class)">
+  IsModifiableClass(Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableClass(java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsModifiableClass(Class arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_IsModifiableModule_" data-uid="Java.Lang.Instrument.IInstrumentation.IsModifiableModule*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_IsModifiableModule_Java_Lang_Module_" data-uid="Java.Lang.Instrument.IInstrumentation.IsModifiableModule(Java.Lang.Module)">
+  IsModifiableModule(Module)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableModule(java.lang.Module)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isModifiableModule(java.lang.Module)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsModifiableModule(Module arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_IsNativeMethodPrefixSupported_" data-uid="Java.Lang.Instrument.IInstrumentation.IsNativeMethodPrefixSupported*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_IsNativeMethodPrefixSupported" data-uid="Java.Lang.Instrument.IInstrumentation.IsNativeMethodPrefixSupported">
+  IsNativeMethodPrefixSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isNativeMethodPrefixSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsNativeMethodPrefixSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_IsRedefineClassesSupported_" data-uid="Java.Lang.Instrument.IInstrumentation.IsRedefineClassesSupported*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_IsRedefineClassesSupported" data-uid="Java.Lang.Instrument.IInstrumentation.IsRedefineClassesSupported">
+  IsRedefineClassesSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRedefineClassesSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsRedefineClassesSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_IsRetransformClassesSupported_" data-uid="Java.Lang.Instrument.IInstrumentation.IsRetransformClassesSupported*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_IsRetransformClassesSupported" data-uid="Java.Lang.Instrument.IInstrumentation.IsRetransformClassesSupported">
+  IsRetransformClassesSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#isRetransformClassesSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsRetransformClassesSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_RedefineClasses_" data-uid="Java.Lang.Instrument.IInstrumentation.RedefineClasses*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_RedefineClasses_Java_Lang_Instrument_ClassDefinition___" data-uid="Java.Lang.Instrument.IInstrumentation.RedefineClasses(Java.Lang.Instrument.ClassDefinition[])">
+  RedefineClasses(params ClassDefinition[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RedefineClasses(params ClassDefinition[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Instrument.ClassDefinition.html">ClassDefinition</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Instrument.ClassDefinition.html">ClassDefinition</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.ClassNotFoundException.html">ClassNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.Instrument.UnmodifiableClassException.html">UnmodifiableClassException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_RedefineModule_" data-uid="Java.Lang.Instrument.IInstrumentation.RedefineModule*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_RedefineModule_Java_Lang_Module_Java_Util_Set_Java_Lang_Module__Java_Util_Map_System_String_Java_Util_Set_Java_Lang_Module___Java_Util_Map_System_String_Java_Util_Set_Java_Lang_Module___Java_Util_Set_Java_Lang_Class__Java_Util_Map_Java_Lang_Class_Java_Util_List_Java_Lang_Class___" data-uid="Java.Lang.Instrument.IInstrumentation.RedefineModule(Java.Lang.Module,Java.Util.Set{Java.Lang.Module},Java.Util.Map{System.String,Java.Util.Set{Java.Lang.Module}},Java.Util.Map{System.String,Java.Util.Set{Java.Lang.Module}},Java.Util.Set{Java.Lang.Class},Java.Util.Map{Java.Lang.Class,Java.Util.List{Java.Lang.Class}})">
+  RedefineModule(Module, Set&lt;Module&gt;, Map&lt;string, Set&lt;Module&gt;&gt;, Map&lt;string, Set&lt;Module&gt;&gt;, Set&lt;Class&gt;, Map&lt;Class, List&lt;Class&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineModule(java.lang.Module,java.util.Set,java.util.Map,java.util.Map,java.util.Set,java.util.Map)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineModule(java.lang.Module,java.util.Set,java.util.Map,java.util.Map,java.util.Set,java.util.Map)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RedefineModule(Module arg0, Set&lt;Module&gt; arg1, Map&lt;string, Set&lt;Module&gt;&gt; arg2, Map&lt;string, Set&lt;Module&gt;&gt; arg3, Set&lt;Class&gt; arg4, Map&lt;Class, List&lt;Class&gt;&gt; arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Module.html">Module</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Module.html">Module</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Module.html">Module</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Module.html">Module</a>&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Module.html">Module</a>&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>, <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.Class.html">Class</a>&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_RemoveTransformer_" data-uid="Java.Lang.Instrument.IInstrumentation.RemoveTransformer*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_RemoveTransformer_Java_Lang_Instrument_ClassFileTransformer_" data-uid="Java.Lang.Instrument.IInstrumentation.RemoveTransformer(Java.Lang.Instrument.ClassFileTransformer)">
+  RemoveTransformer(ClassFileTransformer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#removeTransformer(java.lang.instrument.ClassFileTransformer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#removeTransformer(java.lang.instrument.ClassFileTransformer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool RemoveTransformer(ClassFileTransformer arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_RetransformClasses_" data-uid="Java.Lang.Instrument.IInstrumentation.RetransformClasses*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_RetransformClasses_Java_Lang_Class___" data-uid="Java.Lang.Instrument.IInstrumentation.RetransformClasses(Java.Lang.Class[])">
+  RetransformClasses(params Class[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RetransformClasses(params Class[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Class.html">Class</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Instrument.UnmodifiableClassException.html">UnmodifiableClassException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Java_Lang_Instrument_IInstrumentation_SetNativeMethodPrefix_" data-uid="Java.Lang.Instrument.IInstrumentation.SetNativeMethodPrefix*"></a>
+
+  <h3 id="Java_Lang_Instrument_IInstrumentation_SetNativeMethodPrefix_Java_Lang_Instrument_ClassFileTransformer_System_String_" data-uid="Java.Lang.Instrument.IInstrumentation.SetNativeMethodPrefix(Java.Lang.Instrument.ClassFileTransformer,System.String)">
+  SetNativeMethodPrefix(ClassFileTransformer, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetNativeMethodPrefix(ClassFileTransformer arg0, string arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Instrument.ClassFileTransformer.html">ClassFileTransformer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Java\Lang\Instrument\Instrumentation.cs/#L32" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © 2023 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,1182 +1,1011 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IRange
-   | JNet website </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IRange
-   | JNet website ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Interface IRange
+ | MASES Group website - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IRange
+ | MASES Group website - JNet ">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
-              </a>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Org.W3c.Dom.Ranges.IRange">
-  
-  
-  <h1 id="Org_W3c_Dom_Ranges_IRange" data-uid="Org.W3c.Dom.Ranges.IRange" class="text-break">Interface IRange
-  </h1>
-  <div class="markdown level0 summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Org.W3c.Dom.Ranges.html">Org.W3c.Dom.Ranges</a></h6>
-  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
-  <h5 id="Org_W3c_Dom_Ranges_IRange_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IRange</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_Collapsed.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.Collapsed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L38">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_Collapsed_" data-uid="Org.W3c.Dom.Ranges.IRange.Collapsed*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_Collapsed" data-uid="Org.W3c.Dom.Ranges.IRange.Collapsed">Collapsed</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCollapsed()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCollapsed()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Collapsed { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_CommonAncestorContainer.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.CommonAncestorContainer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L42">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_CommonAncestorContainer_" data-uid="Org.W3c.Dom.Ranges.IRange.CommonAncestorContainer*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_CommonAncestorContainer" data-uid="Org.W3c.Dom.Ranges.IRange.CommonAncestorContainer">CommonAncestorContainer</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCommonAncestorContainer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCommonAncestorContainer()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Node CommonAncestorContainer { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_EndContainer.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.EndContainer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L46">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_EndContainer_" data-uid="Org.W3c.Dom.Ranges.IRange.EndContainer*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_EndContainer" data-uid="Org.W3c.Dom.Ranges.IRange.EndContainer">EndContainer</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndContainer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndContainer()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Node EndContainer { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_EndOffset.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.EndOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L50">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_EndOffset_" data-uid="Org.W3c.Dom.Ranges.IRange.EndOffset*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_EndOffset" data-uid="Org.W3c.Dom.Ranges.IRange.EndOffset">EndOffset</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndOffset()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndOffset()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int EndOffset { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_StartContainer.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.StartContainer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L54">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_StartContainer_" data-uid="Org.W3c.Dom.Ranges.IRange.StartContainer*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_StartContainer" data-uid="Org.W3c.Dom.Ranges.IRange.StartContainer">StartContainer</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartContainer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartContainer()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Node StartContainer { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_StartOffset.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.StartOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L58">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_StartOffset_" data-uid="Org.W3c.Dom.Ranges.IRange.StartOffset*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_StartOffset" data-uid="Org.W3c.Dom.Ranges.IRange.StartOffset">StartOffset</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartOffset()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartOffset()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int StartOffset { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_CloneContents.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.CloneContents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L65">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_CloneContents_" data-uid="Org.W3c.Dom.Ranges.IRange.CloneContents*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_CloneContents" data-uid="Org.W3c.Dom.Ranges.IRange.CloneContents">CloneContents()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">DocumentFragment CloneContents()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DocumentFragment.html">DocumentFragment</a></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.DocumentFragment.html">DocumentFragment</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_CloneRange.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.CloneRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L79">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_CloneRange_" data-uid="Org.W3c.Dom.Ranges.IRange.CloneRange*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_CloneRange" data-uid="Org.W3c.Dom.Ranges.IRange.CloneRange">CloneRange()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Range CloneRange()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.Range.html">Range</a></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Ranges.Range.html">Range</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_Collapse_System_Boolean_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.Collapse(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L93">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_Collapse_" data-uid="Org.W3c.Dom.Ranges.IRange.Collapse*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_Collapse_System_Boolean_" data-uid="Org.W3c.Dom.Ranges.IRange.Collapse(System.Boolean)">Collapse(Boolean)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#collapse(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#collapse(boolean)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Collapse(bool arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_CompareBoundaryPoints_System_Int16_Org_W3c_Dom_Ranges_Range_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.CompareBoundaryPoints(System.Int16%2COrg.W3c.Dom.Ranges.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L87">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_CompareBoundaryPoints_" data-uid="Org.W3c.Dom.Ranges.IRange.CompareBoundaryPoints*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_CompareBoundaryPoints_System_Int16_Org_W3c_Dom_Ranges_Range_" data-uid="Org.W3c.Dom.Ranges.IRange.CompareBoundaryPoints(System.Int16,Org.W3c.Dom.Ranges.Range)">CompareBoundaryPoints(Int16, Range)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#compareBoundaryPoints(short,org.w3c.dom.ranges.Range)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#compareBoundaryPoints(short,org.w3c.dom.ranges.Range)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">short CompareBoundaryPoints(short arg0, Range arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.Range.html">Range</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Ranges.Range.html">Range</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_DeleteContents.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.DeleteContents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L99">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_DeleteContents_" data-uid="Org.W3c.Dom.Ranges.IRange.DeleteContents*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_DeleteContents" data-uid="Org.W3c.Dom.Ranges.IRange.DeleteContents">DeleteContents()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void DeleteContents()</code></pre>
-  </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_Detach.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.Detach%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L105">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_Detach_" data-uid="Org.W3c.Dom.Ranges.IRange.Detach*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_Detach" data-uid="Org.W3c.Dom.Ranges.IRange.Detach">Detach()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Detach()</code></pre>
-  </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_ExtractContents.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.ExtractContents%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L72">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_ExtractContents_" data-uid="Org.W3c.Dom.Ranges.IRange.ExtractContents*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_ExtractContents" data-uid="Org.W3c.Dom.Ranges.IRange.ExtractContents">ExtractContents()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">DocumentFragment ExtractContents()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DocumentFragment.html">DocumentFragment</a></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.DocumentFragment.html">DocumentFragment</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_InsertNode_Org_W3c_Dom_Node_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.InsertNode(Org.W3c.Dom.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L112">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_InsertNode_" data-uid="Org.W3c.Dom.Ranges.IRange.InsertNode*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_InsertNode_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.InsertNode(Org.W3c.Dom.Node)">InsertNode(Node)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#insertNode(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#insertNode(org.w3c.dom.Node)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void InsertNode(Node arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_SelectNode_Org_W3c_Dom_Node_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.SelectNode(Org.W3c.Dom.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L119">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_SelectNode_" data-uid="Org.W3c.Dom.Ranges.IRange.SelectNode*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_SelectNode_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SelectNode(Org.W3c.Dom.Node)">SelectNode(Node)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNode(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNode(org.w3c.dom.Node)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SelectNode(Node arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_SelectNodeContents_Org_W3c_Dom_Node_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.SelectNodeContents(Org.W3c.Dom.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L126">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_SelectNodeContents_" data-uid="Org.W3c.Dom.Ranges.IRange.SelectNodeContents*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_SelectNodeContents_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SelectNodeContents(Org.W3c.Dom.Node)">SelectNodeContents(Node)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNodeContents(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNodeContents(org.w3c.dom.Node)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SelectNodeContents(Node arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_SetEnd_Org_W3c_Dom_Node_System_Int32_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.SetEnd(Org.W3c.Dom.Node%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L134">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_SetEnd_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEnd*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_SetEnd_Org_W3c_Dom_Node_System_Int32_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEnd(Org.W3c.Dom.Node,System.Int32)">SetEnd(Node, Int32)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEnd(org.w3c.dom.Node,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEnd(org.w3c.dom.Node,int)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetEnd(Node arg0, int arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_SetEndAfter_Org_W3c_Dom_Node_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.SetEndAfter(Org.W3c.Dom.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L141">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_SetEndAfter_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEndAfter*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_SetEndAfter_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEndAfter(Org.W3c.Dom.Node)">SetEndAfter(Node)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndAfter(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndAfter(org.w3c.dom.Node)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetEndAfter(Node arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_SetEndBefore_Org_W3c_Dom_Node_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.SetEndBefore(Org.W3c.Dom.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L148">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_SetEndBefore_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEndBefore*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_SetEndBefore_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEndBefore(Org.W3c.Dom.Node)">SetEndBefore(Node)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndBefore(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndBefore(org.w3c.dom.Node)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetEndBefore(Node arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_SetStart_Org_W3c_Dom_Node_System_Int32_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.SetStart(Org.W3c.Dom.Node%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L156">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_SetStart_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStart*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_SetStart_Org_W3c_Dom_Node_System_Int32_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStart(Org.W3c.Dom.Node,System.Int32)">SetStart(Node, Int32)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStart(org.w3c.dom.Node,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStart(org.w3c.dom.Node,int)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetStart(Node arg0, int arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_SetStartAfter_Org_W3c_Dom_Node_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.SetStartAfter(Org.W3c.Dom.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L163">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_SetStartAfter_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStartAfter*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_SetStartAfter_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStartAfter(Org.W3c.Dom.Node)">SetStartAfter(Node)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartAfter(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartAfter(org.w3c.dom.Node)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetStartAfter(Node arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_SetStartBefore_Org_W3c_Dom_Node_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.SetStartBefore(Org.W3c.Dom.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L170">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_SetStartBefore_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStartBefore*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_SetStartBefore_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStartBefore(Org.W3c.Dom.Node)">SetStartBefore(Node)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartBefore(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartBefore(org.w3c.dom.Node)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetStartBefore(Node arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange_SurroundContents_Org_W3c_Dom_Node_.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange.SurroundContents(Org.W3c.Dom.Node)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L177">View Source</a>
-  </span>
-  <a id="Org_W3c_Dom_Ranges_IRange_SurroundContents_" data-uid="Org.W3c.Dom.Ranges.IRange.SurroundContents*"></a>
-  <h4 id="Org_W3c_Dom_Ranges_IRange_SurroundContents_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SurroundContents(Org.W3c.Dom.Node)">SurroundContents(Node)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#surroundContents(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#surroundContents(org.w3c.dom.Node)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SurroundContents(Node arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Org_W3c_Dom_Ranges_IRange.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Ranges.IRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Org/W3c/Dom/Ranges/Range.cs/#L32" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
-            
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="Org.W3c.Dom.Ranges.IRange">
+
+
+
+  <h1 id="Org_W3c_Dom_Ranges_IRange" data-uid="Org.W3c.Dom.Ranges.IRange" class="text-break">
+    Interface IRange
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.W3c.html">W3c</a>.<a class="xref" href="Org.W3c.Dom.html">Dom</a>.<a class="xref" href="Org.W3c.Dom.Ranges.html">Ranges</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRange</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_Collapsed_" data-uid="Org.W3c.Dom.Ranges.IRange.Collapsed*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_Collapsed" data-uid="Org.W3c.Dom.Ranges.IRange.Collapsed">
+  Collapsed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCollapsed()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCollapsed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Collapsed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_CommonAncestorContainer_" data-uid="Org.W3c.Dom.Ranges.IRange.CommonAncestorContainer*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_CommonAncestorContainer" data-uid="Org.W3c.Dom.Ranges.IRange.CommonAncestorContainer">
+  CommonAncestorContainer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCommonAncestorContainer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getCommonAncestorContainer()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Node CommonAncestorContainer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_EndContainer_" data-uid="Org.W3c.Dom.Ranges.IRange.EndContainer*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_EndContainer" data-uid="Org.W3c.Dom.Ranges.IRange.EndContainer">
+  EndContainer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndContainer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndContainer()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Node EndContainer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_EndOffset_" data-uid="Org.W3c.Dom.Ranges.IRange.EndOffset*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_EndOffset" data-uid="Org.W3c.Dom.Ranges.IRange.EndOffset">
+  EndOffset
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndOffset()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getEndOffset()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int EndOffset { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_StartContainer_" data-uid="Org.W3c.Dom.Ranges.IRange.StartContainer*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_StartContainer" data-uid="Org.W3c.Dom.Ranges.IRange.StartContainer">
+  StartContainer
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartContainer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartContainer()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Node StartContainer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_StartOffset_" data-uid="Org.W3c.Dom.Ranges.IRange.StartOffset*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_StartOffset" data-uid="Org.W3c.Dom.Ranges.IRange.StartOffset">
+  StartOffset
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartOffset()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#getStartOffset()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int StartOffset { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_CloneContents_" data-uid="Org.W3c.Dom.Ranges.IRange.CloneContents*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_CloneContents" data-uid="Org.W3c.Dom.Ranges.IRange.CloneContents">
+  CloneContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DocumentFragment CloneContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DocumentFragment.html">DocumentFragment</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.DocumentFragment.html">DocumentFragment</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_CloneRange_" data-uid="Org.W3c.Dom.Ranges.IRange.CloneRange*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_CloneRange" data-uid="Org.W3c.Dom.Ranges.IRange.CloneRange">
+  CloneRange()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#cloneRange()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Range CloneRange()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.Range.html">Range</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Ranges.Range.html">Range</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_Collapse_" data-uid="Org.W3c.Dom.Ranges.IRange.Collapse*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_Collapse_System_Boolean_" data-uid="Org.W3c.Dom.Ranges.IRange.Collapse(System.Boolean)">
+  Collapse(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#collapse(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#collapse(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Collapse(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_CompareBoundaryPoints_" data-uid="Org.W3c.Dom.Ranges.IRange.CompareBoundaryPoints*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_CompareBoundaryPoints_System_Int16_Org_W3c_Dom_Ranges_Range_" data-uid="Org.W3c.Dom.Ranges.IRange.CompareBoundaryPoints(System.Int16,Org.W3c.Dom.Ranges.Range)">
+  CompareBoundaryPoints(short, Range)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#compareBoundaryPoints(short,org.w3c.dom.ranges.Range)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#compareBoundaryPoints(short,org.w3c.dom.ranges.Range)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">short CompareBoundaryPoints(short arg0, Range arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Org.W3c.Dom.Ranges.Range.html">Range</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Ranges.Range.html">Range</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_DeleteContents_" data-uid="Org.W3c.Dom.Ranges.IRange.DeleteContents*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_DeleteContents" data-uid="Org.W3c.Dom.Ranges.IRange.DeleteContents">
+  DeleteContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#deleteContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteContents()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_Detach_" data-uid="Org.W3c.Dom.Ranges.IRange.Detach*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_Detach" data-uid="Org.W3c.Dom.Ranges.IRange.Detach">
+  Detach()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#detach()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Detach()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_ExtractContents_" data-uid="Org.W3c.Dom.Ranges.IRange.ExtractContents*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_ExtractContents" data-uid="Org.W3c.Dom.Ranges.IRange.ExtractContents">
+  ExtractContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#extractContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DocumentFragment ExtractContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DocumentFragment.html">DocumentFragment</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.DocumentFragment.html">DocumentFragment</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_InsertNode_" data-uid="Org.W3c.Dom.Ranges.IRange.InsertNode*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_InsertNode_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.InsertNode(Org.W3c.Dom.Node)">
+  InsertNode(Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#insertNode(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#insertNode(org.w3c.dom.Node)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void InsertNode(Node arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_SelectNode_" data-uid="Org.W3c.Dom.Ranges.IRange.SelectNode*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_SelectNode_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SelectNode(Org.W3c.Dom.Node)">
+  SelectNode(Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNode(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNode(org.w3c.dom.Node)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SelectNode(Node arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_SelectNodeContents_" data-uid="Org.W3c.Dom.Ranges.IRange.SelectNodeContents*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_SelectNodeContents_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SelectNodeContents(Org.W3c.Dom.Node)">
+  SelectNodeContents(Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNodeContents(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#selectNodeContents(org.w3c.dom.Node)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SelectNodeContents(Node arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_SetEnd_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEnd*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_SetEnd_Org_W3c_Dom_Node_System_Int32_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEnd(Org.W3c.Dom.Node,System.Int32)">
+  SetEnd(Node, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEnd(org.w3c.dom.Node,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEnd(org.w3c.dom.Node,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetEnd(Node arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_SetEndAfter_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEndAfter*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_SetEndAfter_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEndAfter(Org.W3c.Dom.Node)">
+  SetEndAfter(Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndAfter(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndAfter(org.w3c.dom.Node)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetEndAfter(Node arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_SetEndBefore_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEndBefore*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_SetEndBefore_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SetEndBefore(Org.W3c.Dom.Node)">
+  SetEndBefore(Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndBefore(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setEndBefore(org.w3c.dom.Node)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetEndBefore(Node arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_SetStart_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStart*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_SetStart_Org_W3c_Dom_Node_System_Int32_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStart(Org.W3c.Dom.Node,System.Int32)">
+  SetStart(Node, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStart(org.w3c.dom.Node,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStart(org.w3c.dom.Node,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetStart(Node arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_SetStartAfter_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStartAfter*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_SetStartAfter_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStartAfter(Org.W3c.Dom.Node)">
+  SetStartAfter(Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartAfter(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartAfter(org.w3c.dom.Node)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetStartAfter(Node arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_SetStartBefore_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStartBefore*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_SetStartBefore_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SetStartBefore(Org.W3c.Dom.Node)">
+  SetStartBefore(Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartBefore(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#setStartBefore(org.w3c.dom.Node)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetStartBefore(Node arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Ranges_IRange_SurroundContents_" data-uid="Org.W3c.Dom.Ranges.IRange.SurroundContents*"></a>
+
+  <h3 id="Org_W3c_Dom_Ranges_IRange_SurroundContents_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Ranges.IRange.SurroundContents(Org.W3c.Dom.Node)">
+  SurroundContents(Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#surroundContents(org.w3c.dom.Node)">https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#surroundContents(org.w3c.dom.Node)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SurroundContents(Node arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Org.W3c.Dom.Ranges.RangeException.html">RangeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Org\W3c\Dom\Ranges\Range.cs/#L32" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © 2023 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
