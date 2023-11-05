@@ -1,2246 +1,1540 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IRMIConnection
-   | JNet website </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IRMIConnection
-   | JNet website ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Interface IRMIConnection
+ | MASES Group website - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IRMIConnection
+ | MASES Group website - JNet ">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
-              </a>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Javax.Management.Remote.Rmi.IRMIConnection">
-  
-  
-  <h1 id="Javax_Management_Remote_Rmi_IRMIConnection" data-uid="Javax.Management.Remote.Rmi.IRMIConnection" class="text-break">Interface IRMIConnection
-  </h1>
-  <div class="markdown level0 summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Javax.Management.Remote.Rmi.html">Javax.Management.Remote.Rmi</a></h6>
-  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
-  <h5 id="Javax_Management_Remote_Rmi_IRMIConnection_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IRMIConnection</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_ConnectionId.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.ConnectionId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L38">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_ConnectionId_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.ConnectionId*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_ConnectionId" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.ConnectionId">ConnectionId</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getConnectionId()">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getConnectionId()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string ConnectionId { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_AddNotificationListener_Javax_Management_ObjectName_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.AddNotificationListener(Javax.Management.ObjectName%2CJavax.Management.ObjectName%2CJava.Rmi.MarshalledObject%2CJava.Rmi.MarshalledObject%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L258">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_AddNotificationListener_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.AddNotificationListener*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_AddNotificationListener_Javax_Management_ObjectName_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.AddNotificationListener(Javax.Management.ObjectName,Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">AddNotificationListener(ObjectName, ObjectName, MarshalledObject, MarshalledObject, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void AddNotificationListener(ObjectName arg0, ObjectName arg1, MarshalledObject arg2, MarshalledObject arg3, Subject arg4)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg4</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_AddNotificationListeners_Javax_Management_ObjectName___Java_Rmi_MarshalledObject___Javax_Security_Auth_Subject___.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.AddNotificationListeners(Javax.Management.ObjectName%5B%5D%2CJava.Rmi.MarshalledObject%5B%5D%2CJavax.Security.Auth.Subject%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L73">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_AddNotificationListeners_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.AddNotificationListeners*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_AddNotificationListeners_Javax_Management_ObjectName___Java_Rmi_MarshalledObject___Javax_Security_Auth_Subject___" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.AddNotificationListeners(Javax.Management.ObjectName[],Java.Rmi.MarshalledObject[],Javax.Security.Auth.Subject[])">AddNotificationListeners(ObjectName[], MarshalledObject[], Subject[])</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Integer[] AddNotificationListeners(ObjectName[] arg0, MarshalledObject[] arg1, Subject[] arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a>[]</td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a>[]</td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a>[]</td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Integer.html">Integer</a>[]</td>
-        <td><p><a class="xref" href="Java.Lang.Integer.html">Integer</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_Close.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L264">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_Close_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.Close*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_Close" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.Close">Close()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#close()">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#close()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Close()</code></pre>
-  </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_System_String___Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String%2CJavax.Management.ObjectName%2CJava.Rmi.MarshalledObject%2CSystem.String%5B%5D%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L181">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_System_String___Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String,Javax.Management.ObjectName,Java.Rmi.MarshalledObject,System.String[],Javax.Security.Auth.Subject)">CreateMBean(String, ObjectName, MarshalledObject, String[], Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ObjectInstance CreateMBean(string arg0, ObjectName arg1, MarshalledObject arg2, string[] arg3, Subject arg4)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg4</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceAlreadyExistsException.html">InstanceAlreadyExistsException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanRegistrationException.html">MBeanRegistrationException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.NotCompliantMBeanException.html">NotCompliantMBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_System_String___Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String%2CJavax.Management.ObjectName%2CJavax.Management.ObjectName%2CJava.Rmi.MarshalledObject%2CSystem.String%5B%5D%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L199">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_System_String___Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String,Javax.Management.ObjectName,Javax.Management.ObjectName,Java.Rmi.MarshalledObject,System.String[],Javax.Security.Auth.Subject)">CreateMBean(String, ObjectName, ObjectName, MarshalledObject, String[], Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ObjectInstance CreateMBean(string arg0, ObjectName arg1, ObjectName arg2, MarshalledObject arg3, string[] arg4, Subject arg5)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
-        <td><span class="parametername">arg4</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg5</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceAlreadyExistsException.html">InstanceAlreadyExistsException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanRegistrationException.html">MBeanRegistrationException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.NotCompliantMBeanException.html">NotCompliantMBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Javax_Management_ObjectName_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String%2CJavax.Management.ObjectName%2CJavax.Management.ObjectName%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L215">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String,Javax.Management.ObjectName,Javax.Management.ObjectName,Javax.Security.Auth.Subject)">CreateMBean(String, ObjectName, ObjectName, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ObjectInstance CreateMBean(string arg0, ObjectName arg1, ObjectName arg2, Subject arg3)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceAlreadyExistsException.html">InstanceAlreadyExistsException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanRegistrationException.html">MBeanRegistrationException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.NotCompliantMBeanException.html">NotCompliantMBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String%2CJavax.Management.ObjectName%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L229">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String,Javax.Management.ObjectName,Javax.Security.Auth.Subject)">CreateMBean(String, ObjectName, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ObjectInstance CreateMBean(string arg0, ObjectName arg1, Subject arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceAlreadyExistsException.html">InstanceAlreadyExistsException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanRegistrationException.html">MBeanRegistrationException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.NotCompliantMBeanException.html">NotCompliantMBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_FetchNotifications_System_Int64_System_Int32_System_Int64_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.FetchNotifications(System.Int64%2CSystem.Int32%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L247">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_FetchNotifications_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.FetchNotifications*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_FetchNotifications_System_Int64_System_Int32_System_Int64_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.FetchNotifications(System.Int64,System.Int32,System.Int64)">FetchNotifications(Int64, Int32, Int64)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#fetchNotifications(long,int,long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#fetchNotifications(long,int,long)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">NotificationResult FetchNotifications(long arg0, int arg1, long arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.Remote.NotificationResult.html">NotificationResult</a></td>
-        <td><p><a class="xref" href="Javax.Management.Remote.NotificationResult.html">NotificationResult</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_GetAttribute_Javax_Management_ObjectName_System_String_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.GetAttribute(Javax.Management.ObjectName%2CSystem.String%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L86">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetAttribute_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetAttribute*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_GetAttribute_Javax_Management_ObjectName_System_String_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetAttribute(Javax.Management.ObjectName,System.String,Javax.Security.Auth.Subject)">GetAttribute(ObjectName, String, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">object GetAttribute(ObjectName arg0, string arg1, Subject arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.AttributeNotFoundException.html">AttributeNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_GetAttributes_Javax_Management_ObjectName_System_String___Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.GetAttributes(Javax.Management.ObjectName%2CSystem.String%5B%5D%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L143">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetAttributes_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetAttributes*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_GetAttributes_Javax_Management_ObjectName_System_String___Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetAttributes(Javax.Management.ObjectName,System.String[],Javax.Security.Auth.Subject)">GetAttributes(ObjectName, String[], Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttributes(javax.management.ObjectName,java.lang.String[],javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttributes(javax.management.ObjectName,java.lang.String[],javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">AttributeList GetAttributes(ObjectName arg0, string[] arg1, Subject arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.AttributeList.html">AttributeList</a></td>
-        <td><p><a class="xref" href="Javax.Management.AttributeList.html">AttributeList</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_GetDefaultDomain_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.GetDefaultDomain(Javax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L107">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetDefaultDomain_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetDefaultDomain*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_GetDefaultDomain_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetDefaultDomain(Javax.Security.Auth.Subject)">GetDefaultDomain(Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDefaultDomain(javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDefaultDomain(javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string GetDefaultDomain(Subject arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_GetDomains_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.GetDomains(Javax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L114">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetDomains_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetDomains*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_GetDomains_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetDomains(Javax.Security.Auth.Subject)">GetDomains(Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDomains(javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDomains(javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string[] GetDomains(Subject arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_GetMBeanCount_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.GetMBeanCount(Javax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L63">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetMBeanCount_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetMBeanCount*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_GetMBeanCount_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetMBeanCount(Javax.Security.Auth.Subject)">GetMBeanCount(Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanCount(javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanCount(javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Integer GetMBeanCount(Subject arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Integer.html">Integer</a></td>
-        <td><p><a class="xref" href="Java.Lang.Integer.html">Integer</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_GetMBeanInfo_Javax_Management_ObjectName_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.GetMBeanInfo(Javax.Management.ObjectName%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L165">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetMBeanInfo_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetMBeanInfo*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_GetMBeanInfo_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetMBeanInfo(Javax.Management.ObjectName,Javax.Security.Auth.Subject)">GetMBeanInfo(ObjectName, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">MBeanInfo GetMBeanInfo(ObjectName arg0, Subject arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanInfo.html">MBeanInfo</a></td>
-        <td><p><a class="xref" href="Javax.Management.MBeanInfo.html">MBeanInfo</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.IntrospectionException.html">IntrospectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_GetObjectInstance_Javax_Management_ObjectName_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.GetObjectInstance(Javax.Management.ObjectName%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L238">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetObjectInstance_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetObjectInstance*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_GetObjectInstance_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetObjectInstance(Javax.Management.ObjectName,Javax.Security.Auth.Subject)">GetObjectInstance(ObjectName, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ObjectInstance GetObjectInstance(ObjectName arg0, Subject arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_Invoke_Javax_Management_ObjectName_System_String_Java_Rmi_MarshalledObject_System_String___Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.Invoke(Javax.Management.ObjectName%2CSystem.String%2CJava.Rmi.MarshalledObject%2CSystem.String%5B%5D%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L100">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_Invoke_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.Invoke*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_Invoke_Javax_Management_ObjectName_System_String_Java_Rmi_MarshalledObject_System_String___Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.Invoke(Javax.Management.ObjectName,System.String,Java.Rmi.MarshalledObject,System.String[],Javax.Security.Auth.Subject)">Invoke(ObjectName, String, MarshalledObject, String[], Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#invoke(javax.management.ObjectName,java.lang.String,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#invoke(javax.management.ObjectName,java.lang.String,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">object Invoke(ObjectName arg0, string arg1, MarshalledObject arg2, string[] arg3, Subject arg4)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg4</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_IsInstanceOf_Javax_Management_ObjectName_System_String_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.IsInstanceOf(Javax.Management.ObjectName%2CSystem.String%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L48">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_IsInstanceOf_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.IsInstanceOf*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_IsInstanceOf_Javax_Management_ObjectName_System_String_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.IsInstanceOf(Javax.Management.ObjectName,System.String,Javax.Security.Auth.Subject)">IsInstanceOf(ObjectName, String, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsInstanceOf(ObjectName arg0, string arg1, Subject arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_IsRegistered_Javax_Management_ObjectName_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.IsRegistered(Javax.Management.ObjectName%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L56">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_IsRegistered_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.IsRegistered*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_IsRegistered_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.IsRegistered(Javax.Management.ObjectName,Javax.Security.Auth.Subject)">IsRegistered(ObjectName, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isRegistered(javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isRegistered(javax.management.ObjectName,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsRegistered(ObjectName arg0, Subject arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_QueryMBeans_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.QueryMBeans(Javax.Management.ObjectName%2CJava.Rmi.MarshalledObject%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L123">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_QueryMBeans_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.QueryMBeans*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_QueryMBeans_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.QueryMBeans(Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">QueryMBeans(ObjectName, MarshalledObject, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Set&lt;ObjectInstance&gt; QueryMBeans(ObjectName arg0, MarshalledObject arg1, Subject arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a>&gt;</td>
-        <td><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_QueryNames_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.QueryNames(Javax.Management.ObjectName%2CJava.Rmi.MarshalledObject%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L132">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_QueryNames_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.QueryNames*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_QueryNames_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.QueryNames(Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">QueryNames(ObjectName, MarshalledObject, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryNames(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryNames(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Set&lt;ObjectName&gt; QueryNames(ObjectName arg0, MarshalledObject arg1, Subject arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a>&gt;</td>
-        <td><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListener_Javax_Management_ObjectName_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListener(Javax.Management.ObjectName%2CJavax.Management.ObjectName%2CJava.Rmi.MarshalledObject%2CJava.Rmi.MarshalledObject%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L276">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListener_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListener*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListener_Javax_Management_ObjectName_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListener(Javax.Management.ObjectName,Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">RemoveNotificationListener(ObjectName, ObjectName, MarshalledObject, MarshalledObject, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RemoveNotificationListener(ObjectName arg0, ObjectName arg1, MarshalledObject arg2, MarshalledObject arg3, Subject arg4)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg4</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ListenerNotFoundException.html">ListenerNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListener_Javax_Management_ObjectName_Javax_Management_ObjectName_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListener(Javax.Management.ObjectName%2CJavax.Management.ObjectName%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L286">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListener_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListener*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListener_Javax_Management_ObjectName_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListener(Javax.Management.ObjectName,Javax.Management.ObjectName,Javax.Security.Auth.Subject)">RemoveNotificationListener(ObjectName, ObjectName, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RemoveNotificationListener(ObjectName arg0, ObjectName arg1, Subject arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ListenerNotFoundException.html">ListenerNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListeners_Javax_Management_ObjectName_Java_Lang_Integer___Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListeners(Javax.Management.ObjectName%2CJava.Lang.Integer%5B%5D%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L296">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListeners_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListeners*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListeners_Javax_Management_ObjectName_Java_Lang_Integer___Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListeners(Javax.Management.ObjectName,Java.Lang.Integer[],Javax.Security.Auth.Subject)">RemoveNotificationListeners(ObjectName, Integer[], Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RemoveNotificationListeners(ObjectName arg0, Integer[] arg1, Subject arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Integer.html">Integer</a>[]</td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Java.Lang.Integer.html">Integer</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ListenerNotFoundException.html">ListenerNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_SetAttribute_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.SetAttribute(Javax.Management.ObjectName%2CJava.Rmi.MarshalledObject%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L309">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_SetAttribute_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.SetAttribute*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_SetAttribute_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.SetAttribute(Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">SetAttribute(ObjectName, MarshalledObject, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttribute(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttribute(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void SetAttribute(ObjectName arg0, MarshalledObject arg1, Subject arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.AttributeNotFoundException.html">AttributeNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InvalidAttributeValueException.html">InvalidAttributeValueException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_SetAttributes_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.SetAttributes(Javax.Management.ObjectName%2CJava.Rmi.MarshalledObject%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L154">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_SetAttributes_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.SetAttributes*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_SetAttributes_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.SetAttributes(Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">SetAttributes(ObjectName, MarshalledObject, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttributes(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttributes(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">AttributeList SetAttributes(ObjectName arg0, MarshalledObject arg1, Subject arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.AttributeList.html">AttributeList</a></td>
-        <td><p><a class="xref" href="Javax.Management.AttributeList.html">AttributeList</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection_UnregisterMBean_Javax_Management_ObjectName_Javax_Security_Auth_Subject_.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection.UnregisterMBean(Javax.Management.ObjectName%2CJavax.Security.Auth.Subject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L318">View Source</a>
-  </span>
-  <a id="Javax_Management_Remote_Rmi_IRMIConnection_UnregisterMBean_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.UnregisterMBean*"></a>
-  <h4 id="Javax_Management_Remote_Rmi_IRMIConnection_UnregisterMBean_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.UnregisterMBean(Javax.Management.ObjectName,Javax.Security.Auth.Subject)">UnregisterMBean(ObjectName, Subject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void UnregisterMBean(ObjectName arg0, Subject arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Management.MBeanRegistrationException.html">MBeanRegistrationException</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Management_Remote_Rmi_IRMIConnection.md&amp;value=---%0Auid%3A%20Javax.Management.Remote.Rmi.IRMIConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Remote/Rmi/RMIConnection.cs/#L32" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
-            
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="Javax.Management.Remote.Rmi.IRMIConnection">
+
+
+
+  <h1 id="Javax_Management_Remote_Rmi_IRMIConnection" data-uid="Javax.Management.Remote.Rmi.IRMIConnection" class="text-break">
+    Interface IRMIConnection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Javax.html">Javax</a>.<a class="xref" href="Javax.Management.html">Management</a>.<a class="xref" href="Javax.Management.Remote.html">Remote</a>.<a class="xref" href="Javax.Management.Remote.Rmi.html">Rmi</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRMIConnection</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_ConnectionId_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.ConnectionId*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_ConnectionId" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.ConnectionId">
+  ConnectionId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getConnectionId()">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getConnectionId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ConnectionId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_AddNotificationListener_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.AddNotificationListener*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_AddNotificationListener_Javax_Management_ObjectName_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.AddNotificationListener(Javax.Management.ObjectName,Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">
+  AddNotificationListener(ObjectName, ObjectName, MarshalledObject, MarshalledObject, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddNotificationListener(ObjectName arg0, ObjectName arg1, MarshalledObject arg2, MarshalledObject arg3, Subject arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_AddNotificationListeners_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.AddNotificationListeners*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_AddNotificationListeners_Javax_Management_ObjectName___Java_Rmi_MarshalledObject___Javax_Security_Auth_Subject___" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.AddNotificationListeners(Javax.Management.ObjectName[],Java.Rmi.MarshalledObject[],Javax.Security.Auth.Subject[])">
+  AddNotificationListeners(ObjectName[], MarshalledObject[], Subject[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Integer[] AddNotificationListeners(ObjectName[] arg0, MarshalledObject[] arg1, Subject[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a>[]</dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a>[]</dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Integer.html">Integer</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Integer.html">Integer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_Close_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.Close*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_Close" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.Close">
+  Close()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#close()">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#close()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_System_String___Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String,Javax.Management.ObjectName,Java.Rmi.MarshalledObject,System.String[],Javax.Security.Auth.Subject)">
+  CreateMBean(string, ObjectName, MarshalledObject, string[], Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ObjectInstance CreateMBean(string arg0, ObjectName arg1, MarshalledObject arg2, string[] arg3, Subject arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.InstanceAlreadyExistsException.html">InstanceAlreadyExistsException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanRegistrationException.html">MBeanRegistrationException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.NotCompliantMBeanException.html">NotCompliantMBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_System_String___Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String,Javax.Management.ObjectName,Javax.Management.ObjectName,Java.Rmi.MarshalledObject,System.String[],Javax.Security.Auth.Subject)">
+  CreateMBean(string, ObjectName, ObjectName, MarshalledObject, string[], Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ObjectInstance CreateMBean(string arg0, ObjectName arg1, ObjectName arg2, MarshalledObject arg3, string[] arg4, Subject arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.InstanceAlreadyExistsException.html">InstanceAlreadyExistsException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanRegistrationException.html">MBeanRegistrationException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.NotCompliantMBeanException.html">NotCompliantMBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String,Javax.Management.ObjectName,Javax.Management.ObjectName,Javax.Security.Auth.Subject)">
+  CreateMBean(string, ObjectName, ObjectName, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ObjectInstance CreateMBean(string arg0, ObjectName arg1, ObjectName arg2, Subject arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.InstanceAlreadyExistsException.html">InstanceAlreadyExistsException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanRegistrationException.html">MBeanRegistrationException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.NotCompliantMBeanException.html">NotCompliantMBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_CreateMBean_System_String_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.CreateMBean(System.String,Javax.Management.ObjectName,Javax.Security.Auth.Subject)">
+  CreateMBean(string, ObjectName, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#createMBean(java.lang.String,javax.management.ObjectName,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ObjectInstance CreateMBean(string arg0, ObjectName arg1, Subject arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.InstanceAlreadyExistsException.html">InstanceAlreadyExistsException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanRegistrationException.html">MBeanRegistrationException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.NotCompliantMBeanException.html">NotCompliantMBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_FetchNotifications_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.FetchNotifications*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_FetchNotifications_System_Int64_System_Int32_System_Int64_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.FetchNotifications(System.Int64,System.Int32,System.Int64)">
+  FetchNotifications(long, int, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#fetchNotifications(long,int,long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#fetchNotifications(long,int,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">NotificationResult FetchNotifications(long arg0, int arg1, long arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.Remote.NotificationResult.html">NotificationResult</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.Remote.NotificationResult.html">NotificationResult</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetAttribute_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetAttribute*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_GetAttribute_Javax_Management_ObjectName_System_String_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetAttribute(Javax.Management.ObjectName,System.String,Javax.Security.Auth.Subject)">
+  GetAttribute(ObjectName, string, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttribute(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object GetAttribute(ObjectName arg0, string arg1, Subject arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.AttributeNotFoundException.html">AttributeNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetAttributes_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetAttributes*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_GetAttributes_Javax_Management_ObjectName_System_String___Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetAttributes(Javax.Management.ObjectName,System.String[],Javax.Security.Auth.Subject)">
+  GetAttributes(ObjectName, string[], Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttributes(javax.management.ObjectName,java.lang.String[],javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getAttributes(javax.management.ObjectName,java.lang.String[],javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AttributeList GetAttributes(ObjectName arg0, string[] arg1, Subject arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.AttributeList.html">AttributeList</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.AttributeList.html">AttributeList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetDefaultDomain_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetDefaultDomain*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_GetDefaultDomain_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetDefaultDomain(Javax.Security.Auth.Subject)">
+  GetDefaultDomain(Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDefaultDomain(javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDefaultDomain(javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetDefaultDomain(Subject arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetDomains_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetDomains*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_GetDomains_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetDomains(Javax.Security.Auth.Subject)">
+  GetDomains(Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDomains(javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getDomains(javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string[] GetDomains(Subject arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetMBeanCount_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetMBeanCount*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_GetMBeanCount_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetMBeanCount(Javax.Security.Auth.Subject)">
+  GetMBeanCount(Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanCount(javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanCount(javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Integer GetMBeanCount(Subject arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Integer.html">Integer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Integer.html">Integer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetMBeanInfo_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetMBeanInfo*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_GetMBeanInfo_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetMBeanInfo(Javax.Management.ObjectName,Javax.Security.Auth.Subject)">
+  GetMBeanInfo(ObjectName, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getMBeanInfo(javax.management.ObjectName,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MBeanInfo GetMBeanInfo(ObjectName arg0, Subject arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.MBeanInfo.html">MBeanInfo</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.MBeanInfo.html">MBeanInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.IntrospectionException.html">IntrospectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_GetObjectInstance_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetObjectInstance*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_GetObjectInstance_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.GetObjectInstance(Javax.Management.ObjectName,Javax.Security.Auth.Subject)">
+  GetObjectInstance(ObjectName, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#getObjectInstance(javax.management.ObjectName,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ObjectInstance GetObjectInstance(ObjectName arg0, Subject arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_Invoke_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.Invoke*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_Invoke_Javax_Management_ObjectName_System_String_Java_Rmi_MarshalledObject_System_String___Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.Invoke(Javax.Management.ObjectName,System.String,Java.Rmi.MarshalledObject,System.String[],Javax.Security.Auth.Subject)">
+  Invoke(ObjectName, string, MarshalledObject, string[], Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#invoke(javax.management.ObjectName,java.lang.String,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#invoke(javax.management.ObjectName,java.lang.String,java.rmi.MarshalledObject,java.lang.String[],javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object Invoke(ObjectName arg0, string arg1, MarshalledObject arg2, string[] arg3, Subject arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_IsInstanceOf_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.IsInstanceOf*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_IsInstanceOf_Javax_Management_ObjectName_System_String_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.IsInstanceOf(Javax.Management.ObjectName,System.String,Javax.Security.Auth.Subject)">
+  IsInstanceOf(ObjectName, string, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsInstanceOf(ObjectName arg0, string arg1, Subject arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_IsRegistered_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.IsRegistered*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_IsRegistered_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.IsRegistered(Javax.Management.ObjectName,Javax.Security.Auth.Subject)">
+  IsRegistered(ObjectName, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isRegistered(javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#isRegistered(javax.management.ObjectName,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsRegistered(ObjectName arg0, Subject arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_QueryMBeans_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.QueryMBeans*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_QueryMBeans_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.QueryMBeans(Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">
+  QueryMBeans(ObjectName, MarshalledObject, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryMBeans(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Set&lt;ObjectInstance&gt; QueryMBeans(ObjectName arg0, MarshalledObject arg1, Subject arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Javax.Management.ObjectInstance.html">ObjectInstance</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_QueryNames_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.QueryNames*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_QueryNames_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.QueryNames(Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">
+  QueryNames(ObjectName, MarshalledObject, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryNames(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#queryNames(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Set&lt;ObjectName&gt; QueryNames(ObjectName arg0, MarshalledObject arg1, Subject arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListener_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListener*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListener_Javax_Management_ObjectName_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListener(Javax.Management.ObjectName,Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">
+  RemoveNotificationListener(ObjectName, ObjectName, MarshalledObject, MarshalledObject, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,java.rmi.MarshalledObject,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveNotificationListener(ObjectName arg0, ObjectName arg1, MarshalledObject arg2, MarshalledObject arg3, Subject arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.ListenerNotFoundException.html">ListenerNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListener_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListener*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListener_Javax_Management_ObjectName_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListener(Javax.Management.ObjectName,Javax.Management.ObjectName,Javax.Security.Auth.Subject)">
+  RemoveNotificationListener(ObjectName, ObjectName, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveNotificationListener(ObjectName arg0, ObjectName arg1, Subject arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.ListenerNotFoundException.html">ListenerNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListeners_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListeners*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_RemoveNotificationListeners_Javax_Management_ObjectName_Java_Lang_Integer___Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.RemoveNotificationListeners(Javax.Management.ObjectName,Java.Lang.Integer[],Javax.Security.Auth.Subject)">
+  RemoveNotificationListeners(ObjectName, Integer[], Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#removeNotificationListeners(javax.management.ObjectName,java.lang.Integer[],javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveNotificationListeners(ObjectName arg0, Integer[] arg1, Subject arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Integer.html">Integer</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.Integer.html">Integer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.ListenerNotFoundException.html">ListenerNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_SetAttribute_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.SetAttribute*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_SetAttribute_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.SetAttribute(Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">
+  SetAttribute(ObjectName, MarshalledObject, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttribute(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttribute(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetAttribute(ObjectName arg0, MarshalledObject arg1, Subject arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.AttributeNotFoundException.html">AttributeNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.InvalidAttributeValueException.html">InvalidAttributeValueException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanException.html">MBeanException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_SetAttributes_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.SetAttributes*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_SetAttributes_Javax_Management_ObjectName_Java_Rmi_MarshalledObject_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.SetAttributes(Javax.Management.ObjectName,Java.Rmi.MarshalledObject,Javax.Security.Auth.Subject)">
+  SetAttributes(ObjectName, MarshalledObject, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttributes(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#setAttributes(javax.management.ObjectName,java.rmi.MarshalledObject,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AttributeList SetAttributes(ObjectName arg0, MarshalledObject arg1, Subject arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></dt>
+    <dd><p><a class="xref" href="Java.Rmi.MarshalledObject.html">MarshalledObject</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.AttributeList.html">AttributeList</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.AttributeList.html">AttributeList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.ReflectionException.html">ReflectionException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Management_Remote_Rmi_IRMIConnection_UnregisterMBean_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.UnregisterMBean*"></a>
+
+  <h3 id="Javax_Management_Remote_Rmi_IRMIConnection_UnregisterMBean_Javax_Management_ObjectName_Javax_Security_Auth_Subject_" data-uid="Javax.Management.Remote.Rmi.IRMIConnection.UnregisterMBean(Javax.Management.ObjectName,Javax.Security.Auth.Subject)">
+  UnregisterMBean(ObjectName, Subject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnection.html#unregisterMBean(javax.management.ObjectName,javax.security.auth.Subject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UnregisterMBean(ObjectName arg0, Subject arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></dt>
+    <dd><p><a class="xref" href="Javax.Management.ObjectName.html">ObjectName</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></dt>
+    <dd><p><a class="xref" href="Javax.Security.Auth.Subject.html">Subject</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Management.InstanceNotFoundException.html">InstanceNotFoundException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Javax.Management.MBeanRegistrationException.html">MBeanRegistrationException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Management\Remote\Rmi\RMIConnection.cs/#L32" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © 2023 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

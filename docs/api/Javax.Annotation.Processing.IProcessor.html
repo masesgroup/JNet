@@ -1,416 +1,381 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IProcessor
-   | JNet website </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IProcessor
-   | JNet website ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Interface IProcessor
+ | MASES Group website - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IProcessor
+ | MASES Group website - JNet ">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_IProcessor.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.IProcessor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
-              </a>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Javax.Annotation.Processing.IProcessor">
-  
-  
-  <h1 id="Javax_Annotation_Processing_IProcessor" data-uid="Javax.Annotation.Processing.IProcessor" class="text-break">Interface IProcessor
-  </h1>
-  <div class="markdown level0 summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Javax.Annotation.Processing.html">Javax.Annotation.Processing</a></h6>
-  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
-  <h5 id="Javax_Annotation_Processing_IProcessor_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IProcessor</code></pre>
-  </div>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_IProcessor_SupportedAnnotationTypes.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.IProcessor.SupportedAnnotationTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L38">View Source</a>
-  </span>
-  <a id="Javax_Annotation_Processing_IProcessor_SupportedAnnotationTypes_" data-uid="Javax.Annotation.Processing.IProcessor.SupportedAnnotationTypes*"></a>
-  <h4 id="Javax_Annotation_Processing_IProcessor_SupportedAnnotationTypes" data-uid="Javax.Annotation.Processing.IProcessor.SupportedAnnotationTypes">SupportedAnnotationTypes</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedAnnotationTypes()">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedAnnotationTypes()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Set&lt;string&gt; SupportedAnnotationTypes { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_IProcessor_SupportedOptions.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.IProcessor.SupportedOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L42">View Source</a>
-  </span>
-  <a id="Javax_Annotation_Processing_IProcessor_SupportedOptions_" data-uid="Javax.Annotation.Processing.IProcessor.SupportedOptions*"></a>
-  <h4 id="Javax_Annotation_Processing_IProcessor_SupportedOptions" data-uid="Javax.Annotation.Processing.IProcessor.SupportedOptions">SupportedOptions</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedOptions()">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedOptions()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Set&lt;string&gt; SupportedOptions { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_IProcessor_SupportedSourceVersion.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.IProcessor.SupportedSourceVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L46">View Source</a>
-  </span>
-  <a id="Javax_Annotation_Processing_IProcessor_SupportedSourceVersion_" data-uid="Javax.Annotation.Processing.IProcessor.SupportedSourceVersion*"></a>
-  <h4 id="Javax_Annotation_Processing_IProcessor_SupportedSourceVersion" data-uid="Javax.Annotation.Processing.IProcessor.SupportedSourceVersion">SupportedSourceVersion</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedSourceVersion()">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedSourceVersion()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">SourceVersion SupportedSourceVersion { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Lang.Model.SourceVersion.html">SourceVersion</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_IProcessor_GetCompletions__1_Javax_Lang_Model_Element_Element_Javax_Lang_Model_Element_AnnotationMirror_Javax_Lang_Model_Element_ExecutableElement_System_String_.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.IProcessor.GetCompletions%60%601(Javax.Lang.Model.Element.Element%2CJavax.Lang.Model.Element.AnnotationMirror%2CJavax.Lang.Model.Element.ExecutableElement%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L64">View Source</a>
-  </span>
-  <a id="Javax_Annotation_Processing_IProcessor_GetCompletions_" data-uid="Javax.Annotation.Processing.IProcessor.GetCompletions*"></a>
-  <h4 id="Javax_Annotation_Processing_IProcessor_GetCompletions__1_Javax_Lang_Model_Element_Element_Javax_Lang_Model_Element_AnnotationMirror_Javax_Lang_Model_Element_ExecutableElement_System_String_" data-uid="Javax.Annotation.Processing.IProcessor.GetCompletions``1(Javax.Lang.Model.Element.Element,Javax.Lang.Model.Element.AnnotationMirror,Javax.Lang.Model.Element.ExecutableElement,System.String)">GetCompletions&lt;ReturnExtendsJavax_Annotation_Processing_Completion&gt;(Element, AnnotationMirror, ExecutableElement, String)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getCompletions(javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror,javax.lang.model.element.ExecutableElement,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getCompletions(javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror,javax.lang.model.element.ExecutableElement,java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Iterable&lt;ReturnExtendsJavax_Annotation_Processing_Completion&gt; GetCompletions&lt;ReturnExtendsJavax_Annotation_Processing_Completion&gt;(Element arg0, AnnotationMirror arg1, ExecutableElement arg2, string arg3)
-    where ReturnExtendsJavax_Annotation_Processing_Completion : Completion</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Lang.Model.Element.Element.html">Element</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Element.Element.html">Element</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Lang.Model.Element.AnnotationMirror.html">AnnotationMirror</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationMirror.html">AnnotationMirror</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Lang.Model.Element.ExecutableElement.html">ExecutableElement</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Element.ExecutableElement.html">ExecutableElement</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;ReturnExtendsJavax_Annotation_Processing_Completion&gt;</td>
-        <td><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">ReturnExtendsJavax_Annotation_Processing_Completion</span></td>
-        <td><p><a class="xref" href="Javax.Annotation.Processing.Completion.html">Completion</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_IProcessor_Init_Javax_Annotation_Processing_ProcessingEnvironment_.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.IProcessor.Init(Javax.Annotation.Processing.ProcessingEnvironment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L69">View Source</a>
-  </span>
-  <a id="Javax_Annotation_Processing_IProcessor_Init_" data-uid="Javax.Annotation.Processing.IProcessor.Init*"></a>
-  <h4 id="Javax_Annotation_Processing_IProcessor_Init_Javax_Annotation_Processing_ProcessingEnvironment_" data-uid="Javax.Annotation.Processing.IProcessor.Init(Javax.Annotation.Processing.ProcessingEnvironment)">Init(ProcessingEnvironment)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#init(javax.annotation.processing.ProcessingEnvironment)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#init(javax.annotation.processing.ProcessingEnvironment)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Init(ProcessingEnvironment arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Annotation.Processing.ProcessingEnvironment.html">ProcessingEnvironment</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Annotation.Processing.ProcessingEnvironment.html">ProcessingEnvironment</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_IProcessor_Process__1_Java_Util_Set___0__Javax_Annotation_Processing_RoundEnvironment_.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.IProcessor.Process%60%601(Java.Util.Set%7B%60%600%7D%2CJavax.Annotation.Processing.RoundEnvironment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L54">View Source</a>
-  </span>
-  <a id="Javax_Annotation_Processing_IProcessor_Process_" data-uid="Javax.Annotation.Processing.IProcessor.Process*"></a>
-  <h4 id="Javax_Annotation_Processing_IProcessor_Process__1_Java_Util_Set___0__Javax_Annotation_Processing_RoundEnvironment_" data-uid="Javax.Annotation.Processing.IProcessor.Process``1(Java.Util.Set{``0},Javax.Annotation.Processing.RoundEnvironment)">Process&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt;(Set&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt;, RoundEnvironment)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#process(java.util.Set,javax.annotation.processing.RoundEnvironment)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#process(java.util.Set,javax.annotation.processing.RoundEnvironment)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Process&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt;(Set&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt; arg0, RoundEnvironment arg1)
-    where Arg0ExtendsJavax_Lang_Model_Element_TypeElement : TypeElement</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt;</td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Annotation.Processing.RoundEnvironment.html">RoundEnvironment</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Annotation.Processing.RoundEnvironment.html">RoundEnvironment</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">Arg0ExtendsJavax_Lang_Model_Element_TypeElement</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Element.TypeElement.html">TypeElement</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Annotation_Processing_IProcessor.md&amp;value=---%0Auid%3A%20Javax.Annotation.Processing.IProcessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Annotation/Processing/Processor.cs/#L32" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
-            
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="Javax.Annotation.Processing.IProcessor">
+
+
+
+  <h1 id="Javax_Annotation_Processing_IProcessor" data-uid="Javax.Annotation.Processing.IProcessor" class="text-break">
+    Interface IProcessor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Annotation\Processing\Processor.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Javax.html">Javax</a>.<a class="xref" href="Javax.Annotation.html">Annotation</a>.<a class="xref" href="Javax.Annotation.Processing.html">Processing</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IProcessor</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Javax_Annotation_Processing_IProcessor_SupportedAnnotationTypes_" data-uid="Javax.Annotation.Processing.IProcessor.SupportedAnnotationTypes*"></a>
+
+  <h3 id="Javax_Annotation_Processing_IProcessor_SupportedAnnotationTypes" data-uid="Javax.Annotation.Processing.IProcessor.SupportedAnnotationTypes">
+  SupportedAnnotationTypes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Annotation\Processing\Processor.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedAnnotationTypes()">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedAnnotationTypes()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Set&lt;string&gt; SupportedAnnotationTypes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Annotation_Processing_IProcessor_SupportedOptions_" data-uid="Javax.Annotation.Processing.IProcessor.SupportedOptions*"></a>
+
+  <h3 id="Javax_Annotation_Processing_IProcessor_SupportedOptions" data-uid="Javax.Annotation.Processing.IProcessor.SupportedOptions">
+  SupportedOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Annotation\Processing\Processor.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedOptions()">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedOptions()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Set&lt;string&gt; SupportedOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Annotation_Processing_IProcessor_SupportedSourceVersion_" data-uid="Javax.Annotation.Processing.IProcessor.SupportedSourceVersion*"></a>
+
+  <h3 id="Javax_Annotation_Processing_IProcessor_SupportedSourceVersion" data-uid="Javax.Annotation.Processing.IProcessor.SupportedSourceVersion">
+  SupportedSourceVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Annotation\Processing\Processor.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedSourceVersion()">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getSupportedSourceVersion()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SourceVersion SupportedSourceVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Lang.Model.SourceVersion.html">SourceVersion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Javax_Annotation_Processing_IProcessor_GetCompletions_" data-uid="Javax.Annotation.Processing.IProcessor.GetCompletions*"></a>
+
+  <h3 id="Javax_Annotation_Processing_IProcessor_GetCompletions__1_Javax_Lang_Model_Element_Element_Javax_Lang_Model_Element_AnnotationMirror_Javax_Lang_Model_Element_ExecutableElement_System_String_" data-uid="Javax.Annotation.Processing.IProcessor.GetCompletions``1(Javax.Lang.Model.Element.Element,Javax.Lang.Model.Element.AnnotationMirror,Javax.Lang.Model.Element.ExecutableElement,System.String)">
+  GetCompletions&lt;ReturnExtendsJavax_Annotation_Processing_Completion&gt;(Element, AnnotationMirror, ExecutableElement, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Annotation\Processing\Processor.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getCompletions(javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror,javax.lang.model.element.ExecutableElement,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getCompletions(javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror,javax.lang.model.element.ExecutableElement,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Iterable&lt;ReturnExtendsJavax_Annotation_Processing_Completion&gt; GetCompletions&lt;ReturnExtendsJavax_Annotation_Processing_Completion&gt;(Element arg0, AnnotationMirror arg1, ExecutableElement arg2, string arg3) where ReturnExtendsJavax_Annotation_Processing_Completion : Completion</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Lang.Model.Element.Element.html">Element</a></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Element.Element.html">Element</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Lang.Model.Element.AnnotationMirror.html">AnnotationMirror</a></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationMirror.html">AnnotationMirror</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Lang.Model.Element.ExecutableElement.html">ExecutableElement</a></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Element.ExecutableElement.html">ExecutableElement</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;ReturnExtendsJavax_Annotation_Processing_Completion&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ReturnExtendsJavax_Annotation_Processing_Completion</code></dt>
+    <dd><p><a class="xref" href="Javax.Annotation.Processing.Completion.html">Completion</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Annotation_Processing_IProcessor_Init_" data-uid="Javax.Annotation.Processing.IProcessor.Init*"></a>
+
+  <h3 id="Javax_Annotation_Processing_IProcessor_Init_Javax_Annotation_Processing_ProcessingEnvironment_" data-uid="Javax.Annotation.Processing.IProcessor.Init(Javax.Annotation.Processing.ProcessingEnvironment)">
+  Init(ProcessingEnvironment)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Annotation\Processing\Processor.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#init(javax.annotation.processing.ProcessingEnvironment)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#init(javax.annotation.processing.ProcessingEnvironment)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Init(ProcessingEnvironment arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Annotation.Processing.ProcessingEnvironment.html">ProcessingEnvironment</a></dt>
+    <dd><p><a class="xref" href="Javax.Annotation.Processing.ProcessingEnvironment.html">ProcessingEnvironment</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Annotation_Processing_IProcessor_Process_" data-uid="Javax.Annotation.Processing.IProcessor.Process*"></a>
+
+  <h3 id="Javax_Annotation_Processing_IProcessor_Process__1_Java_Util_Set___0__Javax_Annotation_Processing_RoundEnvironment_" data-uid="Javax.Annotation.Processing.IProcessor.Process``1(Java.Util.Set{``0},Javax.Annotation.Processing.RoundEnvironment)">
+  Process&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt;(Set&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt;, RoundEnvironment)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Annotation\Processing\Processor.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#process(java.util.Set,javax.annotation.processing.RoundEnvironment)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#process(java.util.Set,javax.annotation.processing.RoundEnvironment)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Process&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt;(Set&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt; arg0, RoundEnvironment arg1) where Arg0ExtendsJavax_Lang_Model_Element_TypeElement : TypeElement</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;Arg0ExtendsJavax_Lang_Model_Element_TypeElement&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Annotation.Processing.RoundEnvironment.html">RoundEnvironment</a></dt>
+    <dd><p><a class="xref" href="Javax.Annotation.Processing.RoundEnvironment.html">RoundEnvironment</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsJavax_Lang_Model_Element_TypeElement</code></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Element.TypeElement.html">TypeElement</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Annotation\Processing\Processor.cs/#L32" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © 2023 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

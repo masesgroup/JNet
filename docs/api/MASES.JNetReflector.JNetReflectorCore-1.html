@@ -1,97 +1,145 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class JNetReflectorCore&lt;T&gt;
-   | JNet website </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class JNetReflectorCore&lt;T&gt;
-   | JNet website ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class JNetReflectorCore&lt;T&gt;
+ | MASES Group website - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class JNetReflectorCore&lt;T&gt;
+ | MASES Group website - JNet ">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="MASES.JNetReflector.JNetReflectorCore`1">
-  
-  
-  <h1 id="MASES_JNetReflector_JNetReflectorCore_1" data-uid="MASES.JNetReflector.JNetReflectorCore`1" class="text-break">Class JNetReflectorCore&lt;T&gt;
+
+        <article data-uid="MASES.JNetReflector.JNetReflectorCore`1">
+
+
+
+  <h1 id="MASES_JNetReflector_JNetReflectorCore_1" data-uid="MASES.JNetReflector.JNetReflectorCore`1" class="text-break">
+    Class JNetReflectorCore&lt;T&gt;
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h1>
-  <div class="markdown level0 summary"><p>Public entry point of <a class="xref" href="MASES.JNetReflector.JNetReflectorCore-1.html">JNetReflectorCore&lt;T&gt;</a></p>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MASES.html">MASES</a>.<a class="xref" href="MASES.JNetReflector.html">JNetReflector</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNetReflector.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Public entry point of <a class="xref" href="MASES.JNetReflector.JNetReflectorCore-1.html">JNetReflectorCore&lt;T&gt;</a></p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper</span></div>
-    <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper</span>&lt;T&gt;</div>
-    <div class="level3"><a class="xref" href="MASES.JNet.JNetCoreBase-1.html">JNetCoreBase</a>&lt;T&gt;</div>
-    <div class="level4"><span class="xref">JNetReflectorCore&lt;T&gt;</span></div>
-      <div class="level5"><a class="xref" href="MASES.JNetReflector.JNetReflectorCore.html">JNetReflectorCore</a></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class JNetReflectorCore&lt;T&gt; : JNetCoreBase&lt;T&gt;, IJVMWrapperManagement, IJVMBridgeCore where T : JNetReflectorCore&lt;T&gt;</code></pre>
   </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMInterop.IJVMWrapperManagement</span></div>
-    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SetupJVMWrapper</span></div>
+      <div><span class="xref">SetupJVMWrapper</span>&lt;T&gt;</div>
+      <div><a class="xref" href="MASES.JNet.JNetCoreBase-1.html">JNetCoreBase</a>&lt;T&gt;</div>
+      <div><span class="xref">JNetReflectorCore&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IJVMWrapperManagement</span></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="MASES.JNetReflector.JNetReflectorCore.html">JNetReflectorCore</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
     <div>
       <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JARsSubFolder">JNetCoreBase&lt;T&gt;.JARsSubFolder</a>
     </div>
@@ -186,1433 +234,1442 @@
       <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ClassPath">JNetCoreBase&lt;T&gt;.ClassPath</a>
     </div>
     <div>
-      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_HelpInfo_System_Nullable_System_Int32__">JNetCoreBase&lt;T&gt;.HelpInfo(Nullable&lt;Int32&gt;)</a>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_HelpInfo_System_Nullable_System_Int32__">JNetCoreBase&lt;T&gt;.HelpInfo(int?)</a>
     </div>
     <div>
       <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_Class__1">JNetCoreBase&lt;T&gt;.Class&lt;TClass&gt;()</a>
     </div>
     <div>
-      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_New_System_String_">JNetCoreBase&lt;T&gt;.New(String)</a>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_New_System_String_">JNetCoreBase&lt;T&gt;.New(string)</a>
     </div>
     <div>
-      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_New_System_String_System_Object___">JNetCoreBase&lt;T&gt;.New(String, Object[])</a>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_New_System_String_System_Object___">JNetCoreBase&lt;T&gt;.New(string, params object[])</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;T&gt;.CreateGlobalInstance()</span>
+      <span class="xref">SetupJVMWrapper&lt;T&gt;.CreateGlobalInstance()</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;T&gt;.UnwrapOn(System.Threading.ParameterizedThreadStart, System.Object, System.Threading.ApartmentState)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.parameterizedthreadstart">SetupJVMWrapper&lt;T&gt;.UnwrapOn(ParameterizedThreadStart, object, ApartmentState)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;T&gt;.UnwrapAndDemonizeOn(System.Threading.ParameterizedThreadStart, System.Object, System.Threading.ApartmentState)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.parameterizedthreadstart">SetupJVMWrapper&lt;T&gt;.UnwrapAndDemonizeOn(ParameterizedThreadStart, object, ApartmentState)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;T&gt;.HasGlobalInstance</span>
+      <span class="xref">SetupJVMWrapper&lt;T&gt;.HasGlobalInstance</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;T&gt;.GlobalInstance</span>
+      <span class="xref">SetupJVMWrapper&lt;T&gt;.GlobalInstance</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;T&gt;.ScopedOn</span>
+      <span class="xref">SetupJVMWrapper&lt;T&gt;.ScopedOn</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;T&gt;.ScopedOnVersion</span>
+      <span class="xref">SetupJVMWrapper&lt;T&gt;.ScopedOnVersion</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.Initialize()</span>
+      <span class="xref">SetupJVMWrapper.Initialize()</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.ImportPackage(System.String)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.ImportPackage(string)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.RegisterCLRGlobal(System.String, System.Object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.RegisterCLRGlobal(string, object)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.UnregisterCLRGlobal(System.String)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.UnregisterCLRGlobal(string)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.GetJVMGlobal(System.String)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.GetJVMGlobal(string)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.GetCLRGlobal(System.String)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.GetCLRGlobal(string)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.InitializeListener(MASES.JCOBridge.C2JBridge.IJVMBridgeBase)</span>
+      <span class="xref">SetupJVMWrapper.InitializeListener(IJVMBridgeBase)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.GetListener(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+      <span class="xref">SetupJVMWrapper.GetListener(IJavaObject)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.ReleaseListener(MASES.JCOBridge.C2JBridge.IJVMBridgeBase)</span>
+      <span class="xref">SetupJVMWrapper.ReleaseListener(IJVMBridgeBase)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.GetJCGraphicContainer(System.String, System.Boolean)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.GetJCGraphicContainer(string, bool)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.GetJCGraphicContainer(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject, System.Boolean)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">SetupJVMWrapper.GetJCGraphicContainer(IJavaObject, bool)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.ReleaseJCGraphicContainer(MASES.JCOBridge.C2JBridge.IJCGraphicContainer)</span>
+      <span class="xref">SetupJVMWrapper.ReleaseJCGraphicContainer(IJCGraphicContainer)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.InitializeRemote()</span>
+      <span class="xref">SetupJVMWrapper.InitializeRemote()</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.UnwrapOn&lt;T&gt;(System.Threading.ParameterizedThreadStart, System.Object, System.Threading.ApartmentState)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.parameterizedthreadstart">SetupJVMWrapper.UnwrapOn&lt;T&gt;(ParameterizedThreadStart, object, ApartmentState)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.UnwrapAndDemonizeOn&lt;T&gt;(System.Threading.ParameterizedThreadStart, System.Object, System.Threading.ApartmentState)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.parameterizedthreadstart">SetupJVMWrapper.UnwrapAndDemonizeOn&lt;T&gt;(ParameterizedThreadStart, object, ApartmentState)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.GetMainClasses(System.Reflection.Assembly)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">SetupJVMWrapper.GetMainClasses(Assembly)</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.Launch&lt;TClass&gt;(System.String[])</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.Launch&lt;TClass&gt;(params string[])</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.Launch(System.Type, System.String[])</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">SetupJVMWrapper.Launch(Type, params string[])</a>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.FilteredArgs</span>
+      <span class="xref">SetupJVMWrapper.FilteredArgs</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.IsContainer</span>
+      <span class="xref">SetupJVMWrapper.IsContainer</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.ContainerId</span>
+      <span class="xref">SetupJVMWrapper.ContainerId</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.FeatureLevel</span>
+      <span class="xref">SetupJVMWrapper.FeatureLevel</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.EnableCriticalMethods</span>
+      <span class="xref">SetupJVMWrapper.EnableCriticalMethods</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.JVM</span>
+      <span class="xref">SetupJVMWrapper.JVM</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.Management</span>
+      <span class="xref">SetupJVMWrapper.Management</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.JVMStats</span>
+      <span class="xref">SetupJVMWrapper.JVMStats</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.DynJVM</span>
+      <span class="xref">SetupJVMWrapper.DynJVM</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.RemoteBridge</span>
+      <span class="xref">SetupJVMWrapper.RemoteBridge</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.RemoteJCOBridge</span>
+      <span class="xref">SetupJVMWrapper.RemoteJCOBridge</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.ModulePath</span>
+      <span class="xref">SetupJVMWrapper.ModulePath</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.JVMPackages</span>
+      <span class="xref">SetupJVMWrapper.JVMPackages</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.SuppressFinalize</span>
+      <span class="xref">SetupJVMWrapper.SuppressFinalize</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.Globalize</span>
+      <span class="xref">SetupJVMWrapper.Globalize</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.LastBindingException</span>
+      <span class="xref">SetupJVMWrapper.LastBindingException</span>
     </div>
     <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="MASES.JNetReflector.html">MASES.JNetReflector</a></h6>
-  <h6><strong>Assembly</strong>: MASES.JNetReflector.dll</h6>
-  <h5 id="MASES_JNetReflector_JNetReflectorCore_1_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class JNetReflectorCore&lt;T&gt; : JNetCoreBase&lt;T&gt;, IJVMWrapperManagement, IJVMBridgeCore where T : JNetReflectorCore&lt;T&gt;</code></pre>
-  </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="constructors">Constructors
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1__ctor.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L365">View Source</a>
-  </span>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1__ctor_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.#ctor*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1__ctor" data-uid="MASES.JNetReflector.JNetReflectorCore`1.#ctor">JNetReflectorCore()</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1__ctor" data-uid="MASES.JNetReflector.JNetReflectorCore`1.#ctor">
+  JNetReflectorCore()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>Public ctor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public JNetReflectorCore()</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_AvoidCSharpGenericClauseDefinition.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.AvoidCSharpGenericClauseDefinition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L446">View Source</a>
-  </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_AvoidCSharpGenericClauseDefinition_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.AvoidCSharpGenericClauseDefinition*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_AvoidCSharpGenericClauseDefinition" data-uid="MASES.JNetReflector.JNetReflectorCore`1.AvoidCSharpGenericClauseDefinition">AvoidCSharpGenericClauseDefinition</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_AvoidCSharpGenericClauseDefinition" data-uid="MASES.JNetReflector.JNetReflectorCore`1.AvoidCSharpGenericClauseDefinition">
+  AvoidCSharpGenericClauseDefinition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool AvoidCSharpGenericClauseDefinition { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_AvoidCSharpGenericDefinition.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.AvoidCSharpGenericDefinition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L443">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_AvoidCSharpGenericDefinition_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.AvoidCSharpGenericDefinition*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_AvoidCSharpGenericDefinition" data-uid="MASES.JNetReflector.JNetReflectorCore`1.AvoidCSharpGenericDefinition">AvoidCSharpGenericDefinition</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_AvoidCSharpGenericDefinition" data-uid="MASES.JNetReflector.JNetReflectorCore`1.AvoidCSharpGenericDefinition">
+  AvoidCSharpGenericDefinition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool AvoidCSharpGenericDefinition { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_AvoidParallelBuild.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.AvoidParallelBuild%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L464">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_AvoidParallelBuild_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.AvoidParallelBuild*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_AvoidParallelBuild" data-uid="MASES.JNetReflector.JNetReflectorCore`1.AvoidParallelBuild">AvoidParallelBuild</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_AvoidParallelBuild" data-uid="MASES.JNetReflector.JNetReflectorCore`1.AvoidParallelBuild">
+  AvoidParallelBuild
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool AvoidParallelBuild { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_ClassesInConflict.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.ClassesInConflict%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L425">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_ClassesInConflict_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesInConflict*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesInConflict" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesInConflict">ClassesInConflict</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesInConflict" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesInConflict">
+  ClassesInConflict
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; ClassesInConflict { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_ClassesManuallyDeveloped.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.ClassesManuallyDeveloped%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L413">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_ClassesManuallyDeveloped_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesManuallyDeveloped*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesManuallyDeveloped" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesManuallyDeveloped">ClassesManuallyDeveloped</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesManuallyDeveloped" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesManuallyDeveloped">
+  ClassesManuallyDeveloped
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; ClassesManuallyDeveloped { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_ClassesToAnalyze.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.ClassesToAnalyze%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L403">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAnalyze_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAnalyze*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAnalyze" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAnalyze">ClassesToAnalyze</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAnalyze" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAnalyze">
+  ClassesToAnalyze
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; ClassesToAnalyze { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoid.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.ClassesToAvoid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L431">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoid_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAvoid*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoid" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAvoid">ClassesToAvoid</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoid" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAvoid">
+  ClassesToAvoid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; ClassesToAvoid { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoidInGenerics.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.ClassesToAvoidInGenerics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L434">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoidInGenerics_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAvoidInGenerics*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoidInGenerics" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAvoidInGenerics">ClassesToAvoidInGenerics</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoidInGenerics" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAvoidInGenerics">
+  ClassesToAvoidInGenerics
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; ClassesToAvoidInGenerics { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoidJavaListener.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.ClassesToAvoidJavaListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L419">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoidJavaListener_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAvoidJavaListener*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoidJavaListener" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAvoidJavaListener">ClassesToAvoidJavaListener</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToAvoidJavaListener" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToAvoidJavaListener">
+  ClassesToAvoidJavaListener
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; ClassesToAvoidJavaListener { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_ClassesToBeListener.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.ClassesToBeListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L416">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToBeListener_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToBeListener*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToBeListener" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToBeListener">ClassesToBeListener</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_ClassesToBeListener" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ClassesToBeListener">
+  ClassesToBeListener
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; ClassesToBeListener { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_CommandLineArguments.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.CommandLineArguments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L127">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_CommandLineArguments_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.CommandLineArguments*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_CommandLineArguments" data-uid="MASES.JNetReflector.JNetReflectorCore`1.CommandLineArguments">CommandLineArguments</h4>
-  <div class="markdown level1 summary"><p><span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span> for command line</p>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_CommandLineArguments" data-uid="MASES.JNetReflector.JNetReflectorCore`1.CommandLineArguments">
+  CommandLineArguments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> for command line</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IArgumentMetadata&gt; CommandLineArguments { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">MASES.CLIParser.IArgumentMetadata</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">MASES.JNet.JNetCoreBase&lt;T&gt;.CommandLineArguments</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_CreateInterfaceInheritance.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.CreateInterfaceInheritance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L455">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">IArgumentMetadata</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_CreateInterfaceInheritance_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.CreateInterfaceInheritance*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_CreateInterfaceInheritance" data-uid="MASES.JNetReflector.JNetReflectorCore`1.CreateInterfaceInheritance">CreateInterfaceInheritance</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_CreateInterfaceInheritance" data-uid="MASES.JNetReflector.JNetReflectorCore`1.CreateInterfaceInheritance">
+  CreateInterfaceInheritance
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool CreateInterfaceInheritance { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_DestinationCSharpClassPath.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.DestinationCSharpClassPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L388">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_DestinationCSharpClassPath_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DestinationCSharpClassPath*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_DestinationCSharpClassPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DestinationCSharpClassPath">DestinationCSharpClassPath</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_DestinationCSharpClassPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DestinationCSharpClassPath">
+  DestinationCSharpClassPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string DestinationCSharpClassPath { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_DestinationJavaListenerPath.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.DestinationJavaListenerPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L394">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_DestinationJavaListenerPath_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DestinationJavaListenerPath*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_DestinationJavaListenerPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DestinationJavaListenerPath">DestinationJavaListenerPath</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_DestinationJavaListenerPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DestinationJavaListenerPath">
+  DestinationJavaListenerPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string DestinationJavaListenerPath { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_DestinationRootPath.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.DestinationRootPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L385">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_DestinationRootPath_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DestinationRootPath*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_DestinationRootPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DestinationRootPath">DestinationRootPath</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_DestinationRootPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DestinationRootPath">
+  DestinationRootPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string DestinationRootPath { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_DisableGenerics.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.DisableGenerics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L452">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_DisableGenerics_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DisableGenerics*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_DisableGenerics" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DisableGenerics">DisableGenerics</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_DisableGenerics" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DisableGenerics">
+  DisableGenerics
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L452"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool DisableGenerics { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_DisableGenericsInNonGenericClasses.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.DisableGenericsInNonGenericClasses%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L449">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_DisableGenericsInNonGenericClasses_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DisableGenericsInNonGenericClasses*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_DisableGenericsInNonGenericClasses" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DisableGenericsInNonGenericClasses">DisableGenericsInNonGenericClasses</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_DisableGenericsInNonGenericClasses" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DisableGenericsInNonGenericClasses">
+  DisableGenericsInNonGenericClasses
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool DisableGenericsInNonGenericClasses { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_DisableInterfaceMethodGeneration.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.DisableInterfaceMethodGeneration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L458">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_DisableInterfaceMethodGeneration_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DisableInterfaceMethodGeneration*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_DisableInterfaceMethodGeneration" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DisableInterfaceMethodGeneration">DisableInterfaceMethodGeneration</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_DisableInterfaceMethodGeneration" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DisableInterfaceMethodGeneration">
+  DisableInterfaceMethodGeneration
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool DisableInterfaceMethodGeneration { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_DryRun.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.DryRun%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L467">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_DryRun_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DryRun*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_DryRun" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DryRun">DryRun</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_DryRun" data-uid="MASES.JNetReflector.JNetReflectorCore`1.DryRun">
+  DryRun
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool DryRun { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_JarsToAnalyze.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.JarsToAnalyze%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L407">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_JarsToAnalyze_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.JarsToAnalyze*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_JarsToAnalyze" data-uid="MASES.JNetReflector.JNetReflectorCore`1.JarsToAnalyze">JarsToAnalyze</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_JarsToAnalyze" data-uid="MASES.JNetReflector.JNetReflectorCore`1.JarsToAnalyze">
+  JarsToAnalyze
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; JarsToAnalyze { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_JavadocVersion.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.JavadocVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L382">View Source</a>
-  </span>
-  <a id="MASES_JNetReflector_JNetReflectorCore_1_JavadocVersion_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.JavadocVersion*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_JavadocVersion" data-uid="MASES.JNetReflector.JNetReflectorCore`1.JavadocVersion">JavadocVersion</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int JavadocVersion { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_JavaListenerBasePackage.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.JavaListenerBasePackage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L400">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_JavaListenerBasePackage_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.JavaListenerBasePackage*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_JavaListenerBasePackage" data-uid="MASES.JNetReflector.JNetReflectorCore`1.JavaListenerBasePackage">JavaListenerBasePackage</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_JavaListenerBasePackage" data-uid="MASES.JNetReflector.JNetReflectorCore`1.JavaListenerBasePackage">
+  JavaListenerBasePackage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string JavaListenerBasePackage { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_ModulesToParse.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.ModulesToParse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L410">View Source</a>
-  </span>
-  <a id="MASES_JNetReflector_JNetReflectorCore_1_ModulesToParse_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ModulesToParse*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_ModulesToParse" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ModulesToParse">ModulesToParse</h4>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNetReflector_JNetReflectorCore_1_JavadocVersion_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.JavadocVersion*"></a>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_JavadocVersion" data-uid="MASES.JNetReflector.JNetReflectorCore`1.JavadocVersion">
+  JavadocVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int JavadocVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNetReflector_JNetReflectorCore_1_ModulesToParse_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ModulesToParse*"></a>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_ModulesToParse" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ModulesToParse">
+  ModulesToParse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; ModulesToParse { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_NamespacesInConflict.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.NamespacesInConflict%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L422">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_NamespacesInConflict_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.NamespacesInConflict*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_NamespacesInConflict" data-uid="MASES.JNetReflector.JNetReflectorCore`1.NamespacesInConflict">NamespacesInConflict</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_NamespacesInConflict" data-uid="MASES.JNetReflector.JNetReflectorCore`1.NamespacesInConflict">
+  NamespacesInConflict
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; NamespacesInConflict { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_NamespacesToAvoid.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.NamespacesToAvoid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L428">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_NamespacesToAvoid_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.NamespacesToAvoid*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_NamespacesToAvoid" data-uid="MASES.JNetReflector.JNetReflectorCore`1.NamespacesToAvoid">NamespacesToAvoid</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_NamespacesToAvoid" data-uid="MASES.JNetReflector.JNetReflectorCore`1.NamespacesToAvoid">
+  NamespacesToAvoid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; NamespacesToAvoid { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_OnlyPropertiesForGetterSetter.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.OnlyPropertiesForGetterSetter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L437">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_OnlyPropertiesForGetterSetter_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OnlyPropertiesForGetterSetter*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_OnlyPropertiesForGetterSetter" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OnlyPropertiesForGetterSetter">OnlyPropertiesForGetterSetter</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_OnlyPropertiesForGetterSetter" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OnlyPropertiesForGetterSetter">
+  OnlyPropertiesForGetterSetter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L437"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool OnlyPropertiesForGetterSetter { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_Options.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L667">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_Options_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.Options*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_Options" data-uid="MASES.JNetReflector.JNetReflectorCore`1.Options">Options</h4>
-  <div class="markdown level1 summary"></div>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_Options" data-uid="MASES.JNetReflector.JNetReflectorCore`1.Options">
+  Options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L667"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds options to the JVM</p>
+</div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override IDictionary&lt;string, string&gt; Options { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">MASES.JNet.JNetCoreBase&lt;T&gt;.Options</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_OriginJavadocJARVersionAndUrls.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.OriginJavadocJARVersionAndUrls%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L379">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_OriginJavadocJARVersionAndUrls_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OriginJavadocJARVersionAndUrls*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_OriginJavadocJARVersionAndUrls" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OriginJavadocJARVersionAndUrls">OriginJavadocJARVersionAndUrls</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_OriginJavadocJARVersionAndUrls" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OriginJavadocJARVersionAndUrls">
+  OriginJavadocJARVersionAndUrls
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static IEnumerable&lt;JNetReflectorCore&lt;T&gt;.ConfigurationType.VersionUrl&gt; OriginJavadocJARVersionAndUrls { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.VersionUrl.html">JNetReflectorCore.ConfigurationType.VersionUrl</a>&lt;&gt;&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_OriginJavadocUrl.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.OriginJavadocUrl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L376">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MASES.JNetReflector.JNetReflectorCore-1.html">JNetReflectorCore</a>&lt;T&gt;.<a class="xref" href="MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.html">ConfigurationType</a>.<a class="xref" href="MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.VersionUrl.html">VersionUrl</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_OriginJavadocUrl_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OriginJavadocUrl*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_OriginJavadocUrl" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OriginJavadocUrl">OriginJavadocUrl</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_OriginJavadocUrl" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OriginJavadocUrl">
+  OriginJavadocUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string OriginJavadocUrl { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_OriginRootPath.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.OriginRootPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L373">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_OriginRootPath_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OriginRootPath*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_OriginRootPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OriginRootPath">OriginRootPath</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_OriginRootPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.OriginRootPath">
+  OriginRootPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string OriginRootPath { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_PathToParse.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.PathToParse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L670">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_PathToParse_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.PathToParse*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_PathToParse" data-uid="MASES.JNetReflector.JNetReflectorCore`1.PathToParse">PathToParse</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_PathToParse" data-uid="MASES.JNetReflector.JNetReflectorCore`1.PathToParse">
+  PathToParse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L670"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p>A list of paths to be used in initialization of JVM ClassPath</p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override IList&lt;string&gt; PathToParse { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">MASES.JNet.JNetCoreBase&lt;T&gt;.PathToParse</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_ReflectDeprecated.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.ReflectDeprecated%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L440">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_ReflectDeprecated_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ReflectDeprecated*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_ReflectDeprecated" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ReflectDeprecated">ReflectDeprecated</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_ReflectDeprecated" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ReflectDeprecated">
+  ReflectDeprecated
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool ReflectDeprecated { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_RelativeDestinationCSharpClassPath.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.RelativeDestinationCSharpClassPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L391">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_RelativeDestinationCSharpClassPath_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.RelativeDestinationCSharpClassPath*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_RelativeDestinationCSharpClassPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.RelativeDestinationCSharpClassPath">RelativeDestinationCSharpClassPath</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_RelativeDestinationCSharpClassPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.RelativeDestinationCSharpClassPath">
+  RelativeDestinationCSharpClassPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string RelativeDestinationCSharpClassPath { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_RelativeDestinationJavaListenerPath.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.RelativeDestinationJavaListenerPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L397">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_RelativeDestinationJavaListenerPath_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.RelativeDestinationJavaListenerPath*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_RelativeDestinationJavaListenerPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.RelativeDestinationJavaListenerPath">RelativeDestinationJavaListenerPath</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_RelativeDestinationJavaListenerPath" data-uid="MASES.JNetReflector.JNetReflectorCore`1.RelativeDestinationJavaListenerPath">
+  RelativeDestinationJavaListenerPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string RelativeDestinationJavaListenerPath { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_TraceLevel.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.TraceLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L473">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_TraceLevel_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.TraceLevel*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_TraceLevel" data-uid="MASES.JNetReflector.JNetReflectorCore`1.TraceLevel">TraceLevel</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_TraceLevel" data-uid="MASES.JNetReflector.JNetReflectorCore`1.TraceLevel">
+  TraceLevel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static int TraceLevel { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_TraceTo.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.TraceTo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L476">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_TraceTo_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.TraceTo*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_TraceTo" data-uid="MASES.JNetReflector.JNetReflectorCore`1.TraceTo">TraceTo</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_TraceTo" data-uid="MASES.JNetReflector.JNetReflectorCore`1.TraceTo">
+  TraceTo
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string TraceTo { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_UseCamel.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.UseCamel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L470">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_UseCamel_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.UseCamel*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_UseCamel" data-uid="MASES.JNetReflector.JNetReflectorCore`1.UseCamel">UseCamel</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_UseCamel" data-uid="MASES.JNetReflector.JNetReflectorCore`1.UseCamel">
+  UseCamel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool UseCamel { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_UseDotNetNullable.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.UseDotNetNullable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L461">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_UseDotNetNullable_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.UseDotNetNullable*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_UseDotNetNullable" data-uid="MASES.JNetReflector.JNetReflectorCore`1.UseDotNetNullable">UseDotNetNullable</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_UseDotNetNullable" data-uid="MASES.JNetReflector.JNetReflectorCore`1.UseDotNetNullable">
+  UseDotNetNullable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool UseDotNetNullable { get; }</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1_ProcessCommandLine.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601.ProcessCommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L479">View Source</a>
-  </span>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
   <a id="MASES_JNetReflector_JNetReflectorCore_1_ProcessCommandLine_" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ProcessCommandLine*"></a>
-  <h4 id="MASES_JNetReflector_JNetReflectorCore_1_ProcessCommandLine" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ProcessCommandLine">ProcessCommandLine()</h4>
+
+  <h3 id="MASES_JNetReflector_JNetReflectorCore_1_ProcessCommandLine" data-uid="MASES.JNetReflector.JNetReflectorCore`1.ProcessCommandLine">
+  ProcessCommandLine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L479"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
   <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ProcessCommandLine.htm">https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ProcessCommandLine.htm</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected override string[] ProcessCommandLine()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">MASES.JNet.JNetCoreBase&lt;T&gt;.ProcessCommandLine()</span></div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMInterop.IJVMWrapperManagement</span>
-  </div>
-  <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span>
-  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetReflector_JNetReflectorCore_1.md&amp;value=---%0Auid%3A%20MASES.JNetReflector.JNetReflectorCore%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorCore.cs/#L31" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src\net\JNetReflector\JNetReflectorCore.cs/#L31" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © 2023 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</span>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

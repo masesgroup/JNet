@@ -1,394 +1,321 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class JNetAsyncEnumerator&lt;TObject&gt;
-   | JNet website </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class JNetAsyncEnumerator&lt;TObject&gt;
-   | JNet website ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Class JNetAsyncEnumerator&lt;TObject&gt;
+ | MASES Group website - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class JNetAsyncEnumerator&lt;TObject&gt;
+ | MASES Group website - JNet ">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNet_Specific_JNetAsyncEnumerator_1.md&amp;value=---%0Auid%3A%20MASES.JNet.Specific.JNetAsyncEnumerator%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
-              </a>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1">
-  
-  
-  <h1 id="MASES_JNet_Specific_JNetAsyncEnumerator_1" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1" class="text-break">Class JNetAsyncEnumerator&lt;TObject&gt;
-  </h1>
-  <div class="markdown level0 summary"><p>An extension of <a href="https://www.jcobridge.com/api-clr/html/T_MASES_JCOBridge_C2JBridge_JVMBridgeBaseEnumerator_1.htm">https://www.jcobridge.com/api-clr/html/T_MASES_JCOBridge_C2JBridge_JVMBridgeBaseEnumerator_1.htm</a> implementing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerator-1">IAsyncEnumerator&lt;T&gt;</a> used to manage Java Iterator in async way</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator</span></div>
-    <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator</span>&lt;TObject&gt;</div>
-    <div class="level3"><span class="xref">JNetAsyncEnumerator&lt;TObject&gt;</span></div>
-  </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;TObject&gt;</div>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></div>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerator-1">IAsyncEnumerator</a>&lt;TObject&gt;</div>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator&lt;TObject&gt;.ConvertObject(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator&lt;TObject&gt;.System.Collections.Generic.IEnumerator&lt;TObject&gt;.Current</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator.Dispose(System.Boolean)</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator.MoveNext()</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator.Reset()</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator.System.Collections.IEnumerator.Current</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="MASES.JNet.Specific.html">MASES.JNet.Specific</a></h6>
-  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
-  <h5 id="MASES_JNet_Specific_JNetAsyncEnumerator_1_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class JNetAsyncEnumerator&lt;TObject&gt; : JVMBridgeBasePrefetchableEnumerator&lt;TObject&gt;, IEnumerator&lt;TObject&gt;, IDisposable, IEnumerator, IAsyncEnumerator&lt;TObject&gt;, IAsyncDisposable</code></pre>
-  </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TObject</span></td>
-        <td><p>The returning type of the iterator</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="constructors">Constructors
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNet_Specific_JNetAsyncEnumerator_1__ctor_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_MASES_JCOBridge_C2JBridge_IEnumerableExtension_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20MASES.JNet.Specific.JNetAsyncEnumerator%601.%23ctor(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject%2CMASES.JCOBridge.C2JBridge.IEnumerableExtension%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/AsyncEnumerable.cs/#L43">View Source</a>
-  </span>
-  <a id="MASES_JNet_Specific_JNetAsyncEnumerator_1__ctor_" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.#ctor*"></a>
-  <h4 id="MASES_JNet_Specific_JNetAsyncEnumerator_1__ctor_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_MASES_JCOBridge_C2JBridge_IEnumerableExtension_System_Threading_CancellationToken_" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.#ctor(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject,MASES.JCOBridge.C2JBridge.IEnumerableExtension,System.Threading.CancellationToken)">JNetAsyncEnumerator(IJavaObject, IEnumerableExtension, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Initialize a new <a class="xref" href="MASES.JNet.Specific.JNetAsyncEnumerator-1.html">JNetAsyncEnumerator&lt;TObject&gt;</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JNetAsyncEnumerator(IJavaObject refObj, IEnumerableExtension extension, CancellationToken cancellationToken)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject</span></td>
-        <td><span class="parametername">refObj</span></td>
-        <td><p>Reference to <span class="xref">MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject</span> implementing Java Iterator</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">MASES.JCOBridge.C2JBridge.IEnumerableExtension</span></td>
-        <td><span class="parametername">extension</span></td>
-        <td><p>Extension from <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable&lt;TClass&gt;</span></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to use in the iteration</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNet_Specific_JNetAsyncEnumerator_1_DoWorkCycle.md&amp;value=---%0Auid%3A%20MASES.JNet.Specific.JNetAsyncEnumerator%601.DoWorkCycle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/AsyncEnumerable.cs/#L52">View Source</a>
-  </span>
-  <a id="MASES_JNet_Specific_JNetAsyncEnumerator_1_DoWorkCycle_" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.DoWorkCycle*"></a>
-  <h4 id="MASES_JNet_Specific_JNetAsyncEnumerator_1_DoWorkCycle" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.DoWorkCycle">DoWorkCycle()</h4>
-  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_JVMBridgeBasePrefetchableEnumerator_DoWorkCycle.htm">https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_JVMBridgeBasePrefetchableEnumerator_DoWorkCycle.htm</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override bool DoWorkCycle()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator.DoWorkCycle()</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNet_Specific_JNetAsyncEnumerator_1_MoveNextAsync.md&amp;value=---%0Auid%3A%20MASES.JNet.Specific.JNetAsyncEnumerator%601.MoveNextAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/AsyncEnumerable.cs/#L72">View Source</a>
-  </span>
-  <a id="MASES_JNet_Specific_JNetAsyncEnumerator_1_MoveNextAsync_" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.MoveNextAsync*"></a>
-  <h4 id="MASES_JNet_Specific_JNetAsyncEnumerator_1_MoveNextAsync" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.MoveNextAsync">MoveNextAsync()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ValueTask&lt;bool&gt; MoveNextAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="eii">Explicit Interface Implementations
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNet_Specific_JNetAsyncEnumerator_1_System_Collections_Generic_IAsyncEnumerator_TObject__Current.md&amp;value=---%0Auid%3A%20MASES.JNet.Specific.JNetAsyncEnumerator%601.System%23Collections%23Generic%23IAsyncEnumerator%7BTObject%7D%23Current%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/AsyncEnumerable.cs/#L60">View Source</a>
-  </span>
-  <a id="MASES_JNet_Specific_JNetAsyncEnumerator_1_System_Collections_Generic_IAsyncEnumerator_TObject__Current_" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.System#Collections#Generic#IAsyncEnumerator{TObject}#Current*"></a>
-  <h4 id="MASES_JNet_Specific_JNetAsyncEnumerator_1_System_Collections_Generic_IAsyncEnumerator_TObject__Current" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.System#Collections#Generic#IAsyncEnumerator{TObject}#Current">IAsyncEnumerator&lt;TObject&gt;.Current</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">TObject IAsyncEnumerator&lt;TObject&gt;.Current { get; }</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TObject</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNet_Specific_JNetAsyncEnumerator_1_System_IAsyncDisposable_DisposeAsync.md&amp;value=---%0Auid%3A%20MASES.JNet.Specific.JNetAsyncEnumerator%601.System%23IAsyncDisposable%23DisposeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/AsyncEnumerable.cs/#L63">View Source</a>
-  </span>
-  <a id="MASES_JNet_Specific_JNetAsyncEnumerator_1_System_IAsyncDisposable_DisposeAsync_" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.System#IAsyncDisposable#DisposeAsync*"></a>
-  <h4 id="MASES_JNet_Specific_JNetAsyncEnumerator_1_System_IAsyncDisposable_DisposeAsync" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.System#IAsyncDisposable#DisposeAsync">IAsyncDisposable.DisposeAsync()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ValueTask IAsyncDisposable.DisposeAsync()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">System.Collections.Generic.IEnumerator&lt;T&gt;</a>
-  </div>
-  <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
-  </div>
-  <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">System.Collections.IEnumerator</a>
-  </div>
-  <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerator-1">System.Collections.Generic.IAsyncEnumerator&lt;T&gt;</a>
-  </div>
-  <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">System.IAsyncDisposable</a>
-  </div>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNet_Specific_JNetAsyncEnumerator_1.md&amp;value=---%0Auid%3A%20MASES.JNet.Specific.JNetAsyncEnumerator%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Specific/AsyncEnumerable.cs/#L32" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
-            
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
+
+        <article data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1">
+
+
+
+  <h1 id="MASES_JNet_Specific_JNetAsyncEnumerator_1" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1" class="text-break">
+    Class JNetAsyncEnumerator&lt;TObject&gt;
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Specific\AsyncEnumerable.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MASES.html">MASES</a>.<a class="xref" href="MASES.JNet.html">JNet</a>.<a class="xref" href="MASES.JNet.Specific.html">Specific</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An extension of <a href="https://www.jcobridge.com/api-clr/html/T_MASES_JCOBridge_C2JBridge_JVMBridgeBaseEnumerator_1.htm">https://www.jcobridge.com/api-clr/html/T_MASES_JCOBridge_C2JBridge_JVMBridgeBaseEnumerator_1.htm</a> implementing <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerator-1">IAsyncEnumerator&lt;T&gt;</a> used to manage Java Iterator in async way</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JNetAsyncEnumerator&lt;TObject&gt; : JVMBridgeBasePrefetchableEnumerator&lt;TObject&gt;, IEnumerator&lt;TObject&gt;, IDisposable, IEnumerator, IAsyncEnumerator&lt;TObject&gt;, IAsyncDisposable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TObject</code></dt>
+    <dd><p>The returning type of the iterator</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">JVMBridgeBasePrefetchableEnumerator</span></div>
+      <div><span class="xref">JVMBridgeBasePrefetchableEnumerator</span>&lt;TObject&gt;</div>
+      <div><span class="xref">JNetAsyncEnumerator&lt;TObject&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;TObject&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerator-1">IAsyncEnumerator</a>&lt;TObject&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBasePrefetchableEnumerator&lt;TObject&gt;.ConvertObject(object)</a>
     </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <div>
+      <span class="xref">JVMBridgeBasePrefetchableEnumerator.Dispose()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBasePrefetchableEnumerator.Dispose(bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBasePrefetchableEnumerator.MoveNext()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBasePrefetchableEnumerator.Reset()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MASES_JNet_Specific_JNetAsyncEnumerator_1__ctor_" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.#ctor*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetAsyncEnumerator_1__ctor_MASES_JCOBridge_C2JBridge_JVMInterop_IJavaObject_MASES_JCOBridge_C2JBridge_IEnumerableExtension_System_Threading_CancellationToken_" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.#ctor(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject,MASES.JCOBridge.C2JBridge.IEnumerableExtension,System.Threading.CancellationToken)">
+  JNetAsyncEnumerator(IJavaObject, IEnumerableExtension, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Specific\AsyncEnumerable.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initialize a new <a class="xref" href="MASES.JNet.Specific.JNetAsyncEnumerator-1.html">JNetAsyncEnumerator&lt;TObject&gt;</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JNetAsyncEnumerator(IJavaObject refObj, IEnumerableExtension extension, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refObj</code> <span class="xref">IJavaObject</span></dt>
+    <dd><p>Reference to <span class="xref">MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject</span> implementing Java Iterator</p>
+</dd>
+    <dt><code>extension</code> <span class="xref">IEnumerableExtension</span></dt>
+    <dd><p>Extension from <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable&lt;TClass&gt;</span></p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to use in the iteration</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MASES_JNet_Specific_JNetAsyncEnumerator_1_DoWorkCycle_" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.DoWorkCycle*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetAsyncEnumerator_1_DoWorkCycle" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.DoWorkCycle">
+  DoWorkCycle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Specific\AsyncEnumerable.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_JVMBridgeBasePrefetchableEnumerator_DoWorkCycle.htm">https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_JVMBridgeBasePrefetchableEnumerator_DoWorkCycle.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool DoWorkCycle()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_Specific_JNetAsyncEnumerator_1_MoveNextAsync_" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.MoveNextAsync*"></a>
+
+  <h3 id="MASES_JNet_Specific_JNetAsyncEnumerator_1_MoveNextAsync" data-uid="MASES.JNet.Specific.JNetAsyncEnumerator`1.MoveNextAsync">
+  MoveNextAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Specific\AsyncEnumerable.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Advances the enumerator asynchronously to the next element of the collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueTask&lt;bool&gt; MoveNextAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask&lt;TResult&gt;</a> that will complete with a result of <code>true</code> if the enumerator
+was successfully advanced to the next element, or <code>false</code> if the enumerator has passed the end
+of the collection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Specific\AsyncEnumerable.cs/#L32" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © 2023 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

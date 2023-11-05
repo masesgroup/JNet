@@ -1,1291 +1,954 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IJavaFileManager
-   | JNet website </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IJavaFileManager
-   | JNet website ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Interface IJavaFileManager
+ | MASES Group website - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IJavaFileManager
+ | MASES Group website - JNet ">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
-              </a>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Javax.Tools.IJavaFileManager">
-  
-  
-  <h1 id="Javax_Tools_IJavaFileManager" data-uid="Javax.Tools.IJavaFileManager" class="text-break">Interface IJavaFileManager
-  </h1>
-  <div class="markdown level0 summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Javax.Tools.html">Javax.Tools</a></h6>
-  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
-  <h5 id="Javax_Tools_IJavaFileManager_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IJavaFileManager</code></pre>
-  </div>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_Close.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.Close%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L121">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_Close_" data-uid="Javax.Tools.IJavaFileManager.Close*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_Close" data-uid="Javax.Tools.IJavaFileManager.Close">Close()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#close()">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#close()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Close()</code></pre>
-  </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_Contains_Javax_Tools_JavaFileManager_Location_Javax_Tools_FileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.Contains(Javax.Tools.JavaFileManager.Location%2CJavax.Tools.FileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L144">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_Contains_" data-uid="Javax.Tools.IJavaFileManager.Contains*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_Contains_Javax_Tools_JavaFileManager_Location_Javax_Tools_FileObject_" data-uid="Javax.Tools.IJavaFileManager.Contains(Javax.Tools.JavaFileManager.Location,Javax.Tools.FileObject)">Contains(JavaFileManager.Location, FileObject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#contains(javax.tools.JavaFileManager.Location,javax.tools.FileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#contains(javax.tools.JavaFileManager.Location,javax.tools.FileObject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Contains(JavaFileManager.Location arg0, FileObject arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_Flush.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.Flush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L127">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_Flush_" data-uid="Javax.Tools.IJavaFileManager.Flush*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_Flush" data-uid="Javax.Tools.IJavaFileManager.Flush">Flush()</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#flush()">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#flush()</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void Flush()</code></pre>
-  </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_GetClassLoader_Javax_Tools_JavaFileManager_Location_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.GetClassLoader(Javax.Tools.JavaFileManager.Location)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L60">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_GetClassLoader_" data-uid="Javax.Tools.IJavaFileManager.GetClassLoader*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_GetClassLoader_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.IJavaFileManager.GetClassLoader(Javax.Tools.JavaFileManager.Location)">GetClassLoader(JavaFileManager.Location)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getClassLoader(javax.tools.JavaFileManager.Location)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getClassLoader(javax.tools.JavaFileManager.Location)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ClassLoader GetClassLoader(JavaFileManager.Location arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
-        <td><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_GetFileForInput_Javax_Tools_JavaFileManager_Location_System_String_System_String_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.GetFileForInput(Javax.Tools.JavaFileManager.Location%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L86">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_GetFileForInput_" data-uid="Javax.Tools.IJavaFileManager.GetFileForInput*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_GetFileForInput_Javax_Tools_JavaFileManager_Location_System_String_System_String_" data-uid="Javax.Tools.IJavaFileManager.GetFileForInput(Javax.Tools.JavaFileManager.Location,System.String,System.String)">GetFileForInput(JavaFileManager.Location, String, String)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForInput(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForInput(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">FileObject GetFileForInput(JavaFileManager.Location arg0, string arg1, string arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></td>
-        <td><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_GetFileForOutput_Javax_Tools_JavaFileManager_Location_System_String_System_String_Javax_Tools_FileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.GetFileForOutput(Javax.Tools.JavaFileManager.Location%2CSystem.String%2CSystem.String%2CJavax.Tools.FileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L96">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_GetFileForOutput_" data-uid="Javax.Tools.IJavaFileManager.GetFileForOutput*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_GetFileForOutput_Javax_Tools_JavaFileManager_Location_System_String_System_String_Javax_Tools_FileObject_" data-uid="Javax.Tools.IJavaFileManager.GetFileForOutput(Javax.Tools.JavaFileManager.Location,System.String,System.String,Javax.Tools.FileObject)">GetFileForOutput(JavaFileManager.Location, String, String, FileObject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutput(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutput(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">FileObject GetFileForOutput(JavaFileManager.Location arg0, string arg1, string arg2, FileObject arg3)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></td>
-        <td><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_GetJavaFileForInput_Javax_Tools_JavaFileManager_Location_System_String_Javax_Tools_JavaFileObject_Kind_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.GetJavaFileForInput(Javax.Tools.JavaFileManager.Location%2CSystem.String%2CJavax.Tools.JavaFileObject.Kind)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L105">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_GetJavaFileForInput_" data-uid="Javax.Tools.IJavaFileManager.GetJavaFileForInput*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_GetJavaFileForInput_Javax_Tools_JavaFileManager_Location_System_String_Javax_Tools_JavaFileObject_Kind_" data-uid="Javax.Tools.IJavaFileManager.GetJavaFileForInput(Javax.Tools.JavaFileManager.Location,System.String,Javax.Tools.JavaFileObject.Kind)">GetJavaFileForInput(JavaFileManager.Location, String, JavaFileObject.Kind)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForInput(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForInput(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">JavaFileObject GetJavaFileForInput(JavaFileManager.Location arg0, string arg1, JavaFileObject.Kind arg2)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileObject.Kind.html">JavaFileObject.Kind</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileObject.Kind.html">JavaFileObject.Kind</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_GetJavaFileForOutput_Javax_Tools_JavaFileManager_Location_System_String_Javax_Tools_JavaFileObject_Kind_Javax_Tools_FileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.GetJavaFileForOutput(Javax.Tools.JavaFileManager.Location%2CSystem.String%2CJavax.Tools.JavaFileObject.Kind%2CJavax.Tools.FileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L115">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_GetJavaFileForOutput_" data-uid="Javax.Tools.IJavaFileManager.GetJavaFileForOutput*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_GetJavaFileForOutput_Javax_Tools_JavaFileManager_Location_System_String_Javax_Tools_JavaFileObject_Kind_Javax_Tools_FileObject_" data-uid="Javax.Tools.IJavaFileManager.GetJavaFileForOutput(Javax.Tools.JavaFileManager.Location,System.String,Javax.Tools.JavaFileObject.Kind,Javax.Tools.FileObject)">GetJavaFileForOutput(JavaFileManager.Location, String, JavaFileObject.Kind, FileObject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForOutput(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForOutput(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">JavaFileObject GetJavaFileForOutput(JavaFileManager.Location arg0, string arg1, JavaFileObject.Kind arg2, FileObject arg3)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileObject.Kind.html">JavaFileObject.Kind</a></td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileObject.Kind.html">JavaFileObject.Kind</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_GetLocationForModule_Javax_Tools_JavaFileManager_Location_Javax_Tools_JavaFileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.GetLocationForModule(Javax.Tools.JavaFileManager.Location%2CJavax.Tools.JavaFileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L174">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_GetLocationForModule_" data-uid="Javax.Tools.IJavaFileManager.GetLocationForModule*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_GetLocationForModule_Javax_Tools_JavaFileManager_Location_Javax_Tools_JavaFileObject_" data-uid="Javax.Tools.IJavaFileManager.GetLocationForModule(Javax.Tools.JavaFileManager.Location,Javax.Tools.JavaFileObject)">GetLocationForModule(JavaFileManager.Location, JavaFileObject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">JavaFileManager.Location GetLocationForModule(JavaFileManager.Location arg0, JavaFileObject arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_GetLocationForModule_Javax_Tools_JavaFileManager_Location_System_String_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.GetLocationForModule(Javax.Tools.JavaFileManager.Location%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L166">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_GetLocationForModule_" data-uid="Javax.Tools.IJavaFileManager.GetLocationForModule*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_GetLocationForModule_Javax_Tools_JavaFileManager_Location_System_String_" data-uid="Javax.Tools.IJavaFileManager.GetLocationForModule(Javax.Tools.JavaFileManager.Location,System.String)">GetLocationForModule(JavaFileManager.Location, String)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager.Location,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager.Location,java.lang.String)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">JavaFileManager.Location GetLocationForModule(JavaFileManager.Location arg0, string arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_GetServiceLoader__1_Javax_Tools_JavaFileManager_Location_Java_Lang_Class_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.GetServiceLoader%60%601(Javax.Tools.JavaFileManager.Location%2CJava.Lang.Class)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L136">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_GetServiceLoader_" data-uid="Javax.Tools.IJavaFileManager.GetServiceLoader*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_GetServiceLoader__1_Javax_Tools_JavaFileManager_Location_Java_Lang_Class_" data-uid="Javax.Tools.IJavaFileManager.GetServiceLoader``1(Javax.Tools.JavaFileManager.Location,Java.Lang.Class)">GetServiceLoader&lt;S&gt;(JavaFileManager.Location, Class)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getServiceLoader(javax.tools.JavaFileManager.Location,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getServiceLoader(javax.tools.JavaFileManager.Location,java.lang.Class)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ServiceLoader&lt;S&gt; GetServiceLoader&lt;S&gt;(JavaFileManager.Location arg0, Class arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Class.html">Class</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.ServiceLoader-1.html">ServiceLoader</a>&lt;S&gt;</td>
-        <td><p><a class="xref" href="Java.Util.ServiceLoader.html">ServiceLoader</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">S</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_HandleOption_System_String_Java_Util_Iterator_System_String__.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.HandleOption(System.String%2CJava.Util.Iterator%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L41">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_HandleOption_" data-uid="Javax.Tools.IJavaFileManager.HandleOption*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_HandleOption_System_String_Java_Util_Iterator_System_String__" data-uid="Javax.Tools.IJavaFileManager.HandleOption(System.String,Java.Util.Iterator{System.String})">HandleOption(String, Iterator&lt;String&gt;)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#handleOption(java.lang.String,java.util.Iterator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#handleOption(java.lang.String,java.util.Iterator)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool HandleOption(string arg0, Iterator&lt;string&gt; arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Util.Iterator-1.html">Iterator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Java.Util.Iterator.html">Iterator</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_HasLocation_Javax_Tools_JavaFileManager_Location_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.HasLocation(Javax.Tools.JavaFileManager.Location)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L47">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_HasLocation_" data-uid="Javax.Tools.IJavaFileManager.HasLocation*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_HasLocation_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.IJavaFileManager.HasLocation(Javax.Tools.JavaFileManager.Location)">HasLocation(JavaFileManager.Location)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#hasLocation(javax.tools.JavaFileManager.Location)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#hasLocation(javax.tools.JavaFileManager.Location)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool HasLocation(JavaFileManager.Location arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_InferBinaryName_Javax_Tools_JavaFileManager_Location_Javax_Tools_JavaFileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.InferBinaryName(Javax.Tools.JavaFileManager.Location%2CJavax.Tools.JavaFileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L77">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_InferBinaryName_" data-uid="Javax.Tools.IJavaFileManager.InferBinaryName*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_InferBinaryName_Javax_Tools_JavaFileManager_Location_Javax_Tools_JavaFileObject_" data-uid="Javax.Tools.IJavaFileManager.InferBinaryName(Javax.Tools.JavaFileManager.Location,Javax.Tools.JavaFileObject)">InferBinaryName(JavaFileManager.Location, JavaFileObject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferBinaryName(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferBinaryName(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string InferBinaryName(JavaFileManager.Location arg0, JavaFileObject arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_InferModuleName_Javax_Tools_JavaFileManager_Location_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.InferModuleName(Javax.Tools.JavaFileManager.Location)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L158">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_InferModuleName_" data-uid="Javax.Tools.IJavaFileManager.InferModuleName*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_InferModuleName_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.IJavaFileManager.InferModuleName(Javax.Tools.JavaFileManager.Location)">InferModuleName(JavaFileManager.Location)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferModuleName(javax.tools.JavaFileManager.Location)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferModuleName(javax.tools.JavaFileManager.Location)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string InferModuleName(JavaFileManager.Location arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_IsSameFile_Javax_Tools_FileObject_Javax_Tools_FileObject_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.IsSameFile(Javax.Tools.FileObject%2CJavax.Tools.FileObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L54">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_IsSameFile_" data-uid="Javax.Tools.IJavaFileManager.IsSameFile*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_IsSameFile_Javax_Tools_FileObject_Javax_Tools_FileObject_" data-uid="Javax.Tools.IJavaFileManager.IsSameFile(Javax.Tools.FileObject,Javax.Tools.FileObject)">IsSameFile(FileObject, FileObject)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#isSameFile(javax.tools.FileObject,javax.tools.FileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#isSameFile(javax.tools.FileObject,javax.tools.FileObject)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsSameFile(FileObject arg0, FileObject arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_List_Javax_Tools_JavaFileManager_Location_System_String_Java_Util_Set_Javax_Tools_JavaFileObject_Kind__System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.List(Javax.Tools.JavaFileManager.Location%2CSystem.String%2CJava.Util.Set%7BJavax.Tools.JavaFileObject.Kind%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L70">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_List_" data-uid="Javax.Tools.IJavaFileManager.List*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_List_Javax_Tools_JavaFileManager_Location_System_String_Java_Util_Set_Javax_Tools_JavaFileObject_Kind__System_Boolean_" data-uid="Javax.Tools.IJavaFileManager.List(Javax.Tools.JavaFileManager.Location,System.String,Java.Util.Set{Javax.Tools.JavaFileObject.Kind},System.Boolean)">List(JavaFileManager.Location, String, Set&lt;JavaFileObject.Kind&gt;, Boolean)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#list(javax.tools.JavaFileManager.Location,java.lang.String,java.util.Set,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#list(javax.tools.JavaFileManager.Location,java.lang.String,java.util.Set,boolean)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Iterable&lt;JavaFileObject&gt; List(JavaFileManager.Location arg0, string arg1, Set&lt;JavaFileObject.Kind&gt; arg2, bool arg3)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Javax.Tools.JavaFileObject.Kind.html">JavaFileObject.Kind</a>&gt;</td>
-        <td><span class="parametername">arg2</span></td>
-        <td><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">arg3</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a>&gt;</td>
-        <td><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager_ListLocationsForModules_Javax_Tools_JavaFileManager_Location_.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager.ListLocationsForModules(Javax.Tools.JavaFileManager.Location)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L151">View Source</a>
-  </span>
-  <a id="Javax_Tools_IJavaFileManager_ListLocationsForModules_" data-uid="Javax.Tools.IJavaFileManager.ListLocationsForModules*"></a>
-  <h4 id="Javax_Tools_IJavaFileManager_ListLocationsForModules_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.IJavaFileManager.ListLocationsForModules(Javax.Tools.JavaFileManager.Location)">ListLocationsForModules(JavaFileManager.Location)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#listLocationsForModules(javax.tools.JavaFileManager.Location)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#listLocationsForModules(javax.tools.JavaFileManager.Location)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Iterable&lt;Set&lt;JavaFileManager.Location&gt;&gt; ListLocationsForModules(JavaFileManager.Location arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a>&gt;&gt;</td>
-        <td><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Io.IOException.html">IOException</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Tools_IJavaFileManager.md&amp;value=---%0Auid%3A%20Javax.Tools.IJavaFileManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Tools/JavaFileManager.cs/#L32" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
-            
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="Javax.Tools.IJavaFileManager">
+
+
+
+  <h1 id="Javax_Tools_IJavaFileManager" data-uid="Javax.Tools.IJavaFileManager" class="text-break">
+    Interface IJavaFileManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Javax.html">Javax</a>.<a class="xref" href="Javax.Tools.html">Tools</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IJavaFileManager</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Javax_Tools_IJavaFileManager_Close_" data-uid="Javax.Tools.IJavaFileManager.Close*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_Close" data-uid="Javax.Tools.IJavaFileManager.Close">
+  Close()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#close()">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#close()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_Contains_" data-uid="Javax.Tools.IJavaFileManager.Contains*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_Contains_Javax_Tools_JavaFileManager_Location_Javax_Tools_FileObject_" data-uid="Javax.Tools.IJavaFileManager.Contains(Javax.Tools.JavaFileManager.Location,Javax.Tools.FileObject)">
+  Contains(Location, FileObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#contains(javax.tools.JavaFileManager.Location,javax.tools.FileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#contains(javax.tools.JavaFileManager.Location,javax.tools.FileObject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Contains(JavaFileManager.Location arg0, FileObject arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_Flush_" data-uid="Javax.Tools.IJavaFileManager.Flush*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_Flush" data-uid="Javax.Tools.IJavaFileManager.Flush">
+  Flush()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#flush()">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#flush()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Flush()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_GetClassLoader_" data-uid="Javax.Tools.IJavaFileManager.GetClassLoader*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_GetClassLoader_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.IJavaFileManager.GetClassLoader(Javax.Tools.JavaFileManager.Location)">
+  GetClassLoader(Location)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getClassLoader(javax.tools.JavaFileManager.Location)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getClassLoader(javax.tools.JavaFileManager.Location)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ClassLoader GetClassLoader(JavaFileManager.Location arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_GetFileForInput_" data-uid="Javax.Tools.IJavaFileManager.GetFileForInput*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_GetFileForInput_Javax_Tools_JavaFileManager_Location_System_String_System_String_" data-uid="Javax.Tools.IJavaFileManager.GetFileForInput(Javax.Tools.JavaFileManager.Location,System.String,System.String)">
+  GetFileForInput(Location, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForInput(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForInput(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileObject GetFileForInput(JavaFileManager.Location arg0, string arg1, string arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_GetFileForOutput_" data-uid="Javax.Tools.IJavaFileManager.GetFileForOutput*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_GetFileForOutput_Javax_Tools_JavaFileManager_Location_System_String_System_String_Javax_Tools_FileObject_" data-uid="Javax.Tools.IJavaFileManager.GetFileForOutput(Javax.Tools.JavaFileManager.Location,System.String,System.String,Javax.Tools.FileObject)">
+  GetFileForOutput(Location, string, string, FileObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutput(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getFileForOutput(javax.tools.JavaFileManager.Location,java.lang.String,java.lang.String,javax.tools.FileObject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FileObject GetFileForOutput(JavaFileManager.Location arg0, string arg1, string arg2, FileObject arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_GetJavaFileForInput_" data-uid="Javax.Tools.IJavaFileManager.GetJavaFileForInput*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_GetJavaFileForInput_Javax_Tools_JavaFileManager_Location_System_String_Javax_Tools_JavaFileObject_Kind_" data-uid="Javax.Tools.IJavaFileManager.GetJavaFileForInput(Javax.Tools.JavaFileManager.Location,System.String,Javax.Tools.JavaFileObject.Kind)">
+  GetJavaFileForInput(Location, string, Kind)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForInput(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForInput(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">JavaFileObject GetJavaFileForInput(JavaFileManager.Location arg0, string arg1, JavaFileObject.Kind arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a>.<a class="xref" href="Javax.Tools.JavaFileObject.Kind.html">Kind</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileObject.Kind.html">JavaFileObject.Kind</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_GetJavaFileForOutput_" data-uid="Javax.Tools.IJavaFileManager.GetJavaFileForOutput*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_GetJavaFileForOutput_Javax_Tools_JavaFileManager_Location_System_String_Javax_Tools_JavaFileObject_Kind_Javax_Tools_FileObject_" data-uid="Javax.Tools.IJavaFileManager.GetJavaFileForOutput(Javax.Tools.JavaFileManager.Location,System.String,Javax.Tools.JavaFileObject.Kind,Javax.Tools.FileObject)">
+  GetJavaFileForOutput(Location, string, Kind, FileObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForOutput(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getJavaFileForOutput(javax.tools.JavaFileManager.Location,java.lang.String,javax.tools.JavaFileObject.Kind,javax.tools.FileObject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">JavaFileObject GetJavaFileForOutput(JavaFileManager.Location arg0, string arg1, JavaFileObject.Kind arg2, FileObject arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a>.<a class="xref" href="Javax.Tools.JavaFileObject.Kind.html">Kind</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileObject.Kind.html">JavaFileObject.Kind</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_GetLocationForModule_" data-uid="Javax.Tools.IJavaFileManager.GetLocationForModule*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_GetLocationForModule_Javax_Tools_JavaFileManager_Location_Javax_Tools_JavaFileObject_" data-uid="Javax.Tools.IJavaFileManager.GetLocationForModule(Javax.Tools.JavaFileManager.Location,Javax.Tools.JavaFileObject)">
+  GetLocationForModule(Location, JavaFileObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">JavaFileManager.Location GetLocationForModule(JavaFileManager.Location arg0, JavaFileObject arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_GetLocationForModule_" data-uid="Javax.Tools.IJavaFileManager.GetLocationForModule*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_GetLocationForModule_Javax_Tools_JavaFileManager_Location_System_String_" data-uid="Javax.Tools.IJavaFileManager.GetLocationForModule(Javax.Tools.JavaFileManager.Location,System.String)">
+  GetLocationForModule(Location, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager.Location,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getLocationForModule(javax.tools.JavaFileManager.Location,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">JavaFileManager.Location GetLocationForModule(JavaFileManager.Location arg0, string arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_GetServiceLoader_" data-uid="Javax.Tools.IJavaFileManager.GetServiceLoader*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_GetServiceLoader__1_Javax_Tools_JavaFileManager_Location_Java_Lang_Class_" data-uid="Javax.Tools.IJavaFileManager.GetServiceLoader``1(Javax.Tools.JavaFileManager.Location,Java.Lang.Class)">
+  GetServiceLoader&lt;S&gt;(Location, Class)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getServiceLoader(javax.tools.JavaFileManager.Location,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#getServiceLoader(javax.tools.JavaFileManager.Location,java.lang.Class)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ServiceLoader&lt;S&gt; GetServiceLoader&lt;S&gt;(JavaFileManager.Location arg0, Class arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.Class.html">Class</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.Class.html">Class</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.ServiceLoader-1.html">ServiceLoader</a>&lt;S&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.ServiceLoader.html">ServiceLoader</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>S</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_HandleOption_" data-uid="Javax.Tools.IJavaFileManager.HandleOption*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_HandleOption_System_String_Java_Util_Iterator_System_String__" data-uid="Javax.Tools.IJavaFileManager.HandleOption(System.String,Java.Util.Iterator{System.String})">
+  HandleOption(string, Iterator&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#handleOption(java.lang.String,java.util.Iterator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#handleOption(java.lang.String,java.util.Iterator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HandleOption(string arg0, Iterator&lt;string&gt; arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Iterator-1.html">Iterator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Iterator.html">Iterator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_HasLocation_" data-uid="Javax.Tools.IJavaFileManager.HasLocation*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_HasLocation_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.IJavaFileManager.HasLocation(Javax.Tools.JavaFileManager.Location)">
+  HasLocation(Location)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#hasLocation(javax.tools.JavaFileManager.Location)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#hasLocation(javax.tools.JavaFileManager.Location)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasLocation(JavaFileManager.Location arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_InferBinaryName_" data-uid="Javax.Tools.IJavaFileManager.InferBinaryName*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_InferBinaryName_Javax_Tools_JavaFileManager_Location_Javax_Tools_JavaFileObject_" data-uid="Javax.Tools.IJavaFileManager.InferBinaryName(Javax.Tools.JavaFileManager.Location,Javax.Tools.JavaFileObject)">
+  InferBinaryName(Location, JavaFileObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferBinaryName(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferBinaryName(javax.tools.JavaFileManager.Location,javax.tools.JavaFileObject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string InferBinaryName(JavaFileManager.Location arg0, JavaFileObject arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_InferModuleName_" data-uid="Javax.Tools.IJavaFileManager.InferModuleName*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_InferModuleName_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.IJavaFileManager.InferModuleName(Javax.Tools.JavaFileManager.Location)">
+  InferModuleName(Location)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferModuleName(javax.tools.JavaFileManager.Location)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#inferModuleName(javax.tools.JavaFileManager.Location)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string InferModuleName(JavaFileManager.Location arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_IsSameFile_" data-uid="Javax.Tools.IJavaFileManager.IsSameFile*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_IsSameFile_Javax_Tools_FileObject_Javax_Tools_FileObject_" data-uid="Javax.Tools.IJavaFileManager.IsSameFile(Javax.Tools.FileObject,Javax.Tools.FileObject)">
+  IsSameFile(FileObject, FileObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#isSameFile(javax.tools.FileObject,javax.tools.FileObject)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#isSameFile(javax.tools.FileObject,javax.tools.FileObject)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSameFile(FileObject arg0, FileObject arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.FileObject.html">FileObject</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_List_" data-uid="Javax.Tools.IJavaFileManager.List*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_List_Javax_Tools_JavaFileManager_Location_System_String_Java_Util_Set_Javax_Tools_JavaFileObject_Kind__System_Boolean_" data-uid="Javax.Tools.IJavaFileManager.List(Javax.Tools.JavaFileManager.Location,System.String,Java.Util.Set{Javax.Tools.JavaFileObject.Kind},System.Boolean)">
+  List(Location, string, Set&lt;Kind&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#list(javax.tools.JavaFileManager.Location,java.lang.String,java.util.Set,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#list(javax.tools.JavaFileManager.Location,java.lang.String,java.util.Set,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Iterable&lt;JavaFileObject&gt; List(JavaFileManager.Location arg0, string arg1, Set&lt;JavaFileObject.Kind&gt; arg2, bool arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a>.<a class="xref" href="Javax.Tools.JavaFileObject.Kind.html">Kind</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Javax.Tools.JavaFileObject.html">JavaFileObject</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Tools_IJavaFileManager_ListLocationsForModules_" data-uid="Javax.Tools.IJavaFileManager.ListLocationsForModules*"></a>
+
+  <h3 id="Javax_Tools_IJavaFileManager_ListLocationsForModules_Javax_Tools_JavaFileManager_Location_" data-uid="Javax.Tools.IJavaFileManager.ListLocationsForModules(Javax.Tools.JavaFileManager.Location)">
+  ListLocationsForModules(Location)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#listLocationsForModules(javax.tools.JavaFileManager.Location)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileManager.html#listLocationsForModules(javax.tools.JavaFileManager.Location)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Iterable&lt;Set&lt;JavaFileManager.Location&gt;&gt; ListLocationsForModules(JavaFileManager.Location arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Javax.Tools.JavaFileManager.Location.html">JavaFileManager.Location</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Javax.Tools.JavaFileManager.html">JavaFileManager</a>.<a class="xref" href="Javax.Tools.JavaFileManager.Location.html">Location</a>&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Tools\JavaFileManager.cs/#L32" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © 2023 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,1055 +1,828 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IAnnotationValueVisitor&lt;R, P&gt;
-   | JNet website </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IAnnotationValueVisitor&lt;R, P&gt;
-   | JNet website ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
+      <title>Interface IAnnotationValueVisitor&lt;R, P&gt;
+ | MASES Group website - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IAnnotationValueVisitor&lt;R, P&gt;
+ | MASES Group website - JNet ">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
-              </a>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
             </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
           </div>
         </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2">
-  
-  
-  <h1 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2" class="text-break">Interface IAnnotationValueVisitor&lt;R, P&gt;
-  </h1>
-  <div class="markdown level0 summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Javax.Lang.Model.Element.html">Javax.Lang.Model.Element</a></h6>
-  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
-  <h5 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IAnnotationValueVisitor&lt;R, P&gt;</code></pre>
-  </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">R</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">P</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_Visit_Javax_Lang_Model_Element_AnnotationValue_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.Visit(Javax.Lang.Model.Element.AnnotationValue)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L336">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_Visit_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.Visit*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_Visit_Javax_Lang_Model_Element_AnnotationValue_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.Visit(Javax.Lang.Model.Element.AnnotationValue)">Visit(AnnotationValue)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R Visit(AnnotationValue arg0)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_Visit_Javax_Lang_Model_Element_AnnotationValue__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.Visit(Javax.Lang.Model.Element.AnnotationValue%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L231">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_Visit_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.Visit*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_Visit_Javax_Lang_Model_Element_AnnotationValue__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.Visit(Javax.Lang.Model.Element.AnnotationValue,`1)">Visit(AnnotationValue, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R Visit(AnnotationValue arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitAnnotation_Javax_Lang_Model_Element_AnnotationMirror__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitAnnotation(Javax.Lang.Model.Element.AnnotationMirror%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L238">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitAnnotation_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitAnnotation*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitAnnotation_Javax_Lang_Model_Element_AnnotationMirror__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitAnnotation(Javax.Lang.Model.Element.AnnotationMirror,`1)">VisitAnnotation(AnnotationMirror, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitAnnotation(javax.lang.model.element.AnnotationMirror,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitAnnotation(javax.lang.model.element.AnnotationMirror,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitAnnotation(AnnotationMirror arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Lang.Model.Element.AnnotationMirror.html">AnnotationMirror</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationMirror.html">AnnotationMirror</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitArray__1_Java_Util_List___0___1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitArray%60%601(Java.Util.List%7B%60%600%7D%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L246">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitArray_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitArray*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitArray__1_Java_Util_List___0___1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitArray``1(Java.Util.List{``0},`1)">VisitArray&lt;Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue&gt;(List&lt;Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue&gt;, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitArray(java.util.List,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitArray(java.util.List,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitArray&lt;Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue&gt;(List&lt;Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue&gt; arg0, P arg1)
-    where Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue : AnnotationValue</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Java.Util.List-1.html">List</a>&lt;Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue&gt;</td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Java.Util.List.html">List</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitBoolean_System_Boolean__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitBoolean(System.Boolean%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L253">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitBoolean_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitBoolean*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitBoolean_System_Boolean__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitBoolean(System.Boolean,`1)">VisitBoolean(Boolean, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitBoolean(boolean,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitBoolean(boolean,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitBoolean(bool arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitByte_System_Byte__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitByte(System.Byte%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L260">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitByte_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitByte*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitByte_System_Byte__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitByte(System.Byte,`1)">VisitByte(Byte, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitByte(byte,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitByte(byte,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitByte(byte arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">Byte</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitChar_System_Char__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitChar(System.Char%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L267">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitChar_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitChar*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitChar_System_Char__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitChar(System.Char,`1)">VisitChar(Char, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitChar(char,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitChar(char,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitChar(char arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">Char</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">Char</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitDouble_System_Double__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitDouble(System.Double%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L274">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitDouble_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitDouble*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitDouble_System_Double__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitDouble(System.Double,`1)">VisitDouble(Double, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitDouble(double,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitDouble(double,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitDouble(double arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitEnumConstant_Javax_Lang_Model_Element_VariableElement__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitEnumConstant(Javax.Lang.Model.Element.VariableElement%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L281">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitEnumConstant_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitEnumConstant*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitEnumConstant_Javax_Lang_Model_Element_VariableElement__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitEnumConstant(Javax.Lang.Model.Element.VariableElement,`1)">VisitEnumConstant(VariableElement, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitEnumConstant(javax.lang.model.element.VariableElement,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitEnumConstant(javax.lang.model.element.VariableElement,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitEnumConstant(VariableElement arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Lang.Model.Element.VariableElement.html">VariableElement</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Element.VariableElement.html">VariableElement</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitFloat_System_Single__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitFloat(System.Single%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L288">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitFloat_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitFloat*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitFloat_System_Single__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitFloat(System.Single,`1)">VisitFloat(Single, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitFloat(float,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitFloat(float,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitFloat(float arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitInt_System_Int32__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitInt(System.Int32%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L295">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitInt_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitInt*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitInt_System_Int32__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitInt(System.Int32,`1)">VisitInt(Int32, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitInt(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitInt(int,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitInt(int arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitLong_System_Int64__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitLong(System.Int64%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L302">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitLong_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitLong*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitLong_System_Int64__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitLong(System.Int64,`1)">VisitLong(Int64, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitLong(long,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitLong(long,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitLong(long arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitShort_System_Int16__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitShort(System.Int16%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L309">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitShort_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitShort*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitShort_System_Int16__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitShort(System.Int16,`1)">VisitShort(Int16, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitShort(short,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitShort(short,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitShort(short arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitString_System_String__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitString(System.String%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L316">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitString_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitString*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitString_System_String__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitString(System.String,`1)">VisitString(String, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitString(java.lang.String,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitString(java.lang.String,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitString(string arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitType_Javax_Lang_Model_Type_TypeMirror__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitType(Javax.Lang.Model.Type.TypeMirror%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L323">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitType_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitType*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitType_Javax_Lang_Model_Type_TypeMirror__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitType(Javax.Lang.Model.Type.TypeMirror,`1)">VisitType(TypeMirror, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitType(javax.lang.model.type.TypeMirror,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitType(javax.lang.model.type.TypeMirror,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitType(TypeMirror arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Lang.Model.Type.TypeMirror.html">TypeMirror</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Type.TypeMirror.html">TypeMirror</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitUnknown_Javax_Lang_Model_Element_AnnotationValue__1_.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602.VisitUnknown(Javax.Lang.Model.Element.AnnotationValue%2C%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L330">View Source</a>
-  </span>
-  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitUnknown_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitUnknown*"></a>
-  <h4 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitUnknown_Javax_Lang_Model_Element_AnnotationValue__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitUnknown(Javax.Lang.Model.Element.AnnotationValue,`1)">VisitUnknown(AnnotationValue, P)</h4>
-  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitUnknown(javax.lang.model.element.AnnotationValue,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitUnknown(javax.lang.model.element.AnnotationValue,java.lang.Object)</a></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">R VisitUnknown(AnnotationValue arg0, P arg1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></td>
-        <td><span class="parametername">arg0</span></td>
-        <td><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">P</span></td>
-        <td><span class="parametername">arg1</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">P</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">R</span></td>
-        <td><p><code data-dev-comment-type="typeparamref" class="typeparamref">R</code></p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Lang_Model_Element_IAnnotationValueVisitor_2.md&amp;value=---%0Auid%3A%20Javax.Lang.Model.Element.IAnnotationValueVisitor%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L222" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
-            
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+
+        <article data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2">
+
+
+
+  <h1 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2" class="text-break">
+    Interface IAnnotationValueVisitor&lt;R, P&gt;
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Javax.html">Javax</a>.<a class="xref" href="Javax.Lang.html">Lang</a>.<a class="xref" href="Javax.Lang.Model.html">Model</a>.<a class="xref" href="Javax.Lang.Model.Element.html">Element</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNet.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>.NET interface for TO BE DEFINED FROM USER</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAnnotationValueVisitor&lt;R, P&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>R</code></dt>
+    <dd></dd>
+    <dt><code>P</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_Visit_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.Visit*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_Visit_Javax_Lang_Model_Element_AnnotationValue_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.Visit(Javax.Lang.Model.Element.AnnotationValue)">
+  Visit(AnnotationValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R Visit(AnnotationValue arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_Visit_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.Visit*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_Visit_Javax_Lang_Model_Element_AnnotationValue__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.Visit(Javax.Lang.Model.Element.AnnotationValue,`1)">
+  Visit(AnnotationValue, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R Visit(AnnotationValue arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitAnnotation_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitAnnotation*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitAnnotation_Javax_Lang_Model_Element_AnnotationMirror__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitAnnotation(Javax.Lang.Model.Element.AnnotationMirror,`1)">
+  VisitAnnotation(AnnotationMirror, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitAnnotation(javax.lang.model.element.AnnotationMirror,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitAnnotation(javax.lang.model.element.AnnotationMirror,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitAnnotation(AnnotationMirror arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Lang.Model.Element.AnnotationMirror.html">AnnotationMirror</a></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationMirror.html">AnnotationMirror</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitArray_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitArray*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitArray__1_Java_Util_List___0___1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitArray``1(Java.Util.List{``0},`1)">
+  VisitArray&lt;Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue&gt;(List&lt;Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue&gt;, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitArray(java.util.List,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitArray(java.util.List,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitArray&lt;Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue&gt;(List&lt;Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue&gt; arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue : AnnotationValue</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsJavax_Lang_Model_Element_AnnotationValue</code></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitBoolean_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitBoolean*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitBoolean_System_Boolean__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitBoolean(System.Boolean,`1)">
+  VisitBoolean(bool, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitBoolean(boolean,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitBoolean(boolean,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitBoolean(bool arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitByte_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitByte*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitByte_System_Byte__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitByte(System.Byte,`1)">
+  VisitByte(byte, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitByte(byte,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitByte(byte,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitByte(byte arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitChar_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitChar*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitChar_System_Char__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitChar(System.Char,`1)">
+  VisitChar(char, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitChar(char,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitChar(char,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitChar(char arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitDouble_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitDouble*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitDouble_System_Double__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitDouble(System.Double,`1)">
+  VisitDouble(double, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitDouble(double,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitDouble(double,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitDouble(double arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitEnumConstant_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitEnumConstant*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitEnumConstant_Javax_Lang_Model_Element_VariableElement__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitEnumConstant(Javax.Lang.Model.Element.VariableElement,`1)">
+  VisitEnumConstant(VariableElement, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitEnumConstant(javax.lang.model.element.VariableElement,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitEnumConstant(javax.lang.model.element.VariableElement,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitEnumConstant(VariableElement arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Lang.Model.Element.VariableElement.html">VariableElement</a></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Element.VariableElement.html">VariableElement</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitFloat_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitFloat*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitFloat_System_Single__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitFloat(System.Single,`1)">
+  VisitFloat(float, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitFloat(float,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitFloat(float,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitFloat(float arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitInt_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitInt*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitInt_System_Int32__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitInt(System.Int32,`1)">
+  VisitInt(int, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitInt(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitInt(int,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitInt(int arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitLong_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitLong*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitLong_System_Int64__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitLong(System.Int64,`1)">
+  VisitLong(long, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitLong(long,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitLong(long,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitLong(long arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitShort_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitShort*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitShort_System_Int16__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitShort(System.Int16,`1)">
+  VisitShort(short, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitShort(short,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitShort(short,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitShort(short arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitString_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitString*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitString_System_String__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitString(System.String,`1)">
+  VisitString(string, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitString(java.lang.String,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitString(java.lang.String,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitString(string arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitType_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitType*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitType_Javax_Lang_Model_Type_TypeMirror__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitType(Javax.Lang.Model.Type.TypeMirror,`1)">
+  VisitType(TypeMirror, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitType(javax.lang.model.type.TypeMirror,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitType(javax.lang.model.type.TypeMirror,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitType(TypeMirror arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Lang.Model.Type.TypeMirror.html">TypeMirror</a></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Type.TypeMirror.html">TypeMirror</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitUnknown_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitUnknown*"></a>
+
+  <h3 id="Javax_Lang_Model_Element_IAnnotationValueVisitor_2_VisitUnknown_Javax_Lang_Model_Element_AnnotationValue__1_" data-uid="Javax.Lang.Model.Element.IAnnotationValueVisitor`2.VisitUnknown(Javax.Lang.Model.Element.AnnotationValue,`1)">
+  VisitUnknown(AnnotationValue, P)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitUnknown(javax.lang.model.element.AnnotationValue,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitUnknown(javax.lang.model.element.AnnotationValue,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">R VisitUnknown(AnnotationValue arg0, P arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></dt>
+    <dd><p><a class="xref" href="Javax.Lang.Model.Element.AnnotationValue.html">AnnotationValue</a></p>
+</dd>
+    <dt><code>arg1</code> <span class="xref">P</span></dt>
+    <dd><p><code class="typeparamref">P</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src\net\JNet\Generated\Javax\Lang\Model\Element\AnnotationValueVisitor.cs/#L222" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Copyright © 2023 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
