@@ -68,7 +68,7 @@ The options used are:
 ```json
 {
   "RelativeDestinationCSharpClassPath": "net\\JNet\\Generated",
-  "RelativeDestinationJavaListenerPath": "java\\jnet\\src\\main\\java",
+  "RelativeDestinationJavaListenerPath": "jvm\\jnet\\src\\main\\java",
   "JavaListenerBasePackage": "org.mases.jnet.generated",
   "OnlyPropertiesForGetterSetter": true,
   "ModulesToParse": [

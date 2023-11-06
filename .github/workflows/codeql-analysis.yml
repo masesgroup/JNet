@@ -118,11 +118,11 @@ jobs:
 
     - name: Maven preparation (step 2)
       if: matrix.language == 'java' 
-      run: mvn install:install-file -DgroupId=JCOBridge -DartifactId=JCOBridge -Dversion=2.5.8 -Dpackaging=jar -Dfile=../../../bin/net6.0/JCOBridge.jar -f ./src/java/jnet/pom.xml
+      run: mvn install:install-file -DgroupId=JCOBridge -DartifactId=JCOBridge -Dversion=2.5.8 -Dpackaging=jar -Dfile=../../../bin/net6.0/JCOBridge.jar -f ./src/jvm/jnet/pom.xml
       shell: bash
 
     - if: matrix.language == 'java' 
-      run: mvn --file ./src/java/jnet/pom.xml --no-transfer-progress package
+      run: mvn --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
