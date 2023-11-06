@@ -14,7 +14,7 @@ The project is organized in this folder structure:
 
 * **docs** (website)
 * **src**
-	* **java**
+	* **jvm**
 		* **jnet**: contains the JVM side implementation of some classes managed from .NET side; it is structured as a complete Maven project
 	* **net**
 		* **JNet**: The folder containing the source and project of the files ported on .NET
@@ -24,9 +24,12 @@ The project is organized in this folder structure:
 		* **JNetReflector**: The folder containing the source and project of the JVM class reflector, the tool to generate .NET classes to interact with JVM counterpart
 		* **templates**: The folder containing the source and project to generate the NuGet template package
 * **tests**
-	* **JNetTest**: The folder containing the source and project of the JNet test
-	* **JNetWinFormsTest**: The folder containing the source and project of the JNet test for WinForms
-	* **JNetWPFTest**: The folder containing the source and project of the JNet test for WPF
+	* **jvm**
+		* **testclass**: contains a JVM test project
+	* **net**
+	  * **JNetTest**: The folder containing the source and project of the JNet test
+	  * **JNetWinFormsTest**: The folder containing the source and project of the JNet test for WinForms
+	  * **JNetWPFTest**: The folder containing the source and project of the JNet test for WPF
 	
 # How Can I Contribute?
 
