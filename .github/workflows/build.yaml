@@ -36,7 +36,7 @@ jobs:
                 echo "run_build_windows=true" >> $GITHUB_OUTPUT
                 break
               fi
-              if [[ $added_modified_file == "Dockerfile.linux"* ]]; then
+              if [[ $added_modified_file == "src/container/Dockerfile.linux"* ]]; then
                 echo "$added_modified_file file changed"
                 echo "run_build_windows=true" >> $GITHUB_OUTPUT
                 break
@@ -84,7 +84,7 @@ jobs:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
         
       - name: Build Docker Image
-        run: docker build -t mases.jnet -f Dockerfile.linux .
+        run: docker build -t mases.jnet -f ./src/container/Dockerfile.linux .
         
       - name: Save Docker Image
         run: docker image save -o mases.jnet.linux.tar mases.jnet

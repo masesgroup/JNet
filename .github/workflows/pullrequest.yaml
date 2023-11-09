@@ -29,7 +29,7 @@ jobs:
                 echo "run_build_windows=true" >> $GITHUB_OUTPUT
                 break
               fi
-              if [[ $added_modified_file == "Dockerfile.linux"* ]]; then
+              if [[ $added_modified_file == "src/container/Dockerfile.linux"* ]]; then
                 echo "$added_modified_file file changed"
                 echo "run_build_windows=true" >> $GITHUB_OUTPUT
                 break
@@ -77,7 +77,7 @@ jobs:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
         
       - name: Build Docker Image
-        run: docker build -t mases.jnet -f Dockerfile.linux .
+        run: docker build -t mases.jnet -f ./src/container/Dockerfile.linux .
         
   # This workflow contains a single job called "build_release"
   build_pullrequest:
