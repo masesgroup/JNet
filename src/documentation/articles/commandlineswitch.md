@@ -1,3 +1,8 @@
+---
+title: Command-line switch of Java/JVM suite for .NET
+_description: Describes the command-line switch of Java/JVM suite for .NET
+---
+
 # JNet: Command line switches available
 
 _jnet_ accepts the following command-line switches:

@@ -1,3 +1,8 @@
+---
+title: Usage Java/JVM suite for .NET
+_description: Describes how to use JNet, set-up environment, identify the JVM and write good code
+---
+
 # JNet usage
 
 To use JNet classes the developer can write code in .NET using the same classes available in the official Java packages.

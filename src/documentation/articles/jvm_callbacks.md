@@ -1,3 +1,8 @@
+---
+title: JVM callbacks within JNet powered code
+_description: Describes how to manage callbacks from JVM using the Java/JVM suite for .NET
+---
+
 # JNet: JVM callbacks
 
 One of the features of [JCOBridge](https://www.jcobridge.com/), used in JNet, is the callback management from JVM.

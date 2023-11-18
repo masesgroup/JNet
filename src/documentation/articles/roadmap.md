@@ -1,3 +1,8 @@
+---
+title: Roadmap of Java/JVM suite for .NET
+_description: Describes the current roadmap of Java/JVM suite for .NET
+---
+
 # JNet roadmap
 
 The roadmap can be synthetized in the following points:
