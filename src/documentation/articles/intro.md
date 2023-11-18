@@ -1,3 +1,8 @@
+---
+title: Introduction to Java/JVM suite for .NET
+_description: Introduction to Java/JVM suite for .NET
+---
+
 # JNet: Java/JVM suite for .NET
 
 JNet is a comprehensive suite of libraries and tools to use Java/JVM APIs (Java, Scala, Kotlin, ...) and .NET side-by-side.

@@ -1,3 +1,8 @@
+---
+title: JNetReflector tool of Java/JVM suite for .NET
+_description: Describes JNetReflector: the tool to build .NET classes analyzing JVM Jar or modules
+---
+
 # JNet: Reflector
 
 The tool is able to build .NET classes which reproduce the JVM class (Java, Scala, Kotlin, ...) counterpart.

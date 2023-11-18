@@ -1,3 +1,8 @@
+---
+title: JNet PowerShell module of Java/JVM suite for .NET
+_description: Describes JNet PowerShell module: the PowerShell module to use Java/JVM classes from any PowerShell shell
+---
+
 # JNet: PowerShell Module
 
 ## Installation

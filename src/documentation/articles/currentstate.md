@@ -1,3 +1,8 @@
+---
+title: Current state of Java/JVM suite for .NET
+_description: Describes the current development state of Java/JVM suite for .NET
+---
+
 # JNet development state
 
 This release comes with some ready made classes:

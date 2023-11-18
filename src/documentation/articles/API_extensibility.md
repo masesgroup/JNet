@@ -1,3 +1,8 @@
+---
+title: APIs extendibility of Java/JVM suite for .NET
+_description: Describes how to extend available APIs with Java/JVM suite for .NET
+---
+
 # JNet: APIs extendibility
 
 What to do if an API was not yet implemented? The simplest answer is: help us to make this product reacher :smile:
