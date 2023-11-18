@@ -52842,6 +52842,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-yaml-header"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/usageCLI.md",
       "output": {
@@ -52852,6 +52855,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-yaml-header"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/usagePS.md",
       "output": {
@@ -52862,6 +52868,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-yaml-header"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/usageReflector.md",
       "output": {
