@@ -41,7 +41,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
 		<jnetversion>2.0.2.0</jnetversion>
-		<jcobridgeversion>2.5.8</jcobridgeversion>
+		<jcobridgeversion>2.5.9</jcobridgeversion>
     </properties>
     <distributionManagement>
         <snapshotRepository>
@@ -133,7 +133,7 @@
                 <configuration>
                     <compilerArgs>
                         <arg>-cp</arg>
-                        <arg>${originalClassPath}${path.separator}${basedir}/../../../bin/net6.0/JCOBridge.jar</arg>
+                        <arg>${originalClassPath}${path.separator}${basedir}/../../../bin/net8.0/JCOBridge.jar</arg>
                     </compilerArgs>
                     <source>11</source>
                     <target>11</target>

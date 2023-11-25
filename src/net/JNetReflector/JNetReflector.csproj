@@ -147,12 +147,12 @@
     <EmbeddedResource Include="Templates\AllPackageClasses.template" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MASES.CLIParser" Version="3.1.2" />
-	<PackageReference Include="MASES.JCOBridge" Version="2.5.8">
+    <PackageReference Include="MASES.CLIParser" Version="3.2.0" />
+	<PackageReference Include="MASES.JCOBridge" Version="2.5.9">
 		<IncludeAssets>All</IncludeAssets>
 		<PrivateAssets>None</PrivateAssets>
 	</PackageReference>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Java\Lang\Annotation\" />
