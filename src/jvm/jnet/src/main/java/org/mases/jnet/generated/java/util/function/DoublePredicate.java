@@ -36,12 +36,24 @@ public final class DoublePredicate extends org.mases.jcobridge.JCListener implem
         raiseEvent("and", arg0); Object retVal = getReturnData(); return (java.util.function.DoublePredicate)retVal;
     }
     //@Override
+    public java.util.function.DoublePredicate andDefault(java.util.function.DoublePredicate arg0) {
+        return java.util.function.DoublePredicate.super.and(arg0);
+    }
+    //@Override
     public java.util.function.DoublePredicate negate() {
         raiseEvent("negate"); Object retVal = getReturnData(); return (java.util.function.DoublePredicate)retVal;
     }
     //@Override
+    public java.util.function.DoublePredicate negateDefault() {
+        return java.util.function.DoublePredicate.super.negate();
+    }
+    //@Override
     public java.util.function.DoublePredicate or(java.util.function.DoublePredicate arg0) {
         raiseEvent("or", arg0); Object retVal = getReturnData(); return (java.util.function.DoublePredicate)retVal;
+    }
+    //@Override
+    public java.util.function.DoublePredicate orDefault(java.util.function.DoublePredicate arg0) {
+        return java.util.function.DoublePredicate.super.or(arg0);
     }
 
 }

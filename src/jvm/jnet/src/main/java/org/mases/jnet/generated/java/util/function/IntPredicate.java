@@ -36,12 +36,24 @@ public final class IntPredicate extends org.mases.jcobridge.JCListener implement
         raiseEvent("and", arg0); Object retVal = getReturnData(); return (java.util.function.IntPredicate)retVal;
     }
     //@Override
+    public java.util.function.IntPredicate andDefault(java.util.function.IntPredicate arg0) {
+        return java.util.function.IntPredicate.super.and(arg0);
+    }
+    //@Override
     public java.util.function.IntPredicate negate() {
         raiseEvent("negate"); Object retVal = getReturnData(); return (java.util.function.IntPredicate)retVal;
     }
     //@Override
+    public java.util.function.IntPredicate negateDefault() {
+        return java.util.function.IntPredicate.super.negate();
+    }
+    //@Override
     public java.util.function.IntPredicate or(java.util.function.IntPredicate arg0) {
         raiseEvent("or", arg0); Object retVal = getReturnData(); return (java.util.function.IntPredicate)retVal;
+    }
+    //@Override
+    public java.util.function.IntPredicate orDefault(java.util.function.IntPredicate arg0) {
+        return java.util.function.IntPredicate.super.or(arg0);
     }
 
 }

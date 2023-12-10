@@ -76,6 +76,16 @@ namespace Java.Util.Function
         {
             
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.BiConsumer AndThenDefault(Java.Util.Function.BiConsumer arg0)
+        {
+            return IExecute<Java.Util.Function.BiConsumer>("andThenDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
@@ -95,9 +105,10 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiConsumer AndThen(Java.Util.Function.BiConsumer arg0)
         {
-            return default;
+            return AndThenDefault(arg0);
         }
 
         #endregion
@@ -193,6 +204,18 @@ namespace Java.Util.Function
         {
             
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
+        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        {
+            return IExecute<Java.Util.Function.BiConsumer<T, U>>("andThenDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiConsumer.html#andThen(java.util.function.BiConsumer)"/>
@@ -214,9 +237,10 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<Arg0objectSuperT, Arg0objectSuperU>Default"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.BiConsumer<T, U> AndThen<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiConsumer<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
         {
-            return default;
+            return AndThen<Arg0objectSuperT, Arg0objectSuperU>Default(arg0);
         }
 
         #endregion

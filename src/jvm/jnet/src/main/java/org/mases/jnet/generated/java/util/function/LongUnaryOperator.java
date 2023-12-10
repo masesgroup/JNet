@@ -36,8 +36,16 @@ public final class LongUnaryOperator extends org.mases.jcobridge.JCListener impl
         raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.LongUnaryOperator)retVal;
     }
     //@Override
+    public java.util.function.LongUnaryOperator andThenDefault(java.util.function.LongUnaryOperator arg0) {
+        return java.util.function.LongUnaryOperator.super.andThen(arg0);
+    }
+    //@Override
     public java.util.function.LongUnaryOperator compose(java.util.function.LongUnaryOperator arg0) {
         raiseEvent("compose", arg0); Object retVal = getReturnData(); return (java.util.function.LongUnaryOperator)retVal;
+    }
+    //@Override
+    public java.util.function.LongUnaryOperator composeDefault(java.util.function.LongUnaryOperator arg0) {
+        return java.util.function.LongUnaryOperator.super.compose(arg0);
     }
 
 }

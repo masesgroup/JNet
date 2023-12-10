@@ -35,5 +35,9 @@ public final class BiConsumer extends org.mases.jcobridge.JCListener implements 
     public java.util.function.BiConsumer andThen(java.util.function.BiConsumer arg0) {
         raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.BiConsumer)retVal;
     }
+    //@Override
+    public java.util.function.BiConsumer andThenDefault(java.util.function.BiConsumer arg0) {
+        return java.util.function.BiConsumer.super.andThen(arg0);
+    }
 
 }

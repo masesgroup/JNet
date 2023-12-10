@@ -104,6 +104,16 @@ namespace Java.Util.Function
         {
             
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.DoubleConsumer AndThenDefault(Java.Util.Function.DoubleConsumer arg0)
+        {
+            return IExecute<Java.Util.Function.DoubleConsumer>("andThenDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
@@ -123,9 +133,10 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.DoubleConsumer AndThen(Java.Util.Function.DoubleConsumer arg0)
         {
-            return default;
+            return AndThenDefault(arg0);
         }
 
         #endregion

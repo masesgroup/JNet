@@ -36,12 +36,24 @@ public final class LongPredicate extends org.mases.jcobridge.JCListener implemen
         raiseEvent("and", arg0); Object retVal = getReturnData(); return (java.util.function.LongPredicate)retVal;
     }
     //@Override
+    public java.util.function.LongPredicate andDefault(java.util.function.LongPredicate arg0) {
+        return java.util.function.LongPredicate.super.and(arg0);
+    }
+    //@Override
     public java.util.function.LongPredicate negate() {
         raiseEvent("negate"); Object retVal = getReturnData(); return (java.util.function.LongPredicate)retVal;
     }
     //@Override
+    public java.util.function.LongPredicate negateDefault() {
+        return java.util.function.LongPredicate.super.negate();
+    }
+    //@Override
     public java.util.function.LongPredicate or(java.util.function.LongPredicate arg0) {
         raiseEvent("or", arg0); Object retVal = getReturnData(); return (java.util.function.LongPredicate)retVal;
+    }
+    //@Override
+    public java.util.function.LongPredicate orDefault(java.util.function.LongPredicate arg0) {
+        return java.util.function.LongPredicate.super.or(arg0);
     }
 
 }

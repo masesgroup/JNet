@@ -321,6 +321,18 @@ namespace Java.Net.Http
                 AddEventHandler("onOpen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Net.Http.WebSocket>>>(OnOpenEventHandler));
 
             }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
+            /// <param name="arg2"><see cref="bool"/></param>
+            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public Java.Util.Concurrent.CompletionStage<object> OnBinaryDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
+            {
+                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onBinaryDefault", arg0, arg1, arg2);
+            }
 
             /// <summary>
             /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onBinary(java.net.http.WebSocket,java.nio.ByteBuffer,boolean)"/>
@@ -342,9 +354,22 @@ namespace Java.Net.Http
             /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
             /// <param name="arg2"><see cref="bool"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnBinaryDefault"/>; override the method to implement a different behavior</remarks>
             public virtual Java.Util.Concurrent.CompletionStage<object> OnBinary(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
             {
-                return default;
+                return OnBinaryDefault(arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <param name="arg1"><see cref="int"/></param>
+            /// <param name="arg2"><see cref="string"/></param>
+            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public Java.Util.Concurrent.CompletionStage<object> OnCloseDefault(Java.Net.Http.WebSocket arg0, int arg1, string arg2)
+            {
+                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onCloseDefault", arg0, arg1, arg2);
             }
 
             /// <summary>
@@ -367,9 +392,21 @@ namespace Java.Net.Http
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="string"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnCloseDefault"/>; override the method to implement a different behavior</remarks>
             public virtual Java.Util.Concurrent.CompletionStage<object> OnClose(Java.Net.Http.WebSocket arg0, int arg1, string arg2)
             {
-                return default;
+                return OnCloseDefault(arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPing(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
+            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public Java.Util.Concurrent.CompletionStage<object> OnPingDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
+            {
+                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onPingDefault", arg0, arg1);
             }
 
             /// <summary>
@@ -391,9 +428,21 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPingDefault"/>; override the method to implement a different behavior</remarks>
             public virtual Java.Util.Concurrent.CompletionStage<object> OnPing(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return default;
+                return OnPingDefault(arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPong(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
+            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public Java.Util.Concurrent.CompletionStage<object> OnPongDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
+            {
+                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onPongDefault", arg0, arg1);
             }
 
             /// <summary>
@@ -415,9 +464,22 @@ namespace Java.Net.Http
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Nio.ByteBuffer"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnPongDefault"/>; override the method to implement a different behavior</remarks>
             public virtual Java.Util.Concurrent.CompletionStage<object> OnPong(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return default;
+                return OnPongDefault(arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
+            /// <param name="arg2"><see cref="bool"/></param>
+            /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public Java.Util.Concurrent.CompletionStage<object> OnTextDefault(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
+            {
+                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onTextDefault", arg0, arg1, arg2);
             }
 
             /// <summary>
@@ -440,9 +502,20 @@ namespace Java.Net.Http
             /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
             /// <param name="arg2"><see cref="bool"/></param>
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnTextDefault"/>; override the method to implement a different behavior</remarks>
             public virtual Java.Util.Concurrent.CompletionStage<object> OnText(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
             {
-                return default;
+                return OnTextDefault(arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onError(java.net.http.WebSocket,java.lang.Throwable)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnErrorDefault(Java.Net.Http.WebSocket arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
+            {
+                IExecute("onErrorDefault", arg0, arg1);
             }
 
             /// <summary>
@@ -462,9 +535,19 @@ namespace Java.Net.Http
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
             /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnErrorDefault"/>; override the method to implement a different behavior</remarks>
             public virtual void OnError(Java.Net.Http.WebSocket arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
-                
+                OnErrorDefault(arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+            public void OnOpenDefault(Java.Net.Http.WebSocket arg0)
+            {
+                IExecute("onOpenDefault", arg0);
             }
 
             /// <summary>
@@ -483,9 +566,10 @@ namespace Java.Net.Http
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Net.Http.WebSocket"/></param>
+            /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnOpenDefault"/>; override the method to implement a different behavior</remarks>
             public virtual void OnOpen(Java.Net.Http.WebSocket arg0)
             {
-                
+                OnOpenDefault(arg0);
             }
 
             #endregion

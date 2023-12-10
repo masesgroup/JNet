@@ -36,12 +36,24 @@ public final class Predicate extends org.mases.jcobridge.JCListener implements j
         raiseEvent("and", arg0); Object retVal = getReturnData(); return (java.util.function.Predicate)retVal;
     }
     //@Override
+    public java.util.function.Predicate andDefault(java.util.function.Predicate arg0) {
+        return java.util.function.Predicate.super.and(arg0);
+    }
+    //@Override
     public java.util.function.Predicate negate() {
         raiseEvent("negate"); Object retVal = getReturnData(); return (java.util.function.Predicate)retVal;
     }
     //@Override
+    public java.util.function.Predicate negateDefault() {
+        return java.util.function.Predicate.super.negate();
+    }
+    //@Override
     public java.util.function.Predicate or(java.util.function.Predicate arg0) {
         raiseEvent("or", arg0); Object retVal = getReturnData(); return (java.util.function.Predicate)retVal;
+    }
+    //@Override
+    public java.util.function.Predicate orDefault(java.util.function.Predicate arg0) {
+        return java.util.function.Predicate.super.or(arg0);
     }
 
 }

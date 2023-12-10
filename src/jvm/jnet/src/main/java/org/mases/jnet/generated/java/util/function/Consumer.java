@@ -35,5 +35,9 @@ public final class Consumer extends org.mases.jcobridge.JCListener implements ja
     public java.util.function.Consumer andThen(java.util.function.Consumer arg0) {
         raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.Consumer)retVal;
     }
+    //@Override
+    public java.util.function.Consumer andThenDefault(java.util.function.Consumer arg0) {
+        return java.util.function.Consumer.super.andThen(arg0);
+    }
 
 }

@@ -59,5 +59,9 @@ public final class Action extends org.mases.jcobridge.JCListener implements java
     public boolean accept(java.lang.Object arg0) {
         raiseEvent("accept", arg0); Object retVal = getReturnData(); return (boolean)retVal;
     }
+    //@Override
+    public boolean acceptDefault(java.lang.Object arg0) {
+        return javax.swing.Action.super.accept(arg0);
+    }
 
 }

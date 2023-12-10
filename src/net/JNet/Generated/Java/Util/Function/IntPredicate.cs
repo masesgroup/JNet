@@ -121,6 +121,16 @@ namespace Java.Util.Function
         {
             return default;
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.IntPredicate AndDefault(Java.Util.Function.IntPredicate arg0)
+        {
+            return IExecute<Java.Util.Function.IntPredicate>("andDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#and(java.util.function.IntPredicate)"/>
@@ -140,9 +150,20 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntPredicate And(Java.Util.Function.IntPredicate arg0)
         {
-            return default;
+            return AndDefault(arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#negate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.IntPredicate NegateDefault()
+        {
+            return IExecute<Java.Util.Function.IntPredicate>("negateDefault");
         }
 
         /// <summary>
@@ -163,9 +184,20 @@ namespace Java.Util.Function
         /// </summary>
 
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntPredicate Negate()
         {
-            return default;
+            return NegateDefault();
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntPredicate.html#or(java.util.function.IntPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.IntPredicate OrDefault(Java.Util.Function.IntPredicate arg0)
+        {
+            return IExecute<Java.Util.Function.IntPredicate>("orDefault", arg0);
         }
 
         /// <summary>
@@ -186,9 +218,10 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.IntPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntPredicate Or(Java.Util.Function.IntPredicate arg0)
         {
-            return default;
+            return OrDefault(arg0);
         }
 
         #endregion

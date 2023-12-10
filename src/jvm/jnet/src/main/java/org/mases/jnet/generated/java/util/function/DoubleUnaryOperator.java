@@ -36,8 +36,16 @@ public final class DoubleUnaryOperator extends org.mases.jcobridge.JCListener im
         raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.DoubleUnaryOperator)retVal;
     }
     //@Override
+    public java.util.function.DoubleUnaryOperator andThenDefault(java.util.function.DoubleUnaryOperator arg0) {
+        return java.util.function.DoubleUnaryOperator.super.andThen(arg0);
+    }
+    //@Override
     public java.util.function.DoubleUnaryOperator compose(java.util.function.DoubleUnaryOperator arg0) {
         raiseEvent("compose", arg0); Object retVal = getReturnData(); return (java.util.function.DoubleUnaryOperator)retVal;
+    }
+    //@Override
+    public java.util.function.DoubleUnaryOperator composeDefault(java.util.function.DoubleUnaryOperator arg0) {
+        return java.util.function.DoubleUnaryOperator.super.compose(arg0);
     }
 
 }

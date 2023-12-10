@@ -274,6 +274,16 @@ namespace Javax.Swing
         {
             
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public bool AcceptDefault(object arg0)
+        {
+            return IExecute<bool>("acceptDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#accept(java.lang.Object)"/>
@@ -293,9 +303,10 @@ namespace Javax.Swing
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AcceptDefault"/>; override the method to implement a different behavior</remarks>
         public virtual bool Accept(object arg0)
         {
-            return default;
+            return AcceptDefault(arg0);
         }
 
         #endregion
