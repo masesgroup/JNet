@@ -36,8 +36,16 @@ public final class Function extends org.mases.jcobridge.JCListener implements ja
         raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.Function)retVal;
     }
     //@Override
+    public java.util.function.Function andThenDefault(java.util.function.Function arg0) {
+        return java.util.function.Function.super.andThen(arg0);
+    }
+    //@Override
     public java.util.function.Function compose(java.util.function.Function arg0) {
         raiseEvent("compose", arg0); Object retVal = getReturnData(); return (java.util.function.Function)retVal;
+    }
+    //@Override
+    public java.util.function.Function composeDefault(java.util.function.Function arg0) {
+        return java.util.function.Function.super.compose(arg0);
     }
 
 }

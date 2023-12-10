@@ -77,6 +77,29 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
+        
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#identity()"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnIdentity"/> has a value it takes precedence over corresponding class method</remarks>
+        public System.Func<Java.Util.Function.IntUnaryOperator> OnIdentity { get; set; } = null;
+
+        void IdentityEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
+        {
+            var methodToExecute = (OnIdentity != null) ? OnIdentity : Identity;
+            var executionResult = methodToExecute.Invoke();
+            data.SetReturnValue(executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#identity()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
+        public virtual Java.Util.Function.IntUnaryOperator Identity()
+        {
+            return default;
+        }
 
         #endregion
 
@@ -114,6 +137,16 @@ namespace Java.Util.Function
         {
             return default;
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.IntUnaryOperator AndThenDefault(Java.Util.Function.IntUnaryOperator arg0)
+        {
+            return IExecute<Java.Util.Function.IntUnaryOperator>("andThenDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
@@ -133,9 +166,20 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntUnaryOperator AndThen(Java.Util.Function.IntUnaryOperator arg0)
         {
-            return default;
+            return AndThenDefault(arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
+        /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.IntUnaryOperator ComposeDefault(Java.Util.Function.IntUnaryOperator arg0)
+        {
+            return IExecute<Java.Util.Function.IntUnaryOperator>("composeDefault", arg0);
         }
 
         /// <summary>
@@ -156,9 +200,10 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="ComposeDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.IntUnaryOperator Compose(Java.Util.Function.IntUnaryOperator arg0)
         {
-            return default;
+            return ComposeDefault(arg0);
         }
 
         #endregion

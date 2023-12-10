@@ -36,12 +36,24 @@ public final class BiPredicate extends org.mases.jcobridge.JCListener implements
         raiseEvent("and", arg0); Object retVal = getReturnData(); return (java.util.function.BiPredicate)retVal;
     }
     //@Override
+    public java.util.function.BiPredicate andDefault(java.util.function.BiPredicate arg0) {
+        return java.util.function.BiPredicate.super.and(arg0);
+    }
+    //@Override
     public java.util.function.BiPredicate negate() {
         raiseEvent("negate"); Object retVal = getReturnData(); return (java.util.function.BiPredicate)retVal;
     }
     //@Override
+    public java.util.function.BiPredicate negateDefault() {
+        return java.util.function.BiPredicate.super.negate();
+    }
+    //@Override
     public java.util.function.BiPredicate or(java.util.function.BiPredicate arg0) {
         raiseEvent("or", arg0); Object retVal = getReturnData(); return (java.util.function.BiPredicate)retVal;
+    }
+    //@Override
+    public java.util.function.BiPredicate orDefault(java.util.function.BiPredicate arg0) {
+        return java.util.function.BiPredicate.super.or(arg0);
     }
 
 }

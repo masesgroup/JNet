@@ -35,5 +35,9 @@ public final class LongConsumer extends org.mases.jcobridge.JCListener implement
     public java.util.function.LongConsumer andThen(java.util.function.LongConsumer arg0) {
         raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.LongConsumer)retVal;
     }
+    //@Override
+    public java.util.function.LongConsumer andThenDefault(java.util.function.LongConsumer arg0) {
+        return java.util.function.LongConsumer.super.andThen(arg0);
+    }
 
 }

@@ -209,6 +209,8 @@ namespace MASES.JNetReflector.Templates
                 public const string HELP_TYPEPARAM_DECORATION = "/// <typeparam name=\"{0}\">{1}</typeparam>";
                 public const string HELP_RETURN_DECORATION = "/// <returns>{0}</returns>";
                 public const string HELP_EXCEPTION_DECORATION = "/// <exception cref=\"{0}\"/>";
+                public const string HELP_REMARK_DEFAULT_METHOD = "/// <remarks>The method invokes the default implementation in the JVM interface</remarks>";
+                public const string HELP_REMARK_HANDLER_WITH_DEFAULT = "/// <remarks>The method invokes the default implementation in the JVM interface using <see cref=\"{0}\"/>; override the method to implement a different behavior</remarks>";
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
 
                 public const string STATIC_EXECUTE = "SExecute";
@@ -229,7 +231,9 @@ namespace MASES.JNetReflector.Templates
                                                                             + "}}" + Environment.NewLine;
 
                 public const string VOID_LISTENER_EXECUTION_FORMAT = "raiseEvent(\"{0}\"{1});";
-                public static string TYPED_LISTENER_EXECUTION_FORMAT = "raiseEvent(\"{0}\"{1}); Object retVal = getReturnData(); return ({2})retVal;";
+                public const string SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT = "{0}.super.{1}({2});";
+                public const string TYPED_LISTENER_EXECUTION_FORMAT = "raiseEvent(\"{0}\"{1}); Object retVal = getReturnData(); return ({2})retVal;";
+                public const string SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT = "return {0}.super.{1}({2});";
             }
 
             public class PropertyStub

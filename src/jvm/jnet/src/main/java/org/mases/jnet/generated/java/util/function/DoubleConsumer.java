@@ -35,5 +35,9 @@ public final class DoubleConsumer extends org.mases.jcobridge.JCListener impleme
     public java.util.function.DoubleConsumer andThen(java.util.function.DoubleConsumer arg0) {
         raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.DoubleConsumer)retVal;
     }
+    //@Override
+    public java.util.function.DoubleConsumer andThenDefault(java.util.function.DoubleConsumer arg0) {
+        return java.util.function.DoubleConsumer.super.andThen(arg0);
+    }
 
 }

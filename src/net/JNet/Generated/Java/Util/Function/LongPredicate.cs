@@ -121,6 +121,16 @@ namespace Java.Util.Function
         {
             return default;
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.LongPredicate AndDefault(Java.Util.Function.LongPredicate arg0)
+        {
+            return IExecute<Java.Util.Function.LongPredicate>("andDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#and(java.util.function.LongPredicate)"/>
@@ -140,9 +150,20 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.LongPredicate And(Java.Util.Function.LongPredicate arg0)
         {
-            return default;
+            return AndDefault(arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#negate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.LongPredicate NegateDefault()
+        {
+            return IExecute<Java.Util.Function.LongPredicate>("negateDefault");
         }
 
         /// <summary>
@@ -163,9 +184,20 @@ namespace Java.Util.Function
         /// </summary>
 
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.LongPredicate Negate()
         {
-            return default;
+            return NegateDefault();
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongPredicate.html#or(java.util.function.LongPredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.LongPredicate OrDefault(Java.Util.Function.LongPredicate arg0)
+        {
+            return IExecute<Java.Util.Function.LongPredicate>("orDefault", arg0);
         }
 
         /// <summary>
@@ -186,9 +218,10 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.LongPredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.LongPredicate Or(Java.Util.Function.LongPredicate arg0)
         {
-            return default;
+            return OrDefault(arg0);
         }
 
         #endregion

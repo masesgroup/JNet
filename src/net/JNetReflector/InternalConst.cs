@@ -97,6 +97,7 @@ namespace MASES.JNetReflector
         public const string ArrayTypeTrailer = "[]";
         public const string PropertySuffix = "Property";
         public const string MethodSuffix = "Method";
+        public const string DefaultMethodSuffix = "Default";
         public const string NamespaceSuffix = "Ns";
         public const string MainClassPlaceHolder = ", MASES.JCOBridge.C2JBridge.IJVMBridgeMain";
         public const string JVMBridgeException = "MASES.JCOBridge.C2JBridge.JVMBridgeException";

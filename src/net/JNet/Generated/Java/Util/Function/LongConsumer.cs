@@ -104,6 +104,16 @@ namespace Java.Util.Function
         {
             
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
+        /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.LongConsumer AndThenDefault(Java.Util.Function.LongConsumer arg0)
+        {
+            return IExecute<Java.Util.Function.LongConsumer>("andThenDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/LongConsumer.html#andThen(java.util.function.LongConsumer)"/>
@@ -123,9 +133,10 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.LongConsumer"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.LongConsumer AndThen(Java.Util.Function.LongConsumer arg0)
         {
-            return default;
+            return AndThenDefault(arg0);
         }
 
         #endregion

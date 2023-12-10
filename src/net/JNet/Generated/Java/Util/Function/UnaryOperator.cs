@@ -78,6 +78,16 @@ namespace Java.Util.Function
         {
             return default;
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.Function AndThenDefault(Java.Util.Function.Function arg0)
+        {
+            return IExecute<Java.Util.Function.Function>("andThenDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
@@ -97,9 +107,20 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThenDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Function AndThen(Java.Util.Function.Function arg0)
         {
-            return default;
+            return AndThenDefault(arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.Function ComposeDefault(Java.Util.Function.Function arg0)
+        {
+            return IExecute<Java.Util.Function.Function>("composeDefault", arg0);
         }
 
         /// <summary>
@@ -120,9 +141,10 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="ComposeDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Function Compose(Java.Util.Function.Function arg0)
         {
-            return default;
+            return ComposeDefault(arg0);
         }
 
         #endregion
@@ -234,6 +256,20 @@ namespace Java.Util.Function
         {
             return default;
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        {
+            return IExecute<Java.Util.Function.Function<T, V>>("andThenDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
@@ -257,9 +293,24 @@ namespace Java.Util.Function
         /// <typeparam name="R"></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>Default"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
         {
-            return default;
+            return AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>Default(arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="V"></typeparam>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
+        /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
+        /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.Function<V, R> Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>Default(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V where Arg0ExtendsT: T
+        {
+            return IExecute<Java.Util.Function.Function<V, R>>("composeDefault", arg0);
         }
 
         /// <summary>
@@ -284,9 +335,10 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>Default"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.Function<V, R> Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V where Arg0ExtendsT: T
         {
-            return default;
+            return Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>Default(arg0);
         }
 
         #endregion

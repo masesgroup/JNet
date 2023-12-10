@@ -36,8 +36,16 @@ public final class IntUnaryOperator extends org.mases.jcobridge.JCListener imple
         raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.IntUnaryOperator)retVal;
     }
     //@Override
+    public java.util.function.IntUnaryOperator andThenDefault(java.util.function.IntUnaryOperator arg0) {
+        return java.util.function.IntUnaryOperator.super.andThen(arg0);
+    }
+    //@Override
     public java.util.function.IntUnaryOperator compose(java.util.function.IntUnaryOperator arg0) {
         raiseEvent("compose", arg0); Object retVal = getReturnData(); return (java.util.function.IntUnaryOperator)retVal;
+    }
+    //@Override
+    public java.util.function.IntUnaryOperator composeDefault(java.util.function.IntUnaryOperator arg0) {
+        return java.util.function.IntUnaryOperator.super.compose(arg0);
     }
 
 }

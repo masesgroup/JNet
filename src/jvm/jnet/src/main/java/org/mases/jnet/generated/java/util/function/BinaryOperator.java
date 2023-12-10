@@ -35,5 +35,9 @@ public final class BinaryOperator extends org.mases.jcobridge.JCListener impleme
     public java.util.function.BiFunction andThen(java.util.function.Function arg0) {
         raiseEvent("andThen", arg0); Object retVal = getReturnData(); return (java.util.function.BiFunction)retVal;
     }
+    //@Override
+    public java.util.function.BiFunction andThenDefault(java.util.function.Function arg0) {
+        return java.util.function.BinaryOperator.super.andThen(arg0);
+    }
 
 }

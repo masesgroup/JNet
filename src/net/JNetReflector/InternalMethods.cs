@@ -712,6 +712,7 @@ namespace MASES.JNetReflector
                 }
                 else
                 {
+                    staticMethodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, true).AddTabLevel(1);
                     methodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false).AddTabLevel(1);
                 }
                 if (!JNetReflectorCore.DisableInterfaceMethodGeneration && createInterfaceData)
@@ -780,10 +781,12 @@ namespace MASES.JNetReflector
 
             if (bPrepareJavaListener)
             {
-                var javaClassMethodBlock = jClass.AnalyzeJavaMethods(isGeneric).AddTabLevel(1);
-                string singleJavaListenerTemplate = Template.GetTemplate(Template.SingleListenerJavaFileTemplate);
                 var clsName = jClass.SimpleName;
                 var fullInterfaces = jClass.Name.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
+
+                var javaClassMethodBlock = jClass.AnalyzeJavaMethods(fullInterfaces, isGeneric).AddTabLevel(1);
+                string singleJavaListenerTemplate = Template.GetTemplate(Template.SingleListenerJavaFileTemplate);
+
                 if (!jClass.IsInterface()) // it is a class, we have to implement the interfaces
                 {
                     StringBuilder sbInterfaces = new StringBuilder();
@@ -1435,7 +1438,6 @@ namespace MASES.JNetReflector
                 List<string> retGenArguments = new List<string>();
                 List<KeyValuePair<string, string>> retGenClause = new List<KeyValuePair<string, string>>();
                 string modifier = method.IsStatic() ? " static" : string.Empty;
-                if (forListener) modifier = " virtual";
                 string returnType = method.ReturnType(retGenArguments, retGenClause, "Return", isGeneric, JNetReflectorCore.UseCamel);
                 genericArguments.AddRange(retGenArguments);
                 genericClauses.AddRange(retGenClause);
@@ -1665,6 +1667,7 @@ namespace MASES.JNetReflector
                 bool isVoidMethod = method.IsVoid();
                 bool isReturnTypeException = method.IsReturnTypeAnException();
                 string executionStub = string.Empty;
+                if (forListener && method.IsDefault) methodNameOrigin += SpecialNames.DefaultMethodSuffix;
                 if (isReturnTypeException)
                 {
                     var execFormat = method.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTION_FORMAT_EXCEPTION : AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION;
@@ -1776,15 +1779,52 @@ namespace MASES.JNetReflector
                     jDecoration.Append(AllPackageClasses.ClassStub.MethodStub.OBSOLETE_DECORATION);
                 }
 
+                string jDecorationTemporary = jDecoration.ToString();
+
                 returnType = isArrayReturnType ? returnType + SpecialNames.ArrayTypeTrailer : returnType;
 
                 string CLRListenerEventArgsType = string.Empty;
                 string executionPropertyParams = string.Empty;
                 string listenerHandlerType = string.Empty;
+                string singleMethod;
+                string template;
                 string baseHandlerName = methodIndexer == 0 ? methodName : (methodIndexer == 1 ? methodName + paramCount : methodName + paramCount + $"_{methodIndexer}");
                 if (forListener)
                 {
-                    executionStub = isVoidMethod ? string.Empty : "return default;";
+                    if (method.IsDefault)
+                    {
+                        jDecoration.AppendLine();
+                        jDecoration.Append(AllPackageClasses.ClassStub.MethodStub.HELP_REMARK_DEFAULT_METHOD);
+
+                        string methodNameDefault = methodName + SpecialNames.DefaultMethodSuffix;
+                        template = Template.GetTemplate(Template.SingleMethodTemplate);
+                        singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameDefault)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_FIRST_PARAMETER, CLRListenerEventArgsType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
+
+                        jDecoration = new StringBuilder(jDecorationTemporary);
+                        if (!forInterface)
+                        {
+                            subClassBlock.AppendLine(singleMethod);
+                            jDecoration.AppendLine();
+                            jDecoration.AppendFormat(AllPackageClasses.ClassStub.MethodStub.HELP_REMARK_HANDLER_WITH_DEFAULT, methodNameDefault);
+                        }
+                        executionStub = isVoidMethod ? $"{methodNameDefault}({executionParamsString});" : $"return {methodNameDefault}({executionParamsString});";
+                    }
+                    else
+                    {
+                        executionStub = isVoidMethod ? string.Empty : "return default;";
+                    }
                     if (firstListenerParameter != null)
                     {
                         CLRListenerEventArgsType = $"<{firstListenerParameter}>";
@@ -1809,8 +1849,6 @@ namespace MASES.JNetReflector
                     subListenerHandlerBlock.AppendLine(singleListenerHandler);
                 }
 
-                string singleMethod;
-                string template;
                 if (forInterface)
                 {
                     template = Template.GetTemplate(Template.SingleInterfaceMethodTemplate);
@@ -1823,7 +1861,7 @@ namespace MASES.JNetReflector
                 {
                     template = Template.GetTemplate(Template.SingleMethodTemplate);
                 }
-
+                if (forListener) modifier = " virtual";
                 singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
                                        .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
                                        .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
@@ -1843,7 +1881,7 @@ namespace MASES.JNetReflector
 
             var returnStr = subClassBlock.ToString();
 
-            if (forListener && !forInterface)
+            if (forListener && !forInterface && !staticMethods)
             {
                 var listenerBlock = string.Format(AllPackageClasses.ClassStub.MethodStub.BLOCK_LISTENER_HANDLER_FORMAT, classDefinition.JVMClassName(null, false), subListenerHandlerBlock.ToString());
                 returnStr = listenerBlock + returnStr;
@@ -1852,7 +1890,7 @@ namespace MASES.JNetReflector
             return returnStr;
         }
 
-        static string AnalyzeJavaMethods(this Class classDefinition, bool isGeneric)
+        static string AnalyzeJavaMethods(this Class classDefinition, string extendingInterface, bool isGeneric)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Java Methods of {0} *******************", classDefinition.GenericString);
 
@@ -1995,13 +2033,25 @@ namespace MASES.JNetReflector
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing method {0}", genString);
 
-
                 var singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub);
 
                 subClassBlock.AppendLine(singleMethod);
+
+                if (method.IsDefault)
+                {
+                    execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT, 
+                                             extendingInterface, methodNameOrigin, executionParamsString.Length == 0 ? string.Empty : executionParamsString);
+
+                    var singleDefaultMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin + SpecialNames.DefaultMethodSuffix)
+                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                                      .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub);
+
+                    subClassBlock.AppendLine(singleDefaultMethod);
+                }
             }
 
             var returnStr = subClassBlock.ToString();

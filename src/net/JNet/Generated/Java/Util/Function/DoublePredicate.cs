@@ -121,6 +121,16 @@ namespace Java.Util.Function
         {
             return default;
         }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.DoublePredicate AndDefault(Java.Util.Function.DoublePredicate arg0)
+        {
+            return IExecute<Java.Util.Function.DoublePredicate>("andDefault", arg0);
+        }
 
         /// <summary>
         /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
@@ -140,9 +150,20 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.DoublePredicate And(Java.Util.Function.DoublePredicate arg0)
         {
-            return default;
+            return AndDefault(arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#negate()"/>
+        /// </summary>
+
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.DoublePredicate NegateDefault()
+        {
+            return IExecute<Java.Util.Function.DoublePredicate>("negateDefault");
         }
 
         /// <summary>
@@ -163,9 +184,20 @@ namespace Java.Util.Function
         /// </summary>
 
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.DoublePredicate Negate()
         {
-            return default;
+            return NegateDefault();
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
+        /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
+        public Java.Util.Function.DoublePredicate OrDefault(Java.Util.Function.DoublePredicate arg0)
+        {
+            return IExecute<Java.Util.Function.DoublePredicate>("orDefault", arg0);
         }
 
         /// <summary>
@@ -186,9 +218,10 @@ namespace Java.Util.Function
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
+        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OrDefault"/>; override the method to implement a different behavior</remarks>
         public virtual Java.Util.Function.DoublePredicate Or(Java.Util.Function.DoublePredicate arg0)
         {
-            return default;
+            return OrDefault(arg0);
         }
 
         #endregion
