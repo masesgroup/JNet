@@ -28,6 +28,15 @@ namespace Java.Util
     public partial class Map<K, V>
     {
         /// <summary>
+        /// Useful converter from <see cref="Java.Util.Map{K, V}"/> to <see cref="Java.Util.Properties"/>
+        /// </summary>
+        public static implicit operator Java.Util.Properties(Map<K, V> t)
+        {
+            Properties p = new Properties();
+            p.PutAll(t);
+            return p;
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#get(java.lang.Object)"/>
         /// </summary>
         public virtual V Get​(K key) { return IExecute<V>("get", key); }
