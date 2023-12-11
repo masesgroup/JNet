@@ -1178,12 +1178,12 @@ namespace MASES.JNetReflector
                     }
                     else if (entry.Interfaces.Length == 1 && entry.Interfaces[0].IsCollection())
                     {
-                        // if there is single super interface Collection use it as superclass, it will be avoided in operators
+                        // if there is single super interface java.util.Collection use it as superclass, it will be avoided in operators
                         return false;
                     }
                     else if (entry.Interfaces.Length == 1 && entry.Interfaces[0].IsEventListener())
                     {
-                        // if there is single super interface Collection use it as superclass, it will be avoided in operators
+                        // if there is single super interface java.util.EventListener use it as superclass, it will be avoided in operators
                         return false;
                     }
                     else
