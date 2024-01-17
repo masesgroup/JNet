@@ -623,13 +623,15 @@ namespace MASES.JNetReflector
                 javaClassListenerPackage += string.IsNullOrEmpty(jClass.Package.Name) ? string.Empty : SpecialNames.NamespaceSeparator + jClass.Package.Name;
                 javaClassListenerName = javaClassListenerPackage + SpecialNames.NamespaceSeparator + jClass.SimpleName;
             }
-            string template = jClassIsListener ? stubListener : stubClass;
-            bool isMainClass = false;
-
             bool isClassCloseable = jClass.IsCloseable();
             bool isClassAbstract = jClass.IsAbstract();
             bool isClassInterface = jClass.IsInterface();
             bool isClassStatic = jClass.IsStatic();
+
+            if (isClassInterface || isClassAbstract) stubClass = Template.GetTemplate(Template.AllPackageClassesStubClassInterfaceOrAbstractTemplate);
+
+            string template = jClassIsListener ? stubListener : stubClass;
+            bool isMainClass = false;
 
             bool createInterfaceData = nestingLevel == 0 && isClassInterface;
             if (jClass.IsJVMGenericClass() && isGeneric == false) // avoid interface generation when the class is generic
