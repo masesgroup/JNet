@@ -33,6 +33,7 @@
     <None Remove="AllPackageClassesStubClass.template" />
     <None Remove="AllPackageClassesStubNestedClass.template" />
     <None Remove="SingleClass.template" />
+    <None Remove="Templates\AllPackageClassesStubClassInterface.template" />
     <None Remove="Templates\AllPackageClassesStubClassListener.template" />
     <None Remove="Templates\AllPackageClassesStubClassMainClass.template" />
     <None Remove="Templates\AllPackageClassesStubException.template" />
@@ -128,6 +129,7 @@
     <Compile Include="..\JNet\Specific\AsyncEnumerable.cs" Link="Specific\AsyncEnumerable.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Templates\AllPackageClassesStubClassInterface.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
