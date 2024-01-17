@@ -628,7 +628,7 @@ namespace MASES.JNetReflector
             bool isClassInterface = jClass.IsInterface();
             bool isClassStatic = jClass.IsStatic();
 
-            if (isClassInterface) stubClass = Template.GetTemplate(Template.AllPackageClassesStubClassInterfaceTemplate);
+            if (isClassInterface || isClassAbstract) stubClass = Template.GetTemplate(Template.AllPackageClassesStubClassInterfaceOrAbstractTemplate);
 
             string template = jClassIsListener ? stubListener : stubClass;
             bool isMainClass = false;
