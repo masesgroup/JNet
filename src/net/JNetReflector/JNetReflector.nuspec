@@ -11,7 +11,7 @@
     <repository type="git" url="https://github.com/masesgroup/JNet/" />
     <description>JNetReflector - JNet class reflection utility command line interface</description>
     <releaseNotes>https://github.com/masesgroup/JNet/releases</releaseNotes>
-    <copyright>Copyright ©  MASES s.r.l. 2023</copyright>
+    <copyright>Copyright ©  MASES s.r.l. 2024</copyright>
     <license type="file">LICENSE</license>
     <icon>JCOB128x128.png</icon>
     <tags>jnet cli reflection utility dotnet clr netcore net6 java jvm</tags>
