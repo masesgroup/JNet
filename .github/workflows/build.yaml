@@ -186,16 +186,3 @@ jobs:
         with:
           name: JNet
           path: .\bin\*nupkg
-
-      - name: Clear documentation folder
-        if: ${{ github.repository_owner == 'masesgroup'}} #if outside main repo do not build docs, it will be checked during pullrequest or build on main branch
-        run: Remove-Item .\docs\* -Recurse -Force -Exclude _config.yml,CNAME
-
-      - run: dotnet tool update -g docfx
-        if: ${{ github.repository_owner == 'masesgroup'}} #if outside main repo do not build docs, it will be checked during pullrequest or build on main branch
-        
-      - name: Build documentation
-        if: ${{ github.repository_owner == 'masesgroup'}} #if outside main repo do not build docs, it will be checked during pullrequest or build on main branch
-        run: |
-          cd src\documentation
-          docfx
