@@ -40,6 +40,7 @@ namespace MASES.JNetReflector.Templates
 
             SingleConstructorTemplate,
             SingleFieldTemplate,
+            SingleFieldFinalTemplate,
             SingleMethodTemplate,
             SingleInterfaceMethodTemplate,
             SingleListenerMethodTemplate,
@@ -89,6 +90,7 @@ namespace MASES.JNetReflector.Templates
         public const string SingleClassFileTemplate = "SingleClassFile.template";
         public const string SingleConstructorTemplate = "SingleConstructor.template";
         public const string SingleFieldTemplate = "SingleField.template";
+        public const string SingleFieldFinalTemplate = "SingleFieldFinal.template";
         public const string SingleMethodTemplate = "SingleMethod.template";
         public const string SingleInterfaceMethodTemplate = "SingleInterfaceMethod.template";
         public const string SingleListenerMethodTemplate = "SingleListenerMethod.template";
@@ -273,7 +275,9 @@ namespace MASES.JNetReflector.Templates
                 public const string NAME = "FIELD_STUB_FIELD_NAME_PLACEHOLDER";
                 public const string EXECUTION = "FIELD_STUB_EXECUTION_PLACEHOLDER";
                 public const string GET_EXECUTION_FORMAT = "get {{ return {0}{1}(\"{2}\"); }}";
+                public const string GET_EXECUTION_FORMAT_FINAL = "get {{ if (!_{3}Ready) {{ _{3}Content = {0}{1}(\"{2}\"); _{3}Ready = true; }} return _{3}Content; }}";
                 public const string GET_STATIC_EXECUTION_FORMAT = "get {{ return {0}{1}(LocalBridgeClazz, \"{2}\"); }}";
+                public const string GET_STATIC_EXECUTION_FORMAT_FINAL = "get {{ if (!_{3}Ready) {{ _{3}Content = {0}{1}(LocalBridgeClazz, \"{2}\"); _{3}Ready = true; }} return _{3}Content; }}";
                 public const string SET_EXECUTION_FORMAT = "set {{ ISetField(\"{0}\", value); }}";
                 public const string SET_STATIC_EXECUTION_FORMAT = "set {{ SSetField(LocalBridgeClazz, \"{0}\", value); }}";
 
