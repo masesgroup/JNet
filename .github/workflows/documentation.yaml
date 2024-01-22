@@ -10,11 +10,8 @@ on:
       GeneratePR:
         description: 'Generate the PR at the end'
         required: true
-        default: 'no'
-        type: choice
-        options:
-        - yes
-        - no
+        default: false
+        type: boolean
         
 # This workflow contains one job called "build_documentation"
 jobs:
@@ -23,7 +20,12 @@ jobs:
     runs-on: windows-2022
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:   
+    steps:
+      - run: |
+          echo "GENERATEPR: $GENERATEPR"
+        shell: bash
+        env:
+          GENERATEPR: ${{ inputs.GeneratePR }}
       # Runs a set of commands using the runners shell
       # Support longpaths
       - name: Support long paths
@@ -51,7 +53,7 @@ jobs:
         shell: bash
 
       - name: Request a PR to commit changes
-        if: ${{ github.repository_owner == 'masesgroup' }} && ${{ inputs.GeneratePR == 'yes' }} #do not push any changes outside main repo or withPR is no
+        if: ${{ github.repository_owner == 'masesgroup' }} && ${{ inputs.GeneratePR }} #do not push any changes outside main repo or withPR is no
         uses: peter-evans/create-pull-request@v5
         with:
           branch-suffix: short-commit-hash
