@@ -7,8 +7,8 @@ name: CI_DOCUMENTATION
 on:
   workflow_dispatch:
     inputs:
-      withPR:
-        description: 'Emit PR at the end'
+      GeneratePR:
+        description: 'Generate the PR at the end'
         required: true
         default: 'no'
         type: choice
@@ -51,7 +51,7 @@ jobs:
         shell: bash
 
       - name: Request a PR to commit changes
-        if: ${{ github.repository_owner == 'masesgroup' && ${{ inputs.withPR == 'yes' }}}} #do not push any changes outside main repo or withPR is no
+        if: ${{ github.repository_owner == 'masesgroup' }} && ${{ inputs.GeneratePR == 'yes' }} #do not push any changes outside main repo or withPR is no
         uses: peter-evans/create-pull-request@v5
         with:
           branch-suffix: short-commit-hash
