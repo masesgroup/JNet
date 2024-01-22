@@ -40,6 +40,7 @@
     <None Remove="Templates\SingleClassFile.template" />
     <None Remove="Templates\SingleConstructor.template" />
     <None Remove="Templates\SingleField.template" />
+    <None Remove="Templates\SingleFieldFinal.template" />
     <None Remove="Templates\SingleInterface.template" />
     <None Remove="Templates\SingleInterfaceMethod.template" />
     <None Remove="Templates\SingleInterfaceProperty.template" />
@@ -133,6 +134,7 @@
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
+    <EmbeddedResource Include="Templates\SingleFieldFinal.template" />
     <EmbeddedResource Include="Templates\SingleListenerJavaFile.template" />
     <EmbeddedResource Include="Templates\SingleInterface.template" />
     <EmbeddedResource Include="Templates\SingleClassFile.template" />

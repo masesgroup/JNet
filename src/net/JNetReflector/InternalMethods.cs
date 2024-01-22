@@ -2065,8 +2065,6 @@ namespace MASES.JNetReflector
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Fields of {0} *******************", classDefinition.GenericString);
 
-            var singleFieldTemplate = Template.GetTemplate(Template.SingleFieldTemplate);
-
             SortedDictionary<string, Field> sortedFilteredFields = new SortedDictionary<string, Field>();
 
             foreach (var field in classDefinition.Fields)
@@ -2112,19 +2110,20 @@ namespace MASES.JNetReflector
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing field {0}", field.GenericString);
 
+                bool isFinal = field.IsFinal();
                 string getFunction;
                 string getFormat;
                 string setFormat;
                 if (field.IsStatic())
                 {
                     getFunction = "SGetField";
-                    getFormat = AllPackageClasses.ClassStub.FieldStub.GET_STATIC_EXECUTION_FORMAT;
+                    getFormat = isFinal ? AllPackageClasses.ClassStub.FieldStub.GET_STATIC_EXECUTION_FORMAT_FINAL : AllPackageClasses.ClassStub.FieldStub.GET_STATIC_EXECUTION_FORMAT;
                     setFormat = AllPackageClasses.ClassStub.FieldStub.SET_STATIC_EXECUTION_FORMAT;
                 }
                 else
                 {
                     getFunction = "IGetField";
-                    getFormat = AllPackageClasses.ClassStub.FieldStub.GET_EXECUTION_FORMAT;
+                    getFormat = isFinal ? AllPackageClasses.ClassStub.FieldStub.GET_EXECUTION_FORMAT_FINAL : AllPackageClasses.ClassStub.FieldStub.GET_EXECUTION_FORMAT;
                     setFormat = AllPackageClasses.ClassStub.FieldStub.SET_EXECUTION_FORMAT;
                 }
 
@@ -2136,9 +2135,10 @@ namespace MASES.JNetReflector
                     isArrayReturnType = true;
                 }
 
-                string executionStub = string.Format(getFormat, getFunction, field.IsObjectReturnType(JNetReflectorCore.UseCamel) ? string.Empty : $"<{fieldType}>", field.Name);
+                string executionStub = isFinal ? string.Format(getFormat, getFunction, field.IsObjectReturnType(JNetReflectorCore.UseCamel) ? string.Empty : $"<{fieldType}>", field.Name, fieldName)
+                                               : string.Format(getFormat, getFunction, field.IsObjectReturnType(JNetReflectorCore.UseCamel) ? string.Empty : $"<{fieldType}>", field.Name);
 
-                if (!field.IsFinal())
+                if (!isFinal)
                 {
                     executionStub += " " + string.Format(setFormat, field.Name);
                 }
@@ -2150,6 +2150,7 @@ namespace MASES.JNetReflector
                     jDecoration.Append(AllPackageClasses.ClassStub.FieldStub.OBSOLETE_DECORATION);
                 }
 
+                var singleFieldTemplate = isFinal ? Template.GetTemplate(Template.SingleFieldFinalTemplate) : Template.GetTemplate(Template.SingleFieldTemplate);
                 var singleField = singleFieldTemplate.Replace(AllPackageClasses.ClassStub.FieldStub.DECORATION, jDecoration.ToString())
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.MODIFIER, modifier)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.TYPE, isArrayReturnType ? fieldType + SpecialNames.ArrayTypeTrailer : fieldType)
