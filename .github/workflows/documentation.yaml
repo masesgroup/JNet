@@ -53,12 +53,12 @@ jobs:
         shell: bash
 
       - name: Request a PR to commit changes
-        if: ${{ github.repository_owner == 'masesgroup' }} && ${{ inputs.GeneratePR }} #do not push any changes outside main repo or withPR is no
+        if: ${{ github.repository_owner == 'masesgroup' }} && ${{ inputs.GeneratePR == true }} #do not push any changes outside main repo or withPR is no
         uses: peter-evans/create-pull-request@v5
         with:
           branch-suffix: short-commit-hash
           add-paths: docs/*.*
-          commit-message: Update documentation after commit ${{ env.GITHUB_COMMIT_MESSAGE }}
+          commit-message: Update documentation after commit ${{ env.GITHUB_COMMIT_MESSAGE == true }}
           title: Changes by GitHub action
           body: Automated changes by GitHub action
           reviewers: masesdevelopers
