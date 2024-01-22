@@ -6,7 +6,16 @@ name: CI_DOCUMENTATION
 # events but only for the master branch
 on:
   workflow_dispatch:
-    
+    inputs:
+      withPR:
+        description: 'Emit PR at the end'
+        required: true
+        default: 'no'
+        type: choice
+        options:
+        - yes
+        - no
+        
 # This workflow contains one job called "build_documentation"
 jobs:
   build_documentation:
@@ -42,7 +51,7 @@ jobs:
         shell: bash
 
       - name: Request a PR to commit changes
-        if: ${{ github.repository_owner == 'masesgroup'}} #do not push any changes outside main repo
+        if: ${{ github.repository_owner == 'masesgroup' && ${{ inputs.withPR == 'yes' }}}} #do not push any changes outside main repo or withPR is no
         uses: peter-evans/create-pull-request@v5
         with:
           branch-suffix: short-commit-hash
