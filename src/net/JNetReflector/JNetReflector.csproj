@@ -164,4 +164,9 @@
     <Folder Include="Java\Util\" />
     <Folder Include="Specific\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="DotnetToolSettings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
