@@ -32,14 +32,6 @@ jobs:
           fetch-depth: '1'
           submodules: 'true'
 
-      - name: Clear C# generated files
-        run: Remove-Item .\src\net\JNet\Generated\* -Recurse -Force -Exclude README.md
-
-      - name: Clear Java generated files
-        run: Remove-Item .\src\jvm\jnet\src\main\java\org\mases\jnet\generated\* -Recurse -Force -Exclude README.md
-
-      - run: dotnet build --no-incremental --configuration Release src\net\JNetReflector\JNetReflector.csproj
-
       - name: Set up Apache Maven Central
         uses: actions/setup-java@v4
         with: # running setup-java again overwrites the settings.xml
@@ -52,12 +44,29 @@ jobs:
           gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
           gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
 
+      - name: Create Jars
+        run: mvn --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
+        env:
+          MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
+          MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
+
+      - name: Clear C# generated files
+        run: Remove-Item .\src\net\JNet\Generated\* -Recurse -Force -Exclude README.md
+
+      - name: Clear Java generated files
+        run: Remove-Item .\src\jvm\jnet\src\main\java\org\mases\jnet\generated\* -Recurse -Force -Exclude README.md
+
+      - run: dotnet build --no-incremental --configuration Release src\net\JNetReflector\JNetReflector.csproj
+
       - name: Build classes
         shell: cmd
         run: |
           cd binReflector\net6.0
-          MASES.JNetReflector.exe -TraceLevel 0 --JVMDebugPort:5006 -DestinationRootPath ..\..\src\ -ConfigurationFile ..\..\src\configuration.json
-
+          MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\src\ -ConfigurationFile ..\..\src\configuration.json
+        env:
+          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
+          
       - name: Extract commit SHA
         run: |
           echo "GITHUB_COMMIT_MESSAGE=$(echo $GITHUB_SHA | cut -c 1-7)" >> $GITHUB_ENV
@@ -69,7 +78,10 @@ jobs:
         with:
           branch-suffix: short-commit-hash
           add-paths: docs/*.*
-          commit-message: Update generated classes after commit ${{ env.GITHUB_COMMIT_MESSAGE == true }}
+          commit-message: |
+            Update generated classes after commit ${{ env.GITHUB_COMMIT_MESSAGE == true }}
+            
+            fix #216
           title: Changes by GitHub action
           body: Automated changes by GitHub action
           reviewers: masesdevelopers
