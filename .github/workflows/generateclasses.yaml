@@ -84,7 +84,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           branch-suffix: short-commit-hash
-          add-paths: docs/*.*
+          add-paths: src/*.*
           commit-message: |
             Update generated classes after commit ${{ env.GITHUB_COMMIT_MESSAGE }}
             
