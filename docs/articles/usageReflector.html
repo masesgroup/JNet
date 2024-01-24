@@ -85,7 +85,7 @@
 
 <p>The tool is able to build .NET classes which reproduce the JVM class (Java, Scala, Kotlin, ...) counterpart.</p>
 <h2 id="installation">Installation</h2>
-<p>To install the tool follows the instructions on <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a>.</p>
+<p>To install the tool follows the instructions on <a href="https://www.nuget.org/packages/MASES.JNetReflector/">NuGet</a> and <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a>.</p>
 <h2 id="usage">Usage</h2>
 <p>To use JNetReflector runs a command like the following:</p>
 <ul>
@@ -93,9 +93,6 @@
 </ul>
 <blockquote>
 <p>jnetreflector -OriginRootPath C:\myJars -OriginJavadocUrl &quot;https://thehost/javadoc/&quot; -JavadocVersion 11 -DestinationRootPath C:\ReflectionDestination</p>
-</blockquote>
-<blockquote>
-<p>jnr -OriginRootPath C:\myJars -OriginJavadocUrl &quot;https://thehost/javadoc/&quot; -JavadocVersion 11 -DestinationRootPath C:\ReflectionDestination</p>
 </blockquote>
 <h2 id="command-switches-available">Command switches available</h2>
 <p><em>jnr</em> accepts the following command-line switch:</p>
@@ -174,12 +171,12 @@ The command line interface uses the following command line:</p>
   &quot;ClassesToAvoid&quot;: [
     &quot;java.lang.ProcessBuilder$Redirect$Type&quot;,
     &quot;java.lang.Thread$UncaughtExceptionHandler&quot;,
+    &quot;java.util.Comparator&quot;,
+    &quot;java.util.EventListener&quot;,
     &quot;java.util.stream.DoubleStream$Builder&quot;,
     &quot;java.util.stream.IntStream$Builder&quot;,
     &quot;java.util.stream.LongStream$Builder&quot;,
     &quot;java.util.stream.Stream$Builder&quot;,
-    &quot;java.util.Comparator&quot;,
-    &quot;java.util.EventListener&quot;,
     &quot;java.util.ServiceLoader$Provider&quot;,
     &quot;javax.swing.ToolTipManager&quot;,
     &quot;javax.swing.text.html.HTMLEditorKit$LinkController&quot;,
