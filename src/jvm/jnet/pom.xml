@@ -42,6 +42,7 @@
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
         <jnetversion>2.2.2.0</jnetversion>
         <jcobridgeversion>2.5.10</jcobridgeversion>
+		<jcobridgepath>../../../bin/net6.0/JCOBridge.jar</jcobridgepath>
     </properties>
     <distributionManagement>
         <snapshotRepository>
@@ -133,7 +134,7 @@
                 <configuration>
                     <compilerArgs>
                         <arg>-cp</arg>
-                        <arg>${originalClassPath}${path.separator}${basedir}/../../../bin/net6.0/JCOBridge.jar</arg>
+                        <arg>${originalClassPath}${path.separator}${basedir}/${jcobridgepath}</arg>
                     </compilerArgs>
                     <source>11</source>
                     <target>11</target>
