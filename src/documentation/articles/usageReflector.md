@@ -9,7 +9,7 @@ The tool is able to build .NET classes which reproduce the JVM class (Java, Scal
 
 ## Installation
 
-To install the tool follows the instructions on https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools.
+To install the tool follows the instructions on [NuGet](https://www.nuget.org/packages/MASES.JNetReflector/) and https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools.
 
 ## Usage
 
@@ -17,8 +17,6 @@ To use JNetReflector runs a command like the following:
 
 * dotnet tool
 > jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -JavadocVersion 11 -DestinationRootPath C:\\ReflectionDestination
-
-> jnr -OriginRootPath C:\\myJars -OriginJavadocUrl "https://thehost/javadoc/" -JavadocVersion 11 -DestinationRootPath C:\\ReflectionDestination
 
 ## Command switches available
 
@@ -101,12 +99,12 @@ The options used are:
   "ClassesToAvoid": [
     "java.lang.ProcessBuilder$Redirect$Type",
     "java.lang.Thread$UncaughtExceptionHandler",
+    "java.util.Comparator",
+    "java.util.EventListener",
     "java.util.stream.DoubleStream$Builder",
     "java.util.stream.IntStream$Builder",
     "java.util.stream.LongStream$Builder",
     "java.util.stream.Stream$Builder",
-    "java.util.Comparator",
-    "java.util.EventListener",
     "java.util.ServiceLoader$Provider",
     "javax.swing.ToolTipManager",
     "javax.swing.text.html.HTMLEditorKit$LinkController",
