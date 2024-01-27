@@ -18,6 +18,7 @@ RUN apt install -y openjdk-11-jre-headless
 
 ADD ./jars /app/jars
 
+ENV JCOBRIDGE_JVMPath=/usr/lib/jvm/java-11-openjdk-amd64/lib/server/libjvm.so
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "MASES.JNetCLI.dll", "--JVMPath:/usr/lib/jvm/java-17-openjdk-amd64/lib/server/libjvm.so"]
+ENTRYPOINT ["dotnet", "MASES.JNetCLI.dll"]
