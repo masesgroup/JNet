@@ -10,7 +10,7 @@ RootModule = 'MASES.JNetPS.psm1'
 
 ModuleVersion = '2.2.3'
 
-# CompatiblePSEditions = @()
+CompatiblePSEditions = 'Desktop', 'Core'
 
 GUID = '82FBF86C-1604-4940-84D1-993CC42D7853'
 
@@ -26,7 +26,7 @@ Description = 'JNet (Java/JVM suite for .NET) PowerShell (aka JNetPS) is a Power
 
 More information within the project hosted on GitHub at https://github.com/masesgroup/JNet for further information.'
 
-# PowerShellVersion = ''
+PowerShellVersion = '5.1'
 
 # PowerShellHostName = ''
 
