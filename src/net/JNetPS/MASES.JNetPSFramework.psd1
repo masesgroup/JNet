@@ -143,4 +143,9 @@ PrivateData = @{
         ReleaseNotes = 'https://github.com/masesgroup/JNet/releases'
 
     }
-} 
+}
+
+HelpInfoURI = 'https://jnet.masesgroup.com/articles/usagePS.html'
+
+# DefaultCommandPrefix = ''
+}
