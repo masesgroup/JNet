@@ -67,16 +67,59 @@ TypesToProcess = @()
 NestedModules= @()
 
 # Functions to export from this module
-FunctionsToExport = '*'
+FunctionsToExport = @()
 
 # Cmdlets to export from this module
-CmdletsToExport = '*'
+CmdletsToExport = @(
+    'Start-JNetPS',
+    'Invoke-JCommand',
+    'New-JObject',
+    'Get-ClassForName',
+    'Add-NotificationListener',
+    'Get-DefaultDomain',
+    'Get-Domains',
+    'Get-IsMXBeanInterface',
+    'Get-JMXConnector',
+    'Get-MBeanCount',
+    'Get-MBeanInfo',
+    'Get-QueryNames',
+    'Get-QueryClassattr',
+    'Get-QueryValueExp',
+    'Invoke-QueryAnd'
+    'Invoke-QueryAnySubString',
+    'Invoke-QueryAttr',
+    'Invoke-QueryBetween',
+    'Invoke-QueryDiv',
+    'Invoke-QueryEq',
+    'Invoke-QueryFinalSubString',
+    'Invoke-QueryGeq',
+    'Invoke-QueryGt',
+    'Invoke-QueryIn',
+    'Invoke-QueryInitialSubString',
+    'Invoke-QueryIsInstanceOf',
+    'Invoke-QueryLeq',
+    'Invoke-QueryLt',
+    'Invoke-QueryMatch',
+    'Invoke-QueryMinus',
+    'Invoke-QueryNot',
+    'Invoke-QueryOr',
+    'Invoke-QueryPlus',
+    'Invoke-QueryTimes',
+    'New-AttributeChangeNotificationFilter',
+    'New-JMXServiceURL',
+    'New-MBeanProxy',
+    'New-MXBeanProxy',
+    'New-NotificationFilterSupport',
+    'New-NotificationListener',
+    'New-ObjectName',
+    'Remove-NotificationListener'
+)
 
 # Variables to export from this module
 VariablesToExport = '*'
 
 # Aliases to export from this module
-AliasesToExport = '*'
+AliasesToExport = @()
 
 # List of all modules packaged with this module
 ModuleList = @()
@@ -85,5 +128,24 @@ ModuleList = @()
 FileList = ''
 
 # Private data to pass to the module specified in ModuleToProcess
-PrivateData = ''
+PrivateData = @{
+
+    PSData = @{
+
+        Tags = @('JNetPS', 'JNet', 'PSEdition_Core', 'PSEdition_Desktop', 'Windows', 'Linux', 'JVM', 'Java', 'Scala', 'Kotlin', 'bridge', 'gateway')
+
+        LicenseUri = 'https://github.com/masesgroup/JNet/blob/master/LICENSE'
+
+        ProjectUri = 'https://github.com/masesgroup/JNet'
+
+        IconUri = 'https://raw.githubusercontent.com/masesgroup/JNet/master/src/net/Common/JCOB128x128.png'
+
+        ReleaseNotes = 'https://github.com/masesgroup/JNet/releases'
+
+    }
+}
+
+HelpInfoURI = 'https://jnet.masesgroup.com/articles/usagePS.html'
+
+# DefaultCommandPrefix = ''
 }
