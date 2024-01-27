@@ -69,7 +69,7 @@ jobs:
       - name: Build classes
         shell: cmd
         run: |
-          cd binReflector\net6.0
+          cd binReflector\net8.0
           MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\src\ -ConfigurationFile ..\..\src\configuration.json
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
