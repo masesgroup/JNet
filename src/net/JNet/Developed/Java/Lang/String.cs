@@ -29,6 +29,6 @@ namespace Java.Lang
         /// <summary>
         /// Converter from <see cref="string"/> to <see cref="String"/>
         /// </summary>
-        public static implicit operator String(string b) => ValueOf(b);
+        public static implicit operator String(string b) => new Java.Lang.String(b);
     }
 }
