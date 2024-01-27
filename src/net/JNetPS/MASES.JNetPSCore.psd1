@@ -28,7 +28,7 @@ Copyright = 'Copyright ©  MASES s.r.l. 2024'
 Description = 'PowerShell Module to use JVM and PowerShell side-by-side. With JNetPS it is possible to use JVM objects within PowerShell. See https://github.com/masesgroup/JNet for further information.'
 
 # Minimum version of the Windows PowerShell engine required by this module
-PowerShellVersion = '7.0.0'
+PowerShellVersion = '7.4.0'
 
 # Specifies the compatible PSEditions of the module.
 CompatiblePSEditions = @('Core')
