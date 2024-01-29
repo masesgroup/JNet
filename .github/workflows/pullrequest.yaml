@@ -24,13 +24,13 @@ jobs:
         run: |
           mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.get_changed_files.outputs.added_modified }}')
           for added_modified_file in "${added_modified_files[@]}"; do
-              if [[ $added_modified_file == "src/"* ]]; then
-                echo "$added_modified_file file is under the directory 'src/'."
+              if [[ $added_modified_file == ".github/workflows/pullrequest.yaml"* ]]; then
+                echo "$added_modified_file file changed"
                 echo "run_build_windows=true" >> $GITHUB_OUTPUT
                 break
               fi
-              if [[ $added_modified_file == "src/container/Dockerfile.linux"* ]]; then
-                echo "$added_modified_file file changed"
+              if [[ $added_modified_file == "src/"* ]]; then
+                echo "$added_modified_file file is under the directory 'src/'."
                 echo "run_build_windows=true" >> $GITHUB_OUTPUT
                 break
               fi
