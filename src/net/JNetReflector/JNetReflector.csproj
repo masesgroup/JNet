@@ -151,7 +151,7 @@
     <EmbeddedResource Include="Templates\AllPackageClasses.template" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MASES.CLIParser" Version="3.2.0" />
+    <PackageReference Include="MASES.CLIParser" Version="3.2.1" />
 	<PackageReference Include="MASES.JCOBridge" Version="2.5.10">
 		<IncludeAssets>All</IncludeAssets>
 		<PrivateAssets>None</PrivateAssets>
