@@ -135,7 +135,6 @@ jobs:
         run: |
           Copy-Item .\src\net\JNetPS\MASES.JNetPS.psd1 -Destination .\MASES.JNetPS\MASES.JNetPS.psd1 -Force
           Copy-Item .\src\net\JNetPS\MASES.JNetPS.psm1 -Destination .\MASES.JNetPS\MASES.JNetPS.psm1 -Force
-          New-FileCatalog -Path .\MASES.JNetPS\ -CatalogFilePath .\MASES.JNetPS\MASES.JNetPS.cat
         shell: pwsh
 
       - name: Recompile to create nuget packages
