@@ -72,7 +72,7 @@ jobs:
         with:
           images: |
             masesgroup/jnet
-            ghcr.io/${{ github.repository }}/jnet
+            ghcr.io/${{ github.repository_owner }}/jnet
 
       - name: Build and push
         uses: docker/build-push-action@v5
