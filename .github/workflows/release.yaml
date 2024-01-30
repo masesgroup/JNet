@@ -53,12 +53,26 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
+      - name: Login to Docker Container Registry
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.MASES_DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.MASES_DOCKER_HUB_PASSWORD }}
+
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: |
+            masesgroup/jnet
+            ghcr.io/${{ github.repository_owner }}/jnet
 
       - name: Build and push
         uses: docker/build-push-action@v5
@@ -67,7 +81,8 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/mases.jnet:latest  
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
           
   # This workflow contains a single job called "build_release"
   build_release:
@@ -135,7 +150,6 @@ jobs:
         run: |
           Copy-Item .\src\net\JNetPS\MASES.JNetPS.psd1 -Destination .\MASES.JNetPS\MASES.JNetPS.psd1 -Force
           Copy-Item .\src\net\JNetPS\MASES.JNetPS.psm1 -Destination .\MASES.JNetPS\MASES.JNetPS.psm1 -Force
-          New-FileCatalog -Path .\MASES.JNetPS\ -CatalogFilePath .\MASES.JNetPS\MASES.JNetPS.cat
         shell: pwsh
 
       - name: Recompile to create nuget packages
