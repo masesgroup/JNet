@@ -72,7 +72,7 @@ jobs:
         with:
           images: |
             masesgroup/jnet
-            ghcr.io/${{ github.repository }}
+            ghcr.io/${{ github.repository }}/jnet
 
       - name: Build and push
         uses: docker/build-push-action@v5
@@ -86,7 +86,6 @@ jobs:
           
   # This workflow contains a single job called "build_release"
   build_release:
-    needs: build_container_linux
     # The type of runner that the job will run on
     runs-on: windows-2022
     # Steps represent a sequence of tasks that will be executed as part of the job
