@@ -84,17 +84,17 @@ jobs:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
         
       - name: Build Docker Image
-        run: docker build -t mases.jnet -f ./src/container/Dockerfile.linux .
+        run: docker build -t jnet -f ./src/container/Dockerfile.linux .
         
       - name: Save Docker Image
-        run: docker image save -o mases.jnet.linux.tar mases.jnet
+        run: docker image save -o jnet.linux.tar jnet
         
       - name: Compress Docker Image
-        run: gzip mases.jnet.linux.tar
+        run: gzip jnet.linux.tar
         
       - uses: actions/upload-artifact@v4
         with:
-          name: mases.jnet.linux.tar.gz
+          name: jnet.linux.tar.gz
           path: ./*.tar.gz
 
   # Now run "build_windows"

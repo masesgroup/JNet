@@ -77,7 +77,7 @@ jobs:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
         
       - name: Build Docker Image
-        run: docker build -t mases.jnet -f ./src/container/Dockerfile.linux .
+        run: docker build -t jnet -f ./src/container/Dockerfile.linux .
         
   # This workflow contains a single job called "build_release"
   build_pullrequest:
