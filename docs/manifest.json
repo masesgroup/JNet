@@ -52787,6 +52787,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/docker.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/docker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
