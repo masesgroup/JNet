@@ -9,7 +9,7 @@ _description: Describes JNet CLI tool: the CLI tool to use Java/JVM classes from
 
 - **dotnet tool** hosted on NuGet.org: check https://www.nuget.org/packages/MASES.JNetCLI/ and https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools for installation deep instructions.
   * The dotnet tool version needs and installed JRE/JDK within the system (see [JVM identification](#jvm-identification))
-- **Docker image** hosted on https://github.com/masesgroup/JNet/pkgs/container/mases.jnet: follow instruction within the page and general instruction on https://docs.docker.com
+- **Docker image** hosted on [GitHub](https://github.com/masesgroup/JNet/pkgs/container/jnet) or [Docker Hub](https://hub.docker.com/repository/docker/masesgroup/jnet/general): follow instruction within the page and general instruction on https://docs.docker.com
   * The image hosts both .NET 6 and JRE 17 runtimes
 
 ## Usage
@@ -22,7 +22,9 @@ To use the CLI interface (JNetCLI) runs a command like the following:
 
 - **Docker image**
 
-> docker run ghcr.io/masesgroup/mases.jnet -i
+> docker run ghcr.io/masesgroup/jnet -i
+
+> docker run masesgroup/jnet -i
 
 ## Command switch available
 
