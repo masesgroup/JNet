@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>JNet: Reflector | MASES Group - JNet </title>
+      <title>JNetReflector tool of Java/JVM suite for .NET | MASES Group - JNet </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="JNet: Reflector | MASES Group - JNet ">
-      <meta name="description" content="This is a descriptive page of JNet, the Java/JVM suite for .NET">
+      <meta name="title" content="JNetReflector tool of Java/JVM suite for .NET | MASES Group - JNet ">
+      <meta name="description" content="Describes the tool which builds .NET classes analyzing JVM Jar or modules">
       
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -91,9 +91,8 @@
 <ul>
 <li>dotnet tool</li>
 </ul>
-<blockquote>
-<p>jnetreflector -OriginRootPath C:\myJars -OriginJavadocUrl &quot;https://thehost/javadoc/&quot; -JavadocVersion 11 -DestinationRootPath C:\ReflectionDestination</p>
-</blockquote>
+<pre><code class="lang-sh">jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \&quot;https://thehost/javadoc/\&quot; -JavadocVersion 11 -DestinationRootPath C:\\ReflectionDestination
+</code></pre>
 <h2 id="command-switches-available">Command switches available</h2>
 <p><em>jnr</em> accepts the following command-line switch:</p>
 <ul>
@@ -137,9 +136,8 @@
 <h2 id="jnet-reflected-classes">JNet reflected classes</h2>
 <p>Many JNet classes are generated using JNetReflector. The JVM used to build the classes is the Temurin version 11 which is the minimum JVM version supported from JCOBridge.
 The command line interface uses the following command line:</p>
-<blockquote>
-<p>jnetreflector -TraceLevel 0 -DestinationRootPath .\src\ -ConfigurationFile .\src\configuration.json</p>
-</blockquote>
+<pre><code class="lang-sh">jnetreflector -TraceLevel 0 -DestinationRootPath .\src\ -ConfigurationFile .\src\configuration.json
+</code></pre>
 <p>The options used are:</p>
 <pre><code class="lang-json">{
   &quot;RelativeDestinationCSharpClassPath&quot;: &quot;net\\JNet\\Generated&quot;,
