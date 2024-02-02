@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>JNet: CLI | MASES Group - JNet </title>
+      <title>Docker images of Java/JVM suite for .NET | MASES Group - JNet </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="JNet: CLI | MASES Group - JNet ">
-      <meta name="description" content="This is a descriptive page of JNet, the Java/JVM suite for .NET">
+      <meta name="title" content="Docker images of Java/JVM suite for .NET | MASES Group - JNet ">
+      <meta name="description" content="Describes the Docker images of Java/JVM suite for .NET">
       
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/blob/master/src/documentation/articles/usageCLI.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/blob/master/src/documentation/articles/docker.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -81,56 +81,17 @@
         </div>
 
         <article data-uid="">
-<h1 id="jnet-cli">JNet: CLI</h1>
+<h1 id="jnet-docker-images">JNet: Docker images</h1>
 
-<h2 id="installation">Installation</h2>
+<p>Java/JVM suite for .NET comes with some ready made Docker images:</p>
 <ul>
-<li><strong>dotnet tool</strong> hosted on NuGet.org: check <a href="https://www.nuget.org/packages/MASES.JNetCLI/">https://www.nuget.org/packages/MASES.JNetCLI/</a> and <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a> for installation deep instructions.
-<ul>
-<li>The dotnet tool version needs and installed JRE/JDK within the system (see <a href="#jvm-identification">JVM identification</a>)</li>
+<li>JNet CLI: see <a href="usageCLI.html">JNet CLI usage</a></li>
 </ul>
-</li>
-<li><strong>Docker image</strong> hosted on <a href="https://github.com/masesgroup/JNet/pkgs/container/jnet">GitHub</a> or <a href="https://hub.docker.com/repository/docker/masesgroup/jnet/general">Docker Hub</a>: follow instruction within the page and general instruction on <a href="https://docs.docker.com">https://docs.docker.com</a>
-<ul>
-<li>The image hosts both .NET 6 and JRE 17 runtimes</li>
-</ul>
-</li>
-</ul>
-<h2 id="usage">Usage</h2>
-<p>To use the CLI interface (JNetCLI) runs a command like the following:</p>
-<ul>
-<li><strong>dotnet tool</strong></li>
-</ul>
-<blockquote>
-<p>jnet -i</p>
-</blockquote>
-<ul>
-<li><strong>Docker image</strong></li>
-</ul>
-<blockquote>
-<p>docker run ghcr.io/masesgroup/jnet -i</p>
-</blockquote>
-<blockquote>
-<p>docker run masesgroup/jnet -i</p>
-</blockquote>
-<h2 id="command-switch-available">Command switch available</h2>
-<p><em>jnet</em> accepts the following command-line switch:</p>
-<ul>
-<li><strong>Interactive</strong> (<strong>i</strong>): Activates an interactive shell</li>
-<li><strong>RunCommand</strong> (<strong>r</strong>): executes the main method of a specific Java class in argument and exit</li>
-<li><strong>Script</strong> (<strong>s</strong>): Executes the c# script in the file arument</li>
-<li><strong>JarList</strong> (<strong>jl</strong>): A CSV list of JAR to be used or folders containing the JARs</li>
-<li><strong>NamespaceList</strong> (<strong>nl</strong>): A CSV list of namespace to be used for interactive shell, JNet namespace are added automatically</li>
-<li><strong>ImportList</strong> (<strong>il</strong>): A CSV list of import to be used</li>
-</ul>
-<p>Plus other switches available at <a href="commandlineswitch.html">Command line switch</a> page.</p>
-<h3 id="jvm-identification">JVM identification</h3>
-<p>One of the most important command-line switch is <strong>JVMPath</strong> and it is available in <a href="https://www.jcobridge.com/net-examples/command-line-options/">JCOBridge switches</a>: it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/documentation/articles/usageCLI.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/documentation/articles/docker.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

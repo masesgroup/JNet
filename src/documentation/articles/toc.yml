@@ -12,6 +12,8 @@
   href: usage.md
 - name: JNet CLI usage
   href: usageCLI.md
+- name: JNet Docker images
+  href: docker.md
 - name: JNet Reflector usage
   href: usageReflector.md
 - name: JNet PowerShell usage
