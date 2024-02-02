@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>JNet: CLI | MASES Group - JNet </title>
+      <title>JNet CLI tool of Java/JVM suite for .NET | MASES Group - JNet </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="JNet: CLI | MASES Group - JNet ">
-      <meta name="description" content="This is a descriptive page of JNet, the Java/JVM suite for .NET">
+      <meta name="title" content="JNet CLI tool of Java/JVM suite for .NET | MASES Group - JNet ">
+      <meta name="description" content="Describes the CLI tool to use Java/JVM classes from any command-line shell">
       
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -85,34 +85,31 @@
 
 <h2 id="installation">Installation</h2>
 <ul>
-<li><strong>dotnet tool</strong> hosted on NuGet.org: check <a href="https://www.nuget.org/packages/MASES.JNetCLI/">https://www.nuget.org/packages/MASES.JNetCLI/</a> and <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a> for installation deep instructions.
+<li><strong>dotnet tool</strong> hosted on <a href="https://www.nuget.org/packages/MASES.JNetCLI">NuGet</a>: check <a href="https://www.nuget.org/packages/MASES.JNetCLI/">https://www.nuget.org/packages/MASES.JNetCLI/</a> and <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a> for deep installation instructions.</li>
+<li><strong>Docker image</strong> hosted on <a href="https://github.com/masesgroup/JNet/pkgs/container/jnet">GitHub</a> and <a href="https://hub.docker.com/repository/docker/masesgroup/jnet/general">Docker Hub</a>: follow instruction within the page and general instruction on <a href="https://docs.docker.com">https://docs.docker.com</a>
 <ul>
-<li>The dotnet tool version needs and installed JRE/JDK within the system (see <a href="#jvm-identification">JVM identification</a>)</li>
-</ul>
-</li>
-<li><strong>Docker image</strong> hosted on <a href="https://github.com/masesgroup/JNet/pkgs/container/jnet">GitHub</a> or <a href="https://hub.docker.com/repository/docker/masesgroup/jnet/general">Docker Hub</a>: follow instruction within the page and general instruction on <a href="https://docs.docker.com">https://docs.docker.com</a>
-<ul>
-<li>The image hosts both .NET 6 and JRE 17 runtimes</li>
+<li>The image hosts both .NET 6 and JRE 11 runtimes</li>
 </ul>
 </li>
 </ul>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>The <strong>dotnet tool</strong> needs a JRE/JDK installed within the system (see <a href="#jvm-identification">JVM identification</a>)</p>
+</div>
 <h2 id="usage">Usage</h2>
 <p>To use the CLI interface (JNetCLI) runs a command like the following:</p>
 <ul>
 <li><strong>dotnet tool</strong></li>
 </ul>
-<blockquote>
-<p>jnet -i</p>
-</blockquote>
+<pre><code class="lang-sh">jnet -i
+</code></pre>
 <ul>
 <li><strong>Docker image</strong></li>
 </ul>
-<blockquote>
-<p>docker run ghcr.io/masesgroup/jnet -i</p>
-</blockquote>
-<blockquote>
-<p>docker run masesgroup/jnet -i</p>
-</blockquote>
+<pre><code class="lang-sh">docker run ghcr.io/masesgroup/jnet -i
+</code></pre>
+<pre><code class="lang-sh">docker run masesgroup/jnet -i
+</code></pre>
 <h2 id="command-switch-available">Command switch available</h2>
 <p><em>jnet</em> accepts the following command-line switch:</p>
 <ul>
