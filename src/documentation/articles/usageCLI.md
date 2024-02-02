@@ -1,16 +1,18 @@
 ---
 title: JNet CLI tool of Java/JVM suite for .NET
-_description: Describes JNet CLI tool: the CLI tool to use Java/JVM classes from any command-line shell
+_description: Describes the CLI tool to use Java/JVM classes from any command-line shell
 ---
 
 # JNet: CLI
 
 ## Installation
 
-- **dotnet tool** hosted on NuGet.org: check https://www.nuget.org/packages/MASES.JNetCLI/ and https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools for installation deep instructions.
-  * The dotnet tool version needs and installed JRE/JDK within the system (see [JVM identification](#jvm-identification))
-- **Docker image** hosted on [GitHub](https://github.com/masesgroup/JNet/pkgs/container/jnet) or [Docker Hub](https://hub.docker.com/repository/docker/masesgroup/jnet/general): follow instruction within the page and general instruction on https://docs.docker.com
-  * The image hosts both .NET 6 and JRE 17 runtimes
+- **dotnet tool** hosted on [NuGet](https://www.nuget.org/packages/MASES.JNetCLI): check https://www.nuget.org/packages/MASES.JNetCLI/ and https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools for deep installation instructions.
+- **Docker image** hosted on [GitHub](https://github.com/masesgroup/JNet/pkgs/container/jnet) and [Docker Hub](https://hub.docker.com/repository/docker/masesgroup/jnet/general): follow instruction within the page and general instruction on https://docs.docker.com
+  * The image hosts both .NET 6 and JRE 11 runtimes
+
+> [!IMPORTANT]
+> The **dotnet tool** needs a JRE/JDK installed within the system (see [JVM identification](#jvm-identification))
 
 ## Usage
 
@@ -18,13 +20,19 @@ To use the CLI interface (JNetCLI) runs a command like the following:
 
 - **dotnet tool**
 
-> jnet -i
+```sh
+jnet -i
+```
 
 - **Docker image**
 
-> docker run ghcr.io/masesgroup/jnet -i
+```sh
+docker run ghcr.io/masesgroup/jnet -i
+```
 
-> docker run masesgroup/jnet -i
+```sh
+docker run masesgroup/jnet -i
+```
 
 ## Command switch available
 

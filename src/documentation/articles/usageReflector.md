@@ -1,6 +1,6 @@
 ---
 title: JNetReflector tool of Java/JVM suite for .NET
-_description: Describes JNetReflector: the tool to build .NET classes analyzing JVM Jar or modules
+_description: Describes the tool which builds .NET classes analyzing JVM Jar or modules
 ---
 
 # JNet: Reflector
@@ -16,7 +16,10 @@ To install the tool follows the instructions on [NuGet](https://www.nuget.org/pa
 To use JNetReflector runs a command like the following:
 
 * dotnet tool
-> jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -JavadocVersion 11 -DestinationRootPath C:\\ReflectionDestination
+
+```sh
+jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -JavadocVersion 11 -DestinationRootPath C:\\ReflectionDestination
+```
 
 ## Command switches available
 
@@ -64,7 +67,9 @@ _jnr_ accepts the following command-line switch:
 Many JNet classes are generated using JNetReflector. The JVM used to build the classes is the Temurin version 11 which is the minimum JVM version supported from JCOBridge.
 The command line interface uses the following command line:
 
-> jnetreflector -TraceLevel 0 -DestinationRootPath .\src\ -ConfigurationFile .\src\configuration.json
+```sh
+jnetreflector -TraceLevel 0 -DestinationRootPath .\src\ -ConfigurationFile .\src\configuration.json
+```
 
 The options used are:
 
