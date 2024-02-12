@@ -1828,10 +1828,10 @@ namespace MASES.JNetReflector
                 case "java.lang.Float":
                 case "double":
                 case "java.lang.Double":
-                case "java.lang.String": // special case
                 case "java.lang.Object": // special case
                     return true;
                 default:
+                    if (JNetReflectorCore.UseDirectDotNetString && typeName == "java.lang.String") return true;
                     return false;
             }
         }
@@ -1897,12 +1897,11 @@ namespace MASES.JNetReflector
                         return "double";
                     case "java.lang.Double":
                         return isFromArray ? "double" : "double?";
-                    case "java.lang.String":
-                        return "string";
                     case "java.lang.Object":
                         return "object";
                     default:
                         {
+                            if (JNetReflectorCore.UseDirectDotNetString && typeName == "java.lang.String") return "string";
                             var fName = ToFullQualifiedClassName(typeName, camel);
                             return fName.ConvertClassesInConflict();
                         }
@@ -1931,12 +1930,11 @@ namespace MASES.JNetReflector
                         return "float";
                     case "double":
                         return "double";
-                    case "java.lang.String":
-                        return "string";
                     case "java.lang.Object":
                         return "object";
                     default:
                         {
+                            if (JNetReflectorCore.UseDirectDotNetString && typeName == "java.lang.String") return "string";
                             var fName = ToFullQualifiedClassName(typeName, camel);
                             return fName.ConvertClassesInConflict();
                         }
