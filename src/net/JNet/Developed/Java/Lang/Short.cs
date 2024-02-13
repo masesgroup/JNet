@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using System;
 
 namespace Java.Lang
 {
@@ -25,10 +26,18 @@ namespace Java.Lang
         /// <summary>
         /// Converter from <see cref="Short"/> to <see cref="short"/>
         /// </summary>
-        public static implicit operator short(Short b) => b.ShortValue();
+        public static implicit operator short(Short b) => b != null ? b.ShortValue() : default;
+        /// <summary>
+        /// Converter from <see cref="Short"/> to <see cref="Nullable{Int16}"/>
+        /// </summary>
+        public static implicit operator short?(Short b) => b != null ? b.ShortValue() : null;
         /// <summary>
         /// Converter from <see cref="short"/> to <see cref="Short"/>
         /// </summary>
         public static implicit operator Short(short b) => ValueOf(b);
+        /// <summary>
+        /// Converter from <see cref="Nullable{Int16}"/> to <see cref="Short"/>
+        /// </summary>
+        public static implicit operator Short(short? b) => b.HasValue ? ValueOf(b.Value) : null;
     }
 }

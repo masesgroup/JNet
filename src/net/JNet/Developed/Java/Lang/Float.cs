@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using System;
 
 namespace Java.Lang
 {
@@ -25,10 +26,18 @@ namespace Java.Lang
         /// <summary>
         /// Converter from <see cref="Float"/> to <see cref="float"/>
         /// </summary>
-        public static implicit operator float(Float b) => b.FloatValue();
+        public static implicit operator float(Float b) => b != null ? b.FloatValue() : default;
+        /// <summary>
+        /// Converter from <see cref="Float"/> to <see cref="Nullable{Single}"/>
+        /// </summary>
+        public static implicit operator float?(Float b) => b != null ? b.FloatValue() : null;
         /// <summary>
         /// Converter from <see cref="float"/> to <see cref="Float"/>
         /// </summary>
         public static implicit operator Float(float b) => ValueOf(b);
+        /// <summary>
+        /// Converter from <see cref="Nullable{Single}"/> to <see cref="Float"/>
+        /// </summary>
+        public static implicit operator Float(float? b) => b.HasValue ? ValueOf(b.Value) : null;
     }
 }

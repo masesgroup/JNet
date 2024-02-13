@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using System;
 
 namespace Java.Lang
 {
@@ -25,10 +26,18 @@ namespace Java.Lang
         /// <summary>
         /// Converter from <see cref="Long"/> to <see cref="long"/>
         /// </summary>
-        public static implicit operator long(Long b) => b.LongValue();
+        public static implicit operator long(Long b) => b != null ? b.LongValue() : default;
+        /// <summary>
+        /// Converter from <see cref="Long"/> to <see cref="Nullable{Int64}"/>
+        /// </summary>
+        public static implicit operator long?(Long b) => b != null ? b.LongValue() : null;
         /// <summary>
         /// Converter from <see cref="long"/> to <see cref="Long"/>
         /// </summary>
         public static implicit operator Long(long b) => ValueOf(b);
+        /// <summary>
+        /// Converter from <see cref="Nullable{Int64}"/> to <see cref="Long"/>
+        /// </summary>
+        public static implicit operator Long(long? b) => b.HasValue ? ValueOf(b.Value) : null;
     }
 }
